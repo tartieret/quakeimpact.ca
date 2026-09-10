@@ -2,8 +2,9 @@ import { loremLine } from "./lorem";
 import type { Band, Phase, Scenario, ScenarioId, SystemEntry } from "./types";
 
 export const SITE = {
-  /** Working title. Domain and name are deferred until the MVP content exists. */
-  name: "After the Shaking",
+  name: "QuakeImpact",
+  domain: "quakeimpact.ca",
+  url: "https://quakeimpact.ca",
   tagline:
     "What a major earthquake does to the Lower Mainland — and for how long",
   status: "Draft — structure only. All body text is placeholder.",

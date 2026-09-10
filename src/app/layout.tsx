@@ -6,9 +6,17 @@ import { SITE } from "@/content/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE.url),
   title: { default: SITE.name, template: `%s — ${SITE.name}` },
   description: SITE.tagline,
   robots: { index: false, follow: false }, // draft — open up at launch
+  openGraph: {
+    type: "website",
+    siteName: SITE.name,
+    title: SITE.name,
+    description: SITE.tagline,
+    locale: "en_CA",
+  },
 };
 
 export default function RootLayout({

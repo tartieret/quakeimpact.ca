@@ -1,6 +1,9 @@
-# After the Shaking — site template
+# QuakeImpact
 
-Structural scaffold for the Lower Mainland earthquake impact site.
+What a major earthquake does to the Lower Mainland — and for how long.
+**quakeimpact.ca**
+
+Structural scaffold.
 **All body text is lorem ipsum.** Titles, labels, navigation, the band rubric
 and the system list are real. Nothing here is publishable content.
 
@@ -19,6 +22,14 @@ npm run dev        # localhost:3000
 npm run build      # emits out/
 npm run typecheck
 ```
+
+## Documentation
+
+`docs/` is the project knowledge base and the source of truth for content:
+
+- `docs/site-overview.md` — purpose, principles, scenarios, band rubric, full
+  content structure, sources, build order, open decisions. **Read this first.**
+- `docs/stack-and-structure.md` — how the site is built.
 
 ## Where things live
 
