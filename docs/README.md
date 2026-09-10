@@ -8,6 +8,7 @@ in version control alongside the code that renders it.
 | `site-overview.md` | The project document: purpose, principles, scenarios, band rubric, full content structure, sources, build order, open decisions. The primary reference. |
 | `style-guide.md` | How the site sounds and looks: audience, tone, the evidence on fear appeals, sentence-level rules, word list, visual language, accessibility, pre-publication checklist. **Read before writing any page.** |
 | `stack-and-structure.md` | How the site is built: stack, routes, content model, and how the principles in the overview are enforced in code. |
+| `knowledge.md` | Working notes that outlive a change: sources, stack quirks, decisions and their reasons. |
 
 ## Working rules
 
