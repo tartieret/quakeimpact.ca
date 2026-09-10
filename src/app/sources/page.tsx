@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ReadingShell } from "@/components/shell";
 import {
   PageHeader,
@@ -83,9 +84,45 @@ export default function SourcesPage() {
         </div>
       </Section>
 
+      <Section
+        title="How sources appear in the text"
+        lede="A register nobody reads is not sourcing. Claims in running text carry a numbered marker that opens the document in place."
+      >
+        <Prose
+          paragraphs={[
+            <>
+              Every entry above has a key. Prose cites the key, the marker takes
+              its number from the order the page cites in, and the same entries
+              are listed again at the foot of the page. A marker can also point
+              at another page on this site, where the reasoning is set out
+              rather than repeated. The{" "}
+              <Link
+                href="/leaving/"
+                className="text-accent underline underline-offset-2"
+              >
+                Getting out
+              </Link>{" "}
+              page is the worked example.
+            </>,
+          ]}
+        />
+      </Section>
+
+      <Section
+        title="Missing a document"
+        lede="Every key here is still TBD and every link is a placeholder. Pointers are worth more than opinions."
+      >
+        <Link
+          href="/contribute/"
+          className="inline-block text-sm font-medium text-accent underline underline-offset-4"
+        >
+          How to send a source or a correction
+        </Link>
+      </Section>
+
       <NextPrev
         prev={{ href: "/method/", label: "Method & bands" }}
-        next={{ href: "/about/", label: "About" }}
+        next={{ href: "/contribute/", label: "Contribute" }}
       />
     </ReadingShell>
   );

@@ -34,7 +34,7 @@ export default function AboutPage() {
       </Section>
 
       <NextPrev
-        prev={{ href: "/sources/", label: "Sources" }}
+        prev={{ href: "/contribute/", label: "Contribute" }}
         next={{ href: "/", label: "Home" }}
       />
     </ReadingShell>

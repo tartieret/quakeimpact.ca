@@ -126,7 +126,7 @@ export const SYSTEMS: SystemEntry[] = [
     "days",
     1,
     ["high", "high"],
-    ["transportation", "food-and-fuel"],
+    ["transportation", "fuel"],
     2,
   ),
   sys(
@@ -153,7 +153,7 @@ export const SYSTEMS: SystemEntry[] = [
     "days",
     1,
     ["high", "medium"],
-    ["food-and-fuel"],
+    ["fuel"],
     5,
   ),
   sys(
@@ -166,13 +166,22 @@ export const SYSTEMS: SystemEntry[] = [
     6,
   ),
   sys(
-    "food-and-fuel",
-    "Food and fuel",
+    "fuel",
+    "Fuel",
     "days",
     2,
     ["high", "medium"],
-    ["transportation", "electricity"],
+    ["transportation", "electricity", "large-infrastructure"],
     7,
+  ),
+  sys(
+    "food",
+    "Food",
+    "days",
+    2,
+    ["high", "medium"],
+    ["transportation", "fuel", "large-infrastructure"],
+    13,
   ),
   sys(
     "dams-and-reservoirs",
@@ -198,7 +207,7 @@ export const SYSTEMS: SystemEntry[] = [
     "hours",
     3,
     ["high", "high"],
-    ["food-and-fuel", "electricity", "water"],
+    ["fuel", "electricity", "water"],
     10,
   ),
   sys(
@@ -252,5 +261,6 @@ export const UTILITY_NAV = [
   { href: "/dependencies/", label: "Dependency graph" },
   { href: "/method/", label: "Method & bands" },
   { href: "/sources/", label: "Sources" },
+  { href: "/contribute/", label: "Contribute" },
   { href: "/about/", label: "About" },
 ];

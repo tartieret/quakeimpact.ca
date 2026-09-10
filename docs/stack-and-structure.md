@@ -30,16 +30,17 @@ Static export was chosen over an SPA because the site is public-facing content p
 /shaking/[slug]/        ground, buildings, casualties, fire-following,
                         secondary-hazards
 /after/                 Part 2 index — timeline + system grid by build tier
-/after/[slug]/          12 system pages
+/after/[slug]/          13 system pages
 /leaving/               Part 2b — who can actually leave
 /dependencies/          the dependency graph
 /prepare/               Part 3
 /method/                band rubric, principles, assumption discipline
-/sources/               source register
+/sources/               source register + the citation convention
+/contribute/            what the project can use, and how to send it
 /about/
 ```
 
-30 statically exported pages.
+32 statically exported pages.
 
 ---
 
@@ -51,8 +52,10 @@ Everything lives in `src/content/site.ts`. The route templates hold no content.
 - `SCENARIOS` — the two scenarios and their comparison rows
 - `BANDS` — the rubric from overview section 4, including `unknown`
 - `PHASES` — hours / days / weeks / months
-- `SYSTEMS` — the twelve systems, each with hook, `bitesAt` phase, per-scenario impact, `dependsOn` edges, and build tier from overview section 8
+- `SYSTEMS` — the thirteen systems, each with hook, `bitesAt` phase, per-scenario impact, `dependsOn` edges, and build tier from overview section 8. Food and fuel are separate entries: fuel is an input every other system's repair competes for, food is a demand that cannot be stored, and merging them hides the edge between them
 - `SHAKING_PAGES`, `NAV`, `UTILITY_NAV`
+
+`src/content/references.ts` holds `REFERENCES`, the source register: one entry per document, keyed by citation key. Entries carry kind, title, publisher, year, href and a one-line note. `kind: "page"` is an internal reference — a claim can point at the page that carries the reasoning. Every entry is currently flagged `placeholder`, and that flag is what makes the marker and the reference list say so on the page.
 
 Adding a system is one array entry. It then appears in the grid, the matrix, the dependency list and the prepare page, and gets its own exported page, with no other change.
 
@@ -71,6 +74,8 @@ Adding a system is one array entry. It then appears in the grid, the matrix, the
 **The scenario toggle.** One global control, header-mounted, persisted to `localStorage`. Every band reads from it. But system pages show **both** scenarios side by side regardless — the contrast is the teaching point, so the toggle never hides one.
 
 **Contents rail.** `ArticleShell` builds it from the rendered `<h2>` elements, so it cannot fall out of sync with the page.
+
+**Every claim carries a source (principle 2).** `components/citation.tsx`. A page declares its references once, in citation order, and wraps its body in `<Citations ids={…}>`. Prose then cites by key — `<Cite id="crossing-assessments" />` — and the marker's number comes from that declared order, so the numbering and the `<ReferenceList />` at the foot of the page cannot drift apart. The marker is a button, not a jump link: the reference opens in place, because sending a reader to the bottom of the page to check a claim means they don't. An unregistered key renders `[?]` rather than failing silently. `/leaving/` is the worked example.
 
 **Placeholders are labelled as placeholders.** Map and graph slots say they are not built and name the dataset as TBD.
 
@@ -95,5 +100,7 @@ Then concatenate `app.css` and `app.js` into a single HTML file around `<div id=
 - `robots: { index: false }` in `src/app/layout.tsx` — flip it.
 - `X-Robots-Tag` in `netlify.toml` — remove it.
 - `SITE.status` draft banner in `site.ts` — remove it.
-- Source keys are all `"TBD"`. The `source` field on `Impact` is a plain string and should become a key into a real source register.
+- Every entry in `REFERENCES` is a placeholder pointing at example.org. Replace the entries and drop the `placeholder` flag; nothing else changes.
+- Source keys on `Impact` are all `"TBD"`. The `source` field is still a plain string and should become a key into `REFERENCES`, and `ImpactCell` should render the reference rather than linking to `/sources/`.
+- Contact details on `/contribute/` — email address and issue tracker link.
 - Typeface is a Georgia stack, chosen so the build has no network dependency. `src/app/globals.css` is the only file that names a typeface.

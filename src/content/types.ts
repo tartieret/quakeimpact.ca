@@ -40,3 +40,25 @@ export interface SystemEntry {
   /** Build-order tier from the project plan. */
   tier: 1 | 2 | 3;
 }
+
+/**
+ * A citable document. Everything on the site that states a fact points at one
+ * of these — see `src/content/references.ts` for the register.
+ */
+export type ReferenceKind = "report" | "dataset" | "analogue" | "page";
+
+export interface Reference {
+  id: string;
+  kind: ReferenceKind;
+  /** Title as it should be cited. */
+  title: string;
+  /** Author or issuing body. Omitted for internal pages. */
+  publisher?: string;
+  year?: number;
+  /** Document URL, or an internal path when `kind` is "page". */
+  href: string;
+  /** What this source is being used for. One line, shown in the popover. */
+  note?: string;
+  /** A stand-in link. Rendered as a warning; never silently hidden. */
+  placeholder?: boolean;
+}

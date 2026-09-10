@@ -136,7 +136,7 @@ export default function HomePage() {
           href="/after/"
           className="mt-6 inline-block text-sm font-medium text-accent underline underline-offset-4"
         >
-          All twelve systems
+          All thirteen systems
         </Link>
       </section>
 
