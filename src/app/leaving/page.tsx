@@ -91,8 +91,8 @@ export default function LeavingPage() {
                 </>,
                 <>
                   {ground} <Cite id="mv-liquefaction" /> Restoring a crossing
-                  also needs crews, plant and diesel on site, which is its own
-                  dependency. <Cite id="page-fuel" />
+                  also needs crews, equipment and diesel on site, which is its
+                  own dependency. <Cite id="page-fuel" />
                 </>,
                 departure,
               ]}
