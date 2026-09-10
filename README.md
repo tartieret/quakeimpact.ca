@@ -33,6 +33,8 @@ majors are excluded — those are migrations, not bumps.
 
 - `docs/site-overview.md` — purpose, principles, scenarios, band rubric, full
   content structure, sources, build order, open decisions. **Read this first.**
+- `docs/style-guide.md` — tone, voice, visual language, accessibility. Read
+  before writing any page.
 - `docs/stack-and-structure.md` — how the site is built.
 
 ## Where things live
