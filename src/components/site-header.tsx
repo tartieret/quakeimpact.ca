@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { NAV, SITE, UTILITY_NAV } from "@/content/site";
 import { ScenarioToggle } from "./scenario-toggle";
+import { SiteMark } from "./site-mark";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -23,12 +24,15 @@ export function SiteHeader() {
 
       <header className="sticky top-0 z-40 border-b border-rule bg-paper/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center gap-4 px-gutter py-3">
-          <Link href="/" className="mr-auto flex flex-col leading-none">
-            <span className="font-display text-lg tracking-tight">
-              {SITE.name}
-            </span>
-            <span className="mt-0.5 hidden text-[0.6875rem] text-ink-faint sm:block">
-              Lower Mainland, British Columbia
+          <Link href="/" className="mr-auto flex items-center gap-2.5">
+            <SiteMark />
+            <span className="flex flex-col leading-none">
+              <span className="text-lg font-bold tracking-[-0.03em]">
+                {SITE.name}
+              </span>
+              <span className="mt-1 hidden font-mono text-[0.5625rem] tracking-[0.08em] whitespace-nowrap text-ink-faint uppercase sm:block">
+                Lower Mainland, British Columbia
+              </span>
             </span>
           </Link>
 
@@ -38,9 +42,9 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 aria-current={isActive(item.href) ? "page" : undefined}
-                className={`rounded-md px-3 py-2 text-sm transition-colors ${
+                className={`rounded-sm px-3 py-2 text-sm whitespace-nowrap transition-colors ${
                   isActive(item.href)
-                    ? "bg-accent-soft font-medium text-accent"
+                    ? "bg-accent-soft font-semibold text-accent"
                     : "text-ink-muted hover:text-ink"
                 }`}
               >
@@ -58,7 +62,7 @@ export function SiteHeader() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-controls="mobile-nav"
-            className="rounded-md border border-rule-strong px-3 py-2 text-sm lg:hidden"
+            className="rounded-sm border border-rule-strong px-3 py-2 text-sm lg:hidden"
           >
             {open ? "Close" : "Menu"}
           </button>
@@ -78,7 +82,7 @@ export function SiteHeader() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="block rounded-md px-3 py-2.5 text-base hover:bg-accent-soft"
+                    className="block rounded-sm px-3 py-2.5 text-base hover:bg-accent-soft"
                   >
                     {item.label}
                   </Link>
