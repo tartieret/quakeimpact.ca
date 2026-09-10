@@ -72,7 +72,11 @@ export function Section({
   );
 }
 
-export function Prose({ paragraphs }: { paragraphs: string[] }) {
+/**
+ * Paragraphs are `ReactNode`, not `string`, so running text can carry inline
+ * citations — see `components/citation.tsx`.
+ */
+export function Prose({ paragraphs }: { paragraphs: ReactNode[] }) {
   return (
     <div className="prose-body max-w-2xl">
       {paragraphs.map((p, i) => (

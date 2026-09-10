@@ -87,7 +87,8 @@ The core of the site. Organised as a timeline: hours → days → weeks → mont
 | Sanitation | The one nobody thinks about. Christchurch: thousands of homes on chemical toilets for months |
 | Transportation | Crossings, the port, YVR on Sea Island delta ground, the highway network |
 | Large infrastructure | Port terminals and cranes, YVR on Sea Island, the BC Ferries terminals at Tsawwassen and Horseshoe Bay. **Assessments required before writing anything.** Assume nothing here — see note below |
-| Food and fuel | Feeding a metro region with the port down and crossings restricted. The problem is not stock, it is logistics. Fuel is the master dependency: generators, crews, trucks, hospitals and pumps all run on diesel arriving by road from a small number of terminals, most on the Burrard Inlet shoreline or the delta. Two points to land: a service station with full tanks and no power dispenses nothing, and the region holds only a limited number of days of supply. **Find that days-of-supply figure** — it may be the single most quotable number on the site |
+| Fuel | The master dependency, and it is upstream of almost everything else on this list. Generators, repair crews, trucks, hospitals and pumps all run on diesel arriving by road from a small number of terminals, most on the Burrard Inlet shoreline or the delta. Two points to land: a service station with full tanks and no power dispenses nothing, and the region holds only a limited number of days of supply. **Find that days-of-supply figure** — it may be the single most quotable number on the site |
+| Food | Feeding a metro region with the port down and crossings restricted. The problem is not stock, it is logistics: distribution centres, refrigeration, and a resupply cycle measured in days. Held separately from fuel because the failure is different — food is a demand the region cannot store its way out of, while fuel is the input every other system's repair depends on. Food waits on fuel; nothing waits on food except people |
 | Dams and reservoirs | Cleveland, Seymour Falls, Coquitlam. Dual-purpose content — they are the water supply and they are a downstream hazard. Metro Vancouver publishes dam safety material |
 | Housing | Tens of thousands displaced from standing but tagged buildings, into a region with no rental slack. Arguably the most underestimated consequence of all |
 | Health care | Surge demand against damaged facilities running on trucked diesel |
@@ -101,6 +102,8 @@ The core of the site. Organised as a timeline: hours → days → weeks → mont
 ### Part 2b — Who can actually leave
 
 If the answer to a broken region is "people leave," this section asks whether they physically can. It pairs with the food-supply arithmetic and the housing page.
+
+This is also the site's worked example of the citation convention — see section 7.
 
 **Vancouver is a peninsula, not an island.** Bounded north by Burrard Inlet and south by the North Arm of the Fraser, but connected by land eastward through Burnaby and New Westminster. That land route is the city's real lifeline, and it is worth saying plainly because the intuition is wrong.
 
@@ -140,6 +143,10 @@ Decided per dataset, based on what is actually available. Embed official viewers
 
 ## 7. Sources
 
+**How sources appear on a page.** A register nobody reads is not sourcing. Every source has a key in the register; running text cites the key and renders a numbered marker that opens the entry in place — title, publisher, year, what it is being used for, and the link. The same entries are listed again at the foot of the page. A marker may also point at another page on this site, so a claim can defer to the page that carries the reasoning instead of repeating it. `/leaving/` is the worked example.
+
+**Contributions.** `/contribute/` states what the project can use — a published document, a correction with a source behind it, a pointer to a report, a read from someone who does this work — and what it cannot: unsourced assertion, new modelling, analogues used to generate numbers. It is linked from the source register and from the reference navigation on every page.
+
 **Primary — reports.** NRCan seismic hazard model, Metro Vancouver and City of Vancouver seismic and infrastructure studies, published regional loss estimates, BC Hydro, Emergency Management BC / PreparedBC, seismic assessments of individual crossings.
 
 **Secondary — analogue events, for illustration only.**
@@ -166,7 +173,7 @@ A thin complete grid is worth less than a few deep pages.
 
 **MVP:** both scenarios, three systems end to end — **water, power, transportation** — plus the ground-conditions map and the band rubric. Publish it.
 
-**Then:** sanitation, food and fuel, communications, housing.
+**Then:** sanitation, fuel, food, communications, housing.
 
 **Then:** dependency graph, casualties, the full prepare section.
 

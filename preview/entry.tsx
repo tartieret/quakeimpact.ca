@@ -16,6 +16,7 @@ import DependenciesPage from "@/app/dependencies/page";
 import PreparePage from "@/app/prepare/page";
 import MethodPage from "@/app/method/page";
 import SourcesPage from "@/app/sources/page";
+import ContributePage from "@/app/contribute/page";
 import AboutPage from "@/app/about/page";
 import NotFound from "@/app/not-found";
 
@@ -47,6 +48,7 @@ function Route() {
   if (clean === "/prepare") return <PreparePage />;
   if (clean === "/method") return <MethodPage />;
   if (clean === "/sources") return <SourcesPage />;
+  if (clean === "/contribute") return <ContributePage />;
   if (clean === "/about") return <AboutPage />;
 
   const shaking = clean.match(/^\/shaking\/(.+)$/);

@@ -63,7 +63,7 @@ statically-exported page at `/after/<slug>/` with no other change.
 /shaking/[slug]/        ground, buildings, casualties, fire-following,
                         secondary-hazards
 /after/                 Part 2 index — timeline + system grid by build tier
-/after/[slug]/          12 system pages
+/after/[slug]/          13 system pages
 /leaving/               Part 2b — who can actually leave
 /dependencies/          the dependency graph
 /prepare/               Part 3
@@ -90,6 +90,13 @@ discipline is visible on the page rather than hidden in a backlog.
 
 **Every long page ends with a `Lever`.** No doom without one.
 
+**Claims in running text carry a citation.** `Cite` renders a numbered marker
+that opens the reference in place — document, publisher, year and link — and
+`ReferenceList` repeats the same entries at the foot of the page. Numbering
+comes from the page's declared reference order, so the two cannot drift apart.
+A reference can also point at another page on this site. `/leaving/` is the
+worked example.
+
 **`VerificationNote`** shows open research questions in public.
 
 **Contents rail** (`ArticleShell`) on pages with many sections; auto-built
@@ -104,8 +111,11 @@ built and name the dataset as TBD, so nothing reads as finished.
 - `robots: { index: false }` in `src/app/layout.tsx` — flip it.
 - `SITE.status` draft banner in `site.ts` — remove it.
 - `SITE.name` is a working title.
-- Source keys are all `"TBD"` and `/sources/` links are unresolved. A real
-  source register with stable keys should replace the string field on `Impact`.
+- Every entry in `src/content/references.ts` is a placeholder pointing at
+  example.org. Replace them and drop the `placeholder` flag.
+- Source keys on `Impact` are all `"TBD"`. The string field should become a key
+  into `REFERENCES` so `ImpactCell` renders the reference directly.
+- Contact details on `/contribute/` — email address and issue tracker link.
 
 ## License
 
