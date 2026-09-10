@@ -1,0 +1,42 @@
+@import "../src/app/globals.css";
+@source "../src";
+@source "../preview/entry.tsx";
+
+/*
+ * Preview-only: the Artifact host stamps an explicit theme on the root element.
+ * Higher specificity than the :root blocks in globals.css, so an explicit
+ * choice beats the OS preference in both directions.
+ */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-paper: #fbfaf7;
+  --color-paper-raised: #ffffff;
+  --color-ink: #171614;
+  --color-ink-muted: #67625a;
+  --color-ink-faint: #948d83;
+  --color-rule: #e4e0d7;
+  --color-rule-strong: #cfc9bd;
+  --color-accent: #14595e;
+  --color-accent-soft: #e6f0f0;
+  --color-band-low: #5f8f57;
+  --color-band-medium: #c1841f;
+  --color-band-high: #a63428;
+  --color-band-unknown: #948d83;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: #131210;
+  --color-paper-raised: #1c1a17;
+  --color-ink: #f2efe9;
+  --color-ink-muted: #a8a197;
+  --color-ink-faint: #7d766c;
+  --color-rule: #2e2b26;
+  --color-rule-strong: #423d36;
+  --color-accent: #6fbcbf;
+  --color-accent-soft: #1c2b2c;
+  --color-band-low: #7fb374;
+  --color-band-medium: #d8a03f;
+  --color-band-high: #cf6355;
+  --color-band-unknown: #8b847a;
+}
