@@ -23,6 +23,10 @@ npm run build      # emits out/
 npm run typecheck
 ```
 
+CI runs `npm run typecheck` on every pull request (`.github/workflows/ci.yml`).
+Dependabot opens grouped dependency PRs monthly; Next, React and TypeScript
+majors are excluded — those are migrations, not bumps.
+
 ## Documentation
 
 `docs/` is the project knowledge base and the source of truth for content:

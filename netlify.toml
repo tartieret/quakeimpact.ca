@@ -4,6 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  # Static export ships no server. Stop Netlify's Next.js Runtime from
+  # auto-attaching and provisioning functions for a build that has none.
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [[headers]]
   for = "/*"
