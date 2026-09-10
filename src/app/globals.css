@@ -2,38 +2,36 @@
 
 /* ------------------------------------------------------------------ */
 /* Design tokens                                                       */
-/* Swap the two font stacks here for a webfont later — nothing else    */
-/* in the codebase names a typeface.                                   */
+/* Typefaces are loaded in src/app/layout.tsx via next/font/google and */
+/* exposed as --font-libre-franklin / --font-jetbrains-mono.           */
 /* ------------------------------------------------------------------ */
 
 @theme {
-  --font-display: Georgia, "Iowan Old Style", "Times New Roman", serif;
-  --font-sans:
-    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  --font-display: var(--font-libre-franklin), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-libre-franklin), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --color-paper: #fbfaf7;
+  --color-paper: #f6f6f4;
   --color-paper-raised: #ffffff;
-  --color-ink: #171614;
-  --color-ink-muted: #67625a;
-  --color-ink-faint: #948d83;
-  --color-rule: #e4e0d7;
-  --color-rule-strong: #cfc9bd;
+  --color-ink: #14161a;
+  --color-ink-muted: #5c5f63;
+  --color-ink-faint: #6e7276;
+  --color-rule: #e2e2de;
+  --color-rule-strong: #c8c8c4;
 
-  --color-accent: #14595e;
-  --color-accent-soft: #e6f0f0;
+  --color-accent: #1f4f63;
+  --color-accent-soft: #e8eef2;
 
-  --color-band-low: #5f8f57;
-  --color-band-medium: #c1841f;
-  --color-band-high: #a63428;
-  --color-band-unknown: #948d83;
+  --color-band-low: #4f7f4a;
+  --color-band-medium: #b57a14;
+  --color-band-high: #9c2f24;
+  --color-band-unknown: #6e7276;
 
   --spacing-gutter: 1.25rem;
 
-  --text-display: 3.25rem;
+  --text-display: 3.5rem;
   --text-display--line-height: 1.06;
-  --text-display--letter-spacing: -0.02em;
+  --text-display--letter-spacing: -0.03em;
 }
 
 @layer base {
@@ -44,20 +42,19 @@
   @media (prefers-color-scheme: dark) {
     :root {
       color-scheme: dark;
-      --color-paper: #131210;
-      --color-paper-raised: #1c1a17;
-      --color-ink: #f2efe9;
-      --color-ink-muted: #a8a197;
-      --color-ink-faint: #7d766c;
-      --color-rule: #2e2b26;
-      --color-rule-strong: #423d36;
-      --color-accent: #6fbcbf;
-      --color-accent-soft: #1c2b2c;
-      --color-band-low: #7fb374;
-      --color-band-medium: #d8a03f;
-      --color-band-high: #d4645440;
-      --color-band-high: #cf6355;
-      --color-band-unknown: #8b847a;
+      --color-paper: #121417;
+      --color-paper-raised: #191c20;
+      --color-ink: #eef0f2;
+      --color-ink-muted: #a2a6ab;
+      --color-ink-faint: #797d82;
+      --color-rule: #2a2e33;
+      --color-rule-strong: #3c4147;
+      --color-accent: #7fb4cc;
+      --color-accent-soft: #182930;
+      --color-band-low: #7aab72;
+      --color-band-medium: #d3a03f;
+      --color-band-high: #d1665a;
+      --color-band-unknown: #868a8f;
     }
   }
 
@@ -71,6 +68,24 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+  }
+
+  /* No serif on this site: display type is the same grotesque, set bold.
+     Preflight resets headings to font-weight: inherit, so the weight is
+     stated here rather than repeated as a utility on every heading. */
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.025em;
+  }
+
+  h1,
+  h2 {
+    font-weight: 700;
+  }
+
+  h3 {
+    font-weight: 600;
   }
 
   ::selection {

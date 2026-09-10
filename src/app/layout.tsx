@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
+import { Libre_Franklin, JetBrains_Mono } from "next/font/google";
 import { ScenarioProvider } from "@/components/scenario-context";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SITE } from "@/content/site";
 import "./globals.css";
+
+const libreFranklin = Libre_Franklin({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-libre-franklin",
+  display: "swap",
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -23,7 +38,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${libreFranklin.variable} ${jetBrainsMono.variable}`}
+    >
       <body className="flex min-h-screen flex-col">
         <ScenarioProvider>
           <a
