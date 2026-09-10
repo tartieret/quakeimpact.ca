@@ -106,3 +106,7 @@ built and name the dataset as TBD, so nothing reads as finished.
 - `SITE.name` is a working title.
 - Source keys are all `"TBD"` and `/sources/` links are unresolved. A real
   source register with stable keys should replace the string field on `Impact`.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
