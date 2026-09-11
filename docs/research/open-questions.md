@@ -160,7 +160,11 @@ Both are recorded below.*
 35. **Whether the Resilient Neighbourhoods Program succeeded the Neighbourhood
     Emergency Preparedness Program.** `vancouver.ca/nepp` returns 404 and no page
     says so. The inference is reasonable and must not be published as a fact.
-36. **Household gas dependence in Vancouver.** The City's exercise toolkit carries
+36. **PERCS coverage in the Lower Mainland.** PEIRS states that "some regions have a
+    limited number of radio operators" and names none. Which regions, how many operators,
+    and whether the Lower Mainland is among the thin ones are all unstated. Assume neither
+    direction. Route: EMCR, or the published rosters of PERCS-affiliated clubs.
+37. **Household gas dependence in Vancouver.** The City's exercise toolkit carries
     "55% of homes are heated by natural gas" and similar figures as *scenario
     parameters*. They need an independent source — census dwelling heating, or a
     FortisBC filing — before any of them is usable.

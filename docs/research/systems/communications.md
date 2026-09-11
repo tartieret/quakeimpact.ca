@@ -163,6 +163,42 @@ Every channel described here fails the same way: not by breaking, but by filling
 - **It must not** present amateur radio as a *solution* the way it is often presented. The province
   presents it as a fallback that is itself expected to be congested.
 
+**And the province runs an organised amateur radio service, which changes what that
+caution means.** PEIRS: "**EMCR, through the Provincial Emergency Radio Communications
+Service (PERCS), has aligned with many amateur radio organizations across the province,
+and has installed amateur radio equipment at each PREOC.** A volunteer team of radio
+operators supports each PREOC and many EOCs across the province; however, **some regions
+have a limited number of radio operators**." [PEIRS] **[A]**
+
+**This reframes the warning above, and the reframing matters more than either passage
+alone.** The province is not cautioning against amateur radio — it has built amateur radio
+into its own provincial emergency structure, installed the equipment at every regional
+operations centre, and depends on volunteers to run it. The distinction it draws is
+between **affiliated operators and unaffiliated ones**, not between amateurs and
+professionals. "Non-sanctioned" means outside PERCS, not unlicensed.
+
+**Read together, the two passages give the site something better than a caution.** The
+province names a way in which amateur radio degrades the response *and* a way in which it
+constitutes the response, and the difference between them is **whether the operator is
+part of an organised group before the earthquake**. That is a real, specific, joinable
+thing — and it is a far more useful sentence than "get a radio", which was where an
+unqualified reading of the earlier passage pointed.
+
+**A stated capacity gap, in the province's own words.** "Some regions have a limited
+number of radio operators" is [A], it is EMCR describing its own service, and it is the
+kind of admission this site exists to surface. What is **not** established: which regions,
+how many operators, or whether the Lower Mainland is among the thin ones. No number
+appears. **[?]** Do not assume the Lower Mainland is well covered because it is populous,
+and do not assume it is thin because the province says some regions are. Neither is
+sourced.
+
+**Correction to this file, 10 September 2026.** The radio caution above was written
+before this passage was read, and it carried a guard warning the site off presenting
+amateur radio as a solution. That guard stands for equipment bought by an unprepared
+household. It does **not** stand as written for organised radio, which the province
+treats as part of its own capability. Both halves belong on the page, and the hinge
+between them is affiliation.
+
 **Where this belongs on the site.** Beside the lever, not beside the failure. The useful household
 consequence of this whole page is not a piece of equipment — it is **send a text, not a call**,
 which is free, needs nothing bought in advance, and is the province's own recommendation two
