@@ -66,13 +66,14 @@ We are not in the business of motivating through alarm. We are in the business o
 ## 5. Sentence-level rules
 
 - **Aim at a reader who left school at sixteen.** Not because the audience is unsophisticated, but because that is who a public-information site has to reach. If a sentence needs re-reading, rewrite it.
-- **Define a term the first time it appears on a page, in the sentence itself.** "Liquefaction — saturated soil losing strength and behaving like a liquid during shaking — is the reason..." Not a glossary the reader has to leave the page for.
+- **Define a term the first time it appears on a page, in the sentence itself.** "Liquefaction, saturated soil losing its strength and behaving like a liquid while the ground shakes, is the reason..." Not a glossary the reader has to leave the page for.
 - **Prefer the everyday word.** *Restoration* over *remediation*. *Broken* over *compromised*. *Bridge approach* over *abutment transition*, on first use.
 - **Ranges, not point estimates.** "Weeks to months" is honest. "Six weeks" implies a precision the sources do not have.
 - **Numbers in the reader's units.** Litres per person per day, not cubic metres. Days, not hours, once past the first week.
 - **No hedge stacking.** "May potentially be somewhat affected" says nothing. Say what the source says, once.
 - **Active voice, named actors.** "BC Hydro would need to..." not "restoration efforts would be required."
 - **Canadian spelling.** *Metre*, *centre*, *neighbourhood*, *programme* → *program* (Canadian usage takes the short form here). Follow the *Canadian Oxford*.
+- **No em dashes or en dashes in the site's own voice.** Use a comma, a full stop, a colon or a pair of brackets. The dash is the punctuation of an aside, and an aside is usually a guard that belongs in the sentence or a clause that belongs in its own. Three carve-outs: a verbatim quotation keeps the source's punctuation exactly, including its dashes; a proper name keeps its own, as in *Open Government Licence – Canada*; and a numeric range keeps its en dash, as in *pp. 34–35* or *1–8 weeks*. This rule applies to anything a reader sees, including a heading, a label, a caption, alt text and a source register note.
 
 ---
 
@@ -109,6 +110,8 @@ We are not in the business of motivating through alarm. We are in the business o
 
 Avoid throughout: *apocalyptic, catastrophic* (unless quoting a source), *ticking time bomb*, *overdue*, *ground zero*, *war zone*, *devastation*, *unimaginable*.
 
+A word on this list is still allowed inside a proper name, because a name is not a word choice. The Institute for Catastrophic Loss Reduction is cited by its name.
+
 ---
 
 ## 8. Visual language
@@ -125,7 +128,17 @@ The design carries the same argument as the words: serious, quiet, sourced.
 
 **Maps show the ground, not the municipality.** A choropleth by city misleads. Municipal outlines are reference, laid over the real variable.
 
-**Placeholders admit what they are.** An unbuilt map says so and names its dataset. Nothing on this site should look more finished than it is.
+**Geometry may not assert a precision the source does not have.** Section 5's rule against point estimates applies to drawings, and more sharply, because a shape reads as a measurement. "Many months" drawn as a bar on a month axis is an invented number. Where a source gives a range, the drawing shows a range. Where a source gives no end, the drawing has no end. No axis without a domain a source states.
+
+**Meaning without colour needs a vocabulary, not just a prohibition.** Solid fill is a quantity a source published. A hatch is a range or an open end. An axis is a domain a source gives. One tick is one counted thing. A rule separates two things that must not be read as one. The worked version is in `src/components/figures/README.md`.
+
+**A mark is load-bearing if covering it takes something away.** WCAG asks 3:1 of a graphical object a reader needs in order to understand the content, and the way to apply that without turning a quiet page into a loud one is to test each mark rather than raise all of them. Cover the mark with a thumb. If the drawing still says everything it said before, the mark is furniture: a divider under a heading, the border of a card, a gridline dropped from an axis that already labels every value, the frame around a map, the empty run a bar is drawn over where an axis states the domain and the panel writes the finding in words. Furniture stays on the two rule greys and stays quiet. If something goes missing, the mark is load-bearing and is drawn in `--color-mark`, which clears 3:1 on paper, on raised paper and on the accent tint in both themes. Load-bearing covers the axis a reader measures against, the scale line a value sits on, the spine or rail that carries an order, the outline that is the only thing defining a node, the rule between two scales that must not be read as one, and the unfilled segment of a meter, which is its denominator: cover the two empty segments and two of three reads as a bare two.
+
+**There is no third grey.** A mark that looks too heavy at 3:1 is nearly always a mark that was furniture all along, and the fix is to reclassify it rather than to invent a weight between the two. The one honest exception is a hairline drawn across a filled bar, which cannot reach 3:1 against ink and mid grey at once: it clears a slot of paper for itself, or it overhangs the bar at both ends onto paper, and the part of it that carries the reading is the part on paper.
+
+**Alt text carries the guard, not only the finding.** Where a figure exists to stop a misreading, its alt text says so. A reader who cannot see the figure must not be left holding the misreading the figure was drawn to prevent.
+
+**Placeholders admit what they are, and only where one is honest.** An unbuilt map says so and names its dataset. A placeholder for a graphic the site will never be licensed to draw is a promise rather than a label, and is worse than nothing. Nothing on this site should look more finished than it is.
 
 ---
 

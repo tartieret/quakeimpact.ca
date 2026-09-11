@@ -1,8 +1,14 @@
-"use client";
+/**
+ * Bands, drawn.
+ *
+ * Presentational and server-rendered: nothing here holds state, and nothing
+ * here reads the source register. The impact cell, which does read it, is in
+ * `impact-cell.tsx`, so that a client component wanting a band pill does not
+ * drag 325 reference entries into the browser with it.
+ */
 
-import Link from "next/link";
 import { BANDS } from "@/content/site";
-import type { Band as BandId, Impact } from "@/content/types";
+import type { Band as BandId } from "@/content/types";
 
 const FILL: Record<BandId, number> = { low: 1, medium: 2, high: 3, unknown: 0 };
 
@@ -28,7 +34,11 @@ export function BandMeter({ band }: { band: BandId }) {
             band === "unknown" ? "hatch" : ""
           }`}
           style={{
-            background: i <= filled ? COLOR[band] : "var(--color-rule-strong)",
+            /* An unfilled segment is the denominator, not decoration: cover two
+               of them and "two of three" reads as a bare two. It is a
+               load-bearing mark and takes the mark token, the same as the SVG
+               redraws of this meter in the figures. */
+            background: i <= filled ? COLOR[band] : "var(--color-mark)",
           }}
         />
       ))}
@@ -36,43 +46,18 @@ export function BandMeter({ band }: { band: BandId }) {
   );
 }
 
+/**
+ * The meter beside the label is the only thing that carries the band's hue.
+ * The label used to be set in the band colour too, and at 12 px semibold three
+ * of the six ramp values were below AA on paper: medium 3.37:1, low 4.34:1.
+ * Colouring it bought nothing the swatch was not already saying, so the label
+ * is ink and the colour stays where it is a fill rather than text.
+ */
 export function BandPill({ band }: { band: BandId }) {
   return (
-    <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase">
+    <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-ink uppercase">
       <BandMeter band={band} />
-      <span style={{ color: COLOR[band] }}>{BANDS[band].label}</span>
+      <span>{BANDS[band].label}</span>
     </span>
-  );
-}
-
-/**
- * The presentation rule from the project brief: a coloured cell alone reads as
- * assertion. Every impact is band -> one sentence of mechanism -> source link.
- */
-export function ImpactCell({
-  impact,
-  label,
-}: {
-  impact: Impact;
-  label?: string;
-}) {
-  return (
-    <div className="flex flex-col gap-2 rounded-lg border border-rule bg-paper-raised p-4">
-      {label ? (
-        <span className="text-[0.6875rem] font-semibold tracking-[0.08em] text-ink-faint uppercase">
-          {label}
-        </span>
-      ) : null}
-      <BandPill band={impact.band} />
-      <p className="text-sm leading-relaxed text-ink-muted">
-        {impact.mechanism}
-      </p>
-      <Link
-        href="/sources/"
-        className="text-xs font-medium text-accent underline underline-offset-2"
-      >
-        Source: {impact.source}
-      </Link>
-    </div>
   );
 }

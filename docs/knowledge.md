@@ -11,6 +11,361 @@ it was confirmed.
 
 ---
 
+## A mark that crosses a bar has to be given a ground before it is drawn
+
+**11 September 2026.** The fix for the open end on `PrepareDaysByDocument`, and the
+general shape of the answer. SVG paints in document order and has no notion of a
+mark "on top of" anything, so a qualifier drawn over a bar is drawn in whatever
+colour the bar already put there. Three marks in `prepare.tsx` were affected, and
+only the first was visible to the harness:
+
+- The open-end arrowhead, `muted` on a `muted` bar, measured 1:1 in both themes.
+- The midpoint upright on the school panels, `ruleStrong` where it crosses the
+  empty track in `rule`: 1.30:1 in light, 1.36:1 in dark. Below the 3:1 that a
+  non-text graphic needs, and the panel that fails is the province-wide one, whose
+  bar stops short of the midpoint, which is the panel the mark exists for.
+- The gridlines at 3 and 7 days, `rule` drawn under a `TrackBase` in `rule`:
+  identical colour, and painted first, so occluded outright across every bar and
+  1.28:1 against paper in the gaps between rows. Dead ink at both ends.
+
+The device that fixes all three is a slot: the mark clears a rectangle of
+`--color-paper-raised` for itself, then draws into it. It is the same trick the
+hatch pattern already uses when it fills its own background rather than leaving it
+transparent, generalised. Measured after: the arrowhead is 6.42:1 in light and
+6.98:1 in dark against its own ground.
+
+Three things learned building it, each of which cost a rebuild:
+
+- **A slot is bounded by what it clears, not by the mark it carries.** The school
+  upright runs five pixels past the track at each end; its slot does not, because a
+  paper rectangle on paper is itself a mark with no ground, and the harness rightly
+  says so.
+- **A slot must stop where the bar stops.** Drawn as one full-height rule across the
+  whole block, the gridlines erased the row labels they passed through. They are now
+  one segment per bar, and a gridline stands down where a document's own end already
+  falls on the value, so the stop is never overwritten by a gridline.
+- **A nested `<svg>` hides a mark's real ground.** `At` opens one, and anything
+  measuring what a mark sits on treats that nested root as the start of the world.
+  Keep the knockout in the outer drawing, with the percentage anchor and a pixel
+  `transform`, and put only the path that needs pixel coordinates inside `At`.
+
+Floor and ceiling now differ in the first channel as well as the written one: a
+closed end is flush with the bar and stops against an upright, an open end is cut
+back and detaches across a gap of paper.
+
+## An id on a heading is an id in the contents rail
+
+**11 September 2026.** `TableOfContents` builds itself from
+`main section[id] > h2, main section[id] h3[id]`, which is what lets a page author
+add a subhead without maintaining a second list. On `/sources/` the publisher
+subheads carry ids so the jump list can point at them, and there are 177 of them:
+the rail came out 8,122 px tall in a 900 px viewport, 182 links, and a sticky box
+taller than the viewport stops behaving as sticky, so everything past the first
+screenful was unreachable.
+
+The fix is not to drop the ids, because the jump list needs them. It is to put the
+id one element out, on the `<div>` that wraps the heading and its list. The fragment
+still lands on the group, the heading is still the first thing under it, and the
+rail falls to the five real sections and 235 px. Worth remembering as a general
+property: on this site an id on an `<h3>` inside a section is a request to appear in
+the rail, so a heading that only needs to be linkable should carry its id on a
+wrapper.
+
+## One key, one anchor
+
+**11 September 2026.** `/sources/` renders the datasets twice, once in their own
+section with the licences in full and again in the full list, and `Entry` set
+`id={"ref-" + entry.id}` both times. Eight duplicate ids, invalid HTML, and a
+`#ref-` link landing on whichever copy the browser met first. The short code is
+advertised on the page as the entry's permanent address, so it has to resolve to
+one place, and the full list is the register. `Entry` now takes `anchored`, and the
+earlier showing carries none. Measured after: 325 `ref-` ids on the page, 325 of
+them unique, and each of the eight formerly doubled keys lands 112 px from the top
+of the viewport, which is the `scroll-mt-28` the entry asks for.
+
+One trap when checking this by hand. The site sets `scroll-behavior: smooth`, and
+`/sources/` is about 69,000 px tall, so a fragment jump is an animation lasting
+several seconds. Measure the landing position after forcing `scroll-behavior: auto`,
+or the numbers are a scroll caught mid flight and every anchor looks broken.
+
+## The register's notes are read by neighbours, and they had drifted to colleagues
+
+**11 September 2026.** The Source cell's note is rendered twice: in the citation popover
+on every page that cites the key, and again on `/sources/`. Nothing in the register said
+so loudly enough, so the notes accumulated exactly the defect `style-guide.md` §4
+predicts. Live on the site, before this pass: "[A] on line-item names and section totals
+only … whose column alignment does not survive extraction. Use MV-CAPEX-2026",
+"Replaces NAB-WIKI", "grep-verified to contain no mention of 'earthquake'", "cite that".
+Seventy-six rows carried something written to a colleague.
+
+- **Translating a note is not deleting it.** "Per-project figures must not be quoted
+  from this table, whose column alignment does not survive extraction" is a real finding
+  about what the document supports. The reader-facing half is "the plan supports the
+  names of the projects and the total for the section, not a figure for any one
+  project"; the half about our PDF tooling is not a fact about the world.
+- **The register now has a place for the other half.** An HTML comment inside a cell,
+  `<!-- research: … -->`, is stripped by `scripts/build-references.mjs` in `cells()` and
+  never reaches `references.ts`. Confidence markers, superseded keys, document-host ids
+  and "highest-priority document to obtain" live there, one line from the row they
+  belong to and still greppable. A comment may not contain a pipe. This was preferred to
+  a new column, which would have meant editing 325 rows and changing `Reference` in
+  `src/content/types.ts`, and to deleting the material, which would have lost it.
+- **Two generated strings are copy too, and nobody had read them as copy.**
+  `accessNotes()` synthesises a sentence for a paywalled, refused or unrecovered link.
+  It said "The host returns 403 to an automated fetch; open it in a browser", which is
+  our tooling talking; it now says the site refuses a request that does not come from a
+  browser. It also lowercases the first letter of the URL cell to graft it onto "No link
+  recovered:", so a URL cell that opens with a proper name renders as "bC Hydro's".
+  Start those cells with an ordinary word.
+- **A citation key is invisible in a popover.** A note that says "superseded by
+  `COV-RISK-2024`" is resolvable on `/sources/`, where the code is on screen, and is
+  noise in a popover that shows one document. Cross-references in a note now name the
+  document in words; the key goes in the research comment.
+
+## `/sources/` was ordered by the one thing a reader does not know
+
+**11 September 2026.** The page listed 325 entries in a single alphabet, each led by its
+internal key, with a jump list of 26 letters. A reader looking for the BC Hydro filing
+had to know it was filed under B. The fix needed no JavaScript: the list is grouped by
+the register's own Organisation cell, the document title leads each entry, and the code
+moved to the end where it is still the anchor and still copyable. The jump list is now
+the 19 organisations holding three or more documents, which is a table of contents
+rather than an alphabet.
+
+A filter box was considered and not built. It would have been the only client component
+on the page that proves the site's sourcing, and the page has to render with JavaScript
+off; grouping by publisher answers the same question statically. Grouping into publisher
+*families* was also rejected: 176 distinct organisations would need a classifier, and a
+classifier silently misfiles the next row someone adds. A group of one is honest.
+
+## Open data licences are a field on the record, and the APIs will tell you
+
+**11 September 2026.** Acquiring the three map datasets the site is allowed to draw, the
+useful discovery was that every licence question has a machine-readable answer, which
+turns "check each record individually" from a chore into a one-line check.
+
+- **City of Vancouver, Opendatasoft.** `opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/<slug>`
+  returns `metas.default.license` and `license_url` for that dataset. That is the record
+  stating its own licence, which is what `licensing.md` asks for. The portal holds 198
+  datasets in total, so `?limit=100` twice enumerates the lot when a slug is unknown —
+  which is how the DFPS slug, recorded as unconfirmed, was confirmed as
+  `dedicated-fire-protection-systems-dfps-water-mains`.
+- **BC Data Catalogue, CKAN.** `catalogue.data.gov.bc.ca/api/3/action/package_show?id=<slug>`
+  returns `license_title`. Neighbouring records genuinely differ — Freshwater Atlas layers
+  come back "Open Government Licence - British Columbia" while several forestry and
+  fisheries layers come back "Access Only" — so the rule that OGL–BC is not a blanket
+  licence for `gov.bc.ca` is not theoretical.
+- **The human-readable licence page may be unreachable even when the licence is not.**
+  `vancouver.ca/your-government/open-data-licence.aspx` returns 403 to every non-browser
+  client, and the Archive copy 404s. The record's own licence field is the stronger
+  evidence anyway; note the gap rather than imply the prose was read.
+
+**Getting the data out, once the licence is settled.** `openmaps.gov.bc.ca/geo/pub/<OBJECT_NAME>/ows`
+is a WFS in front of any public BC warehouse layer and returns GeoJSON for a bounding box,
+so there is no shapefile to parse and no whole-province download. Two traps: the `bbox`
+parameter wants **lon,lat** order despite WFS 2.0 nominally being lat,lon, and silently
+returns zero features given the other way; and output arrives in BC Albers unless
+`srsName` is the URN form `urn:ogc:def:crs:EPSG::4326`. GitHub-hosted data in an LFS
+repository needs `media.githubusercontent.com/media/<owner>/<repo>/<ref>/<path>`; the
+ordinary raw URL hands back a 133-byte pointer file that parses as a perfectly valid CSV.
+
+**The pattern the vendored data follows**, in `scripts/data/` and `src/data/`: the script
+fetches the original into an uncommitted `.data-cache/`, reduces it, and writes a small
+committed JSON. Script and output are both in the repository, so the derivation is
+auditable and repeatable, and nothing on the site touches the network at build or run
+time. Reductions use a thirty-line Douglas–Peucker in metres rather than a dependency.
+Sizes, and what each one dropped, are in `research/maps.md`.
+
+**Read the geometry before deciding what the graphic is.** The Dedicated Fire Protection
+System layer had been described through three project documents as a coverage boundary,
+"a single closed shape". It is 245 line segments of water main. What can honestly be drawn
+from it is the network, not a boundary, because a boundary would be a hull the project
+invented and then attributed to the City. The same check caught the province's own
+major-bridge record for the Pattullo sitting about 20 km from the Pattullo.
+
+---
+
+## A figure has no viewBox, because a viewBox scales the type
+
+**11 September 2026.** The figure system lives in `src/components/figures/`, with
+`README.md` there as the convention and `figure-kit.tsx` as the parts list. The first
+two figures are on `/after/water/`.
+
+The decision everything else follows from is counter-intuitive and worth recording: a
+figure on this site has **no `viewBox`**. A viewBox scales the drawing uniformly, text
+included, so type sized to read at 390 px is oversized at the 672 px reading measure and
+type sized for the measure fails AA on a phone. There is no size that satisfies both.
+Instead the `<svg>` is `width="100%"` with a fixed pixel height, horizontal positions are
+percentages of the drawing width, and vertical positions and every type size are pixels.
+Text is then the same physical size at every width. Confirmed by building both water
+figures and checking the static export at both ends.
+
+Three consequences fell out of it:
+
+- **Percentages cover rectangles and text but not paths**, because path data has no
+  percentage units. The fix is a nested `<svg>` that takes the percentage anchor and
+  draws its children in pixels relative to it; `At` in the kit is that, and the arrowhead
+  on the open-ended bar is its only current use.
+- **A rectangle at `x="0"` or `x="100%"` has its stroke half clipped** by the edge of the
+  drawing. Axis ticks are drawn as 1 px rects nudged inward with a pixel `transform`
+  rather than as stroked lines, and tracks are filled rather than outlined.
+- **SVG text does not wrap.** A label is a few words bound to the geometry and lives in
+  the figure component; the sentence-level caption and the alt text live in the page
+  module beside the prose, where they reflow and can carry `<Cite>` markers.
+
+Colour was not needed for either figure and no token was added to `globals.css`. The
+drawing grammar carries the meaning instead, and it is deliberately the same grammar the
+band meter already uses: solid fill is a figure a source published, hatch is a range or
+an open end, a rule separates two things that must not be read as one, and an axis is
+drawn only where a source gives a domain. The water clocks figure has no axis on its
+second panel for exactly that reason: nobody has published how long restoration takes,
+and an axis would invite a reader to measure a date off it.
+
+**Where the style guide turned out to be underspecified.** §8 settles what a figure may
+look like but not what a figure may claim. Three gaps showed up in practice, and the
+answers are now in the figures README rather than in the guide: a drawing needs a stated
+rule that geometry may not assert a precision the source lacks (which is what produced
+the no-axis panel and the hatched fifth day); "never meaning in colour alone" needed a
+positive counterpart, which is the solid/hatch grammar; and alt text needed the extra
+requirement that where a figure exists to stop a misreading, the alt text has to carry
+the guard, not only the numbers. If any of those should be promoted into §8 as site-wide
+voice, that is a decision for the style guide rather than for the component folder.
+
+## Copy lands as typed page modules, and the shape is what stops a wrong page
+
+**11 September 2026.** The finished copy in `docs/copy/` is markdown and there is no
+markdown pipeline. A copy file is ported by hand into a module under
+`src/content/pages/`, which becomes the source of truth for that page's words; the
+route template renders it and holds none.
+
+The module exports `meta: PageMeta`, `sections: PageSection[]` and `lever: PageLever`.
+The body is a typed array rather than a component on purpose, because the array is what
+makes three failures impossible rather than merely discouraged. Every `<h2>` comes from
+a `PageSection.title` and the route renders it through `Section`, so a heading cannot be
+authored outside the contents rail. `lever` is a required field rather than one section
+among many, so the block that makes a page usable cannot be dropped or turned into
+prose. And `meta.references` is the citation contract: `Cite` numbers a marker by the
+key's position in that array and `ReferenceList` reads the same array, so an undeclared
+key renders a visible `[?]` instead of a number and the drift shows on the page.
+
+The registry in `src/content/pages/index.ts` keys modules on `meta.route`, so the key
+and the page cannot disagree. `unwritten.tsx` holds the standing text for a page whose
+evidence is gathered and whose body is not, as a `PageSection`, so an unwritten page
+renders through the same path as a written one and its one heading appears in the rail.
+
+**How confirmed:** `/after/water/` builds with fifteen markers numbered in
+first-cited order and no `[?]`; every block of `docs/copy/water.md` appears word for
+word in the rendered HTML.
+
+---
+
+## The system template promised a map the project had already decided not to build
+
+**11 September 2026.** `/after/[slug]/` carried a "Where it is worst" slot on all
+thirteen system pages, captioned as the system's assets drawn on poor ground. That
+overlay rests on the Metro Vancouver microzonation layers, which `licensing.md` records
+as link-only under ICLR's custom terms, and which the decision of 10 September 2026
+gives up rather than hold open. A placeholder is honest about a graphic that is coming;
+it is not honest about one that is not. The slot is gone, and a page with a graphic it
+can actually draw puts it in its own module with the licence beside it, which is what
+`MapPlaceholder`'s `licence` prop is for.
+
+---
+
+## A citation key cited more than once repeats its element id
+
+**11 September 2026.** `Cite` gives the marker button an id of `cite-` plus its number, and the
+number is the key's position in the page's reference array rather than the marker's
+position on the page. A key cited six times, as `MV-WATER-22` is on the water page,
+therefore renders six elements carrying `id="cite-1"`. The backlink from
+`ReferenceList` still lands on the first of them, so the behaviour is right and the
+markup is not. Recorded rather than fixed: it belongs to `citation.tsx`.
+
+---
+
+## The source register is generated from the research file, and its Source cell has four shapes
+
+**11 September 2026.** `src/content/references.ts` is now produced by
+`scripts/build-references.mjs` from the register table in `docs/research/sources.md`
+(`npm run references`), and committed. 325 rows, plus two internal page entries written in
+the script because a cross-reference to `/method/` is not a document.
+
+The Source column mixes a document title with an editorial note, and it does so four ways
+consistently: an italicised `*Title*`, a quoted `"Headline"` for news, `Title — note` for a
+page or dataset, and `Author, "Article", *Journal*… **note**` for a full citation, where the
+note opens with the bold run. Splitting on only the italic form leaves two hundred
+three-hundred-character "titles", so the parser takes whichever separator comes first, the
+em dash or the bold run. This is a property of how the register is written, not a guess per
+row: change the convention in the register and this script has to change with it.
+
+Two smaller decisions worth keeping. The `date` field is the register cell verbatim, because
+it carries *undated*, *not recovered* and *accessed 10 Sep 2026*, and a numeric `year` is
+derived only where the cell is not purely an access date, since when we looked at a living
+page is not when it was published. And `Reference.href` is required by the type, so the eight
+rows whose document was never recovered carry an empty `href` and the pages render "no link
+to follow" rather than a link that goes nowhere.
+
+---
+
+
+## A `ready` flag cannot suppress a paint that has already happened
+
+**11 September 2026.** `ScenarioProvider` carried a `ready` boolean, documented as
+being there "to avoid a flash", and nothing in the codebase read it. The reason it
+was never consumed is structural rather than an oversight.
+
+The sequence on a static export is: the exported HTML carries the default scenario,
+React hydrates it, a passive effect then reads `localStorage`, and a second render
+follows. The browser paints between hydration and that second render, so a reader
+whose stored choice is the crustal scenario genuinely sees a frame of Cascadia
+bands. A flag set in the same passive effect is set *after* that paint. Anything
+consuming it would have had to hide the bands in the exported HTML too — which
+costs every reader without JavaScript the content, on a public-information site.
+
+The fix is to move when the preference is applied, not to cover the moment it is
+wrong. A layout effect is committed before paint; a passive effect is not. React
+warns if `useLayoutEffect` runs on the server, so the provider picks the hook by
+environment (`typeof window === "undefined" ? useEffect : useLayoutEffect`) — the
+standard isomorphic-layout-effect shape, and safe because the choice is constant
+within an environment so hook order never changes. `ready` was then removed: a
+flag nothing can usefully read is worse than no flag, because the next person
+assumes the problem is handled.
+
+A render-blocking inline script in `<head>` stamping the preference on the root
+element would remove the flash from the very first paint, and is the better answer
+if the site ever grows a second persisted preference. It has to live in
+`src/app/layout.tsx`.
+
+## An impact cell's source key and a citation key are the same key
+
+**11 September 2026.** `ImpactCell` used to render `Source: {impact.source}` linked
+at `/sources/` whatever the string was, so the band grid and `components/citation.tsx`
+were two unconnected sourcing mechanisms and a typo in a key was invisible. Both
+now resolve against `REFERENCES` in `src/content/references.ts`, and the register
+keys from `docs/research/sources.md` are used verbatim in `Impact.source`.
+
+An unresolved key fails visibly in both, the way `Cite` renders `[?]`. That matters
+more than it sounds: the register has 347 keys and the site has 26 impact cells, so
+a silent fallback would be a claim on the page resting on nothing, presented as
+sourced.
+
+## `Impact.evidence` exists because a band is not a measurement of its column
+
+**11 September 2026.** Most published work assesses one design earthquake, so the
+same mechanism sentence stands in both scenario columns. Two of the site's sources
+pull in opposite directions, which is easy to get backwards: `MV-WATER-22` models
+the magnitude 9 megathrust only, so its 267 main failures are a megathrust figure
+sitting in the crustal column; `PEIRS` is the province's **crustal M7** planning
+scenario, so everything resting on it (sanitation, fuel, food) is a crustal figure
+sitting in the Cascadia column. `DCRRA-APPC`'s 65% is neither — it is stated at the
+building code's design ground motion, which is a hazard level rather than a
+scenario, so it needs no evidence line and must not be given one.
+
+`evidence` is written only where the assessment does not model the column it sits
+in. Filling it everywhere would train readers to skip it.
+
+---
+
 ## A failed fetch saved with a .pdf extension is not a PDF
 
 **10 September 2026.** Two candidate URLs existed for one Metro Vancouver agenda,
@@ -490,3 +845,500 @@ The whole file reformats, so the diff looks like deliberate work and will be sta
 It is Next.js maintaining its own config, not a change the branch meant to make. Check
 `git status` after a build and restore the file unless the change is the point of the
 commit. The same caution applies to any tool that edits config in place during a build.
+
+---
+
+## Tailwind's cascade layers are what let `.prose-body` style bare elements
+
+**11 September 2026.** Authored long-form copy is written as plain `<ul>`, `<h3>`,
+`<blockquote>` and `<table>` inside `Prose`, with no classes on them. Preflight has
+already stripped list markers, heading weights and table borders, and the project has
+no typography plugin, so those elements need an element layer of their own.
+
+The rules live in `@layer components` in `globals.css`. Layer order, not specificity,
+decides the winner between layers: `components` beats Preflight in `base`, and every
+Tailwind utility in `utilities` beats `components`. That is the whole reason a
+component can carry utilities in its markup and still sit inside `.prose-body` without
+a specificity war. It also means a rule written outside a layer would beat all three,
+so anything added to that file belongs inside one.
+
+Two rules are scoped to direct children anyway — `.prose-body > blockquote` and
+`.prose-body > table` — because `Quote` and `DataTable` draw a rule and a border of
+their own on a wrapper the utilities cannot reach into. Without the `>`, a quotation
+inside a run of prose came out with two left rules.
+
+## A scrollable table has to be reachable from a keyboard
+
+`DataTable` puts the table in an `overflow-x-auto` container so a wide table scrolls
+inside its own box instead of making the page scroll sideways. A pane that scrolls only
+by dragging cannot be read without a mouse, so the container is a focusable region:
+`tabIndex={0}` with `role="region"` and `aria-labelledby` pointing at the table's real
+`<caption>`. This is the one place on the site where a role beats a semantic element,
+because there is no element that means "scrollable pane".
+
+## The lever is a section, not an aside
+
+`Lever` used to render an `<aside>` with an `<h3>`, which kept "What you can do" out of
+the contents rail and out of the heading order. Every copy file gives it an
+`## What you can do` heading, and it is the thing a reader who already knows the risk
+came for. It is now a real `<section>` with an `<h2>`, still inside its accent panel:
+the rail query is `main section[id] > h2`, so the heading has to be a direct child of
+the section, which is why the panel is the section rather than a div inside it.
+
+## The contents rail observes headings, not sections
+
+The rail now lists `<h3>` subheads under their `<h2>`, which meant the
+IntersectionObserver could no longer observe section elements: a section and a subhead
+inside it both intersect, and sorting by position always resolved to the outer one, so
+a subhead could never become current. It observes the heading elements themselves
+instead. They are short, the observer band is a thin strip near the top of the
+viewport, and so at most one is inside it at a time. An `<h3>` is listed only if it
+carries an id, which is what `Subhead` gives it; a bare `<h3>` stays out of the rail.
+
+---
+
+## Only the first marker for a key carries an id, and it claims it
+
+**11 September 2026.** The duplicate `id="cite-1"` recorded further up this file is
+fixed. The number still comes from the key's position in the declared array, because
+that is the citation contract, but the id no longer follows from it automatically: the
+first marker to render for a key takes `id="cite-N"` and every later marker for the same
+key renders with no id at all. Only one element needs one, since the only thing pointing
+at it is the backlink from `ReferenceList`, which now lands on the first marker by
+design rather than by accident.
+
+"First" is decided by a small per-page map held in the citation provider. A marker asks
+whether its own `useId` holds the key, and the map answers the same way every time it is
+asked, so the claim is idempotent: a re-render, a Strict Mode double invocation and
+hydration all give the same marker the id. Markers render in document order on the
+server and again on the client, so the server and the browser agree on which one it is.
+
+## A client component that imports the register ships all 325 entries
+
+**11 September 2026.** `citation.tsx` was a client component, because opening a
+reference in place needs state, and it imported `REFERENCES` at module scope. Every page
+carrying a citation therefore shipped the whole generated register, about 160 KB of
+source and 145 KB of it minified into a chunk, to read the handful of documents that
+page cites.
+
+The fix is a boundary rather than a rewrite. `citation.tsx` is now a Server Component
+that resolves the page's declared keys and hands the resolved entries to a small client
+provider in `citation-client.tsx`, which imports no register. What crosses into the
+browser is the page's own references and nothing else.
+
+`band.tsx` had the same fault for the same reason, and it mattered as much: it was a
+client component whose `SourceLine` read the register, so every system page shipped the
+register a second way and the citation fix alone would have changed nothing there. The
+impact cell and its source line now live in `impact-cell.tsx`, a Server Component;
+`band.tsx` keeps only the drawing, which `system-grid.tsx` can import from the client
+without dragging the register along. A page with citations went from 739,715 to 595,092
+bytes of JavaScript, at the cost of about 10 KB of HTML for the entries that now travel
+in the payload.
+
+The general rule: a `"use client"` file imports data modules at its own page's expense.
+Resolve the lookup on the server and pass the answer across.
+
+## The lever is optional, and route templates spread it
+
+**11 September 2026.** `PageModule.lever` is optional. The principle is no doom without
+a lever, and `/method/` carries no doom: it explains the rubric. It was typed
+`Omit<PageModule, "lever">` to say so, which is a workaround rather than a statement, and
+every other page still carries one.
+
+`PageLever` is now `LeverProps`, the props of `Lever` itself, and each route renders
+`{module.lever ? <Lever {...module.lever} /> : null}` rather than naming four props. A
+slot added to the component is then a slot a module can fill without eight route files
+changing, which is what the old spelling cost when the lever grew a closing paragraph and
+an overridable standing link.
+
+## The register is copy, and its defects render
+
+**11 September 2026.** `docs/research/sources.md` is no longer only a research file: it
+generates `src/content/references.ts`, and every cell reaches a reader through the
+citation popover and `/sources/`. The lesson from repairing a pass over the generated
+output is that the two halves have to be checked against each other, because the
+generator faithfully reproduces whatever the register got wrong.
+
+Four specific traps, all found in live rows:
+
+- **A URL cell holding prose is a URL cell.** `extractHref` takes the first `https://` in
+  it, so a row recording "reached only through the proceedings index at
+  https://www.bcuc.com/OurWork/Proceedings" published the index as the source. Two BCUC
+  rows and a BC Hydro row did. A route that is not the document is written without a
+  scheme, so it stays a note to a researcher rather than becoming a link to a reader.
+- **An em dash inside a title breaks the split.** `splitSource` only recognises a title
+  that starts the cell. In the register's author-first shape, the first ` — ` becomes the
+  title/note boundary wherever it falls, so six rows shipped a title cut in half:
+  "Zatar & Harik, "Bridge embankments", "Wyllie and Norrish, *Rock Fall Containment for
+  Rock Cuts, Highway 99". Putting the quoted or italic title at the front of the cell
+  fixes it without changing a character of the title.
+- **A bold editorial note has to open the note, not close it.** `KAUR-2026` bolded
+  "not retrieved" at the end, so the title ran 372 characters to reach it.
+- **Licence strings are read by two files.** `OGL – Canada`, `**OGL–Canada**` and
+  `OGL–Canada` are one licence and three strings; `/licences/` and the generated entries
+  only agree if the register spells each one the way `licensing.md` does.
+
+## Search engines refuse a script; the archives and the DOI registries do not
+
+**11 September 2026.** Recovering lost URLs for the register, every general search engine
+refused an automated request: Bing returned no organic results, DuckDuckGo's HTML and
+Lite endpoints served a CAPTCHA after two queries, Mojeek returned an empty result list.
+Three machine-readable indexes answered every question instead, and they are the route to
+use next time:
+
+- **`api.crossref.org/works?query.bibliographic=`** resolved a journal article and a
+  Geological Survey open file from their titles alone. GSC Open Files carry `10.4095/…`
+  DOIs that redirect to the NRCan repository, so an "Open File NNNN" with no URL is
+  almost always recoverable.
+- **The Wayback CDX API** — `web.archive.org/cdx/search/cdx?url=<host>&matchType=domain`
+  — lists every path the Archive has ever seen on a host. Grepping 20,000 `egbc.ca` paths
+  for "seismic" found a guideline PDF that a site search could not, and the same trick
+  recovered a 2014 trade-press PDF from a subdomain that no longer resolves.
+- **A browser user-agent changes the answer.** The EGBC PDF the register had recorded as
+  "403 to automated fetch" serves normally to `curl` with a desktop UA. `crtc.gc.ca`
+  genuinely refuses both, which is worth recording on the row rather than retrying.
+
+Two hosts that defeat this: `docs.bcuc.com` puts an Azure WAF in front of documents keyed
+by an opaque `doc_NNNNN` id whose filename must match exactly, so a path that was not
+captured at the time cannot be reconstructed; and probing for one trips the WAF within a
+few requests. The BCUC's own exhibit lists are the way back in — they name which exhibit
+an appendix belongs to, which is worth recording even when the file itself is not.
+
+## The QA pass is a script, and lives in `scripts/qa/`
+
+**11 September 2026.** Ten pages built by ten agents each verified only themselves,
+and nothing had been looked at across the whole site, at phone width or in dark mode.
+`scripts/qa/` is that pass, written so it can be rerun rather than redone:
+
+- `serve.mjs` serves `out/` the way a host does. A `file://` run is not equivalent:
+  the export writes `about/index.html` and every internal link carries a trailing
+  slash, so `file://` resolves neither, and Next's segment prefetches 404 differently.
+- `checks.mjs` is injected before each page loads and measures; `audit.mjs` drives
+  30 routes at 390 px and 1280 px in both themes and decides what counts as a defect.
+  Measurement and threshold are kept apart so a rerun after a fix is comparable.
+- `interaction.mjs` covers what a snapshot cannot: tab order, focus rings, the
+  citation popover, and the scenario flash. `copy.mjs` runs the style guide's
+  sentence rules over rendered text. `shoot.mjs` writes screenshots.
+
+Two traps worth keeping. Git Bash rewrites a leading slash in an argument into a
+Windows path, so a route reaches these scripts by environment variable, never on the
+command line. And a mark's ground inside an SVG is not its ancestor's background but
+the last opaque rect painted under it: without that, `SiteMark`'s paper-coloured
+trace reads as an invisible stroke on all 30 pages, because it sits on an ink tile.
+
+## An open end drawn in the bar's own colour is a closed end
+
+**11 September 2026.** In `PrepareDaysByDocument` the open-end arrowhead is
+`FIG_COLOR.muted` at the right edge of the bar. Where a row's solid bar already
+reaches the domain end, as PreparedBC's 2024 guide does at 14 days, the arrowhead is
+muted on muted: 1:1 against its own ground, and it does not render. The row then
+looks identical to the one row on the figure that genuinely closes at 14, so the two
+marks that mean opposite things draw the same. The arrowhead over a hatched bar in
+the row below it renders correctly, which is what made the miss hard to see by eye.
+
+The general rule the kit should carry: a mark that qualifies a bar has to be drawn
+against the bar, not in the bar's colour. The hatch already solves this by filling
+its own background with `--color-paper-raised`; an arrowhead needs the same care, a
+knockout outline or a colour that is not the fill it sits on.
+
+## `--color-ink-faint` is below AA in both themes
+
+**11 September 2026.** Measured against the grounds it is actually painted on:
+`#6e7276` on `--color-paper` is 4.48:1 and on `--color-accent-soft` 4.14:1; in dark
+`#797d82` on paper is 4.45:1, on paper-raised 4.13:1, on accent-soft 3.62:1. AA for
+body-sized text is 4.5:1, and the token carries the 12 px floor almost everywhere it
+appears: figure axis labels, the "Source" line, the contents rail's own heading, the
+band label for "Not yet assessed". The light value misses by 0.02.
+
+Two band ramp colours have the same problem where they are used as text rather than
+as fill. `BandPill` colours its written label with the band colour, so on
+`--color-paper` "Medium" (`#b57a14`) is 3.37:1 and "Low" (`#4f7f4a`) is 4.34:1.
+Severity survives without colour because of the segment meter, but the label beside
+the meter is still text and still has to be readable.
+
+## Static export cannot apply a stored preference before the first paint
+
+**11 September 2026.** `ScenarioProvider` applies the stored scenario in a layout
+effect, on the reasoning that a layout effect commits before paint. It does, but the
+paint it precedes is the hydration commit's, not the exported HTML's. Measured on
+`/scenarios/` with `scenario=crustal` stored, the first animation frame at +105 ms
+shows Cascadia checked and the switch lands at +139 ms: about a third of a second of
+the scenario the reader did not choose, on every page load.
+
+Nothing in React can fix this, because the flash happens before React exists on the
+page. The only cures are a blocking inline script in `<head>` that reads
+`localStorage` and sets an attribute the CSS keys off, or accepting the flash. It is
+worth writing down that the layout effect is not the fix it is documented as being.
+
+## The quiet token has to clear AA on the tinted ground, not the paper one
+
+**11 September 2026.** `--color-ink-faint` was set by how it looked on paper and
+then used on three grounds. Paper is the most forgiving of them, so tuning there
+left the token failing on the other two: light `#6e7276` was 4.48:1 on paper but
+4.14:1 on `--color-accent-soft`, and dark `#797d82` was 4.45:1 on paper, 4.13:1 on
+paper-raised and 3.62:1 on accent-soft. It is now `#666a6e` in light (5.04 paper,
+5.45 raised, 4.66 accent-soft) and `#8b8f94` in dark (5.67, 5.26, 4.62). The
+binding ground in both themes is accent-soft, which is the tint the impact cell and
+the hovered system card sit on, and it is the ground nobody checks.
+
+The token is still the quietest text on the site: ink-muted reads 5.93:1 on light
+paper against ink-faint's 5.04:1, and 7.54:1 against 5.67:1 in dark. Restraint
+survives the correction, which is the point. Anything quieter than these two values
+fails accent-soft, so they are a floor and not a preference.
+
+## Colour that is also text has to pass as text
+
+**11 September 2026.** `BandPill` set its written label in the band colour. As fill
+the ramp is fine; as 12 px semibold type on paper, medium (`#b57a14`) was 3.37:1 and
+low (`#4f7f4a`) 4.34:1. The label is now ink and the hue stays in the segment meter
+beside it. Nothing is lost: the meter already carried both the hue and the ordinal,
+so the pill still says severity three ways — fill, count and word — and it still
+reads in greyscale. The general form: a ramp built for fills has no obligation to be
+legible as type, so a component that borrows it for type has to re-measure it.
+
+## A box that scrolls needs a tab stop, and this is the second time
+
+**11 September 2026.** `SystemMatrix` was `overflow-x-auto` with no `tabIndex` and no
+role, so at 390 px the Crustal M7 column — 196 px of 544 px — could not be reached
+without a pointer. `DataTable` in `prose-blocks.tsx` already had the fix, and this
+file already records the lesson from that one, which is what makes the repeat worth
+writing down: the pattern was known and simply not reached for. The matrix now
+carries `role="region"`, `tabIndex={0}` and an `aria-labelledby` pointing at a
+screen-reader-only `<caption>`, and all 196 px are reachable with the arrow keys.
+
+Worth making a habit of: every `overflow-x-auto` added to this codebase is a
+keyboard defect until it has a tab stop and a name. Grep for the utility rather than
+waiting for the audit to find the next one.
+
+## The scenario flash is accepted, and the reason is in the content
+
+**11 September 2026.** The comment in `scenario-context.tsx` claimed a layout effect
+prevented the flash of the unchosen scenario. It does not, and the correction now
+sits in the file. The flash stands: measured after the fix, the first frame at +41 ms
+still carries Cascadia and the switch lands at +91 ms.
+
+A blocking inline script in `<head>` is the standard cure, and it was rejected here
+on what the flash actually is. A theme flash is an attribute: one line of script sets
+it, CSS does the rest, and the markup is unchanged. A scenario is not an attribute —
+the two scenarios differ in the band on every cell and in the words beside it, so the
+only pre-hydration cure is to export both copies and hide one. That doubles the page
+and hands a reader without JavaScript two contradictory sets of bands at once. The
+rule to carry forward: an inline preference script is worth it only where the
+preference is expressible as an attribute the CSS can read.
+
+## Escape has to hand focus back, or it takes the reader's place with it
+
+**11 September 2026.** The citation popover closed on Escape and unmounted the close
+button focus was sitting on, so focus fell to `<body>` and the next Tab restarted at
+the top of the document. A reader who checks a source mid-paragraph loses the
+paragraph. The marker button now holds a ref and both Escape and the close button
+return focus to it. A pointer dismissal deliberately does not: it never moved focus,
+so it has nothing to give back.
+
+## The rail column is decided by the exported HTML, not by the route
+
+**11 September 2026.** `ArticleShell` reserved a 15 rem aside on every page, and
+`TableOfContents` renders nothing below three headings, so the four unwritten Part 1
+pages narrowed their body by 15 rem for an empty column. The rail is built
+client-side from the DOM, so the route cannot know the count at build time — but the
+DOM can, at parse time, and CSS can read it: the second column is applied by
+`:has(>div>section:nth-of-type(3))` on the grid container. That is true or false in
+the exported HTML before the first paint and before React exists, so the column is
+right from the first frame and nothing moves when the rail fills in. Measured:
+`/shaking/buildings/` 1112 px of body and no rail, `/shaking/ground/` 808 px and a
+rail, cumulative layout shift 0 on both.
+
+Two details that are easy to get wrong. The gap is set on the column axis only
+(`lg:gap-x-16`): a plain `gap` adds a row gap under the empty aside in the
+single-column case. And the base state names no `grid-template-columns` at all
+rather than a one-column template, so the `:has()` rule is adding a declaration
+rather than racing another utility for order within the layer.
+
+## The exported segment prefetch 404s under `serve.mjs`
+
+**11 September 2026.** Every desktop route in the audit logs a handful of console
+404s for URLs shaped `/after/__next.after.__PAGE__.txt?_rsc=…`. The file exists, as
+`out/after/__next.after/__PAGE__.txt`: the export writes the segment as a directory
+and the client asks for it with the dots flattened into a filename. `serve.mjs` maps
+a URL straight onto a path and does no rewriting, so it answers 404. It is a
+property of the export and the static server, not of any page, and it is invisible
+to a reader because the prefetch is speculative and the real navigation is a plain
+HTML request. Worth a rewrite rule in `serve.mjs` if the noise ever hides a real
+console error.
+
+
+## A knockout with nothing under it is the same defect it was meant to cure
+
+**11 September 2026.** After the open end on `/prepare/` was fixed, the audit still
+found four marks at 1:1 against their own ground, all of them the mirror image of
+that bug. `LandNode` on `/getting-around/` and the three provenance boxes on
+`/method/` were outlined rectangles filled `--color-paper-raised`, sitting directly
+on the figure frame, which is `--color-paper-raised`. Paper drawn on paper: the fill
+painted nothing, in both themes, and the outline was doing all the work already.
+
+The rule that covers both directions: **a knockout is only a knockout where there is
+something under it to clear.** On `/prepare/` a paper slot under an arrowhead is
+load-bearing because a solid bar runs through it, and the slot is bounded by that
+bar. Here nothing ran under the boxes, so the fill was a mark with no ground, and the
+honest form is `fill="none"`. Reaching for a paper fill by habit, because boxes
+usually have one, is how the defect gets in. Before writing a fill, name the thing it
+covers; if you cannot, do not paint it.
+
+Two low-contrast marks in the same two files that the audit does not flag, because
+they are above its 1.15:1 floor and merely faint:
+
+- `ClearingOrder`'s rail was `--color-rule`, 1.30:1 on paper, while `Spine` two
+  figures below it was `--color-rule-strong`, 1.68:1. Both are connectors. The rail
+  is now `ruleStrong` too. `rule` is the kit's colour for the empty track behind a
+  bar, where a filled bar sits over it and gives it contrast; used on bare paper it
+  is close to nothing.
+- The SVG `Meter` in `method.tsx` filled its unfilled segments with `rule`, though
+  its own doc comment claims it is the same mark as `BandMeter`, which uses
+  `ruleStrong`. The segments that carry the denominator were the faintest thing on
+  the figure, so "two of three" read as a bare two. It now matches the component it
+  says it mirrors.
+
+What is left under 3:1 in those files is every `--color-rule-strong` hairline:
+1.68:1 in light, 1.66:1 in dark, which is the value of the token itself and covers
+`FigRule`, `Axis` ticks, spines and box outlines site-wide. Whether a structural
+hairline should clear 3:1 for WCAG 1.4.11 is a question about the token in
+`globals.css` and about the kit, not about any one figure, and it is not answerable
+one file at a time.
+
+## `serve.mjs` resolves `out/` from the working directory, not from its argument
+
+**11 September 2026.** `startServer(port, root)` takes a root, but `resolveFile` reads
+the module-level `ROOT`, which is `resolve(process.argv[2] ?? "out")`. The `root`
+argument only reaches the 404 page lookup. So the server serves `./out` relative to
+wherever node was started: `audit.mjs` works because it is run from the repo root, and
+a one-off measuring script run from `scripts/qa/` gets a 404 for every route and a
+page whose `<main>` is the not-found template. It is a convincing failure, because the
+page loads, the status is invisible to `page.evaluate`, and the figures simply are not
+there. Run QA scripts from the repo root, or pass the out directory as `argv[2]`.
+
+## The thumb test, and the one new grey it needed
+
+**11 September 2026.** Every structural hairline in every figure was drawn in
+`--color-rule-strong`, which measures 1.68:1 on raised paper in light and 1.66:1 in
+dark, and the empty track under a bar was `--color-rule` at 1.30:1 and 1.25:1. WCAG
+1.4.11 asks 3:1 of a graphical object a reader needs in order to understand the
+content, and it is level AA, so the axes, the scale lines, the spines, the node
+outlines and the rule between the two water clocks were all failing a criterion this
+site holds itself to.
+
+Raising both rule greys to 3:1 would have fixed it and cost the brand: the same
+hairline draws the divider under every section heading and the border of every card,
+and the quiet of those is part of why the site reads as a reference work. So the
+split is by role rather than by weight. `--color-mark`, `#868682` light and `#6e747b`
+dark, is for a mark a reader needs; the two rule greys keep the furniture. The test
+that decides which is in `docs/style-guide.md` section 8: cover the mark and see
+whether the drawing still says what it said. An axis fails that test, a gridline
+dropped from a labelled axis passes it.
+
+Measured after the change, on `--color-paper-raised`: `--color-mark` 3.65:1 light and
+3.62:1 dark, and on the accent tint, the least forgiving ground the site paints a
+mark on, 3.12:1 and 3.18:1. `FIG_COLOR` now offers exactly two greys, `mark` and
+`track`, and the `rule` and `ruleStrong` keys are gone, so a figure cannot reach for
+a furniture grey by accident.
+
+Two things this turned up that are worth keeping:
+
+A hairline drawn across a filled bar cannot clear 3:1 against ink and mid grey at
+once, and no token will fix it. `prepare.tsx` had already solved it twice, in
+`SlottedRule`, which clears a slot of paper for the mark to sit in, and in `DayStop`,
+which overhangs the bar by four pixels at each end so the part that carries the
+reading is on paper. Both patterns are the answer; a darker grey is not.
+
+The QA sweep's `marks()` check reports a phantom black fill on every `<line>`.
+SVG's default `fill` is black, `getComputedStyle` reports it whether or not the
+element can paint a fill, and a `<line>` never does. Two of them read as 1.23:1 in
+dark mode, which is a mark nobody can see, except that there is no mark. Skip `fill`
+on `line` and `polyline` before believing the number.
+
+## The band meter is the one meaning-bearing mark still under 3:1
+
+**11 September 2026.** `BandMeter` in `src/components/band.tsx` draws its unfilled
+segments in `--color-rule-strong`, 1.68:1 light and 1.66:1 dark on raised paper. The
+unfilled segments are the denominator: cover them and two of three reads as a bare
+two, and the word beside the meter says "medium", not "of three". By the test in
+section 8 that makes them load-bearing, and the fix is one token, from
+`var(--color-rule-strong)` to `var(--color-mark)`.
+
+It is recorded here rather than done because the change that introduced `--color-mark`
+was scoped to the figure kit and the figures. The same swap was made in the two
+figures that redraw the meter in SVG, `method.tsx` and `transportation.tsx`, so the
+site currently draws the same mark two ways.
+
+## A page's state is a field, not a paragraph
+
+**11 September 2026.** Fourteen pages carried their evidence and no text, and each
+one explained that in four or five paragraphs of standing prose. It read well and it
+was the defect section 4 of the style guide names: a reader who came to find out what
+happens to their water was being told how this project is organised and how far along
+it is. The site-wide banner counted the pages, and `/after/` had a heading that did
+the same, so the count had to be edited in three places every time a page landed.
+
+The replacement is `status?: PageStatus` in `src/content/types.ts`, set on the
+`SystemEntry`, on the `SHAKING_PAGES` entry, and available on a page module's `meta`
+so a written page can be marked a draft while its text is under revision. The route
+reads `page?.meta.status ?? entry.status`. `src/components/status.tsx` draws the two
+things a reader sees: a `Draft` marker beside the page title and on the system card,
+and a two-sentence notice above the body. 228 words of standing prose came out.
+
+Three things were worth learning while doing it.
+
+**The notice must not be a `<section>`.** The old text was a `PageSection` with a real
+`<h2>`, so the contents rail of a draft page opened with an entry about the page
+rather than about the subject, and the reader looking for the band had to scroll past
+it. It is now an `<aside>` with no heading, which also keeps `ArticleShell`'s
+`:has(>div>section:nth-of-type(3))` count honest: that selector decides whether the
+page reserves a rail column at all, and a notice dressed as a section was inflating it.
+
+**The marker goes beside the `<h1>`, not inside it.** A flex row holding the heading
+and the mark keeps the heading's accessible name to the title. On a card the mark does
+go inside the `<h3>`, because a card's heading is the whole of what the reader is
+choosing between, and "Sanitation Draft" is what they need to hear.
+
+**`SystemMatrix` deliberately carries no marker.** Every column in that table is
+evidence, and a draft page's evidence is complete, so a marker would qualify nothing
+in the row. It would also sit one column from the "Not yet assessed" band, and those
+are two different absences: one says nobody has published an assessment, the other
+says we have not written the page. Side by side in one table they invite exactly the
+misreading the band vocabulary exists to prevent.
+
+The marker is a word in a dashed outline on `--color-ink-faint`, which is 5.04:1 on
+paper and 5.67:1 in dark mode, and the dashed outline is the vocabulary
+`VerificationNote` and `MapPlaceholder` already use for something not built. Nothing
+here is interactive, so nothing needs a focus state.
+
+## The lockfile has to hold every platform's `@emnapi`, and npm will not put them there
+
+`npm ci` failed in CI with `Missing: @emnapi/runtime@1.11.3 from lock file` and
+`Missing: @emnapi/core@1.11.3`. It had failed once before with
+`Missing: @emnapi/wasi-threads@1.2.3`, which is the same bug wearing a different name.
+
+Two optional packages pull these in: `@img/sharp-wasm32` depends on `@emnapi/runtime`,
+and `@tailwindcss/oxide-wasm32-wasi` depends on `@emnapi/core`, `@emnapi/runtime` and
+`@emnapi/wasi-threads`. Both are `cpu: wasm32` and are never installed on either
+machine. But `npm ci` still resolves an ideal tree that includes their dependencies,
+and which of the three it asks for differs by platform: Windows asks for
+`wasi-threads`, Linux asks for `runtime` and `core`.
+
+`npm install --package-lock-only` writes only the ones the current platform wants, and
+silently drops the others, so regenerating the lock on Windows produces a file that
+fails on Linux and regenerating it on Linux would produce one that fails here. Fixing
+whichever package the error names just moves the failure to the next one, which is
+what the first repair did.
+
+The lock has to carry all three root entries at once. They were added by hand with
+version, `resolved`, `integrity` and `dependencies` taken from
+`npm view <pkg>@<range> version dist.integrity dependencies --json`. `@emnapi/runtime`
+is not `dev`, because `@img/sharp-wasm32` is a production dependency; the other two are
+`dev: true` and all three are `optional: true`.
+
+Two things make this checkable without a Linux machine. `npm ci --dry-run --os=linux
+--cpu=x64` resolves the tree CI will resolve and reports the same `EUSAGE` when the
+lock is short. And writing the file back with `json.dumps(lock, indent=2,
+ensure_ascii=False)` plus a trailing newline reproduces npm's own formatting exactly,
+so the diff is the entries added and nothing else. A 22-line diff is the evidence that
+no version was moved while fixing this.

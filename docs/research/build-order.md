@@ -42,10 +42,12 @@ in, and the reason each page sits where it does.
    of them now give — defensible, citable three ways, and close to the reader.
 
 **Fire following takes the flagship graphic**, because ground conditions cannot.
-The Dedicated Fire Protection System coverage boundary is the one map the site can
-draw itself today, under the Open Government Licence – Vancouver, and the whole
-point of the section is what falls outside the line — which is a map's job rather
-than a paragraph's. See `maps.md`.
+The Dedicated Fire Protection System mains are the one map the site can draw
+itself today, under the Open Government Licence – Vancouver, and the whole point
+of the section is how little of the city they reach, which is a map's job rather
+than a paragraph's. The layer is 245 line segments rather than the single closed
+shape this file first assumed, so the map draws the network, not a boundary. See
+`maps.md`.
 
 ---
 

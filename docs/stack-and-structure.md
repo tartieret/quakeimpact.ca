@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| Framework | Next.js 15, App Router, **static export** (`output: "export"`) |
+| Framework | Next.js 16, App Router, **static export** (`output: "export"`) |
 | Language | TypeScript, strict |
 | Styling | Tailwind CSS v4 (CSS-first config; no `tailwind.config.js`) |
 | Hosting | Netlify — `netlify.toml` publishes `out/` |
@@ -38,25 +38,29 @@ Static export was chosen over an SPA because the site is public-facing content p
 /sources/               the source register, rendered from REFERENCES
 /contribute/            what the project can use, and how to send it
 /about/
+/licences/              attribution strings, per-dataset licence positions
 ```
 
-32 statically exported pages. *A `/licences/` route is required by `licensing.md` and does not yet exist; re-derive the count from `npm run build` after it is added.*
+33 statically exported pages. Re-derive the count from `npm run build` rather than trusting this line.
 
 ---
 
 ## Content model
 
-Everything lives in `src/content/site.ts`. The route templates hold no content.
+Structured content lives in `src/content/site.ts` and page prose in
+`src/content/pages/`. The route templates hold neither.
 
 - `SITE` — name, domain, tagline, draft status banner
 - `SCENARIOS` — the two scenarios and their comparison rows, including the named official simulation behind each and the `conditions` field. **Weather is a scenario condition, not a system**: it does not fail, so it cannot carry a band, and both official scenarios set one in opposite directions. `TimelineStrip` renders the condition for the selected scenario, and `/scenarios/` shows the two side by side
 - `BANDS` — the rubric from overview section 4, including `unknown`
 - `PHASES` — hours / days / weeks / months
 - `SYSTEMS` — the thirteen systems, each with hook, `bitesAt` phase, per-scenario impact, `dependsOn` edges, and build tier from overview section 8. Food and fuel are separate entries: fuel is an input every other system's repair competes for, food is a demand that cannot be stored, and merging them hides the edge between them. `weather` is not among them and `gas` is — the count stays at thirteen
-- **The band values now come from the research; the prose around them does not.** `research/impact-bands.md` holds the assignment per system per scenario, and `SYSTEMS` matches it row for row. `SystemEntry.hook`, `Impact.mechanism` and `Impact.source` are still `loremLine()` and `"TBD"`, so **a band on the site is currently a sourced judgement wrapped in placeholder text**. Do not read a rendered cell as a finished claim until its mechanism sentence and source key are real.
+- **The bands and the prose around them both come from the research.** `research/impact-bands.md` holds the assignment per system per scenario, and `SYSTEMS` matches it row for row. `SystemEntry.hook`, `Impact.mechanism` and `Impact.source` are real, and `ImpactCell` resolves the source key against `REFERENCES` and renders the document. `Impact.evidence` carries the per-scenario caveat where the mechanism sentence was measured on one earthquake and the column it sits in is the other, so a reader on the crustal toggle is not shown a megathrust figure with nothing saying so.
 - `SHAKING_PAGES`, `NAV`, `UTILITY_NAV`
 
-`src/content/references.ts` holds `REFERENCES`, the source register: one entry per document, keyed by citation key. Entries carry kind, title, publisher, year, href and a one-line note. `kind: "page"` is an internal reference — a claim can point at the page that carries the reasoning. Every entry is currently flagged `placeholder`, and that flag is what makes the marker and the reference list say so on the page.
+`src/content/references.ts` holds `REFERENCES`, the source register: one entry per document, keyed by citation key. Entries carry kind, title, publisher, date, href, route, licence and a one-line note. `kind: "page"` is an internal reference — a claim can point at the page that carries the reasoning. **The file is generated** from `research/sources.md` by `scripts/build-references.mjs`, wired as `npm run references`, so a corrected date or URL propagates in one edit. Do not edit it by hand.
+
+`src/content/pages/` holds one module per written page: `meta`, an array of sections and an optional lever. The array is what makes a wrong page hard to write — every `<h2>` comes from a section title, so a heading cannot miss the contents rail, and `meta.references` is the page's citation contract. See that folder's `README.md`.
 
 Adding a system is one array entry. It then appears in the grid, the matrix, the dependency list and the prepare page, and gets its own exported page, with no other change.
 
@@ -70,15 +74,15 @@ Adding a system is one array entry. It then appears in the grid, the matrix, the
 
 **"Not yet assessed" is a fourth band.** Hatched, never coloured. Dams and reservoirs ship in that state deliberately, as does large infrastructure in the crustal column — the assumption discipline in overview section 5 becomes visible on the page instead of hidden in a backlog. `VerificationNote` does the same for open research questions.
 
-**No doom without a lever (principle 3).** Every long page ends with a `Lever` block.
+**No doom without a lever (principle 3).** Every page describing a consequence ends with a `Lever` block. `lever` is optional on a page module only so that a page carrying no doom, such as `/method/`, is not made to manufacture an action.
 
 **The scenario toggle.** One global control, header-mounted, persisted to `localStorage`. Every band reads from it. But system pages show **both** scenarios side by side regardless — the contrast is the teaching point, so the toggle never hides one.
 
 **Contents rail.** `ArticleShell` builds it from the rendered `<h2>` elements, so it cannot fall out of sync with the page.
 
-**Every claim carries a source (principle 2).** `components/citation.tsx`. A page declares its references once, in citation order, and wraps its body in `<Citations ids={…}>`. Prose then cites by key — `<Cite id="crossing-assessments" />` — and the marker's number comes from that declared order, so the numbering and the `<ReferenceList />` at the foot of the page cannot drift apart. The marker is a button, not a jump link: the reference opens in place, because sending a reader to the bottom of the page to check a claim means they don't. An unregistered key renders `[?]` rather than failing silently. `/getting-around/` is the worked example.
+**Every claim carries a source (principle 2).** `components/citation.tsx`. A page declares its references once, in citation order, and wraps its body in `<Citations ids={…}>`. Prose then cites by key, `<Cite id="MV-WATER-22" />`, and the marker's number comes from that declared order, so the numbering and the `<ReferenceList />` at the foot of the page cannot drift apart. The marker is a button, not a jump link: the reference opens in place, because sending a reader to the bottom of the page to check a claim means they don't. An unregistered key renders `[?]` rather than failing silently. `Citations` resolves the declared keys on the server and passes only those entries to the client, so a page ships the documents it cites rather than the whole 325-entry register.
 
-**Placeholders are labelled as placeholders.** Map and graph slots say they are not built and name the dataset as TBD.
+**Placeholders are labelled as placeholders, and only where one is honest.** The dependency graph slot says it is not drawn and shows its live edge list underneath. Every map slot promising liquefaction susceptibility has been removed rather than recaptioned: the layers carry terms the site will not meet, so that graphic is not coming, and a placeholder for it would be a promise rather than a label. See `licensing.md`.
 
 ---
 
@@ -97,11 +101,10 @@ Then concatenate `app.css` and `app.js` into a single HTML file around `<div id=
 
 ## Before launch
 
-- Replace all uses of `src/content/lorem.ts` — every body sentence on the site is currently placeholder.
 - `robots: { index: false }` in `src/app/layout.tsx` — flip it.
 - `X-Robots-Tag` in `netlify.toml` — remove it.
 - `SITE.status` draft banner in `site.ts` — remove it.
-- Every entry in `REFERENCES` is a placeholder pointing at example.org. Replace the entries and drop the `placeholder` flag; nothing else changes.
-- Source keys on `Impact` are all `"TBD"`. The `source` field is still a plain string and should become a key into `REFERENCES`, and `ImpactCell` should render the reference rather than linking to `/sources/`.
-- Contact details on `/contribute/` — email address and issue tracker link.
-- Typeface is a Georgia stack, chosen so the build has no network dependency. `src/app/globals.css` is the only file that names a typeface.
+- Contact details on `/contribute/` — email address and issue tracker link. Both are currently labelled as not yet published, which is honest but unusable.
+- Fourteen pages carry evidence and no body text: ten systems and four of the five Part 1 pages. Each says so. They are the build backlog, not defects.
+- `npm run lint` runs `next lint`, which Next 16 removed. It needs replacing or dropping.
+- Typefaces are Libre Franklin and JetBrains Mono, loaded through `next/font/google` in `layout.tsx`, which downloads and self-hosts them at build time so the served site makes no third-party request. `layout.tsx` and `globals.css` are the only files that name a typeface, and this line previously said something else; check the code before trusting it.

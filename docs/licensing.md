@@ -85,7 +85,7 @@ The maps and data layers are published on Borealis under custom dataset terms, n
 
 1. Map sheets are unalterable. The intended design — ground conditions as the base layer, in the site's own palette, municipal outlines as reference only — cannot be built from the published map sheets. It has to be built from the data layers.
 2. Building from the data layers makes our derived layer share-alike. Any liquefaction layer we generate would have to be published under MVSMMP's terms, with the citation and disclaimer attached.
-**What the site does instead:** link to `https://metrovanmicromap.ca/` and to the individual Borealis DOIs. Describe findings in our own words with normal citation. **Do not host, reproduce, restyle or derive.** Ground conditions becomes a text page with an outbound link, and the flagship graphic is the Dedicated Fire Protection System coverage boundary, which is OGL–Vancouver and fully usable.
+**What the site does instead:** link to `https://metrovanmicromap.ca/` and to the individual Borealis DOIs. Describe findings in our own words with normal citation. **Do not host, reproduce, restyle or derive.** Ground conditions becomes a text page with an outbound link, and the flagship graphic is the Dedicated Fire Protection System mains network, which is OGL–Vancouver and fully usable.
 
 **If this is ever reopened**, the route is a written enquiry to Sheri Molnar at Western and to ICLR, describing the site in two sentences and requesting written confirmation; the Borealis download guestbook asks what the map will be used for, which is the natural opening. Recorded so the work is not redone from scratch, not as a pending action.
 
@@ -242,6 +242,8 @@ The licensing position changes the MVP. Ground conditions was to be the opening 
 5. **Power** — text only.
 6. **Method and band rubric** — ships in the MVP. Six of twelve systems are in the fourth band; without the rubric the site reads as unfinished rather than honest.
 7. **Preparing** — text only.
-**Fire following** gains value under this constraint. The DFPS mains layer is OGL–Vancouver and fully usable, which makes the coverage boundary the first real map we can draw ourselves. **It is the flagship graphic**, in place of the liquefaction layer.
+**Fire following** gains value under this constraint. The DFPS mains layer is OGL–Vancouver and fully usable, which makes it the first real map we can draw ourselves. **It is the flagship graphic**, in place of the liquefaction layer.
+
+**Corrected 11 September 2026, on downloading it.** This file, `maps.md` and `build-order.md` all described the layer as a coverage *boundary*, and `maps.md` called it a single closed shape. It is neither: it is 245 line segments of water main covering the downtown peninsula, the West End and False Creek. Drawing the network is honest. Drawing a boundary around it would mean inventing a hull and attributing it to the City. The argument the map makes is how little of the city the mains reach, which the network carries by itself.
 
 **Not built:** the liquefaction base layer, the ground-conditions choropleth, and the critical-infrastructure-over-liquefaction overlay described in the project document. The overlay was the site's best original graphic and the decision of 10 September 2026 gives it up rather than hold the map work open indefinitely. Ground conditions ships as text with an outbound link.

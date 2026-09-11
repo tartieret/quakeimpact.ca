@@ -1,8 +1,26 @@
+import type { ReactNode } from "react";
+
 export type ScenarioId = "cascadia" | "crustal";
 
 export type Band = "low" | "medium" | "high" | "unknown";
 
 export type Phase = "hours" | "days" | "weeks" | "months";
+
+/**
+ * Where a page is in the making. A page whose evidence is gathered and whose
+ * text is not written is a draft; a written page has no status and shows
+ * nothing.
+ *
+ * It is a field rather than a sentence because it is state, and state belongs
+ * in the content model. A reader is told by a marker beside the title and a
+ * short notice at the top of the body, both drawn by `src/components/status.tsx`,
+ * rather than by a paragraph in which the site explains its own build order.
+ *
+ * It is a union of one on purpose. The only state the site has needed to show
+ * so far is this one, and a second value should arrive with a page that needs
+ * it rather than in anticipation.
+ */
+export type PageStatus = "draft";
 
 export interface Scenario {
   id: ScenarioId;
@@ -29,17 +47,59 @@ export interface Scenario {
 
 export interface Impact {
   band: Band;
-  /** One sentence of mechanism. A coloured cell on its own reads as assertion. */
+  /**
+   * One sentence of mechanism. A coloured cell on its own reads as assertion.
+   *
+   * The published work assesses one design earthquake per system, so the same
+   * sentence usually stands in both scenarios. Where it does, `evidence` says
+   * which earthquake it was measured on.
+   */
   mechanism: string;
-  /** Source key from the source register. */
+  /** Source key from the source register. The key the mechanism sentence rests on. */
   source: string;
+  /**
+   * Which earthquake the evidence behind this cell actually models, in the
+   * reader's terms. Present wherever the mechanism sentence was measured on a
+   * different scenario from the column it sits in, so that a reader on the
+   * crustal toggle is not shown a megathrust figure without being told.
+   */
+  evidence?: string;
+}
+
+/**
+ * The action a system carries in its own right, independent of whether the
+ * page around it has been written.
+ *
+ * It belongs to the system rather than to the standing unwritten text, because
+ * the useful action is different for every system: a toilet with no water and a
+ * gas meter that only a contractor may reopen call for different things. Plain
+ * strings rather than nodes, because this file's content ships from a `.ts`
+ * module and an action stated here cites nothing: it is practical advice, and
+ * the site's convention is that such a line carries no marker.
+ */
+export interface StandingLever {
+  /** One or two actions, each a plain sentence. */
+  items: string[];
 }
 
 export interface SystemEntry {
   slug: string;
   name: string;
+  /**
+   * Set where this system's page carries its evidence and not its text. The
+   * grid, the route and the page title all read it, so the state is stated
+   * once and shown everywhere.
+   */
+  status?: PageStatus;
   /** The "what people underestimate" line. */
   hook: string;
+  /**
+   * What a reader can do about this system. Carried here so that a page whose
+   * body is not written still ends with a lever: severity without efficacy is
+   * the failure mode the style guide names, and these are the pages a search
+   * engine lands someone on. A written page overrides it with its own.
+   */
+  lever?: StandingLever;
   /** Where in the timeline this system is felt worst. */
   bitesAt: Phase;
   impacts: Record<ScenarioId, Impact>;
@@ -55,6 +115,13 @@ export interface SystemEntry {
  */
 export type ReferenceKind = "report" | "dataset" | "analogue" | "page";
 
+/**
+ * How the claim was reached. A confidence marker certifies a route, so the
+ * route is a property of the citation rather than a note about our method.
+ * See `docs/research/sources.md`.
+ */
+export type ReferenceRoute = "direct" | "media" | "vendor" | "landing" | "archive";
+
 export interface Reference {
   id: string;
   kind: ReferenceKind;
@@ -63,10 +130,50 @@ export interface Reference {
   /** Author or issuing body. Omitted for internal pages. */
   publisher?: string;
   year?: number;
+  /**
+   * The document's own date, as the register states it — including "undated"
+   * and "accessed 10 Sep 2026". A year alone cannot carry those.
+   */
+  date?: string;
   /** Document URL, or an internal path when `kind` is "page". */
   href: string;
   /** What this source is being used for. One line, shown in the popover. */
   note?: string;
+  route?: ReferenceRoute;
+  /**
+   * The per-dataset licence position, where one is recorded. Absent means
+   * ordinary citation: the facts are free to state and the expression is not.
+   */
+  licence?: string;
   /** A stand-in link. Rendered as a warning; never silently hidden. */
   placeholder?: boolean;
+}
+
+/**
+ * What a page module exports alongside its prose. Route templates read this
+ * and hold no content of their own.
+ */
+export interface PageMeta {
+  route: string;
+  title: string;
+  /**
+   * Normally absent: a module exists because the page is written. It is here so
+   * that a written page can be marked a draft when its text is under revision,
+   * without that fact having to be written into the prose.
+   */
+  status?: PageStatus;
+  /** Label in navigation and on cards. */
+  nav: string;
+  /** Kicker above the title, where the page belongs to a part of the site. */
+  kicker?: string;
+  /**
+   * The standfirst under the title. A ReactNode, because a standfirst is
+   * often where the page's headline number sits and a number needs its source.
+   */
+  standfirst: ReactNode;
+  /**
+   * Reference ids in the order they are first cited on the page. Marker
+   * numbering is this array's order, so it is the page's citation contract.
+   */
+  references: string[];
 }

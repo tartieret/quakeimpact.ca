@@ -6,6 +6,11 @@ import { useScenario } from "./scenario-context";
 /**
  * The site's one global control. Every impact band on every page reads from it.
  * Kept in the header so the reader can always see which event they are looking at.
+ *
+ * It never hides a scenario on a system page: those show both columns whatever
+ * this is set to, because the contrast between the two is the teaching point.
+ *
+ * `ScenarioName`, `ScenarioText` and `ScenarioPair` live in `scenario-text.tsx`.
  */
 export function ScenarioToggle({ size = "sm" }: { size?: "sm" | "lg" }) {
   const { scenario, setScenario } = useScenario();
@@ -40,10 +45,4 @@ export function ScenarioToggle({ size = "sm" }: { size?: "sm" | "lg" }) {
       })}
     </div>
   );
-}
-
-/** Inline text that names the active scenario, for use inside prose. */
-export function ScenarioName() {
-  const { scenario } = useScenario();
-  return <>{SCENARIOS[scenario].name}</>;
 }
