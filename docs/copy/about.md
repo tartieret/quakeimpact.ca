@@ -36,26 +36,19 @@ standing, and the [source register](/sources/) lists all of them in one place. P
 earthquakes elsewhere appear too, and they are used to show how something fails, never
 to give a number for the Lower Mainland.
 
-What this adds is the assembly: thirteen systems read against each other, on one
-timeline, in the same words, with what each one waits on written down. It is written
-for a neighbour and checked against what an engineer would object to.
-
-It is not complete, and it could not be. Thirteen systems are not every system, and no
-assessment says precisely how one of them behaves on the day. Where a figure is
-missing, that is said rather than filled in: "Not yet assessed" is one of the states a
-system can be in, and it means nobody has published an assessment rather than that the
-infrastructure is fine. A page still marked draft carries its band, the sentence saying
-how the system fails and the document behind it, without the text that would work
-through any of it. [How the bands work](/method/) explains the rest.
+It is not complete, and it could not be. No assessment says precisely how a system
+behaves on the day, and where a figure is missing, that is said rather than filled in:
+a system marked "Not yet assessed" means nobody has published an assessment, not that
+the infrastructure is fine. A page still marked draft carries its band, the sentence
+saying how the system fails and the document behind it, without the text that would
+work through any of it. [How the bands work](/method/) explains the rest.
 
 ## Corrections are the most useful thing you can send
 
 The site is open source, for the same reason every claim carries its document: anyone
-should be able to check a sentence against its source, correct it, or bring it up to
-date once the source is superseded. One person reading alone will not catch everything.
-
-If a number here is wrong, the document that shows it is wrong is the whole
-contribution. [Contribute](/contribute/) says what can be used and what cannot.
+should be able to check a sentence against its source. If you find an error, or a
+document that fills one of the gaps, [Contribute](/contribute/) says what can be used
+and what cannot.
 
 ## Sources on this page
 
