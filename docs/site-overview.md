@@ -23,7 +23,11 @@ The misconception this exists to correct: people picture a violent event with a 
 3. **No doom without a lever.** Every section ends with an action the reader can take.
 4. **Coupling over inventory.** The failure of any one system is not the story. The story is that they depend on each other.
 5. **Analogues illustrate, they never generate numbers.** Christchurch tells us what life was like. It does not tell us Vancouver's restoration times.
-6. **Assumptions are research tasks, not content.** Anything held as "I believe X is the case" enters this document as a verification item and does not reach the site until a source confirms or contradicts it. A contradicted assumption is a good outcome — it is usually more interesting than the assumption was.
+6. **Assumptions are research tasks, not content.** The exception is the obvious
+   consequence of a cited fact, which is writing rather than assuming: a lift needs
+   power, flushing needs water, a card reader needs a network. `style-guide.md` §6
+   draws that line and forbids inference from ever producing a quantity, a duration,
+   a band or a casualty figure. Anything held as "I believe X is the case" enters this document as a verification item and does not reach the site until a source confirms or contradicts it. A contradicted assumption is a good outcome — it is usually more interesting than the assumption was.
 
 ---
 
@@ -227,6 +231,25 @@ A thin complete grid is worth less than a few deep pages.
   is late, not absent"* — and the positive name carries more information, because what a
   reader wants is who comes, from where and when. The Cascadia mechanism sentence carries
   the weight the old title was carrying, and it is a stronger sentence than a title.
+- **The landing page leads with the four phases, not with the site's own structure.**
+  Decided 11 September 2026. The home page opened with the dependency figure and
+  closed the tour with the thirteen-system grid, which are both indexes of the site
+  rather than pictures of the aftermath — a reader met the filing system before they
+  met a single consequence. The order is now: what the first hours, days, weeks and
+  months are actually like, each phase carrying claims already sourced on the system
+  pages; then every system as a card, so a reader who has just been told what the
+  months are like can look up the part of life they depend on; then the two
+  scenarios, because somebody
+  who has not been told why this matters has no reason to work through the difference
+  between a megathrust and a crustal earthquake; then where the numbers come from,
+  with the band rubric folded into it as one sentence and a link. The dependency
+  figure keeps its page, `/dependencies/`, and the coupling it teaches survives on
+  the home page as the paragraph that says nothing fails on its own. The cards carry no
+  phase label at all: one word needs a sentence to mean anything, and the four
+  phases mean something together on the timeline strip and nothing alone in the
+  corner of a card. The scenario toggle also gained a sentence saying what it is for,
+  which it had never had.
+
 - **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided
   11 September 2026. "Who can actually leave" and the nav label "Getting out" framed the
   section as a departure question, which `research/mobility.md` says teaches the wrong

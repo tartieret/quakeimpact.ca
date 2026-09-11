@@ -12,6 +12,8 @@ The reader arrives believing an earthquake is a violent event with a clear end, 
 
 If a reader finishes a page frightened but with nothing to do, the page has failed. If they finish it reassured that it will be fine, the page has also failed, and worse.
 
+And a page nobody finishes has failed at the start. This is a public website, not an engineering report, and nobody is obliged to read it: it competes with everything else on a phone. So being good to read is not decoration on top of the rigour, it is half the job. Sequence, concrete detail and short sentences are what make a compilation of regulatory filings into something a neighbour reads to the end. The sourcing is what makes it worth reading; the writing is what gets it read.
+
 ---
 
 ## 2. Two readers, one text
@@ -57,7 +59,11 @@ We are not in the business of motivating through alarm. We are in the business o
 
 **Own the limits in the same breath as the claim.** "Restoration on the delta is measured in months, according to X; we have not found comparable published work for the North Shore." Admitting a gap costs nothing and buys everything.
 
-**No exclamation marks. No rhetorical questions. No imagined scenes.** We are not narrating a disaster. We are describing how infrastructure behaves.
+**No exclamation marks. No rhetorical questions. No invented scenes.** The line is not between narrative and description, and it never was: the province writes its own planning scenario as a sequence of things that happen, in order, and that passage teaches more in three paragraphs than any table on this site. The line is between a consequence the record establishes and a scene we made up. Write the sound like a freight train, the glass across the pavement, the queue at the water truck, the technician who has to come inside to relight the gas, because each of those is a mechanism something published establishes. Do not write a character, a moment, a thought, a line of dialogue, or an image whose only source is imagination.
+
+**Sequence is the strongest structure this material has.** Hours, days, weeks, months beats any other order, because it is the order a reader will meet it in and because the site's whole argument is that the shaking is the short part. A system inventory answers a question nobody asked yet. Lead with what happens, and let the reader find the system page when they want the evidence behind one line of it.
+
+**A narrative run may defer its sourcing to the pages it links to.** Markers in running prose are how this site proves a claim, and in a four-panel story they turn the same five documents over nine times and make a sequence read like a filing. So a narrative passage may carry its attribution through its links instead, under conditions that are not negotiable: every sentence is a consequence a page on this site states and sources; the noun it hangs on is a link to that page; **no figure, duration or proportion appears in prose that carries no marker**, because a number is exactly what a marker exists to guard; a quotation keeps its speaker in words, since a quote without attribution is worse than a claim without a marker; and the passage says in plain terms what it is, so nobody reads a scenario as a forecast. The home page timeline is the worked example. Everywhere else, the marker stays.
 
 **The site never talks about itself to the reader.** This is the defect that accumulates fastest, because the project's own principles are well written and it is tempting to render them. A kicker reading "The one original contribution", a callout labelled "Verify before publishing", a section titled "Why the coupling is the story" — each was in the templates, and each addresses a colleague rather than a neighbour. The test is whether the sentence would still make sense to someone who has never heard of this project. Editorial notes to ourselves belong in a comment or in `docs/`; the method and about pages may describe the method, but in the reader's terms and never in the project's shorthand. A page name is copy too: `/leaving/` asserted a conclusion about behaviour before anyone read a word.
 
@@ -80,6 +86,8 @@ We are not in the business of motivating through alarm. We are in the business o
 ## 6. Trust: how we earn it and how we lose it
 
 **Attribute everything.** Every impact band on this site carries a mechanism sentence and a source link — the component makes it structurally impossible to ship a coloured cell alone. Prose should meet the same bar. A sentence with a number in it and no source attached is a bug.
+
+**An obvious consequence is not an invented fact. A number always is.** Documents state what somebody was paid to assess, and nobody is paid to write down that a lift needs power or that a card reader needs a network. Where a cited fact has a consequence any engineer would grant and no document bothers to record, write it plainly as part of the sequence: the tills stop when the power does, flushing takes water somebody has to spare, food arrives by truck over the same roads as everything else. What inference may never produce is a **quantity, a duration, a band, a geography or a casualty figure** — those come from a document or they do not appear. Two tests before writing one. Could a reader follow the link and find nothing that contradicts it? And would the planner who wrote the source shrug, rather than object? If somebody competent could reasonably reach a different conclusion, it is a verification item in `docs/research/`, not a sentence on a page.
 
 **Say what we don't know, in public.** `VerificationNote` exists for this. "Not yet assessed" is a first-class impact band, hatched rather than coloured. A visible gap reads as honest; a quietly missing system reads as sloppy or, worse, as cherry-picking.
 
@@ -161,11 +169,13 @@ Not a compliance exercise — a public-information site that some readers cannot
 2. Does the page end with something the reader can do?
 3. Is there a sentence that would make an emergency planner wince?
 4. Is there a sentence that would make a neighbour stop reading?
-5. Are the gaps visible, or have they been quietly skipped?
-6. Has an analogue been allowed to generate a number?
-7. Would this read as alarmist if quoted in isolation, out of context, by someone hostile?
+5. Would a neighbour read it to the end at all?
+6. Is any image on the page from imagination rather than from a document?
+7. Are the gaps visible, or have they been quietly skipped?
+8. Has an analogue been allowed to generate a number?
+9. Would this read as alarmist if quoted in isolation, out of context, by someone hostile?
 
-Question 7 is the one that catches the most. Any sentence on this site may end up screenshotted on its own.
+Question 9 is the one that catches the most. Any sentence on this site may end up screenshotted on its own.
 
 ---
 

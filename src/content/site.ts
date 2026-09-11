@@ -159,8 +159,15 @@ const CRUSTAL_ONLY =
  * carry a band. It is a condition of each scenario and renders on the timeline.
  */
 export const SYSTEMS: SystemEntry[] = [
-  // Medium, not High: no source establishes how the network would perform, and
-  // the absence of any binding backup-power requirement is itself the finding.
+  // Medium because the province's own megathrust assessment states a duration,
+  // and it is days to weeks rather than the weeks to months electricity gets.
+  // The band used to rest on CRTC-2025-226, which establishes that no rule sets
+  // a backup-power run time — a fact about the rules, not about how long the
+  // network is down, and so not a fact that can choose between Medium and High.
+  // The rubric's own columns disagree here: the duration is Medium's, while a
+  // system waiting on two High systems reads High on the dependency column. The
+  // published duration governs, because the alternative is our inference
+  // overruling the province's assessment. See `docs/research/impact-bands.md`.
   {
     slug: "communications",
     name: "Communications",
@@ -177,8 +184,9 @@ export const SYSTEMS: SystemEntry[] = [
     },
     impacts: bothScenarios(
       ["medium", "medium"],
-      "No Canadian rule sets how long a cell tower must keep running once the power goes, and the regulator opened a proceeding in September 2025 to decide what that requirement should be.",
-      "CRTC-2025-226",
+      "The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel and a prolonged lack of access for everyone else; it names satellite phones and amateur radio as the backups people would fall back on.",
+      "DCRRA-2025",
+      { crustal: MEGATHRUST_ONLY },
     ),
   },
   {

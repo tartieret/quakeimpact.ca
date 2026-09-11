@@ -21,10 +21,10 @@ import { DependencyHubs } from "./figures/dependency-graph";
  * `<svg>` and nothing inside one is reachable by keyboard.
  *
  * `alt` and the caption sit here rather than in the page module, which is the
- * one place this component departs from the figures convention. Both
- * `/dependencies/` and the home page render this component directly, so a
- * caption written into either page module would leave the other page's figure
- * without one.
+ * one place this component departs from the figures convention. The figure and
+ * the sentences that explain how to read it are one object, and a caption
+ * written into a page module would have to be written again by the next page
+ * that rendered the drawing.
  */
 export function DependencyGraph() {
   return (
@@ -85,6 +85,3 @@ export function DependencyGraph() {
     </div>
   );
 }
-
-/** The name `/` and `/dependencies/` already import. */
-export const DependencyGraphPlaceholder = DependencyGraph;

@@ -62,6 +62,7 @@ ever use it.
 | [`systems/`](systems/) | One file per system in the impact grid. |
 | [`mobility.md`](mobility.md) | Who can physically leave, and by what route. |
 | [`preparedness.md`](preparedness.md) | Official advice, and the gap between jurisdictions. |
+| [`household-preparedness.md`](household-preparedness.md) | How prepared households actually are, and what the surveys do not measure. |
 | [`analogues.md`](analogues.md) | Christchurch, Kobe and Tōhoku, and the limits on using them. |
 | [`maps.md`](maps.md) | Available layers, what each supports, and what it does not. |
 | [`sources.md`](sources.md) | The source register. Becomes `SOURCES` in `site.ts`. |

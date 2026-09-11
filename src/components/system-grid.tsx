@@ -10,43 +10,64 @@ import { DraftMark } from "./status";
 function SystemCard({ system }: { system: SystemEntry }) {
   const { scenario } = useScenario();
   const impact = system.impacts[scenario];
-  const phase = PHASES.find((p) => p.id === system.bitesAt);
 
   return (
     <Link
       href={`/after/${system.slug}/`}
       className="group flex flex-col gap-3 bg-paper-raised p-5 transition-colors hover:bg-accent-soft focus-visible:-outline-offset-2"
     >
-      <div className="flex items-start justify-between gap-3">
-        <h3 className="font-display text-lg leading-snug tracking-tight group-hover:text-accent">
-          {system.name}
-          {/* On the card as well as on the page, so a reader knows before the
-              click rather than after it. Inside the heading here, because a
-              card's heading is its whole label and the mark is part of what the
-              reader is choosing between. */}
-          {system.status === "draft" ? (
-            <>
-              {" "}
-              <DraftMark />
-            </>
-          ) : null}
-        </h3>
-        <span className="mt-0.5 shrink-0 text-[0.6875rem] tracking-wide text-ink-faint uppercase">
-          {phase?.label}
-        </span>
-      </div>
+      {/* The phase a system bites at is not on the card. It is one word, it
+          needs a sentence to mean anything, and a card that already carries a
+          band and a mechanism sentence cannot afford one. It stays on the
+          timeline strip, where the four phases are named together and a reader
+          can see what "weeks" is being measured against. */}
+      <h3 className="font-display text-lg leading-snug tracking-tight group-hover:text-accent">
+        {system.name}
+        {/* On the card as well as on the page, so a reader knows before the
+            click rather than after it. Inside the heading here, because a
+            card's heading is its whole label and the mark is part of what the
+            reader is choosing between. */}
+        {system.status === "draft" ? (
+          <>
+            {" "}
+            <DraftMark />
+          </>
+        ) : null}
+      </h3>
       <BandPill band={impact.band} />
       <p className="text-sm leading-relaxed text-ink-muted">{system.hook}</p>
     </Link>
   );
 }
 
+/**
+ * Every system, or one tier of them. `tier` filters by build order, which is
+ * ours rather than the reader's, and no page currently asks for it.
+ */
 export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
   const systems = tier ? SYSTEMS.filter((s) => s.tier === tier) : SYSTEMS;
+
+  /* The gap between cards is the container's own background showing through, so
+     a row the cards do not fill ends as a block of rule colour that reads as a
+     card with nothing in it. Thirteen systems leave one such cell in two
+     columns and two in three, so the tail of the grid is padded to the row.
+     Full class strings, because Tailwind cannot see a built one. */
+  const short = (columns: number) => (columns - (systems.length % columns)) % columns;
+  const fillers = [...Array(Math.max(short(2), short(3)))].map((_, i) => {
+    const sm = i < short(2);
+    const lg = i < short(3);
+    if (sm && lg) return "hidden bg-paper-raised sm:block";
+    if (lg) return "hidden bg-paper-raised lg:block";
+    return "hidden bg-paper-raised sm:block lg:hidden";
+  });
+
   return (
     <div className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-3">
       {systems.map((s) => (
         <SystemCard key={s.slug} system={s} />
+      ))}
+      {fillers.map((className, i) => (
+        <span key={i} aria-hidden className={className} />
       ))}
     </div>
   );

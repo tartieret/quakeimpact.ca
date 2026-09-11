@@ -4,15 +4,31 @@
 
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
-> **Last research pass:** 10 September 2026.
+> **Last research pass:** 11 September 2026.
 
-**Status.** The finding is regulatory rather than engineering: **no binding Canadian requirement
-sets a backup-power run time for cell sites, and none requires physical hardening of network
-infrastructure.** The cleanest evidence is that the regulator is still asking the question. **Proposed band: Medium** — Medium rather than High because no source
-establishes how the network would actually perform, and Medium rather than Low because what
-resilience exists is voluntary, the province has formally asked for more, and the alerting system
-that warns people depends on the network the earthquake degrades. **An absence of requirements
-is a finding, not a gap in our research**, and the page should say so in as many words.
+**Status.** Two findings, and they must not be confused with each other.
+
+**The duration, which sets the band. Band: Medium**, on the province's own words: the megathrust
+assessment states that "disruptions in communications continue for days to weeks", with surviving
+capacity prioritised for emergency personnel and "a prolonged lack of access to communications for
+the general population". [DCRRA-2025] **[A]** Days to weeks is the Medium duration row. Nothing
+published states a duration for the crustal earthquake, so that column carries the megathrust note.
+
+**The regulatory finding, which is the page's lead and not its band: no binding Canadian
+requirement sets a backup-power run time for cell sites, and none requires physical hardening of
+network infrastructure.** The cleanest evidence is that the regulator is still asking the question.
+**An absence of requirements is a finding, not a gap in our research**, and the page should say so
+in as many words.
+
+**Why the distinction is load-bearing.** The band used to rest on the regulatory absence, and that
+was not a reason: a missing rule says nothing about how long the network is down, so it cannot
+choose between Medium and High. It also left the band open to the obvious objection — electricity
+is banded High at several weeks downtown, communications depends on electricity and on fuel, so
+how is communications Medium? The answer is the province's own duration statement, and it is worth
+writing where a reader can see it. `../impact-bands.md` carries the general rule this case forced:
+the published duration sets a band, dependency describes it, and a system can be banded below
+something it depends on, because a cell site comes back when fuel reaches it while a distribution
+network comes back one pole at a time.
 
 ---
 
@@ -294,9 +310,22 @@ fetching of carrier and government endpoints rather than on any keyword index.**
 
 ## For the page
 
-**Mechanism sentence.** A cell site is a radio and a computer in a cabinet, and both need power. In
-the Lower Mainland no rule says how long that power has to last after the grid goes down, because
-the regulator has not made one — it opened a proceeding in September 2025 and has not decided.
+**Mechanism sentence for the impact cell (both scenarios, band Medium).** *The province expects
+disruption to communications to continue for days to weeks, with what capacity survives prioritised
+for emergency personnel and a prolonged lack of access for everyone else; it names satellite phones
+and amateur radio as the backups people would fall back on.* [DCRRA-2025] [PEIRS] The crustal column
+carries the standing note that the assessment behind it models the megathrust.
+
+**Opening sentence for the page.** A cell site is a radio and a computer in a cabinet, and both need
+power. In the Lower Mainland no rule says how long that power has to last after the grid goes down,
+because the regulator has not made one: it opened a proceeding in September 2025 and has not
+decided. [CRTC-2025-226]
+
+**The satellite-and-radio sentence earns a place near the top.** The province naming satellite
+phones and amateur radio as the expected fallbacks is the plainest evidence on this page that the
+public networks are not expected to carry this, and it is the province's own expectation rather
+than our reading of one. It travels with the congestion symmetry: every channel here fails the same
+way, by filling up rather than by breaking. [PEIRS]
 
 **Build it as a regulatory-gap page.** The structure writes itself, and it should be exactly this order:
 nothing requires backup power at cell sites → the regulator is still asking → what *is* binding is

@@ -3,8 +3,8 @@ import { Cite } from "@/components/citation";
 import { Prose } from "@/components/page-parts";
 import { ScenarioCards } from "@/components/scenario-cards";
 import { SystemGrid } from "@/components/system-grid";
-import { TimelineStrip } from "@/components/timeline";
-import { DependencyGraphPlaceholder } from "@/components/dependency-graph";
+import { PhaseNarrative } from "@/components/phase-narrative";
+import { ScenarioText } from "@/components/scenario-text";
 import type { PageModule } from "./index";
 
 /**
@@ -15,10 +15,47 @@ import type { PageModule } from "./index";
  * measure — but the sections, their headings and every sentence in them come
  * from here, and the route holds none.
  *
- * The components in these bodies are the page's own: the scenario cards sit
- * under the section about the two earthquakes, the timeline and the system
- * grid under the section that sends the reader onward, and the dependency list
- * under the paragraph that says nothing fails on its own.
+ * The page is ordered so that a reader meets a consequence before they meet
+ * the site's filing system. The four phases come first and carry the answer to
+ * the question the site exists to answer; then every system as a card, so that
+ * a reader who has just been told what the months are like can go straight to
+ * the part of life they depend on; the two scenarios come after both, because
+ * a reader who has not yet been told why this matters has no reason to work
+ * through the difference between a megathrust and a crustal earthquake.
+ *
+ * The timeline carries no citation markers, and that is the one place this
+ * page departs from the site's habit. Its four panels make no claim of their
+ * own: every sentence in them is a consequence a system page states and
+ * sources, and the noun it hangs on is a link to that page. Markers on prose
+ * written this way would number the same handful of documents nine times over
+ * and make a narrative read like a filing. Two rules keep it honest. **No
+ * figure appears in an unmarked panel** — the numbers stay on the pages that
+ * can guard them, which is also why the panels read better. And the quoted
+ * passage keeps its attribution in words, because a quotation without a
+ * speaker is worse than a claim without a marker. The paragraph under the
+ * timeline says what the reader is looking at and where the evidence is.
+ *
+ * The standfirst opens on the gap the site exists to close: the province asks
+ * for two weeks, and households are not carrying it. Both halves are cited, and
+ * the second says kit ownership rather than days of supply because that is what
+ * the record measures — no published study measures held supply anywhere in the
+ * Lower Mainland, and `docs/research/household-preparedness.md` carries the six
+ * studies, what each one counted, and the guard that none of them may be used
+ * to say what share of households could last two weeks. The sentence quotes no
+ * percentage: the figure is five years old, and one number invites a reader to
+ * take a poll of 800 for a census.
+ *
+ * The first two sections open on a sentence the copy writes as their first
+ * paragraph and this module passes as `lede`, which is the only difference
+ * between the copy file and what the page renders.
+ *
+ * What used to sit here and no longer does is the dependency figure, which is
+ * an index of the site rather than a picture of the aftermath and which has its
+ * own page at `/dependencies/`. The coupling it teaches survives here as the
+ * paragraph that says nothing fails on its own. The system grid stayed, moved
+ * below the timeline and given the whole set rather than three tier-1 cards:
+ * after four paragraphs about the months, a reader wants to look their own life
+ * up, and a card they cannot find is a page they will not read.
  *
  * There is no map slot. The liquefaction overlay this page used to promise
  * rests on the Metro Vancouver microzonation layers, which are not openly
@@ -26,7 +63,13 @@ import type { PageModule } from "./index";
  * placeholder is gone rather than recaptioned.
  */
 
-/** Labels the scenario control in the hero. Furniture, not a claim. */
+/**
+ * The hero's scenario control. The note says what the toggle is for, because a
+ * reader four seconds into the site has no idea why they are being asked to
+ * choose; the label names what it sets. Both are furniture, not claims.
+ */
+export const HOME_CONTROL_NOTE =
+  "The region plans for two very different earthquakes, and they do not have the same impact. Pick one and every page on the site answers for it. If you do not know which, leave it where it is.";
 export const HOME_CONTROL_LABEL = "Showing impacts for";
 
 const link = "text-accent underline underline-offset-2";
@@ -37,55 +80,270 @@ export const home: PageModule = {
     title: "What a major earthquake does to the Lower Mainland, and for how long",
     nav: "Home",
     kicker: "Lower Mainland, British Columbia",
-    standfirst:
-      "A major earthquake in Metro Vancouver means minutes of shaking. The province expects many months of disruption to water and wastewater afterwards, and transportation routes at much-reduced capacity for weeks to months. BC Hydro expects several weeks without power for up to two thirds of downtown customers. Every figure here comes from a published document, and every document is listed.",
+    standfirst: (
+      <>
+        British Columbia asks every household to keep{" "}
+        <Link href="/prepare/" className={link}>
+          two weeks of water and food
+        </Link>
+        . <Cite id="PREPAREDBC" /> Most households in the region have not put
+        together an emergency kit of any size.{" "}
+        <Cite id="RESEARCHCO-PREP-21" /> So this site gathers what is already
+        published about a major earthquake in the Lower Mainland: what breaks,
+        how long it stays broken, and what each thing is waiting on. Two weeks
+        becomes a length of time you can picture rather than a slogan.
+      </>
+    ),
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
-      "PEIRS",
-      "BCH-WESTEND-25",
-      "NRCAN-1700",
-      "DCRRA-2025",
       "PREPAREDBC",
+      "RESEARCHCO-PREP-21",
+      "DCRRA-2025",
+      "PEIRS",
+      "NRCAN-1700",
     ],
   },
 
   sections: [
     {
       title: "The shaking is the short part",
+      lede: "Most people picture an earthquake as a violent event with a clear end, followed by help arriving from outside. Consider this timeline instead.",
       body: (
         <div className="flex flex-col gap-8">
+          <PhaseNarrative
+            items={[
+              {
+                phase: "hours",
+                heading: "It is over in a minute, and nothing works",
+                body: (
+                  <>
+                    <ScenarioText
+                      as="p"
+                      crustal={
+                        <>
+                          In the province’s own scenario the earthquake is
+                          heard before it is felt: a sound like a freight train,
+                          then 10 to 20 seconds of violent shaking that knocks
+                          people off their feet, “except for those who
+                          remember to drop, cover, and hold on”. A small
+                          number of buildings collapse, many more shift and
+                          crack, and most of the people badly hurt are hurt by
+                          things falling, some of them while running
+                          outside.{" "}
+                          <Link href="/shaking/" className={link}>
+                            More about the shaking
+                          </Link>
+                          .
+                        </>
+                      }
+                      cascadia={
+                        <>
+                          The province’s megathrust assessment sets its
+                          earthquake at ten in the morning on an August day. The
+                          shaking is moderate rather than violent and lasts
+                          about three minutes, and it arrives along a thousand
+                          kilometres of coast at once rather than under one
+                          city.{" "}
+                          <Link href="/shaking/" className={link}>
+                            More about the shaking
+                          </Link>
+                          .
+                        </>
+                      }
+                    />
+                    <p>
+                      The{" "}
+                      <Link href="/after/electricity/" className={link}>
+                        power
+                      </Link>{" "}
+                      is already off when the shaking stops: the lights, the
+                      lifts, the tills, the fuel pumps and the traffic signals
+                      at every intersection, all at the same moment.
+                      Everyone reaches for a{" "}
+                      <Link href="/after/communications/" className={link}>
+                        phone
+                      </Link>{" "}
+                      at once, and the towers that keep working are the ones
+                      with power left in them.
+                    </p>
+                    <p>
+                      Over the next few hours the{" "}
+                      <Link href="/after/water/" className={link}>
+                        water
+                      </Link>{" "}
+                      pressure falls away as broken mains empty the system.
+                      Glass, brick and cladding lie across the pavements and{" "}
+                      <Link href="/after/transportation/" className={link}>
+                        debris blocks streets
+                      </Link>{" "}
+                      in every neighbourhood. Thousands of people are hurt, and
+                      the{" "}
+                      <Link href="/after/health-care/" className={link}>
+                        hospitals
+                      </Link>{" "}
+                      taking them stood through the same earthquake.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                phase: "days",
+                heading: "Nobody is coming to your street yet",
+                body: (
+                  <>
+                    <p>
+                      The taps are dry. Bottled{" "}
+                      <Link href="/after/water/" className={link}>
+                        water
+                      </Link>{" "}
+                      is the first thing to go from the shops, and the shops do
+                      not restock:{" "}
+                      <Link href="/after/food/" className={link}>
+                        food
+                      </Link>{" "}
+                      arrives by truck through the same broken roads as
+                      everything else, and a{" "}
+                      <Link href="/after/fuel/" className={link}>
+                        service station
+                      </Link>{" "}
+                      with full tanks and no power dispenses nothing. Cards do
+                      not work without power or a network.
+                    </p>
+                    <p>
+                      Crews clear the routes the response needs first, which is
+                      not your street, so what you can reach is what you can
+                      walk or cycle to. The{" "}
+                      <Link href="/after/sanitation/" className={link}>
+                        toilet
+                      </Link>{" "}
+                      stops being usable on the first day rather than the first
+                      week, because flushing takes water nobody has to spare.
+                      The province’s own plan expects neighbours to
+                      organise themselves and work together without waiting to
+                      be told, so the people who reach you first are the people
+                      who already live on your street.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                phase: "weeks",
+                heading:
+                  "Some things come back. The ones under the road do not",
+                body: (
+                  <>
+                    <p>
+                      <Link href="/after/electricity/" className={link}>
+                        Power
+                      </Link>{" "}
+                      returns in patches, the core before the edges, because
+                      putting poles and wires back up is thousands of small
+                      repairs rather than one big one. Your street comes back
+                      when its own poles do.{" "}
+                      <Link href="/after/water/" className={link}>
+                        Water
+                      </Link>{" "}
+                      follows behind it, and the worst ground is served last.
+                    </p>
+                    <p>
+                      The{" "}
+                      <Link href="/after/sanitation/" className={link}>
+                        sewers
+                      </Link>{" "}
+                      are what nobody can give you a date for. Households manage
+                      waste in buckets and chemical toilets, and an apartment
+                      tower has nowhere else to put it.{" "}
+                      <Link href="/after/gas/" className={link}>
+                        Gas
+                      </Link>{" "}
+                      returns building by building, as fast as technicians can
+                      enter each one and relight every appliance in it. Drinking
+                      water arrives on trucks, at points people queue at, and
+                      schools and workplaces are shut or somewhere else.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                phase: "months",
+                heading: "Repair becomes the ordinary state of things",
+                body: (
+                  <>
+                    <p>
+                      The{" "}
+                      <Link href="/after/housing/" className={link}>
+                        building you live in
+                      </Link>{" "}
+                      can be standing, sound to look at, and closed for months
+                      behind a cordon. Most people who lose their home lose
+                      it that way rather than to collapse. Somewhere to
+                      move into is scarce, contractors and engineers are
+                      scarcer, and every household in the region is looking at
+                      the same time.
+                    </p>
+                    <p>
+                      Utilities run at reduced service long after they are back
+                      on, and the network as a whole is years from the state it
+                      was in the morning before. The province’s plan
+                      through all of it is that people stay in the region rather
+                      than leave it.{" "}
+                      <Link href="/getting-around/" className={link}>
+                        What that means for getting around
+                      </Link>
+                      .
+                    </p>
+                  </>
+                ),
+              },
+            ]}
+          />
           <Prose>
             <p>
-              Most people picture an earthquake as a violent event with a clear
-              end, followed by help arriving from outside.
+              No two earthquakes do the same thing, and none of this is a
+              forecast of the actual event. It follows the two events the
+              province and its agencies plan around, which are the ones
+              households are asked to be ready for.
             </p>
             <p>
-              The province’s own planning says something different. Water and
-              wastewater disruption is “expected for many months”.{" "}
-              <Cite id="PEIRS" /> Transportation routes would be operating “at a
-              much-reduced capacity for an extended period (weeks to months)”.{" "}
-              <Cite id="PEIRS" /> BC Hydro told its regulator in November 2025
-              that a large earthquake could leave up to two thirds of downtown
-              customers without power for several weeks, and the system years
-              from full restoration. <Cite id="BCH-WESTEND-25" />
+              How hard each of those stretches is also depends on the weather it
+              happens in. Running out of water in an August heat dome is not the
+              same as running out of it in January after days of rain, and the
+              two scenarios are set in exactly those two conditions: a 30 to 40
+              degree heatwave with wildfire smoke for the megathrust,{" "}
+              <Cite id="DCRRA-2025" /> a January afternoon after an atmospheric
+              river for the crustal earthquake. <Cite id="PEIRS" />
             </p>
             <p>
-              None of those failures happens on its own. Water needs power for
-              pumps and roads for crews. Roads need debris cleared, which needs
-              fuel. How long the region waits depends less on any one system
-              than on the order in which they can be brought back.
+              None of those failures happens on its own, either. Water needs
+              power for pumps and roads for crews. Roads need debris cleared,
+              which needs fuel. How long the region waits depends less on any
+              one system than on the order in which they can be brought back,
+              which is why{" "}
+              <Link href="/after/" className={link}>
+                life afterwards
+              </Link>{" "}
+              is told system by system and{" "}
+              <Link href="/dependencies/" className={link}>
+                the dependency graph
+              </Link>{" "}
+              counts what each system is waiting on.
             </p>
           </Prose>
-          <DependencyGraphPlaceholder />
         </div>
       ),
     },
 
     {
-      title: "There are two earthquakes to think about, not one",
+      title: "Go deeper on any part of it",
+      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to. Open any of them to go further.",
+      body: <SystemGrid />,
+    },
+
+    {
+      title: "Two scenarios, and they are very different earthquakes",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
@@ -95,7 +353,9 @@ export const home: PageModule = {
               Resources Canada calls “the greatest earthquake hazard” to west
               coast cities, because it is closer and more frequent.{" "}
               <Cite id="NRCAN-1700" /> British Columbia’s primary earthquake
-              planning scenario is that nearer one. <Cite id="PEIRS" />
+              planning scenario is that nearer one. <Cite id="PEIRS" /> Other
+              magnitudes and other faults are possible; these two are what the
+              planning is written around.
             </p>
             <p>
               They are dangerous to different buildings, and which of them is
@@ -104,7 +364,12 @@ export const home: PageModule = {
               <Link href="/scenarios/" className={link}>
                 Read about the two scenarios
               </Link>
-              .
+              , or start with{" "}
+              <Link href="/shaking/" className={link}>
+                the shaking
+              </Link>
+              , which covers the ground under the region, the buildings on it,
+              and the fires and landslides that arrive after the shaking stops.
             </p>
           </Prose>
           <ScenarioCards />
@@ -113,103 +378,30 @@ export const home: PageModule = {
     },
 
     {
-      title:
-        "The shaking decides where the damage falls, and the systems decide how long it lasts",
-      body: (
-        <div className="flex flex-col gap-8">
-          <Prose>
-            <p>
-              <strong>
-                <Link href="/shaking/" className={link}>
-                  The shaking
-                </Link>
-              </strong>{" "}
-              covers the ground under the region, the buildings on it, the
-              injuries, and the fires and landslides that arrive after the
-              shaking stops. What a building stands on matters more than which
-              building it is.
-            </p>
-            <p>
-              <strong>
-                <Link href="/after/" className={link}>
-                  Life afterwards
-                </Link>
-              </strong>{" "}
-              is the months that follow, system by system: how long each one
-              is out, how widely, and what it is waiting on. Water, power,
-              transport, sanitation, gas, fuel, food, housing, health care,
-              communications and the rest.
-            </p>
-            <p>
-              <strong>
-                <Link href="/getting-around/" className={link}>
-                  Getting around
-                </Link>
-              </strong>{" "}
-              is about what the province actually plans for, which is that
-              people stay where they are and the roads are used for the
-              response.
-            </p>
-            <p>
-              <strong>
-                <Link href="/prepare/" className={link}>
-                  Preparing
-                </Link>
-              </strong>{" "}
-              is what to do about all of it.
-            </p>
-          </Prose>
-          <TimelineStrip />
-          <SystemGrid tier={1} />
-        </div>
-      ),
-    },
-
-    {
-      title: "A band says how long, how widely, and what the system is waiting on",
+      title: "Compiled from published work",
       body: (
         <Prose>
           <p>
-            Each system carries one of three bands for each earthquake: Low,
-            Medium or High. A fourth state, not yet assessed, is drawn hatched
-            and means nobody has published an assessment.
+            Everything here comes from documents published by governments,
+            utilities and engineers. Where nobody has published an answer, the
+            page says so rather than guessing, and where two official documents
+            contradict each other, both are here.
           </p>
           <p>
-            A band reads the public record rather than judging the equipment.
-            Every coloured cell comes with one sentence saying how the system
-            fails and a link to the document that says so.{" "}
+            How long something is out is written as one of three bands: Low,
+            Medium or High, with a fourth for not yet assessed.{" "}
             <Link href="/method/" className={link}>
               How the bands work
             </Link>
-            .
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "Every number here comes from a document somebody else published",
-      body: (
-        <Prose>
-          <p>
-            That published work is federal and provincial scenarios, utility
-            filings with their regulators, municipal plans, and peer-reviewed
-            engineering. No number here is a new estimate.
-          </p>
-          <p>
-            Where nobody has published an answer, the gap is stated rather than
-            filled with a guess. Where two official documents disagree, both are
-            here.
-          </p>
-          <p>
+            .{" "}
             <Link href="/sources/" className={link}>
               The sources
             </Link>{" "}
-            lists every document.{" "}
+            lists every document, and if you find something wrong,{" "}
             <Link href="/contribute/" className={link}>
-              Contribute
+              contribute
             </Link>{" "}
-            explains what a correction needs in order to be usable.
+            says what a correction needs.
           </p>
         </Prose>
       ),
