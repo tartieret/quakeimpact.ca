@@ -1310,3 +1310,35 @@ The marker is a word in a dashed outline on `--color-ink-faint`, which is 5.04:1
 paper and 5.67:1 in dark mode, and the dashed outline is the vocabulary
 `VerificationNote` and `MapPlaceholder` already use for something not built. Nothing
 here is interactive, so nothing needs a focus state.
+
+## The lockfile has to hold every platform's `@emnapi`, and npm will not put them there
+
+`npm ci` failed in CI with `Missing: @emnapi/runtime@1.11.3 from lock file` and
+`Missing: @emnapi/core@1.11.3`. It had failed once before with
+`Missing: @emnapi/wasi-threads@1.2.3`, which is the same bug wearing a different name.
+
+Two optional packages pull these in: `@img/sharp-wasm32` depends on `@emnapi/runtime`,
+and `@tailwindcss/oxide-wasm32-wasi` depends on `@emnapi/core`, `@emnapi/runtime` and
+`@emnapi/wasi-threads`. Both are `cpu: wasm32` and are never installed on either
+machine. But `npm ci` still resolves an ideal tree that includes their dependencies,
+and which of the three it asks for differs by platform: Windows asks for
+`wasi-threads`, Linux asks for `runtime` and `core`.
+
+`npm install --package-lock-only` writes only the ones the current platform wants, and
+silently drops the others, so regenerating the lock on Windows produces a file that
+fails on Linux and regenerating it on Linux would produce one that fails here. Fixing
+whichever package the error names just moves the failure to the next one, which is
+what the first repair did.
+
+The lock has to carry all three root entries at once. They were added by hand with
+version, `resolved`, `integrity` and `dependencies` taken from
+`npm view <pkg>@<range> version dist.integrity dependencies --json`. `@emnapi/runtime`
+is not `dev`, because `@img/sharp-wasm32` is a production dependency; the other two are
+`dev: true` and all three are `optional: true`.
+
+Two things make this checkable without a Linux machine. `npm ci --dry-run --os=linux
+--cpu=x64` resolves the tree CI will resolve and reports the same `EUSAGE` when the
+lock is short. And writing the file back with `json.dumps(lock, indent=2,
+ensure_ascii=False)` plus a trailing newline reproduces npm's own formatting exactly,
+so the diff is the entries added and nothing else. A 22-line diff is the evidence that
+no version was moved while fixing this.
