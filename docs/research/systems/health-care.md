@@ -168,6 +168,21 @@ be significantly impacted** by a large seismic event. Other hospitals in this re
 Vancouver General, UBC Hospital, and Lion's Gate Hospital, are likely to see increased demand as
 a result." [PEIRS] **[A]**
 
+**This finding has an expiry date, and it is close.** The St. Paul's the province is
+describing is the **existing** hospital on Burrard Street. Its replacement on the Station
+Street site is built to the Vancouver Building By-law post-disaster requirement, with
+contractual FEMA P-58 downtime targets — see "Tier 3" below — and opens around 2027. When
+it does, **the province's only named hospital vulnerability moves out of the building it
+names**, and this quotation becomes a statement about a decommissioned site unless it is
+re-dated. Carry the date with it every time, and check PEIRS for a revision after the
+move. Already a refresh trigger in `../open-questions.md`.
+
+**What it does and does not establish.** It is [A] that the province expects the other
+three named hospitals to see increased demand. It is **not** a capacity statement: no
+number of patients, no bed count, no comparison against the casualty load PEIRS itself
+forecasts in the same document. The distance between "likely to see increased demand" and
+any published measure of what those hospitals could absorb is the centre of this file.
+
 Two BC Gov News releases state that further existing facilities predate current seismic standards:
 Richmond Hospital [BCGOV-RICH-2016] **[A]** and Lions Gate Hospital [BCGOV-LGH-2018]
 **[A]**. Richmond's redevelopment is funded and under way in phases. [BCGOV-RICH-2024]
