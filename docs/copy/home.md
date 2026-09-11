@@ -83,9 +83,7 @@ that means for getting around](/getting-around/).
 
 No two earthquakes do the same thing, and none of that is a forecast of what
 yours will do. It follows the two events the province and its agencies plan
-around — the ones households are asked to be ready for — and every page it links
-to carries the documents behind it, the numbers, and the places where two
-official documents disagree.
+around, which are the ones households are asked to be ready for.
 
 How hard each of those stretches is also depends on the weather it happens in.
 Running out of water in an August heat dome is not the same as running out of it
@@ -103,8 +101,7 @@ and [the dependency graph](/dependencies/) counts what each system is waiting on
 ## Go deeper on any part of it
 
 Water in the taps, power in the walls, a phone that connects, a toilet that
-flushes, roads that carry you, a home to go back to. Each card carries how long
-that part of life is out and one sentence on how it fails. Open any of them to go
+flushes, roads that carry you, a home to go back to. Open any of them to go
 further.
 
 *Every system, drawn from the content model rather than written here.*
