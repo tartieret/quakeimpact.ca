@@ -49,6 +49,7 @@ hook: <the one line that appears on cards and in the grid>
 lede: <the standfirst, one or two sentences>
 bands: { cascadia: high, crustal: high }
 mechanism: <the one sentence that sits in the impact cell>
+source: MV-WATER-22
 status: draft
 ---
 
@@ -67,9 +68,19 @@ Body.
 <keys, resolving in ../research/sources.md>
 ```
 
-Front matter feeds `src/content/site.ts`. `bands` and `mechanism` appear on
-system pages only, and their values come from `../research/impact-bands.md`
-rather than from memory.
+Front matter feeds `src/content/site.ts`. `bands`, `mechanism` and `source`
+appear on system pages only, and their values come from
+`../research/impact-bands.md` rather than from memory.
+
+`source` is the third of the three fields `Impact` in `src/content/types.ts`
+requires, alongside the band and the mechanism sentence. It is one key, the one the
+mechanism sentence rests on, and it is not the same list as **Sources on this page**.
+The three system files written so far carry `bands` and `mechanism` and do not yet
+carry `source`; the keys they need are in the assignment table in
+`../research/impact-bands.md`.
+
+The rest of a system's entry stays in `src/content/site.ts` and has no front-matter
+key: the slug, the phase it bites at, what it depends on, and its build tier.
 
 ## Rules
 
@@ -94,10 +105,17 @@ rather than from memory.
 
 ## What is not written yet
 
-Sanitation, housing, communications, health care, natural gas, food and fuel,
-dams and reservoirs, port and airport and ferry terminals, where help comes
-from, buildings, casualties, fire following, secondary hazards, the dependency
-graph, and the about, sources and contribute pages.
+Ten of the thirteen systems: sanitation, natural gas, fuel, food, port and
+airport and ferry terminals, dams and reservoirs, housing, health care,
+communications, and where help comes from.
+
+Four of the five shaking pages: buildings, casualties, fire following and
+secondary hazards.
+
+The two section index pages, `/shaking/` and `/after/`, which exist as routes and
+have no copy.
+
+The dependency graph, and the about, sources and contribute pages.
 
 `../research/build-order.md` gives the order. Nothing is waiting on evidence
 except dams and the crustal column of port, airport and ferry terminals, which

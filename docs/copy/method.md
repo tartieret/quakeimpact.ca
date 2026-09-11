@@ -21,29 +21,41 @@ A band is assigned on three things together.
 | **Medium** | Days to weeks | Patchy, worst on poor ground | Waiting on one other system |
 | **High** | Weeks to months, sometimes longer | Regional | Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast |
 
-The rubric is deliberately the same for every system, so that High for sewer service
-and High for roads mean comparable things.
+The same three questions are asked of every system, so that High for sewer service and
+High for roads mean comparable things.
 
 A fourth state, **not yet assessed**, is drawn hatched rather than coloured. It is a
 real answer, not a blank waiting to be filled.
 
-## A band tracks what has been published, not how bad the equipment is
+## A band is a reading of the public record, not a verdict on the equipment
 
-This is the most important thing on the page. The bands read the public record. A
-system banded High is a system somebody has assessed and found slow to restore. A
+A system banded High is a system somebody has assessed and found slow to restore. A
 system marked not yet assessed is a system nobody has published an assessment of, and
-that says nothing about whether it would hold up.
+that says nothing at all about whether it would hold up.
 
-Two rows on this site are hatched today. Cleveland and Seymour Falls dams were both
-reviewed by an engineer in 2024, as the law requires for dams in the top consequence
-class, and both were found safe. Neither published conclusion mentions earthquakes.
-[MV-DSP-2025] So the dams have been assessed, but not for this, which is a different
-thing from never having been looked at.
+Three cells on the grid are hatched today, and they are hatched for two different
+reasons.
+
+Dams and reservoirs are hatched in both scenarios. Cleveland and Seymour Falls dams
+were each reviewed by an engineer in 2024, as the law requires every seven years for
+dams in the top consequence class. Neither review identified an unsafe condition, and
+neither published conclusion mentions earthquakes. [MV-DSP-2026] Metro Vancouver is
+still paying for seismic evaluations of both dams, and the upgrade work at Cleveland
+has not started. [MV-CAPITAL-2027] So the dams have been assessed, but not for this,
+which is a different thing from never having been looked at.
 
 Port, airport and ferry terminals carry a band in one scenario and a hatch in the
 other. The megathrust column is banded Medium because a study modelled that
 earthquake. [AIR-2013] The crustal column is hatched because the same study modelled
-no crustal earthquake. The hatch is about the literature, not about the terminals.
+no crustal earthquake. Nobody is saying the terminals do better or worse in the nearer
+earthquake. Nobody has looked.
+
+That is worth separating from the other row on the grid that changes between the two
+scenarios. Where help comes from is High for the megathrust and Low for the crustal
+earthquake because the two earthquakes genuinely differ: one shakes the whole coast at
+once, and the other does not. Port, airport and ferry terminals differ only in how much
+has been written down. One asymmetry is about the earthquakes. The other is about which
+documents happen to exist.
 
 Bands move when a document appears, in either direction.
 
@@ -51,10 +63,10 @@ Bands move when a document appears, in either direction.
 
 A colour on its own is an assertion. Each cell on the grid carries the band, one
 sentence saying how the system fails, and a link to the document the sentence comes
-from. If a cell cannot carry all three, it does not ship coloured.
+from. A cell that cannot carry all three is not coloured.
 
-The same rule applies to prose. A sentence with a number in it and no source attached
-is a defect on this site, and worth reporting.
+The same rule applies to the writing around the grid. A sentence with a number in it
+and nothing to click is a mistake, and worth telling us about.
 
 ## Two systems can share a band for different reasons
 
@@ -73,9 +85,9 @@ of beds the region has. [DCRRA-APPC] The damage is known. The comparison is miss
 Both are Medium. They are not the same situation, and each system page says which one
 it is in.
 
-## Where a band is wider than the evidence, the page says so
+## Some bands are wider than the evidence behind them
 
-The grid covers the whole region, and a lot of the evidence does not.
+The grid covers the whole region. A lot of the evidence covers one neighbourhood.
 
 Electricity is the clearest case. BC Hydro told its regulator in November 2025 that a
 large earthquake could leave up to two thirds of **downtown** customers without power,
@@ -84,11 +96,11 @@ restore the system. [BCH-WESTEND-25] Nothing equivalent has been published for S
 Richmond or the North Shore.
 
 The row is banded High because the grid is regional and that is the only measured
-evidence available. The page, however, says downtown and names the gap. A reader
-downtown learns something true about where they live. A reader elsewhere learns that
-nobody has published an answer, which is also true and also worth knowing.
+evidence available. The sentence beside it stays narrow: downtown, and then the gap. A
+reader downtown learns something true about where they live. A reader in Surrey learns
+that nobody has published an answer, which is also true and also worth knowing.
 
-## The two scenarios are modelled, and one model does the modelling
+## Canada has one public earthquake loss model, and both governments use it
 
 Both scenarios on this site come from the Geological Survey of Canada's scenario
 catalogue: a magnitude 9.0 full rupture of the Cascadia fault, and a magnitude 7.0 in
@@ -99,10 +111,11 @@ casualty figures are attributed to the federal scenario. [DCRRA-2025] Its crusta
 figures were developed by Natural Resources Canada. [PEIRS] The province asked for
 those scenarios in the first place. [GSC-OF-8853]
 
+The province is not independently confirming the federal figures. It is adopting them.
 So when a federal document and a provincial document give the same number, that is one
-model quoted twice rather than two studies agreeing. Canada has one public earthquake
-loss model. Where an independent comparison exists at all, it comes from the insurance
-industry, and this site labels it as such.
+model quoted twice, and not two studies agreeing. Two figures that look like a range
+are one figure seen twice. Where a genuinely independent estimate exists at all, it
+comes from the insurance industry, and it is named as such wherever it appears.
 
 All of these modelled figures share one boundary, which the catalogue states plainly.
 They cover "only damage to buildings, and their inhabitants, from earthquake shaking".
@@ -125,8 +138,9 @@ it happened.
 
 Three cases come up often enough to be worth naming.
 
-**Return periods do not carry across subjects.** A dam is assessed against a
-1-in-10,000-year standard and a building against 1-in-2,475. The professional
+**Return periods do not carry across subjects.** A dam in the top consequence class is
+assessed against a 1-in-10,000-year earthquake, and a building against a 1-in-2,475-year
+one. The professional
 guideline for dam safety reviews in British Columbia states that building-code ground
 motions should not be used for them, so the two figures are not points on one scale.
 [EGBC-DSR-GL]
@@ -139,23 +153,23 @@ a statement about what a structure was aimed at, not a forecast of what it will 
 Where this site gives a figure for a bridge or a tunnel, it says which of the two it
 is.
 
-## What would change what is on this page
+## Several of these bands are expected to change
 
-Bands here are a reading of documents that are still being written. Several are
-expected to change.
+The documents the bands read are still being written. Four pieces of work are
+outstanding, and each of them could move a band.
 
 The second phase of the regional microzonation mapping, covering Pitt Meadows, Maple
 Ridge and Langley, is due in late 2026. [MVSMMP] Metro Vancouver's governing drinking
 water plan lists the analysis that would identify its seismic weak points as work
 still to do. [MV-DWMP-26] BC Hydro describes its assessment of the transmission and
 distribution network as still being completed. [BCH-DAMFAQ] The federal scenario
-catalogue says its excluded hazards are not *currently* included.
+catalogue says its excluded hazards are not *currently* included. [NRCAN-SCEN]
 
 Corrections are welcome and the [contribute](/contribute/) page says what is useful:
 a published document, a correction with a source behind it, or a pointer to a report.
 
 ## Sources on this page
 
-[NRCAN-SCEN] [GSC-OF-8853] [PEIRS] [DCRRA-2025] [DCRRA-APPC] [BCH-WESTEND-25]
-[BCH-DAMFAQ] [CRTC-2025-226] [AIR-2013] [MV-DSP-2025] [MV-DWMP-26] [MVSMMP]
-[EGBC-DSR-GL]
+[MV-DSP-2026] [MV-CAPITAL-2027] [AIR-2013] [CRTC-2025-226] [DCRRA-APPC]
+[BCH-WESTEND-25] [NRCAN-SCEN] [DCRRA-2025] [PEIRS] [GSC-OF-8853] [EGBC-DSR-GL]
+[MVSMMP] [MV-DWMP-26] [BCH-DAMFAQ]

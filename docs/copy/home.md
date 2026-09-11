@@ -13,15 +13,15 @@ Most people picture an earthquake as a violent event with a clear end, followed 
 help arriving from outside.
 
 The province's own planning says something different. Water and wastewater disruption
-is "expected for many months". [PEIRS] Transportation routes run "at a much-reduced
-capacity for an extended period (weeks to months)". [PEIRS] BC Hydro told its
-regulator in 2025 that a large earthquake could leave up to two thirds of downtown
-customers without power for several weeks, and the system years from full restoration.
-[BCH-WESTEND-25]
+is "expected for many months". [PEIRS] Transportation routes would be operating "at a
+much-reduced capacity for an extended period (weeks to months)". [PEIRS] BC Hydro told
+its regulator in November 2025 that a large earthquake could leave up to two thirds of
+downtown customers without power for several weeks, and the system years from full
+restoration. [BCH-WESTEND-25]
 
 None of those failures happens on its own. Water needs power for pumps and roads for
-crews. Roads need debris cleared, which needs fuel. That is the part this site is
-built to show.
+crews. Roads need debris cleared, which needs fuel. How long the region waits depends
+less on any one system than on the order in which they can be brought back.
 
 ## There are two earthquakes to think about, not one
 
@@ -31,14 +31,15 @@ greatest earthquake hazard" to west coast cities, because it is closer and more
 frequent. [NRCAN-1700] British Columbia's primary earthquake planning scenario is that
 nearer one. [PEIRS]
 
-They are dangerous to different buildings, and the contrast is worth ten minutes.
+They are dangerous to different buildings, and which of them is the one that matters
+to you depends on the building you are in and the ground it stands on.
 [Read about the two scenarios](/scenarios/).
 
-## What is on this site
+## The shaking gets one part of this site, and the months after it get the rest
 
 **[The shaking](/shaking/)** covers the ground under the region, the buildings on it,
-and what comes after the shaking stops. What a building stands on matters more than
-which building it is.
+the injuries, and the fires and landslides that arrive after the shaking stops. What a
+building stands on matters more than which building it is.
 
 **[Life afterwards](/after/)** is the core. One page per system, each carrying how long
 it is out, how widely, and what it is waiting on. Water, power, transport, sanitation,
@@ -50,17 +51,17 @@ which is that people stay where they are and the roads are used for the response
 **[Preparing](/prepare/)** is what to do about all of it, and every system page ends
 with its own version.
 
-## How to read the impact bands
+## A band says how long, how widely, and what the system is waiting on
 
-Each system carries a band for each scenario: Low, Medium or High, based on how long
-it is out, how widely, and what it is waiting on. A fourth state, not yet assessed, is
-drawn hatched and means nobody has published an assessment.
+Each system carries one of three bands for each earthquake: Low, Medium or High. A
+fourth state, not yet assessed, is drawn hatched and means nobody has published an
+assessment.
 
 A band reads the public record rather than judging the equipment. Every coloured cell
 comes with one sentence saying how the system fails and a link to the document that
 says so. [How the bands work](/method/).
 
-## Where this comes from
+## Every number here comes from a document somebody else published
 
 Everything here is compiled from published work: federal and provincial scenarios,
 utility filings with their regulators, municipal plans, and peer-reviewed engineering.
@@ -77,10 +78,12 @@ what a correction needs in order to be usable.
 If you have ten minutes, read [the two scenarios](/scenarios/) and then
 [preparing](/prepare/).
 
-If you have two minutes, the useful thing is water. Four litres per person per day is
-the province's own figure, and stored water covers exactly the days when trucking it
-around the region is hardest. [PREPAREDBC] [DCRRA-2025]
+If you have two minutes, store water. The province's own assessment says that
+distributing bulk drinking water across the region stays difficult for the first four
+to five days. [DCRRA-2025] PreparedBC asks for four litres per person per day, for at
+least two weeks. [PREPAREDBC] Water in the cupboard covers the days when getting it to
+you is hardest.
 
 ## Sources on this page
 
-[PEIRS] [BCH-WESTEND-25] [NRCAN-1700] [PREPAREDBC] [DCRRA-2025]
+[PEIRS] [BCH-WESTEND-25] [NRCAN-1700] [DCRRA-2025] [PREPAREDBC]

@@ -37,8 +37,7 @@ earthquake. New lifeline crossings are designed against a 2,475-year earthquake.
 
 ## A bridge that survives is not a bridge you can drive over the next morning
 
-The Ministry defines its retrofit service levels in plain words, and they answer the
-question most people actually have.
+The Ministry defines its retrofit service levels in plain words.
 
 **Safety 2**: "Limited access (e.g. reduced or designated lanes, emergency traffic).
 It is recognized that approximately 24 hours may be needed to complete a
@@ -50,51 +49,57 @@ the earthquake. Public access is not expected until repairs are completed."
 **Superstructure**: "Access to traffic is not envisaged for a prolonged period."
 [MOTI-SRDC-05]
 
-Restoration here is gated on inspection before it is gated on repair. The City of
-Vancouver gives residents the same sequence for transit: plan other ways to get home,
-because "roads may be blocked and trains will not be running until damage assessments
-are complete". [COV-EXPLORER-25]
+Restoration is gated on inspection before it is gated on repair. What the province and
+the City plan for people while that inspection happens is set out in
+[getting around](/getting-around/).
 
 ## The approach fails before the span does
 
-This is the least understood part of the subject. A retrofitted bridge can stand
-intact while the embankment carrying the road onto it settles or slides sideways. A
-standing bridge with a step at the end of it carries nobody, and retrofit
-announcements rarely separate the two.
+A retrofitted bridge can stand intact while the embankment carrying the road onto it
+settles or slides sideways. A standing bridge with a step at the end of it carries
+nobody, and a retrofit announcement rarely separates the two. The mechanism is
+liquefaction, which is saturated soil losing its strength and behaving like a liquid
+while the ground shakes.
 
-Three Lower Mainland crossings have published figures at their approaches.
+Three Lower Mainland crossings have published figures at their approaches. Each figure
+belongs to one size of earthquake, one place on one bridge, and one state of the ground
+beneath it.
 
-**Queensborough.** The Ministry's own retrofit report records calculated differential
-movements of about 150 mm in a liquefiable zone between two approach bents *after* the
-soil was treated. Without that treatment, "the predicted displacements were considered
-large enough to cause a collapse of the structure." [QB-MOTH-95] The objective of the
-work is stated in the same report: a retrofit "that prevents collapse during the 1/475
-year earthquake event, however the structure may or may not be functional after the
-event." [QB-MOTH-95]
+**Queensborough.** The Ministry's own retrofit report defines the work as a retrofit
+"that prevents collapse during the 1/475 year earthquake event, however the structure
+may or may not be functional after the event", and records calculated differential
+movements of about 150 mm in a liquefiable zone between two of the Queensborough
+approach bents after the soil there had been treated. Without that treatment, "the
+predicted displacements were considered large enough to cause a collapse of the
+structure." [QB-MOTH-95]
 
 **Golden Ears.** About 0.5 m of ground movement was calculated at the river bank for
-the 2,475-year event, and about 0.3 m at the main bridge piers, where the ground was
-densified. [GEB-CGS-08] [NAB-ICCHGE-08] Those two figures are for the same earthquake
-in different places, one treated and one not.
+the 2,475-year earthquake, and about 0.3 m at the main bridge piers in that same
+2,475-year earthquake, after the ground beneath those piers had been densified.
+[GEB-CGS-08] [NAB-ICCHGE-08] The two numbers are the same event at two places on one
+bridge, and the smaller one is what densification left behind.
 
 **Oak Street.** The 1990s retrofit had the "primary objective being to prevent
 structural collapse of any part of the bridge under a 475 year return period
-earthquake". The south approach sits on liquefiable soil, and the chosen fix was to
-wrap the girders in glass fibre so the bridge could bend, rather than to stop the
-ground moving. It saved over $1 million against improving the ground. [OAK-13WCEE]
-The bridge was reassessed in 2021 and 2022 because "changes to codes and seismic
-hazard models since that time have resulted in substantially higher seismic loading
-requirements", and further retrofits were identified. Those figures are not public.
-[OAK-BASIS-22]
+earthquake". The south approach sits on liquefiable soil, and the maximum differential
+pier settlement there was evaluated at 100 mm for that 475-year earthquake, a figure
+that assumes a densification of the ground which the same paper records as not built
+at the time. The fix chosen instead was to wrap the girders in glass fibre so the
+bridge could bend, rather than to stop the ground moving, which saved over $1 million
+against improving the ground. [OAK-13WCEE] The bridge was reassessed in 2021 and 2022
+because "changes to codes and seismic hazard models since that time have resulted in
+substantially higher seismic loading requirements", and further retrofits were
+identified. Those figures are not public. [OAK-BASIS-22]
 
 One crossing shows the whole chain from objective to built fix, and it is not in Metro
 Vancouver. The Mission Bridge connects the District of Mission to Abbotsford, about
 80 km east of Vancouver, on the provincial disaster recovery network. Its engineers
 found that "liquefaction is the key issue affecting the seismic performance of the
-bridge", predicted settlements of up to 200 mm at the south approach piers and a
-flow-slide failure at the south abutment, designed compacted gravel toe berms and
-ground treatment against it, and recorded that the work was built. [MISSION-CGS-18]
-None of those numbers describe a Richmond or Delta crossing.
+bridge", predicted settlements of up to 200 mm at the Mission south approach piers and
+a flow-slide failure at the Mission south abutment for that bridge's 475-year design
+earthquake, designed compacted gravel toe berms and ground treatment against both, and
+recorded that the work was built. [MISSION-CGS-18] None of those numbers describes a
+Richmond or Delta crossing.
 
 The province does publish what an approach is meant to achieve. In the zone where a
 bridge approach embankment meets the structure, a lifeline crossing must keep 100 per
@@ -107,10 +112,11 @@ The tunnel is 630 m of immersed tube built between 1957 and 1959, with 550 m and
 of approaches at the north and south ends. The approaches together are longer than the
 crossing. [GMC-TUNNEL-19]
 
-Its original design assumed a level of shaking that "did not consider the effects of
-soil liquefaction … as these were not well understood at the time." A 1989 assessment
-found the tunnel "does not have sufficient strength to prevent collapse under the 475
-year earthquake", and a 1991 investigation found liquefiable soils up to 20 m deep.
+Its original design assumed peak shaking of 0.21 g, about a fifth of the force of
+gravity, and it "did not consider the effects of soil liquefaction … as these were not
+well understood at the time." A 1989 assessment found the tunnel "does not have
+sufficient strength to prevent collapse under the 475 year earthquake", and a 1991
+investigation found liquefiable soils up to 20 m deep.
 [GMC-TUNNEL-19]
 
 A two-stage retrofit was planned in 2001. The structural stage was completed in 2006.
@@ -142,21 +148,22 @@ their own work.
 
 | Crossing | What is published |
 | --- | --- |
-| George Massey Tunnel | Retrofit half completed, 150 to 240 year capacity, does not meet the current bridge code [GMC-TUNNEL-19] |
-| Oak Street | 475-year collapse-prevention objective, 100 mm approach settlement after ground treatment, reassessed 2021 to 2022 [OAK-13WCEE] [OAK-BASIS-22] |
+| George Massey Tunnel | Retrofit half completed, 150 to 240 year capacity, does not meet the seismic performance criteria in the 2014 bridge code [GMC-TUNNEL-19] |
+| Oak Street | 475-year collapse-prevention objective; 100 mm differential settlement at the south approach piers in that 475-year event, assuming a ground densification the paper records as not built at the time; reassessed 2021 to 2022 [OAK-13WCEE] [OAK-BASIS-22] |
 | Knight Street | Treated as a lifeline bridge; after the 1000-year event "the crossing need not be passable"; shear key failures predicted at all concrete girder approach spans [KSB-2010] |
-| Queensborough | Collapse prevention at 1/475 only, "may or may not be functional"; 150 mm approach movement after ground treatment [QB-MOTH-95] |
-| Golden Ears | Objectives at 475, 1000 and 2475 years; ground movement of about 0.5 m at the river bank [GEB-CGS-08] [NAB-ICCHGE-08] |
+| Queensborough | Collapse prevention at the 1/475 year event only, "may or may not be functional"; about 150 mm of differential movement at the approach bents in that event, after the soil there was treated [QB-MOTH-95] |
+| Golden Ears | Objectives at 475, 1000 and 2475 years; in the 2475-year event, about 0.5 m of ground movement at the river bank and about 0.3 m at the main piers after densification [GEB-CGS-08] [NAB-ICCHGE-08] |
 | Alex Fraser | Founded on weak deltaic materials; an early example of liquefaction assessment in design. No return period published [AFB-CGS-17] |
 | Canada Line, North Arm Bridge | The project's own criteria, as reported by its designer in 2008: a 475-year event with repairable damage and a 100-year event with essentially no damage. Only those two events were considered. Partial liquefaction expected; the piles were designed to resist the ground moving rather than to stop it [NAB-ICCHGE-08] |
 | Pattullo replacement | Open; seismic description is qualitative only [BCGOV-2026-PATT] |
-| Port Mann | Nothing quantitative. Three papers on this bridge's seismic design are published and all three are paywalled and unread, so no figure appears here |
-| SkyTrain guideways generally | Nothing located |
+| Port Mann | Nothing quantitative is public. Three papers on this bridge's seismic design have been published, and all three sit behind paywalls [PM-SEI-17] [PM-IABSE-17] |
+| SkyTrain guideways generally | Nothing published |
 
 Project criteria differ between owners and structures. Golden Ears and the North Arm
-Bridge were designed in the same decade to different sets of design events, and both
-sets are published by the engineers who set them. That is a statement about how bridge
-projects are specified, and nothing on this page says any crossing would fail.
+Bridge were designed in the same decade against different sets of design events, and
+the engineers who set each of them published what they were. How a crossing is
+specified is a decision taken project by project, and there is no single figure that
+every bridge in the region was built to.
 
 ## The province expects weeks to months of reduced capacity
 
@@ -166,9 +173,9 @@ From the province's crustal magnitude 7.0 planning scenario:
   a much-reduced capacity for an extended period (weeks to months)". [PEIRS]
 - "The rail network in the impact area may be largely unusable during the immediate
   response phase." [PEIRS]
-- "Liquefaction of roadways in Richmond and Delta may make driving difficult", which
-  compounds the impact on Vancouver International Airport and the Tsawwassen ferry
-  terminal. [PEIRS]
+- "Liquefaction of roadways in Richmond and Delta may make driving difficult, which may
+  compound impacts to Vancouver International Airport and Tsawwassen Ferry Terminal."
+  [PEIRS]
 
 The Ministry is responsible for over 400 km of provincial disaster response routes and
 maintains over 2,500 bridges in the highest seismic zones of the province. [BCSIMS-22]
@@ -187,9 +194,13 @@ SkyTrain service was suspended and inspections of both lines were conducted." Se
 resumed by 1am, about eighty minutes later. The Canada Line kept running, which
 TransLink attributed to 70 per cent of its track being underground. [CBC-2015]
 
-No damage was found. The stoppage came from alarms, not from breakage. It is a small,
-real, dated example of what checking the system looks like, and it forecasts nothing
-about a large earthquake.
+No damage was found. The stoppage came from alarms, not from breakage. Eighty minutes
+is what a check of an undamaged system took after a small, deep earthquake, and it
+forecasts nothing about a large one.
+
+> **Not yet established.** TransLink has not published a seismic design standard for
+> its guideways and stations, a system-wide seismic assessment, or any estimate of how
+> long transit would take to come back. None of the three is in the public record.
 
 ## What you can do
 
@@ -197,23 +208,20 @@ Nobody outside the Ministry can retrofit a bridge. What is in reach is where you
 to be.
 
 **Plan on the crossing you use being closed or under inspection**, not open. That is
-what the province's own service levels describe.
+what the province's own service levels describe: limited access, emergency traffic,
+and about a day to inspect a bridge before anyone is let over it. [MOTI-SRDC-05]
 
 **Know which side of the water you need to be on during a working day.** The useful
-question is not how to get home, it is where you would rather be stuck. Where you can
-choose, [getting around](/getting-around/) sets out what the province expects people
-to do after the shaking stops.
+question is not how to get home, it is where you would rather be stuck.
 
-**Keep walking shoes and a warm layer where you actually are**, at work as well as at
-home. Most trips home after a major earthquake are on foot.
-
-**If you have seen a Disaster Response Route sign, learn what it means before the
-day.** Those routes are for emergency responders, and the public is asked to get off
-them.
+**Prepare the side you would be stuck on**, at work as well as at home. What the
+province plans for people while the crossings are shut or being inspected is set out
+in [getting around](/getting-around/), and what it asks for is a location rather than
+a route.
 
 ## Sources on this page
 
-[MOTI-SRDC-05] [MOTI-S6-SEC4] [MOTI-S6-SEC6] [QB-MOTH-95] [GEB-CGS-08] [NAB-ICCHGE-08]
-[OAK-13WCEE] [OAK-BASIS-22] [MISSION-CGS-18] [KSB-2010] [AFB-CGS-17] [BCGOV-2026-PATT]
-[GMC-TUNNEL-19] [MOTI-MASSEY] [PEIRS] [BCSIMS-22] [USGS-2015EQ] [CBC-2015]
-[COV-EXPLORER-25]
+[MOTI-SRDC-05] [MOTI-S6-SEC4] [QB-MOTH-95] [GEB-CGS-08] [NAB-ICCHGE-08]
+[OAK-13WCEE] [OAK-BASIS-22] [MISSION-CGS-18] [MOTI-S6-SEC6] [GMC-TUNNEL-19]
+[MOTI-MASSEY] [KSB-2010] [AFB-CGS-17] [BCGOV-2026-PATT] [PM-SEI-17]
+[PM-IABSE-17] [PEIRS] [BCSIMS-22] [USGS-2015EQ] [CBC-2015]
