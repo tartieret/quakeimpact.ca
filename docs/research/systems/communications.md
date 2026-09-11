@@ -128,8 +128,46 @@ sits directly beside the finding that nothing protects the radio sites the calls
 - "**Disruptions in communications continue for days to weeks**," with access prioritised for
   emergency personnel, "leading to a prolonged lack of access to communications for the general
   population." [DCRRA-2025] **[A]** (M9.0 Cascadia scenario.)
+- The province opens the same passage with the plain statement that "**common communication
+  service providers, including cellular and landline telephone providers, may be impacted**" —
+  landline included, which matters because the folk assumption is that copper survives what
+  cellular does not. PEIRS does not distinguish them. [PEIRS] **[A]**
 
 Both are qualitative. Neither publishes site counts, restoration curves or performance estimates.
+
+### The province cautions against the obvious backup, and the caution is the finding
+
+PEIRS continues: "**Radio communication, if operable, may be also congested and impact the ability
+of first responders if saturated with non-sanctioned operators.** There may be increased reliance on
+backup communication methods, such as satellite phones and amateur radio services." [PEIRS] **[A]**
+
+**Read that sentence carefully, because it runs against the grain of ordinary preparedness
+advice.** The province expects *increased reliance* on amateur radio, and in the same breath warns
+that untrained operators on those frequencies **degrade the responders' own ability to work**. It is
+not telling the public to stay off the air; it is describing a congestion mechanism that applies to
+radio exactly as it applies to the cellular network — and that is the honest symmetry of this page.
+Every channel described here fails the same way: not by breaking, but by filling up.
+
+**What this licenses the site to say, and what it does not.**
+
+- **It may say** that the province names satellite phones and amateur radio as the backups it
+  expects people to fall back on. That is [A], and it is a statement about provincial expectation
+  rather than an endorsement.
+- **It may say** that the province expects responder radio to be degraded by unsanctioned use, in
+  the province's own words. This is the kind of finding the site exists for: uncomfortable, sourced,
+  and not otherwise in front of the public.
+- **It must not** turn this into advice to buy a radio. A licence, an antenna, a power source and
+  the training to use them are four separate problems, and nothing in PEIRS establishes that an
+  unprepared household with a handheld is better off — the passage rather suggests the opposite for
+  everyone else on the frequency.
+- **It must not** present amateur radio as a *solution* the way it is often presented. The province
+  presents it as a fallback that is itself expected to be congested.
+
+**Where this belongs on the site.** Beside the lever, not beside the failure. The useful household
+consequence of this whole page is not a piece of equipment — it is **send a text, not a call**,
+which is free, needs nothing bought in advance, and is the province's own recommendation two
+paragraphs earlier. Amateur radio is context for why the text message matters, not a competing
+recommendation. See `../preparedness.md`.
 
 ### The honest hinge: the warning depends on the network the earthquake degrades
 
