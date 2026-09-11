@@ -19,8 +19,17 @@
      on: paper, paper-raised and accent-soft. Anything quieter than this fails
      the accent-soft tint, which is the darkest ground light-mode text sits on. */
   --color-ink-faint: #666a6e;
+  /* Two rule weights for furniture: a section divider, a card border, the
+     gap between two nav tiles, the quiet ground a mark is read over. Neither
+     carries meaning, so neither is held to 1.4.11. */
   --color-rule: #e2e2de;
   --color-rule-strong: #c8c8c4;
+  /* A mark a reader has to see to read the figure: an axis, a scale line, a
+     spine, a node outline, the rule between two scales, the unfilled segment
+     of a meter. WCAG 1.4.11 asks 3:1 of these, and this clears it on every
+     ground the site paints them on. Furniture stays on the rules above; the
+     test is in docs/style-guide.md 8. */
+  --color-mark: #868682;
 
   --color-accent: #1f4f63;
   --color-accent-soft: #e8eef2;
@@ -52,6 +61,7 @@
       --color-ink-faint: #8b8f94;
       --color-rule: #2a2e33;
       --color-rule-strong: #3c4147;
+      --color-mark: #6e747b;
       --color-accent: #7fb4cc;
       --color-accent-soft: #182930;
       --color-band-low: #7aab72;

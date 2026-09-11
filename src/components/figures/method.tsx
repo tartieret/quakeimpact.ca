@@ -67,11 +67,11 @@ const METER_W = SEG_W * 3 + SEG_GAP * 2;
  * assessed fills none of them and hatches all three, which is the fourth
  * state's mark everywhere else on the site.
  *
- * An unfilled segment is `ruleStrong`, which is what `BandMeter` itself uses.
- * It was `rule` here, and `rule` on paper is 1.3:1 in both themes, so the
- * unfilled segments barely drew and the meter lost its denominator: two of
- * three read as a bare two. `rule` is the kit's colour for the empty track
- * behind a bar, where a filled bar sits over it. Nothing sits over these.
+ * An unfilled segment is `mark`, not `track`. It is the denominator: cover
+ * the two empty segments and two of three reads as a bare two, and there is
+ * nothing else on the drawing that says three. `track` is the kit's colour
+ * for the empty run behind a bar, where a filled bar sits over it and an axis
+ * states the domain. Nothing sits over these and no axis restates them.
  */
 function Meter({
   x,
@@ -100,9 +100,9 @@ function Meter({
               ? hatch
               : i < filled
                 ? BAND_COLOR[band]
-                : FIG_COLOR.ruleStrong
+                : FIG_COLOR.mark
           }
-          stroke={band === "unknown" ? FIG_COLOR.ruleStrong : undefined}
+          stroke={band === "unknown" ? FIG_COLOR.mark : undefined}
           strokeWidth={band === "unknown" ? 1 : undefined}
         />
       ))}
@@ -157,7 +157,7 @@ export function MethodOneModel() {
         height={48}
         rx="3"
         fill="none"
-        stroke={FIG_COLOR.ruleStrong}
+        stroke={FIG_COLOR.mark}
         strokeWidth={FIG_STROKE}
       />
       <FigText x={12} y={80} weight={600} fill={FIG_COLOR.ink}>
@@ -173,21 +173,21 @@ export function MethodOneModel() {
         y={106}
         width="1"
         height={107}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <rect
         x={SPINE_X}
         y={147}
         width="5%"
         height="1"
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <rect
         x={SPINE_X}
         y={213}
         width="5%"
         height="1"
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
 
       <rect
@@ -197,7 +197,7 @@ export function MethodOneModel() {
         height={54}
         rx="3"
         fill="none"
-        stroke={FIG_COLOR.ruleStrong}
+        stroke={FIG_COLOR.mark}
         strokeWidth={FIG_STROKE}
       />
       <At x={BRANCH_X}>
@@ -216,7 +216,7 @@ export function MethodOneModel() {
         height={54}
         rx="3"
         fill="none"
-        stroke={FIG_COLOR.ruleStrong}
+        stroke={FIG_COLOR.mark}
         strokeWidth={FIG_STROKE}
       />
       <At x={BRANCH_X}>
@@ -270,7 +270,7 @@ function KeyRow({
         height={12}
         rx="1"
         fill={hatched ? hatch : FIG_COLOR.muted}
-        stroke={hatched ? FIG_COLOR.ruleStrong : undefined}
+        stroke={hatched ? FIG_COLOR.mark : undefined}
         strokeWidth={hatched ? 1 : undefined}
       />
       <FigText x={22} y={y} fill={FIG_COLOR.ink}>

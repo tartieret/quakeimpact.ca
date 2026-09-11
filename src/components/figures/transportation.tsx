@@ -101,7 +101,7 @@ function SpanAndGround({ offset }: { offset: number }) {
         y={offset + GROUND_Y}
         width="100%"
         height={GROUND_H}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <rect
         x={ABUTMENT}
@@ -124,7 +124,7 @@ function SpanAndGround({ offset }: { offset: number }) {
         y={offset + ROAD_Y + ROAD_H}
         width={FAR_W}
         height={EMBANK_H}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
     </g>
   );
@@ -161,7 +161,7 @@ export function ApproachAgainstSpan() {
         y={ROAD_Y + ROAD_H}
         width={APPROACH_W}
         height={EMBANK_H}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
 
       <FigText y={A_LABEL_Y}>Approach</FigText>
@@ -184,7 +184,7 @@ export function ApproachAgainstSpan() {
         y={A_PANEL_B + A_ANNOT_Y + 4}
         width="1"
         height={ROAD_Y - A_ANNOT_Y - 4}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
 
       <SpanAndGround offset={A_PANEL_B} />
@@ -200,7 +200,7 @@ export function ApproachAgainstSpan() {
         y={A_PANEL_B + ROAD_Y + SETTLE + ROAD_H}
         width={APPROACH_W}
         height={EMBANK_H - SETTLE}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       {/* The face of the step, at the point where the approach meets the deck. */}
       <rect
@@ -253,9 +253,12 @@ const M_AXIS_LABEL_Y = 236;
 const M_NOTE_Y = 256;
 const MASSEY_HEIGHT = 266;
 
-/** The scale line a point or a threshold sits on. Not a track: nothing fills it. */
+/**
+ * The scale line a point or a threshold sits on. Not a track: nothing fills
+ * it, and the three values are read off it, so it is `mark`.
+ */
 function ScaleLine({ y }: { y: number }) {
-  return <rect x="0" y={y} width="100%" height="1" fill={FIG_COLOR.rule} />;
+  return <rect x="0" y={y} width="100%" height="1" fill={FIG_COLOR.mark} />;
 }
 
 /** The axis labels, written the way the copy writes them. */
@@ -379,7 +382,8 @@ function ServiceLevel({
 }: {
   y: number;
   name: string;
-  /** How many of the three segments are filled. More filled is less access. */
+  /** How many of the three segments are filled. More filled is less access.
+      The unfilled ones are the denominator, so they are `mark` as well. */
   filled: number;
   lines: string[];
 }) {
@@ -393,7 +397,7 @@ function ServiceLevel({
           width={SEG_W}
           height={SEG_H}
           rx="1"
-          fill={i < filled ? FIG_COLOR.ink : FIG_COLOR.rule}
+          fill={i < filled ? FIG_COLOR.ink : FIG_COLOR.mark}
         />
       ))}
       <FigText

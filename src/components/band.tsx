@@ -34,7 +34,11 @@ export function BandMeter({ band }: { band: BandId }) {
             band === "unknown" ? "hatch" : ""
           }`}
           style={{
-            background: i <= filled ? COLOR[band] : "var(--color-rule-strong)",
+            /* An unfilled segment is the denominator, not decoration: cover two
+               of them and "two of three" reads as a bare two. It is a
+               load-bearing mark and takes the mark token, the same as the SVG
+               redraws of this meter in the figures. */
+            background: i <= filled ? COLOR[band] : "var(--color-mark)",
           }}
         />
       ))}

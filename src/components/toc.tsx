@@ -76,7 +76,14 @@ export function TableOfContents() {
   if (headings.length < 3) return null;
 
   return (
-    <nav aria-label="On this page" className="sticky top-24">
+    /* max-h keeps a long rail inside the viewport. On a page with enough
+       sections the box grows past the screen, and a sticky box taller than
+       the viewport stops behaving as sticky, so its last entries become
+       unreachable. */
+    <nav
+      aria-label="On this page"
+      className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto overscroll-contain"
+    >
       <p className="text-xs font-semibold tracking-[0.12em] text-ink-faint uppercase">
         On this page
       </p>

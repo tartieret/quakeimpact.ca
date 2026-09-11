@@ -75,7 +75,7 @@ export function WaterTwoClocks() {
         y={66}
         width="1"
         height={8}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
         transform="translate(-0.5,0)"
       />
 

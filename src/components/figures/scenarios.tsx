@@ -63,7 +63,13 @@ const DUR_UNIT_Y = DUR_LABEL_Y + 22;
 const DUR_GUARD_Y = DUR_UNIT_Y + 20;
 const DUR_HEIGHT = DUR_GUARD_Y + 12;
 
-/** A faint vertical at each labelled second, so three rows can be compared. */
+/**
+ * A faint vertical at each labelled second, so three rows can be compared.
+ *
+ * `track`, not `mark`: the gridline is dropped from an axis that already
+ * states the domain and labels every value on it, so it helps the eye rather
+ * than carrying anything of its own.
+ */
 function DurationGrid({ at }: { at: number }) {
   return (
     <rect
@@ -71,7 +77,7 @@ function DurationGrid({ at }: { at: number }) {
       y={DUR_TRACK_Y}
       width="1"
       height={DUR_AXIS_Y - DUR_TRACK_Y}
-      fill={FIG_COLOR.rule}
+      fill={FIG_COLOR.track}
       transform="translate(-0.5,0)"
     />
   );
@@ -317,7 +323,7 @@ export function ScenarioBuildingResponse() {
         y={RESP_GROUND_Y}
         width="100%"
         height="1"
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <FigText y={RESP_BUILDING_LABEL_Y} size={FIG_TYPE.tick}>
         Short, stiff, older
@@ -381,7 +387,7 @@ export function ScenarioBuildingResponse() {
         y={RESP_PANEL_B + RESP_GROUND_Y}
         width="100%"
         height="1"
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <FigText
         y={RESP_PANEL_B + RESP_BUILDING_LABEL_Y}
@@ -611,7 +617,7 @@ export function CrustalFaultSection() {
           y={0}
           width="1"
           height={FAULT_BOTTOM_Y}
-          fill={FIG_COLOR.ruleStrong}
+          fill={FIG_COLOR.mark}
         />
         {[
           { km: 0, label: "0" },
@@ -624,7 +630,7 @@ export function CrustalFaultSection() {
               y={tick.km * KM}
               width="5"
               height="1"
-              fill={FIG_COLOR.ruleStrong}
+              fill={FIG_COLOR.mark}
             />
             <FigText
               x={-122}
@@ -644,7 +650,7 @@ export function CrustalFaultSection() {
           y={0}
           width={224}
           height="1"
-          fill={FIG_COLOR.ruleStrong}
+          fill={FIG_COLOR.mark}
         />
         <FigText
           x={112}

@@ -182,7 +182,7 @@ function DayStop({ value, y }: { value: number; y: number }) {
       y={y - 4}
       width="1"
       height={DAYS_BAR_H + 8}
-      fill={FIG_COLOR.ruleStrong}
+      fill={FIG_COLOR.mark}
       transform={
         value === DAYS_DOMAIN ? "translate(-1,0)" : "translate(-0.5,0)"
       }
@@ -591,8 +591,8 @@ function SchoolProportion({
       {/* The midpoint clears its own slot, for the same reason the open end on
           the first figure does: one panel's bar passes the midpoint and the
           other's does not, so the upright has to read over a filled bar and
-          over an empty track alike, and a hairline in `ruleStrong` over a
-          track in `rule` measures 1.3:1 and is not there. */}
+          over an empty track alike. It is a threshold a reader reads the bars
+          against, which is what puts it in `mark`. */}
       <rect
         x="50%"
         y={offset + SCHOOL_TRACK_Y}

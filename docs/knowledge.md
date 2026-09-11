@@ -1215,3 +1215,56 @@ a one-off measuring script run from `scripts/qa/` gets a 404 for every route and
 page whose `<main>` is the not-found template. It is a convincing failure, because the
 page loads, the status is invisible to `page.evaluate`, and the figures simply are not
 there. Run QA scripts from the repo root, or pass the out directory as `argv[2]`.
+
+## The thumb test, and the one new grey it needed
+
+**11 September 2026.** Every structural hairline in every figure was drawn in
+`--color-rule-strong`, which measures 1.68:1 on raised paper in light and 1.66:1 in
+dark, and the empty track under a bar was `--color-rule` at 1.30:1 and 1.25:1. WCAG
+1.4.11 asks 3:1 of a graphical object a reader needs in order to understand the
+content, and it is level AA, so the axes, the scale lines, the spines, the node
+outlines and the rule between the two water clocks were all failing a criterion this
+site holds itself to.
+
+Raising both rule greys to 3:1 would have fixed it and cost the brand: the same
+hairline draws the divider under every section heading and the border of every card,
+and the quiet of those is part of why the site reads as a reference work. So the
+split is by role rather than by weight. `--color-mark`, `#868682` light and `#6e747b`
+dark, is for a mark a reader needs; the two rule greys keep the furniture. The test
+that decides which is in `docs/style-guide.md` section 8: cover the mark and see
+whether the drawing still says what it said. An axis fails that test, a gridline
+dropped from a labelled axis passes it.
+
+Measured after the change, on `--color-paper-raised`: `--color-mark` 3.65:1 light and
+3.62:1 dark, and on the accent tint, the least forgiving ground the site paints a
+mark on, 3.12:1 and 3.18:1. `FIG_COLOR` now offers exactly two greys, `mark` and
+`track`, and the `rule` and `ruleStrong` keys are gone, so a figure cannot reach for
+a furniture grey by accident.
+
+Two things this turned up that are worth keeping:
+
+A hairline drawn across a filled bar cannot clear 3:1 against ink and mid grey at
+once, and no token will fix it. `prepare.tsx` had already solved it twice, in
+`SlottedRule`, which clears a slot of paper for the mark to sit in, and in `DayStop`,
+which overhangs the bar by four pixels at each end so the part that carries the
+reading is on paper. Both patterns are the answer; a darker grey is not.
+
+The QA sweep's `marks()` check reports a phantom black fill on every `<line>`.
+SVG's default `fill` is black, `getComputedStyle` reports it whether or not the
+element can paint a fill, and a `<line>` never does. Two of them read as 1.23:1 in
+dark mode, which is a mark nobody can see, except that there is no mark. Skip `fill`
+on `line` and `polyline` before believing the number.
+
+## The band meter is the one meaning-bearing mark still under 3:1
+
+**11 September 2026.** `BandMeter` in `src/components/band.tsx` draws its unfilled
+segments in `--color-rule-strong`, 1.68:1 light and 1.66:1 dark on raised paper. The
+unfilled segments are the denominator: cover them and two of three reads as a bare
+two, and the word beside the meter says "medium", not "of three". By the test in
+section 8 that makes them load-bearing, and the fix is one token, from
+`var(--color-rule-strong)` to `var(--color-mark)`.
+
+It is recorded here rather than done because the change that introduced `--color-mark`
+was scoped to the figure kit and the figures. The same swap was made in the two
+figures that redraw the meter in SVG, `method.tsx` and `transportation.tsx`, so the
+site currently draws the same mark two ways.

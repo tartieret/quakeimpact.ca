@@ -84,15 +84,15 @@ export function ClearingOrder() {
       <FigValue y={ORDER_VALUE_Y}>Local routes are last</FigValue>
 
       {/* The rail and its arrowhead carry the direction of the order. The
-          rail is `ruleStrong`, the same weight as `Spine` on the third figure:
-          it is a connector, not an empty track, and `rule` on paper measures
-          1.3:1 in both themes, which is a hairline nobody can see. */}
+          rail is `mark`, the same weight as `Spine` on the third figure: it is
+          a connector rather than an empty track, and the order it carries is
+          the finding, so it is one of the marks held to 3:1. */}
       <rect
         x={ORDER_RAIL_X}
         y={ORDER_RAIL_TOP}
         width="1"
         height={ORDER_RAIL_BOTTOM - ORDER_RAIL_TOP}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <At x={ORDER_RAIL_X} y={ORDER_RAIL_BOTTOM}>
         <path d="M-4 0 L5 0 L0.5 8 Z" fill={FIG_COLOR.muted} />
@@ -380,7 +380,7 @@ function LandNode({
         height={height}
         rx="2"
         fill="none"
-        stroke={FIG_COLOR.ruleStrong}
+        stroke={FIG_COLOR.mark}
         strokeWidth="1"
       />
       {children}
@@ -396,7 +396,7 @@ function Spine({ from, to }: { from: number; to: number }) {
       y={from}
       width="1"
       height={to - from}
-      fill={FIG_COLOR.ruleStrong}
+      fill={FIG_COLOR.mark}
     />
   );
 }
@@ -462,7 +462,7 @@ export function LandConnections() {
         y={EAST_RULE_Y}
         width="88%"
         height="1"
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <At x="96%" y={EAST_RULE_Y}>
         <path d="M0 -5 L9 0.5 L0 6 Z" fill={FIG_COLOR.muted} />

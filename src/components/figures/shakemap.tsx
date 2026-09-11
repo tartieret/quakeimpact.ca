@@ -269,7 +269,7 @@ function MapBody({ layers }: { layers: Layer[] }) {
         width={MAP_W}
         height={round(MAP_H)}
         fill="none"
-        stroke={FIG_COLOR.rule}
+        stroke={FIG_COLOR.track}
         strokeWidth="1"
       />
       {layers.map((layer) => (
@@ -480,15 +480,15 @@ export function ScenarioShakeMaps() {
           y={LEG_SCALE_Y}
           width={SCALE_PX}
           height="1"
-          fill={FIG_COLOR.ruleStrong}
+          fill={FIG_COLOR.mark}
         />
-        <rect x="0" y={LEG_SCALE_Y - 3} width="1" height="7" fill={FIG_COLOR.ruleStrong} />
+        <rect x="0" y={LEG_SCALE_Y - 3} width="1" height="7" fill={FIG_COLOR.mark} />
         <rect
           x={SCALE_PX - 1}
           y={LEG_SCALE_Y - 3}
           width="1"
           height="7"
-          fill={FIG_COLOR.ruleStrong}
+          fill={FIG_COLOR.mark}
         />
         <FigText y={LEG_SCALE_LABEL_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
           {SCALE_KM} km. North is up.

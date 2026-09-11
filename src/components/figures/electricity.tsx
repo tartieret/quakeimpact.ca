@@ -136,7 +136,7 @@ export function MurrinShortfall() {
       y={72}
       width="1"
       height={SHORTFALL_TRACK_Y - 72}
-      fill={FIG_COLOR.ruleStrong}
+      fill={FIG_COLOR.mark}
       transform={value === REQUIRED ? "translate(-1,0)" : "translate(-0.5,0)"}
     />
   );

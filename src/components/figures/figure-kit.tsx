@@ -31,13 +31,28 @@ import type { ReactNode } from "react";
  * coloured: colour on this site carries meaning, and "this is the important
  * bar" is not one of the meanings. A figure that needs to separate two things
  * separates them with a label, a position, a shape or a hatch.
+ *
+ * Two greys, and the difference between them is the whole of the contrast
+ * rule for figures. `mark` is a mark a reader has to see in order to read the
+ * drawing: an axis, a scale line, a spine, a node outline, the rule between
+ * two scales, the unfilled segment of a meter. Take it away and the figure
+ * stops saying something it has no other way of saying, so it is held to the
+ * 3:1 WCAG asks of a graphical object. `track` is the quiet ground such a
+ * mark is read over: the empty run beside a bar, a gridline dropped from an
+ * axis that already states the domain, the frame around a map. Take it away
+ * and nothing is lost, so it stays furniture and stays quiet.
+ *
+ * There is no third grey. A mark that feels too heavy as `mark` is usually a
+ * mark that was furniture all along.
  */
 export const FIG_COLOR = {
   ink: "var(--color-ink)",
   muted: "var(--color-ink-muted)",
   faint: "var(--color-ink-faint)",
-  rule: "var(--color-rule)",
-  ruleStrong: "var(--color-rule-strong)",
+  /** Load-bearing line work. 3:1 on every ground a figure paints it on. */
+  mark: "var(--color-mark)",
+  /** The quiet ground a mark is read over. Deliberately under 3:1. */
+  track: "var(--color-rule-strong)",
   paper: "var(--color-paper-raised)",
   bandLow: "var(--color-band-low)",
   bandMedium: "var(--color-band-medium)",
@@ -226,14 +241,27 @@ export function FigValue({ y, children }: { y: number; children: ReactNode }) {
 /* Marks                                                               */
 /* ------------------------------------------------------------------ */
 
-/** A full-width hairline. Separates two panels that must not be read as one. */
+/**
+ * A full-width hairline. Separates two panels that must not be read as one.
+ *
+ * Load-bearing by definition: a reader who cannot see it runs their eye from
+ * one scale onto the next, which is the misreading the rule exists to stop.
+ * So it is drawn in `mark`, not in the furniture grey the page uses between
+ * sections.
+ */
 export function FigRule({ y }: { y: number }) {
-  return (
-    <rect x="0" y={y} width="100%" height="1" fill={FIG_COLOR.ruleStrong} />
-  );
+  return <rect x="0" y={y} width="100%" height="1" fill={FIG_COLOR.mark} />;
 }
 
-/** The empty track a bar sits in, so the domain stays visible when the bar is short. */
+/**
+ * The empty track a bar sits in, so the domain stays visible when the bar is
+ * short.
+ *
+ * `track`, not `mark`. The domain is stated by the `Axis` under it and written
+ * out in words at `FigValue` size, and the bar itself carries the figure
+ * against the paper. Cover the track and nothing has been lost, which is the
+ * test: it is the ground a bar is read over rather than a mark read off.
+ */
 export function TrackBase({ y, height = 16 }: { y: number; height?: number }) {
   return (
     <rect
@@ -242,7 +270,7 @@ export function TrackBase({ y, height = 16 }: { y: number; height?: number }) {
       width="100%"
       height={height}
       rx="2"
-      fill={FIG_COLOR.rule}
+      fill={FIG_COLOR.track}
     />
   );
 }
@@ -294,6 +322,9 @@ export function Bar({
  * drawing. An axis is only ever drawn for a domain a source actually gives. A
  * duration nobody has published gets no axis, because an axis invites the
  * reader to read a number off it.
+ *
+ * Which is exactly why the ticks are drawn in `mark`: an axis is the one thing
+ * on a figure a reader measures against, so it has to be visible.
  */
 export function Axis({
   y,
@@ -324,7 +355,7 @@ export function Axis({
               y={y}
               width="1"
               height={length}
-              fill={FIG_COLOR.ruleStrong}
+              fill={FIG_COLOR.mark}
               transform={
                 first
                   ? undefined

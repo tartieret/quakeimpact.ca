@@ -52,7 +52,7 @@ function Leader({ y }: { y: number }) {
       y={y}
       width={LEADER_W}
       height="1"
-      fill={FIG_COLOR.ruleStrong}
+      fill={FIG_COLOR.mark}
     />
   );
 }
@@ -104,13 +104,16 @@ export function GroundSoilColumn() {
       <FigHeading y={14}>Liquefiable soil under the delta</FigHeading>
       <FigValue y={41}>Mean 11.8 m thick</FigValue>
 
-      {/* Above the water table. Drier ground, drawn as an empty track. */}
+      {/* Above the water table. Drier ground, drawn as an empty track: the
+          interval is bounded by the ground surface above it and the water
+          table below it, both of which are marks, so the fill is the ground
+          between them rather than the thing that states them. */}
       <rect
         x="0"
         y={COLUMN_SURFACE_Y}
         width={COLUMN_W}
         height={WATER_TABLE_M * COLUMN_PX_PER_M}
-        fill={FIG_COLOR.rule}
+        fill={FIG_COLOR.track}
       />
 
       {/* Solid to 9.6 m: the figure three quarters of the profiles exceed. */}
@@ -149,7 +152,7 @@ export function GroundSoilColumn() {
         y1={columnY(SHALLOW_WATER_M)}
         x2={COLUMN_W}
         y2={columnY(SHALLOW_WATER_M)}
-        stroke={FIG_COLOR.ruleStrong}
+        stroke={FIG_COLOR.mark}
         strokeWidth={FIG_STROKE}
         strokeDasharray="4 3"
       />
@@ -163,7 +166,7 @@ export function GroundSoilColumn() {
         y={columnY(WATER_TABLE_M)}
         width={COLUMN_W}
         height={FIG_STROKE}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <Leader y={columnY(WATER_TABLE_M)} />
       <FigText x={NOTE_X} y={columnY(WATER_TABLE_M) + 4} fill={FIG_COLOR.ink}>
@@ -184,7 +187,7 @@ export function GroundSoilColumn() {
         y={columnY(BASE_M)}
         width={COLUMN_W}
         height={FIG_STROKE}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <Leader y={columnY(BASE_M)} />
       <FigText x={NOTE_X} y={columnY(BASE_M) + 4} fill={FIG_COLOR.ink}>
@@ -267,7 +270,7 @@ export function GroundBasinAmplification() {
         y={66}
         width="1"
         height={BASIN_TRACK_B + BASIN_TRACK_H + 6 - 66}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
 
       <FigText y={184} size={FIG_TYPE.tick}>
@@ -354,7 +357,7 @@ export function GroundDikeSettlement() {
         y={66}
         width="1"
         height={DIKE_AXIS_Y - 66}
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
 
       <Axis
@@ -469,7 +472,7 @@ export function GroundTwoGrounds() {
         y={deltaY(SHALLOW_DEPOSITS_M)}
         width={COLUMN_W}
         height="1"
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <Leader y={deltaY(SHALLOW_DEPOSITS_M)} />
       <FigText x={NOTE_X} y={deltaY(SHALLOW_DEPOSITS_M) + 4}>
@@ -485,7 +488,7 @@ export function GroundTwoGrounds() {
         y={deltaY(DEEP_DEPOSITS_M)}
         width={COLUMN_W}
         height="1"
-        fill={FIG_COLOR.ruleStrong}
+        fill={FIG_COLOR.mark}
       />
       <Leader y={deltaY(DEEP_DEPOSITS_M)} />
       <FigText x={NOTE_X} y={deltaY(DEEP_DEPOSITS_M) + 4}>
