@@ -38,7 +38,8 @@ export const SCENARIOS: Record<ScenarioId, Scenario> = {
     source: "Offshore subduction interface",
     shaking:
       "Moderate intensity, long duration. Three minutes in the province's scenario",
-    extent: "Northern California to British Columbia, damaging the whole coast at once",
+    extent:
+      "Northern California to British Columbia, damaging the whole coast at once",
     tsunami: "Outer coast; limited effect inside Burrard Inlet",
     mutualAid:
       "Late rather than absent. The province states the US will be unable to help if it is also overwhelmed",
@@ -473,7 +474,7 @@ export const SHAKING_PAGES: {
   {
     slug: "ground",
     name: "Ground conditions",
-    hook: "What a building stands on matters more than which building it is.",
+    hook: "Two houses a few blocks apart can sit on completely different ground.",
   },
   // The four below have no page text yet. Their hooks say what the subject is,
   // and claim nothing, because a claim with no page behind it has nowhere to
@@ -482,7 +483,7 @@ export const SHAKING_PAGES: {
     slug: "buildings",
     name: "Buildings",
     status: "draft",
-    hook: "Structural performance by era and type, and non-structural failure: glazing, cladding and parapets.",
+    hook: "Which buildings hold up, which do not, and why the glass and brickwork coming off them is dangerous.",
     references: [
       "COV-RISK-2024",
       "GSC-OF-8853",
@@ -495,14 +496,14 @@ export const SHAKING_PAGES: {
     slug: "casualties",
     name: "Casualties",
     status: "draft",
-    hook: "The published casualty ranges for the two scenarios, and what drives the range.",
+    hook: "How many people are expected to be hurt in each scenario, and why the published range is so wide.",
     references: ["PEIRS", "GSC-OF-8853", "DCRRA-2025", "COV-RISK-2024"],
   },
   {
     slug: "fire-following",
     name: "Fire following",
     status: "draft",
-    hook: "Fire after the shaking, and the Dedicated Fire Protection System: what it covers and what it does not.",
+    hook: "The fires that start once the shaking stops, and the separate water system built to fight them.",
     references: [
       "SCAWTHORN-2020",
       "COV-PREPARES",
@@ -514,7 +515,7 @@ export const SHAKING_PAGES: {
     slug: "secondary-hazards",
     name: "Secondary hazards",
     status: "draft",
-    hook: "Landslides, dikes and dams, where the damage arrives after the shaking stops.",
+    hook: "Landslides, dikes and dams: the damage that arrives after the shaking has stopped.",
     references: [
       "PEIRS",
       "DCRRA-2025",
