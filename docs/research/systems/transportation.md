@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** The Port Mann document set is **eight, not three**; the Canada Line date closes; an author name corrected.
 
 
 ## Status
@@ -340,7 +341,7 @@ design, none of them free.**
   *Structural Engineering International* (IABSE). Peer-reviewed, by the designer, and
   titled *design basis*. Paywalled; open-access status CLOSED; not read. [PM-SEI-17]
   **[?]**
-- Lund, H.T. & Mitchell, R. (2017), "Soil Structure Interaction and Performance Based
+- Lund, H. & Mitchell, R. (2017), "Soil Structure Interaction and Performance Based
   Design for the Port Mann Cable Stayed Bridge", IABSE Symposium Vancouver, *IABSE
   Reports*. The geotechnical companion, closest in subject to what this page needs.
   Paywalled; not read. [PM-IABSE-17] **[?]**
@@ -437,7 +438,14 @@ America's first extradosed transit bridge. The extradosed form was chosen "to sa
 vertical flight clearance requirements at the river due to the nearby airport".
 [NAB-ICCHGE-08] **[A]** These figures come from the bridge's own designer, Buckland &
 Taylor Ltd., in a peer-reviewed conference paper; the earlier encyclopedia-only
-qualification is retired. The **17 August 2009 opening date remains [?]** — the paper
+qualification is retired. **The opening date is now sourced too.** The Canada Line entered
+service on **17 August 2009**: the Office of the Premier's news release of that date states
+the line "was officially opened three-and-a-half months ahead of schedule today", and
+describes it as running on "16 stations, **two bridges**, approximately 19 kilometres of
+tunnel and elevated guideway". [BCGOV-CANLINE-09] **[A]** One editorial guard: the release
+dates the **line**, not the bridge, and does not name the North Arm Bridge. The bridge
+carries the line and had no service before it, so the date is the bridge's — but write it
+as the Canada Line opening rather than implying a separate bridge-opening record. The paper
 predates the opening and says only "scheduled for completion in 2009". Earlier drafts
 described the crossing as a bored tunnel; that was wrong.
 
@@ -544,18 +552,41 @@ said.
   municipality, September 2026. The nearest thing in public is a 2011 newspaper list
   quoting ministry officials, fifteen years old, containing at least one claim
   contradicted by later provincial engineering documents. [PROGRESS-2011] **[B]**
-- **Port Mann seismic criteria.** Three published documents exist and none is free:
-  [PM-SEI-17], [PM-IABSE-17] and Leggett & Gérin (2014). All paywalled, none read;
-  ResearchGate and Academia blocked, Crossref does not index the conference series, and
-  the redacted PMH1 contract Schedule 4 is an image-only scan requiring OCR. This is
-  **deliberate non-publication rather than absence**, and the page should say so. **[?]**
+- **Port Mann seismic criteria — and the document set is larger than this file had it.**
+  Not three published documents but **at least eight**. The 2014 conference's own published
+  accepted-papers list, recovered from a web archive, carries **six Port Mann / Highway 1
+  Improvement Project papers in one project session**, all submitted under Keith Holmes of
+  MMM Group: *Performance Based Seismic Design* (the Leggett & Gérin paper this file
+  names), *Description and Overview*, *Rehabilitation, Retrofit and Upgrade of Existing
+  Structures*, **Lightweight EPS Embankments**, *Design and Construction of Curved Steel
+  Bridges*, and *Staged Bridge Design and Construction*. [SMSB-2014-LIST] **[A]** for the
+  existence, exact titles and submitting author — the conference's own list, not a snippet.
+  Note the list records **submitters**, not full authorship.
+  - **"Lightweight EPS Embankments" is the first identified Port Mann approach-embankment
+    document this project has found**, which is the question this file has been circling.
+    On its title it would not license a design level, and it is unread.
+  - The proceedings are **not online**: a web-archive scan of the whole conference domain
+    filtered to PDFs returns zero. It archived its programme, not its papers. Route:
+    purchase, or a library holding SMSB 2014 (Vol. 4, p. 2141 for the seismic paper).
+  - [PM-SEI-17] has migrated to a new publisher and the paywalled landing page is live
+    again; [PM-IABSE-17] is sold at about €25, and its free publisher preview **was
+    retrieved and is page 1 only** — title, affiliations, abstract, one figure caption, and
+    **no return period, ground-motion level or performance level**. A preview is not a read.
+  - **Bibliographic correction.** The authors of [PM-IABSE-17] are **Hans Lund** (T.Y. Lin
+    International, Bellevue) and **Robert Mitchell** (Shannon & Wilson, Seattle). This file
+    and `../sources.md` each had an initial wrong. It also places the geotechnical
+    co-author at a Seattle firm, which is worth knowing before anyone cites the paper as
+    wholly BC-sourced.
+  - **The rule is unchanged by any of this. None has been read, so no Port Mann number is
+    published anywhere in this folder.** **[?]**
 - **North Arm Bridge — closed.** The seismic design criteria, dimensions, ground
   conditions, foundations and the no-densification decision are all now sourced to the
-  bridge's designer. [NAB-ICCHGE-08] **[A]** Two items remain open: the **17 August 2009
-  opening date**, still unsourced to a primary (TransLink, InTransitBC or a BC Gov News
-  release of August 2009) **[?]**; and the designer's own second paper, Bergman, Griezic &
-  Scollard (2008), "Design of the Canada Line Extradosed Transit Bridge", IABSE Congress
-  Chicago — identified, 403 to fetch, not read. [NAB-IABSE-08] **[?]**
+  bridge's designer. [NAB-ICCHGE-08] **[A]** **The opening date closed on 11 September
+  2026** against the Office of the Premier's news release of 17 August 2009.
+  [BCGOV-CANLINE-09] **[A]** One item remains open: the designer's own second paper,
+  Bergman, Griezic & Scollard (2008), "Design of the Canada Line Extradosed Transit
+  Bridge", IABSE Congress Chicago — identified, 403 to fetch, not read. [NAB-IABSE-08]
+  **[?]**
 - **TransLink's seismic design standard for guideways and stations**, any published
   system-wide seismic resilience or vulnerability assessment, and **any statement of
   expected post-earthquake transit service restoration time.** Not located. An
@@ -582,6 +613,18 @@ said.
   western-Canada component addressing region-specific seismicity separately.
   [MCGILL-SHAO-25] **[C]** for any number; **[A]** only as evidence that the method
   exists and is being built for this hazard environment.
+- **Knight Street: the author-copy route is now a documented negative, not an untried
+  hope.** Both papers are closed on every open-access channel tested 10 September 2026 —
+  OpenAlex `closed`, Unpaywall zero locations, Semantic Scholar `CLOSED` — and the ASCE
+  landing pages return 200 to a browser user-agent, so this is a **real paywall, not the
+  403 pattern** in `../../knowledge.md`. Both authors are at Klohn Crippen Berger, whose
+  technical-paper library is live, fully enumerable from its sitemap, and whose search API
+  works under control: `grouting`, `compaction grouting` and `Fraser delta` all return
+  **empty**, and **KCB posts abstracts, never full-text PDFs**. So the firm is not a route.
+  The only other index carrying the grouting paper is TRID, where the record is
+  entitlement-gated and yielded a snippet, which is not a source. Routes left, all
+  requiring a person: ASCE pay-per-view, interlibrary loan, or a direct request to the
+  authors. **[?]**
 - **The highest-priority unretrieved documents are now [KSB-GROUT-17] and [SY-GEESD-18]**,
   both ASCE, both on Knight Street and the Fraser delta, and both obtainable through a
   normal library rather than a society membership. Thavaraj & Sy (2017), "Compaction

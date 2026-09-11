@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** The one corridor product that exists **excludes earthquakes by construction**; channels audited.
 
 
 ## Status
@@ -246,6 +247,52 @@ is not currently retrofitting the bridges on them to remain in service. [MOTI-SR
 
 ## What is not established
 
+- **The one corridor susceptibility product that exists excludes earthquakes by
+  construction, and its own equations say so.** Blais-Stevens & Kung, *Landslide
+  susceptibility maps of the Sea to Sky Corridor, British Columbia — a qualitative
+  approach*, **GSC Open File 6169** (2009), OGL–Canada: two maps at 25 m pixel, one for
+  rock falls and rock slides, one for debris flows, each a weighted parametric index.
+
+  > rock fall / rock slide: `SI = 0.25·rock type + 0.5·slope angle + 0.1·slope aspect + 0.15·surface unit`
+  > debris flow: `SI = 0.3·distance to drainage + 0.3·slope angle + 0.2·surficial deposit type + 0.15·deposit thickness + 0.05·slope aspect`
+
+  **No parameter is seismic, and the words "earthquake" and "seismic" appear nowhere in the
+  map sheet's text**; the aspect weighting is justified by "the general weather patterns of
+  precipitation coming from the west". [GSC-OF-6169] **[A]** This is the sharpest available
+  statement of the gap: the only corridor-specific susceptibility product is
+  terrain-and-rainfall conditioned **by design**, and its authors say so in the maths. It
+  belongs beside the rainfall-triggered evidence here, labelled exactly that, and **never as
+  an earthquake finding**.
+- **The corridor's own environmental assessment separates the two hazards explicitly**, and
+  it is the better citation for Sea-to-Sky than the province-wide one because it is about
+  this corridor. The Sea-to-Sky Highway Improvement Project EA, Volume 1 Section C —
+  Geoscience: §5.3 *Earthquakes* covers **structural design only**, requiring new bridges and
+  structures "to provide post-seismic serviceability in the event of a **1 in 475 year return
+  seismic event**"; §5.4 *Rock Fall and Slope Failure* attributes the corridor's rock-fall
+  risk to uncontrolled original blasting, subsequent relaxation, and "ice and root action" —
+  **no seismic trigger, no seismic conditioning** — and the summary lists earthquakes and
+  rock fall as two of six parallel hazards. [S2S-EA-GEO-03] **[A]** A second, corridor-level
+  instance of the split already sourced at [MOTI-SRDC-05]. It also names an unretrieved
+  consultant lead, Wyllie and Norrish's rock-fall containment study, adopted as the
+  project's rock-cut design standard. [WYLLIE-NORRISH] **[?]**
+- **GSC Open File 5741 — retrieved, and not readable.** Blais-Stevens & Septer, *Historical
+  accounts of landslides and flooding events along the Sea to Sky Corridor, 1855–2007*, 119
+  pp. The digital release downloads cleanly and its readme confirms the citation, but the
+  PDF's fonts carry no ToUnicode map, so text extraction returns mojibake and no renderer
+  was available. **Record it as retrieved but not read** — neither unretrieved nor read.
+  Reading it needs OCR or a person. Its subject index carries no earthquake or seismic term.
+  [GSC-OF-5741] **[?]**
+- **Channels swept 10 September 2026, all negative, and one that could not be closed.** BC
+  Data Catalogue via the CKAN API (26 landslide datasets, all terrain/ecosystem mapping; no
+  seismically conditioned landslide dataset). The Environmental Assessment Office registry,
+  all 358 projects enumerated — the only corridor project is the Sea-to-Sky upgrade, its
+  1,010 documents listed, exactly one geoscience document, and **no Fraser Canyon highway
+  project exists in the registry at all**. The archived Ministry of Transportation host via
+  web-archive index (project-specific geotechnical reference reports only; one broad scan
+  timed out and is recorded as timed out, not empty). NRCan's repository API, which surfaced
+  the whole GSC corridor family and nothing seismic. **Not closed:** the **BC Geological
+  Survey** publication catalogue is a browsable directory with **no full-text or title search
+  endpoint**, so that channel remains only partially swept. **[?]**
 - **Any earthquake-triggered landslide susceptibility mapping for the Sea-to-Sky corridor
   (Highway 99) or the Fraser Canyon (Highway 1 / Highway 5).** Searched again in September
   2026, and the absence can now be stated more firmly. Channels searched: **Google

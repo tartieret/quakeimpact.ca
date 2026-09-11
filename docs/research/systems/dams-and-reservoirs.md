@@ -675,7 +675,20 @@ regime performs.
   to the documents themselves.
 - **The named Cleveland downstream-hazard studies** — river users study, river hydraulic
   modelling, downstream hazards studies, updated public safety risk assessment. Named in
-  [MV-DSP-2022]; none located in any public channel. **[?]**
+  [MV-DSP-2022]; none located in any public channel. **[?]** Metro Vancouver's own live web
+  copy still names two of them, "hydraulic modeling of the Capilano River and a Capilano
+  River User Study", and **both dropped out of committee reporting after July 2024**. No
+  consultant has ever been identified.
+  - **Consultant portfolios audited 11 September 2026 with working searches and controls,
+    all negative:** NHC, Klohn Crippen Berger, Kerr Wood Leidal, Hatch, AtkinsRéalis, KGS,
+    Associated Engineering, Tetra Tech.
+  - **Three audits are invalid and must be recorded as such rather than as negatives**, so
+    nobody re-runs them believing they returned nothing: **Stantec** edge-blocks with 403,
+    **Ausenco** has no working search and serves a zero-byte sitemap, and **BGC**'s search
+    parameter returns an unfiltered grid rather than results.
+  - **One channel was unreachable**: the web archive began serving "Temporarily Offline" for
+    every request including the control, so the WSP media library could not be swept. A
+    low-probability route, and still **not a negative**.
 - **The 2002 WorkSafeBC inspection report.** Still unread, and the channel is **blocked
   rather than empty**: WorkSafeBC's site search returns a generic error to every payload
   shape, and its penalty-summaries search is a pure client-side shell that served

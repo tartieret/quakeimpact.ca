@@ -231,6 +231,14 @@ nothing about Richmond or Delta, and it does not set this band.
 
 ## What is not established
 
+- **A detail that sharpens the FOI case considerably.** CH2M 2018 is cited **once**, in the
+  2017–2018 Biennial Report, and dropped from both later biennial reports. Searched
+  11 September 2026: the consultant's successor firm (full 2,625-URL sitemap crawl), the
+  predecessor domain, conference proceedings, Crossref and OpenAlex — nothing anywhere. But
+  **a sibling study from the same reference block of the same report, by a different
+  consultant, *is* published.** So this is a document withheld while its neighbour was
+  released, not a class of document the region never publishes. **[A]** on the contrast.
+  It remains the cleanest single FOI target this file has.
 - **The findings of CH2M 2018, *Seismic Risk Action Plan for Liquid Waste
   Services*.** [?] Searched: Metro Vancouver's liquid waste pages, LWMP documents,
   and Liquid Waste Committee agendas. **Existence and scope confirmed; findings not

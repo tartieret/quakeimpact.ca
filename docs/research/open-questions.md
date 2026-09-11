@@ -5,12 +5,19 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** A third round closed or narrowed twenty items. Items are **not renumbered** — read the closed list alongside the queue.
 
 
 The verification queue. Items here ship on the site as visible open questions,
 never as quiet inference.
 
-**Status.** Two rounds on 10 September 2026. The first opened with 31 questions and
+**Status.** Three rounds. Two on 10 September 2026, and a third on 11 September that
+closed or narrowed a further twenty items — see "Closed or narrowed in the third round"
+below. **Items above that the third round closed have not been renumbered**, so that a
+reference to "item 24" in an older note still resolves; read the closed list alongside
+the queue rather than instead of it.
+
+**Two rounds on 10 September 2026.** The first opened with 31 questions and
 closed or narrowed 21. The second went back for the documents the first round had
 run out of budget to reach, and closed nine more — including both items at the top
 of the blocking list.
@@ -254,6 +261,73 @@ Recorded because how a question closed is part of the evidence.
 - That map dataset licensing was unresolved — settled per dataset, and the answer
   blocks the flagship map.
 - That the stack decision was open — already closed before this pass began.
+
+---
+
+## Closed or narrowed in the third round, 11 September 2026
+
+Seven subagents, grouped by retrieval route rather than by subject — because the route is
+what determines who can answer. The register is a curated list and had drifted: **one item
+was already answered on disk and had never been struck**, which is why every agent was
+briefed to grep the folder before searching.
+
+**Closed by a document**
+
+- **The 1700 date from NRCan** — already closed in `scenarios.md` §8 and never struck.
+  The register was describing a different NRCan page.
+- **CanadaSHM6's Cascadia recurrence assumption** — GSC Open File 8630 retrieved in full
+  with its model files. Rates derived directly from the paleoseismic record; 22 events in a
+  ~9,545-year record. **Not a fourth row for the recurrence table.**
+- **The fault geometry behind the provincial crustal scenario** — NRCan's own rupture file,
+  not the province's. The 13 km is the bottom edge of the rupture plane, not a depth.
+- **Quantified per-dam seismic withstand** for Alouette, Cheakamus and Coquitlam — in BC
+  Hydro's filings, as component withstands with the guards that requires.
+- **Whether the Auditor General's 2021 findings were followed up** — three follow-ups
+  exist; two of nine recommendations complete as at 31 March 2025.
+- **Richmond's dike claim** — the models are named, dated and published in the City's own
+  Dike Master Plans, and they qualify the claim.
+- **Richmond's fire halls** — stated by the fire chief in committee minutes, at that
+  strength.
+- **The North Arm Bridge opening date**, the **Roberts Bank geotechnical and seismic
+  section**, the **Conference Board 2016 report** (free all along), and **CSA S832's
+  front matter**.
+
+**Closed by an audited absence**
+
+- **Tsawwassen** — four channels, including that no terminal capital application has ever
+  been filed with the ferry regulator.
+- **Food and grocery distribution** — the province publishes sector plans for nuclear
+  incidents and foreign animal disease and none for food, and Metro Vancouver's emergency
+  mandate excludes the supply chain.
+- **A high-rise secondary water supply requirement** — confirmed absent from the current
+  Vancouver by-law, with the mechanism found in three named buildings as fire-engineering
+  alternative solutions never tied to earthquake.
+- **The City's disability and low-income guidance** — both narrowed rather than removed,
+  which is the more useful result in each case.
+- **BC Hydro's T&D resiliency assessment** — not on the regulatory record at all.
+
+**Narrowed, and the narrowing is the finding**
+
+- **ICU counts** exist for six hospitals in the academic literature; the **official
+  comparison against casualty load** does not exist anywhere.
+- **A water restoration estimate** exists for one member municipality and not for the
+  region.
+- **Household gas dependence** has a customer count from FortisBC's own filing, and still
+  has no dwelling share; the census route timed out and is **untested, not absent**.
+
+**Not actionable by search, and recorded as such**
+
+Knight Street's two papers, the Port Mann set (**at least eight documents, not three**),
+the insurer-failure study, CSA Z32 and the CDA Guidelines. Every open-access channel was
+tested and the author-copy routes are now documented negatives. **None has been read, so no
+number from any of them is published.**
+
+**A caveat that governs every absence above.** Keyword web search was exhausted partway
+through this round, and the scraped alternatives were bot-blocked or returned broken
+indexes — one returned zero results for a control query, which would have looked exactly
+like an absence. Everything above was reached through structured APIs, site-native search
+with controls, document series and web archives. Where a channel could not be tested it is
+labelled **untested**, not searched.
 
 ---
 

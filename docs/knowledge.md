@@ -316,6 +316,100 @@ Hydro**, so a map built from it cannot imply voltage or criticality.
 
 **How confirmed:** per-dataset licence check recorded in `licensing.md`.
 
+---
+
+## A working search over the wrong unit of publication is still a broken search
+
+**10 September 2026.** This folder recorded, twice and as a mandatory date guard, that the
+Auditor General had never published a follow-up on its 2021 dam-safety audit. It was
+confirmed against the OAG's own search API, which returns exactly one dam-safety
+publication. The API was not broken. The query was not wrong. **The unit of publication
+was.**
+
+The follow-ups are chapters inside the *Annual Follow-up Report* series — one report a
+year covering every outstanding audit at once. No query naming a dam would ever have
+surfaced one, because the document is not about dams. Three editions existed the whole
+time, and the most recent puts implementation at **two of nine recommendations**.
+
+This is the same family as "a broken search looks exactly like an absence", and it is the
+harder case, because nothing looks broken. The habit it produces: **when a body is
+required to report on a schedule, ask what the reporting unit is before concluding
+anything from a title search.** Annual reports, follow-up series, quarterly filings and
+committee minutes all hide subject matter inside a container named for its cadence.
+
+**How confirmed:** three editions retrieved directly, with per-recommendation detail.
+
+---
+
+## Before believing a negative from a host, confirm the host can produce a positive
+
+**10 September 2026.** `dfo-mpo.gc.ca` returned **HTTP 200 with a byte-identical
+3,327-byte stub for every path tried — including one constructed rather than found.** Exit
+status 0, a 200, a page that rendered. A negative drawn from it would have been worthless
+and would have looked exactly like a result.
+
+This is the third shape of one lesson. A 403 is not an absence. A `.pdf` extension is a
+request, not a result. And now: **a 200 is not a document.** The general rule generalises
+all three — *before believing a negative from a host, confirm the host can produce a
+positive.* The check is one line: request a deliberately bogus path on the same host and
+compare the response to a real one. If they match, the host is telling you nothing.
+
+Two hosts in this project behave this way, and two more return a rendered shell with no
+content. Neither failure raises an error anywhere.
+
+---
+
+## A municipality's assurances about its own buildings live in minutes, not reports
+
+**11 September 2026.** Whether Richmond's fire halls are built to a post-disaster standard
+is answered — "all Richmond firehalls are rated to withstand major disasters" — by the fire
+chief, **answering a councillor's question, recorded in committee minutes.** The written
+staff reports on the same halls contain zero occurrences of seismic, earthquake or
+post-disaster, and say only "satisfy related codes".
+
+The City's public site search indexes report PDFs. Its council decisions database indexes
+minutes text. **Neither indexes the other**, so each channel is individually complete and
+jointly blind, and a search of the obvious one returns a clean, false absence.
+
+The habit: **for anything a resident might ask a council about, search the minutes series
+before concluding nothing was said.** And carry the weakness with the finding — an
+officer's oral assurance in minutes is real evidence of what the City believes, and it is
+not an engineering certificate.
+
+---
+
+## The federal impact assessment registry is a full-text seam, and it is barely touched
+
+**11 September 2026.** Every document filed in a federal environmental assessment is
+full-text searchable and downloads without headers. Roberts Bank Terminal 2 alone indexes
+**4,804 documents**, and the search returns matched sentences plus the file name.
+
+It yielded, in one pass: the geotechnical and seismic section this folder had recorded as
+unretrievable, Natural Resources Canada's own published review of a Lower Mainland
+project's seismic design, and a federal review panel's statement of the damage mechanism.
+It is the richest unexploited primary-source seam this project has found, and it covers
+geotechnics, seismic hazard and marine infrastructure on the Fraser delta.
+
+**The habit:** where a project required federal or provincial environmental assessment, the
+assessment registry holds engineering that is published nowhere else — including the
+regulator's own critique of it, which is stronger than anything the proponent writes.
+
+---
+
+## Some publishers have no permalinks, and the address means something different each week
+
+**10 September 2026.** Natural Resources Canada publishes its only city-level earthquake
+early-warning figures on a blog with **no per-post permalinks**. Posts are addressed by an
+`?offset=` page, and a given post's offset **shifts every time a new post is published**.
+
+A citation to `offset=36` does not break. It comes to mean a different post, silently, and
+a checker following it finds a real page that does not say the thing. This is worse than a
+dead link, which at least announces itself.
+
+**The rule:** where a source has no stable address, cite a dated web-archive capture and
+quote the post's own headline and date in the citation, so a reader can find it again even
+if every URL in the chain fails.
+
 ## Citation markers render inside a paragraph, so they carry no block elements
 
 The inline citation popover (`components/citation.tsx`) sits inside running

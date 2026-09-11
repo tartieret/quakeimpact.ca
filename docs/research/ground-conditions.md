@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** Richmond's dike claim is **resolved against the published engineering**, which qualifies it. Review §7 first.
 
 **Status.** The ground under Metro Vancouver varies more than the buildings on it do,
 and the evidence base for that is unusually strong: peer-reviewed, local, and in one
@@ -193,14 +194,62 @@ soil models predict that dikes will sustain some damage during an earthquake; ho
 the dikes will remain an intact barrier to flooding." [RICH-EQ] **[A]** for the City
 saying it.
 
-Three reasons to hold it at arm's length before it reaches a page. The underlying
-models are not named, dated or published, so the claim cannot be checked. It is a
-municipality's assurance about its own flood defences, which is the category of
-statement this project has already learned to date and attribute rather than adopt —
-compare BC Hydro's 2011 design-intent claim against its own 2025 filing. And it sits
-against a peer-reviewed literature that frames Fraser delta dike vulnerability as an
-open question. Record it, attribute it, and open a verification item; do not repeat it
-as a finding about the dikes.
+**Resolved 11 September 2026. The models are named, dated, authored and published — in
+the City's own documents — and what they say is not what the public page says.**
+
+They are **Thurber Engineering Ltd.'s seismic deformation analyses**, published as
+appendices to Richmond's Dike Master Plans and linked from `richmond.ca`. The clearest is
+Attachment 5 to the **Lulu Island Dike Master Plan Phase 2: *Seismic Deformation
+Analysis*, 12 September 2016**. It names the software and the constitutive model — "the
+software program **PLAXIS 2D** … incorporated complex cyclic soil behaviour using the
+**UBCSand** soil model" — scales Lions Gate time-histories to NRCan peak ground
+accelerations for the 1-in-475 and 1-in-2,475-year events, and assesses three sections
+against the province's *Seismic Design Guidelines for Dikes* (2nd ed., 2014).
+[RICH-THURBER-16] **[A]**
+
+**What it concludes at the 1-in-2,475-year event**: No. 1 Road 500 mm horizontal /
+**600 mm vertical**; Bath Slough 450 / **1,000 mm**; No. 4 Road 300 / 500 mm. **Vertical
+displacement exceeds the Guidelines' 500 mm criterion at two of the three sections** —
+and "these deformations do not include post-liquefaction reconsolidation settlements …
+vertical reconsolidation settlements could be in the order of 0.3 m." Horizontal criteria
+were met at all three. And the sentence bearing most directly on "intact barrier":
+
+> "Flow slides could potentially occur where there is extensive liquefaction and a steeper
+> riverbank and river channel bottom. With flow slides, **large uncontrolled deformations
+> of several metres or more** could be anticipated."
+
+The later phases are blunter. Dike Master Plan Phases 3, 4 and 5 each summarise a Thurber
+analysis in identical terms: "Proposed dike cross-sections **will not meet the performance
+requirements** of the BC Seismic Design Guidelines for Dikes based on numerical deformation
+analysis, **without ground improvement** or alternative approaches", with liquefaction
+hazard "insignificant" at the 100-year event and "moderate and high for the 475 and
+2,475-year return period events respectively. The resulting deformations would be large."
+Densification is costed at **$9,000 to $18,000 per lineal metre**. [RICH-DMP3-19]
+[RICH-DMP4-21] [RICH-DMP5-19] **[A]**
+
+**Four guards, because this is a contradiction and the page must be fair to the City.**
+
+1. **Only eleven sections across four phases were analysed**, and the 2016 report says its
+   results "are only applicable at the sections analysed" and "cannot be assumed to be
+   consistent for any other locations."
+2. **The "will not meet" statements describe proposed upgraded cross-sections without
+   ground improvement.** That is a design-stage finding about a specification, **not a
+   condition survey of the dikes as they stand.**
+3. **Mitigation is being designed, and is costed.** Overbuilding for post-earthquake
+   freeboard, setbacks, densification. "Will not meet without ground improvement" is a
+   problem the City is working, not a prediction of failure.
+4. **The return periods are 1-in-475 and 1-in-2,475** and do not travel to a building-code
+   or a dam figure without saying what each measures. See `CONVENTIONS.md`.
+
+**The honest sentence, and it is the finding.** Richmond tells residents the dikes will
+remain an intact barrier to flooding. The computer soil models behind that phrase are
+published in the City's own plans, and at the 1-in-2,475-year event they find vertical
+deformations exceeding the provincial dike guidelines at two of three tested sections
+before reconsolidation settlement is added, and flow slides of several metres or more where
+liquefaction is extensive and the riverbank steep. **Attribute both, date both, and do not
+resolve them in our own voice.** The public page is a summary for residents and the reports
+are engineering; the finding is the distance between them, and that distance is the reason
+this site exists.
 
 ---
 

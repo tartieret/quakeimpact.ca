@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** The absence now splits three ways, one of them a host we could not reach.
 
 **Status.** Band **High** in both scenarios — but on completely different evidence
 from the draft. The two numbers this page used to rest on both come from one phone
@@ -113,13 +114,46 @@ Lead with the mechanism, not with a days-of-supply figure.
 ## What is not established
 
 - **Regional food and grocery distribution resilience.** No published Lower Mainland
-  assessment located. Searched: Metro Vancouver board and committee agendas, BC
-  Ministry of Agriculture publications, PEIRS and the DCRRA in full text, and general
-  web search, September 2026. PEIRS's "weeks or months" is a provincial statement about
-  the consumer goods network as a whole; nobody has published a regional study of
-  grocery distribution, warehousing or days of stock. **[?]** The overview's framing
-  that the problem is logistics rather than stock is sound reasoning and remains
-  unsourced as a *regional* claim.
+  assessment located. PEIRS's "weeks or months" is a provincial statement about the
+  consumer goods network as a whole; nobody has published a regional study of grocery
+  distribution, warehousing or days of stock. **[?]** The overview's framing that the
+  problem is logistics rather than stock is sound reasoning and remains unsourced as a
+  *regional* claim.
+- **And the absence now splits three ways, which is more useful than one bullet.**
+  Re-audited 11 September 2026 against the channels that would own this.
+  - **The province publishes sector emergency plans, and none of them is about food.**
+    Its own index of provincial emergency plans lists the All Hazard Plan, PEIRS, flood,
+    drought, nuclear, pandemic, wildland-urban interface, tsunami notification, flood
+    waste and debris, **foreign animal disease**, a post-secondary plan and a schools
+    guide. **There is no food, grocery, consumer-goods or supply-chain plan among them.**
+    [EMBC-PLANS] **[A]** on the contents of the index. This is the cleanest form the
+    absence can take, and it is a better sentence than any search report: *the province
+    publishes a sector plan for nuclear incidents and for foreign animal disease, and none
+    for food distribution.* The Ministry of Agriculture's emergency material is organised
+    around animal disease, wildfire, freshet and flood at farm level, and **mentions
+    neither earthquakes nor food supply chains**. [BCAGRI-EM] **[A]**
+  - **Metro Vancouver's emergency mandate excludes the supply chain.** The regional
+    district scopes its emergency management service, in its own words, to "the delivery
+    of services including drinking water, wastewater treatment, solid waste management,
+    housing, regional parks, and Electoral Area A", plus 9-1-1 through E-Comm and public
+    notification. [MV-EM] **[A]** So the consumer-goods supply chain sits **outside the
+    remit of the regional body that would otherwise own it** — which explains the absence
+    rather than merely recording it.
+  - **The industry channel could not be reached, and that is a third thing again.** The
+    **Retail Council of Canada** sits behind a Cloudflare managed challenge and returned
+    **HTTP 403 to every request**, including `robots.txt` and the sitemap, with a browser
+    user-agent and full headers, and again through a rendering fetcher. Per
+    `../CONVENTIONS.md` that is *not yet retrieved*, never *not available*, and **no
+    absence may be recorded against it.** It joins `egbc.ca` on the short list of hosts
+    this project cannot reach without a real browser, and it is the most likely home of
+    retail-sector continuity material. **[?]** BC Food & Beverage, by contrast, was
+    reachable and its site search returns nothing for "earthquake", "emergency",
+    "emergency preparedness" or "business continuity". [BCFB] **[A]** on that absence.
+  - **One retrieval limit to record so nobody mistakes it for a negative.** Metro
+    Vancouver's site search is a SharePoint search centre rendered entirely in JavaScript
+    and its REST API returns a 500, so **its publication library was not full-text
+    searched**. The mandate finding above comes from the service page, not from a library
+    sweep.
 - **A current, post-Trans Mountain Expansion figure for Lower Mainland fuel supply.**
   Searched: [FUEL-GN-21] and its successors, September 2026. Not located. The Canada
   Energy Regulator and provincial energy publications are where to look next. **[?]**

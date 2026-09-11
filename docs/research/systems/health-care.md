@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** The 'no ICU count exists' line was **too strong** and is narrowed. Review that first.
 
 **Status.** Partly sourced, and the hole in the middle is now named more precisely than it was.
 What is established: how the existing hospital stock is expected to perform as a portfolio, what
@@ -307,8 +308,52 @@ casualty load and states that medical facilities would be overwhelmed, and does 
 things in the same document.** The surviving gap is a gap in official planning, not a gap in
 knowledge.
 
-The second half of the old gap survives intact: **neither paper, nor anything else reached,
-publishes an ICU count or an operating-room count for the region. [?]**
+**The second half of the old gap is narrowed, 11 September 2026 — it was too strong.**
+Per-hospital ICU bed counts **are** published, for six named Metro Vancouver hospitals, in
+the peer-reviewed literature: **Vancouver General 46, Surrey Memorial 46, Royal Columbian
+30, St. Paul's 15, Lions Gate 11, Richmond 8**, from the Methods of a 2020 open-access
+*CMAJ* case series. [MITRA-2020] **[A]**
+
+**Guards.** These are **adult mixed medical/surgical ICU beds at six hospitals as of early
+2020**, the designated COVID-19 centres — **not a regional inventory**. Burnaby, Peace Arch,
+Langley, Eagle Ridge, Ridge Meadows and the paediatric units are excluded. The paper does
+not distinguish level-3 from level-2 critical care, and does not say staffed versus funded.
+**The sum of 156 would be our addition**, and it would be a sum of six hospitals rather than
+of the region. It also does not de-anonymise anything in [KAUR-2026] — different hospitals,
+different denominator, different year — and the two must never be merged or cross-matched.
+
+**Operating rooms exist only as project counts, never as an inventory.** BC Gov News gives
+Richmond "three more operating rooms bringing the total to 11" — the one facility *total*
+available; Royal Columbian's new tower "a 47-bed intensive care unit", "a new 17-bed cardiac
+intensive care unit" and "17 new operating rooms"; VGH Phase 2 "15 new operating rooms and
+one hybrid operating room upgrade"; Burnaby "a total of 10 new or upgraded operating rooms".
+**[A]** each for its own release. **These mix new, added and post-redevelopment counts, and
+mix planned with in-operation. They are not an inventory and must never be summed.**
+
+**Provincial context, not facility level.** BC had **34 hospitals with ventilator-capable
+ICUs, 304 ICU beds capable of invasive ventilation and 460 invasive ventilators** in a
+survey circa 2013–14 [FOWLER-2015] **[A]**, and **10.53 adult ICU beds per 100,000** in
+2013–14 per CIHI, which breaks BC out by health authority **for rates only, never for bed
+counts**. [CIHI-ICU] **[A]**
+
+**So what survives is sharper than "no count exists", and it is three different absences.**
+*Aggregated away*: CIHI holds staffed-and-in-operation beds for every public hospital
+outside Quebec and Nunavut and releases them only by data request; its published
+derivatives stop at the province, and the facility-level portal has been retired.
+*Never published*: no BC open dataset carries ICU or OR counts, every Lower Mainland ICU has
+a health-authority page and none states a bed count. *Not retrieved*: PHSA's Critical Care
+BC pages are a JavaScript shell and came back as navigation chrome — **that one is worth a
+browser retry and is not an absence.** **[?]**
+
+**And nothing anywhere compares an earthquake casualty load against regional care capacity
+from a government or health-authority source.** That is this file's honest centre, now with
+four named channels behind it instead of an assertion. **[?]**
+
+**One lead, recorded as a lead.** Dodek, Keenan, Norena, Martin & Wong, "Structure, process,
+and outcome of all intensive care units within the province of British Columbia", *J
+Intensive Care Med* 2010 — paywalled, **not read**, contents not characterised here. On its
+title it is the most likely route to a complete facility-level BC ICU inventory.
+[DODEK-2010] **[?]**
 
 The **Mass Casualty Incident Framework for British Columbia Hospitals** (HEMBC/PHSA, January 2026)
 is the right official document and it does not do this. [HEMBC-MCI] **[A]** for what the framework

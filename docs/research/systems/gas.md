@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** A customer count from FortisBC's own filing; the City's 55% still uncorroborated.
 
 **Status — a new system the site does not currently carry. Proposed band: High,
 both scenarios, on the restoration mechanism and not on any damage estimate.**
@@ -450,6 +451,39 @@ Reproduced as a block so it can be checked against any draft of this page.
   sources disagree is the finding; picking a winner is not ours to publish.
 
 ---
+
+### How many customers, and the number is FortisBC's own
+
+Retrieved 11 September 2026 from **FortisBC Energy Inc.'s 2026 Long Term Gas Resource Plan**,
+filed with the BCUC on 27 March 2026 — the same document already registered here, whose full
+text contains zero occurrences of "seismic" or "earthquake". Table 3-2, base year **2024**:
+**583,370 residential accounts in FEI's Lower Mainland region**, against 137,425 on Vancouver
+Island and 245,673 Inland, of 996,337 province-wide. Commercial accounts in the Lower
+Mainland: **61,348**. Industrial: **886 of FEI's 1,109 province-wide**. [FEI-LTGRP-26] **[A]**
+
+**Three guards on what that counts.**
+
+1. **An account is a meter, not a household.** A single-family house is typically one
+   account; an apartment building on a central gas boiler is **one account serving many
+   households**, whose residents hold none. So 583,370 is a **floor** on dwellings dependent
+   on gas and a **ceiling** on households holding a gas bill. It is not a share of either,
+   and it must never be written as a percentage.
+2. **"Lower Mainland" here is FortisBC's service region, not Metro Vancouver.** The plan does
+   not define its boundary. Write "FortisBC's Lower Mainland service region" and do not
+   silently substitute Metro Vancouver.
+3. **It is a forecast base year, not an audited actual.** FEI files audited counts in its
+   Annual Review of Delivery Rates, where the tables are embedded as images; the same
+   appendix says they are also filed as a spreadsheet. A bounded follow-up, not a dead end.
+
+**What this does and does not do for the City's 55%.** It gives the page a sourced statement
+of **scale** — FortisBC told its regulator in March 2026 that it serves 583,370 residential
+gas accounts in its Lower Mainland region — which, with the resiliency plan's statement that
+a winter T-South-scale event could mean "the potential loss of service to all customers in
+the Lower Mainland" [FEI-RESILIENCY-24] **[A]**, is enough to carry the mechanism without the
+City's figure. It does **not** corroborate "55% of homes are heated by natural gas", which
+remains an **exercise parameter** until a dwelling-level source is read. The census route was
+untested — `www150.statcan.gc.ca` timed out on every attempt on 10 September 2026 — so record
+that half as **we could not reach it**, not as *nobody published it*.
 
 ## What is not established
 

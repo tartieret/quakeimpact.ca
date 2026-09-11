@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** Roberts Bank closed from three federal documents; a harbour-versus-delta guard added.
 
 
 ## Status
@@ -175,12 +176,103 @@ share — and must not be repeated.
   February 2025 to spring 2027, frames it as life-extension and structural and
   operational upgrades, and no longer carries the seismic wording or a 2030 date. Do not
   describe the timeline as running to 2030.
-- **Tsawwassen** [?] — no seismic assessment or upgrade located.
+- **Tsawwassen** [?] — no seismic assessment or upgrade located, and the absence is now
+  audited rather than asserted. Searched 11 September 2026: the **BC Ferry Commissioner's
+  major capital approvals** page for terminals lists two matters in its entire history and
+  neither is Tsawwassen — **no Tsawwassen terminal capital application has ever been filed
+  with the regulator**; the Major Terminal Efficiency Project application covers Tsawwassen
+  twelve times and contains the word "seismic" **zero** times; `bcferriesprojects.ca` carries
+  project pages for eleven terminals and **none for Tsawwassen**; and neither *Charting the
+  Course* (2025) nor the Annual Report to the Commissioner 2025–26 contains any asset-level
+  seismic statement. **[A]** on the absence, through those four channels.
+- **A named Lower Mainland facility its operator says fails current code — and it is not a
+  terminal.** BC Ferries states in a regulatory filing that its **Fleet Maintenance Unit in
+  Richmond**, where the fleet is serviced, has buildings "with a wide range of structural,
+  seismic and hazardous-material deficiencies" and is "**a facility site that does not meet
+  current seismic codes** and is susceptible to inundation during future sea level rise".
+  [BCF-FMU-23] **[A]** It is a maintenance yard, not a berth, and the page must say which —
+  but it is on the delta, and it is where the vessels are fixed.
 
-The asymmetry is the finding. Tsawwassen sits on the Fraser delta; Horseshoe Bay sits on
-rock at the mouth of Howe Sound. The terminal on the delta is the one with no public
+The asymmetry is the finding, and it now has three legs rather than two: Horseshoe Bay has
+a seismic claim, Tsawwassen has nothing through four channels, and the Richmond maintenance
+yard has a published admission. **It remains a statement about the public record, not an
+inference about relative vulnerability.** Tsawwassen sits on the Fraser delta; Horseshoe Bay
+sits on rock at the mouth of Howe Sound. The terminal on the delta is the one with no public
 seismic assessment. PEIRS names Tsawwassen directly among the facilities whose impacts
 would be compounded by liquefaction of roadways in Richmond and Delta. [PEIRS] **[A]**
+
+### Roberts Bank Terminal 2 — three federal documents, and the criterion they disagree on
+
+Closed 11 September 2026. The EIS geotechnical and seismic section recorded here as an
+unretrieved lead is **EIS Volume 2, §9.1.3.2 with Table 9.1.3-1**, and its revised text is
+reproduced verbatim inside the port authority's own response to the Review Panel — so it
+is readable at [A] without the EIS volume. Ground shaking at Roberts Bank, for the Site
+Class C soils found at **roughly 100 to 200 m below current mudline**: peak ground
+acceleration **0.10 g at 100 years, 0.23 g at 475 years, 0.42 g at 2,475 years**.
+[RBT2-IR2-17] **[A]** (Return-period ground motion at a site, not a modelled event.)
+
+**Natural Resources Canada reviewed the seismic design and published its review**, which
+is a stronger source than a proponent's own document. The design objectives it records are
+**2,475 years for terminal buildings and 475 years for the wharf structure and perimeter
+dykes**, and its conclusion is that the proponent "has reasonably characterized the
+potential for the project to be impacted by seismic events, and has proposed appropriate
+seismic design criteria". [RBT2-NRCAN-19] **[A]**
+
+Two further things NRCan states that bear on the rest of the folder. Hazard at this site,
+across all three return periods, is **dominated by deep earthquakes at short periods and
+by subduction earthquakes at longer periods** — the crustal/in-slab/subduction split
+`../scenarios.md` turns on, stated for one Lower Mainland site. And the proponent's
+preliminary non-linear analysis concluded that **with ground improvement** the
+seismically-induced lateral displacements could be reduced to acceptable levels, with the
+real analysis deferred to detailed design. [RBT2-NRCAN-19] **[A]**
+
+**The Review Panel restates the mechanism in the terms this site needs.** "Seismic activity
+in the form of earthquakes could affect the Project through **shaking damage of buildings,
+cranes, wharves and the causeway overpass**." Deltaic soils in the vicinity were reported
+vulnerable to liquefaction in a large-magnitude earthquake, with dredging and
+**vibro-densification** proposed. During operations, damage "may range from minor … to
+catastrophic, potentially resulting in the **loss of main road access to the terminal due
+to failure of the existing causeway**", while collapse of terminal structures was
+considered not likely. [RBT2-PANEL-20] **[A]**
+
+**A discrepancy that must travel with any use of the criterion.** NRCan records the wharf
+at **475 years**; the Panel records it at **1 in 1,000**, and puts bridge structures in the
+2,475-year class. Two federal documents about the same project disagree. **Neither figure
+goes on the site alone** — name both sources, or drop the sentence. **[?]** as to which is
+right.
+
+### An existing facility, assessed — and it complicates the harbour-versus-delta story
+
+The port authority's permit archive holds a consulting engineer's geotechnical memorandum
+for **Seaspan's Vancouver Shipyards**, on the north shore of Burrard Inlet. Historical
+boreholes indicate the site "is underlain by loose sands that are prone to liquefaction and
+large displacements during earthquakes with return periods lesser than those recommended by
+current building codes." At a 1-in-100-year event the soil is generally stable, with local
+liquefaction causing lateral displacements "in the order of 1 m". At **1-in-475 and
+1-in-2,475-year events, "extensive liquefaction is expected to depths of 30 m below seabed.
+Lateral movements in excess of several meters is expected"** — and even after
+vibro-replacement densification, settlement "in the order of 350 to 900 mm" is expected away
+from the densified dyke. [VFPA-SEASPAN-19] **[A]**
+
+On what is already built there: "it is Westmar's understanding that **most existing
+facilities at the site are likely not designed to withstand kinematic loads and soil flow
+loads due to liquefaction** of surrounding soil." [VFPA-SEASPAN-19] **[A]** for what the
+memo states — and note the memo attributes this to discussions with the owner, so it is an
+engineer reporting an owner's understanding, **not an inspection finding**.
+
+**Guard, and it matters for the whole page.** AIR's 2013 model grades Vancouver Harbour
+ports at *slight* damage, which invites "the harbour is on good ground and the delta is
+not". This is a working Burrard Inlet industrial waterfront on loose liquefiable sand with
+metres of expected lateral movement. The two are not in contradiction — one is a regional
+model, the other a single infilled boat basin — but **the page must not let the asymmetry
+harden into a claim about every harbour facility.**
+
+**And one assessment is established as done-and-unpublished rather than absent.** A
+curriculum vitae filed with the RBT2 panel records, as the author's own project
+experience, seismic and liquefaction assessment work on the **Deltaport Berth 3
+Expansion** — borehole drilling, seismic analyses, assessment of liquefaction and its
+consequences, remedial design. [RBT2-CVS-19] **[B]** A CV entry is weak evidence of
+content and adequate evidence that the work exists. It is not published.
 
 ### Kobe, as analogue only
 

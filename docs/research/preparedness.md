@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** Two recorded absences are **narrowed rather than removed**, and the NEPP succession is now contradicted by the record.
 
 **Status.** The draft's central claim is withdrawn. **BC does not advise 72 hours in
 the document the draft cited** — the PreparedBC earthquake guide says two weeks, three
@@ -358,6 +359,26 @@ non-obvious; the rest need no source.
   is "Start with what you have and add more as you can" [COV-PREPMAIN] **[A]** and "Not
   every action will work for everyone, choose the options that work best for you"
   [COV-EXPLORER-25] **[A]**. Those two facts are the finding; nothing is written past them.
+- **The money half of that gap now has an answer to point at, and the storage half does
+  not.** Re-audited 11 September 2026 through the City's full-text index — four further
+  query forms on budget, apartment storage, renters and SRO residents, none returning any
+  City page or PDF on the subject. **[A]** on the City's silence. But PreparedBC does
+  publish one: its kit page links to an EMCR post of 12 August 2024, *Get prepared for
+  emergencies on a budget*, which is concrete — dollar stores, thrift stores, garage sales,
+  "start with food and water, then work on adding other items over time as your budget
+  allows", a first aid kit built from what is already in the house, a thrift-store backpack
+  for the grab-and-go. [PREPAREDBC-BUDGET] **[A]** North Shore Emergency Management already
+  links to it. [NSEM-KIT] **[A]** So the pointer the City could make is one a neighbouring
+  authority makes.
+
+  **Two guards, and the second is the finding.** It is **provincial, not municipal** — no
+  Lower Mainland local authority writes its own. And **it answers money and does not answer
+  storage**: it assumes a bin or duffel and somewhere to put it, and the page it hangs off
+  says to store supplies "in an area of your home that's easy to get to, such as a hall
+  closet, spare room or garage" **[A]** — three things a bachelor suite or an SRO room does
+  not have. Nothing found addresses storing two weeks of water in an apartment, what a
+  tenant may ask a landlord for, or what happens to a tenancy when a building is tagged.
+  **[?]**, now audited against the City's full-text index as well as its navigation.
 - **No City preparedness material for people with disabilities or mobility limitations.**
   Disability is named as an affected group and accommodated within kit lists and drop-cover-
   hold wording [COV-EXPLORER-25] [COV-FACTSHEET-24] **[A]**, and the City's 20-minute
@@ -365,7 +386,32 @@ non-obvious; the rest need no source.
   found. Searched the City's full-text index for "people with disabilities" emergency kit
   prepare and for "emergency preparedness" seniors mobility plan, plus every page in the
   Emergency preparedness and Emergency information sections, 10 September 2026; the only
-  public-page hits are a winter-weather page and records pages. **Both comparison
+  public-page hits are a winter-weather page and records pages.
+
+  **Partly overturned 11 September 2026, and the correction is precise.** The City *does*
+  publish material for people who cannot evacuate unaided — it is filed under **fire safety
+  for building owners**, addressed to building managers, and two of its three documents are
+  not the City's. On *Fire safety for building owners* the City runs sections headed
+  "**Evacuation planning for people with disabilities**" and "**Keep a list of residents who
+  need assistance**", instructing apartment owners to hold that list in the lobby fire
+  safety plan box and to "encourage each resident with a disability to develop an
+  individualized personal evacuation plan". [COV-FIRESAFE-BO] **[A]** Three documents hang
+  off it: Vancouver Fire Rescue Services' own four-page *Can you escape in an emergency?*
+  on the voluntary Residents Requiring Assistance sticker programme [VFRS-ESCAPE-25]
+  **[A]**, and re-hosted guides from the **NFPA** [NFPA-EVAC-22] **[A]** and the federal
+  government [ESDC-EVAC-09] **[A]**.
+
+  **So the absence is real but narrower: no *preparedness* material, while *fire evacuation*
+  material exists and is filed where no resident would look for it.** None of it addresses
+  earthquake preparedness, kits, medication, mobility-aid backup or personal support
+  networks. The comparison with North Shore Emergency Management and Richmond Fire-Rescue
+  still holds, because theirs are preparedness pages in a preparedness section.
+
+  **One federal source the site can use where the City has nothing**: NRCan's Earthquakes
+  Canada post of 14 September 2023, *What to do when in a wheelchair during an earthquake* —
+  lock the wheels, cover head and neck, hold on. **[A]**
+
+  **Both comparison
   jurisdictions publish one and Vancouver does not**: North Shore Emergency Management's
   "Help for people with additional needs" [NSEM-KIT] **[A]** and Richmond Fire-Rescue's
   "Make a Plan — Planning for Unique Needs" [RICH-FR] **[A]**.
@@ -390,6 +436,28 @@ non-obvious; the rest need no source.
   program" (28 documents, no live public page) and browsed the whole Emergency
   preparedness section, 10 September 2026. The succession is an inference and is not
   published as a fact.
+
+  **Strengthened 11 September 2026: the record now cuts *against* the succession.** Three
+  documents were retrieved and none states one. The City's **records retention and
+  disposition schedule**, released under FOI, classifies "courses and workshops offered to
+  the public through the Neighbourhood Emergency Preparedness Program (NEPP)" with the
+  disposition note "**Course no longer offered**" [COV-RETENTION-24] **[A]** — documentary
+  evidence that NEPP *ended*, and silent on what replaced it. A **VEMA presentation to
+  Council of 17 October 2017** lists NEPP as one of four streams of the Vancouver Volunteer
+  Corps, alongside Emergency Social Services, NEAT and VECTOR, with over 7,000 volunteer
+  hours that year — so NEPP was a **volunteer and course programme**. [COV-VEMA-17] **[A]**
+  And the **Resilient Vancouver Strategy (2019)** introduces the RNP as an action of the 100
+  Resilient Cities process — "launch and scale the Resilient Neighbourhoods Program with a
+  toolkit and grants", built with four grant-funded community partners — and **never
+  mentions NEPP**. [COV-RVS-19] **[A]**
+
+  Two programmes of different kinds with separately documented origins. The live RNP page
+  carries no "formerly", "replaces" or "successor" wording. **The inference is not merely
+  unstated; the record is against it, and the page must not say the RNP succeeded the
+  NEPP.** Also recorded so nobody retries it: the web archive holds **four rows and not one
+  stored page body** for `vancouver.ca/nepp*` — the NEPP page content was never archived,
+  which is *we cannot reach it*, not *nobody published it*. The remaining route is a Council
+  report or VEMA service plan of 2018–2020, not located.
 - **Whether ESS funding or design has changed since PEIRS v1.1.** **[?]** Still open, but
   the next target is now identified: EMCR published *ESS: What We Learned* (2025) at
   `.../embc/reports/ess_what_we_learned_summary_2025_final.pdf`. Not retrieved in this

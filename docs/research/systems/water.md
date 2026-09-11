@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** The lifeline study's consultant is named, and a member municipality's restoration figures are added with five guards.
 
 **Status — band: High, both scenarios.** The band rests on a mechanism, not on a
 restoration time: an M9 is modelled to cause 267 water-main failures region-wide,
@@ -51,6 +52,18 @@ reaches us through that reporting. [MV-WATER-22] **[B]**
 - Vulnerable pipes run through the **North Shore, Vancouver, Burnaby, New
   Westminster, the Tri-Cities, Maple Ridge, Richmond, Delta and Surrey**.
   [MV-WATER-22] **[B]**
+- **The consultant has a name: WSP Canada Inc.** Identified inside the redacted release
+  and independently corroborated against Metro Vancouver's own Manager's Report of
+  14 October 2021. [MV-WATER-22] [MV-MGR-2021] **[A]** for the identity — an upgrade on
+  the previous "an external engineering consultancy", which reached this file through
+  newspaper reporting.
+- **Provenance caveat on the redacted release, and it must travel with every citation of
+  it.** The 292-page redacted version was read in full, but it is hosted on a third-party
+  document-sharing site as an upload, not by a publisher. Cite it as **the redacted FOI
+  release reported by Glacier Media**, with the upload as where the artefact is reachable,
+  and cite the Manager's Report separately for WSP's identity. Roughly **64% of pages are
+  blacked out**, and the withheld material is exactly what this file already says it is:
+  the per-main leak and break counts and the per-facility damage levels.
 - **Method.** The study was commissioned to an external engineering consultancy and
   built from an analysis of **123 reports provided by Metro Vancouver — 41 on
   reservoirs, 21 on pump stations and 61 on pipelines**. Worth carrying: it says
@@ -290,6 +303,44 @@ reservoirs system entry, not here. Cross-reference rather than restate.
   targeted searches on days / weeks / months / restore. **Not found**, and the DWMP
   2026 states none. Narrow the open question to "a Metro Vancouver estimate" — the
   AAFC "several months" finding exists and is recorded above.
+- **Narrowed again, 11 September 2026 — a member municipality publishes one, and the
+  regional utility does not.** The **City of New Westminster's Potable Water Emergency
+  Response Plan** (July 2009, updated January 2023) is published in full and carries a
+  quantified damage-and-duration table in its earthquake annex: pipeline, "**100 year
+  event – 20 to 30 breaks / 475 year event – 200 to 300 breaks**", duration
+  "**approximately 1-3 days per break**"; GVWD supply, "potential loss of supply through
+  landslides", duration "**weeks to months**", footnoted as depending on the level of
+  provincial and federal assistance and the degree of other regional damage.
+  [CNW-PWERP-23] **[A]**
+
+  **Five guards, all mandatory.** It is **New Westminster only**, one member's distribution
+  system. Its scenarios are **1-in-100 and 1-in-475 year events** — far below the
+  1-in-2,475-year design event, and not commensurable with either site scenario; the number
+  must never appear beside a Cascadia M9 or the PEIRS M7.0 without saying so. **"1-3 days
+  per break" is a per-break repair duration, not a restoration time** — converting it into
+  one needs a crew count the plan does not give. The "weeks to months" attaches to **loss of
+  the GVWD supply through landslides**, not to the 200-300 distribution breaks. And it is a
+  **response plan's planning assumption**, not a study result.
+- **Two supporting absences from Vancouver's own documents, same date.** The City's
+  *Waterworks Utility Annual Report 2025* contains **zero occurrences of "seismic"**, and
+  its summary of the Waterworks Emergency Response Plan gives objectives in priority order
+  — firefighting water including the DFPS first, then priority repair, then potable supply,
+  then water quality — and **no duration of any kind**. The ERP itself is not published.
+  [COV-WATER-AR-25] **[A]** New Westminster's Water Asset Management Plan (2021) treats
+  seismic risk only as a generic sample entry in a risk-register template. [CNW-WAMP-21]
+  **[A]**
+- **And the City does set a seismic pipe-material standard, which belongs here rather than
+  in `sanitation.md`.** Vancouver's *Engineering Design Manual* §3.5 carries a **Seismic
+  Pipe Material Selection Standard banded by ground acceleration and permanent ground
+  deformation** — bell-and-spigot with nitrile gaskets below 0.4 g on non-liquefiable
+  soils, polyethylene-encased restrained-joint ductile iron above it, plus expansion
+  sleeves where PGD exceeds 5 cm — a §3.5.1 on **SCADA-controlled valves** for "quick
+  isolation of neighbourhoods or pressure zones that are expected to be heavily damaged in
+  an earthquake", and a §3.5.2 recording roughly **80,000 single and dual family property
+  service connections**, mostly copper. [COV-EDM-26] **[A]** Delta separately specifies
+  "Earthquake Resistant Ductile Iron Mains" in its approved-materials list. [DELTA-MAT]
+  **[A]** **A material standard is not an assessment of the installed network**, and
+  neither city publishes one.
 - **The 2022 lifeline study in unredacted form.** Roughly two-thirds is withheld,
   including the per-main leak and break counts and the damage estimates for 21
   storage facilities. Searched: Metro Vancouver's water, projects and construction

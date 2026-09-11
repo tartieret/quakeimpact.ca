@@ -5,6 +5,7 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
+> **Changed in that pass.** The Conference Board's $127.5B is **AIR 2013 scaled, not an independent estimate**, and an insured-versus-economic assertion drops to [?]. Review those two first.
 
 **Status.** Well sourced, and rewritten in September 2026 against two City of Vancouver
 council reports that did not exist when the first draft was written. The City now publishes
@@ -238,8 +239,30 @@ been regulated for decades and never measured in the stock that predates the reg
 is the same shape as every other finding on this page.
 
 The code's commentary points to **CSA S832**, *Seismic risk reduction of operational and
-functional components of buildings* — paywalled and unread. Add to the named-but-unread
-register.
+functional components (OFCs) of buildings*, third edition 2014. The clauses stay paywalled
+and unread — but **CSA Group publishes the Preface, Introduction and the whole of Clause 1
+free and without a login**, which is substantial primary text and enough that this file no
+longer has to describe the standard as an unknown. [CSA-S832-14] **[A]** for CSA's own
+published statement of its own standard.
+
+- **CSA's framing of the hazard, which corroborates the by-law note above from an
+  independent voice:** "The main cause of casualties and property damage in the event of an
+  earthquake is **often the failure of these OFCs**", and "in many cases, losses associated
+  with damage to these components are **considerably greater than damage to the structural
+  system**."
+- **It applies to new *and existing* buildings, including renovations**, across occupancy
+  Groups A to F plus post-disaster buildings. It is not a new-construction instrument —
+  which matters to this file's central point that the hazard has been regulated for decades
+  and never measured in the stock predating the regulation.
+- **It deliberately avoids the term "non-structural"**, "to acknowledge the interaction that
+  exists between the seismic behaviour of a building's structural system and the seismic
+  performance of all other building components." Worth respecting in the site's vocabulary.
+- **It excludes** lifeline systems feeding the building from outside or underground, and
+  structural integrity, and flags hospitals, water supply, wastewater and telecommunications
+  as needing considerations beyond its scope. That exclusion is a real boundary for the
+  dependency material.
+- **The by-law's commentary points at it as guidance. Nothing in the public text makes it
+  mandatory, and the site must not imply that it is.**
 
 **The replacement claim is sourced, local, and better.** The City places the street-level
 falling-debris hazard on older masonry commercial stock:
@@ -308,18 +331,71 @@ Two further cautions travel with the table:
   the estimates "include only direct mainshock damage without account of secondary hazards like
   landslides, liquefaction, tsunami, fires and more." [DCRRA-2025] **[A]**
 
-**The Conference Board of Canada 2016 figures, correctly attributed.** The report itself
-— *Canada's Earthquake Risk: Macroeconomic Impacts and Systemic Financial Risk*, Ottawa,
-2016 — is not publicly retrievable; the product page renders empty and the e-library
-identifier 404s. **[?]** for the report text. The figures below come from the Board's own
-press release, reproduced in full and attributed, and they belong to the **Conference
-Board**, not to the province. [CBOC-2016-PR] **[A]**
+**The Conference Board of Canada 2016 figures, correctly attributed — and the report has
+now been read.** Retrieved in full from a web archive on 10 September 2026, after the
+live path died at the network layer. Full citation: **McIntyre, Jane, and Marc Desormeaux,
+*Canada's Earthquake Risk: Macroeconomic Impacts and Systemic Financial Risk*, Ottawa: The
+Conference Board of Canada, 2016.** [CBOC-2016] **[A]**, upgraded from **[?]**.
+
+**Two facts about the document that change how it is described.** It was **free** —
+published 22 November 2016 at a price of CAD $0.00, and its own last page reads "PRICE:
+Complimentary", so this file's note that access could not be determined is retired. And
+**funding for the research was provided by the Insurance Bureau of Canada**, with IBC staff
+thanked for insights and feedback and a former insurance executive as outside reviewer.
+That belongs in every attribution.
+
+> **The $127.5 billion is not an independent estimate. It is AIR 2013, scaled.**
+> This is the most important thing in the report and it was invisible from the press
+> release. The Board starts from AIR Worldwide's 2013 study — a 1-in-500-year event, at
+> least M9.0, $75B total of which $20.4B insured — and then: "it was decided that the
+> earthquake scenario contemplated here is one that generates insured losses of **$42
+> billion**", chosen "**in consultation with the Insurance Bureau of Canada**" to sit just
+> above industry capitalisation. Then: "it was assumed after discussions with AIR that …
+> total economic losses would grow in line with insured losses. As a result, starting from
+> AIR's original loss estimates in 2013, the current direct cost of the damage was revised
+> to an estimated **$127.5 billion**." [CBOC-2016] **[A]**
+>
+> So **$42B is a chosen stress-test input, not a modelled output**, and **$127.5B is a
+> linear scaling of AIR's 2013 number**. This confirms this file's own instinct that the
+> only genuinely independent pair is IBC/AIR 2013 and IBC 2025 — and it means **the
+> Conference Board and AIR must never be set beside each other as two estimates.** They are
+> one estimate and a multiplier. See `../knowledge.md` on Canada's single modelling lineage.
+
+> **The 15,000 deaths is an input assumption, not a finding.** "An assumption was made that
+> this earthquake would result in approximately 15,000 deaths", reasoned up from the
+> province's own plan (~10,000 for an M7.3 at Vancouver, 1,500 at Victoria) on the ground
+> that an offshore M9 with a tsunami would be worse. The Canadian population was then
+> reduced by 15,000 **in the macroeconomic model**. [CBOC-2016] **[A]** **[A]** is right for
+> *what the Board says*; the sentence must say it is an assumption fed into a model, never
+> an estimate the model produced.
+
+**Two figures gain precision over the press release.** Cumulative real GDP loss is
+**$96.6 billion** over ten years, not "$100 billion" — the executive summary rounds to
+"almost $100 billion". The peak decline is "nearly $38 billion, **or 1.8 per cent**, in
+Year 3", and that percentage is what distinguishes it from the DCRRA's unrelated $38B
+below. Employment: 173,000 fewer jobs in Year 1, 288,000 by Year 3, 437,000 person-years.
+Consumer spending falls $133B. [CBOC-2016] **[A]**
+
+**A fourth "30" exists in this material and it is a percentage.** The contagion model
+assumes "that **30 per cent of insurance companies fail** — an assumption informed by
+earthquake stress-tests for P&C insurers undertaken by OSFI in the recent past".
+[CBOC-2016] **[A]** It does **not** support the "26 of 30" figure reported elsewhere in
+this file and must never be used to gloss it.
+
+**Licensing.** The report carries "All rights reserved | Agreement No. 40063028" and was
+distributed free. Quotation with attribution is fine; see `../licensing.md`.
+
+The figures below come from the Board's own press release, reproduced in full and
+attributed, and they belong to the **Conference Board**, not to the province.
+[CBOC-2016-PR] **[A]**
 
 - **$127.5 billion in total economic losses.** The DCRRA's "about $128 billion" is its
   rounding of this figure. Say $127.5B when attributing to the Board; say about $128B only
   when attributing to the DCRRA. [CBOC-2016-PR] **[A]** / [DCRRA-2025] **[A]**
 - **Approximately 15,000 deaths.** [CBOC-2016-PR] **[A]**
-- **A cumulative $100 billion reduction in real GDP**, and **437,000 person-years of
+- **A cumulative $100 billion reduction in real GDP** — the report itself gives
+  **$96.6 billion**; prefer the report's figure and treat "$100 billion" as the press
+  release's rounding — and **437,000 person-years of
   employment lost — equivalent to 43,700 jobs over the ten-year period**. Print the
   person-years, or the words "equivalent to"; 43,700 jobs is a derived figure and standing
   alone it misstates what was measured. [CBOC-2016-PR] **[A]**
@@ -447,8 +523,13 @@ route from PACICC's own papers.
   through Stefan Labbé's reporting for Business in Vancouver. [BIV-DCRRA-25] **[B]** Any
   sentence on the site that prints them must name the paper and say the figures come via
   Business in Vancouver.
-- **The $30B there is an insured figure**, not total economic loss. The comparison it is
-  making is against insurer capacity, which only makes sense as claims.
+- **Whether the $30B there is insured or economic loss — downgraded to [?] on
+  11 September 2026.** This file asserted it was an insured figure, reasoning that the
+  comparison only makes sense against insurer capacity as claims. That reasoning is sound
+  and the source pushes the other way: the reporting says "$30 billion in **damages** … as
+  simulated by the Geological Survey of Canada", which reads as a total-loss scenario
+  figure. **Our reading is an inference and the wording is against it.** It stays **[?]**
+  until the paper is read, and no sentence on the site may label that $30B as either.
 - **"30" cannot be an industry-wide count.** PACICC has well over 100 member insurers, and
   its own published model reports against that full membership. What the 30 denotes is
   **unknown** and the site cannot say. **[?]**
@@ -587,6 +668,43 @@ He costs it at "significantly less than 1% of the value of the building — perh
 of the cost to renovate the building lobby", occupying "the equivalent of perhaps two parking
 spaces". [SCAWTHORN-2020] **[A]** Concrete, local, priced, and identified by name in a published
 study — this is a lever with an address.
+
+**Confirmed against the current by-law, 10 September 2026, and the gap is real.** The
+**Vancouver Building By-law 2025** (consolidated to 5 May 2026) was retrieved in full and
+text-extracted — Divisions A, B and C, Parts 1 to 13. The phrase "secondary water supply"
+occurs **exactly once**, and it is not this: it sits in the plumbing provisions for
+*alternate water source systems*, meaning non-potable rainwater harvesting and reuse, under
+continuity of supply and backflow prevention. **There is no seismic on-site firefighting
+water reserve requirement anywhere in the by-law.** [VBBL-2025] **[A]** on the absence.
+Scawthorn's 2020 statement was six years old; it is now current.
+
+**And the mechanism already exists in Vancouver practice — as a fire-engineering
+alternative solution, never tied to earthquake.** Three named buildings in the City's own
+development records: **Oakridge Centre**, whose fire-engineering minutes carry a dedicated
+"Secondary Water Supply" item designing one "to provide a 2-hour design duration", driven
+by the City's assumption of three simultaneous fires and **not** by seismic risk;
+**1489 West Broadway**, where a building comment raises "possibly the provision of
+secondary water supply (i.e. water tank)"; and **600 Robson Street**, whose drawings label
+a "SECONDARY WATER SUPPLY ROOM" at P2. [COV-OAKRIDGE-FE] [COV-1489WB] [COV-600ROBSON]
+**[A]**
+
+**That makes the lever much stronger than "no such rule exists".** The honest sentence is:
+*Vancouver already builds on-site secondary water supplies into large buildings when fire
+engineering calls for one, and sizes them in hours of duration — it has simply never
+required one, or connected one to earthquake.* A demonstrated local precedent is a far
+easier argument than a novel proposal.
+
+**Two clean nulls from the City's own full-text index, same date.** `"fire following
+earthquake"` returns **zero results** and `Scawthorn` returns **zero results** on
+`vancouver.ca`. The City has published nothing referencing the study that names this gap.
+**[A]** on those absences, control queries passed.
+
+**What is still open: whether it was ever *considered*.** That needs Vancouver Building
+By-law amendment reports on `council.vancouver.ca`, a separate host the City's site search
+does not index, and the National Research Council code-change public reviews, which were not
+searched. Provincially, the freely-available BC Building Code 2018 index carries "Water
+supply for firefighting" and **zero occurrences of "secondary water"** — supporting but
+index-only, and superseded by BCBC 2024, which is not freely retrievable. **[?]**
 
 **And the mechanism behind it: the sprinkler dependency.** New construction in Vancouver must be
 sprinklered — "however, sprinklers rely on underground water mains for supply, which are likely
@@ -742,8 +860,38 @@ directed at closing that gap is a rounding error against the capital plan it sit
   Surrey and New Westminster are documented negatives — full sitemaps enumerated (roughly
   16,000 and 7,521 URLs), zero hits for post-disaster, seismic or earthquake on any fire-hall
   page, including Surrey's new Fleetwood Hall 6, which is being built without any published
-  statement of what standard it is built to. **Richmond and the City of North Vancouver are
-  untested, not absent** — neither publishes a sitemap. Searched 10 September 2026. **[?]**
+  statement of what standard it is built to. **Richmond and the City of North Vancouver were
+  tested on 11 September 2026 and the answers differ.** **[?]** only for CNV now.
+
+  **Richmond: all halls, stated by the fire chief — at committee-minute strength.** Community
+  Safety Committee minutes of 10 March 2026 record the Chief answering members: "**all
+  Richmond firehalls are rated to withstand major disasters**", that the oldest, No. 6, is
+  under renovation, and that the second oldest "underwent renovations several years ago to
+  bring it up to **extreme post disaster standards**". [RICH-CSC-2026-03] **[A]** Corroborated
+  a decade earlier at the same venue — "all Firehalls were designed to be earthquake
+  resistant" [RICH-CSC-2016-02] **[A]** — and contextualised by a 2007 Council item
+  transferring seismic-upgrade funding between two halls. [RICH-CNCL-2007-03] **[A]**
+
+  **Guard, and it is not optional.** This is an **officer's oral assurance recorded in
+  minutes**, not an engineering certificate and not a per-hall rating. The written staff
+  reports on Richmond's hall replacements contain **zero** occurrences of seismic, earthquake
+  or post-disaster and say only "satisfy related codes"; two of them are scanned images and
+  remain unread. And "rated to withstand major disasters" is **not** the same phrase as
+  "post-disaster importance category" — the page must not silently upgrade it.
+
+  **City of North Vancouver: nothing, across six channels.** CNV has one fire hall. Searched
+  11 September 2026: the site-search API with controls passed and a negative control proving
+  it does not index council report PDFs; the complete City-Finances series, 81 PDFs covering
+  financial and capital plans 2012–2030 and annual reports 2015–2025, where seismic terms hit
+  four files and none concerns the fire hall; all 21 of the 2026 council agenda packages; the
+  OCP by-law; the fire department's Service Priorities Plan 2021–2024; and a web-archive sweep
+  of the domain. The 2026–2030 Capital Plan does carry a **Fire Hall Assessment and Lifecycle
+  Analysis** ($50,000, condition and lifespan) and a **Long Term Plan for City Fire Halls** —
+  and **neither mentions seismic or post-disaster**, which is the most specific thing CNV
+  says. [CNV-CAPITAL-26] **[A]**
+  - **The residual gap is the same shape as the thing that worked.** CNV's **pre-2026 council
+    minutes** were not opened. Richmond's statement lived in minutes and was invisible to
+    every document-level channel. If a CNV statement exists, that is where it is. **[?]**
 
 - **The DFPS wet-well limit.** "Each station's wet well limits sustained outflow to roughly
   15–20 minutes" has no located source. **[?]** Searched: the four City council DFPS records
