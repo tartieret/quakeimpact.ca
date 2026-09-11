@@ -8,10 +8,6 @@ import type { PageModule } from "./index";
  *
  * No `lever`: the page describes no consequence to the reader, so there is
  * nothing for it to tie an action to. What it asks for is the page.
- *
- * The two contact rows carry honest placeholders, because there is no address
- * and no issue tracker yet. They say so in the reader's terms rather than
- * offering a route that goes nowhere.
  */
 const link = "text-accent underline underline-offset-2";
 
@@ -131,26 +127,33 @@ export const contribute: PageModule = {
     },
 
     {
-      title: "How to send it",
+      title:
+        "Contributions are welcome, and most of all from people who work in these fields",
       body: (
         <Prose>
           <p>
-            One document, and one line saying which claim on the site it supports
-            or contradicts.
+            Email{" "}
+            <a href="mailto:contact@quakeimpact.ca" className={link}>
+              contact@quakeimpact.ca
+            </a>
+            , or open an issue on{" "}
+            <a
+              href="https://github.com/tartieret/quakeimpact.ca"
+              target="_blank"
+              rel="noreferrer"
+              className={link}
+            >
+              the public repository
+            </a>
+            . One document, and one line saying which claim on the site it
+            supports or contradicts, is the most useful form it can take.
           </p>
-          <ul>
-            <li>
-              <strong>By email.</strong> The address is not published yet, and
-              will be before this site launches.
-            </li>
-            <li>
-              <strong>As an issue on the public repository.</strong> The link is
-              not published yet, and will be before this site launches.
-            </li>
-          </ul>
           <p>
-            Until those are up, nothing here can receive anything, and saying
-            otherwise would be worse than saying nothing.
+            Anyone is welcome to write. The readers most likely to catch what is
+            wrong here are the ones who work in the fields this site covers:
+            seismology and geotechnical engineering, water and sewer, power, gas,
+            telecommunications, transport, fuel and food supply, housing, health
+            care and emergency management.
           </p>
         </Prose>
       ),

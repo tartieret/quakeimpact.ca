@@ -104,7 +104,6 @@ Then concatenate `app.css` and `app.js` into a single HTML file around `<div id=
 - `robots: { index: false }` in `src/app/layout.tsx` — flip it.
 - `X-Robots-Tag` in `netlify.toml` — remove it.
 - `SITE.status` draft banner in `site.ts` — remove it.
-- Contact details on `/contribute/` — email address and issue tracker link. Both are currently labelled as not yet published, which is honest but unusable.
 - Fourteen pages carry evidence and no body text: ten systems and four of the five Part 1 pages. Each says so. They are the build backlog, not defects.
 - `npm run lint` runs `next lint`, which Next 16 removed. It needs replacing or dropping.
 - Typefaces are Libre Franklin and JetBrains Mono, loaded through `next/font/google` in `layout.tsx`, which downloads and self-hosts them at build time so the served site makes no third-party request. `layout.tsx` and `globals.css` are the only files that name a typeface, and this line previously said something else; check the code before trusting it.
