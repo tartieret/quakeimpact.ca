@@ -3,26 +3,26 @@ route: /shaking/
 title: The shaking
 nav: The shaking
 hook: The short part, and the one that decides where the damage falls.
-lede: This part is the earthquake itself: the ground under the region, the buildings on it, the injuries, and the fires and landslides that arrive once the shaking stops. It starts with the ground, because what a building stands on matters more than which building it is.
+lede: The earthquake itself: the ground under the region, the buildings on it, the injuries, and the fires and landslides that arrive once the shaking stops. What a building stands on matters more than which building it is.
 status: draft
 ---
 
-## The shaking is measured in seconds and the rest of this site is measured in months
+## The shaking is measured in seconds and what follows is measured in months
 
 In the province's magnitude 7.0 planning scenario for Greater Vancouver, violent
 shaking lasts 10 to 20 seconds. [PEIRS] In the province's magnitude 9.0 Cascadia
 scenario, the mainshock lasts three minutes. [DCRRA-2025] Each of those durations
 belongs to its own scenario rather than to earthquakes in general.
 
-Everything on the pages in this part happens inside that window, or in the hours
-just after it.
+The damage is done inside that window, or in the hours just after it. The province's
+own account of those first seconds is on [the two scenarios](/scenarios/). [PEIRS]
 
 ## What a building stands on matters more than which building it is
 
-[Ground conditions](/shaking/ground/) comes first because its finding governs the
-rest. In Richmond and Delta the published return period for soil liquefaction,
-saturated sand losing its strength during shaking and behaving for a time like a
-liquid, is 100 to 250 years, worked out from 787 cone penetration test profiles.
+[Ground conditions](/shaking/ground/) is the variable that governs the rest. In
+Richmond and Delta the published return period for soil liquefaction, saturated sand
+losing its strength during shaking and behaving for a time like a liquid, is 100 to
+250 years, worked out from 787 cone penetration test profiles.
 [JAVANBAKHT-24] Under the whole region a deep basin of soft sediment makes slow
 shaking grow, by amounts the province has measured and the national building code
 does not yet account for. [DCRRA-APPC]
@@ -39,19 +39,10 @@ currently included". [NRCAN-SCEN] Natural Resources Canada draws the conclusion
 itself: with those left out, "the estimates herein are likely to represent a minimum
 estimate on impacts." [GSC-OF-8853]
 
-That is why fire following and the hazards that arrive after the shaking have pages
-of their own here. They sit outside the numbers that most published accounts quote.
+Fire following and the hazards that arrive after the shaking sit outside the numbers
+that most published accounts quote.
 
-## This part has five pages and four of them are not written yet
-
-**[Ground conditions](/shaking/ground/)** is written in full.
-
-**Buildings, casualties, fire following and secondary hazards** each have a page with
-no text on it yet. Each one says so, and carries what has been gathered for it so far.
-
-**What the two scenarios feel like** is on [the two scenarios](/scenarios/) rather
-than here, including the province's own account of the first seconds of its planning
-scenario. [PEIRS]
+## The shaking moves the ground, damages buildings and hurts people, and fires and landslides come after
 
 ## What you can do
 

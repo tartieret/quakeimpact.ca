@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import type { PageStatus } from "@/content/types";
+import { DraftMark } from "./status";
 import { slugify } from "./prose-blocks";
 
 /**
@@ -22,11 +24,19 @@ import { slugify } from "./prose-blocks";
 export function PageHeader({
   kicker,
   title,
+  status,
   standfirst,
   children,
 }: {
   kicker?: string;
   title: string;
+  /**
+   * Where the page is in the making. A draft gets a marker beside the title,
+   * which is a label on the page rather than a sentence about the project. It
+   * sits outside the `<h1>`, so the accessible name of the heading stays the
+   * title and nothing is added to the heading order.
+   */
+  status?: PageStatus;
   standfirst?: ReactNode;
   children?: ReactNode;
 }) {
@@ -37,9 +47,12 @@ export function PageHeader({
           {kicker}
         </p>
       ) : null}
-      <h1 className="font-display text-4xl leading-[1.08] tracking-tight text-balance sm:text-5xl">
-        {title}
-      </h1>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <h1 className="font-display text-4xl leading-[1.08] tracking-tight text-balance sm:text-5xl">
+          {title}
+        </h1>
+        {status === "draft" ? <DraftMark /> : null}
+      </div>
       {standfirst ? (
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted text-pretty">
           {standfirst}

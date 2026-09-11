@@ -135,13 +135,17 @@ export const example: PageModule = {
 
 Then add it to `register([...])` in `index.ts`. Nothing else changes: the route
 picks it up, the contents rail builds itself from the sections, and the page
-stops showing the unwritten text.
+stops showing the draft notice. Clear the system's `status` field to take the
+marker off with it.
 
 ## Not written yet
 
-`unwritten.tsx` holds the standing text from `docs/copy/unwritten.md` for a
-system page whose evidence is gathered and whose body is not. It is a
-`PageSection`, so it renders through the same path as a written one and appears
-in the contents rail, which is how a reader can see from the rail that the page
-says only this. The copy file's shaking-page variant is not built here; it
-belongs to the `/shaking/` route.
+A page whose evidence is gathered and whose text is not written has no module.
+It declares itself in the content model instead: `status: "draft"` on the system
+in `src/content/site.ts` or on the entry in `SHAKING_PAGES`. The route draws a
+marker beside the title and a two-sentence notice above the body, both from
+`src/components/status.tsx`; the copy for them is `docs/copy/unwritten.md`.
+
+Neither piece is a section, so a draft page's contents rail lists only the parts
+of the page that are about the subject. Adding a module here is what fills the
+body; clearing the `status` field is what takes the marker off.

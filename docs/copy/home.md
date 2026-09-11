@@ -35,21 +35,20 @@ They are dangerous to different buildings, and which of them is the one that mat
 to you depends on the building you are in and the ground it stands on.
 [Read about the two scenarios](/scenarios/).
 
-## The shaking gets one part of this site, and the months after it get the rest
+## The shaking decides where the damage falls, and the systems decide how long it lasts
 
 **[The shaking](/shaking/)** covers the ground under the region, the buildings on it,
 the injuries, and the fires and landslides that arrive after the shaking stops. What a
 building stands on matters more than which building it is.
 
-**[Life afterwards](/after/)** is the core. One page per system, each carrying how long
-it is out, how widely, and what it is waiting on. Water, power, transport, sanitation,
-gas, fuel, food, housing, health care, communications and the rest.
+**[Life afterwards](/after/)** is the months that follow, system by system: how long
+each one is out, how widely, and what it is waiting on. Water, power, transport,
+sanitation, gas, fuel, food, housing, health care, communications and the rest.
 
 **[Getting around](/getting-around/)** is about what the province actually plans for,
 which is that people stay where they are and the roads are used for the response.
 
-**[Preparing](/prepare/)** is what to do about all of it, and every system page ends
-with its own version.
+**[Preparing](/prepare/)** is what to do about all of it.
 
 ## A band says how long, how widely, and what the system is waiting on
 

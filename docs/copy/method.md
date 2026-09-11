@@ -3,7 +3,7 @@ route: /method/
 title: How the impact bands work
 nav: Method & bands
 hook: A band describes how long a system is out, how widely, and what it is waiting on.
-lede: Every system on this site carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. This page explains what the bands mean and where they come from.
+lede: Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. This page explains what the bands mean and where they come from.
 status: draft
 ---
 
@@ -102,7 +102,7 @@ that nobody has published an answer, which is also true and also worth knowing.
 
 ## Canada has one public earthquake loss model, and both governments use it
 
-Both scenarios on this site come from the Geological Survey of Canada's scenario
+Both scenarios come from the Geological Survey of Canada's scenario
 catalogue: a magnitude 9.0 full rupture of the Cascadia fault, and a magnitude 7.0 in
 the Strait of Georgia. [NRCAN-SCEN]
 
@@ -126,12 +126,12 @@ impacts." [GSC-OF-8853]
 
 ## Christchurch and Kobe show how something fails, and never how long it takes here
 
-Past earthquakes elsewhere appear on this site to explain a mechanism. Christchurch
+Past earthquakes elsewhere explain a mechanism, and nothing more. Christchurch
 shows what months without sewer service does to a city. Kobe shows what happens to a
 port. Neither tells anyone how long a pipe in Richmond would be broken.
 
 No figure from another earthquake is used as a number for the Lower Mainland
-anywhere on this site. Where an analogue appears, it is labelled with where and when
+anywhere here. Where an analogue appears, it is labelled with where and when
 it happened.
 
 ## Numbers that look comparable are often measuring different things
@@ -150,7 +150,7 @@ the same reports. One is what insurers pay.
 
 **A design intent is not a prediction.** "Built to withstand a 475-year earthquake" is
 a statement about what a structure was aimed at, not a forecast of what it will do.
-Where this site gives a figure for a bridge or a tunnel, it says which of the two it
+A figure given here for a bridge or a tunnel says which of the two it
 is.
 
 ## Several of these bands are expected to change

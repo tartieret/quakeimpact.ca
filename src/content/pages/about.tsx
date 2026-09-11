@@ -136,15 +136,15 @@ export const about: PageModule = {
     },
 
     {
-      title: "Some of it is not written yet, and the site says which parts",
+      title: "A page marked draft carries its evidence and not its text",
       body: (
         <Prose>
           <p>
-            Three of the thirteen system pages carry full text: water,
-            electricity and transportation. The other ten carry their band, the
+            Some pages are marked draft, on the page itself and on the card that
+            leads to it. A system page in that state carries its band, the
             sentence saying how the system fails, the document behind that
-            sentence, and where they sit on the timeline. Each of them says on
-            its own page that the body is not written.
+            sentence, where it sits on the timeline and what it waits on. What it
+            does not carry is the text that would work through any of it.
           </p>
           <p>
             The{" "}

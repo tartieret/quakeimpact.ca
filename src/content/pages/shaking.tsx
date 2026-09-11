@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import { Prose } from "@/components/page-parts";
+import { DraftMark } from "@/components/status";
 import { SHAKING_PAGES } from "@/content/site";
 import type { PageModule } from "./index";
 
@@ -9,8 +10,9 @@ import type { PageModule } from "./index";
  *
  * An index page, and shorter than the pages it points at on purpose. The words
  * are the copy's. The card grid in the last section is not words: it is
- * `SHAKING_PAGES` drawn, so the five pages stay reachable from here however
- * many of them are written.
+ * `SHAKING_PAGES` drawn, so the five subjects stay reachable from here, each
+ * card carrying the subject's own hook. Which of them are drafts is the
+ * marker's job, not a sentence's.
  *
  * There is no map slot. The ground conditions overlay this page used to
  * promise rests on the Metro Vancouver microzonation layers, which are not
@@ -23,7 +25,7 @@ export const shaking: PageModule = {
     nav: "The shaking",
     kicker: "Part 1",
     standfirst:
-      "This part is the earthquake itself: the ground under the region, the buildings on it, the injuries, and the fires and landslides that arrive once the shaking stops. It starts with the ground, because what a building stands on matters more than which building it is.",
+      "The earthquake itself: the ground under the region, the buildings on it, the injuries, and the fires and landslides that arrive once the shaking stops. What a building stands on matters more than which building it is.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -39,7 +41,7 @@ export const shaking: PageModule = {
   sections: [
     {
       title:
-        "The shaking is measured in seconds and the rest of this site is measured in months",
+        "The shaking is measured in seconds and what follows is measured in months",
       body: (
         <Prose>
           <p>
@@ -51,8 +53,15 @@ export const shaking: PageModule = {
             scenario rather than to earthquakes in general.
           </p>
           <p>
-            Everything on the pages in this part happens inside that window, or
-            in the hours just after it.
+            The damage is done inside that window, or in the hours just after
+            it. The province’s own account of those first seconds is on{" "}
+            <Link
+              href="/scenarios/"
+              className="text-accent underline underline-offset-2"
+            >
+              the two scenarios
+            </Link>
+            . <Cite id="PEIRS" />
           </p>
         </Prose>
       ),
@@ -69,8 +78,8 @@ export const shaking: PageModule = {
             >
               Ground conditions
             </Link>{" "}
-            comes first because its finding governs the rest. In Richmond and
-            Delta the published return period for soil liquefaction, saturated
+            is the variable that governs the rest. In Richmond and Delta the
+            published return period for soil liquefaction, saturated
             sand losing its strength during shaking and behaving for a time like
             a liquid, is 100 to 250 years, worked out from 787 cone penetration
             test profiles. <Cite id="JAVANBAKHT-24" /> Under the whole region a
@@ -103,50 +112,18 @@ export const shaking: PageModule = {
             <Cite id="GSC-OF-8853" />
           </p>
           <p>
-            That is why fire following and the hazards that arrive after the
-            shaking have pages of their own here. They sit outside the numbers
-            that most published accounts quote.
+            Fire following and the hazards that arrive after the shaking sit
+            outside the numbers that most published accounts quote.
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "This part has five pages and four of them are not written yet",
+      title:
+        "The shaking moves the ground, damages buildings and hurts people, and fires and landslides come after",
       body: (
         <div className="flex flex-col gap-8">
-          <Prose>
-            <p>
-              <strong>
-                <Link
-                  href="/shaking/ground/"
-                  className="text-accent underline underline-offset-2"
-                >
-                  Ground conditions
-                </Link>
-              </strong>{" "}
-              is written in full.
-            </p>
-            <p>
-              <strong>
-                Buildings, casualties, fire following and secondary hazards
-              </strong>{" "}
-              each have a page with no text on it yet. Each one says so, and
-              carries what has been gathered for it so far.
-            </p>
-            <p>
-              <strong>What the two scenarios feel like</strong> is on{" "}
-              <Link
-                href="/scenarios/"
-                className="text-accent underline underline-offset-2"
-              >
-                the two scenarios
-              </Link>{" "}
-              rather than here, including the province’s own account of the
-              first seconds of its planning scenario. <Cite id="PEIRS" />
-            </p>
-          </Prose>
-
           <ul className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2">
             {SHAKING_PAGES.map((page, i) => (
               <li key={page.slug}>
@@ -159,6 +136,12 @@ export const shaking: PageModule = {
                   </span>
                   <h3 className="font-display text-xl tracking-tight group-hover:text-accent">
                     {page.name}
+                    {page.status === "draft" ? (
+                      <>
+                        {" "}
+                        <DraftMark />
+                      </>
+                    ) : null}
                   </h3>
                   <p className="text-sm leading-relaxed text-ink-muted">
                     {page.hook}

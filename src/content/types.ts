@@ -6,6 +6,22 @@ export type Band = "low" | "medium" | "high" | "unknown";
 
 export type Phase = "hours" | "days" | "weeks" | "months";
 
+/**
+ * Where a page is in the making. A page whose evidence is gathered and whose
+ * text is not written is a draft; a written page has no status and shows
+ * nothing.
+ *
+ * It is a field rather than a sentence because it is state, and state belongs
+ * in the content model. A reader is told by a marker beside the title and a
+ * short notice at the top of the body, both drawn by `src/components/status.tsx`,
+ * rather than by a paragraph in which the site explains its own build order.
+ *
+ * It is a union of one on purpose. The only state the site has needed to show
+ * so far is this one, and a second value should arrive with a page that needs
+ * it rather than in anticipation.
+ */
+export type PageStatus = "draft";
+
 export interface Scenario {
   id: ScenarioId;
   /** Short label for toggles and table headers. */
@@ -69,6 +85,12 @@ export interface StandingLever {
 export interface SystemEntry {
   slug: string;
   name: string;
+  /**
+   * Set where this system's page carries its evidence and not its text. The
+   * grid, the route and the page title all read it, so the state is stated
+   * once and shown everywhere.
+   */
+  status?: PageStatus;
   /** The "what people underestimate" line. */
   hook: string;
   /**
@@ -134,6 +156,12 @@ export interface Reference {
 export interface PageMeta {
   route: string;
   title: string;
+  /**
+   * Normally absent: a module exists because the page is written. It is here so
+   * that a written page can be marked a draft when its text is under revision,
+   * without that fact having to be written into the prose.
+   */
+  status?: PageStatus;
   /** Label in navigation and on cards. */
   nav: string;
   /** Kicker above the title, where the page belongs to a part of the site. */

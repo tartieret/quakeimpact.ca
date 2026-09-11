@@ -62,12 +62,12 @@ writer to know exactly what is being claimed. So every number carries the docume
 came from, every marker opens that document's entry where you are standing, and the
 [source register](/sources/) lists all of them in one place.
 
-## Some of it is not written yet, and the site says which parts
+## A page marked draft carries its evidence and not its text
 
-Three of the thirteen system pages carry full text: water, electricity and
-transportation. The other ten carry their band, the sentence saying how the system
-fails, the document behind that sentence, and where they sit on the timeline. Each of
-them says on its own page that the body is not written.
+Some pages are marked draft, on the page itself and on the card that leads to it. A
+system page in that state carries its band, the sentence saying how the system fails,
+the document behind that sentence, where it sits on the timeline and what it waits on.
+What it does not carry is the text that would work through any of it.
 
 The [dependency graph](/dependencies/) counts the connections between systems rather
 than joining them with lines. Of the 26 connections listed there, 6 have a published

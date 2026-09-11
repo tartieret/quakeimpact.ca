@@ -128,8 +128,7 @@ Four of the five shaking pages: buildings, casualties, fire following and
 secondary hazards.
 
 Each of those fourteen pages carries the standing text in `unwritten.md` until its own
-file exists, and the two index pages say how many of the pages they point at are in
-that state.
+file exists.
 
 The dependency graph, and the about, sources and contribute pages.
 

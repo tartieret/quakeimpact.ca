@@ -17,8 +17,8 @@ import type { PageModule } from "./index";
  *
  * The components in these bodies are the page's own: the scenario cards sit
  * under the section about the two earthquakes, the timeline and the system
- * grid under the section that sends the reader to the system pages, and the
- * dependency list under the paragraph that says nothing fails on its own.
+ * grid under the section that sends the reader onward, and the dependency list
+ * under the paragraph that says nothing fails on its own.
  *
  * There is no map slot. The liquefaction overlay this page used to promise
  * rests on the Metro Vancouver microzonation layers, which are not openly
@@ -114,7 +114,7 @@ export const home: PageModule = {
 
     {
       title:
-        "The shaking gets one part of this site, and the months after it get the rest",
+        "The shaking decides where the damage falls, and the systems decide how long it lasts",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
@@ -135,8 +135,8 @@ export const home: PageModule = {
                   Life afterwards
                 </Link>
               </strong>{" "}
-              is the core. One page per system, each carrying how long it is
-              out, how widely, and what it is waiting on. Water, power,
+              is the months that follow, system by system: how long each one
+              is out, how widely, and what it is waiting on. Water, power,
               transport, sanitation, gas, fuel, food, housing, health care,
               communications and the rest.
             </p>
@@ -156,8 +156,7 @@ export const home: PageModule = {
                   Preparing
                 </Link>
               </strong>{" "}
-              is what to do about all of it, and every system page ends with its
-              own version.
+              is what to do about all of it.
             </p>
           </Prose>
           <TimelineStrip />

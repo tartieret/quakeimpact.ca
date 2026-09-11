@@ -135,12 +135,12 @@ export const scenarios: PageModule = {
                 catalogue models sites, not a surface. Peak ground acceleration
                 is the measure both runs publish. The catalogue converts it to
                 Modified Mercalli intensity for the Georgia Strait run and not
-                for Cascadia, and deriving the missing one needs a conversion
-                equation this site has not chosen, so neither map is drawn on
+                for Cascadia, and deriving the missing one
+                would need a conversion equation, so neither map is drawn on
                 it. Two limits the catalogue states travel with every mark.{" "}
                 {SHAKEMAP_CAVEATS.resolution} {SHAKEMAP_CAVEATS.scope} The
-                modelling is the Geological Survey of Canada’s. Only the drawing
-                is this site’s.
+                modelling is the Geological Survey of Canada’s, and the drawing
+                is not.
               </>
             }
             licence={

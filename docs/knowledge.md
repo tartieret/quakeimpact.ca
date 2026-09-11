@@ -1268,3 +1268,45 @@ It is recorded here rather than done because the change that introduced `--color
 was scoped to the figure kit and the figures. The same swap was made in the two
 figures that redraw the meter in SVG, `method.tsx` and `transportation.tsx`, so the
 site currently draws the same mark two ways.
+
+## A page's state is a field, not a paragraph
+
+**11 September 2026.** Fourteen pages carried their evidence and no text, and each
+one explained that in four or five paragraphs of standing prose. It read well and it
+was the defect section 4 of the style guide names: a reader who came to find out what
+happens to their water was being told how this project is organised and how far along
+it is. The site-wide banner counted the pages, and `/after/` had a heading that did
+the same, so the count had to be edited in three places every time a page landed.
+
+The replacement is `status?: PageStatus` in `src/content/types.ts`, set on the
+`SystemEntry`, on the `SHAKING_PAGES` entry, and available on a page module's `meta`
+so a written page can be marked a draft while its text is under revision. The route
+reads `page?.meta.status ?? entry.status`. `src/components/status.tsx` draws the two
+things a reader sees: a `Draft` marker beside the page title and on the system card,
+and a two-sentence notice above the body. 228 words of standing prose came out.
+
+Three things were worth learning while doing it.
+
+**The notice must not be a `<section>`.** The old text was a `PageSection` with a real
+`<h2>`, so the contents rail of a draft page opened with an entry about the page
+rather than about the subject, and the reader looking for the band had to scroll past
+it. It is now an `<aside>` with no heading, which also keeps `ArticleShell`'s
+`:has(>div>section:nth-of-type(3))` count honest: that selector decides whether the
+page reserves a rail column at all, and a notice dressed as a section was inflating it.
+
+**The marker goes beside the `<h1>`, not inside it.** A flex row holding the heading
+and the mark keeps the heading's accessible name to the title. On a card the mark does
+go inside the `<h3>`, because a card's heading is the whole of what the reader is
+choosing between, and "Sanitation Draft" is what they need to hear.
+
+**`SystemMatrix` deliberately carries no marker.** Every column in that table is
+evidence, and a draft page's evidence is complete, so a marker would qualify nothing
+in the row. It would also sit one column from the "Not yet assessed" band, and those
+are two different absences: one says nobody has published an assessment, the other
+says we have not written the page. Side by side in one table they invite exactly the
+misreading the band vocabulary exists to prevent.
+
+The marker is a word in a dashed outline on `--color-ink-faint`, which is 5.04:1 on
+paper and 5.67:1 in dark mode, and the dashed outline is the vocabulary
+`VerificationNote` and `MapPlaceholder` already use for something not built. Nothing
+here is interactive, so nothing needs a focus state.

@@ -67,7 +67,7 @@ export const method: PageModule = {
     title: "How the impact bands work",
     nav: "Method & bands",
     standfirst:
-      "Every system on this site carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. This page explains what the bands mean and where they come from.",
+      "Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. This page explains what the bands mean and where they come from.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -295,7 +295,7 @@ export const method: PageModule = {
       body: (
         <Prose>
           <p>
-            Both scenarios on this site come from the Geological Survey of
+            Both scenarios come from the Geological Survey of
             Canada’s scenario catalogue: a magnitude 9.0 full rupture of the
             Cascadia fault, and a magnitude 7.0 in the Strait of Georgia.{" "}
             <Cite id="NRCAN-SCEN" />
@@ -352,15 +352,13 @@ export const method: PageModule = {
       body: (
         <Prose>
           <p>
-            Past earthquakes elsewhere appear on this site to explain a
-            mechanism. Christchurch shows what months without sewer service does
+            Past earthquakes elsewhere explain a mechanism, and nothing more. Christchurch shows what months without sewer service does
             to a city. Kobe shows what happens to a port. Neither tells anyone
             how long a pipe in Richmond would be broken.
           </p>
           <p>
             No figure from another earthquake is used as a number for the Lower
-            Mainland anywhere on this site. Where an analogue appears, it is
-            labelled with where and when it happened.
+            Mainland anywhere here. Where an analogue appears, it is labelled with where and when it happened.
           </p>
         </Prose>
       ),
@@ -389,9 +387,7 @@ export const method: PageModule = {
           <p>
             <strong>A design intent is not a prediction.</strong> “Built to
             withstand a 475-year earthquake” is a statement about what a
-            structure was aimed at, not a forecast of what it will do. Where
-            this site gives a figure for a bridge or a tunnel, it says which of
-            the two it is.
+            structure was aimed at, not a forecast of what it will do. A figure given here for a bridge or a tunnel says which of the two it is.
           </p>
         </Prose>
       ),

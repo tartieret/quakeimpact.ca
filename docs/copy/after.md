@@ -3,11 +3,11 @@ route: /after/
 title: Life afterwards
 nav: Life afterwards
 hook: Thirteen systems, and the order they come back in is set by what each one is waiting on.
-lede: This part is the months after the shaking. One page per system, each carrying how long it is out, how widely, and what it is waiting on. They are set out as a timeline rather than as a list, because each of them fails and returns in an order the others decide.
+lede: The months after the shaking, system by system: how long each one is out, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.
 status: draft
 ---
 
-## No system on this list fails by itself
+## No system fails by itself
 
 The province says so about fuel in its own words: "Fuel also holds a unique position
 as a critical resource due to its requirement in the distribution of all other
@@ -29,10 +29,9 @@ about 60 of them at the 71 points where mains cross under rivers and inlets, whi
 the hardest places in the system to reach. [MV-WATER-22] Reaching them is a road
 problem before it is a plumbing problem.
 
-Every page in this part carries what its system waits on. The
-[dependency graph](/dependencies/) counts those connections rather than joining them
-with lines: 6 of the 26 have a published document behind them, and the rest are links
-no assessment has established.
+The [dependency graph](/dependencies/) counts those connections rather than joining
+them with lines: 6 of the 26 have a published document behind them, and the rest are
+links no assessment has established.
 
 ## The timeline runs hours, days, weeks, months, and systems enter it at different points
 
@@ -79,16 +78,7 @@ upgrade work at Cleveland has not started. [MV-CAPITAL-2027] Port, airport and f
 terminals carry a band for the megathrust and a hatch for the crustal earthquake,
 because the one study that exists modelled the megathrust and nothing else. [AIR-2013]
 
-## Three of the thirteen pages are written
-
-**[Water](/after/water/)**, **[electricity](/after/electricity/)** and
-**[transportation](/after/transportation/)** are written in full.
-
-Sanitation, natural gas, fuel, food, the port, airport and ferry terminals, dams and
-reservoirs, housing, health care, communications, and where help comes from have pages
-with no text on them yet. Each one says so, and each carries its band, the sentence
-saying how the system fails, the document behind that sentence, and where it sits on
-the timeline.
+## Every system, and where it sits on the timeline
 
 ## What you can do
 
@@ -105,8 +95,7 @@ the first four to five days. [DCRRA-2025]
 gas appliance with an electric fan or control, and settle what to do about each one
 before you need to.
 
-[Preparing](/prepare/) sets out the rest, and every written system page ends with its
-own version.
+[Preparing](/prepare/) sets out the rest.
 
 ## Sources on this page
 

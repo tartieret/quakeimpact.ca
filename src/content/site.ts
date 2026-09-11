@@ -1,6 +1,7 @@
 import type {
   Band,
   Impact,
+  PageStatus,
   Phase,
   Scenario,
   ScenarioId,
@@ -13,7 +14,13 @@ export const SITE = {
   url: "https://quakeimpact.ca",
   tagline:
     "What a major earthquake does to the Lower Mainland, and for how long",
-  status: "Draft. Content under review, and fourteen pages carry their evidence without their text.",
+  /**
+   * The site-wide banner. It says the state and stops: a count of which pages
+   * are written is about this project's progress rather than about the reader's
+   * world, and a page in that state now says so for itself, with a marker and a
+   * notice rather than a paragraph.
+   */
+  status: "Draft. Content under review.",
 };
 
 /* ------------------------------------------------------------------ */
@@ -157,6 +164,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "communications",
     name: "Communications",
+    status: "draft",
     hook: "Nothing requires a cell tower to hold any backup power at all.",
     bitesAt: "hours",
     tier: 2,
@@ -203,6 +211,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "sanitation",
     name: "Sanitation",
+    status: "draft",
     hook: "A toilet needs water to flush, and in an apartment tower there is nothing else to use.",
     bitesAt: "weeks",
     tier: 2,
@@ -225,6 +234,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "gas",
     name: "Natural gas",
+    status: "draft",
     hook: "Gas is the one utility that cannot be turned back on from a control room.",
     bitesAt: "weeks",
     tier: 2,
@@ -259,6 +269,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "large-infrastructure",
     name: "Port, airport and ferry terminals",
+    status: "draft",
     hook: "The airport's weak point is not the runway. It is every bridge onto Sea Island.",
     bitesAt: "weeks",
     tier: 3,
@@ -287,6 +298,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "fuel",
     name: "Fuel",
+    status: "draft",
     hook: "A service station with full tanks and no power dispenses nothing.",
     bitesAt: "days",
     tier: 2,
@@ -307,6 +319,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "food",
     name: "Food",
+    status: "draft",
     hook: "The food that goes first is the food no pantry can hold: meat, produce, dairy and bread.",
     bitesAt: "days",
     tier: 2,
@@ -329,6 +342,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "dams-and-reservoirs",
     name: "Dams and reservoirs",
+    status: "draft",
     hook: "Both dams were reviewed by an engineer in 2024, and neither published conclusion mentions earthquakes.",
     bitesAt: "hours",
     tier: 3,
@@ -348,6 +362,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "housing",
     name: "Housing",
+    status: "draft",
     hook: "Most people who lose their home lose it to a cordon around a building that is still standing.",
     bitesAt: "weeks",
     tier: 2,
@@ -367,6 +382,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "health-care",
     name: "Health care",
+    status: "draft",
     hook: "Hospitals stand on the same ground as everything else, and most of the stock predates the current code.",
     bitesAt: "hours",
     tier: 2,
@@ -386,6 +402,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "outside-help",
     name: "Where help comes from",
+    status: "draft",
     hook: "British Columbia's plan stages help with the agencies outside the impact area, and in a megathrust they are inside it.",
     bitesAt: "days",
     tier: 3,
@@ -440,6 +457,8 @@ export const systemBySlug = (slug: string) =>
 export const SHAKING_PAGES: {
   slug: string;
   name: string;
+  /** Set where the subject's page carries its documents and not its text. */
+  status?: PageStatus;
   hook: string;
   references?: string[];
 }[] = [
@@ -454,6 +473,7 @@ export const SHAKING_PAGES: {
   {
     slug: "buildings",
     name: "Buildings",
+    status: "draft",
     hook: "Structural performance by era and type, and non-structural failure: glazing, cladding and parapets.",
     references: [
       "COV-RISK-2024",
@@ -466,12 +486,14 @@ export const SHAKING_PAGES: {
   {
     slug: "casualties",
     name: "Casualties",
+    status: "draft",
     hook: "The published casualty ranges for the two scenarios, and what drives the range.",
     references: ["PEIRS", "GSC-OF-8853", "DCRRA-2025", "COV-RISK-2024"],
   },
   {
     slug: "fire-following",
     name: "Fire following",
+    status: "draft",
     hook: "Fire after the shaking, and the Dedicated Fire Protection System: what it covers and what it does not.",
     references: [
       "SCAWTHORN-2020",
@@ -483,6 +505,7 @@ export const SHAKING_PAGES: {
   {
     slug: "secondary-hazards",
     name: "Secondary hazards",
+    status: "draft",
     hook: "Landslides, dikes and dams, where the damage arrives after the shaking stops.",
     references: [
       "PEIRS",

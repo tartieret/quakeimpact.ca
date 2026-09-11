@@ -5,6 +5,7 @@ import { PHASES, SYSTEMS } from "@/content/site";
 import type { SystemEntry } from "@/content/types";
 import { useScenario } from "./scenario-context";
 import { BandPill } from "./band";
+import { DraftMark } from "./status";
 
 function SystemCard({ system }: { system: SystemEntry }) {
   const { scenario } = useScenario();
@@ -19,6 +20,16 @@ function SystemCard({ system }: { system: SystemEntry }) {
       <div className="flex items-start justify-between gap-3">
         <h3 className="font-display text-lg leading-snug tracking-tight group-hover:text-accent">
           {system.name}
+          {/* On the card as well as on the page, so a reader knows before the
+              click rather than after it. Inside the heading here, because a
+              card's heading is its whole label and the mark is part of what the
+              reader is choosing between. */}
+          {system.status === "draft" ? (
+            <>
+              {" "}
+              <DraftMark />
+            </>
+          ) : null}
         </h3>
         <span className="mt-0.5 shrink-0 text-[0.6875rem] tracking-wide text-ink-faint uppercase">
           {phase?.label}
@@ -44,6 +55,16 @@ export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
 /**
  * The full grid as a table: every system against both scenarios at once.
  * This is the view an emergency planner will screenshot, so it has to hold up.
+ *
+ * It carries no draft marker, and that is deliberate. Every column here is
+ * evidence, and a draft page carries its evidence in full: the two bands and
+ * the phase in a row are the same whether the prose behind the name is written
+ * or not, so a marker would qualify nothing the reader is looking at. It would
+ * also sit one column away from the "Not yet assessed" band, and those are two
+ * different absences. One says nobody has published an assessment; the other
+ * says we have not written the page. Putting them side by side in the same
+ * table invites a reader to take one for the other, which is the one misreading
+ * this table cannot afford. The cards carry the marker, and so does the page.
  */
 export function SystemMatrix() {
   return (

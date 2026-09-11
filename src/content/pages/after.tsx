@@ -10,8 +10,10 @@ import type { PageModule } from "./index";
  *
  * An index page, and shorter than the thirteen pages it points at on purpose.
  * The words are the copy's. The timeline strip, the band matrix and the system
- * grids are not words: they are `SYSTEMS` and `PHASES` drawn, and they follow
- * the scenario toggle in the header.
+ * grid are not words: they are `SYSTEMS` and `PHASES` drawn, and they follow
+ * the scenario toggle in the header. The grid carries every system in one
+ * block rather than in three: the tiers are a build order, which is ours and
+ * not the reader's, and which of the pages are drafts is the marker's job.
  */
 export const after: PageModule = {
   meta: {
@@ -20,7 +22,7 @@ export const after: PageModule = {
     nav: "Life afterwards",
     kicker: "Part 2",
     standfirst:
-      "This part is the months after the shaking. One page per system, each carrying how long it is out, how widely, and what it is waiting on. They are set out as a timeline rather than as a list, because each of them fails and returns in an order the others decide.",
+      "The months after the shaking, system by system: how long each one is out, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -41,7 +43,7 @@ export const after: PageModule = {
 
   sections: [
     {
-      title: "No system on this list fails by itself",
+      title: "No system fails by itself",
       body: (
         <Prose>
           <p>
@@ -72,7 +74,7 @@ export const after: PageModule = {
             them is a road problem before it is a plumbing problem.
           </p>
           <p>
-            Every page in this part carries what its system waits on. The{" "}
+            The{" "}
             <Link
               href="/dependencies/"
               className="text-accent underline underline-offset-2"
@@ -178,55 +180,8 @@ export const after: PageModule = {
     },
 
     {
-      title: "Three of the thirteen pages are written",
-      body: (
-        <div className="flex flex-col gap-8">
-          <Prose>
-            <p>
-              <strong>
-                <Link
-                  href="/after/water/"
-                  className="text-accent underline underline-offset-2"
-                >
-                  Water
-                </Link>
-              </strong>
-              ,{" "}
-              <strong>
-                <Link
-                  href="/after/electricity/"
-                  className="text-accent underline underline-offset-2"
-                >
-                  electricity
-                </Link>
-              </strong>{" "}
-              and{" "}
-              <strong>
-                <Link
-                  href="/after/transportation/"
-                  className="text-accent underline underline-offset-2"
-                >
-                  transportation
-                </Link>
-              </strong>{" "}
-              are written in full.
-            </p>
-            <p>
-              Sanitation, natural gas, fuel, food, the port, airport and ferry
-              terminals, dams and reservoirs, housing, health care,
-              communications, and where help comes from have pages with no text
-              on them yet. Each one says so, and each carries its band, the
-              sentence saying how the system fails, the document behind that
-              sentence, and where it sits on the timeline.
-            </p>
-          </Prose>
-          <div className="flex flex-col gap-4">
-            <SystemGrid tier={1} />
-            <SystemGrid tier={2} />
-            <SystemGrid tier={3} />
-          </div>
-        </div>
-      ),
+      title: "Every system, and where it sits on the timeline",
+      body: <SystemGrid />,
     },
   ],
 
@@ -262,8 +217,7 @@ export const after: PageModule = {
         >
           Preparing
         </Link>{" "}
-        sets out the rest, and every written system page ends with its own
-        version.
+        sets out the rest.
       </>
     ),
     // The closing sentence already carries the link to `/prepare/`.

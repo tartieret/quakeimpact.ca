@@ -6,15 +6,17 @@ import { Citations, ReferenceList } from "@/components/citation";
 import { SHAKING_PAGES } from "@/content/site";
 import type { PageModule } from "@/content/pages";
 import { groundConditions } from "@/content/pages/ground-conditions";
-import { UNWRITTEN_SHAKING } from "@/content/pages/unwritten";
+import { ShakingDraftNotice } from "@/components/status";
 
 /**
  * The five pages of Part 1.
  *
  * The template holds no words of its own beyond the labels on the furniture it
- * draws. A page's body comes from a page module where one exists, and from the
- * standing unwritten text where it does not. Four of the five are in the second
- * state, and the page says so rather than filling the space.
+ * draws. A page's body comes from a page module where one exists. Where it does
+ * not, the body is empty and the page says so in a marker beside the title and
+ * two sentences above the document list, rather than in five paragraphs about
+ * the site. The state is read from `SHAKING_PAGES`, not inferred from the
+ * absence of a module.
  *
  * There is no map slot. The template used to promise a spatial view on every
  * one of these pages; the layers that would draw it are the Metro Vancouver
@@ -59,7 +61,7 @@ export default async function ShakingDetailPage({
   const prev = SHAKING_PAGES[index - 1];
   const next = SHAKING_PAGES[index + 1];
 
-  const sections = page ? page.sections : [UNWRITTEN_SHAKING];
+  const status = page?.meta.status ?? entry.status;
 
   /**
    * An unwritten Part 1 page still has sources: the documents gathered for its
@@ -74,11 +76,17 @@ export default async function ShakingDetailPage({
           <PageHeader
             kicker={page?.meta.kicker ?? "The shaking"}
             title={page?.meta.title ?? entry.name}
+            status={status}
             standfirst={page?.meta.standfirst ?? entry.hook}
           />
         }
       >
-        {sections.map((section) => (
+        {/* Above the document list, because it says what that list is. Not a
+            `<section>`: no heading, no entry in the contents rail, no place in
+            the heading order. */}
+        {page ? null : <ShakingDraftNotice />}
+
+        {(page?.sections ?? []).map((section) => (
           <Section
             key={section.id ?? section.title}
             id={section.id}

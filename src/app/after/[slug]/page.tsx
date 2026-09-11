@@ -13,16 +13,17 @@ import { TimelineStrip } from "@/components/timeline";
 import { ImpactCell } from "@/components/impact-cell";
 import { SYSTEMS, SCENARIOS, PHASES } from "@/content/site";
 import { pageForSystem } from "@/content/pages";
-import { UNWRITTEN_SYSTEM } from "@/content/pages/unwritten";
+import { SystemDraftNotice } from "@/components/status";
 
 /**
  * The thirteen system pages.
  *
  * The template holds no words of its own beyond the labels on the furniture it
  * draws. A system's evidence comes from `SYSTEMS` in `@/content/site`; its body
- * comes from a page module in `@/content/pages` where one exists, and from the
- * standing unwritten text where it does not. Ten of the thirteen are in the
- * second state, and the page says so rather than filling the space.
+ * comes from a page module in `@/content/pages` where one exists. Where it does
+ * not, the body is empty and the page says so in a marker beside the title and
+ * two sentences above the evidence, rather than in six paragraphs about the
+ * site. The state is read from the content model, not inferred from the words.
  *
  * There is no map slot. The overlay this template used to promise, critical
  * infrastructure drawn on the ground it sits on, rests on the Metro Vancouver
@@ -60,7 +61,12 @@ export default async function SystemPage({
   const next = SYSTEMS[index + 1];
   const phase = PHASES.find((p) => p.id === system.bitesAt);
 
-  const sections = page ? page.sections : [UNWRITTEN_SYSTEM];
+  /**
+   * The module's status wins where there is one, so a written page can be
+   * marked a draft while its text is under revision. Otherwise the system's own
+   * status stands, which is where the ten unwritten pages declare themselves.
+   */
+  const status = page?.meta.status ?? system.status;
 
   /**
    * An unwritten page still carries sources: the documents its two impact
@@ -82,10 +88,17 @@ export default async function SystemPage({
           <PageHeader
             kicker={page?.meta.kicker ?? "Life afterwards"}
             title={page?.meta.title ?? system.name}
+            status={status}
             standfirst={page?.meta.standfirst ?? system.hook}
           />
         }
       >
+        {/* The notice sits above the evidence rather than below it, because it
+            says what the evidence is worth. It is not a `<section>`: it takes
+            no heading, no place in the contents rail and no place in the
+            heading order, which is the point of making state structural. */}
+        {page ? null : <SystemDraftNotice />}
+
         {/* At a glance: both scenarios, never one alone. The toggle does not
             hide either column, because the contrast is the teaching point. */}
         <Section
@@ -142,7 +155,7 @@ export default async function SystemPage({
           </Section>
         ) : null}
 
-        {sections.map((section) => (
+        {(page?.sections ?? []).map((section) => (
           <Section
             key={section.id ?? section.title}
             id={section.id}

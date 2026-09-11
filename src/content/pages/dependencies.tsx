@@ -26,7 +26,7 @@ export const dependencies: PageModule = {
     nav: "Dependency graph",
     kicker: "Why one failure becomes many",
     standfirst:
-      "Every system on this site waits on at least one other. This page gathers those connections into one picture, says which of them a document stands behind, and says which are connections nobody has published.",
+      "Every system waits on at least one other. This page gathers those connections into one picture, says which of them a document stands behind, and says which are connections nobody has published.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -253,7 +253,7 @@ export const dependencies: PageModule = {
           <VerificationNote label="Not published: hospital generators and the fuel they run on">
             How long any existing Lower Mainland hospital can run on its own
             generators, and how the fuel for them would be replaced while the
-            roads are being cleared, is not in any document this site has found.
+            roads are being cleared, has not been published.
           </VerificationNote>
           <VerificationNote label="Not published: how long road damage adds to power restoration">
             BC Hydro has published what it expects a large earthquake to do to
