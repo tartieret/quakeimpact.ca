@@ -16,6 +16,10 @@ floor.
 
 Not a system, so no band. This subject supplies the lever every system page ends with.
 
+What households actually hold against that advice is a separate subject, in
+`household-preparedness.md`: the surveys measure kit ownership rather than days of
+supply, and none of them measures held supply anywhere in the Lower Mainland.
+
 ---
 
 ## Findings

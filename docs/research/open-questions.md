@@ -114,6 +114,12 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     "55% of homes are heated by natural gas" and similar figures as *scenario
     parameters*. They need an independent source — census dwelling heating, or a
     FortisBC filing — before any of them is usable.
+25. **What share of Lower Mainland households holds any given number of days of
+    supply.** Six published studies measure kit ownership, plan completeness or
+    self-assessed readiness, and none measures held supply in days or litres, so the
+    site states kit ownership and stops. The answerable route is SEPR microdata through
+    the Research Data Centre network, which carries variables beyond the published
+    tables; it would still be 2014 data. See `household-preparedness.md`.
 
 ---
 

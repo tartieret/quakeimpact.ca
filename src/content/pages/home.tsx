@@ -22,11 +22,14 @@ import type { PageModule } from "./index";
  * between a megathrust and a crustal earthquake.
  *
  * The standfirst opens on the gap the site exists to close: the province asks
- * for two weeks, and households are not carrying it. The ask is cited. The
- * sentence about households is not yet — no survey in the register measures how
- * prepared this region's households are, and a preparedness rate is being
- * gathered to stand behind it. It is written without a figure for that reason,
- * and it takes its marker as soon as the source lands.
+ * for two weeks, and households are not carrying it. Both halves are cited, and
+ * the second says kit ownership rather than days of supply because that is what
+ * the record measures — no published study measures held supply anywhere in the
+ * Lower Mainland, and `docs/research/household-preparedness.md` carries the six
+ * studies, what each one counted, and the guard that none of them may be used
+ * to say what share of households could last two weeks. The sentence quotes no
+ * percentage: the figure is five years old, and one number invites a reader to
+ * take a poll of 800 for a census.
  *
  * The first two sections open on a sentence the copy writes as their first
  * paragraph and this module passes as `lede`, which is the only difference
@@ -67,11 +70,12 @@ export const home: PageModule = {
         <Link href="/prepare/" className={link}>
           two weeks of water and food
         </Link>
-        . <Cite id="PREPAREDBC" /> Most households are nowhere near it. So this
-        site gathers what is already published about a major earthquake in the
-        Lower Mainland — what breaks, how long it stays broken, and what each
-        thing is waiting on — to make two weeks a length of time you can picture
-        rather than a slogan.
+        . <Cite id="PREPAREDBC" /> Most households in the region have not put
+        together an emergency kit of any size.{" "}
+        <Cite id="RESEARCHCO-PREP-21" /> So this site gathers what is already
+        published about a major earthquake in the Lower Mainland — what breaks,
+        how long it stays broken, and what each thing is waiting on — to make
+        two weeks a length of time you can picture rather than a slogan.
       </>
     ),
     /**
@@ -80,6 +84,7 @@ export const home: PageModule = {
      */
     references: [
       "PREPAREDBC",
+      "RESEARCHCO-PREP-21",
       "CRTC-2025-226",
       "DCRRA-APPC",
       "MV-WATER-22",
