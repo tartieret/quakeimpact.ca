@@ -24,7 +24,10 @@ evidence. The finding is simpler and belongs at the top of the page rather than 
 bottom of the file: **a toilet needs water to flush, and in an apartment or condo tower
 there is no alternative to the toilet.** The province expects disruption to water and
 wastewater for many months. That is the sentence the reader needs; the rest of this file
-explains why it is true and how long it lasts. See "For the page".
+explains why it is true and how long it lasts. And the province states the consequence
+itself — disrupted waste collection, mass congregation in shelters, and "disease outbreaks
+are possible" — which is why the household lever here is a health measure. See "For the
+page".
 
 ---
 
@@ -106,6 +109,48 @@ is not public.
 
 Both plants are long programmes with dates in the 2030s. As with the water tunnels,
 the useful statement is the schedule, not a judgement about it.
+
+### The province states the health consequence, and it closes the chain
+
+Not previously in this folder. PEIRS: "**Disruptions to waste collection may result in
+biological hazards.** Due to mass congregation in shelter spaces and possible inadequate
+disposal of garbage and biological waste, **disease outbreaks are possible**." [PEIRS]
+**[A]**
+
+**This is the sentence that makes the rest of the page matter.** Everything else here is
+plumbing: mains, plants, pump stations, restoration months. This is the province saying
+what the plumbing failing does to people, and it completes a chain each link of which is
+separately sourced in this folder — water fails, so toilets do not flush; waste has
+nowhere to go; garbage collection is disrupted at the same time; people are concentrated
+in shelters; and the province's own word for the result is *possible disease outbreaks*.
+
+**Two things it adds that this file did not have.** It names **solid waste collection**,
+which is a service this folder does not otherwise cover at all and which is Metro
+Vancouver's — garbage trucks need roads and fuel, both banded High. And it locates the
+risk **in shelters specifically**, which ties it to the housing finding that 25 disaster
+support hubs exist with **no published capacity**. See `housing.md` and
+`../preparedness.md`.
+
+**Guards, and they matter more here than anywhere else on this page.**
+
+- **"Possible" is the province's word, and it is load-bearing.** Not likely, not expected,
+  not a forecast. The site writes *possible* or it writes nothing. Hardening this into
+  "there will be disease outbreaks" would be the single worst sentence the site could
+  publish: unsourced, frightening, and wrong about the evidence.
+- **Do not let this attach to the dead.** The most persistent disaster myth in public
+  circulation is that bodies cause epidemics. They do not, and the humanitarian evidence
+  is consistent that post-disaster disease risk comes from **displacement, crowding, water
+  and sanitation** — which is exactly what the province names here, and nothing else.
+  Quote the mechanism precisely and never near a casualty figure, or the reader will
+  assemble the myth themselves. See `analogues.md` on the Sphere standards.
+- **It is a conditional, and the condition is actionable.** The province names *inadequate
+  disposal* as the step between disrupted collection and disease. That is the one link in
+  the chain a household can do something about, and it is the reason this page's lever —
+  a planned way to contain human waste — is a health measure rather than a comfort
+  measure. Say that.
+- **Christchurch belongs beside it as illustration only**, never as a local number:
+  portable and chemical toilets for tens of thousands of residents, for years. Labelled
+  Christchurch, marked as illustration. See `analogues.md`.
 
 ### Municipal collection systems
 
