@@ -122,6 +122,173 @@
     text-decoration-thickness: 1px;
   }
 
+  /* ---------------------------------------------------------------- */
+  /* Elements inside a run of prose                                    */
+  /*                                                                   */
+  /* Preflight strips list markers, heading weights and table borders, */
+  /* and there is no typography plugin, so authored long-form content  */
+  /* has no styling of its own. These rules give it some. They sit in  */
+  /* the components layer, which means a utility class on the same     */
+  /* element still wins: the block primitives in `prose-blocks.tsx`    */
+  /* carry their own utilities and are not fighting anything here.     */
+  /*                                                                   */
+  /* Nothing below colours anything for emphasis. Colour on this site  */
+  /* carries meaning, and running text is not one of the meanings.     */
+  /* ---------------------------------------------------------------- */
+
+  .prose-body h3 {
+    margin-top: 2.25em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+
+  .prose-body h4 {
+    margin-top: 1.75em;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .prose-body h3 + *,
+  .prose-body h4 + * {
+    margin-top: 0.6em;
+  }
+
+  .prose-body strong {
+    font-weight: 600;
+  }
+
+  .prose-body em {
+    font-style: italic;
+  }
+
+  .prose-body ul,
+  .prose-body ol {
+    padding-left: 1.5em;
+  }
+
+  .prose-body ul {
+    list-style: disc;
+  }
+
+  .prose-body ol {
+    list-style: decimal;
+  }
+
+  .prose-body li::marker {
+    color: var(--color-ink-faint);
+  }
+
+  .prose-body li + li {
+    margin-top: 0.5em;
+  }
+
+  .prose-body li > ul,
+  .prose-body li > ol {
+    margin-top: 0.5em;
+    padding-left: 1.25em;
+  }
+
+  .prose-body li > ul {
+    list-style: circle;
+  }
+
+  /* A set-apart block: a quotation, or a gap held open in public. The rule
+     on the left is the same device the callout uses, so the two read as one
+     family rather than as two inventions. Direct children only, so the
+     `Quote` primitive, which draws its own rule on the figure around it,
+     does not end up with two. */
+  .prose-body > blockquote {
+    border-left: 2px solid var(--color-accent);
+    padding-left: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .prose-body > blockquote > * + * {
+    margin-top: 0.9em;
+  }
+
+  .prose-body figure > * + * {
+    margin-top: 0.75rem;
+  }
+
+  .prose-body figcaption {
+    max-width: 42rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-ink-muted);
+  }
+
+  /* A raw table written straight into a run of prose. Anything with columns a
+     reader has to compare belongs in `DataTable`, which scrolls inside its own
+     container, carries row headers and keeps a real caption; this is the
+     floor, not the recommendation. Direct children only, for the same reason
+     the blockquote rule is. */
+  .prose-body > table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .prose-body > table caption {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--color-ink-muted);
+    text-align: left;
+  }
+
+  .prose-body > table th {
+    padding: 0.625rem 1rem 0.625rem 0;
+    font-weight: 600;
+    vertical-align: top;
+  }
+
+  .prose-body > table td {
+    padding: 0.625rem 1rem 0.625rem 0;
+    color: var(--color-ink-muted);
+    vertical-align: top;
+  }
+
+  .prose-body > table thead tr {
+    border-bottom: 1px solid var(--color-rule-strong);
+  }
+
+  .prose-body > table tbody tr {
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .prose-body > table tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .prose-body hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 0;
+    border-top: 1px solid var(--color-rule);
+  }
+
+  .prose-body code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+  }
+
+  .prose-body dt {
+    font-weight: 600;
+  }
+
+  .prose-body dd {
+    margin-top: 0.35em;
+    padding-left: 1.25em;
+    color: var(--color-ink-muted);
+  }
+
   /* A hatched fill so "not yet assessed" never reads as a real band. */
   .hatch {
     background-image: repeating-linear-gradient(

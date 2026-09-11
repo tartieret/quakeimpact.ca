@@ -26,15 +26,24 @@ label or an alt text.
 | [`home.md`](home.md) | `/` | the whole evidence base |
 | [`scenarios.md`](scenarios.md) | `/scenarios/` | `../research/scenarios.md` |
 | [`method.md`](method.md) | `/method/` | `../research/impact-bands.md` |
+| [`shaking.md`](shaking.md) | `/shaking/` | `../site-overview.md` §5, Part 1 |
 | [`ground-conditions.md`](ground-conditions.md) | `/shaking/ground/` | `../research/ground-conditions.md` |
+| [`after.md`](after.md) | `/after/` | `../research/impact-bands.md` |
 | [`water.md`](water.md) | `/after/water/` | `../research/systems/water.md` |
 | [`electricity.md`](electricity.md) | `/after/electricity/` | `../research/systems/electricity.md` |
 | [`transportation.md`](transportation.md) | `/after/transportation/` | `../research/systems/transportation.md` |
 | [`getting-around.md`](getting-around.md) | `/getting-around/` | `../research/mobility.md` |
 | [`prepare.md`](prepare.md) | `/prepare/` | `../research/preparedness.md` |
 
-That set is the MVP in `../site-overview.md` §8, in the order
-`../research/build-order.md` gives.
+Everything in that table except `shaking.md` and `after.md` is the MVP in
+`../site-overview.md` §8, in the order `../research/build-order.md` gives. Those two
+are the index pages for parts one and two, and each one is shorter than the pages it
+points at.
+
+[`unwritten.md`](unwritten.md) is not a page and has no route. It holds the standing
+text a page shows when its evidence has been gathered and its body has not been
+written, in two variants: one for a system page under `/after/`, which carries a band,
+and one for a shaking page under `/shaking/`, which does not.
 
 ---
 
@@ -112,8 +121,9 @@ communications, and where help comes from.
 Four of the five shaking pages: buildings, casualties, fire following and
 secondary hazards.
 
-The two section index pages, `/shaking/` and `/after/`, which exist as routes and
-have no copy.
+Each of those fourteen pages carries the standing text in `unwritten.md` until its own
+file exists, and the two index pages say how many of the pages they point at are in
+that state.
 
 The dependency graph, and the about, sources and contribute pages.
 

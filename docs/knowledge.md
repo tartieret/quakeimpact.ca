@@ -11,6 +11,89 @@ it was confirmed.
 
 ---
 
+## The source register is generated from the research file, and its Source cell has four shapes
+
+**11 September 2026.** `src/content/references.ts` is now produced by
+`scripts/build-references.mjs` from the register table in `docs/research/sources.md`
+(`npm run references`), and committed. 325 rows, plus two internal page entries written in
+the script because a cross-reference to `/method/` is not a document.
+
+The Source column mixes a document title with an editorial note, and it does so four ways
+consistently: an italicised `*Title*`, a quoted `"Headline"` for news, `Title — note` for a
+page or dataset, and `Author, "Article", *Journal*… **note**` for a full citation, where the
+note opens with the bold run. Splitting on only the italic form leaves two hundred
+three-hundred-character "titles", so the parser takes whichever separator comes first, the
+em dash or the bold run. This is a property of how the register is written, not a guess per
+row: change the convention in the register and this script has to change with it.
+
+Two smaller decisions worth keeping. The `date` field is the register cell verbatim, because
+it carries *undated*, *not recovered* and *accessed 10 Sep 2026*, and a numeric `year` is
+derived only where the cell is not purely an access date, since when we looked at a living
+page is not when it was published. And `Reference.href` is required by the type, so the eight
+rows whose document was never recovered carry an empty `href` and the pages render "no link
+to follow" rather than a link that goes nowhere.
+
+---
+
+
+## A `ready` flag cannot suppress a paint that has already happened
+
+**11 September 2026.** `ScenarioProvider` carried a `ready` boolean, documented as
+being there "to avoid a flash", and nothing in the codebase read it. The reason it
+was never consumed is structural rather than an oversight.
+
+The sequence on a static export is: the exported HTML carries the default scenario,
+React hydrates it, a passive effect then reads `localStorage`, and a second render
+follows. The browser paints between hydration and that second render, so a reader
+whose stored choice is the crustal scenario genuinely sees a frame of Cascadia
+bands. A flag set in the same passive effect is set *after* that paint. Anything
+consuming it would have had to hide the bands in the exported HTML too — which
+costs every reader without JavaScript the content, on a public-information site.
+
+The fix is to move when the preference is applied, not to cover the moment it is
+wrong. A layout effect is committed before paint; a passive effect is not. React
+warns if `useLayoutEffect` runs on the server, so the provider picks the hook by
+environment (`typeof window === "undefined" ? useEffect : useLayoutEffect`) — the
+standard isomorphic-layout-effect shape, and safe because the choice is constant
+within an environment so hook order never changes. `ready` was then removed: a
+flag nothing can usefully read is worse than no flag, because the next person
+assumes the problem is handled.
+
+A render-blocking inline script in `<head>` stamping the preference on the root
+element would remove the flash from the very first paint, and is the better answer
+if the site ever grows a second persisted preference. It has to live in
+`src/app/layout.tsx`.
+
+## An impact cell's source key and a citation key are the same key
+
+**11 September 2026.** `ImpactCell` used to render `Source: {impact.source}` linked
+at `/sources/` whatever the string was, so the band grid and `components/citation.tsx`
+were two unconnected sourcing mechanisms and a typo in a key was invisible. Both
+now resolve against `REFERENCES` in `src/content/references.ts`, and the register
+keys from `docs/research/sources.md` are used verbatim in `Impact.source`.
+
+An unresolved key fails visibly in both, the way `Cite` renders `[?]`. That matters
+more than it sounds: the register has 347 keys and the site has 26 impact cells, so
+a silent fallback would be a claim on the page resting on nothing, presented as
+sourced.
+
+## `Impact.evidence` exists because a band is not a measurement of its column
+
+**11 September 2026.** Most published work assesses one design earthquake, so the
+same mechanism sentence stands in both scenario columns. Two of the site's sources
+pull in opposite directions, which is easy to get backwards: `MV-WATER-22` models
+the magnitude 9 megathrust only, so its 267 main failures are a megathrust figure
+sitting in the crustal column; `PEIRS` is the province's **crustal M7** planning
+scenario, so everything resting on it (sanitation, fuel, food) is a crustal figure
+sitting in the Cascadia column. `DCRRA-APPC`'s 65% is neither — it is stated at the
+building code's design ground motion, which is a hazard level rather than a
+scenario, so it needs no evidence line and must not be given one.
+
+`evidence` is written only where the assessment does not model the column it sits
+in. Filling it everywhere would train readers to skip it.
+
+---
+
 ## A failed fetch saved with a .pdf extension is not a PDF
 
 **10 September 2026.** Two candidate URLs existed for one Metro Vancouver agenda,
@@ -490,3 +573,52 @@ The whole file reformats, so the diff looks like deliberate work and will be sta
 It is Next.js maintaining its own config, not a change the branch meant to make. Check
 `git status` after a build and restore the file unless the change is the point of the
 commit. The same caution applies to any tool that edits config in place during a build.
+
+---
+
+## Tailwind's cascade layers are what let `.prose-body` style bare elements
+
+**11 September 2026.** Authored long-form copy is written as plain `<ul>`, `<h3>`,
+`<blockquote>` and `<table>` inside `Prose`, with no classes on them. Preflight has
+already stripped list markers, heading weights and table borders, and the project has
+no typography plugin, so those elements need an element layer of their own.
+
+The rules live in `@layer components` in `globals.css`. Layer order, not specificity,
+decides the winner between layers: `components` beats Preflight in `base`, and every
+Tailwind utility in `utilities` beats `components`. That is the whole reason a
+component can carry utilities in its markup and still sit inside `.prose-body` without
+a specificity war. It also means a rule written outside a layer would beat all three,
+so anything added to that file belongs inside one.
+
+Two rules are scoped to direct children anyway — `.prose-body > blockquote` and
+`.prose-body > table` — because `Quote` and `DataTable` draw a rule and a border of
+their own on a wrapper the utilities cannot reach into. Without the `>`, a quotation
+inside a run of prose came out with two left rules.
+
+## A scrollable table has to be reachable from a keyboard
+
+`DataTable` puts the table in an `overflow-x-auto` container so a wide table scrolls
+inside its own box instead of making the page scroll sideways. A pane that scrolls only
+by dragging cannot be read without a mouse, so the container is a focusable region:
+`tabIndex={0}` with `role="region"` and `aria-labelledby` pointing at the table's real
+`<caption>`. This is the one place on the site where a role beats a semantic element,
+because there is no element that means "scrollable pane".
+
+## The lever is a section, not an aside
+
+`Lever` used to render an `<aside>` with an `<h3>`, which kept "What you can do" out of
+the contents rail and out of the heading order. Every copy file gives it an
+`## What you can do` heading, and it is the thing a reader who already knows the risk
+came for. It is now a real `<section>` with an `<h2>`, still inside its accent panel:
+the rail query is `main section[id] > h2`, so the heading has to be a direct child of
+the section, which is why the panel is the section rather than a div inside it.
+
+## The contents rail observes headings, not sections
+
+The rail now lists `<h3>` subheads under their `<h2>`, which meant the
+IntersectionObserver could no longer observe section elements: a section and a subhead
+inside it both intersect, and sorting by position always resolved to the outer one, so
+a subhead could never become current. It observes the heading elements themselves
+instead. They are short, the observer band is a thin strip near the top of the
+viewport, and so at most one is inside it at a time. An `<h3>` is listed only if it
+carries an id, which is what `Subhead` gives it; a bare `<h3>` stays out of the rail.

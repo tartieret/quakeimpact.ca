@@ -14,7 +14,7 @@ function SystemCard({ system }: { system: SystemEntry }) {
   return (
     <Link
       href={`/after/${system.slug}/`}
-      className="group flex flex-col gap-3 bg-paper-raised p-5 transition-colors hover:bg-accent-soft"
+      className="group flex flex-col gap-3 bg-paper-raised p-5 transition-colors hover:bg-accent-soft focus-visible:-outline-offset-2"
     >
       <div className="flex items-start justify-between gap-3">
         <h3 className="font-display text-lg leading-snug tracking-tight group-hover:text-accent">

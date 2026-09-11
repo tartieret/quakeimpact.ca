@@ -1,5 +1,19 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { slugify } from "./prose-blocks";
+
+/**
+ * Page furniture and content blocks.
+ *
+ * The block primitives that go *inside* a section — subheads, tables,
+ * quotations, figures — live in `prose-blocks.tsx` and are re-exported at the
+ * foot of this file, so a page imports the whole set from one place.
+ *
+ * Anywhere a reader sees a sentence, the prop is `ReactNode` rather than
+ * `string`. A standfirst, a lede and a "what you can do" bullet all carry
+ * sourced claims, and a claim on this site carries its `<Cite>` marker in the
+ * same sentence as the number.
+ */
 
 /* ------------------------------------------------------------------ */
 /* Page furniture                                                      */
@@ -13,7 +27,7 @@ export function PageHeader({
 }: {
   kicker?: string;
   title: string;
-  standfirst?: string;
+  standfirst?: ReactNode;
   children?: ReactNode;
 }) {
   return (
@@ -36,15 +50,6 @@ export function PageHeader({
   );
 }
 
-export function slugify(value: string): string {
-  return value
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
 export function Section({
   id,
   title,
@@ -53,7 +58,7 @@ export function Section({
 }: {
   id?: string;
   title: string;
-  lede?: string;
+  lede?: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -73,15 +78,45 @@ export function Section({
 }
 
 /**
- * Paragraphs are `ReactNode`, not `string`, so running text can carry inline
- * citations — see `components/citation.tsx`.
+ * A run of body text.
+ *
+ * `paragraphs` is the short form: every entry becomes a `<p>`, and every entry
+ * is a `ReactNode`, so running text carries inline citations. See
+ * `components/citation.tsx`.
+ *
+ * `children` is the long form, for a run that is not only paragraphs. A section
+ * in the copy mixes paragraphs with lists, subheads, tables, quotations and
+ * set-apart blocks, and they read as one column of text rather than as a stack
+ * of separate objects. Write the blocks directly:
+ *
+ *   <Prose>
+ *     <p>The province designates routes ... <Cite id="moti-srdc-05" /></p>
+ *     <Subhead>A bridge that survives is not a bridge you can drive over</Subhead>
+ *     <ul>
+ *       <li>...</li>
+ *     </ul>
+ *     <Quote speaker="..." source="...">...</Quote>
+ *   </Prose>
+ *
+ * `.prose-body` in `globals.css` styles the elements written that way, so a
+ * plain `<ul>` or `<h3>` needs no classes. Both props can be used at once; the
+ * paragraphs come first.
+ *
+ * `wide` drops the reading measure, for a section built around a table.
  */
-export function Prose({ paragraphs }: { paragraphs: ReactNode[] }) {
+export function Prose({
+  paragraphs,
+  children,
+  wide = false,
+}: {
+  paragraphs?: ReactNode[];
+  children?: ReactNode;
+  wide?: boolean;
+}) {
   return (
-    <div className="prose-body max-w-2xl">
-      {paragraphs.map((p, i) => (
-        <p key={i}>{p}</p>
-      ))}
+    <div className={wide ? "prose-body max-w-none" : "prose-body max-w-2xl"}>
+      {paragraphs?.map((p, i) => <p key={i}>{p}</p>)}
+      {children}
     </div>
   );
 }
@@ -91,29 +126,52 @@ export function Prose({ paragraphs }: { paragraphs: ReactNode[] }) {
 /* ------------------------------------------------------------------ */
 
 /**
- * "No doom without a lever." Every system page ends with one of these.
+ * "No doom without a lever." Every long page ends with one of these.
+ *
+ * It is a real `<section>` with a real `<h2>`, so it appears in the contents
+ * rail and sits in the heading order alongside everything above it. The reader
+ * who lands on a page looking for what to do can find it from the rail. The
+ * panel keeps it visually distinct without costing it its place in the
+ * structure.
+ *
+ * `title` is the sentence between the heading and the list: on the
+ * transportation page it says who can and cannot retrofit a bridge. It is no
+ * longer a heading of its own, because "What you can do" is the heading the
+ * copy gives and a second one under it would break the order. Items carry their
+ * own citations, so they are `ReactNode`.
  */
 export function Lever({
+  heading = "What you can do",
+  id,
   title,
   items,
   href = "/prepare/",
 }: {
-  title: string;
-  items: string[];
+  /** The `<h2>`, and the entry in the contents rail. */
+  heading?: string;
+  id?: string;
+  /** One or two sentences under the heading. */
+  title?: ReactNode;
+  items: ReactNode[];
   href?: string;
 }) {
   return (
-    <aside className="rounded-xl border border-accent/30 bg-accent-soft p-6">
-      <p className="text-xs font-semibold tracking-[0.12em] text-accent uppercase">
-        What you can do
-      </p>
-      <h3 className="mt-2 font-display text-xl">{title}</h3>
-      <ul className="mt-4 space-y-2">
+    <section
+      id={id ?? slugify(heading)}
+      className="scroll-mt-28 rounded-xl border border-accent/30 bg-accent-soft p-6 sm:p-8"
+    >
+      <h2 className="font-display text-2xl tracking-tight sm:text-3xl">
+        {heading}
+      </h2>
+      {title ? (
+        <p className="mt-3 max-w-2xl leading-relaxed text-ink-muted">{title}</p>
+      ) : null}
+      <ul className="mt-6 flex max-w-2xl flex-col gap-3">
         {items.map((item, i) => (
-          <li key={i} className="flex gap-3 text-sm leading-relaxed">
+          <li key={i} className="flex gap-3 leading-relaxed">
             <span
               aria-hidden
-              className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent"
+              className="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-accent"
             />
             <span>{item}</span>
           </li>
@@ -121,11 +179,11 @@ export function Lever({
       </ul>
       <Link
         href={href}
-        className="mt-5 inline-block text-sm font-medium text-accent underline underline-offset-4"
+        className="mt-6 inline-block text-sm font-medium text-accent underline underline-offset-4"
       >
         The full preparedness plan
       </Link>
-    </aside>
+    </section>
   );
 }
 
@@ -165,15 +223,24 @@ export function Callout({
 /* Placeholders for content that is not built yet                      */
 /* ------------------------------------------------------------------ */
 
+/**
+ * A map slot that has not been built. It names the dataset and says what it is,
+ * so nothing on the page looks more finished than it is. `licence` is for a
+ * dataset whose terms are already settled, where the attribution has to sit
+ * beside the graphic; leave it out and the slot says the licence is still to be
+ * confirmed, which is usually the truth.
+ */
 export function MapPlaceholder({
   title,
   caption,
   dataset,
+  licence,
   ratio = "16 / 9",
 }: {
   title: string;
   caption: string;
   dataset: string;
+  licence?: ReactNode;
   ratio?: string;
 }) {
   return (
@@ -184,15 +251,14 @@ export function MapPlaceholder({
       >
         <div className="rounded-md bg-paper-raised px-5 py-3 text-center">
           <p className="font-display text-lg">{title}</p>
-          <p className="mt-1 text-xs text-ink-faint">
-            Map slot — not yet built
-          </p>
+          <p className="mt-1 text-xs text-ink-faint">Map slot, not yet built</p>
         </div>
       </div>
-      <figcaption className="mt-3 max-w-2xl text-sm text-ink-muted">
+      <figcaption className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-muted">
         {caption}{" "}
         <span className="text-ink-faint">
-          Dataset: {dataset}. Licence to be confirmed.
+          Dataset: {dataset}.{" "}
+          {licence ? <>{licence}</> : "Licence to be confirmed."}
         </span>
       </figcaption>
     </figure>
@@ -231,3 +297,16 @@ export function NextPrev({
     </nav>
   );
 }
+
+/* ------------------------------------------------------------------ */
+/* Blocks that go inside a section                                     */
+/* ------------------------------------------------------------------ */
+
+export {
+  slugify,
+  Subhead,
+  DataTable,
+  NotPublished,
+  Quote,
+  Figure,
+} from "./prose-blocks";
