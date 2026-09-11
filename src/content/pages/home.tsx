@@ -4,6 +4,7 @@ import { Prose } from "@/components/page-parts";
 import { ScenarioCards } from "@/components/scenario-cards";
 import { SystemGrid } from "@/components/system-grid";
 import { PhaseNarrative } from "@/components/phase-narrative";
+import { ScenarioText } from "@/components/scenario-text";
 import type { PageModule } from "./index";
 
 /**
@@ -88,17 +89,14 @@ export const home: PageModule = {
     references: [
       "PREPAREDBC",
       "RESEARCHCO-PREP-21",
-      "CRTC-2025-226",
-      "DCRRA-APPC",
-      "MV-WATER-22",
-      "MV-DEBRIS-17",
-      "MOTI-SRDC-05",
-      "BCH-WESTEND-25",
+      "DCRRA-2025",
       "PEIRS",
+      "CRTC-2025-226",
+      "MV-DEBRIS-17",
+      "BCH-WESTEND-25",
       "BCUC-C-6-25",
       "COV-RISK-2024",
       "NRCAN-1700",
-      "DCRRA-2025",
     ],
   },
 
@@ -113,57 +111,103 @@ export const home: PageModule = {
               {
                 phase: "hours",
                 heading:
-                  "You are on your own, and so is everyone you would call",
+                  "It is over in a minute, and then you cannot reach anyone",
                 body: (
-                  <p>
-                    Nothing in Canada requires a mobile phone site to keep
-                    running once its power goes. The regulator opened a
-                    proceeding in September 2025 to decide what that requirement
-                    should be, and has not decided. <Cite id="CRTC-2025-226" />{" "}
-                    The hospitals are in the same earthquake: about 65 per cent
-                    of one health authority’s buildings would likely be
-                    completely damaged at the shaking the current building code
-                    designs for, and no published document sets the expected
-                    casualties against the number of beds the region has.{" "}
-                    <Cite id="DCRRA-APPC" />
-                  </p>
+                  <>
+                    <ScenarioText
+                      as="p"
+                      crustal={
+                        <>
+                          In the province’s own scenario the earthquake is heard
+                          before it is felt: a sound like a freight train, then
+                          10 to 20 seconds of violent shaking that knocks people
+                          off their feet, “except for those who remember to
+                          drop, cover, and hold on”. A small number of buildings
+                          collapse, many more shift and crack, and most of the
+                          people badly hurt are hurt by things falling — some of
+                          them while running outside. <Cite id="PEIRS" />{" "}
+                          <Link href="/scenarios/" className={link}>
+                            The passage in full
+                          </Link>
+                          .
+                        </>
+                      }
+                      cascadia={
+                        <>
+                          The province’s megathrust assessment sets its
+                          earthquake at ten in the morning on an August day, in a
+                          30 to 40 degree heatwave with wildfire smoke. The
+                          shaking is moderate rather than violent and lasts
+                          about three minutes, and it arrives along a thousand
+                          kilometres of coast at once rather than under one
+                          city. <Cite id="DCRRA-2025" />{" "}
+                          <Link href="/scenarios/" className={link}>
+                            Both scenarios, side by side
+                          </Link>
+                          .
+                        </>
+                      }
+                    />
+                    <p>
+                      When it stops, the phone in your hand is what you reach
+                      for, and it is among the first things to fail. Nothing in
+                      Canada requires a cell tower to hold any backup power at
+                      all; the regulator opened a proceeding in September 2025
+                      to decide what that requirement should be, and has not
+                      decided. <Cite id="CRTC-2025-226" />
+                    </p>
+                  </>
                 ),
               },
               {
                 phase: "days",
-                heading:
-                  "Water is the problem, and the roads belong to the response",
+                heading: "Water and food become things you have to go and find",
                 body: (
-                  <p>
-                    A magnitude 9 megathrust is modelled to break 267 water
-                    mains across Metro Vancouver, about 60 of them where mains
-                    cross under rivers and inlets, which are the slowest repairs
-                    in the system. <Cite id="MV-WATER-22" /> A crew reaches a
-                    broken pipe in a published order that clears lifeline routes
-                    first and local streets last. <Cite id="MV-DEBRIS-17" /> The
-                    province designates routes that must stay open for emergency
-                    vehicles, and states in the same document that it is not
-                    retrofitting the bridges on them to stay in service.{" "}
-                    <Cite id="MOTI-SRDC-05" />
-                  </p>
+                  <>
+                    <p>
+                      The taps are what most households notice first. In the
+                      megathrust assessment, getting bulk drinking water around
+                      the region stays difficult for the first four to five
+                      days. <Cite id="DCRRA-2025" />
+                    </p>
+                    <p>
+                      The shops do not restock. The province expects the network
+                      that delivers meat, fruit and vegetables, dairy and bread
+                      to take weeks or months, because the problem is moving the
+                      goods rather than having them — and a service station with
+                      full tanks and no power dispenses nothing. <Cite id="PEIRS" />{" "}
+                      Roads are cleared in a published order that puts lifeline
+                      routes first and local streets last, so your street waits.{" "}
+                      <Cite id="MV-DEBRIS-17" />
+                    </p>
+                  </>
                 ),
               },
               {
                 phase: "weeks",
                 heading:
-                  "The power comes back unevenly, and the toilet still does not work",
+                  "The power comes back in patches, and the toilet still does not work",
                 body: (
-                  <p>
-                    BC Hydro told its regulator in November 2025 that a large
-                    earthquake could leave up to two thirds of downtown
-                    customers without power for several weeks.{" "}
-                    <Cite id="BCH-WESTEND-25" /> The province expects disruption
-                    to water and wastewater for many months. <Cite id="PEIRS" />{" "}
-                    Gas is the one utility that cannot be turned back on from a
-                    control room: service returns only as a technician enters
-                    each affected building and relights every appliance in it.{" "}
-                    <Cite id="BCUC-C-6-25" />
-                  </p>
+                  <>
+                    <p>
+                      BC Hydro told its regulator in November 2025 that a large
+                      earthquake could leave up to two thirds of downtown
+                      customers without power for several weeks.{" "}
+                      <Cite id="BCH-WESTEND-25" /> Your street comes back when
+                      its own poles and wires do, which is not when the city
+                      centre does.
+                    </p>
+                    <p>
+                      The toilet is the part nobody plans for. With no water to
+                      flush and the sewers damaged as well, an apartment tower
+                      has nothing else to use, and the province expects
+                      disruption to water and wastewater for many months.{" "}
+                      <Cite id="PEIRS" /> Gas cannot be turned back on from a
+                      control room either: it returns only when a technician
+                      reaches your building and relights every appliance in it.{" "}
+                      <Cite id="BCUC-C-6-25" />
+                    </p>
+                  </>
                 ),
               },
               {
@@ -171,20 +215,25 @@ export const home: PageModule = {
                 heading:
                   "Months is not a new set of failures. It is how long the first ones take",
                 body: (
-                  <p>
-                    The City of Vancouver states that areas with a high
-                    concentration of damage may be closed off for weeks, months
-                    or even years, which keeps people out of homes that came
-                    through the shaking standing. <Cite id="COV-RISK-2024" /> BC
-                    Hydro puts its own system years from complete restoration.{" "}
-                    <Cite id="BCH-WESTEND-25" /> Through all of it the
-                    province’s plan is that people shelter within the region
-                    rather than leave it. <Cite id="PEIRS" />{" "}
-                    <Link href="/getting-around/" className={link}>
-                      What that means for getting around
-                    </Link>
-                    .
-                  </p>
+                  <>
+                    <p>
+                      The building you live in can be standing and still closed.
+                      The City of Vancouver states that areas with a high
+                      concentration of damage may be closed off for weeks,
+                      months or even years. <Cite id="COV-RISK-2024" /> BC Hydro
+                      puts its own system years from complete restoration.{" "}
+                      <Cite id="BCH-WESTEND-25" />
+                    </p>
+                    <p>
+                      Through all of it the province’s plan is that people
+                      shelter within the region rather than leave it.{" "}
+                      <Cite id="PEIRS" />{" "}
+                      <Link href="/getting-around/" className={link}>
+                        What that means for getting around
+                      </Link>
+                      .
+                    </p>
+                  </>
                 ),
               },
             ]}
