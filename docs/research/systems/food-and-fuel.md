@@ -57,6 +57,22 @@ Lead with the mechanism, not with a days-of-supply figure.
 - **The supply chain, stated in time rather than volume:** the fast-moving consumer
   goods network "will be disrupted. It may take weeks or months to recover."
   [PEIRS] pp. 23, 67 **[A]**
+- **And the province defines the term, which is the sentence the page should actually
+  use.** "Fast-moving consumer goods" is trade jargon and means nothing to a reader.
+  PEIRS glosses it in place: "products that are sold quickly and at relatively low cost,
+  such as **meat, fruits and vegetables, dairy products, baked goods, toiletries, and
+  cleaning products**". [PEIRS] pp. 23, 67 **[A]** That list is a grocery shop, and it
+  converts an abstract statement about distribution networks into something a person can
+  picture. **Use the province's list, not the province's category name.**
+- **What the list is made of is itself the finding, and it cuts against the standard
+  advice.** Four of the six named categories — meat, produce, dairy, bread — are
+  perishables, which is precisely the food a household cannot stockpile. The province's
+  own definition therefore says something the preparedness pages do not: **the part of the
+  food supply that fails for weeks or months is mostly the part no amount of personal
+  preparation can hold.** A pantry of tins is a real answer to a short gap and not an
+  answer to this one. Two of the six, toiletries and cleaning products, *are* storable,
+  and they are also the two nobody thinks to store. Both halves of that are worth saying.
+  See `../preparedness.md`.
 - **The province's planning assumptions already treat distribution as broken:** "Road,
   rail, air, and marine transportation will be disrupted, and existing supply chains
   will be inoperable." [PEIRS] pp. 11–14 **[A]**
