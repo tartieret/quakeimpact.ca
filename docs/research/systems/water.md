@@ -19,9 +19,25 @@ water and wastewater disruption is expected for many months.
 
 ---
 
-## Findings
+## How it fails
 
-### The 2022 lifeline study, and what it says about the shape of the failure
+### Why a crossing is not a pipe under a road
+
+Lucas Pitts, director of policy, planning and analysis at the Greater Vancouver
+Water District, on why the crossings are the story:
+
+> "It's one thing for a pipe under the Lougheed Highway to leak. We can go dig
+> that out, we can throw a patch on it, we can be out of there in four hours. But
+> for a crossing under the Fraser River, obviously, if that breaks, to fix that
+> takes a very long time."
+
+[MV-WATER-22] **[B]** — a named official at the water utility, quoted directly.
+This is the site's mechanism sentence, already written by the person responsible
+for the asset.
+
+## How bad, and for how long
+
+### How many failures, and where: 267 mains and 60 crossing breaks
 
 The source is a Metro Vancouver report published internally in **February 2022**
 and obtained in heavily redacted form by Glacier Media, which reported it on
@@ -57,8 +73,7 @@ reaches us through that reporting. [MV-WATER-22] **[B]**
   document-sharing site as an upload, not by a publisher. Cite it as **the redacted FOI
   release reported by Glacier Media**, with the upload as where the artefact is reachable,
   and cite the Manager's Report separately for WSP's identity. Roughly **64% of pages are
-  blacked out**, and the withheld material is exactly what this file already says it is:
-  the per-main leak and break counts and the per-facility damage levels.
+  blacked out**; what was withheld is set out in its own section below.
 - **Method.** The study was commissioned to an external engineering consultancy and
   built from an analysis of **123 reports provided by Metro Vancouver — 41 on
   reservoirs, 21 on pump stations and 61 on pipelines**. Worth carrying: it says
@@ -68,21 +83,7 @@ reaches us through that reporting. [MV-WATER-22] **[B]**
   1993 study, and the estimated failures overall are **over 8.5 times higher**
   than that earlier work. [MV-WATER-22] **[B]**
 
-### The mechanism, in an official's own words
-
-Lucas Pitts, director of policy, planning and analysis at the Greater Vancouver
-Water District, on why the crossings are the story:
-
-> "It's one thing for a pipe under the Lougheed Highway to leak. We can go dig
-> that out, we can throw a patch on it, we can be out of there in four hours. But
-> for a crossing under the Fraser River, obviously, if that breaks, to fix that
-> takes a very long time."
-
-[MV-WATER-22] **[B]** — a named official at the water utility, quoted directly.
-This is the site's mechanism sentence, already written by the person responsible
-for the asset.
-
-### What Metro Vancouver withheld, and why it matters
+### The redacted per-main counts and reservoir damage estimates
 
 Metro Vancouver released the study in redacted form — roughly two-thirds of the
 ~300-page document is withheld. Specifically redacted under FOIPPA were **the
@@ -95,7 +96,54 @@ estimate would be built from, and both are the parts that were removed. This is 
 deliberate non-publication, not an absence — a different fact about the world, and
 one the site is entitled to state plainly.
 
-### The governing plan, and its silence
+### Provincial statements on duration
+
+- "**Disruption to water and wastewater systems are expected for many months
+  following the event.**" [PEIRS] **[A]** — a provincial statement of duration,
+  qualitative and scenario-wide, not system-specific, and covering wastewater in
+  the same breath.
+- "**People are thirsty within 24 hours**, and it is unclear whether the water is
+  potable and where it can be accessed." And: "Within 24 hours, access to safe
+  drinking water becomes limited, and **distributing bulk potable water across the
+  affected region remains challenging for the first four to five days**."
+  [DCRRA-2025] **[A]** — this is the first-week statement, and it is about
+  *distribution of trucked water*, not about the network coming back. The two are
+  different clocks and must not be merged.
+
+### Drinking water disruption of several months, in a federal case study
+
+A **March 2018 case study by Agriculture and Agri-Food Canada**, obtained through a
+freedom-of-information request by researcher Ken Rubin and reported by the Globe
+and Mail on **22 November 2019**, found that drinking water disruption in the
+Vancouver area **"could last several months"**. The same reporting records that
+**BC's emergency management agency had put its plans for providing potable water on
+hold pending an update from Metro Vancouver**, and that Metro Vancouver declined to
+give specifics, saying only that five new water tunnels were being designed to
+current seismic standards, with no completion timeline offered. [GM-AAFC-19] **[B]**
+
+Four guards travel with this, always:
+
+- It is a **federal finding about the Lower Mainland**, so the "never present an
+  out-of-region number as a local one" rule is not engaged. It is [B] because it is
+  an internal document that was never published, reaching us through FOI and a
+  newspaper, written by a federal agriculture department rather than by the water
+  utility.
+- **"Several months" is a range word, not a number.** It never becomes a figure, a
+  bar, or a band boundary.
+- It is **eight years old** and predates the Port Mann tunnel entering service, the
+  Second Narrows tunnel, and the current reservoir program. Say so.
+- **The more durable finding is the second half.** As of that reporting, the
+  provincial potable-water response plan was waiting on the water utility. That is
+  a statement about the state of planning, and it is the honest answer to "how long
+  until water comes back": the responsible bodies had not, on the public record,
+  answered it either.
+
+**This is not the page's restoration figure.** The band rests on the crossing-repair
+mechanism, as above.
+
+## What is being done
+
+### Drinking Water Management Plan 2026
 
 Metro Vancouver's **Drinking Water Management Plan 2026** is the region's governing
 drinking-water plan. It names seismic risk as a core pressure — "Ensuring that
@@ -144,51 +192,6 @@ valves with line-break capability that would autonomously shut after a seismic
 event, with development "in the preliminary stages". Two Lower Mainland utilities,
 the same mechanism, the same not-yet-done status, both stated by the utility
 itself. See `gas.md` for the gas side; do not restate it here.
-
-### The one restoration estimate that exists, and it is not the water utility's
-
-A **March 2018 case study by Agriculture and Agri-Food Canada**, obtained through a
-freedom-of-information request by researcher Ken Rubin and reported by the Globe
-and Mail on **22 November 2019**, found that drinking water disruption in the
-Vancouver area **"could last several months"**. The same reporting records that
-**BC's emergency management agency had put its plans for providing potable water on
-hold pending an update from Metro Vancouver**, and that Metro Vancouver declined to
-give specifics, saying only that five new water tunnels were being designed to
-current seismic standards, with no completion timeline offered. [GM-AAFC-19] **[B]**
-
-Four guards travel with this, always:
-
-- It is a **federal finding about the Lower Mainland**, so the "never present an
-  out-of-region number as a local one" rule is not engaged. It is [B] because it is
-  an internal document that was never published, reaching us through FOI and a
-  newspaper, written by a federal agriculture department rather than by the water
-  utility.
-- **"Several months" is a range word, not a number.** It never becomes a figure, a
-  bar, or a band boundary.
-- It is **eight years old** and predates the Port Mann tunnel entering service, the
-  Second Narrows tunnel, and the current reservoir program. Say so.
-- **The more durable finding is the second half.** As of that reporting, the
-  provincial potable-water response plan was waiting on the water utility. That is
-  a statement about the state of planning, and it is the honest answer to "how long
-  until water comes back": the responsible bodies had not, on the public record,
-  answered it either.
-
-**This is not the page's restoration figure.** The band rests on the crossing-repair
-mechanism, as above.
-
-### Provincial statements on duration
-
-- "**Disruption to water and wastewater systems are expected for many months
-  following the event.**" [PEIRS] **[A]** — a provincial statement of duration,
-  qualitative and scenario-wide, not system-specific, and covering wastewater in
-  the same breath.
-- "**People are thirsty within 24 hours**, and it is unclear whether the water is
-  potable and where it can be accessed." And: "Within 24 hours, access to safe
-  drinking water becomes limited, and **distributing bulk potable water across the
-  affected region remains challenging for the first four to five days**."
-  [DCRRA-2025] **[A]** — this is the first-week statement, and it is about
-  *distribution of trucked water*, not about the network coming back. The two are
-  different clocks and must not be merged.
 
 ### The deep tunnel crossing program
 
@@ -286,12 +289,12 @@ reservoirs system entry, not here. Cross-reference rather than restate.
 ## What is not established
 
 - **A Metro Vancouver restoration-time estimate for the water system.** [?]
-  Searched: the Drinking Water Management Plan 2026 in full text (35 pp, the
-  governing plan); Water Committee agendas of 17 September 2025 and 21 January
-  2026 in full text; Metro Vancouver's water and emergency-management pages;
-  targeted searches on days / weeks / months / restore. **Not found**, and the DWMP
-  2026 states none. Narrow the open question to "a Metro Vancouver estimate" — the
-  AAFC "several months" finding exists and is recorded above.
+  Searched in full text: the Drinking Water Management Plan 2026 (35 pp, the
+  governing plan) and the Water Committee agendas of 17 September 2025 and
+  21 January 2026; also Metro Vancouver's water and emergency-management pages.
+  **Not found**, and the DWMP 2026 states none. Narrow the open question to
+  "a Metro Vancouver estimate" — the AAFC "several months" finding exists and is
+  recorded above.
 - **A member municipality publishes one, and the regional utility does not.** The **City
   of New Westminster's Potable Water Emergency Response Plan** (July 2009, updated January
   2023) is published in full and carries a quantified damage-and-duration table in its
@@ -332,11 +335,10 @@ reservoirs system entry, not here. Cross-reference rather than restate.
   neither city publishes one.
 - **The 2022 lifeline study in unredacted form.** Roughly two-thirds is withheld,
   including the per-main leak and break counts and the damage estimates for 21
-  storage facilities. Searched: Metro Vancouver's water, projects and construction
-  pages; board and Water Committee agendas of 17 September 2025 and 21 January 2026
-  in full text (**zero occurrences of "lifeline"**); the Drinking Water Management
-  Plan 2026 in full text; and Metro Vancouver's FOI page. **Not published**;
-  released by FOI to media, not through a board agenda.
+  storage facilities. Not on Metro Vancouver's water, project and construction pages
+  or its FOI page, and absent from the board and Water Committee agendas searched
+  above (**zero occurrences of "lifeline"**). **Not published**; released by FOI to
+  media, not through a board agenda.
   - **Metro Vancouver publishes no FOI disclosure log and no register of completed
     requests.** Requests go in writing to `foi@metrovancouver.org`, or to the
     Information and Privacy Officer, 4515 Central Boulevard, Burnaby; no fee or
@@ -357,15 +359,11 @@ reservoirs system entry, not here. Cross-reference rather than restate.
     positive statement in the governing plan and on the absence of any disclosure
     channel to check against.
 - **The Second Narrows 1-in-10,000-year design basis**, against a Metro Vancouver
-  primary document rather than trade press. [?] Searched: seven Metro Vancouver
-  sources — the Second Narrows, Annacis, Cambie-Richmond and Stanley Park project
-  pages, two Second Narrows newsletters, the Cambie-Richmond fact sheet — plus the
-  Drinking Water Management Plan 2026 and the Water Committee agendas of
-  17 September 2025 and 21 January 2026 in full text. **No return period appears in
-  any of them; "10,000" does not occur.** Every one says only "meets current
-  seismic standards" or "designed to withstand major earthquakes". The figure stays
-  [?] and does not go on the site. See the section above for the two provenance
-  problems that accompany it.
+  primary document rather than trade press. [?] The seven Metro Vancouver sources
+  tabulated above, plus the Water Committee agendas of 17 September 2025 and
+  21 January 2026 in full text: **no return period appears in any of them; "10,000"
+  does not occur.** The figure stays [?] and does not go on the site. See the section
+  above for the two provenance problems that accompany it.
 - **Distribution-system failure points**, municipality by municipality. Metro
   Vancouver's own plan lists identifying these as a future coordination action, so
   the absence is stated by the owner rather than inferred. [MV-DWMP-26] **[A]**

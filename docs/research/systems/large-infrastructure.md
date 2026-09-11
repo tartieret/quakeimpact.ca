@@ -15,14 +15,16 @@ wharves, piles and container cranes of the Vancouver-area ports. It is a proprie
 catastrophe-model output commissioned by an industry body, not an engineering assessment
 or an inspection of any of those facilities, and the band is set on the strength of the
 sourcing with that limit stated. The crustal M7 stays NOT ASSESSED: the study models the
-western Cascadia scenario only, and nothing published describes these facilities under a
-crustal event.
+western Cascadia scenario only, and nothing published states the damage or restoration
+these facilities would face under a crustal event. PEIRS names the airport and Tsawwassen
+in its crustal M7.0 scenario, but as exposure compounded by road liquefaction, not as a
+damage statement.
 
 ---
 
 ## Findings
 
-### The AIR study, and where it is readable
+### The 2013 AIR study — what it is, and where it is readable
 
 The YVR damage finding appears twice in the AIR study — in the executive summary at p. 17
 and in the western-scenario chapter at p. 81. [AIR-2013] **[A]**
@@ -46,60 +48,6 @@ stock as it then stood. The **[A]** marker certifies that the study states the c
 does not certify the prediction, and the text on the site must say what the document is.
 It carries an express no-reproduction-without-permission notice despite having been
 published on IBC's public asset host — check `../licensing.md` before quoting.
-
-### YVR — the access finding first
-
-**Road access to Vancouver International Airport is expected to be cut off during the
-first few critical days after the earthquake, because all of the bridges leading to it are
-impacted.** The Arthur Laing Bridge — the major connection between the airport and the
-city, which the study spells "Arthur Lainge" — is expected to suffer moderate damage, may
-need to be closed to traffic for a few days for inspection and initial repair, and may
-take a few weeks to restore fully. The Canada Line rail service to the airport is likely
-to be disrupted as well. [AIR-2013] **[A]** (M9.0 western Cascadia scenario.)
-
-An airport's usefulness after an earthquake is a question about whether anyone can reach
-it, and here is a published statement that for the first few days nobody can drive to it.
-
-Then the ground:
-
-- **Sea Island, on which the airport sits, is at moderate risk for liquefaction** — the
-  study names this as a likely source of damage to the runways. [AIR-2013] **[A]**
-- **Areas of tarmac are expected to be moderately damaged**, with minor ground settlement
-  or heaving of the runway surface. **Some sections of runway may be out of service for a
-  few days**, and restoration of some masonry structures at the airport may take a few
-  months. [AIR-2013] **[A]**
-
-Then, last, the buildings:
-
-- **Terminals, towers and hangars are expected to sustain "slight to moderate damage".**
-  At the moderate level the study describes cracks in columns, beams and structural walls,
-  cracks in partition and infill walls, falls of brittle cladding and plaster, and in steel
-  structures major cracks in welded connections or broken bolts and enlarged bolt holes.
-  Abbotsford International Airport is expected to sustain only slight damage.
-  [AIR-2013] **[A]**
-
-**Airport infrastructure loss: more than CAD 300 million** from shake and liquefaction,
-region-wide. [AIR-2013] **[A]** The study also gives a 17% share of scenario infrastructure
-loss in the same sentence, and its Table 28 gives an airport share of 4.9%; these are
-different quantities and neither should be printed. Use the dollar figure alone.
-
-### YVR — the other sourced material
-
-- The Pier D expansion used **vibro-replacement stone columns**: "Vibro Replacement Stone
-  Columns densification was required beneath the new building in order to prevent
-  settlement caused by soil liquefaction in the event of an earthquake." [MENARD-YVR]
-  **[B]** — a contractor portfolio page, undated, vendor marketing rather than an
-  engineering document. It states the claim directly; it does not carry [A] authority.
-- Sea Island is protected by a **15 km perimeter dike**. The **Sea Island Climate
-  Resilience Project** raises the dikes by about a metre to a total height of 4.7 m and
-  upgrades pump stations. [YVR-SICRP] **[A]**
-- **Do not overstate this project.** It is framed around sea-level rise and flooding, with
-  geotechnical stability included. It is not primarily a seismic project. [YVR-SICRP]
-  **[A]**
-- Two figures in the register do not match what was found: the pump-station count of
-  eight is not confirmed, and a pump-station cost of roughly $12 million appears in
-  search results against the register's ~$25 million. Dike and floodbox work at ~$60
-  million is the better-supported figure. **[?]** for the pump numbers.
 
 ### Port of Vancouver
 
@@ -129,13 +77,6 @@ damage grades is one grade.
 
 The rest of the port material stands:
 
-- **Roberts Bank Terminal 2** is being designed with seismic performance assessments and
-  geotechnical design work. [RBT2-ARCADIS] **[B]** — a corporate press release of 24 July
-  2026, which does **not** contain any "native soil densification and preloading"
-  wording. The project's environmental impact statement (27 March 2015, preface plus five
-  volumes) is the [A]-grade document, but the specific
-  geotechnical and seismic section was not recovered. [RBT2-EIS] **[A]** for the document,
-  **[?]** for its seismic content until the section is read.
 - **Deltaport sits on the liquefaction-prone Fraser sedimentary basin.** [MOODYS-RMS]
   **[B]** — the cited analysis (3 October 2017) discusses Fraser delta and Vancouver
   Basin liquefaction generally and **does not name Deltaport**. The claim as worded is
@@ -152,40 +93,16 @@ Use the dollar figure. PEIRS also describes the port as handling "19 per cent of
 Gross Domestic Product"; that phrasing is loose — it is a trade-in-goods share, not a GDP
 share — and must not be repeated.
 
-### BC Ferries
+### Roberts Bank Terminal 2
 
-- The **Horseshoe Bay** terminal renewal explicitly includes **improving seismic safety
-  across all three berths**. [BCF-HSB] **[A]** Cite the 2025 BC Ferries news release, not
-  the project page: the live project page in September 2026 describes the programme as
-  February 2025 to spring 2027, frames it as life-extension and structural and
-  operational upgrades, and no longer carries the seismic wording or a 2030 date. Do not
-  describe the timeline as running to 2030.
-- **Tsawwassen** [?] — no seismic assessment or upgrade located. Searched 10 September
-  2026: the **BC Ferry Commissioner's major capital approvals** page for terminals lists
-  two matters in its entire history and neither is Tsawwassen — **no Tsawwassen terminal
-  capital application has ever been filed with the regulator**; the Major Terminal
-  Efficiency Project application covers Tsawwassen twelve times and contains the word
-  "seismic" **zero** times; `bcferriesprojects.ca` carries project pages for eleven
-  terminals and **none for Tsawwassen**; and neither *Charting the
-  Course* (2025) nor the Annual Report to the Commissioner 2025–26 contains any asset-level
-  seismic statement. **[A]** on the absence, through those four channels.
-- **A named Lower Mainland facility its operator says fails current code — and it is not a
-  terminal.** BC Ferries states in a regulatory filing that its **Fleet Maintenance Unit in
-  Richmond**, where the fleet is serviced, has buildings "with a wide range of structural,
-  seismic and hazardous-material deficiencies" and is "**a facility site that does not meet
-  current seismic codes** and is susceptible to inundation during future sea level rise".
-  [BCF-FMU-23] **[A]** It is a maintenance yard, not a berth, and the page must say which —
-  but it is on the delta, and it is where the vessels are fixed.
-
-The asymmetry is the finding, and it has three legs: Horseshoe Bay has a seismic claim,
-Tsawwassen has nothing through four channels, and the Richmond maintenance yard has a
-published admission. **It remains a statement about the public record, not an
-inference about relative vulnerability.** Tsawwassen sits on the Fraser delta; Horseshoe Bay
-sits on rock at the mouth of Howe Sound. The terminal on the delta is the one with no public
-seismic assessment. PEIRS names Tsawwassen directly among the facilities whose impacts
-would be compounded by liquefaction of roadways in Richmond and Delta. [PEIRS] **[A]**
-
-### Roberts Bank Terminal 2 — three federal documents, and the criterion they disagree on
+The project is being designed with seismic performance assessments and geotechnical
+design work. [RBT2-ARCADIS] **[B]** — a corporate press release of 24 July 2026, which
+does **not** contain any "native soil densification and preloading" wording. The
+project's environmental impact statement (27 March 2015, preface plus five volumes) is the
+[A]-grade document; the EIS file holding its geotechnical and seismic section was not
+recovered, but that section's text is reproduced verbatim in the document below, so the
+content is readable. [RBT2-EIS] **[A]** for the document, **[?]** for where the section
+sits in it.
 
 The EIS geotechnical and seismic section is **EIS Volume 2, §9.1.3.2 with Table
 9.1.3-1**, and its revised text is reproduced verbatim inside the port authority's own
@@ -225,7 +142,7 @@ at **475 years**; the Panel records it at **1 in 1,000**, and puts bridge struct
 goes on the site alone** — name both sources, or drop the sentence. **[?]** as to which is
 right.
 
-### An existing facility, assessed — and it complicates the harbour-versus-delta story
+### Vancouver Shipyards, on the north shore of Burrard Inlet
 
 The port authority's permit archive holds a consulting engineer's geotechnical memorandum
 for **Seaspan's Vancouver Shipyards**, on the north shore of Burrard Inlet. Historical
@@ -257,6 +174,97 @@ experience, seismic and liquefaction assessment work on the **Deltaport Berth 3
 Expansion** — borehole drilling, seismic analyses, assessment of liquefaction and its
 consequences, remedial design. [RBT2-CVS-19] **[B]** A CV entry is weak evidence of
 content and adequate evidence that the work exists. It is not published.
+
+### Vancouver International Airport
+
+**Road access to Vancouver International Airport is expected to be cut off during the
+first few critical days after the earthquake, because all of the bridges leading to it are
+impacted.** The Arthur Laing Bridge — the major connection between the airport and the
+city, which the study spells "Arthur Lainge" — is expected to suffer moderate damage, may
+need to be closed to traffic for a few days for inspection and initial repair, and may
+take a few weeks to restore fully. The Canada Line rail service to the airport is likely
+to be disrupted as well. [AIR-2013] **[A]** (M9.0 western Cascadia scenario.)
+
+An airport's usefulness after an earthquake is a question about whether anyone can reach
+it, and here is a published statement that for the first few days nobody can drive to it.
+
+Then the ground:
+
+- **Sea Island, on which the airport sits, is at moderate risk for liquefaction** — the
+  study names this as a likely source of damage to the runways. [AIR-2013] **[A]**
+- **Areas of tarmac are expected to be moderately damaged**, with minor ground settlement
+  or heaving of the runway surface. **Some sections of runway may be out of service for a
+  few days**, and restoration of some masonry structures at the airport may take a few
+  months. [AIR-2013] **[A]**
+
+Then, last, the buildings:
+
+- **Terminals, towers and hangars are expected to sustain "slight to moderate damage".**
+  At the moderate level the study describes cracks in columns, beams and structural walls,
+  cracks in partition and infill walls, falls of brittle cladding and plaster, and in steel
+  structures major cracks in welded connections or broken bolts and enlarged bolt holes.
+  Abbotsford International Airport is expected to sustain only slight damage.
+  [AIR-2013] **[A]**
+
+**Airport infrastructure loss: more than CAD 300 million** from shake and liquefaction,
+region-wide. [AIR-2013] **[A]** The study also gives a 17% share of scenario infrastructure
+loss in the same sentence, and its Table 28 gives an airport share of 4.9%; these are
+different quantities and neither should be printed. Use the dollar figure alone.
+
+**The other sourced material on the airport.**
+
+- The Pier D expansion used **vibro-replacement stone columns**: "Vibro Replacement Stone
+  Columns densification was required beneath the new building in order to prevent
+  settlement caused by soil liquefaction in the event of an earthquake." [MENARD-YVR]
+  **[B]** — a contractor portfolio page, undated, vendor marketing rather than an
+  engineering document. It states the claim directly; it does not carry [A] authority.
+- Sea Island is protected by a **15 km perimeter dike**. The **Sea Island Climate
+  Resilience Project** raises the dikes by about a metre to a total height of 4.7 m and
+  upgrades pump stations. [YVR-SICRP] **[A]**
+- **Do not overstate this project.** It is framed around sea-level rise and flooding, with
+  geotechnical stability included. It is not primarily a seismic project. [YVR-SICRP]
+  **[A]**
+- Two figures in the register do not match what was found: the pump-station count of
+  eight is not confirmed, and a pump-station cost of roughly $12 million appears in
+  search results against the register's ~$25 million. Dike and floodbox work at ~$60
+  million is the better-supported figure. **[?]** for the pump numbers.
+
+### BC Ferries terminals, and the Richmond maintenance yard
+
+- The **Horseshoe Bay** terminal renewal explicitly includes **improving seismic safety
+  across all three berths**. [BCF-HSB] **[A]** Cite the 2025 BC Ferries news release, not
+  the project page: the live project page in September 2026 describes the programme as
+  February 2025 to spring 2027, frames it as life-extension and structural and
+  operational upgrades, and no longer carries the seismic wording or a 2030 date. Do not
+  describe the timeline as running to 2030.
+- **Tsawwassen** [?] — no seismic assessment or upgrade located. Searched 10 September
+  2026: the **BC Ferry Commissioner's major capital approvals** page for terminals lists
+  two matters in its entire history and neither is Tsawwassen — **no Tsawwassen terminal
+  capital application has ever been filed with the regulator**; the Major Terminal
+  Efficiency Project application covers Tsawwassen twelve times and contains the word
+  "seismic" **zero** times; `bcferriesprojects.ca` carries project pages for eleven
+  terminals and **none for Tsawwassen**; and neither *Charting the
+  Course* (2025) nor the Annual Report to the Commissioner 2025–26 contains any asset-level
+  seismic statement. **[A]** on the absence, through those four channels.
+- **A named Lower Mainland facility its operator says fails current code — and it is not a
+  terminal.** BC Ferries states in a regulatory filing that its **Fleet Maintenance Unit in
+  Richmond**, where the fleet is serviced, has buildings "with a wide range of structural,
+  seismic and hazardous-material deficiencies" and is "**a facility site that does not meet
+  current seismic codes** and is susceptible to inundation during future sea level rise".
+  [BCF-FMU-23] **[A]** It is a maintenance yard, not a berth, and the page must say which —
+  but it is on the delta, and it is where the vessels are fixed.
+
+The asymmetry is the finding, and it has three legs: Horseshoe Bay has a seismic claim,
+Tsawwassen has nothing through four channels, and the Richmond maintenance yard has a
+published admission. **It remains a statement about the public record, not an
+inference about relative vulnerability.** Tsawwassen sits on the Fraser delta; Horseshoe Bay
+sits on rock at the mouth of Howe Sound. The terminal on the delta is the one with no public
+seismic assessment. PEIRS names Tsawwassen directly — with Vancouver
+International Airport — among the facilities whose impacts would be compounded by
+liquefaction of roadways in Richmond and Delta, in its crustal M7.0 Greater Vancouver
+planning scenario (see `transportation.md`). [PEIRS] **[A]** That is an exposure
+statement, not a damage or restoration statement, and it does not fill the crustal
+column.
 
 ### Kobe, as analogue only
 
@@ -293,16 +301,26 @@ be used for that. It is not a Lower Mainland number and never becomes one.
 - **Any engineering assessment or inspection-based statement of how the existing port
   terminals, container cranes, pile-supported wharves or YVR runways would perform.** The
   AIR statements above are 2013 catastrophe-model output against the stock as it then
-  stood. No operator, regulator or engineering assessment of these facilities has been
-  located. **[?]** Something is published, and it is not an assessment.
-- **Anything at all about these facilities under the crustal M7 scenario.** The AIR study
-  models the western Cascadia scenario. The crustal column has no source. **[?]**
-- **Any published seismic assessment of the Tsawwassen ferry terminal.** Not located.
-  **[?]**
-- **The RBT2 geotechnical and seismic section** of the 2015 environmental impact
-  statement. The registry project page and several component files were recovered; the
-  specific section URL was not. A plausible but unconfirmed home is the Appendix 9.5-A
-  technical report. **[?]**
+  stood. No operator, regulator or engineering assessment of those facilities has been
+  located. **[?]** Something is published, and it is not an assessment. Three things sit
+  outside that gap and do not close it: the Seaspan memorandum, which assesses a shipyard
+  rather than a container terminal; NRCan's review of Roberts Bank Terminal 2, which is a
+  design review of a facility not yet built; and the Deltaport Berth 3 work, which is
+  established as done and unpublished.
+- **Any damage or restoration statement about these facilities under the crustal M7
+  scenario.** The AIR study models the western Cascadia scenario. PEIRS names the airport
+  and Tsawwassen in its crustal scenario as exposure compounded by road liquefaction, and
+  that is the whole of it; the crustal column has no damage source. **[?]**
+- **Any published seismic assessment of the Tsawwassen ferry terminal.** Not located —
+  and the absence itself is established **[A]** through the four channels above, including
+  that no Tsawwassen terminal capital application has ever been filed with the ferry
+  regulator. **[?]** stands on the terminal's seismic condition, not on the absence.
+- **The EIS file holding the RBT2 geotechnical and seismic section**, in the 2015
+  environmental impact statement. Its text is readable verbatim through the port
+  authority's response to the Review Panel [RBT2-IR2-17] **[A]**; what was not recovered
+  is the file itself. The registry project page and several
+  component files were recovered; the specific section URL was not. A plausible but
+  unconfirmed home is the Appendix 9.5-A technical report. **[?]**
 - **The Sea Island Climate Resilience Project's pump-station count and cost.** Two figures
   in the register conflict with what was found. **[?]**
 - **Kobe's port ranking figures**, verified inside a source. RMS has been read in full

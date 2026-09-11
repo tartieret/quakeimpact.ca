@@ -14,12 +14,13 @@ This file becomes the `SOURCES` export in `src/content/site.ts`. `Impact.source`
 `"TBD"` in all twenty-four cells today; it should be generated from this table rather
 than retyped, so that a corrected date or URL propagates in one edit.
 
-Keys follow `CONVENTIONS.md`: `SCOPE-TOPIC-YY`. Where a key's year is corrected the key
-changes with it and every use is updated in the same pass.
+Keys follow `CONVENTIONS.md`: `SCOPE-TOPIC-YY`.
 
 ---
 
-## The Route column, and why it exists
+## How to read a row
+
+### Route
 
 **Route** says how we reached the claim, which is what makes a confidence marker
 auditable. A marker certifies a route; without the route recorded, `[A]` and `[B]` are
@@ -38,7 +39,7 @@ engineering fact — only for the existence of the statement. And a row whose UR
 marked **paywalled** or **403 to automated fetch** cannot be re-verified by anyone
 following the link, which is a property of the claim and not a footnote about our tools.
 
-## The Licence column
+### Licence
 
 `—` means ordinary citation: the facts are free to state, the expression is not, and the
 site paraphrases and links. Anything else is a per-dataset position recorded in
@@ -57,6 +58,8 @@ its licence is named here.**
   may be stated and short passages quoted with attribution; nothing is reproduced. The DCRRA goes further — its host declares
   **"Access Only"** (`DCRRA-LICENCE`). Legislation on BC Laws is the exception, under the
   **King's Printer Licence – British Columbia**, and may be quoted at length.
+
+### Dates
 
 Dates are the document's own publication date where verified. `undated` means the page
 carries no date; `not recovered` means verification was attempted in the September 2026
@@ -396,7 +399,7 @@ pass and failed.
 
 ---
 
-## Rows that were retired, and where their claims went
+## Retired keys, and where their claims went
 
 **The `BERLIN-*` family — retired.** `BERLIN-AM`, `BERLIN-NASM`, `BERLIN-TINE`,
 `BERLIN-USAF` and `BERLIN-MIG` supported the West Berlin airlift capacity comparison,
@@ -425,7 +428,7 @@ Recorded so a key seen in an older draft resolves to something.
 | `GSC-2019-INS` | `KELLY-2019` | The unidentified "2019 study" behind the insurer-failure figures is Kelly, Kleffner & Kelly in the *Geneva Papers on Risk and Insurance* — peer-reviewed, and paywalled. Identified, not lost. |
 | `NAB-WIKI` | `NAB-ICCHGE-08` | An encyclopedia entry, which the rubric does not admit as a source. Superseded by the designers' own peer-reviewed ICCHGE paper, read in full. |
 
-## The DCRRA decision
+## Why the DCRRA is three rows
 
 `DCRRA-2025`, `DCRRA-EXP` and `DCRRA-APPC` are **three rows for one publication**, and
 they stay three rows.
@@ -453,32 +456,29 @@ Provincial Report by mistake.
 
 ---
 
-## What this register cannot fix
+## What cannot be re-verified by following a link
 
-Seven rows carry **not recovered** in the URL column. Each is a claim that currently
-cannot be re-verified by a reader following a link, which is a fact about the evidence and
-belongs in `open-questions.md` rather than being smoothed over here:
+Ten rows carry **not recovered** in the URL column. Each is a claim a reader cannot
+re-verify by following a link, which is a fact about the evidence and belongs in
+`open-questions.md` rather than being smoothed over here: `BCH-COQUITLAM-RRA-06`,
+`BCH-RRA-F2020`, `BCH-RRA-F2023`, `BCH-RUSKIN-F2019`, `CCE-PMH1-14`, `CHCH-POP`,
+`CRTC-2016-165`, `GSC-OF-5741`, `QB-MOTH-95` and `UBCM-DCRRA`. `MV-CH2M-18` is not lost
+but deliberately unpublished, which is a different fact.
 
-`CCE-PMH1-14`, `CHCH-POP`, `CRTC-2016-165`, `GSC-OF-5741`, `MV-BOOM-25`, `QB-MOTH-95`,
-`UBCM-DCRRA`, and `MV-CH2M-18` (which is not lost but deliberately unpublished — a
-different fact).
-
-`AIR-2013`, `RMS-KOBE` and `BERLIN-USAF` were recovered from Internet Archive captures
-and carry the `archive` route — their publishers' own copies are gone, which is itself a
-fact about the record, and `BERLIN-TINE` arrives the same way. `GSC-2019-INS` was
-identified as `KELLY-2019` and `NAB-WIKI` was replaced by `NAB-ICCHGE-08`; both are
-retired above. `CBOC-2016` is recorded as **not retrievable**, its figures reaching us
-only through `CBOC-2016-PR`.
+`AIR-2013` and `RMS-KOBE` were recovered from Internet Archive captures and carry the
+`archive` route — their publishers' own copies are gone, which is itself a fact about the
+record. `CBOC-2016` is recorded as **not retrievable**, its figures reaching us only
+through `CBOC-2016-PR`.
 
 Rows that are **paywalled**, **403 to automated fetch** or otherwise unreachable at their
-primary URL: `CHANG-2000`, `GM-AAFC-19`, `IRONWORKERS`, `JAVANBAKHT-23`, `KELLY-2019`,
-`KSB-GROUT-17`, `NAB-IABSE-08`, `PALOMINO-2023`, `PM-IABSE-17`, `PM-SEI-17`,
-`S2S-BRAYSHAW-12`, `SEPULVEDA-23`, `SPHERE-2018`, `SY-GEESD-18`, plus the City of
-Vancouver council PDFs (`COV-RISK-2024`, `COV-PLAN-2026`, `COV-URM-2000`, `COV-DFPS-2001`),
-`CBOC-2016`, `CR16-ST`, `EGBC-PBSD` and `UBC-FUEL`. Each was read by another route or not
-at all; the row says which.
+primary URL: `CDA-2007`, `CHANG-2000`, `EGBC-DSR-GL`, `GM-AAFC-19`, `IRONWORKERS`,
+`JAVANBAKHT-23`, `KELLY-2019`, `KSB-GROUT-17`, `NAB-IABSE-08`, `PALOMINO-2023`,
+`PM-IABSE-17`, `PM-SEI-17`, `S2S-BRAYSHAW-12`, `SEPULVEDA-23`, `SPHERE-2018`,
+`SY-GEESD-18`, plus the City of Vancouver council PDFs (`COV-RISK-2024`, `COV-PLAN-2026`,
+`COV-URM-2000`, `COV-DFPS-2001`), `CBOC-2016`, `CR16-ST`, `EGBC-PBSD` and `UBC-FUEL`.
+Each was read by another route or not at all; the row says which.
 
-Five of the paywalled rows are **unread and cited as leads only**, never as evidence:
+Six of them are **unread and cited as leads only**, never as evidence: `CDA-2007`,
 `KELLY-2019`, `KSB-GROUT-17`, `PM-SEI-17`, `PM-IABSE-17` and `SY-GEESD-18`. `NAB-IABSE-08`
 is unread and held as a corroboration route; `PALOMINO-2023` is held at its abstract.
 `KCB-GEOMB-25` is a different case again — not paywalled but member-distributed, and

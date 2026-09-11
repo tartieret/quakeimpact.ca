@@ -6,8 +6,8 @@
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
 
-**Status.** Twelve systems assessed, plus one new system the site does not yet
-carry and one entry that should stop being a system at all. **One and a half rows
+**Status.** Twelve systems assessed — one of them a system the site does not yet
+carry — and one entry that should stop being a system at all. **One and a half rows
 carry no published assessment**: dams in both scenarios, and large infrastructure
 in the crustal column only.
 
@@ -45,15 +45,15 @@ else on the grid does and weather never failed at all.
 
 ## Reconciliation against `src/content/site.ts`
 
-The code currently carries scaffolding, not findings. Seven of twelve rows
-disagree, and **in every disagreement the code is more confident than the
-evidence**.
+The code currently carries scaffolding, not findings. Seven of the thirteen rows
+below disagree, and **in every disagreement but one the code is more confident than
+the evidence** — the exception is large infrastructure, noted in the table.
 
 | System | Code says | Research says | |
 | --- | --- | --- | --- |
 | Communications | high / high | Medium / Medium | **conflict** — code asserts High where nothing was assessed |
 | Electricity | high / high | High / High | agrees — scaffolded, nothing behind it |
-| Water | high / high | High / High | agrees |
+| Water | high / high | High / High | agrees — scaffolded, nothing behind it |
 | Sanitation | high / high | High / High | agrees — scaffolded, nothing behind it |
 | Transportation | high / **medium** | High / **High** | **conflict**, crustal column |
 | Large infrastructure | unknown / unknown | **Medium** / Not yet assessed | **conflict**, Cascadia column — the code is *less* confident than the evidence, the only row where that is true |
@@ -65,8 +65,9 @@ evidence**.
 | Absence of outside help | high / low | High / Low | agrees |
 | Natural gas | *absent* | High / High | **decided**: add to `SYSTEMS`, taking the row weather vacates |
 
-The agreements matter as much as the conflicts. In four rows the code asserts a
-band with nothing behind it and happens to land on the answer the evidence gives.
+The agreements matter as much as the conflicts. In four rows — electricity, water,
+sanitation and housing — the code asserts a band with nothing behind it and happens
+to land on the answer the evidence gives.
 **Those rows are replaced too.** A right answer arrived at that way is still a
 defect, because the next scaffolded value will not be lucky.
 

@@ -26,7 +26,7 @@ also has a Lower Mainland source, the local source leads and the analogue follow
 the case for fuel, and it should become the case for everything else over time.
 
 Some of the sources behind these analogues are institutional websites or professional journals
-rather than government, utility or peer-reviewed publications, and are marked accordingly: a
+rather than government, utility or peer-reviewed publications, and are marked accordingly:
 news media carry the Christchurch ones.
 
 ### Christchurch 2011 — sanitation, displacement, and masonry façades
@@ -138,13 +138,6 @@ precise barrels-per-day breakdown (the "1,485 kb/d shut" figure is CSIS, not the
 government); the start date of the Japan Sea-coast rail detour (undated in the source); Sendai's
 March 2012 restart date (METI says only "several months to a year"). **[?]**
 
----
-
-### Retired — the Berlin Airlift comparison
-
-The Berlin Airlift comparison is retired and does not go on the site. The `BERLIN-*` keys
-are retired in `../sources.md`.
-
 ### Water demand against the humanitarian standards
 
 Daily water demand for **2,642,825 people**:
@@ -166,6 +159,13 @@ humanitarian standard calls a minimum is itself the finding.
 normally treats roughly **430 litres per person per day** of wastewater, against a Sphere
 emergency minimum of 15 — a factor of about 29. Same point, local, current, and needing no
 caveats at all. See `systems/water.md` and `systems/sanitation.md`.
+
+### Retired — the Berlin Airlift comparison
+
+The Berlin Airlift comparison is retired and does not go on the site. The `BERLIN-*` keys
+are retired in `../sources.md`.
+
+---
 
 ## What is not established
 

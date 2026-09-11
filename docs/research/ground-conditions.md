@@ -19,7 +19,7 @@ outbound links until the Institute for Catastrophic Loss Reduction says otherwis
 
 ## Findings
 
-### 1. Liquefaction return periods in Richmond and Delta
+### Liquefaction in Richmond and Delta
 
 **The headline number.** "The liquefaction return period varies from 100 to over 500
 years. In Richmond and Delta regions, it is expected that soil liquefaction could occur
@@ -51,7 +51,7 @@ Delta have a cumulative liquefiable thickness greater than **9.6 m**, with a mea
 "Liquefaction manifestations are expected in Richmond and Delta" is verbatim from this
 work, not from the microzonation project. [JAVANBAKHT-24] **[A]**
 
-### 2. Triggering probability in a Cascadia event
+### Triggering probability in a Cascadia event
 
 Cascadia interface earthquakes with **Mw greater than 8.9 give a 31–57% probability of
 liquefaction triggering** in the region. Verified against the thesis abstract; published
@@ -63,7 +63,7 @@ confirmed in any retrieved text and stand at **[?]** pending direct access to th
 *Earthquake Spectra* paper, whose publisher page returns 403 to automated fetching. The
 31–57% figure does not depend on them and may still be used; the two details may not.
 
-### 3. Georgia Basin long-period amplification
+### Long-period amplification over the Georgia Basin
 
 Metro Vancouver sits above the **Georgia Sedimentary Basin**, and sedimentary basins
 amplify shaking "particularly at long periods, impacting tall buildings and other
@@ -100,31 +100,7 @@ Mainland but higher for Vancouver Island and the Bridge River area, with longer 
 duration in some cases — a 2014 finding, and it must be dated in the sentence.
 [BCH-PSHA-14] **[A]**
 
-### 4. The province's own reasons to prefer the microzonation maps for Metro Vancouver
-
-Two methodological limitations, both stated by the DCRRA about itself: [DCRRA-APPC]
-**[A]**
-
-> "The hazard exposure analysis **does not incorporate existing seismic microzonation
-> work that has been completed at a detailed level, such as for the city of Metro
-> Vancouver**."
-
-> "The DCRRA Seismic Working Group … has flagged that **damage correlation with PGA for
-> many structures is poor**, recommending other metrics such as various spectral
-> accelerations periods."
-
-Read with the licensing position below, this is an awkward but honest place to be: the
-province says its own regional layer is the wrong tool for Metro Vancouver ground, and
-points at a map set the site cannot yet reproduce.
-
-It matters for how DCRRA exposure figures are read as well. The DCRRA's exposure numbers
-are computed against **2,475-year return period ground motions (2% in 50 years) from
-Canada's sixth-generation seismic hazard model**, with thresholds of **PGA above 0.09 g**
-(roughly MMI VI) for buildings, population, critical facilities and businesses, and
-**PGA above 0.28 g** (roughly MMI VII) for surface infrastructure. These are hazard-zone
-exposure figures at the code design level, **not a scenario result**. [DCRRA-EXP] **[A]**
-
-### 5. The microzonation map set, and why it cannot be drawn
+### The microzonation map set, and why it cannot be drawn
 
 The **Metro Vancouver Seismic Microzonation Mapping Project** — Western University and
 the Institute for Catastrophic Loss Reduction, with support from the BC Ministry of
@@ -158,19 +134,33 @@ The consequences, set out in full in `../licensing.md`:
   restyle or derive nothing.** [MVSMMP-LIC] **[A]**
 
 This is why the ground-conditions page ships as prose. The evidence is not the
-constraint; the licence is.
+constraint; the licence is. The same position governs the set's **slope instability**
+layer, which is the file's only mapped source on that hazard: link, do not reproduce.
 
-### 6. Municipal regulation already reflects the ground
+**The province's own reasons to prefer these maps over its own regional layer.**
+Two methodological limitations, both stated by the DCRRA about itself: [DCRRA-APPC]
+**[A]**
 
-Richmond requires a geotechnical special study for construction on liquefiable ground.
-[RICHMOND-PL1] **[A]** This is a useful, undramatic way to show that the finding is
-already operational in local policy rather than a novel claim by this site.
+> "The hazard exposure analysis **does not incorporate existing seismic microzonation
+> work that has been completed at a detailed level, such as for the city of Metro
+> Vancouver**."
 
-### 7. Secondary hazards — slope instability and dikes
+> "The DCRRA Seismic Working Group … has flagged that **damage correlation with PGA for
+> many structures is poor**, recommending other metrics such as various spectral
+> accelerations periods."
 
-**Slope instability** is mapped in the MVSMMP Phase 1 set, at neighbourhood scale, for
-the western Metro Vancouver communities. [MVSMMP] **[A]** The same licence position
-applies: link, do not reproduce.
+Read with the licensing position above, this is an awkward but honest place to be: the
+province says its own regional layer is the wrong tool for Metro Vancouver ground, and
+points at a map set the site cannot yet reproduce.
+
+It matters for how DCRRA exposure figures are read as well. The DCRRA's exposure numbers
+are computed against **2,475-year return period ground motions (2% in 50 years) from
+Canada's sixth-generation seismic hazard model**, with thresholds of **PGA above 0.09 g**
+(roughly MMI VI) for buildings, population, critical facilities and businesses, and
+**PGA above 0.28 g** (roughly MMI VII) for surface infrastructure. These are hazard-zone
+exposure figures at the code design level, **not a scenario result**. [DCRRA-EXP] **[A]**
+
+### Secondary hazards in the provincial scenarios
 
 **Dike vulnerability on the Fraser delta** is framed in the peer-reviewed delta review
 alongside subsidence, flooding, liquefaction and tsunami — that is, the hazards are
@@ -184,6 +174,8 @@ Vancouver International Airport and the Tsawwassen ferry terminal. [PEIRS] **[A]
 Cascadia scenario names liquefaction, landslides, floods and seiches among its cascading
 events. [DCRRA-2025] **[A]** Neither is a dike assessment. Neither models secondary
 hazards quantitatively — both say so of themselves. See `scenarios.md`.
+
+### The Richmond dikes
 
 **Richmond publishes a seismic performance claim about its own dikes.** Richmond
 Fire-Rescue states: "Computer
@@ -246,6 +238,12 @@ liquefaction is extensive and the riverbank steep. **Attribute both, date both, 
 resolve them in our own voice.** The public page is a summary for residents and the reports
 are engineering; the finding is the distance between them, and that distance is the reason
 this site exists.
+
+### Municipal regulation already reflects the ground
+
+Richmond requires a geotechnical special study for construction on liquefiable ground.
+[RICHMOND-PL1] **[A]** This is a useful, undramatic way to show that the finding is
+already operational in local policy rather than a novel claim by this site.
 
 ---
 

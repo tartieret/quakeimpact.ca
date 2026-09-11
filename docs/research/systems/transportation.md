@@ -67,27 +67,6 @@ Cite Volume 4 for the history and the retrofit program, not as current design la
 Ministry's own standards index describes it as a background document from 2005 and
 directs readers to Volume 1 Section 4. [MOTI-BSPM] **[A]**
 
-### The scale of what is being asked to survive
-
-"MoTI is responsible for **over 400 km of Provincial Disaster Response Routes** and
-maintains **over 2500 bridges** and other infrastructure located in the highest seismic
-zones of BC. The loss of any portion of these routes or infrastructure after a major
-earthquake could significantly impact emergency response efforts, affect public
-well-being, and hinder the economic recovery of the region." [BCSIMS-22] **[A]**
-
-The province instruments a small fraction of that. The BC Smart Infrastructure
-Monitoring System has run since 2009, with a strong-ground-motion network of over 120
-earthquake sensors and structural health monitoring on **14 MoTI bridges and 1 tunnel**.
-[BCSIMS-22] **[A]** The stated reason is the useful part: "**There will be many
-slight-to-moderately damaged bridges after an earthquake and the ability to quickly
-determine their safety will allow inspectors to focus on higher priority structures.**"
-[BCSIMS-22] **[A]**
-
-Instrumented Lower Mainland structures include the George Massey Tunnel, Queensborough,
-Pitt River, Ironworkers Memorial and Port Mann, with Lions Gate and Pattullo listed as
-future. [BCSIMS-22] **[A]** The source PDF's table columns extract mis-aligned; do not
-pair a year or a length with a named bridge from it without re-reading the original.
-
 ### Approaches, not spans
 
 Three Lower Mainland crossings have published ground-displacement figures at their
@@ -332,17 +311,16 @@ from either release. The rest of both lists is not disputed here.
 **Publish no Port Mann-specific return period, ground motion level or performance
 level.** The absence has a shape: **three published documents on this bridge's seismic
 design specifically, none of them free.** They sit inside a larger project document set of
-at least eight papers, listed under "What is not established" below; these three are the
+at least eight papers, described under "What is not established" below; these three are the
 ones addressing seismic design.
 
 - Goodyear, D. (2017), "Design Basis for the New Port Mann Bridge over the Fraser River",
-  *Structural Engineering International* (IABSE). Peer-reviewed, by the designer, and
-  titled *design basis*. Paywalled; open-access status CLOSED; not read. [PM-SEI-17]
-  **[?]**
+  *Structural Engineering International* (IABSE) — by the designer, and titled *design
+  basis*. Paywalled; not read. [PM-SEI-17] **[?]**
 - Lund, H. & Mitchell, R. (2017), "Soil Structure Interaction and Performance Based
-  Design for the Port Mann Cable Stayed Bridge", IABSE Symposium Vancouver, *IABSE
-  Reports*. The geotechnical companion, closest in subject to what this page needs.
-  Paywalled; not read. [PM-IABSE-17] **[?]**
+  Design for the Port Mann Cable Stayed Bridge", IABSE Symposium Vancouver — the
+  geotechnical companion, closest in subject to what this page needs. Paywalled; not read.
+  [PM-IABSE-17] **[?]**
 - Leggett & Gérin (2014), *Port Mann / Highway 1 Improvement Project: Performance Based
   Seismic Design*, 9th International Conference on Short and Medium Span Bridges, Calgary,
   Vol. 4, p. 2141. Paywalled; not read.
@@ -494,6 +472,24 @@ the soil columns are shallower, the seismic motions are amplified at shorter per
 than 0.6 second to nearly twice as much as the seismic motions on the south side."
 [NAB-ICCHGE-08] **[A]**
 
+### The crossings table
+
+A blank row means searched and not found, not unexamined.
+
+| Crossing | Public seismic finding located | Marker |
+| --- | --- | --- |
+| George Massey Tunnel | Yes, fully — retrofit half-completed, 150–240-year capacity, does not meet CSA S6-14 [GMC-TUNNEL-19] | **[A]** |
+| Oak Street | Yes — 475-year collapse-prevention objective, 100 mm approach settlement, GFRP wrap, re-studied 2021–22 [OAK-13WCEE] [OAK-BASIS-22] | **[A]** / [B] |
+| Knight Street | Yes — lifeline class, "need not be passable" after the 1000-year event, shear-key failure at all approach spans [KSB-2010] | **[A]** |
+| Queensborough | Yes — collapse prevention at 1/475 only, "may or may not be functional"; 150 mm approach displacement after remediation [QB-MOTH-95] | **[A]** |
+| Golden Ears | Yes — 475/1000/2475 objectives, ~0.5 m river-bank displacement at 2475, ~0.3 m at the main piers after densification [GEB-CGS-08] [NAB-ICCHGE-08] | **[A]** |
+| Alex Fraser | Partly — foundations on weak deltaic materials, early liquefaction practice; no return period [AFB-CGS-17] | **[A]** |
+| Pattullo replacement | Status yes, seismic qualitative only [BCGOV-2026-PATT] | **[A]** |
+| Port Mann | Qualitative only; three quantitative sources published, all paywalled and unread [PM-SEI-17] [PM-IABSE-17] | **[?]** |
+| Canada Line — North Arm Bridge | Yes — 100/475-year project criteria, partial liquefaction expected, no ground densification used [NAB-ICCHGE-08] | **[A]** |
+| Mission (Fraser Valley, disaster recovery network — not Metro Vancouver) | Yes, fully — 475-year collapse prevention with function 'desirable but not required', approach settlements to 200 mm, south abutment FoS 0.70, toe berms built [MISSION-CGS-18] | **[A]** |
+| SkyTrain guideways generally | Nothing located | **[?]** |
+
 ### The most useful transit fact on this page is an event, not a standard
 
 On **29 December 2015 at 23:39 PST** a **magnitude 4.8** earthquake occurred 12 km
@@ -525,6 +521,27 @@ Vancouver planning scenario:
   compound impacts to **Vancouver International Airport and Tsawwassen Ferry
   Terminal**." [PEIRS] **[A]**
 
+### The scale of the network, and what is instrumented
+
+"MoTI is responsible for **over 400 km of Provincial Disaster Response Routes** and
+maintains **over 2500 bridges** and other infrastructure located in the highest seismic
+zones of BC. The loss of any portion of these routes or infrastructure after a major
+earthquake could significantly impact emergency response efforts, affect public
+well-being, and hinder the economic recovery of the region." [BCSIMS-22] **[A]**
+
+The province instruments a small fraction of that. The BC Smart Infrastructure
+Monitoring System has run since 2009, with a strong-ground-motion network of over 120
+earthquake sensors and structural health monitoring on **14 MoTI bridges and 1 tunnel**.
+[BCSIMS-22] **[A]** The stated reason is the useful part: "**There will be many
+slight-to-moderately damaged bridges after an earthquake and the ability to quickly
+determine their safety will allow inspectors to focus on higher priority structures.**"
+[BCSIMS-22] **[A]**
+
+Instrumented Lower Mainland structures include the George Massey Tunnel, Queensborough,
+Pitt River, Ironworkers Memorial and Port Mann, with Lions Gate and Pattullo listed as
+future. [BCSIMS-22] **[A]** The source PDF's table columns extract mis-aligned; do not
+pair a year or a length with a named bridge from it without re-reading the original.
+
 ---
 
 ## What is not established
@@ -533,7 +550,7 @@ Each item below was searched for specifically. Where the search was cut short, t
 said.
 
 - **Crossing-specific published approach-embankment displacement estimates beyond Oak
-  Street, Queensborough and Golden Ears.** Searched: the MoTI Bridge Standards and
+  Street, Queensborough, Golden Ears and Mission (a Fraser Valley crossing).** Searched: the MoTI Bridge Standards and
   Procedures Manual (all eight volumes indexed; Volume 1 §4 and §6 and Volume 4 retrieved
   in full), the Highway 99 Tunnel Project document library, Canadian Conference on
   Earthquake Engineering proceedings via caee.ca, the 13WCEE proceedings, Klohn Crippen
@@ -549,31 +566,20 @@ said.
   quoting ministry officials, fifteen years old, containing at least one claim
   contradicted by later provincial engineering documents. [PROGRESS-2011] **[B]**
 - **Port Mann seismic criteria.** The project document set runs to **at least eight**
-  published papers. The 2014 conference's own published accepted-papers list, recovered
-  from a web archive, carries **six Port Mann / Highway 1
-  Improvement Project papers in one project session**, all submitted under Keith Holmes of
-  MMM Group: *Performance Based Seismic Design* (the Leggett & Gérin paper this file
-  names), *Description and Overview*, *Rehabilitation, Retrofit and Upgrade of Existing
-  Structures*, **Lightweight EPS Embankments**, *Design and Construction of Curved Steel
-  Bridges*, and *Staged Bridge Design and Construction*. [SMSB-2014-LIST] **[A]** for the
-  existence, exact titles and submitting author — the conference's own list, not a snippet.
-  Note the list records **submitters**, not full authorship.
-  - **"Lightweight EPS Embankments" is the first identified Port Mann approach-embankment
-    document located**, and it bears on the question this file circles.
-    On its title it would not license a design level, and it is unread.
-  - The proceedings are **not online**: a web-archive scan of the whole conference domain
-    filtered to PDFs returns zero. It archived its programme, not its papers. Route:
-    purchase, or a library holding SMSB 2014 (Vol. 4, p. 2141 for the seismic paper).
-  - [PM-SEI-17] has migrated to a new publisher and the paywalled landing page is live;
-    [PM-IABSE-17] is sold at about €25, and its free publisher preview **was retrieved and
-    is page 1 only** — title, affiliations, abstract, one figure caption, and
-    **no return period, ground-motion level or performance level**. A preview is not a read.
-  - The authors of [PM-IABSE-17] are **Hans Lund** (T.Y. Lin International, Bellevue) and
-    **Robert Mitchell** (Shannon & Wilson, Seattle). That places the geotechnical
-    co-author at a Seattle firm, which is worth knowing before anyone cites the paper as
-    wholly BC-sourced.
-  - **None has been read, so no Port Mann number is published anywhere in this folder.**
-    **[?]**
+  published papers, of which the **three** addressing seismic design are the two IABSE
+  papers and the Leggett & Gérin conference paper named in the findings above. The 2014
+  conference's own published accepted-papers list carries **six** Port Mann / Highway 1
+  Improvement Project papers in one project session, all submitted under Keith Holmes of
+  MMM Group — among them the Leggett & Gérin seismic paper and **"Lightweight EPS
+  Embankments"**, the first identified Port Mann approach-embankment document and unread.
+  [SMSB-2014-LIST] **[A]** for the existence and exact titles; the list records
+  **submitters**, not full authorship. The proceedings are not online: the route is
+  purchase, or a library holding SMSB 2014. [PM-SEI-17] has migrated to a new publisher
+  and the paywalled landing page is live; [PM-IABSE-17] is sold at about €25, and its free
+  publisher preview **was retrieved and is page 1 only** — title, affiliations, abstract,
+  one figure caption, and **no return period, ground-motion level or performance level**.
+  A preview is not a read. **None has been read, so no Port Mann number is published
+  anywhere in this folder.** **[?]**
 - **North Arm Bridge — the designer's second paper.** The seismic design criteria,
   dimensions, ground conditions, foundations and the no-densification decision are sourced
   to the bridge's designer [NAB-ICCHGE-08] **[A]**, and the opening date to the Office of
@@ -607,18 +613,12 @@ said.
   western-Canada component addressing region-specific seismicity separately.
   [MCGILL-SHAO-25] **[C]** for any number; **[A]** only as evidence that the method
   exists and is being built for this hazard environment.
-- **Knight Street: the author-copy route is a documented negative.** Both papers are
-  closed on every open-access channel tested 10 September 2026 — OpenAlex `closed`,
-  Unpaywall zero locations, Semantic Scholar `CLOSED` — and the ASCE landing pages return
-  200 to a browser user-agent, so this is a **real paywall, not the 403 pattern** in
-  `../../knowledge.md`. Both authors are at Klohn Crippen Berger, whose
-  technical-paper library is live, fully enumerable from its sitemap, and whose search API
-  works under control: `grouting`, `compaction grouting` and `Fraser delta` all return
-  **empty**, and **KCB posts abstracts, never full-text PDFs**. So the firm is not a route.
-  The only other index carrying the grouting paper is TRID, where the record is
-  entitlement-gated and yielded a snippet, which is not a source. Routes left, all
-  requiring a person: ASCE pay-per-view, interlibrary loan, or a direct request to the
-  authors. **[?]**
+- **Knight Street: the paywall is real, and the only routes left need a person.** Both
+  papers are closed on every open-access channel tested 10 September 2026, and the ASCE
+  landing pages return 200 to a browser user-agent, so this is a **real paywall, not the
+  403 pattern** in `../../knowledge.md`. Both authors are at Klohn Crippen Berger, which
+  posts abstracts and never full-text PDFs, so the firm is not a route either. Routes
+  left: ASCE pay-per-view, interlibrary loan, or a direct request to the authors. **[?]**
 - **The highest-priority unretrieved documents are [KSB-GROUT-17] and [SY-GEESD-18]**,
   both ASCE, both on Knight Street and the Fraser delta, and both obtainable through a
   normal library rather than a society membership. Thavaraj & Sy (2017), "Compaction
@@ -643,24 +643,6 @@ said.
   125,000/day Ironworkers figure** are not in the sources cited for them. **[?]**
 - **The Massey replacement's "~150-year design life".** Not confirmed in any retrieved
   coverage. **[?]**
-
-### The crossings table
-
-A blank row means searched and not found, not unexamined.
-
-| Crossing | Public seismic finding located | Marker |
-| --- | --- | --- |
-| George Massey Tunnel | Yes, fully — retrofit half-completed, 150–240-year capacity, does not meet CSA S6-14 [GMC-TUNNEL-19] | **[A]** |
-| Oak Street | Yes — 475-year collapse-prevention objective, 100 mm approach settlement, GFRP wrap, re-studied 2021–22 [OAK-13WCEE] [OAK-BASIS-22] | **[A]** / [B] |
-| Knight Street | Yes — lifeline class, "need not be passable" after the 1000-year event, shear-key failure at all approach spans [KSB-2010] | **[A]** |
-| Queensborough | Yes — collapse prevention at 1/475 only, "may or may not be functional"; 150 mm approach displacement after remediation [QB-MOTH-95] | **[A]** |
-| Golden Ears | Yes — 475/1000/2475 objectives, ~0.5 m river-bank displacement at 2475, ~0.3 m at the main piers after densification [GEB-CGS-08] [NAB-ICCHGE-08] | **[A]** |
-| Alex Fraser | Partly — foundations on weak deltaic materials, early liquefaction practice; no return period [AFB-CGS-17] | **[A]** |
-| Pattullo replacement | Status yes, seismic qualitative only [BCGOV-2026-PATT] | **[A]** |
-| Port Mann | Qualitative only; three quantitative sources published, all paywalled and unread [PM-SEI-17] [PM-IABSE-17] | **[?]** |
-| Canada Line — North Arm Bridge | Yes — 100/475-year project criteria, partial liquefaction expected, no ground densification used [NAB-ICCHGE-08] | **[A]** |
-| Mission (Fraser Valley, disaster recovery network — not Metro Vancouver) | Yes, fully — 475-year collapse prevention with function 'desirable but not required', approach settlements to 200 mm, south abutment FoS 0.70, toe berms built [MISSION-CGS-18] | **[A]** |
-| SkyTrain guideways generally | Nothing located | **[?]** |
 
 ---
 
@@ -700,8 +682,8 @@ context is either alarming or reassuring and neither is accurate.
 
 - Every displacement figure carries its return period, its remediation state **and its
   location**. Queensborough's 150 mm is *after* remediation; without it, collapse. Oak
-  Street's 100 mm is *after densification*, and whether that densification was ever built
-  is not established. Golden Ears has two 2475-year figures — ~0.5 m at the river bank and
+  Street's 100 mm is *after densification*, and the paper records that that densification
+  was not built at the time. Golden Ears has two 2475-year figures — ~0.5 m at the river bank and
   ~0.3 m at the main piers after densification — which are not in conflict, but will read
   as conflicting if either qualifier is dropped.
 - Golden Ears is 475/1000/2475, now confirmed by three independent [A] sources. Never

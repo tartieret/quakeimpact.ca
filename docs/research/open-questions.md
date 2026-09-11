@@ -23,9 +23,11 @@ The two are different claims about the world and only one of them is a finding.
 Nothing ships that depends on these.
 
 1. **ICLR's written approval** for reuse of the Metro Vancouver microzonation
-   maps and data. Requested; terms recorded in `../licensing.md`. This blocks the
-   ground-conditions map, the liquefaction choropleth and the
-   critical-infrastructure overlay. **The only blocking item left.**
+   maps and data. Terms recorded in `../licensing.md`, which carries the enquiry to
+   Sheri Molnar at Western and to ICLR as **an action still outstanding — the request
+   has not been sent.** So this is not a wait on a reply; it is a wait on an email
+   nobody has written. It blocks the ground-conditions map, the liquefaction choropleth
+   and the critical-infrastructure overlay. **The only blocking item left.**
 
 ## High value, not blocking
 
@@ -53,14 +55,16 @@ Nothing ships that depends on these.
    modelling now in hand. What exists is thirteen-year-old catastrophe-model
    output, not an inspection.
 8. **Large power transformer lead times and spares, BC-specific.** No BC source
-    exists. No evidence was found either way on participation in US spare-equipment
-    consortia — assert neither.
+   exists. No evidence was found either way on participation in US spare-equipment
+   consortia — assert neither.
 9. **Municipal sewer seismic assessments** for Vancouver, Richmond, Delta, Surrey
-    and New Westminster. None found.
+   and New Westminster. None found.
 10. **An official comparison of casualty load to care capacity.** Narrowed and
     improved: an open-access academic study now supplies the regional comparison
     and the bed counts. What no government or health authority has published is
-    its own, and **ICU and operating-room counts remain unpublished anywhere.**
+    its own, and **no official inventory of ICU or operating-room capacity exists** —
+    per-hospital ICU counts appear only in the peer-reviewed literature, and operating
+    rooms only as project counts.
 11. **Sea-to-Sky and Fraser Canyon landslide susceptibility**, earthquake-triggered
     and corridor-specific. Well audited across three bibliographic indexes; the
     2021 evidence is rainfall-triggered and must stay labelled as such. Provincial
@@ -69,12 +73,16 @@ Nothing ships that depends on these.
     publishable**: the figure is the trade magazine's own text, not a quotation,
     and it attaches to the mains inside the tunnel rather than the tunnel. Seven
     Metro Vancouver sources say only "current seismic standards".
-13. **The Canadian Dam Association 1-in-10,000-year standard**, currently reaching
-    us through media.
+13. **The Canadian Dam Association *Dam Safety Guidelines***, the paywalled member
+    publication that is the common ancestor of the 1-in-10,000-year figure. The
+    province's own design guideline states the criterion directly, so the figure is
+    publishable with its guards; what is unread is the ancestor, which is why the four
+    documents carrying it are one lineage and not four confirmations.
 14. **CSA Z32**, the hospital-specific backup power requirement. Paywalled. The
     general code minimum is now publishable; the hospital one is not.
 15. **CSA S832**, seismic risk reduction of operational and functional components,
-    named in the by-law's own commentary. Paywalled.
+    named in the by-law's own commentary. The Preface, Introduction and Clause 1 are
+    published free by CSA and are in hand; clauses 5–9 and the annexes are paywalled.
 16. **EGBC's non-structural manual.** Credential-gated, with the credentials
     printed in a public EGBC memo. **Deliberately not used** — that is a decision
     for a person, not an agent. See `CONVENTIONS.md`.
@@ -83,7 +91,9 @@ Nothing ships that depends on these.
     cannot be an industry-wide count.
 18. **Fire hall seismic status for the City of North Vancouver.** Surrey and New
     Westminster are documented negatives and Richmond is answered by its fire chief in
-    committee minutes; CNV is untested, not absent.
+    committee minutes. CNV was searched across six channels on 10 September 2026 and
+    says nothing; the channel not opened is its pre-2026 council minutes, which is
+    where Richmond's statement turned out to live.
 19. **Cleveland Dam downstream hazard studies.** Named in Metro Vancouver's own
     reporting and unpublished. The most specific FOI target this project has
     produced.
@@ -91,26 +101,19 @@ Nothing ships that depends on these.
     October 2020, and the underlying 2002 WorkSafeBC inspection report. Both
     unretrieved; the 2002 material reaches us only through media reporting of an
     FOI release.
-21. **The City of Vancouver's early-warning figure.** The City tells residents to
-    expect "10 to 30 seconds of warning"; NRCan, which runs the system, states that
-    sites near the epicentre fall in a late alert zone where the alert can arrive
-    after the shaking. A warning time is a number a reader will act on. Verify
-    before it reaches a page.
-22. **City of Vancouver guidance for people without storage space or money for a
+21. **City of Vancouver guidance for people without storage space or money for a
     kit.** The City names both barriers in its own material and does not answer
     them. Searched 10 September 2026 across the Explorer, both 2024 fact sheets,
     the worksheet, the landing, education and hubs pages.
-23. **City of Vancouver material for people with disabilities or mobility
+22. **City of Vancouver material for people with disabilities or mobility
     limitations**, where North Shore Emergency Management and Richmond Fire-Rescue
-    both publish one.
-24. **Whether the Resilient Neighbourhoods Program succeeded the Neighbourhood
-    Emergency Preparedness Program.** `vancouver.ca/nepp` returns 404 and no page
-    says so. The inference is reasonable and must not be published as a fact.
-25. **PERCS coverage in the Lower Mainland.** PEIRS states that "some regions have a
+    both publish one. The City's only material for people who cannot evacuate unaided
+    is filed under fire safety for building owners and addressed to building managers.
+23. **PERCS coverage in the Lower Mainland.** PEIRS states that "some regions have a
     limited number of radio operators" and names none. Which regions, how many operators,
     and whether the Lower Mainland is among the thin ones are all unstated. Assume neither
     direction. Route: EMCR, or the published rosters of PERCS-affiliated clubs.
-26. **Household gas dependence in Vancouver.** The City's exercise toolkit carries
+24. **Household gas dependence in Vancouver.** The City's exercise toolkit carries
     "55% of homes are heated by natural gas" and similar figures as *scenario
     parameters*. They need an independent source — census dwelling heating, or a
     FortisBC filing — before any of them is usable.
@@ -124,7 +127,7 @@ change it.
 
 | Trigger | Why | When |
 | --- | --- | --- |
-| ICLR reply on MVSMMP reuse | Unblocks the map work | On receipt |
+| ICLR enquiry on MVSMMP reuse | Not yet sent; unblocks the map work | Send, then on receipt |
 | BCUC West End Substation decision | Sought by 30 October 2026 | Dated, imminent |
 | MVSMMP Phase II publication | Eastern communities | 2024–26, overdue |
 | Ausenco supporting analysis for Vancouver | Cited as forthcoming, still unpublished | Periodic |

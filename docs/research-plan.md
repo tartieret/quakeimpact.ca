@@ -84,6 +84,45 @@ it corrected stayed live in another.**
 answered in the file that owns the subject, never logged beside the queue — a log next to
 a list is how the list goes stale without anyone noticing.
 
+## The review pass, and the contradictions it found
+
+Every file was then reorganised to read as an argument rather than as a chronicle: subject
+order instead of discovery order, headings naming their subject rather than their
+provenance, mechanism before figures. The hunt narration went with it — sitemaps
+enumerated, query strings, fallback indexes that also failed — while the **absences
+themselves** stayed, because "nobody has published this" is a fact about the world and the
+search that establishes it needs one line, not a paragraph.
+
+**Reorganisation is what surfaced the contradictions.** Reading a file end to end is the
+only way to notice that it asserts something in one section and its opposite in another,
+and no one does that to a 600-line file in the normal course of work. Fourteen were found
+and resolved, every one by stating the narrower claim the evidence supports rather than
+deleting a side:
+
+- **The project's only blocking item was misdescribed.** `open-questions.md` recorded
+  ICLR's written approval as *requested*; `licensing.md` carries sending that email as an
+  action still outstanding. The project is not waiting on a reply — it is waiting on a
+  request nobody has written, which is a different problem with a different fix.
+- `health-care.md` claimed no official ICU or operating-room count exists, above BC Gov
+  News figures giving Richmond 11 operating rooms and Royal Columbian a 47-bed ICU. The
+  gap is an official *inventory*, not official counts.
+- `impact-bands.md` said the code is more confident than the evidence "in every
+  disagreement", three lines above its own table naming the row where the reverse is true
+   — and counted seven of twelve rows where the denominator is thirteen.
+- `build-order.md` deferred large infrastructure "until the AIR study surfaces". It
+  surfaced, and bands the system Medium for Cascadia.
+- `dams-and-reservoirs.md` asserted Wahleach is Very High while its own open questions
+  recorded the provincial register and BC Hydro's tables conflicting on that dam.
+- `transportation.md` denied any approach-displacement estimate beyond three crossings
+  while publishing Mission's.
+- `scenarios.md` still called the DCRRA licence question blocking; it was settled.
+
+Three recurring quantities were also disambiguated rather than reconciled, because they
+were never in conflict — they count different things: Cascadia recurrence (**500–600**
+years full-margin, **400–500** in both BC documents, **434** as the hazard model's mean for
+any interface rupture M8.4+), the several loss figures in `buildings.md`, and the three
+distinct meanings of **$30 billion** in the insurance material.
+
 ## Where the review stands
 
 Every research file carries a **review-status header** in two states, `unreviewed` and
@@ -134,7 +173,7 @@ Three, also in §9.
 | Question | File |
 | --- | --- |
 | What do we believe, and on what evidence? | `research/` — one file per subject |
-| What is still unknown, and what was searched? | `research/open-questions.md` — 26 items, 1 blocking |
+| What is still unknown, and what was searched? | `research/open-questions.md` — 24 items, 1 blocking |
 | What band, and why? | `research/impact-bands.md` |
 | Where does a source key resolve? | `research/sources.md` |
 | What may we reproduce, and what may we quote? | `licensing.md` — the two are not the same question |
@@ -142,7 +181,7 @@ Three, also in §9.
 
 ## One thing worth reading before doing more research
 
-`knowledge.md` has nineteen entries and they converge on a single theme: **the ways a
+`knowledge.md` has twenty entries and they converge on a single theme: **the ways a
 research process manufactures a false absence or a false corroboration.** Broken
 searches, 403s recorded as unavailability, correct citations to documents that do not
 say the thing, one model quoted by three governments, two figures that look like a range

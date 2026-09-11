@@ -25,163 +25,6 @@ Mainland.
 
 ## Findings
 
-### What the LTGRP silence does and does not mean
-
-FEI's **2026 Long Term Gas Resource Plan**, its public investment roadmap to 2050
-filed with the BCUC in March 2026, contains zero occurrences of "seismic" or
-"earthquake" across ~23,000 lines, while returning 134 hits for "resilien", 40 for
-"Tilbury" and 27 for "T-South", and carrying a dedicated §7.4 "System Resiliency".
-[FEI-LTGRP-26] **[A]** on the absence. It is not an extraction failure.
-
-The accurate reading is narrow: FEI's **public-facing 2050 investment roadmap
-frames resilience around winter supply interruption and peak demand**, while its
-**regulatory filing assesses seismic hazard extensively**. [FEI-LTGRP-26] **[A]**
-[FEI-RESILIENCY-24] **[A]**
-
-There is a documented reason for the split. The LTGRP's resiliency case rests on the
-Resiliency Plan, which it cites, and the project the LTGRP justifies — Tilbury
-storage against a T-South interruption — is driven by a
-*non-seismic* hazard. For the largest assessed vulnerability, "non-earthquake
-induced landslide is the hazard that contributes the most to the cumulative risk",
-and its annual rate of winter-only failure from non-earthquake external hazards is
-more than six times the rate from earthquake hazards at the upper bound.
-[FEI-RESILIENCY-24] **[A]**
-
-**State the contrast; do not make it an accusation.** The seismic analysis is in
-the Resiliency Plan, not in the resource plan. That is a fact about where two
-documents put their emphasis, and nothing more.
-
-### The 2024 Gas System Resiliency Plan — what it assesses
-
-Filed 24 October 2024 as **Exhibit B-61** in the Tilbury LNG Storage Expansion CPCN
-proceeding, cover letter from Sarah Walsh, Director Regulatory Affairs, FortisBC. It
-is a quantitative seismic risk assessment: 129 occurrences of "seismic", 511 of
-"earthquake" and 122 of "liquefaction". [FEI-RESILIENCY-24] **[A]**
-
-- **Structure.** 58 anonymised **Assessed Vulnerabilities** (AV-1 to AV-58),
-  screened down from an initial 87. The screen: an outage affecting **10,000 or
-  more customers**, and/or an outage expected to take **14 days or more** to fully
-  restore. [FEI-RESILIENCY-24] **[A]**
-- **Who did the work.** Exponent, Inc. performed the quantitative risk analysis;
-  PwC quantified economic consequences; JANA and Guidehouse also contributed.
-  [FEI-RESILIENCY-24] **[A]**
-- **Method.** Performance-based engineering using FEMA **Hazus 5.1** earthquake-model
-  fragility relationships, with site hazard curves from the **USGS Unified Hazard
-  Tool** (latitude below 50) and the **2020 National Building Code of Canada
-  Seismic Hazard Tool** (latitude above 50), and BC provincial soil mapping for
-  site classes. [FEI-RESILIENCY-24] **[A]**
-- **Six earthquake-related damage mechanisms are modelled as separate named
-  hazards**, per asset: earthquake shaking, liquefaction, lateral spreading,
-  surface-wave rupture, earthquake-induced landslide, and earthquake-induced bridge
-  shaking and ground movement. Dedicated appendices cover earth-movement
-  modification factors, surface-wave-induced pipeline ruptures, earthquake-induced
-  landslides, earthquake-induced liquefaction, pipelines carried by bridges,
-  earthquake shaking for stations, and identified fault crossings.
-  [FEI-RESILIENCY-24] **[A]**
-
-Exponent's own summary of scope: "The analysis considered several failure
-mechanisms associated with earthquakes, including landslides, liquefaction,
-settlement, surface waves, and shaking, as well as wildfires, non-earthquake-induced
-landslides, lightning, flooding/buoyancy, and internal failures and failure
-mechanisms unrelated to natural hazards." [FEI-RESILIENCY-24] **[A]**
-
-### AV-18 — a named earthquake mechanism driving the number-two risk
-
-FEI's **second-largest resiliency risk overall is driven by an earthquake hazard**.
-Of AV-18, the plan states that "earthquake lateral spreading is the hazard that
-contributes the most to the cumulative risk; and … the mean Total Outage Duration
-is 61 days". Its 67-year winter-only failure probability is **27–57 percent**, and
-its expected 67-year winter-only economic harm is **$1.3 billion**.
-[FEI-RESILIENCY-24] **[A]**
-
-The plan adds that where "the primary driver of the failure probability is from
-seismic related hazards, possible short-term projects could consist of targeted
-site-specific upgrades to reduce the probability of failure … examples might
-include relocation of short segments of pipeline out of the hazard zone".
-[FEI-RESILIENCY-24] **[A]**
-
-> **Guard, non-negotiable.** **AV-18's identity and location are Restricted
-> Confidential** — Appendix RP 4-18 is filed to the BCUC only. **We do not know
-> where it is, and we must not imply, suggest or allow a reader to infer that it is
-> in the Lower Mainland.** What the finding supports is narrower and still worth
-> having: lateral spreading — liquefaction-driven ground movement, the same
-> mechanism `ground-conditions.md` already explains — is the top contributor to
-> FortisBC's number-two system risk, with a modelled mean outage of about two
-> months.
-
-### Bridge crossings — the review was seismic
-
-The LTGRP's line that "Major bridge crossings were reviewed as part of the 2024
-Resiliency Plan and no upgrades to these crossings are planned at this time"
-[FEI-LTGRP-26] **[A]** rests on a review that was explicitly seismic. Exponent:
-"The annual failure rates for bridges are calculated for two different types of
-damage mechanisms, both related to earthquakes: ground shaking and ground
-movement." Fragility curves come from a Hazus procedure using span, skew angle and
-structure type; the intensity measure is 1-second spectral acceleration for shaking
-and PGD for ground movement. Failure of a bridge was conservatively assumed to mean
-failure of the pipeline segments it carries. Computed rates are bracketed against
-**2.3 × 10⁻⁴ failures per year**, the annual failure rate associated with the
-target reliability of bridges designed to CSA S6-14. At least 15 of the 58 Assessed
-Vulnerabilities are classified as "Bridge" or "Pipeline / Bridge".
-[FEI-RESILIENCY-24] **[A]**
-
-**The honest counterweight travels with this.** Exponent's finding is that bridges
-"typically have relatively low probabilities of failure", which is *why* no
-upgrades are planned. "No upgrades planned" is a stated conclusion from a modelled
-result, not neglect, and the page must not present it as neglect.
-[FEI-RESILIENCY-24] **[A]**
-
-### Seismic shutoff valves — planned, not deployed
-
-The work is scoped but not built. §7.2.4, "Improved Response Capabilities to
-Widespread Lower Mainland Seismic Event", is the plan's most directly
-Lower-Mainland-relevant passage:
-
-> "the intent of this initiative is to improve FEI's ability to isolate the Lower
-> Mainland's CTS following a seismic event that results in widespread asset failure
-> in the Lower Mainland. **Development for this initiative is in the preliminary
-> stages.** At a high-level the scope, as it is currently defined, consists of
-> installing additional valves, and upgrading existing valves. All valves to be
-> added or upgraded will have line break capabilities that will allow them to
-> **autonomously shut following a seismic event**, if required."
-
-[FEI-RESILIENCY-24] **[A]** No commitment, no budget and no date appears in the
-public version. §8 places the work in parallel with further investigation of four
-other assessed vulnerabilities, after which FEI "will determine if any of these AVs
-warrant resiliency driven investment". [FEI-RESILIENCY-24] **[A]**
-
-**Cross-system.** This is an exact counterpart to Metro Vancouver's DWMP 2026
-Action 2 — automatic shutoffs throughout the water transmission system, listed as
-something to *increase*. Two Lower Mainland utilities, the same mechanism, the same
-not-yet-done status. See `water.md`; do not restate the water side here.
-
-### Tilbury — a named asset with a named seismic deficiency
-
-The **1969 Tilbury Base Plant LNG storage tank**, in Delta, is the gas system's
-structural analogue of the Murrin Substation finding the electricity entry rests
-on: identified, quantified, filed with the regulator, and unfixed until a
-replacement is built.
-
-- "FEI states that more stringent seismic design requirements have been put in
-  place since the installation of the LNG storage tank in 1969, and in order to
-  ensure compliance, **FEI currently operates the tank at 58 percent capacity (or
-  0.35 Bcf)**." [BCUC-C-6-25] **[A]** — a 42 percent de-rating for seismic
-  compliance.
-- Two independent engineering firms, CB&I and WSP, assessed refurbishing the tank
-  to its 0.6 Bcf design capacity while meeting current minimum seismic
-  requirements. **Both recommended replacement.** CB&I called remediation "fraught
-  with significant risk". [BCUC-C-6-25] **[A]**
-- WSP "concluded that even if all of the tank repairs identified by CB&I could be
-  completed, it would not be cost-effective or feasible to replace the foundation
-  to avoid the tank **failing due to earthquake-caused differential settlement**".
-  [BCUC-C-6-25] **[A]**
-- The Panel's determination: refurbishment "does not appear to be a cost-effective
-  or viable option **due to seismic issues** and the age and condition of the
-  assets". [BCUC-C-6-25] **[A]**
-
-This is dated, regulator-accepted, and about a specific Lower Mainland asset. It is
-the entry's anchor.
-
 ### The relight mechanism, and the arithmetic behind it
 
 FortisBC's public earthquake guidance describes restoration as: assess the system
@@ -243,6 +86,30 @@ sized to buy a *controlled* one: 72 hours "are considered to be enough time to
 implement a controlled shutdown", and below that there is uncertainty whether one
 is possible at all. [BCUC-C-6-25] **[A]**
 
+### AV-18 — a named earthquake mechanism driving the number-two risk
+
+FEI's **second-largest resiliency risk overall is driven by an earthquake hazard**.
+Of AV-18, the 2024 Resiliency Plan states that "earthquake lateral spreading is the
+hazard that contributes the most to the cumulative risk; and … the mean Total Outage
+Duration is 61 days". Its 67-year winter-only failure probability is **27–57 percent**,
+and its expected 67-year winter-only economic harm is **$1.3 billion**.
+[FEI-RESILIENCY-24] **[A]**
+
+The plan adds that where "the primary driver of the failure probability is from
+seismic related hazards, possible short-term projects could consist of targeted
+site-specific upgrades to reduce the probability of failure … examples might
+include relocation of short segments of pipeline out of the hazard zone".
+[FEI-RESILIENCY-24] **[A]**
+
+> **Guard, non-negotiable.** **AV-18's identity and location are Restricted
+> Confidential** — Appendix RP 4-18 is filed to the BCUC only. **We do not know
+> where it is, and we must not imply, suggest or allow a reader to infer that it is
+> in the Lower Mainland.** What the finding supports is narrower and still worth
+> having: lateral spreading — liquefaction-driven ground movement, the same
+> mechanism `ground-conditions.md` already explains — is the top contributor to
+> FortisBC's number-two system risk, with a modelled mean outage of about two
+> months.
+
 ### The supply-interruption figures — guard these every single time
 
 **BCUC Decision and Order C-6-25, 27 October 2025** (Panel: A. K. Fung, KC (Chair),
@@ -301,7 +168,66 @@ CEC argued that relighting business and industrial customers earlier "could
 dramatically reduce the GDP losses incurred". The Panel found FEI's assumptions
 "reasonable and appropriate". [BCUC-C-6-25] **[A]**
 
-### The Tilbury project figures
+### How many customers FortisBC serves in the Lower Mainland
+
+Retrieved 10 September 2026 from **FortisBC Energy Inc.'s 2026 Long Term Gas Resource Plan**,
+filed with the BCUC on 27 March 2026. Table 3-2, base year **2024**:
+**583,370 residential accounts in FEI's Lower Mainland region**, against 137,425 on Vancouver
+Island and 245,673 Inland, of 996,337 province-wide. Commercial accounts in the Lower
+Mainland: **61,348**. Industrial: **886 of FEI's 1,109 province-wide**. [FEI-LTGRP-26] **[A]**
+
+**Three guards on what that counts.**
+
+1. **An account is a meter, not a household.** A single-family house is typically one
+   account; an apartment building on a central gas boiler is **one account serving many
+   households**, whose residents hold none. So 583,370 is a **floor** on dwellings dependent
+   on gas and a **ceiling** on households holding a gas bill. It is not a share of either,
+   and it must never be written as a percentage.
+2. **"Lower Mainland" here is FortisBC's service region, not Metro Vancouver.** The plan does
+   not define its boundary. Write "FortisBC's Lower Mainland service region" and do not
+   silently substitute Metro Vancouver.
+3. **It is a forecast base year, not an audited actual.** FEI files audited counts in its
+   Annual Review of Delivery Rates, where the tables are embedded as images; the same
+   appendix says they are also filed as a spreadsheet. A bounded follow-up, not a dead end.
+
+**What this does and does not do for the City's 55%.** It gives the page a sourced statement
+of **scale** — FortisBC told its regulator in March 2026 that it serves 583,370 residential
+gas accounts in its Lower Mainland region — which, with the resiliency plan's statement that
+a winter T-South-scale event could mean "the potential loss of service to all customers in
+the Lower Mainland" [FEI-RESILIENCY-24] **[A]**, is enough to carry the mechanism without the
+City's figure. It does **not** corroborate "55% of homes are heated by natural gas", which
+remains an **exercise parameter** until a dwelling-level source is read. The census route was
+untested — `www150.statcan.gc.ca` timed out on every attempt on 10 September 2026 — so record
+that half as **we could not reach it**, not as *nobody published it*.
+
+### Tilbury — a named asset with a named seismic deficiency
+
+The **1969 Tilbury Base Plant LNG storage tank**, in Delta, is the gas system's
+structural analogue of the Murrin Substation finding the electricity entry rests
+on: identified, quantified, filed with the regulator, and unfixed until a
+replacement is built.
+
+- "FEI states that more stringent seismic design requirements have been put in
+  place since the installation of the LNG storage tank in 1969, and in order to
+  ensure compliance, **FEI currently operates the tank at 58 percent capacity (or
+  0.35 Bcf)**." [BCUC-C-6-25] **[A]** — a 42 percent de-rating for seismic
+  compliance.
+- Two independent engineering firms, CB&I and WSP, assessed refurbishing the tank
+  to its 0.6 Bcf design capacity while meeting current minimum seismic
+  requirements. **Both recommended replacement.** CB&I called remediation "fraught
+  with significant risk". [BCUC-C-6-25] **[A]**
+- WSP "concluded that even if all of the tank repairs identified by CB&I could be
+  completed, it would not be cost-effective or feasible to replace the foundation
+  to avoid the tank **failing due to earthquake-caused differential settlement**".
+  [BCUC-C-6-25] **[A]**
+- The Panel's determination: refurbishment "does not appear to be a cost-effective
+  or viable option **due to seismic issues** and the age and condition of the
+  assets". [BCUC-C-6-25] **[A]**
+
+This is dated, regulator-accepted, and about a specific Lower Mainland asset. It is
+the entry's anchor.
+
+### The Tilbury replacement — cost, reserve and the three-day objective
 
 - Capital cost: the Panel accepted "**$873.358 million in 2023 dollars and
   $1,143.889 million in as spent dollars**"; the $1.14 billion figure is the
@@ -316,6 +242,112 @@ dramatically reduce the GDP losses incurred". The Panel found FEI's assumptions
   withstand and recover from a 3-day no-flow event". The BCUC had previously
   *rejected* that objective as inadequately justified in its 2023 Adjournment
   Decision, which is what prompted the 2024 Resiliency Plan. [BCUC-C-6-25] **[A]**
+
+### The 2024 Gas System Resiliency Plan — what it assesses
+
+Filed 24 October 2024 as **Exhibit B-61** in the Tilbury LNG Storage Expansion CPCN
+proceeding, cover letter from Sarah Walsh, Director Regulatory Affairs, FortisBC. It
+is a quantitative seismic risk assessment: 129 occurrences of "seismic", 511 of
+"earthquake" and 122 of "liquefaction". [FEI-RESILIENCY-24] **[A]**
+
+- **Structure.** 58 anonymised **Assessed Vulnerabilities** (AV-1 to AV-58),
+  screened down from an initial 87. The screen: an outage affecting **10,000 or
+  more customers**, and/or an outage expected to take **14 days or more** to fully
+  restore. [FEI-RESILIENCY-24] **[A]**
+- **Who did the work.** Exponent, Inc. performed the quantitative risk analysis;
+  PwC quantified economic consequences; JANA and Guidehouse also contributed.
+  [FEI-RESILIENCY-24] **[A]**
+- **Method.** Performance-based engineering using FEMA **Hazus 5.1** earthquake-model
+  fragility relationships, with site hazard curves from the **USGS Unified Hazard
+  Tool** (latitude below 50) and the **2020 National Building Code of Canada
+  Seismic Hazard Tool** (latitude above 50), and BC provincial soil mapping for
+  site classes. [FEI-RESILIENCY-24] **[A]**
+- **Six earthquake-related damage mechanisms are modelled as separate named
+  hazards**, per asset: earthquake shaking, liquefaction, lateral spreading,
+  surface-wave rupture, earthquake-induced landslide, and earthquake-induced bridge
+  shaking and ground movement. Dedicated appendices cover earth-movement
+  modification factors, surface-wave-induced pipeline ruptures, earthquake-induced
+  landslides, earthquake-induced liquefaction, pipelines carried by bridges,
+  earthquake shaking for stations, and identified fault crossings.
+  [FEI-RESILIENCY-24] **[A]**
+
+Exponent's own summary of scope: "The analysis considered several failure
+mechanisms associated with earthquakes, including landslides, liquefaction,
+settlement, surface waves, and shaking, as well as wildfires, non-earthquake-induced
+landslides, lightning, flooding/buoyancy, and internal failures and failure
+mechanisms unrelated to natural hazards." [FEI-RESILIENCY-24] **[A]**
+
+### Bridge crossings — the review was seismic
+
+The LTGRP's line that "Major bridge crossings were reviewed as part of the 2024
+Resiliency Plan and no upgrades to these crossings are planned at this time"
+[FEI-LTGRP-26] **[A]** rests on a review that was explicitly seismic. Exponent:
+"The annual failure rates for bridges are calculated for two different types of
+damage mechanisms, both related to earthquakes: ground shaking and ground
+movement." Fragility curves come from a Hazus procedure using span, skew angle and
+structure type; the intensity measure is 1-second spectral acceleration for shaking
+and PGD for ground movement. Failure of a bridge was conservatively assumed to mean
+failure of the pipeline segments it carries. Computed rates are bracketed against
+**2.3 × 10⁻⁴ failures per year**, the annual failure rate associated with the
+target reliability of bridges designed to CSA S6-14. At least 15 of the 58 Assessed
+Vulnerabilities are classified as "Bridge" or "Pipeline / Bridge".
+[FEI-RESILIENCY-24] **[A]**
+
+**The honest counterweight travels with this.** Exponent's finding is that bridges
+"typically have relatively low probabilities of failure", which is *why* no
+upgrades are planned. "No upgrades planned" is a stated conclusion from a modelled
+result, not neglect, and the page must not present it as neglect.
+[FEI-RESILIENCY-24] **[A]**
+
+### Seismic shutoff valves — planned, not deployed
+
+The work is scoped but not built. §7.2.4, "Improved Response Capabilities to
+Widespread Lower Mainland Seismic Event", is the plan's most directly
+Lower-Mainland-relevant passage:
+
+> "the intent of this initiative is to improve FEI's ability to isolate the Lower
+> Mainland's CTS following a seismic event that results in widespread asset failure
+> in the Lower Mainland. **Development for this initiative is in the preliminary
+> stages.** At a high-level the scope, as it is currently defined, consists of
+> installing additional valves, and upgrading existing valves. All valves to be
+> added or upgraded will have line break capabilities that will allow them to
+> **autonomously shut following a seismic event**, if required."
+
+[FEI-RESILIENCY-24] **[A]** No commitment, no budget and no date appears in the
+public version. §8 places the work in parallel with further investigation of four
+other assessed vulnerabilities, after which FEI "will determine if any of these AVs
+warrant resiliency driven investment". [FEI-RESILIENCY-24] **[A]**
+
+**Cross-system.** This is an exact counterpart to Metro Vancouver's DWMP 2026
+Action 2 — automatic shutoffs throughout the water transmission system, listed as
+something to *increase*. Two Lower Mainland utilities, the same mechanism, the same
+not-yet-done status. See `water.md`; do not restate the water side here.
+
+### Where the seismic analysis sits, and where it does not
+
+FEI's **2026 Long Term Gas Resource Plan**, its public investment roadmap to 2050
+filed with the BCUC in March 2026, contains zero occurrences of "seismic" or
+"earthquake" across ~23,000 lines, while returning 134 hits for "resilien", 40 for
+"Tilbury" and 27 for "T-South", and carrying a dedicated §7.4 "System Resiliency".
+[FEI-LTGRP-26] **[A]** on the absence. It is not an extraction failure.
+
+The accurate reading is narrow: FEI's **public-facing 2050 investment roadmap
+frames resilience around winter supply interruption and peak demand**, while its
+**regulatory filing assesses seismic hazard extensively**. [FEI-LTGRP-26] **[A]**
+[FEI-RESILIENCY-24] **[A]**
+
+There is a documented reason for the split. The LTGRP's resiliency case rests on the
+Resiliency Plan, which it cites, and the project the LTGRP justifies — Tilbury
+storage against a T-South interruption — is driven by a
+*non-seismic* hazard. For the largest assessed vulnerability, "non-earthquake
+induced landslide is the hazard that contributes the most to the cumulative risk",
+and its annual rate of winter-only failure from non-earthquake external hazards is
+more than six times the rate from earthquake hazards at the upper bound.
+[FEI-RESILIENCY-24] **[A]**
+
+**State the contrast; do not make it an accusation.** The seismic analysis is in
+the Resiliency Plan, not in the resource plan. That is a fact about where two
+documents put their emphasis, and nothing more.
 
 ### Do not shut off your own gas
 
@@ -362,11 +394,8 @@ do not adjudicate between them.
 
 **Why Surrey's sentence is accurate rather than merely cautious.** "Which may take
 weeks" is the relight mechanism seen from the customer's end. A meter shut off by
-hand joins the same per-premises queue as every other affected premises, and
-FortisBC's own modelling puts the ceiling on that queue at **8,716 relights a day**
-— a figure that already assumes the full workforce, mutual aid crews and every
-available private contractor in the Lower Mainland, and that falls to **2,025 or
-723 a day** without mutual aid. [FEI-RESILIENCY-24] **[A]** The delay Surrey warns
+hand joins the same per-premises queue as every other affected premises, under the
+relight ceiling set out above. [FEI-RESILIENCY-24] **[A]** The delay Surrey warns
 about is not a service-standard estimate; it is a rate limit.
 
 **The lever itself lives in `../preparedness.md`**, alongside the rest of the
@@ -412,39 +441,6 @@ Reproduced as a block so it can be checked against any draft of this page.
 
 ---
 
-### How many customers, and the number is FortisBC's own
-
-Retrieved 10 September 2026 from **FortisBC Energy Inc.'s 2026 Long Term Gas Resource Plan**,
-filed with the BCUC on 27 March 2026 — the same document already registered here, whose full
-text contains zero occurrences of "seismic" or "earthquake". Table 3-2, base year **2024**:
-**583,370 residential accounts in FEI's Lower Mainland region**, against 137,425 on Vancouver
-Island and 245,673 Inland, of 996,337 province-wide. Commercial accounts in the Lower
-Mainland: **61,348**. Industrial: **886 of FEI's 1,109 province-wide**. [FEI-LTGRP-26] **[A]**
-
-**Three guards on what that counts.**
-
-1. **An account is a meter, not a household.** A single-family house is typically one
-   account; an apartment building on a central gas boiler is **one account serving many
-   households**, whose residents hold none. So 583,370 is a **floor** on dwellings dependent
-   on gas and a **ceiling** on households holding a gas bill. It is not a share of either,
-   and it must never be written as a percentage.
-2. **"Lower Mainland" here is FortisBC's service region, not Metro Vancouver.** The plan does
-   not define its boundary. Write "FortisBC's Lower Mainland service region" and do not
-   silently substitute Metro Vancouver.
-3. **It is a forecast base year, not an audited actual.** FEI files audited counts in its
-   Annual Review of Delivery Rates, where the tables are embedded as images; the same
-   appendix says they are also filed as a spreadsheet. A bounded follow-up, not a dead end.
-
-**What this does and does not do for the City's 55%.** It gives the page a sourced statement
-of **scale** — FortisBC told its regulator in March 2026 that it serves 583,370 residential
-gas accounts in its Lower Mainland region — which, with the resiliency plan's statement that
-a winter T-South-scale event could mean "the potential loss of service to all customers in
-the Lower Mainland" [FEI-RESILIENCY-24] **[A]**, is enough to carry the mechanism without the
-City's figure. It does **not** corroborate "55% of homes are heated by natural gas", which
-remains an **exercise parameter** until a dwelling-level source is read. The census route was
-untested — `www150.statcan.gc.ca` timed out on every attempt on 10 September 2026 — so record
-that half as **we could not reach it**, not as *nobody published it*.
-
 ## What is not established
 
 - **AV-18's location, and whether it serves the Lower Mainland.** [?] Restricted
@@ -465,7 +461,9 @@ that half as **we could not reach it**, not as *nobody published it*.
 - **Whether any of the 58 Assessed Vulnerabilities have been carried into funded
   projects on seismic grounds.** [?] §8 defers the determination.
 - **How dependent Lower Mainland households and businesses actually are on gas.** [?]
-  No published statistic has been located. **A trap to record rather than to use:**
+  No dwelling-level statistic has been located: FEI's account counts above give the
+  scale of service, not the dependence, and the census route was not reached. **A trap
+  to record rather than to use:**
   the City of Vancouver's Resilient Neighbourhoods Toolkit carries "55% of homes are
   heated by natural gas", "95% of all restaurants use natural gas" and "Most schools
   are heated by natural gas". [COV-RNTOOLKIT-19] **[A]** *for what they are* — and

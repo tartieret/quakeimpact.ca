@@ -16,9 +16,17 @@ published conclusion mentions earthquakes; and the seismic upgrade project has n
 started. The hatched cell does not mean *nobody has looked*. It means *someone looked,
 recently and under legal compulsion, and the published answer is silent on earthquakes.*
 
+Two owners appear on this page and their evidence does not mix. **Metro Vancouver**
+owns the water-supply dams — Cleveland, Seymour Falls, Rice Lake and eleven more — and
+publishes a yearly safety summary but no review report. **BC Hydro** owns the power dams
+— Coquitlam, Ruskin, Stave Falls, Alouette, Cheakamus, Wahleach — and states named
+seismic deficiencies for each in its regulatory filings. They share a regulator and a
+design guideline and nothing else: a claim about one owner is never a claim about the
+other.
+
 ---
 
-## Findings
+## The regime both owners work under
 
 ### The consequence classification, and what it means in people
 
@@ -36,15 +44,6 @@ recently and under legal compulsion, and the published answer is silent on earth
   located in the dam-breach inundation zone, whether to live, work or recreate."**
   [BCDSR-40-2016] **[A]** That is the owner's own submitted classification, accepted by a
   provincial officer.
-- The same classification applies in the region to **Coquitlam, Ruskin, Stave Falls,
-  Alouette and Cheakamus**, all BC Hydro's, and to the two **Eagle Lake** dams
-  in West Vancouver. [BC-DAMS-REG] **[A]** Cite the register and date the citation — BC
-  Hydro's own tables and a 2012 BCUC order disagree with it for Ruskin, and
-  the register is the record the Regulation's obligations attach to.
-- **Wahleach is Very High, not Extreme.** BC Hydro's own facility asset plan, filed with
-  the BCUC, classifies it **Very High**. [BCH-RRA-F2020] **[A]** The distinction is not
-  cosmetic: the design criteria the province sets differ by class, and Wahleach's only
-  quantified seismic item is its Jones Lake intake gates, at roughly once in 4,800 years.
 - **Both dams currently sit at risk level "3 – Stable"** in the register. [BC-DAMS-REG]
   **[A]** This must never travel without its ceiling: **no Extreme dam in BC is rated
   better than 3 – Stable**, so it is the best rating available rather than a distinction
@@ -52,6 +51,23 @@ recently and under legal compulsion, and the published answer is silent on earth
   The defensible statement is that the provincial dam safety officer has not currently
   flagged a deficiency at either dam, on a scale where roughly one in three of BC's
   highest-consequence dams currently is flagged. Both halves ship or neither does.
+- The same classification applies in the region to **Coquitlam, Ruskin, Stave Falls,
+  Alouette and Cheakamus**, all BC Hydro's, and to the two **Eagle Lake** dams
+  in West Vancouver. [BC-DAMS-REG] **[A]** Cite the register and date the citation — BC
+  Hydro's own tables and a 2012 BCUC order disagree with it for Ruskin, and
+  the register is the record the Regulation's obligations attach to.
+- **The Eagle Lake dams in West Vancouver are missing from this page and should not be.**
+  Eagle Lake West and Eagle Lake East, owned by the District of West Vancouver, are
+  **Extreme consequence, inside Metro Vancouver, and both rated "2b – Caution"** — the only
+  Extreme-consequence dams in Metro Vancouver currently carrying a live regulator flag.
+  [BC-DAMS-REG] **[A]** Standing guard: the deficiency is not public and must not be
+  assumed seismic.
+- **Wahleach is filed as Very High, not Extreme.** BC Hydro's own facility asset plan,
+  filed with the BCUC, classifies it **Very High**. [BCH-RRA-F2020] **[A]** The
+  distinction is not cosmetic: the design criteria the province sets differ by class, and
+  Wahleach's only quantified seismic item is its Jones Lake intake gates, at roughly once
+  in 4,800 years. As with Ruskin, print no class for this dam without naming the source
+  and dating it.
 
 ### The Regulation: a review is compulsory, and there is no seismic number in it
 
@@ -87,85 +103,6 @@ recently and under legal compulsion, and the published answer is silent on earth
   "Reasonably safe" is the formal middle rung, which the province states "is considered by
   the Regulatory Authority to be equivalent to the Dam Safety Regulation term of 'safe'" —
   it is not hedging. [BCDSP-DSR-INFO] **[A]**
-
-### The two reviews, and their published conclusions
-
-- **Cleveland Dam.** *"The most recent DSR commenced in 2023 and was completed in 2024.
-  The review identified no unsafe or unacceptable conditions related to design,
-  construction, or operation. The consultant's report was submitted to the BC Dam Safey
-  Office in December 2024."* [MV-DSP-2026] **[A]** (The misspelling is Metro Vancouver's.)
-  The previous review completed in 2016. [MV-DSP-2021] **[A]**
-- **Seymour Falls Dam.** *"The most recent DSR commenced in 2021 and was finalized in
-  2024. The review concluded that the dam is reasonably safe, operated safely, maintained
-  in a safe condition, and that surveillance is adequate to detect any developing safety
-  problems. The consultant's report was submitted to the BC Dam Safey Office in June
-  2024."* [MV-DSP-2026] **[A]** The previous review completed in 2014. [MV-DSP-2021]
-  **[A]**
-- **The reporting route.** Both conclusions come from the **GVWD Dam Safety Program Annual
-  Update**, a report from the Director, Dam Safety, Water Services to Metro Vancouver's
-  Water Committee, published in the committee's agenda package each year. Six consecutive
-  editions were retrieved, 2021 through 2026, each stating the DSR status of every dam by
-  name. [MV-DSP-2026] [MV-DSP-2025] [MV-DSP-2024] [MV-DSP-2023] [MV-DSP-2022]
-  [MV-DSP-2021] **[A]**
-- **Neither published conclusion mentions earthquakes.** Six annual updates read in full,
-  10 September 2026: no seismic loading, ground motion or earthquake performance statement
-  appears in either dam's DSR summary. **[A]** on the absence, from documents read in
-  full. This is the finding the band rests on.
-- **The reports themselves are not published**, nor are the consultants named, nor any
-  deficiency list or Assurance Statement. The sole attachment to the 2024 and 2025 updates
-  is a set of photographs. [MV-DSP-2026] **[A]**
-- **The published intervals between completed reviews were eight years (Cleveland,
-  2016–2024) and ten years (Seymour Falls, 2014–2024)**, against a seven-year cycle.
-  [MV-DSP-2021] [MV-DSP-2026] **[A]** **Do not assert non-compliance** — the Regulation
-  measures the interval to 31 December of the seventh year after, and the exact completion
-  dates are not public.
-
-### The capital position: the seismic work is future work
-
-As at 31 May 2026, from Metro Vancouver's capital expenditure reporting to the Water
-Committee of 15 July 2026. [MV-CAPEX-2026] **[A]**
-
-| Project | Active phase | Timeline | Project estimate |
-| --- | --- | --- | --- |
-| Cleveland Dam Seismic Stability Evaluation | Design | 2024–2027 | $1,200,000 |
-| Seymour Falls Dam Seismic Stability Assessment | Design | 2025–2032 | $14,150,000 |
-| **Cleveland Dam MCE Seismic Upgrades** | **Not Started** | **2028–2034** | **$25,000,000** |
-
-"MCE" is Maximum Credible Earthquake — the same term as the Extreme-class design criterion
-below. This is a dated, costed, named, official statement that seismic work on the region's
-largest dam is a decade from completion, sourced to a board agenda rather than to
-inference. It also settles the interpretive question: **the 2024 reviews did not close the
-seismic question**, because the owner is still funding the evaluations and has not begun
-the upgrade.
-
-**Do not merge the two capital tables.** The Draft Five Year Capital Plan 2027–2031 in the
-same agenda gives a "Dams" section total of $90.1M draft and $105.33M over 2027–2031, but
-its per-project columns do not survive text extraction with reliable row alignment.
-[MV-CAPITAL-2027] **[A]** *for line-item names and section totals only.* Quoting a
-five-year window figure against a total-project-estimate label would be an easy and serious
-error.
-
-### Data-integrity caution: the $80.5M figure, and why it is not printed
-
-**Do not print $80.5 million for Cleveland Dam MCE Seismic Upgrades.** A parallel
-retrieval read the same table from the Water Committee agenda of 11 February 2026 and
-returned "Design, 2026–2032, $80,500,000" for that project — every column disagreeing with
-the July document, including a phase regression from Design back to Not Started, which does
-not happen. The February PDF's name column and data columns are separate text streams that
-desynchronise on extraction: from the row after "Cleveland Dam MCE Seismic Upgrades" there
-are nine or more consecutive rows carrying phase, timeline and dollar values with no name
-at all. Cross-checked against the July document, the figures February appears to attribute
-to Cleveland Dam belong to **Burnaby Mountain Tank No. 2 and No. 3** ($80.5M) and to **Port
-Moody Main No. 3, Scott Creek Section**. [MV-CAPEX-2026-FEB] — **rejected, extraction
-artefact.**
-
-The July table is safe because it is sorted descending by project estimate and the
-extracted values run cleanly descending through each row's neighbourhood; a sorted column
-that stays sorted after extraction is a column. Columns to the right of Project Estimate
-demonstrably wrap and must not be used. **The rule this establishes: a figure is traced,
-not averaged. Disagreement between two passes is a feature — chase it.** This is the
-closest this project has come to publishing a dam's capital cost that was in fact a water
-tank's, and it was caught only because two retrievals disagreed.
 
 ### The 1-in-10,000-year standard, with four guards
 
@@ -205,7 +142,7 @@ also be considered". [EGBC-DSR-GL] **[A]** So a 1954 dam **is** periodically re-
 against a current design earthquake, every seven years, by a sealed and peer-reviewed
 report. The site can say that. It still cannot say what the answer was.
 
-### Cross-page guard: dam return periods are not building return periods
+### Dam return periods are not building return periods
 
 The EGBC guideline states that National Building Code seismic hazard parameters "represent
 the median hazard values and are not site-specific", that mean hazard values are
@@ -233,148 +170,6 @@ sets the **High** consequence class at **1-in-2,475** — numerically identical 
 Building Code's return period for buildings. [BC-DDCG] **[A]** The two incommensurable scales
 *touch* at exactly one row, which makes an accidental comparison more likely, not less. A
 reader who notices the coincidence will conclude the scales are the same scale. They are not.
-
-### Ruskin Dam — the region's worked example, deficiency stated in numbers and then fixed
-
-This is the only dam near the region for which a public document states, in numbers, that
-the structure could not withstand the required earthquake — and a later public document
-states that it can.
-
-- BC Hydro's consultant, **Hemmera, April 2011**: *"Canadian Dam Safety Guidelines and
-  current BC Hydro Dam Safety policy both require that the Ruskin Dam must survive the
-  Maximum Design Earthquake (MDE) equal to the 1 in 10,000 year exceedance level
-  (representing a Peak Ground Acceleration of ~0.7g). Key components of the Dam and
-  Powerhouse have seismic withstand levels that are significantly below the MDE levels."*
-  The same page records *"up to 300 people downstream of the Dam during summer months"*.
-  [BCH-RUSKIN-SEIAM-11] **[A]** for the statement; **[B]** for the underlying "BC Hydro,
-  2008" finding it cites, which is unread.
-- **The remedy completed.** BC Hydro's F2019 quarterly reporting records that "After a 20
-  year Dam Safety initiative, and 11 years of this project, the construction of the upper
-  part of the dam (including commissioning of the new gates) was completed in F2018", and
-  its Advisory Board concluded the project "Has met the overall project objectives of
-  withstanding the Maximum Design Earthquake (1:10,000 Annual Exceedance Frequency)".
-  [BCH-RUSKIN-F2019] **[A]** for design intent.
-
-**Guards, all three mandatory.**
-
-- **"Designed to withstand", never "verified to withstand".** The Advisory Board's
-  statement is an expert panel's conclusion about the design and the project's objectives.
-  There is no independent post-construction verification document. [BCH-RUSKIN-F2019]
-- **Ruskin is in Mission, in the Fraser Valley Regional District — not Metro Vancouver.**
-  Same owner, same regulator, same standard, and the clause costs one line. [BC-DAMS-REG]
-  **[A]**
-- **Print no cost figure.** Six variants circulate in BC Hydro's own documents ($856.9M,
-  $748M budget, $728.6M, $718.1M, $642M, $636.3M estimate at completion). A figure with six
-  public variants is a figure that will be contradicted, and the page needs none of them.
-- The 2011 statement describes **a problem since fixed**, and any use must say so in the
-  same sentence.
-
-### Coquitlam Dam — the liquefaction finding
-
-- **Coquitlam Dam is BC Hydro's, not Metro Vancouver's.** [BC-DAMS-REG] **[A]**
-- BC Hydro told the BCUC in its F2007/08 Revenue Requirements Application, Appendix N, May
-  2006, that **"the dam contains loose materials that are expected to liquefy during a
-  moderate to large earthquake."** [BCH-COQUITLAM-RRA-06]
-  **[A]** That is the owner in a regulatory filing, not trade press, and it is the site's
-  best worked example of the liquefaction-of-fill mechanism the ground-conditions page
-  explains.
-- The **C$65 million cost** and the 2008 completion remain trade press. [COQUITLAM-REW]
-  **[B]**
-- **Do not print the 30 m by 300 m backup-dam dimensions.** Not found in any source. The
-  provincial register records Coquitlam Dam's crest as 300 m and height as 30 m
-  [BC-DAMS-REG] **[A]**, which is suggestive — but that is the register describing *a*
-  structure at that D-file, not confirmation of the backup dam's dimensions. The
-  coincidence is not corroboration.
-
-### What BC Hydro says its own dams withstand — the numbers, from its own filings
-
-Retrieved 10 September 2026 from BC Hydro's Facility Asset Plans, filed with the BCUC as
-Appendix K to its F2020–F2021 Revenue Requirements Application. [BCH-RRA-F2020] **[A]**
-throughout. This is the utility describing its own assets to its own regulator.
-
-**The yardstick, stated by the owner.** *"Given that these are all Extreme consequence dams,
-current expectations — as outlined in the Canadian Dam Association's Dam Safety Guidelines —
-are that they should be able to withstand an earthquake of intensity expected to occur once
-every 10,000 years."* Every figure below should be read against that sentence.
-
-- **Alouette.** Spillway damage "that would render it unsafe for spills or drawdowns after
-  the earthquake" at **once every 1,000 to 2,500 years**; right abutment foundation failure
-  at **2,500 years**, leading to eventual failure of the concrete weir structures regulating
-  flow over the spillway; power tunnel headworks and surge tower failure **expected at once
-  every 100 to 200 years**, which "could block the post-earthquake discharge of water from
-  Alouette Reservoir to Stave Lake Reservoir"; and a low level outlet conduit running under
-  the dam that is seismically deficient, "having unquantifiable withstand".
-- **Cheakamus.** *"Insufficient resistance to seismic loads that may lead to failure of the
-  dam, spillway, spillway gates and/or penstock pedestals in a major earthquake occurring, on
-  average, about once every 1,000 years or more."*
-- **Coquitlam.** Tunnel inlet and outlet portals, potential failure at **once every 100 to
-  200 years**; the Low Level Outlet structure at **3,500 to 5,000 years**.
-- **Wahleach** (Very High, not Extreme). Jones Lake intake gates, potential failure at once
-  every **4,800 years**, which "would prevent the closure of the water passage… and could
-  result in the inundation of adjacent utility and transportation corridors".
-
-**Two guards, and neither is optional.**
-
-**These are component withstands, not dam-failure probabilities.** Every figure names a
-part — a spillway, a tunnel portal, a surge tower — and the shaking at which that part is
-expected to fail. Alouette's 1-in-100-to-200-year figure is its power tunnel headworks, not
-its dam. Read as *the dam fails at 1-in-150 years* it is false and frightening; read as *the
-means of controlling the reservoir after an earthquake fails at 1-in-150 years* it is true,
-and in context worse. A sentence that cannot carry the component name does not carry the
-number.
-
-**A retained risk is a decision, not an oversight.** BC Hydro names each deficiency, prices
-the alternative, and states in writing which ones it is accepting. At Alouette it has chosen
-to upgrade the power tunnel rather than the spillway, holding the spillway and abutment
-deficiencies as retained risks, with cost, in-service date and construction start all "to be
-determined"; at Coquitlam only the inlet portal upgrade is in the plan, and the outlet portal
-and Low Level Outlet "are monitored and will be retained as the consequences are expected to
-be low". Cheakamus's remedies sit behind its generating-equipment work.
-
-**The single line that carries the whole finding.** Until the tunnel work is done, BC Hydro
-states that *"Alouette Lake Reservoir will be operated in a manner that provides sufficient
-time to provide emergency response following a major earthquake."* A reservoir operated to
-buy evacuation time.
-
-**One dam where the answer is nothing.** Stave Falls and Blind Slough are Extreme, and the
-Stave Falls New Facility Asset Plan records **no seismic issue at all** among its significant
-remaining risks — its problems are turbine design and control-system obsolescence. Where a
-dam has no seismic deficiency, say so; the page is not an argument.
-
-### Metro Vancouver owns fourteen regulated dams, not two
-
-- **Fourteen regulated dams** are recorded in the provincial register under Metro Vancouver
-  or the Greater Vancouver Water District. [BC-DAMS-REG] **[A]** Two are Extreme (Cleveland,
-  Seymour Falls); two are Very High (Rice Lake North and South); one is High (McLean Pond);
-  the rest are Significant or Low. The page's "two water-supply dams" framing is right about
-  the water supply and wrong about the count.
-- **Three carry a live regulator flag.** McLean Pond and both Rice Lake dams are rated
-  **"2b – Caution"**, which in the province's own words means *considerable work to do*,
-  with the owner *actively working on an approved project to correct the deficiency*.
-  [BC-DAMS-REG] [BCDSP-AR-2324] **[A]** **Standing guard: none of these deficiencies is
-  identified in any public record, and none may be described as seismic.**
-- **The Rice Lake review is the one currently outstanding.** Metro Vancouver: *"A
-  comprehensive DSR was initiated in 2025 following completion of detailed hydrotechnical
-  and geotechnical assessments, and will be completed in 2026."* The provincial dam safety
-  officer's June 2025 audit "noted the outstanding DSR which is currently in progress."
-  [MV-DSP-2026] **[A]** Rice Lake stopped being a drinking-water source in the 1980s and is
-  now recreational — walking trails, a floating dock, fishing — which is precisely the
-  "ordinarily or regularly located in the dam-breach inundation zone" that drives its Very
-  High classification.
-- **The Eagle Lake dams in West Vancouver are missing from this page and should not be.**
-  Eagle Lake West and Eagle Lake East, owned by the District of West Vancouver, are
-  **Extreme consequence, inside Metro Vancouver, and both rated "2b – Caution"** — the only
-  Extreme-consequence dams in Metro Vancouver currently carrying a live regulator flag.
-  [BC-DAMS-REG] **[A]** Same guard: the deficiency is not public and must not be assumed
-  seismic.
-- **A retrieval trap in the register.** The two Rice Lake dams do not return from a
-  region-filtered query; their region field is `N/A`, as it is for 147 dams province-wide.
-  No Extreme dam has a null region, so the Extreme counts are unaffected, but any future
-  region-filtered query against this dataset will silently undercount and must be
-  cross-checked by owner or geometry. [BC-DAMS-REG] **[A]**
-- **The annual update covers seven dams, not fourteen** — the GVWD water-supply portfolio.
-  McLean Pond, the one Metro Vancouver dam outside that portfolio carrying a live regulator
-  flag, appears nowhere in it. [MV-DSP-2026] **[A]**
 
 ### The regulator's own oversight — September 2021, and it must be dated every time
 
@@ -418,6 +213,69 @@ dam has no seismic deficiency, say so; the page is not an argument.
   description of 2026, and the follow-up record must not be presented as though the
   recommendations were met.
 
+## Metro Vancouver's water-supply dams
+
+### Fourteen regulated dams, not two
+
+- **Fourteen regulated dams** are recorded in the provincial register under Metro Vancouver
+  or the Greater Vancouver Water District. [BC-DAMS-REG] **[A]** Two are Extreme (Cleveland,
+  Seymour Falls); two are Very High (Rice Lake North and South); one is High (McLean Pond);
+  the rest are Significant or Low. The page's "two water-supply dams" framing is right about
+  the water supply and wrong about the count.
+- **Three carry a live regulator flag.** McLean Pond and both Rice Lake dams are rated
+  **"2b – Caution"**, which in the province's own words means *considerable work to do*,
+  with the owner *actively working on an approved project to correct the deficiency*.
+  [BC-DAMS-REG] [BCDSP-AR-2324] **[A]** **Standing guard: none of these deficiencies is
+  identified in any public record, and none may be described as seismic.**
+- **The Rice Lake review is the one currently outstanding.** Metro Vancouver: *"A
+  comprehensive DSR was initiated in 2025 following completion of detailed hydrotechnical
+  and geotechnical assessments, and will be completed in 2026."* The provincial dam safety
+  officer's June 2025 audit "noted the outstanding DSR which is currently in progress."
+  [MV-DSP-2026] **[A]** Rice Lake stopped being a drinking-water source in the 1980s and is
+  now recreational — walking trails, a floating dock, fishing — which is precisely the
+  "ordinarily or regularly located in the dam-breach inundation zone" that drives its Very
+  High classification.
+- **A retrieval trap in the register.** The two Rice Lake dams do not return from a
+  region-filtered query; their region field is `N/A`, as it is for 147 dams province-wide.
+  No Extreme dam has a null region, so the Extreme counts are unaffected, but any future
+  region-filtered query against this dataset will silently undercount and must be
+  cross-checked by owner or geometry. [BC-DAMS-REG] **[A]**
+- **The annual update covers seven dams, not fourteen** — the GVWD water-supply portfolio.
+  McLean Pond, the one Metro Vancouver dam outside that portfolio carrying a live regulator
+  flag, appears nowhere in it. [MV-DSP-2026] **[A]**
+
+### The two reviews, and their published conclusions
+
+- **Cleveland Dam.** *"The most recent DSR commenced in 2023 and was completed in 2024.
+  The review identified no unsafe or unacceptable conditions related to design,
+  construction, or operation. The consultant's report was submitted to the BC Dam Safey
+  Office in December 2024."* [MV-DSP-2026] **[A]** (The misspelling is Metro Vancouver's.)
+  The previous review completed in 2016. [MV-DSP-2021] **[A]**
+- **Seymour Falls Dam.** *"The most recent DSR commenced in 2021 and was finalized in
+  2024. The review concluded that the dam is reasonably safe, operated safely, maintained
+  in a safe condition, and that surveillance is adequate to detect any developing safety
+  problems. The consultant's report was submitted to the BC Dam Safey Office in June
+  2024."* [MV-DSP-2026] **[A]** The previous review completed in 2014. [MV-DSP-2021]
+  **[A]**
+- **The reporting route.** Both conclusions come from the **GVWD Dam Safety Program Annual
+  Update**, a report from the Director, Dam Safety, Water Services to Metro Vancouver's
+  Water Committee, published in the committee's agenda package each year. Six consecutive
+  editions were retrieved, 2021 through 2026, each stating the DSR status of every dam by
+  name. [MV-DSP-2026] [MV-DSP-2025] [MV-DSP-2024] [MV-DSP-2023] [MV-DSP-2022]
+  [MV-DSP-2021] **[A]**
+- **Neither published conclusion mentions earthquakes.** Six annual updates read in full,
+  10 September 2026: no seismic loading, ground motion or earthquake performance statement
+  appears in either dam's DSR summary. **[A]** on the absence, from documents read in
+  full. This is the finding the band rests on.
+- **The reports themselves are not published**, nor are the consultants named, nor any
+  deficiency list or Assurance Statement. The sole attachment to the 2024 and 2025 updates
+  is a set of photographs. [MV-DSP-2026] **[A]**
+- **The published intervals between completed reviews were eight years (Cleveland,
+  2016–2024) and ten years (Seymour Falls, 2014–2024)**, against a seven-year cycle.
+  [MV-DSP-2021] [MV-DSP-2026] **[A]** **Do not assert non-compliance** — the Regulation
+  measures the interval to 31 December of the seventh year after, and the exact completion
+  dates are not public.
+
 ### Provincial audits of both dams are six years overdue
 
 - Formal audits by the provincial Dam Safety Officer run on an approximately five-year cycle
@@ -440,7 +298,7 @@ dam has no seismic deficiency, say so; the page is not an argument.
   the programme's annual-reports page still lists 2023/24 as the most recent and is itself
   stamped "Last updated on June 14, 2024", 10 September 2026. **[A]** on the absence.
 
-### Balance: the routine regime is being performed to the letter
+### The routine regime is being performed to the letter
 
 This is the other half of the "seismic upgrade not until 2034" sentence, and it is not
 optional. A page carrying one without the other is slanting the evidence.
@@ -466,7 +324,80 @@ optional. A page carrying one without the other is slanting the evidence.
   Falls's March 2025, with **Dam Emergency Plan updates for both issued March 2026**.
   [MV-DSP-2026] **[A]**
 
-### The October 2020 incident — non-seismic, and included for what it does bear on
+### Earlier upgrades, the owner's compliance statement, and the safety boom
+
+- **Historical upgrades.** Seymour Falls Dam: **$44 million seismic upgrade, 2004–2007**.
+  [MV-SEYMOURDAM-FS] **[A]** Cleveland Dam: **$3 million in 1992**, plus a **$25 million
+  East Abutment upgrade in 2001–2002**. [MV-CLEVELANDDAM-FS] **[A]** These remain true and
+  remain historical; they are not a performance assessment.
+- **"Metro Vancouver meets or exceeds these safety standards"** is the owner's statement
+  about its own compliance. [MV-CLEVELANDDAM-FS] [MV-SEYMOURDAM-FS] **[A]** *for the
+  statement's existence.* If quoted, attribute it as such in the same sentence; it is not an
+  independent finding.
+- **The safety boom contract.** Competition 24-316,
+  "Cleveland Dam and Seymour Falls Dam Safety Boom Condition Assessments", awarded **6
+  January 2025** to Klohn Crippen Berger Ltd. for **$109,177**, recorded in the 2025
+  Financial Performance Report No. 1 carried in the Water Committee agenda of 9 July 2025.
+  [MV-BOOM-25] **[A]** Metro Vancouver's own definition settles the point: the booms "float
+  on the reservoir surface preventing the passage of large debris towards the dams and
+  associated intakes". [MV-DSP-2026] **[A]** **Never let this read as a seismic
+  reassessment** — at $109,177 it is visibly not a structural assessment.
+
+### The capital position: the seismic work is future work
+
+As at 31 May 2026, from Metro Vancouver's capital expenditure reporting to the Water
+Committee of 15 July 2026. [MV-CAPEX-2026] **[A]**
+
+| Project | Active phase | Timeline | Project estimate |
+| --- | --- | --- | --- |
+| Cleveland Dam Seismic Stability Evaluation | Design | 2024–2027 | $1,200,000 |
+| Seymour Falls Dam Seismic Stability Assessment | Design | 2025–2032 | $14,150,000 |
+| **Cleveland Dam MCE Seismic Upgrades** | **Not Started** | **2028–2034** | **$25,000,000** |
+
+"MCE" is Maximum Credible Earthquake — the same term as the Extreme-class design criterion
+above. This is a dated, costed, named, official statement that seismic work on the region's
+largest dam is a decade from completion, sourced to a board agenda rather than to
+inference. It also settles the interpretive question: **the 2024 reviews did not close the
+seismic question**, because the owner is still funding the evaluations and has not begun
+the upgrade.
+
+**Do not merge the two capital tables.** The Draft Five Year Capital Plan 2027–2031 in the
+same agenda gives a "Dams" section total of $90.1M draft and $105.33M over 2027–2031, but
+its per-project columns do not survive text extraction with reliable row alignment.
+[MV-CAPITAL-2027] **[A]** *for line-item names and section totals only.* Quoting a
+five-year window figure against a total-project-estimate label would be an easy and serious
+error.
+
+- **Palisade Lake Outlet Works Rehabilitation Phase 2 comprises the seismic upgrades**,
+  deferred to commence in the **mid-2030s** with completion targeted in the **early 2040s**,
+  timed to follow the Coquitlam Lake Water Supply Project. [MV-WAT-2025-09] **[A]** It is
+  not the page's headline "programme not finished" example: Palisade is a
+  7.6 m Significant-consequence dam, Cleveland is a 92 m Extreme one with a $25M MCE upgrade
+  scheduled 2028–2034.
+
+### The $80.5M figure, and why it is not printed
+
+**Do not print $80.5 million for Cleveland Dam MCE Seismic Upgrades.** A parallel
+retrieval read the same table from the Water Committee agenda of 11 February 2026 and
+returned "Design, 2026–2032, $80,500,000" for that project — every column disagreeing with
+the July document, including a phase regression from Design back to Not Started, which does
+not happen. The February PDF's name column and data columns are separate text streams that
+desynchronise on extraction: from the row after "Cleveland Dam MCE Seismic Upgrades" there
+are nine or more consecutive rows carrying phase, timeline and dollar values with no name
+at all. Cross-checked against the July document, the figures February appears to attribute
+to Cleveland Dam belong to **Burnaby Mountain Tank No. 2 and No. 3** ($80.5M) and to **Port
+Moody Main No. 3, Scott Creek Section**. [MV-CAPEX-2026-FEB] — **rejected, extraction
+artefact.**
+
+The July table is safe because it is sorted descending by project estimate and the
+extracted values run cleanly descending through each row's neighbourhood; a sorted column
+that stays sorted after extraction is a column. Columns to the right of Project Estimate
+demonstrably wrap and must not be used. **The rule this establishes: a figure is traced,
+not averaged. Disagreement between two passes is a feature — chase it.** This is the
+closest this project has come to publishing a dam's capital cost that was in fact a water
+tank's, and it was caught only because two retrievals disagreed.
+
+### The October 2020 Cleveland Dam release — non-seismic
 
 **This section is not about earthquakes. Nothing in any source connects it to seismic
 performance, and nothing on the site may use it to imply anything about how either dam
@@ -527,7 +458,126 @@ regime performs.
   the dam-breach inundation zone". To write "an earthquake could do this" is inference, not
   evidence, and the style guide forbids it.
 
-### Inundation mapping — neither withheld nor absent
+## BC Hydro's dams in and near the region
+
+### What BC Hydro says its own dams withstand — the numbers, from its own filings
+
+Retrieved 10 September 2026 from BC Hydro's Facility Asset Plans, filed with the BCUC as
+Appendix K to its F2020–F2021 Revenue Requirements Application. [BCH-RRA-F2020] **[A]**
+throughout. This is the utility describing its own assets to its own regulator.
+
+**The yardstick, stated by the owner.** *"Given that these are all Extreme consequence dams,
+current expectations — as outlined in the Canadian Dam Association's Dam Safety Guidelines —
+are that they should be able to withstand an earthquake of intensity expected to occur once
+every 10,000 years."* Every figure below should be read against that sentence.
+
+- **Alouette.** Spillway damage "that would render it unsafe for spills or drawdowns after
+  the earthquake" at **once every 1,000 to 2,500 years**; right abutment foundation failure
+  at **2,500 years**, leading to eventual failure of the concrete weir structures regulating
+  flow over the spillway; power tunnel headworks and surge tower failure **expected at once
+  every 100 to 200 years**, which "could block the post-earthquake discharge of water from
+  Alouette Reservoir to Stave Lake Reservoir"; and a low level outlet conduit running under
+  the dam that is seismically deficient, "having unquantifiable withstand".
+- **Cheakamus.** *"Insufficient resistance to seismic loads that may lead to failure of the
+  dam, spillway, spillway gates and/or penstock pedestals in a major earthquake occurring, on
+  average, about once every 1,000 years or more."*
+- **Coquitlam.** Tunnel inlet and outlet portals, potential failure at **once every 100 to
+  200 years**; the Low Level Outlet structure at **3,500 to 5,000 years**.
+- **Wahleach** (Very High, not Extreme). Jones Lake intake gates, potential failure at once
+  every **4,800 years**, which "would prevent the closure of the water passage… and could
+  result in the inundation of adjacent utility and transportation corridors".
+
+**Two guards, and neither is optional.**
+
+**These are component withstands, not dam-failure probabilities.** Every figure names a
+part — a spillway, a tunnel portal, a surge tower — and the shaking at which that part is
+expected to fail. Alouette's 1-in-100-to-200-year figure is its power tunnel headworks, not
+its dam. Read as *the dam fails at 1-in-150 years* it is false and frightening; read as *the
+means of controlling the reservoir after an earthquake fails at 1-in-150 years* it is true,
+and in context worse. A sentence that cannot carry the component name does not carry the
+number.
+
+**A retained risk is a decision, not an oversight.** BC Hydro names each deficiency, prices
+the alternative, and states in writing which ones it is accepting. At Alouette it has chosen
+to upgrade the power tunnel rather than the spillway, holding the spillway and abutment
+deficiencies as retained risks, with cost, in-service date and construction start all "to be
+determined"; at Coquitlam only the inlet portal upgrade is in the plan, and the outlet portal
+and Low Level Outlet "are monitored and will be retained as the consequences are expected to
+be low". Cheakamus's remedies sit behind its generating-equipment work.
+
+**The single line that carries the whole finding.** Until the tunnel work is done, BC Hydro
+states that *"Alouette Lake Reservoir will be operated in a manner that provides sufficient
+time to provide emergency response following a major earthquake."* A reservoir operated to
+buy evacuation time.
+
+**One dam where the answer is nothing.** Stave Falls and Blind Slough are Extreme, and the
+Stave Falls New Facility Asset Plan records **no seismic issue at all** among its significant
+remaining risks — its problems are turbine design and control-system obsolescence. Where a
+dam has no seismic deficiency, say so; the page is not an argument.
+
+### Ruskin Dam — the region's worked example, deficiency stated in numbers and then fixed
+
+This is the only dam near the region for which a public document states, in numbers, that
+the structure could not withstand the required earthquake — and a later public document
+states that it can.
+
+- BC Hydro's consultant, **Hemmera, April 2011**: *"Canadian Dam Safety Guidelines and
+  current BC Hydro Dam Safety policy both require that the Ruskin Dam must survive the
+  Maximum Design Earthquake (MDE) equal to the 1 in 10,000 year exceedance level
+  (representing a Peak Ground Acceleration of ~0.7g). Key components of the Dam and
+  Powerhouse have seismic withstand levels that are significantly below the MDE levels."*
+  The same page records *"up to 300 people downstream of the Dam during summer months"*.
+  [BCH-RUSKIN-SEIAM-11] **[A]** for the statement; **[B]** for the underlying "BC Hydro,
+  2008" finding it cites, which is unread.
+- **The remedy completed.** BC Hydro's F2019 quarterly reporting records that "After a 20
+  year Dam Safety initiative, and 11 years of this project, the construction of the upper
+  part of the dam (including commissioning of the new gates) was completed in F2018", and
+  its Advisory Board concluded the project "Has met the overall project objectives of
+  withstanding the Maximum Design Earthquake (1:10,000 Annual Exceedance Frequency)".
+  [BCH-RUSKIN-F2019] **[A]** for design intent.
+
+**Guards, all three mandatory.**
+
+- **"Designed to withstand", never "verified to withstand".** The Advisory Board's
+  statement is an expert panel's conclusion about the design and the project's objectives.
+  There is no independent post-construction verification document. [BCH-RUSKIN-F2019]
+- **Ruskin is in Mission, in the Fraser Valley Regional District — not Metro Vancouver.**
+  Same owner, same regulator, same standard, and the clause costs one line. [BC-DAMS-REG]
+  **[A]**
+- **Print no cost figure.** Six variants circulate in BC Hydro's own documents ($856.9M,
+  $748M budget, $728.6M, $718.1M, $642M, $636.3M estimate at completion). A figure with six
+  public variants is a figure that will be contradicted, and the page needs none of them.
+- The 2011 statement describes **a problem since fixed**, and any use must say so in the
+  same sentence.
+
+### Coquitlam Dam — the liquefaction finding
+
+- **Coquitlam Dam is BC Hydro's, not Metro Vancouver's.** [BC-DAMS-REG] **[A]**
+- BC Hydro told the BCUC in its F2007/08 Revenue Requirements Application, Appendix N, May
+  2006, that **"the dam contains loose materials that are expected to liquefy during a
+  moderate to large earthquake."** [BCH-COQUITLAM-RRA-06]
+  **[A]** That is the owner in a regulatory filing, not trade press, and it is the site's
+  best worked example of the liquefaction-of-fill mechanism the ground-conditions page
+  explains.
+- The **C$65 million cost** and the 2008 completion remain trade press. [COQUITLAM-REW]
+  **[B]**
+- **Do not print the 30 m by 300 m backup-dam dimensions.** Not found in any source. The
+  provincial register records Coquitlam Dam's crest as 300 m and height as 30 m
+  [BC-DAMS-REG] **[A]**, which is suggestive — but that is the register describing *a*
+  structure at that D-file, not confirmation of the backup dam's dimensions. The
+  coincidence is not corroboration.
+
+### The 2014 hazard assessment and the ten-year commitment
+
+- **BC Hydro's 2014 probabilistic seismic hazard assessment** found hazard roughly unchanged
+  for the Lower Mainland but higher for Vancouver Island and the Bridge River area, with a
+  **$1.9 billion** ten-year dam safety and seismic commitment. [BCH-PSHA-14] **[A]** on what
+  the release states. The release is a backgrounder, not the assessment; **the commitment
+  window opened in 2014 and closed in 2024**, so the tense must reflect that. This paragraph
+  is the weakest thing on the page relative to what else is available and should do no
+  structural work.
+
+## Inundation mapping — neither withheld nor absent
 
 - **The mapping exists.** An owner of a significant-or-higher dam must prepare a dam
   emergency plan and submit it for acceptance; the province's guidance states that Extreme
@@ -569,47 +619,14 @@ regime performs.
   design and construction of a long term public warning system". [MV-DSP-2022] **[A]** These
   are named, dated, commissioned studies of exactly the question a reader asks, and none is
   published. **This is the most specific FOI target this pass produced.**
-- **Do not claim municipal-level absence.** The municipal leg of this search was blocked —
-  `mission.ca`, `coquitlam.ca` and `metrovancouver.org` search all returned JavaScript
-  shells with no indexable text, `fvrd.ca` returned 403, and a Wayback enumeration timed
-  out. A municipality may publish an evacuation map this pass could not see.
+- **Do not claim municipal-level absence.** The municipal leg of this search was
+  blocked; a municipality may publish an evacuation map this pass could not see. See
+  *What is not established*.
 - **Earthquake is an explicit trigger in dam emergency planning.** The DEP template's
   escalation table lists "Measurable earthquake felt or reported on or within 50 kilometers
   of the dam", "Earthquake resulting in visible damage to the dam or appurtenances" and
   "Earthquake resulting in uncontrolled release of water from the dam". [BCDSP-DEP-24]
   **[A]**
-
-### Further findings
-
-- **Historical upgrades.** Seymour Falls Dam: **$44 million seismic upgrade, 2004–2007**.
-  [MV-SEYMOURDAM-FS] **[A]** Cleveland Dam: **$3 million in 1992**, plus a **$25 million
-  East Abutment upgrade in 2001–2002**. [MV-CLEVELANDDAM-FS] **[A]** These remain true and
-  remain historical; they are not a performance assessment.
-- **"Metro Vancouver meets or exceeds these safety standards"** is the owner's statement
-  about its own compliance. [MV-CLEVELANDDAM-FS] [MV-SEYMOURDAM-FS] **[A]** *for the
-  statement's existence.* If quoted, attribute it as such in the same sentence; it is not an
-  independent finding.
-- **The safety boom contract.** Competition 24-316,
-  "Cleveland Dam and Seymour Falls Dam Safety Boom Condition Assessments", awarded **6
-  January 2025** to Klohn Crippen Berger Ltd. for **$109,177**, recorded in the 2025
-  Financial Performance Report No. 1 carried in the Water Committee agenda of 9 July 2025.
-  [MV-BOOM-25] **[A]** Metro Vancouver's own definition settles the point: the booms "float
-  on the reservoir surface preventing the passage of large debris towards the dams and
-  associated intakes". [MV-DSP-2026] **[A]** **Never let this read as a seismic
-  reassessment** — at $109,177 it is visibly not a structural assessment.
-- **Palisade Lake Outlet Works Rehabilitation Phase 2 comprises the seismic upgrades**,
-  deferred to commence in the **mid-2030s** with completion targeted in the **early 2040s**,
-  timed to follow the Coquitlam Lake Water Supply Project. [MV-WAT-2025-09] **[A]** It is
-  not the page's headline "programme not finished" example: Palisade is a
-  7.6 m Significant-consequence dam, Cleveland is a 92 m Extreme one with a $25M MCE upgrade
-  scheduled 2028–2034.
-- **BC Hydro's 2014 probabilistic seismic hazard assessment** found hazard roughly unchanged
-  for the Lower Mainland but higher for Vancouver Island and the Bridge River area, with a
-  **$1.9 billion** ten-year dam safety and seismic commitment. [BCH-PSHA-14] **[A]** on what
-  the release states. The release is a backgrounder, not the assessment; **the commitment
-  window opened in 2014 and closed in 2024**, so the tense must reflect that. This paragraph
-  is the weakest thing on the page relative to what else is available and should do no
-  structural work.
 
 ---
 
@@ -640,21 +657,13 @@ regime performs.
   copy still names two of them, "hydraulic modeling of the Capilano River and a Capilano
   River User Study", and **both dropped out of committee reporting after July 2024**. No
   consultant has ever been identified.
-  - **Consultant portfolios audited 10 September 2026 with working searches and controls,
-    all negative:** NHC, Klohn Crippen Berger, Kerr Wood Leidal, Hatch, AtkinsRéalis, KGS,
-    Associated Engineering, Tetra Tech.
-  - **Three audits are invalid and must be recorded as such rather than as negatives**, so
-    nobody re-runs them believing they returned nothing: **Stantec** edge-blocks with 403,
-    **Ausenco** has no working search and serves a zero-byte sitemap, and **BGC**'s search
-    parameter returns an unfiltered grid rather than results.
-  - **One channel was unreachable**: the web archive began serving "Temporarily Offline" for
-    every request including the control, so the WSP media library could not be swept. A
-    low-probability route, and still **not a negative**.
+  - **Consultant portfolios searched 10 September 2026, all negative.** Stantec,
+    Ausenco and BGC could not be searched at all — a 403, no working search, and a
+    search parameter that returns an unfiltered grid — and the web archive was offline,
+    so those four channels are **not negatives**.
 - **The 2002 WorkSafeBC inspection report.** Still unread, and the channel is **blocked
-  rather than empty**: WorkSafeBC's site search returns a generic error to every payload
-  shape, and its penalty-summaries search is a pure client-side shell that served
-  byte-identical responses to three different queries, 10 September 2026. Record no absence
-  against WorkSafeBC from that. Route: FOI. **[?]**
+  rather than empty**: both WorkSafeBC search routes were broken on 10 September 2026.
+  Record no absence against WorkSafeBC from that. Route: FOI. **[?]**
 - **The coroner's record.** **No inquest was held.** The BC
   Coroners Service publishes one index of inquest schedules, findings and verdicts covering
   2007 through 2026; searched for "Capilano" (nothing) and "Cleveland" (six hits, all the
@@ -774,10 +783,3 @@ Program annual reports for 2024/25 and 2025/26, both overdue — the latest publ
 2023/24. The fourth edition of the OAG's *Annual Follow-up Report*, due late 2026. The next
 DSRs, both around 2031. Consequence reclassification, which owners must redetermine
 annually.
-
-**Retrieval notes worth keeping** (and belonging in `../knowledge.md`, not here): the
-`metrovancouver.org` SharePoint search returns HTTP 500 and manufactures false negatives —
-enumerate the named board folders through the folder-file API instead; the BC Data Catalogue
-is a JavaScript shell but its CKAN API and the BCGW WFS endpoint are open and
-unauthenticated; and an Internet Archive CDX lookup followed by an `if_` raw-content fetch
-defeats a Cloudflare 403 on a public standards document.

@@ -19,47 +19,7 @@ document that has not been revised since 2016 is the general one.
 
 ## Findings
 
-### What the Washington after-action report says, and what it does not
-
-- **"Grossly inadequate" and "humanitarian disaster within ten days" do not appear in
-  the published Washington after-action report.** A full-text search of the extracted
-  PDF returns zero hits for "grossly", "humanitarian disaster", "ten days" and
-  "10 days". [CR16-WA] **[A]** on the absence.
-- Both phrases are **Seattle Times quotations from an unpublished late-stage draft**,
-  published 22–24 October 2016 — before the final report appeared on 5 January 2017.
-  The article itself attributes them to a draft. [CR16-ST] **[B]** They cannot be
-  cited to the after-action report, and the site does not use them.
-- What the **published** report says is meaningfully weaker, and is quotable: "The
-  state will experience large humanitarian impacts shortly following a CSZ rupture
-  unless response is timely and effective" (Strategic Findings, p. 5), and "The state's
-  catastrophic plans were inadequate in many areas" (Observation 7.1). [CR16-WA]
-  **[A]**
-- **A false friend to avoid.** "Grossly inadequate" *does* appear in the **Oregon**
-  after-action report — about Oregon ECC internal staffing levels (Observation 6.3), an
-  entirely different claim about a different subject in a different state. [CR16-OR]
-  **[A]** Do not let the phrase migrate back in through that door.
-
-### The American casualty figures
-
-- **"14,000 dead / 30,000+ injured / 7,000 bridges / 16,000 miles" does not trace.**
-  **[?]**
-- The underlying study is the *Analytical Baseline Study for the Cascadia Earthquake
-  and Tsunami*, NISAC / HITRAC, 18 November 2011, which the Washington report names as
-  foundational to the scenario. Its own figures are **2,868 deaths and roughly 27,000
-  injuries across California, Oregon and Washington combined**, and **2,059 bridges at
-  the 50th percentile, 3,371 at the 90th**. [HITRAC-11] **[A]**
-- The exercise scenario's "**14,100 fatalities**" appears to be a **mis-carried injury
-  figure**: HITRAC's Oregon *injuries* are 14,109, and the exercise's 24,000 injured is
-  close to HITRAC's 24,662 total injuries. The Washington report states the HITRAC
-  study was "modified to achieve targeted training objectives". [CR16-WA] [HITRAC-11]
-  **[B]** on the inference; **[A]** on both underlying numbers.
-- **The bridge and mileage figures were not found in any primary document** — zero hits
-  across the Washington report, the Oregon report, the Cascadia Rising 2022 report and
-  HITRAC. **[?]**
-- BC has its own casualty figures for both scenarios. The page uses those; it does not
-  use the American ones.
-
-### The CEMP is a framework, not a document
+### The framework and its documents
 
 - **There is no document called "the CEMP" and the site never cites one.** EMCR's
   provincial emergency plans page describes it as "a framework that outlines the
@@ -73,58 +33,7 @@ document that has not been revised since 2016 is the general one.
   component of the Comprehensive Emergency Management Plan (CEMP)." [PEIRS] p. 98 **[A]**
 - **Cite the All-Hazard Plan by name** wherever the page needs the parent text.
 
-### The two documents disagree — and this is the spine of the page
-
-- **BC's all-hazard doctrine is bottom-up and request-driven by default.** Planning
-  assumptions, [AHP-2012] pp. 10–11, all **[A]**:
-  - "Consequences are typically managed at the geographic, organizational and
-    jurisdictional level that is most appropriate to the scope of the event."
-  - "A situation occurring at the international or national level may **reverse or
-    otherwise change the normal 'bottom-up' approach to response**."
-  - "Emergencies can **exceed the capabilities** of private sector infrastructure owners,
-    local authorities and the Provincial government."
-- The same plan sets the province's role as supplementary: "The Province will coordinate
-  available resources to provide emergency response assistance that **supplements but
-  does not substitute for community resources**." [AHP-2012] p. 11 **[A]**
-- And it leaves the first move with the local authority: local authorities "will execute
-  the **initial response using jurisdictional resources** as well as resources available
-  through **mutual aid/assistance agreements**", and "have direct control of the
-  resources available under their jurisdiction". [AHP-2012] p. 11 **[A]** The plan "does
-  not override local authority plans except where a local authority is under a
-  provincial state of emergency". [AHP-2012] p. 9 **[A]**
-- **PEIRS makes the reversal standing policy for a catastrophic earthquake.** The
-  province "will stand up response measures outlined within this strategy and
-  **proactively deploy resources into the impact area**". [PEIRS] p. 12 **[A]**
-- **So the two documents disagree, and the one that has not been revised since 2016 is
-  the general one.** The push decision this page credits to BC is a departure from BC's
-  own all-hazard doctrine, sourced from both sides. That is more precise than saying BC
-  has simply chosen push over pull.
-
-### The framework is older than the law it is made under
-
-- **The All-Hazard Plan is dated 4 November 2012, last amended 22 June 2016**, 66 pp.
-  [AHP-2012] **[A]**
-- It is made under the *Emergency Program Act* and the Emergency Program Management
-  Regulations [AHP-2012] p. 10 **[A]** — a statute **repealed in 2023**. EMCR's own
-  legislation page confirms "The Act replaced the Emergency Program Act in 2023", lists
-  regulations still in development, and announces no successor to the CEMP or to BCEMS.
-  Page last updated 26 August 2026. [EMCR-LEG] **[A]**
-- It names EMBC as "a branch of the B.C. Ministry of Transportation and Infrastructure"
-  [AHP-2012] p. 10 **[A]** — an organisation that has not existed in that form since
-  EMBC became EMCR in 2022.
-- It promises its own review: "The All-Hazard Plan will be reviewed and updated by EMBC
-  **every four years**." [AHP-2012] p. 8 **[A]** Its last amendment was 2016.
-- It was still the province's published plan on **23 December 2025**, the date EMCR's
-  provincial emergency plans page was last updated. [CEMP-PAGE] **[A]**
-- **The BCEMS Guide is the 2016 edition**, also made under the repealed Act: "Developed
-  under the authority set out in the **BC Emergency Program Act** and the Emergency
-  Program Management Regulation, BCEMS is standard practice for all provincial
-  government ministries and Crown corporations." [BCEMS-2016] p. 10 **[A]**
-- **Neither has been reissued under EDMA 2023.** This is checkable, in-jurisdiction and
-  needs no adjectives: British Columbia's foundational emergency-management framework
-  has not been rewritten since the Act it was made under was repealed.
-
-### The response architecture BCEMS defines
+### The response architecture
 
 - **Eight response goals, in priority order**: 1 ensure the health and safety of
   responders; 2 save lives; 3 reduce suffering; 4 protect public health; 5 protect
@@ -165,7 +74,40 @@ document that has not been revised since 2016 is the general one.
   Response and Recovery Centre (PERRC). Same concept, renamed; the 2016 guide has not
   been updated to match.
 
-### BC's own documents say it — the operational layer
+### Push, not pull: BC's two plans disagree
+
+- **BC's all-hazard doctrine is bottom-up and request-driven by default.** Planning
+  assumptions, [AHP-2012] pp. 10–11, all **[A]**:
+  - "Consequences are typically managed at the geographic, organizational and
+    jurisdictional level that is most appropriate to the scope of the event."
+  - "A situation occurring at the international or national level may **reverse or
+    otherwise change the normal 'bottom-up' approach to response**."
+  - "Emergencies can **exceed the capabilities** of private sector infrastructure owners,
+    local authorities and the Provincial government."
+- The same plan sets the province's role as supplementary: "The Province will coordinate
+  available resources to provide emergency response assistance that **supplements but
+  does not substitute for community resources**." [AHP-2012] p. 11 **[A]**
+- And it leaves the first move with the local authority: local authorities "will execute
+  the **initial response using jurisdictional resources** as well as resources available
+  through **mutual aid/assistance agreements**", and "have direct control of the
+  resources available under their jurisdiction". [AHP-2012] p. 11 **[A]** The plan "does
+  not override local authority plans except where a local authority is under a
+  provincial state of emergency". [AHP-2012] p. 9 **[A]**
+- **PEIRS makes the reversal standing policy for a catastrophic earthquake.** The
+  province "will stand up response measures outlined within this strategy and
+  **proactively deploy resources into the impact area**". [PEIRS] p. 12 **[A]**
+- **So the two documents disagree, and the one that has not been revised since 2016 is
+  the general one.** The push decision this page credits to BC is a departure from BC's
+  own all-hazard doctrine, sourced from both sides.
+- Washington's push-versus-pull finding is about a **request system** failing.
+  [CR16-WA] **[A]**
+- **What BC's plan is exposed to instead is a geographic assumption** — that there *is*
+  an outside; that agencies outside the impact area are "largely unaffected and
+  functional"; and that staging areas outside it are usable. [PEIRS] pp. 11–14 **[A]**
+  In a Cascadia M9 the impact area is most of the coast, and the province's own
+  Appendix A says the American side of it may be overwhelmed too. [PEIRS] p. 94 **[A]**
+
+### What the province's plans say would happen
 
 - **The Cascadia constraint, stated by the province:** "a CSZ event would be
   devastating to B.C. as impacts would be felt over a very broad region, many remote
@@ -204,96 +146,7 @@ document that has not been revised since 2016 is the general one.
     alternate locations." — the provincial and central coordination centres themselves
     are among the damaged assets.
 
-### The mechanism is different from the American one, and the difference is the page
-
-- Washington's push-versus-pull finding is about a **request system** failing.
-  [CR16-WA] **[A]**
-- **BC has already made the push decision.** PEIRS commits the province to proactively
-  deploying resources inward without waiting for requests. [PEIRS] p. 12 **[A]** It is a
-  departure from the province's own all-hazard doctrine, which is bottom-up by default
-  and treats reversal as an exception. [AHP-2012] p. 11 **[A]** — see above.
-- **What BC's plan is exposed to instead is a geographic assumption** — that there *is*
-  an outside; that agencies outside the impact area are "largely unaffected and
-  functional"; and that staging areas outside it are usable. [PEIRS] pp. 11–14 **[A]**
-  In a Cascadia M9 the impact area is most of the coast, and the province's own
-  Appendix A says the American side of it may be overwhelmed too. [PEIRS] p. 94 **[A]**
-- **Adopt BC's own framing: help is late, not absent.** It is more defensible than "no
-  help is coming", and it is what the province actually says. [DCRRA-2025] pp. 89–90
-  **[A]**
-
-### The best single fact, and it is BC's own
-
-- Exercise Coastal Response 2016 — BC's first full-scale earthquake and tsunami
-  exercise, 7–10 June 2016, $1.2 million, about 800 participants from 65 organisations,
-  the first test of the 2015 Earthquake Immediate Response Plan. [ECR-2016] **[A]**
-- Two of its mutual-aid objectives were **not tested**, and the report says why:
-  "Activate Pacific Northwest Emergency Management Arrangement (PNEMA) **(Not tested
-  due to concurrent Exercise Cascadia Rising)**", and "Request activation of Alberta
-  Emergency Response Plan Catastrophic Earthquake in B.C. **(Not tested due to
-  real-world constraints)**". [ECR-2016] **[A]**
-- **BC could not exercise its cross-border mutual-aid arrangement because its
-  cross-border partners were busy exercising the same earthquake.** That is the
-  mutual-aid problem in miniature, in a BC government document, and it is better than
-  anything the American reports offer.
-- *The 2016 report's "Alberta Emergency Response Plan Catastrophic Earthquake in B.C." is
-  quoted verbatim above; Alberta's own name for the document is the* **Earthquake Response
-  Plan for British Columbia (ERPBC)**. [AB-ERPBC] **[A]** See the formal instruments below.
-
-### What an exercise is allowed to assume
-
-- Exercise Coastal Response 2023 — 7–9 February 2023, a National Priority Exercise with
-  about 200 partners, on an NRCan-designed M6.8 twelve kilometres northwest of
-  Tsawwassen. [ECR-2023] **[A]**
-- Its designers state their own thumb on the scale: the scenario was built "to
-  challenge participants **while not completely overwhelming them**", and
-  "**communications pathways remained intact for training purposes**". [ECR-2023]
-  **[A]** Even BC's own exercise had to hold the communications system up artificially
-  to make the response trainable.
-
-### What BC publishes about its own exercises
-
-- **BC publishes summaries of its catastrophic-earthquake exercises, not full
-  after-action reports.** For 2016 the exercise programme page offers only *Initial
-  Findings*; for 2023 it offers a 1.2 MB PDF it describes as the "Joint
-  Federal/Provincial After Action Report", which resolves to the file titled *Joint
-  Executive Summary*. [EX-PROG] **[A]** So the site does not say no AAR exists for 2023 —
-  **EMCR itself labels that summary as the after-action report**. The honest sentence is
-  about the form: summaries, not full reports. It contrasts cleanly and fairly with
-  Washington's 102-page 2016 report. [CR16-WA] **[A]**
-- Every `www2.gov.bc.ca/assets` link on the exercise programme page was extracted: seven
-  in total, of which only two are exercise reports (`initialfindingsecr-2016.pdf` and
-  `cr23-joint_executive_summary_2023.pdf`). The rest are the exercise calendar and
-  generic workshop and tabletop templates. Page last updated 16 June 2026. [EX-PROG]
-  **[A]** on the absence.
-- The page lists **three** past major exercises — Coastal Response 2023, Salish Sea 2017,
-  Coastal Response 2016 — confirming no BC catastrophic exercise since 2023. [EX-PROG]
-  **[A]**
-- **The next one is dated.** The current exercise calendar, revised 16 June 2026, lists
-  **Exercise Luuwaay Taaydala**, an EMCR-led tsunami preparation exercise on **5 November
-  2026**, Vancouver Island and the Northwest Coast. [EX-CAL-26] **[A]** The programme
-  states its own cadence: "a minimum of 2 regional exercises per year, a Provincial level
-  exercise every 2 years, and a **large scale catastrophic all-hazard emergency exercise
-  every 5 years**". [EX-PROG] **[A]** Five years from February 2023 puts the next
-  large-scale catastrophic exercise around **2028** — a measurable commitment the site can
-  check against later.
-
-### What is kept from the American record
-
-- **Push versus pull, verified verbatim and quotable.** "Cascadia Rising proved this
-  approach is inadequate in response to a CSZ earthquake due to the wide spread damage,
-  sense of urgency, and barriers to normal communication and coordination", with
-  Observation 1.2 ("The 'pull' method of deploying resources must change to a 'push'
-  approach for catastrophic scenarios") and the Washington National Guard's "the
-  traditional and universally accepted 'pull' methodology will cost lives in this
-  scenario". [CR16-WA] **[A]**, US jurisdiction.
-- **Cite the 2022 exercise, not the 2016 one.** Cascadia Rising 2016 has been
-  superseded by the Washington Cascadia Rising 2022 exercise, whose final after-action
-  report was published 18 July 2023 and whose improvement items run into 2026.
-  [CR22-WA] **[A]** Where the finding is carried, it is carried as the current
-  Washington position, not as a decade-old one. Whether the push/pull language survives
-  verbatim into the 2022 report is a verification item below.
-
-### The formal instruments
+### Who comes, and under which instrument
 
 Unless noted, from [PEIRS] pp. 53, 75, 96–97, all **[A]**:
 
@@ -395,6 +248,143 @@ below, or not quote at all.
   different licence from every other BC source on this site, and it is **the one class of
   BC government material this site may quote at length**. Everything else on
   `www2.gov.bc.ca` is all rights reserved by default — see `../../licensing.md`.
+
+### Exercise Coastal Response 2016, and the untested mutual-aid objectives
+
+- Exercise Coastal Response 2016 — BC's first full-scale earthquake and tsunami
+  exercise, 7–10 June 2016, $1.2 million, about 800 participants from 65 organisations,
+  the first test of the 2015 Earthquake Immediate Response Plan. [ECR-2016] **[A]**
+- Two of its mutual-aid objectives were **not tested**, and the report says why:
+  "Activate Pacific Northwest Emergency Management Arrangement (PNEMA) **(Not tested
+  due to concurrent Exercise Cascadia Rising)**", and "Request activation of Alberta
+  Emergency Response Plan Catastrophic Earthquake in B.C. **(Not tested due to
+  real-world constraints)**". [ECR-2016] **[A]**
+- **BC could not exercise its cross-border mutual-aid arrangement because its
+  cross-border partners were busy exercising the same earthquake.** That is the
+  mutual-aid problem in miniature, in a BC government document, and it is better than
+  anything the American reports offer.
+- *The 2016 report's "Alberta Emergency Response Plan Catastrophic Earthquake in B.C." is
+  quoted verbatim above; Alberta's own name for the document is the* **Earthquake Response
+  Plan for British Columbia (ERPBC)**. [AB-ERPBC] **[A]** See "Who comes, and under
+  which instrument" above.
+
+### Exercise Coastal Response 2023, and what its designers assumed
+
+- Exercise Coastal Response 2023 — 7–9 February 2023, a National Priority Exercise with
+  about 200 partners, on an NRCan-designed M6.8 twelve kilometres northwest of
+  Tsawwassen. [ECR-2023] **[A]**
+- Its designers state their own thumb on the scale: the scenario was built "to
+  challenge participants **while not completely overwhelming them**", and
+  "**communications pathways remained intact for training purposes**". [ECR-2023]
+  **[A]** Even BC's own exercise had to hold the communications system up artificially
+  to make the response trainable.
+
+### What BC publishes about its exercises
+
+- **BC publishes summaries of its catastrophic-earthquake exercises, not full
+  after-action reports.** For 2016 the exercise programme page offers only *Initial
+  Findings*; for 2023 it offers a 1.2 MB PDF it describes as the "Joint
+  Federal/Provincial After Action Report", which resolves to the file titled *Joint
+  Executive Summary*. [EX-PROG] **[A]** So the site does not say no AAR exists for 2023 —
+  **EMCR itself labels that summary as the after-action report**. The honest sentence is
+  about the form: summaries, not full reports. It contrasts cleanly and fairly with
+  Washington's 102-page 2016 report. [CR16-WA] **[A]**
+- Every `www2.gov.bc.ca/assets` link on the exercise programme page was extracted: seven
+  in total, of which only two are exercise reports (`initialfindingsecr-2016.pdf` and
+  `cr23-joint_executive_summary_2023.pdf`). The rest are the exercise calendar and
+  generic workshop and tabletop templates. Page last updated 16 June 2026. [EX-PROG]
+  **[A]** on the absence.
+- The page lists **three** past major exercises — Coastal Response 2023, Salish Sea 2017,
+  Coastal Response 2016 — confirming no BC catastrophic exercise since 2023. [EX-PROG]
+  **[A]**
+- **The next one is dated.** The current exercise calendar, revised 16 June 2026, lists
+  **Exercise Luuwaay Taaydala**, an EMCR-led tsunami preparation exercise on **5 November
+  2026**, Vancouver Island and the Northwest Coast. [EX-CAL-26] **[A]** The programme
+  states its own cadence: "a minimum of 2 regional exercises per year, a Provincial level
+  exercise every 2 years, and a **large scale catastrophic all-hazard emergency exercise
+  every 5 years**". [EX-PROG] **[A]** Five years from February 2023 puts the next
+  large-scale catastrophic exercise around **2028** — a measurable commitment the site can
+  check against later.
+
+### The framework is older than the law it is made under
+
+- **The All-Hazard Plan is dated 4 November 2012, last amended 22 June 2016**, 66 pp.
+  [AHP-2012] **[A]**
+- It is made under the *Emergency Program Act* and the Emergency Program Management
+  Regulations [AHP-2012] p. 10 **[A]** — a statute **repealed in 2023**. EMCR's own
+  legislation page confirms "The Act replaced the Emergency Program Act in 2023", lists
+  regulations still in development, and announces no successor to the CEMP or to BCEMS.
+  Page last updated 26 August 2026. [EMCR-LEG] **[A]**
+- It names EMBC as "a branch of the B.C. Ministry of Transportation and Infrastructure"
+  [AHP-2012] p. 10 **[A]** — an organisation that has not existed in that form since
+  EMBC became EMCR in 2022.
+- It promises its own review: "The All-Hazard Plan will be reviewed and updated by EMBC
+  **every four years**." [AHP-2012] p. 8 **[A]** Its last amendment was 2016.
+- It was still the province's published plan on **23 December 2025**, the date EMCR's
+  provincial emergency plans page was last updated. [CEMP-PAGE] **[A]**
+- **The BCEMS Guide is the 2016 edition**, also made under the repealed Act: "Developed
+  under the authority set out in the **BC Emergency Program Act** and the Emergency
+  Program Management Regulation, BCEMS is standard practice for all provincial
+  government ministries and Crown corporations." [BCEMS-2016] p. 10 **[A]**
+- **Neither has been reissued under EDMA 2023.** This is checkable, in-jurisdiction and
+  needs no adjectives: British Columbia's foundational emergency-management framework
+  has not been rewritten since the Act it was made under was repealed.
+
+### Washington's push-to-pull finding
+
+- **Push versus pull, verified verbatim and quotable.** "Cascadia Rising proved this
+  approach is inadequate in response to a CSZ earthquake due to the wide spread damage,
+  sense of urgency, and barriers to normal communication and coordination", with
+  Observation 1.2 ("The 'pull' method of deploying resources must change to a 'push'
+  approach for catastrophic scenarios") and the Washington National Guard's "the
+  traditional and universally accepted 'pull' methodology will cost lives in this
+  scenario". [CR16-WA] **[A]**, US jurisdiction.
+- **Cite the 2022 exercise, not the 2016 one.** Cascadia Rising 2016 has been
+  superseded by the Washington Cascadia Rising 2022 exercise, whose final after-action
+  report was published 18 July 2023 and whose improvement items run into 2026.
+  [CR22-WA] **[A]** Where the finding is carried, it is carried as the current
+  Washington position, not as a decade-old one. Whether the push/pull language survives
+  verbatim into the 2022 report is a verification item below.
+
+### Phrases that cannot be cited to the Washington report
+
+- **"Grossly inadequate" and "humanitarian disaster within ten days" do not appear in
+  the published Washington after-action report.** A full-text search of the extracted
+  PDF returns zero hits for "grossly", "humanitarian disaster", "ten days" and
+  "10 days". [CR16-WA] **[A]** on the absence.
+- Both phrases are **Seattle Times quotations from an unpublished late-stage draft**,
+  published 22–24 October 2016 — before the final report appeared on 5 January 2017.
+  The article itself attributes them to a draft. [CR16-ST] **[B]** They cannot be
+  cited to the after-action report, and the site does not use them.
+- What the **published** report says is meaningfully weaker, and is quotable: "The
+  state will experience large humanitarian impacts shortly following a CSZ rupture
+  unless response is timely and effective" (Strategic Findings, p. 5), and "The state's
+  catastrophic plans were inadequate in many areas" (Observation 7.1). [CR16-WA]
+  **[A]**
+- **A false friend to avoid.** "Grossly inadequate" *does* appear in the **Oregon**
+  after-action report — about Oregon ECC internal staffing levels (Observation 6.3), an
+  entirely different claim about a different subject in a different state. [CR16-OR]
+  **[A]** Do not let the phrase migrate back in through that door.
+
+### The American casualty figures
+
+- **"14,000 dead / 30,000+ injured / 7,000 bridges / 16,000 miles" does not trace.**
+  **[?]**
+- The underlying study is the *Analytical Baseline Study for the Cascadia Earthquake
+  and Tsunami*, NISAC / HITRAC, 18 November 2011, which the Washington report names as
+  foundational to the scenario. Its own figures are **2,868 deaths and roughly 27,000
+  injuries across California, Oregon and Washington combined**, and **2,059 bridges at
+  the 50th percentile, 3,371 at the 90th**. [HITRAC-11] **[A]**
+- The exercise scenario's "**14,100 fatalities**" appears to be a **mis-carried injury
+  figure**: HITRAC's Oregon *injuries* are 14,109, and the exercise's 24,000 injured is
+  close to HITRAC's 24,662 total injuries. The Washington report states the HITRAC
+  study was "modified to achieve targeted training objectives". [CR16-WA] [HITRAC-11]
+  **[B]** on the inference; **[A]** on both underlying numbers.
+- **The bridge and mileage figures were not found in any primary document** — zero hits
+  across the Washington report, the Oregon report, the Cascadia Rising 2022 report and
+  HITRAC. **[?]**
+- BC has its own casualty figures for both scenarios. The page uses those; it does not
+  use the American ones.
 
 ---
 

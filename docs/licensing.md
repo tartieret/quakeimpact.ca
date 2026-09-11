@@ -145,7 +145,7 @@ disseminated; and the effect on the market is nil, because the document is free 
 quotation substitutes for nothing.
 
 **The worked example — the PEIRS experience narrative.** Three paragraphs describing the
-first minutes of the crustal M7.0, quoted in full in `research/scenarios.md` §2. This file
+first minutes of the crustal M7.0, quoted in full in `research/scenarios.md` under *The crustal M7.0*. This file
 previously called publishing it "not cleared" and registered it as a blocking item. **That
 was too strong, and both have been corrected.** Publish it under fair dealing, with
 attribution, a link and the page number.

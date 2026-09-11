@@ -46,16 +46,36 @@ a changed band does. If you are unsure which you made, it was substantive.
 
 ## Structure of a file
 
+These files are background for whoever writes the public pages. They are **organised by
+subject, never by the order things were found** — a file that reads as a chronicle of
+research makes its reader reconstruct the argument.
+
 1. **Title** — the subject, not the section number.
-2. **Status line** — one line: what the evidence supports today, and the band if
-   the subject is a system. Written so a reader who stops here is not misled.
-3. **Findings** — the substance. Each factual line carries a source key and a
-   confidence marker.
-4. **What is not established** — the open questions belonging to this subject,
-   each stating what was searched, so an absence is auditable.
-5. **For the page** — how the finding should reach the site: the mechanism
-   sentence, the guards that must travel with a number, the lever if there is
-   one. Notes to ourselves live here and nowhere else.
+2. **Status line** — what the evidence supports today, and the band if the subject is a
+   system. Written so a reader who stops here is not misled.
+3. **The substance**, under headings that name the subject rather than the discovery.
+   For a system, the order that works is: **how it fails** (the mechanism), **how bad and
+   for how long** (the figures, each with the guards that travel with it), **where and to
+   whom** if the evidence supports geography, and **what is being done** — programmes,
+   dates, and what has not started.
+4. **What is not established** — the open questions belonging to this subject.
+5. **For the page** — how the finding reaches the site: the mechanism sentence, the
+   guards that govern the whole page, the lever if there is one. Notes to ourselves live
+   here and nowhere else.
+
+**Either shape works for the substance**, and the choice follows length. A short file
+keeps a single `## Findings` container with subject `###` headings under it. A long one —
+`buildings.md`, `dams-and-reservoirs.md` — drops the container and promotes its subjects
+to `##`, because by then "Findings" is a wrapper around half the file and tells a reader
+nothing. What does not vary is that the three closing parts stay: the substance, **What is
+not established**, **For the page**.
+
+**A heading names its subject, not its provenance.** "Large power transformers" rather
+than "The transformer finding is older than the 2025 filing". Where provenance carries a
+guard, the guard goes in the section body.
+
+**A guard travels with the number it protects.** Only a guard governing how the whole
+page must be written belongs in "For the page".
 
 ## Rules
 
@@ -68,9 +88,13 @@ a changed band does. If you are unsure which you made, it was substantive.
   merged into one column.
 - **An out-of-region figure is [C] and stays [C].** It illustrates a mechanism.
   It never becomes a Lower Mainland number, and it never sets a band.
-- **A searched absence is a finding.** Record what was searched, through which
-  channel, and when. "Nobody has published this" is a stronger and more useful
-  statement than "we did not find this" — but only the search entitles us to it.
+- **A searched absence is a finding — the absence, not the search.** "No health
+  authority has published a comparison of casualty load to care capacity" tells a reader
+  something about the world and can go on the site. Record the channel and date in one
+  line, so the claim is auditable and nobody re-runs a dead search. **What does not
+  belong is the narration of the hunt** — the sitemap enumerated, the four query forms,
+  the fallback index that also failed. That is our process, and no page will ever use it.
+  Where an exploration produced nothing and gates nothing, it is deleted outright.
 - **Deliberate non-publication is not the same as absence.** Where a document
   exists and is withheld, say that. It is a different fact about the world.
 - **Record what we know, not how we came to know it.** A file states the current

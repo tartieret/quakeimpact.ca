@@ -8,10 +8,10 @@
 
 **Status.** **BC's own guidance contradicts itself.** Six officially published positions
 — five provincial, one municipal — give six different answers to how long a household
-should expect to last alone, and **"72 hours" is what the public still remembers.** The
-province's operational plan says two weeks for households and 72 hours for the support
-system, and says in the same document that the support system is not built for this
-event. The City of Vancouver, which would run the response, names three days as the
+should expect to last alone, and **"72 hours" is what the public still remembers** — an
+observation about the messaging landscape, not a measured finding. The province's
+operational plan says two weeks for households and 72 hours for the support system, and
+says in the same document that the support system is not built for this event. The City of Vancouver, which would run the response, names three days as the
 floor.
 
 Not a system, so no band. This subject supplies the lever every system page ends with.
@@ -20,7 +20,7 @@ Not a system, so no band. This subject supplies the lever every system page ends
 
 ## Findings
 
-### The gap is inside BC's own advice
+### How long a household is told to last: six published answers
 
 - **The PreparedBC Earthquake and Tsunami Preparedness Guide, last updated March 2024,
   contains zero occurrences of "72 hours", "72-hour", "three days" or "three-day".**
@@ -49,10 +49,11 @@ published, saying six different things:
   literature and training state that individuals should be prepared to be self-sufficient
   for **at least 72 hours**" (p. 37). [AHP-2012] **[A]**
 - **The operational plan: two weeks for households against a support system designed for
-  72 hours.** [PEIRS] p. 42 **[A]** — see the next section.
+  72 hours.** [PEIRS] p. 42 **[A]** — see "The province's operational plan" below.
 - **The City of Vancouver: "a minimum of 3 days, although your target should be a week to
   2 weeks" — and "72 hour(s)" on two older live pages.** [COV-EXPLORER-25]
-  [COV-FACTSHEET-24] [COV-EVAC] [COV-BEEP-2018] **[A]** — see "The municipal layer" below.
+  [COV-FACTSHEET-24] [COV-EVAC] [COV-BEEP-2018] **[A]** — see "The City of Vancouver's
+  guidance" below.
   The City does not reproduce any single provincial position cleanly: it is closest to the
   PreparedBC earthquake hazard page, whose three-day floor and aspirational upper range it
   mirrors while widening the range, and furthest from the earthquake-specific provincial
@@ -62,11 +63,11 @@ published, saying six different things:
   individual, household and community brochures published by the Washington Military
   Department's Emergency Management Division. [WA-2WEEKS] **[A]**
 - So the gap is not across the border. **It is inside British Columbia's own advice**,
-  while "72 hours" is what most people still remember.
-- **The strongest honest sentence is that the number depends on which provincial document
-  you open** — and the outlier is not a consumer web page but **the plan the entire
-  provincial framework hangs off**. The All-Hazard Plan is the primary component of the
-  Comprehensive Emergency Management Plan; see `systems/outside-help.md`.
+  while "72 hours" is what most people still remember — unsourced as a measure of public
+  awareness; see "What is not established".
+- **The outlier is not a consumer web page but the plan the entire provincial framework
+  hangs off.** The All-Hazard Plan is the primary component of the Comprehensive
+  Emergency Management Plan; see `systems/outside-help.md`.
 - **Handle its date honestly, and do not overclaim.** The All-Hazard Plan is a 2012
   document, last amended 2016, and it is *published now*, on a page updated 23 December
   2025 — but it is not *current advice* in the way PreparedBC is. **The defensible wording
@@ -78,7 +79,7 @@ published, saying six different things:
   [CR16-ST] **[B]**, which is journalism about an unpublished draft and is not used
   elsewhere on the site. **Do not publish the shift as a fact.**
 
-### The municipal layer, and a sixth position
+### The City of Vancouver's guidance
 
 - **The City's two fullest resident-facing sources say three days as the floor.** The
   Hazard & Risk Explorer's earthquake chapter: "Gather enough non-perishable food, water,
@@ -119,38 +120,11 @@ published, saying six different things:
   earthquake-specific guide says at least two weeks; the City that would run the response
   says a minimum of three days, and prints the three-day arithmetic on its own worksheet.
 
-### The regional layer — the same finding one level down
-
-Four municipalities of one metropolitan region, on the same hazard:
-
-| Jurisdiction | Duration, exact published wording |
-| --- | --- |
-| **Surrey** | "prepared for a disaster **for at least 72 hours**" / "on your own without help for 72 hours or more" [SURREY-PREP] **[A]** |
-| **Vancouver** | "a minimum of 3 days, although your target should be a week to 2 weeks"; worksheet "at least 3 days"; two pages "72 hour(s)" [COV-EXPLORER-25] [COV-WORKSHEET-26] [COV-EVAC] [COV-BEEP-2018] **[A]** |
-| **North Shore** (NSEM: City and District of North Vancouver, West Vancouver) | "self-sustaining for **up to two (2) weeks**"; water "four litres per person per day" [NSEM-KIT] **[A]** |
-| **Richmond** (Richmond Fire-Rescue) | **no duration published**; defers to PreparedBC and to the provincial Earthquake and Tsunami Guide [RICH-FR] **[A]** |
-
-- **"Up to" is not "at least", and the two-week figure must be quoted verbatim wherever it
-  appears.** NSEM says "up to two (2) weeks" [NSEM-KIT] **[A]**; the PreparedBC earthquake
-  guide says "at least two weeks" [PREPAREDBC] **[A]**. Same figure, opposite direction of
-  travel: one is a ceiling, the other a floor. Neither is paraphrased and neither is set
-  beside the other without its own wording attached.
-- **Richmond, on liquefiable ground, is the municipality that publishes no household
-  number.** [RICH-FR] **[A]** Richmond's own seismic claim about its dikes belongs to
-  `ground-conditions.md`, not here.
-- Richmond and Vancouver both publish a "Home Hazard Hunt": the concept is shared regional
-  material, not a Vancouver invention. [RICH-EQ] [COV-HHH-2011] **[A]**
-
-### The City's own material, and who it is written for
-
-- **The City names the affordability and tenure barrier in its own voice.** "People with
-  limited resources often lack the ability to control the structural readiness of their
-  building and are less able to invest in personal preparedness." [COV-EXPLORER-25]
-  **[A]** The same document names the population: "renters, low-income residents, older
-  adults, and people with disabilities", and publishes a resident's words: "If you barely
-  have the resources to get by day-to-day, you don't have the money to prepare."
-  [COV-EXPLORER-25] **[A]** The gap that follows from this is recorded under "What is not
-  established".
+- **The City names the affordability and tenure barrier in its own voice**, and names the
+  population it falls on: "renters, low-income residents, older adults, and people with
+  disabilities". [COV-EXPLORER-25] **[A]** The barrier in the City's own words, the
+  resident's words it publishes alongside it, and the gap that follows from both are set
+  out under "What is not established".
 - **The renter-specific list is real and correctly placed.** "Even if you rent, there are
   steps you can take today to reduce damage in your home", followed by a no-drilling list
   — heavy objects on lower shelves, framed pictures and mirrors away from beds and seating,
@@ -177,7 +151,29 @@ Four municipalities of one metropolitan region, on the same hazard:
   modification date of 16 March 2026 records a re-save, not a revision.
   [COV-HHH-2011] **[A]**
 
-### The province's own operational plan says both things, and says why
+### Four Lower Mainland municipalities, one hazard
+
+Four municipalities of one metropolitan region, on the same hazard:
+
+| Jurisdiction | Duration, exact published wording |
+| --- | --- |
+| **Surrey** | "prepared for a disaster **for at least 72 hours**" / "on your own without help for 72 hours or more" [SURREY-PREP] **[A]** |
+| **Vancouver** | "a minimum of 3 days, although your target should be a week to 2 weeks"; worksheet "at least 3 days"; two pages "72 hour(s)" [COV-EXPLORER-25] [COV-WORKSHEET-26] [COV-EVAC] [COV-BEEP-2018] **[A]** |
+| **North Shore** (NSEM: City and District of North Vancouver, West Vancouver) | "self-sustaining for **up to two (2) weeks**"; water "four litres per person per day" [NSEM-KIT] **[A]** |
+| **Richmond** (Richmond Fire-Rescue) | **no duration published**; defers to PreparedBC and to the provincial Earthquake and Tsunami Guide [RICH-FR] **[A]** |
+
+- **"Up to" is not "at least", and the two-week figure must be quoted verbatim wherever it
+  appears.** NSEM says "up to two (2) weeks" [NSEM-KIT] **[A]**; the PreparedBC earthquake
+  guide says "at least two weeks" [PREPAREDBC] **[A]**. Same figure, opposite direction of
+  travel: one is a ceiling, the other a floor. Neither is paraphrased and neither is set
+  beside the other without its own wording attached.
+- **Richmond, on liquefiable ground, is the municipality that publishes no household
+  number.** [RICH-FR] **[A]** Richmond's own seismic claim about its dikes belongs to
+  `ground-conditions.md`, not here.
+- Richmond and Vancouver both publish a "Home Hazard Hunt": the concept is shared regional
+  material, not a Vancouver invention. [RICH-EQ] [COV-HHH-2011] **[A]**
+
+### The province's operational plan: two weeks against a 72-hour support system
 
 - "During a disaster, local and provincial government resources will be overwhelmed. In
   such an event, one's family and neighbours are likely to be the only available first
@@ -228,7 +224,7 @@ non-obvious; the rest need no source.
   published rates; it is presented as our arithmetic and never as either body's figure.**
 - **Securing furniture and heavy objects.** In the guide. [PREPAREDBC] **[A]** The City
   publishes the same material split into a rent-friendly list and an "If you are able:"
-  list — see "The City's own material" above. [COV-EXPLORER-25] **[A]**
+  list — see "The City of Vancouver's guidance" above. [COV-EXPLORER-25] **[A]**
 - **Knowing whether the Dedicated Fire Protection System covers your neighbourhood.**
   The City of Vancouver states the coverage itself: the downtown peninsula, Kitsilano
   and Fairview Slopes, and nothing beyond. The finding and its source live on the fire
@@ -288,7 +284,7 @@ non-obvious; the rest need no source.
     site — now with the added finding that the resident is being told two different things
     by two bodies with authority over the same meter.
 
-### Institutional preparedness, for context on the household ask
+### School seismic mitigation
 
 - School seismic mitigation is the one portfolio that can be counted. As of the May 2026
   progress report, **159 of 260 Metro Vancouver projects are complete and 101 remain**;
@@ -305,9 +301,10 @@ non-obvious; the rest need no source.
 ## What is not established
 
 - **Whether the 72-hour figure ever was BC's published *earthquake* standard.**
-  A currently published provincial plan states it twice — [AHP-2012] pp. 11 and 37 **[A]** — which is the closest thing found to the
-  historical 72-hour standard this file recorded as unlocated. But the All-Hazard Plan is
-  an **all-hazard** document, not an earthquake-specific one, so the earthquake-specific
+  A currently published provincial plan states it twice — [AHP-2012] pp. 11 and 37 **[A]**
+  — the closest thing found to a published historical 72-hour standard. But the
+  All-Hazard Plan is an **all-hazard** document, not an earthquake-specific one, so the
+  earthquake-specific
   claim remains **[?]**. Searched: the current PreparedBC guide (which does not carry the
   figure), the general kit and hazard pages (which give three days and one week)
   [PREPAREDBC-KIT] [PREPAREDBC-EQ], September 2026. The page may say the figure is what
@@ -517,7 +514,9 @@ municipalities, one region, one hazard.
   be a week to two weeks" — or the figure is not used.
 - **"Up to" is not "at least".** The North Shore's "up to two (2) weeks" and the
   province's "at least two weeks" are the same number pointing opposite ways. Wherever the
-  two-week figure appears beside another body's, both are quoted in their own words.
+  two-week figure appears beside another body's, both are quoted in their own words. The
+  operational plan is a third wording again — "up to two weeks" [PEIRS] p. 42 — so where
+  the figure is attributed to that plan, the plan's own words are used.
 - **The 48 L / 224 L comparison is our arithmetic**, worked from two published rates, and
   is labelled as such. Neither total is attributed to the City or to the province.
 - **The City/FortisBC gas conflict is stated, not resolved.** Both instructions are given

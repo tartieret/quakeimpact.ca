@@ -18,6 +18,23 @@ M7.2 is far worse than the M9.0 Cascadia. [COV-RISK-2024] **[A]**
 
 ## Findings
 
+### Cordoning: the building stands and you still cannot go home
+
+Areas with high concentrations of damage may be closed off "**for weeks, months, or even
+years**", with the **West End** and the **Downtown Eastside** named as the neighbourhoods most
+at risk of it. [COV-RISK-2024] **[A]**
+
+This is the bridge between two things a reader already believes and cannot connect: *my building
+came through it* and *I still cannot go home*. Cordoning is not about the building. It is about the
+block. It explains why displacement counts run so far above red-tag counts, and it is the single
+most useful sentence on this page.
+
+The neighbourhood concentration behind it is published: six neighbourhoods carry 65% of citywide
+seismic risk — West End, Downtown Eastside (including Chinatown and Strathcona), Downtown,
+Kitsilano, Fairview, Mount Pleasant. [COV-RISK-2024] **[A]** Per-building-type displacement
+rates, and the tenure and income composition of those neighbourhoods, live in `../buildings.md`;
+they are not restated here.
+
 ### Four displacement estimates. They measure different things.
 
 They are not alternative values of one quantity, and they must never be merged into a single
@@ -48,6 +65,24 @@ catalogue's Census Subdivision datasets and is a data task, not a research task.
 model, and that reports displacement by building type — which is what turns a total into an
 explanation.
 
+### Discrepancy on the record
+
+PEIRS's summary table and its narrative both say "70,000 **households**". A logistics footnote at
+p. 118 says "70,000 displaced **persons**". [PEIRS] **[A]** for both statements as statements.
+The table and the narrative agree with each other and are preferred. The discrepancy is recorded
+here and in `../../knowledge.md`; it is not resolved.
+
+### Caution: GREGORIAN-2010 is not a regional number
+
+Gregorian (UBC, 2010) reports 144,507 households displaced and 84,004 seeking public shelter for
+a M7.3 Strait of Georgia scenario across the Metro Vancouver CMA. [GREGORIAN-2010] **[B]** —
+and it should not be used as a displacement figure at all. UBC's own metadata marks it
+**Unreviewed**; it is a 2010 master's graduating project; and its casualty model returns roughly
+24 deaths for all of Metro Vancouver, two orders of magnitude below the PEIRS M7.0 figure of
+2,000 fatalities. Its author's stated caveat is that results are highly sensitive to assumed water and
+power outage durations. **Use it only as a dated illustration of method. Never as an authoritative
+regional number, and never on the site as a figure.**
+
 ### Red and yellow tags
 
 - M9.0 Cascadia: **18,375 buildings red-tagged, BC-wide.** [NRCAN-SCEN] **[A]**
@@ -67,23 +102,6 @@ tagged red, yellow or green, "leaving about **two million people in need of alte
 narrative scenario statement rather than a model output, and the same chapter's building damage
 figures are the province adopting the federal scenario catalogue rather than estimating
 independently.
-
-### Cordoning
-
-Areas with high concentrations of damage may be closed off "**for weeks, months, or even
-years**", with the **West End** and the **Downtown Eastside** named as the neighbourhoods most
-at risk of it. [COV-RISK-2024] **[A]**
-
-This is the bridge between two things a reader already believes and cannot connect: *my building
-came through it* and *I still cannot go home*. Cordoning is not about the building. It is about the
-block. It explains why displacement counts run so far above red-tag counts, and it is the single
-most useful sentence on this page.
-
-The neighbourhood concentration behind it is published: six neighbourhoods carry 65% of citywide
-seismic risk — West End, Downtown Eastside (including Chinatown and Strathcona), Downtown,
-Kitsilano, Fairview, Mount Pleasant. [COV-RISK-2024] **[A]** Per-building-type displacement
-rates, and the tenure and income composition of those neighbourhoods, live in `../buildings.md`;
-they are not restated here.
 
 ### There is no post-disaster housing plan, and the province says so itself
 
@@ -109,30 +127,13 @@ them.** [COV-HUBS] **[A]**
 The honest publishable pairing is therefore: **70,000 displaced households against 25 hubs of
 unstated capacity.** Both halves are sourced; the second half is a searched absence, not a guess.
 
-### Discrepancy on the record
-
-PEIRS's summary table and its narrative both say "70,000 **households**". A logistics footnote at
-p. 118 says "70,000 displaced **persons**". [PEIRS] **[A]** for both statements as statements.
-The table and the narrative agree with each other and are preferred. The discrepancy is recorded
-here and in `../../knowledge.md`; it is not resolved.
-
-### Caution: GREGORIAN-2010 is not a regional number
-
-Gregorian (UBC, 2010) reports 144,507 households displaced and 84,004 seeking public shelter for
-a M7.3 Strait of Georgia scenario across the Metro Vancouver CMA. [GREGORIAN-2010] **[B]** —
-and it should not be used as a displacement figure at all. UBC's own metadata marks it
-**Unreviewed**; it is a 2010 master's graduating project; and its casualty model returns roughly
-24 deaths for all of Metro Vancouver, two orders of magnitude below the PEIRS M7.0 figure of
-2,000 fatalities. Its author's stated caveat is that results are highly sensitive to assumed water and
-power outage durations. **Use it only as a dated illustration of method. Never as an authoritative
-regional number, and never on the site as a figure.**
-
 ---
 
 ## What is not established
 
-**No regional or sub-provincial displacement or shelter-demand estimate.** IPREM publishes annual
-reports but no displacement or shelter-demand estimate; Metro Vancouver publishes none.
+**No regional or sub-provincial displacement or shelter-demand estimate beyond PEIRS's Greater
+Vancouver figure.** IPREM publishes annual reports but no displacement or shelter-demand
+estimate; Metro Vancouver publishes none.
 Searched 10 September 2026. **[?]** Surrey, Richmond and North Vancouver were not searched
 individually — absence there is untested rather than established.
 

@@ -29,7 +29,80 @@ page".
 
 ## Findings
 
-### The collection-system assessment exists, and it is named
+### Hardened facilities, an unassessed network
+
+Metro Vancouver's biennial report lists what has been built or designed against its
+2018 seismic risk assessment (below):
+[MV-LWMP-BIENNIAL-19] **[A]**
+
+- The new **Sperling and Sapperton Pump Stations** were under construction with
+  seismic upgrades.
+- **Annacis Island WWTP Stage 5** is designed as a post-seismic-disaster structure
+  per the National Building Code.
+- The **North Shore Secondary WWTP** and the new **Hollyburn Pump Station** are also
+  designed as post-seismic-disaster structures.
+
+**This is the honest mechanism, and it parallels water exactly.** Metro Vancouver's
+response to the assessment has been to build individual facilities to post-disaster
+standard, plant by plant and pump station by pump station. That is a different thing
+from making the network survive. A plant that stands up is of limited use if the
+sewers that reach it do not, and the sewers are the part whose assessed condition
+is not public.
+
+### How long the disruption lasts
+
+- "**Disruption to water and wastewater systems are expected for many months
+  following the event.**" [PEIRS] **[A]** — a provincial statement of duration that
+  names wastewater explicitly. It is qualitative and scenario-wide, not
+  system-specific, and it does not distinguish plants from pipes. It is nonetheless
+  the only government statement of duration for this system, and it is what the band
+  now rests on.
+- The DCRRA's water statements — thirsty within 24 hours, bulk potable water
+  distribution challenging for the first four to five days — belong to the water
+  entry and are about drinking water, not sanitation. [DCRRA-2025] **[A]** Do not
+  borrow them here.
+
+### Disrupted waste collection and disease risk
+
+PEIRS: "**Disruptions to waste collection may result in biological hazards.** Due to mass
+congregation in shelter spaces and possible inadequate disposal of garbage and biological
+waste, **disease outbreaks are possible**." [PEIRS] **[A]**
+
+**This is the sentence that makes the rest of the page matter.** Everything else here is
+plumbing: mains, plants, pump stations, restoration months. This is the province saying
+what the plumbing failing does to people, and it completes a chain each link of which is
+separately sourced in this folder — water fails, so toilets do not flush; waste has
+nowhere to go; garbage collection is disrupted at the same time; people are concentrated
+in shelters; and the province's own word for the result is *possible disease outbreaks*.
+
+**Two things it adds.** It names **solid waste collection**, which is a service this
+folder does not otherwise cover at all and which is Metro Vancouver's — garbage trucks
+need roads and fuel, both banded High. And it locates the risk **in shelters
+specifically**, which ties it to the housing finding that 25 disaster support hubs exist
+with **no published capacity**. See `housing.md` and `../preparedness.md`.
+
+**Guards, and they matter more here than anywhere else on this page.**
+
+- **"Possible" is the province's word, and it is load-bearing.** Not likely, not expected,
+  not a forecast. The site writes *possible* or it writes nothing. Hardening this into
+  "there will be disease outbreaks" would be the single worst sentence the site could
+  publish: unsourced, frightening, and wrong about the evidence.
+- **Do not let this attach to the dead.** The most persistent disaster myth in public
+  circulation is that bodies cause epidemics. They do not, and the humanitarian evidence
+  is consistent that post-disaster disease risk comes from **displacement, crowding, water
+  and sanitation** — which is exactly what the province names here, and nothing else.
+  Quote the mechanism precisely and never near a casualty figure, or the reader will
+  assemble the myth themselves. See `../analogues.md` on the Sphere standards.
+- **It is a conditional, and the condition is actionable.** The province names *inadequate
+  disposal* as the step between disrupted collection and disease. That is the one link in
+  the chain a household can do something about, and it is the reason this page's lever —
+  a planned way to contain human waste — is a health measure rather than a comfort
+  measure. Say that.
+- **Christchurch belongs beside it as illustration only**, never as a local number:
+  portable and chemical toilets for tens of thousands of residents, for years. Labelled
+  Christchurch, marked as illustration. See `../analogues.md`.
+
+### The 2018 seismic risk assessment of sewers, pump stations and plants
 
 Metro Vancouver's *Biennial Report: 2017–2018, Integrated Liquid Waste and Resource
 Management* (Volume 1, published 2019) — a statutory public document — states:
@@ -65,26 +138,7 @@ deliberate non-publication of a specific, named, dated document, which is a
 different fact from an absence and a far more actionable request than an unnamed
 gap.
 
-### What the findings produced: facilities, one at a time
-
-The same section lists what has been built or designed against the assessment:
-[MV-LWMP-BIENNIAL-19] **[A]**
-
-- The new **Sperling and Sapperton Pump Stations** were under construction with
-  seismic upgrades.
-- **Annacis Island WWTP Stage 5** is designed as a post-seismic-disaster structure
-  per the National Building Code.
-- The **North Shore Secondary WWTP** and the new **Hollyburn Pump Station** are also
-  designed as post-seismic-disaster structures.
-
-**This is the honest mechanism, and it parallels water exactly.** Metro Vancouver's
-response to the assessment has been to build individual facilities to post-disaster
-standard, plant by plant and pump station by pump station. That is a different thing
-from making the network survive. A plant that stands up is of limited use if the
-sewers that reach it do not, and the sewers are the part whose assessed condition
-is not public.
-
-### The plants
+### The treatment plants: Annacis and Iona
 
 - **Annacis Island WWTP (Delta)** serves about 1.25 million people across 14
   municipalities, expanding to about 1.5 million, and treats roughly 196 billion
@@ -104,46 +158,6 @@ is not public.
 
 Both plants are long programmes with dates in the 2030s. As with the water tunnels,
 the useful statement is the schedule, not a judgement about it.
-
-### The province states the health consequence, and it closes the chain
-
-PEIRS: "**Disruptions to waste collection may result in biological hazards.** Due to mass
-congregation in shelter spaces and possible inadequate disposal of garbage and biological
-waste, **disease outbreaks are possible**." [PEIRS] **[A]**
-
-**This is the sentence that makes the rest of the page matter.** Everything else here is
-plumbing: mains, plants, pump stations, restoration months. This is the province saying
-what the plumbing failing does to people, and it completes a chain each link of which is
-separately sourced in this folder — water fails, so toilets do not flush; waste has
-nowhere to go; garbage collection is disrupted at the same time; people are concentrated
-in shelters; and the province's own word for the result is *possible disease outbreaks*.
-
-**Two things it adds.** It names **solid waste collection**, which is a service this
-folder does not otherwise cover at all and which is Metro Vancouver's — garbage trucks
-need roads and fuel, both banded High. And it locates the risk **in shelters
-specifically**, which ties it to the housing finding that 25 disaster support hubs exist
-with **no published capacity**. See `housing.md` and `../preparedness.md`.
-
-**Guards, and they matter more here than anywhere else on this page.**
-
-- **"Possible" is the province's word, and it is load-bearing.** Not likely, not expected,
-  not a forecast. The site writes *possible* or it writes nothing. Hardening this into
-  "there will be disease outbreaks" would be the single worst sentence the site could
-  publish: unsourced, frightening, and wrong about the evidence.
-- **Do not let this attach to the dead.** The most persistent disaster myth in public
-  circulation is that bodies cause epidemics. They do not, and the humanitarian evidence
-  is consistent that post-disaster disease risk comes from **displacement, crowding, water
-  and sanitation** — which is exactly what the province names here, and nothing else.
-  Quote the mechanism precisely and never near a casualty figure, or the reader will
-  assemble the myth themselves. See `analogues.md` on the Sphere standards.
-- **It is a conditional, and the condition is actionable.** The province names *inadequate
-  disposal* as the step between disrupted collection and disease. That is the one link in
-  the chain a household can do something about, and it is the reason this page's lever —
-  a planned way to contain human waste — is a health measure rather than a comfort
-  measure. Say that.
-- **Christchurch belongs beside it as illustration only**, never as a local number:
-  portable and chemical toilets for tens of thousands of residents, for years. Labelled
-  Christchurch, marked as illustration. See `analogues.md`.
 
 ### Municipal collection systems
 
@@ -177,20 +191,8 @@ with **no published capacity**. See `housing.md` and `../preparedness.md`.
   incidentally is a real engineering question and we do not know the answer.** Do not
   assert it in either direction.
 - **No published sewer seismic vulnerability assessment was located for Vancouver,
-  Richmond, Delta, Surrey or New Westminster.** [?] See below.
-
-### What the province states
-
-- "**Disruption to water and wastewater systems are expected for many months
-  following the event.**" [PEIRS] **[A]** — a provincial statement of duration that
-  names wastewater explicitly. It is qualitative and scenario-wide, not
-  system-specific, and it does not distinguish plants from pipes. It is nonetheless
-  the only government statement of duration for this system, and it is what the band
-  now rests on.
-- The DCRRA's water statements — thirsty within 24 hours, bulk potable water
-  distribution challenging for the first four to five days — belong to the water
-  entry and are about drinking water, not sanitation. [DCRRA-2025] **[A]** Do not
-  borrow them here.
+  Delta, Surrey or New Westminster.** For Richmond the search channel does not support a
+  conclusion either way. [?] See below.
 
 ### Christchurch, as illustration only
 
@@ -230,8 +232,6 @@ nothing about Richmond or Delta, and it does not set this band.
   Services*.** [?] Searched: Metro Vancouver's liquid waste pages, LWMP documents,
   and Liquid Waste Committee agendas. **Existence and scope confirmed; findings not
   published.** This is now the single named FOI target for this system.
-- **Municipal sewer seismic assessments** for Vancouver, Richmond, Delta, Surrey and
-  New Westminster. [?] Searched: municipal sites and general search. **None found.**
 - **What the installed stock achieves.** The City states that
   material and replacement strategy **are** driven by a seismic risk assessment of ground
   conditions [COV-EDM-26] **[A]** — which is not the same as knowing how the network
@@ -273,7 +273,8 @@ rest follows. Where the page does need care is the compounding step: towers are 
 booster pumps, and pumps need electricity. **Do not assert that without a source** — the
 folder can state the water finding and the electricity finding and let a reader hold both,
 but "your building's pumps will fail" is an engineering claim we have not sourced. See
-`electricity.md` and `water.md`, and `open-questions.md` on the high-rise supply gap.
+`electricity.md` and `water.md`. The high-rise secondary water supply question is
+answered in `../buildings.md`, not held open here.
 
 **The City has already done the arithmetic that makes this land, and it is quotable.**
 Vancouver's Rain City Strategy states that residents are advised to store 4 L per person

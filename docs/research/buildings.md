@@ -15,15 +15,15 @@ correctly attributed, the insurance-capacity figure is a band rather than a poin
 "2019 study" behind the insurer-failure figures is named. Fire following is [A] from the
 Scawthorn ICLR study itself rather than [B] via City reporting; it carries five modelled
 scenarios and two contradictions the report makes against itself. GSC Open File 8853 puts the
-M7.0 scenario's debris, construction-type and insurance arithmetic on the record in NRCan's own
-voice. The City's resident-facing material tells residents to expect extended inaccessibility of
-whole neighbourhoods, and names building assessment and trade capacity as the constraint. That
-material is the plain-language register of [COV-RISK-2024], not a second source, and it is
-marked as such wherever it appears below.
+M7.0 Vancouver scenario's debris and construction-type figures, and a Victoria insurance-gap
+arithmetic, on the record in NRCan's own voice. The City's resident-facing material tells
+residents to expect extended inaccessibility of whole neighbourhoods, and names building
+assessment and trade capacity as the constraint. That material is the plain-language register
+of [COV-RISK-2024], not a second source, and it is marked as such wherever it appears below.
 
 ---
 
-## Findings
+## The stock, and where the risk sits
 
 ### The stock
 
@@ -43,40 +43,6 @@ marked as such wherever it appears below.
 and the City now says so itself; the ~8,000 figure comes from a 2000 council report.
 [COV-URM-2000] **[B]** Both are superseded by the 2024 assessment, which counts the whole stock
 rather than a subset.
-
-### Retrofit policy
-
-- The Vancouver Building By-law requires upgrade to **either 50% or 75% of current code design
-  levels**, depending on the case — *not* "at least 75%". The trigger moved from permit cost to
-  scope of work in 2007.
-  [COV-RISK-2024] **[A]**
-- **Part 11 of the by-law is Vancouver's real falling-hazard rule and has no BC Building Code
-  or National Building Code equivalent.** Upgrade level S3 requires that "falling hazards that
-  may impact adjacent properties and over public ways must be addressed", with acceptable
-  solutions naming cantilevered walls, parapets, exterior ornaments, towers, chimneys and
-  appendages. Levels N1–N4 escalate "safety from overhead falling hazards" across cladding,
-  veneer, cornices, parapets, canopies, awnings and ornaments. [VBBL-2025] **[A]**
-- **But Part 11 is trigger-based.** It bites only on renovation, addition, reconstruction or
-  change of use. **There is no standalone mandatory parapet-bracing or façade-retrofit
-  ordinance in Vancouver.** [VBBL-2025] **[A]** The only parapet money is voluntary and
-  heritage-scoped: the Heritage Façade Rehabilitation Program (up to $50,000, requires the
-  building be "constructed primarily of unreinforced masonry") and the Heritage Incentive
-  Program (up to $4M per building). [COV-HERITAGE] **[A]**
-- **New construction** is governed by Division B Art. **4.1.8.18**, which requires seismic
-  design of non-structural components and their connections; cantilever parapets,
-  ornamentations, chimneys and masonry veneer connections are all in Table 4.1.8.18. Façade
-  connections above the first level above grade must develop 2.0× nominal yield resistance
-  (Cl. 4.1.8.18.(7)(g)); gravity friction may not be relied on. Glazing fallout displacement
-  must be at least max(1.25·I_E·D_p, 13 mm) under Sentences (14)–(15), and **Vancouver cannot
-  use the low-seismicity exemption** — normal buildings are Seismic Category SC4, so the
-  fallout rule binds. [VBBL-2025] **[A]**
-- **There is no public inventory of at-risk buildings.** The Buildings Seismic Risk Reduction
-  Action Plan (report 5 May 2026, council agenda 2 June 2026) makes seismic screening the
-  second of seven actions in a five-year plan, modelled on Seattle, Everett, Tacoma, San
-  Francisco and New Zealand, costed at **$3,000–$10,000 per building**, with **no publication
-  date** and the publication method explicitly unsettled. [COV-PLAN-2026] **[A]**
-  [SEA-URM] **[C]** for the Seattle model. Landlords and lenders objected to building-level
-  publication in the engagement appendices. [COV-PLAN-2026] **[A]**
 
 ### The three-scenario ladder — City of Vancouver only
 
@@ -119,6 +85,13 @@ uninhabitability after a design-level event, and **soft-storey collapse risk whe
 floor is open for tuck-under parking**. [COV-PLAN-2026] **[A]** Merging the two is the single
 easiest way to get this page wrong.
 
+### Who lives in the highest-risk buildings
+
+Highest-risk census tracts average roughly **70–75% renters**, of whom about **20–30% are low
+income**; **more than 10% seniors**; **30–40% visible minorities**; **4–10% Indigenous**. Many
+single-room-occupancy units sit in URM buildings in the Downtown Eastside.
+[COV-RISK-2024] **[A]**
+
 ### Cordoning
 
 Areas with high damage concentrations can be closed **"for weeks, months, or even years"**,
@@ -159,13 +132,6 @@ located in the September 2026 pass converts extended inaccessibility into advice
 documents, medication, insurance, or planning against being locked out of a home that is still
 standing. The naming is there; the lever is not. See `preparedness.md`.
 
-### Who lives in the highest-risk buildings
-
-Highest-risk census tracts average roughly **70–75% renters**, of whom about **20–30% are low
-income**; **more than 10% seniors**; **30–40% visible minorities**; **4–10% Indigenous**. Many
-single-room-occupancy units sit in URM buildings in the Downtown Eastside.
-[COV-RISK-2024] **[A]**
-
 ### The same assessment, in the City's resident-facing words
 
 The Hazard & Risk Explorer is the plain-language register of the November 2024 risk assessment,
@@ -196,7 +162,33 @@ read, and that it is the version a Vancouver resident is actually handed.
   the URM concentration recorded above, and it is still the same assessment speaking — an added
   detail within one lineage, not a second finding.
 
-### Falling debris
+## Falling hazards: debris, glazing and the rules that govern them
+
+### The local hazard is older masonry street frontage
+
+**The local, sourced hazard is older masonry commercial stock.** The City places the
+street-level falling-debris hazard there:
+
+> "Commercial high streets and arterials throughout the city, containing many older URM, wood,
+> and low-rise concrete commercial buildings, are also at high risk. As a result, these
+> streets, particularly those within the Downtown Eastside and Downtown, have an additional
+> risk of on-street injuries and fatalities from falling building debris. Along many arterials,
+> such as Hastings Street, Kingsway, and others, on-street debris is likely to cause emergency
+> response and transportation blockages."
+
+> "Many of these buildings have parapets and gable end walls that are very prone to collapse
+> onto exterior areas immediately adjacent to the building."
+
+[COV-RISK-2024] **[A]**
+
+The hazard is Hastings Street and Kingsway, not the West Georgia curtain wall. Christchurch
+supports the masonry version specifically: of the 42 deaths from building failures other than
+the CTV and PGC buildings, **35 resulted from URM façades or walls collapsing, 26 of them onto
+pedestrians or people in vehicles** — nearly 70% of those deaths were of people outside the
+buildings. [NZ-RC-V4] **[C]** See `analogues.md`; it illustrates the mechanism and sets no
+local number.
+
+### No Vancouver falling-glass hazard analysis
 
 **There is no Vancouver falling-glass hazard analysis.** Two independent negatives establish it:
 
@@ -209,6 +201,8 @@ read, and that it is the version a Vancouver resident is actually handed.
 2. The City's own city-wide seismic risk assessment **never uses the words**. A full-text
    search of the November 2024 report for `glaz|glass|curtain wall|cladding|window` returns
    zero hits. [COV-RISK-2024] **[A]**
+
+### Quantification is absent; regulation is not
 
 **But separate the two things, because a reader will not.** What is absent is *hazard
 quantification* — nobody has estimated how much falling glass there would be, or who it
@@ -224,6 +218,31 @@ equipment during an earthquake can present a major threat to life safety." [VBBL
 has nothing to say about falling glass" nor "the glass is fine": it is that the hazard has
 been regulated for decades and never measured in the stock that predates the regulation. That
 is the same shape as every other finding on this page.
+
+### What the by-law requires of façades, parapets and glazing
+
+- **Part 11 of the by-law is Vancouver's real falling-hazard rule and has no BC Building Code
+  or National Building Code equivalent.** Upgrade level S3 requires that "falling hazards that
+  may impact adjacent properties and over public ways must be addressed", with acceptable
+  solutions naming cantilevered walls, parapets, exterior ornaments, towers, chimneys and
+  appendages. Levels N1–N4 escalate "safety from overhead falling hazards" across cladding,
+  veneer, cornices, parapets, canopies, awnings and ornaments. [VBBL-2025] **[A]**
+- **But Part 11 is trigger-based.** It bites only on renovation, addition, reconstruction or
+  change of use. **There is no standalone mandatory parapet-bracing or façade-retrofit
+  ordinance in Vancouver.** [VBBL-2025] **[A]** The only parapet money is voluntary and
+  heritage-scoped: the Heritage Façade Rehabilitation Program (up to $50,000, requires the
+  building be "constructed primarily of unreinforced masonry") and the Heritage Incentive
+  Program (up to $4M per building). [COV-HERITAGE] **[A]**
+- **New construction** is governed by Division B Art. **4.1.8.18**, which requires seismic
+  design of non-structural components and their connections; cantilever parapets,
+  ornamentations, chimneys and masonry veneer connections are all in Table 4.1.8.18. Façade
+  connections above the first level above grade must develop 2.0× nominal yield resistance
+  (Cl. 4.1.8.18.(7)(g)); gravity friction may not be relied on. Glazing fallout displacement
+  must be at least max(1.25·I_E·D_p, 13 mm) under Sentences (14)–(15), and **Vancouver cannot
+  use the low-seismicity exemption** — normal buildings are Seismic Category SC4, so the
+  fallout rule binds. [VBBL-2025] **[A]**
+
+### CSA S832 — referenced guidance, not a mandate
 
 The code's commentary points to **CSA S832**, *Seismic risk reduction of operational and
 functional components (OFCs) of buildings*, third edition 2014. The clauses stay paywalled
@@ -250,35 +269,36 @@ own published statement of its own standard.
 - **The by-law's commentary points at it as guidance. Nothing in the public text makes it
   mandatory, and the site must not imply that it is.**
 
-**The local, sourced hazard is older masonry commercial stock.** The City places the
-street-level falling-debris hazard there:
+## Retrofit: upgrade levels and the screening programme
 
-> "Commercial high streets and arterials throughout the city, containing many older URM, wood,
-> and low-rise concrete commercial buildings, are also at high risk. As a result, these
-> streets, particularly those within the Downtown Eastside and Downtown, have an additional
-> risk of on-street injuries and fatalities from falling building debris. Along many arterials,
-> such as Hastings Street, Kingsway, and others, on-street debris is likely to cause emergency
-> response and transportation blockages."
+### Upgrade levels and the trigger
 
-> "Many of these buildings have parapets and gable end walls that are very prone to collapse
-> onto exterior areas immediately adjacent to the building."
+- The Vancouver Building By-law requires upgrade to **either 50% or 75% of current code design
+  levels**, depending on the case — *not* "at least 75%". The trigger moved from permit cost to
+  scope of work in 2007.
+  [COV-RISK-2024] **[A]**
 
-[COV-RISK-2024] **[A]**
+### No public inventory of at-risk buildings
 
-The hazard is Hastings Street and Kingsway, not the West Georgia curtain wall. Christchurch
-supports the masonry version specifically: of the 42 deaths from building failures other than
-the CTV and PGC buildings, **35 resulted from URM façades or walls collapsing, 26 of them onto
-pedestrians or people in vehicles** — nearly 70% of those deaths were of people outside the
-buildings. [NZ-RC-V4] **[C]** See `analogues.md`; it illustrates the mechanism and sets no
-local number.
+- **There is no public inventory of at-risk buildings.** The Buildings Seismic Risk Reduction
+  Action Plan (report 5 May 2026, council agenda 2 June 2026) makes seismic screening the
+  second of seven actions in a five-year plan, modelled on Seattle, Everett, Tacoma, San
+  Francisco and New Zealand, costed at **$3,000–$10,000 per building**, with **no publication
+  date** and the publication method explicitly unsettled. [COV-PLAN-2026] **[A]**
+  [SEA-URM] **[C]** for the Seattle model. Landlords and lenders objected to building-level
+  publication in the engagement appendices. [COV-PLAN-2026] **[A]**
 
-### Casualties and losses
+## Casualties and economic losses
+
+### The three published estimates
 
 | Estimate | Scenario | Total economic | Insured | Actually attributable to |
 | --- | --- | ---: | ---: | --- |
 | IBC / AIR Worldwide, 2013 | M9.0 western Cascadia, ~300 km from Vancouver | **$74.7B** (direct $62.0B + indirect $12.7B) | **$20.4B** | AIR Worldwide for IBC, primary document now in hand [AIR-2013] **[A]** |
 | IBC, 2025 | M9 | ~$96–100B | **$26B** | IBC, no underlying study located [IBC-2025] **[B]** |
 | DCRRA, 2025 | M9.0 Cascadia | ~$128B | not given | **Conference Board of Canada 2016**, restated by the province [DCRRA-2025] **[A]** / [CBOC-2016-PR] **[A]** |
+
+### AIR Worldwide — the base estimate
 
 **The AIR breakdown.** The study's own summary table for the western scenario,
 all figures including demand surge: **total direct loss $62.0B**, of which **property
@@ -312,6 +332,8 @@ Two further cautions travel with the table:
   [DCRRA-2025] **[A]** / [NRCAN-SCEN] **[A]** The DCRRA's own footnote must travel with them:
   the estimates "include only direct mainshock damage without account of secondary hazards like
   landslides, liquefaction, tsunami, fires and more." [DCRRA-2025] **[A]**
+
+### The Conference Board of Canada — AIR, scaled
 
 **The Conference Board of Canada 2016 figures, correctly attributed.** Full citation:
 **McIntyre, Jane, and Marc Desormeaux, *Canada's Earthquake Risk: Macroeconomic Impacts and
@@ -355,12 +377,6 @@ Year 3", and that percentage is what distinguishes it from the DCRRA's unrelated
 below. Employment: 173,000 fewer jobs in Year 1, 288,000 by Year 3, 437,000 person-years.
 Consumer spending falls $133B. [CBOC-2016] **[A]**
 
-**A fourth "30" exists in this material and it is a percentage.** The contagion model
-assumes "that **30 per cent of insurance companies fail** — an assumption informed by
-earthquake stress-tests for P&C insurers undertaken by OSFI in the recent past".
-[CBOC-2016] **[A]** It does **not** support the "26 of 30" figure reported elsewhere in
-this file and must never be used to gloss it.
-
 **Licensing.** The report carries "All rights reserved | Agreement No. 40063028" and was
 distributed free. Quotation with attribution is fine; see `../licensing.md`.
 
@@ -388,6 +404,12 @@ attributed, and they belong to the **Conference Board**, not to the province.
 **The DCRRA carries only two of these** — the ~$128B total and the 43,700 jobs. It does
 **not** contain the $122B debt figure or the $42B threshold. [DCRRA-2025] **[A]**
 
+So the only genuinely independent pair is IBC/AIR 2013 and IBC 2025 — and the real disagreement
+is between the insurance industry and the federal hazard model, which is a more interesting
+sentence than "three estimates disagree".
+
+### Two different $38 billion figures
+
 > **Warning — two different $38 billion figures, and they must never touch.**
 > The **Conference Board's $38B** is **peak annual real GDP loss in the third year after
 > the earthquake**. [CBOC-2016-PR] **[A]**
@@ -398,9 +420,7 @@ attributed, and they belong to the **Conference Board**, not to the province.
 > both ever appear on one page, each must carry its full description in the same sentence,
 > and neither may be written as "the $38 billion figure".
 
-So the only genuinely independent pair is IBC/AIR 2013 and IBC 2025 — and the real disagreement
-is between the insurance industry and the federal hazard model, which is a more interesting
-sentence than "three estimates disagree".
+### Provincial casualty figures, and GSC Open File 8853
 
 **Provincial casualty figures for the crustal scenario**, which the City table does not cover:
 PEIRS gives, for a M7.0 Georgia Basin event affecting Greater Vancouver, **2,000 dead, 1,000
@@ -435,6 +455,23 @@ Management BC and the Government Operations Centre. It carries material PEIRS do
   estimate on impacts." [GSC-OF-8853] **[A]** The fire loss below is precisely one of the excluded
   items, which is why the two must never be netted or casually added.
 
+### Exposure — method-bound
+
+**Exposure — method-bound.** The DCRRA gives **92% of BC's population (4,400,000), 90% of
+businesses, and 76% of critical facilities (13,000)** — **not 78%**. [DCRRA-EXP] **[A]** Do not
+write "roughly 150,000 of 170,000" businesses; that is not the DCRRA's wording.
+
+**These are hazard-zone exposure figures, not scenario outcomes.** They are computed against
+**2,475-year return-period ground motions (2% in 50 years) from CanadaSHM6**, with thresholds
+of PGA > 0.09 g for buildings, population, critical facilities and businesses and PGA > 0.28 g
+for surface infrastructure. [DCRRA-EXP] **[A]** **The site must never write "92% of people
+would be affected by the M9."** That sentence would be false and would be the first thing an
+expert reader caught.
+
+## Insurance and industry capacity
+
+### Industry capacity is a band, and it is dated
+
 **The insurance-capacity comparison.** Capacity is stated **in claims**, that is, insured
 loss, and only insured-loss figures may be set against it — never **total economic loss**.
 And the capacity is a **band**, not the point figure **$30 billion**.
@@ -459,6 +496,8 @@ are **insured-loss** thresholds. [LEPAN-2016] **[A]**
 **$30B in 2013**, rising to **$35 billion by the 2020 edition**, restated in its 2026
 update. [PACICC-2026] **[A]**
 
+### Setting insured losses against capacity
+
 **Set the comparison up like against like, and date the capacity.** Published insured-loss
 estimates against a capacity band that is itself a moving figure:
 
@@ -476,6 +515,13 @@ insured losses would surpass the industry's capitalisation, and it is comparable
 capacity band, not to any total-economic-loss figure. **Do not print a multiplier in either
 direction.**
 
+**And the Board's threshold was chosen, not modelled.** The Conference Board picked an
+insured-loss level in consultation with the Insurance Bureau of Canada to sit just above
+industry capitalisation, then scaled AIR's totals to match. Read the Conference Board
+subsection above before setting it beside a modelled estimate. [CBOC-2016] **[A]**
+
+### PACICC's own modelling
+
 **PACICC's own free modelling is the better citation for "how much can the industry take".**
 *How Big is Too Big? The Tipping Point for Systemic Failure* (Grant Kelly, PACICC, 2021,
 using 2019 industry data), for a **British Columbia** event: below $20B, no insurer severely
@@ -483,6 +529,8 @@ distressed. At **$30B**, 41 insurers exhaust their reinsurance, 25 fall below a 
 8 below 100%, and **one fails**. At **$35B**, **six fail directly plus seven more at group
 level**. At **$40B**, **16 failures**, an assessment of $14.9B, and — the paper's own words
 — the systemic collapse of Canada's P&C insurance industry. [PACICC-2021] **[A]**
+
+### The insurer-failure claim, named
 
 **The insurer-failure claim, named.** The "2019 study" is **Mary Kelly, Anne Kleffner and Grant Kelly, "An examination of catastrophes, insurance
 guaranty funds and contagion risk", *The Geneva Papers on Risk and Insurance — Issues and
@@ -509,6 +557,14 @@ route from PACICC's own papers.
   contains no insurer-failure counts, and the word "distressed" does not appear in it.
   [DCRRA-2025] **[A]**
 
+**A fourth "30" exists in this material and it is a percentage.** The contagion model
+assumes "that **30 per cent of insurance companies fail** — an assumption informed by
+earthquake stress-tests for P&C insurers undertaken by OSFI in the recent past".
+[CBOC-2016] **[A]** It does **not** support the "26 of 30" figure reported elsewhere in
+this file and must never be used to gloss it.
+
+### The fire study's reinsurer warning
+
 **Beside the capacity material, and not as corroboration of it: the fire study's reinsurer
 warning.** Scawthorn states that the modelled fire loss "would be virtually fully insured", and
 that "a leading global reinsurer has stated that losses of this magnitude would likely result in
@@ -519,11 +575,15 @@ the same thing as Le Pan, PACICC and the Conference Board, and it is **not an in
 voice**: it is one author relaying one unidentified firm. Place it alongside the tiers above,
 never inside the table.
 
+### Household earthquake coverage
+
 **Household-level, and currently unused: earthquake-insurance penetration.** Some **60 to 65
 per cent of southwest BC homeowners** carry earthquake coverage, with about **70 per cent
 in Victoria** and **55 per cent in Vancouver**. **Coverage among renters is much less.**
 [LEPAN-2016] **[A]** This is the one figure in the insurance section a reader can act on
 about their own household.
+
+### The insurance-gap arithmetic — Victoria, not Vancouver
 
 **A government document doing the insurance-gap arithmetic in its own voice — but for
 Victoria.** OF 8853's M7.3 Leech River scenario gives a total loss of **$20 billion**, of which
@@ -543,24 +603,15 @@ remainder (**over $4.1 billion**) being paid by homeowners". [GSC-OF-8853] **[A]
   BC, about 70% Victoria, 55% Vancouver; OF 8853 gives 40–70% for BC as a whole. They are
   compatible, but they are not the same measurement and must not be quoted as one.
 
+### Ratios, and the absent federal backstop
+
 - An independent corroboration worth keeping: **the two insured-to-total ratios agree
   closely** — 20.4/74.7 = 27.3% and 26/98 = 26.5%. [AIR-2013] **[A]** / [IBC-2025] **[B]**
 - Canada is the only G7 nation with significant earthquake risk that lacks a government-backed
   insurance safety net; Budget 2025 states Ottawa intends to consult insurers on guaranteeing
   system stability after a major earthquake. [IBC-2025] **[B]**
 
-**Exposure — method-bound.** The DCRRA gives **92% of BC's population (4,400,000), 90% of
-businesses, and 76% of critical facilities (13,000)** — **not 78%**. [DCRRA-EXP] **[A]** Do not
-write "roughly 150,000 of 170,000" businesses; that is not the DCRRA's wording.
-
-**These are hazard-zone exposure figures, not scenario outcomes.** They are computed against
-**2,475-year return-period ground motions (2% in 50 years) from CanadaSHM6**, with thresholds
-of PGA > 0.09 g for buildings, population, critical facilities and businesses and PGA > 0.28 g
-for surface infrastructure. [DCRRA-EXP] **[A]** **The site must never write "92% of people
-would be affected by the M9."** That sentence would be false and would be the first thing an
-expert reader caught.
-
-### Fire following
+## Fire following earthquake
 
 **From the primary study, held in full.** Scawthorn, C. (2020),
 *Fire following earthquake in the Vancouver region*, ICLR Research Paper Series no. 67, 74 pp,
@@ -568,6 +619,35 @@ SPA Risk LLC for the Institute for Catastrophic Loss Reduction, November 2020. E
 comes from the report itself rather than from City of Vancouver reporting of it.
 [SCAWTHORN-2020] **[A]** A separately published executive summary carries the same tables.
 [SCAWTHORN-2020-ES] **[A]**
+
+### How fires start, and why they are not put out
+
+**Where the ignitions come from**, taken from Northridge 1994 and carried into the model: about
+**half electrical**, about **a quarter gas-related**; about half in single-family dwellings and
+another 26% in multi-family, so "**about 70% of all ignitions occur in residential
+occupancies**". [SCAWTHORN-2020] **[A]** *Guard: the cause split is Northridge experience applied
+to a Lower Mainland model, not a Lower Mainland observation.*
+
+**The sprinkler dependency.** New construction in Vancouver must be
+sprinklered — "however, sprinklers rely on underground water mains for supply, which are likely
+to fail in a major earthquake." [SCAWTHORN-2020] **[A]** The protection people assume they have
+is downstream of the system that breaks.
+
+**Water is the pivot for the whole model.** Median estimates run to as many as **15,000 buried
+pipe repairs** across the study area, "the precise number and location depending on the
+scenario", and "the general rule is about 20% of repairs are full breaks". The loss in EQ2, EQ4
+and EQ5 is driven "primarily due to lack of water for firefighting"; in EQ4 the report adds "as
+well as there being simply too few firefighters and apparatus". [SCAWTHORN-2020] **[A]**
+Cross-reference `systems/water.md`.
+
+**Nearly 50% of earthquake-induced fire ignitions in BC occur in Metro Vancouver**, with
+concentration in the central business district; the DCRRA also notes the seawater firefighting
+advantage of a coastal city. [DCRRA-2025] **[A]**
+
+**Historical anchor.** The Great Vancouver Fire of 1886 "killed 21 and destroyed 600~1,000
+buildings". [SCAWTHORN-2020] **[A]** (citing Matthews 1960)
+
+### Five scenarios and their losses
 
 **Five scenarios.** All figures are Canadian dollars, and all are median or mean
 estimates: "These are median estimates — there are significant probabilities of greater or less
@@ -595,6 +675,8 @@ numbers.**
 - **The trial count is stated two ways.** "100 trials" and "100 realizations" appear in the
   method; "1,000 realizations" appears through the results and figure captions. Never state a
   trial count without saying the source gives two. [SCAWTHORN-2020] **[A]**
+
+### Distance, not magnitude
 
 **The counter-intuitive ordering, and the study's explanation of it, is the finding.** Cascadia
 is the **lowest of the five** — **$162 million against $10.7 billion** for
@@ -626,6 +708,50 @@ Loss Reduction, 2020". [DCRRA-2025] **[A]** The pair maps onto Scawthorn's $162M
   estimates.** The discipline this file applies to the casualty and loss figures above applies
   here unchanged: PEIRS and the DCRRA share a single lineage, and printing them side by side as
   corroboration would be the same error twice.
+
+### What the method rests on
+
+**Method, in outline, for the method page.**
+
+- **The scenarios are NRCan's, not Scawthorn's.** "NRCan has recently selected five scenario
+  events for damage and loss studies (Journeay 2020) … This study employs these same five
+  earthquake scenarios", so that authorities "would then have estimates of fire following
+  earthquake losses on the same basis as those for the NRCan studies of building damage".
+  **But**: "the NRCan estimates of ground motion were not available for this study; therefore,
+  this study performed its own estimates of ground motion." [SCAWTHORN-2020] **[A]** The fire
+  numbers are therefore **aligned with** the NRCan lineage, not identical to it. That nuance must
+  survive every restatement — it is what stops the site claiming a single integrated federal
+  model.
+- **The author's own humility is worth quoting.** Fire following earthquake "is a highly
+  non-linear process, modelling of which does not have great precision and is such that in many
+  cases the only clear result is differentiation between situations of a few small fires, versus
+  major conflagration." [SCAWTHORN-2020] **[A]**
+- **What the study excludes:** gas and liquid-fuel **transmission** line breaks; the
+  vulnerability of energy facilities; winter storm effects on response; and the whole of
+  non-fire earthquake damage. [SCAWTHORN-2020] **[A]**
+
+### The firefighting resource, and mutual aid
+
+**The firefighting resource, counted.** **98 fire halls** in the study area, and "approximately
+**200 fire engines** available for immediate firefighting". [SCAWTHORN-2020] **[A]**
+
+**Mutual aid will be largely ineffective in the immediate period**, for three stated reasons:
+departments will be husbanding their own resources; help from further afield in the Lower
+Mainland is several hours' travel; and "**The Fraser and other rivers are all barriers if bridges
+are impassable, which they will be at least initially due to the need to inspect for damage.**"
+[SCAWTHORN-2020] **[A]** Cross-reference `systems/transportation.md` — the bridge-inspection
+delay is the same fact, reaching fire response.
+
+**An interoperability defect worth having by name.** Burnaby's engines "are typical of most
+engines in the study area in that they carry 4 inch rather than 5 inch LDH (as opposed to VFRS),
+and lack adapters, which is an obstacle to effective mutual aid." [SCAWTHORN-2020] **[A]**
+
+**911 saturation delays the fire reports.** Telephone systems "will sustain some damage but not
+enough to reduce functionality"; the problem is load — "saturation, especially of the 911 system,
+will reduce functionality to a great degree, for several hours or more". [SCAWTHORN-2020] **[A]**
+Cross-reference `systems/communications.md`.
+
+### The high-rise secondary water supply gap
 
 **The high-rise secondary water supply gap — the strongest single actionable finding here.**
 California's building code has for decades required an on-site **secondary water supply** for
@@ -673,70 +799,9 @@ searched. Provincially, the freely-available BC Building Code 2018 index carries
 supply for firefighting" and **zero occurrences of "secondary water"** — supporting but
 index-only, and superseded by BCBC 2024, which is not freely retrievable. **[?]**
 
-**And the mechanism behind it: the sprinkler dependency.** New construction in Vancouver must be
-sprinklered — "however, sprinklers rely on underground water mains for supply, which are likely
-to fail in a major earthquake." [SCAWTHORN-2020] **[A]** The protection people assume they have
-is downstream of the system that breaks.
+### The Dedicated Fire Protection System (DFPS)
 
-**Water is the pivot for the whole model.** Median estimates run to as many as **15,000 buried
-pipe repairs** across the study area, "the precise number and location depending on the
-scenario", and "the general rule is about 20% of repairs are full breaks". The loss in EQ2, EQ4
-and EQ5 is driven "primarily due to lack of water for firefighting"; in EQ4 the report adds "as
-well as there being simply too few firefighters and apparatus". [SCAWTHORN-2020] **[A]**
-Cross-reference `systems/water.md`.
-
-**The firefighting resource, counted.** **98 fire halls** in the study area, and "approximately
-**200 fire engines** available for immediate firefighting". [SCAWTHORN-2020] **[A]**
-
-**Mutual aid will be largely ineffective in the immediate period**, for three stated reasons:
-departments will be husbanding their own resources; help from further afield in the Lower
-Mainland is several hours' travel; and "**The Fraser and other rivers are all barriers if bridges
-are impassable, which they will be at least initially due to the need to inspect for damage.**"
-[SCAWTHORN-2020] **[A]** Cross-reference `systems/transportation.md` — the bridge-inspection
-delay is the same fact, reaching fire response.
-
-**An interoperability defect worth having by name.** Burnaby's engines "are typical of most
-engines in the study area in that they carry 4 inch rather than 5 inch LDH (as opposed to VFRS),
-and lack adapters, which is an obstacle to effective mutual aid." [SCAWTHORN-2020] **[A]**
-
-**911 saturation delays the fire reports.** Telephone systems "will sustain some damage but not
-enough to reduce functionality"; the problem is load — "saturation, especially of the 911 system,
-will reduce functionality to a great degree, for several hours or more". [SCAWTHORN-2020] **[A]**
-Cross-reference `systems/communications.md`.
-
-**Where the ignitions come from**, taken from Northridge 1994 and carried into the model: about
-**half electrical**, about **a quarter gas-related**; about half in single-family dwellings and
-another 26% in multi-family, so "**about 70% of all ignitions occur in residential
-occupancies**". [SCAWTHORN-2020] **[A]** *Guard: the cause split is Northridge experience applied
-to a Lower Mainland model, not a Lower Mainland observation.*
-
-**Historical anchor.** The Great Vancouver Fire of 1886 "killed 21 and destroyed 600~1,000
-buildings". [SCAWTHORN-2020] **[A]** (citing Matthews 1960)
-
-**Nearly 50% of earthquake-induced fire ignitions in BC occur in Metro Vancouver**, with
-concentration in the central business district; the DCRRA also notes the seawater firefighting
-advantage of a coastal city. [DCRRA-2025] **[A]**
-
-**Method, in outline, for the method page.**
-
-- **The scenarios are NRCan's, not Scawthorn's.** "NRCan has recently selected five scenario
-  events for damage and loss studies (Journeay 2020) … This study employs these same five
-  earthquake scenarios", so that authorities "would then have estimates of fire following
-  earthquake losses on the same basis as those for the NRCan studies of building damage".
-  **But**: "the NRCan estimates of ground motion were not available for this study; therefore,
-  this study performed its own estimates of ground motion." [SCAWTHORN-2020] **[A]** The fire
-  numbers are therefore **aligned with** the NRCan lineage, not identical to it. That nuance must
-  survive every restatement — it is what stops the site claiming a single integrated federal
-  model.
-- **The author's own humility is worth quoting.** Fire following earthquake "is a highly
-  non-linear process, modelling of which does not have great precision and is such that in many
-  cases the only clear result is differentiation between situations of a few small fires, versus
-  major conflagration." [SCAWTHORN-2020] **[A]**
-- **What the study excludes:** gas and liquid-fuel **transmission** line breaks; the
-  vulnerability of energy facilities; winter storm effects on response; and the whole of
-  non-fire earthquake damage. [SCAWTHORN-2020] **[A]**
-
-**The Dedicated Fire Protection System (DFPS)**, and how narrow it is:
+**How narrow it is:**
 
 - A **$52 million** system of **two saltwater pumping stations** and a dedicated
   earthquake-resistant pipeline, supplying **the downtown peninsula — the downtown core and the
@@ -774,7 +839,7 @@ advantage of a coastal city. [DCRRA-2025] **[A]**
   2026. The blue-hydrant identifier is the only part of the description a reader can act on, and
   it reaches them without the geography beside it.
 
-### The fire halls themselves
+## Fire halls
 
 A water supply that survives is worth less if the halls do not. There is no published count
 of how many of Vancouver's fire halls are rated post-disaster, but there is enough on the
@@ -821,11 +886,11 @@ directed at closing that gap is a rounding error against the capital plan it sit
   "the upgrade and replacement of several fire halls". Do not convert "several" into a number.
   **[?]**
 - **Fire hall seismic status outside Vancouver, Burnaby and the District of North Vancouver.**
-  Surrey and New Westminster are documented negatives — full sitemaps enumerated (roughly
-  16,000 and 7,521 URLs), zero hits for post-disaster, seismic or earthquake on any fire-hall
-  page, including Surrey's new Fleetwood Hall 6, which is being built without any published
-  statement of what standard it is built to. **Richmond and the City of North Vancouver were
-  searched on 10 September 2026.** **[?]** for CNV.
+  Surrey and New Westminster are documented negatives — their full municipal sitemaps were
+  enumerated in September 2026 and return zero hits for post-disaster, seismic or earthquake on
+  any fire-hall page, including Surrey's new Fleetwood Hall 6, which is being built without
+  any published statement of what standard it is built to. **Richmond and the City of North
+  Vancouver were searched on 10 September 2026.** **[?]** for CNV.
 
   **Richmond: all halls, stated by the fire chief — at committee-minute strength.** Community
   Safety Committee minutes of 10 March 2026 record the Chief answering members: "**all
@@ -843,13 +908,11 @@ directed at closing that gap is a rounding error against the capital plan it sit
   remain unread. And "rated to withstand major disasters" is **not** the same phrase as
   "post-disaster importance category" — the page must not silently upgrade it.
 
-  **City of North Vancouver: nothing, across six channels.** CNV has one fire hall. Searched
-  10 September 2026: the site-search API with controls passed and a negative control proving
-  it does not index council report PDFs; the complete City-Finances series, 81 PDFs covering
-  financial and capital plans 2012–2030 and annual reports 2015–2025, where seismic terms hit
-  four files and none concerns the fire hall; all 21 of the 2026 council agenda packages; the
-  OCP by-law; the fire department's Service Priorities Plan 2021–2024; and a web-archive sweep
-  of the domain. The 2026–2030 Capital Plan does carry a **Fire Hall Assessment and Lifecycle
+  **City of North Vancouver: nothing.** CNV has one fire hall. Searched 10 September 2026
+  across the site-search API, the complete City-Finances series of financial, capital and
+  annual reports, the 2026 council agenda packages, the OCP by-law, the fire department's
+  Service Priorities Plan and a web-archive sweep of the domain: nothing states the hall's
+  seismic standard. The 2026–2030 Capital Plan does carry a **Fire Hall Assessment and Lifecycle
   Analysis** ($50,000, condition and lifespan) and a **Long Term Plan for City Fire Halls** —
   and **neither mentions seismic or post-disaster**, which is the most specific thing CNV
   says. [CNV-CAPITAL-26] **[A]**
@@ -862,21 +925,18 @@ directed at closing that gap is a rounding error against the capital plan it sit
   from 1997–2001 and the City Archives finding aid, September 2026. If it is ever sourced, the
   useful framing is volume rather than time — at 45,461 L/min, 15–20 minutes is roughly
   **680–910 m³**, a buffer, not a supply.
-- **The specific council report carrying the DFPS 10 km figure.** Confirmed to exist at [A] in
-  a City council report during the September 2026 pass, but the report was not recorded. **[?]**
+- **The specific council report carrying the DFPS 10 km figure.** The figure was seen in a City
+  council report during the September 2026 pass, but the report was not recorded, so the claim
+  travels at **[B]** and cannot be cited at **[A]**. **[?]**
 - **Whether the early-2000s DFPS expansion proposals formally did not proceed.** No source
   located; the absence of expansion since 2003 is established, the decision record is not. **[?]**
 - **Any Vancouver or Lower Mainland study of glazing, cladding or façade falling-hazard risk.**
-  Searched, September 2026: the NRCan Open S&T Repository API for `nonstructural seismic`,
-  `glazing earthquake`, `curtain wall seismic`, `falling hazard casualties earthquake`,
-  `unreinforced masonry Vancouver` — no NRCan or GSC publication on glazing, cladding, façade or
-  falling-debris hazard for Vancouver or anywhere in Canada. ICLR site search: `glazing` 0
-  results, `parapet` 0, `facade` 0. vancouver.ca site search across nine queries returned only
-  permit records and the by-law itself. Resilient Vancouver Strategy: zero relevant hits. Plus
-  the 2021 FOI negative above. OpenAlex queries `nonstructural seismic risk Vancouver
-  building` and `seismic falling hazard glazing cladding parapet casualties` returned **zero**
-  BC results (10 September 2026), so the absence now rests on a bibliographic index as well as
-  an FOI response. **UBC cIRcle remains untested** — the Open Collections API rejects
+  Searched September 2026 through the NRCan Open S&T Repository API, the ICLR site search,
+  vancouver.ca site search, the Resilient Vancouver Strategy and OpenAlex: no NRCan or GSC
+  publication, and **zero** BC results in the bibliographic index, on glazing, cladding, façade
+  or falling-debris hazard for Vancouver or anywhere in Canada. With the 2021 FOI negative
+  above, the absence now rests on a bibliographic index as well as an FOI response.
+  **UBC cIRcle remains untested** — the Open Collections API rejects
   collection identifiers and the site search is JavaScript with no discoverable query
   parameter. **This is a searched absence, and the City's FOI response makes
   it a deliberate documented one.**

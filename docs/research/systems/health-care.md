@@ -10,18 +10,18 @@
 how the existing hospital stock is expected to perform as a portfolio, what the new hospitals are
 built to, how many casualties the province plans for, and a peer-reviewed regional comparison of
 that load against Metro Vancouver's acute-care bed stock and road network. What is **not**
-established is any *official* version of that comparison, and any official ICU or operating-room
-count at all. **Proposed band: Medium holds**, with the surge-capacity gap shipped as a visible
-`VerificationNote`. Medium rather than High because the strongest regional evidence is an academic
+established is any *official* version of that comparison, and any official inventory of ICU or
+operating-room capacity. **Proposed band: Medium holds**, with the surge-capacity gap shipped as a
+visible `VerificationNote`. Medium rather than High because the strongest regional evidence is an academic
 accessibility model whose own authors say it overstates how well hospitals would work; Medium
 rather than Low because the province states in its own voice that medical facilities would be
 overwhelmed. The counter-argument is recorded under "What is not established".
 
 ---
 
-## Findings
+## How it fails
 
-### The portfolio finding: about 65% of one health authority's buildings
+### The building stock: about 65% of one health authority's buildings
 
 DCRRA Appendix C, Case Study 4, "Seismic resilience of B.C.'s hospital infrastructure" (Kaur and
 Molina Hutt, UBC; Orr, Vancouver Coastal Health; White, Bush Bohlman & Partners). All
@@ -56,7 +56,51 @@ Note the shape of the claim carefully. It is a statement about a *portfolio* at 
 motion*, not a forecast of what happens to a named hospital in either site scenario. It must never
 be written as "65% of hospitals would collapse".
 
-### The regional capacity comparison exists, and it is academic
+### Backup power: a code minimum, a contract, and an unread standard
+
+Three tiers, and the page must keep them apart.
+
+**Tier 1 — code minimum, for getting people out of a building.** The Vancouver Building By-law
+2025 (Book I, consolidated to 5 May 2026, convenience copy, marked "**THESE MATERIALS ARE NOT AN
+OFFICIAL VERSION**") sets emergency-power run times: [VBBL-2025] **[A]**
+
+- Article **3.2.7.9.(1)** — "An emergency power supply capable of operating under a full load for
+  **not less than 2 h**" for elevators in buildings over 36 m, equipment supplying water for fire
+  suppression, air-quality and venting fans, and smoke-control fans.
+- Article **3.2.7.4.(1)** — emergency power for lighting: **2 h** for a high building, **1 h** for a
+  Group B major occupancy that is not a high building, **30 min** for other occupancies.
+- Article **3.2.7.8.(3)** — fire alarm systems: 24 h supervisory power, then 2 h / 1 h / 30 min /
+  5 min under full load by building class.
+
+**These hours are for life safety during evacuation — lights, an elevator, a fire pump, a fire
+alarm. They are not a figure for keeping a hospital running.**
+
+**Tier 2 — the hospital pathway, unread.** Article **3.2.7.6** routes treatment occupancies — the
+by-law defines a treatment occupancy (Group B, Division 2) as a building providing treatment with
+overnight accommodation, which is a hospital — to **CSA Z32**, "Electrical safety and essential
+electrical systems in health care facilities". [VBBL-2025] **[A]** CSA Z32 is sold rather than
+published and **was not read**. Its duration requirement is unknown.
+
+**The edition is CSA C282-15**, which is what the by-law's referenced-documents table cites. And
+Article 3.2.7.5 applies C282 "except as required by Articles 3.2.7.6. and 3.2.7.7." — that is,
+**the by-law points hospitals away from C282**, so C282 is not the standard to chase for a
+hospital figure. [VBBL-2025] **[A]**
+
+**Tier 3 — contractual, 72 hours.** Both the new Surrey hospital and the new St. Paul's specify
+**72 hours of self-sufficiency for fuel, water and sanitary holding**, in identical terms, in two
+independent project agreements. [NSH-SPEC] [NSP-SPEC] **[A]** for what the contracts require.
+
+**Say it as a contractual requirement in two named projects — a de facto procurement norm — not
+as a standard, a rule, or a figure that applies to any existing hospital.** No published source
+extends it to existing facilities, and none was found.
+
+**The three tiers are a code minimum, a contractual requirement and a design intent, and the
+distinction matters.** A reader who hears
+"two hours" and a reader who hears "72 hours" must both be told which kind of number they have.
+
+## How bad, and for how long
+
+### Regional hospital accessibility under an M9.0 Cascadia scenario
 
 Kaur, Molina Hutt and Kim, "Assessing Post-Earthquake Emergency Healthcare Accessibility
 Considering Damage to Hospital Buildings and Transportation Infrastructure", *Earthquake Spectra*
@@ -140,7 +184,7 @@ retrofit reduces that "from over 54,000 to under 27,000." [KAUR-2026] **[A]** Th
 itself lives in `transportation.md` and `../mobility.md`; this page cites the health consequence
 and points there for the mechanism rather than restating it.
 
-### The single-hospital study, abstract only
+### Emergency-department surge at one Vancouver hospital
 
 Palomino Romani, Blowes and Molina Hutt, "Evaluating post-earthquake functionality and surge
 capacity of hospital emergency departments using discrete event simulation", *Earthquake Spectra*
@@ -159,113 +203,6 @@ scenario. The 17-hour figure is **the worst simulation, not a central estimate**
 methodology demonstration — the 2026 regional paper describes this class of work as "not be[ing]
 suitable for regional studies due to the data requirements". And every number above is **what the
 abstract says**; we have not read the paper.
-
-### The province names one hospital
-
-"**St. Paul's Hospital in downtown Vancouver is an older building with masonry elements and may
-be significantly impacted** by a large seismic event. Other hospitals in this region, including
-Vancouver General, UBC Hospital, and Lion's Gate Hospital, are likely to see increased demand as
-a result." [PEIRS] **[A]**
-
-**This finding has an expiry date, and it is close.** The St. Paul's the province is
-describing is the **existing** hospital on Burrard Street. Its replacement on the Station
-Street site is built to the Vancouver Building By-law post-disaster requirement, with
-contractual FEMA P-58 downtime targets — see "Tier 3" below — and opens around 2027. When
-it does, **the province's only named hospital vulnerability moves out of the building it
-names**, and this quotation becomes a statement about a decommissioned site unless it is
-re-dated. Carry the date with it every time, and check PEIRS for a revision after the
-move. Already a refresh trigger in `../open-questions.md`.
-
-**What it does and does not establish.** It is [A] that the province expects the other
-three named hospitals to see increased demand. It is **not** a capacity statement: no
-number of patients, no bed count, no comparison against the casualty load PEIRS itself
-forecasts in the same document. The distance between "likely to see increased demand" and
-any published measure of what those hospitals could absorb is the centre of this file.
-
-Two BC Gov News releases state that further existing facilities predate current seismic standards:
-Richmond Hospital [BCGOV-RICH-2016] **[A]** and Lions Gate Hospital [BCGOV-LGH-2018]
-**[A]**. Richmond's redevelopment is funded and under way in phases. [BCGOV-RICH-2024]
-**[A]**
-
-### The seismic rating work exists; it is simply not public
-
-A province-wide **British Columbia Health Seismic Database (BCHSD)** exists, developed and
-maintained by **Bush, Bohlman & Partners** — the firm also credited in DCRRA Appendix C Case
-Study 4. It is the source of the hospital inventory attributes in the 2026 regional study, used
-under data-sharing arrangements with Vancouver Coastal Health and Fraser Health.
-[KAUR-2026] **[A]** for its existence, name and custodian.
-
-**It is not published.** The paper's citation carries a URL on a UBC anthropology domain that is
-plainly a citation error; **do not publish that URL**. The publishable statement: the rating work
-has been done and is held privately, rather than never having been done. That is **deliberate
-non-publication, not absence**.
-
-### The new-build standard is high, and it is in the contracts
-
-Three current major projects are specified to **post-disaster importance category**:
-
-- The **new Surrey hospital and BC Cancer Centre**. [NSH-SPEC] **[A]**
-- **The new St. Paul's**, to the Vancouver Building By-law post-disaster requirement.
-  [NSP-SPEC] **[A]**
-- **Royal Columbian Hospital Phase 2** — with a nuance worth publishing: the **acute care tower is
-  post-disaster** while the **support building is deliberately specified as "Normal" importance
-  category**. [RCH-SPEC] **[A]**
-
-That last line is the most instructive detail on the page. Post-disaster status is applied where care
-is delivered, not across a whole site. A hospital is not one building, and a reader who pictures a
-campus as a single rated object has the wrong model.
-
-### Backup power: a code minimum, a contract, and an unread standard
-
-Three tiers, and the page must keep them apart.
-
-**Tier 1 — code minimum, for getting people out of a building.** The Vancouver Building By-law
-2025 (Book I, consolidated to 5 May 2026, convenience copy, marked "**THESE MATERIALS ARE NOT AN
-OFFICIAL VERSION**") sets emergency-power run times: [VBBL-2025] **[A]**
-
-- Article **3.2.7.9.(1)** — "An emergency power supply capable of operating under a full load for
-  **not less than 2 h**" for elevators in buildings over 36 m, equipment supplying water for fire
-  suppression, air-quality and venting fans, and smoke-control fans.
-- Article **3.2.7.4.(1)** — emergency power for lighting: **2 h** for a high building, **1 h** for a
-  Group B major occupancy that is not a high building, **30 min** for other occupancies.
-- Article **3.2.7.8.(3)** — fire alarm systems: 24 h supervisory power, then 2 h / 1 h / 30 min /
-  5 min under full load by building class.
-
-**These hours are for life safety during evacuation — lights, an elevator, a fire pump, a fire
-alarm. They are not a figure for keeping a hospital running.**
-
-**Tier 2 — the hospital pathway, unread.** Article **3.2.7.6** routes treatment occupancies — the
-by-law defines a treatment occupancy (Group B, Division 2) as a building providing treatment with
-overnight accommodation, which is a hospital — to **CSA Z32**, "Electrical safety and essential
-electrical systems in health care facilities". [VBBL-2025] **[A]** CSA Z32 is sold rather than
-published and **was not read**. Its duration requirement is unknown.
-
-**The edition is CSA C282-15**, which is what the by-law's referenced-documents table cites. And
-Article 3.2.7.5 applies C282 "except as required by Articles 3.2.7.6. and 3.2.7.7." — that is,
-**the by-law points hospitals away from C282**, so C282 is not the standard to chase for a
-hospital figure. [VBBL-2025] **[A]**
-
-**Tier 3 — contractual, 72 hours.** Both the new Surrey hospital and the new St. Paul's specify
-**72 hours of self-sufficiency for fuel, water and sanitary holding**, in identical terms, in two
-independent project agreements. [NSH-SPEC] [NSP-SPEC] **[A]** for what the contracts require.
-
-**Say it as a contractual requirement in two named projects — a de facto procurement norm — not
-as a standard, a rule, or a figure that applies to any existing hospital.** No published source
-extends it to existing facilities, and none was found.
-
-**The three tiers are a code minimum, a contractual requirement and a design intent, and the
-distinction matters.** A reader who hears
-"two hours" and a reader who hears "72 hours" must both be told which kind of number they have.
-
-### The only published numeric downtime target for a Lower Mainland hospital
-
-The new St. Paul's specification sets **FEMA P-58 downtime targets: median repair time of 30 days
-or less at the 2%-in-50-year ground motion level.** [NSP-SPEC] **[A]**
-
-It is the only published numeric post-earthquake downtime target found for any Lower Mainland
-hospital. It is a **design intent** in a contract for a building not yet in service, and it says
-nothing about existing facilities — but as the single point where a number attaches to "how long
-would a hospital be out", it belongs on the page with those limits attached.
 
 ### The casualty load the province plans for
 
@@ -288,12 +225,83 @@ uninjured, distraught people … looking for loved ones and seeking shelter." [D
 That second sentence is the mechanism a reader can act on, and it is the only place on this site
 where an individual decision measurably changes hospital capacity.
 
+### Hospital downtime: the new St. Paul's 30-day target
+
+The new St. Paul's specification sets **FEMA P-58 downtime targets: median repair time of 30 days
+or less at the 2%-in-50-year ground motion level.** [NSP-SPEC] **[A]**
+
+It is the only published numeric post-earthquake downtime target found for any Lower Mainland
+hospital. It is a **design intent** in a contract for a building not yet in service, and it says
+nothing about existing facilities — but as the single point where a number attaches to "how long
+would a hospital be out", it belongs on the page with those limits attached.
+
+## Where, and to whom
+
+### St. Paul's, and the hospitals expected to absorb the demand
+
+"**St. Paul's Hospital in downtown Vancouver is an older building with masonry elements and may
+be significantly impacted** by a large seismic event. Other hospitals in this region, including
+Vancouver General, UBC Hospital, and Lion's Gate Hospital, are likely to see increased demand as
+a result." [PEIRS] **[A]**
+
+**This finding has an expiry date, and it is close.** The St. Paul's the province is
+describing is the **existing** hospital on Burrard Street. Its replacement on the Station
+Street site is built to the Vancouver Building By-law post-disaster requirement, with
+contractual FEMA P-58 downtime targets — see "Tier 3" under "Backup power" above — and opens
+around 2027. When
+it does, **the province's only named hospital vulnerability moves out of the building it
+names**, and this quotation becomes a statement about a decommissioned site unless it is
+re-dated. Carry the date with it every time, and check PEIRS for a revision after the
+move. Already a refresh trigger in `../open-questions.md`.
+
+**What it does and does not establish.** It is [A] that the province expects the other
+three named hospitals to see increased demand. It is **not** a capacity statement: no
+number of patients, no bed count, no comparison against the casualty load PEIRS itself
+forecasts in the same document. The distance between "likely to see increased demand" and
+any published measure of what those hospitals could absorb is the centre of this file.
+
+Two BC Gov News releases state that further existing facilities predate current seismic standards:
+Richmond Hospital [BCGOV-RICH-2016] **[A]** and Lions Gate Hospital [BCGOV-LGH-2018]
+**[A]**. Richmond's redevelopment is funded and under way in phases. [BCGOV-RICH-2024]
+**[A]**
+
+## What is being done
+
+### New hospitals built to post-disaster importance category
+
+Three current major projects are specified to **post-disaster importance category**:
+
+- The **new Surrey hospital and BC Cancer Centre**. [NSH-SPEC] **[A]**
+- **The new St. Paul's**, to the Vancouver Building By-law post-disaster requirement.
+  [NSP-SPEC] **[A]**
+- **Royal Columbian Hospital Phase 2** — with a nuance worth publishing: the **acute care tower is
+  post-disaster** while the **support building is deliberately specified as "Normal" importance
+  category**. [RCH-SPEC] **[A]**
+
+That last line is the most instructive detail on the page. Post-disaster status is applied where care
+is delivered, not across a whole site. A hospital is not one building, and a reader who pictures a
+campus as a single rated object has the wrong model.
+
+### The British Columbia Health Seismic Database
+
+A province-wide **British Columbia Health Seismic Database (BCHSD)** exists, developed and
+maintained by **Bush, Bohlman & Partners** — the firm also credited in DCRRA Appendix C Case
+Study 4. It is the source of the hospital inventory attributes in the 2026 regional study, used
+under data-sharing arrangements with Vancouver Coastal Health and Fraser Health.
+[KAUR-2026] **[A]** for its existence, name and custodian.
+
+**It is not published.** The paper's citation carries a URL on a UBC anthropology domain that is
+plainly a citation error; **do not publish that URL**. The publishable statement: the rating work
+has been done and is held privately, rather than never having been done. That is **deliberate
+non-publication, not absence**.
+
 ---
 
 ## What is not established
 
 **No government or health authority has published a comparison of the casualty load against
-regional care capacity, and no official ICU or operating-room count is published anywhere. [?]
+regional care capacity, and no official inventory of ICU or operating-room capacity is published
+anywhere. [?]
 This is the page's honest centre.**
 
 Peer-reviewed UBC work makes the comparison twice — once for a single Vancouver emergency
@@ -315,7 +323,8 @@ not distinguish level-3 from level-2 critical care, and does not say staffed ver
 of the region. It also does not de-anonymise anything in [KAUR-2026] — different hospitals,
 different denominator, different year — and the two must never be merged or cross-matched.
 
-**Operating rooms exist only as project counts, never as an inventory.** BC Gov News gives
+**Official ICU and operating-room figures exist only as project counts, never as an
+inventory.** BC Gov News gives
 Richmond "three more operating rooms bringing the total to 11" — the one facility *total*
 available; Royal Columbian's new tower "a 47-bed intensive care unit", "a new 17-bed cardiac
 intensive care unit" and "17 new operating rooms"; VGH Phase 2 "15 new operating rooms and
@@ -337,10 +346,6 @@ derivatives stop at the province, and the facility-level portal has been retired
 a health-authority page and none states a bed count. *Not retrieved*: PHSA's Critical Care
 BC pages are a JavaScript shell and came back as navigation chrome — **that one is worth a
 browser retry and is not an absence.** **[?]**
-
-**And nothing anywhere compares an earthquake casualty load against regional care capacity
-from a government or health-authority source.** That is this file's honest centre, with four
-named channels behind it. **[?]**
 
 **One lead, recorded as a lead.** Dodek, Keenan, Norena, Martin & Wong, "Structure, process,
 and outcome of all intensive care units within the province of British Columbia", *J
@@ -367,17 +372,13 @@ comparison is ever published, or if the paper's supporting data yields per-munic
 the band should be re-run.
 
 **No published seismic rating for named Lower Mainland hospital buildings. [?]** Searched
-10 September 2026: the full Fraser Health sitemap with every `capital-projects/*` page fetched and
-grepped; the full Vancouver Coastal Health sitemap; the Providence Health Care sitemap; all
-Infrastructure BC project pages and their linked PDFs; eight BC Gov News searches; and the
-complete Office of the Auditor General of BC post sitemap, checked for every report title
-containing earthquake, seismic, disaster, emergency or health. Crossref queries for `seismic
-hospital British Columbia`, `seismic vulnerability hospital Vancouver` and `healthcare facility
-seismic risk Canada` returned nothing in region. **There is no OAG audit of hospital seismic
-status**: the OAG's 2014 *Catastrophic Earthquake Preparedness* report mentions hospitals zero
-times, and its only seismic-buildings audit is *Planning for School Seismic Safety* (2008). The
-rating work exists in the non-public BCHSD, so this is a **publication absence, not a knowledge
-absence**.
+10 September 2026 across the Fraser Health, Vancouver Coastal Health and Providence Health Care
+sitemaps, the Infrastructure BC project pages and their linked PDFs, BC Gov News, the Office of
+the Auditor General of BC post sitemap and Crossref; nothing in region. **There is no OAG audit
+of hospital seismic status**: the OAG's 2014 *Catastrophic Earthquake Preparedness* report
+mentions hospitals zero times, and its only seismic-buildings audit is *Planning for School
+Seismic Safety* (2008). The rating work exists in the non-public BCHSD, so this is a
+**publication absence, not a knowledge absence**.
 
 **No published generator, fuel or water capacity for any existing Lower Mainland hospital. [?]**
 None found for Vancouver General, Surrey Memorial, Burnaby, Lions Gate, Richmond or St. Paul's
@@ -385,13 +386,12 @@ on Burrard. The best remaining lead is now closed — see below — and nothing 
 through the weaker channel described under "Method caveat" and **not retested**.
 
 **VCH's "Owner's Project Requirements for facilities" page offers no document. [?] Closed as a
-dated negative.** Fetched with a scripted browser, JavaScript executed, 10 September 2026. The page
-states that "The OPR provides owner-specific minimum baseline requirements above and beyond codes
-and standards" and instructs the reader to "download the latest version" — and **there is no
-download link.** Not hidden behind JavaScript: absent from the fully rendered DOM, which contains
-no `.pdf`, `.docx` or `.zip` link other than an unrelated Security Design Standards PDF. The VCH
-sitemap contains the landing page and no OPR document. [VCH-OPR] **[A]** **Infer nothing about
-what the OPR contains.**
+dated negative.** Fetched with a scripted browser, JavaScript executed, 10 September 2026. The
+page states that "The OPR provides owner-specific minimum baseline requirements above and beyond
+codes and standards" and instructs the reader to "download the latest version" — and **there is
+no download link**, neither in the fully rendered DOM nor in the VCH sitemap, which carries the
+landing page and no OPR document. [VCH-OPR] **[A]** **Infer nothing about what the OPR
+contains.**
 
 **Hospital-specific backup-power duration. [?]** CSA Z32 — the standard the Vancouver Building
 By-law actually routes hospitals to — and CSA Z8000 remain paywalled by CSA Group and were **not
@@ -423,25 +423,22 @@ downloads but is a scanned image PDF with no extractable text — **unreviewed**
 worth OCRing. Recorded through the weaker channel described below and **not retested**.
 
 **Unclosable: 2015 Vancouver Sun reporting on health-authority seismic assessments.** Neither
-available channel can settle it. The paper's own search works (the parameter is
-`search_text`, not `q`) but its index reaches only about twelve months: a control query for
-`earthquake` returns 26 results across three pages, the oldest June 2026, and neither the
-date-range nor the oldest-first option changes the set; targeted queries return zero.
-[VSUN-SEARCH] **[A]** Wayback cannot substitute: in 2015 Postmedia served articles from ID-based
-URLs with no slug, so a CDX keyword pattern against the URL is **structurally incapable** of
-finding a 2015 article, and the empty CDX results prove nothing. Settling it would need ProQuest
-Canadian Newsstream, the Postmedia archive or a library database — all authenticated. **Do not
-cite the article and do not describe it as pending.** Reopen only if someone gains database access.
+available channel can settle it. The paper's own search works but its index reaches only about
+twelve months, so targeted queries return zero. [VSUN-SEARCH] **[A]** Wayback cannot substitute:
+in 2015 Postmedia served articles from ID-based URLs with no slug, so a CDX keyword pattern
+against the URL is **structurally incapable** of finding a 2015 article, and the empty CDX results
+prove nothing. Settling it would need ProQuest Canadian Newsstream, the Postmedia archive or a
+library database — all authenticated. **Do not cite the article and do not describe it as
+pending.** Reopen only if someone gains database access.
 
 **Method caveat.** This research had no general web search. The weaker channel is direct fetching
 of enumerable government, health-authority and regulator endpoints, sitemaps, site-native search
-APIs, Crossref and the NRCan repository API. The stronger channel adds a **scripted browser** that
-defeats Cloudflare and JavaScript shells, and the **Crossref and OpenAlex bibliographic indexes**,
-which are true indexes rather than search-engine proxies. Neither can run a keyword query of the
-form "does any document anywhere say X". Every negative above therefore remains **"not found
-through these channels"**. Negatives retested on the stronger channels are marked closed above; the
-health-authority emergency-plan negative and the generator, fuel and water negative were recorded
-through the weaker channel and have **not** been retested.
+APIs, Crossref and the NRCan repository API; the stronger channel adds a **scripted browser** that
+defeats Cloudflare and JavaScript shells, and the **Crossref and OpenAlex bibliographic indexes**.
+Neither can run a keyword query of the form "does any document anywhere say X". Every negative
+above therefore remains **"not found through these channels"**. Negatives retested on the stronger
+channels are marked closed above; the health-authority emergency-plan negative and the generator,
+fuel and water negative were recorded through the weaker channel and have **not** been retested.
 
 ---
 
@@ -461,7 +458,7 @@ the caveat beside the number, not in a footnote.
 **The page is built around a hole.** Lead with what is known — the portfolio finding, the named
 hospitals, the new-build standard, the regional accessibility study — then state plainly that no
 government or health authority has compared the casualty load to the region's capacity, and that
-no official ICU or operating-room count is published at all. Do not fill it with inference, and
+no official inventory of ICU or operating-room capacity is published at all. Do not fill it with inference, and
 do not let the page imply an answer by adjacency.
 
 **Guards that must travel with the numbers.**

@@ -25,7 +25,7 @@ statements cannot both stand unreconciled; the 2011 one is dated design intent, 
 
 ## Findings
 
-### BC Hydro states a downtown restoration time, and a failure of standard
+### Murrin Substation and the downtown supply
 
 BC Hydro filed an **Initial Application to the BC Utilities Commission on 10
 November 2025** for the West End Substation Project, ahead of a full CPCN
@@ -86,67 +86,22 @@ specific seismic assessment of Murrin. Treat as **[A]**, attribute to BC Hydro,
 and date it visibly. Note also that BC Hydro disclosed in the covering letter that
 generative AI was used in preparing portions of the submission.
 
-### The 2011 claim, and how it is now handled
+**The finding is not new.** The 2019 F2020-F2021 filing already said, in its Downtown Vancouver Electricity Supply
+Plan: *"Murrin substation is on seismically unstable soil. Approximately half of the
+230 kV switchyard, which supplies both Murrin and Dal Grauer loads, is vulnerable to
+severe earthquake damage from liquefaction and settlement. All load being served from
+Dal Grauer and Murrin substations may experience a prolonged outage after a seismic
+event."* [BCH-RRA-F2020] **[A]** Six years before the 2025 filing.
 
-- BC Hydro, 27 January 2011: "BC's electrical infrastructure has been built to
-  withstand even a severe seismic event, such as a one in a 2,475 year event."
-  [BCH-SEIS-11] **[B]** — a press release, fifteen years old.
-- **This must be reconciled or retired.** BC Hydro's own 2025 seismic assessment of
-  Murrin Substation found it not operable at 1-in-1,000, against a post-disaster
-  requirement of 1-in-2,475. The 2011 sentence is dated design intent for the system
-  as a whole; the 2025 filing is a specific finding about a specific, critical asset
-  that fails it. Do not let both stand unqualified on the same page. A marker
-  certifies a route: [BCH-SEIS-11] is [A] for the existence of the 2011 statement
-  and is not [A] for an engineering fact BC Hydro's own engineers now contradict.
-- The Vancouver City Central Transmission project (about $201M) includes the roughly
-  $87M Mount Pleasant substation, designed to operate post-disaster, with ducts and
-  cable vaults installed below the liquefaction and ground-deformation zone. All
-  downtown high-voltage transmission runs underground. [BCH-VCCT] **[B]** — it is the
-  other half of the picture: the new asset is built to post-disaster standard; the 1947
-  and 1952 assets are not.
+The same appendix supplies the denominator the 2025 filing lacks: the downtown study
+area has **approximately 95,000 customers**, with a fiscal-2017 peak load of 411 MVA.
+**Do not multiply.** Two-thirds of 95,000 is about 63,000, but the customer count and
+the two-thirds statement are six years apart and come from different filings. If the
+page wants a number of people, it says where each half came from and how far apart they
+are — or it stays with "up to two-thirds of downtown customers", which is what the
+utility actually said.
 
-### Three BC Hydro seismic studies that are constantly conflated
-
-They are different studies, of different things, and the report must be explicit
-about the distinction.
-
-- **The 2014 Probabilistic Seismic Hazard Assessment** — released December 2014,
-  six years of work, described as the first of its kind by a North American
-  hydroelectric utility. It found hazard decreased or stable for the Peace and
-  Columbia systems, **about the same for the Lower Mainland**, and increased for
-  Vancouver Island and Bridge River. This is a **hazard** study, and it is about
-  **dams**. [BCH-PSHA-14] **[A]**
-- **The multi-year transmission and distribution seismic resiliency assessment** —
-  a **vulnerability** study of the **T&D system**. This is the one that would answer
-  the restoration question for the region rather than for downtown. BC Hydro's Dam
-  Safety FAQ still describes it in the present continuous: "BC Hydro is also
-  completing a multi-year seismic resiliency assessment to better understand risks
-  and vulnerabilities within our transmission and distribution system in the event
-  of a major earthquake." Still "completing", not "completed". [BCH-DAMFAQ] **[A]**
-
-- **The 2014 Transmission System Seismic Vulnerability Analysis** — commissioned in
-  2014, reported in a capital-strategy sheet filed with the BCUC in August 2021, and
-  **never published as a document**. It is a vulnerability study of the **transmission
-  system**, and it is the transmission-only predecessor of the assessment above:
-  *"BC Hydro has significant exposure to major earthquakes that present a risk to the
-  reliability of the transmission system including at our substations, overhead
-  structures, and underground and submarine cables... evaluate the key transmission
-  assets in and around the Metro Vancouver and Victoria load centers. The analysis also
-  identified some key vulnerabilities to BC Hydro including our buried and submarine
-  high voltage cables, power transformer bushings, cable slack, potheads, tsunami
-  inundation, and transmission towers subject to liquefaction or landslides."*
-  [BCH-TSSVA-21] **[A]** The same sheet judges thirty years of mitigation as "matching
-  or exceeding that of many other high voltage transmission system operators along the
-  west coast of the United States", concentrated in the Lower Mainland and on Vancouver
-  Island, then lists what is outstanding: bushings and potheads, reinforcement of
-  crossings vulnerable to liquefaction, ground improvement at substation yards in
-  liquefaction zones, and replacement of vulnerable buried and submarine cables.
-
-The "six years of work" phrase belongs to the 2014 **PSHA** and must never be attached
-to either of the others. Note that both 2014 studies are 2014 — the hazard study of dams
-and the vulnerability study of transmission. The year does not distinguish them.
-
-### A second named asset that fails its standard — the Second Narrows crossing
+### The Second Narrows transmission crossing
 
 The downtown finding is not unique. BC Hydro's F2023-F2025 filing carries project
 901474, *2L003 and 2L049 - Transmission Line Crossing Seismic Upgrade (Second
@@ -162,24 +117,7 @@ is the Murrin pattern a second time: a named Lower Mainland asset, an owner-stat
 withstand **below the code level**, and no dated fix. Two instances is a pattern the
 page may describe. It is still not a portfolio statement, and must not become one.
 
-### The Murrin finding is older than the 2025 filing
-
-The 2019 F2020-F2021 filing already said, in its Downtown Vancouver Electricity Supply
-Plan: *"Murrin substation is on seismically unstable soil. Approximately half of the
-230 kV switchyard, which supplies both Murrin and Dal Grauer loads, is vulnerable to
-severe earthquake damage from liquefaction and settlement. All load being served from
-Dal Grauer and Murrin substations may experience a prolonged outage after a seismic
-event."* [BCH-RRA-F2020] **[A]** Six years before the 2025 filing.
-
-The same appendix supplies the denominator the 2025 filing lacks: the downtown study
-area has **approximately 95,000 customers**, with a fiscal-2017 peak load of 411 MVA.
-**Do not multiply.** Two-thirds of 95,000 is about 63,000, but the customer count and
-the two-thirds statement are six years apart and come from different filings. If the
-page wants a number of people, it says where each half came from and how far apart they
-are — or it stays with "up to two-thirds of downtown customers", which is what the
-utility actually said.
-
-### Large power transformers — BC has a fleet and a spares count; lead times stay US
+### Large power transformers, and the spares fleet
 
 - **Ten spares against a fleet of 672.** BC Hydro's asset management strategy, filed
   with the BCUC, reports **672 power transformers at 60 kV or greater** across its
@@ -236,6 +174,66 @@ utility actually said.
   why an electrical system takes years rather than weeks to rebuild. The claim and
   the illustration then sit on the correct sides of the [A]/[C] line.
 
+### BC Hydro's three seismic studies
+
+They are different studies, of different things, and the report must be explicit
+about the distinction.
+
+- **The 2014 Probabilistic Seismic Hazard Assessment** — released December 2014,
+  six years of work, described as the first of its kind by a North American
+  hydroelectric utility. It found hazard decreased or stable for the Peace and
+  Columbia systems, **about the same for the Lower Mainland**, and increased for
+  Vancouver Island and Bridge River. This is a **hazard** study, and it is about
+  **dams**. [BCH-PSHA-14] **[A]**
+- **The multi-year transmission and distribution seismic resiliency assessment** —
+  a **vulnerability** study of the **T&D system**. This is the one that would answer
+  the restoration question for the region rather than for downtown. BC Hydro's Dam
+  Safety FAQ still describes it in the present continuous: "BC Hydro is also
+  completing a multi-year seismic resiliency assessment to better understand risks
+  and vulnerabilities within our transmission and distribution system in the event
+  of a major earthquake." Still "completing", not "completed". [BCH-DAMFAQ] **[A]**
+
+- **The 2014 Transmission System Seismic Vulnerability Analysis** — commissioned in
+  2014, reported in a capital-strategy sheet filed with the BCUC in August 2021, and
+  **never published as a document**. It is a vulnerability study of the **transmission
+  system**, and it is the transmission-only predecessor of the assessment above:
+  *"BC Hydro has significant exposure to major earthquakes that present a risk to the
+  reliability of the transmission system including at our substations, overhead
+  structures, and underground and submarine cables... evaluate the key transmission
+  assets in and around the Metro Vancouver and Victoria load centers. The analysis also
+  identified some key vulnerabilities to BC Hydro including our buried and submarine
+  high voltage cables, power transformer bushings, cable slack, potheads, tsunami
+  inundation, and transmission towers subject to liquefaction or landslides."*
+  [BCH-TSSVA-21] **[A]** The same sheet judges thirty years of mitigation as "matching
+  or exceeding that of many other high voltage transmission system operators along the
+  west coast of the United States", concentrated in the Lower Mainland and on Vancouver
+  Island, then lists what is outstanding: bushings and potheads, reinforcement of
+  crossings vulnerable to liquefaction, ground improvement at substation yards in
+  liquefaction zones, and replacement of vulnerable buried and submarine cables.
+
+The "six years of work" phrase belongs to the 2014 **PSHA** and must never be attached
+to either of the others. Note that both 2014 studies are 2014 — the hazard study of dams
+and the vulnerability study of transmission. The year does not distinguish them.
+
+### The 1-in-2,475-year design-intent claim
+
+- BC Hydro, 27 January 2011: "BC's electrical infrastructure has been built to
+  withstand even a severe seismic event, such as a one in a 2,475 year event."
+  [BCH-SEIS-11] **[B]** — a press release, fifteen years old.
+- **This must be reconciled or retired.** BC Hydro's own 2025 seismic assessment of
+  Murrin Substation found it not operable at 1-in-1,000, against a post-disaster
+  requirement of 1-in-2,475. The 2011 sentence is dated design intent for the system
+  as a whole; the 2025 filing is a specific finding about a specific, critical asset
+  that fails it. Do not let both stand unqualified on the same page. A marker
+  certifies a route: [BCH-SEIS-11] is [A] for the existence of the 2011 statement
+  and is not [A] for an engineering fact BC Hydro's own engineers now contradict.
+- The Vancouver City Central Transmission project (about $201M) includes the roughly
+  $87M Mount Pleasant substation, designed to operate post-disaster, with ducts and
+  cable vaults installed below the liquefaction and ground-deformation zone. All
+  downtown high-voltage transmission runs underground. [BCH-VCCT] **[B]** — it is the
+  other half of the picture: the new asset is built to post-disaster standard; the 1947
+  and 1952 assets are not.
+
 ### Open data for lines and substations
 
 - **BC Transmission Lines** (`GBA_TRANSMISSION_LINES_SP`) is published in the BC Data
@@ -270,8 +268,9 @@ utility actually said.
   Applications and their appendices, both Integrated Resource Plans, the F2026-F2027
   RRA, and 37 BC Hydro information-request response exhibits. It is referenced by its
   owner and filed nowhere. The sweep did, however, produce the 2014 transmission
-  vulnerability analysis and the Second Narrows project above — so route (b) is closed
-  as a search and route (a), requesting the assessment directly, is the one left.
+  vulnerability analysis and the Second Narrows project above — so searching the
+  regulatory record is exhausted, and requesting the assessment directly is the route
+  left.
 - **The 2014 transmission vulnerability analysis itself.** We have BC Hydro's summary
   of it in a capital-strategy sheet, not the study. [BCH-TSSVA-21] — lead. **[?]**
 - **Anything at all about the distribution system.** No distribution-system seismic

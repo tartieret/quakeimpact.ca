@@ -11,9 +11,13 @@ The evidence base. One subject per file, mirroring the structure of the site
 itself, so that the page being written and the file being cited sit next to each
 other.
 
-This folder is the working record, not site copy. It carries source keys,
-confidence markers and open questions; the site carries prose. Nothing moves
-from here to a page without passing `../style-guide.md`.
+This folder is the working record, not site copy. It carries source keys, confidence
+markers and open questions; the site carries prose. Nothing moves from here to a page
+without passing `../style-guide.md`.
+
+**Files are organised by subject, never by the order things were found.** A file opens
+with what the evidence supports today, then sets out the mechanism before the numbers.
+See [`CONVENTIONS.md`](CONVENTIONS.md) for the shape and the reasons.
 
 ---
 
@@ -38,12 +42,12 @@ trusted:
   question. It is never quietly filled with inference, and inference is never
   promoted to a marker by being written down confidently.
 
-A third rule follows from them: **an absence that has been searched for is a
-finding.** Where a subject has been looked for properly and is
-genuinely not in the public record, the search itself is recorded — what was
-searched, where, and when. That is a stronger and more useful statement than an
-untouched question mark, and it is what lets a system page say *nobody has
-published this* rather than *we did not find this*.
+A third rule follows from them: **an absence that has been searched for is a finding —
+the absence, not the search.** Where a subject has been looked for properly and is
+genuinely not in the public record, that is what a page may say: *nobody has published
+this*, rather than *we did not find this*. The channel and the date are recorded in one
+line so the claim is auditable; the hunt itself is not recorded, because no page will
+ever use it.
 
 ---
 
@@ -58,7 +62,7 @@ published this* rather than *we did not find this*.
 | [`systems/`](systems/) | One file per system in the impact grid. |
 | [`mobility.md`](mobility.md) | Who can physically leave, and by what route. |
 | [`preparedness.md`](preparedness.md) | Official advice, and the gap between jurisdictions. |
-| [`analogues.md`](analogues.md) | Christchurch, Kobe, Tōhoku, and the airlift capacity comparison. |
+| [`analogues.md`](analogues.md) | Christchurch, Kobe and Tōhoku, and the limits on using them. |
 | [`maps.md`](maps.md) | Available layers, what each supports, and what it does not. |
 | [`sources.md`](sources.md) | The source register. Becomes `SOURCES` in `site.ts`. |
 | [`open-questions.md`](open-questions.md) | The verification queue and the refresh triggers. |

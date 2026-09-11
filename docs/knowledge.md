@@ -435,6 +435,26 @@ that owns the subject. One claim, one home — the convention already existed an
 how it gets broken while appearing to be followed. Where a correction changes a fact,
 grep the whole folder for the old fact before writing the new one down.
 
+## Reorganising a document is how you find out it contradicts itself
+
+**10 September 2026.** A pass that reordered twenty-five research files by subject rather
+than by discovery found fourteen internal contradictions. None was found by looking for
+contradictions. They surfaced because reordering forces someone to read a long file end
+to end, and nobody does that in the normal course of work — a file is written in pieces,
+each piece read in isolation, and a claim corrected in section 3 can sit beside its own
+negation in section 9 for as long as nobody reads both in one sitting.
+
+The most expensive one was not a fact at all. `open-questions.md` described the project's
+**only blocking item** — ICLR's written approval for the microzonation maps — as
+*requested*, while `licensing.md` carried sending that email as an action still
+outstanding. One word, and it turned "waiting on a reply" into "waiting on a request
+nobody has written". A blocked project that believes the ball is in someone else's court
+does not chase it.
+
+**The rule:** treat a restructure as an audit, and budget for it. Where two files describe
+the same status, the one that owns the *action* wins over the one that merely mentions it.
+And check the status of anything described as blocking before believing the block.
+
 ## Citation markers render inside a paragraph, so they carry no block elements
 
 The inline citation popover (`components/citation.tsx`) sits inside running

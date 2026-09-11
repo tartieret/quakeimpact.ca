@@ -80,8 +80,9 @@ on a public hazard site even if they were.
 
 ## What is not established
 
-- **ICLR's reply** on MVSMMP reuse. Requested; terms recorded in
-  `../licensing.md`. This is the blocking item for the map work.
+- **ICLR's reply** on MVSMMP reuse. The terms are recorded in `../licensing.md`,
+  which carries the enquiry to Sheri Molnar at Western and to ICLR as an action still
+  to be taken. This is the blocking item for the map work. [?]
 - **The DFPS dataset slug** on the City of Vancouver portal. Confirm on download.
 - **DCRRA licence terms.** No rights statement was found in the front matter of
   the chapters read. BC government publications are normally OGL–BC, but that

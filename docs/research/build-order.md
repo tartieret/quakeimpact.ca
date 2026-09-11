@@ -20,9 +20,9 @@ in, and the reason each page sits where it does.
 1. **Scenarios.** Anchored on two official simulations, fully open licence, no
    licensing risk, and the strongest structural idea the site has. It can carry
    the opening.
-2. **Method and the band rubric.** Ships with the MVP rather than after it. Two
-   systems still have no published assessment behind them, and a reader who meets
-   that without the rubric concludes the site is unfinished rather than honest.
+2. **Method and the band rubric.** Ships with the MVP rather than after it. One
+   and a half rows of the grid still carry no published assessment, and a reader who
+   meets that without the rubric concludes the site is unfinished rather than honest.
 3. **Water.** The best-sourced system: a real mechanism, a named official
    describing it in his own words, and a documented reason why no restoration
    time exists.
@@ -41,11 +41,11 @@ in, and the reason each page sits where it does.
    itself across three provincial pages while the public remembers a number none
    of them now give — defensible, citable three ways, and close to the reader.
 
-**Consider promoting fire following** into the MVP as the flagship graphic. The
-Dedicated Fire Protection System coverage boundary is the one map the site can
+**Fire following takes the flagship graphic**, because ground conditions cannot.
+The Dedicated Fire Protection System coverage boundary is the one map the site can
 draw itself today, under the Open Government Licence – Vancouver, and the whole
 point of the section is what falls outside the line — which is a map's job rather
-than a paragraph's.
+than a paragraph's. See `maps.md`.
 
 ---
 
@@ -54,8 +54,10 @@ than a paragraph's.
 Sanitation, housing, communications, health care and gas — all five have enough
 behind them to write. Gas is a new system entry the code does not carry at all.
 
-Large infrastructure and dams ship in the fourth band, and should, until the AIR
-study and a published dam assessment surface.
+Dams ship in the fourth band in both scenarios, and large infrastructure in the
+crustal column only — the AIR study has been recovered in full and bands the Cascadia
+column Medium, but it modelled no crustal scenario. Both stay there until a crustal
+study and a dam assessment that addresses earthquakes surface. See `impact-bands.md`.
 
 ---
 
@@ -63,10 +65,10 @@ study and a published dam assessment surface.
 
 Three pieces of plumbing, none of them research:
 
-- **The bands in `src/content/site.ts` are scaffolding**, and in seven of twelve
-  rows they are more confident than the evidence. They must be replaced from
-  `impact-bands.md` before any system page ships, including the four rows where
-  the code happens to agree.
+- **The bands in `src/content/site.ts` are scaffolding**, and seven of the thirteen
+  rows reconciled in `impact-bands.md` disagree with the evidence — in every case but
+  large infrastructure, by being more confident than it. They must be replaced before
+  any system page ships, including the four rows where the code happens to agree.
 - **`SOURCES` does not exist as an export.** `Impact.source` is `"TBD"` in all
   twenty-four cells. `sources.md` is the register it should be generated from,
   rather than retyped.

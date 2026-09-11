@@ -17,37 +17,7 @@ the 2021 flood emergency. Lead with the mechanism, not with a days-of-supply fig
 
 ## Findings
 
-### The fuel figures, and the guards they carry
-
-- **The "roughly 85% of southwest BC's refined fuel" claim is not in its cited
-  source.** [FUEL-GN-21] says the Trans Mountain pipeline "provides more than half
-  the fuel refined in Washington state refineries" — a different quantity, about a
-  different place. **[?]** Treat the 85% figure as unsourced. It does not go on the
-  site in any form.
-- **Both numbers rest on a source with no underlying document.**
-  [FUEL-GN-21] is Global News, 21 November 2021, quoting **Dan McTeague, president of
-  Canadians for Affordable Energy** — an advocacy organisation — by phone during the
-  November 2021 flood emergency. It is not a seismic study, an analyst note or a
-  regulatory filing. **[B]**, and only with speaker, affiliation, date and flood
-  context attached:
-  - "The Lower Mainland goes through about **150,000 barrels of fuel per day**."
-    [FUEL-GN-21] **[B]**
-  - The region "usually maintains a supply to cover **four to five days**."
-    [FUEL-GN-21] **[B]**
-- **The two figures describe different footprints.** The 150,000 bbl/day is stated for
-  the **Lower Mainland**; the 85% was stated for **southwest BC**. Multiplying them
-  crosses a boundary the source does not draw — and the 85% is unsourced in any case.
-  Do not compute a pipeline throughput from them. **[?]**
-- **Never publish a derived litres figure.** 150,000 × 4–5 days implies roughly
-  600,000–750,000 barrels, or 95–119 million litres. The conversion is arithmetically
-  correct and editorially wrong: it lends a single remark a precision it does not
-  have. If a stock is ever published at all, publish barrels, rounded, attributed.
-- **The source is also stale in a way that matters.** [FUEL-GN-21] predates the 2024
-  Trans Mountain Expansion, which changed the pipeline's capacity and configuration.
-  Any statement about pipeline supply built on a 2021 article describes a system that
-  no longer exists. **[?]**
-
-### The province states the mechanism for BC
+### Fuel dependency and the consumer goods network
 
 - **Fuel is the enabling resource, and PEIRS says so in its own words:** "Fuel also
   holds a unique position as a critical resource due to its requirement in the
@@ -99,7 +69,37 @@ the 2021 flood emergency. Lead with the mechanism, not with a days-of-supply fig
   Burnaby–Westridge–YVR jet fuel pipeline detail is **not confirmed** in that source and
   does not travel until it is. **[?]**
 
-### Out-of-region illustration
+### The fuel figures, and the guards they carry
+
+- **The "roughly 85% of southwest BC's refined fuel" claim is not in its cited
+  source.** [FUEL-GN-21] says the Trans Mountain pipeline "provides more than half
+  the fuel refined in Washington state refineries" — a different quantity, about a
+  different place. **[?]** Treat the 85% figure as unsourced. It does not go on the
+  site in any form.
+- **Both numbers rest on a source with no underlying document.**
+  [FUEL-GN-21] is Global News, 21 November 2021, quoting **Dan McTeague, president of
+  Canadians for Affordable Energy** — an advocacy organisation — by phone during the
+  November 2021 flood emergency. It is not a seismic study, an analyst note or a
+  regulatory filing. **[B]**, and only with speaker, affiliation, date and flood
+  context attached:
+  - "The Lower Mainland goes through about **150,000 barrels of fuel per day**."
+    [FUEL-GN-21] **[B]**
+  - The region "usually maintains a supply to cover **four to five days**."
+    [FUEL-GN-21] **[B]**
+- **The two figures describe different footprints.** The 150,000 bbl/day is stated for
+  the **Lower Mainland**; the 85% was stated for **southwest BC**. Multiplying them
+  crosses a boundary the source does not draw — and the 85% is unsourced in any case.
+  Do not compute a pipeline throughput from them. **[?]**
+- **Never publish a derived litres figure.** 150,000 × 4–5 days implies roughly
+  600,000–750,000 barrels, or 95–119 million litres. The conversion is arithmetically
+  correct and editorially wrong: it lends a single remark a precision it does not
+  have. If a stock is ever published at all, publish barrels, rounded, attributed.
+- **The source is also stale in a way that matters.** [FUEL-GN-21] predates the 2024
+  Trans Mountain Expansion, which changed the pipeline's capacity and configuration.
+  Any statement about pipeline supply built on a 2021 article describes a system that
+  no longer exists. **[?]**
+
+### Tōhoku 2011 — out-of-region illustration only
 
 - Tōhoku 2011 shows the mechanism at full scale: the fuel existed, and the terminals
   and trucks to move it did not. [METI-2011] **[C]** The figures and the restoration
@@ -156,7 +156,8 @@ the 2021 flood emergency. Lead with the mechanism, not with a days-of-supply fig
 - **A current, post-Trans Mountain Expansion figure for Lower Mainland fuel supply.**
   Searched: [FUEL-GN-21] and its successors, September 2026. Not located. The Canada
   Energy Regulator and provincial energy publications are where to look next. **[?]**
-  Until one exists, this page carries no days-of-supply number.
+  Until one exists, this page carries no days-of-supply figure presented as current. The
+  2021 figures may appear only under the guards in "For the page", or not at all.
 - **Whether any BC agency holds a fuel-prioritisation plan for a seismic event.** Not
   located. PEIRS names fuel as critical without stating who allocates it. **[?]**
 - **A federal document bearing directly on this page, read only in part.**

@@ -22,7 +22,40 @@ other.
 
 ## Findings
 
-### 1. The two catalogue runs
+### Why the site carries two scenarios, and why the nearer one is not the lesser
+
+On its page on the 1700 earthquake, the federal hazard agency writes: [NRCAN-1700] **[A]**
+
+> "However, because the fault is offshore, it is **not the greatest earthquake hazard
+> faced by major west coast cities**. … Because these inland earthquakes can be much
+> closer to our urban areas and occur more frequently, **they represent the greatest
+> earthquake hazard**."
+
+The site's structure — two scenarios, with the nearer crustal event given equal weight to
+the offshore megathrust — is therefore not an editorial choice needing defence. It is
+what the federal agency says, and PEIRS's selection of a crustal M7.0 as the province's
+primary planning scenario is the same judgement made operationally. [PEIRS] **[A]**
+
+**A third voice, from the scenario-selection side.** GSC Open File 8853 explains why all
+three of its scenarios are shallow: "All three earthquake scenarios occur on shallow
+faults in the Earth's crust, rather than at depth in, for instance, the Cascadia
+Subduction Zone. **Shallow earthquakes can be particularly devastating as the shaking
+source is closer to the built environment, despite having smaller maximum magnitudes than
+their subduction zone counterparts.**" [GSC-OF-8853] **[A]**
+
+**And a fourth, from fire.** Scawthorn's ICLR study of fire following earthquake in the
+Vancouver region reaches the same conclusion by a different route: "the largest number of
+fires in the Lower Mainland is not likely to be caused by a large CSZ event, but rather
+by closer shallower crustal events". [SCAWTHORN-2020] **[A]** Its modelled fire loss is
+$162 million for the M9.0 Cascadia against $10.7 billion for an M7.3 Georgia Strait
+crustal event; the loss table and its caveats belong to `buildings.md`.
+
+Three independent statements now agree from three directions — shaking (NRCan's 1700
+page), scenario selection (Open File 8853) and fire (Scawthorn). They are not, however,
+three independent *models*: the one-lineage caution below still applies to any number taken
+from them.
+
+### The two catalogue runs
 
 The Geological Survey of Canada's **National Earthquake Scenario Catalogue** contains
 deterministic OpenQuake runs for both site scenarios, produced with identical
@@ -65,7 +98,7 @@ framing work for it: "A magnitude 7.0 Georgia Strait scenario is also provided, 
 represents a less likely but more consequential case for comparison." [NRCAN-SCEN]
 **[A]**
 
-### 2. The province's own crustal scenario — PEIRS M7.0 Greater Vancouver
+### The crustal M7.0 — the province's planning scenario
 
 The **Provincial Earthquake Immediate Response Strategy** (EMCR; v1.0 August 2022, v1.1
 administrative updates August 2026, 135 pp) is a component of the province's
@@ -155,7 +188,7 @@ directly rather than through PEIRS. [GSC-OF-8853] **[A]**
 Resources Canada … by **Emergency Management British Columbia and the Government
 Operations Centre in Ottawa**". [GSC-OF-8853] **[A]** The province did not merely adopt a
 federal product it happened to find; it commissioned the product it then built PEIRS on.
-That **sharpens** the one-lineage finding in §4 rather than weakening it — the two
+That **sharpens** the one-lineage finding below rather than weakening it — the two
 documents are not two estimates but a commission and its use.
 
 **NRCan calls its own numbers a floor**, and this is the wording to use wherever the
@@ -169,8 +202,8 @@ PEIRS figures are quoted: [GSC-OF-8853] **[A]**
 > represent a minimum estimate on impacts.**"
 
 That is stronger and more useful than the catalogue's neutral "not currently included" in
-§1, and it is the sentence to place beside any excluded-hazard loss — fire following
-earthquake among them; see `buildings.md`.
+*The two catalogue runs*, and it is the sentence to place beside any excluded-hazard
+loss — fire following earthquake among them; see `buildings.md`.
 
 **Scenario detail PEIRS does not carry**, all [GSC-OF-8853] **[A]**:
 
@@ -189,7 +222,7 @@ earthquake among them; see `buildings.md`.
   M7.0 Georgia Strait's "about every 1500 years" for the broad region — two different
   quantities, and neither may be restated as the other.
 
-#### The province describes the experience, and it is the best reader-facing text in the source base
+#### What the first minutes are like, in the province's own words
 
 PEIRS carries a narrative passage describing the first minutes of its crustal M7.0. It is
 quoted here in full because every attempt to paraphrase it produces something worse: it is
@@ -239,14 +272,15 @@ counter-intuitive part of the finding, consistent with `buildings.md`, and it mu
 quietly dropped to make the passage more alarming. "Thousands are trapped or injured"
 attaches to PEIRS's own casualty figures, which belong to a **weekday-afternoon** timing
 and travel with it. And the "10-20 seconds" is PEIRS timing *violent shaking*, which is
-not the same measurement as the Exercise Coastal Response 2023 duration — see §5.
+not the same measurement as the Exercise Coastal Response 2023 duration — see
+*Shaking duration, and the physical contrast underneath it*.
 
 **Licensing.** The Province's all-rights-reserved default governs *reproduction* of
 datasets and figures, not quotation — which fair dealing covers. **Publish it, with
 attribution, a link and the page number.** A permission request to EMCR is worth sending
 in parallel, and is not a gate. See `../licensing.md`.
 
-### 3. The province's own Cascadia scenario — DCRRA M9.0
+### The Cascadia M9.0 — the province's planning scenario
 
 The **Disaster and Climate Risk and Resilience Assessment: Provincial Report** (EMCR and
 the Ministry of Energy and Climate Solutions, **October 2025**, released 4 November 2025;
@@ -274,7 +308,21 @@ August during a 30–40 °C heatwave with wildfire smoke. [DCRRA-2025] **[A]**
 Loss estimates and building-stock detail live in `buildings.md`; ground effects in
 `ground-conditions.md`; response capacity in `preparedness.md`.
 
-### 4. Canada has one modelling lineage, not several
+### The City of Vancouver's own crustal magnitudes
+
+Worth recording so nobody merges them. The City's Hazard and Risk Explorer publishes
+its risk map from a modelled **M7.2 Georgia Strait**; its 2019 Resilient Neighbourhoods
+exercise module uses an **M7.3 Georgia Strait**. Same publisher, same fault, ten years
+apart, two magnitudes. [COV-EXPLORER-25] [COV-RNTOOLKIT-19] **[A]**
+
+Set beside the province's **M7.0** and the federal catalogue's **M7.0**, the region now
+has at least three crustal magnitudes in circulation from three levels of government.
+They are not competing estimates of one event — each is a scenario chosen for a
+purpose, and the differences are choices rather than disagreements. Say which
+scenario a figure belongs to, every time. A casualty count from an M7.2 does not sit
+in a sentence about the province's M7.0, and the site does not average them.
+
+### One modelling lineage, not several
 
 This is the most consequential finding on this page for how the site presents
 corroboration.
@@ -285,9 +333,9 @@ same catalogue run the site already cites. [DCRRA-2025] [NRCAN-SCEN] **[A]** The
 M7.0 figures are likewise "developed by Natural Resources Canada based on core
 modelling". [PEIRS] **[A]**
 
-The commissioning fact in §2 closes the loop: EMBC and the Government Operations Centre
-**asked NRCan for** the scenarios that became GSC Open File 8853, and PEIRS then quotes
-them. [GSC-OF-8853] **[A]**
+The commissioning fact under *The crustal M7.0* closes the loop: EMBC and the Government
+Operations Centre **asked NRCan for** the scenarios that became GSC Open File 8853, and
+PEIRS then quotes them. [GSC-OF-8853] **[A]**
 
 So the province is not independently confirming the federal catalogue; it is adopting
 it. Two government documents agreeing here is one model quoted twice. The site must not
@@ -295,7 +343,7 @@ present them as separate estimates. The only genuinely independent loss numbers 
 Canadian earthquake work come from the insurance side, and they are handled in
 `buildings.md`.
 
-### 5. Duration, and the better contrast underneath it
+### Shaking duration, and the physical contrast underneath it
 
 **PEIRS, M7.0 Greater Vancouver:** "The low, rumbling sound is similar to that of a
 freight train, immediately followed by **10–20 seconds of violent shaking** that knocks
@@ -347,7 +395,7 @@ Two guards. The figures are the design events for one bridge, not general proper
 either scenario — they are quoted here for the mechanism, not the seconds. And the
 finding belongs to the transportation evidence; see `systems/transportation.md`.
 
-### 6. Cascadia recurrence — report the disagreement
+### Cascadia recurrence — the sources disagree
 
 There is no single number. Sources that all qualify as [A] give different answers, and
 the honest presentation is a table of who says what.
@@ -364,12 +412,14 @@ the honest presentation is a table of who says what.
 
 The pattern is that the two provincial documents say 400–500 years and the federal
 hazard agency says 500–600. **No NRCan or GSC source was found stating "400–500 years",
-"246–542 years", or "about every 500 years" as a bare figure.** If the site wants one
+"246–542 years", or "about every 500 years" as a bare figure.** The 434-year mean
+recurrence in the hazard model below is not such a statement: it counts a different set
+of earthquakes, as the section says. If the site wants one
 NRCan sentence, use the 500–600 wording with NRCan's own 200-to-800-year caveat. If it
 wants the provincial framing, attribute it to the DCRRA or PEIRS and say that NRCan's
 own pages give a longer average.
 
-#### What the hazard model assumes, and why it is not a fourth row
+#### What the hazard model counts, and why it is not a fourth row
 
 Retrieved 10 September 2026: GSC Open File 8630, the sixth-generation seismic hazard
 model behind the 2020 National Building Code, with its complete OpenQuake input files.
@@ -397,7 +447,7 @@ and better: it shows that the hazard model underneath every number on this page 
 **counting turbidites, not modelling a cycle** — which is why the sources disagree at
 all.
 
-### 7. The 37% figure is the southern margin and does not apply to British Columbia
+### Cascadia probability — the 37% figure is the southern margin
 
 **This is the single most important correction on this page.** The widely quoted "about
 a 37% chance in the next 50 years" is Goldfinger et al.'s **time-dependent probability
@@ -425,7 +475,7 @@ government or government-adjacent, they are 21 years apart, and they disagree by
 factor of two to four. Report both. Do not average them. The commonly cited "10–14% for
 a full-margin M9" was not traced to any source and must not be used.
 
-### 8. The 1700 earthquake — NRCan verbatim, with precision cautions
+### The 1700 earthquake
 
 From *The M9 Cascadia Megathrust Earthquake of January 26, 1700*, NRCan / Earthquakes
 Canada, date modified 2019-03-01. [NRCAN-1700] **[A]**
@@ -454,63 +504,31 @@ the tree-ring evidence and the M9 estimate, cite the chain NRCan's own scientist
 [MAZZOTTI-04] **[A]**, or the accessible narrative primary, Atwater et al., *The Orphan
 Tsunami of 1700* [ATWATER-15] **[A]**.
 
-### 9. NRCan endorses the two-scenario framing, unprompted
-
-On the same 1700 page, the federal hazard agency writes: [NRCAN-1700] **[A]**
-
-> "However, because the fault is offshore, it is **not the greatest earthquake hazard
-> faced by major west coast cities**. … Because these inland earthquakes can be much
-> closer to our urban areas and occur more frequently, **they represent the greatest
-> earthquake hazard**."
-
-The site's structure — two scenarios, with the nearer crustal event given equal weight to
-the offshore megathrust — is therefore not an editorial choice needing defence. It is
-what the federal agency says, and PEIRS's selection of a crustal M7.0 as the province's
-primary planning scenario is the same judgement made operationally. [PEIRS] **[A]**
-
-**A third voice, from the scenario-selection side.** GSC Open File 8853 explains why all
-three of its scenarios are shallow: "All three earthquake scenarios occur on shallow
-faults in the Earth's crust, rather than at depth in, for instance, the Cascadia
-Subduction Zone. **Shallow earthquakes can be particularly devastating as the shaking
-source is closer to the built environment, despite having smaller maximum magnitudes than
-their subduction zone counterparts.**" [GSC-OF-8853] **[A]**
-
-**And a fourth, from fire.** Scawthorn's ICLR study of fire following earthquake in the
-Vancouver region reaches the same conclusion by a different route: "the largest number of
-fires in the Lower Mainland is not likely to be caused by a large CSZ event, but rather
-by closer shallower crustal events". [SCAWTHORN-2020] **[A]** Its modelled fire loss is
-$162 million for the M9.0 Cascadia against $10.7 billion for an M7.3 Georgia Strait
-crustal event; the loss table and its caveats belong to `buildings.md`.
-
-Three independent statements now agree from three directions — shaking (NRCan's 1700
-page), scenario selection (Open File 8853) and fire (Scawthorn). They are not, however,
-three independent *models*: §4's one-lineage caution still applies to any number taken
-from them.
-
 ---
 
 ## What is not established
 
 - **GEOSCAN record 327171 is not GSC Open File 8853.** The Open File itself is described
-  in §2. [GSC-OF-8853] **[A]** Record 327171, *Scenario earthquake models developed for
-  British Columbia — part of a pilot project in the application of Global Earthquake
-  Model's OpenQuake…*, is a **2017 conference abstract** on OpenQuake adoption, with no
-  report number and no DOI. It is excluded. **`geoscan.nrcan.gc.ca` no longer resolves at
-  all** (DNS NXDOMAIN), GEOSCAN has been retired, and the old `starweb/geoscan/` links
-  still printed on live NRCan pages are broken. Do not cite any `geoscan.nrcan.gc.ca` URL.
+  under *The crustal M7.0*. [GSC-OF-8853] **[A]** Record 327171, *Scenario earthquake
+  models developed for British Columbia — part of a pilot project in the application of
+  Global Earthquake Model's OpenQuake…*, is a **2017 conference abstract** on OpenQuake
+  adoption, with no report number and no DOI. It is excluded. **`geoscan.nrcan.gc.ca` no
+  longer resolves at all** (DNS NXDOMAIN), GEOSCAN has been retired, and the old
+  `starweb/geoscan/` links still printed on live NRCan pages are broken. Do not cite any
+  `geoscan.nrcan.gc.ca` URL.
 - **The Cassidy, Rogers & Waldhauser (2000) paper itself is unread.** The fault geometry
   comes from NRCan's own OpenQuake rupture file, a peer-reviewed relocation of the 1997
-  event; see §2. [CASSIDY-00] **[?]**
+  event; see *The crustal M7.0*. [CASSIDY-00] **[?]**
 - **The provenance of "246–542 years", of "400–500 years" as an *NRCan* figure, and of
   "10–14% for a full-margin M9".** Searched across the four NRCan Earthquakes Canada
   pages, Mazzotti & Adams 2004 and Goldfinger et al. 2012. None traced to a primary
   source. Do not use. **[?]**
 - **The DCRRA's licence terms.** No rights statement was found in the front matter of the
-  chapters read. BC government publications are normally under the Open Government
-  Licence – British Columbia, but that licence applies only where a record explicitly
-  states it. This must be settled before any DCRRA figure or map is *reproduced* rather
-  than linked. Blocking item, alongside the MVSMMP licence question in
-  `../licensing.md`. **[?]**
+  chapters read. **The licence question is settled and is no longer blocking:** BC
+  government material is all rights reserved by default rather than OGL–BC, and the
+  DCRRA's own host site declares its licence as "Access Only". Quotation with
+  attribution is ordinary fair dealing; *reproducing* a figure or map as laid out is
+  not. See `../licensing.md`. **[A]**
 - **Conference Board of Canada 2016**, the origin of the DCRRA's total-loss and
   insurance-failure family of figures. Product page reached; document not retrieved.
   [CBOC-2016] **[?]** — see `buildings.md`.
@@ -566,30 +584,6 @@ version.
   is not available to us.
 - Every casualty and building figure carries the modelling boundary it was computed
   inside: buildings and their inhabitants, shaking only, no secondary hazards.
-### The City of Vancouver runs its own crustal magnitude, and it is not one number
-
-Worth recording so nobody merges them. The City's Hazard and Risk Explorer publishes
-its risk map from a modelled **M7.2 Georgia Strait**; its 2019 Resilient Neighbourhoods
-exercise module uses an **M7.3 Georgia Strait**. Same publisher, same fault, ten years
-apart, two magnitudes. [COV-EXPLORER-25] [COV-RNTOOLKIT-19] **[A]**
-
-Set beside the province's **M7.0** and the federal catalogue's **M7.0**, the region now
-has at least three crustal magnitudes in circulation from three levels of government.
-They are not competing estimates of one event — each is a scenario chosen for a
-purpose, and the differences are choices rather than disagreements. Say which
-scenario a figure belongs to, every time. A casualty count from an M7.2 does not sit
-in a sentence about the province's M7.0, and the site does not average them.
-
-**Weather lives here.** It is not a system in the impact grid — it does not fail, so it
-cannot have a band. Both official scenarios build weather in as a *condition*, and the
-two conditions pull in opposite directions: an August heatwave with wildfire smoke makes
-water and shade the urgent needs and puts the vulnerable at risk indoors; a January
-afternoon after an atmospheric river makes heat, dry shelter and slope stability the
-urgent needs. That contrast is the reason weather belongs on the timeline rather than in
-the grid — the same day of the same disaster is a different emergency in each.
-[DCRRA-2025] [PEIRS] **[A]** See `impact-bands.md` for the decision and
-`../site-overview.md` §9.
-
 - The PEIRS scenario sits immediately after an atmospheric river. Where its landslide,
   liquefaction or dike impacts are used, say the ground was already saturated.
 - Where the catalogue's exclusions appear, use "not currently included". Stating them as
@@ -600,6 +594,16 @@ the grid — the same day of the same disaster is a different emergency in each.
   sentence we could write, and it is the honest answer to a reader who asks whether the
   real number could be worse.
 - Any Goldfinger probability names its margin in the same sentence.
+
+**Weather lives here.** It is not a system in the impact grid — it does not fail, so it
+cannot have a band. Both official scenarios build weather in as a *condition*, and the
+two conditions pull in opposite directions: an August heatwave with wildfire smoke makes
+water and shade the urgent needs and puts the vulnerable at risk indoors; a January
+afternoon after an atmospheric river makes heat, dry shelter and slope stability the
+urgent needs. That contrast is the reason weather belongs on the timeline rather than in
+the grid — the same day of the same disaster is a different emergency in each.
+[DCRRA-2025] [PEIRS] **[A]** See `impact-bands.md` for the decision and
+`../site-overview.md` §9.
 
 **The 37% guard, which is worth an explicit note in copy.** If the site states a Cascadia
 probability at all, it states two: the Geological Survey of Canada's 50-year median of

@@ -18,7 +18,7 @@ is a finding, not a gap in our research**, and the page should say so in as many
 
 ## Findings
 
-### Nothing requires a cell site to have backup power for any length of time
+### Backup power at cell sites
 
 Telecom Notice of Consultation **CRTC 2025-226** (4 September 2025) asks, at Q7(c), "What
 parameters should TSPs use to determine an appropriate backup power run time for each type of
@@ -48,7 +48,7 @@ document.
 So the binding rules govern telling people about an outage and prioritising 9-1-1 traffic. Neither
 governs whether the equipment stays powered.
 
-### The one Canadian duration figure is not about cell towers
+### The 9-1-1 switch backup-power minimums
 
 The only Canadian backup-power **duration** language found is best-practice guidance for 9-1-1
 switching offices under **TRP 2016-165**: backup power provisions lasting a minimum of **24 hours
@@ -60,7 +60,7 @@ document.
 the single most likely number on this page to be misread, and the misreading — "towers have 24
 hours" — is exactly the false reassurance the page exists to prevent.
 
-### British Columbia asked the CRTC for 72 hours
+### British Columbia's 72-hour request to the CRTC
 
 The Province of British Columbia's intervention of **28 November 2025** in CRTC 2025-226 asks the
 Commission to mandate:
@@ -78,7 +78,7 @@ page: British Columbia's own government asked the regulator for 72 hours of back
 seismic-rated foundations, because nothing requires anything today. Stated in that order, with
 both halves sourced, it needs no commentary.
 
-### A code-level comparator exists, and it is for buildings, not for towers
+### The Vancouver Building By-law's emergency power minimums
 
 Where a Canadian code does require backup power, the number is measured in hours. The Vancouver
 Building By-law 2025 (Book I, consolidated 5 May 2026, convenience copy, marked "THESE MATERIALS
@@ -99,25 +99,6 @@ figures already invite, and the page should not invite it twice.
 The hospital end of the same code minimum, and the distinction between a code minimum, a
 contractual requirement and a design intent, lives in `health-care.md`.
 
-### Saturation has a local, measured number
-
-E-Comm: "We received a **1,500 per cent increase in 9-1-1 calls after a 4.7 earthquake in 2015**.
-The vast majority of those calls were not emergencies." [ECOMM-EQ] **[A]**
-
-This is a real Lower Mainland saturation event, measured by the 9-1-1 operator itself, from an
-earthquake most people barely felt. It carries its own lever, and it is the rare case where the
-lever is not to do something but to not do something.
-
-### The 9-1-1 centre itself is good news, and the page should say so
-
-E-Comm's Lower Mainland centre is a **60,000 square foot reinforced concrete post-disaster
-building**, "designed to resist an earthquake and to operate self-sufficiently for up to **72 hours**
-following a disaster", with shatterproof glass and emergency food and water storage.
-[ECOMM-FAC] **[A]**
-
-A page that only reports absences is not an honest page. This one is closed, it is favourable, and it
-sits directly beside the finding that nothing protects the radio sites the calls travel over.
-
 ### What the governments say the public would experience
 
 - "If service is available, networks may be **congested or overloaded**, making communication
@@ -133,7 +114,16 @@ sits directly beside the finding that nothing protects the radio sites the calls
 
 Both are qualitative. Neither publishes site counts, restoration curves or performance estimates.
 
-### The province cautions against the obvious backup, and the caution is the finding
+### 9-1-1 call saturation
+
+E-Comm: "We received a **1,500 per cent increase in 9-1-1 calls after a 4.7 earthquake in 2015**.
+The vast majority of those calls were not emergencies." [ECOMM-EQ] **[A]**
+
+This is a real Lower Mainland saturation event, measured by the 9-1-1 operator itself, from an
+earthquake most people barely felt. It carries its own lever, and it is the rare case where the
+lever is not to do something but to not do something.
+
+### Radio, amateur radio and PERCS
 
 PEIRS continues: "**Radio communication, if operable, may be also congested and impact the ability
 of first responders if saturated with non-sanctioned operators.** There may be increased reliance on
@@ -196,11 +186,21 @@ belong on the page, and the hinge between them is affiliation.
 
 **Where this belongs on the site.** Beside the lever, not beside the failure. The useful household
 consequence of this whole page is not a piece of equipment — it is **send a text, not a call**,
-which is free, needs nothing bought in advance, and is the province's own recommendation two
-paragraphs earlier. Amateur radio is context for why the text message matters, not a competing
+which is free, needs nothing bought in advance, and is the province's own recommendation
+above. Amateur radio is context for why the text message matters, not a competing
 recommendation. See `../preparedness.md`.
 
-### The honest hinge: the warning depends on the network the earthquake degrades
+### E-Comm's 9-1-1 centre
+
+E-Comm's Lower Mainland centre is a **60,000 square foot reinforced concrete post-disaster
+building**, "designed to resist an earthquake and to operate self-sufficiently for up to **72 hours**
+following a disaster", with shatterproof glass and emergency food and water storage.
+[ECOMM-FAC] **[A]**
+
+A page that only reports absences is not an honest page. This one is closed, it is favourable, and it
+sits directly beside the finding that nothing protects the radio sites the calls travel over.
+
+### Earthquake early warning
 
 - **Earthquake Early Warning has been live in British Columbia since spring 2024**, delivered over
   the National Public Alerting System. Natural Resources Canada states plainly that sites near the
@@ -236,7 +236,10 @@ recommendation. See `../preparedness.md`.
   alert, in September 2024 for an M6.5 south of Haida Gwaii, reached nobody by cell tower because
   there are no cell towers in the alerted area. The first in southwest BC, in February 2025 for an
   earthquake northeast of Sechelt, was distributed by cell-tower polygon and by broadcast, and
-  "some phones outside the EEW region also received the alert". **[A]**
+  "some phones outside the EEW region also received the alert". **[?]** — **this bullet carries
+  no source key.** It reads as Earthquakes Canada blog material, but none of the registered
+  `NRCAN-EEW-*` keys is the activations post, and an uncited marker certifies our diligence
+  rather than the record. **Not usable until the post is located and registered.**
 - **Citation hazard, and it is worse than fragile.** The Earthquakes Canada blog has **no
   per-post permalinks** — posts are addressed only by an `?offset=` page, and a post's offset
   **shifts every time a new post is published**. A citation to `offset=36` will silently come to
@@ -284,8 +287,8 @@ the **Crossref and OpenAlex bibliographic indexes**, which are true indexes rath
 search-engine proxies. What still cannot be run is a keyword query of the form "does any
 document anywhere say X", so these negatives remain **"not found through these channels"**, not proofs of universal absence.
 The regulatory findings are the least affected, because they rest on primary CRTC documents read
-directly. **The three carrier and BC-specific negatives above were recorded through the weaker
-channel and have not been retested.**
+directly. **The three carrier and BC-specific negatives above rest on direct
+fetching of carrier and government endpoints rather than on any keyword index.**
 
 ---
 

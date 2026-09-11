@@ -1,4 +1,4 @@
-# Mobility — who can physically leave, and by what route
+# Mobility — the plan is that people stay, and routes reopen in order
 
 <!-- review-status: unreviewed -->
 
@@ -22,15 +22,6 @@ crossings behind it, and it rests alongside the functional-retrofit finding in
 ---
 
 ## Findings
-
-### The geography, which is a map fact and not a seismic claim
-
-Vancouver is connected eastward by land through Burnaby and New Westminster. Richmond and
-Delta are reached only by bridges and a tunnel. The North Shore has two vehicle crossings.
-
-These are map facts. They carry no source key because they are not claims about
-earthquakes, and they must be kept visually and typographically separate from the seismic
-findings that sit on top of them. That distinction is what keeps the section honest.
 
 ### The province's plan is that people do not leave
 
@@ -59,14 +50,25 @@ Two more PEIRS assumptions bear directly on the same question:
   transportation will be disrupted, and **existing supply chains will be inoperable**."
   [PEIRS] **[A]**
 
-And the scenario-level expectation: routes "damaged or only partially functional and
-operating at a much-reduced capacity for an extended period (**weeks to months**)"; "the
-rail network in the impact area may be largely unusable during the immediate response
-phase". [PEIRS] **[A]**
+And on PEIRS's **crustal M7.0 Greater Vancouver planning scenario**: routes "damaged or
+only partially functional and operating at a much-reduced capacity for an extended period
+(**weeks to months**)"; "the rail network in the impact area may be largely unusable
+during the immediate response phase". [PEIRS] **[A]** **These two are quoted here for the
+mobility argument; their home is `systems/transportation.md` under "What the province
+expects, region-wide", and the scenario label travels with them in both files.**
 
 **The premise.** The interesting question is not whether a reader could drive out. It is
 that the province has planned on the assumption that they will not try, that they should
 not try, and that the routes will be used for something else.
+
+### The geography the plan is applied to
+
+Vancouver is connected eastward by land through Burnaby and New Westminster. Richmond and
+Delta are reached only by bridges and a tunnel. The North Shore has two vehicle crossings.
+
+These are map facts. They carry no source key because they are not claims about
+earthquakes, and they must be kept visually and typographically separate from the seismic
+findings that sit on top of them. That distinction is what keeps the section honest.
 
 ### Disaster Response Routes are not evacuation routes
 
@@ -143,7 +145,7 @@ withheld by choice. What does **not** exist in public is any forecast of how lon
 corridor would be shut. The site must draw that line explicitly rather than blurring
 framework, design intent and forecast together.
 
-### The City says it to residents: the trains stop until the assessments are done
+### Trains do not run until the damage assessments are complete
 
 The City of Vancouver's Hazard & Risk Explorer, in its household planning advice: "**Plan
 alternate ways to get home considering roads may be blocked and trains will not be running
@@ -207,7 +209,7 @@ the best available evidence of the duration of corridor severance in this provin
 
 **Do not state a Highway 99 or Highway 3 full-reopening date.** Neither was sourced.
 
-### The approaches-not-spans argument, and its evidence
+### Why crossings fail at their approaches, not their spans
 
 The technical claim this subject rests on belongs in `systems/transportation.md` and is
 cross-referenced, not restated. In summary: Queensborough's approach bents S3–S8 were
@@ -220,16 +222,12 @@ toward the Fraser and Deas Slough is described directly at the Massey crossing s
 
 A third crossing supplies the only complete public loop in the evidence base — a
 stated objective, quantified approach settlements, a predicted abutment flow slide, a
-designed mitigation and a record that it was built. The **Mission Bridge** was retrofitted
-to prevent collapse under a 475-year earthquake, with post-earthquake access and repairable
-damage "considered desirable but not required"; settlements of up to 200 mm were predicted
-at the south approach piers, and post-earthquake abutment factors of safety were 1.2 north
-and **0.70 south — a predicted flow slide**. Horseshoe toe berms were designed and
-constructed at both abutments. [MISSION-CGS-18] **[A]** *Geography, which travels with
-every Mission figure: Mission connects the District of Mission to Abbotsford, roughly 80 km
-east of Vancouver. It is a Fraser River crossing on the provincial disaster recovery
-network, **not** a Metro Vancouver commuter crossing, and it must not drift into a sentence
-about Richmond or Delta.* Detail in `systems/transportation.md`.
+designed mitigation and a record that it was built. That crossing is the **Mission
+Bridge**, and its figures live in `systems/transportation.md` with the geography that
+travels with every one of them: Mission connects the District of Mission to Abbotsford,
+roughly 80 km east of Vancouver. It is a Fraser River crossing on the provincial disaster
+recovery network, **not** a Metro Vancouver commuter crossing, and no Mission figure
+belongs in a sentence about Richmond or Delta. [MISSION-CGS-18] **[A]**
 
 Alongside it sits the finding that reframes the whole subject: the province designates
 routes that must stay open for emergency vehicles and states in the same document that it
@@ -240,6 +238,23 @@ is not currently retrofitting the bridges on them to remain in service. [MOTI-SR
 
 ## What is not established
 
+- **A published reopening-time estimate for any Lower Mainland corridor after an
+  earthquake.** Not located, and not believed to be public. Distinguish carefully from the
+  published recovery *framework* [DRT-PRIMER-18] [MV-DEBRIS-17] **[A]** and from published
+  *design intent* — "restorable within one month" [MOTI-S6-SEC6] **[A]** and "approximately
+  24 hours may be needed to complete a post-earthquake inspection" [MOTI-SRDC-05] **[A]**.
+- **Which named crossings sit on the critical-route network.** The policy linkage is proven
+  twice; the membership list is not published. Municipal maps located are rasters and the
+  City of Vancouver regional map PDF returned HTTP 403 to both automated fetch and direct
+  download in September 2026 — **verify or remove that link before launch.** Searched
+  within budget only.
+- **Whether any BC provincial review of the November 2021 event exists.** The search was
+  never executed. Unresolved, **not** disproven. The well-known 2018 provincial review
+  covers the **2017** season, not 2021; do not confuse them.
+- **The Ministry excludes landslides from its bridge seismic criteria by its own scope
+  statement**: "This document does not address other potential risks, such as
+  **landslides** or tsunamis." [MOTI-SRDC-05] **[A]** The two hazards are managed in
+  separate programs. That is a clean sourced explanation of why the mapping gap exists.
 - **The one corridor susceptibility product that exists excludes earthquakes by
   construction, and its own equations say so.** Blais-Stevens & Kung, *Landslide
   susceptibility maps of the Sea to Sky Corridor, British Columbia — a qualitative
@@ -268,31 +283,11 @@ is not currently retrofitting the bridges on them to remain in service. [MOTI-SR
   instance of the split already sourced at [MOTI-SRDC-05]. It also names an unretrieved
   consultant lead, Wyllie and Norrish's rock-fall containment study, adopted as the
   project's rock-cut design standard. [WYLLIE-NORRISH] **[?]**
-- **GSC Open File 5741 — retrieved, and not readable.** Blais-Stevens & Septer, *Historical
-  accounts of landslides and flooding events along the Sea to Sky Corridor, 1855–2007*, 119
-  pp. The digital release downloads cleanly and its readme confirms the citation, but the
-  PDF's fonts carry no ToUnicode map, so text extraction returns mojibake and no renderer
-  was available. **Record it as retrieved but not read** — neither unretrieved nor read.
-  Reading it needs OCR or a person. Its subject index carries no earthquake or seismic term.
-  [GSC-OF-5741] **[?]**
-- **Channels swept 10 September 2026, all negative, and one that could not be closed.** BC
-  Data Catalogue via the CKAN API (26 landslide datasets, all terrain/ecosystem mapping; no
-  seismically conditioned landslide dataset). The Environmental Assessment Office registry,
-  all 358 projects enumerated — the only corridor project is the Sea-to-Sky upgrade, its
-  1,010 documents listed, exactly one geoscience document, and **no Fraser Canyon highway
-  project exists in the registry at all**. The archived Ministry of Transportation host via
-  web-archive index (project-specific geotechnical reference reports only; one broad scan
-  timed out and is recorded as timed out, not empty). NRCan's repository API, which surfaced
-  the whole GSC corridor family and nothing seismic. **Not closed:** the **BC Geological
-  Survey** publication catalogue is a browsable directory with **no full-text or title search
-  endpoint**, so that channel remains only partially swept. **[?]**
 - **Any earthquake-triggered landslide susceptibility mapping for the Sea-to-Sky corridor
-  (Highway 99) or the Fraser Canyon (Highway 1 / Highway 5).** Searched again in
-  September 2026. Channels searched: **Google Scholar**, with the query
-  `earthquake-induced landslide susceptibility "Sea to Sky" OR
-  "Highway 99" OR "Fraser Canyon" British Columbia seismic` (about 46 results, first two
-  pages reviewed); **OpenAlex**, by title and by author; and **Crossref**, by bibliographic
-  query. Nothing seismically conditioned and corridor-specific came back.
+  (Highway 99) or the Fraser Canyon (Highway 1 / Highway 5).** Searched September
+  2026 through **Google Scholar**, **OpenAlex** and **Crossref**, by subject, title, author
+  and bibliographic query. Nothing seismically conditioned and corridor-specific came
+  back.
 
   What did come back, and why none of it closes the gap. A **landslide inventory** of the
   lower Sea-to-Sky corridor, whose triggers are rainfall, snowmelt, fluvial processes and
@@ -319,10 +314,27 @@ is not currently retrofitting the bridges on them to remain in service. [MOTI-SR
   **Do not present Sea-to-Sky rockfall susceptibility as an earthquake finding.** It is a
   standing hazard an earthquake would plausibly aggravate; say exactly that or say
   nothing.
-- **The Ministry excludes landslides from its bridge seismic criteria by its own scope
-  statement**: "This document does not address other potential risks, such as
-  **landslides** or tsunamis." [MOTI-SRDC-05] **[A]** The two hazards are managed in
-  separate programs. That is a clean sourced explanation of why the mapping gap exists.
+- **Channels swept 10 September 2026, all negative, and one that could not be closed.** BC
+  Data Catalogue via the CKAN API (26 landslide datasets, all terrain/ecosystem mapping; no
+  seismically conditioned landslide dataset); the Environmental Assessment Office registry
+  (all 358 projects enumerated — the only corridor project is the Sea-to-Sky upgrade, with
+  exactly one geoscience document among its 1,010, and **no Fraser Canyon highway project
+  exists in the registry at all**); the archived Ministry of Transportation host via
+  web-archive index (project-specific geotechnical reference reports only; one broad scan
+  timed out, which is not the same as empty); and NRCan's repository API, which surfaced
+  the whole GSC corridor family and nothing seismic. **Not closed:** the **BC Geological
+  Survey** publication catalogue is a browsable directory with **no full-text or title search
+  endpoint**, so that channel remains only partially swept. **[?]**
+- **GSC Open File 5741 — retrieved, and not readable.** Blais-Stevens & Septer, *Historical
+  accounts of landslides and flooding events along the Sea to Sky Corridor, 1855–2007*, 119
+  pp. The digital release downloads cleanly and its readme confirms the citation, but the
+  PDF's fonts carry no ToUnicode map, so text extraction returns mojibake and no renderer
+  was available. **Record it as retrieved but not read** — neither unretrieved nor read.
+  Reading it needs OCR or a person. Its subject index carries no earthquake or seismic term.
+  [GSC-OF-5741] **[?]**
+- **Unretrieved corridor source:** GSC Open File 7616 on Howe Sound, whose conclusions are
+  currently held at [A] only by secondary citation through [BOWEN-TSU-19]. [GSC-OF-7616]
+  (GSC Open File 5741 is *retrieved and unread*, not unretrieved — see above.)
 - **Howe Sound landslide-generated waves — closed, and the answer is deflationary.** "**A
   landslide into Howe Sound large enough to produce displacement waves that might cause
   damage on Bowen Island is unlikely.**" Federal mapping "concluded that none of the
@@ -331,24 +343,6 @@ is not currently retrofitting the bridges on them to remain in service. [MOTI-SR
   [BOWEN-TSU-19] **[A]** The earlier North Shore assessment agrees: the probability is
   "very low, although not zero", and the waterfronts of North and West Vancouver are not
   at risk from such a wave. [NSEMO-TSU-05] **[A]** The finding is reassuring.
-- **A published reopening-time estimate for any Lower Mainland corridor after an
-  earthquake.** Not located, and not believed to be public. Distinguish carefully from the
-  published recovery *framework* [DRT-PRIMER-18] [MV-DEBRIS-17] **[A]** and from published
-  *design intent* — "restorable within one month" [MOTI-S6-SEC6] **[A]** and "approximately
-  24 hours may be needed to complete a post-earthquake inspection" [MOTI-SRDC-05] **[A]**.
-- **Which named crossings sit on the critical-route network.** The policy linkage is proven
-  twice; the membership list is not published. Municipal maps located are rasters and the
-  City of Vancouver regional map PDF returned HTTP 403 to both automated fetch and direct
-  download in September 2026 — **verify or remove that link before launch.** Searched
-  within budget only.
-- **Whether any BC provincial review of the November 2021 event exists.** The search was
-  never executed. Unresolved, **not** disproven. The well-known 2018 provincial review
-  covers the **2017** season, not 2021; do not confuse them.
-- **Unretrieved corridor sources:** GSC Open File 5741, *Historical accounts of landslides
-  and flooding events along the Sea to Sky corridor, British Columbia, from 1855–2007*
-  [GSC-OF-5741], the best located lead for corridor landslide history; and GSC Open File
-  7616 on Howe Sound, whose conclusions are currently held at [A] only by secondary
-  citation through [BOWEN-TSU-19]. [GSC-OF-7616]
 
 ---
 
@@ -369,8 +363,7 @@ Three things carry it:
    transportation**: routes that must stay open, not retrofitted to stay open.
 
 Build it after `systems/transportation.md`, because it depends on that file's findings —
-but build it, and build it in the same MVP pass rather than deferring it. It should be
-retitled around what the province plans, not around who could leave.
+but build it, and build it in the same MVP pass rather than deferring it.
 
 **The mechanism sentence.** British Columbia's emergency plans do not assume people will
 drive out of the region after a major earthquake. They assume the opposite: that routes
