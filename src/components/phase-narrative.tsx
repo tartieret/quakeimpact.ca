@@ -1,9 +1,6 @@
-"use client";
-
 import type { ReactNode } from "react";
-import { PHASES, SCENARIOS } from "@/content/site";
+import { PHASES } from "@/content/site";
 import type { Phase } from "@/content/types";
-import { useScenario } from "./scenario-context";
 
 /**
  * The aftermath told as four stretches of time rather than as a list of
@@ -17,20 +14,24 @@ import { useScenario } from "./scenario-context";
  *
  * Presentational, and it holds no words of its own: the headings and the
  * sentences come from the page module, already rendered on the server with
- * their citation markers in them. What it reads for itself is the weather,
- * which is a condition of the scenario rather than a claim about a phase, and
- * which is the reason this is a client component at all.
+ * their citation markers in them. It reads nothing for itself and holds no
+ * state, so it stays a server component; a sentence that varies by scenario
+ * crosses the client boundary inside the item it belongs to.
  *
  * The phase labels and windows come from `PHASES`, so the strip and this
  * cannot disagree about what "weeks" means.
+ *
+ * There is no weather footer. Weather is not a fifth phase and it is not a
+ * period of the aftermath: it is the condition every phase happens in, and it
+ * belongs in the prose under the timeline, where the two scenarios' conditions
+ * can be set against each other in one sentence rather than swapped silently
+ * under a label.
  */
 export function PhaseNarrative({
   items,
 }: {
   items: { phase: Phase; heading: string; body: ReactNode }[];
 }) {
-  const { scenario } = useScenario();
-
   return (
     <div className="flex flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule">
       <ol className="flex flex-col gap-px bg-rule">
@@ -59,13 +60,6 @@ export function PhaseNarrative({
           );
         })}
       </ol>
-
-      <p className="bg-paper-raised px-5 py-4 text-sm leading-relaxed text-ink-muted sm:px-6">
-        <span className="text-xs font-semibold tracking-[0.08em] text-ink-faint uppercase">
-          Weather throughout
-        </span>
-        <span className="mt-1 block">{SCENARIOS[scenario].conditions}</span>
-      </p>
     </div>
   );
 }

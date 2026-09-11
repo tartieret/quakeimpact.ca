@@ -68,6 +68,13 @@ Through all of it the province's plan is that people shelter within the region
 rather than leave it. [PEIRS] [What that means for getting
 around](/getting-around/).
 
+How bad each of those stretches is depends on the weather it happens in. Running
+out of water in an August heat dome is not the same as running out of it in
+January after days of rain, and the province's two scenarios are set in exactly
+those two conditions: a 30 to 40 degree heatwave with wildfire smoke for the
+megathrust, [DCRRA-2025] a January afternoon after an atmospheric river for the
+crustal earthquake. [PEIRS]
+
 None of those failures happens on its own. Water needs power for pumps and roads
 for crews. Roads need debris cleared, which needs fuel. How long the region waits
 depends less on any one system than on the order in which they can be brought
@@ -77,9 +84,9 @@ dependency graph](/dependencies/) counts what each system is waiting on.
 ## Go deeper on any part of it
 
 Water in the taps, power in the walls, a phone that connects, a toilet that
-flushes, roads that carry you, a home to go back to. Each card says when that
-part of life starts to be affected, how long it stays that way, and one sentence
-on how it fails. Open any of them to go further.
+flushes, roads that carry you, a home to go back to. Each card carries how long
+that part of life is out and one sentence on how it fails. Open any of them to go
+further.
 
 *Every system, drawn from the content model rather than written here.*
 

@@ -240,9 +240,10 @@ A thin complete grid is worth less than a few deep pages.
   between a megathrust and a crustal earthquake; then where the numbers come from,
   with the band rubric folded into it as one sentence and a link. The dependency
   figure keeps its page, `/dependencies/`, and the coupling it teaches survives on
-  the home page as the paragraph that says nothing fails on its own. Each card's
-  phase label now carries its verb — "Felt within days" rather than a bare "DAYS",
-  which a reader could read as a duration, a deadline or a phase name. The scenario toggle also gained a sentence saying what it is for,
+  the home page as the paragraph that says nothing fails on its own. The cards carry no
+  phase label at all: one word needs a sentence to mean anything, and the four
+  phases mean something together on the timeline strip and nothing alone in the
+  corner of a card. The scenario toggle also gained a sentence saying what it is for,
   which it had never had.
 
 - **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided
