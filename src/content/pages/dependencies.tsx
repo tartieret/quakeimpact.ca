@@ -17,9 +17,7 @@ import type { PageModule } from "./index";
  * says so where the section sits, and the closing section names the edges no
  * document stands behind, so a reader cannot take the list for a finding.
  *
- * The section heading and its opening sentence differ from
- * `docs/copy/dependencies.md`, which still describes the picture as an empty
- * slot. Everything else on the page is the copy verbatim.
+ * Every section on the page is the copy verbatim.
  */
 export const dependencies: PageModule = {
   meta: {
@@ -44,7 +42,6 @@ export const dependencies: PageModule = {
       "MV-DWMP-26",
       "BCH-WESTEND-25",
       "CRTC-2025-226",
-      "PREPAREDBC",
     ],
   },
 
@@ -288,24 +285,24 @@ export const dependencies: PageModule = {
     ),
     items: [
       <>
-        <strong>Store four litres per person per day, pets included.</strong> That
-        is the province’s own figure, for drinking and basic sanitation together.{" "}
-        <Cite id="PREPAREDBC" /> Its Cascadia assessment says distributing bulk
-        drinking water across the region stays difficult for the first four to
-        five days. <Cite id="DCRRA-2025" />
-      </>,
-      // No citation, and none is missing: this bullet states no figure and rests
-      // on no document. It is a thing to go and find out about your own home.
-      <>
-        <strong>Work out what in your home stops when the power does</strong>,
-        including the heating and any gas appliance with an electric fan or
-        control, and settle what to do about each one before you need to.
-      </>,
-      <>
         <strong>Expect your own street to be cleared late.</strong> The regional
         debris plan clears lifeline routes, critical infrastructure and major
         roads before local ones, which is a reasonable order and it is not a fast
         one for most addresses. <Cite id="MV-DEBRIS-17" />
+      </>,
+      <>
+        <strong>Expect the gas to come back building by building.</strong>{" "}
+        Service returns only once a qualified person has been inside and relit
+        every appliance, and the regulator’s decision on that system gives
+        several weeks to restore hundreds of thousands of customers.{" "}
+        <Cite id="BCUC-C-6-25" /> Settle what your household would do for heat
+        and hot water over that period.
+      </>,
+      <>
+        <strong>Do not build a plan that needs a phone call.</strong> Nothing in
+        Canada currently requires a mobile phone site to hold any backup power at
+        all, and the regulator opened a proceeding in September 2025 to decide
+        what that requirement should be. <Cite id="CRTC-2025-226" />
       </>,
     ],
   },

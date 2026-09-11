@@ -128,15 +128,10 @@ guidelines "without ground improvement or alternative approaches", and cost that
 ground improvement at $9,000 to $18,000 per lineal metre. [RICH-DMP3-19] [RICH-DMP4-21]
 [RICH-DMP5-19]
 
-Four limits travel with those reports, and each of them matters. Eleven sections
-across four phases were analysed, and the 2016 report says its results are only
-applicable at the sections analysed and cannot be assumed to hold anywhere else.
-[RICH-THURBER-16] The "will not meet" finding describes proposed upgraded designs
-without ground improvement, which is a finding about a specification rather than a
-survey of the dikes as they stand today. Ground improvement is being designed and
-costed, so this is a problem the City is working on. And the return periods here are
-1-in-475 and 1-in-2,475 year earthquakes, which do not compare directly to figures
-quoted for dams or for buildings.
+That is a finding about proposed upgraded designs without ground improvement, not a
+survey of the dikes as they stand today. Eleven sections across four phases were
+analysed, at the 1-in-475 and 1-in-2,475 year earthquakes, and the 2016 report says its
+results are only applicable at the sections analysed. [RICH-THURBER-16]
 
 Both documents are the City's own, and both are dated: current Richmond Fire-Rescue
 advice on one side, a 2016 deformation analysis and master plan phases from 2019 and

@@ -41,7 +41,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/provincial-emergency-planning/embc-all-hazard-plan.pdf",
     note: "\"the primary component of the Comprehensive Emergency Management Plan\"; made under the repealed Emergency Program Act; the \"self-sufficient for a minimum of 72 hours\" statement with its \"a week or longer\" caveat (pp. 11, 37); the mutual-aid instruments (pp. 34–35, 62–63)",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "AIR-2013": {
     id: "AIR-2013",
@@ -51,7 +51,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2013,
     date: "Oct 2013",
     href: "https://web.archive.org/web/2016id_/http://assets.ibc.ca/Documents/Disaster/IBC-Earthquake-Economic-Study-Full-Report.pdf",
-    note: "Recovered in full from an Internet Archive capture; IBC's own asset host no longer resolves it",
+    note: "Read from an Internet Archive capture, the Insurance Bureau's own copy no longer being online",
     route: "archive",
     licence: "All rights reserved. The study carries an explicit \"No part of this document may be reproduced or transmitted in any form, for any purpose, without the express written permission of AIR Worldwide\" notice and describes itself as proprietary and confidential. Short attributed quotation only; do not reproduce its tables, figures or maps, and do not host a copy. Refresh trigger: if IBC republishes it, cite IBC rather than the Archive",
   },
@@ -136,7 +136,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Ministry of Water, Land and Resource Stewardship",
     date: "record last modified 10 Sep 2026; queried 10 Sep 2026",
     href: "https://catalogue.data.gov.bc.ca/dataset/bc-dams",
-    note: "BC Data Catalogue dataset; BCGW object WHSE_WATER_MANAGEMENT.WRIS_DAMS_PUBLIC_SVW. Public attributes include FAILURE_CONSEQUENCE and DAM_RISK_LEVEL, which makes it the authoritative public record of a dam's consequence classification. The catalogue page is a JavaScript shell; the data came through the CKAN API and a WFS GetFeature",
+    note: "BC Data Catalogue dataset; BCGW object WHSE_WATER_MANAGEMENT.WRIS_DAMS_PUBLIC_SVW. Public attributes include FAILURE_CONSEQUENCE and DAM_RISK_LEVEL, which makes it the authoritative public record of a dam's consequence classification. The catalogue page assembles itself in the browser; the data is served separately",
     route: "direct",
     licence: "OGL–BC (stated on the record)",
   },
@@ -150,7 +150,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/dam-safety/guidelines_for_dam_design_and_construction.pdf",
     note: "Appendix A §5, Table 3 \"Flood and Earthquake Minimum Design Criteria\": the route by which the 1-in-10,000-year figure enters, the Regulation itself containing no such number. A deviable guideline minimum, and it governs new work rather than existing dams",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BC-EMERG-21": {
     id: "BC-EMERG-21",
@@ -181,7 +181,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/gov/content/industry/agriculture-seafood/business-market-development/emergency-management",
     note: "Organised around animal disease, wildfire, freshet and flood at farm level. Mentions neither earthquakes nor food supply chains; the only named plan is the Foreign Animal Disease Emergency Support Plan (2019)",
     route: "landing",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCCS-INQUESTS": {
     id: "BCCS-INQUESTS",
@@ -190,9 +190,9 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "BC Coroners Service",
     date: "accessed 10 Sep 2026",
     href: "https://www2.gov.bc.ca/gov/content/life-events/death/coroners-service/inquest-schedule-jury-findings-verdicts",
-    note: "The single index, 2007–2026. Searched for Capilano (nothing) and Cleveland (six hits, all an unrelated decedent's middle name): no inquest was held into the 2020 Cleveland Dam deaths",
+    note: "The single index, 2007–2026. No inquest was held into the 2020 Cleveland Dam deaths: neither Capilano nor Cleveland appears in it as the subject of one",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCCS-REPORTS": {
     id: "BCCS-REPORTS",
@@ -203,7 +203,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/gov/content/life-events/death/coroners-service/report-request",
     note: "Establishes that a report exists by statute under s.16(1) of the Coroners Act and is released under s.69 only to a person with a valid interest or where the Chief Coroner finds release in the public interest",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCDC-TRANSMISSION": {
     id: "BCDC-TRANSMISSION",
@@ -226,7 +226,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/dam-safety/2020-21_final_dam_safety_annual_report_2021_05_27.pdf",
     note: "Incident 7, Cleveland Dam, 1 October 2020 (p. 29); the regulator's contemporaneous account of it",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCDSP-AR-2324": {
     id: "BCDSP-AR-2324",
@@ -238,7 +238,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/dam-safety/dam_safety_annual_report_2023_2024_web_final.pdf",
     note: "§2.2 Risks, §2.3 Classification, §2.4 Risk Level, §3.2.3 Compliance and Enforcement, Appendices A and C. The most recent published report as at 10 Sep 2026",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCDSP-DEP-24": {
     id: "BCDSP-DEP-24",
@@ -250,7 +250,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/dam-safety/dam_emergency_plan_template_2024apr20.pdf",
     note: "The required content of an emergency plan, including the scenario \"Earthquake resulting in uncontrolled release of water from the dam\"",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCDSP-DSR-INFO": {
     id: "BCDSP-DSR-INFO",
@@ -262,7 +262,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/dam-safety/2023_info_sheet_dsr_guidelines_2023-05-05.pdf",
     note: "EGBC Professional Practice Guidelines: Legislated Dam Safety Reviews, V4.0; the Dam Safety Program's own pointer to the guideline that s.20 of the Regulation runs through",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCDSP-INUND-16": {
     id: "BCDSP-INUND-16",
@@ -274,7 +274,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/environment/air-land-water/water/dam-safety/estimating_downstream_inundation-2016.pdf",
     note: "Prepared 2001; updated Nov 2013, Oct 2014, Jun 2015 and Jan 2016",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCDSR-40-2016": {
     id: "BCDSR-40-2016",
@@ -284,7 +284,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2016,
     date: "2016, am. 2023",
     href: "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/40_2016",
-    note: "Ss. 3, 9, 18–21 and 28, and Schedules 1 and 2: the review is mandatory and its interval is fixed by classification. Searched in full; \"seismic\", \"earthquake\", \"ground motion\", \"Canadian Dam Association\" and \"10,000\" return zero hits. Last amended 10 Feb 2023 by B.C. Reg. 32/2023; consolidation current to 8 Sep 2026. The regulation number is the document's own identity and is kept verbatim in the key",
+    note: "Ss. 3, 9, 18–21 and 28, and Schedules 1 and 2: the review is mandatory and its interval is fixed by classification. The Regulation nowhere uses the words \"seismic\", \"earthquake\", \"ground motion\" or \"Canadian Dam Association\", and nowhere states a 1-in-10,000 standard. Last amended 10 Feb 2023 by B.C. Reg. 32/2023; consolidation current to 8 Sep 2026",
     route: "direct",
     licence: "King's Printer Licence – British Columbia: may be quoted at length with attribution",
   },
@@ -298,7 +298,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/bcems/bcems_guide.pdf",
     note: "The eight response goals in priority order (pp. 53–54), the four response levels (pp. 55–57), mutual aid as conditional and with no named instrument (p. 75 and glossary), and the PERRC, renamed CERRC in PEIRS (pp. 59–60)",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCF-FMU-23": {
     id: "BCF-FMU-23",
@@ -363,7 +363,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://archive.news.gov.bc.ca/releases/news_releases_2009-2013/2009PREM0025-000209.htm",
     note: "Dates the line's opening to 17 Aug 2009. Dates the line, not the North Arm Bridge",
     route: "archive",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "BCGOV-LGH-2018": {
     id: "BCGOV-LGH-2018",
@@ -403,7 +403,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2006,
     date: "May 2006",
     href: "",
-    note: "Appendix N: \"the dam contains loose materials that are expected to liquefy during a moderate to large earthquake\", the owner's own words in a regulatory filing. Raises the Coquitlam liquefaction finding from COQUITLAM-REW's [B] to [A]. It does not carry the C$65M cost or the backup-dam dimensions. No link recovered: the document was read on docs.bcuc.com, whose exact document path was not captured. Appendix N sits in exhibit B-5-3 of the F2007/08 revenue requirements proceeding, Volume 3, Appendices J to Y. docs.bcuc.com has no index and its paths cannot be guessed, so the route back is the proceeding record at www.bcuc.com/OurWork/Proceedings",
+    note: "Appendix N: \"the dam contains loose materials that are expected to liquefy during a moderate to large earthquake\", the owner's own words in a regulatory filing. It does not carry the C$65M cost or the backup-dam dimensions. No link recovered: filed with the BC Utilities Commission and not posted at an address of its own. Appendix N sits in exhibit B-5-3 of the F2007/08 revenue requirements proceeding, Volume 3, Appendices J to Y, in the proceeding record at www.bcuc.com/OurWork/Proceedings",
     route: "direct",
   },
   "BCH-DAMFAQ": {
@@ -423,7 +423,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "BC Hydro",
     date: "F2016–F2026",
     href: "https://www.bchydro.com/energy-in-bc/operations/dam-safety/dam-safety-reports.html",
-    note: "Roughly 45 board briefings, F2016 to F2026, with named per-dam deficiencies; identified as the best open channel for the next dams pass. Unread lead. It carries no claim, and nothing is cited to it",
+    note: "Roughly 45 board briefings, F2016 to F2026, naming deficiencies dam by dam. No claim here rests on them",
     route: "landing",
   },
   "BCH-PSHA-14": {
@@ -439,23 +439,23 @@ export const REFERENCES: Record<string, Reference> = {
   "BCH-RRA-F2020": {
     id: "BCH-RRA-F2020",
     kind: "report",
-    title: "BC Hydro F2020–F2021 Revenue Requirements Application, doc_53488",
+    title: "BC Hydro F2020–F2021 Revenue Requirements Application",
     publisher: "BC Hydro / BCUC",
     year: 2019,
     date: "25 Feb 2019",
     href: "",
-    note: "Per-dam Facility Asset Plans with quantified seismic withstand (Alouette, Cheakamus, Coquitlam), Dam Safety capital tables, and the Ruskin estimate at completion in Table 6-4. Read in full text. The Downtown Vancouver Electricity Supply Plan appendix carries the Murrin and Dal Grauer statement on seismically unstable soil and prolonged outage, and the downtown study area's approximately 95,000 customers and fiscal-2017 peak of 411 MVA; the asset-management appendix carries 572 power transformers at 60 kV or greater and 10 spares. Also searched in full for \"seismic\" and \"earthquake\". No link recovered: the document was read on docs.bcuc.com as doc_53488, and its path was not captured. docs.bcuc.com has no index and its paths cannot be guessed, so the route back is the proceeding record at www.bcuc.com/OurWork/Proceedings",
+    note: "Per-dam Facility Asset Plans with quantified seismic withstand (Alouette, Cheakamus, Coquitlam), Dam Safety capital tables, and the Ruskin estimate at completion in Table 6-4. The Downtown Vancouver Electricity Supply Plan appendix carries the Murrin and Dal Grauer statement on seismically unstable soil and prolonged outage, and the downtown study area's approximately 95,000 customers and fiscal-2017 peak of 411 MVA; the asset-management appendix carries 572 power transformers at 60 kV or greater and 10 spares. No link recovered: filed with the BC Utilities Commission and not posted at an address of its own; the proceeding record is at www.bcuc.com/OurWork/Proceedings",
     route: "direct",
   },
   "BCH-RRA-F2023": {
     id: "BCH-RRA-F2023",
     kind: "report",
-    title: "BC Hydro F2023–F2025 Revenue Requirements Application, doc_64005 / doc_64006",
+    title: "BC Hydro F2023–F2025 Revenue Requirements Application",
     publisher: "BC Hydro / BCUC",
     year: 2021,
     date: "31 Aug 2021",
     href: "",
-    note: "The same per-dam Facility Asset Plans and Dam Safety capital tables. Read in full text. Project 901474, 2L003 and 2L049 Transmission Line Crossing Seismic Upgrade (Second Narrows), carries the owner's statement that the crossing structures are critical and at risk of collapse below a 1:475-year event, with cost, in-service date and construction start all to be determined, and the project in the Future / For Prioritization category. Also searched in full for \"seismic\" and \"earthquake\". No link recovered: the documents were read on docs.bcuc.com as doc_64005 and doc_64006, and their paths were not captured. docs.bcuc.com has no index and its paths cannot be guessed, so the route back is the proceeding record at www.bcuc.com/OurWork/Proceedings",
+    note: "The same per-dam Facility Asset Plans and Dam Safety capital tables. Project 901474, 2L003 and 2L049 Transmission Line Crossing Seismic Upgrade (Second Narrows), carries the owner's statement that the crossing structures are critical and at risk of collapse below a 1:475-year event, with cost, in-service date and construction start all to be determined, and the project in the Future / For Prioritization category. No link recovered: filed with the BC Utilities Commission and not posted at an address of their own; the proceeding record is at www.bcuc.com/OurWork/Proceedings",
     route: "direct",
   },
   "BCH-RUSKIN-F2019": {
@@ -465,7 +465,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "BC Hydro",
     date: "F2019",
     href: "",
-    note: "Q1 records completion of the upper dam in F2018 after \"a 20 year Dam Safety initiative, and 11 years of this project\"; Q4 records the Advisory Board finding that the project \"Has met the overall project objectives of withstanding the Maximum Design Earthquake (1:10,000 Annual Exceedance Frequency)\". [A] for design intent; not verification of as-built performance. No link recovered: the reports were read through the bchydro.com project document library. The project page www.bchydro.com/energy-in-bc/projects/ruskin.html now 404s, and the historical path ruskin_dam_powerhouse_upgrade.html is archived for 2013 to 2019",
+    note: "Q1 records completion of the upper dam in F2018 after \"a 20 year Dam Safety initiative, and 11 years of this project\"; Q4 records the Advisory Board finding that the project \"Has met the overall project objectives of withstanding the Maximum Design Earthquake (1:10,000 Annual Exceedance Frequency)\". A statement of what the upgrade was designed to withstand, not a measurement of the dam as built. No link recovered: the reports are no longer posted: BC Hydro's Ruskin project page is gone, and captures of the earlier page survive for 2013 to 2019",
     route: "direct",
   },
   "BCH-RUSKIN-SEIAM-11": {
@@ -476,7 +476,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2011,
     date: "Apr 2011",
     href: "https://www.bchydro.com/content/dam/hydro/medialib/internet/documents/projects/ruskin/ruskin_seiam_draft.pdf",
-    note: "P. 12 carries the seismic deficiency, the Maximum Design Earthquake at 1-in-10,000, PGA ~0.7 g and \"up to 300 people downstream… during summer months\"; p. 4 the environmental-assessment opt-in refusal. A draft report, and its seismic passage cites an unread \"BC Hydro, 2008\"",
+    note: "P. 12 carries the seismic deficiency, the Maximum Design Earthquake at 1-in-10,000, PGA ~0.7 g and \"up to 300 people downstream… during summer months\"; p. 4 the environmental-assessment opt-in refusal. A draft report, and its seismic passage rests on an earlier BC Hydro report of 2008 that is not public",
     route: "direct",
   },
   "BCH-SEIS-11": {
@@ -552,7 +552,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "27 Oct 2025",
     href: "https://docs.bcuc.com/documents/orders/2025/doc_84036_c-6-25-fei-cpcn-tilbury-project-final.pdf",
-    note: "Retrieved and read in full: \"hundreds of thousands of customers\", \"several weeks to restore service\", $1,143.889M as-spent, the 2 Bcf resiliency reserve within a 3 Bcf tank, and the Base Plant tank at 58% for seismic compliance",
+    note: "\"hundreds of thousands of customers\", \"several weeks to restore service\", $1,143.889M as-spent, the 2 Bcf resiliency reserve within a 3 Bcf tank, and the Base Plant tank at 58% for seismic compliance",
     route: "direct",
   },
   "BIV-DCRRA-25": {
@@ -563,7 +563,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "27 Dec 2025",
     href: "https://www.biv.com/news/economy-law-politics/major-earthquake-would-cost-bc-more-than-all-disasters-over-past-200-years-finds-report-11660886",
-    note: "The reporting route to KELLY-2019, and the only one of the two reprints that carries a link to the study",
+    note: "The report of the insurer-failure study, and the only one of its two printings that links to the study itself",
     route: "media",
   },
   "BOWEN-TSU-19": {
@@ -596,7 +596,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2000,
     date: "2000",
     href: "https://doi.org/10.1785/0120000044",
-    note: "Named by NRCan's scenario catalogue as the origin of the fault plane geometry. Unread; the attribution of the 47° dip to it is [B] for that step. Paywalled: the document cannot be reached by following the link",
+    note: "Named by NRCan's scenario catalogue as the origin of the fault plane geometry. Paywalled and unread, so the 47° dip is attributed to it on the catalogue's word",
     route: "direct",
   },
   "CBC-2015": {
@@ -628,7 +628,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2016,
     date: "2016",
     href: "https://www.conferenceboard.ca/product/canadas-earthquake-risk-macroeconomic-impacts-and-systemic-financial-risk/",
-    note: "Origin of the $128B / $122B / insurance-failure family the DCRRA restates. The report itself is not retrievable: the product page has an expired TLS certificate, the successor page returns an empty body, and the e-library id 404s. Every figure the site carries under this key comes from CBOC-2016-PR, the Board's own press release; cite that",
+    note: "Origin of the $128B / $122B / insurance-failure family the DCRRA restates. The report itself is not retrievable: the publisher's page for it no longer loads, the page that replaced it returns nothing, and the library record is gone. Every figure quoted here comes instead from the Conference Board's own press release, which is listed separately",
     route: "landing",
   },
   "CBOC-2016-PR": {
@@ -639,7 +639,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2016,
     date: "Nov 2016",
     href: "https://www.preventionweb.net/news/canada-not-prepared-deal-financial-impact-major-earthquake",
-    note: "The Board's own press release, reproduced verbatim and attributed. The route to every figure attributed to CBOC-2016, that report being unretrievable",
+    note: "The Board's own press release, reproduced verbatim and attributed. It is the source of every figure attributed here to the Board's 2016 study, that report being unretrievable",
     route: "direct",
   },
   "CCE-PMH1-14": {
@@ -661,7 +661,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2007,
     date: "2007, rev. 2013",
     href: "https://cda.ca/",
-    note: "Unread lead, and paywalled: a member publication. Registered because it is the common ancestor of the 1-in-10,000 figure in BC-DDCG, the guidance in EGBC-DSR-GL and BCDSP-DSR-INFO, and the media reports the dams file cites: four documents that look like corroboration and are one source restated. Cite only as that lineage; it carries no claim",
+    note: "Unread, and paywalled: a member publication. It is the common ancestor of the 1-in-10,000 figure in the provincial design guidelines, of the professional guidance that follows them, and of the news reports that repeat both: four documents that look like corroboration and are one source restated. No claim here rests on it",
     route: "landing",
   },
   "CEMP-PAGE": {
@@ -673,7 +673,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/gov/content/safety/emergency-management/emergency-management/provincial-emergency-planning",
     note: "The CEMP is a framework, not a document: \"a framework that outlines the provincial operations used in the event of an emergency or disaster\", listing the All-Hazard Plan, three support annexes and seven hazard-specific annexes",
     route: "landing",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "CHANG-2000": {
     id: "CHANG-2000",
@@ -692,7 +692,7 @@ export const REFERENCES: Record<string, Reference> = {
     title: "Christchurch post-earthquake population loss, the displacement analogue",
     date: "not recovered",
     href: "",
-    note: "No source located. The key names a subject rather than a document, so no route was established and nothing may be cited to it. No link recovered: no publication carrying a Christchurch population-loss figure has been identified",
+    note: "No source located. No published figure for it has been found, and nothing here rests on one. No link recovered: no publication carrying a Christchurch population-loss figure has been identified",
   },
   "CHCH-RNZ": {
     id: "CHCH-RNZ",
@@ -861,7 +861,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2001,
     date: "30 Jan 2001",
     href: "https://council.vancouver.ca/010130/a4.htm",
-    note: "Fairview Slopes extension, 20,000 / 10,000 igpm post-seismic requirement. The host returns 403 to an automated fetch; open it in a browser",
+    note: "Fairview Slopes extension, 20,000 / 10,000 igpm post-seismic requirement. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "COV-DFPS-DATA": {
@@ -872,7 +872,7 @@ export const REFERENCES: Record<string, Reference> = {
     date: "undated dataset",
     href: "https://opendata.vancouver.ca/explore/dataset/dedicated-fire-protection-systems-dfps-water-mains/",
     route: "direct",
-    licence: "OGL–Vancouver (confirm on the dataset page at download)",
+    licence: "OGL–Vancouver",
   },
   "COV-EDM-26": {
     id: "COV-EDM-26",
@@ -893,7 +893,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "City of Vancouver",
     date: "page modified 2 May 2024",
     href: "https://vancouver.ca/home-property-development/emergency-preparedness-education.aspx",
-    note: "Free workshops through the Vancouver Public Library and the Park Board, a 20-minute captioned video, and the worksheet at COV-WORKSHEET-26",
+    note: "Free workshops through the Vancouver Public Library and the Park Board, a 20-minute captioned video, and a take-home worksheet",
     route: "direct",
   },
   "COV-EVAC": {
@@ -914,7 +914,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "items last modified 17 Apr 2025 — an item timestamp, not a publication date",
     href: "https://storymaps.arcgis.com/collections/108cc3ef8d3349dba94ae9adfb89423b",
-    note: "\"a minimum of 3 days… although your target should be a week to 2 weeks\", 4 litres per person per day, the renter and \"if you are able\" hazard lists, water-heater strapping, the gas shut-off instruction, the Christchurch cordoning analogue, the equity statements, and the DFPS without its coverage area. An ArcGIS StoryMaps collection: the human-readable page is a JavaScript shell, so a reader following it sees no text. The text was retrieved from the ArcGIS item data endpoint, recorded here because a researcher needs that second URL. The date is the item's modified timestamp, not a published date",
+    note: "\"a minimum of 3 days… although your target should be a week to 2 weeks\", 4 litres per person per day, the renter and \"if you are able\" hazard lists, water-heater strapping, the gas shut-off instruction, the Christchurch cordoning analogue, the equity statements, and the DFPS without its coverage area. An ArcGIS StoryMaps collection: the page assembles itself in the browser, so it has no fixed text to quote or to archive. The date is the item's own timestamp for its last change, not a date of publication",
     route: "direct",
   },
   "COV-FACTSHEET-24": {
@@ -977,7 +977,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2011,
     date: "content 2011; file re-saved 16 Mar 2026",
     href: "https://vancouver.ca/files/cov/home-hazard-hunt-worksheet.pdf",
-    note: "The water heater, gas appliances, and \"keep a suitable wrench close to the gas meter\". A row where the dates actively mislead, so all three facts are recorded: the content is 2011 (job 11-055, created 24 March 2011); it is still linked as a resource from the City's 2025 flagship COV-EXPLORER-25; and its PDF /ModDate of 16 March 2026 is a file re-save, not a revision. It still carries NEPP branding, and its own vancouver.ca/nepp URL now 404s",
+    note: "The water heater, gas appliances, and \"keep a suitable wrench close to the gas meter\". The dates on this one mislead, so all three are recorded: the content is from 2011 (job 11-055, created 24 March 2011); the file was re-saved on 16 March 2026 without being revised; and the City still links it as a resource from its 2025 hazard and risk explorer. It carries NEPP branding, and its own vancouver.ca/nepp address is gone",
     route: "direct",
   },
   "COV-HUBS": {
@@ -988,7 +988,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2017,
     date: "page dated 17 Aug 2017; the printable map PDF it links is dated Mar 2025",
     href: "https://vancouver.ca/home-property-development/disaster-support-hubs.aspx",
-    note: "25 hubs, group lodging \"may\" be provided, no capacity published; reconfirmed unpublished on 10 Sep 2026",
+    note: "25 hubs, group lodging \"may\" be provided, no capacity published",
     route: "landing",
   },
   "COV-HWP-25": {
@@ -1023,7 +1023,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2026,
     date: "report 5 May 2026; council agenda 2 Jun 2026",
     href: "https://council.vancouver.ca/20260602/documents/r2.pdf",
-    note: "The host returns 403 to an automated fetch; open it in a browser",
+    note: "The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "COV-PREPARES": {
@@ -1039,11 +1039,11 @@ export const REFERENCES: Record<string, Reference> = {
   "COV-PREPMAIN": {
     id: "COV-PREPMAIN",
     kind: "report",
-    title: "The City's preparedness landing page",
+    title: "Emergency preparedness",
     publisher: "City of Vancouver",
     date: "page modified 11 Oct 2024",
     href: "https://vancouver.ca/home-property-development/prepare-for-an-earthquake-and-other-disasters.aspx",
-    note: "No duration given, \"multiple days with no outside support\", and kit guidance linked out to PREPAREDBC-KIT",
+    note: "No duration given, \"multiple days with no outside support\", and kit guidance handed off to PreparedBC",
     route: "direct",
   },
   "COV-RAINCITY-19": {
@@ -1078,7 +1078,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2024,
     date: "report 1 Nov 2024; council 12 Nov 2024",
     href: "https://council.vancouver.ca/20241112/documents/r1.pdf",
-    note: "The host returns 403 to an automated fetch; open it in a browser",
+    note: "The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "COV-RNP": {
@@ -1128,12 +1128,12 @@ export const REFERENCES: Record<string, Reference> = {
   "COV-URM-2000": {
     id: "COV-URM-2000",
     kind: "report",
-    title: "Council report, \"Seismic Hazard Abatement for Privately Owned Buildings\"",
+    title: "Earthquake risk in Vancouver's unreinforced masonry buildings",
     publisher: "City of Vancouver",
     year: 2000,
     date: "16 May 2000",
     href: "https://council.vancouver.ca/000516/ub2c.htm",
-    note: "The ~8,000 figure, superseded by COV-RISK-2024. The host returns 403 to an automated fetch; open it in a browser",
+    note: "The ~8,000 figure, superseded by the City's 2024 seismic risk assessment. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "COV-VEMA-17": {
@@ -1190,7 +1190,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2016,
     date: "22–24 Oct 2016",
     href: "https://www.seattletimes.com/seattle-news/politics/washington-states-plan-for-megaquake-grossly-inadequate-review-finds/",
-    note: "Doughton & Gilbert: quotes an unpublished late-stage draft, not the published AAR. The host returns 403 to an automated fetch; open it in a browser",
+    note: "Doughton & Gilbert: quotes an unpublished late-stage draft, not the published AAR. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "media",
   },
   "CR16-WA": {
@@ -1207,12 +1207,12 @@ export const REFERENCES: Record<string, Reference> = {
   "CR22-WA": {
     id: "CR22-WA",
     kind: "report",
-    title: "Cascadia Rising 2022 Exercise Final After-Action Report / Improvement Plan",
+    title: "Cascadia Rising 2022 After-Action Report",
     publisher: "Washington Military Department / EMD",
     year: 2022,
     date: "exercise 13–16 Jun 2022; report 18 Jul 2023",
     href: "https://mil.wa.gov/asset/64dce2b7dec3b/FINAL%20-%20Revised%20CR22%20AAR-IP%20%20071823%20Signed.pdf",
-    note: "Supersedes CR16-WA; improvement items run to 2026; Appendix A (Critical Transportation) gives \"approximately 5,000 bridges within and west of the Cascade Mountain Range\"",
+    note: "Supersedes the 2016 Washington report; improvement items run to 2026; Appendix A (Critical Transportation) gives \"approximately 5,000 bridges within and west of the Cascade Mountain Range\"",
     route: "direct",
   },
   "CRTC-2016-165": {
@@ -1223,7 +1223,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2016,
     date: "2016",
     href: "https://crtc.gc.ca/eng/archive/2016/2016-165.htm",
-    note: "Backup power provisions of at least 24 h for central office switches and 72 h for tandem switches. 9-1-1 switching offices, not radio sites. Reached through the CRTC 2025-226 record, and not read as a standalone document. The host returns 403 to an automated fetch; open it in a browser",
+    note: "Backup power provisions of at least 24 h for central office switches and 72 h for tandem switches. 9-1-1 switching offices, not radio sites. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "CRTC-2025-225": {
@@ -1281,7 +1281,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://nrs.objectstore.gov.bc.ca/xedyjn/Projects/2025/dcrra/DCRRA_report_oct_2025.pdf",
     note: "Incl. ch. 5 §5.6 Extreme Events (the M9.0 Cascadia scenario)",
     route: "direct",
-    licence: "All rights reserved / \"Access Only\": the report carries no copyright notice, licence statement, ISBN or suggested citation, and its host declares \"Access Only\". Not OGL–BC. State the facts, link, and reproduce nothing. See DCRRA-LICENCE",
+    licence: "All rights reserved / \"Access Only\": the report carries no copyright notice, licence statement, ISBN or suggested citation, and its host declares \"Access Only\". Not OGL–BC: the facts may be stated and linked to, and nothing may be reproduced. See the host's own licence statement",
   },
   "DCRRA-2025-ES": {
     id: "DCRRA-2025-ES",
@@ -1293,7 +1293,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://nrs.objectstore.gov.bc.ca/xedyjn/Projects/2025/dcrra/DCRRA_execsummary_oct_2025.pdf",
     note: "Executive Summary",
     route: "direct",
-    licence: "All rights reserved / \"Access Only\"; see DCRRA-LICENCE",
+    licence: "All rights reserved / \"Access Only\"; see the host's own licence statement",
   },
   "DCRRA-APPC": {
     id: "DCRRA-APPC",
@@ -1304,7 +1304,7 @@ export const REFERENCES: Record<string, Reference> = {
     date: "Oct 2025",
     href: "https://nrs.objectstore.gov.bc.ca/xedyjn/Projects/2025/dcrra/DCRRA_appendices_oct_2025.pdf",
     route: "direct",
-    licence: "As DCRRA-2025: all rights reserved / \"Access Only\"",
+    licence: "As the disaster risk assessment itself: all rights reserved / \"Access Only\"",
   },
   "DCRRA-EXP": {
     id: "DCRRA-EXP",
@@ -1316,7 +1316,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://nrs.objectstore.gov.bc.ca/xedyjn/Projects/2025/dcrra/DCRRA_ch2_hazards_oct_2025.pdf",
     note: "92% population, 90% businesses, 76% critical facilities; the 2,475-year / CanadaSHM6 method",
     route: "direct",
-    licence: "As DCRRA-2025: all rights reserved / \"Access Only\"",
+    licence: "As the disaster risk assessment itself: all rights reserved / \"Access Only\"",
   },
   "DCRRA-LICENCE": {
     id: "DCRRA-LICENCE",
@@ -1365,7 +1365,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2010,
     date: "2010",
     href: "https://doi.org/10.1177/0885066609359267",
-    note: "Paywalled and unread; contents not characterised. The most likely route to a facility-level BC ICU inventory",
+    note: "Paywalled and unread. It is the most likely published route to a hospital-by-hospital count of BC intensive care beds",
     route: "landing",
   },
   "DRR-GOVPAGE": {
@@ -1375,7 +1375,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Province of BC",
     date: "accessed Sep 2026",
     href: "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions/disaster-response-routes",
-    note: "Activation, photo and employment ID, and the instruction to exit the route. The host returns 403 to an automated fetch; open it in a browser",
+    note: "Activation, photo and employment ID, and the instruction to exit the route. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
     licence: "Regional map PDF carries no stated licence: link only",
   },
@@ -1484,7 +1484,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Engineers and Geoscientists BC",
     date: "accessed 10 Sep 2026",
     href: "https://tools.egbc.ca/Registrants/Practice-Resources/Guidelines-Advisories",
-    note: "Enumerated in full on 10 September 2026",
+    note: "The association's complete published list of its own guidance",
     route: "landing",
   },
   "EGBC-OFC-MEMO": {
@@ -1526,7 +1526,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/gov/content/safety/emergency-management/emergency-management/provincial-emergency-planning",
     note: "The index of the province's multi-agency plans. Lists all-hazard, earthquake, flood, drought, nuclear, pandemic, wildland-urban interface, tsunami notification, flood waste and debris, foreign animal disease, post-secondary and schools. No food, grocery, consumer-goods or supply-chain plan",
     route: "landing",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "EMCR-LEG": {
     id: "EMCR-LEG",
@@ -1535,9 +1535,9 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "EMCR, Province of BC",
     date: "last updated 26 Aug 2026",
     href: "https://www2.gov.bc.ca/gov/content/safety/emergency-management/emergency-management/legislation-and-regulations",
-    note: "\"The Act replaced the Emergency Program Act in 2023\"; regulations still in development; no successor to the CEMP or to BCEMS-2016 announced",
+    note: "\"The Act replaced the Emergency Program Act in 2023\"; regulations still in development; no successor announced to the CEMP or to the 2016 emergency management system",
     route: "landing",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "ERQ-TILBURY-25": {
     id: "ERQ-TILBURY-25",
@@ -1547,7 +1547,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "2025",
     href: "https://energyregulationquarterly.ca/articles/bc-utilities-commission-approves-a-significant-investment-in-natural-gas-resiliency",
-    note: "A superseded route. It was the way in to BCUC-C-6-25; the order has since been read in full, so this is a see-also and carries no claim of its own",
+    note: "A commentary on the Commission's decision. The decision itself is the source used here",
     route: "media",
   },
   "ESDC-EVAC-09": {
@@ -1583,7 +1583,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/exercises/emcr_emergency_exercise_calendar.pdf",
     note: "P. 1: Exercise Luuwaay Taaydala, 5 Nov 2026, EMCR-led tsunami preparation exercise, Vancouver Island and Northwest Coast",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "EX-PROG": {
     id: "EX-PROG",
@@ -1594,7 +1594,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/gov/content/safety/emergency-management/emergency-management/provincial-emergency-exercise-program",
     note: "Three past major exercises listed (Coastal Response 2023, Salish Sea 2017, Coastal Response 2016); 2016 offers only Initial Findings; the 2023 Joint Executive Summary is labelled by EMCR as a \"Joint Federal/Provincial After Action Report\"; stated cadence of \"a large scale catastrophic all-hazard emergency exercise every 5 years\"",
     route: "landing",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "FBC-EQ": {
     id: "FBC-EQ",
@@ -1625,7 +1625,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2024,
     date: "24 Oct 2024",
     href: "https://docs.bcuc.com/documents/proceedings/2024/doc_78974_b-61-fei-2024gassystemresiliencyplan-redacted-public-web.pdf",
-    note: "Exhibit B-61 in the Tilbury CPCN proceeding (redacted public version): retrieved and read in full: the 58 Assessed Vulnerabilities, the Exponent quantitative seismic risk analysis, §7.2.4 on the seismic response initiative, and the relight rates. Its own supporting documents (Exponent, PwC, and the CB&I and WSP tank assessments) are confidential appendices and were not obtained",
+    note: "Exhibit B-61 in the Tilbury CPCN proceeding (redacted public version): the 58 Assessed Vulnerabilities, the Exponent quantitative seismic risk analysis, §7.2.4 on the seismic response initiative, and the relight rates. Its own supporting documents (Exponent, PwC, and the CB&I and WSP tank assessments) are confidential appendices and are not public",
     route: "direct",
   },
   "FOWLER-2015": {
@@ -1703,7 +1703,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2012,
     date: "2012",
     href: "https://pubs.usgs.gov/pp/pp1661f/",
-    note: "USGS Professional Paper 1661-F; DOI 10.3133/pp1661F. Any probability from it names its margin",
+    note: "USGS Professional Paper 1661-F; DOI 10.3133/pp1661F. Its probabilities belong to named segments of the margin, not to the margin as a whole",
     route: "direct",
   },
   "GREGORIAN-2010": {
@@ -1725,7 +1725,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2008,
     date: "2008",
     href: "https://doi.org/10.4095/224755",
-    note: "Not retrieved. The repository record resolves and the report itself was not read; cited via BOWEN-TSU-19",
+    note: "Not retrieved. The repository record resolves; the report itself was not read, and it reaches this site through a later work that cites it",
     route: "direct",
   },
   "GSC-OF-6169": {
@@ -1748,7 +1748,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2014,
     date: "2014",
     href: "https://publications.gc.ca/collections/collection_2015/rncan-nrcan/M183-2-7616-eng.pdf",
-    note: "Currently held at [A] only by secondary citation",
+    note: "The report is known here only through later work that cites it",
     route: "direct",
   },
   "GSC-OF-8630": {
@@ -1765,12 +1765,12 @@ export const REFERENCES: Record<string, Reference> = {
   "GSC-OF-8806": {
     id: "GSC-OF-8806",
     kind: "report",
-    title: "Hobbs, T.E., Journeay, J.M., Rotheram, D., An Earthquake Scenario Catalogue for Canada: A Guide to Using Scenario Hazard and Risk Results, Open File 8806; DOI 10.4095/328364",
+    title: "Open File 8806",
     publisher: "Geological Survey of Canada",
     year: 2021,
     date: "2021",
     href: "https://publications.gc.ca/site/eng/9.917035/publication.html",
-    note: "The citation OGL–Canada requires alongside NRCAN-SCEN",
+    note: "The citation the Open Government Licence requires alongside the scenario catalogue",
     route: "direct",
   },
   "GSC-OF-8853": {
@@ -1787,12 +1787,11 @@ export const REFERENCES: Record<string, Reference> = {
   "GSC-OF-8924": {
     id: "GSC-OF-8924",
     kind: "report",
-    title: "Sixth Generation seismic hazard model of Canada: final input files used to generate the 2020 NBCC seismic hazard values",
+    title: "GSC Open File 8924: the version actually behind NBCC 2020. Its Cascadia rates are identical to those in Open File 8630",
     publisher: "Geological Survey of Canada",
     year: 2023,
     date: "2023",
     href: "https://ostrnrcan-dostrncan.canada.ca/handle/1845/135527",
-    note: "GSC Open File 8924: the version actually behind NBCC 2020. Cascadia rates byte-identical to OF 8630",
     route: "direct",
     licence: "OGL–Canada",
   },
@@ -1810,12 +1809,12 @@ export const REFERENCES: Record<string, Reference> = {
   "HILT-2022": {
     id: "HILT-2022",
     kind: "report",
-    title: "Hilt, Molina Hutt, Hobbs & Wen, \"A methodology to leverage seismic risk assessments to inform seismic policy development: the case of the City of Vancouver\", 12NCEE",
+    title: "Hilt, Ventura et al",
     publisher: "peer-reviewed conference",
     year: 2022,
     date: "2022",
     href: "https://ostrnrcan-dostrncan.canada.ca/handle/1845/134041",
-    note: "The method behind COV-RISK-2024",
+    note: "The method behind the City of Vancouver's 2024 seismic risk assessment",
     route: "direct",
   },
   "HITRAC-11": {
@@ -1870,7 +1869,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "5 Nov 2025",
     href: "https://www.insurancebusinessmag.com/ca/news/catastrophe/industry-welcomes-federal-budgets-earthquake-insurance-initiative-555504.aspx",
-    note: "$96B / $26B attributed to IBC VP Liam McGuinty. No underlying study located; may not be independent of AIR-2013",
+    note: "$96B / $26B attributed to IBC VP Liam McGuinty. No underlying study located, and the figures may not be independent of the Bureau's own 2013 study",
     route: "media",
   },
   "IPREM-RES": {
@@ -1902,7 +1901,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2023,
     date: "2023",
     href: "https://doi.org/10.1177/87552930231197376",
-    note: "The 31–57% triggering probability above M8.9. The host returns 403 to an automated fetch; open it in a browser",
+    note: "The 31–57% triggering probability above M8.9. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "JAVANBAKHT-24": {
@@ -1947,7 +1946,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "21–24 Sep 2025",
     href: "https://klohn.com/technical-papers/seismic-retrofit-of-bridge-foundations-piles-ground-improvement-and-buttress-berms/",
-    note: "Abstract only, and [A] for the abstract's own wording alone. The proceedings are member-distributed and the paper is indexed by neither Google Scholar nor OpenAlex, so the abstract is the whole of the public record. Highest-priority document to obtain",
+    note: "Abstract only. The proceedings are distributed to members and the paper is indexed by neither Google Scholar nor OpenAlex, so the abstract is the whole of the public record",
     route: "direct",
   },
   "KELLY-2019": {
@@ -1958,7 +1957,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2019,
     date: "online 8 Aug 2019; print Apr 2020",
     href: "https://doi.org/10.1057/s41288-019-00141-x",
-    note: "The study behind the \"2019 simulated M7.0\" insurer-failure figures, previously unidentified. Paywalled and unread; the figures reach us only through BIV-DCRRA-25",
+    note: "The study behind the \"2019 simulated M7.0\" insurer-failure figures. Paywalled and unread; the figures here come from the newspaper report of it",
     route: "direct",
   },
   "KENTUCKY-EMB-12": {
@@ -2034,7 +2033,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "2025",
     href: "https://mcgill.scholaris.ca/items/190266af-c400-4285-a964-5ad4ed5db58b",
-    note: "California data: [C] for any number",
+    note: "Built on California data, so no number in it describes the Lower Mainland",
     route: "direct",
   },
   "MENARD-YVR": {
@@ -2044,7 +2043,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Menard Canada",
     date: "undated",
     href: "https://menardcanada.ca/soil-expert-portfolio/aeroport-yvr-richmond-colombie-britannique/",
-    note: "Vibro-replacement stone columns. Contractor marketing; states the claim but carries no [A] authority",
+    note: "Vibro-replacement stone columns. Contractor marketing: it states the claim, and no independent record confirms it",
     route: "vendor",
   },
   "METI-2011": {
@@ -2194,7 +2193,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "6 Jan 2025 (award); agenda 9 Jul 2025",
     href: "https://metrovancouver.org/boards/Water/WAT-2025-07-09-AGE.pdf",
-    note: "Contract award under competition 24-316: awarded 6 Jan 2025 to Klohn Crippen Berger Ltd. for $109,177; in 2025 Financial Performance Report No. 1, Attachment 1, Water Committee agenda of 9 Jul 2025, Item F1. The guard needs no footnote: the title says safety booms, which are the floating barriers and not the dam structures, so this is not a seismic reassessment",
+    note: "Contract award under competition 24-316: awarded 6 Jan 2025 to Klohn Crippen Berger Ltd. for $109,177; in 2025 Financial Performance Report No. 1, Attachment 1, Water Committee agenda of 9 Jul 2025, Item F1. Safety booms are the floating barriers on the reservoir, not the dam structures, so this is not a seismic reassessment",
     route: "direct",
   },
   "MV-CAMBIE-FS": {
@@ -2215,7 +2214,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2026,
     date: "data as at 31 May 2026; agenda 15 Jul 2026",
     href: "https://metrovancouver.org/boards/Water/WAT-2026-07-015-AGE.pdf",
-    note: "GVWD: Water Committee 15 Jul 2026, Item E4 Attachment 2; per-project Driver, Active Phase, Timeline and Project Estimate. Cleveland Dam MCE Seismic Upgrades: Not Started, 2028–2034, $25,000,000. Cleveland Dam Seismic Stability Evaluation: Design, 2024–2027, $1,200,000. Seymour Falls Dam Seismic Stability Assessment: Design, 2025–2032, $14,150,000. Alignment verified against the table's descending Project Estimate sort; columns to the right of Project Estimate are unreliable and must not be used",
+    note: "GVWD: Water Committee 15 Jul 2026, Item E4 Attachment 2; per-project Driver, Active Phase, Timeline and Project Estimate. Cleveland Dam MCE Seismic Upgrades: Not Started, 2028–2034, $25,000,000. Cleveland Dam Seismic Stability Evaluation: Design, 2024–2027, $1,200,000. Seymour Falls Dam Seismic Stability Assessment: Design, 2025–2032, $14,150,000",
     route: "direct",
   },
   "MV-CAPEX-2026-FEB": {
@@ -2226,7 +2225,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2026,
     date: "11 Feb 2026",
     href: "https://metrovancouver.org/boards/Water/WAT-2026-02-11-AGE.pdf",
-    note: "REJECTED: an extraction artefact, registered so that nobody re-derives from it. Water Committee 11 Feb 2026, Item E1 Attachment 1. Its name and data columns desynchronise under PDF extraction, and the figures that appear against Cleveland Dam in fact belong to Burnaby Mountain Tank No. 2 and No. 3 and Port Moody Main No. 3. No figure may be taken from it. For per-project dam figures use MV-CAPEX-2026",
+    note: "Water Committee 11 Feb 2026, Item E1 Attachment 1. An earlier edition of the same quarterly report. Nothing here is quoted from it; the dam figures come from the edition to 31 May 2026",
     route: "direct",
   },
   "MV-CAPITAL-2027": {
@@ -2237,7 +2236,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2026,
     date: "2026",
     href: "https://metrovancouver.org/boards/Water/WAT-2026-07-015-AGE.pdf",
-    note: "Water Committee 15 Jul 2026, Item E3 Attachment 1, pp. 28–29. Section totals $90.1M draft and $105.33M for 2027–2031. [A] on line-item names and section totals only: per-project figures must not be quoted from this table, whose column alignment does not survive extraction. Use MV-CAPEX-2026",
+    note: "Water Committee 15 Jul 2026, Item E3 Attachment 1, pp. 28–29. Section totals $90.1M draft and $105.33M for 2027–2031. The plan supports the names of the dam projects and the total for the section. It does not support a figure for any one project: those come from the capital expenditure report to 31 May 2026",
     route: "direct",
   },
   "MV-CDSEP": {
@@ -2259,7 +2258,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2018,
     date: "2018",
     href: "",
-    note: "Existence and scope confirmed; findings not published. A named FOI target. No link recovered: the document exists and is withheld rather than lost: Metro Vancouver has not published it, and it is known from the reference in MV-LWMP-BIENNIAL-19",
+    note: "Its existence and scope are confirmed; its findings are not published. No link recovered: the document is withheld rather than lost: Metro Vancouver has not published it, and it is known from the reference to it in the region's biennial liquid waste report",
     route: "direct",
   },
   "MV-CLEVELAND-UPDATES": {
@@ -2280,7 +2279,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Metro Vancouver",
     date: "undated",
     href: "https://metrovancouver.org/services/water/Documents/cleveland-dam-fact-sheet.pdf",
-    note: "The $3M 1992 upgrade and the $25M East Abutment upgrade of 2001–02, which is what it is now cited for. It also carries two owner's statements, [A] for their existence and nothing more: that the Regulation \"requires owners of major dams to ensure their dams withstand an extreme earthquake or flood\" (it does not; see BCDSR-40-2016), and that \"Metro Vancouver meets or exceeds these safety standards\". Review conclusions now come from the annual Dam Safety Program updates, MV-DSP-2021–MV-DSP-2026",
+    note: "The $3M 1992 upgrade and the $25M East Abutment upgrade of 2001–02. It also carries two statements by the dam's own owner, evidence that the statements were made and nothing more: that the Regulation \"requires owners of major dams to ensure their dams withstand an extreme earthquake or flood\", which the Regulation does not say, and that \"Metro Vancouver meets or exceeds these safety standards\". Review conclusions come instead from the Greater Vancouver Water District's annual dam safety updates",
     route: "direct",
   },
   "MV-DEBRIS-17": {
@@ -2297,12 +2296,12 @@ export const REFERENCES: Record<string, Reference> = {
   "MV-DSP-2021": {
     id: "MV-DSP-2021",
     kind: "report",
-    title: "GVWD Dam Safety Program Annual Update for 2020, report dated 21 May 2021, Water Committee 10 Jun 2021",
+    title: "GVWD Dam Safety Program Annual Update for 2020",
     publisher: "Metro Vancouver / GVWD",
     year: 2021,
     date: "21 May 2021",
     href: "https://metrovancouver.org/boards/Water/WAT_2021-June-10_AGE.pdf",
-    note: "The earliest update retrieved, and the source of the 2014/2016 DSR baseline",
+    note: "The earliest of these annual updates available, and the source of the 2014 and 2016 dam safety review baseline",
     route: "direct",
   },
   "MV-DSP-2022": {
@@ -2354,7 +2353,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2026,
     date: "18 Jun 2026",
     href: "https://metrovancouver.org/boards/Water/WAT-2026-07-015-AGE.pdf",
-    note: "Report dated 18 Jun 2026, in the Water Committee agenda of 15 Jul 2026. The load-bearing source of the dams file: it states the classification, the seven-year review duty, the DSR chronology and conclusions for both dams, the DEP and OMS dates, and the provincial audit status",
+    note: "Report dated 18 Jun 2026, in the Water Committee agenda of 15 Jul 2026. It states the classification of both dams, the seven-year review duty, the dam safety review chronology and conclusions for each, the emergency-plan and operating-manual dates, and the provincial audit status",
     route: "direct",
   },
   "MV-DWMP-26": {
@@ -2405,7 +2404,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2019,
     date: "2019",
     href: "https://metrovancouver.org/services/liquid-waste/Documents/lwmp-biennial-report-volume-1-2019.pdf",
-    note: "Vol. 1: Risk Management; Seismic Risk; references identifying MV-CH2M-18",
+    note: "Vol. 1: Risk Management; Seismic Risk; the references that identify the unpublished CH2M seismic risk action plan",
     route: "direct",
   },
   "MV-MGR-2021": {
@@ -2416,7 +2415,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2021,
     date: "14 Oct 2021",
     href: "https://metrovancouver.org/boards/water-committee",
-    note: "Corroborates WSP Canada Inc. as the consultant for the Regional Water Supply System Lifeline Study",
+    note: "Names WSP Canada Inc. as the consultant for the Regional Water Supply System Lifeline Study",
     route: "landing",
   },
   "MV-RESERVOIR-23": {
@@ -2437,7 +2436,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Metro Vancouver",
     date: "undated",
     href: "https://metrovancouver.org/services/water/Documents/seymour-falls-dam-fact-sheet.pdf",
-    note: "The $44M seismic upgrade of 2004–07, which is what it is now cited for. It carries the same two owner's statements as MV-CLEVELANDDAM-FS, on the Regulation's content and on compliance, and is [A] for their existence and nothing more. Review conclusions now come from the annual Dam Safety Program updates, MV-DSP-2021–MV-DSP-2026",
+    note: "The $44M seismic upgrade of 2004–07. It carries the same two statements by the dam's own owner as the Cleveland Dam fact sheet, on the Regulation's content and on compliance, and is evidence that they were made and nothing more. Review conclusions come instead from the Greater Vancouver Water District's annual dam safety updates",
     route: "direct",
   },
   "MV-SNT-NL-2025": {
@@ -2523,7 +2522,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://metrovanmicromap.ca/",
     note: "29 Phase 1 maps published 2024; Phase II (Pitt Meadows, Maple Ridge, Langley) to late 2026",
     route: "landing",
-    licence: "ICLR custom terms: link only; approval not sought, decided 10 Sep 2026",
+    licence: "ICLR custom terms: the maps may be linked to and not reproduced",
   },
   "MVSMMP-LIC": {
     id: "MVSMMP-LIC",
@@ -2545,7 +2544,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2008,
     date: "2008",
     href: "https://doi.org/10.2749/222137908796292579",
-    note: "The designers' own North Arm paper, held as a corroboration route. 403 to automated fetch and unread",
+    note: "The designers' own account of the North Arm crossing. Unread. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "NAB-ICCHGE-08": {
@@ -2556,7 +2555,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2008,
     date: "13 Aug 2008",
     href: "https://scholarsmine.mst.edu/icchge/6icchge/session_01/29",
-    note: "The North Arm Bridge's criteria, dimensions, ground conditions and foundations, and the Golden Ears 475/1,000/2,475-year levels. Replaces NAB-WIKI",
+    note: "The North Arm Bridge's criteria, dimensions, ground conditions and foundations, and the Golden Ears 475/1,000/2,475-year levels",
     route: "direct",
   },
   "NFPA-EVAC-22": {
@@ -2610,7 +2609,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2021,
     date: "23 Jun 2021",
     href: "https://www.earthquakescanada.nrcan.gc.ca/blog/index-en.php",
-    note: "Modelled warning for the 1946 M7.3 Vancouver Island earthquake: about 40 seconds for Vancouver, ~50 for Victoria, with a late alert zone extending ~30 km from the epicentre. Cite the archive capture; the blog has no permalinks",
+    note: "Modelled warning for the 1946 M7.3 Vancouver Island earthquake: about 40 seconds for Vancouver, ~50 for Victoria, with a late alert zone extending ~30 km from the epicentre. The blog gives an individual post no address of its own, so the entry is cited from an archived capture",
     route: "archive",
     licence: "OGL–Canada",
   },
@@ -2691,7 +2690,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://opendrr.github.io/earthquake-scenarios/en/",
     note: "The M9.0 Cascadia Interface Best Fault and M7.0 Georgia Strait runs, their ShakeMaps, damage and casualty indicators, and the catalogue's own exclusion wording",
     route: "direct",
-    licence: "OGL–Canada; requires the GSC-OF-8806 citation. Verify per dataset asset before download",
+    licence: "OGL–Canada; requires the Open File 8806 citation",
   },
   "NRCAN-WCAN": {
     id: "NRCAN-WCAN",
@@ -2710,9 +2709,9 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Ministry of Water, Land and Resource Stewardship",
     date: "queried 10 Sep 2026",
     href: "https://nrced.gov.bc.ca",
-    note: "A database searched with a null result, not a document. The keyword Cleveland returns zero records across all eleven public datasets. Registered as the channel through which that absence was established, and cited for the absence only",
+    note: "A database, not a document. A search for Cleveland returns zero records across all eleven public datasets, which is the absence it is cited for",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "NSEM-KIT": {
     id: "NSEM-KIT",
@@ -2886,7 +2885,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/plans/peirs.pdf",
     note: "Rev. 1.1, 135 pp: the crustal M7.0 Greater Vancouver planning scenario, its impacts, the planning assumptions, the formal mutual-aid instruments, and the two-weeks-versus-72-hours pair on p. 42",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "PHMS-ANNEX": {
     id: "PHMS-ANNEX",
@@ -2896,9 +2895,9 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2012,
     date: "16 Oct 2012",
     href: "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/provincial-emergency-planning/public-health-and-medical-services-annex.pdf",
-    note: "A support annex to the CEMP: 51 pp., an image-only scan with no text layer (175 images, no font objects), created 16 Oct 2012, with no alternate version in the Internet Archive. File properties verified; the content is unread pending OCR",
+    note: "A support annex to the CEMP: 51 pp., an image-only scan with no text layer, created 16 Oct 2012, with no alternate version in the Internet Archive. Nothing in it can be searched or quoted as it stands",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "PITTMDW-DRR": {
     id: "PITTMDW-DRR",
@@ -2919,7 +2918,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2017,
     date: "2017",
     href: "https://doi.org/10.2749/222137817822208681",
-    note: "Paywalled, 403 to automated fetch, unread",
+    note: "Paywalled and unread",
     route: "direct",
   },
   "PM-SEI-17": {
@@ -2930,7 +2929,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2017,
     date: "2017",
     href: "https://doi.org/10.2749/101686617X14676303588832",
-    note: "The best remaining route to the Port Mann design criteria. Paywalled, 403 to automated fetch, unread",
+    note: "The best remaining route to the Port Mann design criteria. Paywalled and unread",
     route: "direct",
   },
   "PREPAREDBC": {
@@ -2954,7 +2953,7 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://blog.gov.bc.ca/emergencymanagement/get-prepared-for-emergencies-on-a-budget/",
     note: "Dollar stores, thrift stores, building the kit over time. Answers money and does not answer storage",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "PREPAREDBC-EQ": {
     id: "PREPAREDBC-EQ",
@@ -2984,7 +2983,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2011,
     date: "17 Mar 2011",
     href: "https://theprogress.com/2011/03/17/what-will-be-left-standing-when-the-shaking-stops/",
-    note: "A ministry list of retrofitted structures. Its Massey Tunnel claim is contradicted by GMC-TUNNEL-19; do not use that item",
+    note: "A ministry list of retrofitted structures. Its claim about the Massey Tunnel is contradicted by the tunnel's own 2019 engineering assessment",
     route: "media",
   },
   "QB-MOTH-95": {
@@ -2995,7 +2994,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 1995,
     date: "Sep 1995",
     href: "",
-    note: "150 mm differential displacement between bents S3 and S8 after soil remediation; collapse without it. No link recovered: the report was read from an archive.org copy of the gov.bc.ca contracting PDF; the live path was not captured",
+    note: "150 mm differential displacement between bents S3 and S8 after soil remediation; collapse without it. No link recovered: no copy is posted by the Ministry; the report survives as an Internet Archive capture of a gov.bc.ca contracting page",
     route: "direct",
   },
   "RAIL-ECSMGE-19": {
@@ -3028,7 +3027,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2019,
     date: "10 May 2019",
     href: "https://iaac-aeic.gc.ca/050/documents/p80054/129656E.pdf",
-    note: "A CV records seismic and liquefaction assessment work on the Deltaport Berth 3 Expansion. [B]: adequate evidence the work exists, weak evidence of its content, and it is not published",
+    note: "A CV records seismic and liquefaction assessment work on the Deltaport Berth 3 Expansion. Evidence that the work was done, not evidence of what it found: the assessment itself is not published",
     route: "direct",
     licence: "OGL–Canada",
   },
@@ -3040,7 +3039,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2015,
     date: "27 Mar 2015",
     href: "https://iaac-aeic.gc.ca/050/evaluations/proj/80054",
-    note: "[A] for the document; its geotechnical and seismic section was not recovered",
+    note: "The statement itself is on the registry; its geotechnical and seismic section was not recovered",
     route: "direct",
   },
   "RBT2-IR2-17": {
@@ -3075,7 +3074,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2020,
     date: "27 Mar 2020",
     href: "https://iaac-aeic.gc.ca/050/documents/p80054/134506E.pdf",
-    note: "Pp. 131–134: shaking damage to \"buildings, cranes, wharves and the causeway overpass\"; deltaic soils vulnerable to liquefaction; loss of main road access to the terminal as the catastrophic case. Records the wharf criterion as 1 in 1,000, disagreeing with NRCan's 475",
+    note: "Pp. 131–134: shaking damage to \"buildings, cranes, wharves and the causeway overpass\"; deltaic soils vulnerable to liquefaction; loss of main road access to the terminal as the worst case the panel identifies. It records the wharf criterion as 1 in 1,000, disagreeing with NRCan's 475",
     route: "direct",
     licence: "OGL–Canada",
   },
@@ -3206,7 +3205,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2005,
     date: "Jan 2005",
     href: "https://web.archive.org/web/20180413055438id_/http://forms2.rms.com/rs/729-DJX-565/images/eq_1995_kobe_eq.pdf",
-    note: "Recovered in full from an Internet Archive capture; the RMS/Moody's copy 404s. It does not contain the port-ranking figures the site had attributed to it",
+    note: "Read from an Internet Archive capture, the publisher's own copy having gone. It contains no port-ranking figures",
     route: "archive",
   },
   "S2S-BLAIS-08": {
@@ -3217,7 +3216,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2008,
     date: "2008",
     href: "https://cgs.ca/docs/geohazards/GeoHazards4/geohazard/evaluation/blais.pdf",
-    note: "154 events 1855–2007; grep-verified to contain no mention of \"earthquake\" or \"seismic\"",
+    note: "154 events 1855–2007. The paper mentions neither \"earthquake\" nor \"seismic\" anywhere in its text, so it records no earthquake-triggered landslide on the corridor",
     route: "direct",
   },
   "S2S-BRAYSHAW-12": {
@@ -3241,17 +3240,16 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://projects.eao.gov.bc.ca/api/public/document/5887121beed3c0016f857139/fetch",
     note: "Geoscience. §5.3 covers earthquakes as structural design only (1-in-475-year post-seismic serviceability); §5.4 attributes rock-fall risk to blasting, relaxation and \"ice and root action\", with no seismic trigger",
     route: "direct",
-    licence: "All rights reserved (Province of BC); see BC-COPYRIGHT",
+    licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
   "SCAWTHORN-2020": {
     id: "SCAWTHORN-2020",
     kind: "report",
-    title: "Scawthorn, C., Fire following earthquake in the Vancouver region, ICLR Research Paper Series 67, 74 pp.; ISBN 978-1-927929-29-2",
+    title: "Scawthorn, C., Fire following earthquake in the Vancouver region, ICLR Research Paper Series 67, 74 pp.; ISBN 978-1-927929-29-2. The report gives the Cascadia fire loss as $162 million",
     publisher: "Institute for Catastrophic Loss Reduction / SPA Risk LLC",
     year: 2020,
     date: "Nov 2020",
     href: "https://www.iclr.org/wp-content/uploads/2025/10/Vancouver-fire-following-earthquake-E.pdf",
-    note: "Replaces ICLR-FIRE, and corrects it: the report gives the Cascadia fire loss as $162 million, not the $170M the retired key carried",
     route: "direct",
     licence: "Permissive but non-standard, and not an open licence: \"This material may be copied for purposes related to the document as long as the authors and copyright holders are recognized.\"",
   },
@@ -3264,7 +3262,7 @@ export const REFERENCES: Record<string, Reference> = {
     date: "Nov 2020",
     href: "https://www.iclr.org/wp-content/uploads/2025/10/Vancouver-Executive-summary2.pdf",
     route: "direct",
-    licence: "As SCAWTHORN-2020",
+    licence: "As the full report",
   },
   "SEA-URM": {
     id: "SEA-URM",
@@ -3285,7 +3283,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2023,
     date: "print 1 Apr 2023 (2022 indexes give the online-first date; the print year is the one to cite)",
     href: "https://doi.org/10.1139/cgj-2022-0093",
-    note: "Ground failures \"severing land connectivity between Metro Vancouver and the rest of Canada\". November 2021 rainfall event, not an earthquake. The host returns 403 to an automated fetch; open it in a browser",
+    note: "Ground failures \"severing land connectivity between Metro Vancouver and the rest of Canada\". November 2021 rainfall event, not an earthquake. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "SMP-PROGRESS": {
@@ -3296,7 +3294,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2026,
     date: "May 2026",
     href: "https://www2.gov.bc.ca/assets/gov/education/administration/resource-management/capital-planning/seismic-mitigation/smp_progress_report.pdf",
-    note: "May 2026 edition. The URL is overwritten in place, so the edition must be cited and any refresh must record which edition it read",
+    note: "May 2026 edition. The Ministry overwrites the file in place at the same address, so the edition has to be named: a later visit to the link will not show the same report",
     route: "direct",
   },
   "SMSB-2014-LIST": {
@@ -3318,7 +3316,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2018,
     date: "2018",
     href: "https://handbook.spherestandards.org/en/sphere/#ch006_003",
-    note: "15 L, 7.5 L \"in the acute phase of a drought\", 50 L in an urban middle-income context. The host returns 403 to an automated fetch; open it in a browser",
+    note: "15 L, 7.5 L \"in the acute phase of a drought\", 50 L in an urban middle-income context. The site refuses a request that does not come from a browser, so the link has to be opened by hand",
     route: "direct",
   },
   "SPHERE-REV-26": {
@@ -3329,7 +3327,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2026,
     date: "Mar 2026",
     href: "https://spherestandards.org/handbook-revision-2026-2028/",
-    note: "The revision cycle opened March 2026, targeting a new edition by 2028. Refresh trigger only",
+    note: "The revision cycle opened March 2026, targeting a new edition by 2028",
     route: "landing",
   },
   "STATCAN-2021": {
@@ -3361,18 +3359,18 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2018,
     date: "2018",
     href: "https://doi.org/10.1061/9780784481455.014",
-    note: "Paywalled, 403 to automated fetch, unread: a lead only, on stabilising toe berms in the Fraser delta",
+    note: "Paywalled and unread: a lead only, on stabilising toe berms in the Fraser delta",
     route: "direct",
   },
   "TC-DCRRA-25": {
     id: "TC-DCRRA-25",
     kind: "report",
-    title: "Labbé, S., the BIV-DCRRA-25 article reprinted",
+    title: "Labbé, S., the Business in Vancouver article reprinted",
     publisher: "Times Colonist / Glacier Media",
     year: 2025,
     date: "29 Dec 2025",
     href: "https://www.timescolonist.com/local-news/major-earthquake-would-cost-bc-more-than-all-disasters-over-past-200-years-finds-report-11671946",
-    note: "Carries no link to the underlying study; prefer the BIV original",
+    note: "It carries no link to the underlying study",
     route: "media",
   },
   "UBC-FUEL": {
@@ -3394,7 +3392,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "2025",
     href: "",
-    note: "Provincial and regional-scale analysis, not community or property-level decisions. An association, not government. No link recovered: www.ubcm.ca was reached and the specific item was not located",
+    note: "Provincial and regional-scale analysis, not community or property-level decisions. An association, not government. No link recovered: the association's site is reachable and this item could not be found on it",
     route: "landing",
   },
   "USGS-2015EQ": {
@@ -3436,7 +3434,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2019,
     date: "22 Oct 2019",
     href: "https://www.portvancouver.com/sites/default/files/wp-permits/wpid-35033/2019-12-19-Seismic-Considerations-Memo.pdf",
-    note: "Westmar Advisors Inc. for Seaspan ULC: \"extensive liquefaction … to depths of 30 m below seabed\" and \"lateral movements in excess of several meters\" at the 475- and 2,475-year events; most existing facilities at the site \"likely not designed to withstand kinematic loads and soil flow loads\", which the memo attributes to discussions with the owner. Cite the letterhead date, not the filename",
+    note: "Westmar Advisors Inc. for Seaspan ULC: \"extensive liquefaction … to depths of 30 m below seabed\" and \"lateral movements in excess of several meters\" at the 475- and 2,475-year events; most existing facilities at the site \"likely not designed to withstand kinematic loads and soil flow loads\", which the memo attributes to discussions with the owner",
     route: "direct",
   },
   "VFRS-ESCAPE-25": {
@@ -3490,7 +3488,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "survey Q2 2025; reporting 2 Jan 2026",
     href: "https://www.powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis/",
-    note: "The 128-week power transformer and 144-week GSU figures, reported by Patel, S.C., \"Transformers in 2026: shortage, scramble, or self-inflicted crisis?\", POWER Magazine, 2 Jan 2026. The survey itself is commercial and not public, and no DOE or CISA route to these figures exists; see the retired DOE-LPT. US figures; caveat explicitly or drop them",
+    note: "The 128-week power transformer and 144-week GSU figures, reported by Patel, S.C., \"Transformers in 2026: shortage, scramble, or self-inflicted crisis?\", POWER Magazine, 2 Jan 2026. The survey itself is commercial and not published, and no government publication carries these figures. They describe the United States market and not Canada",
     route: "media",
   },
   "WYLLIE-NORRISH": {
@@ -3500,7 +3498,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "consultant report, named in [S2S-EA-GEO-03]",
     date: "undated",
     href: "",
-    note: "Wyllie and Norrish; adopted with MoT Technical Bulletin GM02001 as the Sea-to-Sky project's rock-cut design standard. Named in the environmental assessment and unretrieved. A consultant report with no publisher, no DOI and no public copy. No link recovered: searched in the September 2026 pass and not found; the report is known only from its citation in S2S-EA-GEO-03",
+    note: "Wyllie and Norrish; adopted with MoT Technical Bulletin GM02001 as the Sea-to-Sky project's rock-cut design standard. Named in the environmental assessment and unretrieved. A consultant report with no publisher, no DOI and no public copy. No link recovered: no public copy has been found; the report is known only from its citation in the Sea-to-Sky environmental assessment",
     route: "direct",
   },
   "XONA-2023": {
@@ -3521,7 +3519,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Vancouver Airport Authority",
     date: "undated",
     href: "https://news.yvr.ca/sea-island-climate-resilience-project/",
-    note: "Confirms the 15 km dike and 4.7 m height only. Eight pump stations unconfirmed; ~$25M conflicts with a ~$12M figure found",
+    note: "Confirms the 15 km dike and 4.7 m height only. Eight pump stations unconfirmed; the ~$25M conflicts with a ~$12M figure published elsewhere",
     route: "landing",
   },
   "ZAMA-12": {
@@ -3537,12 +3535,12 @@ export const REFERENCES: Record<string, Reference> = {
   "ZHANG-UBC-15": {
     id: "ZHANG-UBC-15",
     kind: "report",
-    title: "Zhang, Q., Performance based design and evaluation of reinforced concrete bridges, M.A.Sc. thesis; DOI 10.14288/1.0220843. Read in full",
+    title: "Zhang, Q., Performance based design and evaluation of reinforced concrete bridges, M.A.Sc. thesis; DOI 10.14288/1.0220843",
     publisher: "University of British Columbia",
     year: 2015,
     date: "2015",
     href: "https://doi.org/10.14288/1.0220843",
-    note: "Not a Port Mann source: it restates a lower design level from a paper it cites, and systems/transportation.md records why the site does not use it",
+    note: "Not a Port Mann source: it restates a lower design level from a paper it cites, so no Port Mann figure here comes from it",
     route: "direct",
   },
   "page-method": {

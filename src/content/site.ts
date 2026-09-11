@@ -161,6 +161,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["electricity"],
+    lever: {
+      items: [
+        "Text rather than call. A short message gets through congestion that defeats a voice call, and it keeps trying in the background while you do something else.",
+        "Do not call 9-1-1 to ask what happened or whether it was an earthquake. A call that is not an emergency holds a line somebody else needs.",
+      ],
+    },
     impacts: bothScenarios(
       ["medium", "medium"],
       "No Canadian rule sets how long a cell tower must keep running once the power goes, and the regulator opened a proceeding in September 2025 to decide what that requirement should be.",
@@ -201,6 +207,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "electricity"],
+    lever: {
+      items: [
+        "Settle now how the household would contain human waste with no water to flush, and keep what that takes beside the rest of your supplies. A pail with a tight lid, heavy bags, and something dry to cover each use is the whole of it.",
+        "Do not plan to flush with stored water. Water put by for drinking and washing does not stretch to the toilet as well, and a household that has not thought about this before the water stops has to think about it afterwards.",
+      ],
+    },
     impacts: bothScenarios(
       ["high", "high"],
       "The province expects disruption to water and wastewater systems for many months; Metro Vancouver has built individual treatment plants to a post-disaster standard, which is not the same as making the network that feeds them survive.",
@@ -217,6 +229,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["transportation", "fuel"],
+    lever: {
+      items: [
+        "Leave the gas on unless fire or emergency officials tell you to turn it off. That is FortisBC's own instruction to its customers, and it runs against what most people assume.",
+        "Know what shutting it off costs before you do it. Once the gas is off at the meter, only a registered gas contractor may turn it back on, and that visit is the scarce thing.",
+      ],
+    },
     impacts: bothScenarios(
       ["high", "high"],
       "Gas cannot be restored in bulk: any air drawn into the pipes has to be purged first, and then service returns only as a technician enters each affected building and relights every appliance in it.",
@@ -245,6 +263,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "weeks",
     tier: 3,
     dependsOn: ["transportation", "electricity"],
+    lever: {
+      items: [
+        "Do not build a plan around flying out, sailing out, or someone arriving that way to help in the first days. Goods and people reach this region through a small number of very large places, and there is no local substitute for any of them.",
+        "Plan household supplies for a stretch when nothing is arriving, rather than for a stretch when the shops are busy.",
+      ],
+    },
     impacts: {
       cascadia: {
         band: "medium",
@@ -267,6 +291,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "days",
     tier: 2,
     dependsOn: ["transportation", "electricity", "large-infrastructure"],
+    lever: {
+      items: [
+        "Keep the tank above half. The fuel already in the car is the fuel you can count on, and the half tank costs nothing to carry.",
+        "Work out now which of the places you would need to reach are within walking or cycling distance, and keep a bicycle in working order if you have one. Do not store fuel at home: it is a fire risk, and this is one problem a household cannot stockpile its way out of.",
+      ],
+    },
     impacts: bothScenarios(
       ["high", "high"],
       "Fuel is the resource the repair of every other system runs on, and the province expects supply chains to be inoperable.",
@@ -281,6 +311,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "days",
     tier: 2,
     dependsOn: ["transportation", "fuel", "large-infrastructure"],
+    lever: {
+      items: [
+        "Stock food that keeps without refrigeration and can be eaten without cooking. Fresh meat, produce, dairy and bread are the part of the shop no household can hold, so the pantry has to be built out of the part that can.",
+        "Store the things in a grocery shop that are not food: soap, cleaning products, toilet paper. They travel in the same trucks, they keep indefinitely, and almost nobody puts them by.",
+      ],
+    },
     impacts: bothScenarios(
       ["high", "high"],
       "The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them.",
@@ -297,6 +333,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "hours",
     tier: 3,
     dependsOn: [],
+    lever: {
+      items: [
+        "Find out whether you live, work or send a child to school below one of these dams. The area a failure would flood has been mapped, because the dam's classification depends on it, and it sits in the dam emergency plan.",
+        "Ask for the map. It is not published, and municipalities hold part of the plan, so the way to see it is to ask your municipality or Metro Vancouver for it.",
+      ],
+    },
     impacts: bothScenarios(
       ["unknown", "unknown"],
       "Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes, and the seismic upgrade has not started.",
@@ -310,6 +352,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "sanitation", "electricity"],
+    lever: {
+      items: [
+        "Find out when your building was put up, what it is built of, and what ground it stands on. Your landlord, your strata or your municipality can tell you, and it is the part of your own risk you can still learn before anything happens.",
+        "Agree now with someone outside the region that you could stay with them for months, and agree it out loud rather than assuming it. An arrangement you have actually made is worth more than a shelter place nobody has promised you.",
+      ],
+    },
     impacts: bothScenarios(
       ["high", "high"],
       "The City of Vancouver states that areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.",
@@ -323,6 +371,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["fuel", "electricity", "water"],
+    lever: {
+      items: [
+        "Agree now where the household meets and who everyone checks in with, and make the check-in person someone outside the region. A household that can find each other is a household that does not go to a hospital to look.",
+        "Sort out the medicines and equipment that cannot lapse. A pharmacist or clinician can tell you what a longer supply, or a plan for a device that runs on mains power, would look like for you.",
+      ],
+    },
     impacts: bothScenarios(
       ["medium", "medium"],
       "A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no published document sets the expected casualty load against the region's bed capacity.",
@@ -336,6 +390,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "days",
     tier: 3,
     dependsOn: ["transportation", "large-infrastructure"],
+    lever: {
+      items: [
+        "Find out now which people on your street would need help first: anyone who lives alone, anyone who could not get themselves out of a building, anyone whose medicine matters every day.",
+        "Agree with your neighbours, before anything happens, who would check on whom. The province's plan is that a community holds on until outside help reaches it, so who knocks on which door is worth settling in advance.",
+      ],
+    },
     impacts: {
       cascadia: {
         band: "high",
@@ -362,7 +422,27 @@ export const systemBySlug = (slug: string) =>
 /* Part 1 — the shaking                                                */
 /* ------------------------------------------------------------------ */
 
-export const SHAKING_PAGES = [
+/**
+ * Part 1. `references` is the register key of every document gathered for a
+ * subject whose page is not written, and the route lists them at the foot of
+ * the page the way a system page lists the documents behind its band.
+ *
+ * A stub that showed nothing was the defect this field closes: the site told
+ * readers each of these pages carried what had been gathered for it, and four
+ * of them carried a single sentence. The keys below are the sources their
+ * research files in `docs/research/` actually rest on, and several of them are
+ * already cited on `/scenarios/` and `/shaking/ground/`, which is why the
+ * casualty stub was the sharpest case: the table was published two clicks away
+ * and the page that is about it pointed at nothing.
+ *
+ * `ground` carries none, because its page module declares its own.
+ */
+export const SHAKING_PAGES: {
+  slug: string;
+  name: string;
+  hook: string;
+  references?: string[];
+}[] = [
   {
     slug: "ground",
     name: "Ground conditions",
@@ -375,21 +455,47 @@ export const SHAKING_PAGES = [
     slug: "buildings",
     name: "Buildings",
     hook: "Structural performance by era and type, and non-structural failure: glazing, cladding and parapets.",
+    references: [
+      "COV-RISK-2024",
+      "GSC-OF-8853",
+      "DCRRA-2025",
+      "COV-URM-2000",
+      "VBBL-2025",
+    ],
   },
   {
     slug: "casualties",
     name: "Casualties",
     hook: "The published casualty ranges for the two scenarios, and what drives the range.",
+    references: ["PEIRS", "GSC-OF-8853", "DCRRA-2025", "COV-RISK-2024"],
   },
   {
     slug: "fire-following",
     name: "Fire following",
     hook: "Fire after the shaking, and the Dedicated Fire Protection System: what it covers and what it does not.",
+    references: [
+      "SCAWTHORN-2020",
+      "COV-PREPARES",
+      "COV-DFPS-2001",
+      "COV-DFPS-DATA",
+    ],
   },
   {
     slug: "secondary-hazards",
     name: "Secondary hazards",
     hook: "Landslides, dikes and dams, where the damage arrives after the shaking stops.",
+    references: [
+      "PEIRS",
+      "DCRRA-2025",
+      "CJES-2024",
+      "RICH-EQ",
+      "RICH-THURBER-16",
+      "RICH-DMP3-19",
+      "RICH-DMP4-21",
+      "RICH-DMP5-19",
+      "MV-DSP-2026",
+      "BOWEN-TSU-19",
+    ],
   },
 ];
 

@@ -7,6 +7,12 @@ import {
   ScenarioBuildingResponse,
   ScenarioDurations,
 } from "@/components/figures/scenarios";
+import {
+  SHAKEMAP_CAVEATS,
+  SHAKEMAP_FACTS,
+  SHAKEMAP_SOURCE,
+  ScenarioShakeMaps,
+} from "@/components/figures/shakemap";
 import type { PageModule } from "./index";
 
 /**
@@ -112,6 +118,46 @@ export const scenarios: PageModule = {
             currently included”. <Cite id="NRCAN-SCEN" /> That exclusion governs
             almost every number below.
           </p>
+          <Figure
+            alt={`In the catalogue's own modelling, the nearer Georgia Strait magnitude 7.0 shakes the Lower Mainland far harder than the Cascadia magnitude 9.0 does: the strongest cell reaches about ${SHAKEMAP_FACTS.georgiaPeak} per cent of gravity against about ${SHAKEMAP_FACTS.cascadiaPeak}. Peak acceleration is not the whole of what either earthquake does, and this modelling covers shaking damage to buildings and the people in them and nothing else.`}
+            caption={
+              <>
+                The catalogue’s two scenario ShakeMaps for the same window of
+                the Lower Mainland, stacked so that a position in one is the
+                same position in the other. <Cite id="NRCAN-SCEN" /> Every mark
+                is one cell of about 730 m by 665 m, holding the mean of the
+                model sites inside it. The area of a mark is the acceleration
+                and the ink is the weight of evidence behind it:{" "}
+                {SHAKEMAP_FACTS.sites} model sites stand behind{" "}
+                {SHAKEMAP_FACTS.cells} cells, and{" "}
+                {SHAKEMAP_FACTS.singleSiteCells} of those cells rest on a single
+                site. The marks are drawn apart rather than joined because the
+                catalogue models sites, not a surface. Peak ground acceleration
+                is the measure both runs publish. The catalogue converts it to
+                Modified Mercalli intensity for the Georgia Strait run and not
+                for Cascadia, and deriving the missing one needs a conversion
+                equation this site has not chosen, so neither map is drawn on
+                it. Two limits the catalogue states travel with every mark.{" "}
+                {SHAKEMAP_CAVEATS.resolution} {SHAKEMAP_CAVEATS.scope} The
+                modelling is the Geological Survey of Canada’s. Only the drawing
+                is this site’s.
+              </>
+            }
+            licence={
+              <>
+                {SHAKEMAP_SOURCE.attribution}{" "}
+                <a
+                  href={SHAKEMAP_SOURCE.licenceUrl}
+                  className="text-accent underline underline-offset-2"
+                >
+                  Read the licence
+                </a>
+                .
+              </>
+            }
+          >
+            <ScenarioShakeMaps />
+          </Figure>
         </Prose>
       ),
     },

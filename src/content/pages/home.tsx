@@ -38,7 +38,7 @@ export const home: PageModule = {
     nav: "Home",
     kicker: "Lower Mainland, British Columbia",
     standfirst:
-      "A major earthquake in Metro Vancouver means minutes of shaking, and months of waiting for water, power and transport to come back. Every figure here comes from a published document, and every document is listed.",
+      "A major earthquake in Metro Vancouver means minutes of shaking. The province expects many months of disruption to water and wastewater afterwards, and transportation routes at much-reduced capacity for weeks to months. BC Hydro expects several weeks without power for up to two thirds of downtown customers. Every figure here comes from a published document, and every document is listed.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.

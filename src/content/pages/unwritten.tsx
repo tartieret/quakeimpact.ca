@@ -10,6 +10,11 @@ import type { PageSection } from "./index";
  * the same path as a written one: a real `<h2>`, in the heading order, in the
  * contents rail. The reader can see from the rail that the page says only this.
  *
+ * It does not carry the action. The useful action is different for every
+ * system, so it lives on the `SystemEntry` and renders through `Lever` like any
+ * other page's, which is also how it reaches the contents rail. This text says
+ * that it is there; it does not write it.
+ *
  * The copy file also holds a shaking-page variant, below, for the four pages
  * under `/shaking/` that are in the same state. Pages in Part 1 carry no band,
  * so that variant names what is actually on the screen instead.
@@ -31,9 +36,14 @@ export const UNWRITTEN_SYSTEM: PageSection = {
         </p>
         <p>
           What is missing is the rest: how the failure works, where in the
-          region it falls hardest, what has and has not been published about
-          restoring it, and what a household can do about it. None of that is
-          here yet, and nothing has been written in its place.
+          region it falls hardest, and what has and has not been published about
+          restoring it. None of that is here yet, and nothing has been written
+          in its place.
+        </p>
+        <p>
+          One thing you can do about this system is at the foot of the page. It
+          is the short version, and it is there because a band and a source with
+          nothing to act on are no use to anybody.
         </p>
         <p>
           <Link href="/method/" className={linkClass}>
@@ -64,10 +74,11 @@ export const UNWRITTEN_SYSTEM: PageSection = {
 
 /**
  * The same standing text for a page under `/shaking/`. A Part 1 page carries a
- * summary line, no band and no reference ids of its own, so the route lists no
- * sources for it. This variant therefore points at the line at the top of the
- * page and promises no document list, and sends the reader to the one page in
- * the part that is written.
+ * summary line and no band, so this variant points at that line rather than at
+ * a cell. It now also points at the document list, because `SHAKING_PAGES`
+ * carries the reference ids gathered for each subject and the route lists them:
+ * an earlier version of this text promised no sources precisely because there
+ * were none on the screen.
  */
 export const UNWRITTEN_SHAKING: PageSection = {
   title: "This page is not written yet",
@@ -76,7 +87,8 @@ export const UNWRITTEN_SHAKING: PageSection = {
       <Prose>
         <p>
           The line at the top of this page is real: it says what this subject
-          covers, and nothing more.
+          covers. The documents listed at the foot of the page are the ones
+          gathered for it so far, and they can be read and checked today.
         </p>
         <p>
           What is missing is the page itself: what the documents say, where they

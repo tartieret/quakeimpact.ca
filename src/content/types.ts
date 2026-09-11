@@ -50,11 +50,34 @@ export interface Impact {
   evidence?: string;
 }
 
+/**
+ * The action a system carries in its own right, independent of whether the
+ * page around it has been written.
+ *
+ * It belongs to the system rather than to the standing unwritten text, because
+ * the useful action is different for every system: a toilet with no water and a
+ * gas meter that only a contractor may reopen call for different things. Plain
+ * strings rather than nodes, because this file's content ships from a `.ts`
+ * module and an action stated here cites nothing: it is practical advice, and
+ * the site's convention is that such a line carries no marker.
+ */
+export interface StandingLever {
+  /** One or two actions, each a plain sentence. */
+  items: string[];
+}
+
 export interface SystemEntry {
   slug: string;
   name: string;
   /** The "what people underestimate" line. */
   hook: string;
+  /**
+   * What a reader can do about this system. Carried here so that a page whose
+   * body is not written still ends with a lever: severity without efficacy is
+   * the failure mode the style guide names, and these are the pages a search
+   * engine lands someone on. A written page overrides it with its own.
+   */
+  lever?: StandingLever;
   /** Where in the timeline this system is felt worst. */
   bitesAt: Phase;
   impacts: Record<ScenarioId, Impact>;

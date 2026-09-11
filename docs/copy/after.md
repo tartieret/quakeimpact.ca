@@ -30,8 +30,9 @@ the hardest places in the system to reach. [MV-WATER-22] Reaching them is a road
 problem before it is a plumbing problem.
 
 Every page in this part carries what its system waits on. The
-[dependency graph](/dependencies/) gathers those into one picture, and it is not
-drawn yet.
+[dependency graph](/dependencies/) counts those connections rather than joining them
+with lines: 6 of the 26 have a published document behind them, and the rest are links
+no assessment has established.
 
 ## The timeline runs hours, days, weeks, months, and systems enter it at different points
 

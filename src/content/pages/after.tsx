@@ -79,7 +79,9 @@ export const after: PageModule = {
             >
               dependency graph
             </Link>{" "}
-            gathers those into one picture, and it is not drawn yet.
+            counts those connections rather than joining them with lines: 6 of
+            the 26 have a published document behind them, and the rest are links
+            no assessment has established.
           </p>
         </Prose>
       ),

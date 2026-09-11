@@ -11,6 +11,56 @@ it was confirmed.
 
 ---
 
+## The register's notes are read by neighbours, and they had drifted to colleagues
+
+**11 September 2026.** The Source cell's note is rendered twice: in the citation popover
+on every page that cites the key, and again on `/sources/`. Nothing in the register said
+so loudly enough, so the notes accumulated exactly the defect `style-guide.md` §4
+predicts. Live on the site, before this pass: "[A] on line-item names and section totals
+only … whose column alignment does not survive extraction. Use MV-CAPEX-2026",
+"Replaces NAB-WIKI", "grep-verified to contain no mention of 'earthquake'", "cite that".
+Seventy-six rows carried something written to a colleague.
+
+- **Translating a note is not deleting it.** "Per-project figures must not be quoted
+  from this table, whose column alignment does not survive extraction" is a real finding
+  about what the document supports. The reader-facing half is "the plan supports the
+  names of the projects and the total for the section, not a figure for any one
+  project"; the half about our PDF tooling is not a fact about the world.
+- **The register now has a place for the other half.** An HTML comment inside a cell,
+  `<!-- research: … -->`, is stripped by `scripts/build-references.mjs` in `cells()` and
+  never reaches `references.ts`. Confidence markers, superseded keys, document-host ids
+  and "highest-priority document to obtain" live there, one line from the row they
+  belong to and still greppable. A comment may not contain a pipe. This was preferred to
+  a new column, which would have meant editing 325 rows and changing `Reference` in
+  `src/content/types.ts`, and to deleting the material, which would have lost it.
+- **Two generated strings are copy too, and nobody had read them as copy.**
+  `accessNotes()` synthesises a sentence for a paywalled, refused or unrecovered link.
+  It said "The host returns 403 to an automated fetch; open it in a browser", which is
+  our tooling talking; it now says the site refuses a request that does not come from a
+  browser. It also lowercases the first letter of the URL cell to graft it onto "No link
+  recovered:", so a URL cell that opens with a proper name renders as "bC Hydro's".
+  Start those cells with an ordinary word.
+- **A citation key is invisible in a popover.** A note that says "superseded by
+  `COV-RISK-2024`" is resolvable on `/sources/`, where the code is on screen, and is
+  noise in a popover that shows one document. Cross-references in a note now name the
+  document in words; the key goes in the research comment.
+
+## `/sources/` was ordered by the one thing a reader does not know
+
+**11 September 2026.** The page listed 325 entries in a single alphabet, each led by its
+internal key, with a jump list of 26 letters. A reader looking for the BC Hydro filing
+had to know it was filed under B. The fix needed no JavaScript: the list is grouped by
+the register's own Organisation cell, the document title leads each entry, and the code
+moved to the end where it is still the anchor and still copyable. The jump list is now
+the 19 organisations holding three or more documents, which is a table of contents
+rather than an alphabet.
+
+A filter box was considered and not built. It would have been the only client component
+on the page that proves the site's sourcing, and the page has to render with JavaScript
+off; grouping by publisher answers the same question statically. Grouping into publisher
+*families* was also rejected: 176 distinct organisations would need a classifier, and a
+classifier silently misfiles the next row someone adds. A group of one is honest.
+
 ## Open data licences are a field on the record, and the APIs will tell you
 
 **11 September 2026.** Acquiring the three map datasets the site is allowed to draw, the
@@ -876,3 +926,69 @@ by an opaque `doc_NNNNN` id whose filename must match exactly, so a path that wa
 captured at the time cannot be reconstructed; and probing for one trips the WAF within a
 few requests. The BCUC's own exhibit lists are the way back in — they name which exhibit
 an appendix belongs to, which is worth recording even when the file itself is not.
+
+## The QA pass is a script, and lives in `scripts/qa/`
+
+**11 September 2026.** Ten pages built by ten agents each verified only themselves,
+and nothing had been looked at across the whole site, at phone width or in dark mode.
+`scripts/qa/` is that pass, written so it can be rerun rather than redone:
+
+- `serve.mjs` serves `out/` the way a host does. A `file://` run is not equivalent:
+  the export writes `about/index.html` and every internal link carries a trailing
+  slash, so `file://` resolves neither, and Next's segment prefetches 404 differently.
+- `checks.mjs` is injected before each page loads and measures; `audit.mjs` drives
+  30 routes at 390 px and 1280 px in both themes and decides what counts as a defect.
+  Measurement and threshold are kept apart so a rerun after a fix is comparable.
+- `interaction.mjs` covers what a snapshot cannot: tab order, focus rings, the
+  citation popover, and the scenario flash. `copy.mjs` runs the style guide's
+  sentence rules over rendered text. `shoot.mjs` writes screenshots.
+
+Two traps worth keeping. Git Bash rewrites a leading slash in an argument into a
+Windows path, so a route reaches these scripts by environment variable, never on the
+command line. And a mark's ground inside an SVG is not its ancestor's background but
+the last opaque rect painted under it: without that, `SiteMark`'s paper-coloured
+trace reads as an invisible stroke on all 30 pages, because it sits on an ink tile.
+
+## An open end drawn in the bar's own colour is a closed end
+
+**11 September 2026.** In `PrepareDaysByDocument` the open-end arrowhead is
+`FIG_COLOR.muted` at the right edge of the bar. Where a row's solid bar already
+reaches the domain end, as PreparedBC's 2024 guide does at 14 days, the arrowhead is
+muted on muted: 1:1 against its own ground, and it does not render. The row then
+looks identical to the one row on the figure that genuinely closes at 14, so the two
+marks that mean opposite things draw the same. The arrowhead over a hatched bar in
+the row below it renders correctly, which is what made the miss hard to see by eye.
+
+The general rule the kit should carry: a mark that qualifies a bar has to be drawn
+against the bar, not in the bar's colour. The hatch already solves this by filling
+its own background with `--color-paper-raised`; an arrowhead needs the same care, a
+knockout outline or a colour that is not the fill it sits on.
+
+## `--color-ink-faint` is below AA in both themes
+
+**11 September 2026.** Measured against the grounds it is actually painted on:
+`#6e7276` on `--color-paper` is 4.48:1 and on `--color-accent-soft` 4.14:1; in dark
+`#797d82` on paper is 4.45:1, on paper-raised 4.13:1, on accent-soft 3.62:1. AA for
+body-sized text is 4.5:1, and the token carries the 12 px floor almost everywhere it
+appears: figure axis labels, the "Source" line, the contents rail's own heading, the
+band label for "Not yet assessed". The light value misses by 0.02.
+
+Two band ramp colours have the same problem where they are used as text rather than
+as fill. `BandPill` colours its written label with the band colour, so on
+`--color-paper` "Medium" (`#b57a14`) is 3.37:1 and "Low" (`#4f7f4a`) is 4.34:1.
+Severity survives without colour because of the segment meter, but the label beside
+the meter is still text and still has to be readable.
+
+## Static export cannot apply a stored preference before the first paint
+
+**11 September 2026.** `ScenarioProvider` applies the stored scenario in a layout
+effect, on the reasoning that a layout effect commits before paint. It does, but the
+paint it precedes is the hydration commit's, not the exported HTML's. Measured on
+`/scenarios/` with `scenario=crustal` stored, the first animation frame at +105 ms
+shows Cascadia checked and the switch lands at +139 ms: about a third of a second of
+the scenario the reader did not choose, on every page load.
+
+Nothing in React can fix this, because the flash happens before React exists on the
+page. The only cures are a blocking inline script in `<head>` that reads
+`localStorage` and sets an attribute the CSS keys off, or accepting the flash. It is
+worth writing down that the layout effect is not the fix it is documented as being.

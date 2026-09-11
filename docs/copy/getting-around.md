@@ -138,9 +138,8 @@ at $5 to $7 billion and records that it cut "main access routes to B.C. and Cana
 failures as "severing land connectivity between Metro Vancouver and the rest of
 Canada", and one of its authors works for the road authority. [SEPULVEDA-23]
 
-Those are repair durations for rainfall damage in November 2021. They show the pace of
-this kind of work in this terrain, with this road authority and these contractors. They
-are not earthquake figures and they forecast nothing about an earthquake.
+Those durations show the pace of this kind of work in this terrain, with this road
+authority and these contractors.
 
 ## A landslide wave in Howe Sound is assessed as unlikely
 

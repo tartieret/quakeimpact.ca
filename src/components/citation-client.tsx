@@ -117,7 +117,7 @@ function ReferenceBody({ reference }: { reference: Reference }) {
         >
           Go to the page
         </Link>
-      ) : (
+      ) : reference.href ? (
         <a
           href={reference.href}
           target="_blank"
@@ -126,10 +126,16 @@ function ReferenceBody({ reference }: { reference: Reference }) {
         >
           Open the document ↗
         </a>
+      ) : (
+        /* Nine register rows have no recoverable link. Offering one that goes
+           nowhere is worse than saying so: the row's own note explains why. */
+        <span className="mt-3 block text-sm text-ink-faint">
+          No link to follow
+        </span>
       )}
       {reference.placeholder ? (
         <span className="mt-3 block font-mono text-xs text-ink-faint">
-          Placeholder link — the real citation is not in yet
+          Placeholder link. The real citation is not in yet
         </span>
       ) : null}
     </>

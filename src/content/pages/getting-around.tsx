@@ -344,9 +344,9 @@ export const gettingAround: PageModule = {
               December 2025. <Cite id="HWY8-RECOV" />
             </li>
           </ul>
-          {/* Placed between the two guard sentences the copy puts around this
-              list, and carrying the guard itself, in the drawing and in the alt
-              text, so it does not depend on either of them staying beside it. */}
+          {/* Placed under the list the guard sentence above introduces, and
+              carrying the guard itself, in the caption and in the alt text, so
+              it does not depend on that sentence staying beside it. */}
           <Figure
             alt="Highway 5 reopened to commercial traffic in 35 days and to all traffic after about 66 days, Highway 1 after 61 and 71 days on two segments, and Highway 8 after about 12 months, with the last permanent Highway 5 bridge finished about 23 months on. Every one of these durations is damage from the November 2021 rainfall and none of it was caused by an earthquake."
             caption={
@@ -372,10 +372,8 @@ export const gettingAround: PageModule = {
             authors works for the road authority. <Cite id="SEPULVEDA-23" />
           </p>
           <p>
-            Those are repair durations for rainfall damage in November 2021.
-            They show the pace of this kind of work in this terrain, with this
-            road authority and these contractors. They are not earthquake
-            figures and they forecast nothing about an earthquake.
+            Those durations show the pace of this kind of work in this terrain,
+            with this road authority and these contractors.
           </p>
         </Prose>
       ),

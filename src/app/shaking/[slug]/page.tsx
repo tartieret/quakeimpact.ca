@@ -60,7 +60,12 @@ export default async function ShakingDetailPage({
   const next = SHAKING_PAGES[index + 1];
 
   const sections = page ? page.sections : [UNWRITTEN_SHAKING];
-  const references = page ? page.meta.references : [];
+
+  /**
+   * An unwritten Part 1 page still has sources: the documents gathered for its
+   * subject, declared on `SHAKING_PAGES`. They list the way a system stub's do.
+   */
+  const references = page ? page.meta.references : (entry.references ?? []);
 
   return (
     <Citations ids={references}>
@@ -86,13 +91,17 @@ export default async function ShakingDetailPage({
 
         {page?.lever ? <Lever {...page.lever} /> : null}
 
-        {/* An unwritten Part 1 page has no reference ids of its own, so there
-            is nothing to number and the section is left off rather than
-            rendered empty. */}
+        {/* The lede describes markers in the text, so it belongs only to a page
+            that has text. A stub lists the documents gathered for its subject
+            and says so in the standing block above. */}
         {references.length > 0 ? (
           <Section
             title="Sources on this page"
-            lede="Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
+            lede={
+              page
+                ? "Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
+                : undefined
+            }
           >
             <ReferenceList />
           </Section>

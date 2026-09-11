@@ -153,7 +153,15 @@ export default async function SystemPage({
           </Section>
         ))}
 
-        {page?.lever ? <Lever {...page.lever} /> : null}
+        {/* A written page brings its own lever. Where the body is not written,
+            the system's own standing action stands in, because a page that
+            states a consequence and offers nothing is the one failure the
+            style guide singles out. */}
+        {page?.lever ? (
+          <Lever {...page.lever} />
+        ) : system.lever ? (
+          <Lever {...system.lever} />
+        ) : null}
 
         <Section
           title="Sources on this page"

@@ -102,10 +102,23 @@ class RegisterError extends Error {
   }
 }
 
-/** Split a markdown table row on unescaped pipes. */
+/**
+ * Split a markdown table row on unescaped pipes.
+ *
+ * An HTML comment inside a cell is research-only and never reaches the reader.
+ * Every cell of the register is copy — the Source cell's note and the URL
+ * cell's prose both render, in the citation popover and on `/sources/` — so a
+ * record that matters to the next researcher and means nothing to a neighbour
+ * (a superseded key, how a PDF was extracted, what to obtain next) goes in
+ * `<!-- research: … -->` and is dropped here. It stays in the register, one
+ * line from the row it belongs to, rather than being lost to keep the note
+ * readable. A comment may not contain a pipe.
+ */
 function cells(row, line) {
   const trimmed = row.trim().replace(/^\|/, "").replace(/\|$/, "");
-  const parts = trimmed.split(/(?<!\\)\|/).map((c) => c.replace(/\\\|/g, "|").trim());
+  const parts = trimmed
+    .split(/(?<!\\)\|/)
+    .map((c) => c.replace(/<!--[\s\S]*?-->/g, " ").replace(/\\\|/g, "|").trim());
   if (parts.length !== COLUMNS.length) {
     throw new RegisterError(
       line,
@@ -219,7 +232,7 @@ function accessNotes(urlCell, href, note) {
     out.push("Paywalled: the document cannot be reached by following the link");
   }
   if (/\b403\b/.test(urlCell) && !already.includes("403")) {
-    out.push("The host returns 403 to an automated fetch; open it in a browser");
+    out.push("The site refuses a request that does not come from a browser, so the link has to be opened by hand");
   }
   if (!href) {
     const stated = plain(urlCell);

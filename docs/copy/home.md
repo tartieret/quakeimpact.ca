@@ -3,7 +3,7 @@ route: /
 title: What a major earthquake does to the Lower Mainland, and for how long
 nav: Home
 hook: The shaking is the short part.
-lede: A major earthquake in Metro Vancouver means minutes of shaking, and months of waiting for water, power and transport to come back. Every figure here comes from a published document, and every document is listed.
+lede: A major earthquake in Metro Vancouver means minutes of shaking. The province expects many months of disruption to water and wastewater afterwards, and transportation routes at much-reduced capacity for weeks to months. BC Hydro expects several weeks without power for up to two thirds of downtown customers. Every figure here comes from a published document, and every document is listed.
 status: draft
 ---
 

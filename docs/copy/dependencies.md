@@ -146,21 +146,22 @@ The coupling is also the argument for preparing at home. A household that can ma
 while without water, power and a working toilet is not waiting to find out which of
 them comes back first.
 
-**Store four litres per person per day, pets included.** That is the province's own
-figure, for drinking and basic sanitation together. [PREPAREDBC] Its Cascadia assessment
-says distributing bulk drinking water across the region stays difficult for the first
-four to five days. [DCRRA-2025]
-
-**Work out what in your home stops when the power does**, including the heating and any
-gas appliance with an electric fan or control, and settle what to do about each one
-before you need to.
-
 **Expect your own street to be cleared late.** The regional debris plan clears lifeline
 routes, critical infrastructure and major roads before local ones, which is a reasonable
 order and it is not a fast one for most addresses. [MV-DEBRIS-17]
+
+**Expect the gas to come back building by building.** Service returns only once a
+qualified person has been inside and relit every appliance, and the regulator's decision
+on that system gives several weeks to restore hundreds of thousands of customers.
+[BCUC-C-6-25] Settle what your household would do for heat and hot water over that
+period.
+
+**Do not build a plan that needs a phone call.** Nothing in Canada currently requires a
+mobile phone site to hold any backup power at all, and the regulator opened a proceeding
+in September 2025 to decide what that requirement should be. [CRTC-2025-226]
 
 ## Sources on this page
 
 [PEIRS] [MOTI-SRDC-05] [MV-DEBRIS-17] [MV-WATER-22] [KAUR-2026] [AIR-2013]
 [RBT2-PANEL-20] [DCRRA-2025] [BCUC-C-6-25] [FEI-RESILIENCY-24] [MV-DWMP-26]
-[BCH-WESTEND-25] [CRTC-2025-226] [PREPAREDBC]
+[BCH-WESTEND-25] [CRTC-2025-226]

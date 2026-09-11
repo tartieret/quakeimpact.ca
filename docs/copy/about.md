@@ -69,8 +69,10 @@ transportation. The other ten carry their band, the sentence saying how the syst
 fails, the document behind that sentence, and where they sit on the timeline. Each of
 them says on its own page that the body is not written.
 
-The dependency graph is a drawn picture that does not exist yet. The page that will
-hold it lists the connections in the meantime.
+The [dependency graph](/dependencies/) counts the connections between systems rather
+than joining them with lines. Of the 26 connections listed there, 6 have a published
+document behind them, and the rest are links a system's own page names and no
+assessment has established.
 
 Nothing here is styled to look more finished than it is.
 
