@@ -158,7 +158,7 @@ Decided per dataset, based on what is actually available. Embed official viewers
 - **Kobe 1995** — a port city of similar scale losing its port.
 - **Tōhoku 2011** — fuel logistics. The mechanism is that the fuel existed and the terminals and trucks to move it did not, which is the shape of the Lower Mainland argument. Sourced from the Japanese government's own briefing; lead with BC's documents and use this only to show what it looked like.
 
-**Retired, 11 September 2026 — the West Berlin 1948–49 airlift comparison.** It was
+**Retired, 10 September 2026 — the West Berlin 1948–49 airlift comparison.** It was
 carried here as a ceiling on what rescue can be: airlift tonnage per capita set against
 the humanitarian water minimum. The arithmetic held up under verification and the
 comparison still does not earn its place. It needs three caveats before it can be stated
@@ -234,4 +234,4 @@ A thin complete grid is worth less than a few deep pages.
   Touches `site-overview.md` §5, `research/impact-bands.md`, and `SYSTEMS` in
   `src/content/site.ts`. One array entry, no other code change.
 
-- **Whether the site archives its own sources.** Several citations already point at web archives because the publisher reorganised or the host died — the AIR study, the USAF airlift fact sheet, the RMS Kobe retrospective. Two federal hosts went from resolving to NXDOMAIN during this project's lifetime. A site whose whole proposition is that its sources check out should not depend on other people's links holding. Recommended: capture every cited source at the version we read, and record the capture alongside the live URL.
+- **Whether the site archives its own sources.** Several citations already point at web archives because the publisher reorganised or the host died — the AIR study, the RMS Kobe retrospective. Two federal hosts went from resolving to NXDOMAIN during this project's lifetime. A site whose whole proposition is that its sources check out should not depend on other people's links holding. Recommended: capture every cited source at the version we read, and record the capture alongside the live URL.

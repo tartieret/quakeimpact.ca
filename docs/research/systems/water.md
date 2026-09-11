@@ -303,7 +303,7 @@ reservoirs system entry, not here. Cross-reference rather than restate.
   targeted searches on days / weeks / months / restore. **Not found**, and the DWMP
   2026 states none. Narrow the open question to "a Metro Vancouver estimate" — the
   AAFC "several months" finding exists and is recorded above.
-- **Narrowed again, 11 September 2026 — a member municipality publishes one, and the
+- **Narrowed again, 10 September 2026 — a member municipality publishes one, and the
   regional utility does not.** The **City of New Westminster's Potable Water Emergency
   Response Plan** (July 2009, updated January 2023) is published in full and carries a
   quantified damage-and-duration table in its earthquake annex: pipeline, "**100 year

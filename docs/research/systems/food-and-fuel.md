@@ -120,7 +120,7 @@ Lead with the mechanism, not with a days-of-supply figure.
   problem is logistics rather than stock is sound reasoning and remains unsourced as a
   *regional* claim.
 - **And the absence now splits three ways, which is more useful than one bullet.**
-  Re-audited 11 September 2026 against the channels that would own this.
+  Re-audited 10 September 2026 against the channels that would own this.
   - **The province publishes sector emergency plans, and none of them is about food.**
     Its own index of provincial emergency plans lists the All Hazard Plan, PEIRS, flood,
     drought, nuclear, pandemic, wildland-urban interface, tsunami notification, flood

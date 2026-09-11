@@ -524,7 +524,7 @@ route from PACICC's own papers.
   sentence on the site that prints them must name the paper and say the figures come via
   Business in Vancouver.
 - **Whether the $30B there is insured or economic loss — downgraded to [?] on
-  11 September 2026.** This file asserted it was an insured figure, reasoning that the
+  10 September 2026.** This file asserted it was an insured figure, reasoning that the
   comparison only makes sense against insurer capacity as claims. That reasoning is sound
   and the source pushes the other way: the reporting says "$30 billion in **damages** … as
   simulated by the Geological Survey of Canada", which reads as a total-loss scenario
@@ -861,7 +861,7 @@ directed at closing that gap is a rounding error against the capital plan it sit
   16,000 and 7,521 URLs), zero hits for post-disaster, seismic or earthquake on any fire-hall
   page, including Surrey's new Fleetwood Hall 6, which is being built without any published
   statement of what standard it is built to. **Richmond and the City of North Vancouver were
-  tested on 11 September 2026 and the answers differ.** **[?]** only for CNV now.
+  tested on 10 September 2026 and the answers differ.** **[?]** only for CNV now.
 
   **Richmond: all halls, stated by the fire chief — at committee-minute strength.** Community
   Safety Committee minutes of 10 March 2026 record the Chief answering members: "**all
@@ -880,7 +880,7 @@ directed at closing that gap is a rounding error against the capital plan it sit
   "post-disaster importance category" — the page must not silently upgrade it.
 
   **City of North Vancouver: nothing, across six channels.** CNV has one fire hall. Searched
-  11 September 2026: the site-search API with controls passed and a negative control proving
+  10 September 2026: the site-search API with controls passed and a negative control proving
   it does not index council report PDFs; the complete City-Finances series, 81 PDFs covering
   financial and capital plans 2012–2030 and annual reports 2015–2025, where seismic terms hit
   four files and none concerns the fire hall; all 21 of the 2026 council agenda packages; the

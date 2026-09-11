@@ -194,7 +194,7 @@ soil models predict that dikes will sustain some damage during an earthquake; ho
 the dikes will remain an intact barrier to flooding." [RICH-EQ] **[A]** for the City
 saying it.
 
-**Resolved 11 September 2026. The models are named, dated, authored and published — in
+**Resolved 10 September 2026. The models are named, dated, authored and published — in
 the City's own documents — and what they say is not what the public page says.**
 
 They are **Thurber Engineering Ltd.'s seismic deformation analyses**, published as

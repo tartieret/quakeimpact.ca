@@ -401,7 +401,7 @@ pass and failed.
 
 ## Rows that were retired, and where their claims went
 
-**The `BERLIN-*` family — retired 11 September 2026.** `BERLIN-AM`, `BERLIN-NASM`,
+**The `BERLIN-*` family — retired 10 September 2026.** `BERLIN-AM`, `BERLIN-NASM`,
 `BERLIN-TINE`, `BERLIN-USAF` and the withdrawn `BERLIN-MIG` supported the West Berlin
 airlift capacity comparison, which is retired in `analogues.md`. The figures were verified
 and are not in dispute; the comparison needed three caveats to be fair, which is one more

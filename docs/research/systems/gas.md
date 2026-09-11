@@ -454,7 +454,7 @@ Reproduced as a block so it can be checked against any draft of this page.
 
 ### How many customers, and the number is FortisBC's own
 
-Retrieved 11 September 2026 from **FortisBC Energy Inc.'s 2026 Long Term Gas Resource Plan**,
+Retrieved 10 September 2026 from **FortisBC Energy Inc.'s 2026 Long Term Gas Resource Plan**,
 filed with the BCUC on 27 March 2026 — the same document already registered here, whose full
 text contains zero occurrences of "seismic" or "earthquake". Table 3-2, base year **2024**:
 **583,370 residential accounts in FEI's Lower Mainland region**, against 137,425 on Vancouver

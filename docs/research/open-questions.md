@@ -11,13 +11,13 @@
 The verification queue. Items here ship on the site as visible open questions,
 never as quiet inference.
 
-**Status.** Three rounds. Two on 10 September 2026, and a third on 11 September that
+**Status.** Three rounds, all on 10 September 2026. The third
 closed or narrowed a further twenty items — see "Closed or narrowed in the third round"
 below. **Items above that the third round closed have not been renumbered**, so that a
 reference to "item 24" in an older note still resolves; read the closed list alongside
 the queue rather than instead of it.
 
-**Two rounds on 10 September 2026.** The first opened with 31 questions and
+**The first two rounds.** The first opened with 31 questions and
 closed or narrowed 21. The second went back for the documents the first round had
 run out of budget to reach, and closed nine more — including both items at the top
 of the blocking list.
@@ -46,7 +46,7 @@ Nothing ships that depends on these.
    ground-conditions map, the liquefaction choropleth and the
    critical-infrastructure overlay. **The only blocking item left.**
 
-*Items 2 and 3 closed in the second round of 10 September 2026 — the AIR study was
+*Items 2 and 3 closed in the second round — the AIR study was
 recovered in full from a web archive, and the DCRRA licence position is settled.
 Both are recorded below.*
 
@@ -264,7 +264,7 @@ Recorded because how a question closed is part of the evidence.
 
 ---
 
-## Closed or narrowed in the third round, 11 September 2026
+## Closed or narrowed in the third round, 10 September 2026
 
 Seven subagents, grouped by retrieval route rather than by subject — because the route is
 what determines who can answer. The register is a curated list and had drifted: **one item

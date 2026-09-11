@@ -233,7 +233,7 @@ nothing about Richmond or Delta, and it does not set this band.
 
 - **A detail that sharpens the FOI case considerably.** CH2M 2018 is cited **once**, in the
   2017–2018 Biennial Report, and dropped from both later biennial reports. Searched
-  11 September 2026: the consultant's successor firm (full 2,625-URL sitemap crawl), the
+  10 September 2026: the consultant's successor firm (full 2,625-URL sitemap crawl), the
   predecessor domain, conference proceedings, Crossref and OpenAlex — nothing anywhere. But
   **a sibling study from the same reference block of the same report, by a different
   consultant, *is* published.** So this is a document withheld while its neighbour was

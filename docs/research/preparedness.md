@@ -360,7 +360,7 @@ non-obvious; the rest need no source.
   every action will work for everyone, choose the options that work best for you"
   [COV-EXPLORER-25] **[A]**. Those two facts are the finding; nothing is written past them.
 - **The money half of that gap now has an answer to point at, and the storage half does
-  not.** Re-audited 11 September 2026 through the City's full-text index — four further
+  not.** Re-audited 10 September 2026 through the City's full-text index — four further
   query forms on budget, apartment storage, renters and SRO residents, none returning any
   City page or PDF on the subject. **[A]** on the City's silence. But PreparedBC does
   publish one: its kit page links to an EMCR post of 12 August 2024, *Get prepared for
@@ -388,7 +388,7 @@ non-obvious; the rest need no source.
   Emergency preparedness and Emergency information sections, 10 September 2026; the only
   public-page hits are a winter-weather page and records pages.
 
-  **Partly overturned 11 September 2026, and the correction is precise.** The City *does*
+  **Partly overturned 10 September 2026, and the correction is precise.** The City *does*
   publish material for people who cannot evacuate unaided — it is filed under **fire safety
   for building owners**, addressed to building managers, and two of its three documents are
   not the City's. On *Fire safety for building owners* the City runs sections headed
@@ -437,7 +437,7 @@ non-obvious; the rest need no source.
   preparedness section, 10 September 2026. The succession is an inference and is not
   published as a fact.
 
-  **Strengthened 11 September 2026: the record now cuts *against* the succession.** Three
+  **Strengthened 10 September 2026: the record now cuts *against* the succession.** Three
   documents were retrieved and none states one. The City's **records retention and
   disposition schedule**, released under FOI, classifies "courses and workshops offered to
   the public through the Neighbourhood Emergency Preparedness Program (NEPP)" with the

@@ -144,7 +144,7 @@ March 2012 restart date (METI says only "several months to a year"). **[?]**
 
 ### Retired — the Berlin Airlift comparison
 
-**Removed 11 September 2026, and not because it was wrong.** The arithmetic survived
+**Removed 10 September 2026, and not because it was wrong.** The arithmetic survived
 verification: tonnage, flight totals and per-capita figures were all rebuilt from primary
 sources, and the two claims that did not survive — a day count and an opening-week tonnage
 — were withdrawn at the time. What the comparison could never shed was its caveats. Three

@@ -361,7 +361,7 @@ content. Neither failure raises an error anywhere.
 
 ## A municipality's assurances about its own buildings live in minutes, not reports
 
-**11 September 2026.** Whether Richmond's fire halls are built to a post-disaster standard
+**10 September 2026.** Whether Richmond's fire halls are built to a post-disaster standard
 is answered — "all Richmond firehalls are rated to withstand major disasters" — by the fire
 chief, **answering a councillor's question, recorded in committee minutes.** The written
 staff reports on the same halls contain zero occurrences of seismic, earthquake or
@@ -380,7 +380,7 @@ not an engineering certificate.
 
 ## The federal impact assessment registry is a full-text seam, and it is barely touched
 
-**11 September 2026.** Every document filed in a federal environmental assessment is
+**10 September 2026.** Every document filed in a federal environmental assessment is
 full-text searchable and downloads without headers. Roberts Bank Terminal 2 alone indexes
 **4,804 documents**, and the search returns matched sentences plus the file name.
 

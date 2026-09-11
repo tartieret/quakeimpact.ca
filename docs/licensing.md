@@ -132,7 +132,7 @@ applies.
 - Treating a provincial PDF as reusable because it is public.
 
 **"All rights reserved" does not override fair dealing, and this file said so too
-faintly.** Corrected 11 September 2026. The Province's default matters for *reproduction*
+faintly.** Corrected 10 September 2026. The Province's default matters for *reproduction*
 — datasets, figures, tables, maps, whole documents. It does not turn quotation into
 infringement. Canadian fair dealing covers research, private study, education, criticism
 and review, and quoting a published government document with attribution and a link is the

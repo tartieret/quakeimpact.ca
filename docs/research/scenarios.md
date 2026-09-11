@@ -243,7 +243,7 @@ attaches to PEIRS's own casualty figures, which belong to a **weekday-afternoon*
 and travel with it. And the "10-20 seconds" is PEIRS timing *violent shaking*, which is
 not the same measurement as the Exercise Coastal Response 2023 duration — see §5.
 
-**Licensing — resolved 11 September 2026, and the earlier note here was wrong.** This
+**Licensing — resolved 10 September 2026, and the earlier note here was wrong.** This
 paragraph previously said the passage was "not cleared" and must not be published until
 permission arrived. That confused the Province's all-rights-reserved default, which governs
 *reproduction* of datasets and figures, with quotation — which fair dealing covers.

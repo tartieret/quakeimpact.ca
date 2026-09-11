@@ -308,7 +308,7 @@ casualty load and states that medical facilities would be overwhelmed, and does 
 things in the same document.** The surviving gap is a gap in official planning, not a gap in
 knowledge.
 
-**The second half of the old gap is narrowed, 11 September 2026 — it was too strong.**
+**The second half of the old gap is narrowed, 10 September 2026 — it was too strong.**
 Per-hospital ICU bed counts **are** published, for six named Metro Vancouver hospitals, in
 the peer-reviewed literature: **Vancouver General 46, Surrey Memorial 46, Royal Columbian
 30, St. Paul's 15, Lions Gate 11, Richmond 8**, from the Methods of a 2020 open-access

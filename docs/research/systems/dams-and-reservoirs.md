@@ -679,7 +679,7 @@ regime performs.
   copy still names two of them, "hydraulic modeling of the Capilano River and a Capilano
   River User Study", and **both dropped out of committee reporting after July 2024**. No
   consultant has ever been identified.
-  - **Consultant portfolios audited 11 September 2026 with working searches and controls,
+  - **Consultant portfolios audited 10 September 2026 with working searches and controls,
     all negative:** NHC, Klohn Crippen Berger, Kerr Wood Leidal, Hatch, AtkinsRéalis, KGS,
     Associated Engineering, Tetra Tech.
   - **Three audits are invalid and must be recorded as such rather than as negatives**, so

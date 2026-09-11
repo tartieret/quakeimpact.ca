@@ -177,7 +177,7 @@ share — and must not be repeated.
   operational upgrades, and no longer carries the seismic wording or a 2030 date. Do not
   describe the timeline as running to 2030.
 - **Tsawwassen** [?] — no seismic assessment or upgrade located, and the absence is now
-  audited rather than asserted. Searched 11 September 2026: the **BC Ferry Commissioner's
+  audited rather than asserted. Searched 10 September 2026: the **BC Ferry Commissioner's
   major capital approvals** page for terminals lists two matters in its entire history and
   neither is Tsawwassen — **no Tsawwassen terminal capital application has ever been filed
   with the regulator**; the Major Terminal Efficiency Project application covers Tsawwassen
@@ -203,7 +203,7 @@ would be compounded by liquefaction of roadways in Richmond and Delta. [PEIRS] *
 
 ### Roberts Bank Terminal 2 — three federal documents, and the criterion they disagree on
 
-Closed 11 September 2026. The EIS geotechnical and seismic section recorded here as an
+Closed 10 September 2026. The EIS geotechnical and seismic section recorded here as an
 unretrieved lead is **EIS Volume 2, §9.1.3.2 with Table 9.1.3-1**, and its revised text is
 reproduced verbatim inside the port authority's own response to the Review Panel — so it
 is readable at [A] without the EIS volume. Ground shaking at Roberts Bank, for the Site

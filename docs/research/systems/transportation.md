@@ -581,7 +581,7 @@ said.
     published anywhere in this folder.** **[?]**
 - **North Arm Bridge — closed.** The seismic design criteria, dimensions, ground
   conditions, foundations and the no-densification decision are all now sourced to the
-  bridge's designer. [NAB-ICCHGE-08] **[A]** **The opening date closed on 11 September
+  bridge's designer. [NAB-ICCHGE-08] **[A]** **The opening date closed on 10 September
   2026** against the Office of the Premier's news release of 17 August 2009.
   [BCGOV-CANLINE-09] **[A]** One item remains open: the designer's own second paper,
   Bergman, Griezic & Scollard (2008), "Design of the Canada Line Extradosed Transit
