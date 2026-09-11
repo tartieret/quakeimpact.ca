@@ -23,7 +23,11 @@ The misconception this exists to correct: people picture a violent event with a 
 3. **No doom without a lever.** Every section ends with an action the reader can take.
 4. **Coupling over inventory.** The failure of any one system is not the story. The story is that they depend on each other.
 5. **Analogues illustrate, they never generate numbers.** Christchurch tells us what life was like. It does not tell us Vancouver's restoration times.
-6. **Assumptions are research tasks, not content.** Anything held as "I believe X is the case" enters this document as a verification item and does not reach the site until a source confirms or contradicts it. A contradicted assumption is a good outcome — it is usually more interesting than the assumption was.
+6. **Assumptions are research tasks, not content.** The exception is the obvious
+   consequence of a cited fact, which is writing rather than assuming: a lift needs
+   power, flushing needs water, a card reader needs a network. `style-guide.md` §6
+   draws that line and forbids inference from ever producing a quantity, a duration,
+   a band or a casualty figure. Anything held as "I believe X is the case" enters this document as a verification item and does not reach the site until a source confirms or contradicts it. A contradicted assumption is a good outcome — it is usually more interesting than the assumption was.
 
 ---
 
