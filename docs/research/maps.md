@@ -56,7 +56,8 @@ is a map's job rather than a paragraph's.
 | Six-hazard provincial exposure | BC Hazard Insights Tool (DCRRA) | **Link only.** ArcGIS Hub, no per-layer licence stated. Scoped by the province to provincial and regional analysis, not community or property-level decisions. [UBCM-DCRRA] **[A]** |
 | Disaster Response Routes, regional | City of Vancouver | **Link only.** Static PDF, no stated licence. |
 
-Two constraints survive even if ICLR approves. The published map sheets are
+Two constraints would have survived approval, which is part of why it was not pursued.
+The published map sheets are
 unalterable, so the intended design — ground conditions as a base layer in the
 site's own palette — has to be built from the data layers, not the sheets. And
 building from the data layers makes the derived layer share-alike, so any
@@ -80,9 +81,6 @@ on a public hazard site even if they were.
 
 ## What is not established
 
-- **ICLR's reply** on MVSMMP reuse. The terms are recorded in `../licensing.md`,
-  which carries the enquiry to Sheri Molnar at Western and to ICLR as an action still
-  to be taken. This is the blocking item for the map work. [?]
 - **The DFPS dataset slug** on the City of Vancouver portal. Confirm on download.
 - **DCRRA licence terms.** No rights statement was found in the front matter of
   the chapters read. BC government publications are normally OGL–BC, but that

@@ -20,14 +20,11 @@ The two are different claims about the world and only one of them is a finding.
 
 ## Blocking
 
-Nothing ships that depends on these.
-
-1. **ICLR's written approval** for reuse of the Metro Vancouver microzonation
-   maps and data. Terms recorded in `../licensing.md`, which carries the enquiry to
-   Sheri Molnar at Western and to ICLR as **an action still outstanding — the request
-   has not been sent.** So this is not a wait on a reply; it is a wait on an email
-   nobody has written. It blocks the ground-conditions map, the liquefaction choropleth
-   and the critical-infrastructure overlay. **The only blocking item left.**
+**Nothing is blocking.** The last item here was ICLR's written approval for the Metro
+Vancouver microzonation maps; it was closed on 10 September 2026 by a decision not to
+pursue it. The layers stay link-only, ground conditions ships as text with an outbound
+link, and the flagship graphic is the Dedicated Fire Protection System coverage
+boundary. See `../licensing.md` and `../site-overview.md` §9.
 
 ## High value, not blocking
 
@@ -127,7 +124,6 @@ change it.
 
 | Trigger | Why | When |
 | --- | --- | --- |
-| ICLR enquiry on MVSMMP reuse | Not yet sent; unblocks the map work | Send, then on receipt |
 | BCUC West End Substation decision | Sought by 30 October 2026 | Dated, imminent |
 | MVSMMP Phase II publication | Eastern communities | 2024–26, overdue |
 | Ausenco supporting analysis for Vancouver | Cited as forthcoming, still unpublished | Periodic |

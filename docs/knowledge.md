@@ -298,13 +298,16 @@ per `research/CONVENTIONS.md`.
 
 ---
 
-## Map licensing is settled per dataset, and it blocks the flagship graphic
+## Map licensing is settled per dataset, and it cost the flagship graphic
 
 **10 September 2026.** The Metro Vancouver microzonation layers are not openly
 licensed. They carry custom ICLR terms: share-alike, with commercial and
 electronic publication of the maps, data, or conclusions about them reserved to
-prior written approval. So the ground-conditions map, the liquefaction choropleth
-and the critical-infrastructure overlay are all held pending a reply from ICLR.
+prior written approval. The reservation covers electronic media and extends to
+conclusions *about* the maps, which is broad enough that the judgement would not have
+been ours to make — so on 10 September 2026 the project decided not to seek approval at
+all. The ground-conditions map, the liquefaction choropleth and the
+critical-infrastructure overlay are not built; ground conditions ships as text.
 
 The map the site *can* build today is the Dedicated Fire Protection System
 coverage boundary, under the Open Government Licence – Vancouver. The NRCan
@@ -449,7 +452,9 @@ The most expensive one was not a fact at all. `open-questions.md` described the 
 *requested*, while `licensing.md` carried sending that email as an action still
 outstanding. One word, and it turned "waiting on a reply" into "waiting on a request
 nobody has written". A blocked project that believes the ball is in someone else's court
-does not chase it.
+does not chase it. **Surfacing it is what let the owner settle it** — shown the choice
+between writing the email and giving up the map, they gave up the map, which had been the
+real decision all along and was invisible while the item read as *awaiting reply*.
 
 **The rule:** treat a restructure as an audit, and budget for it. Where two files describe
 the same status, the one that owns the *action* wins over the one that merely mentions it.

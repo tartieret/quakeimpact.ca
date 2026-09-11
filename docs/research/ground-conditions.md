@@ -129,9 +129,10 @@ The consequences, set out in full in `../licensing.md`:
   only under MVSMMP's terms.
 - Republication of MVSMMP material by the provincial microzonation portal does not change
   ICLR's terms.
-- **Until ICLR replies: link to `metrovanmicromap.ca` and to the individual Borealis
-  DOIs, describe findings in our own words with normal citation, and host, reproduce,
-  restyle or derive nothing.** [MVSMMP-LIC] **[A]**
+- **Decided 10 September 2026 — approval is not pursued. Link to `metrovanmicromap.ca`
+  and to the individual Borealis DOIs, describe findings in our own words with normal
+  citation, and host, reproduce, restyle or derive nothing.** [MVSMMP-LIC] **[A]** See
+  `../licensing.md` and `../site-overview.md` §9.
 
 This is why the ground-conditions page ships as prose. The evidence is not the
 constraint; the licence is. The same position governs the set's **slope instability**
@@ -253,13 +254,6 @@ already operational in local policy rather than a novel claim by this site.
   confirmed in retrieved text; the *Earthquake Spectra* publisher page returns 403 to
   automated fetching and the thesis abstract, which carries the 31–57% figure, does not
   carry these. Searched September 2026. Obtain the paper directly. **[?]**
-- **Whether the MVSMMP Custom Dataset Terms permit this site's use.** The site is free,
-  carries no advertising and generates no revenue, which reads as non-commercial in
-  ordinary usage — but ICLR's reservation explicitly covers electronic media and extends
-  to statements and conclusions about the maps, which is broad enough that the judgement
-  is not ours to make. **Action: written enquiry to Sheri Molnar at Western and to ICLR;
-  record the reply in `../licensing.md`.** This is a blocking item for the map work.
-  **[?]**
 - **Earthquake-triggered landslide mapping for the Sea-to-Sky and Fraser Canyon
   corridors.** No dedicated published assessment was located. Searched September 2026
   across the MVSMMP map set (which covers Metro Vancouver municipalities and does not

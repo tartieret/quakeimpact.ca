@@ -206,6 +206,17 @@ A thin complete grid is worth less than a few deep pages.
 - **Natural gas becomes a system.** It was missing, and it carries a mechanism no other
   system has: restoration is rate-limited by sending a person into every building. The
   grid keeps twelve systems.
+- **The microzonation maps are link-only, and ICLR approval is not pursued.** Decided
+  10 September 2026. The MVSMMP layers carry custom ICLR terms whose commercial
+  reservation covers electronic media and extends to statements and conclusions about the
+  maps, so the judgement would not have been ours to make — and two constraints would have
+  survived approval anyway: map sheets are unalterable, and anything derived from the data
+  layers becomes share-alike. Rather than hold the map work open on an enquiry, the site
+  links to the maps, describes the findings in its own words, and ships **ground
+  conditions as a text page**. The flagship graphic becomes the **Dedicated Fire
+  Protection System coverage boundary**, which is OGL–Vancouver and fully usable. The cost
+  is the critical-infrastructure-over-liquefaction overlay, which was the best original
+  graphic the project had designed.
 - **Map dataset licensing: settled per dataset.** See `licensing.md`. The NRCan catalogue and City of Vancouver open data are cleared with attribution; the Metro Vancouver microzonation layers are link-only pending written approval from ICLR.
 
 ### Open

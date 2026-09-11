@@ -69,7 +69,7 @@ Same permissions and conditions as OGL–Vancouver.
 
 ### MVSMMP (Metro Vancouver Seismic Microzonation Mapping Project)
 
-**Status: blocked pending written approval from ICLR.**
+**Status: link only. Decided 10 September 2026 — the site does not pursue ICLR approval.**
 
 The maps and data layers are published on Borealis under custom dataset terms, not an open licence. In summary:
 
@@ -79,15 +79,15 @@ The maps and data layers are published on Borealis under custom dataset terms, n
 - Authorisation for commercial use or commercial publication of the maps, data, or statements, conclusions and abstracts regarding them, through any print or electronic media, is reserved by the Institute for Catastrophic Loss Reduction and requires ICLR's prior written approval.
 - A prescribed citation string is required, per map.
 - A disclaimer must accompany any use: the maps are for regional purposes only and must not be used for site-specific evaluation.
-**Why this blocks us.** The site is free, carries no advertising and generates no revenue, which reads as non-commercial in ordinary usage. But the reservation is ICLR's phrasing, it explicitly covers electronic media, and it extends to statements and conclusions regarding the maps — not just the maps themselves. That is broad enough that the judgement is not ours to make.
+**Why we do not use them.** The site is free, carries no advertising and generates no revenue, which reads as non-commercial in ordinary usage. But the reservation is ICLR's phrasing, it explicitly covers electronic media, and it extends to statements and conclusions regarding the maps — not just the maps themselves. That is broad enough that the judgement would not be ours to make, and the decision is to not make it: **link to the maps, describe the findings in our own words, and build the site's own graphics from open data.**
 
-**Two further constraints even if approval is granted:**
+**Two constraints that would have survived approval anyway**, which is part of why the approval was not worth chasing:
 
 1. Map sheets are unalterable. The intended design — ground conditions as the base layer, in the site's own palette, municipal outlines as reference only — cannot be built from the published map sheets. It has to be built from the data layers.
 2. Building from the data layers makes our derived layer share-alike. Any liquefaction layer we generate would have to be published under MVSMMP's terms, with the citation and disclaimer attached.
-**Action:** email Sheri Molnar (Western) and ICLR. Describe the site in two sentences — free, public, non-commercial, no advertising, full attribution and disclaimer reproduced — and request written confirmation. The Borealis download guestbook asks what the map will be used for, which is the natural opening. Record the reply in this file.
+**What the site does instead:** link to `https://metrovanmicromap.ca/` and to the individual Borealis DOIs. Describe findings in our own words with normal citation. **Do not host, reproduce, restyle or derive.** Ground conditions becomes a text page with an outbound link, and the flagship graphic is the Dedicated Fire Protection System coverage boundary, which is OGL–Vancouver and fully usable.
 
-**Until then:** link to `https://metrovanmicromap.ca/` and to the individual Borealis DOIs. Describe findings in our own words with normal citation. Do not host, reproduce, restyle or derive.
+**If this is ever reopened**, the route is a written enquiry to Sheri Molnar at Western and to ICLR, describing the site in two sentences and requesting written confirmation; the Borealis download guestbook asks what the map will be used for, which is the natural opening. Recorded so the work is not redone from scratch, not as a pending action.
 
 **Note:** the provincial seismic microzonation portal republishes MVSMMP material. That does not change ICLR's terms. Republication by a government hub does not launder the licence.
 
@@ -145,10 +145,9 @@ disseminated; and the effect on the market is nil, because the document is free 
 quotation substitutes for nothing.
 
 **The worked example — the PEIRS experience narrative.** Three paragraphs describing the
-first minutes of the crustal M7.0, quoted in full in `research/scenarios.md` under *The crustal M7.0*. This file
-previously called publishing it "not cleared" and registered it as a blocking item. **That
-was too strong, and both have been corrected.** Publish it under fair dealing, with
-attribution, a link and the page number.
+first minutes of the crustal M7.0, quoted in full in `research/scenarios.md` under *The
+crustal M7.0*. **Publish it under fair dealing, with attribution, a link and the page
+number.**
 
 **Where the line sits is judgment, and the file should say so rather than imply a rule.**
 Four sentences is unambiguously fine. Three paragraphs is a longer extract of a
@@ -243,6 +242,6 @@ The licensing position changes the MVP. Ground conditions was to be the opening 
 5. **Power** — text only.
 6. **Method and band rubric** — ships in the MVP. Six of twelve systems are in the fourth band; without the rubric the site reads as unfinished rather than honest.
 7. **Preparing** — text only.
-**Fire following** gains value under this constraint. The DFPS mains layer is OGL–Vancouver and fully usable, which makes the coverage boundary the first real map we can draw ourselves. Consider promoting it into the MVP as the flagship graphic, in place of the liquefaction layer.
+**Fire following** gains value under this constraint. The DFPS mains layer is OGL–Vancouver and fully usable, which makes the coverage boundary the first real map we can draw ourselves. **It is the flagship graphic**, in place of the liquefaction layer.
 
-**Held pending ICLR:** the liquefaction base layer, the ground-conditions choropleth, and the critical-infrastructure-over-liquefaction overlay described in the project document. That overlay remains the site's best original graphic. It is worth waiting for.
+**Not built:** the liquefaction base layer, the ground-conditions choropleth, and the critical-infrastructure-over-liquefaction overlay described in the project document. The overlay was the site's best original graphic and the decision of 10 September 2026 gives it up rather than hold the map work open indefinitely. Ground conditions ships as text with an outbound link.

@@ -99,10 +99,12 @@ and no one does that to a 600-line file in the normal course of work. Fourteen w
 and resolved, every one by stating the narrower claim the evidence supports rather than
 deleting a side:
 
-- **The project's only blocking item was misdescribed.** `open-questions.md` recorded
-  ICLR's written approval as *requested*; `licensing.md` carries sending that email as an
-  action still outstanding. The project is not waiting on a reply — it is waiting on a
-  request nobody has written, which is a different problem with a different fix.
+- **The project's only blocking item was misdescribed**, and surfacing it closed it.
+  `open-questions.md` recorded ICLR's written approval as *requested* while `licensing.md`
+  carried sending that email as an action still outstanding — so the project was not
+  waiting on a reply but on a request nobody had written. Put that way, the owner settled
+  it: **approval is not pursued, the microzonation layers stay link-only, and ground
+  conditions ships as text.** Nothing is blocking now.
 - `health-care.md` claimed no official ICU or operating-room count exists, above BC Gov
   News figures giving Richmond 11 operating rooms and Royal Columbian a 47-bed ICU. The
   gap is an official *inventory*, not official counts.
@@ -156,6 +158,22 @@ Three, also in §9.
    material was being retired. A site whose whole proposition is that its sources check
    out should not depend on other people's links holding.
 
+## The map the site will not have
+
+**Decided 10 September 2026: ICLR approval for the Metro Vancouver microzonation layers
+is not pursued.** Their custom terms reserve electronic publication of the maps, the data
+and *conclusions about them* to prior written approval, which is broad enough that the
+judgement would not have been ours — and two constraints would have survived approval
+anyway, since the map sheets are unalterable and anything derived from the data layers
+becomes share-alike.
+
+So the layers stay link-only, **ground conditions ships as a text page with an outbound
+link**, and the flagship graphic becomes the **Dedicated Fire Protection System coverage
+boundary**, which is OGL–Vancouver and fully usable. The cost is real and worth naming:
+the critical-infrastructure-over-liquefaction overlay was the best original graphic the
+project had designed, and it is given up rather than hold the map work open on an enquiry
+nobody had sent.
+
 ## What has not been started
 
 - **`src/content/site.ts`.** Deliberately untouched — the work was scoped to `docs/`.
@@ -173,7 +191,7 @@ Three, also in §9.
 | Question | File |
 | --- | --- |
 | What do we believe, and on what evidence? | `research/` — one file per subject |
-| What is still unknown, and what was searched? | `research/open-questions.md` — 24 items, 1 blocking |
+| What is still unknown, and what was searched? | `research/open-questions.md` — 24 items, none blocking |
 | What band, and why? | `research/impact-bands.md` |
 | Where does a source key resolve? | `research/sources.md` |
 | What may we reproduce, and what may we quote? | `licensing.md` — the two are not the same question |
