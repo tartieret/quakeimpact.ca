@@ -51,7 +51,7 @@ const BY_PUBLISHER: { publisher: string; slug: string; entries: Reference[] }[] 
       else groups.set(key, [entry]);
     }
     // Two publisher names can reduce to the same slug ("Province of BC" and
-    // "Province of B.C."). A heading id has to be unique or the jump list sends
+    // "Province of B.C."). A group id has to be unique or the jump list sends
     // every reader to whichever came first, so a repeat is numbered.
     const taken = new Set<string>();
     return [...groups.entries()]
@@ -102,19 +102,32 @@ const KIND_LABEL: Partial<Record<Reference["kind"], string>> = {
   analogue: "Analogue event",
 };
 
+/**
+ * The short code is the entry's permanent address, so it has to resolve to one
+ * place. The datasets are shown twice on this page, once in their own section
+ * and again in the full list, and an id on both copies is invalid HTML that
+ * sends a `#ref-` link to whichever the browser meets first. The full list is
+ * the register, so the anchor lives there and the earlier showing carries
+ * none.
+ */
 function Entry({
   entry,
   showPublisher = true,
+  anchored = true,
 }: {
   entry: Reference;
   showPublisher?: boolean;
+  anchored?: boolean;
 }) {
   const kind = KIND_LABEL[entry.kind];
   const byline = [showPublisher ? entry.publisher : undefined, entry.date]
     .filter(Boolean)
     .join(" · ");
   return (
-    <li id={`ref-${entry.id}`} className="scroll-mt-28 bg-paper-raised px-4 py-4">
+    <li
+      id={anchored ? `ref-${entry.id}` : undefined}
+      className="scroll-mt-28 bg-paper-raised px-4 py-4"
+    >
       <p className="font-display text-base leading-snug text-pretty">
         {entry.title}
       </p>
@@ -154,14 +167,21 @@ function Entry({
 function EntryList({
   entries,
   showPublisher = true,
+  anchored = true,
 }: {
   entries: Reference[];
   showPublisher?: boolean;
+  anchored?: boolean;
 }) {
   return (
     <ul className="flex flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule">
       {entries.map((entry) => (
-        <Entry key={entry.id} entry={entry} showPublisher={showPublisher} />
+        <Entry
+          key={entry.id}
+          entry={entry}
+          showPublisher={showPublisher}
+          anchored={anchored}
+        />
       ))}
     </ul>
   );
@@ -236,7 +256,7 @@ export default function SourcesPage() {
           ]}
         />
         <div className="mt-6">
-          <EntryList entries={DATASETS} />
+          <EntryList entries={DATASETS} anchored={false} />
         </div>
       </Section>
 
@@ -261,13 +281,16 @@ export default function SourcesPage() {
           </ul>
         </nav>
 
+        {/* The id sits on the group rather than on its heading. The contents
+            rail is built from `section[id] > h2` and `section[id] h3[id]`, so
+            178 publisher subheads carrying ids made a sticky box 8,122 px tall
+            in a 900 px viewport, which is a rail nobody can reach the bottom
+            of. Moving the id one element out leaves the rail listing the five
+            sections, and `#pub-` still lands on the group it names. */}
         <div className="flex flex-col gap-10">
           {BY_PUBLISHER.map((group) => (
-            <div key={group.slug}>
-              <h3
-                id={group.slug}
-                className="scroll-mt-28 text-sm font-semibold tracking-[0.06em] text-ink-faint uppercase"
-              >
+            <div key={group.slug} id={group.slug} className="scroll-mt-28">
+              <h3 className="text-sm font-semibold tracking-[0.06em] text-ink-faint uppercase">
                 {group.publisher}
               </h3>
               <div className="mt-3">

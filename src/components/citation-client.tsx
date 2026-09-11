@@ -3,6 +3,7 @@
 import Link from "next/link";
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useId,
@@ -157,6 +158,16 @@ export function Cite({ id }: { id: string }) {
 
   const [open, setOpen] = useState(false);
   const wrap = useRef<HTMLSpanElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
+
+  /* Escape can be pressed with focus inside the popover, and the popover is
+     about to be removed from the document. Without this the focus falls to
+     <body> and the reader's place in the text is gone. A pointer dismissal
+     does not move focus, so it does not take it back either. */
+  const closeAndReturnFocus = useCallback(() => {
+    setOpen(false);
+    trigger.current?.focus();
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -164,7 +175,7 @@ export function Cite({ id }: { id: string }) {
       if (!wrap.current?.contains(e.target as Node)) setOpen(false);
     };
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") closeAndReturnFocus();
     };
     document.addEventListener("pointerdown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
@@ -172,7 +183,7 @@ export function Cite({ id }: { id: string }) {
       document.removeEventListener("pointerdown", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [open]);
+  }, [open, closeAndReturnFocus]);
 
   // Claimed on every render, including the one that only opens the popover, so
   // that the marker holding the id cannot change while the page is being read.
@@ -193,6 +204,7 @@ export function Cite({ id }: { id: string }) {
   return (
     <span ref={wrap} className="relative inline-block">
       <button
+        ref={trigger}
         type="button"
         id={isFirst ? `cite-${number}` : undefined}
         onClick={() => setOpen((v) => !v)}
@@ -207,7 +219,7 @@ export function Cite({ id }: { id: string }) {
         <span className="fixed inset-x-gutter bottom-4 z-40 block rounded-xl border border-rule-strong bg-paper-raised p-5 text-left shadow-lg sm:absolute sm:inset-x-auto sm:top-[1.6em] sm:bottom-auto sm:left-0 sm:w-80">
           <button
             type="button"
-            onClick={() => setOpen(false)}
+            onClick={closeAndReturnFocus}
             aria-label="Close reference"
             className="absolute top-3 right-3 text-sm text-ink-faint hover:text-ink"
           >

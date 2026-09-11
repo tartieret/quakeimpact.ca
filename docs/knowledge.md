@@ -11,6 +11,83 @@ it was confirmed.
 
 ---
 
+## A mark that crosses a bar has to be given a ground before it is drawn
+
+**11 September 2026.** The fix for the open end on `PrepareDaysByDocument`, and the
+general shape of the answer. SVG paints in document order and has no notion of a
+mark "on top of" anything, so a qualifier drawn over a bar is drawn in whatever
+colour the bar already put there. Three marks in `prepare.tsx` were affected, and
+only the first was visible to the harness:
+
+- The open-end arrowhead, `muted` on a `muted` bar, measured 1:1 in both themes.
+- The midpoint upright on the school panels, `ruleStrong` where it crosses the
+  empty track in `rule`: 1.30:1 in light, 1.36:1 in dark. Below the 3:1 that a
+  non-text graphic needs, and the panel that fails is the province-wide one, whose
+  bar stops short of the midpoint, which is the panel the mark exists for.
+- The gridlines at 3 and 7 days, `rule` drawn under a `TrackBase` in `rule`:
+  identical colour, and painted first, so occluded outright across every bar and
+  1.28:1 against paper in the gaps between rows. Dead ink at both ends.
+
+The device that fixes all three is a slot: the mark clears a rectangle of
+`--color-paper-raised` for itself, then draws into it. It is the same trick the
+hatch pattern already uses when it fills its own background rather than leaving it
+transparent, generalised. Measured after: the arrowhead is 6.42:1 in light and
+6.98:1 in dark against its own ground.
+
+Three things learned building it, each of which cost a rebuild:
+
+- **A slot is bounded by what it clears, not by the mark it carries.** The school
+  upright runs five pixels past the track at each end; its slot does not, because a
+  paper rectangle on paper is itself a mark with no ground, and the harness rightly
+  says so.
+- **A slot must stop where the bar stops.** Drawn as one full-height rule across the
+  whole block, the gridlines erased the row labels they passed through. They are now
+  one segment per bar, and a gridline stands down where a document's own end already
+  falls on the value, so the stop is never overwritten by a gridline.
+- **A nested `<svg>` hides a mark's real ground.** `At` opens one, and anything
+  measuring what a mark sits on treats that nested root as the start of the world.
+  Keep the knockout in the outer drawing, with the percentage anchor and a pixel
+  `transform`, and put only the path that needs pixel coordinates inside `At`.
+
+Floor and ceiling now differ in the first channel as well as the written one: a
+closed end is flush with the bar and stops against an upright, an open end is cut
+back and detaches across a gap of paper.
+
+## An id on a heading is an id in the contents rail
+
+**11 September 2026.** `TableOfContents` builds itself from
+`main section[id] > h2, main section[id] h3[id]`, which is what lets a page author
+add a subhead without maintaining a second list. On `/sources/` the publisher
+subheads carry ids so the jump list can point at them, and there are 177 of them:
+the rail came out 8,122 px tall in a 900 px viewport, 182 links, and a sticky box
+taller than the viewport stops behaving as sticky, so everything past the first
+screenful was unreachable.
+
+The fix is not to drop the ids, because the jump list needs them. It is to put the
+id one element out, on the `<div>` that wraps the heading and its list. The fragment
+still lands on the group, the heading is still the first thing under it, and the
+rail falls to the five real sections and 235 px. Worth remembering as a general
+property: on this site an id on an `<h3>` inside a section is a request to appear in
+the rail, so a heading that only needs to be linkable should carry its id on a
+wrapper.
+
+## One key, one anchor
+
+**11 September 2026.** `/sources/` renders the datasets twice, once in their own
+section with the licences in full and again in the full list, and `Entry` set
+`id={"ref-" + entry.id}` both times. Eight duplicate ids, invalid HTML, and a
+`#ref-` link landing on whichever copy the browser met first. The short code is
+advertised on the page as the entry's permanent address, so it has to resolve to
+one place, and the full list is the register. `Entry` now takes `anchored`, and the
+earlier showing carries none. Measured after: 325 `ref-` ids on the page, 325 of
+them unique, and each of the eight formerly doubled keys lands 112 px from the top
+of the viewport, which is the `scroll-mt-28` the entry asks for.
+
+One trap when checking this by hand. The site sets `scroll-behavior: smooth`, and
+`/sources/` is about 69,000 px tall, so a fragment jump is an animation lasting
+several seconds. Measure the landing position after forcing `scroll-behavior: auto`,
+or the numbers are a scroll caught mid flight and every anchor looks broken.
+
 ## The register's notes are read by neighbours, and they had drifted to colleagues
 
 **11 September 2026.** The Source cell's note is rendered twice: in the citation popover
@@ -992,3 +1069,100 @@ Nothing in React can fix this, because the flash happens before React exists on 
 page. The only cures are a blocking inline script in `<head>` that reads
 `localStorage` and sets an attribute the CSS keys off, or accepting the flash. It is
 worth writing down that the layout effect is not the fix it is documented as being.
+
+## The quiet token has to clear AA on the tinted ground, not the paper one
+
+**11 September 2026.** `--color-ink-faint` was set by how it looked on paper and
+then used on three grounds. Paper is the most forgiving of them, so tuning there
+left the token failing on the other two: light `#6e7276` was 4.48:1 on paper but
+4.14:1 on `--color-accent-soft`, and dark `#797d82` was 4.45:1 on paper, 4.13:1 on
+paper-raised and 3.62:1 on accent-soft. It is now `#666a6e` in light (5.04 paper,
+5.45 raised, 4.66 accent-soft) and `#8b8f94` in dark (5.67, 5.26, 4.62). The
+binding ground in both themes is accent-soft, which is the tint the impact cell and
+the hovered system card sit on, and it is the ground nobody checks.
+
+The token is still the quietest text on the site: ink-muted reads 5.93:1 on light
+paper against ink-faint's 5.04:1, and 7.54:1 against 5.67:1 in dark. Restraint
+survives the correction, which is the point. Anything quieter than these two values
+fails accent-soft, so they are a floor and not a preference.
+
+## Colour that is also text has to pass as text
+
+**11 September 2026.** `BandPill` set its written label in the band colour. As fill
+the ramp is fine; as 12 px semibold type on paper, medium (`#b57a14`) was 3.37:1 and
+low (`#4f7f4a`) 4.34:1. The label is now ink and the hue stays in the segment meter
+beside it. Nothing is lost: the meter already carried both the hue and the ordinal,
+so the pill still says severity three ways — fill, count and word — and it still
+reads in greyscale. The general form: a ramp built for fills has no obligation to be
+legible as type, so a component that borrows it for type has to re-measure it.
+
+## A box that scrolls needs a tab stop, and this is the second time
+
+**11 September 2026.** `SystemMatrix` was `overflow-x-auto` with no `tabIndex` and no
+role, so at 390 px the Crustal M7 column — 196 px of 544 px — could not be reached
+without a pointer. `DataTable` in `prose-blocks.tsx` already had the fix, and this
+file already records the lesson from that one, which is what makes the repeat worth
+writing down: the pattern was known and simply not reached for. The matrix now
+carries `role="region"`, `tabIndex={0}` and an `aria-labelledby` pointing at a
+screen-reader-only `<caption>`, and all 196 px are reachable with the arrow keys.
+
+Worth making a habit of: every `overflow-x-auto` added to this codebase is a
+keyboard defect until it has a tab stop and a name. Grep for the utility rather than
+waiting for the audit to find the next one.
+
+## The scenario flash is accepted, and the reason is in the content
+
+**11 September 2026.** The comment in `scenario-context.tsx` claimed a layout effect
+prevented the flash of the unchosen scenario. It does not, and the correction now
+sits in the file. The flash stands: measured after the fix, the first frame at +41 ms
+still carries Cascadia and the switch lands at +91 ms.
+
+A blocking inline script in `<head>` is the standard cure, and it was rejected here
+on what the flash actually is. A theme flash is an attribute: one line of script sets
+it, CSS does the rest, and the markup is unchanged. A scenario is not an attribute —
+the two scenarios differ in the band on every cell and in the words beside it, so the
+only pre-hydration cure is to export both copies and hide one. That doubles the page
+and hands a reader without JavaScript two contradictory sets of bands at once. The
+rule to carry forward: an inline preference script is worth it only where the
+preference is expressible as an attribute the CSS can read.
+
+## Escape has to hand focus back, or it takes the reader's place with it
+
+**11 September 2026.** The citation popover closed on Escape and unmounted the close
+button focus was sitting on, so focus fell to `<body>` and the next Tab restarted at
+the top of the document. A reader who checks a source mid-paragraph loses the
+paragraph. The marker button now holds a ref and both Escape and the close button
+return focus to it. A pointer dismissal deliberately does not: it never moved focus,
+so it has nothing to give back.
+
+## The rail column is decided by the exported HTML, not by the route
+
+**11 September 2026.** `ArticleShell` reserved a 15 rem aside on every page, and
+`TableOfContents` renders nothing below three headings, so the four unwritten Part 1
+pages narrowed their body by 15 rem for an empty column. The rail is built
+client-side from the DOM, so the route cannot know the count at build time — but the
+DOM can, at parse time, and CSS can read it: the second column is applied by
+`:has(>div>section:nth-of-type(3))` on the grid container. That is true or false in
+the exported HTML before the first paint and before React exists, so the column is
+right from the first frame and nothing moves when the rail fills in. Measured:
+`/shaking/buildings/` 1112 px of body and no rail, `/shaking/ground/` 808 px and a
+rail, cumulative layout shift 0 on both.
+
+Two details that are easy to get wrong. The gap is set on the column axis only
+(`lg:gap-x-16`): a plain `gap` adds a row gap under the empty aside in the
+single-column case. And the base state names no `grid-template-columns` at all
+rather than a one-column template, so the `:has()` rule is adding a declaration
+rather than racing another utility for order within the layer.
+
+## The exported segment prefetch 404s under `serve.mjs`
+
+**11 September 2026.** Every desktop route in the audit logs a handful of console
+404s for URLs shaped `/after/__next.after.__PAGE__.txt?_rsc=…`. The file exists, as
+`out/after/__next.after/__PAGE__.txt`: the export writes the segment as a directory
+and the client asks for it with the dots flattened into a filename. `serve.mjs` maps
+a URL straight onto a path and does no rewriting, so it answers 404. It is a
+property of the export and the static server, not of any page, and it is invisible
+to a reader because the prefetch is speculative and the real navigation is a plain
+HTML request. Worth a rewrite rule in `serve.mjs` if the noise ever hides a real
+console error.
+

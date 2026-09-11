@@ -42,11 +42,18 @@ export function BandMeter({ band }: { band: BandId }) {
   );
 }
 
+/**
+ * The meter beside the label is the only thing that carries the band's hue.
+ * The label used to be set in the band colour too, and at 12 px semibold three
+ * of the six ramp values were below AA on paper: medium 3.37:1, low 4.34:1.
+ * Colouring it bought nothing the swatch was not already saying, so the label
+ * is ink and the colour stays where it is a fill rather than text.
+ */
 export function BandPill({ band }: { band: BandId }) {
   return (
-    <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase">
+    <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-ink uppercase">
       <BandMeter band={band} />
-      <span style={{ color: COLOR[band] }}>{BANDS[band].label}</span>
+      <span>{BANDS[band].label}</span>
     </span>
   );
 }

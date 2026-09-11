@@ -15,7 +15,10 @@
   --color-paper-raised: #ffffff;
   --color-ink: #14161a;
   --color-ink-muted: #5c5f63;
-  --color-ink-faint: #6e7276;
+  /* The quietest text on the page, and still AA on every ground it is painted
+     on: paper, paper-raised and accent-soft. Anything quieter than this fails
+     the accent-soft tint, which is the darkest ground light-mode text sits on. */
+  --color-ink-faint: #666a6e;
   --color-rule: #e2e2de;
   --color-rule-strong: #c8c8c4;
 
@@ -46,7 +49,7 @@
       --color-paper-raised: #191c20;
       --color-ink: #eef0f2;
       --color-ink-muted: #a2a6ab;
-      --color-ink-faint: #797d82;
+      --color-ink-faint: #8b8f94;
       --color-rule: #2a2e33;
       --color-rule-strong: #3c4147;
       --color-accent: #7fb4cc;

@@ -47,8 +47,19 @@ export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
  */
 export function SystemMatrix() {
   return (
-    <div className="overflow-x-auto rounded-xl border border-rule">
+    /* 34rem of table in a 348px box at phone width: without a tab stop and a
+       role, the last column is unreachable from a keyboard. `DataTable` in
+       prose-blocks.tsx already does this; the pattern is the same one. */
+    <div
+      role="region"
+      aria-labelledby="system-matrix-caption"
+      tabIndex={0}
+      className="overflow-x-auto rounded-xl border border-rule"
+    >
       <table className="w-full min-w-[34rem] border-collapse text-left">
+        <caption id="system-matrix-caption" className="sr-only">
+          Every system in both scenarios
+        </caption>
         <thead>
           <tr className="border-b border-rule bg-paper-raised">
             <th

@@ -3,6 +3,7 @@ import {
   Axis,
   Bar,
   FIG_COLOR,
+  FIG_STROKE,
   FIG_TYPE,
   FigHeading,
   FigRule,
@@ -44,6 +45,9 @@ const DAYS_ID = "prepare-days";
  * mark for an end nobody has published, rather than a longer bar.
  */
 const DAYS_DOMAIN = 14;
+
+/** Gridlines sit only where a document states a number. */
+const DAYS_GRID = [3, 7];
 
 /**
  * One row per document, in the order the copy's table gives them.
@@ -111,7 +115,6 @@ const DAYS_BAR_OFFSET = 8;
 const DAYS_BAR_H = 14;
 
 const DAYS_LAST_LABEL_Y = DAYS_ROW_TOP + (DAY_ROWS.length - 1) * DAYS_ROW_H;
-const DAYS_BARS_TOP = DAYS_ROW_TOP + DAYS_BAR_OFFSET;
 const DAYS_BARS_BOTTOM = DAYS_LAST_LABEL_Y + DAYS_BAR_OFFSET + DAYS_BAR_H;
 
 const DAYS_AXIS_Y = DAYS_BARS_BOTTOM + 6;
@@ -119,6 +122,57 @@ const DAYS_AXIS_LABEL_Y = DAYS_AXIS_Y + 18;
 const DAYS_NOTE_Y = DAYS_AXIS_LABEL_Y + 22;
 const DAYS_KEY_Y = DAYS_NOTE_Y + 20;
 const DAYS_HEIGHT = DAYS_KEY_Y + 12;
+
+/**
+ * The pixel width of the slot a crossing mark clears for itself, and of the
+ * open end that sits in one.
+ *
+ * SVG paints in document order, so a mark drawn over a bar is drawn in that
+ * bar's own colour unless something clears a ground for it first. That is not
+ * a contrast nicety: an arrowhead in `muted` over a solid bar in `muted`
+ * measures 1:1 against its ground and does not render at all, which left an
+ * open end looking exactly like a closed one. Every mark below that crosses a
+ * filled mark clears its own slot of paper before it draws.
+ */
+const DAYS_SLOT_W = 4;
+/** The whole open end: the gap of paper, then the arrowhead that follows it. */
+const DAYS_OPEN_W = 14;
+const DAYS_OPEN_GAP = 5;
+
+/** A hairline that crosses bars, drawn on the paper it clears for itself. */
+function SlottedRule({
+  value,
+  y,
+  height,
+  fill,
+}: {
+  value: number;
+  y: number;
+  height: number;
+  fill: string;
+}) {
+  const x = pct(value, DAYS_DOMAIN);
+  return (
+    <g>
+      <rect
+        x={x}
+        y={y}
+        width={DAYS_SLOT_W}
+        height={height}
+        fill={FIG_COLOR.paper}
+        transform={`translate(${-DAYS_SLOT_W / 2},0)`}
+      />
+      <rect
+        x={x}
+        y={y}
+        width="1"
+        height={height}
+        fill={fill}
+        transform="translate(-0.5,0)"
+      />
+    </g>
+  );
+}
 
 /** The end of a bar a document closes: a short upright, so the end is a stop. */
 function DayStop({ value, y }: { value: number; y: number }) {
@@ -137,6 +191,44 @@ function DayStop({ value, y }: { value: number; y: number }) {
 }
 
 /**
+ * The end of a bar a document leaves open: the bar is cut back, and an
+ * arrowhead points past it across a gap of paper.
+ *
+ * The gap is what makes the mark legible over a solid bar, a hatch or an empty
+ * track alike, and it is what keeps a floor from drawing the same as a
+ * ceiling. A closed end is flush and stops against an upright; an open end
+ * detaches and carries on.
+ */
+function DayOpenEnd({ y }: { y: number }) {
+  const nose = DAYS_OPEN_GAP - DAYS_OPEN_W;
+  return (
+    <g>
+      {/* The slot: cut back out of the bar, so the arrowhead has a ground. It
+          is drawn here rather than inside `At` because a nested `<svg>` is its
+          own stacking context for anything measuring what a mark sits on. */}
+      <rect
+        x="100%"
+        y={y}
+        width={DAYS_OPEN_W}
+        height={DAYS_BAR_H}
+        fill={FIG_COLOR.paper}
+        transform={`translate(${-DAYS_OPEN_W},0)`}
+      />
+      <At x="100%" y={y}>
+        <path
+          d={`M${nose} 0 L0 ${DAYS_BAR_H / 2} L${nose} ${DAYS_BAR_H} Z`}
+          fill={FIG_COLOR.muted}
+        />
+      </At>
+    </g>
+  );
+}
+
+/** Where row `i` puts its label, and where it puts its bar. */
+const dayLabelY = (i: number) => DAYS_ROW_TOP + i * DAYS_ROW_H;
+const dayBarY = (i: number) => dayLabelY(i) + DAYS_BAR_OFFSET;
+
+/**
  * Six documents, six answers, and no seventh answer offered.
  *
  * The figure is deliberately built so that it cannot be read as resolving to a
@@ -145,6 +237,11 @@ function DayStop({ value, y }: { value: number; y: number }) {
  * the spread. The distinction the copy is careful about survives in the
  * geometry as well as in the words, because a bar that ends in a point is open
  * above its number and a bar that ends against an upright is closed at it.
+ *
+ * Drawing order matters and is the reason the rows are laid down in two
+ * passes. Bars first, then the gridlines over them, then the end marks over
+ * both: an end mark is the thing the figure cannot afford to lose, so nothing
+ * is drawn on top of one.
  */
 export function PrepareDaysByDocument() {
   const hatch = `url(#${hatchId(DAYS_ID)})`;
@@ -156,64 +253,69 @@ export function PrepareDaysByDocument() {
       </FigHeading>
       <FigValue y={DAYS_VALUE_Y}>Three days to two weeks</FigValue>
 
-      {/* Gridlines only at values the documents themselves state. */}
-      {[3, 7].map((value) => (
-        <rect
-          key={value}
-          x={pct(value, DAYS_DOMAIN)}
-          y={DAYS_BARS_TOP}
-          width="1"
-          height={DAYS_BARS_BOTTOM - DAYS_BARS_TOP}
-          fill={FIG_COLOR.rule}
-          transform="translate(-0.5,0)"
-        />
+      {DAY_ROWS.map((row, i) => (
+        <g key={row.label}>
+          <FigText y={dayLabelY(i)}>{row.label}</FigText>
+          <FigText
+            x="100%"
+            y={dayLabelY(i)}
+            size={FIG_TYPE.tick}
+            fill={FIG_COLOR.faint}
+            anchor="end"
+          >
+            {row.kind}
+          </FigText>
+
+          <TrackBase y={dayBarY(i)} height={DAYS_BAR_H} />
+          <Bar
+            to={row.solid}
+            domain={DAYS_DOMAIN}
+            y={dayBarY(i)}
+            height={DAYS_BAR_H}
+          />
+          {row.range ? (
+            <Bar
+              from={row.solid}
+              to={row.range}
+              domain={DAYS_DOMAIN}
+              y={dayBarY(i)}
+              height={DAYS_BAR_H}
+              fill={hatch}
+            />
+          ) : null}
+        </g>
       ))}
 
-      {DAY_ROWS.map((row, i) => {
-        const labelY = DAYS_ROW_TOP + i * DAYS_ROW_H;
-        const barY = labelY + DAYS_BAR_OFFSET;
-        const end = row.range ?? row.solid;
-        return (
-          <g key={row.label}>
-            <FigText y={labelY}>{row.label}</FigText>
-            <FigText
-              x="100%"
-              y={labelY}
-              size={FIG_TYPE.tick}
-              fill={FIG_COLOR.faint}
-              anchor="end"
-            >
-              {row.kind}
-            </FigText>
+      {/* Gridlines only at values the documents themselves state, and only
+          across the bars. A gridline carrying its own slot of paper has to
+          stop where the bar stops, or it erases the row label it passes
+          through. Where a document's own end already falls on the value, that
+          end is the mark and the gridline stands down. */}
+      {DAY_ROWS.map((row, i) =>
+        DAYS_GRID.filter(
+          (value) => row.open || (row.range ?? row.solid) !== value,
+        ).map((value) => (
+          <SlottedRule
+            key={`${row.label}-${value}`}
+            value={value}
+            y={dayBarY(i)}
+            height={DAYS_BAR_H}
+            fill={FIG_COLOR.faint}
+          />
+        )),
+      )}
 
-            <TrackBase y={barY} height={DAYS_BAR_H} />
-            <Bar
-              to={row.solid}
-              domain={DAYS_DOMAIN}
-              y={barY}
-              height={DAYS_BAR_H}
-            />
-            {row.range ? (
-              <Bar
-                from={row.solid}
-                to={row.range}
-                domain={DAYS_DOMAIN}
-                y={barY}
-                height={DAYS_BAR_H}
-                fill={hatch}
-              />
-            ) : null}
-
-            {row.open ? (
-              <At x="100%" y={barY}>
-                <path d="M-12 0 L0 7 L-12 14 Z" fill={FIG_COLOR.muted} />
-              </At>
-            ) : (
-              <DayStop value={end} y={barY} />
-            )}
-          </g>
-        );
-      })}
+      {DAY_ROWS.map((row, i) =>
+        row.open ? (
+          <DayOpenEnd key={row.label} y={dayBarY(i)} />
+        ) : (
+          <DayStop
+            key={row.label}
+            value={row.range ?? row.solid}
+            y={dayBarY(i)}
+          />
+        ),
+      )}
 
       <Axis
         y={DAYS_AXIS_Y}
@@ -430,6 +532,15 @@ const SCHOOL_TRACK_Y = 70;
 const SCHOOL_TRACK_H = 18;
 const SCHOOL_LABEL_Y = 106;
 
+/**
+ * The midpoint upright, and the paper it clears to be seen on. The slot is the
+ * height of the track and no more: past the track there is nothing to clear,
+ * and a paper rectangle on paper is a mark with no ground of its own.
+ */
+const SCHOOL_SLOT_W = 5;
+const SCHOOL_HALF_SLOT_Y = SCHOOL_TRACK_Y - 5;
+const SCHOOL_HALF_H = SCHOOL_TRACK_H + 10;
+
 const SCHOOLS_RULE_Y = 130;
 const SCHOOLS_PANEL_B = 154;
 const SCHOOLS_HEIGHT = SCHOOLS_PANEL_B + SCHOOL_LABEL_Y + 12;
@@ -477,13 +588,26 @@ function SchoolProportion({
         y={offset + SCHOOL_TRACK_Y}
         height={SCHOOL_TRACK_H}
       />
+      {/* The midpoint clears its own slot, for the same reason the open end on
+          the first figure does: one panel's bar passes the midpoint and the
+          other's does not, so the upright has to read over a filled bar and
+          over an empty track alike, and a hairline in `ruleStrong` over a
+          track in `rule` measures 1.3:1 and is not there. */}
       <rect
         x="50%"
-        y={offset + SCHOOL_TRACK_Y - 5}
-        width="1"
-        height={SCHOOL_TRACK_H + 10}
-        fill={FIG_COLOR.ruleStrong}
-        transform="translate(-0.5,0)"
+        y={offset + SCHOOL_TRACK_Y}
+        width={SCHOOL_SLOT_W}
+        height={SCHOOL_TRACK_H}
+        fill={FIG_COLOR.paper}
+        transform={`translate(${-SCHOOL_SLOT_W / 2},0)`}
+      />
+      <rect
+        x="50%"
+        y={offset + SCHOOL_HALF_SLOT_Y}
+        width={FIG_STROKE}
+        height={SCHOOL_HALF_H}
+        fill={FIG_COLOR.muted}
+        transform={`translate(${-FIG_STROKE / 2},0)`}
       />
 
       <FigText
