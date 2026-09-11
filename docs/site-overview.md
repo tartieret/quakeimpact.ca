@@ -233,14 +233,16 @@ A thin complete grid is worth less than a few deep pages.
   rather than pictures of the aftermath — a reader met the filing system before they
   met a single consequence. The order is now: what the first hours, days, weeks and
   months are actually like, each phase carrying claims already sourced on the system
-  pages; then six of the thirteen systems, picked because a household feels them
-  first, rather than all thirteen listed; then the two scenarios, because somebody
+  pages; then every system as a card, so a reader who has just been told what the
+  months are like can look up the part of life they depend on; then the two
+  scenarios, because somebody
   who has not been told why this matters has no reason to work through the difference
   between a megathrust and a crustal earthquake; then where the numbers come from,
   with the band rubric folded into it as one sentence and a link. The dependency
-  figure and the full grid keep their pages, `/dependencies/` and `/after/`, and the
-  coupling they teach survives on the home page as the paragraph that says nothing
-  fails on its own. The scenario toggle also gained a sentence saying what it is for,
+  figure keeps its page, `/dependencies/`, and the coupling it teaches survives on
+  the home page as the paragraph that says nothing fails on its own. Each card's
+  phase label now carries its verb — "Felt within days" rather than a bare "DAYS",
+  which a reader could read as a duration, a deadline or a phase name. The scenario toggle also gained a sentence saying what it is for,
   which it had never had.
 
 - **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided

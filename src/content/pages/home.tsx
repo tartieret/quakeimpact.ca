@@ -16,10 +16,11 @@ import type { PageModule } from "./index";
  *
  * The page is ordered so that a reader meets a consequence before they meet
  * the site's filing system. The four phases come first and carry the answer to
- * the question the site exists to answer; six systems follow, picked rather
- * than listed; the two scenarios come after both, because a reader who has not
- * yet been told why this matters has no reason to work through the difference
- * between a megathrust and a crustal earthquake.
+ * the question the site exists to answer; then every system as a card, so that
+ * a reader who has just been told what the months are like can go straight to
+ * the part of life they depend on; the two scenarios come after both, because
+ * a reader who has not yet been told why this matters has no reason to work
+ * through the difference between a megathrust and a crustal earthquake.
  *
  * The standfirst opens on the gap the site exists to close: the province asks
  * for two weeks, and households are not carrying it. Both halves are cited, and
@@ -35,11 +36,13 @@ import type { PageModule } from "./index";
  * paragraph and this module passes as `lede`, which is the only difference
  * between the copy file and what the page renders.
  *
- * What used to sit here and no longer does is the dependency figure and the
- * full system grid. Both are indexes of the site rather than pictures of the
- * aftermath, and both already have a page: `/dependencies/` draws the links,
- * `/after/` carries every system. The coupling they teach survives here as the
- * paragraph that says nothing fails on its own.
+ * What used to sit here and no longer does is the dependency figure, which is
+ * an index of the site rather than a picture of the aftermath and which has its
+ * own page at `/dependencies/`. The coupling it teaches survives here as the
+ * paragraph that says nothing fails on its own. The system grid stayed, moved
+ * below the timeline and given the whole set rather than three tier-1 cards:
+ * after four paragraphs about the months, a reader wants to look their own life
+ * up, and a card they cannot find is a page they will not read.
  *
  * There is no map slot. The liquefaction overlay this page used to promise
  * rests on the Metro Vancouver microzonation layers, which are not openly
@@ -53,7 +56,7 @@ import type { PageModule } from "./index";
  * choose; the label names what it sets. Both are furniture, not claims.
  */
 export const HOME_CONTROL_NOTE =
-  "Two different earthquakes are possible here, and they are not the same emergency. Pick one and every page on the site answers for it. If you do not know which, leave it where it is.";
+  "Two different earthquakes are possible here, and they do not have the same impact. Pick one and every page on the site answers for it. If you do not know which, leave it where it is.";
 export const HOME_CONTROL_LABEL = "Showing impacts for";
 
 const link = "text-accent underline underline-offset-2";
@@ -102,7 +105,7 @@ export const home: PageModule = {
   sections: [
     {
       title: "The shaking is the short part",
-      lede: "Most people picture an earthquake as a violent event with a clear end, followed by help arriving from outside. Here is the same event told as the four stretches of time the province plans in.",
+      lede: "Most people picture an earthquake as a violent event with a clear end, followed by help arriving from outside. Consider this timeline instead.",
       body: (
         <div className="flex flex-col gap-8">
           <PhaseNarrative
@@ -207,32 +210,9 @@ export const home: PageModule = {
     },
 
     {
-      title: "What you would actually notice",
-      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to. Each one carries how long it is out, a sentence on how it fails, and the document behind it.",
-      body: (
-        <div className="flex flex-col gap-6">
-          <SystemGrid
-            slugs={[
-              "water",
-              "electricity",
-              "communications",
-              "sanitation",
-              "transportation",
-              "housing",
-            ]}
-          />
-          <Prose>
-            <p>
-              Natural gas, fuel, food, health care, the port and airport, the
-              dams, and where help comes from are on{" "}
-              <Link href="/after/" className={link}>
-                life afterwards
-              </Link>
-              , with the same three things for each.
-            </p>
-          </Prose>
-        </div>
-      ),
+      title: "Look up whichever part of it you depend on",
+      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to. Each card says when that part of life starts to be affected, how long it stays that way, and one sentence on how it fails. Open any of them for the documents behind it.",
+      body: <SystemGrid />,
     },
 
     {

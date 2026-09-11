@@ -31,8 +31,11 @@ function SystemCard({ system }: { system: SystemEntry }) {
             </>
           ) : null}
         </h3>
+        {/* A bare "DAYS" in the corner of a card says nothing: a reader cannot
+            tell a duration from a deadline from a phase name. The word it
+            needs is the verb, so the label carries one. */}
         <span className="mt-0.5 shrink-0 text-[0.6875rem] tracking-wide text-ink-faint uppercase">
-          {phase?.label}
+          Felt within {phase?.label.toLowerCase()}
         </span>
       </div>
       <BandPill band={impact.band} />
@@ -42,33 +45,33 @@ function SystemCard({ system }: { system: SystemEntry }) {
 }
 
 /**
- * Every system, or a chosen few.
- *
- * `tier` filters by build order, which is ours rather than the reader's, and
- * is what `/after/` used before it took the whole grid. `slugs` is the landing
- * page's need: a handful of consequences picked for a reader who has not asked
- * for an inventory yet, in the order the page names them rather than in the
- * order the content model holds them. A slug the model does not carry is
- * dropped rather than rendered empty.
+ * Every system, or one tier of them. `tier` filters by build order, which is
+ * ours rather than the reader's, and no page currently asks for it.
  */
-export function SystemGrid({
-  tier,
-  slugs,
-}: {
-  tier?: 1 | 2 | 3;
-  slugs?: string[];
-}) {
-  const systems = slugs
-    ? slugs
-        .map((slug) => SYSTEMS.find((s) => s.slug === slug))
-        .filter((s): s is SystemEntry => s !== undefined)
-    : tier
-      ? SYSTEMS.filter((s) => s.tier === tier)
-      : SYSTEMS;
+export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
+  const systems = tier ? SYSTEMS.filter((s) => s.tier === tier) : SYSTEMS;
+
+  /* The gap between cards is the container's own background showing through, so
+     a row the cards do not fill ends as a block of rule colour that reads as a
+     card with nothing in it. Thirteen systems leave one such cell in two
+     columns and two in three, so the tail of the grid is padded to the row.
+     Full class strings, because Tailwind cannot see a built one. */
+  const short = (columns: number) => (columns - (systems.length % columns)) % columns;
+  const fillers = [...Array(Math.max(short(2), short(3)))].map((_, i) => {
+    const sm = i < short(2);
+    const lg = i < short(3);
+    if (sm && lg) return "hidden bg-paper-raised sm:block";
+    if (lg) return "hidden bg-paper-raised lg:block";
+    return "hidden bg-paper-raised sm:block lg:hidden";
+  });
+
   return (
     <div className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-3">
       {systems.map((s) => (
         <SystemCard key={s.slug} system={s} />
+      ))}
+      {fillers.map((className, i) => (
+        <span key={i} aria-hidden className={className} />
       ))}
     </div>
   );

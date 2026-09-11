@@ -10,8 +10,7 @@ status: draft
 ## The shaking is the short part
 
 Most people picture an earthquake as a violent event with a clear end,
-followed by help arriving from outside. Here is the same event told as the four
-stretches of time the province plans in.
+followed by help arriving from outside. Consider this timeline instead.
 
 **Hours — you are on your own, and so is everyone you would call.** Nothing in
 Canada requires a mobile phone site to keep running once its power goes. The
@@ -53,18 +52,14 @@ depends less on any one system than on the order in which they can be brought
 back, which is why [life afterwards](/after/) is told system by system and [the
 dependency graph](/dependencies/) counts what each system is waiting on.
 
-## What you would actually notice
+## Look up whichever part of it you depend on
 
 Water in the taps, power in the walls, a phone that connects, a toilet that
-flushes, roads that carry you, a home to go back to. Each one carries how long it
-is out, a sentence on how it fails, and the document behind it.
+flushes, roads that carry you, a home to go back to. Each card says when that
+part of life starts to be affected, how long it stays that way, and one sentence
+on how it fails. Open any of them for the documents behind it.
 
-*Water, electricity, communications, sanitation, transportation and housing,
-drawn from the content model rather than written here.*
-
-Natural gas, fuel, food, health care, the port and airport, the dams, and where
-help comes from are on [life afterwards](/after/), with the same three things for
-each.
+*Every system, drawn from the content model rather than written here.*
 
 ## There are two earthquakes to think about, not one
 
