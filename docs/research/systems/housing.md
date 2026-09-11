@@ -6,13 +6,13 @@
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
 
-**Status.** No longer *not yet assessed*. Displacement is now published by four independent
-bodies, red- and yellow-tag counts exist for both scenarios, and the province states in its own
-voice that interim housing plans are still to be written. **Proposed band: High**, in both
-scenarios — set by the size of the displaced population, by the absence of any published shelter
-capacity to put it in, and by cordoning, which keeps people out of undamaged homes. The
-per-scenario ordering is counter-intuitive and must survive to the page: for the City of Vancouver
-the rarer crustal M7.2 is far worse than the M9.0 Cascadia. [COV-RISK-2024] **[A]**
+**Status.** Displacement is published by four independent bodies, red- and yellow-tag counts
+exist for both scenarios, and the province states in its own voice that interim housing plans
+are still to be written. **Proposed band: High**, in both scenarios — set by the size of the
+displaced population, by the absence of any published shelter capacity to put it in, and by
+cordoning, which keeps people out of undamaged homes. The per-scenario ordering is
+counter-intuitive and must survive to the page: for the City of Vancouver the rarer crustal
+M7.2 is far worse than the M9.0 Cascadia. [COV-RISK-2024] **[A]**
 
 ---
 
@@ -68,7 +68,7 @@ narrative scenario statement rather than a model output, and the same chapter's 
 figures are the province adopting the federal scenario catalogue rather than estimating
 independently.
 
-### Cordoning — the mechanism the site was missing
+### Cordoning
 
 Areas with high concentrations of damage may be closed off "**for weeks, months, or even
 years**", with the **West End** and the **Downtown Eastside** named as the neighbourhoods most

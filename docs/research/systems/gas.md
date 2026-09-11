@@ -5,7 +5,6 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** A customer count from FortisBC's own filing; the City's 55% still uncorroborated.
 
 **Status — a new system the site does not currently carry. Proposed band: High,
 both scenarios, on the restoration mechanism and not on any damage estimate.**
@@ -24,54 +23,24 @@ Mainland.
 
 ---
 
-## Correction recorded — the "does not address earthquake at all" framing is withdrawn
-
-Earlier drafts of this entry rested on an inference, and the inference was wrong.
-It is recorded here rather than deleted, because it is a clean worked example of
-the failure mode this folder exists to catch.
-
-**What was inferred.** That FortisBC does not address earthquake hazard at all.
-
-**From what.** A single verified fact: full-text extraction of the FEI **2026 Long
-Term Gas Resource Plan** returns **zero occurrences of "seismic" or "earthquake"**
-across ~23,000 lines. [FEI-LTGRP-26] **[A]** From that silence the entry inferred a
-silence about the system, and framed an asymmetry against Metro Vancouver and
-BC Hydro on that basis.
-
-**What the retrieved document shows.** The **2024 Gas System Resiliency Plan** —
-Exhibit B-61 in the Tilbury CPCN proceeding, previously unread because the BCUC
-repository returned HTTP 403 to automated fetch, now retrieved and read in full —
-is a quantitative seismic risk assessment. It contains 129 occurrences of
-"seismic", 511 of "earthquake" and 122 of "liquefaction", and it models six
-earthquake damage mechanisms per asset using FEMA fragility relationships and
-published hazard curves. [FEI-RESILIENCY-24] **[A]**
-
-**Status of the withdrawn claim.** Withdrawn entirely. It must not appear in any
-draft of the page, in the band argument, or in the scoping list. The LTGRP keyword
-count survives only as the narrower fact stated below. An argument from silence
-about one document was treated as evidence about an organisation; it was not.
-
----
-
 ## Findings
 
 ### What the LTGRP silence does and does not mean
 
-The verified fact stands. FEI's **2026 Long Term Gas Resource Plan**, its public
-investment roadmap to 2050 filed with the BCUC in March 2026, contains zero
-occurrences of "seismic" or "earthquake", while returning 134 hits for "resilien",
-40 for "Tilbury" and 27 for "T-South", and carrying a dedicated §7.4 "System
-Resiliency". [FEI-LTGRP-26] **[A]** on the absence. It is not an extraction
-failure.
+FEI's **2026 Long Term Gas Resource Plan**, its public investment roadmap to 2050
+filed with the BCUC in March 2026, contains zero occurrences of "seismic" or
+"earthquake" across ~23,000 lines, while returning 134 hits for "resilien", 40 for
+"Tilbury" and 27 for "T-South", and carrying a dedicated §7.4 "System Resiliency".
+[FEI-LTGRP-26] **[A]** on the absence. It is not an extraction failure.
 
 The accurate reading is narrow: FEI's **public-facing 2050 investment roadmap
 frames resilience around winter supply interruption and peak demand**, while its
 **regulatory filing assesses seismic hazard extensively**. [FEI-LTGRP-26] **[A]**
 [FEI-RESILIENCY-24] **[A]**
 
-There is a documented reason for the split, and it removes the sting. The LTGRP's
-resiliency case rests on the Resiliency Plan, which it cites, and the project the
-LTGRP justifies — Tilbury storage against a T-South interruption — is driven by a
+There is a documented reason for the split. The LTGRP's resiliency case rests on the
+Resiliency Plan, which it cites, and the project the LTGRP justifies — Tilbury
+storage against a T-South interruption — is driven by a
 *non-seismic* hazard. For the largest assessed vulnerability, "non-earthquake
 induced landslide is the hazard that contributes the most to the cumulative risk",
 and its annual rate of winter-only failure from non-earthquake external hazards is
@@ -84,9 +53,10 @@ documents put their emphasis, and nothing more.
 
 ### The 2024 Gas System Resiliency Plan — what it assesses
 
-Filed 24 October 2024, cover letter from Sarah Walsh, Director Regulatory Affairs,
-FortisBC, in the Tilbury LNG Storage Expansion CPCN proceeding.
-[FEI-RESILIENCY-24] **[A]**
+Filed 24 October 2024 as **Exhibit B-61** in the Tilbury LNG Storage Expansion CPCN
+proceeding, cover letter from Sarah Walsh, Director Regulatory Affairs, FortisBC. It
+is a quantitative seismic risk assessment: 129 occurrences of "seismic", 511 of
+"earthquake" and 122 of "liquefaction". [FEI-RESILIENCY-24] **[A]**
 
 - **Structure.** 58 anonymised **Assessed Vulnerabilities** (AV-1 to AV-58),
   screened down from an initial 87. The screen: an outage affecting **10,000 or
@@ -155,10 +125,6 @@ target reliability of bridges designed to CSA S6-14. At least 15 of the 58 Asses
 Vulnerabilities are classified as "Bridge" or "Pipeline / Bridge".
 [FEI-RESILIENCY-24] **[A]**
 
-Earlier drafts carried the caution that "the LTGRP does not say the review was
-seismic, and we must not assume it was". That question is now resolved in favour of
-"it was", from the Resiliency Plan itself.
-
 **The honest counterweight travels with this.** Exponent's finding is that bridges
 "typically have relatively low probabilities of failure", which is *why* no
 upgrades are planned. "No upgrades planned" is a stated conclusion from a modelled
@@ -167,10 +133,9 @@ result, not neglect, and the page must not present it as neglect.
 
 ### Seismic shutoff valves — planned, not deployed
 
-Previously recorded as unknown. It is now known, and the answer is that the work is
-scoped but not built. §7.2.4, "Improved Response Capabilities to Widespread Lower
-Mainland Seismic Event", is the plan's most directly Lower-Mainland-relevant
-passage:
+The work is scoped but not built. §7.2.4, "Improved Response Capabilities to
+Widespread Lower Mainland Seismic Event", is the plan's most directly
+Lower-Mainland-relevant passage:
 
 > "the intent of this initiative is to improve FEI's ability to isolate the Lower
 > Mainland's CTS following a seismic event that results in widespread asset failure
@@ -228,7 +193,7 @@ technician has been inside every affected building. That is a per-premises
 operation across hundreds of thousands of premises. It cannot be done remotely and
 it cannot be done in bulk.
 
-The Resiliency Plan now supplies the rate, and it is the strongest material this
+The Resiliency Plan supplies the rate, and it is the strongest material this
 entry has. §3.4.1:
 
 > "For these outages, FEI assumes that it has used its available workforce, mutual
@@ -252,8 +217,7 @@ Four consequences, all sourced:
   [FEI-RESILIENCY-24] **[A]**
 - **FortisBC's own sensitivity shows what happens when mutual aid is absent:** the
   rate falls to 2,025 or 723 per day — a factor of four to twelve.
-  [FEI-RESILIENCY-24] **[A]** This is the argument the entry previously had to make
-  from outside the evidence. It is now made inside it, by the utility.
+  [FEI-RESILIENCY-24] **[A]**
 - **Mutual aid availability is scenario-dependent, so the two site scenarios
   differ.** A crustal event and a Cascadia megathrust do not present the same
   mutual-aid picture: the wider the affected region, the less likely that outside
@@ -282,12 +246,11 @@ is possible at all. [BCUC-C-6-25] **[A]**
 ### The supply-interruption figures — guard these every single time
 
 **BCUC Decision and Order C-6-25, 27 October 2025** (Panel: A. K. Fung, KC (Chair),
-T. A. Loski, A. C. Dennier) approved the Tilbury LNG Storage Expansion. The order
-has now been read directly and is no longer reaching us through trade commentary;
-the entry's citation moves from [B] via [ERQ-TILBURY-25] to [A] on the order
-itself. [BCUC-C-6-25] **[A]**
+T. A. Loski, A. C. Dennier) approved the Tilbury LNG Storage Expansion. It is cited
+here from the order itself, at **[A]**, and not through the trade commentary at
+[ERQ-TILBURY-25], which would carry **[B]**. [BCUC-C-6-25] **[A]**
 
-**Attribution corrected — each figure to the document that actually contains it.**
+**Each figure to the document that actually contains it.**
 
 - The order's words are **"hundreds of thousands of customers"**: "It is clear that
   any prolonged outage of supply from the T-South pipeline during the winter would
@@ -296,9 +259,8 @@ itself. [BCUC-C-6-25] **[A]**
   loss of service at this scale would take **several weeks to restore service**."
   [BCUC-C-6-25] **[A]**
 - **The number 600,000 appears nowhere in Order C-6-25**, and neither does any
-  six-figure customer count. Earlier drafts attributed "at least 600,000
-  residential, commercial and industrial customers" to the order. **That
-  attribution is withdrawn.** [BCUC-C-6-25] **[A]** on the absence.
+  six-figure customer count. **No customer count may be attributed to the order.**
+  [BCUC-C-6-25] **[A]** on the absence.
 - The ~600,000 figure traces instead to **customer rows in the Resiliency Plan's
   Exponent risk-analysis input appendix**, which pair customer counts with total
   outage durations: 600,405 customers / 57 days, 600,405 / 66 days, 640,111 / 61
@@ -321,11 +283,10 @@ itself. [BCUC-C-6-25] **[A]**
 > conditions makes restoration worse in an earthquake, not better.
 
 So they are a **floor and an illustration of the relight mechanism**, never an
-estimate of anything, and **never a Cascadia number**. What has improved is that we
-can now say *why* they are a floor, in FortisBC's own arithmetic, rather than only
-asserting it.
+estimate of anything, and **never a Cascadia number**. FortisBC's own arithmetic is
+what says they are a floor.
 
-**Be scrupulous about which figure is which.** The entry now cites genuine seismic
+**Be scrupulous about which figure is which.** The entry cites genuine seismic
 durations as well as supply-interruption ones, and they must never be blended.
 
 | Figure | Scenario | Source |
@@ -340,16 +301,15 @@ CEC argued that relighting business and industrial customers earlier "could
 dramatically reduce the GDP losses incurred". The Panel found FEI's assumptions
 "reasonable and appropriate". [BCUC-C-6-25] **[A]**
 
-### The Tilbury project figures, corrected
+### The Tilbury project figures
 
 - Capital cost: the Panel accepted "**$873.358 million in 2023 dollars and
   $1,143.889 million in as spent dollars**"; the $1.14 billion figure is the
   as-spent one, over a seven-year construction period. [BCUC-C-6-25] **[A]**
 - **The 2.0 Bcf is a "resiliency reserve" carved out of a 3 Bcf tank**, the other
-  1 Bcf being peaking supply. Earlier drafts described "a 2.0 Bcf reserve sized to
-  support winter load for three days"; the duration is temperature-dependent, not
-  flat. Load support is ~**3.5 days** at the modelled average winter condition and
-  **2 days 17 hours** at **−10 °C**, and at least 3 days from roughly −6.9 °C
+  1 Bcf being peaking supply. **The duration it supports is temperature-dependent,
+  not flat.** Load support is ~**3.5 days** at the modelled average winter condition
+  and **2 days 17 hours** at **−10 °C**, and at least 3 days from roughly −6.9 °C
   upward. [BCUC-C-6-25] **[A]**
 - **The "three days" is a different thing**: the regulatory shutdown duration FEI
   assumed, and FEI's "Minimum Resiliency Objective" — "the ability of its system to
@@ -422,8 +382,8 @@ Reproduced as a block so it can be checked against any draft of this page.
   in any source we hold. AV-18's 61 days is not one: its location is Restricted
   Confidential.
 - **Not that AV-18 is in the Lower Mainland.** Not that it is not.
-- **Not that FortisBC has failed to assess seismic risk.** It has, in depth. The
-  withdrawn framing must not reappear in any form, including as an aside.
+- **Not that FortisBC has failed to assess seismic risk.** It has, in depth. That
+  framing must not appear in any form, including as an aside.
 - **Not that gas mains are seismically vulnerable in the Lower Mainland.** The
   Resiliency Plan's per-asset results are anonymised; we cannot locate them.
 - **Not that automatic seismic shutoff valves are deployed on the FEI system.** The
@@ -517,26 +477,17 @@ that half as **we could not reach it**, not as *nobody published it*.
   dependence is unquantified, and the entry stands on the restoration mechanism, which
   does not need it.
 
-**Closed by this pass**, recorded so the searches are not repeated: whether the
-2024 Resiliency Plan assesses seismic hazard (yes, quantitatively); whether the
-bridge-crossing review was seismic (yes); whether FEI deploys automatic seismic
-shutoff (no — a preliminary-stage initiative only); and confirmation of the
-several-weeks figure against Order C-6-25 itself (confirmed, with the 600,000
-attribution corrected).
-
 ---
 
 ## For the page
 
-**Band recommendation: High still holds, both scenarios — on a rebuilt argument.**
-The previous argument leaned on the absence of any public seismic assessment. That
-leg is gone, and the band does not need it. Against the rubric:
+**Band recommendation: High, both scenarios.** Against the rubric:
 
 - **Duration.** Weeks or longer, from BC regulatory evidence, under conditions
   strictly easier than an earthquake. [BCUC-C-6-25] **[A]**
 - **Extent.** Regional and per-premises; FEI's own modelling runs to
   600,000–640,000 customers. [FEI-RESILIENCY-24] **[A]**
-- **Dependency.** The strongest of any system here, and now quantified. Restoration
+- **Dependency.** The strongest of any system here, and quantified. Restoration
   is rate-limited by qualified people entering buildings one at a time, at a
   ceiling of 8,716 per day that already assumes mutual aid and every available
   contractor in the region — the two things a megathrust removes.
@@ -546,17 +497,16 @@ leg is gone, and the band does not need it. Against the rubric:
   [BCUC-C-6-25] **[A]**
 
 **The counter-argument, recorded.** A reviewer could reasonably prefer **NOT
-ASSESSED**, and the case for it is now different from before. It is no longer "no
-seismic assessment exists" — one does, and it is thorough. It is that the
-assessment's outputs are **anonymised and geographically unattributable**: we
-cannot say that any modelled outage falls in the Lower Mainland, the
-region-specific section is qualitative, and the only durations quotable in full
-belong to a non-seismic supply-interruption scenario. On that reading, High rests
-on a mechanism plus a floor rather than on a local seismic estimate.
+ASSESSED**. The case for it is that the assessment's outputs are **anonymised and
+geographically unattributable**: we cannot say that any modelled outage falls in the
+Lower Mainland, the region-specific section is qualitative, and the only durations
+quotable in full belong to a non-seismic supply-interruption scenario. On that
+reading, High rests on a mechanism plus a floor rather than on a local seismic
+estimate.
 
-**Why High is still preferred.** The relight mechanism is scenario-independent,
-sourced, and now carries FortisBC's own sensitivity showing it degrades by a factor
-of four to twelve without mutual aid. That is a rate limit on restoration, not a
+**Why High is preferred.** The relight mechanism is scenario-independent, sourced,
+and carries FortisBC's own sensitivity showing it degrades by a factor of four to
+twelve without mutual aid. That is a rate limit on restoration, not a
 guess about damage, and it holds whatever the damage turns out to be. Tilbury adds
 a dated, regulator-accepted seismic deficiency in a named local asset. If AV-18's
 location is ever established as outside the region *and* nothing else Lower
@@ -607,8 +557,8 @@ Specific, cheap, under the reader's control, with a concrete cost for getting it
 wrong. Exactly the efficacy pairing the style guide requires before severity may be
 stated.
 
-**But the lever now has a complication the site has to carry honestly.** The City of
-Vancouver tells every resident to know how to turn the gas off and, in a document it
+**The lever has a complication the site has to carry honestly.** The City of Vancouver
+tells every resident to know how to turn the gas off and, in a document it
 still links, to keep a wrench at the meter; FortisBC tells customers not to.
 [COV-EXPLORER-25] [COV-HHH-2011] [FBC-EQ] **[A]** Both are official, both are current,
 and neither acknowledges the other. The site states both and adjudicates neither —
@@ -617,8 +567,8 @@ FortisBC-consistent advice with the reason attached. [SURREY-PREP] **[A]** The
 jurisdictional comparison belongs in `../preparedness.md`; what belongs here is that
 the reconnection delay Surrey names is this page's own relight arithmetic.
 
-**The framing to hold, replacing the withdrawn one.** A utility that has done the
-seismic analysis, filed it with its regulator and published most of it; that found
+**The framing to hold.** A utility that has done the seismic analysis, filed it with
+its regulator and published most of it; that found
 an earthquake mechanism driving its second-largest risk with a modelled two-month
 outage; that is de-rating a major Lower Mainland asset by 42 percent for seismic
 compliance; and whose autonomous seismic shutoff programme is still in preliminary

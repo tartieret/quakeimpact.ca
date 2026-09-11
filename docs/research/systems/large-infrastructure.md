@@ -5,16 +5,13 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** Roberts Bank closed from three federal documents; a harbour-versus-delta guard added.
-
 
 ## Status
 
-**Band: MEDIUM in the Cascadia M9 scenario; NOT ASSESSED in the crustal M7.** The M9
-column moves because the document the previous draft could not obtain has been recovered
-and read. AIR Worldwide's 2013 study for the Insurance Bureau of Canada makes specific,
-published statements about Vancouver International Airport, its road and rail access, and
-the wharves, piles and container cranes of the Vancouver-area ports. It is a proprietary
+**Band: MEDIUM in the Cascadia M9 scenario; NOT ASSESSED in the crustal M7.** AIR
+Worldwide's 2013 study for the Insurance Bureau of Canada makes specific, published
+statements about Vancouver International Airport, its road and rail access, and the
+wharves, piles and container cranes of the Vancouver-area ports. It is a proprietary
 catastrophe-model output commissioned by an industry body, not an engineering assessment
 or an inspection of any of those facilities, and the band is set on the strength of the
 sourcing with that limit stated. The crustal M7 stays NOT ASSESSED: the study models the
@@ -25,29 +22,21 @@ crustal event.
 
 ## Findings
 
-### Withdrawn: the correction that said the YVR finding is not sourced
+### The AIR study, and where it is readable
 
-**This page previously carried a section headed "Correction: the YVR damage finding is not
-sourced", concluding that the claim "could not be located in any source". That correction
-is withdrawn.** The finding exists. It appears twice in the AIR study — in the executive
-summary at p. 17 and in the western-scenario chapter at p. 81. [AIR-2013] **[A]**
+The YVR damage finding appears twice in the AIR study — in the executive summary at p. 17
+and in the western-scenario chapter at p. 81. [AIR-2013] **[A]**
 
-**Record the distinction, because it is the point.** The earlier audit hit a **retrieval
-failure**, not a fabricated claim. IBC's live copy of the study went dead at the DNS/TLS
-layer, the older `ibc.ca` path returns IBC's HTML 404 page with a 200 status, and the only
-mirror that surfaced returned 403. The audit was right to refuse to publish an unsourced
-sentence and right to say so on the page. It was wrong in its conclusion about the world:
-the document was published, and had simply stopped resolving.
-
-The working address is the Internet Archive's verbatim capture of the IBC original, 18.3
-MB, 264 pages:
+IBC's live copy of the study is dead at the DNS/TLS layer, the older `ibc.ca` path returns
+IBC's HTML 404 page with a 200 status, and the only mirror that surfaced returned 403. The
+working address is the Internet Archive's verbatim capture of the IBC original, 18.3 MB,
+264 pages:
 `https://web.archive.org/web/2016id_/http://assets.ibc.ca/Documents/Disaster/IBC-Earthquake-Economic-Study-Full-Report.pdf`
 [AIR-2013] **[A]** If IBC restores the document, cite IBC. That is a refresh trigger.
 
-**A second correction stands and is applied below: the study says "slight to moderate
-damage", not "light to moderate".** The study does use "light to moderate" elsewhere, of
-Vancouver Island commercial and industrial buildings — a different claim about a different
-place. The two must not be conflated.
+**The study says "slight to moderate damage", not "light to moderate".** The study does use
+"light to moderate" elsewhere, of Vancouver Island commercial and industrial buildings — a
+different claim about a different place. The two must not be conflated.
 
 **What kind of document this is.** AIR Worldwide, *Study of Impact and the Insurance and
 Economic Cost of a Major Earthquake in British Columbia and Ontario/Québec*, October 2013,
@@ -68,10 +57,8 @@ need to be closed to traffic for a few days for inspection and initial repair, a
 take a few weeks to restore fully. The Canada Line rail service to the airport is likely
 to be disrupted as well. [AIR-2013] **[A]** (M9.0 western Cascadia scenario.)
 
-**This is the finding the page has been reaching for.** It answers the page's own open
-question directly: an airport's usefulness after an earthquake is a question about whether
-anyone can reach it, and here is a published statement that for the first few days nobody
-can drive to it.
+An airport's usefulness after an earthquake is a question about whether anyone can reach
+it, and here is a published statement that for the first few days nobody can drive to it.
 
 Then the ground:
 
@@ -116,12 +103,9 @@ different quantities and neither should be printed. Use the dollar figure alone.
 
 ### Port of Vancouver
 
-**Retired: the claim that no public statement exists on terminal, crane or wharf
-performance.** The previous draft recorded "no quantitative public statement on existing
-terminal, crane or pile-supported wharf seismic performance was located" and shipped the
-port as NOT ASSESSED on that basis. The AIR study makes such statements at pp. 81–82, and
-they are specific. They are modelled output from a 2013 proprietary catastrophe model, not
-an inspection — but it is no longer true that nothing has been published.
+The AIR study makes quantitative statements on existing terminal, crane and pile-supported
+wharf seismic performance at pp. 81–82, and they are specific. They are modelled output
+from a 2013 proprietary catastrophe model, not an inspection.
 
 Under the M9.0 western Cascadia scenario, in the study's own terms:
 
@@ -138,8 +122,8 @@ Under the M9.0 western Cascadia scenario, in the study's own terms:
 - **Service in some Vancouver-area ports may be disrupted for one to two weeks.**
   [AIR-2013] **[A]**
 
-**That is the north-shore-versus-delta asymmetry the page was reaching for**, now stated by
-a source and with a restoration time attached. It is a statement about ground conditions:
+**That is the north-shore-versus-delta asymmetry**, stated by a source and with a
+restoration time attached. It is a statement about ground conditions:
 the harbour is on better ground than the delta, and the difference in the study's own
 damage grades is one grade.
 
@@ -147,9 +131,9 @@ The rest of the port material stands:
 
 - **Roberts Bank Terminal 2** is being designed with seismic performance assessments and
   geotechnical design work. [RBT2-ARCADIS] **[B]** — a corporate press release of 24 July
-  2026, which does **not** contain the "native soil densification and preloading" wording
-  previously attributed to it. The project's environmental impact statement (27 March
-  2015, preface plus five volumes) is the [A]-grade document, but the specific
+  2026, which does **not** contain any "native soil densification and preloading"
+  wording. The project's environmental impact statement (27 March 2015, preface plus five
+  volumes) is the [A]-grade document, but the specific
   geotechnical and seismic section was not recovered. [RBT2-EIS] **[A]** for the document,
   **[?]** for its seismic content until the section is read.
 - **Deltaport sits on the liquefaction-prone Fraser sedimentary basin.** [MOODYS-RMS]
@@ -176,13 +160,13 @@ share — and must not be repeated.
   February 2025 to spring 2027, frames it as life-extension and structural and
   operational upgrades, and no longer carries the seismic wording or a 2030 date. Do not
   describe the timeline as running to 2030.
-- **Tsawwassen** [?] — no seismic assessment or upgrade located, and the absence is now
-  audited rather than asserted. Searched 10 September 2026: the **BC Ferry Commissioner's
-  major capital approvals** page for terminals lists two matters in its entire history and
-  neither is Tsawwassen — **no Tsawwassen terminal capital application has ever been filed
-  with the regulator**; the Major Terminal Efficiency Project application covers Tsawwassen
-  twelve times and contains the word "seismic" **zero** times; `bcferriesprojects.ca` carries
-  project pages for eleven terminals and **none for Tsawwassen**; and neither *Charting the
+- **Tsawwassen** [?] — no seismic assessment or upgrade located. Searched 10 September
+  2026: the **BC Ferry Commissioner's major capital approvals** page for terminals lists
+  two matters in its entire history and neither is Tsawwassen — **no Tsawwassen terminal
+  capital application has ever been filed with the regulator**; the Major Terminal
+  Efficiency Project application covers Tsawwassen twelve times and contains the word
+  "seismic" **zero** times; `bcferriesprojects.ca` carries project pages for eleven
+  terminals and **none for Tsawwassen**; and neither *Charting the
   Course* (2025) nor the Annual Report to the Commissioner 2025–26 contains any asset-level
   seismic statement. **[A]** on the absence, through those four channels.
 - **A named Lower Mainland facility its operator says fails current code — and it is not a
@@ -193,9 +177,9 @@ share — and must not be repeated.
   [BCF-FMU-23] **[A]** It is a maintenance yard, not a berth, and the page must say which —
   but it is on the delta, and it is where the vessels are fixed.
 
-The asymmetry is the finding, and it now has three legs rather than two: Horseshoe Bay has
-a seismic claim, Tsawwassen has nothing through four channels, and the Richmond maintenance
-yard has a published admission. **It remains a statement about the public record, not an
+The asymmetry is the finding, and it has three legs: Horseshoe Bay has a seismic claim,
+Tsawwassen has nothing through four channels, and the Richmond maintenance yard has a
+published admission. **It remains a statement about the public record, not an
 inference about relative vulnerability.** Tsawwassen sits on the Fraser delta; Horseshoe Bay
 sits on rock at the mouth of Howe Sound. The terminal on the delta is the one with no public
 seismic assessment. PEIRS names Tsawwassen directly among the facilities whose impacts
@@ -203,11 +187,11 @@ would be compounded by liquefaction of roadways in Richmond and Delta. [PEIRS] *
 
 ### Roberts Bank Terminal 2 — three federal documents, and the criterion they disagree on
 
-Closed 10 September 2026. The EIS geotechnical and seismic section recorded here as an
-unretrieved lead is **EIS Volume 2, §9.1.3.2 with Table 9.1.3-1**, and its revised text is
-reproduced verbatim inside the port authority's own response to the Review Panel — so it
-is readable at [A] without the EIS volume. Ground shaking at Roberts Bank, for the Site
-Class C soils found at **roughly 100 to 200 m below current mudline**: peak ground
+The EIS geotechnical and seismic section is **EIS Volume 2, §9.1.3.2 with Table
+9.1.3-1**, and its revised text is reproduced verbatim inside the port authority's own
+response to the Review Panel — so it is readable at [A] without the EIS volume. Ground
+shaking at Roberts Bank, for the Site Class C soils found at **roughly 100 to 200 m below
+current mudline**: peak ground
 acceleration **0.10 g at 100 years, 0.23 g at 475 years, 0.42 g at 2,475 years**.
 [RBT2-IR2-17] **[A]** (Return-period ground motion at a site, not a modelled event.)
 
@@ -284,15 +268,13 @@ notable exception is the Port of Kobe which permanently lost container shipping 
 to other Asian ports". [RMS-KOBE] **[C]**
 
 Use those two sentences. They make the permanent-displacement point without a number that
-cannot be checked, and the "almost a year" repair duration is new to the page.
+cannot be checked.
 
-**Correction to the pairing.** The previous draft attributed the ranking — sixth busiest
-container port worldwide in 1994, seventeenth by 1997 — jointly to [CHANG-2000] and
-[RMS-KOBE]. **RMS does not contain it.** The document has now been read in full and the
-words "sixth", "seventeenth", "rank" and "ranking" do not appear in it. The ranking rests
-on [CHANG-2000] alone, and that paper is paywalled: the figures were **not verified inside
-its full text**, only in its record and abstract. [CHANG-2000] **[?]** Prefer RMS's own
-sentence over the ranking.
+**The ranking — sixth busiest container port worldwide in 1994, seventeenth by 1997 —
+rests on [CHANG-2000] alone.** [RMS-KOBE] does not contain it: the document has been read
+in full and the words "sixth", "seventeenth", "rank" and "ranking" do not appear in it.
+Chang 2000 is paywalled: the figures were **not verified inside its full text**, only in
+its record and abstract. [CHANG-2000] **[?]** Prefer RMS's own sentence over the ranking.
 
 **Sourcing note.** The RMS/Moody's live copy at
 `https://forms2.rms.com/rs/729-DJX-565/images/eq_1995_kobe_eq.pdf` **404s**, as does the
@@ -312,8 +294,7 @@ be used for that. It is not a Lower Mainland number and never becomes one.
   terminals, container cranes, pile-supported wharves or YVR runways would perform.** The
   AIR statements above are 2013 catastrophe-model output against the stock as it then
   stood. No operator, regulator or engineering assessment of these facilities has been
-  located. **[?]** The gap is now narrower and differently shaped: something is published,
-  and it is not an assessment.
+  located. **[?]** Something is published, and it is not an assessment.
 - **Anything at all about these facilities under the crustal M7 scenario.** The AIR study
   models the western Cascadia scenario. The crustal column has no source. **[?]**
 - **Any published seismic assessment of the Tsawwassen ferry terminal.** Not located.
@@ -324,7 +305,7 @@ be used for that. It is not a Lower Mainland number and never becomes one.
   technical report. **[?]**
 - **The Sea Island Climate Resilience Project's pump-station count and cost.** Two figures
   in the register conflict with what was found. **[?]**
-- **Kobe's port ranking figures**, verified inside a source. RMS has now been read in full
+- **Kobe's port ranking figures**, verified inside a source. RMS has been read in full
   and does not carry them; Chang 2000 remains paywalled and unread beyond its abstract.
   **[?]**
 - **Whether IBC will re-publish the 2013 study.** The live asset host no longer resolves
@@ -335,27 +316,20 @@ be used for that. It is not a Lower Mainland number and never becomes one.
 
 ## For the page
 
-**The page now has a Cascadia column.** It ships **Medium** for the M9 and **not assessed**
+**The page has a Cascadia column.** It ships **Medium** for the M9 and **not assessed**
 for the crustal M7, and it says why both are what they are — including that the M9 band
 rests on a 2013 industry-commissioned model rather than on anyone having assessed the
 facilities.
 
-**The band, and the argument against it.** The M9 band moves off *not assessed* because
-the reason for that state — nothing published — is no longer true. Medium rather than High
-follows the study's own grades and durations: slight damage in the harbour, moderate in the
-delta ports, one to two weeks of service disruption in some ports, runway sections out for
-a few days, road access cut for the first few critical days with the Arthur Laing Bridge
-possibly closed for days and fully restored in weeks. **The counter-argument, which must
+**The band, and the argument against it.** Medium rather than High follows the study's own
+grades and durations: slight damage in the harbour, moderate in the delta ports, one to
+two weeks of service disruption in some ports, runway sections out for a few days, road
+access cut for the first few critical days with the Arthur Laing Bridge possibly closed
+for days and fully restored in weeks. **The counter-argument, which must
 travel with the band:** this is modelled output from 2013, commissioned by an industry
 body, describing infrastructure as it stood thirteen years ago, and it is not an
 engineering assessment of any of these facilities. A reader is entitled to know that the
 band rests on a model, and the page says so rather than implying an inspection.
-
-**Withdrawing the previous correction is itself worth showing.** The page said a finding
-could not be sourced; the finding was real and the document had gone offline. That is a
-worked example of the difference between *we could not retrieve this* and *nobody has
-published this*, which is a distinction the whole research folder turns on. Keeping the
-withdrawal visible is more useful than deleting the old paragraph.
 
 **Lead with access, not with buildings.** The study's emphasis at YVR is the ground and the
 approaches: Sea Island at moderate liquefaction risk, runway settlement and heaving, and
@@ -368,7 +342,7 @@ trade-in-goods share described loosely and would be the number an expert uses to
 the site. The same rule applies to the airport loss: CAD 300 million, and neither of the
 study's two percentage figures.
 
-**The delta–harbour asymmetry is now a sourced claim, not a note about the record.** For
+**The delta–harbour asymmetry is a sourced claim, not a note about the record.** For
 the ports, say what AIR says: one damage grade worse on the delta, with Annacis Island and
 North Delta named. For the ferry terminals it remains a note about the public record —
 Tsawwassen has no located assessment and Horseshoe Bay does — and no inference about
@@ -379,7 +353,7 @@ repairs that took almost a year. Keep it in the economic paragraph and out of th
 paragraph, and do not print the ranking.
 
 **Lever.** There is little a reader acts on here directly. The honest lever is
-expectation-setting, and it is now sharper: goods arrive through a small number of very
+expectation-setting: goods arrive through a small number of very
 large nodes, the one published model says some port service is out for one to two weeks
 and the airport is unreachable by road for the first few days, and household supply
 planning should not assume the port and airport are working. Route to

@@ -8,35 +8,10 @@
 
 **Status.** The MVP in `../site-overview.md` §8 — both scenarios, water, power,
 transportation, the ground-conditions map and the band rubric — survives contact
-with the evidence in substance, but two of its assumptions have failed. The map
-it opens with cannot be licensed, and the hook it closes with was based on a
-claim the source contradicts. What follows replaces it.
-
----
-
-## What changed
-
-**Ground conditions loses its map.** The microzonation layers carry custom ICLR
-terms, not an open licence. The page is still worth building — the peer-reviewed
-literature carries the strongest single number the site has — but it is a text
-page with an outbound link, not the visual opening it was meant to be. See
-`maps.md` and `../licensing.md`.
-
-**Scenarios gains an anchor.** Both scenarios exist as official deterministic
-runs under the Open Government Licence – Canada, and the province's own
-operational plan uses the crustal M7 as its primary planning scenario. The
-framing is no longer ours to justify. It is also the only major page with no
-licensing risk whatsoever.
-
-**Preparing loses its hook and gains a better one.** The 72-hours-versus-two-
-weeks comparison was false: BC's earthquake guide says two weeks. The
-replacement — that BC's own guidance contradicts itself across three provincial
-pages while the public remembers a number none of them now give — is defensible,
-citable three ways, and closer to the reader.
-
-**The method page is load-bearing for a changed reason.** It was going to explain
-six hatched cells. It now has to explain why most of the grid moved in one
-research pass. That is a stronger argument for the rubric, not a weaker one.
+with the evidence in substance. Ground conditions is a text page with an outbound
+link, because the microzonation layers carry custom ICLR terms rather than an open
+licence; see `maps.md` and `../licensing.md`. What follows is the order to build
+in, and the reason each page sits where it does.
 
 ---
 
@@ -46,25 +21,25 @@ research pass. That is a stronger argument for the rubric, not a weaker one.
    licensing risk, and the strongest structural idea the site has. It can carry
    the opening.
 2. **Method and the band rubric.** Ships with the MVP rather than after it. Two
-   systems still have no published assessment behind them, four bands moved in a
-   single pass, and a reader who meets that without the rubric concludes the site
-   is unfinished rather than honest.
+   systems still have no published assessment behind them, and a reader who meets
+   that without the rubric concludes the site is unfinished rather than honest.
 3. **Water.** The best-sourced system: a real mechanism, a named official
    describing it in his own words, and a documented reason why no restoration
    time exists.
-4. **Transportation.** Now the strongest page in the set, not the fourth-best.
-   The province designates routes that must stay open and states it is not
-   retrofitting the bridges on them to stay open — sourced twice, twenty years
-   apart.
-5. **Who stays.** Immediately after transportation, which it depends on. Promoted
-   from the demotion the earlier draft recommended: its premise is now sourced
-   twice over from separate provincial documents, and it should be retitled
-   around what the province plans rather than who can leave.
-6. **Ground conditions.** Text and figures from the peer-reviewed literature,
-   with an outbound link where the map was to be.
-7. **Electricity.** Rebuilt on BC Hydro's own regulatory filing. The 2011 claim
-   the page used to rest on has to be reconciled or retired first.
-8. **Preparing.** Cheap to build and now honestly framed.
+4. **Transportation.** The strongest page in the set. The province designates
+   routes that must stay open and states it is not retrofitting the bridges on
+   them to stay open — sourced twice, twenty years apart.
+5. **Who stays.** Immediately after transportation, which it depends on. Its
+   premise is sourced twice over from separate provincial documents, and it should
+   be retitled around what the province plans rather than who can leave.
+6. **Ground conditions.** Text and figures from the peer-reviewed literature —
+   the strongest single number the site has — with an outbound link in place of a
+   map the site cannot licence.
+7. **Electricity.** Built on BC Hydro's own regulatory filing. The 2011 press
+   release has to be reconciled or retired first.
+8. **Preparing.** Cheap to build. The hook is that BC's own guidance contradicts
+   itself across three provincial pages while the public remembers a number none
+   of them now give — defensible, citable three ways, and close to the reader.
 
 **Consider promoting fire following** into the MVP as the flagship graphic. The
 Dedicated Fire Protection System coverage boundary is the one map the site can
@@ -76,9 +51,8 @@ than a paragraph's.
 
 ## Then
 
-Sanitation, housing, communications, health care and gas — all five now have
-enough behind them to write, where three of them had nothing at the start of this
-pass. Gas is a new system entry the code does not carry at all.
+Sanitation, housing, communications, health care and gas — all five have enough
+behind them to write. Gas is a new system entry the code does not carry at all.
 
 Large infrastructure and dams ship in the fourth band, and should, until the AIR
 study and a published dam assessment surface.
@@ -106,5 +80,5 @@ Three pieces of plumbing, none of them research:
 ## For the page
 
 Nothing here reaches the reader. This file exists so that the order in which the
-site is built follows the evidence rather than the original enthusiasm — and so
-that when a page ships thin, the record shows it shipped thin on purpose.
+site is built follows the evidence — and so that when a page ships thin, the
+record shows it shipped thin on purpose.

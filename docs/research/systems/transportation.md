@@ -5,8 +5,6 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** The Port Mann document set is **eight, not three**; the Canada Line date closes; an author name corrected.
-
 
 ## Status
 
@@ -90,10 +88,9 @@ Pitt River, Ironworkers Memorial and Port Mann, with Lions Gate and Pattullo lis
 future. [BCSIMS-22] **[A]** The source PDF's table columns extract mis-aligned; do not
 pair a year or a length with a named bridge from it without re-reading the original.
 
-### Approaches, not spans — now partly sourced
+### Approaches, not spans
 
-The draft this file replaces called the approach-embankment question unsourced. It is no
-longer. Three Lower Mainland crossings have published ground-displacement figures at their
+Three Lower Mainland crossings have published ground-displacement figures at their
 approaches, and one of them says outright that the approach, not the main span, was the
 collapse risk. A fourth crossing — Mission, in the Fraser Valley rather than Metro
 Vancouver — publishes the objective, the numbers and the built remediation together.
@@ -133,7 +130,7 @@ also specified for liquefaction assessment. [NAB-ICCHGE-08] **[A]** A secondary 
 gives 975 [CAEE-10YR] **[A]**, but 975 is the CSA S6-14 *code* level and must not be
 attributed to this bridge. Knight Street used 1000 as well [KSB-2010] **[A]** —
 project-specific criteria in this era used 1000, not 975. Where the sources conflict,
-prefer the project's own geotechnical engineers, and there are now two of those.
+prefer the project's own geotechnical engineers, and there are two of those.
 
 **Golden Ears, duration — the clearest published statement in this evidence base of why
 duration matters.** "for the **2475 year (yr) return period design event specified for
@@ -295,8 +292,8 @@ Three numbers carry the whole argument with no adjectives: the design earthquake
 **475-year**; what the tunnel achieves is **150–240-year**; a new lifeline crossing is
 designed for **2475-year**.
 
-**The replacement, now [A], not [B].** $8.5 billion, up from $4.15 billion, with a
-federal contribution of up to $3 billion; major construction from **2027**; opening
+**The replacement.** $8.5 billion, up from $4.15 billion, with a federal contribution of
+up to $3 billion; major construction from **2027**; opening
 **September 2031**, moved from December 2030; environmental assessment expected to
 conclude late 2026; a new eight-lane immersed tube. Announced July 2026 by Minister Mike
 Farnworth and corroborated across four independent outlets reporting the same government
@@ -333,9 +330,10 @@ from either release. The rest of both lists is not disputed here.
 ### Port Mann — publish no number
 
 **Publish no Port Mann-specific return period, ground motion level or performance
-level.** The rule is unchanged. What has changed is the *shape* of the absence: it is not
-one paywalled conference paper but **three published documents on this bridge's seismic
-design, none of them free.**
+level.** The absence has a shape: **three published documents on this bridge's seismic
+design specifically, none of them free.** They sit inside a larger project document set of
+at least eight papers, listed under "What is not established" below; these three are the
+ones addressing seismic design.
 
 - Goodyear, D. (2017), "Design Basis for the New Port Mann Bridge over the Fraser River",
   *Structural Engineering International* (IABSE). Peer-reviewed, by the designer, and
@@ -352,15 +350,15 @@ design, none of them free.**
 [CAEE-10YR] records project-specific criteria second-hand; treat any figure reaching this
 page through that route as unverified for Port Mann specifically.
 
-**A number reached this project second-hand and is being declined, deliberately.** A UBC
-master's thesis states that the "Willamette River Transit Bridge and **Port Mann Bridge
-were designed for a 475-year return period at the lower design level**, and the target
-performance was essentially elastic with minor inelastic response", citing Jones et al.
+**A second-hand number that is not usable.** A UBC master's thesis states that the
+"Willamette River Transit Bridge and **Port Mann Bridge were designed for a 475-year
+return period at the lower design level**, and the target performance was essentially
+elastic with minor inelastic response", citing Jones et al.
 (2013). [ZHANG-UBC-15] **[B]** The site does not use it, for three reasons: it is a student
 thesis restating a table from a paper it cites rather than a project source; it gives only
 the **lower** design level, which alone would mislead a reader into thinking Port Mann was
-designed to 475 years; and it is exactly the shape of the error caught at Golden Ears — a
-figure travelling through a secondary review. Separately, a "**975-year**" figure appearing
+designed to 475 years; and it is a figure travelling through a secondary review.
+Separately, a "**975-year**" figure appearing
 in another UBC thesis in connection with Port Mann model updating is **a researcher's
 analysis spectrum, not a design criterion**, and is the same trap as the Golden Ears 975.
 Neither is usable. If a Port Mann number is ever published here, it comes from
@@ -437,24 +435,22 @@ spans**, carrying two rail tracks and a suspended pedestrian/bikeway, and is Nor
 America's first extradosed transit bridge. The extradosed form was chosen "to satisfy the
 vertical flight clearance requirements at the river due to the nearby airport".
 [NAB-ICCHGE-08] **[A]** These figures come from the bridge's own designer, Buckland &
-Taylor Ltd., in a peer-reviewed conference paper; the earlier encyclopedia-only
-qualification is retired. **The opening date is now sourced too.** The Canada Line entered
-service on **17 August 2009**: the Office of the Premier's news release of that date states
+Taylor Ltd., in a peer-reviewed conference paper. The Canada Line entered service on
+**17 August 2009**: the Office of the Premier's news release of that date states
 the line "was officially opened three-and-a-half months ahead of schedule today", and
 describes it as running on "16 stations, **two bridges**, approximately 19 kilometres of
 tunnel and elevated guideway". [BCGOV-CANLINE-09] **[A]** One editorial guard: the release
 dates the **line**, not the bridge, and does not name the North Arm Bridge. The bridge
 carries the line and had no service before it, so the date is the bridge's — but write it
 as the Canada Line opening rather than implying a separate bridge-opening record. The paper
-predates the opening and says only "scheduled for completion in 2009". Earlier drafts
-described the crossing as a bored tunnel; that was wrong.
+predates the opening and says only "scheduled for completion in 2009".
 
-**The crossing is no longer a blank. Its seismic design criteria are published.** Stated
-by the designer: "The project seismic design criteria state that seismic design will be
-based on the bridge structure resisting a **475 year return period event with repairable
-damage** and a **100 year return period event with no significant damage and essentially
-elastic performance.**" And on scope: "For the design of the Canada Line North Arm Bridge
-across the Fraser River, **only the 100 and 475 yr events were considered**".
+**Its seismic design criteria are published.** Stated by the designer: "The project
+seismic design criteria state that seismic design will be based on the bridge structure
+resisting a **475 year return period event with repairable damage** and a **100 year
+return period event with no significant damage and essentially elastic performance.**" And
+on scope: "For the design of the Canada Line North Arm Bridge across the Fraser River,
+**only the 100 and 475 yr events were considered**".
 [NAB-ICCHGE-08] **[A]**
 
 *These are the project's own criteria as reported by the bridge's designer in 2008.* The
@@ -552,9 +548,9 @@ said.
   municipality, September 2026. The nearest thing in public is a 2011 newspaper list
   quoting ministry officials, fifteen years old, containing at least one claim
   contradicted by later provincial engineering documents. [PROGRESS-2011] **[B]**
-- **Port Mann seismic criteria — and the document set is larger than this file had it.**
-  Not three published documents but **at least eight**. The 2014 conference's own published
-  accepted-papers list, recovered from a web archive, carries **six Port Mann / Highway 1
+- **Port Mann seismic criteria.** The project document set runs to **at least eight**
+  published papers. The 2014 conference's own published accepted-papers list, recovered
+  from a web archive, carries **six Port Mann / Highway 1
   Improvement Project papers in one project session**, all submitted under Keith Holmes of
   MMM Group: *Performance Based Seismic Design* (the Leggett & Gérin paper this file
   names), *Description and Overview*, *Rehabilitation, Retrofit and Upgrade of Existing
@@ -563,27 +559,25 @@ said.
   existence, exact titles and submitting author — the conference's own list, not a snippet.
   Note the list records **submitters**, not full authorship.
   - **"Lightweight EPS Embankments" is the first identified Port Mann approach-embankment
-    document this project has found**, which is the question this file has been circling.
+    document located**, and it bears on the question this file circles.
     On its title it would not license a design level, and it is unread.
   - The proceedings are **not online**: a web-archive scan of the whole conference domain
     filtered to PDFs returns zero. It archived its programme, not its papers. Route:
     purchase, or a library holding SMSB 2014 (Vol. 4, p. 2141 for the seismic paper).
-  - [PM-SEI-17] has migrated to a new publisher and the paywalled landing page is live
-    again; [PM-IABSE-17] is sold at about €25, and its free publisher preview **was
-    retrieved and is page 1 only** — title, affiliations, abstract, one figure caption, and
+  - [PM-SEI-17] has migrated to a new publisher and the paywalled landing page is live;
+    [PM-IABSE-17] is sold at about €25, and its free publisher preview **was retrieved and
+    is page 1 only** — title, affiliations, abstract, one figure caption, and
     **no return period, ground-motion level or performance level**. A preview is not a read.
-  - **Bibliographic correction.** The authors of [PM-IABSE-17] are **Hans Lund** (T.Y. Lin
-    International, Bellevue) and **Robert Mitchell** (Shannon & Wilson, Seattle). This file
-    and `../sources.md` each had an initial wrong. It also places the geotechnical
+  - The authors of [PM-IABSE-17] are **Hans Lund** (T.Y. Lin International, Bellevue) and
+    **Robert Mitchell** (Shannon & Wilson, Seattle). That places the geotechnical
     co-author at a Seattle firm, which is worth knowing before anyone cites the paper as
     wholly BC-sourced.
-  - **The rule is unchanged by any of this. None has been read, so no Port Mann number is
-    published anywhere in this folder.** **[?]**
-- **North Arm Bridge — closed.** The seismic design criteria, dimensions, ground
-  conditions, foundations and the no-densification decision are all now sourced to the
-  bridge's designer. [NAB-ICCHGE-08] **[A]** **The opening date closed on 10 September
-  2026** against the Office of the Premier's news release of 17 August 2009.
-  [BCGOV-CANLINE-09] **[A]** One item remains open: the designer's own second paper,
+  - **None has been read, so no Port Mann number is published anywhere in this folder.**
+    **[?]**
+- **North Arm Bridge — the designer's second paper.** The seismic design criteria,
+  dimensions, ground conditions, foundations and the no-densification decision are sourced
+  to the bridge's designer [NAB-ICCHGE-08] **[A]**, and the opening date to the Office of
+  the Premier's news release of 17 August 2009 [BCGOV-CANLINE-09] **[A]**. Still open:
   Bergman, Griezic & Scollard (2008), "Design of the Canada Line Extradosed Transit
   Bridge", IABSE Congress Chicago — identified, 403 to fetch, not read. [NAB-IABSE-08]
   **[?]**
@@ -613,11 +607,11 @@ said.
   western-Canada component addressing region-specific seismicity separately.
   [MCGILL-SHAO-25] **[C]** for any number; **[A]** only as evidence that the method
   exists and is being built for this hazard environment.
-- **Knight Street: the author-copy route is now a documented negative, not an untried
-  hope.** Both papers are closed on every open-access channel tested 10 September 2026 —
-  OpenAlex `closed`, Unpaywall zero locations, Semantic Scholar `CLOSED` — and the ASCE
-  landing pages return 200 to a browser user-agent, so this is a **real paywall, not the
-  403 pattern** in `../../knowledge.md`. Both authors are at Klohn Crippen Berger, whose
+- **Knight Street: the author-copy route is a documented negative.** Both papers are
+  closed on every open-access channel tested 10 September 2026 — OpenAlex `closed`,
+  Unpaywall zero locations, Semantic Scholar `CLOSED` — and the ASCE landing pages return
+  200 to a browser user-agent, so this is a **real paywall, not the 403 pattern** in
+  `../../knowledge.md`. Both authors are at Klohn Crippen Berger, whose
   technical-paper library is live, fully enumerable from its sitemap, and whose search API
   works under control: `grouting`, `compaction grouting` and `Fraser delta` all return
   **empty**, and **KCB posts abstracts, never full-text PDFs**. So the firm is not a route.
@@ -625,7 +619,7 @@ said.
   entitlement-gated and yielded a snippet, which is not a source. Routes left, all
   requiring a person: ASCE pay-per-view, interlibrary loan, or a direct request to the
   authors. **[?]**
-- **The highest-priority unretrieved documents are now [KSB-GROUT-17] and [SY-GEESD-18]**,
+- **The highest-priority unretrieved documents are [KSB-GROUT-17] and [SY-GEESD-18]**,
   both ASCE, both on Knight Street and the Fraser delta, and both obtainable through a
   normal library rather than a society membership. Thavaraj & Sy (2017), "Compaction
   Grouting as Part of Seismic Retrofit of Two Bridges in British Columbia, Canada",
@@ -635,27 +629,24 @@ said.
   Sy (2018), "Challenges in Geoseismic Upgrade of Bridges in the Fraser Delta, BC, Canada",
   *GEESD V*, likewise mentions stabilising toe berms only through a snippet.
   [SY-GEESD-18] **[B]**, unpublishable.
-- **Thavaraj & Greinacher (2025), GeoManitoba 2025 — no longer the top priority.** Its
-  abstract is now quoted in full and its four case-study crossings are named:
+- **Thavaraj & Greinacher (2025), GeoManitoba 2025.** Its abstract is quoted in full and
+  its four case-study crossings are named:
   **Agassiz-Rosedale, Mission, an unnamed railway bridge and Knight Street**.
   [KCB-GEOMB-25] **[A]** for the abstract's own wording and for the identity of those four;
   **[?]** for anything beyond it. **Three of the four are not Metro Vancouver crossings**
   — Agassiz-Rosedale and Mission are Fraser Valley crossings 80–120 km east of Vancouver,
-  and only Knight Street is in Metro Vancouver. The earlier expectation that this paper
-  would extend the approach-displacement evidence to the region's busiest crossings was
-  wrong. The proceedings volume is **member-distributed and indexed by neither Google
-  Scholar nor OpenAlex**; treat it as not public rather than not found. Retrieval requires
-  a CGS membership or a request to the authors.
+  and only Knight Street is in Metro Vancouver. The proceedings volume is
+  **member-distributed and indexed by neither Google Scholar nor OpenAlex**; treat it as
+  not public rather than not found. Retrieval requires a CGS membership or a request to
+  the authors.
 - **The 1938 Lions Gate construction date, the 60,000/day Lions Gate figure and the
   125,000/day Ironworkers figure** are not in the sources cited for them. **[?]**
 - **The Massey replacement's "~150-year design life".** Not confirmed in any retrieved
   coverage. **[?]**
 
-### The crossings table, audited
+### The crossings table
 
-Nine crossings were previously listed as having no located public assessment. Seven rows
-now carry one, and Mission has been added. The table below is the audited state of the
-record; a blank row means searched and not found, not unexamined.
+A blank row means searched and not found, not unexamined.
 
 | Crossing | Public seismic finding located | Marker |
 | --- | --- | --- |
@@ -682,7 +673,7 @@ target collapse prevention at a 475-year event; new lifeline crossings are desig
 2475. Not collapsing and still working are different standards, and only the first has
 been bought.
 
-**The central claim now has crossing-level corroboration in an engineer's own words.**
+**The central claim has crossing-level corroboration in an engineer's own words.**
 The Ministry says it at policy level in §2.2. The Mission Bridge retrofit says it at one
 named crossing on the provincial disaster recovery network: post-earthquake access and
 repairable damage were "considered desirable but not required". [MISSION-CGS-18] **[A]**
@@ -737,10 +728,9 @@ level of safety was not achieved. The rule that resolves it — a press release 
 its own existence, not for an engineering fact its own engineers contradict — is worth
 more to the project than the finding.
 
-**The audited table of blanks stays, and it is stronger for shrinking.** Five filled rows
-and five blanks make a sharper point than nine blanks: the assessments exist, they were
-recent, and with these exceptions they were not published. The honest line is *assessed,
-not published*.
+**The audited table of blanks stays.** Filled rows beside blank ones make the point: the
+assessments exist, they were recent, and with these exceptions they were not published.
+The honest line is *assessed, not published*.
 
 **Use the December 2015 event where a design standard would be reached for.** A magnitude
 4.8 earthquake 52 km down stopped two SkyTrain lines for about eighty minutes on
@@ -755,8 +745,7 @@ can use immediately, and that comes from the Ministry, not from us.
 
 **Lever.** The reader cannot retrofit a bridge. What they can do is plan on the crossing
 they use being closed or inspected rather than open, and know which side of the water
-they need to be on. Route out of this page to `../mobility.md`, which now carries a
-stronger and better-sourced framing than "who can leave".
+they need to be on. Route out of this page to `../mobility.md`.
 
 **Do not write** that any crossing "will collapse", or that the region will be "cut off".
 Neither is sourced. What is sourced is weeks to months of reduced capacity [PEIRS]

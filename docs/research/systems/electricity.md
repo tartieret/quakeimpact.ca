@@ -5,24 +5,21 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** Two conflated studies became three, and a "no BC source" line was withdrawn.
 
-**Status — band: High, both scenarios. Decided 10 September 2026**, replacing the
-previous Medium, with an explicit instruction attached: **the page does not
-generalise the finding beyond downtown.** The band is regional because the grid is
-regional; the claim on the page is downtown, because that is what the evidence says.
-Anyone who lives or works downtown learns something specific and actionable about
-where they are. That is worth more than a smoothed regional statement, and it is
-what the site is for.** The Medium band rested on a 2011 BC Hydro press statement that BC's
-electrical infrastructure is built to withstand a 1-in-2,475-year event. In
-November 2025 BC Hydro told its regulator that its main downtown substation would
-not be operable after a **1-in-1,000-year** event, that up to **two-thirds of
-downtown customers** could lose power in a large earthquake, and that it "could
-take several weeks to restore power to customers and years to completely restore
-the system." That is a duration, an extent and a dependency, stated by the asset
-owner, and it meets the High rubric. The two statements cannot both stand
-unreconciled; the 2011 one is dated design intent, and the 2025 filing is set
-against it.
+**Status — band: High, both scenarios. Decided 10 September 2026**, with an explicit
+instruction attached: **the page does not generalise the finding beyond downtown.** The
+band is regional because the grid is regional; the claim on the page is downtown, because
+that is what the evidence says. Anyone who lives or works downtown learns something
+specific and actionable about where they are. That is worth more than a smoothed regional
+statement, and it is what the site is for. In November 2025 BC Hydro told its regulator
+that its main downtown substation would not be operable after a **1-in-1,000-year**
+event, that up to **two-thirds of downtown customers** could lose power in a large
+earthquake, and that it "could take several weeks to restore power to customers and years
+to completely restore the system." That is a duration, an extent and a dependency, stated
+by the asset owner, and it meets the High rubric. BC Hydro also stated in 2011 that BC's
+electrical infrastructure is built to withstand a 1-in-2,475-year event. The two
+statements cannot both stand unreconciled; the 2011 one is dated design intent, and the
+2025 filing is set against it.
 
 ---
 
@@ -76,12 +73,11 @@ Supporting facts from the same filing: [BCH-WESTEND-25] **[A]**
 - The fix does not exist before **July 2032 at the earliest**. Between now and then
   the stated exposure stands.
 
-**The restoration asymmetry is now sourced, not reasoned.** "Several weeks to
-restore power to customers and years to completely restore the system" is exactly
-the two-clock structure the project had previously arrived at by engineering
-reasoning — service restoration and system restoration on different clocks — and it
-is now a BC utility's own statement to its regulator. Use BC Hydro's phrasing
-directly; it is better than anything we would write.
+**The restoration asymmetry is sourced.** "Several weeks to restore power to customers
+and years to completely restore the system" is a two-clock structure — service
+restoration and system restoration on different clocks — in a BC utility's own statement
+to its regulator. Use BC Hydro's phrasing directly; it is better than anything we would
+write.
 
 **Caveat, to be recorded and to travel with the claim.** This is a proponent's
 application arguing for a project, so the seismic consequence is the case being
@@ -105,15 +101,14 @@ generative AI was used in preparing portions of the submission.
 - The Vancouver City Central Transmission project (about $201M) includes the roughly
   $87M Mount Pleasant substation, designed to operate post-disaster, with ducts and
   cable vaults installed below the liquefaction and ground-deformation zone. All
-  downtown high-voltage transmission runs underground. [BCH-VCCT] **[B]** — this
-  stands, and it is the other half of the picture: the new asset is built to
-  post-disaster standard; the 1947 and 1952 assets are not.
+  downtown high-voltage transmission runs underground. [BCH-VCCT] **[B]** — it is the
+  other half of the picture: the new asset is built to post-disaster standard; the 1947
+  and 1952 assets are not.
 
 ### Three BC Hydro seismic studies that are constantly conflated
 
 They are different studies, of different things, and the report must be explicit
-about the distinction. **This section covered two until 10 September 2026; a third
-was found on the BCUC record, and it is the one that answers most.**
+about the distinction.
 
 - **The 2014 Probabilistic Seismic Hazard Assessment** — released December 2014,
   six years of work, described as the first of its kind by a North American
@@ -167,14 +162,14 @@ is the Murrin pattern a second time: a named Lower Mainland asset, an owner-stat
 withstand **below the code level**, and no dated fix. Two instances is a pattern the
 page may describe. It is still not a portfolio statement, and must not become one.
 
-### The Murrin finding is older than this file had it
+### The Murrin finding is older than the 2025 filing
 
 The 2019 F2020-F2021 filing already said, in its Downtown Vancouver Electricity Supply
 Plan: *"Murrin substation is on seismically unstable soil. Approximately half of the
 230 kV switchyard, which supplies both Murrin and Dal Grauer loads, is vulnerable to
 severe earthquake damage from liquefaction and settlement. All load being served from
 Dal Grauer and Murrin substations may experience a prolonged outage after a seismic
-event."* [BCH-RRA-F2020] **[A]** Six years before the 2025 filing this file is built on.
+event."* [BCH-RRA-F2020] **[A]** Six years before the 2025 filing.
 
 The same appendix supplies the denominator the 2025 filing lacks: the downtown study
 area has **approximately 95,000 customers**, with a fiscal-2017 peak load of 411 MVA.
@@ -197,8 +192,7 @@ utility actually said.
   loss. The one place the subjects touch is the 2014 transmission vulnerability
   analysis, whose short-term recommendation is to "maintain robust spare strategy and
   response planning" — an instruction to keep doing what is being done, with no
-  quantity attached. [BCH-TSSVA-21] **[A]** That absence is the finding, and it is now
-  auditable rather than assumed.
+  quantity attached. [BCH-TSSVA-21] **[A]** That absence is the finding.
 - **Condition is improving; age is not.** Poor or Very Poor: 121 of 572 (21%) in 2019,
   69 of 672 (10%) in 2021. Aged 50-60 years: about 87, then about 147. Over 60 years:
   36, then 71. [BCH-XFMR-21] **[A]**
@@ -207,27 +201,25 @@ utility actually said.
   RRAs and all appendix volumes, 37 BC Hydro information-request response exhibits
   across two proceedings, both Integrated Resource Plans, and the F2026-F2027 RRA. The
   US figures below therefore stay **[C]** and illustrative. **[?]**
-- **On the US consortia, the silence is structural, and now it has a reason.** Grid
+- **On the US consortia, the silence is structural.** Grid
   Assurance **does not publish a subscriber list** — `gridassurance.com/members`
   returns HTTP 404 and its About page names only the three founders, checked
   10 September 2026 — and no BC Hydro filing in the retrieved corpus mentions STEP,
   SpareConnect or Grid Assurance. [EEI-SPARE-23] **[C]** Participation can therefore be
   neither established nor refuted from the programmes' own channels. **Assert neither
-  participation nor non-participation** — and now say why: the membership is not
-  published, so silence here carries no information at all.
+  participation nor non-participation**: the membership is not published, so silence here
+  carries no information at all.
 - US data, **illustrative only**: lead times rose from around 50 weeks in 2021 to
   about 120 weeks on average by 2024, with a second-quarter 2025 survey putting
   power transformers near 128 weeks and generator step-up units near 144 weeks;
   roughly 80% of US large power transformers are imported. [NIAC-LPT-24]
   [WOODMAC-25] **[C]**
-- **Sourcing correction, September 2026.** The 128-week and 144-week figures were
-  attributed to a DOE or CISA publication routing Wood Mackenzie's survey. **No
-  such publication was found.** They reach us through trade press — *POWER
-  Magazine*, 2 January 2026 — reporting Wood Mackenzie's own commercial research,
-  which is not public. Cite the trade press and mark **[B]** for the reporting
-  route; the figures remain **[C]** for this site's purposes, because they are US
-  market lead times and this is a Lower Mainland page. The `DOE-LPT` attribution
-  for these figures is withdrawn. [WOODMAC-25] **[B]** route / **[C]** use
+- **The sourcing route for the 128-week and 144-week figures.** They reach us through
+  trade press — *POWER Magazine*, 2 January 2026 — reporting Wood Mackenzie's own
+  commercial research, which is not public. Cite the trade press and mark **[B]** for the
+  reporting route; the figures remain **[C]** for this site's purposes, because they are
+  US market lead times and this is a Lower Mainland page. [WOODMAC-25] **[B]** route /
+  **[C]** use
 - Also from the same reporting, and useful for scale: since 2019 demand for
   generator step-up units has grown 274% and substation power transformers 116%,
   with power transformer unit prices up 77%; the estimated shortfall across the US
@@ -237,7 +229,7 @@ utility actually said.
   language about long lead times for electrical components, "up to a year". Neither
   is about post-earthquake mass replacement and neither should be pressed into that
   use.
-- **What has improved is the reason the gap matters.** BC Hydro itself now says
+- **Why the gap matters.** BC Hydro itself now says
   complete system restoration could take **years** [BCH-WESTEND-25] **[A]**, which
   is an equipment-order timescale rather than a repair timescale. Let the BC source
   carry the "years" claim, and let the US transformer data explain, as illustration,
@@ -287,8 +279,8 @@ utility actually said.
   "distribution" within one line of "seismic" returns nothing across both RRA appendix
   volumes. The transmission half of the question now has answers and the distribution
   half has none. **[?]**
-- **Earthquake as a planning input, as opposed to an asset-management one.** A real
-  finding in this file's sense, audited 10 September 2026. The **2021 IRP** (73,072
+- **Earthquake as a planning input, as opposed to an asset-management one.** Audited
+  10 September 2026. The **2021 IRP** (73,072
   lines) contains two occurrences of "seismic", both meaning *seismic survey lines* in
   a forestry-disturbance appendix. The **2025 IRP** (16,346 lines) contains zero
   "seismic" and one "earthquake", in a customer-opinion table. The **F2026-F2027 RRA**
@@ -357,9 +349,9 @@ expert reader will know; a general reader is better served by being told. It doe
 not weaken the claim — the asset owner conceding that its own substation fails the
 post-disaster standard is evidence against interest.
 
-**Keep the transformer material where it is, and change only the join.** US lead
-times remain [C] and illustrative, clearly labelled as US data, with the BC position
-marked unknown. What changes is the sentence that introduces them: BC Hydro says
+**The transformer material, and how it joins.** US lead times remain [C] and
+illustrative, clearly labelled as US data, with the BC position marked unknown. The
+sentence that introduces them: BC Hydro says
 complete system restoration could take years, and this is what "years" looks like
 in an electrical system — an order, not a repair. The BC source carries the claim;
 the US data explains it.

@@ -410,6 +410,31 @@ dead link, which at least announces itself.
 quote the post's own headline and date in the citation, so a reader can find it again even
 if every URL in the chain fails.
 
+## A closed question logged beside the queue is how the queue goes stale
+
+**10 September 2026.** `open-questions.md` recorded closures in a section at the foot of
+the file rather than striking the items they closed. It read as diligence — nothing
+thrown away, the reasoning preserved — and it produced a register that contradicted
+itself. Item 30 asked whether the Auditor General's 2021 dam-safety findings were ever
+followed up and answered "confirmed that no follow-up has been published"; 170 lines
+below, the same file recorded three follow-ups and two of nine recommendations complete.
+Eleven of thirty-seven items were answered and still listed.
+
+Two subject files had the same defect one level down, and it was invisible until the
+correction narrative was stripped out: the dams file carried "implementation not
+established" in its guard list against "2 of 9 as at 31 March 2025" in its body, and the
+health-care file said no ICU count is published anywhere directly above per-hospital ICU
+counts for six hospitals.
+
+**The mechanism is always the same.** A correction is written in one place while the
+claim it corrects stays live in another, and both are true-looking prose in the same
+voice. Nobody re-reads a 600-line file end to end, so the two never meet.
+
+**The rule:** a closed question is struck from the queue and its answer goes to the file
+that owns the subject. One claim, one home — the convention already existed and a log is
+how it gets broken while appearing to be followed. Where a correction changes a fact,
+grep the whole folder for the old fact before writing the new one down.
+
 ## Citation markers render inside a paragraph, so they carry no block elements
 
 The inline citation popover (`components/citation.tsx`) sits inside running

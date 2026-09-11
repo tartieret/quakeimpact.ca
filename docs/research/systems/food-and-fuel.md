@@ -5,27 +5,26 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** The absence now splits three ways, one of them a host we could not reach.
 
-**Status.** Band **High** in both scenarios — but on completely different evidence
-from the draft. The two numbers this page used to rest on both come from one phone
-interview with an advocacy-group president during the 2021 flood emergency, and one
-of the two is not in that source at all. What replaces them is stronger: the province
-states the mechanism directly, for British Columbia, in its own operational plan.
-Lead with the mechanism, not with a days-of-supply figure.
+**Status.** Band **High** in both scenarios, on the province's own operational plan:
+PEIRS states the mechanism directly, for British Columbia — supply chains inoperable,
+the fast-moving consumer goods network weeks or months to recover, and fuel as the
+resource everything else moves on. The only days-of-supply figures available for the
+Lower Mainland come from one phone interview with an advocacy-group president during
+the 2021 flood emergency. Lead with the mechanism, not with a days-of-supply figure.
 
 ---
 
 ## Findings
 
-### The sourcing failure, recorded so it is not repeated
+### The fuel figures, and the guards they carry
 
 - **The "roughly 85% of southwest BC's refined fuel" claim is not in its cited
   source.** [FUEL-GN-21] says the Trans Mountain pipeline "provides more than half
   the fuel refined in Washington state refineries" — a different quantity, about a
   different place. **[?]** Treat the 85% figure as unsourced. It does not go on the
   site in any form.
-- **Both surviving numbers rest on a source with no underlying document.**
+- **Both numbers rest on a source with no underlying document.**
   [FUEL-GN-21] is Global News, 21 November 2021, quoting **Dan McTeague, president of
   Canadians for Affordable Energy** — an advocacy organisation — by phone during the
   November 2021 flood emergency. It is not a seismic study, an analyst note or a
@@ -48,7 +47,7 @@ Lead with the mechanism, not with a days-of-supply figure.
   Any statement about pipeline supply built on a 2021 article describes a system that
   no longer exists. **[?]**
 
-### What replaces it — the province states the mechanism for BC
+### The province states the mechanism for BC
 
 - **Fuel is the enabling resource, and PEIRS says so in its own words:** "Fuel also
   holds a unique position as a critical resource due to its requirement in the
@@ -96,16 +95,16 @@ Lead with the mechanism, not with a days-of-supply figure.
   [BC-EMERG-21] **[A]** This is the strongest thing the page can say about what a fuel
   shortage looks like in practice here, because it happened here.
 - A UBC study of the coastal BC fuel transportation system records that Vancouver
-  Island holds about three days of food and fuel. [UBC-FUEL] **[B]** The
-  Burnaby–Westridge–YVR jet fuel pipeline detail in the draft was **not confirmed** in
-  that source and does not travel until it is. **[?]**
+  Island holds about three days of food and fuel. [UBC-FUEL] **[B]** A
+  Burnaby–Westridge–YVR jet fuel pipeline detail is **not confirmed** in that source and
+  does not travel until it is. **[?]**
 
 ### Out-of-region illustration
 
 - Tōhoku 2011 shows the mechanism at full scale: the fuel existed, and the terminals
   and trucks to move it did not. [METI-2011] **[C]** The figures and the restoration
   timeline live in `../analogues.md` and are **not** restated here. One claim, one home.
-- The analogue no longer carries the argument. PEIRS states the fuel-dependency
+- The analogue does not carry the argument. PEIRS states the fuel-dependency
   mechanism for British Columbia **[A]**; Tōhoku only shows what it looked like
   somewhere else.
 
@@ -119,8 +118,8 @@ Lead with the mechanism, not with a days-of-supply figure.
   distribution, warehousing or days of stock. **[?]** The overview's framing that the
   problem is logistics rather than stock is sound reasoning and remains unsourced as a
   *regional* claim.
-- **And the absence now splits three ways, which is more useful than one bullet.**
-  Re-audited 10 September 2026 against the channels that would own this.
+- **The absence splits three ways.** Searched 10 September 2026 against the channels
+  that would own this.
   - **The province publishes sector emergency plans, and none of them is about food.**
     Its own index of provincial emergency plans lists the All Hazard Plan, PEIRS, flood,
     drought, nuclear, pandemic, wildland-urban interface, tsunami notification, flood
@@ -175,9 +174,8 @@ plans on supply chains being inoperable and on the consumer goods network taking
 to months to recover, and names fuel as the resource everything else moves on.*
 [PEIRS] **[A]**
 
-This is a better cell than the one it replaces. The old one asserted a stock figure;
-this one asserts a dependency, sourced to the province's own operational plan, and it
-does not decay when the pipeline configuration changes.
+It asserts a dependency rather than a stock figure, sourced to the province's own
+operational plan, and it does not decay when the pipeline configuration changes.
 
 **Guards that must travel with any number on this page.**
 
@@ -205,5 +203,3 @@ advice in order to look thorough.
 **Refresh triggers.** A Canada Energy Regulator or provincial figure for Lower Mainland
 fuel supply after 2024. Any published regional food-distribution study. The food half
 of [GM-AAFC-19].
-
-**Register note.** This file introduces no new source keys.

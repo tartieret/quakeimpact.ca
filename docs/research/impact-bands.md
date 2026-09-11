@@ -7,13 +7,9 @@
 > **Last research pass:** 10 September 2026.
 
 **Status.** Twelve systems assessed, plus one new system the site does not yet
-carry and one entry that should stop being a system at all. Six of twelve rows
-were *not yet assessed* when this research began. **One and a half remain**: dams
-in both scenarios, and large infrastructure in the crustal column only. That
-change is the single largest result of the pass, and it happened because
-documents were found — the province's operational plans, a utility's regulatory
-filings, and a study recovered from a web archive after its publisher's copy went
-dead — not because the standard of evidence was relaxed.
+carry and one entry that should stop being a system at all. **One and a half rows
+carry no published assessment**: dams in both scenarios, and large infrastructure
+in the crustal column only.
 
 The rubric itself stands as written in `../site-overview.md` §4. What follows is
 the band assignment per system per scenario, with the mechanism sentence and the
@@ -39,9 +35,9 @@ source that `ImpactCell` requires, and a reconciliation against what
 | Health care | Medium | Medium | About 65% of one health authority's buildings would likely be completely damaged at the ground motion the current code designs for, and no published document compares the casualty load to regional bed capacity. | [DCRRA-APPC] **[A]** |
 | Absence of outside help | High | Low | BC's plan assumes agencies outside the impact area are unaffected and stages resources there; in a Cascadia event the province states the US will be unable to deliver mutual aid. | [PEIRS] **[A]** |
 
-**Weather is not in the table, and no longer should be.** Decided 10 September 2026:
-it is a scenario condition, not a system, and it is rendered on the timeline. See
-`../site-overview.md` §9. The grid keeps twelve systems — gas takes the row weather
+**Weather is not in the table, and should not be.** It is a scenario condition, not
+a system, and it is rendered on the timeline. See `../site-overview.md` §9. The
+grid keeps twelve systems — gas takes the row weather
 vacates, which is a better trade than it looks, because gas fails in a way nothing
 else on the grid does and weather never failed at all.
 
@@ -56,24 +52,23 @@ evidence**.
 | System | Code says | Research says | |
 | --- | --- | --- | --- |
 | Communications | high / high | Medium / Medium | **conflict** — code asserts High where nothing was assessed |
-| Electricity | high / high | High / High | agrees now, by coincidence — the code said High while the research said Medium |
+| Electricity | high / high | High / High | agrees — scaffolded, nothing behind it |
 | Water | high / high | High / High | agrees |
-| Sanitation | high / high | High / High | agrees now, by coincidence — the code said High while the research said not assessed |
+| Sanitation | high / high | High / High | agrees — scaffolded, nothing behind it |
 | Transportation | high / **medium** | High / **High** | **conflict**, crustal column |
-| Large infrastructure | unknown / unknown | **Medium** / Not yet assessed | **conflict**, Cascadia column — the code is now *less* confident than the evidence, the only row where that is true |
+| Large infrastructure | unknown / unknown | **Medium** / Not yet assessed | **conflict**, Cascadia column — the code is *less* confident than the evidence, the only row where that is true |
 | Food and fuel | high / **medium** | High / **High** | **conflict**, crustal column |
 | Dams and reservoirs | unknown / unknown | Not yet assessed | agrees |
-| Housing | high / high | High / High | agrees now, by coincidence |
+| Housing | high / high | High / High | agrees — scaffolded, nothing behind it |
 | Health care | high / high | **Medium / Medium** | **conflict** |
 | Weather | medium / medium | *removed — not a system* | **decided**: drop from `SYSTEMS`, render on the timeline |
 | Absence of outside help | high / low | High / Low | agrees |
 | Natural gas | *absent* | High / High | **decided**: add to `SYSTEMS`, taking the row weather vacates |
 
-The coincidences matter as much as the conflicts. Four rows where the code and
-the research now agree were, until this pass, rows where the code asserted a
-band with nothing behind it and happened to land on the answer the evidence
-later gave. A right answer arrived at that way is still a defect, because the
-next scaffolded value will not be lucky.
+The agreements matter as much as the conflicts. In four rows the code asserts a
+band with nothing behind it and happens to land on the answer the evidence gives.
+**Those rows are replaced too.** A right answer arrived at that way is still a
+defect, because the next scaffolded value will not be lucky.
 
 `Impact.mechanism` is `loremLine()` and `Impact.source` is `"TBD"` for all
 twenty-four cells. The mechanism column above is the raw material for those
@@ -118,17 +113,17 @@ average nobody measured.
 
 ## What is not established
 
-- **Whether the fourth band should be one state or two — now three.** The dams
-  research produced a state nobody anticipated. The grid's hatched cell currently
-  means "nobody has assessed this". Dams are not that: both were assessed in 2024
-  under legal compulsion, and the published conclusion is silent on earthquakes.
+- **Whether the fourth band should be one state, two or three.** The grid's
+  hatched cell currently means "nobody has assessed this". Dams are not that:
+  both were assessed in 2024 under legal compulsion, and the published conclusion
+  is silent on earthquakes.
   **Assessed and not published, assessed for something else, and never assessed
   are three different facts wearing one hatch.** A reader who sees the dams cell
   and concludes nobody has looked has been misled by the grid, not by the
-  evidence. This is now the strongest argument for splitting the fourth band, and
-  it is a design question the method page cannot answer alone.
+  evidence. That is the strongest argument for splitting the fourth band, and it
+  is a design question the method page cannot answer alone.
 - **Whether the grid can carry an asymmetric row for a reason other than the
-  hazard.** Large infrastructure is now Medium for Cascadia and unassessed for the
+  hazard.** Large infrastructure is Medium for Cascadia and unassessed for the
   crustal M7 — not because the crustal event is milder, but because **the only
   study that exists modelled the Cascadia scenario and nothing else.** Outside
   help is also asymmetric, but there the asymmetry is a finding about the world.
@@ -143,11 +138,8 @@ average nobody measured.
 
 ## For the page
 
-The method page carries more weight than originally planned, and for a changed
-reason. It was going to explain six hatched cells. It now has to explain that
-most of the grid moved in a single research pass — which is a stronger argument
-for the rubric, not a weaker one, because it shows the band tracks the evidence
-rather than the subject.
+The method page has to explain that a band tracks the evidence rather than the
+subject, and that a cell left hatched is a statement about the public record.
 
 State plainly that bands are assigned from published assessments, that two
 systems have none, and that a band can move when a document surfaces. A reader

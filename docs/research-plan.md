@@ -7,7 +7,7 @@ orientation note, not a plan — the plan it replaced is finished.*
 
 ## What exists
 
-`docs/research/` — 25 files, roughly 10,500 lines, with a 347-source register that
+`docs/research/` — 25 files, roughly 9,800 lines, with a 347-source register that
 verifies clean in both directions: every key used resolves, and every key registered is
 either used or explicitly retired. One file per subject, plus `sources.md`,
 `open-questions.md`, `impact-bands.md` and `CONVENTIONS.md`.
@@ -25,6 +25,8 @@ self-sufficiency instruction, quoted directly.
 
 ## What was wrong, and is now corrected
 
+**This is the only place the project keeps this list.** The research files state what is
+known and no longer narrate how they came to know it — see `research/CONVENTIONS.md`.
 Eight load-bearing claims did not survive. Three of them died because *a search that
 worked returned nothing* — which is a finding, not a failure.
 
@@ -56,6 +58,31 @@ carrying, the water-demand arithmetic against the Sphere humanitarian standards,
 stands on its own and is stronger without it. The local version is better still:
 Annacis Island normally treats about **430 litres per person per day** against a Sphere
 emergency minimum of **15**. See `research/analogues.md`.
+
+## The cleanup pass, and what it caught
+
+Every research file was rewritten to drop the correction narrative it had accumulated:
+withdrawal sections, pass-dated self-narration, completed register to-do notes and
+comparisons to a superseded draft. Roughly **650 net lines** went, with no fact, source
+key, guard or searched absence lost — key integrity verified at **0 unresolved** before
+and after.
+
+Three internal contradictions surfaced once the narrative was stripped, all of them
+caused by the same thing: **a correction recorded in one part of a file while the claim
+it corrected stayed live in another.**
+
+- `open-questions.md` still asked whether the Auditor General's 2021 dam-safety findings
+  were followed up, answering "no follow-up has been published" — 170 lines above a
+  section recording three follow-ups. Eleven items in that queue were answered and never
+  struck.
+- `systems/dams-and-reservoirs.md` carried "implementation not established" in its guard
+  list against "2 of 9 as at 31 March 2025" in its body.
+- `systems/health-care.md` said no ICU count is published anywhere, above a section
+  giving per-hospital ICU counts for six hospitals.
+
+**The lesson is in `knowledge.md`.** A closed question belongs struck from the queue and
+answered in the file that owns the subject, never logged beside the queue — a log next to
+a list is how the list goes stale without anyone noticing.
 
 ## Where the review stands
 
@@ -107,7 +134,7 @@ Three, also in §9.
 | Question | File |
 | --- | --- |
 | What do we believe, and on what evidence? | `research/` — one file per subject |
-| What is still unknown, and what was searched? | `research/open-questions.md` — 36 items, 1 blocking |
+| What is still unknown, and what was searched? | `research/open-questions.md` — 26 items, 1 blocking |
 | What band, and why? | `research/impact-bands.md` |
 | Where does a source key resolve? | `research/sources.md` |
 | What may we reproduce, and what may we quote? | `licensing.md` — the two are not the same question |
@@ -115,16 +142,18 @@ Three, also in §9.
 
 ## One thing worth reading before doing more research
 
-`knowledge.md` has eighteen entries and they converge on a single theme: **the ways a
+`knowledge.md` has nineteen entries and they converge on a single theme: **the ways a
 research process manufactures a false absence or a false corroboration.** Broken
 searches, 403s recorded as unavailability, correct citations to documents that do not
 say the thing, one model quoted by three governments, two figures that look like a range
 but are a layout bug, a failed fetch saved with a `.pdf` extension, a working search run
 over the wrong unit of publication.
 
-The newest entry is the sharpest: **before believing a negative from a host, confirm the
-host can produce a positive.** A control query that returns nothing means the search is
-broken, not that the document is absent.
+Two are worth reading before anything else. **Before believing a negative from a host,
+confirm the host can produce a positive** — a control query that returns nothing means
+the search is broken, not that the document is absent. And **a closed question logged
+beside the queue is how the queue goes stale**, which is the defect the cleanup pass
+found three times in one folder.
 
 Every one of these cost this project a wrong finding before it became a rule. They are
 cheaper to read than to rediscover.

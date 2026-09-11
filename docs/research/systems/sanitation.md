@@ -5,19 +5,15 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** A published claim was **withdrawn** in this pass (the sewer programme states no seismic objective). Review that section first.
 
 **Status — band: revisit. Proposed High, both scenarios, replacing NOT ASSESSED.**
-The reason for the previous NOT ASSESSED was that no Lower Mainland assessment of
-the wastewater collection system had been located. That is no longer the state of
-the evidence in two respects. The assessment exists and is named — CH2M, *Seismic
-Risk Action Plan for Liquid Waste Services*, 2018, confirmed by Metro Vancouver in
-a statutory public report — and its findings have not been published. And the
-province states a duration that covers wastewater explicitly: disruption to water
-and wastewater systems is expected for many months. The claim the site makes
-changes from "no assessment was located" to "an assessment was done in 2018 and its
-findings have not been published", which is sharper, checkable, and a named FOI
-target.
+The assessment of the Lower Mainland wastewater collection system exists and is named —
+CH2M, *Seismic Risk Action Plan for Liquid Waste Services*, 2018, confirmed by Metro
+Vancouver in a statutory public report — and its findings have not been published. And
+the province states a duration that covers wastewater explicitly: disruption to water
+and wastewater systems is expected for many months. The claim the site makes is that an
+assessment was done in 2018 and its findings have not been published, which is sharp,
+checkable, and a named FOI target.
 
 **What the page is actually about, decided 10 September 2026.** All of the above is
 evidence. The finding is simpler and belongs at the top of the page rather than the
@@ -60,9 +56,8 @@ The report's own reference list identifies the document precisely:
 
 [MV-CH2M-18] **[A]** on existence and scope; findings unavailable.
 
-**Sewers were in scope, alongside pump stations and plants.** That matters, because
-the collection system — the pipes, not the plants — is the part the site had
-recorded as entirely unassessed.
+**Sewers were in scope, alongside pump stations and plants.** The collection system — the
+pipes, not the plants — is the part whose assessed condition is not otherwise public.
 
 **The findings are not published.** No vulnerability ratings, failure counts or
 restoration expectations for the collection system have been released. This is a
@@ -112,10 +107,9 @@ the useful statement is the schedule, not a judgement about it.
 
 ### The province states the health consequence, and it closes the chain
 
-Not previously in this folder. PEIRS: "**Disruptions to waste collection may result in
-biological hazards.** Due to mass congregation in shelter spaces and possible inadequate
-disposal of garbage and biological waste, **disease outbreaks are possible**." [PEIRS]
-**[A]**
+PEIRS: "**Disruptions to waste collection may result in biological hazards.** Due to mass
+congregation in shelter spaces and possible inadequate disposal of garbage and biological
+waste, **disease outbreaks are possible**." [PEIRS] **[A]**
 
 **This is the sentence that makes the rest of the page matter.** Everything else here is
 plumbing: mains, plants, pump stations, restoration months. This is the province saying
@@ -124,12 +118,11 @@ separately sourced in this folder — water fails, so toilets do not flush; wast
 nowhere to go; garbage collection is disrupted at the same time; people are concentrated
 in shelters; and the province's own word for the result is *possible disease outbreaks*.
 
-**Two things it adds that this file did not have.** It names **solid waste collection**,
-which is a service this folder does not otherwise cover at all and which is Metro
-Vancouver's — garbage trucks need roads and fuel, both banded High. And it locates the
-risk **in shelters specifically**, which ties it to the housing finding that 25 disaster
-support hubs exist with **no published capacity**. See `housing.md` and
-`../preparedness.md`.
+**Two things it adds.** It names **solid waste collection**, which is a service this
+folder does not otherwise cover at all and which is Metro Vancouver's — garbage trucks
+need roads and fuel, both banded High. And it locates the risk **in shelters
+specifically**, which ties it to the housing finding that 25 disaster support hubs exist
+with **no published capacity**. See `housing.md` and `../preparedness.md`.
 
 **Guards, and they matter more here than anywhere else on this page.**
 
@@ -154,14 +147,11 @@ support hubs exist with **no published capacity**. See `housing.md` and
 
 ### Municipal collection systems
 
-- **Withdrawn, 10 September 2026 — "Vancouver's sewer separation programme states no
-  seismic objective".** This file carried that at **[A]** on the absence, on the strength
-  of the City's programme pages and its August 2026 news release. Those documents do frame
-  the programme around water quality, flood risk, capacity and combined sewer overflows,
-  and that much stands. But the City states a seismic objective elsewhere, in documents the
-  programme pages do not link, and the absence was therefore drawn from too small a corpus.
-  [COV-SEWERSEP] remains **[A]** for what those pages say and is **withdrawn** as evidence
-  of an absence.
+- **Vancouver's sewer separation programme pages frame the programme around water
+  quality, flood risk, capacity and combined sewer overflows.** [COV-SEWERSEP] **[A]** for
+  what the City's programme pages and its August 2026 news release say. The City states a
+  seismic objective elsewhere, in documents the programme pages do not link, so those
+  pages do not establish an absence.
 - **The City sets seismic design standards for sewers, and has since at least 2026.** The
   *Engineering Design Manual* (Revision 1.1, approved April 2026) carries **4.5 Seismic
   Design Standards** within the sanitary sewer part, a parallel **5.5** for storm drainage,
@@ -182,12 +172,10 @@ support hubs exist with **no published capacity**. See `housing.md` and
   specifies how new sewer is to be built against seismic ground conditions. Nothing
   published says how the network already in the ground would perform. Those are different
   facts, and only the first has a source.
-- Vancouver is renewing a large fraction of its sewer network over decades under
-  that programme, and seismic performance is not among the stated objectives.
-  **Whether modern pipe materials and bedding deliver seismic benefit incidentally
-  is a real engineering question and we do not know the answer.** Do not assert it in
-  either direction. The sourced observation is the absence of a stated objective, and
-  that is enough.
+- Vancouver is renewing a large fraction of its sewer network over decades under that
+  programme. **Whether modern pipe materials and bedding deliver seismic benefit
+  incidentally is a real engineering question and we do not know the answer.** Do not
+  assert it in either direction.
 - **No published sewer seismic vulnerability assessment was located for Vancouver,
   Richmond, Delta, Surrey or New Westminster.** [?] See below.
 
@@ -211,11 +199,10 @@ were delivered. Sewer repairs were projected to take more than a couple of years
 and a later council estimate put full network restoration at up to 30 years.
 [CHCH-SEWER-STUFF] [CHCH-SEWER-NZH] [CHCH-RNZ] **[C]**
 
-The "roughly 40,000 chemical toilets available for distribution" figure that
-appeared in earlier drafts is **not carried here.** It is unconfirmed in the
-retrieved source, and set against the 30,000 residents it implies more than one
-toilet per person — which is either a household-versus-resident mismatch or two
-dates read as one snapshot. See `../analogues.md`.
+**The "roughly 40,000 chemical toilets available for distribution" figure is not carried
+here.** It is unconfirmed in the retrieved source, and set against the 30,000 residents
+it implies more than one toilet per person — which is either a household-versus-resident
+mismatch or two dates read as one snapshot. See `../analogues.md`.
 
 **Both timescales or neither.** The 30-year figure refers to full network
 restoration, not to how long people used portable toilets. Presented alone it reads
@@ -245,10 +232,7 @@ nothing about Richmond or Delta, and it does not set this band.
   published.** This is now the single named FOI target for this system.
 - **Municipal sewer seismic assessments** for Vancouver, Richmond, Delta, Surrey and
   New Westminster. [?] Searched: municipal sites and general search. **None found.**
-- *Corrected 10 September 2026 — "no seismic component to the sewer separation
-  programme".* Withdrawn; see Findings above. The City sets seismic design standards for
-  sewers and carries a seismic objective in the Healthy Waters Plan.
-- **What the installed stock achieves.** Narrowed, not closed. The City states that
+- **What the installed stock achieves.** The City states that
   material and replacement strategy **are** driven by a seismic risk assessment of ground
   conditions [COV-EDM-26] **[A]** — which is not the same as knowing how the network
   performs, and gives no aggregate for the stock already laid. Record it as a question,
@@ -335,20 +319,17 @@ built. The dates — Annacis components by 2035, Iona rescoped in 2025 — are t
 evidence that the programme is real and long, and they belong after the mechanism,
 not before it.
 
-**Vancouver's separation programme — corrected 10 September 2026, and the correction
-matters.** This file previously said the programme states no seismic objective, at **[A]**
-on the absence. That is wrong. The City's Engineering Design Manual carries **4.5 Seismic
-Design Standards** for sanitary sewers and a parallel **5.5** for storm drainage, and the
-Healthy Waters Plan carries "Minimize seismic risk to sewage and drainage services" as
-objective 3.4. [COV-EDM-26] [COV-HWP-25] **[A]**
+**Vancouver's separation programme.** The City's Engineering Design Manual carries **4.5
+Seismic Design Standards** for sanitary sewers and a parallel **5.5** for storm drainage,
+and the Healthy Waters Plan carries "Minimize seismic risk to sewage and drainage
+services" as objective 3.4. [COV-EDM-26] [COV-HWP-25] **[A]**
 
-What survives is narrower and more useful: **a design standard is not an assessment of
-what is already in the ground**, and the Healthy Waters Plan's own performance measure for
-that objective is an expert-judgement rating scale of 1 to 5, not a measurement. So the
-page may say that new pipe is being specified with seismic performance in mind, and may
-not say anything about the performance of the stock it replaces. Do not imply the
-replacement pipe performs worse, and do not imply it performs better — but the reason has
-changed from *nobody is thinking about it* to *nobody has measured it.*
+**A design standard is not an assessment of what is already in the ground**, and the
+Healthy Waters Plan's own performance measure for that objective is an expert-judgement
+rating scale of 1 to 5, not a measurement. So the page may say that new pipe is being
+specified with seismic performance in mind, and may not say anything about the
+performance of the stock it replaces. Do not imply the replacement pipe performs worse,
+and do not imply it performs better: nobody has measured it.
 
 **Christchurch keeps both timescales.** Portable toilets for tens of thousands of
 residents, and full network restoration projected in years to decades. Labelled as

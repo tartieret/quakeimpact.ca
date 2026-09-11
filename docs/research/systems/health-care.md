@@ -5,19 +5,17 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** The 'no ICU count exists' line was **too strong** and is narrowed. Review that first.
 
-**Status.** Partly sourced, and the hole in the middle is now named more precisely than it was.
-What is established: how the existing hospital stock is expected to perform as a portfolio, what
-the new hospitals are built to, how many casualties the province plans for, and — new as of
-10 September 2026 — a peer-reviewed regional comparison of that load against Metro Vancouver's
-acute-care bed stock and road network. What is **not** established is any *official* version of
-that comparison, and any published ICU or operating-room count at all. **Proposed band: Medium
-holds**, with the surviving surge-capacity gap shipped as a visible `VerificationNote`. Medium
-rather than High because the strongest regional evidence is an academic accessibility model whose
-own authors say it overstates how well hospitals would work; Medium rather than Low because the
-province states in its own voice that medical facilities would be overwhelmed. The counter-argument
-is recorded under "What is not established".
+**Status.** Partly sourced, and the hole in the middle is precisely named. What is established:
+how the existing hospital stock is expected to perform as a portfolio, what the new hospitals are
+built to, how many casualties the province plans for, and a peer-reviewed regional comparison of
+that load against Metro Vancouver's acute-care bed stock and road network. What is **not**
+established is any *official* version of that comparison, and any official ICU or operating-room
+count at all. **Proposed band: Medium holds**, with the surge-capacity gap shipped as a visible
+`VerificationNote`. Medium rather than High because the strongest regional evidence is an academic
+accessibility model whose own authors say it overstates how well hospitals would work; Medium
+rather than Low because the province states in its own voice that medical facilities would be
+overwhelmed. The counter-argument is recorded under "What is not established".
 
 ---
 
@@ -66,7 +64,7 @@ Considering Damage to Hospital Buildings and Transportation Infrastructure", *Ea
 [KAUR-2026] **[A]**, read in full.
 
 This is a **Metro Vancouver regional study under an M9.0 Cascadia scenario**, and it supplies the
-denominators this page previously recorded as unpublished.
+regional denominators.
 
 **Assumed acute care bed capacities**, the paper's Table 2 — 16 hospitals with emergency
 departments, anonymised A–P, city given, name withheld:
@@ -198,9 +196,9 @@ under data-sharing arrangements with Vancouver Coastal Health and Fraser Health.
 [KAUR-2026] **[A]** for its existence, name and custodian.
 
 **It is not published.** The paper's citation carries a URL on a UBC anthropology domain that is
-plainly a citation error; **do not publish that URL**. The publishable statement is narrower and
-sharper than the one this page used to make: the rating work has been done and is held privately,
-rather than never having been done. That is **deliberate non-publication, not absence**.
+plainly a citation error; **do not publish that URL**. The publishable statement: the rating work
+has been done and is held privately, rather than never having been done. That is **deliberate
+non-publication, not absence**.
 
 ### The new-build standard is high, and it is in the contracts
 
@@ -242,11 +240,10 @@ overnight accommodation, which is a hospital — to **CSA Z32**, "Electrical saf
 electrical systems in health care facilities". [VBBL-2025] **[A]** CSA Z32 is sold rather than
 published and **was not read**. Its duration requirement is unknown.
 
-**Two corrections to this page's earlier note.** The by-law's referenced-documents table cites
-**CSA C282-15**, not the C282-19 edition previously named here. And Article 3.2.7.5 applies C282
-"except as required by Articles 3.2.7.6. and 3.2.7.7." — that is, **the by-law points hospitals away
-from C282**, so C282 was never the right standard to chase for a hospital figure.
-[VBBL-2025] **[A]**
+**The edition is CSA C282-15**, which is what the by-law's referenced-documents table cites. And
+Article 3.2.7.5 applies C282 "except as required by Articles 3.2.7.6. and 3.2.7.7." — that is,
+**the by-law points hospitals away from C282**, so C282 is not the standard to chase for a
+hospital figure. [VBBL-2025] **[A]**
 
 **Tier 3 — contractual, 72 hours.** Both the new Surrey hospital and the new St. Paul's specify
 **72 hours of self-sufficiency for fuel, water and sanitary holding**, in identical terms, in two
@@ -257,7 +254,7 @@ as a standard, a rule, or a figure that applies to any existing hospital.** No p
 extends it to existing facilities, and none was found.
 
 **The three tiers are a code minimum, a contractual requirement and a design intent, and the
-distinction matters more now that a code number is publishable, not less.** A reader who hears
+distinction matters.** A reader who hears
 "two hours" and a reader who hears "72 hours" must both be told which kind of number they have.
 
 ### The only published numeric downtime target for a Lower Mainland hospital
@@ -296,20 +293,16 @@ where an individual decision measurably changes hospital capacity.
 ## What is not established
 
 **No government or health authority has published a comparison of the casualty load against
-regional care capacity, and no ICU or operating-room count is published anywhere. [?] This is the
-page's honest centre, and it is narrower than it used to be.**
+regional care capacity, and no official ICU or operating-room count is published anywhere. [?]
+This is the page's honest centre.**
 
-*Withdrawn:* this page previously said that **no document** pairs the expected casualty load
-against regional bed, ICU and operating-room capacity. **That is now wrong and is withdrawn.**
-Peer-reviewed UBC work does it twice — once for a single Vancouver emergency department
-[PALOMINO-2023] and once for all 16 Metro Vancouver hospitals with emergency departments
-[KAUR-2026]. What survives is a different and more interesting claim: **the province states the
-casualty load and states that medical facilities would be overwhelmed, and does not put those two
-things in the same document.** The surviving gap is a gap in official planning, not a gap in
-knowledge.
+Peer-reviewed UBC work makes the comparison twice — once for a single Vancouver emergency
+department [PALOMINO-2023] and once for all 16 Metro Vancouver hospitals with emergency
+departments [KAUR-2026]. **The province states the casualty load and states that medical
+facilities would be overwhelmed, and does not put those two things in the same document.** The
+gap is a gap in official planning, not a gap in knowledge.
 
-**The second half of the old gap is narrowed, 10 September 2026 — it was too strong.**
-Per-hospital ICU bed counts **are** published, for six named Metro Vancouver hospitals, in
+**Per-hospital ICU bed counts are published**, for six named Metro Vancouver hospitals, in
 the peer-reviewed literature: **Vancouver General 46, Surrey Memorial 46, Royal Columbian
 30, St. Paul's 15, Lions Gate 11, Richmond 8**, from the Methods of a 2020 open-access
 *CMAJ* case series. [MITRA-2020] **[A]**
@@ -336,7 +329,7 @@ survey circa 2013–14 [FOWLER-2015] **[A]**, and **10.53 adult ICU beds per 100
 2013–14 per CIHI, which breaks BC out by health authority **for rates only, never for bed
 counts**. [CIHI-ICU] **[A]**
 
-**So what survives is sharper than "no count exists", and it is three different absences.**
+**There is no single missing count. There are three different absences.**
 *Aggregated away*: CIHI holds staffed-and-in-operation beds for every public hospital
 outside Quebec and Nunavut and releases them only by data request; its published
 derivatives stop at the province, and the facility-level portal has been retired.
@@ -346,8 +339,8 @@ BC pages are a JavaScript shell and came back as navigation chrome — **that on
 browser retry and is not an absence.** **[?]**
 
 **And nothing anywhere compares an earthquake casualty load against regional care capacity
-from a government or health-authority source.** That is this file's honest centre, now with
-four named channels behind it instead of an assertion. **[?]**
+from a government or health-authority source.** That is this file's honest centre, with four
+named channels behind it. **[?]**
 
 **One lead, recorded as a lead.** Dodek, Keenan, Norena, Martin & Wong, "Structure, process,
 and outcome of all intensive care units within the province of British Columbia", *J
@@ -382,9 +375,9 @@ containing earthquake, seismic, disaster, emergency or health. Crossref queries 
 hospital British Columbia`, `seismic vulnerability hospital Vancouver` and `healthcare facility
 seismic risk Canada` returned nothing in region. **There is no OAG audit of hospital seismic
 status**: the OAG's 2014 *Catastrophic Earthquake Preparedness* report mentions hospitals zero
-times, and its only seismic-buildings audit is *Planning for School Seismic Safety* (2008). Note
-the correction above: the rating work exists in the non-public BCHSD, so this is a **publication
-absence, not a knowledge absence**.
+times, and its only seismic-buildings audit is *Planning for School Seismic Safety* (2008). The
+rating work exists in the non-public BCHSD, so this is a **publication absence, not a knowledge
+absence**.
 
 **No published generator, fuel or water capacity for any existing Lower Mainland hospital. [?]**
 None found for Vancouver General, Surrey Memorial, Burnaby, Lions Gate, Richmond or St. Paul's
@@ -429,9 +422,8 @@ document. The Public Health and Medical Services Annex to the provincial emergen
 downloads but is a scanned image PDF with no extractable text — **unreviewed**, not absent, and
 worth OCRing. Recorded through the weaker channel described below and **not retested**.
 
-**Closed as unclosable: 2015 Vancouver Sun reporting on health-authority seismic assessments.**
-This page previously carried an instruction to retry. **That instruction is withdrawn**, because
-neither available channel can settle it. The paper's own search works (the parameter is
+**Unclosable: 2015 Vancouver Sun reporting on health-authority seismic assessments.** Neither
+available channel can settle it. The paper's own search works (the parameter is
 `search_text`, not `q`) but its index reaches only about twelve months: a control query for
 `earthquake` returns 26 results across three pages, the oldest June 2026, and neither the
 date-range nor the oldest-first option changes the set; targeted queries return zero.
@@ -441,16 +433,13 @@ finding a 2015 article, and the empty CDX results prove nothing. Settling it wou
 Canadian Newsstream, the Postmedia archive or a library database — all authenticated. **Do not
 cite the article and do not describe it as pending.** Reopen only if someone gains database access.
 
-**Method caveat.** Neither the session that produced this evidence nor the 10 September 2026
-follow-up had general web search. The original material came from direct fetching of enumerable
-government, health-authority and regulator endpoints, sitemaps, site-native search APIs, Crossref
-and the NRCan repository API. The follow-up added materially stronger channels — a **scripted
-browser** that defeats Cloudflare and JavaScript shells, and the **Crossref and OpenAlex
-bibliographic indexes**, which are true indexes rather than search-engine proxies. Those channels
-are why the capacity comparison, the code minimums, the VCH OPR lead and the EGBC inventory all
-moved; four of six re-run targets changed. What still cannot be run is a keyword query of the form
-"does any document anywhere say X". Every negative above therefore remains **"not found through
-these channels"**. Negatives retested on the stronger channels are marked closed above; the
+**Method caveat.** This research had no general web search. The weaker channel is direct fetching
+of enumerable government, health-authority and regulator endpoints, sitemaps, site-native search
+APIs, Crossref and the NRCan repository API. The stronger channel adds a **scripted browser** that
+defeats Cloudflare and JavaScript shells, and the **Crossref and OpenAlex bibliographic indexes**,
+which are true indexes rather than search-engine proxies. Neither can run a keyword query of the
+form "does any document anywhere say X". Every negative above therefore remains **"not found
+through these channels"**. Negatives retested on the stronger channels are marked closed above; the
 health-authority emergency-plan negative and the generator, fuel and water negative were recorded
 through the weaker channel and have **not** been retested.
 
@@ -469,11 +458,11 @@ disruption means their model is "likely overestimating post-earthquake hospital 
 That is this page's mechanism sentence, confirmed by the people whose numbers leave it out. Put
 the caveat beside the number, not in a footnote.
 
-**The page is still built around a hole, but a smaller and better-shaped one.** Lead with what is
-known — the portfolio finding, the named hospitals, the new-build standard, the regional
-accessibility study — then state plainly that no government or health authority has compared the
-casualty load to the region's capacity, and that no ICU or operating-room count is published at
-all. Do not fill it with inference, and do not let the page imply an answer by adjacency.
+**The page is built around a hole.** Lead with what is known — the portfolio finding, the named
+hospitals, the new-build standard, the regional accessibility study — then state plainly that no
+government or health authority has compared the casualty load to the region's capacity, and that
+no official ICU or operating-room count is published at all. Do not fill it with inference, and
+do not let the page imply an answer by adjacency.
 
 **Guards that must travel with the numbers.**
 

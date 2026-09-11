@@ -7,11 +7,11 @@
 > **Last research pass:** 10 September 2026.
 
 **Status.** The base-layer rule holds and is well supported: the ground, not the
-municipality. What has changed is that the intended flagship map cannot be built.
-The microzonation layers behind it are not openly licensed, so ground conditions
-ships with an outbound link and the first map the site draws itself is the fire
-protection coverage boundary. See `../licensing.md` for the per-dataset position;
-this file records what each layer can support, and what it cannot.
+municipality. The microzonation layers are not openly licensed, so ground
+conditions ships with an outbound link, and the first map the site draws itself
+is the fire protection coverage boundary. See `../licensing.md` for the
+per-dataset position; this file records what each layer can support, and what it
+cannot.
 
 ---
 

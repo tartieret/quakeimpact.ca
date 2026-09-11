@@ -5,12 +5,10 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** The early-warning figure is resolved against NRCan and the City's number is not publishable as written.
 
-**Status.** No longer *not yet assessed*. The finding is regulatory rather than engineering: **no
-binding Canadian requirement sets a backup-power run time for cell sites, and none requires
-physical hardening of network infrastructure.** The cleanest evidence is that the regulator is still
-asking the question. **Proposed band: Medium** — Medium rather than High because no source
+**Status.** The finding is regulatory rather than engineering: **no binding Canadian requirement
+sets a backup-power run time for cell sites, and none requires physical hardening of network
+infrastructure.** The cleanest evidence is that the regulator is still asking the question. **Proposed band: Medium** — Medium rather than High because no source
 establishes how the network would actually perform, and Medium rather than Low because what
 resilience exists is voluntary, the province has formally asked for more, and the alerting system
 that warns people depends on the network the earthquake degrades. **An absence of requirements
@@ -181,8 +179,7 @@ professionals. "Non-sanctioned" means outside PERCS, not unlicensed.
 province names a way in which amateur radio degrades the response *and* a way in which it
 constitutes the response, and the difference between them is **whether the operator is
 part of an organised group before the earthquake**. That is a real, specific, joinable
-thing — and it is a far more useful sentence than "get a radio", which was where an
-unqualified reading of the earlier passage pointed.
+thing, and a far more useful sentence than "get a radio".
 
 **A stated capacity gap, in the province's own words.** "Some regions have a limited
 number of radio operators" is [A], it is EMCR describing its own service, and it is the
@@ -192,12 +189,10 @@ appears. **[?]** Do not assume the Lower Mainland is well covered because it is 
 and do not assume it is thin because the province says some regions are. Neither is
 sourced.
 
-**Correction to this file, 10 September 2026.** The radio caution above was written
-before this passage was read, and it carried a guard warning the site off presenting
-amateur radio as a solution. That guard stands for equipment bought by an unprepared
-household. It does **not** stand as written for organised radio, which the province
-treats as part of its own capability. Both halves belong on the page, and the hinge
-between them is affiliation.
+**The guard, and where it stops.** The warning against presenting amateur radio as a
+solution stands for equipment bought by an unprepared household. It does **not** stand
+for organised radio, which the province treats as part of its own capability. Both halves
+belong on the page, and the hinge between them is affiliation.
 
 **Where this belongs on the site.** Beside the lever, not beside the failure. The useful household
 consequence of this whole page is not a piece of equipment — it is **send a text, not a call**,
@@ -286,9 +281,8 @@ follow-up had general web search. The original material was obtained by direct f
 regulator, government and operator endpoints, sitemaps, site-native search APIs and the Crossref
 API. The follow-up added a **scripted browser** that defeats Cloudflare and JavaScript shells, and
 the **Crossref and OpenAlex bibliographic indexes**, which are true indexes rather than
-search-engine proxies; those channels moved four of six re-run targets elsewhere in this folder.
-What still cannot be run is a keyword query of the form "does any document anywhere say X", so
-these negatives remain **"not found through these channels"**, not proofs of universal absence.
+search-engine proxies. What still cannot be run is a keyword query of the form "does any
+document anywhere say X", so these negatives remain **"not found through these channels"**, not proofs of universal absence.
 The regulatory findings are the least affected, because they rest on primary CRTC documents read
 directly. **The three carrier and BC-specific negatives above were recorded through the weaker
 channel and have not been retested.**

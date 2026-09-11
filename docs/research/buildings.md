@@ -5,29 +5,21 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** The Conference Board's $127.5B is **AIR 2013 scaled, not an independent estimate**, and an insured-versus-economic assertion drops to [?]. Review those two first.
 
-**Status.** Well sourced, and rewritten in September 2026 against two City of Vancouver
-council reports that did not exist when the first draft was written. The City now publishes
-building counts, damage counts, per-building-type displacement rates, neighbourhood
+**Status.** Well sourced, and built on two City of Vancouver council reports. The City
+publishes building counts, damage counts, per-building-type displacement rates, neighbourhood
 concentration and the tenure and income composition of the highest-risk areas, across three
-named scenarios. Two claims the draft carried have been withdrawn: the "8,000 vulnerable
-buildings / 1,100 studied" framing, and the downtown-as-glass-city hazard. Both have better
-replacements. The loss and insurance section has been rebuilt twice: first because its
-central comparison was arithmetically wrong, and again in September 2026 because the AIR
-Worldwide study behind the 2013 figures was recovered in full and read. Its real breakdown
-reconciles exactly, the Conference Board figures are now correctly attributed, the
-insurance-capacity figure turns out to be a band rather than a point, and the previously
-unidentified "2019 study" is named. Fire following has been rebuilt again in September 2026: the
-Scawthorn ICLR study has been retrieved in full, so the section is now [A] from the primary
-document rather than [B] via City reporting, it carries five modelled scenarios rather than
-three, and it carries two contradictions the report makes against itself. GSC Open File 8853 has
-also been retrieved, which puts the M7.0 scenario's debris, construction-type and insurance
-arithmetic on the record in NRCan's own voice. A September 2026 pass over the City's
-resident-facing material adds one thing this file could not previously say: the City itself
-tells residents to expect extended inaccessibility of whole neighbourhoods, and names building
-assessment and trade capacity as the constraint. That material is the plain-language register of
-[COV-RISK-2024], not a second source, and it is marked as such wherever it appears below.
+named scenarios. The loss and insurance section rests on the AIR Worldwide study behind the
+2013 figures, held in full: its breakdown reconciles exactly, the Conference Board figures are
+correctly attributed, the insurance-capacity figure is a band rather than a point, and the
+"2019 study" behind the insurer-failure figures is named. Fire following is [A] from the
+Scawthorn ICLR study itself rather than [B] via City reporting; it carries five modelled
+scenarios and two contradictions the report makes against itself. GSC Open File 8853 puts the
+M7.0 scenario's debris, construction-type and insurance arithmetic on the record in NRCan's own
+voice. The City's resident-facing material tells residents to expect extended inaccessibility of
+whole neighbourhoods, and names building assessment and trade capacity as the constraint. That
+material is the plain-language register of [COV-RISK-2024], not a second source, and it is
+marked as such wherever it appears below.
 
 ---
 
@@ -46,18 +38,17 @@ assessment and trade capacity as the constraint. That material is the plain-lang
   Chinatown and Strathcona), Downtown, Kitsilano, Fairview, Mount Pleasant.
   [COV-RISK-2024] **[A]**
 
-**Correction to the draft.** The old framing — "approximately 8,000 older seismically
-vulnerable buildings, of which about 1,100 has been studied" — should not be used. The
-~1,150-building inventory is the **1995 Delcan study**, and the City now says so itself; the
-~8,000 figure comes from a 2000 council report. [COV-URM-2000] **[B]** Both are superseded by
-the 2024 assessment, which counts the whole stock rather than a subset. Replacing a 25-year-old
-subset with a current census of 90,000 buildings is a straight upgrade, not a softening.
+**Do not use the "approximately 8,000 older seismically vulnerable buildings, of which about
+1,100 has been studied" framing.** The ~1,150-building inventory is the **1995 Delcan study**,
+and the City now says so itself; the ~8,000 figure comes from a 2000 council report.
+[COV-URM-2000] **[B]** Both are superseded by the 2024 assessment, which counts the whole stock
+rather than a subset.
 
 ### Retrofit policy
 
-- **Correction.** The Vancouver Building By-law requires upgrade to **either 50% or 75% of
-  current code design levels**, depending on the case — *not* "at least 75%" as the draft
-  stated. The trigger moved from permit cost to scope of work in 2007.
+- The Vancouver Building By-law requires upgrade to **either 50% or 75% of current code design
+  levels**, depending on the case — *not* "at least 75%". The trigger moved from permit cost to
+  scope of work in 2007.
   [COV-RISK-2024] **[A]**
 - **Part 11 of the by-law is Vancouver's real falling-hazard rule and has no BC Building Code
   or National Building Code equivalent.** Upgrade level S3 requires that "falling hazards that
@@ -179,9 +170,8 @@ single-room-occupancy units sit in URM buildings in the Downtown Eastside.
 
 The Hazard & Risk Explorer is the plain-language register of the November 2024 risk assessment,
 not a second study. **Nothing in this subsection corroborates anything above it** — one source
-in two registers is not two sources, and the project has been caught by that lineage error
-before. What the Explorer is worth is that it is written to be read, and that it is the version
-a Vancouver resident is actually handed.
+in two registers is not two sources. What the Explorer is worth is that it is written to be
+read, and that it is the version a Vancouver resident is actually handed.
 
 - **The buildings named most at risk, in the City's words to residents:** "Concrete mid-rise
   and high-rise concrete residential buildings, Unreinforced masonry (older brick) buildings,
@@ -206,9 +196,9 @@ a Vancouver resident is actually handed.
   the URM concentration recorded above, and it is still the same assessment speaking — an added
   detail within one lineage, not a second finding.
 
-### Falling debris — a withdrawn claim and its replacement
+### Falling debris
 
-**The glass-city framing is dead.** Two independent negatives close it:
+**There is no Vancouver falling-glass hazard analysis.** Two independent negatives establish it:
 
 1. The City of Vancouver stated on the record that **no such analysis exists**. FOI file
    04-1000-20-2021-060, response dated 17 February 2021: a request for "any reports that
@@ -219,9 +209,6 @@ a Vancouver resident is actually handed.
 2. The City's own city-wide seismic risk assessment **never uses the words**. A full-text
    search of the November 2024 report for `glaz|glass|curtain wall|cladding|window` returns
    zero hits. [COV-RISK-2024] **[A]**
-
-A deliberate, dated, documented "no records" answer is a stronger fact than an unanswered
-question mark, and it is why this claim is withdrawn rather than left open.
 
 **But separate the two things, because a reader will not.** What is absent is *hazard
 quantification* — nobody has estimated how much falling glass there would be, or who it
@@ -241,9 +228,8 @@ is the same shape as every other finding on this page.
 The code's commentary points to **CSA S832**, *Seismic risk reduction of operational and
 functional components (OFCs) of buildings*, third edition 2014. The clauses stay paywalled
 and unread — but **CSA Group publishes the Preface, Introduction and the whole of Clause 1
-free and without a login**, which is substantial primary text and enough that this file no
-longer has to describe the standard as an unknown. [CSA-S832-14] **[A]** for CSA's own
-published statement of its own standard.
+free and without a login**, which is substantial primary text. [CSA-S832-14] **[A]** for CSA's
+own published statement of its own standard.
 
 - **CSA's framing of the hazard, which corroborates the by-law note above from an
   independent voice:** "The main cause of casualties and property damage in the event of an
@@ -264,8 +250,8 @@ published statement of its own standard.
 - **The by-law's commentary points at it as guidance. Nothing in the public text makes it
   mandatory, and the site must not imply that it is.**
 
-**The replacement claim is sourced, local, and better.** The City places the street-level
-falling-debris hazard on older masonry commercial stock:
+**The local, sourced hazard is older masonry commercial stock.** The City places the
+street-level falling-debris hazard there:
 
 > "Commercial high streets and arterials throughout the city, containing many older URM, wood,
 > and low-rise concrete commercial buildings, are also at high risk. As a result, these
@@ -288,25 +274,21 @@ local number.
 
 ### Casualties and losses
 
-**Rebuilt.** The draft presented "three independent estimates". They are not independent, and
-the section's headline conclusion was arithmetically wrong.
-
 | Estimate | Scenario | Total economic | Insured | Actually attributable to |
 | --- | --- | ---: | ---: | --- |
 | IBC / AIR Worldwide, 2013 | M9.0 western Cascadia, ~300 km from Vancouver | **$74.7B** (direct $62.0B + indirect $12.7B) | **$20.4B** | AIR Worldwide for IBC, primary document now in hand [AIR-2013] **[A]** |
 | IBC, 2025 | M9 | ~$96–100B | **$26B** | IBC, no underlying study located [IBC-2025] **[B]** |
 | DCRRA, 2025 | M9.0 Cascadia | ~$128B | not given | **Conference Board of Canada 2016**, restated by the province [DCRRA-2025] **[A]** / [CBOC-2016-PR] **[A]** |
 
-**The AIR breakdown, corrected.** The study's own summary table for the western scenario,
+**The AIR breakdown.** The study's own summary table for the western scenario,
 all figures including demand surge: **total direct loss $62.0B**, of which **property
 $58.6B, infrastructure $1.9B and public assets $1.5B**; **indirect impact $12.7B**;
 **total direct and indirect loss $74.7B**; **total insured loss $20.4B**.
 [AIR-2013] **[A]**
 
-**The earlier "does not sum" caution is withdrawn.** The study's table reconciles to the
-cent in both columns. It did not sum on this page because this page carried the wrong
-numbers: the "$59–60B direct" was the **property row** ($58.6B) written into the
-**direct-loss row** ($62.0B). The arithmetic complaint was correct; the diagnosis was not.
+**The table reconciles to the cent in both columns.** The property row ($58.6B) and the
+direct-loss row ($62.0B) are different quantities, and a "$59–60B direct" figure is the
+property row in the wrong place. [AIR-2013] **[A]**
 
 **The real uncertainty is the resilience range, and the study states it.** The $12.7B
 indirect figure is the **midpoint** of a range running from **$4.1B with resilience to
@@ -331,18 +313,15 @@ Two further cautions travel with the table:
   the estimates "include only direct mainshock damage without account of secondary hazards like
   landslides, liquefaction, tsunami, fires and more." [DCRRA-2025] **[A]**
 
-**The Conference Board of Canada 2016 figures, correctly attributed — and the report has
-now been read.** Retrieved in full from a web archive on 10 September 2026, after the
-live path died at the network layer. Full citation: **McIntyre, Jane, and Marc Desormeaux,
-*Canada's Earthquake Risk: Macroeconomic Impacts and Systemic Financial Risk*, Ottawa: The
-Conference Board of Canada, 2016.** [CBOC-2016] **[A]**, upgraded from **[?]**.
+**The Conference Board of Canada 2016 figures, correctly attributed.** Full citation:
+**McIntyre, Jane, and Marc Desormeaux, *Canada's Earthquake Risk: Macroeconomic Impacts and
+Systemic Financial Risk*, Ottawa: The Conference Board of Canada, 2016.** [CBOC-2016] **[A]**
 
-**Two facts about the document that change how it is described.** It was **free** —
+**Two facts about the document belong in every attribution of it.** It was **free** —
 published 22 November 2016 at a price of CAD $0.00, and its own last page reads "PRICE:
-Complimentary", so this file's note that access could not be determined is retired. And
-**funding for the research was provided by the Insurance Bureau of Canada**, with IBC staff
-thanked for insights and feedback and a former insurance executive as outside reviewer.
-That belongs in every attribution.
+Complimentary". And **funding for the research was provided by the Insurance Bureau of
+Canada**, with IBC staff thanked for insights and feedback and a former insurance executive
+as outside reviewer.
 
 > **The $127.5 billion is not an independent estimate. It is AIR 2013, scaled.**
 > This is the most important thing in the report and it was invisible from the press
@@ -356,10 +335,10 @@ That belongs in every attribution.
 > to an estimated **$127.5 billion**." [CBOC-2016] **[A]**
 >
 > So **$42B is a chosen stress-test input, not a modelled output**, and **$127.5B is a
-> linear scaling of AIR's 2013 number**. This confirms this file's own instinct that the
-> only genuinely independent pair is IBC/AIR 2013 and IBC 2025 — and it means **the
-> Conference Board and AIR must never be set beside each other as two estimates.** They are
-> one estimate and a multiplier. See `../knowledge.md` on Canada's single modelling lineage.
+> linear scaling of AIR's 2013 number**. The only genuinely independent pair is IBC/AIR 2013
+> and IBC 2025, and **the Conference Board and AIR must never be set beside each other as
+> two estimates.** They are one estimate and a multiplier. See `../knowledge.md` on Canada's
+> single modelling lineage.
 
 > **The 15,000 deaths is an input assumption, not a finding.** "An assumption was made that
 > this earthquake would result in approximately 15,000 deaths", reasoned up from the
@@ -406,10 +385,8 @@ attributed, and they belong to the **Conference Board**, not to the province.
   currently capitalised.** This is an **insured-loss** threshold and belongs on the insured
   side of every comparison. [CBOC-2016-PR] **[A]**
 
-**A full-text read of the DCRRA finds it carries only two of these** — the ~$128B total and
-the 43,700 jobs. It does **not** contain the $122B debt figure or the $42B threshold. The
-earlier wording on this page, that the province "restates" all four, is withdrawn.
-[DCRRA-2025] **[A]**
+**The DCRRA carries only two of these** — the ~$128B total and the 43,700 jobs. It does
+**not** contain the $122B debt figure or the $42B threshold. [DCRRA-2025] **[A]**
 
 > **Warning — two different $38 billion figures, and they must never touch.**
 > The **Conference Board's $38B** is **peak annual real GDP loss in the third year after
@@ -458,11 +435,9 @@ Management BC and the Government Operations Centre. It carries material PEIRS do
   estimate on impacts." [GSC-OF-8853] **[A]** The fire loss below is precisely one of the excluded
   items, which is why the two must never be netted or casually added.
 
-**The insurance-capacity comparison — corrected twice.** The draft concluded that "every
-published Cascadia loss figure exceeds the industry's capacity by a factor of two to four."
-**It does not.** Capacity is stated **in claims**, that is, insured loss; the figures
-compared against it were **total economic loss**. And the capacity figure itself was wrong:
-the site has been printing **$30 billion** as a point when the source gives a **band**.
+**The insurance-capacity comparison.** Capacity is stated **in claims**, that is, insured
+loss, and only insured-loss figures may be set against it — never **total economic loss**.
+And the capacity is a **band**, not the point figure **$30 billion**.
 
 **Le Pan gives a $30–35 billion band, not a $30 billion ceiling.** Nicholas Le Pan, *Fault
 Lines: Earthquakes, Insurance, and Systemic Financial Risk*, C.D. Howe Institute Commentary
@@ -509,8 +484,7 @@ distressed. At **$30B**, 41 insurers exhaust their reinsurance, 25 fall below a 
 level**. At **$40B**, **16 failures**, an assessment of $14.9B, and — the paper's own words
 — the systemic collapse of Canada's P&C insurance industry. [PACICC-2021] **[A]**
 
-**The insurer-failure claim, split off and named.** The previously unidentified "2019 study"
-is **Mary Kelly, Anne Kleffner and Grant Kelly, "An examination of catastrophes, insurance
+**The insurer-failure claim, named.** The "2019 study" is **Mary Kelly, Anne Kleffner and Grant Kelly, "An examination of catastrophes, insurance
 guaranty funds and contagion risk", *The Geneva Papers on Risk and Insurance — Issues and
 Practice*, 45(2), 256–280**, published online 8 August 2019, print April 2020, DOI
 `10.1057/s41288-019-00141-x`. [KELLY-2019] **[B]** Grant Kelly is PACICC's chief economist;
@@ -523,13 +497,11 @@ route from PACICC's own papers.
   through Stefan Labbé's reporting for Business in Vancouver. [BIV-DCRRA-25] **[B]** Any
   sentence on the site that prints them must name the paper and say the figures come via
   Business in Vancouver.
-- **Whether the $30B there is insured or economic loss — downgraded to [?] on
-  10 September 2026.** This file asserted it was an insured figure, reasoning that the
-  comparison only makes sense against insurer capacity as claims. That reasoning is sound
-  and the source pushes the other way: the reporting says "$30 billion in **damages** … as
-  simulated by the Geological Survey of Canada", which reads as a total-loss scenario
-  figure. **Our reading is an inference and the wording is against it.** It stays **[?]**
-  until the paper is read, and no sentence on the site may label that $30B as either.
+- **Whether the $30B there is insured or economic loss is not established. [?]** The
+  comparison makes sense only against insurer capacity as claims, and the source pushes the
+  other way: the reporting says "$30 billion in **damages** … as simulated by the Geological
+  Survey of Canada", which reads as a total-loss scenario figure. It stays **[?]** until the
+  paper is read, and no sentence on the site may label that $30B as either.
 - **"30" cannot be an industry-wide count.** PACICC has well over 100 member insurers, and
   its own published model reports against that full membership. What the 30 denotes is
   **unknown** and the site cannot say. **[?]**
@@ -577,10 +549,9 @@ remainder (**over $4.1 billion**) being paid by homeowners". [GSC-OF-8853] **[A]
   insurance safety net; Budget 2025 states Ottawa intends to consult insurers on guaranteeing
   system stability after a major earthquake. [IBC-2025] **[B]**
 
-**Exposure — corrected, and method-bound.** The DCRRA gives **92% of BC's population
-(4,400,000), 90% of businesses, and 76% of critical facilities (13,000)** — **not 78%** as the
-draft recorded. [DCRRA-EXP] **[A]** The draft's "roughly 150,000 of 170,000" businesses is not
-the DCRRA's wording; drop it.
+**Exposure — method-bound.** The DCRRA gives **92% of BC's population (4,400,000), 90% of
+businesses, and 76% of critical facilities (13,000)** — **not 78%**. [DCRRA-EXP] **[A]** Do not
+write "roughly 150,000 of 170,000" businesses; that is not the DCRRA's wording.
 
 **These are hazard-zone exposure figures, not scenario outcomes.** They are computed against
 **2,475-year return-period ground motions (2% in 50 years) from CanadaSHM6**, with thresholds
@@ -591,18 +562,14 @@ expert reader caught.
 
 ### Fire following
 
-**Rebuilt in September 2026 from the primary study, retrieved in full.** Scawthorn, C. (2020),
+**From the primary study, held in full.** Scawthorn, C. (2020),
 *Fire following earthquake in the Vancouver region*, ICLR Research Paper Series no. 67, 74 pp,
 SPA Risk LLC for the Institute for Catastrophic Loss Reduction, November 2020. Everything below
 comes from the report itself rather than from City of Vancouver reporting of it.
 [SCAWTHORN-2020] **[A]** A separately published executive summary carries the same tables.
 [SCAWTHORN-2020-ES] **[A]**
 
-*Key change: this file previously keyed the same paper `ICLR-FIRE`. `SCAWTHORN-2020` is the key
-from here on, and one figure moves with it — the draft's "$170M" for Cascadia is the report's
-**$162 million**.*
-
-**Five scenarios, not three.** All figures are Canadian dollars, and all are median or mean
+**Five scenarios.** All figures are Canadian dollars, and all are median or mean
 estimates: "These are median estimates — there are significant probabilities of greater or less
 damage." [SCAWTHORN-2020] **[A]**
 
@@ -629,8 +596,8 @@ numbers.**
   method; "1,000 realizations" appears through the results and figure captions. Never state a
   trial count without saying the source gives two. [SCAWTHORN-2020] **[A]**
 
-**The counter-intuitive ordering is confirmed, and the study explains it. The explanation is the
-finding.** Cascadia is the **lowest of the five** — **$162 million against $10.7 billion** for
+**The counter-intuitive ordering, and the study's explanation of it, is the finding.** Cascadia
+is the **lowest of the five** — **$162 million against $10.7 billion** for
 the near crustal event, a factor of **66**. Scawthorn states the mechanism directly:
 
 > "the largest number of fires in the Lower Mainland is not likely to be caused by a large CSZ
@@ -647,7 +614,7 @@ headline. [SCAWTHORN-2020] **[A]**
 See `scenarios.md`. That argument runs on ground motion; this one runs on ignitions; they land
 in the same place. Two separate literatures, one answer — cross-reference it, do not restate it.
 
-**The $10 billion in PEIRS has a name now.** PEIRS states that fires following an earthquake in
+**The $10 billion in PEIRS has a name.** PEIRS states that fires following an earthquake in
 Vancouver "could cause an additional $10 billion in damage" and attributes it only to "studies
 indicate". [PEIRS] **[A]** The DCRRA gives the same range and names the author: losses "can range
 from upwards of $150 million from an M9 Cascadia Subduction Zone earthquake to more than $10
@@ -775,10 +742,8 @@ advantage of a coastal city. [DCRRA-2025] **[A]**
   earthquake-resistant pipeline, supplying **the downtown peninsula — the downtown core and the
   West End — plus Fairview Slopes and Kitsilano**. First pump station at False Creek September
   1995; second at Coal Harbour February 1997; pipeline completed **2003**. [COV-PREPARES] **[A]**
-  *(New key: the City's current "How Vancouver prepares for emergencies" page,
-  `https://vancouver.ca/home-property-development/how-vancouver-prepares-for-emergencies.aspx`.
-  It replaces the draft's bundled `COV-DFPS` council-records key and lifts this from [B] to
-  [A].)*
+  *([COV-PREPARES] is the City's current "How Vancouver prepares for emergencies" page,
+  `https://vancouver.ca/home-property-development/how-vancouver-prepares-for-emergencies.aspx`.)*
 - Length is given as a **10 km** secondary fire suppression system in City council reporting.
   **[B]** — the specific council report is not pinned; see below.
 - **Nothing beyond those areas.** The intended build-out was exactly this; the last hydrants
@@ -786,15 +751,14 @@ advantage of a coastal city. [DCRRA-2025] **[A]**
   [COV-PREPARES] **[A]** Naming the areas it does *not* cover is the point of the section.
 - The Fairview Slopes extension was justified partly "to protect Vancouver Hospital, the
   primary emergency care facility for the province". [COV-DFPS-2001] **[B]**
-- **Correction: the seawater draw has never been used.** The draft said "used in anger only
-  once"; the cited source says the opposite. [VIA-HYDRANTS] **[B]**
-- **Do not publish the pump capacity figure as drafted.** "Two pump stations, each capable of
+- **The seawater draw has never been used.** [VIA-HYDRANTS] **[B]**
+- **Do not publish a per-station pump capacity figure.** "Two pump stations, each capable of
   roughly 10,000 imperial gallons per minute" misstates the source. Council material gives
   **20,000 igpm downtown and 10,000 igpm in Kitsilano/Fairview** — asymmetric, and stated as a
   post-seismic **requirement**, not a per-station capacity. [COV-DFPS-2001] **[?]** The
   conversion arithmetic is fine (10,000 imp gal/min = 45,461 L/min, and the imperial reading is
   the only one consistent with "about 45,000 L/min"); the figure it converts is not.
-- **Map layer cleared.** The DFPS water mains dataset is published on the City of Vancouver Open
+- **Map layer.** The DFPS water mains dataset is published on the City of Vancouver Open
   Data Portal under the Open Government Licence – Vancouver. [COV-DFPS-DATA] **[A]** The
   coverage boundary can be drawn rather than described.
 - **The resident-facing description.** The Hazard & Risk Explorer describes the system at length
@@ -861,7 +825,7 @@ directed at closing that gap is a rounding error against the capital plan it sit
   16,000 and 7,521 URLs), zero hits for post-disaster, seismic or earthquake on any fire-hall
   page, including Surrey's new Fleetwood Hall 6, which is being built without any published
   statement of what standard it is built to. **Richmond and the City of North Vancouver were
-  tested on 10 September 2026 and the answers differ.** **[?]** only for CNV now.
+  searched on 10 September 2026.** **[?]** for CNV.
 
   **Richmond: all halls, stated by the fire chief — at committee-minute strength.** Community
   Safety Committee minutes of 10 March 2026 record the Chief answering members: "**all
@@ -921,15 +885,14 @@ directed at closing that gap is a rounding error against the capital plan it sit
   confirmed closed by Springer's own metadata, OpenAlex and Semantic Scholar, with no
   preprint, repository or working-paper copy located. The figures are media-routed via
   Business in Vancouver, and **what the "30" denotes is unknown**. [KELLY-2019] **[B]** /
-  [BIV-DCRRA-25] **[B]** The former GSC-2019-INS key described a study that does not
-  exist as such and is retired.
-- **Date correction on the DCRRA coverage.** This file previously dated it to **2026**.
-  It is **27 December 2025** (Stefan Labbé, Business in Vancouver) and **29 December 2025**
+  [BIV-DCRRA-25] **[B]**
+- **The date of the DCRRA coverage.** It is **27 December 2025** (Stefan Labbé, Business in
+  Vancouver) and **29 December 2025**
   (the Times Colonist reprint). [BIV-DCRRA-25] **[B]** / [TC-DCRRA-25] **[B]** **Prefer the
   BIV original**: it hyperlinks the word "study" to the Springer DOI, and the Times
   Colonist reprint carries no link.
-- **The IBC/AIR 2013 study PDF — resolved, with a caveat.** The study has been recovered in
-  full, 264 pages, and read. [AIR-2013] **[A]** IBC's live copy is dead at the DNS/TLS
+- **The IBC/AIR 2013 study PDF is held in full**, 264 pages. [AIR-2013] **[A]** IBC's live
+  copy is dead at the DNS/TLS
   layer and the older `ibc.ca` path returns IBC's HTML 404 page under a 200 status; the
   only working route is the Internet Archive's verbatim capture of the IBC original,
   `https://web.archive.org/web/2016id_/http://assets.ibc.ca/Documents/Disaster/IBC-Earthquake-Economic-Study-Full-Report.pdf`.
@@ -937,12 +900,11 @@ directed at closing that gap is a rounding error against the capital plan it sit
   no-reproduction-without-permission notice despite years of publication on IBC's public
   asset host — see `../licensing.md` before quoting. Whether the 2025 $96B/$26B figures
   rest on new modelling or on the 2013 work remains unresolved. **[?]**
-- **The Conference Board 2016 report text.** The `conferenceboard.ca` product page has an
-  expired TLS certificate, the successor `conference-board.org` page returns an empty body,
-  the PreventionWeb e-library identifier 404s, and the Internet Archive holds no
-  earthquake-related path on the domain. Access status — free, members-only or priced —
-  could not be determined. Only the Board's press-release figures are in hand.
-  [CBOC-2016] **[?]** / [CBOC-2016-PR] **[A]**
+- **The Conference Board 2016 report is held, but not from a live path.** The
+  `conferenceboard.ca` product page has an expired TLS certificate and the successor
+  `conference-board.org` page returns an empty body; the working route is a web archive copy.
+  Refresh trigger: if the Board restores the document, cite the Board.
+  [CBOC-2016] **[A]** / [CBOC-2016-PR] **[A]**
 - **The Ausenco report** *Supporting Analysis for Seismic Risk Reduction Planning*, cited
   throughout the 2024 council report as "(2025) [Forthcoming]", is **not published as of 10
   September 2026**. It is the likeliest future Vancouver-specific building-vulnerability source.
@@ -960,15 +922,8 @@ directed at closing that gap is a rounding error against the capital plan it sit
   appear in the same report. Which the results rest on is not established. [SCAWTHORN-2020] **[?]**
 - **Whether Vancouver or the Province has considered and rejected a high-rise secondary
   water supply requirement.** Scawthorn establishes that no such provision exists; no decision
-  record for or against was looked for in this pass. Not searched — recorded so the absence is
-  not mistaken for one that has been. **[?]**
-- **A key conflict for `sources.md` to settle.** Two memos key the same two council reports
-  differently: `COV-RISK-2024`/`COV-PLAN-2026` (used here) against
-  `COV-URM-2024`/`COV-URM-2026`. Likewise `DCRRA-2025` against `DCRRA`. The
-  `ICLR-FIRE` / `SCAWTHORN-2020` conflict is **settled here in favour of `SCAWTHORN-2020`**, on
-  the retrieval of the paper itself; `sources.md` needs updating to match, along with the new
-  `SCAWTHORN-2020-ES` and `GSC-OF-8853` keys used above. This file otherwise uses the first of
-  each pair.
+  record for or against has been searched for. **Not searched, as distinct from searched and
+  not found. [?]**
 - **Method caveat on every absence above.** General web search was unavailable for most of the
   September 2026 pass. These are "not found through these channels" — direct fetching of
   government, regulator and repository endpoints, sitemaps, the Crossref API and the NRCan
@@ -1023,12 +978,10 @@ neighbourhoods carry two thirds of it.
 - **The OF 8853 insurance arithmetic is Victoria's**, not Vancouver's, and the wood 26% figure
   carries NRCan's denominator caution or it does not travel at all.
 
-**How to write the two corrections.** Both are worth showing rather than quietly fixing. The
-glass one is a searched absence with a dated FOI file behind it and a better, sourced
-replacement — "we looked for this, the City says it does not exist, and here is what the City
-does say" is the most trust-building paragraph available on this page. The insurance one is a
-like-for-like error: the honest version is smaller than the wrong version, and publishing the
-smaller version is what makes the rest of the site's numbers worth believing.
+**How to write the falling-glass absence.** It is a searched absence with a dated FOI file
+behind it and a better, sourced replacement — "we looked for this, the City says it does not
+exist, and here is what the City does say" is the most trust-building paragraph available on
+this page.
 
 **The counter-intuitive pair to lead with.** The M7.2 crustal scenario is worse for Vancouver
 than the M9, and fire loss follows the same ordering. Both come from the reader's own city's

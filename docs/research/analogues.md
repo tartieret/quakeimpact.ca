@@ -6,14 +6,12 @@
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
 
-**Status.** Four analogues, none of which may set a Lower Mainland number. Christchurch
+**Status.** Three analogues, none of which may set a Lower Mainland number. Christchurch
 supplies the sanitation and masonry-façade mechanisms; Kobe supplies permanent economic
-displacement and is the strongest of the set; Tōhoku is now properly sourced to a Japanese
-government briefing and demotes itself in the process, because BC's own planning documents now
-state the fuel-dependency mechanism directly. **The Berlin Airlift comparison is retired** —
-not because it was wrong, but because it could not be stated fairly in fewer than three
-caveats. What it was carrying, the water-demand arithmetic against the humanitarian
-standards, stands on its own and is stronger without it.
+displacement and is the strongest of the set; Tōhoku is sourced to a Japanese government
+briefing and sits as a sidebar, because BC's own planning documents state the
+fuel-dependency mechanism directly. Alongside them, the water-demand arithmetic against
+the humanitarian standards stands on its own and needs no analogue at all.
 
 ---
 
@@ -50,8 +48,8 @@ news media carry the Christchurch ones.
   will cost more than the number is worth.
 
 **Population loss.** Christchurch's post-earthquake population loss is the displacement analogue
-the housing argument wants, and it is **cited three times in the draft with no source key at
-all**. [CHCH-POP] **[?]** It must not ship until sourced.
+the housing argument wants, and it **has no source**. [CHCH-POP] **[?]** It must not ship
+until sourced.
 
 **Masonry façades — the statistic that replaces the glass-city claim.** Of the 42 deaths from
 building failures other than the CTV and PGC buildings, **35 resulted from unreinforced masonry
@@ -73,7 +71,7 @@ should be used for exactly that. The ranking figures were not verified inside th
 the Chang paper during the source audit, and the RMS retrospective was not recovered, so the
 pair currently rests on citation rather than on read text. **[?]** on the specific rankings.
 
-### Tōhoku 2011 — fuel, and why it is now a sidebar
+### Tōhoku 2011 — fuel, and why it is a sidebar
 
 **Lead with the local sources.** PEIRS and the DCRRA both state the fuel-dependency mechanism
 for British Columbia, in government voice:
@@ -85,8 +83,8 @@ for British Columbia, in government voice:
 [PEIRS] **[A]** The fast-moving consumer goods network "will be disrupted. It may take weeks or
 months to recover." [PEIRS] **[A]**
 
-**The site therefore no longer needs Tōhoku to establish that fuel is the bottleneck — only to
-show what the bottleneck looked like.** What follows is a clearly-marked out-of-region sidebar
+**The site does not need Tōhoku to establish that fuel is the bottleneck — only to show
+what the bottleneck looked like.** What follows is a clearly-marked out-of-region sidebar
 and must not carry the argument.
 
 Source: a METI / Agency for Natural Resources and Energy briefing submitted to the Japanese
@@ -144,26 +142,12 @@ March 2012 restart date (METI says only "several months to a year"). **[?]**
 
 ### Retired — the Berlin Airlift comparison
 
-**Removed 10 September 2026, and not because it was wrong.** The arithmetic survived
-verification: tonnage, flight totals and per-capita figures were all rebuilt from primary
-sources, and the two claims that did not survive — a day count and an opening-week tonnage
-— were withdrawn at the time. What the comparison could never shed was its caveats. Three
-were needed before it could be stated honestly: that roughly two-thirds of the airlift's
-tonnage was coal, that **Berlin's own water supply was never cut**, and that nobody plans
-to supply a metro region by air.
+The Berlin Airlift comparison is retired and does not go on the site. The `BERLIN-*` keys
+are retired in `../sources.md`.
 
-**A comparison that takes three caveats to be fair is not teaching a reader anything they
-can act on.** It was carried as a ceiling on what rescue can be — and a ceiling nobody
-would ever approach is a rhetorical device, not a finding. The site's own rule applies to
-itself here: **prefer the specific sourced fact to the striking general one.** It is
-retired rather than deleted in silence, so that the work is not repeated by someone
-reaching for the same comparison next year. The `BERLIN-*` keys are retired in
-`../sources.md`.
+### Water demand against the humanitarian standards
 
-### Water demand against the humanitarian standards — which never needed an analogue
-
-This is what the retired section was really for, and it stands on its own. Daily water
-demand for **2,642,825 people**:
+Daily water demand for **2,642,825 people**:
 
 | Standard | Source | Daily demand |
 | --- | --- | ---: |
@@ -183,28 +167,11 @@ normally treats roughly **430 litres per person per day** of wastewater, against
 emergency minimum of 15 — a factor of about 29. Same point, local, current, and needing no
 caveats at all. See `systems/water.md` and `systems/sanitation.md`.
 
-
 ## What is not established
 
-- **Withdrawn — "462 days".** No source states a day count at all. Checked and absent from the
-  USAF Historical Support Division fact sheet, the Smithsonian NASM feature, the AlliiertenMuseum
-  German and English topic pages including their chronology and statistics table, PBS, the US
-  Department of State Office of the Historian, the Truman Library, Britannica, the English and
-  German Wikipedia articles, and Tine. September 2026. The inclusive arithmetic gives 462 **only
-  on the USAF's start date of 26 June 1948**; the AlliiertenMuseum's own first-flight date of 28
-  June would give 460, and the RAF's last flight on 6 October 1949 would give 469. Use the dates,
-  not a count. **[?]**
-- **Withdrawn — the first-week daily tonnage.** No source states an opening-week figure, and the
-  "90 tons" of the draft is a corruption of the 80-ton American first day. Deleted rather than
-  carried. **[?]**
-- **A dead host, recorded so nobody retries it.** `afhistory.af.mil` no longer resolves (DNS
-  NXDOMAIN) — the second such case in this evidence base, alongside `geoscan.nrcan.gc.ca`. The
-  source it held is retired with the airlift comparison, but the lesson is not: **two federal
-  hosts have died during this project's lifetime**, and it is the standing argument for the
-  open decision on whether the site archives its own sources. See `../site-overview.md` §9.
 - **Christchurch population loss.** No source at all. [CHCH-POP] **[?]**
 - **The "40,000 chemical toilets" figure.** Not confirmed in the retrieved Stuff article, and
-  incoherent against the 30,000-residents figure as the draft presents them. **[?]**
+  incoherent against the 30,000-residents figure. **[?]**
 - **The Kobe port rankings.** Not verified inside the full text of [CHANG-2000] (paywalled), and
   [RMS-KOBE] was not recovered — two RMS URLs 404 and 403, and the Wayback Machine was not
   reachable from the research environment. **[?]** Retry manually.
@@ -212,9 +179,6 @@ caveats at all. See `systems/water.md` and `systems/sanitation.md`.
   stated 30-year restoration. Recheck before publishing the 30-year figure. Refresh trigger.
 - **Sphere edition.** The 2018 fourth edition is current and not superseded; a 2026–2028 revision
   is under way. Refresh trigger for 2028.
-- **Source-key conflict for `sources.md`:** `DCRRA-2025` here against `DCRRA` in the draft
-  register; `CHCH-SEWER` in the draft has been split into `CHCH-SEWER-STUFF` and
-  `CHCH-SEWER-NZH`. The `BERLIN-*` keys are retired with the comparison they supported.
 
 ---
 
@@ -234,9 +198,8 @@ existed; what failed was the terminals and the trucks that move it.
   middle-income population normally uses. They are not points on one scale of severity.
 - **Lead with the local comparison, not an imported one.** Annacis Island normally treats
   about 430 litres per person per day against a Sphere emergency minimum of 15 — a factor of
-  about 29, current, local, and needing no caveats. That is the framing that survived the
-  retirement of the airlift comparison, and it is stronger than what it replaced.
+  about 29, current, local, and needing no caveats.
 
-**Do not.** Do not give the comparison a severity multiplier. Do not let a [C] figure set a band,
+**Do not.** Do not give an analogue a severity multiplier. Do not let a [C] figure set a band,
 a restoration time or a casualty count anywhere on the site. Do not print a ratio greater than
 one toilet per person. Do not ship the Christchurch population-loss claim until it has a source.

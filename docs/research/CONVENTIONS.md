@@ -5,7 +5,6 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** Documents the review header this file now carries.
 
 
 Read with `README.md`. These are the rules every file in this folder follows, so
@@ -42,11 +41,8 @@ check. When a file is validated, the visible line becomes
 `grep -L '^<!-- review-status: validated -->' *.md systems/*.md` lists exactly what is left.
 
 **Validation expires when the file changes.** Any substantive edit after a validation
-returns the file to `unreviewed`. A typo fix does not; a new finding, a withdrawn claim or
+returns the file to `unreviewed`. A typo fix does not; a new finding, a changed claim or
 a changed band does. If you are unsure which you made, it was substantive.
-
-**Where a claim was withdrawn or reversed in the last pass, the header says so** and names
-the section, so the reviewer starts where the risk is rather than at the top.
 
 ## Structure of a file
 
@@ -77,6 +73,14 @@ the section, so the reviewer starts where the risk is rather than at the top.
   statement than "we did not find this" — but only the search entitles us to it.
 - **Deliberate non-publication is not the same as absence.** Where a document
   exists and is withheld, say that. It is a different fact about the world.
+- **Record what we know, not how we came to know it.** A file states the current
+  finding. It does not narrate the claim it replaced, the round in which it changed, or
+  the belief it corrected — a reader picking the file up needs the evidence, not the
+  project's autobiography. Corrections are made in place. The list of claims this
+  project withdrew lives once, in `../research-plan.md`; the lessons those corrections
+  taught live in `../knowledge.md`. **A date belongs to a search, not to a change of
+  mind**: "searched the City's full-text index on 10 September 2026, zero public pages"
+  is evidence and stays; "strengthened 10 September 2026" is a diary entry and goes.
 - **Research voice stays in "For the page".** The site does not talk about
   itself. Framings like "the honest framing here" or "the blanks make the
   point" are notes, not copy, and never cross into `docs/copy/`.

@@ -5,28 +5,14 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** Two recorded absences are **narrowed rather than removed**, and the NEPP succession is now contradicted by the record.
 
-**Status.** The draft's central claim is withdrawn. **BC does not advise 72 hours in
-the document the draft cited** — the PreparedBC earthquake guide says two weeks, three
-times over — and the conclusion built on it, that Washington raised its standard and BC
-did not, is false. The replacement finding is defensible and arguably better: **BC's
-own guidance contradicts itself**, and "72 hours" is what the public still remembers.
-The province's operational plan says two weeks for households and 72 hours for the
-support system, and says the support system is not built for this.
-
-**Strengthened 10 September 2026.** A currently published provincial plan — the primary
-component of the province's own emergency-management framework — states 72 hours, twice.
-That does not rehabilitate the withdrawn claim; it makes a different and better one.
-**There are now five provincial positions, and the number the province gives depends on
-which provincial document you open.**
-
-**Municipal layer added 10 September 2026.** The City of Vancouver — the body that would
-actually run the response — is a **sixth position, and it is not two weeks**. Every City
-document that names a duration names **three days as the floor**, and the City's most
-recently revised preparedness document does its water arithmetic on three days. The same
-inconsistency then repeats one level down, between four municipalities of the same
-metropolitan region on the same hazard.
+**Status.** **BC's own guidance contradicts itself.** Six officially published positions
+— five provincial, one municipal — give six different answers to how long a household
+should expect to last alone, and **"72 hours" is what the public still remembers.** The
+province's operational plan says two weeks for households and 72 hours for the support
+system, and says in the same document that the support system is not built for this
+event. The City of Vancouver, which would run the response, names three days as the
+floor.
 
 Not a system, so no band. This subject supplies the lever every system page ends with.
 
@@ -34,12 +20,11 @@ Not a system, so no band. This subject supplies the lever every system page ends
 
 ## Findings
 
-### The correction
+### The gap is inside BC's own advice
 
 - **The PreparedBC Earthquake and Tsunami Preparedness Guide, last updated March 2024,
   contains zero occurrences of "72 hours", "72-hour", "three days" or "three-day".**
-  The full PDF was retrieved at the URL the draft cited and text-extracted.
-  [PREPAREDBC] **[A]** on the absence.
+  The full PDF was retrieved and text-extracted. [PREPAREDBC] **[A]** on the absence.
 - What it says instead, three times: "Store enough food and water for everyone in your
   home for **at least two weeks**"; "Collect non-perishable food, water and emergency
   supplies to last each person (and pet) in your home for at least two weeks, or
@@ -48,12 +33,6 @@ Not a system, so no band. This subject supplies the lever every system page ends
   a manual can opener". [PREPAREDBC] **[A]**
 - It also states: "It may be weeks before infrastructure, utilities and essential
   services are restored." [PREPAREDBC] **[A]**
-- **Therefore the draft's "BC still advises a minimum of 72 hours" is contradicted by
-  the document it cites**, the conclusion drawn from it is false, and the build order's
-  ranking of it as the strongest hook is withdrawn. This is the largest correction in
-  the project and it is recorded here, where it was made.
-
-### The replacement finding — the gap is inside BC's own advice
 
 **Six positions** — five provincial, one municipal — all citable, all officially
 published, saying six different things:
@@ -94,10 +73,10 @@ published, saying six different things:
   is that the CEMP's primary component still carries the 72-hour figure**, not that the
   province advises 72 hours today. [AHP-2012] [CEMP-PAGE] **[A]**
 - **One caution on the Washington side.** What is verified is Washington's *current*
-  position. The draft's framing of "2 Weeks Ready" as a post-Cascadia-Rising *shift*
-  from three days is a separate historical claim needing its own source; at present it
-  rests only on [CR16-ST] **[B]**, which is journalism about an unpublished draft and is
-  not used elsewhere on the site. Do not publish the shift as a fact.
+  position. Describing "2 Weeks Ready" as a post-Cascadia-Rising *shift* from three days
+  is a separate historical claim needing its own source; at present it rests only on
+  [CR16-ST] **[B]**, which is journalism about an unpublished draft and is not used
+  elsewhere on the site. **Do not publish the shift as a fact.**
 
 ### The municipal layer, and a sixth position
 
@@ -326,16 +305,14 @@ non-obvious; the rest need no source.
 ## What is not established
 
 - **Whether the 72-hour figure ever was BC's published *earthquake* standard.**
-  **Partially closed, 10 September 2026.** A currently published provincial plan states
-  it twice — [AHP-2012] pp. 11 and 37 **[A]** — which is the closest thing found to the
+  A currently published provincial plan states it twice — [AHP-2012] pp. 11 and 37 **[A]** — which is the closest thing found to the
   historical 72-hour standard this file recorded as unlocated. But the All-Hazard Plan is
   an **all-hazard** document, not an earthquake-specific one, so the earthquake-specific
   claim remains **[?]**. Searched: the current PreparedBC guide (which does not carry the
   figure), the general kit and hazard pages (which give three days and one week)
-  [PREPAREDBC-KIT] [PREPAREDBC-EQ], September 2026. **The guard below stands unchanged:
-  this finding does not rehabilitate the withdrawn claim.** The page may say the figure is
-  what the public remembers, and may say the CEMP's primary component still carries it; it
-  may not say the province used to publish it as the earthquake standard.
+  [PREPAREDBC-KIT] [PREPAREDBC-EQ], September 2026. The page may say the figure is what
+  the public remembers, and may say the CEMP's primary component still carries it; it may
+  not say the province used to publish it as the earthquake standard.
 - **Washington's shift from three days to two weeks as a dated event.** Verified only as
   a current position. **[?]** for the shift itself.
 - **Public awareness of any of this.** No BC survey of household preparedness levels or
@@ -359,8 +336,8 @@ non-obvious; the rest need no source.
   is "Start with what you have and add more as you can" [COV-PREPMAIN] **[A]** and "Not
   every action will work for everyone, choose the options that work best for you"
   [COV-EXPLORER-25] **[A]**. Those two facts are the finding; nothing is written past them.
-- **The money half of that gap now has an answer to point at, and the storage half does
-  not.** Re-audited 10 September 2026 through the City's full-text index — four further
+- **The money half of that gap has an answer to point at, and the storage half does
+  not.** Audited 10 September 2026 through the City's full-text index — four further
   query forms on budget, apartment storage, renters and SRO residents, none returning any
   City page or PDF on the subject. **[A]** on the City's silence. But PreparedBC does
   publish one: its kit page links to an EMCR post of 12 August 2024, *Get prepared for
@@ -378,7 +355,7 @@ non-obvious; the rest need no source.
   closet, spare room or garage" **[A]** — three things a bachelor suite or an SRO room does
   not have. Nothing found addresses storing two weeks of water in an apartment, what a
   tenant may ask a landlord for, or what happens to a tenancy when a building is tagged.
-  **[?]**, now audited against the City's full-text index as well as its navigation.
+  **[?]**, audited against the City's full-text index as well as its navigation.
 - **No City preparedness material for people with disabilities or mobility limitations.**
   Disability is named as an affected group and accommodated within kit lists and drop-cover-
   hold wording [COV-EXPLORER-25] [COV-FACTSHEET-24] **[A]**, and the City's 20-minute
@@ -388,10 +365,9 @@ non-obvious; the rest need no source.
   Emergency preparedness and Emergency information sections, 10 September 2026; the only
   public-page hits are a winter-weather page and records pages.
 
-  **Partly overturned 10 September 2026, and the correction is precise.** The City *does*
-  publish material for people who cannot evacuate unaided — it is filed under **fire safety
-  for building owners**, addressed to building managers, and two of its three documents are
-  not the City's. On *Fire safety for building owners* the City runs sections headed
+  **The City does publish material for people who cannot evacuate unaided** — it is filed
+  under **fire safety for building owners**, addressed to building managers, and two of
+  its three documents are not the City's. On *Fire safety for building owners* the City runs sections headed
   "**Evacuation planning for people with disabilities**" and "**Keep a list of residents who
   need assistance**", instructing apartment owners to hold that list in the lobby fire
   safety plan box and to "encourage each resident with a disability to develop an
@@ -415,8 +391,8 @@ non-obvious; the rest need no source.
   jurisdictions publish one and Vancouver does not**: North Shore Emergency Management's
   "Help for people with additional needs" [NSEM-KIT] **[A]** and Richmond Fire-Rescue's
   "Make a Plan — Planning for Unique Needs" [RICH-FR] **[A]**.
-- **The capacity of the disaster support hubs is still unpublished — reconfirmed
-  10 September 2026 — and there is a trap to avoid.** The hubs page describes 25 hubs
+- **The capacity of the disaster support hubs is unpublished, and there is a trap to
+  avoid.** The hubs page describes 25 hubs
   identified by yellow signs at 23 community centres, Oppenheimer Park and Fraserview
   Branch of Vancouver Public Library, sited where there is enough outdoor space for the
   public to gather, with services that "may include" group lodging, distribution of food,
@@ -437,8 +413,8 @@ non-obvious; the rest need no source.
   preparedness section, 10 September 2026. The succession is an inference and is not
   published as a fact.
 
-  **Strengthened 10 September 2026: the record now cuts *against* the succession.** Three
-  documents were retrieved and none states one. The City's **records retention and
+  **The record cuts *against* the succession.** Three documents were retrieved and none
+  states one. The City's **records retention and
   disposition schedule**, released under FOI, classifies "courses and workshops offered to
   the public through the Neighbourhood Emergency Preparedness Program (NEPP)" with the
   disposition note "**Course no longer offered**" [COV-RETENTION-24] **[A]** — documentary
@@ -514,7 +490,7 @@ weeks everywhere, under a single named campaign. The gap is not across the borde
 is inside BC's own advice.* Three provincial pages and one state page, all quotable, and
 it requires telling the reader nothing false.
 
-**The stronger version, now available.** *The number depends on which provincial document
+**The stronger version.** *The number depends on which provincial document
 you open* — five positions, and the outlier is not a consumer web page but the plan the
 whole framework hangs off. If the page uses it, it uses the careful wording: the CEMP's
 primary component **still carries** the 72-hour figure. Not "the province advises 72
@@ -546,17 +522,15 @@ municipalities, one region, one hazard.
   is labelled as such. Neither total is attributed to the City or to the province.
 - **The City/FortisBC gas conflict is stated, not resolved.** Both instructions are given
   in their own words, the conflict is named, and the reader is not told who is right.
-- The words "BC still advises 72 hours" never appear on the site. **This stands unchanged
-  after the 10 September 2026 pass.** The All-Hazard Plan finding is a different and
-  better claim, about which document carries which number; it is not a rehabilitation of
-  the withdrawn one.
+- **The site never says "BC advises 72 hours".** The earthquake-specific guide does not
+  say it. What the site may say is which document carries which number, and that the
+  CEMP's primary component still carries 72 hours.
 - Washington's two weeks is its current position, not a dated conversion.
 - **Licence guard.** Nothing on this page reproduces a PreparedBC graphic, a DCRRA figure
   or any provincial table as laid out. Quote short passages with attribution and link to
   the source; do not lift. BC government material is **all rights reserved by default**
-  [BC-COPYRIGHT] **[A]**, not OGL–BC — the assumption previously working here was the
-  wrong way round — and the DCRRA's own host site declares its licence as "Access Only"
-  [DCRRA-LICENCE] **[A]**. See `../licensing.md`, corrected today.
+  [BC-COPYRIGHT] **[A]**, not OGL–BC, and the DCRRA's own host site declares its licence as "Access Only"
+  [DCRRA-LICENCE] **[A]**. See `../licensing.md`.
 - Four litres per person per day is attributed to PreparedBC when used, so a reader who
   has seen it on a government page recognises where it came from.
 - Disaster Response Routes are described as emergency-response routes the public must
@@ -575,51 +549,8 @@ anything on the site that runs off the Sphere figures. [SMP-PROGRESS] is republi
 a stable URL that is overwritten in place, so the edition must be cited, and any refresh
 must record which edition it read.
 
-**Register note, 10 September 2026 pass.** Three further keys are used above and need
-entries in `sources.md`: [AHP-2012] (*The All-Hazard Plan*, EMBC, cover 4 November 2012,
-last amended 22 June 2016 — pp. 11 and 37 for the 72-hour figure), [BCEMS-2016]
-(*British Columbia Emergency Management System*, 2016 — p. 60 for the ESS capacity
-statement), and [CEMP-PAGE] (EMCR's provincial emergency plans page, last updated
-23 December 2025, for the fact that the plan is still published). The licence guard also
-uses [BC-COPYRIGHT] and [DCRRA-LICENCE]. [AHP-2012], [BCEMS-2016], [CEMP-PAGE] and
-[BC-COPYRIGHT] are introduced by `systems/outside-help.md` in the same pass; one register
-entry each.
-
-**Register note, municipal pass, 10 September 2026.** Fifteen further keys are used above
-and need entries in `sources.md`; this file did not edit the register. [COV-PREPMAIN] (the
-City's emergency preparedness landing page, modified 11 October 2024), [COV-EXPLORER-25]
-(Hazard & Risk Explorer, ArcGIS StoryMaps, items modified 17 April 2025), [COV-FACTSHEET-24]
-(Hazard Fact Sheet, English, 2024), [COV-HAZARDS] (hazards page and the 12-language fact-sheet
-set, modified 5 March 2025), [COV-WORKSHEET-26] ("Get started: Emergency Preparedness &
-Planning" worksheet, created 4 September 2026, modified 8 September 2026), [COV-HHH-2011]
-(Home Hazard Hunt worksheet, content 2011, file re-saved 16 March 2026), [COV-EVAC]
-(evacuate-or-shelter page, modified 24 March 2022), [COV-BEEP-2018] (business emergency
-preparedness, modified 8 May 2018), [COV-EDU] (emergency preparedness education, modified
-2 May 2024), [COV-RNP] (Resilient Neighbourhoods Program, modified 3 March 2026),
-[COV-RNTOOLKIT-19] (Resilient Neighbourhoods Toolkit and Module 5, 2019), [SURREY-PREP]
-(City of Surrey personal emergency preparedness), [NSEM-KIT] (North Shore Emergency
-Management, make an emergency kit), [RICH-FR] (Richmond Fire-Rescue, kit and unique-needs
-pages) and [RICH-EQ] (Richmond Fire-Rescue, earthquake and tsunami risks). Existing keys
-reused unchanged: [COV-HUBS], [COV-PREPARES], [PREPAREDBC], [PREPAREDBC-KIT], [FBC-EQ],
-[DRR-GOVPAGE].
-
 **Municipal refresh triggers.** [COV-WORKSHEET-26] was revised two days before this pass,
 so the City's three-day arithmetic is live and should be rechecked before launch;
 [COV-EVAC] and [COV-BEEP-2018] carry the 72-hour wording and would resolve part of the
 finding if either were updated; `vancouver.ca/nepp` should be retested before the
 succession question is published as open.
-
-**Register note.** The four keys this file asked for have been minted in `sources.md`
-and applied above:
-
-1. [PREPAREDBC-KIT] — the **PreparedBC general emergency-kit page** ("minimum three-day
-   to one-week supply").
-2. [PREPAREDBC-EQ] — the **PreparedBC earthquake hazard page** ("a minimum of 3 days").
-3. [WA-2WEEKS] — **Washington State "2 Weeks Ready"**, Washington Military Department
-   Emergency Management Division.
-4. [SPHERE-REV-26] — the **Sphere Handbook Revision 2026–2028** page, for the refresh
-   trigger only.
-
-The markers stand as assigned. [PREPAREDBC] remains the key for the Earthquake and
-Tsunami Preparedness Guide itself; the three PreparedBC keys are three different pages
-and the whole finding depends on keeping them apart.

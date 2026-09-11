@@ -7,23 +7,19 @@
 > **Last research pass:** 10 September 2026.
 
 **Status.** Band **High** for Cascadia M9, **Low** for the crustal M7 — with the
-crustal column restated as what it actually is, a planning assumption rather than a
-fact. The section has been rebuilt from the ground up. Its old premise was that BC's
-own planning documents do not say help would be late, which made American sources the
-ones to use. **That premise is false.** BC's documents say it plainly, and two of the
-American claims the draft leaned on do not survive contact with their own sources.
+crustal column stated as what it is, a planning assumption rather than a fact. BC's own
+planning documents say plainly that help would be late, and the page is built on them.
 
-**Revised 10 September 2026** against the parent framework documents. The spine of the
-page is now the disagreement between two BC documents: the all-hazard doctrine is
-bottom-up and request-driven by default and treats reversal as an exception, while PEIRS
-makes that reversal standing policy for a catastrophic earthquake — and the document
-that has not been revised since 2016 is the general one.
+The spine of the page is the disagreement between two BC documents: the all-hazard
+doctrine is bottom-up and request-driven by default and treats reversal as an exception,
+while PEIRS makes that reversal standing policy for a catastrophic earthquake — and the
+document that has not been revised since 2016 is the general one.
 
 ---
 
 ## Findings
 
-### Two claims removed
+### What the Washington after-action report says, and what it does not
 
 - **"Grossly inadequate" and "humanitarian disaster within ten days" do not appear in
   the published Washington after-action report.** A full-text search of the extracted
@@ -43,7 +39,7 @@ that has not been revised since 2016 is the general one.
   entirely different claim about a different subject in a different state. [CR16-OR]
   **[A]** Do not let the phrase migrate back in through that door.
 
-### The casualty block goes
+### The American casualty figures
 
 - **"14,000 dead / 30,000+ injured / 7,000 bridges / 16,000 miles" does not trace.**
   **[?]**
@@ -60,8 +56,8 @@ that has not been revised since 2016 is the general one.
 - **The bridge and mileage figures were not found in any primary document** — zero hits
   across the Washington report, the Oregon report, the Cascadia Rising 2022 report and
   HITRAC. **[?]**
-- BC now has its own casualty figures for both scenarios, so nothing is lost by
-  dropping the American ones, and a sourcing weakness is avoided for no gain.
+- BC has its own casualty figures for both scenarios. The page uses those; it does not
+  use the American ones.
 
 ### The CEMP is a framework, not a document
 
@@ -312,19 +308,18 @@ Unless noted, from [PEIRS] pp. 53, 75, 96–97, all **[A]**:
   Memorandum of Understanding for **Inter-jurisdictional Emergency Management
   Assistance**, and describes it as establishing "protocols for requests for mutual
   assistance between the provinces". [AHP-2012] pp. 34–35 **[A]** Use PEIRS's name, since
-  PEIRS is current. The file previously called this an "Arrangement"; that was wrong on
-  both counts and is corrected here.
+  PEIRS is current.
 - A **BC–Alberta memorandum of understanding** for interprovincial emergency management
   assistance, which "will expedite the movement of people and resources between the two
   provinces in the event of a disaster", dated **2007** in the plan's own appendix, which
   also lists a **2005** AB OFC / BC OFC mutual aid agreement. [AHP-2012] pp. 34–35, 62–63
   **[A]** That appendix — EMBC's own list of applicable agreements — **lists no Alberta
   earthquake plan**. **[A]** on the absence.
-- **The "Earthquake Response Plan for British Columbia" (ERPBC) — now confirmed by the
-  province that holds it, and upgraded from [?] to [A].** Alberta's own government
-  emergency plans page states: "The objective of the Earthquake Response Plan for British
-  Columbia (ERPBC) (**currently under review**) is to coordinate Alberta's assistance to
-  British Columbia during a catastrophic earthquake. The plan outlines activities that
+- **The "Earthquake Response Plan for British Columbia" (ERPBC), confirmed by the
+  province that holds it.** Alberta's own government emergency plans page states: "The
+  objective of the Earthquake Response Plan for British Columbia (ERPBC) (**currently
+  under review**) is to coordinate Alberta's assistance to British Columbia during a
+  catastrophic earthquake. The plan outlines activities that
   work together with the federal government's national earthquake support plan and the
   British Columbia earthquake response plan." [AB-ERPBC] **[A]**
   - **Alberta publishes nine sibling plans on that page with `open.alberta.ca` download
@@ -347,13 +342,12 @@ Unless noted, from [PEIRS] pp. 53, 75, 96–97, all **[A]**:
   lower mainland, and/or the southern interior".
 - Canadian Red Cross ERU/FACT; the Integrated Disaster Council of BC.
 
-### The legislative basis — and the site may now quote it
+### The legislative basis
 
 *Emergency and Disaster Management Act*, SBC 2023 c. 37, assented 8 November 2023. The
 BC Laws consolidation states "This Act is current to September 8, 2026"; ss. 8, 23 and 32
-are all in force. [EDMA-2023] **[A]** The earlier guard — that the Act is named and never
-quoted — is **lifted**: the text is now in hand verbatim, and the site may quote exactly
-what is reproduced below or not quote at all.
+are all in force. [EDMA-2023] **[A]** The site may quote exactly what is reproduced
+below, or not quote at all.
 
 - **s. 8, marginal note "Minister may enter into agreements".** The whole section; it has
   **no subsections**:
@@ -388,14 +382,13 @@ what is reproduced below or not quote at all.
   [EDMA-2023] **[A]** A local mutual-aid agreement yields to a provincial order. That is
   the hierarchy of mutual aid in one sentence, from the statute.
 - **s. 32, marginal note "Requests for deployment"** — **not** "requests for volunteer
-  deployment"; the word "volunteer" is in the body, not the heading, and the file's
-  earlier description is corrected here. A local authority, an Indigenous governing body,
-  a federal department, a party to an s. 8 agreement, a police or emergency health
-  service, or a prescribed person "may request the provincial administrator to assist in
-  coordinating the deployment of volunteers in response to a critical incident or an
-  emergency"; the provincial administrator, if satisfied it is necessary, may deploy
-  registered volunteers or authorise their deployment by a local authority or public
-  safety provider. [EDMA-2023] ss. 32(1)–(4) **[A]**
+  deployment"; the word "volunteer" is in the body, not the heading. A local authority,
+  an Indigenous governing body, a federal department, a party to an s. 8 agreement, a
+  police or emergency health service, or a prescribed person "may request the provincial
+  administrator to assist in coordinating the deployment of volunteers in response to a
+  critical incident or an emergency"; the provincial administrator, if satisfied it is
+  necessary, may deploy registered volunteers or authorise their deployment by a local
+  authority or public safety provider. [EDMA-2023] ss. 32(1)–(4) **[A]**
 - **Licence note, and it is specific to this material.** BC Laws material is reproduced
   under the **King's Printer Licence – British Columbia**, which the Province's copyright
   page names as the governing exception for legislation. [BC-COPYRIGHT] **[A]** It is a
@@ -436,22 +429,6 @@ what is reproduced below or not quote at all.
   and medical services exists only as an unsearchable 2012 scan is itself a small,
   checkable fact about the state of the framework.
 
-**Closed by this pass** — recorded as settled rather than deleted:
-
-- ~~**A full BC after-action report for Exercise Coastal Response 2016.**~~ **Settled: none
-  exists.** On a page revised 16 June 2026, ten years on, the province still offers only
-  *Initial Findings*, and no longer implies a fuller report is coming. [EX-PROG] **[A]**
-  See "What BC publishes about its own exercises" above; the observation is now about
-  form, not absence.
-- ~~**Any BC exercise since 2023.**~~ **Settled: none held.** Three past major exercises
-  are listed; Exercise Luuwaay Taaydala is scheduled for 5 November 2026, and EMCR's
-  stated five-year cadence puts the next large-scale catastrophic exercise around 2028.
-  [EX-PROG] [EX-CAL-26] **[A]**
-- ~~**Verbatim text of EDMA ss. 8, 23 and 32.**~~ **Settled: in hand.** BC Laws serves the
-  Act as a single consolidated document, which is why the section-level deep links 404'd.
-  The text is reproduced above from a consolidation current to 8 September 2026.
-  [EDMA-2023] **[A]**
-
 ---
 
 ## For the page
@@ -479,7 +456,7 @@ emergency-management reader on first contact.
 
 **Which is an argument against the row's own name, now registered as a decision.** This
 system is called "Absence of outside help" — the only row in the grid named for a
-negative, asserting in its title the thing this file spends 550 lines declining to assert.
+negative, asserting in its title the thing this file declines to assert.
 The proposed replacement is **"Where help comes from"**, which is also the question a
 reader actually has, and which this file can answer: who comes, under which instrument,
 and how late. See `../../site-overview.md` §9. **Do not rename anything until that closes**
@@ -513,14 +490,13 @@ early and do not decorate it.
 **Guards.**
 
 - No "grossly inadequate". No "humanitarian disaster within ten days". No 14,000 dead,
-  30,000 injured, 7,000 bridges or 16,000 miles. If any of these reappears in a draft,
-  it came from the old research file and must be removed again.
+  30,000 injured, 7,000 bridges or 16,000 miles. If any of these appears in a draft,
+  remove it.
 - American findings are labelled as American, about a different jurisdiction's response
   system, every time they appear.
-- ~~The Act is named, never quoted.~~ **Lifted 10 September 2026.** The Act may now be
-  quoted — but **only** the text reproduced in the legislative-basis section above, which
-  is verbatim from a consolidation current to 8 September 2026. Quote exactly that, or do
-  not quote.
+- **The Act may be quoted — but only** the text reproduced in the legislative-basis
+  section above, which is verbatim from a consolidation current to 8 September 2026.
+  Quote exactly that, or do not quote.
 - **s. 32's marginal note is "Requests for deployment".** Not "requests for volunteer
   deployment". The word "volunteer" is in the body.
 - **"Arrangement" belongs to PNEMA.** EMMA is the Emergency Management Mutual Aid
@@ -557,10 +533,3 @@ knowing who on your street would need help first. Link out; do not restate.
 - A revision of PEIRS beyond v1.1 (August 2026) — it is a live document.
 - Publication of the Alberta ERPBC, which Alberta says is "currently under review".
 - The next Washington Cascadia Rising cycle.
-
-**Register note.** This pass introduces new source keys, all used above and needing
-entries in `sources.md`: [AHP-2012], [BCEMS-2016], [CEMP-PAGE], [EMCR-LEG], [AB-ERPBC],
-[EX-PROG], [EX-CAL-26], [PHMS-ANNEX], [BC-COPYRIGHT], [DCRRA-LICENCE]. **[EDMA-2023] upgrades from structure-and-headings
-only to full text** for ss. 8, 23 and 32, from a consolidation
-current to 8 September 2026. [CR16-ST] is retained in the register only as the record of
-where the two withdrawn phrases came from, and is cited nowhere on the site.

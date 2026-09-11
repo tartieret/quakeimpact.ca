@@ -5,8 +5,6 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** **60 new rows.** Every key used in the folder resolves; verified both directions.
-
 
 The register. Every source key used anywhere in `docs/research/` resolves here, and
 every key here is used somewhere. A key in a file and absent from this table is a
@@ -54,10 +52,9 @@ its licence is named here.**
 - **ICLR custom terms** — MVSMMP. Non-commercial, attribution, share-alike on GIS layers,
   map sheets unalterable, ICLR's prior written approval reserved for commercial and
   electronic publication. **Blocked pending that approval.**
-- **All rights reserved (Province of BC)** — the Province's default, corrected on 10
-  September 2026 and recorded at `BC-COPYRIGHT`. It is not OGL–BC, and a `gov.bc.ca`
-  domain confers no licence. Facts may be stated and short passages quoted with
-  attribution; nothing is reproduced. The DCRRA goes further — its host declares
+- **All rights reserved (Province of BC)** — the Province's default, recorded at
+  `BC-COPYRIGHT`. It is not OGL–BC, and a `gov.bc.ca` domain confers no licence. Facts
+  may be stated and short passages quoted with attribution; nothing is reproduced. The DCRRA goes further — its host declares
   **"Access Only"** (`DCRRA-LICENCE`). Legislation on BC Laws is the exception, under the
   **King's Printer Licence – British Columbia**, and may be quoted at length.
 
@@ -401,12 +398,9 @@ pass and failed.
 
 ## Rows that were retired, and where their claims went
 
-**The `BERLIN-*` family — retired 10 September 2026.** `BERLIN-AM`, `BERLIN-NASM`,
-`BERLIN-TINE`, `BERLIN-USAF` and the withdrawn `BERLIN-MIG` supported the West Berlin
-airlift capacity comparison, which is retired in `analogues.md`. The figures were verified
-and are not in dispute; the comparison needed three caveats to be fair, which is one more
-than a reader will carry. Nothing else in the folder cited them.
-
+**The `BERLIN-*` family — retired.** `BERLIN-AM`, `BERLIN-NASM`, `BERLIN-TINE`,
+`BERLIN-USAF` and `BERLIN-MIG` supported the West Berlin airlift capacity comparison,
+which is retired in `analogues.md`. Nothing else in the folder cites them.
 
 Recorded so a key seen in an older draft resolves to something.
 
@@ -469,13 +463,12 @@ belongs in `open-questions.md` rather than being smoothed over here:
 `UBCM-DCRRA`, and `MV-CH2M-18` (which is not lost but deliberately unpublished — a
 different fact).
 
-The September 2026 follow-up pass cleared five of the twelve rows that used to stand
-here. `AIR-2013`, `RMS-KOBE` and `BERLIN-USAF` were recovered from Internet Archive
-captures and now carry the `archive` route — their publishers' own copies are gone, which
-is itself a fact about the record, and the new `BERLIN-TINE` arrives the same way. `GSC-2019-INS` was identified as `KELLY-2019` and `NAB-WIKI` was
-replaced by `NAB-ICCHGE-08`; both are retired above. One row moved the other way:
-`CBOC-2016` is now recorded as **not retrievable**, its figures reaching us only through
-`CBOC-2016-PR`.
+`AIR-2013`, `RMS-KOBE` and `BERLIN-USAF` were recovered from Internet Archive captures
+and carry the `archive` route — their publishers' own copies are gone, which is itself a
+fact about the record, and `BERLIN-TINE` arrives the same way. `GSC-2019-INS` was
+identified as `KELLY-2019` and `NAB-WIKI` was replaced by `NAB-ICCHGE-08`; both are
+retired above. `CBOC-2016` is recorded as **not retrievable**, its figures reaching us
+only through `CBOC-2016-PR`.
 
 Rows that are **paywalled**, **403 to automated fetch** or otherwise unreachable at their
 primary URL: `CHANG-2000`, `GM-AAFC-19`, `IRONWORKERS`, `JAVANBAKHT-23`, `KELLY-2019`,
@@ -483,8 +476,7 @@ primary URL: `CHANG-2000`, `GM-AAFC-19`, `IRONWORKERS`, `JAVANBAKHT-23`, `KELLY-
 `S2S-BRAYSHAW-12`, `SEPULVEDA-23`, `SPHERE-2018`, `SY-GEESD-18`, plus the City of
 Vancouver council PDFs (`COV-RISK-2024`, `COV-PLAN-2026`, `COV-URM-2000`, `COV-DFPS-2001`),
 `CBOC-2016`, `CR16-ST`, `EGBC-PBSD` and `UBC-FUEL`. Each was read by another route or not
-at all; the row says which. `FEI-RESILIENCY-24` and `BCUC-C-6-25` have left this list —
-both were retrieved and read in full in September 2026.
+at all; the row says which.
 
 Five of the paywalled rows are **unread and cited as leads only**, never as evidence:
 `KELLY-2019`, `KSB-GROUT-17`, `PM-SEI-17`, `PM-IABSE-17` and `SY-GEESD-18`. `NAB-IABSE-08`

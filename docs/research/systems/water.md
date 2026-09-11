@@ -5,18 +5,17 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** The lifeline study's consultant is named, and a member municipality's restoration figures are added with five guards.
 
 **Status — band: High, both scenarios.** The band rests on a mechanism, not on a
 restoration time: an M9 is modelled to cause 267 water-main failures region-wide,
 and the failures cluster on the crossings under rivers and inlets, which are the
 repairs that take longest. No Metro Vancouver restoration-time estimate exists in
-public. That absence is now evidenced rather than merely searched for — the
-region's governing drinking-water plan, published in 2026, carries no restoration
-expectation of any kind, and its first seismic action is still to *conduct* the
-analysis that identifies the vulnerabilities — which is also affirmative evidence
-that no successor to the redacted 2022 lifeline study exists. Provincial documents
-do state a duration: water and wastewater disruption is expected for many months.
+public. That absence is evidenced rather than merely searched for — the region's
+governing drinking-water plan, published in 2026, carries no restoration expectation
+of any kind, and its first seismic action is still to *conduct* the analysis that
+identifies the vulnerabilities — which is also affirmative evidence that no successor
+to the redacted 2022 lifeline study exists. Provincial documents do state a duration:
+water and wastewater disruption is expected for many months.
 
 ---
 
@@ -30,11 +29,9 @@ and obtained in heavily redacted form by Glacier Media, which reported it on
 Lifeline Study — Seismic Vulnerability Assessment*. Everything in this section
 reaches us through that reporting. [MV-WATER-22] **[B]**
 
-- **Date correction.** Earlier drafts dated this report February 2024 and keyed it
-  `MV-WATER-24`. Both are wrong. The article is dated 12 April 2022 and says the
-  report was published internally "in February", so February 2022. The key is
-  `MV-WATER-22` and the document is four years old, not two. Treat as a refresh
-  trigger, not a current figure. [MV-WATER-22] **[B]**
+- **Date.** The article is dated 12 April 2022 and says the report was published
+  internally "in February", so February 2022. The document is four years old. Treat
+  it as a refresh trigger, not a current figure. [MV-WATER-22] **[B]**
 - Under an M9 megathrust, **267 water-main failures** across the region and its 21
   municipalities. The article's own words are "failures" and "ruptures in 267
   places"; keep "failures", not "breaks". [MV-WATER-22] **[B]**
@@ -54,9 +51,7 @@ reaches us through that reporting. [MV-WATER-22] **[B]**
   [MV-WATER-22] **[B]**
 - **The consultant has a name: WSP Canada Inc.** Identified inside the redacted release
   and independently corroborated against Metro Vancouver's own Manager's Report of
-  14 October 2021. [MV-WATER-22] [MV-MGR-2021] **[A]** for the identity — an upgrade on
-  the previous "an external engineering consultancy", which reached this file through
-  newspaper reporting.
+  14 October 2021. [MV-WATER-22] [MV-MGR-2021] **[A]** for the identity.
 - **Provenance caveat on the redacted release, and it must travel with every citation of
   it.** The 292-page redacted version was read in full, but it is hosted on a third-party
   document-sharing site as an upload, not by a publisher. Cite it as **the redacted FOI
@@ -85,7 +80,7 @@ Water District, on why the crossings are the story:
 
 [MV-WATER-22] **[B]** — a named official at the water utility, quoted directly.
 This is the site's mechanism sentence, already written by the person responsible
-for the asset. It replaces the paraphrase the draft carried.
+for the asset.
 
 ### What Metro Vancouver withheld, and why it matters
 
@@ -197,24 +192,19 @@ mechanism, as above.
 
 ### The deep tunnel crossing program
 
-**List corrected.** Metro Vancouver states that there are **five new regional water
-supply tunnels**, "designed by Metro Vancouver to ensure delivery of drinking water
-in the event of a major earthquake", and its own construction listing names
-**Second Narrows, Annacis, Cambie-Richmond and Stanley Park**.
-[MV-ANNACIS-TUNNEL] **[A]** Earlier drafts of this entry listed Port Mann, Second
-Narrows, Cambie-Richmond and Pitt River on [MV-TUNNELS] **[B]**. That list omitted
-Annacis and Stanley Park and included Pitt River, which is not among the projects
-Metro Vancouver lists. The [A] pages replace it.
+Metro Vancouver states that there are **five new regional water supply tunnels**,
+"designed by Metro Vancouver to ensure delivery of drinking water in the event of a
+major earthquake", and its own construction listing names **Second Narrows, Annacis,
+Cambie-Richmond and Stanley Park**. [MV-ANNACIS-TUNNEL] **[A]** **Pitt River is not
+among the projects Metro Vancouver lists**, and does not go in the list.
 
 - **Second Narrows Water Supply Tunnel** — runs **30 m below the bottom of Burrard
   Inlet**, roughly **1 km** long; **the project is expected to be completed in
   2028**, with water-main connections made one per year between October and May
   from 2025 to 2028, timed to the low-demand season. [MV-SNT-PAGE] **[A]** —
-  upgraded from trade press; Metro Vancouver states both the depth and the date
-  directly. Tunnel construction was **substantially complete as of October 2025**.
-  [ESEMAG-SECONDNARROWS-25] **[B]** (ES&E adds a 6.5 m diameter **[B]**.) Earlier
-  drafts said the tunnel "was in final construction"; that is wrong as a
-  present-tense claim.
+  Metro Vancouver states both the depth and the date directly. Tunnel construction
+  was **substantially complete as of October 2025**.
+  [ESEMAG-SECONDNARROWS-25] **[B]** (ES&E adds a 6.5 m diameter **[B]**.)
 - **Annacis Water Supply Tunnel** — started **2022**, completion expected **end of
   2028**. [MV-ANNACIS-TUNNEL] **[A]**
 - **Cambie-Richmond Water Supply Tunnel** — in **design**; described by Metro
@@ -233,19 +223,18 @@ Metro Vancouver lists. The [A] pages replace it.
   is not evidence that a document exists. **No Metro Vancouver statement of a
   design basis for Port Mann was found**, and none should be asserted for it.
 
-### The 1-in-10,000-year figure — not established, and its provenance was misstated
+### The 1-in-10,000-year figure — not established
 
 The **1-in-10,000-year design basis must not be printed as attributed.** [?] Two
-separate provenance problems, both found on re-reading the article itself:
+separate provenance problems:
 
 1. **It is the trade magazine's own text, not a quotation from Metro Vancouver's
    Board Chair.** The article's words are that the tunnel contains "three new
    large-diameter steel water mains designed to withstand a one-in-10,000-year
    earthquake while delivering drinking water every day". Mike Hurley, Chair of
    Metro Vancouver's Board of Directors, is quoted elsewhere in the piece but **not
-   on that figure**. This entry's earlier note — "trade press quoting Metro
-   Vancouver's Board Chair" — overstated the provenance and is corrected to **trade
-   press, unattributed**. [ESEMAG-SECONDNARROWS-25] **[B]**
+   on that figure**. The provenance is **trade press, unattributed**.
+   [ESEMAG-SECONDNARROWS-25] **[B]**
 2. **The design basis as stated attaches to the three steel water mains inside the
    tunnel, not to the tunnel structure.** That is a real engineering distinction
    and the site must not blur it. [ESEMAG-SECONDNARROWS-25] **[B]**
@@ -265,14 +254,14 @@ major earthquakes":
 | Stanley Park project page | "will meet current seismic standards" | [MV-STANLEY-TUNNEL] **[A]** |
 | Drinking Water Management Plan 2026, full text; Water Committee agendas 17 Sep 2025 and 21 Jan 2026, full text | **no occurrence of "10,000"** | [MV-DWMP-26] **[A]** on the absence |
 
-**The asymmetry sentence must be rebuilt on Metro Vancouver's own words.** The old
-version — "the new crossings are built to 1-in-10,000-year performance; the old
-ones are the 267-failure problem" — cannot be printed: its first half is [B] trade
-press, unattributed, attached to the mains rather than the tunnel, and contradicted
-in emphasis by every Metro Vancouver source. The replacement keeps the contrast and
-is [A] throughout: **five new deep tunnels are being built to current seismic
-standards so that water keeps flowing after a major earthquake; the crossings they
-replace are where the 267 failures fall.**
+**The asymmetry sentence rests on Metro Vancouver's own words.** A version built on
+the 1-in-10,000-year figure — "the new crossings are built to 1-in-10,000-year
+performance; the old ones are the 267-failure problem" — cannot be printed: its
+first half is [B] trade press, unattributed, attached to the mains rather than the
+tunnel, and contradicted in emphasis by every Metro Vancouver source. The sentence
+that keeps the contrast and is [A] throughout: **five new deep tunnels are being
+built to current seismic standards so that water keeps flowing after a major
+earthquake; the crossings they replace are where the 267 failures fall.**
 
 ### Reservoirs, and an upgrade dated two decades out
 
@@ -303,14 +292,14 @@ reservoirs system entry, not here. Cross-reference rather than restate.
   targeted searches on days / weeks / months / restore. **Not found**, and the DWMP
   2026 states none. Narrow the open question to "a Metro Vancouver estimate" — the
   AAFC "several months" finding exists and is recorded above.
-- **Narrowed again, 10 September 2026 — a member municipality publishes one, and the
-  regional utility does not.** The **City of New Westminster's Potable Water Emergency
-  Response Plan** (July 2009, updated January 2023) is published in full and carries a
-  quantified damage-and-duration table in its earthquake annex: pipeline, "**100 year
-  event – 20 to 30 breaks / 475 year event – 200 to 300 breaks**", duration
-  "**approximately 1-3 days per break**"; GVWD supply, "potential loss of supply through
-  landslides", duration "**weeks to months**", footnoted as depending on the level of
-  provincial and federal assistance and the degree of other regional damage.
+- **A member municipality publishes one, and the regional utility does not.** The **City
+  of New Westminster's Potable Water Emergency Response Plan** (July 2009, updated January
+  2023) is published in full and carries a quantified damage-and-duration table in its
+  earthquake annex: pipeline, "**100 year event – 20 to 30 breaks / 475 year event – 200
+  to 300 breaks**", duration "**approximately 1-3 days per break**"; GVWD supply,
+  "potential loss of supply through landslides", duration "**weeks to months**", footnoted
+  as depending on the level of provincial and federal assistance and the degree of other
+  regional damage.
   [CNW-PWERP-23] **[A]**
 
   **Five guards, all mandatory.** It is **New Westminster only**, one member's distribution
@@ -321,7 +310,7 @@ reservoirs system entry, not here. Cross-reference rather than restate.
   one needs a crew count the plan does not give. The "weeks to months" attaches to **loss of
   the GVWD supply through landslides**, not to the 200-300 distribution breaks. And it is a
   **response plan's planning assumption**, not a study result.
-- **Two supporting absences from Vancouver's own documents, same date.** The City's
+- **Two supporting absences from Vancouver's own documents.** The City's
   *Waterworks Utility Annual Report 2025* contains **zero occurrences of "seismic"**, and
   its summary of the Waterworks Emergency Response Plan gives objectives in priority order
   — firefighting water including the DFPS first, then priority repair, then potable supply,
@@ -376,7 +365,7 @@ reservoirs system entry, not here. Cross-reference rather than restate.
   any of them; "10,000" does not occur.** Every one says only "meets current
   seismic standards" or "designed to withstand major earthquakes". The figure stays
   [?] and does not go on the site. See the section above for the two provenance
-  corrections that accompany it.
+  problems that accompany it.
 - **Distribution-system failure points**, municipality by municipality. Metro
   Vancouver's own plan lists identifying these as a future coordination action, so
   the absence is stated by the owner rather than inferred. [MV-DWMP-26] **[A]**

@@ -38,8 +38,8 @@ trusted:
   question. It is never quietly filled with inference, and inference is never
   promoted to a marker by being written down confidently.
 
-A third rule earns its place from this pass: **an absence that has been searched
-for is a finding.** Where a subject has been looked for properly and is
+A third rule follows from them: **an absence that has been searched for is a
+finding.** Where a subject has been looked for properly and is
 genuinely not in the public record, the search itself is recorded — what was
 searched, where, and when. That is a stronger and more useful statement than an
 untouched question mark, and it is what lets a system page say *nobody has
@@ -51,6 +51,7 @@ published this* rather than *we did not find this*.
 
 | File | Subject |
 | --- | --- |
+| [`CONVENTIONS.md`](CONVENTIONS.md) | The rules every file in this folder follows. |
 | [`scenarios.md`](scenarios.md) | The two scenarios and the official simulations behind them. |
 | [`ground-conditions.md`](ground-conditions.md) | Microzonation, amplification, liquefaction, slope instability. |
 | [`buildings.md`](buildings.md) | Building stock, retrofit policy, casualties, loss estimates, fire following. |
@@ -75,6 +76,7 @@ published this* rather than *we did not find this*.
 - **Markers are assigned against the rubric, not by feel.** [A] asserts that a
   source directly states the claim. If it states something adjacent, the marker
   is [B] and the wording changes to match.
-- **Corrections are recorded where they were made.** When a figure is found to
-  be wrong, the corrected figure and the reason replace it here, and the
-  finding goes to `../knowledge.md` if it outlives the change.
+- **A file states what is known, not how it came to be known.** When a figure is
+  found to be wrong, the corrected figure and its source replace it here. The
+  withdrawn claim goes to `../research-plan.md`, and any lesson that outlives the
+  change goes to `../knowledge.md`.

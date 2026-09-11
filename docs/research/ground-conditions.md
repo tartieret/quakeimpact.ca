@@ -5,7 +5,6 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** Richmond's dike claim is **resolved against the published engineering**, which qualifies it. Review §7 first.
 
 **Status.** The ground under Metro Vancouver varies more than the buildings on it do,
 and the evidence base for that is unusually strong: peer-reviewed, local, and in one
@@ -34,25 +33,23 @@ liquefaction of 1**, computed per cone penetration test site from a performance-
 hazard curve and interpolated across the region. It is not the return period of surface
 damage, not of an earthquake, and not of a scenario. [JAVANBAKHT-24] **[A]**
 
-**The sourcing, corrected.** The 100-to-250-year figure rests on **787 CPT profiles, 616
-of them in Richmond and Delta** and 171 outside — the factor-of-safety analysis published
-as the *Soil Dynamics and Earthquake Engineering* 2024 paper, which is chapter 5 of
+**The sourcing.** The 100-to-250-year figure rests on **787 CPT profiles, 616 of them in
+Richmond and Delta** and 171 outside — the factor-of-safety analysis published as the
+*Soil Dynamics and Earthquake Engineering* 2024 paper, which is chapter 5 of
 Javanbakht Samani's Western University thesis. [JAVANBAKHT-24] **[A]** The figures of
 808 CPTs and of 900 profiles are both real but belong to other chapters: 808 CPTs
 verified the geology-based susceptibility ratings and cumulative liquefiable thickness,
 and 808 CPTs plus 92 shear-wave profiles — 900 in total — underlie the separate
 liquefaction potential index hazard maps at 475 and 2,475 years. [JAVANBAKHT-24] **[A]**
-Do not present 808 or 900 as the dataset behind the 100–250 year figure. That was the
-error in the earlier draft.
+Do not present 808 or 900 as the dataset behind the 100–250 year figure.
 
-**Supporting ground detail from the same work**, stronger than what the draft carried:
-75% of CPT profiles in Richmond and Delta have a cumulative liquefiable thickness greater
-than **9.6 m**, with a mean of 11.8 m and a median of 12.9 m; the groundwater table sits
-under 3 m and in places under 1 m. [JAVANBAKHT-24] **[A]**
+**Supporting ground detail from the same work.** 75% of CPT profiles in Richmond and
+Delta have a cumulative liquefiable thickness greater than **9.6 m**, with a mean of
+11.8 m and a median of 12.9 m; the groundwater table sits under 3 m and in places under
+1 m. [JAVANBAKHT-24] **[A]**
 
 "Liquefaction manifestations are expected in Richmond and Delta" is verbatim from this
-work, not from the microzonation project as the earlier draft implied. [JAVANBAKHT-24]
-**[A]**
+work, not from the microzonation project. [JAVANBAKHT-24] **[A]**
 
 ### 2. Triggering probability in a Cascadia event
 
@@ -60,9 +57,9 @@ Cascadia interface earthquakes with **Mw greater than 8.9 give a 31–57% probab
 liquefaction triggering** in the region. Verified against the thesis abstract; published
 in *Earthquake Spectra*. [JAVANBAKHT-23] **[A]**
 
-Two supporting details the earlier draft carried alongside that figure — **back-analysis
-of 12 paleo-liquefaction sites**, and **median magnitudes of 8.8–9.0** — could not be
-confirmed in any retrieved text and drop to **[?]** pending direct access to the
+Two supporting details often attached to that figure — **back-analysis of 12
+paleo-liquefaction sites**, and **median magnitudes of 8.8–9.0** — could not be
+confirmed in any retrieved text and stand at **[?]** pending direct access to the
 *Earthquake Spectra* paper, whose publisher page returns 403 to automated fetching. The
 31–57% figure does not depend on them and may still be used; the two details may not.
 
@@ -188,17 +185,16 @@ Cascadia scenario names liquefaction, landslides, floods and seiches among its c
 events. [DCRRA-2025] **[A]** Neither is a dike assessment. Neither models secondary
 hazards quantitatively — both say so of themselves. See `scenarios.md`.
 
-**Richmond publishes a seismic performance claim about its own dikes, and it deserves
-verification rather than quiet acceptance.** Richmond Fire-Rescue states: "Computer
+**Richmond publishes a seismic performance claim about its own dikes.** Richmond
+Fire-Rescue states: "Computer
 soil models predict that dikes will sustain some damage during an earthquake; however,
 the dikes will remain an intact barrier to flooding." [RICH-EQ] **[A]** for the City
 saying it.
 
-**Resolved 10 September 2026. The models are named, dated, authored and published — in
-the City's own documents — and what they say is not what the public page says.**
-
-They are **Thurber Engineering Ltd.'s seismic deformation analyses**, published as
-appendices to Richmond's Dike Master Plans and linked from `richmond.ca`. The clearest is
+**The models are named, dated, authored and published — in the City's own documents —
+and what they say is not what the public page says.** They are **Thurber Engineering
+Ltd.'s seismic deformation analyses**, published as appendices to Richmond's Dike Master
+Plans and linked from `richmond.ca`. The clearest is
 Attachment 5 to the **Lulu Island Dike Master Plan Phase 2: *Seismic Deformation
 Analysis*, 12 September 2016**. It names the software and the constitutive model — "the
 software program **PLAXIS 2D** … incorporated complex cyclic soil behaviour using the
@@ -255,11 +251,10 @@ this site exists.
 
 ## What is not established
 
-- **"12 paleo-liquefaction sites" and "median magnitudes 8.8–9.0".** Both appear in the
-  earlier draft attached to the 31–57% figure. Neither could be confirmed in retrieved
-  text; the *Earthquake Spectra* publisher page returns 403 to automated fetching and the
-  thesis abstract, which carries the 31–57% figure, does not carry these. Searched
-  September 2026. Obtain the paper directly. **[?]**
+- **"12 paleo-liquefaction sites" and "median magnitudes 8.8–9.0".** Neither could be
+  confirmed in retrieved text; the *Earthquake Spectra* publisher page returns 403 to
+  automated fetching and the thesis abstract, which carries the 31–57% figure, does not
+  carry these. Searched September 2026. Obtain the paper directly. **[?]**
 - **Whether the MVSMMP Custom Dataset Terms permit this site's use.** The site is free,
   carries no advertising and generates no revenue, which reads as non-commercial in
   ordinary usage — but ICLR's reservation explicitly covers electronic media and extends

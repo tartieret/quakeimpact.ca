@@ -5,7 +5,6 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** An attribution was **reversed** in this pass (the fault geometry is NRCan's, not PEIRS's). Review §2 first.
 
 **Status.** Both of the site's scenarios have an official simulation behind them, and
 each also has a British Columbia government planning scenario of its own. The
@@ -81,16 +80,15 @@ Despite the event rupturing beneath water, **"a significant tsunami is not expec
 Modelled from GSC Open File 8853; likelihood from the sixth-generation Canadian Seismic
 Hazard Model, 2020. [PEIRS] **[A]**
 
-**The fault geometry is not PEIRS's — it is NRCan's, and this file had it wrong until
-10 September 2026.** The dip of **47 degrees**, the depth of **13 km** and the extent
-"from near Nanaimo to downtown Vancouver" are absent from GSC Open File 8853, which is
-why they were recorded as PEIRS's own. They come from the **OpenQuake rupture file** for
-the scenario `ACM7p0_GeorgiaStraitFault`, published by NRCan's OpenDRR programme in its
-National Earthquake Scenario Catalogue: a single planar surface, `dip="47.0"`,
-`strike="262.0"`, top edge at 0 km and bottom edge at 13.308 km, hypocentre 49.2428 N,
-123.6266 W at 3 km. [OPENDRR-GSF-22] **[A]**
+**The fault geometry is not PEIRS's — it is NRCan's.** The dip of **47 degrees**, the
+depth of **13 km** and the extent "from near Nanaimo to downtown Vancouver" are absent
+from GSC Open File 8853. They come from the **OpenQuake rupture file** for the scenario
+`ACM7p0_GeorgiaStraitFault`, published by NRCan's OpenDRR programme in its National
+Earthquake Scenario Catalogue: a single planar surface, `dip="47.0"`, `strike="262.0"`,
+top edge at 0 km and bottom edge at 13.308 km, hypocentre 49.2428 N, 123.6266 W at 3 km.
+[OPENDRR-GSF-22] **[A]**
 
-**So the 13 km is not a depth in the sense a reader would assume.** It is the down-dip
+**The 13 km is not a depth in the sense a reader would assume.** It is the down-dip
 **bottom edge** of the rupture plane. The hypocentre is at **3 km**. The
 Nanaimo-to-Vancouver extent is the plane's along-strike footprint, not a description of
 where damage occurs.
@@ -243,12 +241,10 @@ attaches to PEIRS's own casualty figures, which belong to a **weekday-afternoon*
 and travel with it. And the "10-20 seconds" is PEIRS timing *violent shaking*, which is
 not the same measurement as the Exercise Coastal Response 2023 duration — see §5.
 
-**Licensing — resolved 10 September 2026, and the earlier note here was wrong.** This
-paragraph previously said the passage was "not cleared" and must not be published until
-permission arrived. That confused the Province's all-rights-reserved default, which governs
-*reproduction* of datasets and figures, with quotation — which fair dealing covers.
-**Publish it, with attribution, a link and the page number.** A permission request to EMCR
-is worth sending in parallel, and is not a gate. See `../licensing.md`.
+**Licensing.** The Province's all-rights-reserved default governs *reproduction* of
+datasets and figures, not quotation — which fair dealing covers. **Publish it, with
+attribution, a link and the page number.** A permission request to EMCR is worth sending
+in parallel, and is not a gate. See `../licensing.md`.
 
 ### 3. The province's own Cascadia scenario — DCRRA M9.0
 
@@ -410,9 +406,9 @@ where the recurrence interval is around 240 years. Goldfinger's figure for the n
 or full margin, which is the one that applies to British Columbia, is **7–12% in 50
 years**. [GOLDFINGER-12] **[A]**
 
-Quoting 37% for Vancouver would be a straightforward factual error, it is a common one,
-and this project was one step from making it. Any figure taken from Goldfinger must name
-the margin it belongs to in the same sentence.
+Quoting 37% for Vancouver would be a straightforward factual error, and it is a common
+one. Any figure taken from Goldfinger must name the margin it belongs to in the same
+sentence.
 
 The BC-relevant conditional probabilities, and they disagree with each other:
 
@@ -495,22 +491,16 @@ from them.
 
 ## What is not established
 
-- **Withdrawn, September 2026 — the identity of GSC Open File 8853.** It is settled: the
-  Open File was retrieved in full and is described in §2. [GSC-OF-8853] **[A]** The
-  earlier lead was wrong and is recorded here so it is not chased again: **GEOSCAN record
-  327171**, *Scenario earthquake models developed for British Columbia — part of a pilot
-  project in the application of Global Earthquake Model's OpenQuake…*, is a **2017
-  conference abstract** on OpenQuake adoption, with no report number and no DOI. It is
-  **not** Open File 8853 and is excluded. The related infrastructure finding stands:
-  **`geoscan.nrcan.gc.ca` no longer resolves at all** (DNS NXDOMAIN), GEOSCAN has been
-  retired, and the old `starweb/geoscan/` links still printed on live NRCan pages are
-  broken. Do not cite any `geoscan.nrcan.gc.ca` URL.
-- *Closed 10 September 2026 — the origin of the fault geometry.* NRCan's own OpenQuake
-  rupture file, from a peer-reviewed relocation of the 1997 event. See §2. The remaining
-  lead is the Cassidy, Rogers & Waldhauser (2000) paper itself. [CASSIDY-00] **[?]**
-- *Closed 10 September 2026 — CanadaSHM6's Cascadia recurrence assumption.* Retrieved in
-  full through the NRCan backend API, model files included. See "What the hazard model
-  assumes" in §6. [GSC-OF-8630] **[A]**
+- **GEOSCAN record 327171 is not GSC Open File 8853.** The Open File itself is described
+  in §2. [GSC-OF-8853] **[A]** Record 327171, *Scenario earthquake models developed for
+  British Columbia — part of a pilot project in the application of Global Earthquake
+  Model's OpenQuake…*, is a **2017 conference abstract** on OpenQuake adoption, with no
+  report number and no DOI. It is excluded. **`geoscan.nrcan.gc.ca` no longer resolves at
+  all** (DNS NXDOMAIN), GEOSCAN has been retired, and the old `starweb/geoscan/` links
+  still printed on live NRCan pages are broken. Do not cite any `geoscan.nrcan.gc.ca` URL.
+- **The Cassidy, Rogers & Waldhauser (2000) paper itself is unread.** The fault geometry
+  comes from NRCan's own OpenQuake rupture file, a peer-reviewed relocation of the 1997
+  event; see §2. [CASSIDY-00] **[?]**
 - **The provenance of "246–542 years", of "400–500 years" as an *NRCan* figure, and of
   "10–14% for a full-margin M9".** Searched across the four NRCan Earthquakes Canada
   pages, Mazzotti & Adams 2004 and Goldfinger et al. 2012. None traced to a primary
@@ -542,22 +532,20 @@ from them.
     Washington CR22 AAR's "**approximately 5,000 bridges within and west of the Cascade
     Mountain Range**", each of which must be inspected before it carries traffic.
     [CR22-WA] **[A]**, Washington only.
-  - **"14,100 fatalities" is now located, and it is not a forecast.** It is in the
-    Washington Cascadia Rising 2016 after-action report, Appendix D, as the scenario the
-    exercise assumed — "8 million citizens directly impacted in Washington and Oregon;
-    14,100 fatalities and 24,000 injured" — resting on the HITRAC 2011 study "**although
-    modified to achieve targeted training objectives for all exercise participants**".
-    [CR16-WA] **[A]** as a statement of what the 2016 exercise assumed, and unusable
-    as an estimate of anything: the number was adjusted for training effect, and the
-    document says so in the same sentence. HITRAC's own study gives "3,000 or more
-    fatalities". Safest course is not to use it — but the site can now say *why* rather
-    than calling it untraceable.
-- **A key collision to resolve when `sources.md` is built.** An earlier draft register
-  used `DCRRA` for the *Hazard Threat Analysis Main Report*, which is a different
-  document from the *Provincial Report* cited throughout this file. This file uses
-  `DCRRA-2025` for the Provincial Report, `DCRRA-EXP` for the chapter 2 exposure
-  material and `DCRRA-APPC` for the Appendix C case studies. Both documents are real;
-  the register needs separate rows, not one.
+  - **"14,100 fatalities" is not a forecast.** It is in the Washington Cascadia Rising
+    2016 after-action report, Appendix D, as the scenario the exercise assumed — "8
+    million citizens directly impacted in Washington and Oregon; 14,100 fatalities and
+    24,000 injured" — resting on the HITRAC 2011 study "**although modified to achieve
+    targeted training objectives for all exercise participants**". [CR16-WA] **[A]** as a
+    statement of what the 2016 exercise assumed, and unusable as an estimate of anything:
+    the number was adjusted for training effect, and the document says so in the same
+    sentence. HITRAC's own study gives "3,000 or more fatalities". Safest course is not
+    to use it.
+- **A key collision to resolve when `sources.md` is built.** The *Hazard Threat Analysis
+  Main Report* is a different document from the *Provincial Report* cited throughout
+  this file. This file uses `DCRRA-2025` for the Provincial Report, `DCRRA-EXP` for the
+  chapter 2 exposure material and `DCRRA-APPC` for the Appendix C case studies. Both
+  documents are real; the register needs separate rows, not one.
 
 ---
 
@@ -592,15 +580,15 @@ purpose, and the differences are choices rather than disagreements. Say which
 scenario a figure belongs to, every time. A casualty count from an M7.2 does not sit
 in a sentence about the province's M7.0, and the site does not average them.
 
-**Weather lives here now.** It was carried as a system in the impact grid until
-10 September 2026 and is no longer — it does not fail, so it cannot have a band. Both
-official scenarios build weather in as a *condition*, and the two conditions pull in
-opposite directions: an August heatwave with wildfire smoke makes water and shade the
-urgent needs and puts the vulnerable at risk indoors; a January afternoon after an
-atmospheric river makes heat, dry shelter and slope stability the urgent needs. That
-contrast is the reason weather belongs on the timeline rather than in the grid — the
-same day of the same disaster is a different emergency in each. [DCRRA-2025] [PEIRS]
-**[A]** See `impact-bands.md` for the decision and `../site-overview.md` §9.
+**Weather lives here.** It is not a system in the impact grid — it does not fail, so it
+cannot have a band. Both official scenarios build weather in as a *condition*, and the
+two conditions pull in opposite directions: an August heatwave with wildfire smoke makes
+water and shade the urgent needs and puts the vulnerable at risk indoors; a January
+afternoon after an atmospheric river makes heat, dry shelter and slope stability the
+urgent needs. That contrast is the reason weather belongs on the timeline rather than in
+the grid — the same day of the same disaster is a different emergency in each.
+[DCRRA-2025] [PEIRS] **[A]** See `impact-bands.md` for the decision and
+`../site-overview.md` §9.
 
 - The PEIRS scenario sits immediately after an atmospheric river. Where its landslide,
   liquefaction or dike impacts are used, say the ground was already saturated.

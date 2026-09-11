@@ -5,23 +5,19 @@
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
-> **Changed in that pass.** The one corridor product that exists **excludes earthquakes by construction**; channels audited.
-
 
 ## Status
 
-The evidence now supports this subject, and it supports a different question from the one
-it was written to answer. British Columbia's own planning documents state that mass
-evacuation out of the impact area **will not happen and is not planned for**: public
-messaging will emphasise sheltering within the region, and damage to routes plus the
-prioritisation of essential personnel make mass evacuation impossible. Both statements
-are **[A]**, from the province. That is a stronger, better-sourced and more useful framing
-than asking who could get out. The supporting technical argument — that the approaches
-fail before the spans — now has two Lower Mainland crossings behind it, and the
-functional-retrofit finding in `systems/transportation.md` is firmer than anything this
-subject previously had.
+British Columbia's own planning documents state that mass evacuation out of the impact
+area **will not happen and is not planned for**: public messaging will emphasise
+sheltering within the region, and damage to routes plus the prioritisation of essential
+personnel make mass evacuation impossible. Both statements are **[A]**, from the province.
+The subject is therefore the province's plan, not who could get out. The supporting
+technical argument — that the approaches fail before the spans — has two Lower Mainland
+crossings behind it, and it rests alongside the functional-retrofit finding in
+`systems/transportation.md`.
 
-**Recommendation: reverse the demotion.** See "For the page".
+**Recommendation: build this subject.** See "For the page".
 
 ---
 
@@ -34,8 +30,7 @@ Delta are reached only by bridges and a tunnel. The North Shore has two vehicle 
 
 These are map facts. They carry no source key because they are not claims about
 earthquakes, and they must be kept visually and typographically separate from the seismic
-findings that sit on top of them. The previous draft was right that this distinction is
-what keeps the section honest.
+findings that sit on top of them. That distinction is what keeps the section honest.
 
 ### The province's plan is that people do not leave
 
@@ -69,9 +64,9 @@ operating at a much-reduced capacity for an extended period (**weeks to months**
 rail network in the impact area may be largely unusable during the immediate response
 phase". [PEIRS] **[A]**
 
-**This changes the subject's premise.** The interesting question is not whether a reader
-could drive out. It is that the province has planned on the assumption that they will not
-try, that they should not try, and that the routes will be used for something else.
+**The premise.** The interesting question is not whether a reader could drive out. It is
+that the province has planned on the assumption that they will not try, that they should
+not try, and that the routes will be used for something else.
 
 ### Disaster Response Routes are not evacuation routes
 
@@ -111,8 +106,7 @@ unchanged; the description of a fixed pre-mapped network does not.
 
 ### Route recovery is planned, and part of the plan is withheld
 
-This subject was previously listed as having no published route-recovery planning. Two
-documents contradict that.
+Two documents set out what is published.
 
 **Provincial.** The Disaster Response Transportation Primer's recovery section: "**The
 identified critical routes are used as a reference to prioritize the restoration of
@@ -144,11 +138,10 @@ scenario debris estimate — the plan directs authorities to run their own model
 partnership states: "**Due to the sensitive nature of some of our work, some materials are
 only available upon request.**" [IPREM-RES] **[A]**
 
-That is a different and fairer fact about the world than "not found". A framework exists,
-prioritisation orders are published, and part of the detail is withheld by choice. What
-does **not** exist in public is any forecast of how long a named corridor would be shut.
-The site must draw that line explicitly rather than blurring framework, design intent and
-forecast together.
+A framework exists, prioritisation orders are published, and part of the detail is
+withheld by choice. What does **not** exist in public is any forecast of how long a named
+corridor would be shut. The site must draw that line explicitly rather than blurring
+framework, design intent and forecast together.
 
 ### The City says it to residents: the trains stop until the assessments are done
 
@@ -214,7 +207,7 @@ the best available evidence of the duration of corridor severance in this provin
 
 **Do not state a Highway 99 or Highway 3 full-reopening date.** Neither was sourced.
 
-### The approaches-not-spans argument now has evidence
+### The approaches-not-spans argument, and its evidence
 
 The technical claim this subject rests on belongs in `systems/transportation.md` and is
 cross-referenced, not restated. In summary: Queensborough's approach bents S3–S8 were
@@ -225,7 +218,7 @@ ground displacement at the 2475-year event [GEB-CGS-08] **[A]**; and lateral spr
 toward the Fraser and Deas Slough is described directly at the Massey crossing site
 [GMC-BRIDGE-19] **[A]**.
 
-A third crossing now supplies the only complete public loop in the evidence base — a
+A third crossing supplies the only complete public loop in the evidence base — a
 stated objective, quantified approach settlements, a predicted abutment flow slide, a
 designed mitigation and a record that it was built. The **Mission Bridge** was retrofitted
 to prevent collapse under a 475-year earthquake, with post-earthquake access and repairable
@@ -294,9 +287,9 @@ is not currently retrofitting the bridges on them to remain in service. [MOTI-SR
   Survey** publication catalogue is a browsable directory with **no full-text or title search
   endpoint**, so that channel remains only partially swept. **[?]**
 - **Any earthquake-triggered landslide susceptibility mapping for the Sea-to-Sky corridor
-  (Highway 99) or the Fraser Canyon (Highway 1 / Highway 5).** Searched again in September
-  2026, and the absence can now be stated more firmly. Channels searched: **Google
-  Scholar**, with the query `earthquake-induced landslide susceptibility "Sea to Sky" OR
+  (Highway 99) or the Fraser Canyon (Highway 1 / Highway 5).** Searched again in
+  September 2026. Channels searched: **Google Scholar**, with the query
+  `earthquake-induced landslide susceptibility "Sea to Sky" OR
   "Highway 99" OR "Fraser Canyon" British Columbia seismic` (about 46 results, first two
   pages reviewed); **OpenAlex**, by title and by author; and **Crossref**, by bibliographic
   query. Nothing seismically conditioned and corridor-specific came back.
@@ -337,8 +330,7 @@ is not currently retrofitting the bridges on them to remain in service. [MOTI-SR
   and "no present instability of rock slopes bordering Howe Sound has been reported."
   [BOWEN-TSU-19] **[A]** The earlier North Shore assessment agrees: the probability is
   "very low, although not zero", and the waterfronts of North and West Vancouver are not
-  at risk from such a wave. [NSEMO-TSU-05] **[A]** This is no longer an open question; it
-  is a finding, and the finding is reassuring.
+  at risk from such a wave. [NSEMO-TSU-05] **[A]** The finding is reassuring.
 - **A published reopening-time estimate for any Lower Mainland corridor after an
   earthquake.** Not located, and not believed to be public. Distinguish carefully from the
   published recovery *framework* [DRT-PRIMER-18] [MV-DEBRIS-17] **[A]** and from published
@@ -362,23 +354,19 @@ is not currently retrofitting the bridges on them to remain in service. [MOTI-SR
 
 ## For the page
 
-**Recommendation on priority: reverse the demotion, and change the question.**
+**Recommendation on priority: build this subject, and ask the province's question.**
 
-The earlier judgement was that this was the most rhetorically satisfying part of the
-project and the least defensible. That was correct when it was written and is no longer.
-Three things changed:
+Three things carry it:
 
-1. **The premise is now sourced by the province itself, and it is more interesting than
-   the old one.** "Mass evacuation will not take place" and "mass evacuation impossible …
-   the public is directed to shelter in place" are two [A] provincial statements, from two
-   separate documents, about the same thing. The section stops being an inference about
-   geography and becomes a description of an actual government plan.
-2. **The technical argument has evidence.** Approaches-not-spans is no longer reasoning
-   from Kobe and Christchurch; it is Queensborough's own retrofit report and Golden Ears'
-   own geotechnical paper.
-3. **The functional-retrofit finding is stronger than anything this subject previously
-   had**, and it belongs to this subject as much as to transportation: routes that must
-   stay open, not retrofitted to stay open.
+1. **The premise is sourced by the province itself.** "Mass evacuation will not take
+   place" and "mass evacuation impossible … the public is directed to shelter in place"
+   are two [A] provincial statements, from two separate documents, about the same thing.
+   The section is not an inference about geography; it is a description of an actual
+   government plan.
+2. **The technical argument has evidence.** Approaches-not-spans rests on Queensborough's
+   own retrofit report and Golden Ears' own geotechnical paper.
+3. **The functional-retrofit finding belongs to this subject as much as to
+   transportation**: routes that must stay open, not retrofitted to stay open.
 
 Build it after `systems/transportation.md`, because it depends on that file's findings —
 but build it, and build it in the same MVP pass rather than deferring it. It should be
