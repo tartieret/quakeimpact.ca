@@ -203,6 +203,10 @@ Four municipalities of one metropolitan region, on the same hazard:
   such an event, one's family and neighbours are likely to be the only available first
   responders. **People living in an earthquake zone should aim to be self-sufficient for
   up to two weeks.**" [PEIRS] p. 42 **[A]**
+- **And the passage ends with a reason that is not fear, which is the part to keep.**
+  "Prepared neighbourhoods, families, and individuals will **reduce pressure on
+  overwhelmed government agencies and allow available resources to go where they are most
+  needed**." [PEIRS] p. 42 **[A]**
 - "**ESS is delivered by local emergency programs and is designed to provide up to 72
   hours of support** … **the ESS program is not designed for the scope and scale of
   services required after a catastrophic earthquake.**" [PEIRS] p. 42 **[A]**
@@ -395,6 +399,46 @@ non-obvious; the rest need no source.
 ---
 
 ## For the page
+
+**Quote the province's paragraph directly, and lead the page with it.** Decided
+10 September 2026. It is four sentences, it is [A], it is the body that would run the
+response saying it in its own voice, and it does in four lines what the rest of this file
+does in five hundred:
+
+> "During a disaster, local and provincial government resources will be overwhelmed. In
+> such an event, one's family and neighbours are likely to be the only available first
+> responders. People living in an earthquake zone should aim to be self-sufficient for up
+> to two weeks. Prepared neighbourhoods, families, and individuals will reduce pressure on
+> overwhelmed government agencies and allow available resources to go where they are most
+> needed." [PEIRS] p. 42 **[A]**
+
+**Why this paragraph rather than our own sentence.** Three reasons, and the third is the
+one that matters.
+
+1. **It is the province telling people the government will be overwhelmed.** Coming from
+   us that reads as criticism or as alarmism. Coming from Emergency Management BC it is an
+   operational statement, and it is unanswerable.
+2. **It settles the two weeks without argument.** The number is the province's, in the
+   province's own operational plan, so the page does not have to litigate the 72-hour
+   figure that still sits on two City pages. State the contradiction elsewhere; here, just
+   quote the plan.
+3. **Its last sentence is the only non-fear motivation in the whole source base, and the
+   risk-communication evidence in `../style-guide.md` is that this is the motivation that
+   works.** "Allow available resources to go where they are most needed" makes preparing a
+   thing you do **for other people** — for the neighbour who is trapped, the person on
+   dialysis, the family whose building came down. Every other framing available to this
+   site is *protect yourself*, which is weaker, and which the fear-appeal literature
+   consistently shows produces less action than a collective-efficacy framing does. **Do
+   not trim that sentence for length.** It is the one doing the work.
+
+**And it supplies the page's own structure.** Family and neighbours are the first
+responders; two weeks is the horizon; the point is to free capacity for people worse off.
+Those three are the page's sections, in that order, in the province's words rather than
+ours.
+
+**Licensing.** Four sentences with attribution and a link is ordinary fair dealing and
+needs no permission — unlike the three-paragraph scenario narrative in `scenarios.md`,
+which does. See `../licensing.md`.
 
 **The framing sentence.** *British Columbia's earthquake guidance says two weeks. Its
 general emergency-kit guidance says a minimum of three days. Washington State says two
