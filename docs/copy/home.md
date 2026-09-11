@@ -19,45 +19,47 @@ felt: a sound like a freight train, then 10 to 20 seconds of violent shaking tha
 knocks people off their feet, "except for those who remember to drop, cover, and
 hold on". A small number of buildings collapse, many more shift and crack, and
 most of the people badly hurt are hurt by things falling — some of them while
-running outside. [PEIRS] [The passage in full](/scenarios/).
+running outside. [PEIRS] [More about the shaking](/shaking/).
 
 *Cascadia M9:* The province's megathrust assessment sets its earthquake at ten in
 the morning on an August day, in a 30 to 40 degree heatwave with wildfire smoke.
 The shaking is moderate rather than violent and lasts about three minutes, and it
 arrives along a thousand kilometres of coast at once rather than under one city.
-[DCRRA-2025] [Both scenarios, side by side](/scenarios/).
+[DCRRA-2025] [More about the shaking](/shaking/).
 
 When it stops, the phone in your hand is what you reach for, and it is among the
-first things to fail. Nothing in Canada requires a cell tower to hold any backup
-power at all; the regulator opened a proceeding in September 2025 to decide what
+first things to fail. Nothing in Canada requires a [cell
+tower](/after/communications/) to hold any backup power at all; the regulator opened a proceeding in September 2025 to decide what
 that requirement should be, and has not decided. [CRTC-2025-226]
 
-**Days — water and food become things you have to go and find.** The taps are
-what most households notice first. In the megathrust assessment, getting bulk
+**Days — water and food become things you have to go and find.** The
+[taps](/after/water/) are what most households notice first. In the megathrust assessment, getting bulk
 drinking water around the region stays difficult for the first four to five days.
 [DCRRA-2025]
 
-The shops do not restock. The province expects the network that delivers meat,
-fruit and vegetables, dairy and bread to take weeks or months, because the problem
-is moving the goods rather than having them — and a service station with full
-tanks and no power dispenses nothing. [PEIRS] Roads are cleared in a published
-order that puts lifeline routes first and local streets last, so your street
-waits. [MV-DEBRIS-17]
+The shops do not restock. The province expects the network that delivers
+[food](/after/food/) — meat, fruit and vegetables, dairy and bread — to take weeks
+or months, because the problem is moving the goods rather than having them, and a
+[service station](/after/fuel/) with full tanks and no power dispenses nothing.
+[PEIRS] [Roads](/after/transportation/) are cleared in a published order that puts
+lifeline routes first and local streets last, so your street waits.
+[MV-DEBRIS-17]
 
 **Weeks — the power comes back in patches, and the toilet still does not work.**
 BC Hydro told its regulator in November 2025 that a large earthquake could leave
-up to two thirds of downtown customers without power for several weeks.
-[BCH-WESTEND-25] Your street comes back when its own poles and wires do, which is
+up to two thirds of downtown customers without [power](/after/electricity/) for
+several weeks. [BCH-WESTEND-25] Your street comes back when its own poles and wires do, which is
 not when the city centre does.
 
-The toilet is the part nobody plans for. With no water to flush and the sewers
-damaged as well, an apartment tower has nothing else to use, and the province
-expects disruption to water and wastewater for many months. [PEIRS] Gas cannot be
-turned back on from a control room either: it returns only when a technician
+The [toilet](/after/sanitation/) is the part nobody plans for. With no water to
+flush and the sewers damaged as well, an apartment tower has nothing else to use,
+and the province expects disruption to water and wastewater for many months.
+[PEIRS] [Gas](/after/gas/) cannot be turned back on from a control room either: it returns only when a technician
 reaches your building and relights every appliance in it. [BCUC-C-6-25]
 
 **Months — months is not a new set of failures. It is how long the first ones
-take.** The building you live in can be standing and still closed. The City of
+take.** The [building you live in](/after/housing/) can be standing and still
+closed. The City of
 Vancouver states that areas with a high concentration of damage may be closed off
 for weeks, months or even years. [COV-RISK-2024] BC Hydro puts its own system
 years from complete restoration. [BCH-WESTEND-25]

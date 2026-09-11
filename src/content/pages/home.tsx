@@ -126,8 +126,8 @@ export const home: PageModule = {
                           collapse, many more shift and crack, and most of the
                           people badly hurt are hurt by things falling — some of
                           them while running outside. <Cite id="PEIRS" />{" "}
-                          <Link href="/scenarios/" className={link}>
-                            The passage in full
+                          <Link href="/shaking/" className={link}>
+                            More about the shaking
                           </Link>
                           .
                         </>
@@ -141,8 +141,8 @@ export const home: PageModule = {
                           about three minutes, and it arrives along a thousand
                           kilometres of coast at once rather than under one
                           city. <Cite id="DCRRA-2025" />{" "}
-                          <Link href="/scenarios/" className={link}>
-                            Both scenarios, side by side
+                          <Link href="/shaking/" className={link}>
+                            More about the shaking
                           </Link>
                           .
                         </>
@@ -151,8 +151,11 @@ export const home: PageModule = {
                     <p>
                       When it stops, the phone in your hand is what you reach
                       for, and it is among the first things to fail. Nothing in
-                      Canada requires a cell tower to hold any backup power at
-                      all; the regulator opened a proceeding in September 2025
+                      Canada requires a{" "}
+                      <Link href="/after/communications/" className={link}>
+                        cell tower
+                      </Link>{" "}
+                      to hold any backup power at all; the regulator opened a proceeding in September 2025
                       to decide what that requirement should be, and has not
                       decided. <Cite id="CRTC-2025-226" />
                     </p>
@@ -165,19 +168,34 @@ export const home: PageModule = {
                 body: (
                   <>
                     <p>
-                      The taps are what most households notice first. In the
-                      megathrust assessment, getting bulk drinking water around
-                      the region stays difficult for the first four to five
-                      days. <Cite id="DCRRA-2025" />
+                      The{" "}
+                      <Link href="/after/water/" className={link}>
+                        taps
+                      </Link>{" "}
+                      are what most households notice first. In the megathrust
+                      assessment, getting bulk drinking water around the region
+                      stays difficult for the first four to five days.{" "}
+                      <Cite id="DCRRA-2025" />
                     </p>
                     <p>
                       The shops do not restock. The province expects the network
-                      that delivers meat, fruit and vegetables, dairy and bread
-                      to take weeks or months, because the problem is moving the
-                      goods rather than having them — and a service station with
-                      full tanks and no power dispenses nothing. <Cite id="PEIRS" />{" "}
-                      Roads are cleared in a published order that puts lifeline
-                      routes first and local streets last, so your street waits.{" "}
+                      that delivers{" "}
+                      <Link href="/after/food/" className={link}>
+                        food
+                      </Link>{" "}
+                      — meat, fruit and vegetables, dairy and bread — to take
+                      weeks or months, because the problem is moving the goods
+                      rather than having them, and a{" "}
+                      <Link href="/after/fuel/" className={link}>
+                        service station
+                      </Link>{" "}
+                      with full tanks and no power dispenses nothing.{" "}
+                      <Cite id="PEIRS" />{" "}
+                      <Link href="/after/transportation/" className={link}>
+                        Roads
+                      </Link>{" "}
+                      are cleared in a published order that puts lifeline routes
+                      first and local streets last, so your street waits.{" "}
                       <Cite id="MV-DEBRIS-17" />
                     </p>
                   </>
@@ -192,18 +210,27 @@ export const home: PageModule = {
                     <p>
                       BC Hydro told its regulator in November 2025 that a large
                       earthquake could leave up to two thirds of downtown
-                      customers without power for several weeks.{" "}
-                      <Cite id="BCH-WESTEND-25" /> Your street comes back when
+                      customers without{" "}
+                      <Link href="/after/electricity/" className={link}>
+                        power
+                      </Link>{" "}
+                      for several weeks. <Cite id="BCH-WESTEND-25" /> Your street comes back when
                       its own poles and wires do, which is not when the city
                       centre does.
                     </p>
                     <p>
-                      The toilet is the part nobody plans for. With no water to
-                      flush and the sewers damaged as well, an apartment tower
-                      has nothing else to use, and the province expects
-                      disruption to water and wastewater for many months.{" "}
-                      <Cite id="PEIRS" /> Gas cannot be turned back on from a
-                      control room either: it returns only when a technician
+                      The{" "}
+                      <Link href="/after/sanitation/" className={link}>
+                        toilet
+                      </Link>{" "}
+                      is the part nobody plans for. With no water to flush and
+                      the sewers damaged as well, an apartment tower has nothing
+                      else to use, and the province expects disruption to water
+                      and wastewater for many months. <Cite id="PEIRS" />{" "}
+                      <Link href="/after/gas/" className={link}>
+                        Gas
+                      </Link>{" "}
+                      cannot be turned back on from a control room either: it returns only when a technician
                       reaches your building and relights every appliance in it.{" "}
                       <Cite id="BCUC-C-6-25" />
                     </p>
@@ -217,8 +244,12 @@ export const home: PageModule = {
                 body: (
                   <>
                     <p>
-                      The building you live in can be standing and still closed.
-                      The City of Vancouver states that areas with a high
+                      The{" "}
+                      <Link href="/after/housing/" className={link}>
+                        building you live in
+                      </Link>{" "}
+                      can be standing and still closed. The City of Vancouver
+                      states that areas with a high
                       concentration of damage may be closed off for weeks,
                       months or even years. <Cite id="COV-RISK-2024" /> BC Hydro
                       puts its own system years from complete restoration.{" "}
