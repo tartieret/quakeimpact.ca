@@ -246,13 +246,18 @@ export const home: PageModule = {
     },
 
     {
-      title: "Every number here comes from a document somebody else published",
+      title: "This site puts scattered published work in one place you can walk through",
       body: (
         <Prose>
           <p>
-            That published work is federal and provincial scenarios, utility
-            filings with their regulators, municipal plans, and peer-reviewed
-            engineering. No number here is a new estimate.
+            Most of what is on these pages is already in print: federal and
+            provincial scenarios, utility filings with their regulators,
+            municipal plans, peer-reviewed engineering. It is spread across
+            dozens of documents, each written for somebody else — a regulator, a
+            council, another engineer — and none of them written to tell you
+            what a month without a working toilet looks like. What this site
+            adds is the gathering. The pieces sit next to each other here, in an
+            order you can walk through. No number on the site is a new estimate.
           </p>
           <p>
             Where nobody has published an answer, the gap is stated rather than
