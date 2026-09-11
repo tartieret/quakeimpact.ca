@@ -1,0 +1,233 @@
+# Figures
+
+How a graphic gets made on this site. Read `docs/style-guide.md` §8 and §9
+first: the visual rules are decisions, not preferences, and everything below is
+those rules made buildable.
+
+Two figures exist so far, both on `/after/water/`. They are the worked example.
+Read `water.tsx` next to this file alongside the rules.
+
+---
+
+## The four rules a figure has to satisfy
+
+1. **No new dependencies.** There is no charting library, no D3, no SVG
+   toolchain, and none is coming. A figure is inline SVG written by hand in a
+   Server Component.
+2. **Nothing is fetched at runtime.** No external image, no tile server, no
+   font beyond the two the site already loads.
+3. **Colour is reserved for meaning**, and meaning never rests on hue alone.
+4. **A figure is not exempt from WCAG AA** because it is a graphic. Text inside
+   an SVG is text, and the finding must be available without the picture.
+
+---
+
+## How a figure is authored
+
+### No `viewBox`
+
+This is the decision everything else follows from, and it is the opposite of
+what most SVG advice says.
+
+A `viewBox` scales the whole drawing uniformly, text included. Set the type to
+read on a 390 px phone and it is oversized on a laptop; set it for the laptop
+and the phone gets 8 px labels that fail AA and fail common sense. There is no
+size that works at both ends.
+
+So a figure has no `viewBox`. Instead:
+
+- the `<svg>` is `width="100%"` with a **fixed pixel `height`**;
+- **horizontal** positions and widths are **percentages** of the drawing width;
+- **vertical** positions, and **every type size**, are **pixels**.
+
+Text is then the same physical size at every width, the vertical layout never
+reflows, and the drawing simply stretches into whatever column it is given.
+`pct(value, domain)` in `figure-kit.tsx` is the whole of the scale maths.
+
+The escape hatch, for the rare shape that cannot be expressed as a percentage
+rectangle, is `At`: a nested `<svg>` takes the percentage anchor, and its
+children are drawn in pixels relative to it. The arrowhead on the water clocks
+figure is the only current use.
+
+### The skeleton
+
+```tsx
+import {
+  FigureCanvas, FigHeading, FigValue, FigText, FigRule,
+  TrackBase, Bar, Axis, hatchId, FIG_COLOR, FIG_TYPE,
+} from "./figure-kit";
+
+const ID = "sewer-outage";        // unique on the page; namespaces pattern ids
+const DOMAIN = 12;                // the figure's own units, stated once
+const HEIGHT = 180;               // fixed pixels
+
+export function SewerOutage() {
+  const hatch = `url(#${hatchId(ID)})`;
+  return (
+    <FigureCanvas id={ID} height={HEIGHT}>
+      <FigHeading y={14}>What the panel is about</FigHeading>
+      <FigValue y={41}>The finding, in words</FigValue>
+
+      <TrackBase y={74} height={16} />
+      <Bar to={8} domain={DOMAIN} y={74} height={16} />
+      <Bar from={8} to={12} domain={DOMAIN} y={74} height={16} fill={hatch} />
+      <Axis y={90} domain={DOMAIN} values={[0, 4, 8, 12]} labelY={108} />
+      <FigText y={128}>Weeks after the earthquake</FigText>
+    </FigureCanvas>
+  );
+}
+```
+
+And in the page module, beside the prose it illustrates:
+
+```tsx
+<Figure
+  alt="Sewer service in the worst affected areas is out for two to three months."
+  caption={<>What the drawing shows, and where it came from. <Cite id="…" /></>}
+>
+  <SewerOutage />
+</Figure>
+```
+
+### Where the words live
+
+- **Short labels bound to the geometry** live in the figure component. SVG text
+  does not wrap, so a label is a few words and never a sentence.
+- **The caption, the alt text and the citation markers** live in the page
+  module under `src/content/pages/`, beside the prose. They are copy, they
+  reflow, and they belong with the words they sit next to.
+
+Both are reader-facing, so both obey `docs/style-guide.md`, including §5: no em
+dashes or en dashes in the site's own voice, Canadian spelling, ranges rather
+than point estimates.
+
+---
+
+## Legibility at phone width
+
+The drawing area on a 390 px phone is roughly 318 px after the page gutter and
+the figure's own padding. Everything below is sized for that:
+
+- The smallest type is `FIG_TYPE.tick`, 12 px. Nothing goes under it.
+- A label has to fit 318 px. As a rough check, 13 px type runs about 6 px per
+  character, so roughly 48 characters. Count before you write it.
+- Stack panels vertically. Two panels side by side collapse at phone width and
+  SVG has no wrapping.
+- `TickGrid` marks are percentage widths, so they thin down on a phone and
+  square up on a laptop instead of colliding.
+- Test at 390 px and again at the 672 px reading measure. Those are the two
+  ends.
+
+---
+
+## Dark mode
+
+Name colours through `FIG_COLOR`, which points at the custom properties in
+`src/app/globals.css`. `globals.css` redefines them under
+`prefers-color-scheme: dark`, so a figure follows for free. A hex value in a
+figure is a bug: near-black strokes disappear on the dark ground and a baked-in
+white panel glows.
+
+The hatch pattern fills its own background with `--color-paper-raised` rather
+than leaving it transparent, so it reads against a track in both themes.
+
+---
+
+## Encoding meaning without hue
+
+The site's severity encoding already works this way: `BandMeter` fills one,
+two or three segments alongside the colour, so the ordinal survives in
+greyscale. Figures extend the same habit.
+
+The grammar, used consistently so it is learnable:
+
+| Mark | Means |
+|---|---|
+| Solid fill | A figure a source published |
+| Hatched fill | A range, or an open end |
+| An axis | A domain a source gives. No source, no axis |
+| One tick in a `TickGrid` | One counted thing |
+| A rule between panels | Two things that must not be read as one |
+
+Colour is used only when a figure encodes a band, and then it is the band ramp
+from `FIG_COLOR` paired with the written label. Nothing is coloured to draw the
+eye. Both water figures use no colour at all, which is the expected default:
+they work identically in greyscale, and the only thing they lose in dark mode
+is the paper behind the hatch.
+
+Every panel also writes its finding out in words, at `FigValue` size. A reader
+who cannot resolve the geometry still has the number.
+
+---
+
+## Alt text
+
+`Figure` puts `role="img"` and `aria-label={alt}` on the frame, and the `<svg>`
+inside is `aria-hidden`, so a screen reader gets one sentence rather than forty
+tick marks. That sentence is the whole of what a non-sighted reader receives,
+so:
+
+- **State the finding, not the file.** "Bulk water distribution is hard for
+  four to five days; the network takes months", never "diagram of water
+  restoration".
+- Carry the numbers that are in the drawing.
+- Carry the guard the drawing is built around. Both water figures exist to stop
+  a specific misreading, and the alt text says so.
+- One or two sentences. No dashes.
+
+---
+
+## Licence and attribution
+
+`Figure` takes a `licence` slot that renders under the caption, because an
+attribution has to travel with the graphic rather than sit on a separate page.
+
+- **Numbers taken from a document we cite**: no `licence`. Put `<Cite>` markers
+  in the caption. Both water figures are this case; the counts come through
+  reporting on a freedom-of-information release and through provincial
+  assessments, all cited on the page.
+- **A graphic built from someone's dataset**: `licence` carries the exact
+  attribution string from `docs/licensing.md`, verbatim, with its link to the
+  licence. Open Government Licence strings keep their en dash, which §5 allows
+  because a licence name is a proper name.
+- **Not cleared**: do not build the figure. The rule in `docs/licensing.md` is
+  that an unconfirmed licence means link out rather than reproduce. MVSMMP is
+  the standing example: link only, and no derived layer.
+- Where the licence also requires a statement about what the data covers, as
+  OGL–Canada does for the scenario catalogue, that statement goes in the
+  caption, not in a footnote elsewhere.
+
+---
+
+## Do not invent a number
+
+If a figure needs a value the copy does not give, the figure is wrong, not the
+copy. The water clocks figure is the case in point: the second panel has no
+axis and no tick labels, because nobody has published how long restoration
+takes, and an axis would have invited a reader to measure one off it.
+
+A placeholder is still the honest answer for a graphic that cannot be built
+yet. `MapPlaceholder` in `page-parts.tsx` names its dataset and says it is not
+built. Nothing on this site should look more finished than it is.
+
+---
+
+## The parts list
+
+`figure-kit.tsx`, with its doc comments:
+
+| Export | What it is for |
+|---|---|
+| `FigureCanvas({ id, height })` | The padded frame and the `<svg>`. Every figure starts here |
+| `pct(value, domain)` | The scale helper |
+| `hatchId(id)` | The figure's own hatch pattern id |
+| `FigText`, `FigHeading`, `FigValue` | The three type roles, at fixed pixel sizes |
+| `FigRule({ y })` | A full-width hairline between panels |
+| `TrackBase`, `Bar` | A bar and the track it sits in |
+| `Axis({ domain, values })` | Ticks and their labels, with the end ticks nudged off the edge |
+| `TickGrid`, `tickGridHeight` | A unit chart, one mark per counted thing |
+| `At({ x })` | Pixel drawing anchored at a percentage |
+| `FIG_COLOR`, `FIG_TYPE`, `FIG_STROKE` | Colours, the four type sizes, the one stroke weight |
+
+Add to the kit when a second figure needs the same thing. A helper with one
+caller belongs in that figure.

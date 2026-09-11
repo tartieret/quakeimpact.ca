@@ -1,19 +1,25 @@
 import { Cite } from "@/components/citation";
 import { Prose, Quote, VerificationNote } from "@/components/page-parts";
-import { DependencyGraphPlaceholder } from "@/components/dependency-graph";
+import { DependencyGraph } from "@/components/dependency-graph";
 import type { PageModule } from "./index";
 
 /**
  * The dependency graph. The body of `/dependencies/`, ported from
  * `docs/copy/dependencies.md`.
  *
- * The drawn graph does not exist. `DependencyGraphPlaceholder` is a hatched
- * slot with the live edge list underneath it, generated from the `dependsOn`
- * entries in `src/content/site.ts`, and it stays until the picture is drawn.
+ * `DependencyGraph` is the drawing with the live edge list underneath it,
+ * generated from the `dependsOn` entries in `src/content/site.ts`. The drawing
+ * joins no two systems with a line, because a line asserts a connection and
+ * most of these connections are not established. It counts them instead, and
+ * separates the six a document names from the twenty nobody has published.
  *
  * The edges in that list are the content model's, not the evidence's. The copy
  * says so where the section sits, and the closing section names the edges no
  * document stands behind, so a reader cannot take the list for a finding.
+ *
+ * The section heading and its opening sentence differ from
+ * `docs/copy/dependencies.md`, which still describes the picture as an empty
+ * slot. Everything else on the page is the copy verbatim.
  */
 export const dependencies: PageModule = {
   meta: {
@@ -73,14 +79,17 @@ export const dependencies: PageModule = {
     },
 
     {
-      title: "The graph is not drawn yet, and these are the connections it would draw",
+      title:
+        "These are the connections, and this is how few of them are published",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
             <p>
-              The picture below is an empty slot. Underneath it is the list the
-              drawn version would be built from: each system, and the systems its
-              own page names as the ones it waits on.
+              The picture below counts the connections rather than joining them
+              up, because a line drawn between two systems asserts a connection
+              whether or not anyone has established one. Underneath it is the
+              list it is built from: each system, and the systems its own page
+              names as the ones it waits on.
             </p>
             <p>
               The list is not evidence. Some of those connections have a document
@@ -90,7 +99,7 @@ export const dependencies: PageModule = {
               down.
             </p>
           </Prose>
-          <DependencyGraphPlaceholder />
+          <DependencyGraph />
         </div>
       ),
     },

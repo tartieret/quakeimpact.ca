@@ -1,10 +1,17 @@
 import { Cite } from "@/components/citation";
 import {
+  Figure,
   Prose,
   Quote,
   DataTable,
   VerificationNote,
 } from "@/components/page-parts";
+import {
+  PrepareAskedAndProvided,
+  PrepareDaysByDocument,
+  PrepareSchoolUpgrading,
+  PrepareWaterArithmetic,
+} from "@/components/figures/prepare";
 import type { PageModule } from "./index";
 
 /**
@@ -142,6 +149,20 @@ export const prepare: PageModule = {
             them is designed for three days. The province states both, and
             states that the second is not sized for this event.
           </p>
+          <Figure
+            alt="Households are asked to cover two weeks, while the Emergency Support Services program behind them is designed for 72 hours. The two panels measure different things and are drawn on separate scales, so their lengths are not a comparison."
+            caption={
+              <>
+                Two different measurements from the same page of the same
+                document, kept on separate scales. The upper panel is how long a
+                household covers itself. The lower is how long a program that
+                houses and feeds people who have lost their homes is designed to
+                run. <Cite id="PEIRS" />
+              </>
+            }
+          >
+            <PrepareAskedAndProvided />
+          </Figure>
         </Prose>
       ),
     },
@@ -246,6 +267,22 @@ export const prepare: PageModule = {
             weeks”. <Cite id="PEIRS" /> It is the same number pointing in
             opposite directions: one is a floor, the others a ceiling.
           </p>
+          <Figure
+            alt="Six current official documents answer with anything from three days to two weeks, and the same two weeks is a floor in the earthquake guide and a ceiling in the response plan. The figure sets the six side by side without resolving them to a recommended number."
+            caption={
+              <>
+                The six answers drawn side by side, and not averaged into a
+                seventh. A bar that ends in a point is open above its number; a
+                bar that ends against an upright is closed at it. Hatching is
+                the further span a document names rather than a figure it
+                states. <Cite id="PREPAREDBC" /> <Cite id="PREPAREDBC-KIT" />{" "}
+                <Cite id="PREPAREDBC-EQ" /> <Cite id="AHP-2012" />{" "}
+                <Cite id="PEIRS" /> <Cite id="COV-EXPLORER-25" />
+              </>
+            }
+          >
+            <PrepareDaysByDocument />
+          </Figure>
         </Prose>
       ),
     },
@@ -269,6 +306,22 @@ export const prepare: PageModule = {
             totals are arithmetic from the two published rates; neither the City
             nor the province prints either one.
           </p>
+          <Figure
+            alt="At four litres per person per day, a household of four needs 48 litres to cover three days and at least 224 litres to cover two weeks. Both totals are arithmetic from the two published rates, and neither the City nor the province prints either one."
+            caption={
+              <>
+                One mark is four litres, which is the published rate for one
+                person for one day. <Cite id="PREPAREDBC" />{" "}
+                <Cite id="COV-EXPLORER-25" /> The City’s worksheet multiplies
+                that rate by three days. <Cite id="COV-WORKSHEET-26" /> The
+                provincial earthquake guide says at least two weeks.{" "}
+                <Cite id="PREPAREDBC" /> The totals are worked from those rates
+                rather than printed in either document.
+              </>
+            }
+          >
+            <PrepareWaterArithmetic />
+          </Figure>
           <p>
             Two weeks of water is bulky. It is also the single most useful thing
             in a kit, because the province’s 2025 risk assessment says people
@@ -418,6 +471,21 @@ export const prepare: PageModule = {
             remaining. Province-wide, 233 of 498 are complete.{" "}
             <Cite id="SMP-PROGRESS" />
           </p>
+          <Figure
+            alt="159 of 260 Metro Vancouver school seismic projects are complete, which is past halfway, while province-wide 233 of 498 are complete, which is short of halfway."
+            caption={
+              <>
+                Two proportions from the May 2026 progress report, each drawn
+                against its own programme total so that the share reads rather
+                than the count. The upright marks the halfway point. The report
+                gives the Metro Vancouver remainder as a count; the
+                province-wide remainder is the part of the track left empty.{" "}
+                <Cite id="SMP-PROGRESS" />
+              </>
+            }
+          >
+            <PrepareSchoolUpgrading />
+          </Figure>
         </Prose>
       ),
     },

@@ -1,11 +1,17 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
+  Figure,
   Prose,
   Callout,
   Quote,
   VerificationNote,
 } from "@/components/page-parts";
+import {
+  ClearingOrder,
+  LandConnections,
+  Reopening2021,
+} from "@/components/figures/getting-around";
 import type { PageModule } from "./index";
 
 /**
@@ -21,6 +27,11 @@ import type { PageModule } from "./index";
  * drawn over liquefaction susceptibility, which rests on the Metro Vancouver
  * microzonation layers. Those are link-only and are not being redrawn, so the
  * slot is gone rather than recaptioned (`docs/licensing.md`).
+ *
+ * The land connections figure is not that slot reopened. It is a schematic of
+ * adjacency and direction, built from the three map facts the copy already
+ * states, with no geometry and no dataset behind it. It says so in the drawing
+ * and again in the caption.
  */
 const transportationLink = (
   <Link
@@ -151,6 +162,23 @@ export const gettingAround: PageModule = {
               </p>
             </Prose>
           </Callout>
+          {/* Uncited for the same reason the block above is: the figure draws
+              those three facts and nothing else, so it rests on no document
+              either. No licence slot, because no dataset is behind it. */}
+          <Figure
+            alt="Leaving Vancouver by land means going east through Burnaby and New Westminster. The North Shore is reached by two vehicle crossings with mountains behind it, and Richmond and Delta only by bridges and a tunnel. This is a diagram of connections, not a map."
+            caption={
+              <>
+                A diagram of connections rather than a map. It draws which ways
+                out of Vancouver exist and what each one crosses, and nothing
+                about distance, shape or position. Like the three facts above it
+                carries no source key, because it claims nothing about
+                earthquakes.
+              </>
+            }
+          >
+            <LandConnections />
+          </Figure>
           <p>
             What those crossings were built to withstand, and what happens to
             the ground their approaches sit on, is the subject of{" "}
@@ -243,6 +271,19 @@ export const gettingAround: PageModule = {
             to use their snow removal routes as a base”.{" "}
             <Cite id="MV-DEBRIS-17" />
           </p>
+          <Figure
+            alt="The clearing order published by Metro Vancouver runs from lifelines and evacuation routes, through critical infrastructure, major freeways and arterials, goods and economic restoration, and minor arterials, to local routes last. It is an order of work rather than a timetable, and the plan publishes no durations."
+            caption={
+              <>
+                The order quoted above, drawn as a ladder so a reader can find
+                their own street on it. It is a sequence and not a schedule: the
+                plan gives no durations, so the figure carries no scale.{" "}
+                <Cite id="MV-DEBRIS-17" />
+              </>
+            }
+          >
+            <ClearingOrder />
+          </Figure>
           <p>
             Provincially, the same sequencing applies to reopening. Critical
             routes “are used as a reference to prioritize the restoration of
@@ -303,6 +344,24 @@ export const gettingAround: PageModule = {
               December 2025. <Cite id="HWY8-RECOV" />
             </li>
           </ul>
+          {/* Placed between the two guard sentences the copy puts around this
+              list, and carrying the guard itself, in the drawing and in the alt
+              text, so it does not depend on either of them staying beside it. */}
+          <Figure
+            alt="Highway 5 reopened to commercial traffic in 35 days and to all traffic after about 66 days, Highway 1 after 61 and 71 days on two segments, and Highway 8 after about 12 months, with the last permanent Highway 5 bridge finished about 23 months on. Every one of these durations is damage from the November 2021 rainfall and none of it was caused by an earthquake."
+            caption={
+              <>
+                Reopening durations for the three highways cut by the
+                atmospheric river of November 2021. Days and months are drawn on
+                separate scales because the sources give them that way. None of
+                this is earthquake damage and none of it forecasts one.{" "}
+                <Cite id="HWY5-RECOV" /> <Cite id="HWY1-RECOV" />{" "}
+                <Cite id="HWY8-RECOV" />
+              </>
+            }
+          >
+            <Reopening2021 />
+          </Figure>
           <p>
             The provincial flood strategy puts the economic impact of the
             November 2021 rainfall at $5 to $7 billion and records that it cut

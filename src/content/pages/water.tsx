@@ -1,11 +1,16 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
+  Figure,
   Prose,
   Quote,
   DataTable,
   VerificationNote,
 } from "@/components/page-parts";
+import {
+  WaterFailureCounts,
+  WaterTwoClocks,
+} from "@/components/figures/water";
 import type { PageModule } from "./index";
 
 /**
@@ -119,6 +124,19 @@ export const water: PageModule = {
             the part of that total falling on the assets that are hardest to
             reach.
           </p>
+          <Figure
+            alt="Metro Vancouver models 267 water main failures across the region, and about 60 breaks at the 71 river and inlet crossings, which are counted separately rather than added together."
+            caption={
+              <>
+                Two counts from the same study, kept apart. One mark is one
+                failure in both panels. Three to four of the crossing breaks
+                fall in the hardest category: the Fraser River, the Pitt River,
+                False Creek and Burrard Inlet. <Cite id="MV-WATER-22" />
+              </>
+            }
+          >
+            <WaterFailureCounts />
+          </Figure>
           <p>
             The figures come from a review of 123 existing reports on
             reservoirs, pump stations and pipelines rather than from a single
@@ -208,6 +226,20 @@ export const water: PageModule = {
             months is about the network being repaired. Merging them would
             suggest water comes back in a week.
           </p>
+          <Figure
+            alt="Two clocks run at once: trucking bulk water to people is hard for the first four to five days, while repairing the network is expected to take many months with no published end date."
+            caption={
+              <>
+                Two clocks, and they do not join up. The province gives the
+                first one a length. <Cite id="DCRRA-2025" /> The second is the
+                province’s “many months”, which is a range word rather than a
+                figure, so the panel carries no scale to read a date off.{" "}
+                <Cite id="PEIRS" />
+              </>
+            }
+          >
+            <WaterTwoClocks />
+          </Figure>
         </Prose>
       ),
     },

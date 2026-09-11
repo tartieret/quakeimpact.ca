@@ -20,10 +20,12 @@ Every repair crew, every delivery and everything running on a generator sits dow
 of that one sentence. Fuel moves by road, which puts roads underneath it in turn, and
 roads are where most of the published evidence on this page is.
 
-## The graph is not drawn yet, and these are the connections it would draw
+## These are the connections, and this is how few of them are published
 
-The picture below is an empty slot. Underneath it is the list the drawn version would
-be built from: each system, and the systems its own page names as the ones it waits on.
+The picture below counts the connections rather than joining them up, because a line
+drawn between two systems asserts a connection whether or not anyone has established
+one. Underneath it is the list it is built from: each system, and the systems its own
+page names as the ones it waits on.
 
 The list is not evidence. Some of those connections have a document behind them, and
 the rest of this page sets out which. Where there is no document, the connection is

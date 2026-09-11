@@ -128,7 +128,13 @@ The design carries the same argument as the words: serious, quiet, sourced.
 
 **Maps show the ground, not the municipality.** A choropleth by city misleads. Municipal outlines are reference, laid over the real variable.
 
-**Placeholders admit what they are.** An unbuilt map says so and names its dataset. Nothing on this site should look more finished than it is.
+**Geometry may not assert a precision the source does not have.** Section 5's rule against point estimates applies to drawings, and more sharply, because a shape reads as a measurement. "Many months" drawn as a bar on a month axis is an invented number. Where a source gives a range, the drawing shows a range. Where a source gives no end, the drawing has no end. No axis without a domain a source states.
+
+**Meaning without colour needs a vocabulary, not just a prohibition.** Solid fill is a quantity a source published. A hatch is a range or an open end. An axis is a domain a source gives. One tick is one counted thing. A rule separates two things that must not be read as one. The worked version is in `src/components/figures/README.md`.
+
+**Alt text carries the guard, not only the finding.** Where a figure exists to stop a misreading, its alt text says so. A reader who cannot see the figure must not be left holding the misreading the figure was drawn to prevent.
+
+**Placeholders admit what they are, and only where one is honest.** An unbuilt map says so and names its dataset. A placeholder for a graphic the site will never be licensed to draw is a promise rather than a label, and is worse than nothing. Nothing on this site should look more finished than it is.
 
 ---
 

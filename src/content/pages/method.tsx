@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose } from "@/components/page-parts";
+import { Figure, Prose } from "@/components/page-parts";
+import {
+  MethodHatchedReasons,
+  MethodOneModel,
+  MethodTwoMediums,
+} from "@/components/figures/method";
 import { BandMeter } from "@/components/band";
 import { BANDS } from "@/content/site";
 import type { Band } from "@/content/types";
@@ -20,10 +25,12 @@ import type { PageModule } from "./index";
  * - The hatched sample beside the fourth-state sentence, so that "drawn
  *   hatched" is something the reader can see rather than take on trust.
  *
- * There is no table of return periods, and there is not going to be one. The
+ * There is no table of return periods, and no figure of them either. The
  * copy's point is that a dam's 1-in-10,000-year earthquake and a building's
  * 1-in-2,475-year one are not points on one scale; drawing them on one axis
- * would assert the comparability the sentence denies.
+ * would assert the comparability the sentence denies, and drawing them on two
+ * axes side by side reads as one axis broken in half. The reasoning is written
+ * out at the head of `@/components/figures/method`.
  *
  * The copy has no `## What you can do`, so this module has no `lever`. The
  * field is optional for this page and this page alone: the principle is no doom
@@ -170,6 +177,20 @@ export const method: PageModule = {
             only in how much has been written down. One asymmetry is about the
             earthquakes. The other is about which documents happen to exist.
           </p>
+          <Figure
+            alt="Three cells on the grid are hatched. Dams and reservoirs are hatched in both scenarios, and port, airport and ferry terminals only in the crustal one, because of which documents happen to exist; where help comes from changes between High and Low because the two earthquakes genuinely differ. A hatch means nobody has published an assessment, never that the system would do badly."
+            caption={
+              <>
+                The two rows above the rule differ because of which documents
+                exist. <Cite id="MV-DSP-2026" /> <Cite id="AIR-2013" /> The row
+                below it differs because the two earthquakes do. The meter
+                carries the band as filled segments, so the ordinal reads
+                without colour.
+              </>
+            }
+          >
+            <MethodHatchedReasons />
+          </Figure>
           <p>Bands move when a document appears, in either direction.</p>
         </Prose>
       ),
@@ -221,6 +242,20 @@ export const method: PageModule = {
             Both are Medium. They are not the same situation, and each system
             page says which one it is in.
           </p>
+          <Figure
+            alt="Communications and health care are both banded Medium for different reasons: communications because nothing requires a mobile phone site to hold backup power and the regulator has not decided, and health care because about 65 per cent of one health authority's buildings would likely be completely damaged at the shaking level the code designs for and nobody has compared expected casualties to the beds the region has. The shared band does not mean the two situations are the same."
+            caption={
+              <>
+                The same band, and a different kind of thing missing behind it.
+                Communications is waiting on a rule the regulator has not
+                written. <Cite id="CRTC-2025-226" /> Health care has the damage
+                figure and not the comparison. <Cite id="DCRRA-APPC" /> A solid
+                swatch is what a document states, a hatched one is the gap.
+              </>
+            }
+          >
+            <MethodTwoMediums />
+          </Figure>
         </Prose>
       ),
     },
@@ -282,6 +317,21 @@ export const method: PageModule = {
             all, it comes from the insurance industry, and it is named as such
             wherever it appears.
           </p>
+          <Figure
+            alt="Both scenarios come from one Geological Survey of Canada catalogue, which the province asked for and then adopted for its own Cascadia casualty figures and crustal figures, so a federal figure and a provincial figure that agree are one model quoted twice rather than two studies agreeing. The one genuinely independent estimate comes from the insurance industry and is drawn apart from the catalogue rather than inside it."
+            caption={
+              <>
+                One catalogue, and the provincial documents that draw on it.{" "}
+                <Cite id="NRCAN-SCEN" /> The province asked for the runs,{" "}
+                <Cite id="GSC-OF-8853" /> and its Cascadia casualty figures{" "}
+                <Cite id="DCRRA-2025" /> and crustal figures <Cite id="PEIRS" />{" "}
+                come back from them. The catalogue&rsquo;s modelling covers
+                damage to buildings and their inhabitants from shaking only.
+              </>
+            }
+          >
+            <MethodOneModel />
+          </Figure>
           <p>
             All of these modelled figures share one boundary, which the
             catalogue states plainly. They cover “only damage to buildings, and

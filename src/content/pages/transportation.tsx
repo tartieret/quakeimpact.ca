@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose, DataTable, VerificationNote } from "@/components/page-parts";
+import { Figure, Prose, DataTable, VerificationNote } from "@/components/page-parts";
+import {
+  ApproachAgainstSpan,
+  MasseyThreeNumbers,
+  ServiceLevelLadder,
+} from "@/components/figures/transportation";
 import type { PageModule } from "./index";
 
 /**
@@ -130,6 +135,19 @@ export const transportation: PageModule = {
             </Link>
             .
           </p>
+          <Figure
+            alt="The Ministry’s three retrofit service levels run from Safety 2, limited access after about 24 hours of inspection, through Safety 1, emergency traffic within days with public access only once repairs are done, to Superstructure, no traffic for a prolonged period. Restoration is gated on inspection before it is gated on repair."
+            caption={
+              <>
+                The Ministry’s own definitions, in its own order. The more
+                segments filled, the less the level allows. None of the three is
+                a timescale: two of them are described in range words, so there
+                is no axis to read a date off. <Cite id="MOTI-SRDC-05" />
+              </>
+            }
+          >
+            <ServiceLevelLadder />
+          </Figure>
         </Prose>
       ),
     },
@@ -146,6 +164,19 @@ export const transportation: PageModule = {
             saturated soil losing its strength and behaving like a liquid while
             the ground shakes.
           </p>
+          <Figure
+            alt="A retrofitted span can stand at its full height while the approach embankment carrying the road onto it settles, leaving a step where the road meets the bridge. The drawing is a schematic of that mechanism, not a measurement and not any real crossing."
+            caption={
+              <>
+                A diagram of the mechanism, and not a drawing of any crossing.
+                The structure and the ground are drawn as two materials because
+                they fail separately. The drop is schematic: nobody publishes a
+                settlement for a generic approach, so nothing here is to scale.
+              </>
+            }
+          >
+            <ApproachAgainstSpan />
+          </Figure>
           <p>
             Three Lower Mainland crossings have published figures at their
             approaches. Each figure belongs to one size of earthquake, one place
@@ -249,6 +280,20 @@ export const transportation: PageModule = {
             “approximately 150 to 240 years”. A new lifeline crossing is
             designed for 2,475. <Cite id="GMC-TUNNEL-19" />
           </p>
+          <Figure
+            alt="The George Massey Tunnel was designed against a 475 year earthquake and now meets its performance criteria for approximately a 150 to 240 year earthquake, against a lifeline standard of 2,475 years. The three are a design intent, an assessed range and a standard, and each is drawn differently because they are not the same kind of number."
+            caption={
+              <>
+                Three numbers of three kinds, drawn three ways. A design intent
+                is a point somebody aimed at. The assessed capacity is hatched
+                because it is a range rather than a figure. The standard is the
+                line a new lifeline crossing has to reach.{" "}
+                <Cite id="GMC-TUNNEL-19" />
+              </>
+            }
+          >
+            <MasseyThreeNumbers />
+          </Figure>
           <p>
             An emergency road closure system installed in 2008 detects seismic
             motion and stops new traffic entering while letting vehicles already

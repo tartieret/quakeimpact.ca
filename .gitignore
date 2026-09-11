@@ -9,3 +9,6 @@ preview/dist/
 
 # Browser automation artifacts
 .playwright-mcp/
+
+# Originals for the vendored geodata. Large; the reduction is what ships.
+.data-cache/

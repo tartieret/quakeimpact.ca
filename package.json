@@ -9,6 +9,7 @@
     "start": "npx serve out",
     "lint": "next lint",
     "references": "node scripts/build-references.mjs",
+    "data": "node scripts/data/build-all.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

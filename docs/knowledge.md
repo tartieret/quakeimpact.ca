@@ -11,6 +11,99 @@ it was confirmed.
 
 ---
 
+## Open data licences are a field on the record, and the APIs will tell you
+
+**11 September 2026.** Acquiring the three map datasets the site is allowed to draw, the
+useful discovery was that every licence question has a machine-readable answer, which
+turns "check each record individually" from a chore into a one-line check.
+
+- **City of Vancouver, Opendatasoft.** `opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/<slug>`
+  returns `metas.default.license` and `license_url` for that dataset. That is the record
+  stating its own licence, which is what `licensing.md` asks for. The portal holds 198
+  datasets in total, so `?limit=100` twice enumerates the lot when a slug is unknown —
+  which is how the DFPS slug, recorded as unconfirmed, was confirmed as
+  `dedicated-fire-protection-systems-dfps-water-mains`.
+- **BC Data Catalogue, CKAN.** `catalogue.data.gov.bc.ca/api/3/action/package_show?id=<slug>`
+  returns `license_title`. Neighbouring records genuinely differ — Freshwater Atlas layers
+  come back "Open Government Licence - British Columbia" while several forestry and
+  fisheries layers come back "Access Only" — so the rule that OGL–BC is not a blanket
+  licence for `gov.bc.ca` is not theoretical.
+- **The human-readable licence page may be unreachable even when the licence is not.**
+  `vancouver.ca/your-government/open-data-licence.aspx` returns 403 to every non-browser
+  client, and the Archive copy 404s. The record's own licence field is the stronger
+  evidence anyway; note the gap rather than imply the prose was read.
+
+**Getting the data out, once the licence is settled.** `openmaps.gov.bc.ca/geo/pub/<OBJECT_NAME>/ows`
+is a WFS in front of any public BC warehouse layer and returns GeoJSON for a bounding box,
+so there is no shapefile to parse and no whole-province download. Two traps: the `bbox`
+parameter wants **lon,lat** order despite WFS 2.0 nominally being lat,lon, and silently
+returns zero features given the other way; and output arrives in BC Albers unless
+`srsName` is the URN form `urn:ogc:def:crs:EPSG::4326`. GitHub-hosted data in an LFS
+repository needs `media.githubusercontent.com/media/<owner>/<repo>/<ref>/<path>`; the
+ordinary raw URL hands back a 133-byte pointer file that parses as a perfectly valid CSV.
+
+**The pattern the vendored data follows**, in `scripts/data/` and `src/data/`: the script
+fetches the original into an uncommitted `.data-cache/`, reduces it, and writes a small
+committed JSON. Script and output are both in the repository, so the derivation is
+auditable and repeatable, and nothing on the site touches the network at build or run
+time. Reductions use a thirty-line Douglas–Peucker in metres rather than a dependency.
+Sizes, and what each one dropped, are in `research/maps.md`.
+
+**Read the geometry before deciding what the graphic is.** The Dedicated Fire Protection
+System layer had been described through three project documents as a coverage boundary,
+"a single closed shape". It is 245 line segments of water main. What can honestly be drawn
+from it is the network, not a boundary, because a boundary would be a hull the project
+invented and then attributed to the City. The same check caught the province's own
+major-bridge record for the Pattullo sitting about 20 km from the Pattullo.
+
+---
+
+## A figure has no viewBox, because a viewBox scales the type
+
+**11 September 2026.** The figure system lives in `src/components/figures/`, with
+`README.md` there as the convention and `figure-kit.tsx` as the parts list. The first
+two figures are on `/after/water/`.
+
+The decision everything else follows from is counter-intuitive and worth recording: a
+figure on this site has **no `viewBox`**. A viewBox scales the drawing uniformly, text
+included, so type sized to read at 390 px is oversized at the 672 px reading measure and
+type sized for the measure fails AA on a phone. There is no size that satisfies both.
+Instead the `<svg>` is `width="100%"` with a fixed pixel height, horizontal positions are
+percentages of the drawing width, and vertical positions and every type size are pixels.
+Text is then the same physical size at every width. Confirmed by building both water
+figures and checking the static export at both ends.
+
+Three consequences fell out of it:
+
+- **Percentages cover rectangles and text but not paths**, because path data has no
+  percentage units. The fix is a nested `<svg>` that takes the percentage anchor and
+  draws its children in pixels relative to it; `At` in the kit is that, and the arrowhead
+  on the open-ended bar is its only current use.
+- **A rectangle at `x="0"` or `x="100%"` has its stroke half clipped** by the edge of the
+  drawing. Axis ticks are drawn as 1 px rects nudged inward with a pixel `transform`
+  rather than as stroked lines, and tracks are filled rather than outlined.
+- **SVG text does not wrap.** A label is a few words bound to the geometry and lives in
+  the figure component; the sentence-level caption and the alt text live in the page
+  module beside the prose, where they reflow and can carry `<Cite>` markers.
+
+Colour was not needed for either figure and no token was added to `globals.css`. The
+drawing grammar carries the meaning instead, and it is deliberately the same grammar the
+band meter already uses: solid fill is a figure a source published, hatch is a range or
+an open end, a rule separates two things that must not be read as one, and an axis is
+drawn only where a source gives a domain. The water clocks figure has no axis on its
+second panel for exactly that reason: nobody has published how long restoration takes,
+and an axis would invite a reader to measure a date off it.
+
+**Where the style guide turned out to be underspecified.** §8 settles what a figure may
+look like but not what a figure may claim. Three gaps showed up in practice, and the
+answers are now in the figures README rather than in the guide: a drawing needs a stated
+rule that geometry may not assert a precision the source lacks (which is what produced
+the no-axis panel and the hatched fifth day); "never meaning in colour alone" needed a
+positive counterpart, which is the solid/hatch grammar; and alt text needed the extra
+requirement that where a figure exists to stop a misreading, the alt text has to carry
+the guard, not only the numbers. If any of those should be promoted into §8 as site-wide
+voice, that is a decision for the style guide rather than for the component folder.
+
 ## Copy lands as typed page modules, and the shape is what stops a wrong page
 
 **11 September 2026.** The finished copy in `docs/copy/` is markdown and there is no

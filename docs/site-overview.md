@@ -216,7 +216,7 @@ A thin complete grid is worth less than a few deep pages.
   layers becomes share-alike. Rather than hold the map work open on an enquiry, the site
   links to the maps, describes the findings in its own words, and ships **ground
   conditions as a text page**. The flagship graphic becomes the **Dedicated Fire
-  Protection System coverage boundary**, which is OGL–Vancouver and fully usable. The cost
+  Protection System mains**, which are OGL–Vancouver and fully usable. The cost
   is the critical-infrastructure-over-liquefaction overlay, which was the best original
   graphic the project had designed.
 - **The outside-help row is renamed "Where help comes from".** Decided 11 September 2026,

@@ -1,5 +1,12 @@
 import { Cite } from "@/components/citation";
-import { Prose, Quote, VerificationNote } from "@/components/page-parts";
+import { Figure, Prose, Quote, VerificationNote } from "@/components/page-parts";
+import {
+  ElectricityChronology,
+  ElectricityTwoClocks,
+  MurrinShortfall,
+  TransformerLeadTimes,
+  TransformerSpares,
+} from "@/components/figures/electricity";
 import type { PageModule } from "./index";
 
 /**
@@ -72,6 +79,19 @@ export const electricity: PageModule = {
             does not attach either to a particular earthquake: its wording is
             “in a large seismic event” and “depending on the magnitude”.
           </p>
+          <Figure
+            alt="BC Hydro gives two durations for downtown Vancouver: several weeks before customers have power again, and years before the system is completely restored. Neither is drawn on a scale, because BC Hydro publishes no number for either, and the two are not two ends of one clock."
+            caption={
+              <>
+                Two clocks, and they do not join up. BC Hydro states both in
+                words and neither as a figure, so neither panel carries a scale
+                to read a date off. Both are its statement about downtown
+                customers. <Cite id="BCH-WESTEND-25" />
+              </>
+            }
+          >
+            <ElectricityTwoClocks />
+          </Figure>
           <p>
             This was filed by BC Hydro in support of a project it wants
             approved, so the seismic consequence is the case being made. It is
@@ -112,6 +132,19 @@ export const electricity: PageModule = {
             of Murrin’s assets and 78 per cent of Dal Grauer’s are at or near
             the end of their working lives. <Cite id="BCH-WESTEND-25" />
           </p>
+          <Figure
+            alt="BC Hydro found Murrin Substation in downtown Vancouver not operable after a 1 in 1,000 year ground motion, while the building code requires a post-disaster building to be operable after a 1 in 2,475 year ground motion. The figure shows the gap between the two, and it is about one substation rather than the network."
+            caption={
+              <>
+                The axis carries only the two return periods the footnote
+                states. Nothing is filled in below 1 in 1,000, because the
+                assessment says what Murrin fails at rather than what it
+                withstands. <Cite id="BCH-WESTEND-25" />
+              </>
+            }
+          >
+            <MurrinShortfall />
+          </Figure>
         </Prose>
       ),
     },
@@ -212,6 +245,21 @@ export const electricity: PageModule = {
             engineering assessment of a specific, critical asset that does not
             meet it.
           </p>
+          <Figure
+            alt="BC Hydro said in 2011 that the system was built to withstand a 1 in 2,475 year event, its 2019 filing already stated Murrin could see a prolonged outage, its 2025 assessment found the substation not operable at 1 in 1,000, and the replacement is not in service until July 2032 at the earliest. The gap between knowing and fixing is about one downtown substation, not the region."
+            caption={
+              <>
+                Four dates on the public record. The band runs from the filing
+                that already stated the problem to the earliest date the
+                replacement can be in service, and it is left open because July
+                2032 is the earliest date and the regulator has not yet ruled.{" "}
+                <Cite id="BCH-SEIS-11" /> <Cite id="BCH-RRA-F2020" />{" "}
+                <Cite id="BCH-WESTEND-25" />
+              </>
+            }
+          >
+            <ElectricityChronology />
+          </Figure>
           <p>
             Newer assets are built differently. The Mount Pleasant substation,
             part of the Vancouver City Central Transmission project, is designed
@@ -241,6 +289,20 @@ export const electricity: PageModule = {
             Neither filing connects that strategy to an earthquake, to
             simultaneous losses, or to replacing many units at once.
           </p>
+          <Figure
+            alt="BC Hydro holds 10 spare power transformers against a fleet of 672 at 60 kV and above. Its filings describe the spares as covering a single failure and do not connect them to an earthquake."
+            caption={
+              <>
+                One mark is one transformer in both panels, on the same
+                columns. The counts are kept apart rather than added: the
+                spares are not drawn as a share of the fleet, and the filings
+                connect them to one failure rather than to many.{" "}
+                <Cite id="BCH-XFMR-21" /> <Cite id="BCH-RRA-F2020" />
+              </>
+            }
+          >
+            <TransformerSpares />
+          </Figure>
           <p>
             No lead time for a replacement transformer is published anywhere in
             BC Hydro’s regulatory record. What is published, in the United
@@ -256,6 +318,20 @@ export const electricity: PageModule = {
             substation that loses its transformers is waiting on an order, not
             on a repair crew.
           </p>
+          <Figure
+            alt="Average power transformer lead times in the United States rose from around 50 weeks in 2021 to roughly 120 weeks in 2024. These are United States market figures and not a forecast for British Columbia."
+            caption={
+              <>
+                United States market figures, which is what the drawing is
+                headed. No lead time for a replacement transformer is published
+                anywhere in BC Hydro’s regulatory record, so nothing here is a
+                British Columbia number. <Cite id="NIAC-LPT-24" />{" "}
+                <Cite id="WOODMAC-25" />
+              </>
+            }
+          >
+            <TransformerLeadTimes />
+          </Figure>
           <VerificationNote label="Not yet published">
             BC Hydro’s statement covers downtown Vancouver, and the Second
             Narrows crossing is the only other named asset. No restoration

@@ -1,5 +1,11 @@
 import { Cite } from "@/components/citation";
-import { Prose, VerificationNote } from "@/components/page-parts";
+import { Figure, Prose, VerificationNote } from "@/components/page-parts";
+import {
+  GroundBasinAmplification,
+  GroundDikeSettlement,
+  GroundSoilColumn,
+  GroundTwoGrounds,
+} from "@/components/figures/ground-conditions";
 import type { PageModule } from "./index";
 
 /**
@@ -12,6 +18,12 @@ import type { PageModule } from "./index";
  * terms the site will not meet (`docs/licensing.md`, `docs/research/maps.md`).
  * The copy makes that refusal part of the page rather than leaving a slot
  * promising a graphic, so there is no `MapPlaceholder` here.
+ *
+ * The four figures do not soften that. Each is drawn from numbers stated in the
+ * copy above it, none of them touches the microzonation layers, and none of
+ * them stands in for the map: a schematic of published figures is a drawing of
+ * facts, and a map of liquefaction susceptibility is what the site will not
+ * make.
  */
 export const groundConditions: PageModule = {
   meta: {
@@ -82,6 +94,37 @@ export const groundConditions: PageModule = {
             deposits underneath range from less than 20 m to more than 200 m
             thick. <Cite id="CJES-2024" />
           </p>
+          <Figure
+            alt="Three quarters of the soil profiles tested in Richmond and Delta hold more than 9.6 m of liquefiable material, the mean is 11.8 m, and the groundwater above it sits under 3 m and in places under 1 m. The drawing is a schematic of those figures and not a log of any one site."
+            caption={
+              <>
+                The two conditions the study puts together: material that can
+                liquefy, and a water table close enough to the surface to keep
+                it saturated. Depths are to scale and widths mean nothing. The
+                11.8 m is a mean total through each profile rather than one
+                continuous layer, and the drawing sets it under the water table
+                because saturation is what the mechanism needs.{" "}
+                <Cite id="JAVANBAKHT-24" />
+              </>
+            }
+          >
+            <GroundSoilColumn />
+          </Figure>
+          <Figure
+            alt="Under the downtown peninsula and the North Shore uplands the ground is bedrock, while the soft deposits under the Fraser delta run from less than 20 m to more than 200 m thick. That difference is larger than the difference between one building and its neighbour."
+            caption={
+              <>
+                Two grounds on one depth scale, kept apart because they are two
+                places rather than one profile. It is not a section: no source
+                gives the shape of the rock surface or a distance between the
+                two, so there is none in the drawing. No thickness is published
+                for the rock under the uplands, so nothing below that surface
+                is measured. <Cite id="CJES-2024" />
+              </>
+            }
+          >
+            <GroundTwoGrounds />
+          </Figure>
         </Prose>
       ),
     },
@@ -146,6 +189,20 @@ export const groundConditions: PageModule = {
             depths. An amplification factor without a period attached does not
             mean anything.
           </p>
+          <Figure
+            alt="At a shaking period of two seconds the average basin amplification is 1.7 where the Georgia Sedimentary Basin is 1 to 2 km deep and 2.63 where it is 3 to 4 km deep. Both factors belong to that period: an amplification factor with no period attached does not mean anything."
+            caption={
+              <>
+                Two factors from the province’s assessment, and the two basin
+                depths each belongs to. Both are averages at a shaking period of
+                two seconds, which is the range tall buildings respond to. 1.0
+                would be the ground neither growing nor damping the shaking.{" "}
+                <Cite id="DCRRA-APPC" />
+              </>
+            }
+          >
+            <GroundBasinAmplification />
+          </Figure>
           <p>
             This is the physical reason the two scenarios threaten different
             buildings. The offshore megathrust produces exactly the long, slow
@@ -245,6 +302,24 @@ export const groundConditions: PageModule = {
             of several metres or more could be anticipated.”{" "}
             <Cite id="RICH-THURBER-16" />
           </p>
+          <Figure
+            alt="The 2016 analysis models 600 mm of vertical movement at No. 1 Road, 1,000 mm at Bath Slough and 500 mm at No. 4 Road against a provincial guideline limit of 500 mm, so two of the three tested sections exceed it. These are three tested sections at the 1-in-2,475-year earthquake and the finding does not carry to the rest of the dikes."
+            caption={
+              <>
+                Four limits travel with these three numbers. They are three of
+                the eleven sections analysed, and the report says its results
+                apply only where it tested. They are modelled at the
+                1-in-2,475-year earthquake, which does not compare to figures
+                quoted for dams or for buildings. The later phases’ finding that
+                a cross-section will not meet the requirements describes
+                proposed upgraded designs without ground improvement. And that
+                ground improvement is being designed and costed.{" "}
+                <Cite id="RICH-THURBER-16" />
+              </>
+            }
+          >
+            <GroundDikeSettlement />
+          </Figure>
           <p>
             Later phases put it more plainly still. Phases 3, 4 and 5 each
             conclude that proposed dike cross-sections “will not meet the

@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose, Quote, DataTable } from "@/components/page-parts";
+import { Prose, Quote, DataTable, Figure } from "@/components/page-parts";
+import {
+  CascadiaRecurrence,
+  CrustalFaultSection,
+  ScenarioBuildingResponse,
+  ScenarioDurations,
+} from "@/components/figures/scenarios";
 import type { PageModule } from "./index";
 
 /**
@@ -9,7 +15,9 @@ import type { PageModule } from "./index";
  *
  * The words are the copy's, verbatim. The only reader-facing strings the copy
  * does not write are the two table captions, which name each table for a
- * screen reader and carry the guard that travels with the figures inside it.
+ * screen reader and carry the guard that travels with the figures inside it,
+ * and the alt text and captions of the four drawings, which are placed beside
+ * the prose they illustrate and replace none of it.
  *
  * The scenario cards and the system matrix are not here. They are built from
  * `SCENARIOS` and `SYSTEMS` in `@/content/site`, so the route draws them the
@@ -131,6 +139,21 @@ export const scenarios: PageModule = {
             downtown Vancouver, West Vancouver, Nanaimo, Gibsons, and on
             Gabriola and Bowen Islands. <Cite id="GSC-OF-8853" />
           </p>
+          <Figure
+            alt="The modelled crustal fault dips at 47 degrees to a bottom edge about 13 km down, and the earthquake starts 3 km down, which is shallow. The source gives no top edge to the plane, so the drawing stops where the source stops."
+            caption={
+              <>
+                A cross-section drawn from the three numbers the federal rupture
+                file states, at the same scale across and down so the dip is
+                true. <Cite id="OPENDRR-GSF-22" /> Only the segment between the
+                two stated depths is drawn. The footprint from near Nanaimo to
+                downtown Vancouver runs across the region rather than through
+                this section, so it is not on it.
+              </>
+            }
+          >
+            <CrustalFaultSection />
+          </Figure>
           <p>
             It is not a bare magnitude. The scenario is set on a January
             afternoon between 9am and 5pm, immediately after an atmospheric
@@ -295,6 +318,23 @@ export const scenarios: PageModule = {
             shaking moves tall buildings on soft ground. Neither earthquake is
             the other’s smaller version.
           </p>
+          <Figure
+            alt="Fast, sharp shaking is most hazardous to short, stiff, older buildings, while slow, long shaking moves tall buildings on soft ground. Neither earthquake is the other's smaller version, and the drawing shows how buildings respond rather than what happens to them."
+            caption={
+              <>
+                The same two buildings stand in both panels. What changes is how
+                fast the ground moves and which building that motion finds. The
+                province writes both halves: high frequency shaking is “most
+                hazardous to short buildings” <Cite id="PEIRS" />, and tall
+                buildings on deep, soft sediments “resonate with the long-period
+                seismic waves” of the megathrust. <Cite id="DCRRA-2025" /> The
+                waves are drawn at the same size as each other and carry no
+                scale, because neither document gives one.
+              </>
+            }
+          >
+            <ScenarioBuildingResponse />
+          </Figure>
         </Prose>
       ),
     },
@@ -334,6 +374,22 @@ export const scenarios: PageModule = {
             stated duration. <Cite id="ECR-2023" /> There is no general rule
             here, only named scenarios.
           </p>
+          <Figure
+            alt="The province's crustal magnitude 7.0 scenario gives 10 to 20 seconds of violent shaking, its Cascadia magnitude 9.0 scenario three minutes, and a federal magnitude 6.8 exercise scenario over one minute. A duration belongs to the scenario that states it and not to the magnitude."
+            caption={
+              <>
+                Three named scenarios on one scale. The third is the reason the
+                first two cannot be turned into a rule: it is the smallest
+                earthquake of the three and it shakes for longer than the
+                crustal scenario does. <Cite id="PEIRS" />{" "}
+                <Cite id="DCRRA-2025" /> <Cite id="ECR-2023" /> Its bar is solid
+                to one minute, which is what the exercise states, and hatched
+                past it under an arrow, because the exercise gives no end.
+              </>
+            }
+          >
+            <ScenarioDurations />
+          </Figure>
         </Prose>
       ),
     },
@@ -406,6 +462,22 @@ export const scenarios: PageModule = {
             Both are current, both are official, and the honest version is to
             say so rather than to pick one. The last rupture was in 1700.
           </p>
+          <Figure
+            alt="Four official sources give four different answers for how often Cascadia ruptures: averages between 400 and 630 years, inside stated ranges running from 100 years to 1,500. All four are drawn the same way, because all four are current and none is the right one. The scale is the interval between ruptures, not a date."
+            caption={
+              <>
+                The four rows of the table above, drawn against one another. The
+                solid block is the average each source gives, itself a range in
+                every case; the hatch is the wider range the same source states
+                around it. <Cite id="NRCAN-QA" /> <Cite id="MAZZOTTI-04" />{" "}
+                <Cite id="DCRRA-2025" /> <Cite id="PEIRS" /> The scale measures
+                the gap between one rupture and the next, so there is no point
+                on it that stands for a year.
+              </>
+            }
+          >
+            <CascadiaRecurrence />
+          </Figure>
         </Prose>
       ),
     },
