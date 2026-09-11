@@ -12,74 +12,93 @@ status: draft
 Most people picture an earthquake as a violent event with a clear end,
 followed by help arriving from outside. Consider this timeline instead.
 
-**Hours — it is over in a minute, and then you cannot reach anyone.**
+*The timeline carries no citation markers. Each panel is a consequence the
+system pages state and source, and the noun it hangs on links to that page; no
+figure appears in a panel, and the quoted passage keeps its attribution in
+words. See the module docblock in `src/content/pages/home.tsx`.*
+
+**Hours — it is over in a minute, and nothing works.**
 
 *Crustal M7:* In the province's own scenario the earthquake is heard before it is
 felt: a sound like a freight train, then 10 to 20 seconds of violent shaking that
 knocks people off their feet, "except for those who remember to drop, cover, and
 hold on". A small number of buildings collapse, many more shift and crack, and
 most of the people badly hurt are hurt by things falling — some of them while
-running outside. [PEIRS] [More about the shaking](/shaking/).
+running outside. [More about the shaking](/shaking/).
 
 *Cascadia M9:* The province's megathrust assessment sets its earthquake at ten in
-the morning on an August day, in a 30 to 40 degree heatwave with wildfire smoke.
-The shaking is moderate rather than violent and lasts about three minutes, and it
-arrives along a thousand kilometres of coast at once rather than under one city.
-[DCRRA-2025] [More about the shaking](/shaking/).
+the morning on an August day. The shaking is moderate rather than violent and
+lasts about three minutes, and it arrives along a thousand kilometres of coast at
+once rather than under one city. [More about the shaking](/shaking/).
 
-When it stops, the phone in your hand is what you reach for, and it is among the
-first things to fail. Nothing in Canada requires a [cell
-tower](/after/communications/) to hold any backup power at all; the regulator opened a proceeding in September 2025 to decide what
-that requirement should be, and has not decided. [CRTC-2025-226]
+The [power](/after/electricity/) is already off when the shaking stops — the
+lights, the lifts, the tills, the fuel pumps and the traffic signals at every
+intersection, all at the same moment. Everyone reaches for a
+[phone](/after/communications/) at once, and the towers that keep working are the
+ones with power left in them.
 
-**Days — water and food become things you have to go and find.** The
-[taps](/after/water/) are what most households notice first. In the megathrust assessment, getting bulk
-drinking water around the region stays difficult for the first four to five days.
-[DCRRA-2025]
+Over the next few hours the [water](/after/water/) pressure falls away as broken
+mains empty the system. Glass, brick and cladding lie across the pavements and
+[debris blocks streets](/after/transportation/) in every neighbourhood. Thousands
+of people are hurt, and the [hospitals](/after/health-care/) taking them stood
+through the same earthquake.
 
-The shops do not restock. The province expects the network that delivers
-[food](/after/food/) — meat, fruit and vegetables, dairy and bread — to take weeks
-or months, because the problem is moving the goods rather than having them, and a
-[service station](/after/fuel/) with full tanks and no power dispenses nothing.
-[PEIRS] [Roads](/after/transportation/) are cleared in a published order that puts
-lifeline routes first and local streets last, so your street waits.
-[MV-DEBRIS-17]
+**Days — nobody is coming to your street yet.** The taps are dry. Bottled
+[water](/after/water/) is the first thing to go from the shops, and the shops do
+not restock: [food](/after/food/) arrives by truck through the same broken roads
+as everything else, and a [service station](/after/fuel/) with full tanks and no
+power dispenses nothing. Cards do not work without power or a network.
 
-**Weeks — the power comes back in patches, and the toilet still does not work.**
-BC Hydro told its regulator in November 2025 that a large earthquake could leave
-up to two thirds of downtown customers without [power](/after/electricity/) for
-several weeks. [BCH-WESTEND-25] Your street comes back when its own poles and wires do, which is
-not when the city centre does.
+Crews clear the routes the response needs first, which is not your street, so
+what you can reach is what you can walk or cycle to. The
+[toilet](/after/sanitation/) stops being usable on the first day rather than the
+first week, because flushing takes water nobody has to spare. The province's own
+plan expects neighbours to organise themselves and work together without waiting
+to be told, so the people who reach you first are the people who already live on
+your street.
 
-The [toilet](/after/sanitation/) is the part nobody plans for. With no water to
-flush and the sewers damaged as well, an apartment tower has nothing else to use,
-and the province expects disruption to water and wastewater for many months.
-[PEIRS] [Gas](/after/gas/) cannot be turned back on from a control room either: it returns only when a technician
-reaches your building and relights every appliance in it. [BCUC-C-6-25]
+**Weeks — some things come back. The ones under the road do not.**
+[Power](/after/electricity/) returns in patches, the core before the edges,
+because putting poles and wires back up is thousands of small repairs rather than
+one big one. Your street comes back when its own poles do.
+[Water](/after/water/) follows behind it, and the worst ground is served last.
 
-**Months — months is not a new set of failures. It is how long the first ones
-take.** The [building you live in](/after/housing/) can be standing and still
-closed. The City of
-Vancouver states that areas with a high concentration of damage may be closed off
-for weeks, months or even years. [COV-RISK-2024] BC Hydro puts its own system
-years from complete restoration. [BCH-WESTEND-25]
+The [sewers](/after/sanitation/) are what nobody can give you a date for.
+Households manage waste in buckets and chemical toilets, and an apartment tower
+has nowhere else to put it. [Gas](/after/gas/) returns building by building, as
+fast as technicians can enter each one and relight every appliance in it.
+Drinking water arrives on trucks, at points people queue at, and schools and
+workplaces are shut or somewhere else.
 
-Through all of it the province's plan is that people shelter within the region
-rather than leave it. [PEIRS] [What that means for getting
-around](/getting-around/).
+**Months — repair becomes the ordinary state of things.** The [building you live
+in](/after/housing/) can be standing, sound to look at, and closed for months
+behind a cordon — and most people who lose their home lose it that way rather
+than to collapse. Somewhere to move into is scarce, contractors and engineers are
+scarcer, and every household in the region is looking at the same time.
 
-How bad each of those stretches is depends on the weather it happens in. Running
-out of water in an August heat dome is not the same as running out of it in
-January after days of rain, and the province's two scenarios are set in exactly
-those two conditions: a 30 to 40 degree heatwave with wildfire smoke for the
-megathrust, [DCRRA-2025] a January afternoon after an atmospheric river for the
-crustal earthquake. [PEIRS]
+Utilities run at reduced service long after they are back on, and the network as
+a whole is years from the state it was in the morning before. The province's plan
+through all of it is that people stay in the region rather than leave it. [What
+that means for getting around](/getting-around/).
 
-None of those failures happens on its own. Water needs power for pumps and roads
-for crews. Roads need debris cleared, which needs fuel. How long the region waits
-depends less on any one system than on the order in which they can be brought
-back, which is why [life afterwards](/after/) is told system by system and [the
-dependency graph](/dependencies/) counts what each system is waiting on.
+No two earthquakes do the same thing, and none of that is a forecast of what
+yours will do. It follows the two events the province and its agencies plan
+around — the ones households are asked to be ready for — and every page it links
+to carries the documents behind it, the numbers, and the places where two
+official documents disagree.
+
+How hard each of those stretches is also depends on the weather it happens in.
+Running out of water in an August heat dome is not the same as running out of it
+in January after days of rain, and the two scenarios are set in exactly those two
+conditions: a 30 to 40 degree heatwave with wildfire smoke for the megathrust,
+[DCRRA-2025] a January afternoon after an atmospheric river for the crustal
+earthquake. [PEIRS]
+
+None of those failures happens on its own, either. Water needs power for pumps
+and roads for crews. Roads need debris cleared, which needs fuel. How long the
+region waits depends less on any one system than on the order in which they can
+be brought back, which is why [life afterwards](/after/) is told system by system
+and [the dependency graph](/dependencies/) counts what each system is waiting on.
 
 ## Go deeper on any part of it
 
@@ -132,5 +151,4 @@ when getting it to you is hardest.
 
 ## Sources on this page
 
-[PREPAREDBC] [RESEARCHCO-PREP-21] [DCRRA-2025] [PEIRS] [CRTC-2025-226]
-[MV-DEBRIS-17] [BCH-WESTEND-25] [BCUC-C-6-25] [COV-RISK-2024] [NRCAN-1700]
+[PREPAREDBC] [RESEARCHCO-PREP-21] [DCRRA-2025] [PEIRS] [NRCAN-1700]

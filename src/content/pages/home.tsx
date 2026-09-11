@@ -23,6 +23,18 @@ import type { PageModule } from "./index";
  * a reader who has not yet been told why this matters has no reason to work
  * through the difference between a megathrust and a crustal earthquake.
  *
+ * The timeline carries no citation markers, and that is the one place this
+ * page departs from the site's habit. Its four panels make no claim of their
+ * own: every sentence in them is a consequence a system page states and
+ * sources, and the noun it hangs on is a link to that page. Markers on prose
+ * written this way would number the same handful of documents nine times over
+ * and make a narrative read like a filing. Two rules keep it honest. **No
+ * figure appears in an unmarked panel** — the numbers stay on the pages that
+ * can guard them, which is also why the panels read better. And the quoted
+ * passage keeps its attribution in words, because a quotation without a
+ * speaker is worse than a claim without a marker. The paragraph under the
+ * timeline says what the reader is looking at and where the evidence is.
+ *
  * The standfirst opens on the gap the site exists to close: the province asks
  * for two weeks, and households are not carrying it. Both halves are cited, and
  * the second says kit ownership rather than days of supply because that is what
@@ -91,11 +103,6 @@ export const home: PageModule = {
       "RESEARCHCO-PREP-21",
       "DCRRA-2025",
       "PEIRS",
-      "CRTC-2025-226",
-      "MV-DEBRIS-17",
-      "BCH-WESTEND-25",
-      "BCUC-C-6-25",
-      "COV-RISK-2024",
       "NRCAN-1700",
     ],
   },
@@ -110,22 +117,22 @@ export const home: PageModule = {
             items={[
               {
                 phase: "hours",
-                heading:
-                  "It is over in a minute, and then you cannot reach anyone",
+                heading: "It is over in a minute, and nothing works",
                 body: (
                   <>
                     <ScenarioText
                       as="p"
                       crustal={
                         <>
-                          In the province’s own scenario the earthquake is heard
-                          before it is felt: a sound like a freight train, then
-                          10 to 20 seconds of violent shaking that knocks people
-                          off their feet, “except for those who remember to
-                          drop, cover, and hold on”. A small number of buildings
-                          collapse, many more shift and crack, and most of the
-                          people badly hurt are hurt by things falling — some of
-                          them while running outside. <Cite id="PEIRS" />{" "}
+                          In the province’s own scenario the earthquake is
+                          heard before it is felt: a sound like a freight train,
+                          then 10 to 20 seconds of violent shaking that knocks
+                          people off their feet, “except for those who
+                          remember to drop, cover, and hold on”. A small
+                          number of buildings collapse, many more shift and
+                          crack, and most of the people badly hurt are hurt by
+                          things falling — some of them while running
+                          outside.{" "}
                           <Link href="/shaking/" className={link}>
                             More about the shaking
                           </Link>
@@ -135,12 +142,11 @@ export const home: PageModule = {
                       cascadia={
                         <>
                           The province’s megathrust assessment sets its
-                          earthquake at ten in the morning on an August day, in a
-                          30 to 40 degree heatwave with wildfire smoke. The
+                          earthquake at ten in the morning on an August day. The
                           shaking is moderate rather than violent and lasts
                           about three minutes, and it arrives along a thousand
                           kilometres of coast at once rather than under one
-                          city. <Cite id="DCRRA-2025" />{" "}
+                          city.{" "}
                           <Link href="/shaking/" className={link}>
                             More about the shaking
                           </Link>
@@ -149,54 +155,76 @@ export const home: PageModule = {
                       }
                     />
                     <p>
-                      When it stops, the phone in your hand is what you reach
-                      for, and it is among the first things to fail. Nothing in
-                      Canada requires a{" "}
-                      <Link href="/after/communications/" className={link}>
-                        cell tower
+                      The{" "}
+                      <Link href="/after/electricity/" className={link}>
+                        power
                       </Link>{" "}
-                      to hold any backup power at all; the regulator opened a proceeding in September 2025
-                      to decide what that requirement should be, and has not
-                      decided. <Cite id="CRTC-2025-226" />
+                      is already off when the shaking stops — the lights,
+                      the lifts, the tills, the fuel pumps and the traffic
+                      signals at every intersection, all at the same moment.
+                      Everyone reaches for a{" "}
+                      <Link href="/after/communications/" className={link}>
+                        phone
+                      </Link>{" "}
+                      at once, and the towers that keep working are the ones
+                      with power left in them.
+                    </p>
+                    <p>
+                      Over the next few hours the{" "}
+                      <Link href="/after/water/" className={link}>
+                        water
+                      </Link>{" "}
+                      pressure falls away as broken mains empty the system.
+                      Glass, brick and cladding lie across the pavements and{" "}
+                      <Link href="/after/transportation/" className={link}>
+                        debris blocks streets
+                      </Link>{" "}
+                      in every neighbourhood. Thousands of people are hurt, and
+                      the{" "}
+                      <Link href="/after/health-care/" className={link}>
+                        hospitals
+                      </Link>{" "}
+                      taking them stood through the same earthquake.
                     </p>
                   </>
                 ),
               },
               {
                 phase: "days",
-                heading: "Water and food become things you have to go and find",
+                heading: "Nobody is coming to your street yet",
                 body: (
                   <>
                     <p>
-                      The{" "}
+                      The taps are dry. Bottled{" "}
                       <Link href="/after/water/" className={link}>
-                        taps
+                        water
                       </Link>{" "}
-                      are what most households notice first. In the megathrust
-                      assessment, getting bulk drinking water around the region
-                      stays difficult for the first four to five days.{" "}
-                      <Cite id="DCRRA-2025" />
-                    </p>
-                    <p>
-                      The shops do not restock. The province expects the network
-                      that delivers{" "}
+                      is the first thing to go from the shops, and the shops do
+                      not restock:{" "}
                       <Link href="/after/food/" className={link}>
                         food
                       </Link>{" "}
-                      — meat, fruit and vegetables, dairy and bread — to take
-                      weeks or months, because the problem is moving the goods
-                      rather than having them, and a{" "}
+                      arrives by truck through the same broken roads as
+                      everything else, and a{" "}
                       <Link href="/after/fuel/" className={link}>
                         service station
                       </Link>{" "}
-                      with full tanks and no power dispenses nothing.{" "}
-                      <Cite id="PEIRS" />{" "}
-                      <Link href="/after/transportation/" className={link}>
-                        Roads
+                      with full tanks and no power dispenses nothing. Cards do
+                      not work without power or a network.
+                    </p>
+                    <p>
+                      Crews clear the routes the response needs first, which is
+                      not your street, so what you can reach is what you can
+                      walk or cycle to. The{" "}
+                      <Link href="/after/sanitation/" className={link}>
+                        toilet
                       </Link>{" "}
-                      are cleared in a published order that puts lifeline routes
-                      first and local streets last, so your street waits.{" "}
-                      <Cite id="MV-DEBRIS-17" />
+                      stops being usable on the first day rather than the first
+                      week, because flushing takes water nobody has to spare.
+                      The province’s own plan expects neighbours to
+                      organise themselves and work together without waiting to
+                      be told, so the people who reach you first are the people
+                      who already live on your street.
                     </p>
                   </>
                 ),
@@ -204,43 +232,44 @@ export const home: PageModule = {
               {
                 phase: "weeks",
                 heading:
-                  "The power comes back in patches, and the toilet still does not work",
+                  "Some things come back. The ones under the road do not",
                 body: (
                   <>
                     <p>
-                      BC Hydro told its regulator in November 2025 that a large
-                      earthquake could leave up to two thirds of downtown
-                      customers without{" "}
                       <Link href="/after/electricity/" className={link}>
-                        power
+                        Power
                       </Link>{" "}
-                      for several weeks. <Cite id="BCH-WESTEND-25" /> Your street comes back when
-                      its own poles and wires do, which is not when the city
-                      centre does.
+                      returns in patches, the core before the edges, because
+                      putting poles and wires back up is thousands of small
+                      repairs rather than one big one. Your street comes back
+                      when its own poles do.{" "}
+                      <Link href="/after/water/" className={link}>
+                        Water
+                      </Link>{" "}
+                      follows behind it, and the worst ground is served last.
                     </p>
                     <p>
                       The{" "}
                       <Link href="/after/sanitation/" className={link}>
-                        toilet
+                        sewers
                       </Link>{" "}
-                      is the part nobody plans for. With no water to flush and
-                      the sewers damaged as well, an apartment tower has nothing
-                      else to use, and the province expects disruption to water
-                      and wastewater for many months. <Cite id="PEIRS" />{" "}
+                      are what nobody can give you a date for. Households manage
+                      waste in buckets and chemical toilets, and an apartment
+                      tower has nowhere else to put it.{" "}
                       <Link href="/after/gas/" className={link}>
                         Gas
                       </Link>{" "}
-                      cannot be turned back on from a control room either: it returns only when a technician
-                      reaches your building and relights every appliance in it.{" "}
-                      <Cite id="BCUC-C-6-25" />
+                      returns building by building, as fast as technicians can
+                      enter each one and relight every appliance in it. Drinking
+                      water arrives on trucks, at points people queue at, and
+                      schools and workplaces are shut or somewhere else.
                     </p>
                   </>
                 ),
               },
               {
                 phase: "months",
-                heading:
-                  "Months is not a new set of failures. It is how long the first ones take",
+                heading: "Repair becomes the ordinary state of things",
                 body: (
                   <>
                     <p>
@@ -248,17 +277,19 @@ export const home: PageModule = {
                       <Link href="/after/housing/" className={link}>
                         building you live in
                       </Link>{" "}
-                      can be standing and still closed. The City of Vancouver
-                      states that areas with a high
-                      concentration of damage may be closed off for weeks,
-                      months or even years. <Cite id="COV-RISK-2024" /> BC Hydro
-                      puts its own system years from complete restoration.{" "}
-                      <Cite id="BCH-WESTEND-25" />
+                      can be standing, sound to look at, and closed for months
+                      behind a cordon — and most people who lose their home
+                      lose it that way rather than to collapse. Somewhere to
+                      move into is scarce, contractors and engineers are
+                      scarcer, and every household in the region is looking at
+                      the same time.
                     </p>
                     <p>
-                      Through all of it the province’s plan is that people
-                      shelter within the region rather than leave it.{" "}
-                      <Cite id="PEIRS" />{" "}
+                      Utilities run at reduced service long after they are back
+                      on, and the network as a whole is years from the state it
+                      was in the morning before. The province’s plan
+                      through all of it is that people stay in the region rather
+                      than leave it.{" "}
                       <Link href="/getting-around/" className={link}>
                         What that means for getting around
                       </Link>
@@ -271,19 +302,28 @@ export const home: PageModule = {
           />
           <Prose>
             <p>
-              How bad each of those stretches is depends on the weather it
+              No two earthquakes do the same thing, and none of that is a
+              forecast of what yours will do. It follows the two events the
+              province and its agencies plan around — the ones households are
+              asked to be ready for — and every page it links to carries the
+              documents behind it, the numbers, and the places where two
+              official documents disagree.
+            </p>
+            <p>
+              How hard each of those stretches is also depends on the weather it
               happens in. Running out of water in an August heat dome is not the
               same as running out of it in January after days of rain, and the
-              province’s two scenarios are set in exactly those two conditions:
-              a 30 to 40 degree heatwave with wildfire smoke for the megathrust,{" "}
+              two scenarios are set in exactly those two conditions: a 30 to 40
+              degree heatwave with wildfire smoke for the megathrust,{" "}
               <Cite id="DCRRA-2025" /> a January afternoon after an atmospheric
               river for the crustal earthquake. <Cite id="PEIRS" />
             </p>
             <p>
-              None of those failures happens on its own. Water needs power for
-              pumps and roads for crews. Roads need debris cleared, which needs
-              fuel. How long the region waits depends less on any one system
-              than on the order in which they can be brought back, which is why{" "}
+              None of those failures happens on its own, either. Water needs
+              power for pumps and roads for crews. Roads need debris cleared,
+              which needs fuel. How long the region waits depends less on any
+              one system than on the order in which they can be brought back,
+              which is why{" "}
               <Link href="/after/" className={link}>
                 life afterwards
               </Link>{" "}
