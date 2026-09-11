@@ -75,24 +75,20 @@ matters to you depends on the building you are in and the ground it stands on.
 shaking](/shaking/), which covers the ground under the region, the buildings on
 it, and the fires and landslides that arrive after the shaking stops.
 
-## This site puts scattered published work in one place you can walk through
+## Where the documents disagree, this site says so
 
-Most of what is on these pages is already in print: federal and provincial
-scenarios, utility filings with their regulators, municipal plans, peer-reviewed
-engineering. It is spread across dozens of documents, each written for somebody
-else — a regulator, a council, another engineer — and none of them written to
-tell you what a month without a working toilet looks like. What this site adds is
-the gathering. The pieces sit next to each other here, in an order you can walk
-through. No number on the site is a new estimate.
+No number here is a new estimate. Where nobody has published an answer, the page
+says so rather than filling the gap with a guess. Where two official documents
+contradict each other, both are here and the page says where they part company —
+British Columbia's own advice on how long a household should expect to last alone
+is published in six different versions, and [preparing](/prepare/) sets them side
+by side.
 
-Where nobody has published an answer, the gap is stated rather than filled with a
-guess. Where two official documents disagree, both are here. How long a system is
-out is written as one of three bands — Low, Medium or High — with a fourth state,
-not yet assessed, drawn hatched, which means nobody has published an assessment.
-[How the bands work](/method/).
-
-[The sources](/sources/) lists every document. [Contribute](/contribute/) explains
-what a correction needs in order to be usable.
+How long a system is out is written as one of three bands, Low, Medium or High,
+with a fourth state, not yet assessed, drawn hatched. [How the bands
+work](/method/). [The sources](/sources/) lists every document, and
+[contribute](/contribute/) explains what a correction needs in order to be
+usable.
 
 ## Start here
 
