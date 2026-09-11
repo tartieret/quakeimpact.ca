@@ -302,8 +302,8 @@ export const home: PageModule = {
           />
           <Prose>
             <p>
-              No two earthquakes do the same thing, and none of that is a
-              forecast of what yours will do. It follows the two events the
+              No two earthquakes do the same thing, and none of this is a
+              forecast of the actual event. It follows the two events the
               province and its agencies plan around, which are the ones
               households are asked to be ready for.
             </p>

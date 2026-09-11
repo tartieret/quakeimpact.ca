@@ -81,8 +81,8 @@ a whole is years from the state it was in the morning before. The province's pla
 through all of it is that people stay in the region rather than leave it. [What
 that means for getting around](/getting-around/).
 
-No two earthquakes do the same thing, and none of that is a forecast of what
-yours will do. It follows the two events the province and its agencies plan
+No two earthquakes do the same thing, and none of this is a forecast of the
+actual event. It follows the two events the province and its agencies plan
 around, which are the ones households are asked to be ready for.
 
 How hard each of those stretches is also depends on the weather it happens in.
