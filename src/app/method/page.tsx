@@ -5,6 +5,7 @@ import {
   Section,
   Prose,
   Callout,
+  VerificationNote,
   NextPrev,
 } from "@/components/page-parts";
 import { BandMeter } from "@/components/band";
@@ -16,27 +17,31 @@ export const metadata: Metadata = { title: "Method & bands" };
 
 const ORDER: Band[] = ["low", "medium", "high", "unknown"];
 
+/**
+ * The project's six principles, written for the reader rather than in the
+ * project's own shorthand. The shorthand lives in `docs/site-overview.md` §2.
+ */
 const PRINCIPLES = [
-  "Restoration time is the spine",
-  "Every claim carries a source",
-  "No doom without a lever",
-  "Coupling over inventory",
-  "Analogues illustrate, they never generate numbers",
-  "Assumptions are research tasks, not content",
+  "How long a system takes to come back matters more than how badly it broke.",
+  "Every figure on this site names the document it came from.",
+  "Every section ends with something you can do.",
+  "Systems are shown as they depend on each other, not as a list.",
+  "Christchurch and Kobe show what life was like. They never supply a number for here.",
+  "Anything a document has not confirmed is shown as an open question, not written as fact.",
 ];
 
 export default function MethodPage() {
   return (
     <ReadingShell>
       <PageHeader
-        kicker="Linked from every impact cell"
+        kicker="What low, medium and high mean here"
         title="How the bands are defined"
         standfirst={lorem(2, 270)}
       />
 
       <Section
         title="The rubric"
-        lede="Deliberately system-agnostic, so that high for sanitation and high for transport mean comparable things."
+        lede="The same rubric for every system, so that high for sanitation and high for transportation mean comparable things."
       >
         <div className="flex flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule">
           {ORDER.map((band) => (
@@ -66,12 +71,33 @@ export default function MethodPage() {
         </div>
       </Section>
 
+      <Section title="What a hatched cell means">
+        <Callout label="A statement about the public record">
+          <p className="max-w-2xl text-lg leading-relaxed">
+            A hatched cell says nobody has published an assessment this scale
+            can read. It does not say the system is safe, and it does not say
+            the system is doomed.
+          </p>
+        </Callout>
+        <div className="mt-6">
+          <Prose paragraphs={loremParagraphs(2, 272)} />
+        </div>
+        <div className="mt-6">
+          <VerificationNote>
+            Three different situations currently share one hatch: never
+            assessed, assessed and not published, and assessed for something
+            other than earthquakes. Whether the fourth band should be split is
+            an open design question.
+          </VerificationNote>
+        </div>
+      </Section>
+
       <Section title="Why bands and not figures">
         <Prose paragraphs={loremParagraphs(3, 275)} />
       </Section>
 
-      <Section title="Presentation rule">
-        <Callout label="Never a coloured cell alone">
+      <Section title="Why every cell has a sentence beside it">
+        <Callout label="A colour on its own is only an assertion">
           <p className="text-lg leading-relaxed">
             Every impact on this site is band, then one sentence of mechanism,
             then a source link.
@@ -92,7 +118,14 @@ export default function MethodPage() {
         </ol>
       </Section>
 
-      <Section title="Assumption discipline">
+      <Section
+        title="Canada has one earthquake loss model, not several"
+        lede="Where two governments quote the same casualty figure, that is one model quoted twice — not two studies agreeing."
+      >
+        <Prose paragraphs={loremParagraphs(2, 279)} />
+      </Section>
+
+      <Section title="What happens when nobody has published an answer">
         <Prose paragraphs={loremParagraphs(2, 282)} />
       </Section>
 

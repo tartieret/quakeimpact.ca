@@ -6,8 +6,9 @@
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
 
-**Status.** Twelve systems assessed — one of them a system the site does not yet
-carry — and one entry that should stop being a system at all. **One and a half rows
+**Status.** Thirteen systems assessed, and `src/content/site.ts` now carries the
+assignment. Natural gas, which the site did not carry, is in the grid; weather, which
+was never a system, is out of it and renders on the timeline instead. **One and a half rows
 carry no published assessment**: dams in both scenarios, and large infrastructure
 in the crustal column only.
 
@@ -28,53 +29,67 @@ source that `ImpactCell` requires, and a reconciliation against what
 | Sanitation | High | High | The province states that disruption to water and wastewater systems is expected for many months; Metro Vancouver has built individual plants to post-disaster standard, which is not the same as making the network survive. | [PEIRS] **[A]** |
 | Transportation | High | High | The province designates routes that must stay open after a major earthquake, and states that it is not retrofitting the bridges on them to stay open. | [MOTI-SRDC-05] **[A]** |
 | Large infrastructure | **Medium** | Not yet assessed | Modelling for an M9 puts one to two weeks of service disruption at some Vancouver-area ports, road access to the airport cut in the first critical days because every bridge to it is damaged, and moderate liquefaction damage at the delta terminals. | [AIR-2013] **[A]** |
-| Food and fuel | High | High | Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable and the consumer-goods network to take weeks or months to recover. | [PEIRS] **[A]** |
+| Fuel | High | High | Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable. | [PEIRS] **[A]** |
+| Food | High | High | The province expects the fast-moving consumer goods network to take weeks or months to recover; the problem is logistics rather than stock. | [PEIRS] **[A]** |
 | Natural gas | High | High | Gas is the one utility that cannot be restored in bulk: service returns only when a technician has entered every affected building and relit every appliance. | [BCUC-C-6-25] **[B]** |
 | Dams and reservoirs | Not yet assessed | Not yet assessed | Both dams were reviewed by an engineer in 2024, as the law requires every seven years for the top consequence class, and both were found safe — but neither published conclusion mentions earthquakes, and the seismic upgrade has not started. **Assessed, but not for this.** | [MV-DSP-2025] [MV-CAPITAL-2027] **[A]** |
 | Housing | High | High | Displacement is counted in the tens of thousands of households, there is no published shelter capacity to receive them, and cordoning removes people from homes that survived. | [PEIRS] [COV-RISK-2024] **[A]** |
 | Health care | Medium | Medium | About 65% of one health authority's buildings would likely be completely damaged at the ground motion the current code designs for, and no published document compares the casualty load to regional bed capacity. | [DCRRA-APPC] **[A]** |
-| Absence of outside help | High | Low | BC's plan assumes agencies outside the impact area are unaffected and stages resources there; in a Cascadia event the province states the US will be unable to deliver mutual aid. | [PEIRS] **[A]** |
+| Where help comes from | High | Low | BC's plan assumes agencies outside the impact area are unaffected and stages resources there; in a Cascadia event the province states the US will be unable to deliver mutual aid. | [PEIRS] **[A]** |
 
 **Weather is not in the table, and should not be.** It is a scenario condition, not
-a system, and it is rendered on the timeline. See `../site-overview.md` §9. The
-grid keeps twelve systems — gas takes the row weather
-vacates, which is a better trade than it looks, because gas fails in a way nothing
-else on the grid does and weather never failed at all.
+a system. It is now carried on `Scenario.conditions` and rendered by `TimelineStrip`
+for whichever scenario is selected, with the two conditions shown side by side on
+`/scenarios/`. See `../site-overview.md` §9. Gas takes the row weather vacates,
+which is a better trade than it looks, because gas fails in a way nothing else on
+the grid does and weather never failed at all.
 
 ---
 
 ## Reconciliation against `src/content/site.ts`
 
-The code currently carries scaffolding, not findings. Seven of the thirteen rows
-below disagree, and **in every disagreement but one the code is more confident than
-the evidence** — the exception is large infrastructure, noted in the table.
+**Closed 11 September 2026.** `SYSTEMS` now matches this file row for row. The
+table below is the state after the change, kept so the assignment can be checked
+against the code without reading both.
 
-| System | Code says | Research says | |
+It is written against the **thirteen** rows the code carries, not the twelve this
+file originally assessed: food and fuel are separate entries in `SYSTEMS`, and the
+band is High in both scenarios for each. The split does not change the assignment —
+PEIRS states the mechanism for both — but it does mean this file's "food and fuel"
+row resolves to two.
+
+| System | Cascadia | Crustal | Was, before 11 September |
 | --- | --- | --- | --- |
-| Communications | high / high | Medium / Medium | **conflict** — code asserts High where nothing was assessed |
-| Electricity | high / high | High / High | agrees — scaffolded, nothing behind it |
-| Water | high / high | High / High | agrees — scaffolded, nothing behind it |
-| Sanitation | high / high | High / High | agrees — scaffolded, nothing behind it |
-| Transportation | high / **medium** | High / **High** | **conflict**, crustal column |
-| Large infrastructure | unknown / unknown | **Medium** / Not yet assessed | **conflict**, Cascadia column — the code is *less* confident than the evidence, the only row where that is true |
-| Food and fuel | high / **medium** | High / **High** | **conflict**, crustal column |
-| Dams and reservoirs | unknown / unknown | Not yet assessed | agrees |
-| Housing | high / high | High / High | agrees — scaffolded, nothing behind it |
-| Health care | high / high | **Medium / Medium** | **conflict** |
-| Weather | medium / medium | *removed — not a system* | **decided**: drop from `SYSTEMS`, render on the timeline |
-| Absence of outside help | high / low | High / Low | agrees |
-| Natural gas | *absent* | High / High | **decided**: add to `SYSTEMS`, taking the row weather vacates |
+| Communications | Medium | Medium | high / high — asserted where nothing was assessed |
+| Electricity | High | High | high / high |
+| Water | High | High | high / high |
+| Sanitation | High | High | high / high |
+| Natural gas | High | High | *absent from the grid* |
+| Transportation | High | High | high / **medium** |
+| Large infrastructure | Medium | Not yet assessed | unknown / unknown — the code was *less* confident than the evidence |
+| Fuel | High | High | high / **medium** |
+| Food | High | High | high / **medium** |
+| Dams and reservoirs | Not yet assessed | Not yet assessed | unknown / unknown |
+| Housing | High | High | high / high |
+| Health care | Medium | Medium | **high / high** |
+| Where help comes from | High | Low | high / low, under the name "The absence of outside help" |
+| Weather | *not a system* | | medium / medium — **removed from `SYSTEMS`** |
 
-The agreements matter as much as the conflicts. In four rows — electricity, water,
-sanitation and housing — the code asserts a band with nothing behind it and happens
-to land on the answer the evidence gives.
-**Those rows are replaced too.** A right answer arrived at that way is still a
+The four rows that already agreed — electricity, water, sanitation, housing — were
+replaced along with the rest. A right answer arrived at by scaffolding is still a
 defect, because the next scaffolded value will not be lucky.
 
-`Impact.mechanism` is `loremLine()` and `Impact.source` is `"TBD"` for all
-twenty-four cells. The mechanism column above is the raw material for those
-fields, but it is research prose and does not ship as written — see
-`CONVENTIONS.md` and the copy pass.
+**What did not move.** `Impact.mechanism` is still `loremLine()` and `Impact.source`
+is still `"TBD"` in every cell. The mechanism column above is the raw material for
+those fields, but it is research prose and does not ship as written — see
+`CONVENTIONS.md` and the copy pass. A band on the site today is a sourced judgement
+inside placeholder text, and the page must not be read as finished.
+
+**Build tiers moved with the bands.** Health care went from tier 3 to tier 2 and gas
+entered at tier 2, following the "Then" list in `build-order.md`. Where help comes
+from stays at tier 3 although its file is among the better-sourced in the folder;
+`build-order.md` does not place it, and that is a gap in the build order rather than
+a judgement about the evidence.
 
 ---
 
@@ -95,7 +110,8 @@ stops meaning anything.
 
 **Natural gas becomes a system — decided.** It was absent, and its mechanism is unlike
 any other on the grid: restoration is rate-limited not by repair but by sending a
-qualified person into every affected building. The grid keeps twelve systems.
+qualified person into every affected building. The grid keeps thirteen systems —
+weather having left it, and food and fuel standing as separate rows in the code.
 
 **Electricity bands High — decided, with the inference refused.** BC Hydro's statement
 is specific to Murrin Substation and downtown Vancouver. The band is High because the

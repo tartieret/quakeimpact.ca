@@ -31,11 +31,11 @@ Static export was chosen over an SPA because the site is public-facing content p
                         secondary-hazards
 /after/                 Part 2 index — timeline + system grid by build tier
 /after/[slug]/          13 system pages
-/leaving/               Part 2b — who can actually leave
+/getting-around/        Part 2b — moving after the shaking
 /dependencies/          the dependency graph
 /prepare/               Part 3
 /method/                band rubric, principles, assumption discipline
-/sources/               source register + the citation convention
+/sources/               the source register, rendered from REFERENCES
 /contribute/            what the project can use, and how to send it
 /about/
 ```
@@ -49,12 +49,11 @@ Static export was chosen over an SPA because the site is public-facing content p
 Everything lives in `src/content/site.ts`. The route templates hold no content.
 
 - `SITE` — name, domain, tagline, draft status banner
-- `SCENARIOS` — the two scenarios and their comparison rows
+- `SCENARIOS` — the two scenarios and their comparison rows, including the named official simulation behind each and the `conditions` field. **Weather is a scenario condition, not a system**: it does not fail, so it cannot carry a band, and both official scenarios set one in opposite directions. `TimelineStrip` renders the condition for the selected scenario, and `/scenarios/` shows the two side by side
 - `BANDS` — the rubric from overview section 4, including `unknown`
 - `PHASES` — hours / days / weeks / months
-- `SYSTEMS` — the thirteen systems, each with hook, `bitesAt` phase, per-scenario impact, `dependsOn` edges, and build tier from overview section 8. Food and fuel are separate entries: fuel is an input every other system's repair competes for, food is a demand that cannot be stored, and merging them hides the edge between them
-  **Pending code change, decided 10 September 2026:** `weather` leaves `SYSTEMS` and is rendered on the timeline; `gas` joins it. The count stays at thirteen. Weather was carried with a `medium/medium` band the evidence declines to assign — it is a scenario condition, not a system that fails. See `research/impact-bands.md`.
-- **The band values in `SYSTEMS` are scaffolding, not findings.** `research/impact-bands.md` holds the assessed bands, and in most rows the code is currently more confident than the evidence; in several it asserts a band where nothing had been assessed. `Impact.mechanism` is `loremLine()` and `Impact.source` is `"TBD"` in every cell. Do not treat the current values as sourced. **The reconciliation in `research/impact-bands.md` predates the food/fuel split and is written against twelve rows; re-derive it against the thirteen in the code.**
+- `SYSTEMS` — the thirteen systems, each with hook, `bitesAt` phase, per-scenario impact, `dependsOn` edges, and build tier from overview section 8. Food and fuel are separate entries: fuel is an input every other system's repair competes for, food is a demand that cannot be stored, and merging them hides the edge between them. `weather` is not among them and `gas` is — the count stays at thirteen
+- **The band values now come from the research; the prose around them does not.** `research/impact-bands.md` holds the assignment per system per scenario, and `SYSTEMS` matches it row for row. `SystemEntry.hook`, `Impact.mechanism` and `Impact.source` are still `loremLine()` and `"TBD"`, so **a band on the site is currently a sourced judgement wrapped in placeholder text**. Do not read a rendered cell as a finished claim until its mechanism sentence and source key are real.
 - `SHAKING_PAGES`, `NAV`, `UTILITY_NAV`
 
 `src/content/references.ts` holds `REFERENCES`, the source register: one entry per document, keyed by citation key. Entries carry kind, title, publisher, year, href and a one-line note. `kind: "page"` is an internal reference — a claim can point at the page that carries the reasoning. Every entry is currently flagged `placeholder`, and that flag is what makes the marker and the reference list say so on the page.
@@ -77,7 +76,7 @@ Adding a system is one array entry. It then appears in the grid, the matrix, the
 
 **Contents rail.** `ArticleShell` builds it from the rendered `<h2>` elements, so it cannot fall out of sync with the page.
 
-**Every claim carries a source (principle 2).** `components/citation.tsx`. A page declares its references once, in citation order, and wraps its body in `<Citations ids={…}>`. Prose then cites by key — `<Cite id="crossing-assessments" />` — and the marker's number comes from that declared order, so the numbering and the `<ReferenceList />` at the foot of the page cannot drift apart. The marker is a button, not a jump link: the reference opens in place, because sending a reader to the bottom of the page to check a claim means they don't. An unregistered key renders `[?]` rather than failing silently. `/leaving/` is the worked example.
+**Every claim carries a source (principle 2).** `components/citation.tsx`. A page declares its references once, in citation order, and wraps its body in `<Citations ids={…}>`. Prose then cites by key — `<Cite id="crossing-assessments" />` — and the marker's number comes from that declared order, so the numbering and the `<ReferenceList />` at the foot of the page cannot drift apart. The marker is a button, not a jump link: the reference opens in place, because sending a reader to the bottom of the page to check a claim means they don't. An unregistered key renders `[?]` rather than failing silently. `/getting-around/` is the worked example.
 
 **Placeholders are labelled as placeholders.** Map and graph slots say they are not built and name the dataset as TBD.
 

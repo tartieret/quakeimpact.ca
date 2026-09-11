@@ -11,7 +11,7 @@ import ShakingIndexPage from "@/app/shaking/page";
 import ShakingDetailPage from "@/app/shaking/[slug]/page";
 import AfterIndexPage from "@/app/after/page";
 import SystemPage from "@/app/after/[slug]/page";
-import LeavingPage from "@/app/leaving/page";
+import GettingAroundPage from "@/app/getting-around/page";
 import DependenciesPage from "@/app/dependencies/page";
 import PreparePage from "@/app/prepare/page";
 import MethodPage from "@/app/method/page";
@@ -43,7 +43,7 @@ function Route() {
   if (clean === "/scenarios") return <ScenariosPage />;
   if (clean === "/shaking") return <ShakingIndexPage />;
   if (clean === "/after") return <AfterIndexPage />;
-  if (clean === "/leaving") return <LeavingPage />;
+  if (clean === "/getting-around") return <GettingAroundPage />;
   if (clean === "/dependencies") return <DependenciesPage />;
   if (clean === "/prepare") return <PreparePage />;
   if (clean === "/method") return <MethodPage />;

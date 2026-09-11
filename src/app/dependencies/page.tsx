@@ -16,7 +16,7 @@ export default function DependenciesPage() {
   return (
     <Shell>
       <PageHeader
-        kicker="The one original contribution"
+        kicker="Why one failure becomes many"
         title="Nothing fails alone"
         standfirst={lorem(2, 190)}
       />
@@ -26,7 +26,7 @@ export default function DependenciesPage() {
       </Section>
 
       <Section title="Reading it">
-        <Callout label="Coupling over inventory">
+        <Callout label="Read the arrows, not the boxes">
           <p className="max-w-2xl text-lg leading-relaxed">
             The failure of any one system is not the story. The story is that
             they depend on each other.
@@ -38,7 +38,7 @@ export default function DependenciesPage() {
       </Section>
 
       <NextPrev
-        prev={{ href: "/leaving/", label: "Getting out" }}
+        prev={{ href: "/getting-around/", label: "Getting around" }}
         next={{ href: "/prepare/", label: "Preparing" }}
       />
     </Shell>

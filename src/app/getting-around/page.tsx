@@ -13,7 +13,7 @@ import {
 import { Citations, Cite, ReferenceList } from "@/components/citation";
 import { lorem, loremParagraphs, loremLine } from "@/content/lorem";
 
-export const metadata: Metadata = { title: "Getting out" };
+export const metadata: Metadata = { title: "Getting around" };
 
 const GEOGRAPHY = [
   { name: "Vancouver", claim: "A peninsula, not an island" },
@@ -49,7 +49,7 @@ export default function LeavingPage() {
         header={
           <PageHeader
             kicker="Part 2b"
-            title="Who can actually leave"
+            title="Moving after the shaking"
             standfirst={lorem(2, 150)}
           />
         }
@@ -76,7 +76,7 @@ export default function LeavingPage() {
         </Section>
 
         <Section title="Approaches, not spans">
-          <Callout label="The least understood point on this page">
+          <Callout label="What retrofit announcements leave out">
             <p className="max-w-2xl text-lg leading-relaxed">
               A retrofitted bridge can survive intact while its approach
               embankment settles or spreads. A standing bridge with a step at
@@ -109,6 +109,21 @@ export default function LeavingPage() {
           />
         </Section>
 
+        <Section title="What the province actually plans for">
+          <Callout label="Sourced twice, from two separate provincial documents">
+            <p className="max-w-2xl text-lg leading-relaxed">
+              British Columbia&rsquo;s emergency plans do not assume people
+              drive out of the region. They assume damaged routes reserved for
+              response, public messaging to shelter where you are, and roads
+              cleared in a published order that puts life safety and critical
+              infrastructure first.
+            </p>
+          </Callout>
+          <div className="mt-8">
+            <Prose paragraphs={loremParagraphs(2, 156)} />
+          </div>
+        </Section>
+
         <Section title="Disaster Response Routes are not evacuation routes">
           <Prose
             paragraphs={[
@@ -119,7 +134,7 @@ export default function LeavingPage() {
             ]}
           />
           <div className="mt-6">
-            <Callout label="Teach the right behaviour">
+            <Callout label="What to do if you find yourself on one">
               <p className="max-w-2xl leading-relaxed text-ink-muted">
                 {lorem(1, 168)}
               </p>
@@ -127,7 +142,7 @@ export default function LeavingPage() {
           </div>
         </Section>
 
-        <Section title="Departure is not day one">
+        <Section title="Leaving happens over months, not on day one">
           <Prose
             paragraphs={[
               leaving,
@@ -147,7 +162,7 @@ export default function LeavingPage() {
         </Section>
 
         <Lever
-          title="If you live on the delta or the North Shore"
+          title="Plan for where you will be, not for the way out"
           items={[loremLine(180), loremLine(184), loremLine(188)]}
         />
 

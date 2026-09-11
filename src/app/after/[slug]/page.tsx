@@ -123,7 +123,7 @@ export default async function SystemPage({
 
       <Section
         title="What the analogues show"
-        lede="Christchurch, Kobe and Tōhoku illustrate. They never generate numbers."
+        lede="Christchurch, Kobe and Tōhoku show what life was like elsewhere. They do not supply a figure for here."
       >
         <Prose paragraphs={loremParagraphs(2, index + 125)} />
       </Section>
@@ -150,7 +150,7 @@ export default async function SystemPage({
         next={
           next
             ? { href: `/after/${next.slug}/`, label: next.name }
-            : { href: "/leaving/", label: "Getting out" }
+            : { href: "/getting-around/", label: "Getting around" }
         }
       />
     </ArticleShell>

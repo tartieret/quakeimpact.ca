@@ -59,6 +59,8 @@ We are not in the business of motivating through alarm. We are in the business o
 
 **No exclamation marks. No rhetorical questions. No imagined scenes.** We are not narrating a disaster. We are describing how infrastructure behaves.
 
+**The site never talks about itself to the reader.** This is the defect that accumulates fastest, because the project's own principles are well written and it is tempting to render them. A kicker reading "The one original contribution", a callout labelled "Verify before publishing", a section titled "Why the coupling is the story" — each was in the templates, and each addresses a colleague rather than a neighbour. The test is whether the sentence would still make sense to someone who has never heard of this project. Editorial notes to ourselves belong in a comment or in `docs/`; the method and about pages may describe the method, but in the reader's terms and never in the project's shorthand. A page name is copy too: `/leaving/` asserted a conclusion about behaviour before anyone read a word.
+
 ---
 
 ## 5. Sentence-level rules

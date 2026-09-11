@@ -31,14 +31,33 @@ export default function PreparePage() {
         />
       }
     >
-      <Section title="How long you are actually being asked to last">
-        <Callout label="Verify before publishing">
-          <p className="max-w-2xl text-lg leading-relaxed">
-            The figure most people remember may no longer be the current advice.
-            If the guidance has moved, the gap between memory and recommendation
-            is the strongest hook on the site.
+      <Section title="How long you are being asked to last">
+        <Callout label="Emergency Management BC, in its own words">
+          <blockquote className="max-w-2xl text-lg leading-relaxed">
+            During a disaster, local and provincial government resources will
+            be overwhelmed. In such an event, one&rsquo;s family and neighbours
+            are likely to be the only available first responders. People living
+            in an earthquake zone should aim to be self-sufficient for up to two
+            weeks.
+          </blockquote>
+          <p className="mt-3 text-sm text-ink-muted">
+            Provincial Earthquake Immediate Response Strategy, page 42.
           </p>
         </Callout>
+
+        <div className="mt-8">
+          <Callout label="And the province does not yet say it consistently">
+            <p className="max-w-2xl leading-relaxed">
+              PreparedBC&rsquo;s earthquake and tsunami guide says at least two
+              weeks, three times over. Its general emergency-kit page says a
+              minimum of three days to one week. Its earthquake hazard page says
+              three days. The figure most people remember — 72 hours — is not
+              the one the guide now gives, and the gap is inside British
+              Columbia&rsquo;s own advice rather than across a border.
+            </p>
+          </Callout>
+        </div>
+
         <div className="mt-6">
           <VerificationNote>{loremLine(201)}</VerificationNote>
         </div>
