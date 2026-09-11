@@ -476,3 +476,17 @@ marker looks its number up in that list. Auto-numbering by render order would
 need client-side registration and goes wrong under conditional rendering; the
 declared list also doubles as the reference list at the foot of the page, so
 there is one source of truth rather than two that can drift.
+
+---
+
+## `npm run build` rewrites tsconfig.json, and the diff is not yours
+
+**11 September 2026.** A build prints "the following mandatory changes were made to your
+tsconfig.json" and then rewrites the file: `jsx` from `preserve` to `react-jsx`, an added
+`.next/dev/types/**/*.ts` include, and every inline array expanded one element per line.
+The whole file reformats, so the diff looks like deliberate work and will be staged by a
+`git add -A` without anyone noticing.
+
+It is Next.js maintaining its own config, not a change the branch meant to make. Check
+`git status` after a build and restore the file unless the change is the point of the
+commit. The same caution applies to any tool that edits config in place during a build.

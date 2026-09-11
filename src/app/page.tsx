@@ -144,7 +144,7 @@ export default function HomePage() {
       <section className="border-t border-rule bg-paper-raised">
         <div className="mx-auto max-w-6xl px-gutter py-16">
           <h2 className="font-display text-3xl tracking-tight">
-            The failures are coupled
+            Nothing fails on its own
           </h2>
           <p className="mt-3 max-w-2xl leading-relaxed text-ink-muted">
             {lorem(2, 21)}
@@ -159,7 +159,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-gutter py-16">
         <div className="rounded-2xl border border-accent/30 bg-accent-soft p-8 sm:p-12">
           <h2 className="font-display text-3xl tracking-tight">
-            No doom without a lever
+            There are specific things you can do
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed">{lorem(2, 24)}</p>
           <Link

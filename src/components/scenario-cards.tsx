@@ -5,6 +5,7 @@ import { useScenario } from "./scenario-context";
 
 const ROWS: { key: keyof (typeof SCENARIOS)["cascadia"]; label: string }[] = [
   { key: "source", label: "Source" },
+  { key: "simulation", label: "Official simulation" },
   { key: "shaking", label: "Shaking in Metro Vancouver" },
   { key: "extent", label: "Geographic extent" },
   { key: "tsunami", label: "Tsunami" },

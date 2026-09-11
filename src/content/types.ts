@@ -11,12 +11,20 @@ export interface Scenario {
   /** Full name used in prose. */
   name: string;
   strapline: string;
+  /** The official simulation this scenario is built on, named. */
+  simulation: string;
   source: string;
   shaking: string;
   extent: string;
   tsunami: string;
   mutualAid: string;
   recurrence: string;
+  /**
+   * Weather is a condition of the scenario, not a system that fails, so it has
+   * no band. Both official scenarios set one, and the two pull in opposite
+   * directions — see `docs/research/scenarios.md`.
+   */
+  conditions: string;
 }
 
 export interface Impact {

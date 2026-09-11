@@ -13,7 +13,7 @@ export default function AfterIndexPage() {
   return (
     <Shell>
       <PageHeader
-        kicker="Part 2 — the core of the site"
+        kicker="Part 2"
         title="Life afterwards"
         standfirst={lorem(2, 90)}
       >
@@ -28,8 +28,8 @@ export default function AfterIndexPage() {
       </Section>
 
       <Section
-        title="Restored first"
-        lede="Systems in the first build tier — water, power, transportation."
+        title="Where the evidence is strongest"
+        lede="Water, electricity and transportation. These three have the most published work behind them, so they are the most specific pages on the site."
       >
         <SystemGrid tier={1} />
       </Section>
@@ -45,7 +45,7 @@ export default function AfterIndexPage() {
         <SystemMatrix />
       </Section>
 
-      <Section title="Why the coupling is the story">
+      <Section title="Nothing here fails on its own">
         <Prose paragraphs={loremParagraphs(2, 95)} />
         <Link
           href="/dependencies/"
@@ -57,7 +57,7 @@ export default function AfterIndexPage() {
 
       <NextPrev
         prev={{ href: "/shaking/", label: "The shaking" }}
-        next={{ href: "/leaving/", label: "Getting out" }}
+        next={{ href: "/getting-around/", label: "Getting around" }}
       />
     </Shell>
   );

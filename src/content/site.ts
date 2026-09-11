@@ -20,24 +20,38 @@ export const SCENARIOS: Record<ScenarioId, Scenario> = {
     short: "Cascadia M9",
     name: "Cascadia M9 megathrust",
     strapline: "Worse for Vancouver's ability to be helped",
+    simulation:
+      "M9.0 Cascadia Full Rupture, Geological Survey of Canada scenario catalogue",
     source: "Offshore subduction interface",
-    shaking: "Moderate intensity, very long duration — minutes",
+    shaking:
+      "Moderate intensity, long duration — three minutes in the province's scenario",
     extent: "Northern California to BC — a regional catastrophe",
     tsunami: "Outer coast; limited effect inside Burrard Inlet",
-    mutualAid: "Unavailable — the whole coast is asking at once",
-    recurrence: "Known interval; last event 1700",
+    mutualAid:
+      "Late rather than absent — the province states the US will be unable to help if it is also overwhelmed",
+    recurrence:
+      "Sources disagree: 500–600 years on average per NRCan, 400–500 in BC's own documents. Last event 1700",
+    conditions:
+      "The province sets this one in an August heatwave with wildfire smoke, which makes water and shade the urgent needs",
   },
   crustal: {
     id: "crustal",
     short: "Crustal M7",
     name: "Shallow crustal M7",
     strapline: "Worse for Vancouver itself",
-    source: "Strait of Georgia / near-region shallow crust",
-    shaking: "High intensity, short duration",
+    simulation:
+      "M7.0 Georgia Strait, same catalogue — and the province's own primary planning scenario",
+    source: "Strait of Georgia shallow crust, 3–4 km deep",
+    shaking:
+      "High intensity, short duration — 10–20 seconds of violent shaking in the province's scenario",
     extent: "Concentrated and local",
     tsunami: "Not the primary concern",
-    mutualAid: "Available — the rest of the country responds",
-    recurrence: "Rarer near the city, far more destructive to it",
+    mutualAid:
+      "Available — BC's plan assumes agencies outside the impact area are unaffected. That is a planning assumption, and this is the case where it holds",
+    recurrence:
+      "Roughly once every 1,500 years in the region, per the province's scenario. Rarer near the city, more destructive to it",
+    conditions:
+      "The province sets this one on a January afternoon after an atmospheric river, which makes heat, dry shelter and slope stability the urgent needs",
   },
 };
 
@@ -74,7 +88,8 @@ export const BANDS: Record<
     label: "Not yet assessed",
     duration: "—",
     extent: "—",
-    dependency: "Awaiting a source",
+    dependency:
+      "No published assessment this rubric can read — a statement about the public record, not about the infrastructure",
   },
 };
 
@@ -110,13 +125,22 @@ const sys = (
   },
 });
 
+/**
+ * Thirteen systems. Bands are assigned from `docs/research/impact-bands.md` and
+ * the per-system files under `docs/research/systems/`; the prose around them —
+ * `hook`, `mechanism`, `source` — is still placeholder and must not be read as
+ * sourced. Weather is deliberately absent: it does not fail, so it cannot carry
+ * a band. It is a condition of each scenario and renders on the timeline.
+ */
 export const SYSTEMS: SystemEntry[] = [
+  // Medium, not High: no source establishes how the network would perform, and
+  // the absence of any binding backup-power requirement is itself the finding.
   sys(
     "communications",
     "Communications",
     "hours",
     2,
-    ["high", "high"],
+    ["medium", "medium"],
     ["electricity"],
     1,
   ),
@@ -147,21 +171,34 @@ export const SYSTEMS: SystemEntry[] = [
     ["water", "electricity"],
     4,
   ),
+  // Restoration is rate-limited by sending a qualified person into every
+  // affected building, which no other system on the grid is.
+  sys(
+    "gas",
+    "Natural gas",
+    "weeks",
+    2,
+    ["high", "high"],
+    ["transportation", "fuel"],
+    14,
+  ),
   sys(
     "transportation",
     "Transportation",
     "days",
     1,
-    ["high", "medium"],
+    ["high", "high"],
     ["fuel"],
     5,
   ),
+  // Medium for Cascadia and unassessed for the crustal M7 — not because the
+  // crustal event is milder, but because the only study models Cascadia alone.
   sys(
     "large-infrastructure",
     "Port, airport and ferry terminals",
     "weeks",
     3,
-    ["unknown", "unknown"],
+    ["medium", "unknown"],
     ["transportation", "electricity"],
     6,
   ),
@@ -170,7 +207,7 @@ export const SYSTEMS: SystemEntry[] = [
     "Fuel",
     "days",
     2,
-    ["high", "medium"],
+    ["high", "high"],
     ["transportation", "electricity", "large-infrastructure"],
     7,
   ),
@@ -179,10 +216,12 @@ export const SYSTEMS: SystemEntry[] = [
     "Food",
     "days",
     2,
-    ["high", "medium"],
+    ["high", "high"],
     ["transportation", "fuel", "large-infrastructure"],
     13,
   ),
+  // Both dams were reviewed in 2024 under legal compulsion and neither
+  // published conclusion mentions earthquakes. Assessed, but not for this.
   sys(
     "dams-and-reservoirs",
     "Dams and reservoirs",
@@ -205,23 +244,14 @@ export const SYSTEMS: SystemEntry[] = [
     "health-care",
     "Health care",
     "hours",
-    3,
-    ["high", "high"],
+    2,
+    ["medium", "medium"],
     ["fuel", "electricity", "water"],
     10,
   ),
   sys(
-    "weather",
-    "Weather",
-    "weeks",
-    3,
-    ["medium", "medium"],
-    ["housing", "electricity"],
-    11,
-  ),
-  sys(
     "outside-help",
-    "The absence of outside help",
+    "Where help comes from",
     "days",
     3,
     ["high", "low"],
@@ -253,7 +283,7 @@ export const NAV = [
   { href: "/scenarios/", label: "Two scenarios" },
   { href: "/shaking/", label: "The shaking" },
   { href: "/after/", label: "Life afterwards" },
-  { href: "/leaving/", label: "Getting out" },
+  { href: "/getting-around/", label: "Getting around" },
   { href: "/prepare/", label: "Preparing" },
 ];
 

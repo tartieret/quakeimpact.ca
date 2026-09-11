@@ -64,7 +64,7 @@ statically-exported page at `/after/<slug>/` with no other change.
                         secondary-hazards
 /after/                 Part 2 index — timeline + system grid by build tier
 /after/[slug]/          13 system pages
-/leaving/               Part 2b — who can actually leave
+/getting-around/        Part 2b — moving after the shaking
 /dependencies/          the dependency graph
 /prepare/               Part 3
 /method/                band rubric, principles, assumption discipline
@@ -94,7 +94,7 @@ discipline is visible on the page rather than hidden in a backlog.
 that opens the reference in place — document, publisher, year and link — and
 `ReferenceList` repeats the same entries at the foot of the page. Numbering
 comes from the page's declared reference order, so the two cannot drift apart.
-A reference can also point at another page on this site. `/leaving/` is the
+A reference can also point at another page on this site. `/getting-around/` is the
 worked example.
 
 **`VerificationNote`** shows open research questions in public.

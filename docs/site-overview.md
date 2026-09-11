@@ -88,21 +88,23 @@ The core of the site. Organised as a timeline: hours → days → weeks → mont
 | Sanitation | The one nobody thinks about. Christchurch: thousands of homes on chemical toilets for months |
 | Transportation | Crossings, the port, YVR on Sea Island delta ground, the highway network |
 | Large infrastructure | Port terminals and cranes, YVR on Sea Island, the BC Ferries terminals at Tsawwassen and Horseshoe Bay. **Assessments required before writing anything.** Assume nothing here — see note below |
-| Fuel | The master dependency, and it is upstream of almost everything else on this list. Generators, repair crews, trucks, hospitals and pumps all run on diesel arriving by road from a small number of terminals, most on the Burrard Inlet shoreline or the delta. Two points to land: a service station with full tanks and no power dispenses nothing, and the region holds only a limited number of days of supply. **Find that days-of-supply figure** — it may be the single most quotable number on the site |
+| Fuel | The master dependency, and it is upstream of almost everything else on this list. Generators, repair crews, trucks, hospitals and pumps all run on diesel arriving by road from a small number of terminals, most on the Burrard Inlet shoreline or the delta. Two points to land: a service station with full tanks and no power dispenses nothing, and the region holds only a limited number of days of supply. **The days-of-supply figure has been chased and does not hold up** — the only Lower Mainland figures trace to one phone interview with an advocacy-group president during the 2021 flood. Lead with the province's own statement of the mechanism instead |
 | Food | Feeding a metro region with the port down and crossings restricted. The problem is not stock, it is logistics: distribution centres, refrigeration, and a resupply cycle measured in days. Held separately from fuel because the failure is different — food is a demand the region cannot store its way out of, while fuel is the input every other system's repair depends on. Food waits on fuel; nothing waits on food except people |
 | Natural gas | The one utility that cannot be restored in bulk. Water and electricity come back when the network is repaired; gas comes back when a technician has entered every affected building and relit every appliance. That is a per-premises operation across hundreds of thousands of premises, and it is why a supply interruption with no earthquake damage at all is measured in weeks. Also carries a counter-intuitive safety message: FortisBC's advice is **not** to shut off your own gas |
 | Dams and reservoirs | Cleveland, Seymour Falls, Coquitlam. Dual-purpose content — they are the water supply and they are a downstream hazard. Metro Vancouver publishes dam safety material |
 | Housing | Tens of thousands displaced from standing but tagged buildings, into a region with no rental slack. Arguably the most underestimated consequence of all |
 | Health care | Surge demand against damaged facilities running on trucked diesel |
-| Absence of outside help | The Cascadia planning assumption: mutual aid unavailable because the whole coast needs it simultaneously |
+| Where help comes from | Who arrives, from where, and when. Alberta maintains an Earthquake Response Plan for British Columbia; EMBC's own list of applicable agreements names no Alberta instrument. In the Cascadia case the province states the US will be unable to deliver mutual aid |
 
 **Assumption discipline.** The temptation on port, airport and ferry terminals is to write "these would not survive." Do not. YVR has done substantial ground improvement on Sea Island and is better studied than intuition suggests; pile-supported wharves on treated ground do not behave the way a lay reader expects. Port cranes and wharves are a genuine Kobe-style vulnerability, but that has to come from an assessment, not from expectation. If the documents confirm the fear, the claim becomes powerful. If they do not, that is itself worth telling readers — and it protects the credibility of everything else on the site.
 
 **Centrepiece: the dependency graph.** Water restoration needs power for pumps and road access for crews. Roads need debris clearing, which needs fuel. Fuel terminals sit on liquefiable delta ground. Hospitals run on diesel that arrives by truck. Nobody has rendered this legibly for a general audience in this region. If the site has one original contribution, this is it.
 
-### Part 2b — Who can actually leave
+### Part 2b — Moving after the shaking
 
-If the answer to a broken region is "people leave," this section asks whether they physically can. It pairs with the food-supply arithmetic and the housing page.
+If the answer to a broken region is "people leave," this section asks by what route, and what the province is actually planning for. It pairs with the food-supply arithmetic and the housing page.
+
+**The province plans on people staying, and that is a sourced finding rather than our inference.** PEIRS states that spontaneous mass evacuation out of the impact area will not take place and that messaging will emphasise sheltering within the region; the DCRRA says the same for its Cascadia scenario. The page states what the plan assumes without asserting that nobody leaves — visitors, separated households and people whose home is on the other side of the water all have a reason to move, and departure over the following months is a documented pattern. Named **Moving after the shaking**, not "Getting out": a departure framing teaches the wrong behaviour and would put the site on the wrong side of the Disaster Response Route point below.
 
 This is also the site's worked example of the citation convention — see section 7.
 
@@ -205,7 +207,7 @@ A thin complete grid is worth less than a few deep pages.
   on the timeline. The grid loses a row it could not honestly fill.
 - **Natural gas becomes a system.** It was missing, and it carries a mechanism no other
   system has: restoration is rate-limited by sending a person into every building. The
-  grid keeps twelve systems.
+  grid keeps thirteen systems, weather having left it and food and fuel now standing apart.
 - **The microzonation maps are link-only, and ICLR approval is not pursued.** Decided
   10 September 2026. The MVSMMP layers carry custom ICLR terms whose commercial
   reservation covers electronic media and extends to statements and conclusions about the
@@ -217,32 +219,25 @@ A thin complete grid is worth less than a few deep pages.
   Protection System coverage boundary**, which is OGL–Vancouver and fully usable. The cost
   is the critical-infrastructure-over-liquefaction overlay, which was the best original
   graphic the project had designed.
+- **The outside-help row is renamed "Where help comes from".** Decided 11 September 2026,
+  closing the question raised on 10 September. The row was the only one in `SYSTEMS` named
+  for a negative, and a row called "the absence of outside help" banded **Low** for the
+  crustal M7 contradicted itself in the grid before the reader opened anything.
+  `research/systems/outside-help.md` reaches the opposite framing in its own words — *"Help
+  is late, not absent"* — and the positive name carries more information, because what a
+  reader wants is who comes, from where and when. The Cascadia mechanism sentence carries
+  the weight the old title was carrying, and it is a stronger sentence than a title.
+- **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided
+  11 September 2026. "Who can actually leave" and the nav label "Getting out" framed the
+  section as a departure question, which `research/mobility.md` says teaches the wrong
+  behaviour — the province plans on people sheltering within the region and reserves the
+  damaged routes for response. A neutral name was chosen over "Staying put" deliberately:
+  the province does not rule out later evacuation, and leaving is an individual decision
+  that visitors and separated households may reasonably make. The page states the plan
+  without asserting the behaviour.
 - **Map dataset licensing: settled per dataset.** See `licensing.md`. The NRCan catalogue and City of Vancouver open data are cleared with attribution; the Metro Vancouver microzonation layers are link-only pending written approval from ICLR.
 
 ### Open
 
 - Whether to seek review from a local emergency-management or geotechnical contact before launch. Recommended: it converts the site from one person's compilation into something the field will link to.
-- **Whether "Absence of outside help" should be renamed "Where help comes from".**
-  Raised 10 September 2026. The row is the only one in `SYSTEMS` named for a **negative**,
-  and the name states a conclusion the evidence does not support. `research/systems/outside-help.md`
-  reaches the opposite framing in its own words — *"Help is late, not absent"* — and bands
-  the row **Low** for the crustal M7, where the province's staging assumption is
-  geographically plausible. A reader meeting a row called "absence of outside help" banded
-  Low has been told two contradictory things by the grid before reading a word.
-
-  The positive name also carries more information, because what a reader wants to know is
-  *who comes, from where, and when* — and the file answers that: Alberta maintains an
-  Earthquake Response Plan for British Columbia, the formal instruments are named, and the
-  strongest finding in the file is that **EMBC's own list of applicable agreements names no
-  Alberta instrument while Alberta publishes a plan for us**. None of that is expressible
-  under a heading about absence.
-
-  Against the rename: "absence of outside help" is what makes the Cascadia column
-  frightening in the right way, and a neutral title may bury the finding that the province
-  expects US mutual aid to be unavailable. Recommended: rename, and let the Cascadia
-  mechanism sentence carry the weight — it is a stronger sentence than a title.
-
-  Touches `site-overview.md` §5, `research/impact-bands.md`, and `SYSTEMS` in
-  `src/content/site.ts`. One array entry, no other code change.
-
 - **Whether the site archives its own sources.** Several citations already point at web archives because the publisher reorganised or the host died — the AIR study, the RMS Kobe retrospective. Two federal hosts went from resolving to NXDOMAIN during this project's lifetime. A site whose whole proposition is that its sources check out should not depend on other people's links holding. Recommended: capture every cited source at the version we read, and record the capture alongside the live URL.
