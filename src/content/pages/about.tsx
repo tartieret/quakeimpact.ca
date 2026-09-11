@@ -11,8 +11,10 @@ import type { PageModule } from "./index";
  * nobody asked the reader to take.
  *
  * The site does not talk about itself to the reader anywhere else. This page is
- * the exception the reader came for, and it stays on what they get rather than
- * on who made it.
+ * the exception the reader came for, and it is the one place the author speaks
+ * in the first person: who compiled this, and why, is a fact about the site's
+ * reliability rather than a biography. That is why the section naming him also
+ * says what the site is not, and that nothing on it rests on his own expertise.
  */
 const link = "text-accent underline underline-offset-2";
 
@@ -28,6 +30,27 @@ export const about: PageModule = {
   },
 
   sections: [
+    {
+      title: "The assumption is that food, water and care keep arriving",
+      body: (
+        <Prose>
+          <p>
+            I know a handful of people in this region who could feed a household
+            for two weeks without a shop, a tap or a pharmacy. Almost everyone
+            else I have asked pictures a bad night rather than a long month: the
+            shaking stops, the lights come back, the store opens late, and the
+            week carries on.
+          </p>
+          <p>
+            The published assessments describe something slower than that, and
+            they have been describing it for years in documents most people have
+            no reason to open. This site puts them in one place, in ordinary
+            words, and leaves the link to each one in the sentence it supports.
+          </p>
+        </Prose>
+      ),
+    },
+
     {
       title: "The shaking is the short part",
       body: (
@@ -46,10 +69,10 @@ export const about: PageModule = {
             months following the event”. <Cite id="PEIRS" />
           </p>
           <p>
-            So this site spends most of its length on the second interval. It is
-            organised around how long each system is out, how widely, and what it
-            is waiting on, because that is the part of an earthquake a household
-            can do something about in advance.
+            So the second interval gets most of the length here. It is organised
+            around how long each system is out, how widely, and what it is
+            waiting on, because that is the part of an earthquake a household can
+            do something about in advance.
           </p>
         </Prose>
       ),
@@ -98,10 +121,13 @@ export const about: PageModule = {
             on written down.
           </p>
           <p>
-            Where a figure is missing, that is said rather than filled in. “Not
-            yet assessed” is one of the states a system can be in, drawn hatched
-            rather than coloured, and it means nobody has published an assessment
-            rather than that the infrastructure is fine or that it is doomed.{" "}
+            It is not complete, and it could not be. Thirteen systems are not
+            every system, and no assessment can say precisely how any one of them
+            behaves on the day. Where a figure is missing, that is said rather
+            than filled in. “Not yet assessed” is one of the states a system can
+            be in, drawn hatched rather than coloured, and it means nobody has
+            published an assessment rather than that the infrastructure is fine
+            or that it is doomed.{" "}
             <Link href="/method/" className={link}>
               How the bands work
             </Link>{" "}
@@ -162,6 +188,31 @@ export const about: PageModule = {
     },
 
     {
+      title:
+        "I am a point of contact for my neighbourhood, which is how this started",
+      body: (
+        <Prose>
+          <p>
+            My name is Thomas Tartière. I live in downtown Vancouver, and I am
+            the chef d’îlot for the French community here: the volunteer the
+            French consulate’s emergency plan names as the local point of contact
+            if something serious happens in this part of the city. Preparing for
+            that meant reading what the province, the region and the utilities
+            have published about a major earthquake, and the reading is what
+            produced this site.
+          </p>
+          <p>
+            It is a personal project. It is not published by the consulate, by a
+            municipality or by any agency, and nothing on it is an official
+            instruction. Nor does any of it rest on my own expertise: every claim
+            belongs to the document underneath it, which is named so you can go
+            and read it yourself.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
       title: "Corrections are the most useful thing you can send",
       body: (
         <Prose>
@@ -172,6 +223,12 @@ export const about: PageModule = {
               Contribute
             </Link>{" "}
             says what can be used and what cannot.
+          </p>
+          <p>
+            The site is open source for the same reason every claim carries its
+            document. Anyone should be able to check a sentence against its
+            source, correct it, or bring it up to date when the source is
+            superseded, and one person reading alone will not catch everything.
           </p>
         </Prose>
       ),
