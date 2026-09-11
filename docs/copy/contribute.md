@@ -2,8 +2,8 @@
 route: /contribute/
 title: Contribute
 nav: Contribute
-hook: A document, a correction with a source behind it, or a pointer to a report that exists.
-lede: This site is built out of documents other people published, so the useful contributions are documents. A correction with a source behind it is worth more than any amount of agreement.
+hook: A correction, a document, a pointer to a report that exists, or the read of somebody who does this work for a living.
+lede: Anything is welcome, whether it is a correction, a document, a pointer to a report you know exists, or the read of somebody who does this work for a living. Something on this site that looks wrong to you is worth sending even when no document comes with it.
 status: draft
 ---
 
@@ -12,17 +12,16 @@ status: draft
 Email [contact@quakeimpact.ca](mailto:contact@quakeimpact.ca), or open an issue on
 [the public repository](https://github.com/tartieret/quakeimpact.ca).
 
-Anyone is welcome to write. The readers most likely to catch what is wrong here are the
-ones who work in the fields this site covers: seismology and geotechnical engineering,
+The readers most likely to catch what is wrong here are the ones who work in the fields
+this site covers: seismology and geotechnical engineering,
 water and sewer, power, gas, telecommunications, transport, fuel and food supply,
 housing, health care and emergency management.
 
-What helps most is one document with an author and a date, a correction with a source
-behind it, or a pointer to a report you know exists but cannot place, and one line
-saying which claim on the site it supports or contradicts. A read from the field is
-worth sending too, and is chased as a lead rather than published as a claim. What cannot
-be used is an unsourced assertion, new modelling, or an earthquake elsewhere used to
-generate a number for this region.
+The fastest thing to act on is one line saying which claim on the site is wrong, and a
+document with an author and a date behind it. A pointer to a report you know exists but
+cannot place saves days on its own. So does a read from the field with no document at
+all, which is chased as a lead rather than published as a claim, because what reaches a
+page has to be something a reader can check.
 
 ## Three questions on this site are waiting on a document that may already exist
 
