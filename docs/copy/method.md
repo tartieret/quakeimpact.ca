@@ -72,10 +72,12 @@ and nothing to click is a mistake, and worth telling us about.
 
 Medium is the label most likely to mislead, because uncertainty comes in kinds.
 
-Communications is Medium because nothing currently requires a mobile phone site to
-hold any backup power at all. The regulator opened a proceeding to decide what the
-requirement should be and has not decided. [CRTC-2025-226] The uncertainty is about
-the rules.
+Communications is Medium because the province's megathrust assessment says disruption
+continues for days to weeks, with what capacity survives prioritised for emergency
+personnel. [DCRRA-2025] The uncertainty is about everything around that sentence:
+nothing requires a mobile phone site to hold any backup power at all, the regulator
+opened a proceeding to decide what the requirement should be and has not decided,
+[CRTC-2025-226] and no carrier has published what it holds or how long it would take.
 
 Health care is Medium because about 65 per cent of one health authority's buildings
 would likely be completely damaged at the shaking level the current building code
@@ -170,6 +172,6 @@ a published document, a correction with a source behind it, or a pointer to a re
 
 ## Sources on this page
 
-[MV-DSP-2026] [MV-CAPITAL-2027] [AIR-2013] [CRTC-2025-226] [DCRRA-APPC]
-[BCH-WESTEND-25] [NRCAN-SCEN] [DCRRA-2025] [PEIRS] [GSC-OF-8853] [EGBC-DSR-GL]
+[MV-DSP-2026] [MV-CAPITAL-2027] [AIR-2013] [DCRRA-2025] [CRTC-2025-226]
+[DCRRA-APPC] [BCH-WESTEND-25] [NRCAN-SCEN] [PEIRS] [GSC-OF-8853] [EGBC-DSR-GL]
 [MVSMMP] [MV-DWMP-26] [BCH-DAMFAQ]

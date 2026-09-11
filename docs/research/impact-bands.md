@@ -23,7 +23,7 @@ source that `ImpactCell` requires, and a reconciliation against what
 
 | System | Cascadia M9 | Crustal M7 | Mechanism | Source |
 | --- | --- | --- | --- | --- |
-| Communications | Medium | Medium | Nothing requires a cell site to hold any backup power at all; the regulator opened a proceeding to decide what the requirement should be and has not decided. | [CRTC-2025-226] **[A]** |
+| Communications | Medium | Medium | The province expects disruption to communications for days to weeks, with surviving capacity prioritised for emergency personnel and a prolonged lack of access for the general population; it names satellite phones and amateur radio as the expected fallbacks. The duration statement is the megathrust assessment's; nothing published states one for the crustal earthquake, and no rule requires a cell site to hold any backup power at all. | [DCRRA-2025] **[A]**, with [PEIRS] [CRTC-2025-226] |
 | Electricity | High | High | BC Hydro's own filing states that a large seismic event could leave up to two-thirds of downtown customers without power for several weeks, and the system years from complete restoration. | [BCH-WESTEND-25] **[A]** |
 | Water | High | High | An M9 is modelled to cause 267 main failures region-wide, with roughly 60 breaks concentrated on the 71 water crossings — the repairs that take longest. | [MV-WATER-22] **[B]** |
 | Sanitation | High | High | The province states that disruption to water and wastewater systems is expected for many months; Metro Vancouver has built individual plants to post-disaster standard, which is not the same as making the network survive. | [PEIRS] **[A]** |
@@ -146,10 +146,32 @@ average nobody measured.
   help is also asymmetric, but there the asymmetry is a finding about the world.
   Here it is a gap in the literature wearing the same shape. A reader cannot tell
   those apart from the cell alone, and the method page has to.
-- **Whether Medium means the same thing across systems.** Communications is
-  Medium because requirements are absent; health care is Medium because the
-  damage state is known and the capacity comparison is not. Those are different
-  kinds of uncertainty wearing the same label.
+- **Whether Medium means the same thing across systems.** Health care is Medium
+  because the damage state is known and the capacity comparison is not.
+  Communications used to be Medium because requirements are absent, which was not
+  a reason at all: an absent rule says nothing about how long the network is down.
+  It is now Medium on the province's own duration statement. The general question
+  stands — Medium is carrying more than one kind of uncertainty — but it is no
+  longer carrying a cell with no duration evidence behind it.
+
+**Which column sets a band when the three disagree.** The duration does, wherever
+a document states one; extent and dependency describe the band rather than
+choosing it. Communications is the case that forced the rule. The province's
+megathrust assessment puts communications disruption at days to weeks, which is
+Medium's duration row. [DCRRA-2025] **[A]** But communications waits on
+electricity and on fuel, both banded High, and the Medium row's dependency
+column reads "waits on one other system", which points at High. Reading the
+dependency column as the determinant would mean **our inference from a
+dependency overruling the province's own published duration**, and the rubric
+exists to stop exactly that. Where no duration is published, extent and
+dependency cannot supply one either: that cell is **not yet assessed**.
+
+A consequence worth stating plainly, because it looks like an inconsistency and
+is not: **a system can be banded below something it depends on.** Electricity is
+High and communications is Medium. A cell site comes back when a generator gets
+fuel or the local feeder returns; a distribution network comes back one pole at a
+time, tens of thousands of times. Waiting on a system is not the same as sharing
+its restoration curve.
 
 ---
 
