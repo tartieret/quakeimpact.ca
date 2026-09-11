@@ -1,7 +1,11 @@
 import { ScenarioToggle } from "@/components/scenario-toggle";
 import { Lever, slugify } from "@/components/page-parts";
 import { Citations, ReferenceList } from "@/components/citation";
-import { home, HOME_CONTROL_LABEL } from "@/content/pages/home";
+import {
+  home,
+  HOME_CONTROL_LABEL,
+  HOME_CONTROL_NOTE,
+} from "@/content/pages/home";
 
 /**
  * The landing page.
@@ -37,11 +41,16 @@ export default function HomePage() {
             {home.meta.standfirst}
           </p>
 
-          <div className="mt-12 flex flex-wrap items-center gap-4 border-t border-rule pt-6">
-            <span className="text-sm text-ink-muted">
-              {HOME_CONTROL_LABEL}
-            </span>
-            <ScenarioToggle size="lg" />
+          <div className="mt-12 border-t border-rule pt-6">
+            <p className="max-w-2xl text-sm leading-relaxed text-ink-muted">
+              {HOME_CONTROL_NOTE}
+            </p>
+            <div className="mt-4 flex flex-wrap items-center gap-4">
+              <span className="text-sm text-ink-muted">
+                {HOME_CONTROL_LABEL}
+              </span>
+              <ScenarioToggle size="lg" />
+            </div>
           </div>
         </div>
       </section>

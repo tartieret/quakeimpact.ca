@@ -41,8 +41,30 @@ function SystemCard({ system }: { system: SystemEntry }) {
   );
 }
 
-export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
-  const systems = tier ? SYSTEMS.filter((s) => s.tier === tier) : SYSTEMS;
+/**
+ * Every system, or a chosen few.
+ *
+ * `tier` filters by build order, which is ours rather than the reader's, and
+ * is what `/after/` used before it took the whole grid. `slugs` is the landing
+ * page's need: a handful of consequences picked for a reader who has not asked
+ * for an inventory yet, in the order the page names them rather than in the
+ * order the content model holds them. A slug the model does not carry is
+ * dropped rather than rendered empty.
+ */
+export function SystemGrid({
+  tier,
+  slugs,
+}: {
+  tier?: 1 | 2 | 3;
+  slugs?: string[];
+}) {
+  const systems = slugs
+    ? slugs
+        .map((slug) => SYSTEMS.find((s) => s.slug === slug))
+        .filter((s): s is SystemEntry => s !== undefined)
+    : tier
+      ? SYSTEMS.filter((s) => s.tier === tier)
+      : SYSTEMS;
   return (
     <div className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-3">
       {systems.map((s) => (
