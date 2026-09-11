@@ -1166,3 +1166,52 @@ to a reader because the prefetch is speculative and the real navigation is a pla
 HTML request. Worth a rewrite rule in `serve.mjs` if the noise ever hides a real
 console error.
 
+
+## A knockout with nothing under it is the same defect it was meant to cure
+
+**11 September 2026.** After the open end on `/prepare/` was fixed, the audit still
+found four marks at 1:1 against their own ground, all of them the mirror image of
+that bug. `LandNode` on `/getting-around/` and the three provenance boxes on
+`/method/` were outlined rectangles filled `--color-paper-raised`, sitting directly
+on the figure frame, which is `--color-paper-raised`. Paper drawn on paper: the fill
+painted nothing, in both themes, and the outline was doing all the work already.
+
+The rule that covers both directions: **a knockout is only a knockout where there is
+something under it to clear.** On `/prepare/` a paper slot under an arrowhead is
+load-bearing because a solid bar runs through it, and the slot is bounded by that
+bar. Here nothing ran under the boxes, so the fill was a mark with no ground, and the
+honest form is `fill="none"`. Reaching for a paper fill by habit, because boxes
+usually have one, is how the defect gets in. Before writing a fill, name the thing it
+covers; if you cannot, do not paint it.
+
+Two low-contrast marks in the same two files that the audit does not flag, because
+they are above its 1.15:1 floor and merely faint:
+
+- `ClearingOrder`'s rail was `--color-rule`, 1.30:1 on paper, while `Spine` two
+  figures below it was `--color-rule-strong`, 1.68:1. Both are connectors. The rail
+  is now `ruleStrong` too. `rule` is the kit's colour for the empty track behind a
+  bar, where a filled bar sits over it and gives it contrast; used on bare paper it
+  is close to nothing.
+- The SVG `Meter` in `method.tsx` filled its unfilled segments with `rule`, though
+  its own doc comment claims it is the same mark as `BandMeter`, which uses
+  `ruleStrong`. The segments that carry the denominator were the faintest thing on
+  the figure, so "two of three" read as a bare two. It now matches the component it
+  says it mirrors.
+
+What is left under 3:1 in those files is every `--color-rule-strong` hairline:
+1.68:1 in light, 1.66:1 in dark, which is the value of the token itself and covers
+`FigRule`, `Axis` ticks, spines and box outlines site-wide. Whether a structural
+hairline should clear 3:1 for WCAG 1.4.11 is a question about the token in
+`globals.css` and about the kit, not about any one figure, and it is not answerable
+one file at a time.
+
+## `serve.mjs` resolves `out/` from the working directory, not from its argument
+
+**11 September 2026.** `startServer(port, root)` takes a root, but `resolveFile` reads
+the module-level `ROOT`, which is `resolve(process.argv[2] ?? "out")`. The `root`
+argument only reaches the 404 page lookup. So the server serves `./out` relative to
+wherever node was started: `audit.mjs` works because it is run from the repo root, and
+a one-off measuring script run from `scripts/qa/` gets a 404 for every route and a
+page whose `<main>` is the not-found template. It is a convincing failure, because the
+page loads, the status is invisible to `page.evaluate`, and the figures simply are not
+there. Run QA scripts from the repo root, or pass the out directory as `argv[2]`.

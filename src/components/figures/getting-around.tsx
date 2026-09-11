@@ -83,13 +83,16 @@ export function ClearingOrder() {
       <FigHeading y={ORDER_HEADING_Y}>The published clearing order</FigHeading>
       <FigValue y={ORDER_VALUE_Y}>Local routes are last</FigValue>
 
-      {/* The rail and its arrowhead carry the direction of the order. */}
+      {/* The rail and its arrowhead carry the direction of the order. The
+          rail is `ruleStrong`, the same weight as `Spine` on the third figure:
+          it is a connector, not an empty track, and `rule` on paper measures
+          1.3:1 in both themes, which is a hairline nobody can see. */}
       <rect
         x={ORDER_RAIL_X}
         y={ORDER_RAIL_TOP}
         width="1"
         height={ORDER_RAIL_BOTTOM - ORDER_RAIL_TOP}
-        fill={FIG_COLOR.rule}
+        fill={FIG_COLOR.ruleStrong}
       />
       <At x={ORDER_RAIL_X} y={ORDER_RAIL_BOTTOM}>
         <path d="M-4 0 L5 0 L0.5 8 Z" fill={FIG_COLOR.muted} />
@@ -349,7 +352,16 @@ const SPINE_X = "8%";
 const SPINE_LABEL_X = "12%";
 const BOX_TEXT_X = 12;
 
-/** A place. An outlined box and nothing else: no shape, no coastline, no area. */
+/**
+ * A place. An outlined box and nothing else: no shape, no coastline, no area.
+ *
+ * The box is `fill="none"` rather than paper. Nothing passes under a node here,
+ * so a paper rectangle would be paper drawn on paper: a mark measuring 1:1
+ * against its own ground, which is the same defect as an arrowhead in the
+ * colour of the bar it sits on. A knockout is only a knockout where there is
+ * something under it to clear, and the outline is what the reader sees either
+ * way.
+ */
 function LandNode({
   y,
   height,
@@ -367,7 +379,7 @@ function LandNode({
         width="100%"
         height={height}
         rx="2"
-        fill={FIG_COLOR.paper}
+        fill="none"
         stroke={FIG_COLOR.ruleStrong}
         strokeWidth="1"
       />

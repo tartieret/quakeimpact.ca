@@ -66,6 +66,12 @@ const METER_W = SEG_W * 3 + SEG_GAP * 2;
  * colour at all, and the written label beside it carries the word. Not yet
  * assessed fills none of them and hatches all three, which is the fourth
  * state's mark everywhere else on the site.
+ *
+ * An unfilled segment is `ruleStrong`, which is what `BandMeter` itself uses.
+ * It was `rule` here, and `rule` on paper is 1.3:1 in both themes, so the
+ * unfilled segments barely drew and the meter lost its denominator: two of
+ * three read as a bare two. `rule` is the kit's colour for the empty track
+ * behind a bar, where a filled bar sits over it. Nothing sits over these.
  */
 function Meter({
   x,
@@ -94,7 +100,7 @@ function Meter({
               ? hatch
               : i < filled
                 ? BAND_COLOR[band]
-                : FIG_COLOR.rule
+                : FIG_COLOR.ruleStrong
           }
           stroke={band === "unknown" ? FIG_COLOR.ruleStrong : undefined}
           strokeWidth={band === "unknown" ? 1 : undefined}
@@ -136,14 +142,21 @@ export function MethodOneModel() {
       <FigHeading y={14}>Both scenarios come from one catalogue</FigHeading>
       <FigValue y={41}>One model, quoted twice</FigValue>
 
-      {/* The model itself. */}
+      {/* The model itself.
+
+          Every box on this figure is `fill="none"` rather than paper. Nothing
+          passes under one, so a paper rectangle here would be paper drawn on
+          paper: a mark measuring 1:1 against its own ground, which is the same
+          defect as an arrowhead in the colour of the bar it sits on. A knockout
+          is only a knockout where there is something under it to clear, and the
+          outline is what the reader sees either way. */}
       <rect
         x="0"
         y={58}
         width="100%"
         height={48}
         rx="3"
-        fill={FIG_COLOR.paper}
+        fill="none"
         stroke={FIG_COLOR.ruleStrong}
         strokeWidth={FIG_STROKE}
       />
@@ -183,7 +196,7 @@ export function MethodOneModel() {
         width="90%"
         height={54}
         rx="3"
-        fill={FIG_COLOR.paper}
+        fill="none"
         stroke={FIG_COLOR.ruleStrong}
         strokeWidth={FIG_STROKE}
       />
@@ -202,7 +215,7 @@ export function MethodOneModel() {
         width="90%"
         height={54}
         rx="3"
-        fill={FIG_COLOR.paper}
+        fill="none"
         stroke={FIG_COLOR.ruleStrong}
         strokeWidth={FIG_STROKE}
       />
