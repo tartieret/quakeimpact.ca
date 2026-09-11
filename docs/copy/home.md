@@ -121,20 +121,16 @@ matters to you depends on the building you are in and the ground it stands on.
 shaking](/shaking/), which covers the ground under the region, the buildings on
 it, and the fires and landslides that arrive after the shaking stops.
 
-## Where the documents disagree, this site says so
+## Compiled from published work
 
-No number here is a new estimate. Where nobody has published an answer, the page
-says so rather than filling the gap with a guess. Where two official documents
-contradict each other, both are here and the page says where they part company —
-British Columbia's own advice on how long a household should expect to last alone
-is published in six different versions, and [preparing](/prepare/) sets them side
-by side.
+Everything here comes from documents published by governments, utilities and
+engineers. Where nobody has published an answer, the page says so rather than
+guessing, and where two official documents contradict each other, both are here.
 
-How long a system is out is written as one of three bands, Low, Medium or High,
-with a fourth state, not yet assessed, drawn hatched. [How the bands
-work](/method/). [The sources](/sources/) lists every document, and
-[contribute](/contribute/) explains what a correction needs in order to be
-usable.
+How long something is out is written as one of three bands — Low, Medium or High,
+with a fourth for not yet assessed. [How the bands work](/method/). [The
+sources](/sources/) lists every document, and if you find something wrong,
+[contribute](/contribute/) says what a correction needs.
 
 ## Start here
 

@@ -378,25 +378,18 @@ export const home: PageModule = {
     },
 
     {
-      title: "Where the documents disagree, this site says so",
+      title: "Compiled from published work",
       body: (
         <Prose>
           <p>
-            No number here is a new estimate. Where nobody has published an
-            answer, the page says so rather than filling the gap with a guess.
-            Where two official documents contradict each other, both are here
-            and the page says where they part company — British Columbia’s own
-            advice on how long a household should expect to last alone is
-            published in six different versions, and{" "}
-            <Link href="/prepare/" className={link}>
-              preparing
-            </Link>{" "}
-            sets them side by side.
+            Everything here comes from documents published by governments,
+            utilities and engineers. Where nobody has published an answer, the
+            page says so rather than guessing, and where two official documents
+            contradict each other, both are here.
           </p>
           <p>
-            How long a system is out is written as one of three bands, Low,
-            Medium or High, with a fourth state, not yet assessed, drawn
-            hatched.{" "}
+            How long something is out is written as one of three bands — Low,
+            Medium or High, with a fourth for not yet assessed.{" "}
             <Link href="/method/" className={link}>
               How the bands work
             </Link>
@@ -404,11 +397,11 @@ export const home: PageModule = {
             <Link href="/sources/" className={link}>
               The sources
             </Link>{" "}
-            lists every document, and{" "}
+            lists every document, and if you find something wrong,{" "}
             <Link href="/contribute/" className={link}>
               contribute
             </Link>{" "}
-            explains what a correction needs in order to be usable.
+            says what a correction needs.
           </p>
         </Prose>
       ),
