@@ -158,15 +158,14 @@ Decided per dataset, based on what is actually available. Embed official viewers
 - **Kobe 1995** — a port city of similar scale losing its port.
 - **Tōhoku 2011** — fuel logistics. The mechanism is that the fuel existed and the terminals and trucks to move it did not, which is the shape of the Lower Mainland argument. Sourced from the Japanese government's own briefing; lead with BC's documents and use this only to show what it looked like.
 
-**West Berlin 1948–49 — used inverted.** Not as a model for rescue, but as the ceiling on what rescue can be.
-
-The naive version of the analogy fails: the airlift worked because the airfields were intact and the supplying side was undamaged, and neither holds here. YVR sits on Sea Island delta ground and, in the Cascadia case, the entire coast is a disaster zone simultaneously.
-
-The useful version is a capacity comparison. The airlift's best single day, 16 April 1949, moved 12,941 short tons — about 11,700 tonnes — to a city of roughly two million people, after ten months of buildup, with hundreds of aircraft and undamaged receiving airfields. Metro Vancouver is 2.64 million (2021 Census). Water for drinking and domestic hygiene at the Sphere minimum of 15 litres per person per day is about 39,600 tonnes a day. That is more than three times the best day of the airlift, every day, before any food, fuel or medical supply moves.
-
-The per-capita form is harder to argue with. Berlin's sustained delivery was about 2.26 kg per person per day of everything — coal, flour, medicine. Vancouver's water alone, at the humanitarian minimum, is six and a half times that.
-
-*Presentation:* label this explicitly as an order-of-magnitude comparison, not a logistics plan. Cite each input — airlift tonnage from the historical record in short tons and converted once, population from the 2021 Census, the consumption minimum from the Sphere Handbook, WASH Standard 2.1. Carry the caveat that roughly two-thirds of airlift tonnage was coal and that Berlin's water supply was never cut: this is a ceiling on air logistics, not a claim that Berlin got less water.
+**Retired, 11 September 2026 — the West Berlin 1948–49 airlift comparison.** It was
+carried here as a ceiling on what rescue can be: airlift tonnage per capita set against
+the humanitarian water minimum. The arithmetic held up under verification and the
+comparison still does not earn its place. It needs three caveats before it can be stated
+honestly — that most airlift tonnage was coal, that Berlin's water was never cut, and that
+nobody plans to supply a metro region by air — and a comparison that takes three caveats
+to be fair is not teaching a reader anything they can use. Removed from the overview, from
+`research/analogues.md` and from the sources page.
 
 *State the counterpoint, or an expert will.* Nobody plans to supply a metro region by air. The actual levers are restoring surface corridors and reducing demand — which means people leave. That is its own hard truth, and it belongs on the housing and displacement page.
 

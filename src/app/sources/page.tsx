@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ReadingShell } from "@/components/shell";
-import {
-  PageHeader,
-  Section,
-  Prose,
-  Callout,
-  NextPrev,
-} from "@/components/page-parts";
-import { lorem, loremLine, loremParagraphs } from "@/content/lorem";
+import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
+import { lorem, loremLine } from "@/content/lorem";
 
 export const metadata: Metadata = { title: "Sources" };
 
@@ -26,10 +20,6 @@ const ANALOGUES = [
   { name: "Christchurch 2011", role: "The closest analogue for aftermath" },
   { name: "Kobe 1995", role: "A port city of similar scale losing its port" },
   { name: "Tōhoku 2011", role: "Fuel logistics collapse" },
-  {
-    name: "West Berlin 1948–49",
-    role: "Used inverted — the ceiling on what rescue can be",
-  },
 ];
 
 export default function SourcesPage() {
@@ -69,19 +59,6 @@ export default function SourcesPage() {
             </li>
           ))}
         </ul>
-      </Section>
-
-      <Section title="The Berlin comparison, and its counterpoint">
-        <Callout label="Order of magnitude, not a logistics plan">
-          <p className="text-lg leading-relaxed">
-            Labelled explicitly as a capacity comparison. Nobody plans to supply
-            a metro region by air — the actual levers are restoring surface
-            corridors and reducing demand.
-          </p>
-        </Callout>
-        <div className="mt-8">
-          <Prose paragraphs={loremParagraphs(2, 300)} />
-        </div>
       </Section>
 
       <Section

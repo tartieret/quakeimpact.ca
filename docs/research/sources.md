@@ -121,11 +121,6 @@ pass and failed.
 | `BCH-XFMR-21` | Asset Management Strategy §2.2.16 — 672 power transformers at 60 kV or greater, 10 spares, condition and age distribution; the same section in the F2020–F2021 RRA gives 572 and 10 | BC Hydro, via BCUC | filed 31 Aug 2021 | https://docs.bcuc.com/documents/proceedings/2021/doc_64006_b-2-1-bch-f23-f25-rra-appendix-public.pdf | direct | — |
 | `BCSIMS-22` | BC Smart Infrastructure Monitoring System — Overview | BC Ministry of Transportation and Infrastructure | Sep 2022 | https://www2.gov.bc.ca/assets/gov/driving-and-transportation/transportation-infrastructure/engineering-standards-and-guidelines/bridge/bcsims-overview.pdf | direct | — |
 | `BCUC-C-6-25` | Decision and Order C-6-25, Tilbury LNG Storage Expansion CPCN (Fung, Loski, Dennier) — **retrieved and read in full**: "hundreds of thousands of customers", "several weeks to restore service", $1,143.889M as-spent, the 2 Bcf resiliency reserve within a 3 Bcf tank, and the Base Plant tank at 58% for seismic compliance | BC Utilities Commission | 27 Oct 2025 | https://docs.bcuc.com/documents/orders/2025/doc_84036_c-6-25-fei-cpcn-tilbury-project-final.pdf | direct | — |
-| `BERLIN-AM` | "The Berlin Airlift 1948/49" — supports the peak day and the ~2 million population only | AlliiertenMuseum, Berlin | undated | https://www.alliiertenmuseum.de/en/thema/the-berlin-airlift-1948-49/ | direct | — |
-| `BERLIN-NASM` | van der Linden, B., "Supplying a City by Air: The Berlin Airlift" | Smithsonian National Air and Space Museum | 14 Sep 2018 | https://airandspace.si.edu/stories/editorial/berlin-airlift | direct | — |
-| `BERLIN-PBS` | "Berlin Airlift", American Experience — supports the 4,500 short-ton threshold and January 1949 only | PBS / WGBH | undated | https://www.pbs.org/wgbh/americanexperience/features/airlift-berlin/ | direct | — |
-| `BERLIN-TINE` | Tine, G.C., Maj., "Berlin Airlift: Logistics, Humanitarian Aid, and Strategic Success", *Army Logistician*, Sep–Oct 2005. **The original host `almc.army.mil` is gone**; read as an Internet Archive capture | US Army Logistics Management College | Sep–Oct 2005 | https://web.archive.org/web/20070116210844id_/http://www.almc.army.mil/alog/issues/SepOct05/Berlinairlift.html | archive | — |
-| `BERLIN-USAF` | Fact sheet "1949 — The Berlin Airlift", for the 462-day, 2.3 million short-ton and ~278,000-flight aggregates and the landing interval. **The live host `afhistory.af.mil` no longer resolves**; read as an Internet Archive capture | US Air Force Historical Support Division | 28 Jun 2012 | https://web.archive.org/web/20201212150303id_/https://www.afhistory.af.mil/FAQs/Fact-Sheets/Article/458961/1949-the-berlin-airlift/ | archive | — |
 | `BIV-DCRRA-25` | Labbé, S., "Major earthquake would cost B.C. more than all disasters over past 200 years, finds report" — the reporting route to `KELLY-2019`, and the only one of the two reprints that carries a link to the study | *Business in Vancouver* / Glacier Media | 27 Dec 2025 | https://www.biv.com/news/economy-law-politics/major-earthquake-would-cost-bc-more-than-all-disasters-over-past-200-years-finds-report-11660886 | media | — |
 | `BOWEN-TSU-19` | *Tsunami Hazard and Risk Assessment*, Dr John J. Clague, SFU Earth Sciences | Bowen Island Municipality | Jul 2019 | https://bowenisland.civicweb.net/document/197949/ | direct | — |
 | `CAEE-10YR` | "Seismic Design of Bridges in British Columbia: Ten-Year Review", Paper 94813 — McIntyre, Gérin & Leggett | Canadian Association for Earthquake Engineering | c. 2015 (venue and year unconfirmed) | https://www.caee.ca/pdf/Paper_94813.pdf (domain mid-rebuild; directory paths already 404 — **archive before launch**) | direct | — |
@@ -406,6 +401,13 @@ pass and failed.
 
 ## Rows that were retired, and where their claims went
 
+**The `BERLIN-*` family — retired 11 September 2026.** `BERLIN-AM`, `BERLIN-NASM`,
+`BERLIN-TINE`, `BERLIN-USAF` and the withdrawn `BERLIN-MIG` supported the West Berlin
+airlift capacity comparison, which is retired in `analogues.md`. The figures were verified
+and are not in dispute; the comparison needed three caveats to be fair, which is one more
+than a reader will carry. Nothing else in the folder cited them.
+
+
 Recorded so a key seen in an older draft resolves to something.
 
 | Retired key | Replaced by | Why |
@@ -421,7 +423,6 @@ Recorded so a key seen in an older draft resolves to something.
 | `LEPAN` | `LEPAN-2016` + `PACICC-2021` + `KELLY-2019` | One key conflated three studies. The third was keyed `GSC-2019-INS` until the study was identified; see below. |
 | `COV-DFPS` | `COV-DFPS-2001` + `COV-DFPS-DATA` + `COV-PREPARES` | A bundle of council records split by document. |
 | `COV-URM` | `COV-URM-2000` + `COV-RISK-2024` + `COV-PLAN-2026` | Split into dated per-document rows. |
-| `BERLIN-MIG` | `BERLIN-USAF` | A commercial blog whose own title contradicts the figure cited to it. |
 | `ICLR-FIRE` | `SCAWTHORN-2020` | Superseded by the primary report, retrieved in full at ICLR's new path. `ICLR-FIRE` also carried a **wrong figure** — $170M for the Cascadia fire loss, where the report says $162 million. The two keys were briefly reversed; this is the settled direction. |
 | `COV-URM-2024` / `COV-URM-2026` | `COV-RISK-2024` / `COV-PLAN-2026` | Two memos keyed the same two council reports differently. |
 | `AIR-2013` (as a single row) | `AIR-2013` + `AIR-2013-CU` | The study and the journalism that reports it are different routes and both are cited. |
