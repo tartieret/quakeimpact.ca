@@ -185,7 +185,7 @@ export const home: PageModule = {
 
     {
       title: "What you would actually notice",
-      lede: "Six of the thirteen systems, picked because they are the ones a household feels first. Each carries how long it is out, one sentence on how it fails, and the document behind it.",
+      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to. Each one carries how long it is out, a sentence on how it fails, and the document behind it.",
       body: (
         <div className="flex flex-col gap-6">
           <SystemGrid
@@ -200,8 +200,8 @@ export const home: PageModule = {
           />
           <Prose>
             <p>
-              The other seven — natural gas, fuel, food, health care, the port
-              and airport, the dams, and where help comes from — are on{" "}
+              Natural gas, fuel, food, health care, the port and airport, the
+              dams, and where help comes from are on{" "}
               <Link href="/after/" className={link}>
                 life afterwards
               </Link>

@@ -55,16 +55,16 @@ dependency graph](/dependencies/) counts what each system is waiting on.
 
 ## What you would actually notice
 
-Six of the thirteen systems, picked because they are the ones a
-household feels first. Each carries how long it is out, one sentence on how it
-fails, and the document behind it.
+Water in the taps, power in the walls, a phone that connects, a toilet that
+flushes, roads that carry you, a home to go back to. Each one carries how long it
+is out, a sentence on how it fails, and the document behind it.
 
 *Water, electricity, communications, sanitation, transportation and housing,
 drawn from the content model rather than written here.*
 
-The other seven — natural gas, fuel, food, health care, the port and airport, the
-dams, and where help comes from — are on [life afterwards](/after/), with the
-same three things for each.
+Natural gas, fuel, food, health care, the port and airport, the dams, and where
+help comes from are on [life afterwards](/after/), with the same three things for
+each.
 
 ## There are two earthquakes to think about, not one
 

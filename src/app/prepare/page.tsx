@@ -49,7 +49,7 @@ export default function PreparePage() {
             SYSTEMS, so the grid cannot drift from the page it points at. */}
         <Section
           title="By system"
-          lede="What each of the thirteen systems does when it fails."
+          lede="What each system does when it fails."
         >
           <ul className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2">
             {SYSTEMS.map((system) => (
