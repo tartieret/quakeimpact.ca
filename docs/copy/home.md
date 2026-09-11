@@ -3,7 +3,7 @@ route: /
 title: What a major earthquake does to the Lower Mainland, and for how long
 nav: Home
 hook: The shaking is the short part.
-lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] Most households in the region have not put together an emergency kit of any size. [RESEARCHCO-PREP-21] So this site gathers what is already published about a major earthquake in the Lower Mainland — what breaks, how long it stays broken, and what each thing is waiting on — to make two weeks a length of time you can picture rather than a slogan.
+lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] Most households in the region have not put together an emergency kit of any size. [RESEARCHCO-PREP-21] So this site gathers what is already published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each thing is waiting on. Two weeks becomes a length of time you can picture rather than a slogan.
 status: draft
 ---
 
@@ -23,7 +23,7 @@ words. See the module docblock in `src/content/pages/home.tsx`.*
 felt: a sound like a freight train, then 10 to 20 seconds of violent shaking that
 knocks people off their feet, "except for those who remember to drop, cover, and
 hold on". A small number of buildings collapse, many more shift and crack, and
-most of the people badly hurt are hurt by things falling — some of them while
+most of the people badly hurt are hurt by things falling, some of them while
 running outside. [More about the shaking](/shaking/).
 
 *Cascadia M9:* The province's megathrust assessment sets its earthquake at ten in
@@ -31,7 +31,7 @@ the morning on an August day. The shaking is moderate rather than violent and
 lasts about three minutes, and it arrives along a thousand kilometres of coast at
 once rather than under one city. [More about the shaking](/shaking/).
 
-The [power](/after/electricity/) is already off when the shaking stops — the
+The [power](/after/electricity/) is already off when the shaking stops: the
 lights, the lifts, the tills, the fuel pumps and the traffic signals at every
 intersection, all at the same moment. Everyone reaches for a
 [phone](/after/communications/) at once, and the towers that keep working are the
@@ -72,8 +72,8 @@ workplaces are shut or somewhere else.
 
 **Months — repair becomes the ordinary state of things.** The [building you live
 in](/after/housing/) can be standing, sound to look at, and closed for months
-behind a cordon — and most people who lose their home lose it that way rather
-than to collapse. Somewhere to move into is scarce, contractors and engineers are
+behind a cordon. Most people who lose their home lose it that way rather than
+to collapse. Somewhere to move into is scarce, contractors and engineers are
 scarcer, and every household in the region is looking at the same time.
 
 Utilities run at reduced service long after they are back on, and the network as
@@ -127,7 +127,7 @@ Everything here comes from documents published by governments, utilities and
 engineers. Where nobody has published an answer, the page says so rather than
 guessing, and where two official documents contradict each other, both are here.
 
-How long something is out is written as one of three bands — Low, Medium or High,
+How long something is out is written as one of three bands: Low, Medium or High,
 with a fourth for not yet assessed. [How the bands work](/method/). [The
 sources](/sources/) lists every document, and if you find something wrong,
 [contribute](/contribute/) says what a correction needs.

@@ -89,9 +89,9 @@ export const home: PageModule = {
         . <Cite id="PREPAREDBC" /> Most households in the region have not put
         together an emergency kit of any size.{" "}
         <Cite id="RESEARCHCO-PREP-21" /> So this site gathers what is already
-        published about a major earthquake in the Lower Mainland — what breaks,
-        how long it stays broken, and what each thing is waiting on — to make
-        two weeks a length of time you can picture rather than a slogan.
+        published about a major earthquake in the Lower Mainland: what breaks,
+        how long it stays broken, and what each thing is waiting on. Two weeks
+        becomes a length of time you can picture rather than a slogan.
       </>
     ),
     /**
@@ -131,7 +131,7 @@ export const home: PageModule = {
                           remember to drop, cover, and hold on”. A small
                           number of buildings collapse, many more shift and
                           crack, and most of the people badly hurt are hurt by
-                          things falling — some of them while running
+                          things falling, some of them while running
                           outside.{" "}
                           <Link href="/shaking/" className={link}>
                             More about the shaking
@@ -159,9 +159,9 @@ export const home: PageModule = {
                       <Link href="/after/electricity/" className={link}>
                         power
                       </Link>{" "}
-                      is already off when the shaking stops — the lights,
-                      the lifts, the tills, the fuel pumps and the traffic
-                      signals at every intersection, all at the same moment.
+                      is already off when the shaking stops: the lights, the
+                      lifts, the tills, the fuel pumps and the traffic signals
+                      at every intersection, all at the same moment.
                       Everyone reaches for a{" "}
                       <Link href="/after/communications/" className={link}>
                         phone
@@ -278,8 +278,8 @@ export const home: PageModule = {
                         building you live in
                       </Link>{" "}
                       can be standing, sound to look at, and closed for months
-                      behind a cordon — and most people who lose their home
-                      lose it that way rather than to collapse. Somewhere to
+                      behind a cordon. Most people who lose their home lose
+                      it that way rather than to collapse. Somewhere to
                       move into is scarce, contractors and engineers are
                       scarcer, and every household in the region is looking at
                       the same time.
@@ -388,7 +388,7 @@ export const home: PageModule = {
             contradict each other, both are here.
           </p>
           <p>
-            How long something is out is written as one of three bands — Low,
+            How long something is out is written as one of three bands: Low,
             Medium or High, with a fourth for not yet assessed.{" "}
             <Link href="/method/" className={link}>
               How the bands work
