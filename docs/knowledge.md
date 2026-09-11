@@ -11,6 +11,311 @@ it was confirmed.
 
 ---
 
+## A failed fetch saved with a .pdf extension is not a PDF
+
+**10 September 2026.** Two candidate URLs existed for one Metro Vancouver agenda,
+differing only in `Jun` against `June`. Both had produced a local file with a `.pdf`
+name, so both looked retrieved.
+
+They were not the same thing. One was 8.6 MB of agenda; the other was 115 KB of
+**JavaScript** — a site's shell page, returned with a 200, saved under the name the
+fetcher asked for. Nothing in the filename or the exit status said so.
+
+The check is one command: `file` on the artefact, or a page count. A saved response is
+not evidence of a successful retrieval, and a `.pdf` extension is a request, not a
+result. This is the same failure as a 403 recorded as an absence and a broken search
+recorded as a gap — **the tool succeeded, the retrieval did not, and only the content
+tells you which.**
+
+**How confirmed:** the smaller file identifies as JavaScript source; the larger one
+carries the agenda cited in `research/systems/dams-and-reservoirs.md`.
+
+---
+
+## A broken search looks exactly like an absence
+
+**10 September 2026.** The dams page said no current seismic assessment of Cleveland
+or Seymour Falls had been published. It was wrong. Dam Safety Reviews for both were
+completed in 2024 and their conclusions are published every year in the GVWD Dam
+Safety Program Annual Update, tabled at Metro Vancouver's Water Committee. Six
+editions were retrievable.
+
+The earlier pass missed them because **metrovancouver.org's own search returns HTTP
+500**. A site search that errors, returns nothing, or silently drops PDFs produces
+precisely the same result as a subject nobody has written about — and nothing in the
+output says which it was.
+
+Two habits follow. Run a **control query** against any site search before trusting a
+negative: search for something you know is there. If the control fails, the search is
+broken and every negative from it is void. And prefer the **document series** to the
+search box — annual reports, board and committee agendas, statutory filings. A body
+that must report something reports it on a schedule, and the schedule is enumerable
+even when the search is not.
+
+**How confirmed:** six annual updates retrieved by walking committee agendas after
+the search returned 500.
+
+---
+
+## Trace a discrepancy; never average it
+
+**10 September 2026.** Two Metro Vancouver sources gave different figures for the same
+dam project: $80.5 million, in design, 2026–2032, against $25 million, not started,
+2028–2034. The tempting resolutions are to take the newer, take the larger, or split
+the difference.
+
+Tracing it found the actual answer: the February agenda's PDF has name and data
+columns that desynchronise under extraction — nine or more consecutive rows carry
+data with no name — and the figures that appear to sit against Cleveland Dam belong
+to **Burnaby Mountain Tank No. 2 and No. 3** and **Port Moody Main No. 3**. Averaging
+would have put a water tank's capital budget on a dam, in a document whose entire
+value is that its numbers are checkable.
+
+The rule: **two sources disagreeing is a fact about the sources, not a range to
+collapse.** Find out why they differ before deciding what to print. Layout-driven
+extraction errors are common in agenda PDFs and are invisible in the extracted text —
+a table where several consecutive rows have data but no label is the tell.
+
+**How confirmed:** the July reporting is structurally sound — one line per row, clean
+descending sort — and its figures are the ones used.
+
+---
+
+## Silence in one document is not evidence, if another document is unread
+
+**10 September 2026.** FortisBC's 2026 Long Term Gas Resource Plan — its public
+investment roadmap to 2050 — contains no occurrence of "seismic" or "earthquake".
+That was verified properly, by full-text extraction, and recorded as a sourced
+absence: the gas system's own long-range plan does not treat earthquake.
+
+It was wrong. FortisBC's 2024 Gas System Resiliency Plan, filed with the BCUC, is
+a quantitative seismic risk assessment — 511 occurrences of "earthquake", Hazus
+fragility curves, six earthquake damage mechanisms, 58 assessed vulnerabilities,
+one of them driven by earthquake lateral spreading with a 61-day mean outage. The
+document that would have contradicted the inference was known to exist, was listed
+as unretrieved, and was sitting behind an HTTP 403.
+
+The failure was not the search. It was writing a finding whose whole force came
+from an absence, while a named, identified document that bore directly on it was
+still unread. **An absence is only evidence once the documents known to be
+relevant have been read.** Where one is outstanding, the honest claim is narrower:
+this document does not address it, and that one has not been seen.
+
+The narrower claim survived and is still interesting — a utility whose public
+roadmap frames resilience as a supply-and-demand question assesses seismic hazard
+extensively in its regulatory filing. That contrast is real. The accusation the
+broader claim implied was not.
+
+**How confirmed:** the 2024 plan retrieved and searched; the finding withdrawn in
+`research/systems/gas.md` rather than quietly edited.
+
+---
+
+## Three routes that unblocked documents recorded as unreachable
+
+**10 September 2026.** Each of these turned a "not retrievable" note into a primary
+source. All three are worth trying before recording an absence.
+
+**ICLR.** Every `iclr.org/resource/...` URL in the site's search index is stale and
+404s. The working pattern is `https://www.iclr.org/iclr-embed/?file=<base64 of the
+numeric id>`, which returns a viewer shell whose markup contains the real
+`wp-content/uploads/YYYY/MM/` PDF address. The Vancouver fire files were
+re-uploaded under `2025/10/`, which is why the old paths broke. Cite the uploads
+URL, and expect it to move again.
+
+**NRCan after GEOSCAN.** `geoscan.nrcan.gc.ca` no longer resolves at all, so every
+GEOSCAN link still printed on live NRCan pages is dead. Its successor, OSTR/DOST,
+is a DSpace 7.3 instance, and the server-side-rendered HTML of any
+`ostrnrcan-dostrncan.canada.ca/search?query=` page leaks the backend API host.
+That API is unauthenticated: `/discover/search/objects?query=` returns full Dublin
+Core including the report number, and `/core/items/{uuid}/bundles?embed=bitstreams`
+returns direct PDF addresses. This is the route to any GEOSCAN-era publication.
+
+**Wayback CDX scales inversely with domain size.** Filtered CDX scans succeeded on
+small hosts and timed out on `fema.gov`, `oregon.gov` and `media.defense.gov`.
+Narrow the host, not the filter.
+
+**A pattern worth noticing across all three:** the documents were not withdrawn.
+The publishers reorganised, and the addresses everyone cites were left pointing at
+nothing. Two federal hosts in this project have died outright —
+`geoscan.nrcan.gc.ca` and `afhistory.af.mil` — and in both cases the document
+survives only in a web archive. Where a citation matters, record the archive
+capture alongside the live URL, because the live URL is the one that will fail.
+
+---
+
+## Some public document servers block on User-Agent alone
+
+**10 September 2026.** `docs.bcuc.com` returned HTTP 403 to two agents across two
+research passes, and both recorded the documents as unreachable. They are not. A
+plain `curl` with a desktop browser User-Agent, an `Accept:` header and a
+`Referer` returned HTTP 200 on the first attempt for both PDFs.
+
+The same pattern holds for `council.vancouver.ca`, `vancouver.ca` (which also
+wants a `Referer`), `biv.com` and the Glacier Media titles, `crtc.gc.ca`, Sphere
+and YVR. `egbc.ca` sits behind a Cloudflare challenge, which is a different and
+harder problem.
+
+Two consequences worth carrying. A "403" in a research note means *not yet
+retrieved*, never *not available* — and the distinction matters, because the BCUC
+403 cost this project a wrong finding. And any absence recorded against a source
+that 403s should be re-tested with a browser User-Agent before it is published.
+
+**How confirmed:** both BCUC PDFs retrieved in full on the first attempt after the
+header change.
+
+---
+
+## A confidence marker certifies a route, not a feeling
+
+**10 September 2026.** The research report marked claims [A] where the source was
+a government body, on the reasoning that government bodies are reliable. Two
+findings showed that this is the wrong test.
+
+The George Massey Tunnel has been described as "seismically retrofitted" in two
+official government releases, and contradicted twice by the engineering memo the
+Ministry itself commissioned. A press release is [A] evidence that the release
+says what it says. It is not evidence for an engineering fact its own engineers
+dispute.
+
+In the other direction, a Washington State after-action report was cited [A] for
+Metro Vancouver claims and was driving a band in the system grid. It is a
+Washington document. The rubric's own definition of [C] says out-of-region data
+is never a Vancouver number — including when the out-of-region body is a
+government.
+
+The rule that came out of it, now in `research/CONVENTIONS.md`: the marker
+records **who said it, in what document, and how it reached us**. Institutional
+authority is not one of the inputs.
+
+**How confirmed:** MoTI releases against the 2019 COWI memo; the rubric against
+its own application.
+
+---
+
+## Verify a claim against the document, not against the citation
+
+**10 September 2026.** The report's strongest hook was that BC still advises 72
+hours of self-sufficiency while Washington moved to two weeks. The PreparedBC
+guide was cited correctly — right title, right URL, right revision date. Fetching
+it and searching the text returned **zero** occurrences of "72 hours", "72-hour",
+"three days" or "three-day". It says "at least two weeks", three times.
+
+The claim was almost certainly true once, and survived a draft because everything
+around it checked out. A correct citation is not evidence that the cited document
+supports the claim, and the only way to know is to open it.
+
+Two other claims failed the same way in the same pass: "grossly inadequate" and
+"humanitarian disaster within ten days" appear nowhere in the Washington
+after-action report they were attributed to — they are newspaper quotations from
+an unpublished draft — and the "85% of southwest BC's refined fuel" figure is not
+in the Global News article it cites, which says something else about somewhere
+else.
+
+**How confirmed:** full-text extraction and search of each cited document.
+
+---
+
+## The province has its own scenarios, and they are better than ours
+
+**10 September 2026.** Two BC government documents that no earlier search had
+surfaced carry more than the site had assembled from every other source together.
+
+The **Provincial Earthquake Immediate Response Strategy** (EMCR, v1.1 August
+2026) uses a shallow crustal M7.0 in the Georgia Strait affecting Greater
+Vancouver as its primary planning scenario — the same event the site's crustal
+scenario is built on — with red and yellow tag counts, casualties, displaced
+households, direct losses, a recurrence interval and a duration. The
+**Disaster and Climate Risk and Resilience Assessment** (October 2025) does the
+same for Cascadia.
+
+Between them they closed six open questions and moved three system pages out of
+NOT ASSESSED. The lesson for future gaps: before concluding that something is
+unpublished, look for the **operational plan** rather than the public-information
+page. Response plans state assumptions and numbers that outreach material does
+not.
+
+**How confirmed:** both documents retrieved and read; figures cross-checked
+against the narrative text, which repeats them in prose.
+
+---
+
+## Canada has one earthquake modelling lineage, not several
+
+**10 September 2026.** The report presented three casualty and loss estimates as
+independent corroboration. They are not independent. The DCRRA's figures are
+NRCan RiskProfiler outputs for `SIM9p0_CascadiaInterfaceBestFault` — the same
+catalogue run the site already cites — and its loss family restates Conference
+Board of Canada 2016. PEIRS's figures were developed by NRCan too.
+
+A range that comes from one model run stated three times is not a range. Where
+the site shows more than one number it must show who produced each, or it is
+manufacturing agreement.
+
+**How confirmed:** DCRRA endnotes 21, 22 and 25 name the RiskProfiler scenario;
+PEIRS p.19 names NRCan.
+
+---
+
+## Insured loss and economic loss are different quantities
+
+**10 September 2026.** The report compared total economic loss estimates against
+the insurance industry's claims-paying capacity and concluded that every
+published figure exceeds capacity by two to four times. Insurers pay insured
+losses. The published insured figures — $20.4B and $26B — are both *below* the
+~$30B capacity.
+
+The error survived because both quantities are denominated in billions of
+dollars and appear in the same sentences in the source material. Any comparison
+between two money figures needs the question asked explicitly: money paid by
+whom, to whom, for what.
+
+**How confirmed:** re-derived from the report's own table; the two independent
+insured-to-total ratios agree closely at 27.2% and 26.5%.
+
+---
+
+## An absence that has been searched for is a finding
+
+**10 September 2026.** Six of twelve system pages were empty because nothing had
+been found. Searching properly turned most of those into statements about the
+world rather than statements about our effort.
+
+Metro Vancouver's governing drinking water plan names seismic risk as a core
+pressure and states no restoration time — a far better citation for "no published
+estimate exists" than any amount of unsuccessful searching. FortisBC's roadmap to
+2050 contains zero occurrences of "seismic". The City of Vancouver stated in an
+FOI response that it holds no records on falling-glass casualties. Metro
+Vancouver redacted the failure counts behind the water figures under FOIPPA, and
+IPREM withholds part of the debris-clearing plan.
+
+Those last two matter especially: **deliberate non-publication is not absence.**
+A document that exists and is withheld is a different fact from a document that
+was never written, and the site should not flatten them together.
+
+**How confirmed:** each absence recorded with the channel searched and the date,
+per `research/CONVENTIONS.md`.
+
+---
+
+## Map licensing is settled per dataset, and it blocks the flagship graphic
+
+**10 September 2026.** The Metro Vancouver microzonation layers are not openly
+licensed. They carry custom ICLR terms: share-alike, with commercial and
+electronic publication of the maps, data, or conclusions about them reserved to
+prior written approval. So the ground-conditions map, the liquefaction choropleth
+and the critical-infrastructure overlay are all held pending a reply from ICLR.
+
+The map the site *can* build today is the Dedicated Fire Protection System
+coverage boundary, under the Open Government Licence – Vancouver. The NRCan
+scenario catalogue is Open Government Licence – Canada and carries no risk.
+
+One trap recorded for the overlay work: the BC transmission lines dataset is
+openly licensed, but **voltage attributes are withheld by agreement with BC
+Hydro**, so a map built from it cannot imply voltage or criticality.
+
+**How confirmed:** per-dataset licence check recorded in `licensing.md`.
+
 ## Citation markers render inside a paragraph, so they carry no block elements
 
 The inline citation popover (`components/citation.tsx`) sits inside running
