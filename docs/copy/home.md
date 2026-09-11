@@ -3,7 +3,7 @@ route: /
 title: What a major earthquake does to the Lower Mainland, and for how long
 nav: Home
 hook: The shaking is the short part.
-lede: The shaking lasts minutes. The loss of water, power, sewers and the roads that repair them lasts months. This is what those months look like in Metro Vancouver, and every figure on the site comes from a document somebody else published.
+lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] I am the [volunteer point of contact for my neighbourhood](/about/), and in talking to people about this I have met almost nobody who has. So this site gathers what is already published about a major earthquake in the Lower Mainland — what breaks, how long it stays broken, and what each thing is waiting on — to make two weeks a length of time you can picture rather than a slogan.
 status: draft
 ---
 
@@ -112,6 +112,6 @@ when getting it to you is hardest.
 
 ## Sources on this page
 
-[CRTC-2025-226] [DCRRA-APPC] [MV-WATER-22] [MV-DEBRIS-17] [MOTI-SRDC-05]
-[BCH-WESTEND-25] [PEIRS] [BCUC-C-6-25] [COV-RISK-2024] [NRCAN-1700] [DCRRA-2025]
-[PREPAREDBC]
+[PREPAREDBC] [CRTC-2025-226] [DCRRA-APPC] [MV-WATER-22] [MV-DEBRIS-17]
+[MOTI-SRDC-05] [BCH-WESTEND-25] [PEIRS] [BCUC-C-6-25] [COV-RISK-2024]
+[NRCAN-1700] [DCRRA-2025]

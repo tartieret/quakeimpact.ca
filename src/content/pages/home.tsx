@@ -21,6 +21,15 @@ import type { PageModule } from "./index";
  * yet been told why this matters has no reason to work through the difference
  * between a megathrust and a crustal earthquake.
  *
+ * The standfirst is the one place outside `/about/` where the author speaks in
+ * the first person, and it is deliberate. The province's two-week ask carries a
+ * source; that almost nobody has done it does not, because no survey in the
+ * register measures it. Written as an observation the compiler made as his
+ * neighbourhood's point of contact, and linked to the page that says who he is,
+ * it is testimony a reader can weigh rather than a statistic with no document
+ * behind it. If a published preparedness rate for the region turns up, it
+ * belongs here and the sentence should become a cited one.
+ *
  * The first two sections open on a sentence the copy writes as their first
  * paragraph and this module passes as `lede`, which is the only difference
  * between the copy file and what the page renders.
@@ -54,13 +63,29 @@ export const home: PageModule = {
     title: "What a major earthquake does to the Lower Mainland, and for how long",
     nav: "Home",
     kicker: "Lower Mainland, British Columbia",
-    standfirst:
-      "The shaking lasts minutes. The loss of water, power, sewers and the roads that repair them lasts months. This is what those months look like in Metro Vancouver, and every figure on the site comes from a document somebody else published.",
+    standfirst: (
+      <>
+        British Columbia asks every household to keep{" "}
+        <Link href="/prepare/" className={link}>
+          two weeks of water and food
+        </Link>
+        . <Cite id="PREPAREDBC" /> I am the{" "}
+        <Link href="/about/" className={link}>
+          volunteer point of contact for my neighbourhood
+        </Link>
+        , and in talking to people about this I have met almost nobody who has.
+        So this site gathers what is already published about a major earthquake
+        in the Lower Mainland — what breaks, how long it stays broken, and what
+        each thing is waiting on — to make two weeks a length of time you can
+        picture rather than a slogan.
+      </>
+    ),
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
+      "PREPAREDBC",
       "CRTC-2025-226",
       "DCRRA-APPC",
       "MV-WATER-22",
@@ -72,7 +97,6 @@ export const home: PageModule = {
       "COV-RISK-2024",
       "NRCAN-1700",
       "DCRRA-2025",
-      "PREPAREDBC",
     ],
   },
 
