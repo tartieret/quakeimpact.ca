@@ -131,6 +131,26 @@ applies.
   redrawn, not "adapted from".
 - Treating a provincial PDF as reusable because it is public.
 
+**The one place this bites, and it is worth a permission request on its own.** PEIRS
+carries a three-paragraph narrative describing the first minutes of the crustal M7.0 —
+the freight-train sound, the 10-20 seconds, drop-cover-and-hold-on, liquefaction, the
+masonry walls into the street. It is the best reader-facing text in the entire source
+base, and paraphrase makes it worse. Quoted in full in `research/scenarios.md` §2 for our
+own use, which is ordinary research practice; **reproducing it on a public page is reuse
+and is not cleared.**
+
+Three routes, in order of preference:
+
+1. **Ask.** A named request for one passage, for a non-commercial public-information site
+   that credits the Province, is the kind of request the permission form exists for.
+2. **Quote two or three sentences.** Short quotation with attribution is fair dealing and
+   needs no permission. It keeps the province's voice and most of the effect.
+3. **Write the mechanisms ourselves and cite PEIRS for each.** Loses the voice, keeps the
+   substance, needs nothing from anyone.
+
+The page is not blocked by this — only its opening as currently drafted. Registered as
+blocking item 2 in `research/open-questions.md`.
+
 Permission route: the Copyright Permission Request Form, `QPIPPCopyright@gov.bc.ca`.
 Allow lead time.
 

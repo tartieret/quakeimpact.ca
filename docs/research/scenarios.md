@@ -191,6 +191,67 @@ earthquake among them; see `buildings.md`.
   M7.0 Georgia Strait's "about every 1500 years" for the broad region — two different
   quantities, and neither may be restated as the other.
 
+#### The province describes the experience, and it is the best reader-facing text in the source base
+
+PEIRS carries a narrative passage describing the first minutes of its crustal M7.0. It is
+quoted here in full because every attempt to paraphrase it produces something worse: it is
+concrete, it is sequenced the way a person would experience it, and it is the province's
+own voice rather than ours. [PEIRS] **[A]**
+
+> For many, the earthquake is heard before it is felt. The low, rumbling sound is similar
+> to that of a freight train, immediately followed by 10-20 seconds of violent shaking
+> that knocks people located closest to the epicentre from their feet — except for those
+> who remember to "drop, cover, and hold on". Taller buildings sway with the high
+> intensity shaking. Unsecured objects fall or fly through the air. Roads crack and the
+> ground ruptures in some areas. Buildings on softer, saturated soils lose support through
+> liquefaction — a process in which the ground temporarily behaves like a liquid while
+> being shaken.
+>
+> Landslides and rock falls are generated in many areas, cutting off transportation
+> routes. Flooding is increased by the recent wet weather event with some dikes failing.
+> Several fires start throughout the impact area from damaged electrical power and
+> ruptured gas lines. A small number of buildings collapse, many shift and crack, and
+> others are destroyed by fire.
+>
+> Windows break and glass scatters across the pavement. Debris is strewn throughout
+> roadways, cutting off access to areas and blocking vehicle passage. Entire walls from
+> unreinforced masonry buildings fall into the streets. Many of those who try to run
+> outside suffer extreme injury or death from falling and flying objects and thousands are
+> trapped or injured.
+
+**Why this passage earns its place, when the site's default is against vivid writing.**
+`../style-guide.md` records the evidence on fear appeals, and this is the case the rule
+was written to permit rather than forbid. Every image in it is a **mechanism the rest of
+this folder documents independently** — liquefaction on saturated soils, dike failure
+under the atmospheric-river condition, fire from ruptured gas, unreinforced masonry
+failing into the street. None of it is atmosphere. And it contains its own lever, twice:
+"except for those who remember to drop, cover, and hold on", and the specific,
+counter-intuitive instruction underneath "many of those who try to run outside suffer
+extreme injury or death". A reader who takes one thing from this site could do worse than
+those two sentences.
+
+**It is the crustal M7.0 and nothing else.** "The recent wet weather event" is PEIRS's
+January atmospheric-river condition; the passage is not transferable to the Cascadia M9,
+which is set in an August heatwave, lasts three minutes rather than twenty seconds, and
+would be described differently in every clause. **Label it by scenario wherever it
+appears, or do not use it.**
+
+**Guards on three specifics.** It says "a **small number** of buildings collapse" — the
+counter-intuitive part of the finding, consistent with `buildings.md`, and it must not be
+quietly dropped to make the passage more alarming. "Thousands are trapped or injured"
+attaches to PEIRS's own casualty figures, which belong to a **weekday-afternoon** timing
+and travel with it. And the "10-20 seconds" is PEIRS timing *violent shaking*, which is
+not the same measurement as the Exercise Coastal Response 2023 duration — see §5.
+
+**Licensing: this is the blocking question, not the editorial one.** `../licensing.md`
+records that **BC government material is all rights reserved by default**, not OGL-BC.
+Three paragraphs reproduced verbatim on a public page is a reuse decision, not a citation,
+and it is **not cleared**. Three routes, in order of preference: seek written permission
+from EMCR; quote two or three sentences rather than the whole passage, which is a much
+easier position to defend; or render the mechanisms in the site's own words and cite PEIRS
+for each, losing the voice but keeping the substance. **Do not publish the full passage
+until one of those is settled.** Recorded in `open-questions.md`.
+
 ### 3. The province's own Cascadia scenario — DCRRA M9.0
 
 The **Disaster and Climate Risk and Resilience Assessment: Provincial Report** (EMCR and
