@@ -1,4 +1,3 @@
-import { loremLine } from "./lorem";
 import type {
   Band,
   Impact,
@@ -76,27 +75,27 @@ export const BANDS: Record<
     label: "Low",
     duration: "Hours to a few days",
     extent: "Localised",
-    dependency: "Restores on its own",
+    dependency: "Comes back on its own",
   },
   medium: {
     label: "Medium",
     duration: "Days to weeks",
-    extent: "Patchy; worst on poor ground",
-    dependency: "Waits on one other system",
+    extent: "Patchy, worst on poor ground",
+    dependency: "Waiting on one other system",
   },
   high: {
     label: "High",
     duration: "Weeks to months, sometimes longer",
     extent: "Regional",
     dependency:
-      "Blocked by cascading failures and by competition for scarce crews, fuel and materials",
+      "Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast",
   },
   unknown: {
     label: "Not yet assessed",
-    duration: "—",
-    extent: "—",
+    duration: "Not published",
+    extent: "Not published",
     dependency:
-      "No published assessment this rubric can read — a statement about the public record, not about the infrastructure",
+      "Nobody has published an assessment. That is a statement about the public record, not about the infrastructure",
   },
 };
 
@@ -364,11 +363,34 @@ export const systemBySlug = (slug: string) =>
 /* ------------------------------------------------------------------ */
 
 export const SHAKING_PAGES = [
-  { slug: "ground", name: "Ground conditions", hook: loremLine(21) },
-  { slug: "buildings", name: "Buildings", hook: loremLine(22) },
-  { slug: "casualties", name: "Casualties", hook: loremLine(23) },
-  { slug: "fire-following", name: "Fire following", hook: loremLine(24) },
-  { slug: "secondary-hazards", name: "Secondary hazards", hook: loremLine(25) },
+  {
+    slug: "ground",
+    name: "Ground conditions",
+    hook: "What a building stands on matters more than which building it is.",
+  },
+  // The four below have no page text yet. Their hooks say what the subject is,
+  // and claim nothing, because a claim with no page behind it has nowhere to
+  // carry its source.
+  {
+    slug: "buildings",
+    name: "Buildings",
+    hook: "Structural performance by era and type, and non-structural failure: glazing, cladding and parapets.",
+  },
+  {
+    slug: "casualties",
+    name: "Casualties",
+    hook: "The published casualty ranges for the two scenarios, and what drives the range.",
+  },
+  {
+    slug: "fire-following",
+    name: "Fire following",
+    hook: "Fire after the shaking, and the Dedicated Fire Protection System: what it covers and what it does not.",
+  },
+  {
+    slug: "secondary-hazards",
+    name: "Secondary hazards",
+    hook: "Landslides, dikes and dams, where the damage arrives after the shaking stops.",
+  },
 ];
 
 /* ------------------------------------------------------------------ */

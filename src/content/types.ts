@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export type ScenarioId = "cascadia" | "crustal";
 
 export type Band = "low" | "medium" | "high" | "unknown";
@@ -113,8 +115,11 @@ export interface PageMeta {
   nav: string;
   /** Kicker above the title, where the page belongs to a part of the site. */
   kicker?: string;
-  /** The standfirst under the title. */
-  standfirst: string;
+  /**
+   * The standfirst under the title. A ReactNode, because a standfirst is
+   * often where the page's headline number sits and a number needs its source.
+   */
+  standfirst: ReactNode;
   /**
    * Reference ids in the order they are first cited on the page. Marker
    * numbering is this array's order, so it is the page's citation contract.

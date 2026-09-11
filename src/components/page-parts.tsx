@@ -191,13 +191,26 @@ export function Lever({
  * An open question held in public. Assumption discipline is a stated principle
  * of the project, so the site shows its gaps rather than papering over them.
  */
-export function VerificationNote({ children }: { children: ReactNode }) {
+/**
+ * A gap, shown rather than hidden. The label names the kind of gap, because
+ * "not yet published" and "not a restoration estimate" are different claims
+ * and the copy distinguishes them.
+ */
+export function VerificationNote({
+  label = "Not yet verified",
+  children,
+}: {
+  label?: string;
+  children: ReactNode;
+}) {
   return (
     <aside className="rounded-lg border border-dashed border-rule-strong bg-paper-raised p-5">
       <p className="text-xs font-semibold tracking-[0.12em] text-ink-faint uppercase">
-        Not yet verified
+        {label}
       </p>
-      <p className="mt-2 text-sm leading-relaxed text-ink-muted">{children}</p>
+      <div className="prose-body mt-2 text-sm leading-relaxed text-ink-muted">
+        {children}
+      </div>
     </aside>
   );
 }

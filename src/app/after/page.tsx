@@ -1,64 +1,71 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Shell } from "@/components/shell";
-import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
-import { TimelineStrip } from "@/components/timeline";
-import { SystemGrid, SystemMatrix } from "@/components/system-grid";
+import { ArticleShell } from "@/components/shell";
+import {
+  PageHeader,
+  Section,
+  Lever,
+  NextPrev,
+} from "@/components/page-parts";
+import { Citations, ReferenceList } from "@/components/citation";
 import { ScenarioToggle } from "@/components/scenario-toggle";
-import { lorem, loremParagraphs } from "@/content/lorem";
+import { after } from "@/content/pages/after";
 
-export const metadata: Metadata = { title: "Life afterwards" };
+/**
+ * Part 2. The template holds no words of its own beyond the label on the
+ * scenario toggle: everything else comes from the page module, which is where
+ * `docs/copy/after.md` landed. The toggle sits in the header because the
+ * timeline strip, the band matrix and the system grids in the body all read
+ * from it.
+ */
+export const metadata: Metadata = { title: after.meta.title };
 
 export default function AfterIndexPage() {
   return (
-    <Shell>
-      <PageHeader
-        kicker="Part 2"
-        title="Life afterwards"
-        standfirst={lorem(2, 90)}
+    <Citations ids={after.meta.references}>
+      <ArticleShell
+        header={
+          <PageHeader
+            kicker={after.meta.kicker}
+            title={after.meta.title}
+            standfirst={after.meta.standfirst}
+          >
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="text-sm text-ink-muted">Bands shown for</span>
+              <ScenarioToggle size="lg" />
+            </div>
+          </PageHeader>
+        }
       >
-        <div className="flex flex-wrap items-center gap-3">
-          <span className="text-sm text-ink-muted">Bands shown for</span>
-          <ScenarioToggle size="lg" />
-        </div>
-      </PageHeader>
+        {after.sections.map((section) => (
+          <Section
+            key={section.id ?? section.title}
+            id={section.id}
+            title={section.title}
+            lede={section.lede}
+          >
+            {section.body}
+          </Section>
+        ))}
 
-      <Section title="Hours, days, weeks, months" lede={lorem(1, 91)}>
-        <TimelineStrip />
-      </Section>
+        <Lever
+          heading={after.lever.heading}
+          title={after.lever.title}
+          items={after.lever.items}
+          href={after.lever.href}
+        />
 
-      <Section
-        title="Where the evidence is strongest"
-        lede="Water, electricity and transportation. These three have the most published work behind them, so they are the most specific pages on the site."
-      >
-        <SystemGrid tier={1} />
-      </Section>
-
-      <Section title="The rest of the picture">
-        <div className="flex flex-col gap-4">
-          <SystemGrid tier={2} />
-          <SystemGrid tier={3} />
-        </div>
-      </Section>
-
-      <Section title="Everything at once" lede={lorem(1, 93)}>
-        <SystemMatrix />
-      </Section>
-
-      <Section title="Nothing here fails on its own">
-        <Prose paragraphs={loremParagraphs(2, 95)} />
-        <Link
-          href="/dependencies/"
-          className="mt-5 inline-block text-sm font-medium text-accent underline underline-offset-4"
+        <Section
+          title="Sources on this page"
+          lede="Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
         >
-          The dependency graph
-        </Link>
-      </Section>
+          <ReferenceList />
+        </Section>
 
-      <NextPrev
-        prev={{ href: "/shaking/", label: "The shaking" }}
-        next={{ href: "/getting-around/", label: "Getting around" }}
-      />
-    </Shell>
+        <NextPrev
+          prev={{ href: "/shaking/", label: "The shaking" }}
+          next={{ href: "/getting-around/", label: "Getting around" }}
+        />
+      </ArticleShell>
+    </Citations>
   );
 }

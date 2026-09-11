@@ -11,6 +11,58 @@ it was confirmed.
 
 ---
 
+## Copy lands as typed page modules, and the shape is what stops a wrong page
+
+**11 September 2026.** The finished copy in `docs/copy/` is markdown and there is no
+markdown pipeline. A copy file is ported by hand into a module under
+`src/content/pages/`, which becomes the source of truth for that page's words; the
+route template renders it and holds none.
+
+The module exports `meta: PageMeta`, `sections: PageSection[]` and `lever: PageLever`.
+The body is a typed array rather than a component on purpose, because the array is what
+makes three failures impossible rather than merely discouraged. Every `<h2>` comes from
+a `PageSection.title` and the route renders it through `Section`, so a heading cannot be
+authored outside the contents rail. `lever` is a required field rather than one section
+among many, so the block that makes a page usable cannot be dropped or turned into
+prose. And `meta.references` is the citation contract: `Cite` numbers a marker by the
+key's position in that array and `ReferenceList` reads the same array, so an undeclared
+key renders a visible `[?]` instead of a number and the drift shows on the page.
+
+The registry in `src/content/pages/index.ts` keys modules on `meta.route`, so the key
+and the page cannot disagree. `unwritten.tsx` holds the standing text for a page whose
+evidence is gathered and whose body is not, as a `PageSection`, so an unwritten page
+renders through the same path as a written one and its one heading appears in the rail.
+
+**How confirmed:** `/after/water/` builds with fifteen markers numbered in
+first-cited order and no `[?]`; every block of `docs/copy/water.md` appears word for
+word in the rendered HTML.
+
+---
+
+## The system template promised a map the project had already decided not to build
+
+**11 September 2026.** `/after/[slug]/` carried a "Where it is worst" slot on all
+thirteen system pages, captioned as the system's assets drawn on poor ground. That
+overlay rests on the Metro Vancouver microzonation layers, which `licensing.md` records
+as link-only under ICLR's custom terms, and which the decision of 10 September 2026
+gives up rather than hold open. A placeholder is honest about a graphic that is coming;
+it is not honest about one that is not. The slot is gone, and a page with a graphic it
+can actually draw puts it in its own module with the licence beside it, which is what
+`MapPlaceholder`'s `licence` prop is for.
+
+---
+
+## A citation key cited more than once repeats its element id
+
+**11 September 2026.** `Cite` gives the marker button an id of `cite-` plus its number, and the
+number is the key's position in the page's reference array rather than the marker's
+position on the page. A key cited six times, as `MV-WATER-22` is on the water page,
+therefore renders six elements carrying `id="cite-1"`. The backlink from
+`ReferenceList` still lands on the first of them, so the behaviour is right and the
+markup is not. Recorded rather than fixed: it belongs to `citation.tsx`.
+
+---
+
 ## The source register is generated from the research file, and its Source cell has four shapes
 
 **11 September 2026.** `src/content/references.ts` is now produced by

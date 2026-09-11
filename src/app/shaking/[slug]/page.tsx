@@ -1,17 +1,35 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleShell } from "@/components/shell";
-import {
-  PageHeader,
-  Section,
-  Prose,
-  MapPlaceholder,
-  Lever,
-  VerificationNote,
-  NextPrev,
-} from "@/components/page-parts";
+import { PageHeader, Section, Lever, NextPrev } from "@/components/page-parts";
+import { Citations, ReferenceList } from "@/components/citation";
 import { SHAKING_PAGES } from "@/content/site";
-import { lorem, loremParagraphs, loremLine } from "@/content/lorem";
+import type { PageModule } from "@/content/pages";
+import { groundConditions } from "@/content/pages/ground-conditions";
+import { UNWRITTEN_SHAKING } from "@/content/pages/unwritten";
+
+/**
+ * The five pages of Part 1.
+ *
+ * The template holds no words of its own beyond the labels on the furniture it
+ * draws. A page's body comes from a page module where one exists, and from the
+ * standing unwritten text where it does not. Four of the five are in the second
+ * state, and the page says so rather than filling the space.
+ *
+ * There is no map slot. The template used to promise a spatial view on every
+ * one of these pages; the layers that would draw it are the Metro Vancouver
+ * microzonation maps, which are not openly licensed and are linked rather than
+ * redrawn (`docs/licensing.md`). Ground conditions makes that refusal part of
+ * its own text.
+ */
+
+/**
+ * Keyed on slug, the way `@/content/pages` keys on route. One entry, because
+ * one of the five is written.
+ */
+const MODULES: Record<string, PageModule> = {
+  ground: groundConditions,
+};
 
 export function generateStaticParams() {
   return SHAKING_PAGES.map((p) => ({ slug: p.slug }));
@@ -24,7 +42,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const page = SHAKING_PAGES.find((p) => p.slug === slug);
-  return { title: page?.name ?? "Not found" };
+  return { title: MODULES[slug]?.meta.title ?? page?.name ?? "Not found" };
 }
 
 export default async function ShakingDetailPage({
@@ -34,63 +52,72 @@ export default async function ShakingDetailPage({
 }) {
   const { slug } = await params;
   const index = SHAKING_PAGES.findIndex((p) => p.slug === slug);
-  const page = SHAKING_PAGES[index];
-  if (!page) notFound();
+  const entry = SHAKING_PAGES[index];
+  if (!entry) notFound();
 
+  const page = MODULES[slug];
   const prev = SHAKING_PAGES[index - 1];
   const next = SHAKING_PAGES[index + 1];
 
+  const sections = page ? page.sections : [UNWRITTEN_SHAKING];
+  const references = page ? page.meta.references : [];
+
   return (
-    <ArticleShell
-      header={
-        <PageHeader
-          kicker="Part 1 — The shaking"
-          title={page.name}
-          standfirst={page.hook}
-        />
-      }
-    >
-      <Section title="What happens">
-        <Prose paragraphs={loremParagraphs(3, index + 50)} />
-      </Section>
-
-      <Section title="Where it is worst" lede={lorem(1, index + 55)}>
-        <MapPlaceholder
-          title={`${page.name} — spatial view`}
-          caption={loremLine(index + 60)}
-          dataset="TBD"
-        />
-      </Section>
-
-      <Section title="How the two scenarios differ">
-        <Prose paragraphs={loremParagraphs(2, index + 65)} />
-      </Section>
-
-      <Section title="Open questions">
-        <VerificationNote>{loremLine(index + 70)}</VerificationNote>
-      </Section>
-
-      <Lever
-        title={`Reducing your exposure to ${page.name.toLowerCase()}`}
-        items={[
-          loremLine(index + 75),
-          loremLine(index + 80),
-          loremLine(index + 85),
-        ]}
-      />
-
-      <NextPrev
-        prev={
-          prev
-            ? { href: `/shaking/${prev.slug}/`, label: prev.name }
-            : { href: "/shaking/", label: "The shaking" }
+    <Citations ids={references}>
+      <ArticleShell
+        header={
+          <PageHeader
+            kicker={page?.meta.kicker ?? "The shaking"}
+            title={page?.meta.title ?? entry.name}
+            standfirst={page?.meta.standfirst ?? entry.hook}
+          />
         }
-        next={
-          next
-            ? { href: `/shaking/${next.slug}/`, label: next.name }
-            : { href: "/after/", label: "Life afterwards" }
-        }
-      />
-    </ArticleShell>
+      >
+        {sections.map((section) => (
+          <Section
+            key={section.id ?? section.title}
+            id={section.id}
+            title={section.title}
+            lede={section.lede}
+          >
+            {section.body}
+          </Section>
+        ))}
+
+        {page ? (
+          <Lever
+            heading={page.lever.heading}
+            title={page.lever.title}
+            items={page.lever.items}
+            href={page.lever.href}
+          />
+        ) : null}
+
+        {/* An unwritten Part 1 page has no reference ids of its own, so there
+            is nothing to number and the section is left off rather than
+            rendered empty. */}
+        {references.length > 0 ? (
+          <Section
+            title="Sources on this page"
+            lede="Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
+          >
+            <ReferenceList />
+          </Section>
+        ) : null}
+
+        <NextPrev
+          prev={
+            prev
+              ? { href: `/shaking/${prev.slug}/`, label: prev.name }
+              : { href: "/shaking/", label: "The shaking" }
+          }
+          next={
+            next
+              ? { href: `/shaking/${next.slug}/`, label: next.name }
+              : { href: "/after/", label: "Life afterwards" }
+          }
+        />
+      </ArticleShell>
+    </Citations>
   );
 }
