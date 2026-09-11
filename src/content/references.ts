@@ -2898,6 +2898,17 @@ export const REFERENCES: Record<string, Reference> = {
     route: "direct",
     licence: "All rights reserved (Province of BC); see the Province's own copyright page",
   },
+  "PHAC-NESS": {
+    id: "PHAC-NESS",
+    kind: "report",
+    title: "National Emergency Strategic Stockpile",
+    publisher: "Public Health Agency of Canada",
+    year: 2026,
+    date: "page last modified 17 Jul 2026",
+    href: "https://www.canada.ca/en/public-health/services/emergency-preparedness-response/national-emergency-strategic-stockpile.html",
+    note: "What the federal stockpile holds, in the agency's own words: medical equipment and supplies such as ventilators, cardiac monitors and personal protective equipment, pharmaceuticals including vaccines and therapeutics, social service supplies such as beds and blankets, and mini-clinic triage units. The page mentions neither food nor water, which is the finding it is cited for",
+    route: "direct",
+  },
   "PHMS-ANNEX": {
     id: "PHMS-ANNEX",
     kind: "report",

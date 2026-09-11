@@ -4,12 +4,16 @@
 
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
-> **Last research pass:** 10 September 2026.
+> **Last research pass:** 11 September 2026.
 
 **Status.** Band **High** in both scenarios, on the province's own operational plan:
 PEIRS states the mechanism directly, for British Columbia — supply chains inoperable,
 the fast-moving consumer goods network weeks or months to recover, and fuel as the
-resource everything else moves on. The only days-of-supply figures available for the
+resource everything else moves on. **And there is no public food reserve to fall back
+on**: the federal stockpile holds medical and social service supplies, the department
+that would be asked for food owns none, the provincial model is to buy from local
+retailers after the event, and a municipal disaster support hub is a coordination point
+rather than a warehouse. The only days-of-supply figures available for the
 Lower Mainland come from one phone interview with an advocacy-group president during
 the 2021 flood emergency. Lead with the mechanism, not with a days-of-supply figure.
 
@@ -68,6 +72,56 @@ the 2021 flood emergency. Lead with the mechanism, not with a days-of-supply fig
   Island holds about three days of food and fuel. [UBC-FUEL] **[B]** A
   Burnaby–Westridge–YVR jet fuel pipeline detail is **not confirmed** in that source and
   does not travel until it is. **[?]**
+
+### Nothing is stored for the public, at any level of government
+
+The site's framing has been that the problem is logistics rather than stock. That is
+only half of it: **there is no public food stock in the first place**, and each level of
+government says so in its own way.
+
+- **Federal, the department that would be asked.** A March 2018 Agriculture and
+  Agri-Food Canada case study, obtained under freedom of information, records that the
+  department **has no warehouses full of supplies, has no direct access to or ownership
+  of food or water supplies, holds limited water expertise, and would be challenged to
+  lead a federal response to a request for safe food and water.** [GM-AAFC-19] **[B]**
+  This is the food half of the study, which was previously an open retrieval item on
+  this page; it reaches us through the same paywalled Globe and Mail report as the water
+  half, so it stays [B] until the study itself is obtained.
+- **Federal, the stockpile that does exist.** The National Emergency Strategic Stockpile
+  holds medical equipment and supplies — ventilators, cardiac monitors, personal
+  protective equipment — pharmaceuticals, social service supplies such as beds and
+  blankets, and mini-clinic triage units. **Its own page mentions neither food nor
+  water.** [PHAC-NESS] **[A]** on the published contents. It is a health and social
+  services stockpile, and a reader who has heard that Canada holds an emergency
+  stockpile has heard about this one.
+- **Provincial, the model rather than the reserve.** Emergency Support Services meets
+  needs by purchasing or referring through local retailers after an event rather than by
+  drawing on stored reserves, and as at the 2019 reporting the province's potable water
+  plans were on hold pending an update from Metro Vancouver. [GM-AAFC-19] **[B]** The
+  mechanism matters more than the fact: **a procurement model runs through the same
+  retailers and the same roads that PEIRS expects to be disrupted**, so it is weakest in
+  the event it is being counted on for. `../preparedness.md` carries the other half of
+  this — the same system is designed for 72 hours while households are asked for two
+  weeks.
+- **Municipal, what a hub is and is not.** Vancouver designates 25 disaster support
+  hubs. [COV-HUBS] **[A]** The City's own toolkit describes what is there: basic items
+  such as pens, whiteboards, signage and a tent, and beyond that "the skills, knowledge
+  and supplies that people bring". [COV-RNTOOLKIT-19] **[A]** **A hub is a coordination
+  point that can be used for distribution, not a warehouse with food in it**, and the
+  difference is the one a resident is most likely to get wrong.
+- **Voluntary sector, at the scale it actually operates.** The Salvation Army's BC
+  disaster services director estimated it could produce **up to 50,000 meals a day
+  within two days** of a major earthquake, rising with airdrops within a week, with road
+  and bridge conditions dictating distribution. [GM-AAFC-19] **[B]** Against the 2021
+  census population of the Vancouver census metropolitan area, 2,642,825, [STATCAN-2021]
+  **[A]** that is on the order of **one meal a day for every fifty people**. It is a real
+  capability for people in shelters and it is not a population-level food supply. The
+  division is ours; both numbers are published.
+
+**What this establishes and what it does not.** It establishes that no level of
+government holds food for the public here, which is a different and stronger claim than
+"distribution will be difficult". It does not establish how much food the commercial
+system holds in the region at any moment — that remains unmeasured, below.
 
 ### The fuel figures, and the guards they carry
 
@@ -160,11 +214,15 @@ the 2021 flood emergency. Lead with the mechanism, not with a days-of-supply fig
   2021 figures may appear only under the guards in "For the page", or not at all.
 - **Whether any BC agency holds a fuel-prioritisation plan for a seismic event.** Not
   located. PEIRS names fuel as critical without stating who allocates it. **[?]**
-- **A federal document bearing directly on this page, read only in part.**
-  [GM-AAFC-19] reports a March 2018 Agriculture and Agri-Food Canada case study
-  obtained under freedom of information, headlined as being about Vancouver's *food and
-  water* supply; so far only its water finding has been extracted. **[B]** on what has
-  been read. The food half is an open retrieval item, not an absence.
+- **The AAFC case study itself.** Both halves of [GM-AAFC-19]'s reporting of the March
+  2018 Agriculture and Agri-Food Canada case study are now recorded above, and both are
+  **[B]**: the study reaches us through a paywalled newspaper report rather than
+  directly. It was obtained under freedom of information, which is the route to the
+  document itself and would raise every claim resting on it. **[?]**
+- **The Emergency Support Services procurement model, from the province's own
+  documents.** The retailer-purchase mechanism above is reported rather than read. What
+  ESS publishes about how it sources supplies, and whether any pre-event supply
+  agreements exist, has not been checked. **[?]**
 
 ---
 
@@ -188,9 +246,26 @@ operational plan, and it does not decay when the pipeline configuration changes.
 - Nothing on this page may imply the 2021 figures describe the post-2024 pipeline.
 
 **Order the page this way.** Fuel as the enabling resource, from PEIRS. Then the supply
-chain in weeks to months, from PEIRS. Then the 2021 flood orders as the documented
-local precedent for what rationing looks like here. Then, if it earns its place, Tōhoku
-in a clearly marked out-of-region sidebar.
+chain in weeks to months, from PEIRS. Then that nothing is stored for the public at any
+level of government, which is the finding a reader is least likely to hold already and
+the one that makes the lever inevitable rather than nagging. Then the 2021 flood orders
+as the documented local precedent for what rationing looks like here. Then, if it earns
+its place, Tōhoku in a clearly marked out-of-region sidebar.
+
+**The sentence the stockpile section is for**, and it should be written plainly: the
+federal stockpile exists and holds medical and social service supplies rather than food
+[PHAC-NESS]; the department that would be asked for food has no warehouses and no
+ownership of any [GM-AAFC-19]; the provincial model is to buy from local retailers after
+the event, which are the same retailers and the same roads the province expects to be
+disrupted [GM-AAFC-19] [PEIRS]; and a disaster support hub is a coordination point whose
+supplies are what neighbours carry to it [COV-HUBS] [COV-RNTOOLKIT-19]. **Nothing is
+stored for you. The plan is that you stored it.** Write that without reproach — a
+household that has never been told this has not failed at anything.
+
+**Two guards on the stockpile material.** The Salvation Army ratio is our own division
+of two published numbers and must show its working, naming both. And the widely quoted
+"1,300 pre-positioned supply centres" figure for the National Emergency Strategic
+Stockpile **is not on the agency's own page** and does not appear on the site.
 
 **Cross-references, not restatements.** Electricity for the "a pump needs power"
 dependency. `../analogues.md` for Tōhoku. `transportation.md` for the routes trucks
@@ -202,5 +277,6 @@ implies storing fuel at home — it is a fire risk, and the site would be giving
 advice in order to look thorough.
 
 **Refresh triggers.** A Canada Energy Regulator or provincial figure for Lower Mainland
-fuel supply after 2024. Any published regional food-distribution study. The food half
-of [GM-AAFC-19].
+fuel supply after 2024. Any published regional food-distribution study. The AAFC case
+study itself, by FOI. Any change to what the National Emergency Strategic Stockpile
+states it holds.
