@@ -81,6 +81,12 @@ Front matter feeds `src/content/site.ts`. `bands`, `mechanism` and `source`
 appear on system pages only, and their values come from
 `../research/impact-bands.md` rather than from memory.
 
+`hook` is the one line a card carries, so it only has somewhere to go on a page
+that appears on a card: a system page under `/after/` and a Part 1 page under
+`/shaking/`. Everywhere else it is written and never shown, and the page's
+`lede` is the first line a reader sees. Write one anyway if it helps settle what
+the page is about, but do not expect to find it rendered.
+
 `source` is the third of the three fields `Impact` in `src/content/types.ts`
 requires, alongside the band and the mechanism sentence. It is one key, the one the
 mechanism sentence rests on, and it is not the same list as **Sources on this page**.

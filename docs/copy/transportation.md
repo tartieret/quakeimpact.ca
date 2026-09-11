@@ -150,9 +150,9 @@ their own work.
 | --- | --- |
 | George Massey Tunnel | Retrofit half completed, 150 to 240 year capacity, does not meet the seismic performance criteria in the 2014 bridge code [GMC-TUNNEL-19] |
 | Oak Street | 475-year collapse-prevention objective; 100 mm differential settlement at the south approach piers in that 475-year event, assuming a ground densification the paper records as not built at the time; reassessed 2021 to 2022 [OAK-13WCEE] [OAK-BASIS-22] |
-| Knight Street | Treated as a lifeline bridge; after the 1000-year event "the crossing need not be passable"; shear key failures predicted at all concrete girder approach spans [KSB-2010] |
-| Queensborough | Collapse prevention at the 1/475 year event only, "may or may not be functional"; about 150 mm of differential movement at the approach bents in that event, after the soil there was treated [QB-MOTH-95] |
-| Golden Ears | Objectives at 475, 1000 and 2475 years; in the 2475-year event, about 0.5 m of ground movement at the river bank and about 0.3 m at the main piers after densification [GEB-CGS-08] [NAB-ICCHGE-08] |
+| Knight Street | Treated as a lifeline bridge; after the 1,000-year event "the crossing need not be passable"; shear key failures predicted at all concrete girder approach spans [KSB-2010] |
+| Queensborough | Collapse prevention at the 475-year event only, "may or may not be functional"; about 150 mm of differential movement at the approach bents in that event, after the soil there was treated [QB-MOTH-95] |
+| Golden Ears | Objectives at 475, 1,000 and 2,475 years; in the 2,475-year event, about 0.5 m of ground movement at the river bank and about 0.3 m at the main piers after densification [GEB-CGS-08] [NAB-ICCHGE-08] |
 | Alex Fraser | Founded on weak deltaic materials; an early example of liquefaction assessment in design. No return period published [AFB-CGS-17] |
 | Canada Line, North Arm Bridge | The project's own criteria, as reported by its designer in 2008: a 475-year event with repairable damage and a 100-year event with essentially no damage. Only those two events were considered. Partial liquefaction expected; the piles were designed to resist the ground moving rather than to stop it [NAB-ICCHGE-08] |
 | Pattullo replacement | Open; seismic description is qualitative only [BCGOV-2026-PATT] |

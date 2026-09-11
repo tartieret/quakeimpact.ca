@@ -71,12 +71,7 @@ export default function HomePage() {
 
       {/* Start here -------------------------------------------------- */}
       <section className="mx-auto max-w-6xl px-gutter py-16">
-        <Lever
-          heading={home.lever.heading}
-          title={home.lever.title}
-          items={home.lever.items}
-          href={home.lever.href}
-        />
+        {home.lever ? <Lever {...home.lever} /> : null}
       </section>
 
       {/* Sources ----------------------------------------------------- */}

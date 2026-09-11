@@ -32,15 +32,14 @@ source, its place on the timeline and what it waits on, and no body text.
 
 ## The shaking page variant
 
-Shown on a page under `/shaking/` that carries its summary line and its sources and no
-body text. Pages in Part 1 carry no band, so the variant names what is on the screen
-rather than a band.
+Shown on a page under `/shaking/` that carries its summary line and no body text.
+Pages in Part 1 carry no band and list no sources of their own, so the variant names
+what is on the screen and promises nothing that is not there.
 
 > ## This page is not written yet
 >
-> The line at the top of this page and the documents listed at the foot of it are
-> real. They are the published work gathered for this subject, and they can be read
-> and checked today.
+> The line at the top of this page is real: it says what this subject covers, and
+> nothing more.
 >
 > What is missing is the page itself: what the documents say, where they disagree,
 > what nobody has published, and what any of it means for a person in the region. None

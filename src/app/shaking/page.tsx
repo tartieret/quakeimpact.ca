@@ -42,12 +42,7 @@ export default function ShakingIndexPage() {
           </Section>
         ))}
 
-        <Lever
-          heading={shaking.lever.heading}
-          title={shaking.lever.title}
-          items={shaking.lever.items}
-          href={shaking.lever.href}
-        />
+        {shaking.lever ? <Lever {...shaking.lever} /> : null}
 
         <Section
           title="Sources on this page"

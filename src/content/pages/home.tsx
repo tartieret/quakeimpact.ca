@@ -38,7 +38,7 @@ export const home: PageModule = {
     nav: "Home",
     kicker: "Lower Mainland, British Columbia",
     standfirst:
-      "This site is about the months after a major earthquake in Metro Vancouver rather than the minutes during one. Every claim on it comes from a published document, and every document is listed.",
+      "A major earthquake in Metro Vancouver means minutes of shaking, and months of waiting for water, power and transport to come back. Every figure here comes from a published document, and every document is listed.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -193,15 +193,14 @@ export const home: PageModule = {
       body: (
         <Prose>
           <p>
-            Everything here is compiled from published work: federal and
-            provincial scenarios, utility filings with their regulators,
-            municipal plans, and peer-reviewed engineering. Nothing on this site
-            is modelled by us.
+            That published work is federal and provincial scenarios, utility
+            filings with their regulators, municipal plans, and peer-reviewed
+            engineering. No number here is a new estimate.
           </p>
           <p>
-            Where something has not been published, the site says so rather than
-            filling the gap. Where two official documents disagree, it gives
-            both.
+            Where nobody has published an answer, the gap is stated rather than
+            filled with a guess. Where two official documents disagree, both are
+            here.
           </p>
           <p>
             <Link href="/sources/" className={link}>

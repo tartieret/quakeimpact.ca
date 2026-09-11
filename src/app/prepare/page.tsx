@@ -68,12 +68,7 @@ export default function PreparePage() {
           </ul>
         </Section>
 
-        <Lever
-          heading={prepare.lever.heading}
-          title={prepare.lever.title}
-          items={prepare.lever.items}
-          href={prepare.lever.href}
-        />
+        {prepare.lever ? <Lever {...prepare.lever} /> : null}
 
         <Section
           title="Sources on this page"

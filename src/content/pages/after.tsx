@@ -251,18 +251,20 @@ export const after: PageModule = {
         including the heating and any gas appliance with an electric fan or
         control, and settle what to do about each one before you need to.
       </>,
+    ],
+    closing: (
       <>
-        <strong>
-          <Link
-            href="/prepare/"
-            className="text-accent underline underline-offset-2"
-          >
-            Preparing
-          </Link>
-        </strong>{" "}
+        <Link
+          href="/prepare/"
+          className="text-accent underline underline-offset-2"
+        >
+          Preparing
+        </Link>{" "}
         sets out the rest, and every written system page ends with its own
         version.
-      </>,
-    ],
+      </>
+    ),
+    // The closing sentence already carries the link to `/prepare/`.
+    href: null,
   },
 };

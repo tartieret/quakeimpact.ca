@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import type { LeverProps } from "@/components/page-parts";
 import type { PageMeta } from "@/content/types";
 import { electricity } from "./electricity";
 import { transportation } from "./transportation";
@@ -12,14 +13,16 @@ import { water } from "./water";
  * for that page's words, and the route template that renders it holds none.
  *
  * The shape is deliberately narrow. A module cannot write a heading of its
- * own, cannot forget its lever, and cannot cite a key it has not declared:
+ * own, cannot demote its lever into prose, and cannot cite a key it has not
+ * declared:
  *
  * - Every `<h2>` on the page comes from a `PageSection.title`, because the
  *   route renders each section through `Section`. The contents rail reads
  *   `main section[id] > h2`, so a section that exists is a section the reader
  *   can navigate to, and there is no way to write a heading that misses it.
- * - `lever` is a required field, not one section among many, so the block that
- *   makes the page usable cannot be left off or demoted to prose.
+ * - `lever` is its own field, not one section among many, so the block that
+ *   makes the page usable cannot be demoted to prose. A page that describes a
+ *   consequence carries one; `/method/` describes none and leaves it off.
  * - `meta.references` is the page's citation contract. `Cite` numbers a marker
  *   by the key's position in that array and `ReferenceList` reads the same
  *   array, so the markers and the list at the foot of the page cannot drift.
@@ -45,20 +48,23 @@ export interface PageSection {
   body: ReactNode;
 }
 
-/** The closing "what you can do" block. Required: every long page ends with one. */
-export interface PageLever {
-  /** The `<h2>`, and the entry in the contents rail. */
-  heading?: string;
-  /** The sentence between the heading and the list. */
-  title?: ReactNode;
-  items: ReactNode[];
-  href?: string;
-}
+/**
+ * The closing "what you can do" block. It is the props of `Lever` itself, so a
+ * route hands the whole object to the component and a slot added to the
+ * component is a slot a module can fill without a route changing.
+ */
+export type PageLever = LeverProps;
 
 export interface PageModule {
   meta: PageMeta;
   sections: PageSection[];
-  lever: PageLever;
+  /**
+   * The lever. Every page that describes a consequence carries one: no doom
+   * without a lever. It is optional only because `/method/` describes no
+   * consequence. That page explains the rubric, and a lever written for it
+   * would be a lever written to satisfy a type.
+   */
+  lever?: PageLever;
 }
 
 /** Keyed on `meta.route`, so the key and the page cannot disagree. */

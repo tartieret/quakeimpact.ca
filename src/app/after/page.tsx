@@ -47,12 +47,7 @@ export default function AfterIndexPage() {
           </Section>
         ))}
 
-        <Lever
-          heading={after.lever.heading}
-          title={after.lever.title}
-          items={after.lever.items}
-          href={after.lever.href}
-        />
+        {after.lever ? <Lever {...after.lever} /> : null}
 
         <Section
           title="Sources on this page"

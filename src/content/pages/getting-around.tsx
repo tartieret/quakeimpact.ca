@@ -34,7 +34,7 @@ const transportationLink = (
 export const gettingAround: PageModule = {
   meta: {
     route: "/getting-around/",
-    title: "Getting around",
+    title: "Moving after the shaking",
     nav: "Getting around",
     kicker: "Part 2b",
     standfirst:

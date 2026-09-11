@@ -64,9 +64,10 @@ export const UNWRITTEN_SYSTEM: PageSection = {
 
 /**
  * The same standing text for a page under `/shaking/`. A Part 1 page carries a
- * summary line and its sources and no band, so this variant points at the line
- * at the top of the page rather than at a band, and sends the reader to the one
- * page in the part that is written.
+ * summary line, no band and no reference ids of its own, so the route lists no
+ * sources for it. This variant therefore points at the line at the top of the
+ * page and promises no document list, and sends the reader to the one page in
+ * the part that is written.
  */
 export const UNWRITTEN_SHAKING: PageSection = {
   title: "This page is not written yet",
@@ -74,9 +75,8 @@ export const UNWRITTEN_SHAKING: PageSection = {
     <div className="rounded-lg border border-dashed border-rule-strong bg-paper-raised p-6 sm:p-8">
       <Prose>
         <p>
-          The line at the top of this page and the documents listed at the foot
-          of it are real. They are the published work gathered for this subject,
-          and they can be read and checked today.
+          The line at the top of this page is real: it says what this subject
+          covers, and nothing more.
         </p>
         <p>
           What is missing is the page itself: what the documents say, where they

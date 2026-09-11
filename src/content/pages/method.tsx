@@ -25,8 +25,10 @@ import type { PageModule } from "./index";
  * 1-in-2,475-year one are not points on one scale; drawing them on one axis
  * would assert the comparability the sentence denies.
  *
- * The copy has no `## What you can do`, so this module has no `lever` and is
- * typed without one. Writing a lever here would be writing copy.
+ * The copy has no `## What you can do`, so this module has no `lever`. The
+ * field is optional for this page and this page alone: the principle is no doom
+ * without a lever, and the rubric states no doom. Writing one here would be
+ * writing copy.
  */
 
 /** The three coloured bands, in the order the copy's table gives them. */
@@ -52,7 +54,7 @@ function BandName({ band }: { band: Band }) {
   );
 }
 
-export const method: Omit<PageModule, "lever"> = {
+export const method: PageModule = {
   meta: {
     route: "/method/",
     title: "How the impact bands work",

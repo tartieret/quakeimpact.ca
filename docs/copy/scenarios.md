@@ -85,12 +85,11 @@ inside them:
 
 [GSC-OF-8853] [PEIRS]
 
-Two further limits travel with every figure in that table. Counting shaking damage to
-buildings and their inhabitants excludes fires, landslides, vehicle accidents and
-washouts. And the figures belong to a weekday afternoon, when most people are at
-school or work. Natural Resources Canada says of its own numbers that because
-secondary hazards and damage to infrastructure are left out, "the estimates herein
-are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
+A second limit travels with every figure in that table: they belong to a weekday
+afternoon, when most people are at school or work. Natural Resources Canada says of
+its own numbers that because secondary hazards and damage to infrastructure are left
+out, "the estimates herein are likely to represent a minimum estimate on impacts."
+[GSC-OF-8853]
 
 ## In the province's scenario, the earthquake is heard before it is felt
 

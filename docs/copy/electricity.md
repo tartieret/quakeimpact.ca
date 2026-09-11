@@ -66,12 +66,13 @@ The new West End substation has an in-service date of July 2032 at the earliest,
 the regulator has not yet ruled on it. [BCH-WESTEND-25] Between now and then the
 exposure BC Hydro describes is the exposure that stands.
 
-The finding is not new. BC Hydro's 2019 filing already stated that Murrin sits on
+The finding is not new. BC Hydro's filing of February 2019, which the regulator's
+record files by its fiscal year as F2020, already stated that Murrin sits on
 seismically unstable soil, that about half of the switchyard supplying both
 substations is vulnerable to liquefaction and settlement, and that load served from
 both "may experience a prolonged outage after a seismic event". [BCH-RRA-F2020]
 
-That 2019 filing also counts about 95,000 customers in the downtown study area.
+That same filing also counts about 95,000 customers in the downtown study area.
 [BCH-RRA-F2020] The customer count and the two thirds come from different filings six
 years apart, so multiplying one by the other would produce a number of people that
 nobody has published.

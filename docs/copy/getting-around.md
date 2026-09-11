@@ -1,6 +1,6 @@
 ---
 route: /getting-around/
-title: Getting around
+title: Moving after the shaking
 nav: Getting around
 hook: British Columbia's plan is that people stay where they are, and that the roads are used for something else.
 lede: The province's emergency plans do not assume people will drive out of the region after a major earthquake. They assume the opposite, in writing, in two separate documents.

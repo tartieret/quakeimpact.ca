@@ -300,7 +300,7 @@ export const transportation: PageModule = {
               [
                 "Knight Street",
                 <>
-                  Treated as a lifeline bridge; after the 1000-year event “the
+                  Treated as a lifeline bridge; after the 1,000-year event “the
                   crossing need not be passable”; shear key failures predicted
                   at all concrete girder approach spans <Cite id="KSB-2010" />
                 </>,
@@ -308,7 +308,7 @@ export const transportation: PageModule = {
               [
                 "Queensborough",
                 <>
-                  Collapse prevention at the 1/475 year event only, “may or may
+                  Collapse prevention at the 475-year event only, “may or may
                   not be functional”; about 150 mm of differential movement at
                   the approach bents in that event, after the soil there was
                   treated <Cite id="QB-MOTH-95" />
@@ -317,7 +317,7 @@ export const transportation: PageModule = {
               [
                 "Golden Ears",
                 <>
-                  Objectives at 475, 1000 and 2475 years; in the 2475-year
+                  Objectives at 475, 1,000 and 2,475 years; in the 2,475-year
                   event, about 0.5 m of ground movement at the river bank and
                   about 0.3 m at the main piers after densification{" "}
                   <Cite id="GEB-CGS-08" /> <Cite id="NAB-ICCHGE-08" />

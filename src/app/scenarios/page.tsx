@@ -53,12 +53,7 @@ export default function ScenariosPage() {
           <SystemMatrix />
         </Section>
 
-        <Lever
-          heading={lever.heading}
-          title={lever.title}
-          items={lever.items}
-          href={lever.href}
-        />
+        {lever ? <Lever {...lever} /> : null}
 
         <Section
           title="Sources on this page"

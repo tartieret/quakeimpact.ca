@@ -3,7 +3,7 @@ route: /after/water/
 title: Water
 nav: Water
 hook: The worst breaks are the ones under rivers, and those are the repairs that take longest.
-lede: A magnitude 9.0 earthquake is modelled to cause 267 water main failures across Metro Vancouver's network. About 60 of them fall at the 71 points where mains cross under rivers and inlets, which are the hardest places in the system to reach.
+lede: Metro Vancouver's own seismic assessment models 267 water main failures across the region in a magnitude 9.0 earthquake. [MV-WATER-22] About 60 of them fall at the 71 points where mains cross under rivers and inlets, which are the hardest places in the system to reach. [MV-WATER-22]
 bands: { cascadia: high, crustal: high }
 mechanism: An M9 is modelled to cause 267 main failures region-wide, with roughly 60 breaks concentrated on the 71 water crossings, the repairs that take longest.
 status: draft
@@ -56,7 +56,7 @@ eight and a half times the failures projected by the region's previous study in 
 
 The obvious next question has a specific answer, and it is not a duration.
 
-About two thirds of the roughly 300 page report is blacked out in the public version.
+About two thirds of the roughly 300-page report is blacked out in the public version.
 Two of the withheld pieces are the two a restoration estimate would be built from: the
 number of leaks and breaks per main, and the damage estimates for 21 water storage
 facilities. Both were removed under freedom-of-information exemptions. [MV-WATER-22]
@@ -119,7 +119,7 @@ is a response plan's planning assumption rather than the result of a study.
 
 Metro Vancouver has published nothing comparable.
 
-## Five deep tunnels are being built, and none of the four under way is finished
+## Five deep tunnels are planned, and none of the three under way is finished
 
 Metro Vancouver is replacing its river and inlet crossings with deep bored tunnels
 "designed to ensure delivery of drinking water in the event of a major earthquake". It

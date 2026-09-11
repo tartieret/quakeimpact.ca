@@ -1,46 +1,66 @@
 import type { Metadata } from "next";
-import { Shell } from "@/components/shell";
+import { ArticleShell } from "@/components/shell";
 import {
   PageHeader,
   Section,
-  Prose,
-  Callout,
+  Lever,
   NextPrev,
 } from "@/components/page-parts";
-import { DependencyGraphPlaceholder } from "@/components/dependency-graph";
-import { lorem, loremParagraphs } from "@/content/lorem";
+import { Citations, ReferenceList } from "@/components/citation";
+import { dependencies } from "@/content/pages/dependencies";
 
-export const metadata: Metadata = { title: "Dependency graph" };
+/**
+ * The dependency graph.
+ *
+ * The template holds no words of its own. Everything a reader sees comes from
+ * the page module in `@/content/pages/dependencies`, which is where
+ * `docs/copy/dependencies.md` lands.
+ *
+ * The graph slot goes with the section whose copy introduces it rather than
+ * standing on its own, so the hatched placeholder and the sentence saying it is
+ * not drawn cannot drift apart.
+ */
+const { meta, sections, lever } = dependencies;
+
+export const metadata: Metadata = { title: meta.title };
 
 export default function DependenciesPage() {
   return (
-    <Shell>
-      <PageHeader
-        kicker="Why one failure becomes many"
-        title="Nothing fails alone"
-        standfirst={lorem(2, 190)}
-      />
+    <Citations ids={meta.references}>
+      <ArticleShell
+        header={
+          <PageHeader
+            kicker={meta.kicker}
+            title={meta.title}
+            standfirst={meta.standfirst}
+          />
+        }
+      >
+        {sections.map((section) => (
+          <Section
+            key={section.id ?? section.title}
+            id={section.id}
+            title={section.title}
+            lede={section.lede}
+          >
+            {section.body}
+          </Section>
+        ))}
 
-      <Section title="The graph">
-        <DependencyGraphPlaceholder />
-      </Section>
+        {lever ? <Lever {...lever} /> : null}
 
-      <Section title="Reading it">
-        <Callout label="Read the arrows, not the boxes">
-          <p className="max-w-2xl text-lg leading-relaxed">
-            The failure of any one system is not the story. The story is that
-            they depend on each other.
-          </p>
-        </Callout>
-        <div className="mt-8">
-          <Prose paragraphs={loremParagraphs(3, 193)} />
-        </div>
-      </Section>
+        <Section
+          title="Sources on this page"
+          lede="Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
+        >
+          <ReferenceList />
+        </Section>
 
-      <NextPrev
-        prev={{ href: "/getting-around/", label: "Getting around" }}
-        next={{ href: "/prepare/", label: "Preparing" }}
-      />
-    </Shell>
+        <NextPrev
+          prev={{ href: "/getting-around/", label: "Getting around" }}
+          next={{ href: "/prepare/", label: "Preparing" }}
+        />
+      </ArticleShell>
+    </Citations>
   );
 }

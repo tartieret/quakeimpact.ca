@@ -426,6 +426,8 @@ export const prepare: PageModule = {
   lever: {
     heading: "What you can do",
     title: <>In this order. The first one costs nothing.</>,
+    // The standing link goes to `/prepare/`, which is this page.
+    href: null,
     items: [
       <>
         <strong>Meet the neighbours.</strong> Know who lives alone, who needs

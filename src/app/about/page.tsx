@@ -1,42 +1,59 @@
 import type { Metadata } from "next";
-import { ReadingShell } from "@/components/shell";
-import {
-  PageHeader,
-  Section,
-  Prose,
-  Callout,
-  NextPrev,
-} from "@/components/page-parts";
-import { lorem, loremParagraphs } from "@/content/lorem";
+import { ArticleShell } from "@/components/shell";
+import { PageHeader, Section, NextPrev } from "@/components/page-parts";
+import { Citations, ReferenceList } from "@/components/citation";
+import { about } from "@/content/pages/about";
 
-export const metadata: Metadata = { title: "About" };
+/**
+ * About.
+ *
+ * The template holds no words of its own. Everything a reader sees comes from
+ * the page module in `@/content/pages/about`, which is where
+ * `docs/copy/about.md` lands.
+ *
+ * The copy has no "What you can do", so there is no `Lever` here. The page
+ * describes no consequence, and a lever written to fill the slot would be an
+ * action nobody asked the reader to take.
+ */
+const { meta, sections } = about;
+
+export const metadata: Metadata = { title: meta.title };
 
 export default function AboutPage() {
   return (
-    <ReadingShell>
-      <PageHeader title="About this site" standfirst={lorem(2, 310)} />
+    <Citations ids={meta.references}>
+      <ArticleShell
+        header={
+          <PageHeader
+            kicker={meta.kicker}
+            title={meta.title}
+            standfirst={meta.standfirst}
+          />
+        }
+      >
+        {sections.map((section) => (
+          <Section
+            key={section.id ?? section.title}
+            id={section.id}
+            title={section.title}
+            lede={section.lede}
+          >
+            {section.body}
+          </Section>
+        ))}
 
-      <Section title="What this is">
-        <Prose paragraphs={loremParagraphs(2, 311)} />
-      </Section>
+        <Section
+          title="Sources on this page"
+          lede="Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
+        >
+          <ReferenceList />
+        </Section>
 
-      <Section title="What this is not">
-        <Callout label="Not a modelling project">
-          <p className="text-lg leading-relaxed">
-            Every claim is compiled from published work or documented analogue
-            events. The contribution is synthesis, legibility and narrative.
-          </p>
-        </Callout>
-      </Section>
-
-      <Section title="Corrections">
-        <Prose paragraphs={loremParagraphs(2, 315)} />
-      </Section>
-
-      <NextPrev
-        prev={{ href: "/contribute/", label: "Contribute" }}
-        next={{ href: "/", label: "Home" }}
-      />
-    </ReadingShell>
+        <NextPrev
+          prev={{ href: "/contribute/", label: "Contribute" }}
+          next={{ href: "/", label: "Home" }}
+        />
+      </ArticleShell>
+    </Citations>
   );
 }

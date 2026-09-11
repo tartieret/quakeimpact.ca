@@ -674,3 +674,112 @@ a subhead could never become current. It observes the heading elements themselve
 instead. They are short, the observer band is a thin strip near the top of the
 viewport, and so at most one is inside it at a time. An `<h3>` is listed only if it
 carries an id, which is what `Subhead` gives it; a bare `<h3>` stays out of the rail.
+
+---
+
+## Only the first marker for a key carries an id, and it claims it
+
+**11 September 2026.** The duplicate `id="cite-1"` recorded further up this file is
+fixed. The number still comes from the key's position in the declared array, because
+that is the citation contract, but the id no longer follows from it automatically: the
+first marker to render for a key takes `id="cite-N"` and every later marker for the same
+key renders with no id at all. Only one element needs one, since the only thing pointing
+at it is the backlink from `ReferenceList`, which now lands on the first marker by
+design rather than by accident.
+
+"First" is decided by a small per-page map held in the citation provider. A marker asks
+whether its own `useId` holds the key, and the map answers the same way every time it is
+asked, so the claim is idempotent: a re-render, a Strict Mode double invocation and
+hydration all give the same marker the id. Markers render in document order on the
+server and again on the client, so the server and the browser agree on which one it is.
+
+## A client component that imports the register ships all 325 entries
+
+**11 September 2026.** `citation.tsx` was a client component, because opening a
+reference in place needs state, and it imported `REFERENCES` at module scope. Every page
+carrying a citation therefore shipped the whole generated register, about 160 KB of
+source and 145 KB of it minified into a chunk, to read the handful of documents that
+page cites.
+
+The fix is a boundary rather than a rewrite. `citation.tsx` is now a Server Component
+that resolves the page's declared keys and hands the resolved entries to a small client
+provider in `citation-client.tsx`, which imports no register. What crosses into the
+browser is the page's own references and nothing else.
+
+`band.tsx` had the same fault for the same reason, and it mattered as much: it was a
+client component whose `SourceLine` read the register, so every system page shipped the
+register a second way and the citation fix alone would have changed nothing there. The
+impact cell and its source line now live in `impact-cell.tsx`, a Server Component;
+`band.tsx` keeps only the drawing, which `system-grid.tsx` can import from the client
+without dragging the register along. A page with citations went from 739,715 to 595,092
+bytes of JavaScript, at the cost of about 10 KB of HTML for the entries that now travel
+in the payload.
+
+The general rule: a `"use client"` file imports data modules at its own page's expense.
+Resolve the lookup on the server and pass the answer across.
+
+## The lever is optional, and route templates spread it
+
+**11 September 2026.** `PageModule.lever` is optional. The principle is no doom without
+a lever, and `/method/` carries no doom: it explains the rubric. It was typed
+`Omit<PageModule, "lever">` to say so, which is a workaround rather than a statement, and
+every other page still carries one.
+
+`PageLever` is now `LeverProps`, the props of `Lever` itself, and each route renders
+`{module.lever ? <Lever {...module.lever} /> : null}` rather than naming four props. A
+slot added to the component is then a slot a module can fill without eight route files
+changing, which is what the old spelling cost when the lever grew a closing paragraph and
+an overridable standing link.
+
+## The register is copy, and its defects render
+
+**11 September 2026.** `docs/research/sources.md` is no longer only a research file: it
+generates `src/content/references.ts`, and every cell reaches a reader through the
+citation popover and `/sources/`. The lesson from repairing a pass over the generated
+output is that the two halves have to be checked against each other, because the
+generator faithfully reproduces whatever the register got wrong.
+
+Four specific traps, all found in live rows:
+
+- **A URL cell holding prose is a URL cell.** `extractHref` takes the first `https://` in
+  it, so a row recording "reached only through the proceedings index at
+  https://www.bcuc.com/OurWork/Proceedings" published the index as the source. Two BCUC
+  rows and a BC Hydro row did. A route that is not the document is written without a
+  scheme, so it stays a note to a researcher rather than becoming a link to a reader.
+- **An em dash inside a title breaks the split.** `splitSource` only recognises a title
+  that starts the cell. In the register's author-first shape, the first ` — ` becomes the
+  title/note boundary wherever it falls, so six rows shipped a title cut in half:
+  "Zatar & Harik, "Bridge embankments", "Wyllie and Norrish, *Rock Fall Containment for
+  Rock Cuts, Highway 99". Putting the quoted or italic title at the front of the cell
+  fixes it without changing a character of the title.
+- **A bold editorial note has to open the note, not close it.** `KAUR-2026` bolded
+  "not retrieved" at the end, so the title ran 372 characters to reach it.
+- **Licence strings are read by two files.** `OGL – Canada`, `**OGL–Canada**` and
+  `OGL–Canada` are one licence and three strings; `/licences/` and the generated entries
+  only agree if the register spells each one the way `licensing.md` does.
+
+## Search engines refuse a script; the archives and the DOI registries do not
+
+**11 September 2026.** Recovering lost URLs for the register, every general search engine
+refused an automated request: Bing returned no organic results, DuckDuckGo's HTML and
+Lite endpoints served a CAPTCHA after two queries, Mojeek returned an empty result list.
+Three machine-readable indexes answered every question instead, and they are the route to
+use next time:
+
+- **`api.crossref.org/works?query.bibliographic=`** resolved a journal article and a
+  Geological Survey open file from their titles alone. GSC Open Files carry `10.4095/…`
+  DOIs that redirect to the NRCan repository, so an "Open File NNNN" with no URL is
+  almost always recoverable.
+- **The Wayback CDX API** — `web.archive.org/cdx/search/cdx?url=<host>&matchType=domain`
+  — lists every path the Archive has ever seen on a host. Grepping 20,000 `egbc.ca` paths
+  for "seismic" found a guideline PDF that a site search could not, and the same trick
+  recovered a 2014 trade-press PDF from a subdomain that no longer resolves.
+- **A browser user-agent changes the answer.** The EGBC PDF the register had recorded as
+  "403 to automated fetch" serves normally to `curl` with a desktop UA. `crtc.gc.ca`
+  genuinely refuses both, which is worth recording on the row rather than retrying.
+
+Two hosts that defeat this: `docs.bcuc.com` puts an Azure WAF in front of documents keyed
+by an opaque `doc_NNNNN` id whose filename must match exactly, so a path that was not
+captured at the time cannot be reconstructed; and probing for one trips the WAF within a
+few requests. The BCUC's own exhibit lists are the way back in — they name which exhibit
+an appendix belongs to, which is worth recording even when the file itself is not.

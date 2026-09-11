@@ -104,8 +104,8 @@ the first four to five days. [DCRRA-2025]
 gas appliance with an electric fan or control, and settle what to do about each one
 before you need to.
 
-**[Preparing](/prepare/)** sets out the rest, and every written system page ends with
-its own version.
+[Preparing](/prepare/) sets out the rest, and every written system page ends with its
+own version.
 
 ## Sources on this page
 

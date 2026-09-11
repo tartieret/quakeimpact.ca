@@ -10,7 +10,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, ReferenceList } from "@/components/citation";
 import { TimelineStrip } from "@/components/timeline";
-import { ImpactCell } from "@/components/band";
+import { ImpactCell } from "@/components/impact-cell";
 import { SYSTEMS, SCENARIOS, PHASES } from "@/content/site";
 import { pageForSystem } from "@/content/pages";
 import { UNWRITTEN_SYSTEM } from "@/content/pages/unwritten";
@@ -153,14 +153,7 @@ export default async function SystemPage({
           </Section>
         ))}
 
-        {page ? (
-          <Lever
-            heading={page.lever.heading}
-            title={page.lever.title}
-            items={page.lever.items}
-            href={page.lever.href}
-          />
-        ) : null}
+        {page?.lever ? <Lever {...page.lever} /> : null}
 
         <Section
           title="Sources on this page"

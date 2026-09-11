@@ -21,8 +21,15 @@ export const water: PageModule = {
     title: "Water",
     nav: "Water",
     kicker: "Life afterwards",
-    standfirst:
-      "A magnitude 9.0 earthquake is modelled to cause 267 water main failures across Metro Vancouver's network. About 60 of them fall at the 71 points where mains cross under rivers and inlets, which are the hardest places in the system to reach.",
+    standfirst: (
+      <>
+        Metro Vancouver’s own seismic assessment models 267 water main failures
+        across the region in a magnitude 9.0 earthquake.{" "}
+        <Cite id="MV-WATER-22" /> About 60 of them fall at the 71 points where
+        mains cross under rivers and inlets, which are the hardest places in the
+        system to reach. <Cite id="MV-WATER-22" />
+      </>
+    ),
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -132,7 +139,7 @@ export const water: PageModule = {
             duration.
           </p>
           <p>
-            About two thirds of the roughly 300 page report is blacked out in
+            About two thirds of the roughly 300-page report is blacked out in
             the public version. Two of the withheld pieces are the two a
             restoration estimate would be built from: the number of leaks and
             breaks per main, and the damage estimates for 21 water storage
@@ -160,18 +167,18 @@ export const water: PageModule = {
             says in the region’s own words that the joined-up picture across
             that seam has not been assembled yet. <Cite id="MV-DWMP-26" />
           </p>
-          <VerificationNote>
-            <strong>Not a restoration estimate.</strong> A March 2018 case study
-            by Agriculture and Agri-Food Canada found that drinking water
-            disruption in the Vancouver area “could last several months”. It is
-            a federal document written by an agriculture department rather than
-            by the water utility, never published, obtained under freedom of
-            information and reported by the Globe and Mail in 2019. “Several
-            months” is a range word rather than a figure. The study is eight
-            years old and predates the current tunnel and reservoir program. Its
-            more durable finding is the other half: at the time, the province
-            had put its plans for supplying potable water on hold pending an
-            update from Metro Vancouver. <Cite id="GM-AAFC-19" />
+          <VerificationNote label="Not a restoration estimate">
+            A March 2018 case study by Agriculture and Agri-Food Canada found
+            that drinking water disruption in the Vancouver area “could last
+            several months”. It is a federal document written by an agriculture
+            department rather than by the water utility, never published,
+            obtained under freedom of information and reported by the Globe and
+            Mail in 2019. “Several months” is a range word rather than a figure.
+            The study is eight years old and predates the current tunnel and
+            reservoir program. Its more durable finding is the other half: at
+            the time, the province had put its plans for supplying potable water
+            on hold pending an update from Metro Vancouver.{" "}
+            <Cite id="GM-AAFC-19" />
           </VerificationNote>
         </Prose>
       ),
@@ -236,7 +243,8 @@ export const water: PageModule = {
     },
 
     {
-      title: "Five deep tunnels are being built, and none of the four under way is finished",
+      title:
+      "Five deep tunnels are planned, and none of the three under way is finished",
       body: (
         <Prose>
           <p>

@@ -3,7 +3,7 @@ route: /
 title: What a major earthquake does to the Lower Mainland, and for how long
 nav: Home
 hook: The shaking is the short part.
-lede: This site is about the months after a major earthquake in Metro Vancouver rather than the minutes during one. Every claim on it comes from a published document, and every document is listed.
+lede: A major earthquake in Metro Vancouver means minutes of shaking, and months of waiting for water, power and transport to come back. Every figure here comes from a published document, and every document is listed.
 status: draft
 ---
 
@@ -63,12 +63,12 @@ says so. [How the bands work](/method/).
 
 ## Every number here comes from a document somebody else published
 
-Everything here is compiled from published work: federal and provincial scenarios,
-utility filings with their regulators, municipal plans, and peer-reviewed engineering.
-Nothing on this site is modelled by us.
+That published work is federal and provincial scenarios, utility filings with their
+regulators, municipal plans, and peer-reviewed engineering. No number here is a new
+estimate.
 
-Where something has not been published, the site says so rather than filling the gap.
-Where two official documents disagree, it gives both.
+Where nobody has published an answer, the gap is stated rather than filled with a
+guess. Where two official documents disagree, both are here.
 
 [The sources](/sources/) lists every document. [Contribute](/contribute/) explains
 what a correction needs in order to be usable.

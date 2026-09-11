@@ -139,22 +139,40 @@ export function Prose({
  * longer a heading of its own, because "What you can do" is the heading the
  * copy gives and a second one under it would break the order. Items carry their
  * own citations, so they are `ReactNode`.
+ *
+ * `closing` is the paragraph some copy writes after the bullets, which ties the
+ * list together and is not itself an action. It has its own slot because a
+ * closing sentence forced into the list reads as one more thing to do.
+ *
+ * The standing link at the foot is the route out to the preparedness plan.
+ * `href={null}` leaves it off, which is what `/prepare/` itself wants: a link
+ * from a page to that same page is a loop. `linkLabel` renames it where the
+ * default words would be wrong.
  */
-export function Lever({
-  heading = "What you can do",
-  id,
-  title,
-  items,
-  href = "/prepare/",
-}: {
+export interface LeverProps {
   /** The `<h2>`, and the entry in the contents rail. */
   heading?: string;
   id?: string;
   /** One or two sentences under the heading. */
   title?: ReactNode;
   items: ReactNode[];
-  href?: string;
-}) {
+  /** A closing paragraph under the list, where the copy writes one. */
+  closing?: ReactNode;
+  /** Where the standing link goes. `null` leaves the link off. */
+  href?: string | null;
+  /** The standing link's words. */
+  linkLabel?: ReactNode;
+}
+
+export function Lever({
+  heading = "What you can do",
+  id,
+  title,
+  items,
+  closing,
+  href = "/prepare/",
+  linkLabel = "The full preparedness plan",
+}: LeverProps) {
   return (
     <section
       id={id ?? slugify(heading)}
@@ -177,24 +195,40 @@ export function Lever({
           </li>
         ))}
       </ul>
-      <Link
-        href={href}
-        className="mt-6 inline-block text-sm font-medium text-accent underline underline-offset-4"
-      >
-        The full preparedness plan
-      </Link>
+      {closing ? (
+        <p className="mt-6 max-w-2xl leading-relaxed">{closing}</p>
+      ) : null}
+      {href ? (
+        <Link
+          href={href}
+          className="mt-6 inline-block text-sm font-medium text-accent underline underline-offset-4"
+        >
+          {linkLabel}
+        </Link>
+      ) : null}
     </section>
   );
 }
 
 /**
- * An open question held in public. Assumption discipline is a stated principle
+ * A gap, shown rather than hidden. Assumption discipline is a stated principle
  * of the project, so the site shows its gaps rather than papering over them.
- */
-/**
- * A gap, shown rather than hidden. The label names the kind of gap, because
- * "not yet published" and "not a restoration estimate" are different claims
- * and the copy distinguishes them.
+ *
+ * The label names the kind of gap, because "not yet published" and "not a
+ * restoration estimate" are different claims and the copy distinguishes them.
+ *
+ * The copy writes that distinction as a bold lead: `> **Not yet published.**
+ * The rest of the note.` The lead is the label, so it goes in `label` and comes
+ * out of the body. A note that repeats it reads it twice, and the body then
+ * opens on a sentence fragment.
+ *
+ *   <VerificationNote label="Not a restoration estimate">
+ *     A March 2018 case study found that …
+ *   </VerificationNote>
+ *
+ * The label is uppercased in CSS, so it takes no full stop: the copy's
+ * sentence-ending period belongs to the markdown, not to the label, and set in
+ * capitals it reads as a typo.
  */
 export function VerificationNote({
   label = "Not yet verified",

@@ -12,8 +12,8 @@ export const SITE = {
   domain: "quakeimpact.ca",
   url: "https://quakeimpact.ca",
   tagline:
-    "What a major earthquake does to the Lower Mainland — and for how long",
-  status: "Draft — content under review. Body text is still placeholder.",
+    "What a major earthquake does to the Lower Mainland, and for how long",
+  status: "Draft. Content under review, and fourteen pages carry their evidence without their text.",
 };
 
 /* ------------------------------------------------------------------ */
@@ -30,11 +30,11 @@ export const SCENARIOS: Record<ScenarioId, Scenario> = {
       "M9.0 Cascadia Full Rupture, Geological Survey of Canada scenario catalogue",
     source: "Offshore subduction interface",
     shaking:
-      "Moderate intensity, long duration — three minutes in the province's scenario",
-    extent: "Northern California to BC — a regional catastrophe",
+      "Moderate intensity, long duration. Three minutes in the province's scenario",
+    extent: "Northern California to British Columbia, damaging the whole coast at once",
     tsunami: "Outer coast; limited effect inside Burrard Inlet",
     mutualAid:
-      "Late rather than absent — the province states the US will be unable to help if it is also overwhelmed",
+      "Late rather than absent. The province states the US will be unable to help if it is also overwhelmed",
     recurrence:
       "Sources disagree: 500–600 years on average per NRCan, 400–500 in BC's own documents. Last event 1700",
     conditions:
@@ -46,14 +46,14 @@ export const SCENARIOS: Record<ScenarioId, Scenario> = {
     name: "Shallow crustal M7",
     strapline: "Worse for Vancouver itself",
     simulation:
-      "M7.0 Georgia Strait, same catalogue — and the province's own primary planning scenario",
+      "M7.0 Georgia Strait, same catalogue, and the province's own primary planning scenario",
     source: "Strait of Georgia shallow crust, 3–4 km deep",
     shaking:
-      "High intensity, short duration — 10–20 seconds of violent shaking in the province's scenario",
+      "High intensity, short duration. 10 to 20 seconds of violent shaking in the province's scenario",
     extent: "Concentrated and local",
     tsunami: "Not the primary concern",
     mutualAid:
-      "Available — BC's plan assumes agencies outside the impact area are unaffected. That is a planning assumption, and this is the case where it holds",
+      "Available. BC's plan assumes agencies outside the impact area are unaffected, which is a planning assumption, and this is the case where it holds",
     recurrence:
       "Roughly once every 1,500 years in the region, per the province's scenario. Rarer near the city, more destructive to it",
     conditions:

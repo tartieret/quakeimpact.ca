@@ -14,7 +14,8 @@ A module exports one `PageModule`:
 
 - `meta: PageMeta` — from `src/content/types.ts`.
 - `sections: PageSection[]` — one entry per `##` in the copy, in order.
-- `lever: PageLever` — the copy's closing "What you can do".
+- `lever?: PageLever` — the copy's closing "What you can do". Optional only
+  because `/method/` describes no consequence and so writes none.
 
 Three properties make a wrong page hard to write, and they are why the body is
 a typed array rather than a component:
@@ -26,8 +27,20 @@ reach, and there is no way to author a heading that misses the rail. A subhead
 inside a body uses `Subhead`, which gives an `<h3>` its own `id` for the same
 reason. Do not write a bare `<h2>` or `<h3>` in a body.
 
-**`lever` is a required field.** It is not one section among many, so the block
-that makes the page usable cannot be dropped or demoted into prose.
+**`lever` is its own field.** It is not one section among many, so the block
+that makes the page usable cannot be demoted into prose. It is optional in the
+type, and the one page that leaves it off is `/method/`: the principle is no
+doom without a lever, and the rubric states no doom.
+
+`PageLever` is the props of `Lever` itself, so a slot added to the component is
+a slot a module can fill. Three of them matter when porting. `closing` takes the
+paragraph some copy writes after the bullets, which ties the list together and
+is not itself an action: a closing sentence forced into the list reads as one
+more thing to do. `href` moves the standing link at the foot, and `href: null`
+leaves it off, which is what a page that already links to `/prepare/` in its own
+words wants, and what `/prepare/` itself wants, since a link from a page to that
+same page is a loop. `linkLabel` renames the link where the default words would
+be wrong.
 
 **`meta.references` is the citation contract.** It lists reference ids in the
 order the body first cites them. `Cite` numbers a marker by the key's position
@@ -45,7 +58,11 @@ than in a comment.
 - Each `##` becomes a `PageSection`. The heading text is verbatim.
 - Each `[KEY]` becomes `<Cite id="KEY" />`, with the key verbatim. Keys resolve
   in the generated `src/content/references.ts`.
-- A `> **Not yet published.**` blockquote is a `VerificationNote`.
+- A `> **Not yet published.**` blockquote is a `VerificationNote`. The copy's
+  bold lead is the note's `label` and comes out of the body, with no trailing
+  full stop: the label is uppercased in CSS, so a period set in capitals reads
+  as a typo. A note that keeps the lead in the body says it twice and then
+  opens on a sentence fragment.
 - A table is a `DataTable`. It needs a `caption`, which the copy does not write:
   one plain sentence saying what the table shows, under the style guide like any
   other reader-facing string.
@@ -91,15 +108,16 @@ export const example: PageModule = {
             Body, with the marker in the same sentence as the number.{" "}
             <Cite id="FIRST-KEY" />
           </p>
-          <VerificationNote>
-            <strong>Not yet published.</strong> What has and has not been put in
-            the public record. <Cite id="SECOND-KEY" />
+          <VerificationNote label="Not yet published">
+            What has and has not been put in the public record.{" "}
+            <Cite id="SECOND-KEY" />
           </VerificationNote>
         </Prose>
       ),
     },
   ],
 
+  /** Optional, and left off only by a page that describes no consequence. */
   lever: {
     title: <>The sentence that ties the actions to the interval above.</>,
     items: [
@@ -107,6 +125,10 @@ export const example: PageModule = {
         <strong>The action.</strong> Why it is that figure. <Cite id="FIRST-KEY" />
       </>,
     ],
+    /** The copy's closing paragraph, where it writes one. */
+    closing: <>The sentence after the list that is not itself an action.</>,
+    /** `null` where the page's own words already link to `/prepare/`. */
+    href: null,
   },
 };
 ```

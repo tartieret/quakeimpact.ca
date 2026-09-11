@@ -84,14 +84,7 @@ export default async function ShakingDetailPage({
           </Section>
         ))}
 
-        {page ? (
-          <Lever
-            heading={page.lever.heading}
-            title={page.lever.title}
-            items={page.lever.items}
-            href={page.lever.href}
-          />
-        ) : null}
+        {page?.lever ? <Lever {...page.lever} /> : null}
 
         {/* An unwritten Part 1 page has no reference ids of its own, so there
             is nothing to number and the section is left off rather than

@@ -144,7 +144,7 @@ export const scenarios: PageModule = {
             to the people inside them:
           </p>
           <DataTable
-            caption="What the province’s magnitude 7.0 Greater Vancouver scenario models for Greater Vancouver, counting shaking damage to buildings and to the people inside them and nothing else."
+            caption="What the province’s magnitude 7.0 scenario models for Greater Vancouver."
             columns={["", "Magnitude 7.0, Greater Vancouver"]}
             minWidth="30rem"
             rows={[
@@ -165,9 +165,7 @@ export const scenarios: PageModule = {
             }
           />
           <p>
-            Two further limits travel with every figure in that table. Counting
-            shaking damage to buildings and their inhabitants excludes fires,
-            landslides, vehicle accidents and washouts. And the figures belong
+            A second limit travels with every figure in that table: they belong
             to a weekday afternoon, when most people are at school or work.
             Natural Resources Canada says of its own numbers that because
             secondary hazards and damage to infrastructure are left out, “the
@@ -521,11 +519,13 @@ export const scenarios: PageModule = {
         covers what varies across the region, and how to find out what is under
         a given address.
       </>,
+    ],
+    closing: (
       <>
         And in either earthquake, the province’s own passage above gives the two
         actions that matter in the first seconds: drop, cover and hold on, and
         do not run outside.
-      </>,
-    ],
+      </>
+    ),
   },
 };

@@ -143,16 +143,17 @@ export const electricity: PageModule = {
             Hydro describes is the exposure that stands.
           </p>
           <p>
-            The finding is not new. BC Hydro’s 2019 filing already stated that
-            Murrin sits on seismically unstable soil, that about half of the
+            The finding is not new. BC Hydro’s filing of February 2019, which
+            the regulator’s record files by its fiscal year as F2020, already
+            stated that Murrin sits on seismically unstable soil, that about half of the
             switchyard supplying both substations is vulnerable to liquefaction
             and settlement, and that load served from both “may experience a
             prolonged outage after a seismic event”.{" "}
             <Cite id="BCH-RRA-F2020" />
           </p>
           <p>
-            That 2019 filing also counts about 95,000 customers in the downtown
-            study area. <Cite id="BCH-RRA-F2020" /> The customer count and the
+            That same filing also counts about 95,000 customers in the
+            downtown study area. <Cite id="BCH-RRA-F2020" /> The customer count and the
             two thirds come from different filings six years apart, so
             multiplying one by the other would produce a number of people that
             nobody has published.

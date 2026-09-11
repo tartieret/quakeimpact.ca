@@ -21,8 +21,15 @@ Route templates hold no content. Adding a system is one array entry — it then
 appears in the grid, matrix, dependency list, prepare page and its own exported
 page with no other change.
 
-Body text is currently `src/content/lorem.ts`. Placeholders must stay honestly
-labelled: nothing should look more finished than it is.
+Body text lives in `src/content/pages/`, one typed module per page, ported from
+the reviewed copy in `docs/copy/`. See `src/content/pages/README.md` for the
+contract. There is no markdown pipeline and there will not be one.
+
+A page whose evidence is gathered and whose text is not written says so, and
+carries its real band, mechanism and source in the meantime. Placeholders must
+stay honestly labelled: nothing should look more finished than it is, and a
+placeholder for a graphic the site will never be licensed to draw is worse than
+no placeholder at all.
 
 ## Accessibility is a requirement, not a pass at the end
 

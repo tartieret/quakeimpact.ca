@@ -66,13 +66,14 @@ We are not in the business of motivating through alarm. We are in the business o
 ## 5. Sentence-level rules
 
 - **Aim at a reader who left school at sixteen.** Not because the audience is unsophisticated, but because that is who a public-information site has to reach. If a sentence needs re-reading, rewrite it.
-- **Define a term the first time it appears on a page, in the sentence itself.** "Liquefaction — saturated soil losing strength and behaving like a liquid during shaking — is the reason..." Not a glossary the reader has to leave the page for.
+- **Define a term the first time it appears on a page, in the sentence itself.** "Liquefaction, saturated soil losing its strength and behaving like a liquid while the ground shakes, is the reason..." Not a glossary the reader has to leave the page for.
 - **Prefer the everyday word.** *Restoration* over *remediation*. *Broken* over *compromised*. *Bridge approach* over *abutment transition*, on first use.
 - **Ranges, not point estimates.** "Weeks to months" is honest. "Six weeks" implies a precision the sources do not have.
 - **Numbers in the reader's units.** Litres per person per day, not cubic metres. Days, not hours, once past the first week.
 - **No hedge stacking.** "May potentially be somewhat affected" says nothing. Say what the source says, once.
 - **Active voice, named actors.** "BC Hydro would need to..." not "restoration efforts would be required."
 - **Canadian spelling.** *Metre*, *centre*, *neighbourhood*, *programme* → *program* (Canadian usage takes the short form here). Follow the *Canadian Oxford*.
+- **No em dashes or en dashes in the site's own voice.** Use a comma, a full stop, a colon or a pair of brackets. The dash is the punctuation of an aside, and an aside is usually a guard that belongs in the sentence or a clause that belongs in its own. Three carve-outs: a verbatim quotation keeps the source's punctuation exactly, including its dashes; a proper name keeps its own, as in *Open Government Licence – Canada*; and a numeric range keeps its en dash, as in *pp. 34–35* or *1–8 weeks*. This rule applies to anything a reader sees, including a heading, a label, a caption, alt text and a source register note.
 
 ---
 
@@ -108,6 +109,8 @@ We are not in the business of motivating through alarm. We are in the business o
 | Bands, mechanism, source | Risk score, rating | Our vocabulary, used consistently |
 
 Avoid throughout: *apocalyptic, catastrophic* (unless quoting a source), *ticking time bomb*, *overdue*, *ground zero*, *war zone*, *devastation*, *unimaginable*.
+
+A word on this list is still allowed inside a proper name, because a name is not a word choice. The Institute for Catastrophic Loss Reduction is cited by its name.
 
 ---
 
