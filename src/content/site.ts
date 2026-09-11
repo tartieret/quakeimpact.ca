@@ -7,7 +7,7 @@ export const SITE = {
   url: "https://quakeimpact.ca",
   tagline:
     "What a major earthquake does to the Lower Mainland — and for how long",
-  status: "Draft — structure only. All body text is placeholder.",
+  status: "Draft — content under review. Body text is still placeholder.",
 };
 
 /* ------------------------------------------------------------------ */
