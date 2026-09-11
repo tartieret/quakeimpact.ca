@@ -131,25 +131,36 @@ applies.
   redrawn, not "adapted from".
 - Treating a provincial PDF as reusable because it is public.
 
-**The one place this bites, and it is worth a permission request on its own.** PEIRS
-carries a three-paragraph narrative describing the first minutes of the crustal M7.0 —
-the freight-train sound, the 10-20 seconds, drop-cover-and-hold-on, liquefaction, the
-masonry walls into the street. It is the best reader-facing text in the entire source
-base, and paraphrase makes it worse. Quoted in full in `research/scenarios.md` §2 for our
-own use, which is ordinary research practice; **reproducing it on a public page is reuse
-and is not cleared.**
+**"All rights reserved" does not override fair dealing, and this file said so too
+faintly.** Corrected 11 September 2026. The Province's default matters for *reproduction*
+— datasets, figures, tables, maps, whole documents. It does not turn quotation into
+infringement. Canadian fair dealing covers research, private study, education, criticism
+and review, and quoting a published government document with attribution and a link is the
+ordinary case, not the edge case.
 
-Three routes, in order of preference:
+**The test is the *CCH* factors, and provincial emergency-management text passes them
+comfortably**: the purpose is public education; the amount is a passage from a document of
+well over a hundred pages; the work is a published planning document intended to be
+disseminated; and the effect on the market is nil, because the document is free and a
+quotation substitutes for nothing.
 
-1. **Ask.** A named request for one passage, for a non-commercial public-information site
-   that credits the Province, is the kind of request the permission form exists for.
-2. **Quote two or three sentences.** Short quotation with attribution is fair dealing and
-   needs no permission. It keeps the province's voice and most of the effect.
-3. **Write the mechanisms ourselves and cite PEIRS for each.** Loses the voice, keeps the
-   substance, needs nothing from anyone.
+**The worked example — the PEIRS experience narrative.** Three paragraphs describing the
+first minutes of the crustal M7.0, quoted in full in `research/scenarios.md` §2. This file
+previously called publishing it "not cleared" and registered it as a blocking item. **That
+was too strong, and both have been corrected.** Publish it under fair dealing, with
+attribution, a link and the page number.
 
-The page is not blocked by this — only its opening as currently drafted. Registered as
-blocking item 2 in `research/open-questions.md`.
+**Where the line sits is judgment, and the file should say so rather than imply a rule.**
+Four sentences is unambiguously fine. Three paragraphs is a longer extract of a
+qualitatively significant passage — defensible, and not a certainty. Nobody here is a
+lawyer. If the project ever wants certainty rather than a good argument, that is a
+question for one.
+
+**Ask anyway, in parallel, and not as a gate.** A short note to EMCR costs one email and
+the likely answer is yes — this is the province's own preparedness messaging, and a site
+amplifying it with credit is the outcome the document exists for. It also opens a channel
+to the people who hold several documents this project has recorded as unpublished. Do not
+wait on the reply to publish.
 
 Permission route: the Copyright Permission Request Form, `QPIPPCopyright@gov.bc.ca`.
 Allow lead time.

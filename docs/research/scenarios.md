@@ -243,14 +243,12 @@ attaches to PEIRS's own casualty figures, which belong to a **weekday-afternoon*
 and travel with it. And the "10-20 seconds" is PEIRS timing *violent shaking*, which is
 not the same measurement as the Exercise Coastal Response 2023 duration — see §5.
 
-**Licensing: this is the blocking question, not the editorial one.** `../licensing.md`
-records that **BC government material is all rights reserved by default**, not OGL-BC.
-Three paragraphs reproduced verbatim on a public page is a reuse decision, not a citation,
-and it is **not cleared**. Three routes, in order of preference: seek written permission
-from EMCR; quote two or three sentences rather than the whole passage, which is a much
-easier position to defend; or render the mechanisms in the site's own words and cite PEIRS
-for each, losing the voice but keeping the substance. **Do not publish the full passage
-until one of those is settled.** Recorded in `open-questions.md`.
+**Licensing — resolved 11 September 2026, and the earlier note here was wrong.** This
+paragraph previously said the passage was "not cleared" and must not be published until
+permission arrived. That confused the Province's all-rights-reserved default, which governs
+*reproduction* of datasets and figures, with quotation — which fair dealing covers.
+**Publish it, with attribution, a link and the page number.** A permission request to EMCR
+is worth sending in parallel, and is not a gate. See `../licensing.md`.
 
 ### 3. The province's own Cascadia scenario — DCRRA M9.0
 

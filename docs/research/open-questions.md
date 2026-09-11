@@ -39,14 +39,6 @@ Nothing ships that depends on these.
    ground-conditions map, the liquefaction choropleth and the
    critical-infrastructure overlay. **The only blocking item left.**
 
-2. **Written permission to reproduce the PEIRS experience narrative.** Three paragraphs
-   describing the first minutes of the crustal M7.0 — the best reader-facing text in the
-   whole source base, quoted in full in `scenarios.md` §2. BC government material is all
-   rights reserved by default, so verbatim reuse at this length is **not cleared**.
-   Blocks the scenario page's opening as currently drafted; does **not** block the page,
-   which can fall back to a two-sentence quotation or to the mechanisms in our own words.
-   Route: EMCR. See `../licensing.md`.
-
 *Items 2 and 3 closed in the second round of 10 September 2026 — the AIR study was
 recovered in full from a web archive, and the DCRRA licence position is settled.
 Both are recorded below.*
