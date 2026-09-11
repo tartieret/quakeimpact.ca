@@ -74,12 +74,12 @@ depends less on any one system than on the order in which they can be brought
 back, which is why [life afterwards](/after/) is told system by system and [the
 dependency graph](/dependencies/) counts what each system is waiting on.
 
-## Look up whichever part of it you depend on
+## Go deeper on any part of it
 
 Water in the taps, power in the walls, a phone that connects, a toilet that
 flushes, roads that carry you, a home to go back to. Each card says when that
 part of life starts to be affected, how long it stays that way, and one sentence
-on how it fails. Open any of them for the documents behind it.
+on how it fails. Open any of them to go further.
 
 *Every system, drawn from the content model rather than written here.*
 

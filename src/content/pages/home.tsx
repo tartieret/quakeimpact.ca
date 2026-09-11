@@ -290,8 +290,8 @@ export const home: PageModule = {
     },
 
     {
-      title: "Look up whichever part of it you depend on",
-      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to. Each card says when that part of life starts to be affected, how long it stays that way, and one sentence on how it fails. Open any of them for the documents behind it.",
+      title: "Go deeper on any part of it",
+      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to. Each card says when that part of life starts to be affected, how long it stays that way, and one sentence on how it fails. Open any of them to go further.",
       body: <SystemGrid />,
     },
 
