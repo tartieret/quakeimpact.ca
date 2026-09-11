@@ -1,6 +1,6 @@
 # QuakeImpact — Lower Mainland Earthquake Impact
 
-*Project overview. v0.2*
+*Project overview. v0.3 — corrections from `research/` applied 10 September 2026.*
 
 ---
 
@@ -33,12 +33,13 @@ Two, held firmly. The contrast between them is itself a teaching point, because 
 
 | | **Cascadia M9 megathrust** | **Shallow crustal M7** |
 |---|---|---|
-| Source | Offshore subduction interface | Strait of Georgia / near-region shallow crust |
-| Shaking in Metro Vancouver | Moderate intensity, very long duration (minutes) | High intensity, short duration |
+| Source | Offshore subduction interface | Strait of Georgia shallow crust, 3–4 km deep |
+| Official simulation | M9.0 Cascadia Full Rupture, GSC scenario catalogue | M7.0 Georgia Strait, same catalogue — and the province's own primary planning scenario |
+| Shaking in Metro Vancouver | Moderate intensity, long duration — three minutes in the province's scenario; the deep Georgia Basin prolongs and amplifies | High intensity, short duration — 10–20 seconds of violent shaking in the province's scenario. Durations are scenario parameters, not general facts |
 | Geographic extent | Northern California to BC — regional catastrophe | Concentrated, local |
 | Tsunami | Outer coast; limited effect inside Burrard Inlet | Not the primary concern |
-| Mutual aid | Unavailable — everyone is asking at once | Available; the rest of the country responds |
-| Recurrence | Known interval, last event 1700 | Rarer near the city, but far more destructive to it |
+| Mutual aid | Late rather than absent — the province states the US will be unable to help if it is also overwhelmed | Available — BC's plan assumes agencies outside the impact area are unaffected. That is a planning assumption, and the crustal case is where it holds |
+| Recurrence | Sources disagree: NRCan gives 500–600 years on average, BC's own documents 400–500, with intervals from about 200 to 800. Last event 1700 | Roughly once every 1,500 years in the region, per the province's scenario. Rarer near the city, more destructive to it |
 
 The single most important contrast: the crustal event is worse *for Vancouver*, the Cascadia event is worse *for Vancouver's ability to be helped*.
 
@@ -89,10 +90,10 @@ The core of the site. Organised as a timeline: hours → days → weeks → mont
 | Large infrastructure | Port terminals and cranes, YVR on Sea Island, the BC Ferries terminals at Tsawwassen and Horseshoe Bay. **Assessments required before writing anything.** Assume nothing here — see note below |
 | Fuel | The master dependency, and it is upstream of almost everything else on this list. Generators, repair crews, trucks, hospitals and pumps all run on diesel arriving by road from a small number of terminals, most on the Burrard Inlet shoreline or the delta. Two points to land: a service station with full tanks and no power dispenses nothing, and the region holds only a limited number of days of supply. **Find that days-of-supply figure** — it may be the single most quotable number on the site |
 | Food | Feeding a metro region with the port down and crossings restricted. The problem is not stock, it is logistics: distribution centres, refrigeration, and a resupply cycle measured in days. Held separately from fuel because the failure is different — food is a demand the region cannot store its way out of, while fuel is the input every other system's repair depends on. Food waits on fuel; nothing waits on food except people |
+| Natural gas | The one utility that cannot be restored in bulk. Water and electricity come back when the network is repaired; gas comes back when a technician has entered every affected building and relit every appliance. That is a per-premises operation across hundreds of thousands of premises, and it is why a supply interruption with no earthquake damage at all is measured in weeks. Also carries a counter-intuitive safety message: FortisBC's advice is **not** to shut off your own gas |
 | Dams and reservoirs | Cleveland, Seymour Falls, Coquitlam. Dual-purpose content — they are the water supply and they are a downstream hazard. Metro Vancouver publishes dam safety material |
 | Housing | Tens of thousands displaced from standing but tagged buildings, into a region with no rental slack. Arguably the most underestimated consequence of all |
 | Health care | Surge demand against damaged facilities running on trucked diesel |
-| Weather | November, no heat, no dry indoor space. Vancouver's mild climate is not mild after two weeks outside |
 | Absence of outside help | The Cascadia planning assumption: mutual aid unavailable because the whole coast needs it simultaneously |
 
 **Assumption discipline.** The temptation on port, airport and ferry terminals is to write "these would not survive." Do not. YVR has done substantial ground improvement on Sea Island and is better studied than intuition suggests; pile-supported wharves on treated ground do not behave the way a lay reader expects. Port cranes and wharves are a genuine Kobe-style vulnerability, but that has to come from an assessment, not from expectation. If the documents confirm the fear, the claim becomes powerful. If they do not, that is itself worth telling readers — and it protects the credibility of everything else on the site.
@@ -127,7 +128,9 @@ This is also the site's worked example of the citation convention — see sectio
 
 Not siloed. Every system page in Part 2 ends with its own action; this section aggregates them into a coherent plan.
 
-**Verify current official guidance before writing a word.** The "72 hours" figure many people remember may no longer be what PreparedBC advises, and Washington State has moved to a two-week standard. If so, the gap between what people remember and what is now recommended is the strongest hook in the project.
+**The guidance has been checked, and the hook is not the one we expected.** PreparedBC's Earthquake and Tsunami Preparedness Guide says "at least two weeks", three times over. Its general emergency-kit page says a minimum of three days to one week. Its earthquake hazard page says a minimum of three days. Washington State says two weeks everywhere, under one named campaign.
+
+So the gap is not across the border. It is inside British Columbia's own advice — while "72 hours" is what most people still remember, and what the province's own emergency support services are built to provide. State all of it, cite all of it, and let the comparison do the work.
 
 ---
 
@@ -153,15 +156,16 @@ Decided per dataset, based on what is actually available. Embed official viewers
 
 - **Christchurch 2011** — the closest analogue for aftermath. Liquefaction on comparable ground, sewer out for months in the east, a Western city with functioning institutions, and it still took years.
 - **Kobe 1995** — a port city of similar scale losing its port.
-- **Tohoku 2011** — fuel logistics collapse.
+- **Tōhoku 2011** — fuel logistics. The mechanism is that the fuel existed and the terminals and trucks to move it did not, which is the shape of the Lower Mainland argument. Sourced from the Japanese government's own briefing; lead with BC's documents and use this only to show what it looked like.
 
-**West Berlin 1948–49 — used inverted.** Not as a model for rescue, but as the ceiling on what rescue can be.
-
-The naive version of the analogy fails: the airlift worked because the airfields were intact and the supplying side was undamaged, and neither holds here. YVR sits on Sea Island delta ground and, in the Cascadia case, the entire coast is a disaster zone simultaneously.
-
-The useful version is a capacity comparison. At peak the airlift moved on the order of 8,000 tonnes a day to roughly two million people — after a year of buildup, with hundreds of aircraft and two undamaged airfields. Metro Vancouver is 2.8 million. Drinking water alone, at the humanitarian minimum of 4 litres per person per day, is over 11,000 tonnes daily. That exceeds the entire Berlin peak, every day, before a gram of food, fuel or medical supply moves.
-
-*Presentation:* label this explicitly as an order-of-magnitude comparison, not a logistics plan. Cite each input — airlift tonnage from the historical record, population from census, consumption minima from Sphere standards or PreparedBC.
+**Retired, 10 September 2026 — the West Berlin 1948–49 airlift comparison.** It was
+carried here as a ceiling on what rescue can be: airlift tonnage per capita set against
+the humanitarian water minimum. The arithmetic held up under verification and the
+comparison still does not earn its place. It needs three caveats before it can be stated
+honestly — that most airlift tonnage was coal, that Berlin's water was never cut, and that
+nobody plans to supply a metro region by air — and a comparison that takes three caveats
+to be fair is not teaching a reader anything they can use. Removed from the overview, from
+`research/analogues.md` and from the sources page.
 
 *State the counterpoint, or an expert will.* Nobody plans to supply a metro region by air. The actual levers are restoring surface corridors and reducing demand — which means people leave. That is its own hard truth, and it belongs on the housing and displacement page.
 
@@ -171,7 +175,7 @@ The useful version is a capacity comparison. At peak the airlift moved on the or
 
 A thin complete grid is worth less than a few deep pages.
 
-**MVP:** both scenarios, three systems end to end — **water, power, transportation** — plus the ground-conditions map and the band rubric. Publish it.
+**MVP:** the two scenarios first, built entirely on the openly licensed NRCan catalogue; the method page and band rubric; **water, transportation, who stays, ground conditions, power**; and the preparing page. Publish it. The ground-conditions map is held pending a licence reply, so ground conditions ships as text with an outbound link. See `research/build-order.md`.
 
 **Then:** sanitation, fuel, food, communications, housing.
 
@@ -186,8 +190,59 @@ A thin complete grid is worth less than a few deep pages.
 - **Language: English only.** Write in plain English that would translate cleanly, in case a municipality or agency ever asks for a French or Chinese version — but do not build for it now.
 - **Name and domain: QuakeImpact, quakeimpact.ca.**
 - **Stack and hosting: Next.js static export on Netlify.** See `stack-and-structure.md`.
+- **Electricity bands High, and the page does not generalise.** BC Hydro's own filing
+  says a large earthquake could leave up to two-thirds of downtown customers without
+  power, several weeks to restore service and years to restore the system. That is
+  downtown, and nothing equivalent is published for the rest of the region. The band is
+  High; the page leads with the specific downtown fact and states the limit. **A
+  specific sourced fact is worth more to a reader than a generalised band** — someone
+  who lives downtown now knows something actionable about where they live, which is
+  what the site is for.
+- **Weather is not a system. It is a scenario condition.** It does not fail; it makes
+  every other failure worse, and the province's own scenarios build it in that way — the
+  DCRRA sets its M9 in an August heatwave with wildfire smoke, PEIRS sets its M7 on a
+  January afternoon after an atmospheric river. Weather leaves `SYSTEMS` and is rendered
+  on the timeline. The grid loses a row it could not honestly fill.
+- **Natural gas becomes a system.** It was missing, and it carries a mechanism no other
+  system has: restoration is rate-limited by sending a person into every building. The
+  grid keeps twelve systems.
+- **The microzonation maps are link-only, and ICLR approval is not pursued.** Decided
+  10 September 2026. The MVSMMP layers carry custom ICLR terms whose commercial
+  reservation covers electronic media and extends to statements and conclusions about the
+  maps, so the judgement would not have been ours to make — and two constraints would have
+  survived approval anyway: map sheets are unalterable, and anything derived from the data
+  layers becomes share-alike. Rather than hold the map work open on an enquiry, the site
+  links to the maps, describes the findings in its own words, and ships **ground
+  conditions as a text page**. The flagship graphic becomes the **Dedicated Fire
+  Protection System coverage boundary**, which is OGL–Vancouver and fully usable. The cost
+  is the critical-infrastructure-over-liquefaction overlay, which was the best original
+  graphic the project had designed.
+- **Map dataset licensing: settled per dataset.** See `licensing.md`. The NRCan catalogue and City of Vancouver open data are cleared with attribution; the Metro Vancouver microzonation layers are link-only pending written approval from ICLR.
 
 ### Open
 
-- Licensing terms for each map dataset — check before building on any of them.
 - Whether to seek review from a local emergency-management or geotechnical contact before launch. Recommended: it converts the site from one person's compilation into something the field will link to.
+- **Whether "Absence of outside help" should be renamed "Where help comes from".**
+  Raised 10 September 2026. The row is the only one in `SYSTEMS` named for a **negative**,
+  and the name states a conclusion the evidence does not support. `research/systems/outside-help.md`
+  reaches the opposite framing in its own words — *"Help is late, not absent"* — and bands
+  the row **Low** for the crustal M7, where the province's staging assumption is
+  geographically plausible. A reader meeting a row called "absence of outside help" banded
+  Low has been told two contradictory things by the grid before reading a word.
+
+  The positive name also carries more information, because what a reader wants to know is
+  *who comes, from where, and when* — and the file answers that: Alberta maintains an
+  Earthquake Response Plan for British Columbia, the formal instruments are named, and the
+  strongest finding in the file is that **EMBC's own list of applicable agreements names no
+  Alberta instrument while Alberta publishes a plan for us**. None of that is expressible
+  under a heading about absence.
+
+  Against the rename: "absence of outside help" is what makes the Cascadia column
+  frightening in the right way, and a neutral title may bury the finding that the province
+  expects US mutual aid to be unavailable. Recommended: rename, and let the Cascadia
+  mechanism sentence carry the weight — it is a stronger sentence than a title.
+
+  Touches `site-overview.md` §5, `research/impact-bands.md`, and `SYSTEMS` in
+  `src/content/site.ts`. One array entry, no other code change.
+
+- **Whether the site archives its own sources.** Several citations already point at web archives because the publisher reorganised or the host died — the AIR study, the RMS Kobe retrospective. Two federal hosts went from resolving to NXDOMAIN during this project's lifetime. A site whose whole proposition is that its sources check out should not depend on other people's links holding. Recommended: capture every cited source at the version we read, and record the capture alongside the live URL.

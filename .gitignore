@@ -6,3 +6,6 @@ out/
 next-env.d.ts
 .DS_Store
 preview/dist/
+
+# Browser automation artifacts
+.playwright-mcp/

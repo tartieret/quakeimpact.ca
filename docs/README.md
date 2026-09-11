@@ -5,23 +5,44 @@ in version control alongside the code that renders it.
 
 | File | What it holds |
 |---|---|
-| `site-overview.md` | The project document: purpose, principles, scenarios, band rubric, full content structure, sources, build order, open decisions. The primary reference. |
+| `site-overview.md` | The project document: purpose, principles, scenarios, band rubric, content structure, build order, open decisions. Owns **structure**. |
 | `style-guide.md` | How the site sounds and looks: audience, tone, the evidence on fear appeals, sentence-level rules, word list, visual language, accessibility, pre-publication checklist. **Read before writing any page.** |
+| `research/` | The evidence base. One subject per file, with source keys, confidence markers and open questions. Owns **fact**. Start at `research/README.md`. |
+| `licensing.md` | Per-dataset licence status, the attribution strings the site must publish, and the rules for text and figures. **Nothing is reproduced or hosted unless it is cleared here.** |
 | `stack-and-structure.md` | How the site is built: stack, routes, content model, and how the principles in the overview are enforced in code. |
 | `knowledge.md` | Working notes that outlive a change: sources, stack quirks, decisions and their reasons. |
+| `research-plan.md` | Where the research stands: what changed, what was corrected, what is decided, what has not been started. **Read this first when picking the project back up.** |
 
 ## Working rules
 
-- **The overview is the spec.** If a claim is not in `site-overview.md` or does
-  not carry a source, it does not go on the site.
-- **Assumptions are research tasks.** Anything held as "I believe X" enters the
-  overview as a verification item under the relevant section. It does not reach
-  the site until a source confirms or contradicts it.
-- **Record decisions when they are made.** Section 9 of the overview is the
-  register of what is still open. Move items out of it as they close, rather
-  than leaving the register stale.
-- **One file per subject.** New research areas get their own file here and a
-  line in the table above.
-- **Tone is not a matter of taste.** `style-guide.md` records decisions backed
-  by risk-communication research, not preferences. Changing them is a decision
-  to record, not an edit to make in passing.
+- **Every research file carries a review status.** Two states, `unreviewed` and
+  `validated`, in a header directly under the title. It records whether a person has
+  checked the file, and says nothing about how strong the evidence is — a validated file
+  may still report a thin one. `grep -L '^<!-- review-status: validated -->' docs/research/*.md docs/research/systems/*.md`
+  lists what is left to review. Any substantive edit returns a file to `unreviewed`.
+  See `research/CONVENTIONS.md`.
+- **The overview owns structure; the research owns fact.** A claim reaches the
+  site only if it appears in `research/` with a source and a confidence marker
+  the source supports. Where the two documents disagree, `research/` wins on
+  fact and `site-overview.md` wins on shape.
+- **Assumptions are research tasks.** Anything held as "I believe X" enters
+  `research/open-questions.md` as a verification item. It does not reach the site
+  until a source confirms or contradicts it, and it ships visibly as an open
+  question in the meantime.
+- **An absence that has been searched for is a finding.** Record the channel and
+  the date. "Nobody has published this" is a stronger statement than "we did not
+  find this" — but only the search earns it. Deliberate non-publication is a
+  third thing again, and is worth saying out loud.
+- **Three registers, three homes.** `site-overview.md` §9 registers open
+  *decisions*; `research/open-questions.md` registers open *research questions*;
+  `licensing.md` registers licence status per dataset. When one document closes
+  another's item, say so in both.
+- **Every document carries a version and a date.** When one supersedes another,
+  the superseding document names the file and section, and the superseded item is
+  edited in place rather than left standing.
+- **Tone is not a matter of taste.** `style-guide.md` records decisions backed by
+  risk-communication research, not preferences. Changing them is a decision to
+  record, not an edit to make in passing.
+- **Research prose is not copy.** Roughly one sentence in four in `research/` is
+  the project talking about itself. That is correct there and fatal on a page.
+  Copy is written through the style guide, not pasted across.

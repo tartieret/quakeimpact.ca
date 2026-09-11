@@ -40,7 +40,7 @@ Static export was chosen over an SPA because the site is public-facing content p
 /about/
 ```
 
-32 statically exported pages.
+32 statically exported pages. *A `/licences/` route is required by `licensing.md` and does not yet exist; re-derive the count from `npm run build` after it is added.*
 
 ---
 
@@ -53,6 +53,8 @@ Everything lives in `src/content/site.ts`. The route templates hold no content.
 - `BANDS` — the rubric from overview section 4, including `unknown`
 - `PHASES` — hours / days / weeks / months
 - `SYSTEMS` — the thirteen systems, each with hook, `bitesAt` phase, per-scenario impact, `dependsOn` edges, and build tier from overview section 8. Food and fuel are separate entries: fuel is an input every other system's repair competes for, food is a demand that cannot be stored, and merging them hides the edge between them
+  **Pending code change, decided 10 September 2026:** `weather` leaves `SYSTEMS` and is rendered on the timeline; `gas` joins it. The count stays at thirteen. Weather was carried with a `medium/medium` band the evidence declines to assign — it is a scenario condition, not a system that fails. See `research/impact-bands.md`.
+- **The band values in `SYSTEMS` are scaffolding, not findings.** `research/impact-bands.md` holds the assessed bands, and in most rows the code is currently more confident than the evidence; in several it asserts a band where nothing had been assessed. `Impact.mechanism` is `loremLine()` and `Impact.source` is `"TBD"` in every cell. Do not treat the current values as sourced. **The reconciliation in `research/impact-bands.md` predates the food/fuel split and is written against twelve rows; re-derive it against the thirteen in the code.**
 - `SHAKING_PAGES`, `NAV`, `UTILITY_NAV`
 
 `src/content/references.ts` holds `REFERENCES`, the source register: one entry per document, keyed by citation key. Entries carry kind, title, publisher, year, href and a one-line note. `kind: "page"` is an internal reference — a claim can point at the page that carries the reasoning. Every entry is currently flagged `placeholder`, and that flag is what makes the marker and the reference list say so on the page.
@@ -67,7 +69,7 @@ Adding a system is one array entry. It then appears in the grid, the matrix, the
 
 **Severity survives without colour.** `BandMeter` draws three segments filled 1/2/3. Works in greyscale, in print, and for colour-blind readers.
 
-**"Not yet assessed" is a fourth band.** Hatched, never coloured. Port, airport and ferry terminals ship in that state deliberately — the assumption discipline in overview section 5 becomes visible on the page instead of hidden in a backlog. `VerificationNote` does the same for open research questions.
+**"Not yet assessed" is a fourth band.** Hatched, never coloured. Dams and reservoirs ship in that state deliberately, as does large infrastructure in the crustal column — the assumption discipline in overview section 5 becomes visible on the page instead of hidden in a backlog. `VerificationNote` does the same for open research questions.
 
 **No doom without a lever (principle 3).** Every long page ends with a `Lever` block.
 
