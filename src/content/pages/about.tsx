@@ -16,11 +16,11 @@ import type { PageModule } from "./index";
  * page describes no consequence, so an action written for it would be an action
  * nobody asked the reader to take.
  *
- * The site does not talk about itself to the reader anywhere else, apart from
- * the home page's opening sentence, which says who is speaking and links here.
- * This page is the exception the reader came for: who compiled this, and why,
- * is a fact about the site's reliability rather than a biography. That is why
- * the section naming him ends on what the site is not.
+ * The site does not talk about itself to the reader anywhere else. This page is
+ * the exception the reader came for, and it is the one place the author speaks
+ * in the first person: who compiled this, and why, is a fact about the site's
+ * reliability rather than a biography. That is why the section naming him ends
+ * on what the site is not.
  */
 const link = "text-accent underline underline-offset-2";
 

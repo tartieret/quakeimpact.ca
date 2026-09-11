@@ -21,14 +21,12 @@ import type { PageModule } from "./index";
  * yet been told why this matters has no reason to work through the difference
  * between a megathrust and a crustal earthquake.
  *
- * The standfirst is the one place outside `/about/` where the author speaks in
- * the first person, and it is deliberate. The province's two-week ask carries a
- * source; that almost nobody has done it does not, because no survey in the
- * register measures it. Written as an observation the compiler made as his
- * neighbourhood's point of contact, and linked to the page that says who he is,
- * it is testimony a reader can weigh rather than a statistic with no document
- * behind it. If a published preparedness rate for the region turns up, it
- * belongs here and the sentence should become a cited one.
+ * The standfirst opens on the gap the site exists to close: the province asks
+ * for two weeks, and households are not carrying it. The ask is cited. The
+ * sentence about households is not yet — no survey in the register measures how
+ * prepared this region's households are, and a preparedness rate is being
+ * gathered to stand behind it. It is written without a figure for that reason,
+ * and it takes its marker as soon as the source lands.
  *
  * The first two sections open on a sentence the copy writes as their first
  * paragraph and this module passes as `lede`, which is the only difference
@@ -69,15 +67,11 @@ export const home: PageModule = {
         <Link href="/prepare/" className={link}>
           two weeks of water and food
         </Link>
-        . <Cite id="PREPAREDBC" /> I am the{" "}
-        <Link href="/about/" className={link}>
-          volunteer point of contact for my neighbourhood
-        </Link>
-        , and in talking to people about this I have met almost nobody who has.
-        So this site gathers what is already published about a major earthquake
-        in the Lower Mainland — what breaks, how long it stays broken, and what
-        each thing is waiting on — to make two weeks a length of time you can
-        picture rather than a slogan.
+        . <Cite id="PREPAREDBC" /> Most households are nowhere near it. So this
+        site gathers what is already published about a major earthquake in the
+        Lower Mainland — what breaks, how long it stays broken, and what each
+        thing is waiting on — to make two weeks a length of time you can picture
+        rather than a slogan.
       </>
     ),
     /**

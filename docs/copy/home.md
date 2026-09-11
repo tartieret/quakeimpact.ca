@@ -3,7 +3,7 @@ route: /
 title: What a major earthquake does to the Lower Mainland, and for how long
 nav: Home
 hook: The shaking is the short part.
-lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] I am the [volunteer point of contact for my neighbourhood](/about/), and in talking to people about this I have met almost nobody who has. So this site gathers what is already published about a major earthquake in the Lower Mainland — what breaks, how long it stays broken, and what each thing is waiting on — to make two weeks a length of time you can picture rather than a slogan.
+lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] Most households are nowhere near it. So this site gathers what is already published about a major earthquake in the Lower Mainland — what breaks, how long it stays broken, and what each thing is waiting on — to make two weeks a length of time you can picture rather than a slogan.
 status: draft
 ---
 
