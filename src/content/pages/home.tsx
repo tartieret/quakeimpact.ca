@@ -69,7 +69,7 @@ import type { PageModule } from "./index";
  * choose; the label names what it sets. Both are furniture, not claims.
  */
 export const HOME_CONTROL_NOTE =
-  "Two different earthquakes are possible here, and they do not have the same impact. Pick one and every page on the site answers for it. If you do not know which, leave it where it is.";
+  "The region plans for two very different earthquakes, and they do not have the same impact. Pick one and every page on the site answers for it. If you do not know which, leave it where it is.";
 export const HOME_CONTROL_LABEL = "Showing impacts for";
 
 const link = "text-accent underline underline-offset-2";
@@ -343,7 +343,7 @@ export const home: PageModule = {
     },
 
     {
-      title: "There are two earthquakes to think about, not one",
+      title: "Two scenarios, and they are very different earthquakes",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
@@ -353,7 +353,9 @@ export const home: PageModule = {
               Resources Canada calls “the greatest earthquake hazard” to west
               coast cities, because it is closer and more frequent.{" "}
               <Cite id="NRCAN-1700" /> British Columbia’s primary earthquake
-              planning scenario is that nearer one. <Cite id="PEIRS" />
+              planning scenario is that nearer one. <Cite id="PEIRS" /> Other
+              magnitudes and other faults are possible; these two are what the
+              planning is written around.
             </p>
             <p>
               They are dangerous to different buildings, and which of them is

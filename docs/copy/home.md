@@ -106,13 +106,14 @@ further.
 
 *Every system, drawn from the content model rather than written here.*
 
-## There are two earthquakes to think about, not one
+## Two scenarios, and they are very different earthquakes
 
 The offshore Cascadia megathrust is the one people have heard of. The shallower
 earthquake underneath the region is the one Natural Resources Canada calls "the
 greatest earthquake hazard" to west coast cities, because it is closer and more
 frequent. [NRCAN-1700] British Columbia's primary earthquake planning scenario is
-that nearer one. [PEIRS]
+that nearer one. [PEIRS] Other magnitudes and other faults are possible; these two
+are what the planning is written around.
 
 They are dangerous to different buildings, and which of them is the one that
 matters to you depends on the building you are in and the ground it stands on.
