@@ -212,4 +212,27 @@ A thin complete grid is worth less than a few deep pages.
 ### Open
 
 - Whether to seek review from a local emergency-management or geotechnical contact before launch. Recommended: it converts the site from one person's compilation into something the field will link to.
+- **Whether "Absence of outside help" should be renamed "Where help comes from".**
+  Raised 10 September 2026. The row is the only one in `SYSTEMS` named for a **negative**,
+  and the name states a conclusion the evidence does not support. `research/systems/outside-help.md`
+  reaches the opposite framing in its own words — *"Help is late, not absent"* — and bands
+  the row **Low** for the crustal M7, where the province's staging assumption is
+  geographically plausible. A reader meeting a row called "absence of outside help" banded
+  Low has been told two contradictory things by the grid before reading a word.
+
+  The positive name also carries more information, because what a reader wants to know is
+  *who comes, from where, and when* — and the file answers that: Alberta maintains an
+  Earthquake Response Plan for British Columbia, the formal instruments are named, and the
+  strongest finding in the file is that **EMBC's own list of applicable agreements names no
+  Alberta instrument while Alberta publishes a plan for us**. None of that is expressible
+  under a heading about absence.
+
+  Against the rename: "absence of outside help" is what makes the Cascadia column
+  frightening in the right way, and a neutral title may bury the finding that the province
+  expects US mutual aid to be unavailable. Recommended: rename, and let the Cascadia
+  mechanism sentence carry the weight — it is a stronger sentence than a title.
+
+  Touches `site-overview.md` §5, `research/impact-bands.md`, and `SYSTEMS` in
+  `src/content/site.ts`. One array entry, no other code change.
+
 - **Whether the site archives its own sources.** Several citations already point at web archives because the publisher reorganised or the host died — the AIR study, the USAF airlift fact sheet, the RMS Kobe retrospective. Two federal hosts went from resolving to NXDOMAIN during this project's lifetime. A site whose whole proposition is that its sources check out should not depend on other people's links holding. Recommended: capture every cited source at the version we read, and record the capture alongside the live URL.

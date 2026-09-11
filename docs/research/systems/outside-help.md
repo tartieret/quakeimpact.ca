@@ -477,6 +477,14 @@ its own limit, and is sourced to one document.
 "No help is coming" is both wrong and the kind of claim that costs the site an
 emergency-management reader on first contact.
 
+**Which is an argument against the row's own name, now registered as a decision.** This
+system is called "Absence of outside help" — the only row in the grid named for a
+negative, asserting in its title the thing this file spends 550 lines declining to assert.
+The proposed replacement is **"Where help comes from"**, which is also the question a
+reader actually has, and which this file can answer: who comes, under which instrument,
+and how late. See `../../site-overview.md` §9. **Do not rename anything until that closes**
+— the name appears in three places and one of them is code.
+
 **The spine of the page is the geographic assumption**, not the American request-system
 finding. Structure it: the plan says push, not pull; pushing requires an outside; a
 Cascadia rupture may not leave one. That is a mechanism a reader can hold, and it is
