@@ -34,11 +34,13 @@ import type { PageModule } from "./index";
  * site. This is the page that made the case for them, under the test in
  * `docs/style-guide.md` §8: "the ground behaves like a thick liquid" is
  * accurate, it is not a picture, and a reader who has only stood on ground that
- * stays put has nothing to attach it to. Both are Christchurch in 2011, both
- * follow a mechanism the prose has already stated and sourced, and both captions
- * say what they are — an analogue, carrying the mechanism and none of the
- * numbers. The terms are in `src/content/media.ts` and the reasoning in
- * `docs/media.md`.
+ * stays put has nothing to attach it to. Both are Christchurch in 2011 and both
+ * follow a mechanism the prose has already stated and sourced. The first caption
+ * anchors the pair to Richmond and Delta and the second opens on "the same
+ * earthquake", so the two read as one unit; neither restates the analogue rule,
+ * which is the site's standing position and belongs in `docs/media.md` and on
+ * `/licences/` rather than under every photograph. The terms are in
+ * `src/content/media.ts`.
  */
 export const groundConditions: PageModule = {
   meta: {
@@ -108,9 +110,7 @@ export const groundConditions: PageModule = {
                 Richmond and Delta hold the same two conditions — loose sand
                 that can liquefy, and water close enough to the surface to keep
                 it wet.{" "}
-                <Cite id="JAVANBAKHT-24" /> This is an analogue and not a
-                forecast. The mechanism carries across; no number does, and none
-                is taken from it.
+                <Cite id="JAVANBAKHT-24" />
               </>
             }
           />
@@ -123,9 +123,7 @@ export const groundConditions: PageModule = {
                 through the road and spread over it, so the material lying on
                 the surface was under it that morning. That is why liquefaction
                 reaches the pipes and the road and not only the building
-                standing on them. An analogue again — what Christchurch lost,
-                and how long it took to get back, says nothing about what
-                Richmond or Delta would.
+                standing on them.
               </>
             }
           />
