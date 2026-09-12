@@ -23,7 +23,7 @@ All of it is the City of Vancouver alone and none of it covers the rest of the r
 Daytime and nighttime are two times of day the same earthquake was modelled at, not two
 events. [COV-RISK-2024]
 
-Read the first two rows against each other. The M7.2 in the Georgia Strait damages about
+The M7.2 in the Georgia Strait damages about
 four times as many buildings as the M9.0 offshore, and does about four and a half times
 the direct economic damage. [COV-RISK-2024] The City gives the reason plainly: that
 nearer earthquake shakes the ground at City Hall about as hard as the forces new

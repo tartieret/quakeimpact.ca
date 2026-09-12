@@ -105,12 +105,11 @@ export const shaking: PageModule = {
             <Cite id="DCRRA-2025" />
           </p>
           <p>
-            Every part of that sentence was chosen. A month later is after the
-            news has moved on. Eleven at night is when people are at home and
-            asleep. An atmospheric river is a long, heavy rainstorm. And a
-            magnitude 7.1 is not a tremor: it is larger than the magnitude 7.0
-            the province uses for its other planning scenario, the one close to
-            the city. <Cite id="PEIRS" />
+            A month later is after the news has moved on. Eleven at night is
+            when people are at home and asleep. An atmospheric river is a long,
+            heavy rainstorm. And a magnitude 7.1 is not a tremor: it is larger
+            than the magnitude 7.0 the province uses for its other planning
+            scenario, the one close to the city. <Cite id="PEIRS" />
           </p>
           <p>
             The buildings that meet that second earthquake have already been

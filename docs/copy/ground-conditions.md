@@ -39,8 +39,8 @@ liquefaction could occur every 100 to 250 years." Elsewhere in the area they stu
 the interval runs from 100 to more than 500 years. The reason for the short one is the
 three conditions above. [JAVANBAKHT-24]
 
-Two things that number is not. It is not how often an earthquake happens. And it is
-not how often damage shows up at the surface: the ground can start to liquefy
+That number is not how often an earthquake happens, and it is not how often damage
+shows up at the surface: the ground can start to liquefy
 underneath without anything visible going wrong on top. What it measures is the point
 where the shaking just matches the strength holding the soil together. [JAVANBAKHT-24]
 
@@ -129,7 +129,7 @@ guidelines "without ground improvement or alternative approaches", and price tha
 ground improvement at $9,000 to $18,000 per lineal metre. [RICH-DMP3-19] [RICH-DMP4-21]
 [RICH-DMP5-19]
 
-Read that carefully. It describes proposed upgraded designs without the ground
+That describes proposed upgraded designs without the ground
 improvement, not a survey of the dikes as they stand today. Eleven sections were tested
 across four phases, at the 1-in-475 and 1-in-2,475 year earthquakes, and the 2016
 report says its results apply only at the sections it analysed. [RICH-THURBER-16]

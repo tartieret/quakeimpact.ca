@@ -41,7 +41,7 @@ The province does not end its Cascadia scenario when the shaking stops. About a 
 after the mainshock it models a second earthquake: magnitude 7.1, 60 km beneath Sidney,
 at 11 at night, during an atmospheric river, lasting 20 seconds. [DCRRA-2025]
 
-Every part of that sentence was chosen. A month later is after the news has moved on.
+A month later is after the news has moved on.
 Eleven at night is when people are at home and asleep. An atmospheric river is a long,
 heavy rainstorm. And a magnitude 7.1 is not a tremor: it is larger than the magnitude
 7.0 the province uses for its other planning scenario, the one close to the city.

@@ -103,13 +103,12 @@ export const buildings: PageModule = {
             }
           />
           <p>
-            Read the first two rows against each other. The M7.2 in the Georgia
-            Strait damages about four times as many buildings as the M9.0
-            offshore, and does about four and a half times the direct economic
-            damage. <Cite id="COV-RISK-2024" /> The City gives the reason
-            plainly: that nearer earthquake shakes the ground at City Hall about
-            as hard as the forces new buildings are designed for. The method
-            behind the modelling is published and peer-reviewed.{" "}
+            The M7.2 in the Georgia Strait damages about four times as many
+            buildings as the M9.0 offshore, and does about four and a half times
+            the direct economic damage. <Cite id="COV-RISK-2024" /> The City
+            gives the reason plainly: that nearer earthquake shakes the ground
+            at City Hall about as hard as the forces new buildings are designed
+            for. The method behind the modelling is published and peer-reviewed.{" "}
             <Cite id="HILT-2022" />
           </p>
           <p>The size in the headline is not what decides this. Distance is.</p>

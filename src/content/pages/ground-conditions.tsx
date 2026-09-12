@@ -146,12 +146,11 @@ export const groundConditions: PageModule = {
             three conditions above. <Cite id="JAVANBAKHT-24" />
           </p>
           <p>
-            Two things that number is not. It is not how often an earthquake
-            happens. And it is not how often damage shows up at the surface: the
-            ground can start to liquefy underneath without anything visible
-            going wrong on top. What it measures is the point where the shaking
-            just matches the strength holding the soil together.{" "}
-            <Cite id="JAVANBAKHT-24" />
+            That number is not how often an earthquake happens, and it is not
+            how often damage shows up at the surface: the ground can start to
+            liquefy underneath without anything visible going wrong on top. What
+            it measures is the point where the shaking just matches the strength
+            holding the soil together. <Cite id="JAVANBAKHT-24" />
           </p>
           <p>
             Against the calendar it is a short gap. The last Cascadia earthquake
@@ -329,11 +328,11 @@ export const groundConditions: PageModule = {
             <Cite id="RICH-DMP5-19" />
           </p>
           <p>
-            Read that carefully. It describes proposed upgraded designs without
-            the ground improvement, not a survey of the dikes as they stand
-            today. Eleven sections were tested across four phases, at the
-            1-in-475 and 1-in-2,475 year earthquakes, and the 2016 report says
-            its results apply only at the sections it analysed.{" "}
+            That describes proposed upgraded designs without the ground
+            improvement, not a survey of the dikes as they stand today. Eleven
+            sections were tested across four phases, at the 1-in-475 and
+            1-in-2,475 year earthquakes, and the 2016 report says its results
+            apply only at the sections it analysed.{" "}
             <Cite id="RICH-THURBER-16" />
           </p>
           <p>
