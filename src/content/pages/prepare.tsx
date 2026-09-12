@@ -27,20 +27,27 @@ export const prepare: PageModule = {
     nav: "Preparing",
     kicker: "Part 3",
     standfirst:
-      "British Columbia’s earthquake guidance asks a household for two weeks of water and food, a written plan, a meeting place and a phone number outside the region. The two things on that list that cost nothing are the two most households have skipped.",
+      (
+      <>
+        British Columbia’s earthquake guidance asks a household for at least
+        two weeks of water and food, a written plan, a meeting place and a phone
+        number outside the region. <Cite id="PREPAREDBC" /> In a 2021 poll of
+        800 British Columbians, 28 per cent had a plan for contacting family and
+        22 per cent an agreed meeting place. <Cite id="RESEARCHCO-PREP-21" />
+      </>
+    ),
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
-      "PEIRS",
       "PREPAREDBC",
+      "RESEARCHCO-PREP-21",
+      "PEIRS",
       "COV-EXPLORER-25",
-      "COV-WORKSHEET-26",
       "PREPAREDBC-PLAN",
       "PREPAREDBC-GUIDES",
       "PREPAREDBC-NEIGHBOURHOOD",
-      "RESEARCHCO-PREP-21",
       "DCRRA-2025",
       "NRCAN-EEW",
       "PREPAREDBC-KIT",
@@ -62,7 +69,6 @@ export const prepare: PageModule = {
         "The province’s plan says family and neighbours are the first responders",
       body: (
         <Prose>
-          <p>From the province’s Earthquake Immediate Response Strategy:</p>
           <Quote
             speaker="The Province of British Columbia"
             source="Provincial Earthquake Immediate Response Strategy, page 42, emphasis added"
@@ -90,7 +96,7 @@ export const prepare: PageModule = {
             PreparedBC’s Earthquake and Tsunami Preparedness Guide asks for
             food, water and supplies for each person and pet in the home “for
             at least two weeks, or longer”. <Cite id="PREPAREDBC" /> The support
-            system behind that ask is smaller. The province’s Emergency Support
+            system behind that is smaller. The province’s Emergency Support
             Services program, which houses and feeds people who have lost their
             homes, “is designed to provide up to 72 hours of support”, and the
             same page says it “is not designed for the scope and scale of
@@ -100,21 +106,10 @@ export const prepare: PageModule = {
           <p>
             The City of Vancouver asks for less. It tells residents to gather
             supplies for “a minimum of 3 days, although your target should be a
-            week to 2 weeks” <Cite id="COV-EXPLORER-25" />, and the worksheet it
-            hands them multiplies four litres by three days and stops there.{" "}
-            <Cite id="COV-WORKSHEET-26" /> Three days is a thin floor for the
-            city that would be running the response. The provincial guide’s own
-            line is that “It may be weeks before infrastructure, utilities and
-            essential services are restored” <Cite id="PREPAREDBC" />, and the{" "}
-            <Link
-              href="/after/"
-              className="text-accent underline underline-offset-2"
-            >
-              system pages
-            </Link>{" "}
-            here put several services in weeks to months. This page works to two
-            weeks. A reader who has been through those pages should be aiming
-            past it, not at three days.
+            week to 2 weeks”. <Cite id="COV-EXPLORER-25" /> The provincial guide
+            written for this hazard asks for at least two weeks, and says in the
+            same breath that “It may be weeks before infrastructure, utilities
+            and essential services are restored”. <Cite id="PREPAREDBC" />
           </p>
         </Prose>
       ),
@@ -273,8 +268,8 @@ export const prepare: PageModule = {
             <PrepareWaterArithmetic />
           </Figure>
           <p>
-            Pets are on the same list, at about 30 millilitres of water per
-            kilogram of body weight per day. <Cite id="PREPAREDBC-KIT" />
+            Pets are on the same list, one grab-and-go bag each and supplies
+            for the same two weeks. <Cite id="PREPAREDBC-KIT" />
           </p>
           <p>
             Water is bulky. Store it first anyway. The province’s 2025 risk
@@ -462,7 +457,7 @@ export const prepare: PageModule = {
       title: "Stay where you are if the building is safe",
       body: (
         <Prose>
-          <p>The province’s instruction for a building that is still sound:</p>
+          <p>For a building that is still sound:</p>
           <Quote
             speaker="PreparedBC"
             source="Earthquake and Tsunami Preparedness Guide"

@@ -723,7 +723,7 @@ export function CrustalFaultSection() {
 
       <FigText y={FAULT_UNIT_Y}>Depth below the ground surface</FigText>
       <FigText y={FAULT_GUARD_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        The plane is the model’s geometry, not a forecast of a crack at the surface.
+        Model geometry, not a crack at the surface.
       </FigText>
     </FigureCanvas>
   );

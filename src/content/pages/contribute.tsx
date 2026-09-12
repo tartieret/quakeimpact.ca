@@ -69,6 +69,15 @@ export const contribute: PageModule = {
             as a lead rather than published as a claim: what reaches a page has
             to be something a reader can check.
           </p>
+          <p>
+            Three things cannot reach a page here. A claim with no document
+            behind it, however likely it is. A calculation made here rather than
+            published somewhere first: this site compiles, it does not model.
+            And a figure carried across from an earthquake somewhere else,
+            because the 2011 earthquake in Christchurch, New Zealand, and the
+            1995 earthquake in Kobe, Japan, show how a system fails and say
+            nothing about how long anything in the Lower Mainland would be out.
+          </p>
         </Prose>
       ),
     },

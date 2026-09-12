@@ -49,7 +49,7 @@ export default function ContributePage() {
         </Section>
 
         <NextPrev
-          prev={{ href: "/sources/", label: "Sources" }}
+          prev={{ href: "/licences/", label: "Licences" }}
           next={{ href: "/about/", label: "About" }}
         />
       </ArticleShell>

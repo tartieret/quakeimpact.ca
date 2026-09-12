@@ -7,7 +7,7 @@ export default function NotFound() {
     <ReadingShell>
       <PageHeader
         title="Page not found"
-        standfirst="That page does not exist, or has not been written yet."
+        standfirst="That page does not exist. The address may be mistyped, or it may have changed."
       />
       <Link href="/" className="text-accent underline underline-offset-4">
         Back to the start

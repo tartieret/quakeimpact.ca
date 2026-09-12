@@ -74,7 +74,7 @@ export const method: PageModule = {
      */
     references: [
       "MV-DSP-2026",
-      "MV-CAPITAL-2027",
+      "MV-CAPEX-2026",
       "AIR-2013",
       "DCRRA-2025",
       "CRTC-2025-226",
@@ -100,7 +100,10 @@ export const method: PageModule = {
             days. Most published work assesses one design earthquake, so a
             figure in between would be modelling rather than reporting.
           </p>
-          <p>A band is assigned on three things together.</p>
+          <p>
+            A band is set by how long the system is out, wherever a document
+            states a duration.
+          </p>
           <ul className="flex list-none flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule p-0">
             {COLOURED.map((band) => (
               <li key={band} className="mt-0 bg-paper-raised p-5">
@@ -118,7 +121,13 @@ export const method: PageModule = {
           </ul>
           <p>
             The same three questions are asked of every system, so that High for
-            sewer service and High for roads mean comparable things.
+            sewer service and High for roads mean comparable things. Where a
+            published duration exists, it sets the band. How widely and what a
+            system is waiting on describe the band rather than choose it, so a
+            system can be banded below something it depends on: electricity is
+            High and communications is Medium, because a cell site comes back
+            when a generator gets fuel and a distribution network comes back one
+            pole at a time.
           </p>
           <div className="rounded-xl border border-rule bg-paper-raised p-5">
             <BandName band="unknown" />
@@ -148,11 +157,11 @@ export const method: PageModule = {
             Dams and reservoirs are hatched in both scenarios. Cleveland and
             Seymour Falls dams were each reviewed by an engineer in 2024, as the
             law requires every seven years for dams in the top consequence
-            class. Neither review identified an unsafe condition, and neither
+            class. Neither review identified an unsafe or unacceptable condition, and neither
             published conclusion mentions earthquakes. <Cite id="MV-DSP-2026" />{" "}
             Metro Vancouver is still paying for seismic evaluations of both
             dams, and the upgrade work at Cleveland has not started.{" "}
-            <Cite id="MV-CAPITAL-2027" /> So the dams have been assessed, but
+            <Cite id="MV-CAPEX-2026" /> So the dams have been assessed, but
             not for this, which is a different thing from never having been
             looked at.
           </p>
@@ -173,7 +182,7 @@ export const method: PageModule = {
             has been written down.
           </p>
           <Figure
-            alt="Three cells on the grid are hatched. Dams and reservoirs are hatched in both scenarios, and port, airport and ferry terminals only in the crustal one, because of which documents happen to exist; where help comes from changes between High and Low because the two earthquakes genuinely differ. A hatch means nobody has published an assessment, never that the system would do badly."
+            alt="Three cells on the grid are hatched. Dams and reservoirs are hatched in both scenarios, and port, airport and ferry terminals only in the crustal one, because of which documents happen to exist; where help comes from changes between High and Low because the two earthquakes genuinely differ. A hatch means no assessment of that system in that earthquake has been published, never that the system would do badly."
             caption={
               <>
                 The two rows above the rule differ because of which documents
@@ -203,8 +212,7 @@ export const method: PageModule = {
           </p>
           <p>
             The same rule applies to the writing around the grid. A sentence
-            with a number in it and nothing to click is a mistake, and worth
-            telling us about.
+            with a number in it and nothing to click is a mistake.
           </p>
         </Prose>
       ),
@@ -304,11 +312,10 @@ export const method: PageModule = {
             <Cite id="GSC-OF-8853" />
           </p>
           <p>
-            The province is not independently confirming the federal figures. It
-            is adopting them. So when a federal document and a provincial
-            document give the same number, that is one model quoted twice, and
-            not two studies agreeing. Two figures that look like a range are one
-            figure seen twice. Where a genuinely independent estimate exists, it
+            The province adopts the federal figures rather than confirming
+            them. So a federal document and a provincial document giving the
+            same number are one model quoted twice. Where a genuinely
+            independent estimate exists, it
             comes from the insurance industry, and it is named as such wherever
             it appears.
           </p>

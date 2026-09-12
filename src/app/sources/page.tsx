@@ -201,20 +201,19 @@ export default function SourcesPage() {
     <ArticleShell
       header={
         <PageHeader
-          kicker="Every figure on this site, and the document it came from"
+          kicker="Where the numbers on this site were published"
           title="Sources"
-          standfirst={`Nothing here is our own modelling. Every number was published by somebody else first, and this page lists all ${DOCUMENTS.length} of those documents, with the date each one carries and a link wherever one survives.`}
+          standfirst={`None of this is modelled here. Every number was published by somebody else first, and this page lists those documents together with the map and catalogue layers the site is licensed to draw from, ${DOCUMENTS.length} in all, with the date each one carries and a link wherever one survives.`}
         />
       }
     >
       <Section
-        title="How to read an entry"
-        lede="An entry names the document, the date on the document itself rather than the date we read it, and what the document is being used for."
+        title="An entry is the document, its date, and what it is used for"
       >
         <Prose
           paragraphs={[
-            "Under each one is a line saying how we got to it. A figure read off the page of a report is stronger evidence than the same figure repeated in a news story, and the entry says which of the two it is. Where an organisation is describing its own work, that is stated too.",
-            `Some documents cannot be checked by following a link. ${NO_LINK} were never recovered at all, and others sit behind a paywall or refuse an automated request. That is a fact about the evidence, so the entry carries it rather than leaving a dead link to be discovered.`,
+            "Under each one is a line saying how the document was reached. A figure read off the page of a report is stronger evidence than the same figure repeated in a news story, and the entry says which of the two it is. Where an organisation is describing its own work, that is stated too.",
+            `Some documents cannot be checked by following a link. ${NO_LINK} were never recovered at all, and others sit behind a paywall or are served only to a browser. That is a fact about the evidence, so the entry carries it rather than leaving a dead link to be discovered.`,
             "Where a document sets conditions on reuse, the licence is quoted in the entry. Most carry none, which means the facts in them are free to state and their wording is not, so this site paraphrases and links.",
             "Each entry ends with a short code in a typewriter face. That code is what the citation marker in the text points at, and it is the entry's permanent address on this page, so a link to one keeps working.",
           ]}
@@ -223,7 +222,7 @@ export default function SourcesPage() {
 
       <Section
         title="Analogue events illustrate, they do not measure"
-        lede={`${ANALOGUES.length} entries describe earthquakes somewhere else: Christchurch, Kobe and the 2011 earthquake off the Pacific coast of Tohoku.`}
+        lede={`${ANALOGUES.length} entries describe earthquakes somewhere else: the 2011 earthquake in Christchurch, New Zealand, the 1995 earthquake in Kobe, Japan, and the 2011 earthquake off the Pacific coast of Tōhoku, Japan.`}
       >
         <Prose
           paragraphs={[
