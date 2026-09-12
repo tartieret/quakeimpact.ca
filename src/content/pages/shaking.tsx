@@ -25,7 +25,7 @@ export const shaking: PageModule = {
     nav: "The shaking",
     kicker: "Part 1",
     standfirst:
-      "An earthquake here would shake hard for seconds or minutes, not hours. What that short burst does depends less on your building than on the ground it stands on. This part covers the ground, the buildings, the injuries, and the fires and landslides that come once the shaking stops.",
+      "The ground under the region, the buildings on it, the injuries, and the fires and landslides that come once the shaking stops. Where the damage falls is decided more by the ground than by the buildings standing on it.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
