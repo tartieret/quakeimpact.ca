@@ -31,9 +31,9 @@ export const shaking: PageModule = {
       "PEIRS",
       "NRCAN-1700",
       "DCRRA-2025",
+      "NRCAN-SCEN",
       "JAVANBAKHT-24",
       "DCRRA-APPC",
-      "NRCAN-SCEN",
       "GSC-OF-8853",
       "MVSMMP",
     ],
@@ -41,49 +41,45 @@ export const shaking: PageModule = {
 
   sections: [
     {
-      title: "Violent shaking knocks people off their feet",
+      title: "What it is like",
       body: (
         <Prose>
           <p>
-            Hardly anyone here has felt one, so it is worth saying what it is.
-            The province wrote its own scenario from the inside. Many people
-            hear the earthquake before they feel it, a low rumble like a freight
-            train, and then the violent shaking arrives and knocks the people
-            closest to it off their feet. Unsecured objects fall or fly through
-            the air. <Cite id="PEIRS" />
+            Hardly anyone here has felt one. The province wrote its own scenario
+            from the inside, and it starts with sound: a low rumble like a
+            freight train, heard before anything is felt. Then the shaking
+            knocks the people closest to it off their feet, and unsecured
+            objects fall or fly through the air. <Cite id="PEIRS" />
           </p>
           <p>
-            That is the part to picture, because it is the part nobody has
-            practised. Nobody rides this out standing up, and nobody crosses a
-            room. The floor is moving, and so is everything on it that is not
-            fastened down. <Cite id="PEIRS" />
+            Nobody rides this out standing up. Nobody crosses a room. The floor
+            is moving, and so is everything on it that is not fastened down.{" "}
+            <Cite id="PEIRS" />
           </p>
           <p>
-            The last Cascadia earthquake left a description of its own. Natural
+            The last Cascadia earthquake left its own description. Natural
             Resources Canada records the oral traditions of First Nations on
-            Vancouver Island, from the night in January 1700: the shaking “was
-            so violent that people could not stand and so prolonged that it made
+            Vancouver Island, from a night in January 1700: the shaking “was so
+            violent that people could not stand and so prolonged that it made
             them sick.” <Cite id="NRCAN-1700" />
           </p>
           <p>
-            There is one thing to do while it is happening, and the province
-            names it in the same breath as the people it expects to stay
-            upright. Everyone closest is knocked down “except for those who
-            remember to ‘drop, cover, and hold on’”. <Cite id="PEIRS" /> Drop
-            before the shaking drops you, cover, and hold on until it stops. Do
-            not run outside: the province says that many of those who try suffer
-            extreme injury or death from falling and flying objects.{" "}
-            <Cite id="PEIRS" /> That is the whole of the instruction, and it is
-            worth knowing before the day it is needed.
+            There is one thing to do while it happens, and the province names it
+            in the same breath as the people it expects to stay upright.
+            Everyone closest is knocked down “except for those who remember to
+            ‘drop, cover, and hold on’”. <Cite id="PEIRS" /> Drop before the
+            shaking drops you, cover, and hold on until it stops. Do not run
+            outside: the province says many of those who try suffer extreme
+            injury or death from falling and flying objects. <Cite id="PEIRS" />
           </p>
           <p>
-            Then it is over. In the province’s magnitude 7.0 scenario, an
+            It is not long. In the province’s magnitude 7.0 scenario, an
             earthquake close to the city, the violent shaking lasts 10 to 20
             seconds. <Cite id="PEIRS" /> In its magnitude 9.0 scenario, the
             offshore Cascadia earthquake, the main shaking lasts three minutes.{" "}
-            <Cite id="DCRRA-2025" /> Almost all of the damage is done inside
-            that window, or in the hours just after, and everything else on this
-            site is about the months that follow. The province’s full account of
+            <Cite id="DCRRA-2025" /> Almost all of the damage is done in that
+            window or in the hours just after, and everything else on this site
+            is about the months that follow. The province’s full account of
             those first seconds is on{" "}
             <Link
               href="/scenarios/"
@@ -92,6 +88,47 @@ export const shaking: PageModule = {
               the two scenarios
             </Link>
             . <Cite id="PEIRS" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "The mainshock is not the last earthquake",
+      body: (
+        <Prose>
+          <p>
+            The province does not end its Cascadia scenario when the shaking
+            stops. About a month after the mainshock it models a second
+            earthquake: magnitude 7.1, 60 km beneath Sidney, at 11 at night,
+            during an atmospheric river, lasting 20 seconds.{" "}
+            <Cite id="DCRRA-2025" />
+          </p>
+          <p>
+            Every part of that sentence was chosen. A month later is after the
+            news has moved on. Eleven at night is when people are at home and
+            asleep. An atmospheric river is a long, heavy rainstorm. And a
+            magnitude 7.1 is not a tremor: it is larger than the magnitude 7.0
+            the province uses for its other planning scenario, the one close to
+            the city. <Cite id="PEIRS" />
+          </p>
+          <p>
+            The buildings that meet that second earthquake have already been
+            through the first one. Whether a damaged building is safe to be in
+            is a question somebody has to come and answer, and{" "}
+            <Link
+              href="/shaking/buildings/"
+              className="text-accent underline underline-offset-2"
+            >
+              buildings
+            </Link>{" "}
+            covers who does that and how long people wait.
+          </p>
+          <p>
+            None of it is in the published damage figures. The federal scenario
+            catalogue leaves aftershocks out by name, <Cite id="NRCAN-SCEN" />{" "}
+            and the province’s own headline numbers count “only direct mainshock
+            damage”. <Cite id="DCRRA-2025" />
           </p>
         </Prose>
       ),
@@ -214,7 +251,9 @@ export const shaking: PageModule = {
       <>
         <strong>Know the two things to do in the first seconds.</strong> Drop,
         cover and hold on. Do not run outside. Both are in the province’s own
-        account of its planning scenario. <Cite id="PEIRS" />
+        account of its planning scenario, <Cite id="PEIRS" /> and its Cascadia
+        scenario is a reminder that they are needed more than once.{" "}
+        <Cite id="DCRRA-2025" />
       </>,
     ],
   },
