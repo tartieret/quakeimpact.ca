@@ -134,9 +134,9 @@ This is also the site's worked example of the citation convention — see sectio
 
 Not siloed. Every system page in Part 2 ends with its own action; this section aggregates them into a coherent plan.
 
-**The guidance has been checked, and the hook is not the one we expected.** PreparedBC's Earthquake and Tsunami Preparedness Guide says "at least two weeks", three times over. Its general emergency-kit page says a minimum of three days to one week. Its earthquake hazard page says a minimum of three days. Washington State says two weeks everywhere, under one named campaign.
+**This is the page a reader arrives at wanting to be told what to do, so it is guidance rather than an audit of the guidance.** It follows PreparedBC's Earthquake and Tsunami Preparedness Guide, which is the document written for this hazard and which says "at least two weeks", three times over, and it covers what that guide covers beyond supplies: the written plan, the meeting place and the out-of-area contact, the alerts and the seconds they buy, water, food and the grab-and-go bag, securing the room, the gas valves, the people in the household who need more help, the neighbours, staying put if the building is safe, the response routes nobody should drive on, and how to build a kit on no money.
 
-So the gap is not across the border. It is inside British Columbia's own advice — while "72 hours" is what most people still remember, and what the province's own emergency support services are built to provide. State all of it, cite all of it, and let the comparison do the work.
+**The divergence between the published durations is a real finding, and it is not this page's subject.** Five provincial positions and one municipal one give six different answers, "72 hours" is what most people still remember, and the province's own emergency support services are built to provide it. Where the page meets that, it gives the City of Vancouver's lower figure once, in the City's own words, as a detail and not as an argument. The comparison itself, with its guards, is in `research/preparedness.md`, ready for whichever page wants it.
 
 ---
 
