@@ -22,7 +22,7 @@ export const after: PageModule = {
     nav: "Life afterwards",
     kicker: "Part 2",
     standfirst:
-      "The months after the shaking, system by system: how long each one is out, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.",
+      "How long each system is out after the shaking, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -47,31 +47,30 @@ export const after: PageModule = {
       body: (
         <Prose>
           <p>
-            The province says so about fuel in its own words: “Fuel also holds a
-            unique position as a critical resource due to its requirement in the
-            distribution of all other supplies, first responder activities, and
-            enabling functionality of certain impacted facilities and
-            infrastructure that rely on generators.” <Cite id="PEIRS" />{" "}
-            Everything that runs on a generator, every repair crew and every
-            delivery is downstream of that one resource.
+            On fuel, the province writes: “Fuel also holds a unique position as
+            a critical resource due to its requirement in the distribution of
+            all other supplies, first responder activities, and enabling
+            functionality of certain impacted facilities and infrastructure that
+            rely on generators.” <Cite id="PEIRS" /> Everything that runs on a
+            generator, every repair crew and every delivery is downstream of
+            that one resource.
           </p>
           <p>
             Fuel moves by road, and in the same document the province expects
             transportation routes to be “damaged or only partially functional
             and operating at a much-reduced capacity for an extended period
             (weeks to months)”. <Cite id="PEIRS" /> Roads are cleared in a
-            published order, and the order is not the reader’s street: Metro
-            Vancouver’s regional debris plan clears lifeline routes first, then
-            critical infrastructure, then major freeways and arterials, and
-            “local routes” last. <Cite id="MV-DEBRIS-17" />
+            published order: Metro Vancouver’s regional debris plan clears
+            lifeline routes first, then critical infrastructure, then major
+            freeways and arterials, and “local routes” last.{" "}
+            <Cite id="MV-DEBRIS-17" />
           </p>
           <p>
             That order decides when a crew reaches a broken pipe. A magnitude
             9.0 earthquake is modelled to cause 267 water main failures across
             Metro Vancouver’s network, with about 60 of them at the 71 points
-            where mains cross under rivers and inlets, which are the hardest
-            places in the system to reach. <Cite id="MV-WATER-22" /> Reaching
-            them is a road problem before it is a plumbing problem.
+            where mains cross under rivers and inlets, the hardest places in the
+            system to reach. <Cite id="MV-WATER-22" />
           </p>
           <p>
             The{" "}
@@ -81,9 +80,8 @@ export const after: PageModule = {
             >
               dependency graph
             </Link>{" "}
-            counts those connections rather than joining them with lines: 6 of
-            the 26 have a published document behind them, and the rest are links
-            no assessment has established.
+            counts 26 such connections. Six have a published document behind
+            them, and the rest are links no assessment has established.
           </p>
         </Prose>
       ),
@@ -91,16 +89,16 @@ export const after: PageModule = {
 
     {
       title:
-        "The timeline runs hours, days, weeks, months, and systems enter it at different points",
+        "Some systems fail in the first hours, others over the following weeks",
       body: (
         <div className="flex flex-col gap-8">
           <TimelineStrip />
           <Prose>
             <p>
               <strong>In the first hours</strong>, communications, health care
-              and the dams. Nothing currently requires a mobile phone site to
-              hold any backup power at all; the regulator opened a proceeding to
-              decide what the requirement should be and has not decided.{" "}
+              and the dams. Nothing requires a mobile phone site to hold any
+              backup power at all; the regulator opened a proceeding to decide
+              what the requirement should be and has not decided.{" "}
               <Cite id="CRTC-2025-226" /> About 65 per cent of one health
               authority’s buildings would likely be completely damaged at the
               shaking level the current building code designs for, and no
@@ -117,25 +115,26 @@ export const after: PageModule = {
               must stay open for emergency vehicles after a major earthquake,
               and in the same document states that it is not retrofitting the
               bridges on them to remain in service. <Cite id="MOTI-SRDC-05" />{" "}
-              In a Cascadia earthquake the province states that the United
-              States would be unable to deliver mutual aid. <Cite id="PEIRS" />
+              In a Cascadia earthquake the United States would be unable to
+              deliver mutual aid. <Cite id="PEIRS" />
             </p>
             <p>
               <strong>Over the following weeks</strong>, sanitation, natural
-              gas, housing, and the port, airport and ferry terminals. The
-              province expects disruption to water and wastewater systems for
-              many months. <Cite id="PEIRS" /> Natural gas is the one utility
-              that cannot be restored in bulk: service returns building by
-              building, once a qualified person has been inside and relit every
-              appliance. The regulator’s decision on that system states several
-              weeks to restore service to hundreds of thousands of customers.{" "}
-              <Cite id="BCUC-C-6-25" /> Modelling of a magnitude 9.0 puts road
-              access to the airport cut in the first critical days, because
-              every bridge leading to it is damaged. <Cite id="AIR-2013" />
+              gas, housing, and the port, airport and ferry terminals.
+              Disruption to water and wastewater systems is expected to run for many
+              months.{" "}
+              <Cite id="PEIRS" /> Natural gas is the one utility that cannot be
+              restored in bulk: service returns building by building, once a
+              qualified person has been inside and relit every appliance.
+              Restoring service to hundreds of thousands of customers would
+              take several weeks. <Cite id="BCUC-C-6-25" /> Modelling of a magnitude
+              9.0 puts road access to the airport cut in the first critical
+              days, because every bridge leading to it is damaged.{" "}
+              <Cite id="AIR-2013" />
             </p>
             <p>
-              <strong>Months</strong> is not a further set of systems. It is how
-              long several of the first ones take to come back.
+              <strong>Months</strong> is how long several of those first systems
+              take to come back.
             </p>
           </Prose>
         </div>
@@ -162,11 +161,10 @@ export const after: PageModule = {
               .
             </p>
             <p>
-              Two of those states are worth knowing before reading further. Dams
-              and reservoirs are hatched in both scenarios: Cleveland and Seymour
-              Falls dams were each reviewed by an engineer in 2024, as the law
-              requires, neither review identified an unsafe condition, and
-              neither published conclusion mentions earthquakes.{" "}
+              Dams and reservoirs are hatched in both scenarios: Cleveland and
+              Seymour Falls dams were each reviewed by an engineer in 2024, as
+              the law requires, neither review identified an unsafe condition,
+              and neither published conclusion mentions earthquakes.{" "}
               <Cite id="MV-DSP-2026" /> The seismic upgrade work at Cleveland
               has not started. <Cite id="MV-CAPITAL-2027" /> Port, airport and
               ferry terminals carry a band for the megathrust and a hatch for
@@ -180,7 +178,7 @@ export const after: PageModule = {
     },
 
     {
-      title: "Every system, and where it sits on the timeline",
+      title: "Each system breaks in its own way, and each has its own page",
       body: <SystemGrid />,
     },
   ],
@@ -189,18 +187,18 @@ export const after: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        The coupling is also why preparing is worth the trouble. A household
-        that can manage for a while without water, power and a working toilet is
-        not waiting on any single one of them.
+        Because the systems fail together, a household that can manage for a
+        while without water, power and a working toilet is not waiting on any
+        one of them.
       </>
     ),
     items: [
       <>
         <strong>Store four litres per person per day, pets included.</strong>{" "}
         That is the province’s own figure, for drinking and basic sanitation
-        together. <Cite id="PREPAREDBC" /> The province’s assessment says
-        distributing bulk drinking water across the region stays difficult for
-        the first four to five days. <Cite id="DCRRA-2025" />
+        together. <Cite id="PREPAREDBC" /> Distributing bulk drinking water
+        across the region stays difficult for the first four to five days.{" "}
+        <Cite id="DCRRA-2025" />
       </>,
       // No citation, and none is missing: the bullet rests on no document.
       <>

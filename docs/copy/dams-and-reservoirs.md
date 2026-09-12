@@ -45,11 +45,10 @@ the report submitted in June 2024:
 > safe condition, and that surveillance is adequate to detect any developing safety
 > problems." [MV-DSP-2026]
 
-"Reasonably safe" is a formal finding rather than a hedge. A review ends in one of three
-verdicts, signed by an engineer and peer-reviewed by a second: reasonably safe, reasonably
-safe with deficiencies, or not safe with deficiencies requiring urgent action. The
-province treats the first as equivalent to the Regulation's own word, "safe".
-[BCDSP-DSR-INFO]
+A review ends in one of three verdicts, signed by an engineer and peer-reviewed by a
+second: reasonably safe, reasonably safe with deficiencies, or not safe with deficiencies
+requiring urgent action. "Reasonably safe" is the first of those, and the province treats
+it as equivalent to the Regulation's own word, "safe". [BCDSP-DSR-INFO]
 
 ## Neither published conclusion mentions earthquakes, and the seismic upgrade is not due to start until 2028
 
@@ -58,8 +57,7 @@ every dam and its review status. [MV-DSP-2021] [MV-DSP-2026] None of them says a
 about how either dam would behave in an earthquake. The reports themselves are not
 published, and the consultants who wrote them are not named. [MV-DSP-2026]
 
-What is published is the capital programme, and it says the seismic question is still
-open.
+The capital program is published. It leaves the seismic question open.
 
 | Project | Stage at 31 May 2026 | Timeline | Estimate |
 | --- | --- | --- | --- |
@@ -70,8 +68,8 @@ open.
 [MV-CAPEX-2026]
 
 MCE stands for Maximum Credible Earthquake, the criterion the province's design guideline
-sets for a dam in this class. [BC-DDCG] The owner is still paying for the evaluations and
-has not begun the upgrade.
+sets for a dam in this class. [BC-DDCG] Metro Vancouver is still paying for the
+evaluations and has not begun the upgrade.
 
 > **Not yet published.** Both reviews found no unsafe condition, and that is the whole of
 > what has been made public about them. Whether either engineer examined earthquake
@@ -80,24 +78,22 @@ has not begun the upgrade.
 
 ## Surveillance runs weekly, and the province's own audit of both dams is six years old
 
-Between reviews the regime is inspection, and Metro Vancouver reports carrying it out.
-Site surveillance is done at least weekly at both dams and formal inspections twice a
-year, and geotechnical and lake level instrumentation "is reviewed by staff daily (Monday
-– Friday) through an automated data acquisition system". [MV-DSP-2026] Each of those
-intervals is what the Regulation's schedule requires of a dam in this class.
-[BCDSR-40-2016] Cleveland's two low-level outlet valves, original equipment from the
-1950s found badly deteriorated in a 2016 condition assessment, were replaced in 2021.
-[MV-ASSET-2021]
+Between reviews, Metro Vancouver reports site surveillance at least weekly at both dams
+and formal inspections twice a year, and geotechnical and lake level instrumentation "is
+reviewed by staff daily (Monday – Friday) through an automated data acquisition system".
+[MV-DSP-2026] Each of those intervals is what the Regulation's schedule requires of a dam
+in this class. [BCDSR-40-2016] Cleveland's two low-level outlet valves, original equipment
+from the 1950s found badly deteriorated in a 2016 condition assessment, were replaced in
+2021. [MV-ASSET-2021]
 
-The regulator's side of the regime is thinner. A provincial dam safety officer audits a
-dam in this class about every five years. The last audits of Cleveland and Seymour Falls
-were completed in 2020, and as of June 2026 follow-up audits "are being planned".
-[MV-DSP-2026] In September 2021, on an audit covering 2019 and 2020, the Auditor General
-of British Columbia found that the ministry "has not effectively overseen the safety of
-dams in B.C." [OAG-DAMS-21] All nine recommendations were accepted; two were complete as
-at 31 March 2025, when the province's dam safety program reported 10 staff against an
-assessed need of 25 and said it was "only able to target the very highest risk dams".
-[OAG-DAMS-FU-25]
+A provincial dam safety officer audits a dam in this class about every five years. The
+last audits of Cleveland and Seymour Falls were completed in 2020, and as of June 2026
+follow-up audits "are being planned". [MV-DSP-2026] In September 2021, on an audit
+covering 2019 and 2020, the Auditor General of British Columbia found that the ministry
+"has not effectively overseen the safety of dams in B.C." [OAG-DAMS-21] All nine
+recommendations were accepted; two were complete as at 31 March 2025, when the province's
+dam safety program reported 10 staff against an assessed need of 25 and said it was "only
+able to target the very highest risk dams". [OAG-DAMS-FU-25]
 
 ## The area a failure would flood has been mapped, and the map is not published
 
@@ -117,22 +113,21 @@ Campbell River and the Strathcona Regional District, both on Vancouver Island, a
 comparable for any of its Lower Mainland dams. [BCH-DAMFAQ]
 
 Earthquakes are in those plans even though they are absent from the review summaries. The
-province's template lists three of them among the events that escalate a dam emergency: an
-earthquake felt or reported within 50 kilometres of the dam, one causing visible damage to
-the dam, and one causing an uncontrolled release of water. [BCDSP-DEP-24]
+template lists three of them among the events that escalate a dam emergency: an earthquake
+felt or reported within 50 kilometres of the dam, one causing visible damage to the dam,
+and one causing an uncontrolled release of water. [BCDSP-DEP-24]
 
 ## What you can do
 
-The question this page cannot answer for you is whether you are below one of these dams.
-That question has an answer, and somebody holds it.
+Whether you are below one of these dams has an answer, and somebody holds it.
 
 **Find out whether you live, work or send a child to school below one of them.** The area
 a failure would flood has been mapped, because the dam's classification is worked out from
 it, and the map sits in the dam emergency plan. [BCDSR-40-2016] [BCDSP-DEP-24]
 
 **Ask your municipality for the part of the plan it holds.** A downstream local emergency
-authority receives a defined part rather than the whole, and nothing in the regime stops it
-from telling you what is in it. [BCDSP-DEP-24]
+authority receives a defined part of the plan, and nothing in the regime stops it from
+telling you what is in it. [BCDSP-DEP-24]
 
 **Ask Metro Vancouver for the rest.** There is no duty to publish an emergency plan and no
 rule against releasing one, so a freedom-of-information request is the route.
@@ -143,9 +138,9 @@ Vancouver is building the Capilano River Evacuation System, targeted for 2027, f
 unscheduled release from the dam. It does not sound for heavy rain or spring melt, and it
 is not a dam breach or earthquake warning. [MV-CDSEP]
 
-Two engineers reviewed these dams in 2024 and neither found an unsafe condition. What is
-missing is not a warning. It is the answer to one question, and the part of that answer
-concerning your own address is a thing you can go and ask for.
+Two engineers reviewed these dams in 2024 and neither found an unsafe condition. What has
+not been published is where the water would go, and the part of that concerning your own
+address is something you can ask for.
 
 ## Sources on this page
 

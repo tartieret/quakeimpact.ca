@@ -88,10 +88,9 @@ export const home: PageModule = {
         </Link>
         . <Cite id="PREPAREDBC" /> Most households in the region have not put
         together an emergency kit of any size.{" "}
-        <Cite id="RESEARCHCO-PREP-21" /> So this site gathers what is already
+        <Cite id="RESEARCHCO-PREP-21" /> This site gathers what has already been
         published about a major earthquake in the Lower Mainland: what breaks,
-        how long it stays broken, and what each thing is waiting on. Two weeks
-        becomes a length of time you can picture rather than a slogan.
+        how long it stays broken, and what each repair is waiting on.
       </>
     ),
     /**
@@ -110,7 +109,7 @@ export const home: PageModule = {
   sections: [
     {
       title: "The shaking is the short part",
-      lede: "Most people picture an earthquake as a violent event with a clear end, followed by help arriving from outside. Consider this timeline instead.",
+      lede: "Most people picture an earthquake as a violent event with a clear end, followed by help arriving from outside.",
       body: (
         <div className="flex flex-col gap-8">
           <PhaseNarrative
@@ -308,28 +307,27 @@ export const home: PageModule = {
               households are asked to be ready for.
             </p>
             <p>
-              How hard each of those stretches is also depends on the weather it
-              happens in. Running out of water in an August heat dome is not the
-              same as running out of it in January after days of rain, and the
-              two scenarios are set in exactly those two conditions: a 30 to 40
-              degree heatwave with wildfire smoke for the megathrust,{" "}
+              The weather it happens in changes how hard each of those stretches
+              is. Running out of water in an August heat dome is not the same as
+              running out of it in January after days of rain, and the two
+              scenarios are set in those two conditions: a 30 to 40 degree
+              heatwave with wildfire smoke for the megathrust,{" "}
               <Cite id="DCRRA-2025" /> a January afternoon after an atmospheric
               river for the crustal earthquake. <Cite id="PEIRS" />
             </p>
             <p>
               None of those failures happens on its own, either. Water needs
               power for pumps and roads for crews. Roads need debris cleared,
-              which needs fuel. How long the region waits depends less on any
-              one system than on the order in which they can be brought back,
-              which is why{" "}
+              which needs fuel. The order in which the systems can be brought
+              back sets how long the region waits, so{" "}
               <Link href="/after/" className={link}>
                 life afterwards
               </Link>{" "}
-              is told system by system and{" "}
+              takes them one at a time and{" "}
               <Link href="/dependencies/" className={link}>
                 the dependency graph
               </Link>{" "}
-              counts what each system is waiting on.
+              counts what each one is waiting on.
             </p>
           </Prose>
         </div>
@@ -337,13 +335,13 @@ export const home: PageModule = {
     },
 
     {
-      title: "Go deeper on any part of it",
-      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to. Open any of them to go further.",
+      title: "Each of these comes back on its own schedule",
+      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to.",
       body: <SystemGrid />,
     },
 
     {
-      title: "Two scenarios, and they are very different earthquakes",
+      title: "The region plans for two earthquakes, and they are not the same event",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
@@ -358,9 +356,8 @@ export const home: PageModule = {
               planning is written around.
             </p>
             <p>
-              They are dangerous to different buildings, and which of them is
-              the one that matters to you depends on the building you are in and
-              the ground it stands on.{" "}
+              They are dangerous to different buildings. Which one matters to
+              you depends on the building you are in and the ground under it.{" "}
               <Link href="/scenarios/" className={link}>
                 Read about the two scenarios
               </Link>
@@ -378,14 +375,14 @@ export const home: PageModule = {
     },
 
     {
-      title: "Compiled from published work",
+      title: "Everything here comes from published documents",
       body: (
         <Prose>
           <p>
-            Everything here comes from documents published by governments,
-            utilities and engineers. Where nobody has published an answer, the
-            page says so rather than guessing, and where two official documents
-            contradict each other, both are here.
+            Governments, utilities and the engineers they hire wrote them.
+            Where nobody has published an answer, the page says so instead of
+            guessing. Where two official documents contradict each other, both
+            are here.
           </p>
           <p>
             How long something is out is written as one of three bands: Low,
@@ -412,6 +409,13 @@ export const home: PageModule = {
     heading: "Start here",
     items: [
       <>
+        If you have two minutes, store water. Distributing bulk drinking water
+        across the region stays difficult for the first four to five days.{" "}
+        <Cite id="DCRRA-2025" /> PreparedBC asks for four litres per person per
+        day, for at least two weeks. <Cite id="PREPAREDBC" /> Water in the
+        cupboard covers the days when getting it to you is hardest.
+      </>,
+      <>
         If you have ten minutes, read{" "}
         <Link href="/scenarios/" className={link}>
           the two scenarios
@@ -421,14 +425,6 @@ export const home: PageModule = {
           preparing
         </Link>
         .
-      </>,
-      <>
-        If you have two minutes, store water. The province’s own assessment says
-        that distributing bulk drinking water across the region stays difficult
-        for the first four to five days. <Cite id="DCRRA-2025" /> PreparedBC
-        asks for four litres per person per day, for at least two weeks.{" "}
-        <Cite id="PREPAREDBC" /> Water in the cupboard covers the days when
-        getting it to you is hardest.
       </>,
     ],
   },

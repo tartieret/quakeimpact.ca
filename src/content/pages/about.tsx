@@ -56,12 +56,12 @@ export const about: PageModule = {
           </p>
           <p>
             Preparing for that meant reading what the province, the region and
-            the utilities have published about a major earthquake, and what
-            those documents describe is slower than what most of us picture. The
-            province expects disruption to water and wastewater systems “for
-            many months following the event”. <Cite id="PEIRS" /> Almost none of
-            this is secret. It sits in filings, plans and assessments that
-            nobody outside the field has a reason to open.
+            the utilities have published about a major earthquake. What they
+            describe is slower than what most of us picture. The province expects disruption to
+            water and wastewater systems “for many months following the event”.{" "}
+            <Cite id="PEIRS" /> Almost none of this is secret. It sits in
+            filings, plans and assessments that nobody outside the field has a
+            reason to open.
           </p>
           <p>
             So this site collects it in one place: what happens to the systems a
@@ -78,30 +78,28 @@ export const about: PageModule = {
     },
 
     {
-      title: "Nothing here is modelled; it is compiled",
+      title: "No estimate on this site was produced here",
       body: (
         <Prose>
           <p>
-            No estimate on this site was produced here. Every figure comes from
-            published work: a regulator’s filing, a provincial plan, an
-            engineering assessment, a peer-reviewed paper. Each one carries a
-            marker that opens that document’s entry where you are standing, and
-            the{" "}
+            Every figure comes from published work: a regulator’s filing, a
+            provincial plan, an engineering assessment, a peer-reviewed paper.
+            Each one carries a marker that opens that document’s entry without
+            leaving the page, and the{" "}
             <Link href="/sources/" className={link}>
               source register
             </Link>{" "}
-            lists all of them in one place. Past earthquakes elsewhere appear
-            too, and they are used to show how something fails, never to give a
-            number for the Lower Mainland.
+            lists them all. Past earthquakes elsewhere appear too, to show how
+            something fails and never to give a number for the Lower Mainland.
           </p>
           <p>
-            It is not complete, and it could not be. No assessment says
-            precisely how a system behaves on the day, and where a figure is
-            missing, that is said rather than filled in: a system marked “Not
-            yet assessed” means nobody has published an assessment, not that the
-            infrastructure is fine. A page still marked draft carries its band,
-            the sentence saying how the system fails and the document behind it,
-            without the text that would work through any of it.{" "}
+            The site is not complete, and it could not be. No assessment says
+            precisely how a system behaves on the day. Where a figure is
+            missing, the page says so: a system marked “Not yet assessed” means
+            nobody has published an assessment, not that the infrastructure is
+            fine. A page still marked draft carries its band, the sentence
+            saying how the system fails and the document behind it. The text
+            that works through them has not been written yet.{" "}
             <Link href="/method/" className={link}>
               How the bands work
             </Link>{" "}

@@ -64,24 +64,23 @@ export const transportation: PageModule = {
       body: (
         <Prose>
           <p>
-            Both of these sentences are in the BC Ministry of Transportation’s
-            seismic retrofit design criteria, two sections apart.
-          </p>
-          <p>
-            From §2.1.2: “In the Lower Mainland and on Vancouver Island a system
-            of routes have been designated as Disaster Response Routes (DRRs).
-            Disaster Response Routes are corridors that must be kept open for
-            emergency vehicle response following a major earthquake. Lifeline
-            bridges and bridges on Disaster Response Routes are being
+            From §2.1.2 of the BC Ministry of Transportation’s seismic retrofit
+            design criteria: “In the Lower Mainland and on Vancouver Island a
+            system of routes have been designated as Disaster Response Routes
+            (DRRs). Disaster Response Routes are corridors that must be kept
+            open for emergency vehicle response following a major earthquake.
+            Lifeline bridges and bridges on Disaster Response Routes are being
             retrofitted as the highest priority in the first phase of the
-            retrofit program.” <Cite id="MOTI-SRDC-05" />
+            retrofit program.”{" "}
+            <Cite id="MOTI-SRDC-05" />
           </p>
           <p>
-            From §2.2: “Functional retrofitting requires that important
-            (Lifeline and DRR) bridges remain in service after the design
-            earthquake. … The Ministry is not anticipating functional
-            retrofitting in the current stage of retrofitting; it may be
-            considered in a future stage.” <Cite id="MOTI-SRDC-05" />
+            From §2.2 of the same document, two sections later: “Functional
+            retrofitting requires that important (Lifeline and DRR) bridges
+            remain in service after the design earthquake. … The Ministry is not
+            anticipating functional retrofitting in the current stage of
+            retrofitting; it may be considered in a future stage.”{" "}
+            <Cite id="MOTI-SRDC-05" />
           </p>
           <p>
             The position has not changed in twenty years. The Ministry’s
@@ -91,10 +90,9 @@ export const transportation: PageModule = {
             objective” approached in stages. <Cite id="MOTI-S6-SEC4" />
           </p>
           <p>
-            Two further figures set the scale. Retrofits are carried out against
-            a 475-year earthquake. New lifeline crossings are designed against a
-            2,475-year earthquake. <Cite id="MOTI-SRDC-05" />{" "}
-            <Cite id="MOTI-S6-SEC4" />
+            Retrofits are carried out against a 475-year earthquake. New
+            lifeline crossings are designed against a 2,475-year earthquake.{" "}
+            <Cite id="MOTI-SRDC-05" /> <Cite id="MOTI-S6-SEC4" />
           </p>
         </Prose>
       ),
@@ -105,9 +103,7 @@ export const transportation: PageModule = {
         "A bridge that survives is not a bridge you can drive over the next morning",
       body: (
         <Prose>
-          <p>
-            The Ministry defines its retrofit service levels in plain words.
-          </p>
+          <p>The Ministry’s three retrofit service levels, in its own words:</p>
           <p>
             <strong>Safety 2</strong>: “Limited access (e.g. reduced or
             designated lanes, emergency traffic). It is recognized that
@@ -210,19 +206,19 @@ export const transportation: PageModule = {
             settlement there was evaluated at 100 mm for that 475-year
             earthquake, a figure that assumes a densification of the ground
             which the same paper records as not built at the time. The fix
-            chosen instead was to wrap the girders in glass fibre so the bridge
-            could bend, rather than to stop the ground moving, which saved over
-            $1 million against improving the ground. <Cite id="OAK-13WCEE" /> The
-            bridge was reassessed in 2021 and 2022 because “changes to codes and
-            seismic hazard models since that time have resulted in substantially
-            higher seismic loading requirements”, and further retrofits were
-            identified. Those figures are not public. <Cite id="OAK-BASIS-22" />
+            chosen was to wrap the girders in glass fibre so the bridge could
+            bend, which saved over $1 million against improving the ground.{" "}
+            <Cite id="OAK-13WCEE" /> The bridge was reassessed in 2021 and 2022
+            because “changes to codes and seismic hazard models since that time
+            have resulted in substantially higher seismic loading requirements”,
+            and further retrofits were identified. Those figures are not public.{" "}
+            <Cite id="OAK-BASIS-22" />
           </p>
           <p>
-            One crossing shows the whole chain from objective to built fix, and
-            it is not in Metro Vancouver. The Mission Bridge connects the
-            District of Mission to Abbotsford, about 80 km east of Vancouver, on
-            the provincial disaster recovery network. Its engineers found that
+            The Mission Bridge is the one crossing where the whole chain from
+            objective to built fix is public, and it is about 80 km east of
+            Vancouver. It connects the District of Mission to Abbotsford, on the
+            provincial disaster recovery network. Its engineers found that
             “liquefaction is the key issue affecting the seismic performance of
             the bridge”, predicted settlements of up to 200 mm at the Mission
             south approach piers and a flow-slide failure at the Mission south
@@ -232,9 +228,8 @@ export const transportation: PageModule = {
             of those numbers describes a Richmond or Delta crossing.
           </p>
           <p>
-            The province does publish what an approach is meant to achieve. In
-            the zone where a bridge approach embankment meets the structure, a
-            lifeline crossing must keep 100 per cent of its lanes after a
+            In the zone where a bridge approach embankment meets the structure,
+            a lifeline crossing must keep 100 per cent of its lanes after a
             975-year earthquake and 50 per cent of its lanes after a 2,475-year
             earthquake, with normal service restorable within one month.{" "}
             <Cite id="MOTI-S6-SEC6" />
@@ -245,7 +240,7 @@ export const transportation: PageModule = {
 
     {
       title:
-        "The George Massey Tunnel has a published shortfall and a 2031 replacement",
+        "The second stage of the George Massey Tunnel’s retrofit was cancelled, and its replacement opens in 2031",
       body: (
         <Prose>
           <p>
@@ -274,11 +269,11 @@ export const transportation: PageModule = {
             seismic event still exists.” <Cite id="GMC-TUNNEL-19" />
           </p>
           <p>
-            Three numbers carry the whole thing. The tunnel was designed against
-            a 475-year earthquake. With the structural retrofit and no ground
-            improvement it meets its performance criteria for an earthquake of
-            “approximately 150 to 240 years”. A new lifeline crossing is
-            designed for 2,475. <Cite id="GMC-TUNNEL-19" />
+            The tunnel was designed against a 475-year earthquake. With the
+            structural retrofit and no ground improvement it meets its
+            performance criteria for an earthquake of “approximately 150 to 240
+            years”. A new lifeline crossing is designed for 2,475.{" "}
+            <Cite id="GMC-TUNNEL-19" />
           </p>
           <Figure
             alt="The George Massey Tunnel was designed against a 475 year earthquake and now meets its performance criteria for approximately a 150 to 240 year earthquake, against a lifeline standard of 2,475 years. The three are a design intent, an assessed range and a standard, and each is drawn differently because they are not the same kind of number."
@@ -406,12 +401,11 @@ export const transportation: PageModule = {
             ]}
           />
           <p>
-            Project criteria differ between owners and structures. Golden Ears
-            and the North Arm Bridge were designed in the same decade against
-            different sets of design events, and the engineers who set each of
-            them published what they were. How a crossing is specified is a
-            decision taken project by project, and there is no single figure
-            that every bridge in the region was built to.
+            Golden Ears and the North Arm Bridge were designed in the same
+            decade against different sets of design events, and the engineers
+            who set each of them published what they were. How a crossing is
+            specified is decided project by project, and there is no single
+            figure that every bridge in the region was built to.
           </p>
         </Prose>
       ),
@@ -444,11 +438,12 @@ export const transportation: PageModule = {
             The Ministry is responsible for over 400 km of provincial disaster
             response routes and maintains over 2,500 bridges in the highest
             seismic zones of the province. <Cite id="BCSIMS-22" /> Fourteen
-            bridges and one tunnel carry structural monitoring instruments. The
-            province gives its reason plainly: “There will be many
-            slight-to-moderately damaged bridges after an earthquake and the
-            ability to quickly determine their safety will allow inspectors to
-            focus on higher priority structures.” <Cite id="BCSIMS-22" />
+            bridges and one tunnel carry structural monitoring instruments. Its
+            reason: “There will be many slight-to-moderately damaged bridges
+            after an earthquake and the ability to quickly determine their
+            safety will allow inspectors to focus on higher priority
+            structures.”{" "}
+            <Cite id="BCSIMS-22" />
           </p>
         </Prose>
       ),
@@ -472,7 +467,7 @@ export const transportation: PageModule = {
             <Cite id="CBC-2015" />
           </p>
           <p>
-            No damage was found. The stoppage came from alarms, not from
+            No damage was found: the alarms stopped the trains, not any
             breakage. Eighty minutes is what a check of an undamaged system took
             after a small, deep earthquake, and it forecasts nothing about a
             large one.
@@ -506,13 +501,12 @@ export const transportation: PageModule = {
         before anyone is let over it. <Cite id="MOTI-SRDC-05" />
       </>,
       // No citation, and none is missing: this bullet claims nothing about a
-      // document. It asks the reader a question about their own day.
+      // document. It is about the reader's own day.
       <>
         <strong>
           Know which side of the water you need to be on during a working day.
         </strong>{" "}
-        The useful question is not how to get home, it is where you would rather
-        be stuck.
+        The side you are on when the shaking starts may be the side you stay on.
       </>,
       <>
         <strong>Prepare the side you would be stuck on</strong>, at work as well

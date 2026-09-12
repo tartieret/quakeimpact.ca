@@ -3,7 +3,7 @@ route: /getting-around/
 title: Moving after the shaking
 nav: Getting around
 hook: British Columbia's plan is that people stay where they are, and that the roads are used for something else.
-lede: The province's emergency plans do not assume people will drive out of the region after a major earthquake. They assume the opposite, in writing, in two separate documents.
+lede: Two provincial emergency plans assume people will not drive out of the region after a major earthquake. Both direct the public to shelter where they are.
 status: draft
 ---
 
@@ -24,20 +24,16 @@ From the province's risk and resilience assessment, on its Cascadia scenario:
 > place." [DCRRA-2025]
 
 Two provincial documents, written for two different scenarios, give the same
-instruction. The useful question is therefore not whether a person could drive out. It
-is that the plan assumes they will not, and that the roads will be doing other work.
+instruction. The plan assumes people will not drive out, and that the roads will be
+doing other work.
 
-Two further assumptions from the same strategy sit underneath it. Large parts of the
-area "will be inaccessible by road due to earthquake-induced landslides, liquefaction,
-and other secondary impacts such as bridge collapses". And "Road, rail, air, and
-marine transportation will be disrupted, and existing supply chains will be
-inoperable." [PEIRS] Liquefaction there means saturated soil losing its strength and
-behaving like a liquid while the ground shakes.
+Large parts of the area "will be inaccessible by road due to earthquake-induced
+landslides, liquefaction, and other secondary impacts such as bridge collapses". And
+"Road, rail, air, and marine transportation will be disrupted, and existing supply
+chains will be inoperable." [PEIRS] Liquefaction there means saturated soil losing its
+strength and behaving like a liquid while the ground shakes.
 
 ## The land connections are fewer than the map suggests
-
-First, where the water is. These are map facts, set apart below because they carry no
-source key and make no claim about earthquakes.
 
 > **Vancouver is a peninsula, not an island.** Burrard Inlet is to the north and the
 > North Arm of the Fraser to the south, and the land connection runs eastward through
@@ -54,34 +50,30 @@ approaches sit on, is the subject of
 
 ## Disaster Response Route signs mean stay off, not evacuate this way
 
-The signs stand on roads across the region, and the behaviour they ask for is the
-opposite of the instinctive one.
-
-A network of provincial and municipal roads was designated in 1995 across Metro
-Vancouver and Greater Victoria to move emergency responders and supplies.
-[PITTMDW-DRR] The routes are open to everyone until a state of emergency is declared,
-and then they are activated and controlled. Users must carry both
-government-issued photo identification and employment identification. [DRR-GOVPAGE]
+The signs stand on roads across the region. A network of provincial and municipal
+roads was designated in 1995 across Metro Vancouver and Greater Victoria to move
+emergency responders and supplies. [PITTMDW-DRR] The routes are open to everyone until
+a state of emergency is declared, and then they are activated and controlled. Users
+must carry both government-issued photo identification and employment identification.
+[DRR-GOVPAGE]
 
 **The official instruction to the public is to get off the route as soon as
 possible**, to make way for emergency responders. [DRR-GOVPAGE]
 
-The province does not oversell them either: "Like any infrastructure, these routes are
+The province does not oversell them: "Like any infrastructure, these routes are
 susceptible to hazards and could potentially be negatively impacted by the emergency
 event." [PITTMDW-DRR]
 
-The doctrine changed in June 2018. Response routes are now chosen at the time of the
-event rather than fixed in advance: "DRRs are not designated pre-event. DRRs are
+The doctrine changed in June 2018: "DRRs are not designated pre-event. DRRs are
 determined at the time of the event based on the needs of response and recovery and
 available options." What is designated in advance is now called a critical route.
 [DRT-PRIMER-18] The advice to the public is unchanged.
 
-One line in the province's route planning guidance describes this region without
-needing any commentary. Among the considerations for choosing roads for response
-routes: "Consider avoiding steep grades, circuitous routing, bridges, tunnels,
-overpasses and underpasses." [DRT-PLANNING-18] Seismic retrofit status appears in the
-same guide as one of the vulnerability criteria for choosing a route, alongside soil
-stability and how close the road runs to gas and water lines. [DRT-PLANNING-18]
+Among the published considerations for choosing roads for response routes: "Consider
+avoiding steep grades, circuitous routing, bridges, tunnels, overpasses and
+underpasses." [DRT-PLANNING-18] Seismic retrofit status is one of the vulnerability
+criteria in the same guide, alongside soil stability and how close the road runs to
+gas and water lines. [DRT-PLANNING-18]
 
 ## Roads are cleared in a published order, and getting people home is not near the top
 
@@ -107,10 +99,9 @@ assessments have deemed the damaged routes safe for emergency use." [DRT-PRIMER-
 > Mainland corridor would be closed. What is published is the framework for reopening
 > them [DRT-PRIMER-18] [MV-DEBRIS-17], and, separately, the lane and restoration
 > targets a new structure is designed against, which are set out in
-> [transportation](/after/transportation/). A framework is not a forecast, and neither
-> is a design target. Some regional emergency-management material is withheld by
-> choice: "Due to the sensitive nature of some of our work, some materials are only
-> available upon request." [IPREM-RES]
+> [transportation](/after/transportation/). Some regional emergency-management
+> material is withheld by choice: "Due to the sensitive nature of some of our work,
+> some materials are only available upon request." [IPREM-RES]
 
 ## Rainfall severed three BC highways in 2021, and reopening them took months
 
@@ -138,24 +129,23 @@ at $5 to $7 billion and records that it cut "main access routes to B.C. and Cana
 failures as "severing land connectivity between Metro Vancouver and the rest of
 Canada", and one of its authors works for the road authority. [SEPULVEDA-23]
 
-Those durations show the pace of this kind of work in this terrain, with this road
-authority and these contractors.
+Those are the durations this road authority and these contractors achieved in this
+terrain.
 
 ## A landslide wave in Howe Sound is assessed as unlikely
 
-Not every finding here runs one way. Federal mapping "concluded that none of
-the landslides that entered Howe Sound were large enough to produce a significant
-tsunami", and a landslide into the sound large enough to produce damaging waves on
-Bowen Island is assessed as unlikely. [BOWEN-TSU-19] An earlier North Shore assessment
-agrees, putting the probability as "very low, although not zero" and finding the North
-and West Vancouver waterfronts not at risk from such a wave. [NSEMO-TSU-05]
+Federal mapping "concluded that none of the landslides that entered Howe Sound were
+large enough to produce a significant tsunami", and a landslide into the sound large
+enough to produce damaging waves on Bowen Island is assessed as unlikely.
+[BOWEN-TSU-19] An earlier North Shore assessment agrees, putting the probability as
+"very low, although not zero" and finding the North and West Vancouver waterfronts not
+at risk from such a wave. [NSEMO-TSU-05]
 
 ## Nobody has published how many people would leave, or when
 
 The route out of the region would be a damaged road, cleared in an order that puts
 local streets last. [MV-DEBRIS-17] How much of the network the province expects to be
-working, and for how long, belongs to the crossings themselves and is set out in
-[transportation](/after/transportation/).
+working, and for how long, is set out in [transportation](/after/transportation/).
 
 > **Not yet established.** How many people would leave the Lower Mainland after a major
 > earthquake, and over what period, has not been published by any government or
@@ -164,11 +154,11 @@ working, and for how long, belongs to the crossings themselves and is set out in
 
 ## What you can do
 
-The useful decision here is a location, not a route.
+The decision that matters is where you will be when it happens.
 
 **Decide where you would rather be stuck, and be there.** Know which side of the water
-you will be on during a working day, and plan to stay on that side. That is what the
-province's own assumption implies: shelter within the region, where you already are.
+you will be on during a working day, and plan to stay on that side. The province's
+plans assume exactly that: shelter within the region, where you already are.
 [PEIRS] [DCRRA-2025]
 
 **Prepare the place you will actually be**, not the place you would try to reach. A
@@ -183,8 +173,7 @@ single agreed person and a single agreed place removes the reason to set out acr
 damaged city.
 
 **If you are on a Disaster Response Route when one is activated, get off it.** That is
-the province's instruction, and it changes what a person does in the first hour.
-[DRR-GOVPAGE]
+the province's instruction. [DRR-GOVPAGE]
 
 ## Sources on this page
 

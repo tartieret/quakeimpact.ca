@@ -118,10 +118,9 @@ export const water: PageModule = {
             <Cite id="MV-WATER-22" />
           </p>
           <p>
-            The two counts measure different things and both are real. 267
-            counts failures anywhere in the network, across the whole region. 60
-            counts breaks at the 71 river and inlet crossings alone, which is
-            the part of that total falling on the assets that are hardest to
+            The 267 counts failures anywhere in the network, across the whole
+            region. The 60 counts breaks at the 71 river and inlet crossings
+            alone, the part of that total falling on the assets hardest to
             reach.
           </p>
           <Figure
@@ -153,12 +152,8 @@ export const water: PageModule = {
       body: (
         <Prose>
           <p>
-            The obvious next question has a specific answer, and it is not a
-            duration.
-          </p>
-          <p>
             About two thirds of the roughly 300-page report is blacked out in
-            the public version. Two of the withheld pieces are the two a
+            the public version. Two of the withheld pieces are what a
             restoration estimate would be built from: the number of leaks and
             breaks per main, and the damage estimates for 21 water storage
             facilities. Both were removed under freedom-of-information
@@ -173,17 +168,14 @@ export const water: PageModule = {
             prioritized structural analysis to identify seismic
             vulnerabilities”. <Cite id="MV-DWMP-26" />
           </p>
+          <p>In 2026, identifying the weak points is still work to be done.</p>
           <p>
-            In 2026, identifying the weak points is still work to be done rather
-            than work completed.
-          </p>
-          <p>
-            The plan also shows where responsibility divides. Metro Vancouver
-            owns the transmission mains; the member municipalities own the pipes
-            in the street. The plan’s third action commits to coordinating with
-            those municipalities “to identify points of possible failure”, which
-            says in the region’s own words that the joined-up picture across
-            that seam has not been assembled yet. <Cite id="MV-DWMP-26" />
+            Metro Vancouver owns the transmission mains; the member
+            municipalities own the pipes in the street. The plan’s third action
+            commits to coordinating with those municipalities “to identify
+            points of possible failure”, which says in the region’s own words
+            that the joined-up picture across that seam has not been assembled
+            yet. <Cite id="MV-DWMP-26" />
           </p>
           <VerificationNote label="Not a restoration estimate">
             A March 2018 case study by Agriculture and Agri-Food Canada found
@@ -193,9 +185,9 @@ export const water: PageModule = {
             obtained under freedom of information and reported by the Globe and
             Mail in 2019. “Several months” is a range word rather than a figure.
             The study is eight years old and predates the current tunnel and
-            reservoir program. Its more durable finding is the other half: at
-            the time, the province had put its plans for supplying potable water
-            on hold pending an update from Metro Vancouver.{" "}
+            reservoir program. The other half of it has aged better: at the
+            time, the province had put its plans for supplying potable water on
+            hold pending an update from Metro Vancouver.{" "}
             <Cite id="GM-AAFC-19" />
           </VerificationNote>
         </Prose>
@@ -209,22 +201,20 @@ export const water: PageModule = {
         <Prose>
           <p>
             “Disruption to water and wastewater systems are expected for many
-            months following the event.” <Cite id="PEIRS" /> That is the
-            province’s own statement. It is qualitative, it covers sewers in the
-            same breath as water, and it is region-wide rather than specific to
-            any pipe.
+            months following the event.” <Cite id="PEIRS" /> The sentence is
+            qualitative, it covers sewers in the same breath as water, and it is
+            region-wide rather than specific to any pipe.
           </p>
           <p>
-            There is a second and much shorter clock, and it measures something
-            else. The province’s Cascadia assessment states that “people are
-            thirsty within 24 hours”, and that “distributing bulk potable water
-            across the affected region remains challenging for the first four to
-            five days”. <Cite id="DCRRA-2025" />
+            The province’s Cascadia assessment states that “people are thirsty
+            within 24 hours”, and that “distributing bulk potable water across
+            the affected region remains challenging for the first four to five
+            days”. <Cite id="DCRRA-2025" />
           </p>
           <p>
-            Those four to five days are about trucking water to people. The many
-            months is about the network being repaired. Merging them would
-            suggest water comes back in a week.
+            The four to five days are about trucking water to people; the many
+            months is about repairing the network. Merging them would suggest
+            water comes back in a week.
           </p>
           <Figure
             alt="Two clocks run at once: trucking bulk water to people is hard for the first four to five days, while repairing the network is expected to take many months with no published end date."
@@ -257,17 +247,15 @@ export const water: PageModule = {
             landslides. <Cite id="CNW-PWERP-23" />
           </p>
           <p>
-            Every part of that is narrower than it looks. It covers New
-            Westminster’s own distribution pipes and nobody else’s. Its
-            scenarios are 1-in-100 and 1-in-475 year events, far below the level
-            either scenario described here is built on, so the break counts do
-            not transfer to them. The one to three days is how long a single
-            break takes to repair rather than how long the city waits, because
+            It covers New Westminster’s own distribution pipes and nobody
+            else’s. Its scenarios are 1-in-100 and 1-in-475 year events, far
+            below the level either scenario described here is built on, so the
+            break counts do not transfer to them. The one to three days is how
+            long a single break takes to repair, not how long the city waits:
             turning it into a restoration time needs a crew count the plan does
             not give. The weeks to months attaches to the regional supply being
             cut by landslides, not to those 200 to 300 breaks. And the table is
-            a response plan’s planning assumption rather than the result of a
-            study.
+            a response plan’s planning assumption. No study produced it.
           </p>
           <p>Metro Vancouver has published nothing comparable.</p>
         </Prose>
@@ -287,7 +275,7 @@ export const water: PageModule = {
             <Cite id="MV-ANNACIS-TUNNEL" />
           </p>
           <DataTable
-            caption="The four deep water supply tunnels Metro Vancouver's construction listing names, and how far each has got."
+            caption="The four deep water supply tunnels Metro Vancouver’s construction listing names, and how far each has got."
             columns={["Tunnel", "Status"]}
             minWidth="30rem"
             rows={[
@@ -333,11 +321,6 @@ export const water: PageModule = {
             reservoirs built before the 1990s still needed upgrading.{" "}
             <Cite id="MV-RESERVOIR-23" />
           </p>
-          <p>
-            Metro Vancouver has identified this problem, measured it, and is
-            spending heavily against it. The work is not finished, and the dates
-            say when each part of it is due.
-          </p>
         </Prose>
       ),
     },
@@ -347,9 +330,9 @@ export const water: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        The province says people are thirsty within 24 hours, and that trucking
-        bulk water around the region is hard for the first four to five days.{" "}
-        <Cite id="DCRRA-2025" /> Stored water at home covers exactly that gap.
+        People are thirsty within 24 hours, and trucking bulk water around the
+        region is hard for the first four to five days. <Cite id="DCRRA-2025" />{" "}
+        Stored water at home covers that gap.
       </>
     ),
     items: [

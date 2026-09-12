@@ -25,7 +25,7 @@ export const shaking: PageModule = {
     nav: "The shaking",
     kicker: "Part 1",
     standfirst:
-      "The ground under the region, the buildings on it, the injuries, and the fires and landslides that come once the shaking stops. Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives.",
+      "Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives. The shaking is the short part: buildings break, people are hurt, and the fires and landslides come once it stops.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -41,45 +41,42 @@ export const shaking: PageModule = {
 
   sections: [
     {
-      title: "What it is like",
+      title: "Nobody rides it out standing up",
       body: (
         <Prose>
           <p>
-            Hardly anyone here has felt one. The province wrote its own scenario
-            from the inside, and it starts with sound: a low rumble like a
-            freight train, heard before anything is felt. Then the shaking
-            knocks the people closest to it off their feet, and unsecured
-            objects fall or fly through the air. <Cite id="PEIRS" />
-          </p>
-          <p>
-            Nobody rides this out standing up. Nobody crosses a room. The floor
-            is moving, and so is everything on it that is not fastened down.{" "}
+            Hardly anyone here has felt one. The province’s planning scenario
+            starts with sound: a low rumble like a freight train, heard before
+            anything is felt. Then the shaking knocks the people closest to it
+            off their feet, and unsecured objects fall or fly through the air.{" "}
             <Cite id="PEIRS" />
           </p>
           <p>
-            The last Cascadia earthquake left its own description. Natural
+            Nobody crosses a room. The floor is moving, and so is everything on
+            it that is not fastened down. <Cite id="PEIRS" />
+          </p>
+          <p>
+            The last Cascadia earthquake was on a night in January 1700. Natural
             Resources Canada records the oral traditions of First Nations on
-            Vancouver Island, from a night in January 1700: the shaking “was so
-            violent that people could not stand and so prolonged that it made
-            them sick.” <Cite id="NRCAN-1700" />
+            Vancouver Island: the shaking “was so violent that people could not
+            stand and so prolonged that it made them sick.”{" "}
+            <Cite id="NRCAN-1700" />
           </p>
           <p>
-            There is one thing to do while it happens. Everyone closest is
-            knocked down “except for those who remember to ‘drop, cover, and
-            hold on’”. <Cite id="PEIRS" /> Drop before the shaking drops you,
-            cover, and hold on until it stops. Do not run outside: many of those
-            who try suffer extreme injury or death from falling and flying
-            objects. <Cite id="PEIRS" />
+            Everyone closest is knocked down “except for those who remember to
+            ‘drop, cover, and hold on’”. <Cite id="PEIRS" /> Drop before the
+            shaking drops you, cover, and hold on until it stops. Do not run
+            outside: many of those who try suffer extreme injury or death from
+            falling and flying objects. <Cite id="PEIRS" />
           </p>
           <p>
-            It is not long. In the magnitude 7.0 scenario, an earthquake close
-            to the city, the violent shaking lasts 10 to 20 seconds.{" "}
-            <Cite id="PEIRS" /> In the magnitude 9.0 scenario, the offshore
-            Cascadia earthquake, the main shaking lasts three minutes.{" "}
-            <Cite id="DCRRA-2025" /> Almost all of the damage is done in that
-            window or in the hours just after, and everything else on this site
-            is about the months that follow. The province’s full account of
-            those first seconds is on{" "}
+            In the magnitude 7.0 scenario, an earthquake close to the city, the
+            violent shaking lasts 10 to 20 seconds. <Cite id="PEIRS" /> In the
+            magnitude 9.0 scenario, the offshore Cascadia earthquake, the main
+            shaking lasts three minutes. <Cite id="DCRRA-2025" /> Almost all of
+            the damage is done in that window or in the hours just after, and
+            everything else on this site is about the months that follow. The
+            province’s full account of those first seconds is on{" "}
             <Link
               href="/scenarios/"
               className="text-accent underline underline-offset-2"
@@ -97,7 +94,7 @@ export const shaking: PageModule = {
       body: (
         <Prose>
           <p>
-            The province does not end its Cascadia scenario when the shaking
+            The province’s Cascadia scenario does not end when the shaking
             stops. About a month after the mainshock it models a second
             earthquake: magnitude 7.1, 60 km beneath Sidney, lasting 20 seconds,
             at 11 at night during an atmospheric river, which is a long and
@@ -108,12 +105,12 @@ export const shaking: PageModule = {
             uses for its other planning scenario, the one close to the city,{" "}
             <Cite id="PEIRS" /> and the buildings it reaches have already been
             through the first one. Whether a damaged building is safe to be in
-            is a question somebody has to come and answer, and{" "}
+            is a question somebody has to come and answer.{" "}
             <Link
               href="/shaking/buildings/"
               className="text-accent underline underline-offset-2"
             >
-              buildings
+              Buildings
             </Link>{" "}
             covers who does that and how long people wait.
           </p>
@@ -133,9 +130,8 @@ export const shaking: PageModule = {
         <Prose>
           <p>
             Two things decide what an earthquake does to a place: the ground
-            underneath and the building on top. Neither settles it on its own,
-            and the pairing that turns out to be dangerous changes with the
-            earthquake.
+            underneath and the building on top. Which pairing turns out to be
+            dangerous changes with the earthquake.
           </p>
           <p>
             The ground varies over short distances. The downtown peninsula and
@@ -144,11 +140,13 @@ export const shaking: PageModule = {
             enough stops the sand carrying the weight above it, so the ground
             behaves for a while like a thick liquid. Engineers call that
             liquefaction, and it floats buried pipes up, makes roads sag and
-            tilts foundations. The published estimate is that delta soil reaches
-            that tipping point every 100 to 250 years.{" "}
-            <Cite id="JAVANBAKHT-24" /> Underneath all of it the region sits in
-            a deep bowl of soft sediment, which makes the slow, rolling waves
-            stronger rather than letting them fade. <Cite id="DCRRA-APPC" />
+            tilts foundations. Delta soil is estimated to reach that tipping
+            point every 100 to 250 years. <Cite id="JAVANBAKHT-24" />
+          </p>
+          <p>
+            Underneath all of it the region sits in a deep bowl of soft
+            sediment, which makes the slow, rolling waves stronger.{" "}
+            <Cite id="DCRRA-APPC" />
           </p>
           <p>
             Which buildings that hurts depends on which earthquake it is. The
@@ -187,13 +185,12 @@ export const shaking: PageModule = {
         <Prose>
           <p>
             Most published figures for an earthquake here come from the
-            Geological Survey of Canada’s scenario catalogue, and it is careful
-            about its own limits. It counts “only damage to buildings, and their
-            inhabitants, from earthquake shaking”. Landslides, liquefaction,
-            fire following and aftershocks are “not currently included”.{" "}
-            <Cite id="NRCAN-SCEN" /> With those left out, “the estimates herein
-            are likely to represent a minimum estimate on impacts.”{" "}
-            <Cite id="GSC-OF-8853" />
+            Geological Survey of Canada’s scenario catalogue. It counts “only
+            damage to buildings, and their inhabitants, from earthquake
+            shaking”. Landslides, liquefaction, fire following and aftershocks
+            are “not currently included”. <Cite id="NRCAN-SCEN" /> With those
+            left out, “the estimates herein are likely to represent a minimum
+            estimate on impacts.” <Cite id="GSC-OF-8853" />
           </p>
           <p>
             So a damage figure or a casualty figure from that work is a floor
@@ -256,9 +253,9 @@ export const shaking: PageModule = {
       </>,
       <>
         <strong>Know the two things to do in the first seconds.</strong> Drop,
-        cover and hold on. Do not run outside. Both are in the province’s own
-        account of its planning scenario, <Cite id="PEIRS" /> and its Cascadia
-        scenario is a reminder that they are needed more than once.{" "}
+        cover and hold on. Do not run outside. <Cite id="PEIRS" /> The
+        province’s Cascadia scenario puts a second earthquake about a month
+        after the first, so both are needed more than once.{" "}
         <Cite id="DCRRA-2025" />
       </>,
     ],

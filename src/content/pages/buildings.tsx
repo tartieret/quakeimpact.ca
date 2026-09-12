@@ -59,12 +59,11 @@ export const buildings: PageModule = {
       body: (
         <Prose>
           <p>
-            In November 2024 the City of Vancouver published a modelling
-            exercise: a computer model of the city’s buildings, shaken by three
-            different earthquakes, with the damage counted each time.{" "}
-            <Cite id="COV-RISK-2024" /> Only one of the three would ever happen,
-            so the rows below are three separate what-ifs rather than stages of
-            one event.
+            In November 2024 the City of Vancouver shook a computer model of its
+            own buildings with three different earthquakes and counted the
+            damage each time. <Cite id="COV-RISK-2024" /> Only one of the three
+            would ever happen, so the rows below are three separate what-ifs
+            rather than stages of one event.
           </p>
           <DataTable
             caption="Three earthquakes modelled separately against the City of Vancouver’s buildings: how many are badly damaged, how many people are out of their homes for more than 90 days, and the direct economic loss."
@@ -107,12 +106,11 @@ export const buildings: PageModule = {
           <p>
             The M7.2 in the Georgia Strait damages about four times as many
             buildings as the M9.0 offshore, and does about four and a half times
-            the direct economic damage. The reason is that the nearer earthquake
-            shakes the ground at City Hall about as hard as the forces new
-            buildings are designed for. <Cite id="COV-RISK-2024" /> The method
-            behind the model is published and peer-reviewed.{" "}
-            <Cite id="HILT-2022" /> What decides this is distance, not the
-            magnitude in the headline.
+            the direct economic damage. Distance decides that, not the magnitude
+            in the headline: the nearer earthquake shakes the ground at City
+            Hall about as hard as the forces new buildings are designed for.{" "}
+            <Cite id="COV-RISK-2024" /> The method behind the model is published
+            and peer-reviewed. <Cite id="HILT-2022" />
           </p>
         </Prose>
       ),
@@ -130,26 +128,25 @@ export const buildings: PageModule = {
             standards at all. <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            The risk is not spread evenly across them. Five privately owned
-            building types make up roughly a tenth of the stock and carry nearly
-            80 per cent of the city’s earthquake risk: concrete mid-rise and
-            high-rise homes, wood-frame apartment buildings, older brick
-            buildings people live in, low-rise concrete shops and offices, and
-            downtown office towers. <Cite id="COV-RISK-2024" /> Six
-            neighbourhoods carry 65 per cent of it: the West End, the Downtown
-            Eastside including Chinatown and Strathcona, Downtown, Kitsilano,
-            Fairview and Mount Pleasant. <Cite id="COV-RISK-2024" />
+            Five privately owned building types make up roughly a tenth of the
+            stock and carry nearly 80 per cent of the city’s earthquake risk:
+            concrete mid-rise and high-rise homes, wood-frame apartment
+            buildings, older brick buildings people live in, low-rise concrete
+            shops and offices, and downtown office towers.{" "}
+            <Cite id="COV-RISK-2024" /> Six neighbourhoods carry 65 per cent of
+            it: the West End, the Downtown Eastside including Chinatown and
+            Strathcona, Downtown, Kitsilano, Fairview and Mount Pleasant.{" "}
+            <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            The province counts the same problem a different way, across all of
-            British Columbia. It measures what sits inside the shaking zone
-            rather than what any one earthquake would do to it: 92 per cent of
-            the province’s population, 4,400,000 people, 90 per cent of its
-            businesses and 76 per cent of its critical facilities, 13,000 of
-            them, stand where the ground shaking used to design buildings, the
-            level expected about once in 2,475 years, passes the thresholds the
-            province set. <Cite id="DCRRA-EXP" /> That is a count of what is
-            exposed. It is not a forecast of what a particular earthquake does.
+            The province counts a different thing, across all of British
+            Columbia. Ninety-two per cent of its population, 4,400,000 people,
+            90 per cent of its businesses and 76 per cent of its critical
+            facilities, 13,000 of them, stand where the ground shaking used to
+            design buildings, the level expected about once in 2,475 years,
+            passes the thresholds the province set. <Cite id="DCRRA-EXP" /> That
+            is a count of what is exposed, not a forecast of what any one
+            earthquake does.
           </p>
         </Prose>
       ),
@@ -160,10 +157,9 @@ export const buildings: PageModule = {
       body: (
         <Prose>
           <p>
-            The City’s model separates its housing by type. These are its
-            figures for the M7.2 Georgia Strait earthquake, and the displacement
-            is always for more than 90 days. They are averages for a type rather
-            than a verdict on any one building.
+            The City’s model splits its housing by type. These are its M7.2
+            Georgia Strait figures, and they are averages for a type, not a
+            verdict on any one building.
           </p>
           <DataTable
             caption="Three kinds of home in the City of Vancouver’s M7.2 Georgia Strait run: how many people live in them, how many of the buildings are badly damaged, and what share of their residents are out for more than 90 days."
@@ -211,14 +207,13 @@ export const buildings: PageModule = {
           />
           <p>
             Age is missing from that table because the City has not published
-            it. Its figures divide the city by what a building is rather than by
-            when it was built, and the stock they average over is old: about 70
-            per cent of Vancouver’s buildings went up before 1990, when early
-            modern seismic standards arrived, and about half before 1973, when
-            there were none. <Cite id="COV-RISK-2024" /> So a percentage beside
-            a building type is an average over mostly older construction. Where
-            a newer building of the same type sits inside it is not something
-            the published work answers.
+            it. Its figures count a building by what it is, not by when it went
+            up, and the stock they average over is old: about 70 per cent of
+            Vancouver’s buildings went up before 1990 and about half before
+            1973. <Cite id="COV-RISK-2024" /> So a percentage beside a building
+            type is an average over mostly older construction, and where a newer
+            building of the same type sits inside it is not something the
+            published work answers.
           </p>
           <p>
             Wood-frame apartment buildings are the largest single cause of
@@ -235,14 +230,12 @@ export const buildings: PageModule = {
             enough, for being likely uninhabitable after a design-level
             earthquake, and for the risk of the ground floor collapsing where it
             has been left open for tuck-under parking.{" "}
-            <Cite id="COV-PLAN-2026" /> A house and an apartment block are not
-            the same finding.
+            <Cite id="COV-PLAN-2026" />
           </p>
           <p>
-            Offices are in the same picture. Of downtown office towers, 29 per
-            cent are extensively or completely damaged and nearly half of the
-            people who use them are displaced for more than 90 days.{" "}
-            <Cite id="COV-RISK-2024" />
+            Of downtown office towers, 29 per cent are extensively or completely
+            damaged and nearly half of the people who use them are displaced for
+            more than 90 days. <Cite id="COV-RISK-2024" />
           </p>
           <p>
             Federal modelling of a different earthquake, a M7.0 under Vancouver,
@@ -252,8 +245,8 @@ export const buildings: PageModule = {
             building material in this region, so despite having the highest
             proportion of completely damaged buildings, wood actually performs
             quite well seismically.” <Cite id="GSC-OF-8853" /> Those are
-            regional figures against a very large number of wood buildings. They
-            say nothing about the wood apartment buildings above, which is a
+            regional figures against a very large number of wood buildings, and
+            they say nothing about the wood apartment buildings above: a
             separate finding from a separate study.
           </p>
         </Prose>
@@ -274,9 +267,8 @@ export const buildings: PageModule = {
             buildings in the Downtown Eastside. <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            A tenant cannot upgrade a building. That is the shape of this
-            particular risk: the people most exposed to it are the people with
-            the least say over it.
+            A tenant cannot upgrade a building. The people most exposed to this
+            are the people with the least say over it.
           </p>
         </Prose>
       ),
@@ -288,25 +280,21 @@ export const buildings: PageModule = {
       body: (
         <Prose>
           <p>
-            Coming through the shaking is not the same as having somewhere to
-            live, and the City’s own figures show the gap. In the M7.2 run, 28
-            per cent of concrete mid-rise and high-rise buildings are badly
-            damaged, while 70 per cent of the people living in them are out of
-            their homes for more than 90 days. <Cite id="COV-RISK-2024" /> Far
-            more households are displaced than the damage count on its own would
-            suggest.
+            In the M7.2 run, 28 per cent of concrete mid-rise and high-rise
+            buildings are badly damaged, while 70 per cent of the people living
+            in them are out of their homes for more than 90 days.{" "}
+            <Cite id="COV-RISK-2024" /> Far more households are displaced than
+            the damage count on its own would suggest.
           </p>
           <p>
-            Where damage is concentrated, whole areas can be closed. The City’s
-            assessment says such areas may be shut “for weeks, months, or even
-            years”, and names the West End and the Downtown Eastside.{" "}
-            <Cite id="COV-RISK-2024" />
+            Where damage is concentrated, whole areas may be shut “for weeks,
+            months, or even years”, and the City’s assessment names the West End
+            and the Downtown Eastside. <Cite id="COV-RISK-2024" />
           </p>
           <p>
             The reason is not usually the building. It is the queue. The City
             tells residents, in the material written for them, to expect
-            extended inaccessibility of large sections of neighbourhoods, and it
-            names what causes the delay:
+            extended inaccessibility of large sections of neighbourhoods:
           </p>
           <Quote
             speaker="City of Vancouver"
@@ -339,8 +327,8 @@ export const buildings: PageModule = {
       body: (
         <Prose>
           <p>
-            Ask what comes off a building in an earthquake and most people
-            picture glass. The City points somewhere else:
+            Most people picture glass coming off a building in an earthquake.
+            The City points at brick:
           </p>
           <Quote
             speaker="City of Vancouver"
@@ -372,19 +360,18 @@ export const buildings: PageModule = {
             comes down on the footpath.
           </p>
           <p>
-            The amount of material involved is large. Federal modelling of a
-            M7.0 under Vancouver puts 13 million tonnes of mixed debris on the
-            ground, and says in the same passage that it is “likely to litter
-            the streets and obstruct response operations”.{" "}
+            Federal modelling of a M7.0 under Vancouver puts 13 million tonnes
+            of mixed debris on the ground, and says in the same passage that it
+            is “likely to litter the streets and obstruct response operations”.{" "}
             <Cite id="GSC-OF-8853" />
           </p>
           <p>
-            The 2011 earthquake in Christchurch, New Zealand, shows how this
-            mechanism kills. Of the 42 deaths there from building failures other
-            than the two tower collapses, 35 came from unreinforced masonry
-            façades or walls falling, 26 of them onto people on the street or in
-            vehicles. <Cite id="NZ-RC-V4" /> It shows how people die under
-            falling brick, and it sets no number for Vancouver.
+            In the 2011 earthquake in Christchurch, New Zealand, 35 of the 42
+            deaths from building failures other than the two tower collapses
+            came from unreinforced masonry façades or walls falling, 26 of them
+            onto people on the street or in vehicles. <Cite id="NZ-RC-V4" />{" "}
+            That is how people die under falling brick, and it sets no number
+            for Vancouver.
           </p>
         </Prose>
       ),
@@ -395,7 +382,6 @@ export const buildings: PageModule = {
         "Nobody has measured what the glass would do, and the City has said so in writing",
       body: (
         <Prose>
-          <p>Two separate things establish it, and they point the same way.</p>
           <p>
             In 2021 someone asked the City of Vancouver, through a freedom of
             information request, for any report projecting damage or casualties
@@ -416,22 +402,20 @@ export const buildings: PageModule = {
             anywhere in Canada.
           </VerificationNote>
           <p>
-            What has not been measured has still been regulated, and that
-            distinction is the honest one. The Vancouver Building By-law has
-            required for years that cladding, cantilevered parapets, ornaments
-            and the ties holding brick facing on be designed for a stated
-            earthquake force, and that glazing be able to move at least 13 mm
-            without falling out. <Cite id="VBBL-2025" /> The by-law’s own
-            commentary says why: “The failure or detachment of non-structural
-            components and equipment during an earthquake can present a major
-            threat to life safety.” <Cite id="VBBL-2025" />
+            What has not been measured has still been regulated. The Vancouver
+            Building By-law has required for years that cladding, cantilevered
+            parapets, ornaments and the ties holding brick facing on be designed
+            for a stated earthquake force, and that glazing be able to move at
+            least 13 mm without falling out. <Cite id="VBBL-2025" /> The
+            by-law’s own commentary says why: “The failure or detachment of
+            non-structural components and equipment during an earthquake can
+            present a major threat to life safety.” <Cite id="VBBL-2025" />
           </p>
           <p>
-            The guidance the by-law points at agrees, and goes further. CSA
-            Group publishes a standard on reducing the earthquake risk of what
-            it calls operational and functional components, or OFCs, meaning
-            everything in a building that is not its frame. It says that “the
-            main cause of casualties and property damage in the event of an
+            CSA Group publishes a standard on reducing the earthquake risk of
+            what it calls operational and functional components, or OFCs,
+            meaning everything in a building that is not its frame. It says that
+            “the main cause of casualties and property damage in the event of an
             earthquake is often the failure of these OFCs”, and that losses from
             damage to them are “in many cases considerably greater than damage
             to the structural system”. <Cite id="CSA-S832-14" /> The by-law’s
@@ -439,10 +423,9 @@ export const buildings: PageModule = {
             mandatory.
           </p>
           <p>
-            So neither of the two easy sentences is true. Vancouver has not
-            ignored what falls off a building, and it has not measured it
-            either. It has regulated the hazard for decades in the buildings it
-            has been able to regulate, which are the new ones.
+            Vancouver has not ignored what falls off a building, and it has not
+            measured it either. It has regulated the hazard for decades in the
+            buildings it has been able to regulate, which are the new ones.
           </p>
         </Prose>
       ),
@@ -454,21 +437,20 @@ export const buildings: PageModule = {
       body: (
         <Prose>
           <p>
-            Part 11 of the Vancouver Building By-law is the real rule here, and
-            it has no equivalent in the provincial or national building codes.
-            At upgrade level S3 it requires that “falling hazards that may
-            impact adjacent properties and over public ways must be addressed”,
-            naming cantilevered walls, parapets, exterior ornaments, towers,
-            chimneys and appendages. Four further levels escalate the same
-            requirement across cladding, brick facing, cornices, canopies and
-            awnings. <Cite id="VBBL-2025" />
+            Part 11 of the Vancouver Building By-law has no equivalent in the
+            provincial or national building codes. At upgrade level S3 it
+            requires that “falling hazards that may impact adjacent properties
+            and over public ways must be addressed”, naming cantilevered walls,
+            parapets, exterior ornaments, towers, chimneys and appendages. Four
+            further levels escalate the same requirement across cladding, brick
+            facing, cornices, canopies and awnings. <Cite id="VBBL-2025" />
           </p>
           <p>
-            The catch is when it applies. Part 11 is triggered by renovation,
-            addition, reconstruction or a change of use. Nothing requires an
-            owner to brace a parapet otherwise, and Vancouver has no standalone
-            parapet or façade retrofit requirement. <Cite id="VBBL-2025" /> A
-            building that nobody renovates is never reached.
+            Part 11 is triggered by renovation, addition, reconstruction or a
+            change of use. Nothing requires an owner to brace a parapet
+            otherwise, and Vancouver has no standalone parapet or façade
+            retrofit requirement. <Cite id="VBBL-2025" /> A building that nobody
+            renovates is never reached.
           </p>
           <p>
             Where an owner does upgrade, the by-law asks for either 50 or 75 per
@@ -497,29 +479,25 @@ export const buildings: PageModule = {
     },
 
     {
-      title: "What the damage costs, and who is actually covered",
+      title: "Most of what the damage would cost is not insured",
       body: (
         <Prose>
           <p>
-            The most detailed published estimate was paid for by the insurance
-            industry. AIR Worldwide, modelling a M9.0 Cascadia earthquake about
-            300 km from Vancouver for the Insurance Bureau of Canada in 2013,
-            put total economic loss at $74.7 billion: $62.0 billion of direct
-            damage plus $12.7 billion of knock-on economic effect.{" "}
-            <Cite id="AIR-2013" />
+            AIR Worldwide, modelling a M9.0 Cascadia earthquake about 300 km
+            from Vancouver for the Insurance Bureau of Canada in 2013, put total
+            economic loss at $74.7 billion: $62.0 billion of direct damage plus
+            $12.7 billion of knock-on economic effect. <Cite id="AIR-2013" />
           </p>
           <p>
-            That total has a wide band around it and the study says so. The
-            $12.7 billion is the middle of a range running from $4.1 billion if
-            the economy proves resilient to $21.4 billion if it does not, which
-            puts the total somewhere between roughly $66 billion and $83
+            The $12.7 billion is the middle of a range running from $4.1 billion
+            if the economy proves resilient to $21.4 billion if it does not,
+            which puts the total somewhere between roughly $66 billion and $83
             billion. <Cite id="AIR-2013" />
           </p>
           <p>
-            Insured loss is a different quantity, and it is much smaller. The
-            same study puts insured loss at $20.4 billion, which is the covered
-            part of the $62.0 billion of direct damage: 32.9 per cent of the
-            direct loss and 27.3 per cent of the total economic loss.{" "}
+            The same study puts insured loss at $20.4 billion, the covered part
+            of the $62.0 billion of direct damage: 32.9 per cent of the direct
+            loss and 27.3 per cent of the total economic loss.{" "}
             <Cite id="AIR-2013" /> The gap between those two numbers is the part
             somebody other than an insurer pays. In 2025 the Insurance Bureau of
             Canada put a M9 at roughly $96 to $100 billion of total economic
@@ -532,30 +510,24 @@ export const buildings: PageModule = {
             billion in consultation with the Insurance Bureau of Canada, then
             assumed total economic losses would grow in line with insured ones,
             and the research itself was funded by the Insurance Bureau of
-            Canada. <Cite id="CBOC-2016" /> One estimate and a multiplier is not
-            two estimates.
+            Canada. <Cite id="CBOC-2016" />
           </p>
           <p>
-            There is a limit to what Canada’s insurers can pay, it is measured
-            in claims, and it is a band rather than a single figure. Nicholas Le
-            Pan, writing for the C.D. Howe Institute in 2016 on the property and
-            casualty industry’s own 2013 modelling, gives industry capacity as
-            $30 billion to $35 billion in claims. <Cite id="LEPAN-2016" /> That
-            industry’s own later modelling moves the tipping point to about $35
-            billion in its 2020 edition. <Cite id="PACICC-2026" /> Both
-            published insured-loss estimates, the $20.4 billion of 2013 and the
-            $26 billion of 2025, sit below that band on either dating.{" "}
-            <Cite id="AIR-2013" /> <Cite id="IBC-2025" />
+            Nicholas Le Pan, writing for the C.D. Howe Institute in 2016 on the
+            property and casualty industry’s own 2013 modelling, gives what
+            Canada’s insurers can pay as $30 billion to $35 billion in claims.{" "}
+            <Cite id="LEPAN-2016" /> That industry’s own later modelling moves
+            the tipping point to about $35 billion in its 2020 edition.{" "}
+            <Cite id="PACICC-2026" /> Both published insured-loss estimates, the
+            $20.4 billion of 2013 and the $26 billion of 2025, sit below that
+            band on either dating. <Cite id="AIR-2013" /> <Cite id="IBC-2025" />
           </p>
           <p>
-            The figure closest to home is smaller and more useful. About 60 to
-            65 per cent of homeowners in southwest British Columbia carry
-            earthquake coverage, about 70 per cent in Victoria and about 55 per
-            cent in Vancouver, and coverage among renters is much lower.{" "}
+            About 60 to 65 per cent of homeowners in southwest British Columbia
+            carry earthquake coverage, about 70 per cent in Victoria and about
+            55 per cent in Vancouver, and coverage among renters is much lower.{" "}
             <Cite id="LEPAN-2016" /> Earthquake cover is generally sold as an
-            addition to a home or tenant policy rather than included in it, so
-            whether a household has it is a question with an answer, and the
-            answer is on the policy.
+            addition to a home or tenant policy rather than included in it.
           </p>
         </Prose>
       ),
@@ -570,10 +542,8 @@ export const buildings: PageModule = {
           Find out what kind of building you live in, and which neighbourhood it
           is in.
         </strong>{" "}
-        Those two things predict more about the outcome than anything else, and
-        both are knowable today. Five building types carry nearly 80 per cent of
-        the city’s risk and six neighbourhoods carry 65 per cent of it.{" "}
-        <Cite id="COV-RISK-2024" />
+        Five building types carry nearly 80 per cent of the city’s risk and six
+        neighbourhoods carry 65 per cent of it. <Cite id="COV-RISK-2024" />
       </>,
       <>
         <strong>
@@ -615,9 +585,8 @@ export const buildings: PageModule = {
     ],
     closing: (
       <>
-        Two of those are about the building and three are about the fortnight
-        after. The building is the part you are least likely to be able to
-        change, which is exactly why it is worth knowing which one you are in.
+        None of these changes the building. They change how much you know about
+        it in advance, and what you have with you if you cannot get back in.
       </>
     ),
   },

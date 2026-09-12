@@ -3,7 +3,7 @@ route: /after/health-care/
 title: Health care
 nav: Health care
 hook: Hospitals stand on the same ground as everything else, and most of the stock predates the current code.
-lede: A case study for the province looked at all 127 buildings owned by one health authority and found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for. [DCRRA-APPC] No published document sets the casualties the province forecasts against the number of beds the region has.
+lede: About 65 per cent of the 127 buildings owned by one health authority are likely to be completely damaged at the ground motion the current building code designs for. [DCRRA-APPC] No published document sets the casualties the province forecasts against the number of beds the region has.
 bands: { cascadia: medium, crustal: medium }
 mechanism: A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no published document sets the expected casualty load against the region's bed capacity.
 source: DCRRA-APPC
@@ -17,12 +17,11 @@ immediate response plan forecasts 1,000 people critically injured, 6,500 needing
 care that is not critical, and 21,000 needing paramedics or first aid, from damage to
 buildings alone. [PEIRS] The province excludes injuries from fires, landslides, vehicle
 collisions and falls, so those counts do not cover everything that would send a person to
-a hospital. [PEIRS] The plan then says, in the province's own words, that first responders
-and medical facilities would be overwhelmed. [PEIRS]
+a hospital. [PEIRS] The same plan says first responders and medical facilities would be
+overwhelmed. [PEIRS]
 
-The injured are not the only people who arrive. The province's Cascadia assessment
-describes hospitals further hindered by "thousands of uninjured, distraught people …
-looking for loved ones and seeking shelter". [DCRRA-2025]
+Hospitals are hindered as well by "thousands of uninjured, distraught people … looking
+for loved ones and seeking shelter". [DCRRA-2025]
 
 ## A hospital that stays standing is not the same as a hospital that stays working
 
@@ -31,8 +30,8 @@ the things fixed to it do not: the ceilings, the ductwork, the pipes overhead, t
 fittings that hold equipment in place. Damage to any of those, which engineers call
 non-structural damage, closes a department in a building that did not fall down.
 
-A case study in the province's Cascadia assessment sorted all 127 buildings owned by
-Vancouver Coastal Health by the era they were built in. [DCRRA-APPC]
+A case study for the province sorted all 127 buildings owned by Vancouver Coastal Health
+by the era they were built in. [DCRRA-APPC]
 
 | Construction era | Category | Buildings |
 | --- | --- | --- |
@@ -49,11 +48,13 @@ Vancouver Coastal Health by the era they were built in. [DCRRA-APPC]
 > experience current design ground motion intensities, the majority of buildings would
 > experience damage that would compromise hospital functionality." [DCRRA-APPC]
 
-That 65 per cent covers one health authority, not the region. It is a share of buildings expected to be completely damaged at a single design ground
-motion, not a result for a particular earthquake. It uses the year a building went up as
-a stand-in for how it would perform, and its authors say reliable results need a detailed
-engineering assessment of each building. [DCRRA-APPC] It describes a portfolio, and it
-does not say that any named hospital would collapse.
+That 65 per cent is one health authority's buildings, not the region's. It counts
+buildings expected to be completely damaged at a single design ground motion, which is a
+statement about a portfolio and not a forecast for any particular earthquake. The method
+takes the year a building went up as a stand-in for how it would perform, and its authors
+say reliable results need a detailed engineering assessment of each building.
+[DCRRA-APPC] It says nothing about whether any particular hospital would
+collapse.
 
 ## A hospital on its generator is running on stored fuel and stored water
 
@@ -65,15 +66,13 @@ same way.
 The Vancouver Building By-law sets emergency power run times for getting people out of a
 building safely: not less than two hours for elevators in tall buildings, for equipment
 supplying water to fight a fire and for smoke-control fans, and between thirty minutes
-and two hours for lighting. [VBBL-2025] Those hours are for an evacuation, not for
-keeping a hospital running. For hospitals the by-law points elsewhere, to CSA Z32, the
-standard for essential electrical systems in health care facilities, which CSA sells
-rather than publishes. [VBBL-2025]
+and two hours for lighting. [VBBL-2025] For hospitals the by-law points elsewhere, to CSA
+Z32, the standard for essential electrical systems in health care facilities, which CSA
+sells rather than publishes. [VBBL-2025]
 
-Two hospitals have a number, and it is contractual. The project agreements for the new
-Surrey hospital and the new St. Paul's each require 72 hours of self-sufficiency for
-fuel, water and sanitary holding, which is wastewater kept on site, in identical terms.
-[NSH-SPEC] [NSP-SPEC] Both are buildings that are not yet in service.
+The project agreements for the new Surrey hospital and the new St. Paul's each require,
+in identical terms, 72 hours of self-sufficiency for fuel, water and sanitary holding,
+which is wastewater kept on site. [NSH-SPEC] [NSP-SPEC] Neither hospital has opened.
 
 > **Not published.** Nothing published for the hospitals open today says how long a
 > generator can run, how much fuel is held on site, or how much water is stored.
@@ -93,11 +92,11 @@ bridges they would cross are out, and retrofitting those bridges inside the mode
 that to under 27,000. [KAUR-2026] The bridges themselves are on
 [the roads](/after/transportation/).
 
-The authors are the first to say what the model leaves out. Excluding non-structural
-damage, utility failures and staff who cannot get to work means it is "likely
-overestimating post-earthquake hospital functionality and underestimating accessibility
-loss", in their own words. [KAUR-2026] It also assumes the major river crossings stay
-open and that everyone drives on free-flowing roads. [KAUR-2026]
+The model excludes non-structural damage, utility failures and staff who cannot get to
+work, and its authors say this leaves it "likely overestimating post-earthquake hospital
+functionality and underestimating accessibility loss". [KAUR-2026] It also assumes the
+major river crossings stay open and that everyone drives on free-flowing roads.
+[KAUR-2026]
 
 ## Nobody has set the expected casualties against the region's beds
 
@@ -121,10 +120,9 @@ inventory of the region. [MITRA-2020]
 > beside the region's care capacity, and no official inventory of intensive care or
 > operating room beds is published for British Columbia. The official figures that exist
 > are counts attached to individual building projects rather than a list of what the
-> region has. The comparison has been made in peer-reviewed engineering work [KAUR-2026]
-> and in no published government or health authority document.
+> region has. Peer-reviewed engineering work has made the comparison. [KAUR-2026]
 
-## The new hospitals are built for this, and the ones open now are older
+## The new hospitals are built to keep working, and the ones open now are older
 
 > "St. Paul's Hospital in downtown Vancouver is an older building with masonry elements
 > and may be significantly impacted by a large seismic event. Other hospitals in this
@@ -133,26 +131,24 @@ inventory of the region. [MITRA-2020]
 
 That describes the St. Paul's on Burrard Street. Its replacement on Station Street is
 built to the Vancouver Building By-law's post-disaster requirement and is due to open
-around 2027. [NSP-SPEC] The province is saying the other three hospitals would get more
-patients, not how many they could take.
+around 2027. [NSP-SPEC] How many patients the other three could take is not in the plan.
 
 Three major projects are specified to post-disaster importance category, the code's term
 for a building expected to keep working after an earthquake rather than only to stay
 standing: the new Surrey hospital and BC Cancer Centre [NSH-SPEC], the new St. Paul's
 [NSP-SPEC] and phase two of Royal Columbian Hospital. [RCH-SPEC] At Royal Columbian the
 acute care tower is post-disaster and the support building beside it is specified as
-normal importance category. [RCH-SPEC] The standard is applied where care is delivered
-rather than across a whole site: a hospital is a group of buildings, and they are not all
-rated the same.
+normal importance category. [RCH-SPEC] The standard is applied where care is delivered. A
+hospital is a group of buildings, and they are not all rated the same.
 
 The new St. Paul's also carries the only published number for how long a Lower Mainland
 hospital would be out of service, a median repair time of 30 days or less at the
 1-in-2,475-year earthquake, which is the shaking the current building code designs
 against. [NSP-SPEC] It is a target in a contract for a building that has not opened.
 
-Provincial announcements say that Richmond Hospital [BCGOV-RICH-2016] and Lions Gate
-Hospital [BCGOV-LGH-2018] predate current seismic standards. Richmond's redevelopment is
-funded and under way in phases. [BCGOV-RICH-2024]
+Richmond Hospital [BCGOV-RICH-2016] and Lions Gate Hospital [BCGOV-LGH-2018] predate
+current seismic standards. Richmond's redevelopment is funded and under way in phases.
+[BCGOV-RICH-2024]
 
 The seismic ratings for the region's hospital buildings do exist, held in a British
 Columbia Health Seismic Database maintained by the engineering firm Bush, Bohlman &
@@ -161,16 +157,15 @@ authorities. [KAUR-2026] It is not published.
 
 ## What you can do
 
-The province's Cascadia assessment says hospitals are hindered by thousands of uninjured
-people arriving to look for family and to shelter. [DCRRA-2025] A household that has
-already settled where it meets is not among them.
+Hospitals are hindered by thousands of uninjured people arriving to look for family and
+to shelter. [DCRRA-2025] A household that has already settled where it meets is not among
+them.
 
 **Agree a meeting place now, while nobody needs it.** A household that can find each
-other is a household that does not go to an emergency department to look.
+other has no reason to check the emergency departments.
 
-**Make the check-in person someone outside the region.** The province's plan says that
-where phone service is available at all, networks "may be congested or overloaded".
-[PEIRS]
+**Make the check-in person someone outside the region.** Where phone service is available
+at all, networks "may be congested or overloaded". [PEIRS]
 
 **Sort out the medicines and equipment that cannot lapse.** A pharmacist or a clinician
 can tell you what a longer supply looks like for you, and what to do about a device that

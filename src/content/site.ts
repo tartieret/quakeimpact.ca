@@ -172,7 +172,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "communications",
     name: "Communications",
-    hook: "Nothing requires a cell tower to hold any backup power at all.",
+    hook: "Nothing requires a cell site to hold any backup power at all.",
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["electricity"],
@@ -328,7 +328,7 @@ export const SYSTEMS: SystemEntry[] = [
     dependsOn: ["water", "sanitation", "electricity"],
     impacts: bothScenarios(
       ["high", "high"],
-      "The City of Vancouver states that areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.",
+      "In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.",
       "COV-RISK-2024",
     ),
   },

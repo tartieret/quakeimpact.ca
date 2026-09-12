@@ -45,21 +45,20 @@ export const gas: PageModule = {
       body: (
         <Prose>
           <p>
-            FortisBC sets out what restoring gas after an earthquake involves:
-            assess the system in the affected area, repair the damage,
-            reactivate the system, then visit each home to relight all affected
-            appliances. <Cite id="FBC-EQ" />
+            Restoring gas after an earthquake means assessing the system in the
+            affected area, repairing the damage, reactivating the system, then
+            visiting each home to relight all affected appliances.{" "}
+            <Cite id="FBC-EQ" />
           </p>
           <p>
-            The last step is the one that makes gas different. Water and
-            electricity come back when the network is repaired. Gas comes back
-            when a qualified person has been inside the building and relit every
-            gas appliance in it, one building at a time.
+            Water and electricity come back when the network is repaired. Gas
+            comes back when a qualified person has been inside the building and
+            relit every gas appliance in it, one building at a time.
           </p>
           <p>
-            There is a step before that one. If the pressure in the pipes falls
-            away before the meters can be shut, air is drawn into the system and
-            has to be taken out again before anybody lights anything.
+            If the pressure in the pipes falls away before the meters can be
+            shut, air is drawn into the system and has to be taken out again
+            before anybody lights anything.
           </p>
           <Quote
             speaker="BC Utilities Commission, Decision and Order C-6-25, setting out what FortisBC Energy Inc. told it about an uncontrolled shutdown"
@@ -91,18 +90,13 @@ export const gas: PageModule = {
       body: (
         <Prose>
           <p>
-            FortisBC told the regulator in March 2026 that it serves 583,370
-            residential gas accounts and 61,348 commercial ones in its Lower
-            Mainland service region. <Cite id="FEI-LTGRP-26" /> An account is a
-            meter rather than a household: a house is usually one account, and
-            an apartment building on a central gas boiler is one account serving
-            everybody in it.
+            In March 2026 FortisBC served 583,370 residential gas accounts and
+            61,348 commercial ones in its Lower Mainland service region.{" "}
+            <Cite id="FEI-LTGRP-26" /> An account is a meter: a house is
+            usually one account, and an apartment building on a central gas
+            boiler is one account serving everybody in it.
           </p>
-          <p>
-            Against that, the rate. FortisBC’s 2024 Gas System Resiliency Plan,
-            filed with the BC Utilities Commission, states what the company can
-            do in a day:
-          </p>
+          <p>Against that, the rate:</p>
           <Quote
             speaker="FortisBC Energy Inc."
             source="2024 Gas System Resiliency Plan, §3.4.1"
@@ -124,18 +118,19 @@ export const gas: PageModule = {
             </p>
           </Quote>
           <p>
-            8,716 a day is a ceiling rather than a capacity: it counts FortisBC’s whole workforce, mutual
-            aid crews sent by other utilities and every available private gas
-            contractor in the Lower Mainland. Without those outside crews,
-            FortisBC’s own figures are 2,025 a day and 723 a day.{" "}
+            8,716 is the highest of the rates the plan publishes. It counts
+            FortisBC’s whole workforce, mutual aid crews sent by other utilities
+            and every available private gas contractor in the Lower Mainland.
+            Without those outside crews, FortisBC’s own figures are 2,025 a day
+            and 723 a day.{" "}
             <Cite id="FEI-RESILIENCY-24" /> The plan also assumes a quarter of
             customers relight their own appliances.{" "}
             <Cite id="FEI-RESILIENCY-24" />
           </p>
           <p>
-            Whether outside crews arrive is a property of the event rather than
-            of the gas system, and those crews reach buildings the way everybody
-            else does, over the same{" "}
+            Whether outside crews arrive depends on the earthquake, not on the
+            gas system. Those crews reach buildings the way everybody else does,
+            over the same{" "}
             <Link
               href="/after/transportation/"
               className="text-accent underline underline-offset-2"
@@ -163,10 +158,10 @@ export const gas: PageModule = {
         <Prose>
           <p>
             In October 2025 the BC Utilities Commission approved an LNG storage
-            expansion at Tilbury in Delta. Its reasoning turns on a different
-            hazard: a prolonged loss of supply on the T-South pipeline in
-            winter. The panel wrote that such an outage, with no earthquake
-            damage anywhere in it, “would put hundreds of thousands of customers
+            expansion at Tilbury in Delta, reasoning from a different hazard: a
+            prolonged loss of supply on the T-South pipeline in winter. The
+            panel wrote that such an outage, with no earthquake damage anywhere
+            in it, “would put hundreds of thousands of customers
             at risk of losing service”, and that FEI’s evidence showed “a loss
             of service at this scale would take several weeks to restore
             service”.{" "}
@@ -176,18 +171,15 @@ export const gas: PageModule = {
             durations of 57 to 70 days. <Cite id="FEI-RESILIENCY-24" />
           </p>
           <p>
-            Those figures belong to that scenario and to no other. There are no
-            broken mains in it, no air in the pipes, no buildings a technician
-            cannot safely enter and nobody else competing for the same
-            contractors, and the relight rate underneath them is the 8,716 one.
-            Every one of those conditions gets worse in an earthquake and none
-            gets better, so the figures are a floor rather than an estimate of
-            anything.
+            There are no broken mains in that scenario, no air in the pipes, no
+            buildings a technician cannot safely enter and nobody else competing
+            for the same contractors, and the relight rate underneath it is the
+            8,716 one. Every one of those conditions gets worse in an earthquake
+            and none gets better, so those durations are a floor.
           </p>
           <p>
-            The relight timeline was argued over before it was accepted. Two
-            intervenors told the commission FortisBC was being too cautious: one
-            submitted “that FEI’s restoration and relight plan is overly
+            Two intervenors told the commission FortisBC was being too cautious:
+            one submitted “that FEI’s restoration and relight plan is overly
             conservative”, and another argued that relighting business and
             industrial customers earlier “could dramatically reduce the GDP
             losses incurred”. The panel found FEI’s assumptions “reasonable and
@@ -236,12 +228,12 @@ export const gas: PageModule = {
       body: (
         <Prose>
           <p>
-            The 2024 plan’s most directly local piece of work is about isolating
-            the Lower Mainland’s distribution system after a seismic event that
-            damages assets across the region. The scope is additional valves and
-            upgrades to existing ones, all of them able to “autonomously shut
-            following a seismic event”, and the plan says of the work that
-            “Development for this initiative is in the preliminary stages”.{" "}
+            The 2024 plan’s Lower Mainland initiative is to isolate the
+            region’s distribution system after a seismic event that damages
+            assets across it. The scope is additional valves and upgrades to
+            existing ones, all of them able to “autonomously shut following a
+            seismic event”, and the plan says that “Development for this
+            initiative is in the preliminary stages”.{" "}
             <Cite id="FEI-RESILIENCY-24" /> The public version carries no
             budget, no commitment and no date for it.
           </p>
@@ -254,7 +246,7 @@ export const gas: PageModule = {
             <Cite id="FEI-RESILIENCY-24" /> The one it ranks second overall is
             driven by earthquake lateral spreading, which is saturated ground
             losing its strength and moving sideways, and it carries a mean total
-            outage of 61 days; which asset that is, and where it stands, were
+            outage of 61 days. Which asset that is, and where it stands, were
             filed to the commission in confidence and are not public.{" "}
             <Cite id="FEI-RESILIENCY-24" /> The plan’s own Lower Mainland
             section describes the problem in words and gives no figures.
@@ -308,8 +300,8 @@ export const gas: PageModule = {
         gas, electric and water shut-offs are and how to turn them off.{" "}
         <Cite id="COV-EXPLORER-25" /> FortisBC tells its customers not to turn
         the gas off themselves. <Cite id="FBC-EQ" /> Both are current advice
-        from official bodies, and both are worth reading before an earthquake
-        rather than during one.
+        from official bodies. Find the valve now, and leave it alone unless an
+        official tells you otherwise.
       </>
     ),
   },

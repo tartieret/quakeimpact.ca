@@ -24,12 +24,11 @@ and may take a few weeks to restore fully. The Canada Line rail service to the a
 likely to be disrupted as well. [AIR-2013] Those bridges are the same story as every
 other crossing in the region, which is [transportation](/after/transportation/).
 
-The runways are the second problem rather than the first. Sea Island is at moderate risk
-of liquefaction, saturated soil losing its strength and behaving like a liquid while the
-ground shakes, and the study names that as the likely source of damage to the runways.
-Areas of tarmac are expected to be moderately damaged, with minor settlement or heaving
-of the surface, and some sections of runway may be out of service for a few days.
-[AIR-2013]
+The runways are the second problem. Sea Island is at moderate risk of liquefaction,
+saturated soil losing its strength and behaving like a liquid while the ground shakes,
+and that is the likely source of damage to the runways. Areas of tarmac are expected to
+be moderately damaged, with minor settlement or heaving of the surface, and some sections
+of runway may be out of service for a few days. [AIR-2013]
 
 The buildings come third. Terminals, towers and hangars are expected to sustain "slight
 to moderate damage", and some masonry structures may take a few months to restore.
@@ -38,24 +37,21 @@ Airport infrastructure loss across the region is put at more than $300 million.
 
 ## The harbour ports come off a grade better than the ports on the delta
 
-The same study grades the ports, and the two halves of the region come out differently.
-
-In Vancouver Harbour it expects slight damage: minor ground settlement, minor cracks in
+Vancouver Harbour comes out at slight damage: minor ground settlement, minor cracks in
 the piles, cracks on the wharf surface. Unanchored cranes may derail or go out of
 alignment and need minor repair before working again; anchored equipment is expected to
 stay functional. [AIR-2013]
 
-At the ports near Richmond, Delta and Surrey it expects moderate damage, from
-liquefaction: considerable settlement and cracking of piles, notable derailment of
-cranes, and wall cracking in port buildings. It names Annacis Island and North Delta as
-where the liquefaction damage is particularly notable. [AIR-2013]
+The ports near Richmond, Delta and Surrey come out at moderate damage, from liquefaction:
+considerable settlement and cracking of piles, notable derailment of cranes, and wall
+cracking in port buildings. Annacis Island and North Delta are where the liquefaction
+damage is particularly notable. [AIR-2013]
 
-That is one damage grade between them, and it is a statement about the ground rather than
-about the terminals. Service in some Vancouver-area ports may be disrupted for one to two
-weeks. [AIR-2013] The province puts what moves through the Port of Vancouver at
-approximately $647 million a day in cargo. [PEIRS] A container crane is an electric
-machine, so a terminal that has realigned its cranes is still waiting on
-[electricity](/after/electricity/).
+One damage grade separates them, and what it grades is the ground, not the terminals.
+Service in some Vancouver-area ports may be disrupted for one to two weeks. [AIR-2013]
+Approximately $647 million a day in cargo moves through the Port of Vancouver. [PEIRS] A
+container crane is an electric machine, so a terminal that has realigned its cranes is
+still waiting on [electricity](/after/electricity/).
 
 The harbour's better grade belongs to a regional model, and it does not clear every
 facility on that shoreline. A geotechnical memorandum filed with the port authority for
@@ -68,23 +64,24 @@ what stands there now:
 > designed to withstand kinematic loads and soil flow loads due to liquefaction of
 > surrounding soil." [VFPA-SEASPAN-19]
 
-That is an engineer reporting what the owner understands rather than an inspection
-finding, and it describes one industrial boat basin rather than the harbour.
+That is an engineer reporting what the owner understands, not an inspection finding, and
+it covers one industrial boat basin, not the harbour.
 
 ## A port can be repaired and still not get its traffic back
 
-Kobe is the illustration, and it forecasts nothing here. A retrospective of the 1995
-earthquake records that the port, "Japan's leading container shipping port, was heavily
-damaged and repairs took almost a year to complete". It also records that while the
-city's economy had largely recovered by 1999, "one notable exception is the Port of Kobe
-which permanently lost container shipping business to other Asian ports". [RMS-KOBE]
+A retrospective of the 1995 earthquake in Kobe, Japan, records that the port, "Japan's
+leading container shipping port, was heavily damaged and repairs took almost a year to
+complete". It also records that while the city's economy had largely recovered by 1999,
+"one notable exception is the Port of Kobe which permanently lost container shipping
+business to other Asian ports". [RMS-KOBE] Kobe is an illustration, and it forecasts
+nothing here.
 
 Shipping lines route around a closed port, and some of them do not come back.
 
 ## The ferry terminal on the delta is the one with no published seismic assessment
 
 BC Ferries' renewal program at Horseshoe Bay includes improving seismic safety across all
-three berths. [BCF-HSB] Horseshoe Bay sits on rock at the mouth of Howe Sound. Tsawwassen
+three berths. [BCF-HSB] Horseshoe Bay sits on rock at the mouth of Howe Sound; Tsawwassen
 sits on the Fraser delta.
 
 > **Not located.** No seismic assessment of the Tsawwassen ferry terminal has been
@@ -98,8 +95,8 @@ is not a terminal. In a regulatory filing, BC Ferries describes its Fleet Mainte
 Unit in Richmond, where the fleet is serviced, as having buildings "with a wide range of
 structural, seismic and hazardous-material deficiencies" and as "a facility site that
 does not meet current seismic codes and is susceptible to inundation during future sea
-level rise". [BCF-FMU-23] It is a maintenance yard rather than a berth. It is also on the
-delta, and it is where the vessels get fixed.
+level rise". [BCF-FMU-23] That is a yard, not a berth. It is on the delta, and it is
+where the vessels get fixed.
 
 ## Nobody has published an assessment of the terminals that are working today
 
@@ -112,15 +109,14 @@ pile-supported wharves or runways that are in use.
 The one local marine facility with a published federal seismic review is the one that has
 not been built. Natural Resources Canada reviewed the seismic design of Roberts Bank
 Terminal 2 and published its review. [RBT2-NRCAN-19] The review panel for the same
-project put the mechanism plainly: seismic activity could affect it through "shaking
-damage of buildings, cranes, wharves and the causeway overpass", including "loss of main
-road access to the terminal due to failure of the existing causeway". [RBT2-PANEL-20] The
-way in is the weak point there too.
+project listed the mechanism: seismic activity could affect it through "shaking damage of
+buildings, cranes, wharves and the causeway overpass", including "loss of main road
+access to the terminal due to failure of the existing causeway". [RBT2-PANEL-20] The way
+in is the weak point there too.
 
-One more piece of this work is known to exist and is not public: a consulting engineer's
-curriculum vitae, filed with that same panel, records seismic and liquefaction assessment
-work on the Deltaport Berth 3 expansion. [RBT2-CVS-19] The work was done, and the
-findings were not published.
+A consulting engineer's curriculum vitae, filed with that same panel, records seismic and
+liquefaction assessment work on the Deltaport Berth 3 expansion. [RBT2-CVS-19] The work
+was done. The findings were not published.
 
 > **Not an engineering assessment.** Every duration on this page for the port and the
 > airport comes from that one model run, against the infrastructure as it stood thirteen
@@ -128,17 +124,17 @@ findings were not published.
 
 ## Nothing has been published about a shallow crustal earthquake here
 
-The band for the megathrust rests on that one study. The column beside it is hatched, and
-not because the nearer earthquake would be gentler. The study modelled the magnitude 9
-megathrust and nothing else. [AIR-2013] What the port, the airport and the ferry
+The band for the megathrust rests on that one study, and the study modelled the magnitude
+9 megathrust and nothing else. [AIR-2013] What the port, the airport and the ferry
 terminals would face in a shallow crustal earthquake close to the city has not been
-published by anyone.
+published by anyone. The hatched column beside it says that, and not that the nearer
+earthquake would be gentler.
 
-The province does name two of them in its crustal planning scenario, but as exposure
-rather than damage: "Liquefaction of roadways in Richmond and Delta may make driving
-difficult, which may compound impacts to Vancouver International Airport and Tsawwassen
-Ferry Terminal." [PEIRS] That says the roads to both run over ground that can liquefy. It
-says nothing about either facility, and nothing about how long either would be out.
+The province's crustal planning scenario does name two of them, as exposure and not as
+damage: "Liquefaction of roadways in Richmond and Delta may make driving difficult, which
+may compound impacts to Vancouver International Airport and Tsawwassen Ferry Terminal."
+[PEIRS] That says the roads to both run over ground that can liquefy. It says nothing
+about either facility, and nothing about how long either would be out.
 
 ## What you can do
 
@@ -155,8 +151,8 @@ stretch when the shops are busy. What reaches a shop and what reaches a fuel pum
 come through these places, and [food](/after/food/) and [fuel](/after/fuel/) set out what
 the province expects of each.
 
-Nothing here is a repair a household can make. What is in reach is not assuming, in the
-days afterwards, that the way in and the way out are working.
+Nothing here is a repair a household can make. What is in reach is planning the days
+afterwards without the way in or the way out.
 
 ## Sources on this page
 

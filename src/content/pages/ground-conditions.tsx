@@ -57,7 +57,8 @@ export const groundConditions: PageModule = {
 
   sections: [
     {
-      title: "Same earthquake, different ground, different outcome",
+      title:
+        "The same earthquake does different things on rock and on the delta",
       body: (
         <Prose>
           <p>
@@ -67,10 +68,6 @@ export const groundConditions: PageModule = {
             Fraser River laid down. Two addresses a few blocks apart can sit on
             either one, and what the shaking does to a building depends on which
             of them it is standing on.
-          </p>
-          <p>
-            Two separate things are going on, and they land on different places.
-            One belongs to the delta. The other is under everybody.
           </p>
         </Prose>
       ),
@@ -84,9 +81,8 @@ export const groundConditions: PageModule = {
             The soil there is loose sand with water sitting in the gaps between
             the grains. Shake it hard enough and the sand stops carrying the
             weight above it. For a while, the water does. The ground behaves
-            like a thick liquid instead of like solid ground, and engineers call
-            that liquefaction. Buried pipes float up, roads sag, foundations
-            tilt.
+            like a thick liquid, and engineers call that liquefaction. Buried
+            pipes float up, roads sag, foundations tilt.
           </p>
           <p>
             Three things have to line up for it, and on the delta all three do:
@@ -119,11 +115,11 @@ export const groundConditions: PageModule = {
             caption={
               <>
                 Two grounds on one depth scale, kept apart because they are two
-                places rather than one profile. It is not a cross-section: no
-                source gives the shape of the rock surface or the distance
-                between the two, so the drawing does not either. Nothing is
-                published for the thickness of the rock under the uplands, so
-                nothing below that surface is measured. <Cite id="CJES-2024" />
+                places and not one profile. No source gives the shape of the
+                rock surface or the distance between the two, so the drawing
+                shows neither and is not a cross-section. Nothing is published
+                for the thickness of the rock under the uplands, so nothing
+                below that surface is measured. <Cite id="CJES-2024" />
               </>
             }
           >
@@ -140,28 +136,25 @@ export const groundConditions: PageModule = {
         <Prose>
           <p>
             Researchers worked the figure out from 787 soil tests, 616 of them
-            in Richmond and Delta, and stated it plainly: “In Richmond and Delta
-            regions, it is expected that soil liquefaction could occur every 100
-            to 250 years.” Elsewhere in the area they studied the interval runs
-            from 100 to more than 500 years. The reason for the short one is the
-            three conditions above. <Cite id="JAVANBAKHT-24" />
+            in Richmond and Delta: “In Richmond and Delta regions, it is
+            expected that soil liquefaction could occur every 100 to 250 years.”
+            Elsewhere in the area they studied the interval runs from 100 to
+            more than 500 years. The reason for the short one is the three
+            conditions above. <Cite id="JAVANBAKHT-24" />
           </p>
           <p>
-            That number is not how often an earthquake happens, and it is not
-            how often damage shows up at the surface: the ground can start to
-            liquefy underneath without anything visible going wrong on top. What
-            it measures is the point where the shaking just matches the strength
-            holding the soil together. <Cite id="JAVANBAKHT-24" />
+            The number measures the point where the shaking just matches the
+            strength holding the soil together. It is not how often an
+            earthquake happens, and it is not how often damage shows up at the
+            surface: the ground can start to liquefy underneath without anything
+            visible going wrong on top. <Cite id="JAVANBAKHT-24" />
           </p>
           <p>
-            Against the calendar it is a short gap. The last Cascadia earthquake
-            was in 1700.
+            An offshore earthquake above magnitude 8.9 carries a 31 to 57 per
+            cent chance of setting off liquefaction in the area studied.{" "}
+            <Cite id="JAVANBAKHT-23" />
           </p>
-          <p>
-            For the offshore earthquake in particular, one above magnitude 8.9
-            is put at a 31 to 57 per cent chance of setting off liquefaction in
-            the area studied. <Cite id="JAVANBAKHT-23" />
-          </p>
+          <p>The last Cascadia earthquake was in 1700.</p>
         </Prose>
       ),
     },
@@ -172,20 +165,18 @@ export const groundConditions: PageModule = {
         <Prose>
           <p>
             Under Metro Vancouver is the Georgia Sedimentary Basin, a deep bowl
-            of soft sediment. Sediment like that does not pass the shaking
-            through unchanged. Basins amplify it “particularly at long periods,
-            impacting tall buildings and other long-period structures”.{" "}
-            <Cite id="DCRRA-APPC" />
+            of soft sediment. Basins amplify shaking “particularly at long
+            periods, impacting tall buildings and other long-period
+            structures”. <Cite id="DCRRA-APPC" />
           </p>
           <p>
             Long period means slow. A tall building sways slowly, taking a
             couple of seconds to lean one way and back, and that is the speed of
-            shaking it answers to. The province put numbers on what the bowl
-            does at that speed here. Shaking is 1.7 times stronger on average
-            where the bowl is 1 to 2 km deep, and 2.63 times stronger where it
-            is 3 to 4 km deep. At a test site in the City of Vancouver, allowing
-            for the bowl raises the expected shaking at that speed by 24 per
-            cent. <Cite id="DCRRA-APPC" />
+            shaking it answers to. At that speed, shaking is 1.7 times stronger
+            on average where the bowl is 1 to 2 km deep, and 2.63 times stronger
+            where it is 3 to 4 km deep. At a test site in the City of Vancouver,
+            allowing for the bowl raises the expected shaking at that speed by
+            24 per cent. <Cite id="DCRRA-APPC" />
           </p>
           <p>
             Those factors belong to that speed and those depths. An
@@ -206,9 +197,9 @@ export const groundConditions: PageModule = {
             <GroundBasinAmplification />
           </Figure>
           <p>
-            This is why the two scenarios threaten different buildings. The
-            offshore earthquake is the one that produces the long, slow waves a
-            deep bowl makes worse.
+            The offshore earthquake is the one that produces the long, slow
+            waves a deep bowl makes worse, so the two scenarios threaten
+            different buildings.
           </p>
         </Prose>
       ),
@@ -219,19 +210,19 @@ export const groundConditions: PageModule = {
       body: (
         <Prose>
           <p>
-            The same provincial assessment says so in its own words. “The United
-            States Geological Survey included basin effects in the 2018 version
-            of the US National Seismic Hazard Model and, as a result, basin
-            effects are now included in US building codes. While progress has
-            been made in the US, Canada’s 6th Generation Seismic Hazard Model
-            and the National Building Code of Canada (2020) do not explicitly
-            account for these effects.” <Cite id="DCRRA-APPC" />
+            The province says so in the same assessment. “The United States
+            Geological Survey included basin effects in the 2018 version of the
+            US National Seismic Hazard Model and, as a result, basin effects are
+            now included in US building codes. While progress has been made in
+            the US, Canada’s 6th Generation Seismic Hazard Model and the
+            National Building Code of Canada (2020) do not explicitly account
+            for these effects.” <Cite id="DCRRA-APPC" />
           </p>
           <p>
             That is a provincial government document saying the national hazard
-            model and the national building code leave out something the
-            province has just measured at up to 2.63 under Metro Vancouver. It
-            points at detailed local mapping as the work that fills the gap.{" "}
+            model and the national building code leave out something it has just
+            measured at up to 2.63 under Metro Vancouver. It points at detailed
+            local mapping as the work that fills the gap.{" "}
             <Cite id="DCRRA-APPC" />
           </p>
         </Prose>
@@ -240,7 +231,7 @@ export const groundConditions: PageModule = {
 
     {
       title:
-        "Free maps show this ground street by street, for the western half of the region",
+        "The western half of the region is mapped street by street, and the maps are free",
       body: (
         <Prose>
           <p>
@@ -248,8 +239,8 @@ export const groundConditions: PageModule = {
             published 29 maps of the western communities: how much the ground
             grows the shaking, how deep the bowl is, how likely the soil is to
             liquefy, how likely slopes are to fail. <Cite id="MVSMMP" /> They
-            are finer than anything regional, and the province says as much
-            about its own work. Its hazard exposure analysis “does not
+            are finer than anything regional, and the province concedes as much
+            about its own work: its hazard exposure analysis “does not
             incorporate existing seismic microzonation work that has been
             completed at a detailed level, such as for the city of Metro
             Vancouver”. <Cite id="DCRRA-APPC" />
@@ -306,26 +297,25 @@ export const groundConditions: PageModule = {
             alt="The 2016 analysis models 600 mm of vertical movement at No. 1 Road, 1,000 mm at Bath Slough and 500 mm at No. 4 Road against a provincial guideline limit of 500 mm, so two of the three tested sections exceed it. These are three tested sections at the 1-in-2,475-year earthquake and the finding does not carry to the rest of the dikes."
             caption={
               <>
-                Four limits travel with these three numbers. They are three of
-                the eleven sections analysed, and the report says its results
-                apply only where it tested. They belong to the 1-in-2,475-year
-                earthquake, which does not compare to figures quoted for dams or
-                for buildings. The later phases’ finding that a cross-section
-                will not meet the requirements describes proposed upgraded
-                designs without ground improvement. And that ground improvement
-                is being designed and costed. <Cite id="RICH-THURBER-16" />
+                These are three of the eleven sections analysed, and the report
+                says its results apply only where it tested. They belong to the
+                1-in-2,475-year earthquake, which does not compare to figures
+                quoted for dams or for buildings. The later phases’ finding that
+                a cross-section will not meet the requirements describes
+                proposed upgraded designs without ground improvement, and that
+                ground improvement is being designed and costed.{" "}
+                <Cite id="RICH-THURBER-16" />
               </>
             }
           >
             <GroundDikeSettlement />
           </Figure>
           <p>
-            The later phases are blunter still. Phases 3, 4 and 5 each conclude
-            that proposed dike cross-sections “will not meet the performance
-            requirements” of the provincial guidelines “without ground
-            improvement or alternative approaches”, and price that ground
-            improvement at $9,000 to $18,000 per lineal metre.{" "}
-            <Cite id="RICH-DMP3-19" /> <Cite id="RICH-DMP4-21" />{" "}
+            Phases 3, 4 and 5 each conclude that proposed dike cross-sections
+            “will not meet the performance requirements” of the provincial
+            guidelines “without ground improvement or alternative approaches”,
+            and price that ground improvement at $9,000 to $18,000 per lineal
+            metre. <Cite id="RICH-DMP3-19" /> <Cite id="RICH-DMP4-21" />{" "}
             <Cite id="RICH-DMP5-19" />
           </p>
           <p>
@@ -351,9 +341,7 @@ export const groundConditions: PageModule = {
         <Prose>
           <p>
             Richmond requires a geotechnical study before anyone builds on
-            ground that can liquefy. <Cite id="RICHMOND-PL1" /> None of this is
-            news to the people who regulate building there. It is already
-            written into how the delta is allowed to build.
+            ground that can liquefy. <Cite id="RICHMOND-PL1" />
           </p>
         </Prose>
       ),
@@ -381,21 +369,19 @@ export const groundConditions: PageModule = {
         <strong>
           On the delta, plan for the services and not only for the building.
         </strong>{" "}
-        What liquefaction reaches beyond a foundation is the buried pipes and
-        the roads. In the scenario for the closer earthquake, “liquefaction of
+        Liquefaction reaches past the foundation to the buried pipes and the
+        roads. In the scenario for the closer earthquake, “liquefaction of
         roadways in Richmond and Delta may make driving difficult”, around the
         airport and the Tsawwassen ferry terminal in particular.{" "}
-        <Cite id="PEIRS" /> Being cut off from normal services is what to plan
-        for there, not a damaged home alone.
+        <Cite id="PEIRS" />
       </>,
       <>
         <strong>
           If you live or work in a tall building on soft ground, the offshore
           earthquake is the one to think about.
         </strong>{" "}
-        It is the one that makes the slow waves a tall building answers to, and
-        the bowl under the region makes those waves stronger.{" "}
-        <Cite id="DCRRA-APPC" />
+        It makes the slow waves a tall building answers to, and the bowl under
+        the region makes those waves stronger. <Cite id="DCRRA-APPC" />
       </>,
     ],
   },

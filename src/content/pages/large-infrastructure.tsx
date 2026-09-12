@@ -76,13 +76,13 @@ export const largeInfrastructure: PageModule = {
             .
           </p>
           <p>
-            The runways are the second problem rather than the first. Sea Island
-            is at moderate risk of liquefaction, saturated soil losing its
-            strength and behaving like a liquid while the ground shakes, and the
-            study names that as the likely source of damage to the runways.
-            Areas of tarmac are expected to be moderately damaged, with minor
-            settlement or heaving of the surface, and some sections of runway
-            may be out of service for a few days. <Cite id="AIR-2013" />
+            The runways are the second problem. Sea Island is at moderate risk
+            of liquefaction, saturated soil losing its strength and behaving
+            like a liquid while the ground shakes, and that is the likely source
+            of damage to the runways. Areas of tarmac are expected to be
+            moderately damaged, with minor settlement or heaving of the surface,
+            and some sections of runway may be out of service for a few days.{" "}
+            <Cite id="AIR-2013" />
           </p>
           <p>
             The buildings come third. Terminals, towers and hangars are expected
@@ -100,29 +100,24 @@ export const largeInfrastructure: PageModule = {
       body: (
         <Prose>
           <p>
-            The same study grades the ports, and the two halves of the region
-            come out differently.
-          </p>
-          <p>
-            In Vancouver Harbour it expects slight damage: minor ground
+            Vancouver Harbour comes out at slight damage: minor ground
             settlement, minor cracks in the piles, cracks on the wharf surface.
             Unanchored cranes may derail or go out of alignment and need minor
             repair before working again; anchored equipment is expected to stay
             functional. <Cite id="AIR-2013" />
           </p>
           <p>
-            At the ports near Richmond, Delta and Surrey it expects moderate
+            The ports near Richmond, Delta and Surrey come out at moderate
             damage, from liquefaction: considerable settlement and cracking of
             piles, notable derailment of cranes, and wall cracking in port
-            buildings. It names Annacis Island and North Delta as where the
-            liquefaction damage is particularly notable. <Cite id="AIR-2013" />
+            buildings. Annacis Island and North Delta are where the liquefaction
+            damage is particularly notable. <Cite id="AIR-2013" />
           </p>
           <p>
-            That is one damage grade between them, and it is a statement about
-            the ground rather than about the terminals. Service in some
-            Vancouver-area ports may be disrupted for one to two weeks.{" "}
-            <Cite id="AIR-2013" /> The province puts what moves through the Port
-            of Vancouver at approximately $647 million a day in cargo.{" "}
+            One damage grade separates them, and what it grades is the ground,
+            not the terminals. Service in some Vancouver-area ports may be
+            disrupted for one to two weeks. <Cite id="AIR-2013" /> Approximately
+            $647 million a day in cargo moves through the Port of Vancouver.{" "}
             <Cite id="PEIRS" /> A container crane is an electric machine, so a
             terminal that has realigned its cranes is still waiting on{" "}
             <Link href="/after/electricity/" className={link}>
@@ -152,9 +147,9 @@ export const largeInfrastructure: PageModule = {
             </p>
           </Quote>
           <p>
-            That is an engineer reporting what the owner understands rather than
-            an inspection finding, and it describes one industrial boat basin
-            rather than the harbour.
+            That is an engineer reporting what the owner understands, not an
+            inspection finding, and it covers one industrial boat basin, not the
+            harbour.
           </p>
         </Prose>
       ),
@@ -165,13 +160,14 @@ export const largeInfrastructure: PageModule = {
       body: (
         <Prose>
           <p>
-            Kobe is the illustration, and it forecasts nothing here. A
-            retrospective of the 1995 earthquake records that the port,
-            “Japan’s leading container shipping port, was heavily damaged and
-            repairs took almost a year to complete”. It also records that while
-            the city’s economy had largely recovered by 1999, “one notable
-            exception is the Port of Kobe which permanently lost container
-            shipping business to other Asian ports”. <Cite id="RMS-KOBE" />
+            A retrospective of the 1995 earthquake in Kobe, Japan, records that
+            the port, “Japan’s leading container shipping port, was heavily
+            damaged and repairs took almost a year to complete”. It also records
+            that while the city’s economy had largely recovered by 1999, “one
+            notable exception is the Port of Kobe which permanently lost
+            container shipping business to other Asian ports”.{" "}
+            <Cite id="RMS-KOBE" /> Kobe is an illustration, and it forecasts
+            nothing here.
           </p>
           <p>
             Shipping lines route around a closed port, and some of them do not
@@ -189,7 +185,7 @@ export const largeInfrastructure: PageModule = {
           <p>
             BC Ferries’ renewal program at Horseshoe Bay includes improving
             seismic safety across all three berths. <Cite id="BCF-HSB" />{" "}
-            Horseshoe Bay sits on rock at the mouth of Howe Sound. Tsawwassen
+            Horseshoe Bay sits on rock at the mouth of Howe Sound; Tsawwassen
             sits on the Fraser delta.
           </p>
           <VerificationNote label="Not located">
@@ -208,9 +204,8 @@ export const largeInfrastructure: PageModule = {
             structural, seismic and hazardous-material deficiencies” and as “a
             facility site that does not meet current seismic codes and is
             susceptible to inundation during future sea level rise”.{" "}
-            <Cite id="BCF-FMU-23" /> It is a maintenance yard rather than a
-            berth. It is also on the delta, and it is where the vessels get
-            fixed.
+            <Cite id="BCF-FMU-23" /> That is a yard, not a berth. It is on the
+            delta, and it is where the vessels get fixed.
           </p>
         </Prose>
       ),
@@ -235,18 +230,17 @@ export const largeInfrastructure: PageModule = {
             review is the one that has not been built. Natural Resources Canada
             reviewed the seismic design of Roberts Bank Terminal 2 and published
             its review. <Cite id="RBT2-NRCAN-19" /> The review panel for the
-            same project put the mechanism plainly: seismic activity could
-            affect it through “shaking damage of buildings, cranes, wharves and
-            the causeway overpass”, including “loss of main road access to the
+            same project listed the mechanism: seismic activity could affect it
+            through “shaking damage of buildings, cranes, wharves and the
+            causeway overpass”, including “loss of main road access to the
             terminal due to failure of the existing causeway”.{" "}
             <Cite id="RBT2-PANEL-20" /> The way in is the weak point there too.
           </p>
           <p>
-            One more piece of this work is known to exist and is not public: a
-            consulting engineer’s curriculum vitae, filed with that same panel,
-            records seismic and liquefaction assessment work on the Deltaport
-            Berth 3 expansion. <Cite id="RBT2-CVS-19" /> The work was done, and
-            the findings were not published.
+            A consulting engineer’s curriculum vitae, filed with that same
+            panel, records seismic and liquefaction assessment work on the
+            Deltaport Berth 3 expansion. <Cite id="RBT2-CVS-19" /> The work was
+            done. The findings were not published.
           </p>
           <VerificationNote label="Not an engineering assessment">
             Every duration on this page for the port and the airport comes from
@@ -263,19 +257,19 @@ export const largeInfrastructure: PageModule = {
       body: (
         <Prose>
           <p>
-            The band for the megathrust rests on that one study. The column
-            beside it is hatched, and not because the nearer earthquake would be
-            gentler. The study modelled the magnitude 9 megathrust and nothing
-            else. <Cite id="AIR-2013" /> What the port, the airport and the
-            ferry terminals would face in a shallow crustal earthquake close to
-            the city has not been published by anyone.
+            The band for the megathrust rests on that one study, and the study
+            modelled the magnitude 9 megathrust and nothing else.{" "}
+            <Cite id="AIR-2013" /> What the port, the airport and the ferry
+            terminals would face in a shallow crustal earthquake close to the
+            city has not been published by anyone. The hatched column beside it
+            says that, and not that the nearer earthquake would be gentler.
           </p>
           <p>
-            The province does name two of them in its crustal planning scenario,
-            but as exposure rather than damage: “Liquefaction of roadways in
-            Richmond and Delta may make driving difficult, which may compound
-            impacts to Vancouver International Airport and Tsawwassen Ferry
-            Terminal.” <Cite id="PEIRS" /> That says the roads to both run over
+            The province’s crustal planning scenario does name two of them, as
+            exposure and not as damage: “Liquefaction of roadways in Richmond
+            and Delta may make driving difficult, which may compound impacts to
+            Vancouver International Airport and Tsawwassen Ferry Terminal.”{" "}
+            <Cite id="PEIRS" /> That says the roads to both run over
             ground that can liquefy. It says nothing about either facility, and
             nothing about how long either would be out.
           </p>
@@ -324,9 +318,8 @@ export const largeInfrastructure: PageModule = {
     ],
     closing: (
       <>
-        Nothing here is a repair a household can make. What is in reach is not
-        assuming, in the days afterwards, that the way in and the way out are
-        working.
+        Nothing here is a repair a household can make. What is in reach is
+        planning the days afterwards without the way in or the way out.
       </>
     ),
   },
