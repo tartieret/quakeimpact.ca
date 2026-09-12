@@ -27,7 +27,7 @@ export const prepare: PageModule = {
     nav: "Preparing",
     kicker: "Part 3",
     standfirst:
-      "What British Columbia’s earthquake guidance asks of a household, in the order worth doing it. The two things that cost nothing, a plan for finding each other and a conversation with the neighbours, are the two most households have skipped.",
+      "British Columbia’s earthquake guidance asks a household for two weeks of water and food, a written plan, a meeting place and a phone number outside the region. The two things on that list that cost nothing are the two most households have skipped.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -82,10 +82,9 @@ export const prepare: PageModule = {
             </p>
           </Quote>
           <p>
-            The last sentence is the reason the province gives. Preparing is not
-            only about looking after yourself. It is what frees the ambulance,
-            the crew and the shelter place for the person who has no other
-            option.
+            That last sentence is the reason the province gives for asking. A
+            household that can look after itself frees the ambulance, the crew
+            and the shelter place for the person who has no other option.
           </p>
           <p>
             PreparedBC’s Earthquake and Tsunami Preparedness Guide asks for
@@ -113,9 +112,9 @@ export const prepare: PageModule = {
             >
               system pages
             </Link>{" "}
-            here put several services in weeks to months. The rest of this page
-            works to the two-week figure, and a reader who has been through
-            those pages should be aiming past it rather than at three days.
+            here put several services in weeks to months. This page works to two
+            weeks. A reader who has been through those pages should be aiming
+            past it, not at three days.
           </p>
         </Prose>
       ),
@@ -178,22 +177,19 @@ export const prepare: PageModule = {
             <Cite id="PREPAREDBC-NEIGHBOURHOOD" />
           </p>
           <p>
-            This is the part that works when nothing else does, and it is the
-            part most households have skipped. In a 2021 poll of 800 British
-            Columbians, 28 per cent of respondents had a plan for how to contact
-            family or friends and 22 per cent had an agreed meeting place.{" "}
-            <Cite id="RESEARCHCO-PREP-21" />
+            In a 2021 poll of 800 British Columbians, 28 per cent of respondents
+            had a plan for how to contact family or friends and 22 per cent had
+            an agreed meeting place. <Cite id="RESEARCHCO-PREP-21" />
           </p>
           <p>
-            Two published statements explain why an agreement made in advance is
-            worth more than a phone. The province’s plan says that if service is
-            available, networks “may be congested or overloaded, making
-            communication extremely challenging”, and that “texts and
-            low-bandwidth data-based services may be the most reliable method of
-            communication”. <Cite id="PEIRS" /> The province’s 2025 risk
-            assessment says disruptions in communications continue for days to
-            weeks, with access prioritised for emergency personnel.{" "}
-            <Cite id="DCRRA-2025" />
+            The province’s plan says that if service is available, networks “may
+            be congested or overloaded, making communication extremely
+            challenging”, and that “texts and low-bandwidth data-based services
+            may be the most reliable method of communication”.{" "}
+            <Cite id="PEIRS" /> Its 2025 risk assessment says disruptions in
+            communications continue for days to weeks, with access prioritised
+            for emergency personnel. <Cite id="DCRRA-2025" /> An agreement made
+            now needs none of that to work.
           </p>
           <p>
             Plan how you would get home as well as who you would call. The City
@@ -221,10 +217,7 @@ export const prepare: PageModule = {
             Close to where the earthquake starts, the alert may arrive with the
             shaking rather than before it. <Cite id="NRCAN-EEW" />
           </p>
-          <p>
-            The seconds buy one action, and it is the same one the guide gives
-            for feeling the ground move:
-          </p>
+          <p>The seconds are for one action:</p>
           <Quote
             speaker="PreparedBC"
             source="Earthquake and Tsunami Preparedness Guide"
@@ -284,13 +277,12 @@ export const prepare: PageModule = {
             kilogram of body weight per day. <Cite id="PREPAREDBC-KIT" />
           </p>
           <p>
-            Water is bulky, and it is still the first thing to store, because
-            the province’s 2025 risk assessment says people are thirsty within
-            24 hours and that distributing bulk drinking water across the
-            affected region stays challenging for the first four to five days.{" "}
-            <Cite id="DCRRA-2025" /> Stored water covers exactly that gap.
-            Whatever you can hold is worth holding, refilled on a schedule you
-            will actually keep.
+            Water is bulky. Store it first anyway. The province’s 2025 risk
+            assessment says people are thirsty within 24 hours, and that
+            distributing bulk drinking water across the affected region stays
+            challenging for the first four to five days. <Cite id="DCRRA-2025" />{" "}
+            Stored water covers that gap. Whatever you can hold is worth
+            holding, refilled on a schedule you will actually keep.
           </p>
         </Prose>
       ),
@@ -335,8 +327,8 @@ export const prepare: PageModule = {
           <p>
             In the province’s own narrative of the shaking, unsecured objects
             “fall or fly through the air”, windows break and glass scatters.{" "}
-            <Cite id="PEIRS" /> Most of what the guidance asks for is about the
-            things in the room rather than the building around it.
+            <Cite id="PEIRS" /> Nearly all of what the guidance asks for here is
+            furniture and fixings, not structure.
           </p>
           <p>
             What the provincial guide asks for: tall free-standing furniture
@@ -389,16 +381,15 @@ export const prepare: PageModule = {
             <Cite id="SURREY-PREP" />
           </p>
           <p>
-            So the practical rule has three parts. Know where the valves are.
-            Leave them where they are unless an official tells you otherwise.
-            Never turn the gas back on yourself.
+            Know where the valves are. Leave them where they are unless an
+            official tells you otherwise. Never turn the gas back on yourself.
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "Plan around what the people in your home actually need",
+      title: "Plan around what the people in your home need",
       body: (
         <Prose>
           <p>
@@ -411,11 +402,9 @@ export const prepare: PageModule = {
             <Cite id="PREPAREDBC" />
           </p>
           <p>
-            The province’s guide for people with disabilities is the most
-            specific document in the set, and much of it is useful to anyone who
-            might need help. It asks for a trusted support network of at least
-            three people, and for a list of things settled with them before
-            anything happens: that they will check on you immediately, that they
+            The province’s guide for people with disabilities asks for a
+            trusted support network of at least three people, and for a list of
+            things settled with them before anything happens: that they will check on you immediately, that they
             hold keys and relevant medical information, that they know how to
             operate specialised medical or mobility equipment such as lifts,
             wheelchairs or scooters, and that they know where your supplies are.
@@ -424,7 +413,9 @@ export const prepare: PageModule = {
             <Cite id="PREPAREDBC-DISABILITY" /> A list of your medications with
             the details from your pharmacist, and extra medication or supplies
             where that is possible, belong in the same plan.{" "}
-            <Cite id="PREPAREDBC-DISABILITY" />
+            <Cite id="PREPAREDBC-DISABILITY" /> Most of that is worth doing for
+            anyone in the household who would need help getting out or getting
+            by.
           </p>
         </Prose>
       ),
@@ -435,9 +426,9 @@ export const prepare: PageModule = {
       body: (
         <Prose>
           <p>
-            The province says it plainly: “the most immediate help will come
-            from those around you”, and that building those relationships now
-            means a better response and a faster recovery.{" "}
+            The province’s own sentence is that “the most immediate help will
+            come from those around you”, and that building those relationships
+            now means a better response and a faster recovery.{" "}
             <Cite id="PREPAREDBC-PLAN" /> Its response plan says the same thing
             operationally, recording that communities “informally self-activate”
             and “will work together without receiving guidance from the
@@ -471,7 +462,7 @@ export const prepare: PageModule = {
       title: "Stay where you are if the building is safe",
       body: (
         <Prose>
-          <p>The guidance is to stay put rather than to travel:</p>
+          <p>The province’s instruction for a building that is still sound:</p>
           <Quote
             speaker="PreparedBC"
             source="Earthquake and Tsunami Preparedness Guide"
@@ -503,8 +494,7 @@ export const prepare: PageModule = {
             Vancouver Public Library. The City says services there may include
             group lodging, distribution of food, water and supplies, recovery
             information and help finding family. It publishes no capacity
-            figure, so the hub is a place to find information and other people
-            rather than a place with a bed reserved for you.{" "}
+            figure, so nobody should count on a bed being there.{" "}
             <Cite id="COV-HUBS" />
           </p>
         </Prose>
@@ -557,9 +547,8 @@ export const prepare: PageModule = {
             links to it. <Cite id="NSEM-KIT" />
           </p>
           <p>
-            A partial kit is worth far more than a planned one, and the City’s
-            own landing page says the useful thing: “Start with what you have
-            and add more as you can.” <Cite id="COV-PREPMAIN" />
+            The City’s landing page puts it in one line: “Start with what you
+            have and add more as you can.” <Cite id="COV-PREPMAIN" />
           </p>
         </Prose>
       ),
@@ -631,9 +620,8 @@ export const prepare: PageModule = {
     ],
     closing: (
       <>
-        Every one of these frees capacity for somebody who has no other option,
-        which is the reason the province’s own plan gives for asking.{" "}
-        <Cite id="PEIRS" />
+        Each of these frees capacity for somebody with no other option. That is
+        the province’s own reason for asking. <Cite id="PEIRS" />
       </>
     ),
   },

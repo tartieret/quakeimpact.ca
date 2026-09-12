@@ -3,7 +3,7 @@ route: /prepare/
 title: Preparing
 nav: Preparing
 hook: The province's own plan says family and neighbours are likely to be the only available first responders.
-lede: What British Columbia's earthquake guidance asks of a household, in the order worth doing it. The two things that cost nothing, a plan for finding each other and a conversation with the neighbours, are the two most households have skipped.
+lede: British Columbia's earthquake guidance asks a household for two weeks of water and food, a written plan, a meeting place and a phone number outside the region. The two things on that list that cost nothing are the two most households have skipped.
 status: draft
 ---
 
@@ -18,9 +18,9 @@ From the province's Earthquake Immediate Response Strategy:
 > individuals will reduce pressure on overwhelmed government agencies and allow
 > available resources to go where they are most needed." [PEIRS]
 
-The last sentence is the reason the province gives. Preparing is not only about looking
-after yourself. It is what frees the ambulance, the crew and the shelter place for the
-person who has no other option.
+That last sentence is the reason the province gives for asking. A household that can
+look after itself frees the ambulance, the crew and the shelter place for the person who
+has no other option.
 
 PreparedBC's Earthquake and Tsunami Preparedness Guide asks for food, water and
 supplies for each person and pet in the home "for at least two weeks, or longer".
@@ -36,9 +36,9 @@ minimum of 3 days, although your target should be a week to 2 weeks"
 and stops there. [COV-WORKSHEET-26] Three days is a thin floor for the city that would
 be running the response. The provincial guide's own line is that "It may be weeks before
 infrastructure, utilities and essential services are restored" [PREPAREDBC], and the
-[system pages](/after/) here put several services in weeks to months. The rest of this
-page works to the two-week figure, and a reader who has been through those pages should
-be aiming past it rather than at three days.
+[system pages](/after/) here put several services in weeks to months. This page works to
+two weeks. A reader who has been through those pages should be aiming past it, not at
+three days.
 
 ## Write the plan down, and agree where you would meet
 
@@ -73,17 +73,16 @@ secondary location such as a community centre in case you cannot get back to the
 "like a mailbox on your street", and another farther away, "like a nearby park".
 [PREPAREDBC-NEIGHBOURHOOD]
 
-This is the part that works when nothing else does, and it is the part most households
-have skipped. In a 2021 poll of 800 British Columbians, 28 per cent of respondents had
-a plan for how to contact family or friends and 22 per cent had an agreed meeting
-place. [RESEARCHCO-PREP-21]
+In a 2021 poll of 800 British Columbians, 28 per cent of respondents had a plan for how
+to contact family or friends and 22 per cent had an agreed meeting place.
+[RESEARCHCO-PREP-21]
 
-Two published statements explain why an agreement made in advance is worth more than a
-phone. The province's plan says that if service is available, networks "may be congested
-or overloaded, making communication extremely challenging", and that "texts and
+The province's plan says that if service is available, networks "may be congested or
+overloaded, making communication extremely challenging", and that "texts and
 low-bandwidth data-based services may be the most reliable method of communication".
-[PEIRS] The province's 2025 risk assessment says disruptions in communications continue
-for days to weeks, with access prioritised for emergency personnel. [DCRRA-2025]
+[PEIRS] Its 2025 risk assessment says disruptions in communications continue for days to
+weeks, with access prioritised for emergency personnel. [DCRRA-2025] An agreement made
+now needs none of that to work.
 
 Plan how you would get home as well as who you would call. The City of Vancouver's own
 advice is to "plan alternate ways to get home considering roads may be blocked and
@@ -99,8 +98,7 @@ something, and the guide is explicit that early warning systems cannot predict
 earthquakes. [PREPAREDBC] Close to where the earthquake starts, the alert may arrive
 with the shaking rather than before it. [NRCAN-EEW]
 
-The seconds buy one action, and it is the same one the guide gives for feeling the
-ground move:
+The seconds are for one action:
 
 > "If you feel the ground shake or receive an alert on your phone, TV or radio from the
 > Canadian Earthquake Early Warning system, immediately Drop, Cover and Hold On. After
@@ -124,11 +122,11 @@ arithmetic from the published rate rather than a figure either body prints.
 Pets are on the same list, at about 30 millilitres of water per kilogram of body weight
 per day. [PREPAREDBC-KIT]
 
-Water is bulky, and it is still the first thing to store, because the province's 2025
-risk assessment says people are thirsty within 24 hours and that distributing bulk
-drinking water across the affected region stays challenging for the first four to five
-days. [DCRRA-2025] Stored water covers exactly that gap. Whatever you can hold is worth
-holding, refilled on a schedule you will actually keep.
+Water is bulky. Store it first anyway. The province's 2025 risk assessment says people
+are thirsty within 24 hours, and that distributing bulk drinking water across the
+affected region stays challenging for the first four to five days. [DCRRA-2025] Stored
+water covers that gap. Whatever you can hold is worth holding, refilled on a schedule you
+will actually keep.
 
 ## Food that needs no cooking, and a bag by the door
 
@@ -150,8 +148,8 @@ with your household meeting places marked on it. [PREPAREDBC-KIT]
 ## Secure the heavy things in the rooms where people sleep
 
 In the province's own narrative of the shaking, unsecured objects "fall or fly through
-the air", windows break and glass scatters. [PEIRS] Most of what the guidance asks for
-is about the things in the room rather than the building around it.
+the air", windows break and glass scatters. [PEIRS] Nearly all of what the guidance
+asks for here is furniture and fixings, not structure.
 
 What the provincial guide asks for: tall free-standing furniture such as bookcases,
 cabinets and shelving fastened to wall studs with brackets; framed pictures and mirrors
@@ -184,10 +182,10 @@ service on unless officials tell you to turn it off. If you go turn off the gas,
 company has to reconnect it, which may take weeks after a major emergency."
 [SURREY-PREP]
 
-So the practical rule has three parts. Know where the valves are. Leave them where they
-are unless an official tells you otherwise. Never turn the gas back on yourself.
+Know where the valves are. Leave them where they are unless an official tells you
+otherwise. Never turn the gas back on yourself.
 
-## Plan around what the people in your home actually need
+## Plan around what the people in your home need
 
 The guide asks households to "consider the unique requirements of everyone in your home,
 such as children, older adults, pets and those with additional needs", and to think about
@@ -195,22 +193,23 @@ what each of them needs to be safe and comfortable. [PREPAREDBC] Medication is t
 item on the checklist nobody can improvise: identify what is needed and make sure a
 proper supply is on hand. [PREPAREDBC]
 
-The province's guide for people with disabilities is the most specific document in the
-set, and much of it is useful to anyone who might need help. It asks for a trusted
-support network of at least three people, and for a list of things settled with them
-before anything happens: that they will check on you immediately, that they hold keys
+The province's guide for people with disabilities asks for a trusted support network of
+at least three people, and for a list of things settled with them before anything
+happens: that they will check on you immediately, that they hold keys
 and relevant medical information, that they know how to operate specialised medical or
 mobility equipment such as lifts, wheelchairs or scooters, and that they know where your
 supplies are. It also says to agree and practise how you would contact each other, and
 "do not count on telephones working". [PREPAREDBC-DISABILITY] A list of your medications
 with the details from your pharmacist, and extra medication or supplies where that is
-possible, belong in the same plan. [PREPAREDBC-DISABILITY]
+possible, belong in the same plan. [PREPAREDBC-DISABILITY] Most of that is worth doing
+for anyone in the household who would need help getting out or getting by.
 
 ## Meet the neighbours, because they are the help that arrives first
 
-The province says it plainly: "the most immediate help will come from those around you",
-and that building those relationships now means a better response and a faster recovery.
-[PREPAREDBC-PLAN] Its response plan says the same thing operationally, recording that
+The province's own sentence is that "the most immediate help will come from those around
+you", and that building those relationships now means a better response and a faster
+recovery. [PREPAREDBC-PLAN] Its response plan says the same thing operationally,
+recording that
 communities "informally self-activate" and "will work together without receiving
 guidance from the Province". [PEIRS]
 
@@ -230,7 +229,7 @@ first responders", and instructions from officials and first responders come fir
 
 ## Stay where you are if the building is safe
 
-The guidance is to stay put rather than to travel:
+The province's instruction for a building that is still sound:
 
 > "If your home, apartment or condominium is structurally safe following an earthquake,
 > the best thing you can do is shelter-in-place. In other words – stay where you are.
@@ -248,9 +247,8 @@ calls, and the province's guide gives the same instruction. [ECOMM-EQ] [PREPARED
 In Vancouver, 25 disaster support hubs are marked by yellow signs at 23 community
 centres, Oppenheimer Park and the Fraserview branch of Vancouver Public Library. The
 City says services there may include group lodging, distribution of food, water and
-supplies, recovery information and help finding family. It publishes no capacity figure,
-so the hub is a place to find information and other people rather than a place with a
-bed reserved for you. [COV-HUBS]
+supplies, recovery information and help finding family. It publishes no capacity figure, so
+nobody should count on a bed being there. [COV-HUBS]
 
 ## Disaster Response Route signs mark roads the public is asked to leave
 
@@ -277,8 +275,8 @@ adding items as money allows, a first aid kit assembled from what is already in 
 house, and a thrift-store backpack for the grab-and-go bag. [PREPAREDBC-BUDGET] North
 Shore Emergency Management links to it. [NSEM-KIT]
 
-A partial kit is worth far more than a planned one, and the City's own landing page says
-the useful thing: "Start with what you have and add more as you can." [COV-PREPMAIN]
+The City's landing page puts it in one line: "Start with what you have and add more as
+you can." [COV-PREPMAIN]
 
 ## What you can do
 
@@ -317,8 +315,8 @@ fill-in-the-blanks one. [PREPAREDBC-PLAN]
 kit on a budget, and a partial kit is worth far more than a planned one.
 [PREPAREDBC-BUDGET]
 
-Every one of these frees capacity for somebody who has no other option, which is the
-reason the province's own plan gives for asking. [PEIRS]
+Each of these frees capacity for somebody with no other option. That is the province's
+own reason for asking. [PEIRS]
 
 ## Sources on this page
 
