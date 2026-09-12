@@ -3,17 +3,15 @@ route: /after/health-care/
 title: Health care
 nav: Health care
 hook: Hospitals stand on the same ground as everything else, and most of the stock predates the current code.
-lede: About 65 per cent of the 127 buildings owned by one health authority are likely to be completely damaged at the ground motion the current building code designs for. [DCRRA-APPC] No published document sets the casualties the province forecasts against the number of beds the region has.
+lede: About 65 per cent of the 127 buildings owned by one health authority are likely to be completely damaged at the 1-in-2,475-year earthquake, which is the shaking the current building code designs against. [DCRRA-APPC] No government or health authority has set the casualties the province forecasts against the number of beds the region has. The comparison exists only in peer-reviewed engineering work.
 bands: { cascadia: medium, crustal: medium }
-mechanism: A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no published document sets the expected casualty load against the region's bed capacity.
+mechanism: A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no government or health authority has set the expected casualty load against the region's bed capacity.
 source: DCRRA-APPC
-status: draft
 ---
 
 ## The people who need care arrive in the first hours
 
-For a magnitude 7.0 earthquake under Greater Vancouver, the province's earthquake
-immediate response plan forecasts 1,000 people critically injured, 6,500 needing hospital
+For a magnitude 7.0 earthquake under Greater Vancouver on a weekday afternoon, the province's earthquake immediate response plan forecasts 1,000 people critically injured, 6,500 needing hospital
 care that is not critical, and 21,000 needing paramedics or first aid, from damage to
 buildings alone. [PEIRS] The province excludes injuries from fires, landslides, vehicle
 collisions and falls, so those counts do not cover everything that would send a person to
@@ -98,7 +96,7 @@ functionality and underestimating accessibility loss". [KAUR-2026] It also assum
 major river crossings stay open and that everyone drives on free-flowing roads.
 [KAUR-2026]
 
-## Nobody has set the expected casualties against the region's beds
+## No government or health authority has set the expected casualties against the region's beds
 
 The Mass Casualty Incident Framework for British Columbia Hospitals, published by the
 Provincial Health Services Authority in January 2026, is the official document for this
@@ -129,9 +127,7 @@ inventory of the region. [MITRA-2020]
 > region, including Vancouver General, UBC Hospital, and Lion's Gate Hospital, are likely
 > to see increased demand as a result." [PEIRS]
 
-That describes the St. Paul's on Burrard Street. Its replacement on Station Street is
-built to the Vancouver Building By-law's post-disaster requirement and is due to open
-around 2027. [NSP-SPEC] How many patients the other three could take is not in the plan.
+That describes the St. Paul's on Burrard Street. Its replacement on Station Street is built to the Vancouver Building By-law's post-disaster requirement. [NSP-SPEC] How many patients the other three could take is not in the plan.
 
 Three major projects are specified to post-disaster importance category, the code's term
 for a building expected to keep working after an earthquake rather than only to stay
@@ -164,8 +160,7 @@ them.
 **Agree a meeting place now, while nobody needs it.** A household that can find each
 other has no reason to check the emergency departments.
 
-**Make the check-in person someone outside the region.** Where phone service is available
-at all, networks "may be congested or overloaded". [PEIRS]
+**Make the check-in person someone outside the region.** Where phone service is available at all, networks "may be congested or overloaded". [PEIRS] What happens to the network is on [communications](/after/communications/).
 
 **Sort out the medicines and equipment that cannot lapse.** A pharmacist or a clinician
 can tell you what a longer supply looks like for you, and what to do about a device that

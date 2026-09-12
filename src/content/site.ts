@@ -103,7 +103,7 @@ export const BANDS: Record<
     duration: "Not published",
     extent: "Not published",
     dependency:
-      "Nobody has published an assessment. That is a statement about the public record, not about the infrastructure",
+      "No assessment of this has been published. That is a statement about the public record, not about the infrastructure",
   },
 };
 
@@ -172,10 +172,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "communications",
     name: "Communications",
-    hook: "Nothing requires a cell site to hold any backup power at all.",
+    hook: "No rule says how long a cell site has to keep running without the grid.",
     bitesAt: "hours",
     tier: 2,
-    dependsOn: ["electricity"],
+    dependsOn: ["electricity", "fuel"],
     impacts: bothScenarios(
       ["medium", "medium"],
       "The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel and a prolonged lack of access for everyone else; it names satellite phones and amateur radio as the backups people would fall back on.",
@@ -257,7 +257,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "large-infrastructure",
     name: "Port, airport and ferry terminals",
-    hook: "The airport's weak point is not the runway. It is every bridge onto Sea Island.",
+    hook: "Everything that drives to the airport crosses a bridge, and the model expects every one of them damaged.",
     bitesAt: "weeks",
     tier: 3,
     dependsOn: ["transportation", "electricity"],
@@ -285,7 +285,7 @@ export const SYSTEMS: SystemEntry[] = [
     dependsOn: ["transportation", "electricity", "large-infrastructure"],
     impacts: bothScenarios(
       ["high", "high"],
-      "Fuel is the resource the repair of every other system runs on, and the province expects supply chains to be inoperable.",
+      "Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable.",
       "PEIRS",
       { cascadia: CRUSTAL_ONLY },
     ),
@@ -296,10 +296,10 @@ export const SYSTEMS: SystemEntry[] = [
     hook: "The food that goes first is the food no pantry can hold: meat, produce, dairy and bread.",
     bitesAt: "days",
     tier: 2,
-    dependsOn: ["transportation", "fuel", "large-infrastructure"],
+    dependsOn: ["transportation", "fuel", "electricity", "large-infrastructure"],
     impacts: bothScenarios(
       ["high", "high"],
-      "The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them.",
+      "The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods, toiletries and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them.",
       "PEIRS",
       { cascadia: CRUSTAL_ONLY },
     ),
@@ -315,14 +315,14 @@ export const SYSTEMS: SystemEntry[] = [
     dependsOn: [],
     impacts: bothScenarios(
       ["unknown", "unknown"],
-      "Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes, and the seismic upgrade has not started.",
+      "Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes.",
       "MV-DSP-2026",
     ),
   },
   {
     slug: "housing",
     name: "Housing",
-    hook: "Most people who lose their home lose it to a cordon around a building that is still standing.",
+    hook: "Most people who cannot go home would have a home still standing.",
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "sanitation", "electricity"],
@@ -338,10 +338,10 @@ export const SYSTEMS: SystemEntry[] = [
     hook: "Hospitals stand on the same ground as everything else, and most of the stock predates the current code.",
     bitesAt: "hours",
     tier: 2,
-    dependsOn: ["fuel", "electricity", "water"],
+    dependsOn: ["fuel", "electricity", "water", "transportation"],
     impacts: bothScenarios(
       ["medium", "medium"],
-      "A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no published document sets the expected casualty load against the region's bed capacity.",
+      "A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no government or health authority has set the expected casualty load against the region's bed capacity.",
       "DCRRA-APPC",
     ),
   },
@@ -404,7 +404,7 @@ export const SHAKING_PAGES: {
   {
     slug: "buildings",
     name: "Buildings",
-    hook: "Which buildings hold up, which do not, and why the glass and brickwork coming off them is dangerous.",
+    hook: "Which buildings hold up, which do not, and why the brickwork coming off the older ones is the hazard the City has named.",
   },
   {
     slug: "casualties",

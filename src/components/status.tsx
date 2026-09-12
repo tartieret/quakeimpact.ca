@@ -60,27 +60,20 @@ function Notice({ children }: { children: ReactNode }) {
  * The notice for a system page under `/after/`. Ported from
  * `docs/copy/unwritten.md`, system variant.
  *
- * The three written system pages are named because they are what this page will
- * look like, and `/prepare/` is named because it is the action that covers every
- * system at once. The page's own one-line action still renders through `Lever`
- * at the foot, from the system's `lever`, and is not described here.
+ * The section index is named rather than three pages, because a list of which
+ * pages are written goes stale the moment another one is; `/prepare/` is named
+ * because it is the action that covers every system at once. The page's own
+ * one-line action still renders through `Lever` at the foot, from the system's
+ * `lever`, and is not described here.
  */
 export function SystemDraftNotice() {
   return (
     <Notice>
       This page is not written yet: the band, the sentence behind it, the
       documents at the foot of the page and the action under them are real and
-      can be checked today.{" "}
-      <Link href="/after/water/" className={linkClass}>
-        Water
-      </Link>
-      ,{" "}
-      <Link href="/after/electricity/" className={linkClass}>
-        electricity
-      </Link>{" "}
-      and{" "}
-      <Link href="/after/transportation/" className={linkClass}>
-        transportation
+      can be checked today. The other{" "}
+      <Link href="/after/" className={linkClass}>
+        system pages
       </Link>{" "}
       are written in full, and{" "}
       <Link href="/prepare/" className={linkClass}>
@@ -100,11 +93,12 @@ export function ShakingDraftNotice() {
   return (
     <Notice>
       This page is not written yet: the line at the top says what the subject
-      covers, and the documents at the foot are the ones gathered for it so far.{" "}
-      <Link href="/shaking/ground/" className={linkClass}>
-        Ground conditions
+      covers, and the documents at the foot are the ones gathered for it so far.
+      The other pages under{" "}
+      <Link href="/shaking/" className={linkClass}>
+        the shaking
       </Link>{" "}
-      is written in full, and{" "}
+      are written in full, and{" "}
       <Link href="/scenarios/" className={linkClass}>
         the two scenarios
       </Link>{" "}

@@ -87,7 +87,7 @@ export const about: PageModule = {
             Each one carries a marker that opens that document’s entry without
             leaving the page, and the{" "}
             <Link href="/sources/" className={link}>
-              source register
+              sources page
             </Link>{" "}
             lists them all. Past earthquakes elsewhere appear too, to show how
             something fails and never to give a number for the Lower Mainland.
@@ -96,10 +96,8 @@ export const about: PageModule = {
             The site is not complete, and it could not be. No assessment says
             precisely how a system behaves on the day. Where a figure is
             missing, the page says so: a system marked “Not yet assessed” means
-            nobody has published an assessment, not that the infrastructure is
-            fine. A page still marked draft carries its band, the sentence
-            saying how the system fails and the document behind it. The text
-            that works through them has not been written yet.{" "}
+            no assessment of it has been published, not that the infrastructure
+            is fine.{" "}
             <Link href="/method/" className={link}>
               How the bands work
             </Link>{" "}

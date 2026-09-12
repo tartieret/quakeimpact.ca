@@ -4,7 +4,6 @@ title: Two earthquakes, not one
 nav: Two scenarios
 hook: Two different earthquakes are possible here, and they are dangerous to different buildings.
 lede: One is offshore, very large and very long. The other is close, smaller and violent. Most people have only heard of the first, and the federal hazard agency calls the second the greater hazard to cities.
-status: draft
 ---
 
 ## The nearer earthquake is the greater hazard to cities
@@ -51,17 +50,13 @@ of that size or larger happens in this broad region roughly once every 1,500 yea
 The rupture is under water, and even so "a significant tsunami is not expected".
 [PEIRS]
 
-The modelled fault plane dips at 47 degrees to a bottom edge about 13 km down, and
-the earthquake starts 3 km down. Its footprint runs from near Nanaimo to downtown
+The modelled fault plane dips at 47 degrees from the ground surface to a bottom edge about 13 km down, and the earthquake starts 3 km down. Its footprint runs from near Nanaimo to downtown
 Vancouver, which describes the fault rather than where the damage falls.
 [OPENDRR-GSF-22] Shaking across the Lower Mainland and Nanaimo is modelled at 10 to
 60 per cent of gravity, strongest in downtown Vancouver, West Vancouver, Nanaimo,
 Gibsons, and on Gabriola and Bowen Islands. [GSC-OF-8853]
 
-The scenario is set on a January afternoon between 9am and 5pm, immediately after an
-atmospheric river has dropped 180 to 300 mm of rain over three days. The ground is
-already saturated when the shaking starts, which is why the scenario's landslides,
-liquefaction and dike failures are as prominent as they are. [PEIRS]
+The scenario is set on a January afternoon, immediately after an atmospheric river has dropped 180 to 300 mm of rain over three days. The ground is already saturated when the shaking starts, which is why the scenario's landslides, liquefaction and dike failures are as prominent as they are. Warmth, dry shelter and unstable slopes are what people need attended to first in that weather. [PEIRS]
 
 Its modelled impacts, counting only shaking damage to buildings and to the people
 inside them:
@@ -80,8 +75,7 @@ inside them:
 
 [GSC-OF-8853] [PEIRS]
 
-Every figure in that table belongs to a weekday afternoon, when most people are at
-school or work. Natural Resources Canada says of its own numbers that because
+Every figure in that table belongs to the daytime hours between 9am and 5pm, when most people are at school or work. Natural Resources Canada says of its own numbers that because
 secondary hazards and damage to infrastructure are left out, "the estimates herein
 are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
 
@@ -119,9 +113,7 @@ The passage gives two instructions: drop, cover and hold on, and do not run outs
 ## The province's Cascadia scenario shakes for three minutes along 1,000 km of fault
 
 The province's risk and resilience assessment models a magnitude 9.0 rupture running
-about 1,000 km from mid Vancouver Island to northern California, with the mainshock
-at 10am on a day in August during a 30 to 40 °C heatwave with wildfire smoke. Shaking
-in that mainshock lasts three minutes. [DCRRA-2025]
+about 1,000 km from mid Vancouver Island to northern California, with the mainshock at 10am on a day in August during a 30 to 40 °C heatwave with wildfire smoke, which makes water, shade and clean air the urgent needs. Shaking in that mainshock lasts three minutes. [DCRRA-2025]
 
 Heaviest damage falls on Vancouver Island and in a band about 20 km deep along the
 mainland coast, from the border to the Sunshine Coast. The most severely affected
@@ -156,11 +148,9 @@ tall buildings on soft ground.
 ## How long the shaking lasts changes what fails
 
 A study of the Golden Ears Bridge measured how the soil and the deep foundations
-under it act on each other as an earthquake runs longer. At the larger of that
-bridge's two design events, strong shaking lasted about 30 seconds and the forces
+under it act on each other as an earthquake runs longer. At the longest of that bridge's design events, strong shaking lasted about 30 seconds and the forces
 from the moving ground and the forces from the swaying structure "occurred
-simultaneously"; at the smaller design event for the same bridge, shaking lasted
-about 10 seconds and the two were "essentially uncoupled". In the longer event the
+simultaneously"; at the shortest, shaking lasted about 10 seconds and the two were "essentially uncoupled". In the longer event the
 soil liquefied early, while the structure was still being shaken. [NAB-ICCHGE-08]
 
 Those are design events for one bridge, not properties of either scenario. Past a

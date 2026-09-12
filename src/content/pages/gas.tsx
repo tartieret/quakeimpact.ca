@@ -61,7 +61,8 @@ export const gas: PageModule = {
             before anybody lights anything.
           </p>
           <Quote
-            speaker="BC Utilities Commission, Decision and Order C-6-25, setting out what FortisBC Energy Inc. told it about an uncontrolled shutdown"
+            speaker="FortisBC Energy Inc., to the BC Utilities Commission"
+            source="Decision and Order C-6-25"
             cite={<Cite id="BCUC-C-6-25" />}
           >
             <p>
@@ -90,7 +91,8 @@ export const gas: PageModule = {
       body: (
         <Prose>
           <p>
-            In March 2026 FortisBC served 583,370 residential gas accounts and
+            FortisBC told its regulator in March 2026 that it serves 583,370
+            residential gas accounts and
             61,348 commercial ones in its Lower Mainland service region.{" "}
             <Cite id="FEI-LTGRP-26" /> An account is a meter: a house is
             usually one account, and an apartment building on a central gas
@@ -178,7 +180,8 @@ export const gas: PageModule = {
             and none gets better, so those durations are a floor.
           </p>
           <p>
-            Two intervenors told the commission FortisBC was being too cautious:
+            Two of the outside parties in the proceeding told the commission
+            FortisBC was being too cautious:
             one submitted “that FEI’s restoration and relight plan is overly
             conservative”, and another argued that relighting business and
             industrial customers earlier “could dramatically reduce the GDP
@@ -243,11 +246,13 @@ export const gas: PageModule = {
             would lose it. The 2024 plan assesses 58 vulnerabilities across
             FortisBC’s system and reports each one under a number rather than a
             name or a place, so none of its results can be tied to a location.{" "}
-            <Cite id="FEI-RESILIENCY-24" /> The one it ranks second overall is
-            driven by earthquake lateral spreading, which is saturated ground
-            losing its strength and moving sideways, and it carries a mean total
-            outage of 61 days. Which asset that is, and where it stands, were
-            filed to the commission in confidence and are not public.{" "}
+            <Cite id="FEI-RESILIENCY-24" /> Its second-largest risk overall sits at
+            an asset FortisBC has not named and whose location it filed to the
+            commission in confidence, so nobody outside the regulator can say
+            whether it serves this region. What is public is the mechanism and
+            the modelled duration: earthquake lateral spreading, which is
+            saturated ground losing its strength and moving sideways, drives
+            most of that risk, and the modelled mean total outage is 61 days.{" "}
             <Cite id="FEI-RESILIENCY-24" /> The plan’s own Lower Mainland
             section describes the problem in words and gives no figures.
           </VerificationNote>

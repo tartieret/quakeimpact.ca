@@ -14,8 +14,9 @@ A module exports one `PageModule`:
 
 - `meta: PageMeta` — from `src/content/types.ts`.
 - `sections: PageSection[]` — one entry per `##` in the copy, in order.
-- `lever?: PageLever` — the copy's closing "What you can do". Optional only
-  because `/method/` describes no consequence and so writes none.
+- `lever?: PageLever` — the copy's closing "What you can do". Optional because
+  three pages describe no consequence and so write none: `/method/`, `/about/`
+  and `/contribute/`.
 
 Three properties make a wrong page hard to write, and they are why the body is
 a typed array rather than a component:
@@ -29,8 +30,10 @@ reason. Do not write a bare `<h2>` or `<h3>` in a body.
 
 **`lever` is its own field.** It is not one section among many, so the block
 that makes the page usable cannot be demoted into prose. It is optional in the
-type, and the one page that leaves it off is `/method/`: the principle is no
-doom without a lever, and the rubric states no doom.
+type, and three pages leave it off: `/method/`, `/about/` and `/contribute/`.
+The principle is no doom without a lever, and none of the three describes a
+consequence. The rubric states no doom, and the other two describe how the site
+is made rather than what happens to a system.
 
 `PageLever` is the props of `Lever` itself, so a slot added to the component is
 a slot a module can fill. Three of them matter when porting. `closing` takes the
@@ -93,6 +96,7 @@ export const example: PageModule = {
     route: "/after/example/",
     title: "Example",
     nav: "Example",
+    /** The line above the title, where the page belongs to a part of the site. */
     kicker: "Life afterwards",
     standfirst: "The copy's lede, one or two sentences.",
     /** First-cited order. Marker numbering is this array's order. */

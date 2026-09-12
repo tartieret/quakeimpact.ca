@@ -41,7 +41,7 @@ const LICENCES = [
     name: "Open Government Licence – Vancouver",
     href: "https://opendata.vancouver.ca/pages/licence/",
     covers:
-      "City of Vancouver open data, including the dedicated fire protection water mains layer that the fire coverage map is drawn from.",
+      "City of Vancouver open data, including the dedicated fire protection water mains layer used on the fire following page.",
     attribution: [
       "Contains information licensed under the Open Government Licence – Vancouver.",
     ],
@@ -116,7 +116,7 @@ export default function LicencesPage() {
     >
       <Section
         title="Credit, in the words each licence asks for"
-        lede="Three open licences cover the data used here. Each requires the sentence below, and a link to the licence text."
+        lede="Three open licences cover most of the data used here. Each requires the sentence below, and a link to the licence text. One record further down carries no open licence at all, and is read and linked rather than copied."
       >
         <div className="flex flex-col gap-8">
           {LICENCES.map((licence) => (
@@ -143,7 +143,7 @@ export default function LicencesPage() {
 
       <Section
         title="The datasets this site uses"
-        lede="Each one with the body that publishes it, the date it was reached, and the licence stated on the record."
+        lede="Each one with the body that publishes it, the date on the record, and the licence stated on it."
       >
         <DatasetList entries={USED} />
         <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ink-muted">
@@ -172,11 +172,11 @@ export default function LicencesPage() {
 
       <Section
         title="Maps this site links to but does not draw"
-        lede="The detailed ground conditions mapping for Metro Vancouver is published under terms that reserve electronic publication to its owner. This site links to it and describes what it found, in its own words."
+        lede="The detailed ground conditions mapping for Metro Vancouver is published under terms that reserve commercial publication, in print and in electronic media, to its owner, and the reservation reaches statements and conclusions about the maps as well as the maps themselves. This site links to it and describes what it found, in its own words."
       >
         <Prose
           paragraphs={[
-            "The published map sheets may not be altered, and anything built from the underlying layers would have to be published under the same terms. Permission to do otherwise is held by the Institute for Catastrophic Loss Reduction and would have to be asked for. It has not been asked for, so the ground conditions page is text with a link out, and the fire protection coverage boundary is the map drawn here instead.",
+            "The published map sheets may not be altered, and anything built from the underlying layers would have to be published under the same terms. Permission to do otherwise is held by the Institute for Catastrophic Loss Reduction. It has not been asked for and will not be: two of the limits would hold with permission anyway, because the published map sheets may not be altered and anything built from the underlying layers must carry the same terms. So the ground conditions page describes the mapping in words and links out to it, and the map this site draws instead is the dedicated fire protection mains, which are the pipes themselves and not a line around a service area.",
             "The owners ask that one thing be said alongside any use of those maps, and it is worth saying anyway: they describe ground conditions across a region, and they cannot tell you about a single address. A map that shows your block as susceptible is not an assessment of your building. Only a site investigation is that.",
           ]}
         />
@@ -198,7 +198,7 @@ export default function LicencesPage() {
         <Prose
           paragraphs={[
             "A restoration time, a tonnage, a failure count and a date are facts. Facts cannot be owned, so this site states them and links to where they were published. The wording, the tables, the figures and the maps are a different matter, and none of those are copied, redrawn or adapted here.",
-            "The Province of British Columbia reserves all rights in its material by default, and the provincial disaster risk assessment goes further: it may be read by anyone and reproduced by no one. Its own authors scope it to provincial and regional analysis rather than to decisions about a community or a property, and that is how it is used here. Short quotation with credit and a link is ordinary practice and is what this site does. Provincial legislation is the exception, published under the King's Printer licence and quotable at length.",
+            "The Province of British Columbia reserves all rights in its material by default, and the provincial disaster risk assessment says so on its own record: it may be read by anyone and reproduced by no one. Its own authors scope it to provincial and regional analysis rather than to decisions about a community or a property, and that is how it is used here. Short quotation with credit and a link is ordinary practice and is what this site does. Provincial legislation is the exception, published under the King's Printer licence and quotable at length.",
             "One study, the 2013 insurance and economic cost assessment prepared for the Insurance Bureau of Canada, carries an explicit notice against reproduction in any form. Its findings are stated here as facts, with credit. None of its tables, figures or maps appear, and no copy of it is hosted.",
           ]}
         />

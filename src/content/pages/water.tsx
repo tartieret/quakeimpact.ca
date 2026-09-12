@@ -96,7 +96,7 @@ export const water: PageModule = {
             reported it in April 2022. Everything in this section comes through
             that reporting. <Cite id="MV-WATER-22" />
           </p>
-          <p>Under a magnitude 9.0 megathrust, the study modelled:</p>
+          <p>Under a magnitude 9.0 megathrust, the offshore earthquake where one tectonic plate slips under another along hundreds of kilometres at once, the study modelled:</p>
           <ul>
             <li>
               <strong>267 water main failures</strong> across the region and its
@@ -203,7 +203,8 @@ export const water: PageModule = {
             “Disruption to water and wastewater systems are expected for many
             months following the event.” <Cite id="PEIRS" /> The sentence is
             qualitative, it covers sewers in the same breath as water, and it is
-            region-wide rather than specific to any pipe.
+            region-wide rather than specific to any pipe. The province wrote it
+            for its shallow crustal M7 planning scenario.
           </p>
           <p>
             The province’s Cascadia assessment states that “people are thirsty
@@ -310,8 +311,9 @@ export const water: PageModule = {
           <p>
             Metro Vancouver describes the new tunnels the same way each time, as
             meeting current seismic standards and as built so that water keeps
-            flowing after a major earthquake. The crossings they replace are
-            where the 267 failures fall.
+            flowing after a major earthquake. Those crossings are where about 60
+            of the 267 failures fall, and they are the repairs that take
+            longest.
           </p>
           <p>
             Elsewhere the work runs later. The seismic phase of the Palisade

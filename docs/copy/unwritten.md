@@ -33,8 +33,7 @@ and no body text.
 
 > This page is not written yet: the band, the sentence behind it, the documents
 > at the foot of the page and the action under them are real and can be checked
-> today. [Water](/after/water/), [electricity](/after/electricity/) and
-> [transportation](/after/transportation/) are written in full, and
+> today. The other [system pages](/after/) are written in full, and
 > [preparing](/prepare/) covers what to do across all of the systems, including
 > this one.
 
@@ -46,8 +45,8 @@ the variant names what is on the screen and promises nothing that is not there.
 
 > This page is not written yet: the line at the top says what the subject
 > covers, and the documents at the foot are the ones gathered for it so far.
-> [Ground conditions](/shaking/ground/) is written in full, and [the two
-> scenarios](/scenarios/) covers what each of the two earthquakes does.
+> The other pages under [the shaking](/shaking/) are written in full, and
+> [the two scenarios](/scenarios/) covers what each of the two earthquakes does.
 
 ## Two sentences, three jobs
 

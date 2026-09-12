@@ -5,8 +5,8 @@ nav: Water
 hook: The worst breaks are the ones under rivers, and those are the repairs that take longest.
 lede: Metro Vancouver's own seismic assessment models 267 water main failures across the region in a magnitude 9.0 earthquake. [MV-WATER-22] About 60 of them fall at the 71 points where mains cross under rivers and inlets, which are the hardest places in the system to reach. [MV-WATER-22]
 bands: { cascadia: high, crustal: high }
-mechanism: An M9 is modelled to cause 267 main failures region-wide, with roughly 60 breaks concentrated on the 71 water crossings, the repairs that take longest.
-status: draft
+mechanism: A magnitude 9 megathrust is modelled to cause 267 water main failures across Metro Vancouver, about 60 of them at the 71 points where mains cross under rivers and inlets, which are the repairs that take longest.
+source: MV-WATER-22
 ---
 
 ## A pipe under a road and a pipe under a river are different repairs
@@ -30,7 +30,7 @@ later, when a heavily redacted copy released under freedom-of-information law wa
 obtained by Glacier Media, which reported it in April 2022. Everything in this section
 comes through that reporting. [MV-WATER-22]
 
-Under a magnitude 9.0 megathrust, the study modelled:
+Under a magnitude 9.0 megathrust, the offshore earthquake where one tectonic plate slips under another along hundreds of kilometres at once, the study modelled:
 
 - **267 water main failures** across the region and its 21 municipalities.
 - **22 water mains** rated at high seismic vulnerability, running through the North
@@ -85,8 +85,7 @@ words that the joined-up picture across that seam has not been assembled yet.
 ## The province expects water and sewer disruption to last many months
 
 "Disruption to water and wastewater systems are expected for many months following
-the event." [PEIRS] The sentence is qualitative, it covers sewers in the same breath
-as water, and it is region-wide rather than specific to any pipe.
+the event." [PEIRS] The sentence is qualitative, it covers sewers in the same breath as water, and it is region-wide rather than specific to any pipe. The province wrote it for its shallow crustal M7 planning scenario.
 
 The province's Cascadia assessment states that "people are thirsty within 24 hours",
 and that "distributing bulk potable water across the affected region remains
@@ -131,7 +130,7 @@ this kind in the region. [MV-TUNNELS]
 
 Metro Vancouver describes the new tunnels the same way each time, as meeting current
 seismic standards and as built so that water keeps flowing after a major earthquake.
-The crossings they replace are where the 267 failures fall.
+Those crossings are where about 60 of the 267 failures fall, and they are the repairs that take longest.
 
 Elsewhere the work runs later. The seismic phase of the Palisade Lake outlet works is
 scheduled to start in the mid-2030s and finish in the early 2040s, timed so that

@@ -45,7 +45,7 @@ export const electricity: PageModule = {
   sections: [
     {
       title:
-        "BC Hydro says several weeks to restore power, and years to restore the system",
+        "BC Hydro says several weeks to restore power downtown, and years to restore the system",
       body: (
         <Prose>
           <p>
@@ -125,7 +125,10 @@ export const electricity: PageModule = {
           </Quote>
           <p>
             A post-disaster building is one the code expects to keep working
-            after the earthquake, rather than merely to stay standing. Murrin
+            after the earthquake, rather than merely to stay standing. A one in
+            2,475 year ground motion is shaking severe enough that it happens on
+            average once in 2,475 years, so the higher the number, the rarer and
+            the harder the shaking. Murrin
             was commissioned in 1947 and Dal Grauer in 1952. About 60 per cent
             of Murrin’s assets and 78 per cent of Dal Grauer’s are at or near
             the end of their working lives. <Cite id="BCH-WESTEND-25" />
@@ -177,8 +180,9 @@ export const electricity: PageModule = {
             BC Hydro’s filing of February 2019, which the regulator’s record
             files by fiscal year as F2020, already stated that Murrin sits on
             seismically unstable soil, that about half of the switchyard
-            supplying both substations is vulnerable to liquefaction and
-            settlement, and that load served from both “may experience a
+            supplying both substations is vulnerable to settlement and to
+            liquefaction, where saturated soil loses its strength and behaves
+            like a liquid while the ground shakes, and that load served from both “may experience a
             prolonged outage after a seismic event”.{" "}
             <Cite id="BCH-RRA-F2020" />
           </p>
@@ -195,7 +199,7 @@ export const electricity: PageModule = {
 
     {
       title:
-        "The Second Narrows crossing is at risk of collapse, and the work to fix it is not scheduled",
+        "The Second Narrows crossing could collapse below the level the code sets, and the work to fix it is not scheduled",
       body: (
         <Prose>
           <p>
@@ -204,7 +208,8 @@ export const electricity: PageModule = {
             being critical, and at risk of sustaining damage, including possible
             collapse, during an earthquake of less than 1:475-year frequency”,
             and that losing the crossing “would result in load curtailment in
-            the Metro Vancouver area”.{" "}
+            the Metro Vancouver area”, which means cutting power to customers
+            on purpose to keep the rest of the network up.{" "}
             <Cite id="BCH-RRA-F2023" />
           </p>
           <p>
@@ -214,9 +219,8 @@ export const electricity: PageModule = {
             <Cite id="BCH-RRA-F2023" />
           </p>
           <p>
-            Two named assets, each assessed by its owner as below the level the
-            code sets, one of them with no date. Neither is a statement about
-            the rest of the network.
+            Murrin and the Second Narrows crossing are two named assets, and
+            neither is a statement about the rest of the network.
           </p>
         </Prose>
       ),
@@ -234,9 +238,8 @@ export const electricity: PageModule = {
             <Cite id="BCH-SEIS-11" />
           </p>
           <p>
-            In November 2025 BC Hydro’s own seismic assessment found its main
-            downtown substation not operable at one in 1,000.{" "}
-            <Cite id="BCH-WESTEND-25" />
+            Against that stands BC Hydro’s own 2025 assessment, above: Murrin
+            not operable at one in 1,000. <Cite id="BCH-WESTEND-25" />
           </p>
           <p>
             Both are BC Hydro. The 2011 sentence is design intent for the system
@@ -259,7 +262,8 @@ export const electricity: PageModule = {
             <ElectricityChronology />
           </Figure>
           <p>
-            The Mount Pleasant substation, part of the Vancouver City Central
+            What BC Hydro builds now is built to that standard. The Mount
+            Pleasant substation, part of the Vancouver City Central
             Transmission project, is designed to operate after a disaster, with
             ducts and cable vaults installed below the zone where the ground
             would deform. <Cite id="BCH-VCCT" />
@@ -274,16 +278,17 @@ export const electricity: PageModule = {
       body: (
         <Prose>
           <p>
-            BC Hydro holds{" "}
+            In its 2021 filing BC Hydro reported{" "}
             <strong>10 spare power transformers against a fleet of 672</strong>{" "}
-            at 60 kV and above. Its filings describe the spares strategy as
+            at 60 kV and above. <Cite id="BCH-XFMR-21" /> The same section of its
+            2019 filing gave 572 and the same 10 spares.{" "}
+            <Cite id="BCH-RRA-F2020" /> Both describe the spares strategy as
             existing “to minimize impacts in the event of a failure”, in the
-            singular. <Cite id="BCH-XFMR-21" /> <Cite id="BCH-RRA-F2020" />{" "}
-            Neither filing connects it to an earthquake, to simultaneous losses,
-            or to replacing many units at once.
+            singular, and neither connects it to an earthquake, to simultaneous
+            losses, or to replacing many units at once.
           </p>
           <Figure
-            alt="BC Hydro holds 10 spare power transformers against a fleet of 672 at 60 kV and above. Its filings describe the spares as covering a single failure and do not connect them to an earthquake."
+            alt="In its 2021 filing BC Hydro reported 10 spare power transformers against a fleet of 672 at 60 kV and above. Its filings describe the spares as covering a single failure and do not connect them to an earthquake."
             caption={
               <>
                 One mark is one transformer in both panels, on the same
@@ -300,15 +305,14 @@ export const electricity: PageModule = {
             No lead time for a replacement transformer is published anywhere in
             BC Hydro’s regulatory record. In the United States, average lead
             times for power transformers rose from around 50 weeks in 2021 to
-            roughly 120 weeks, more than two years, by 2024, and about 80 per
-            cent of American large power transformers are imported.{" "}
-            <Cite id="NIAC-LPT-24" /> <Cite id="WOODMAC-25" />
+            roughly 120 weeks, more than two years, by 2024.{" "}
+            <Cite id="NIAC-LPT-24" />
           </p>
           <p>
             Those are US market figures and not a forecast for British Columbia.
-            They show what a utility waits on when it says years: a substation
-            that loses its transformers is waiting on an order, not on a repair
-            crew.
+            That is what a utility is waiting on when it says years. A
+            substation that loses its transformer bank is in a queue behind
+            every other buyer.
           </p>
           <Figure
             alt="Average power transformer lead times in the United States rose from around 50 weeks in 2021 to roughly 120 weeks in 2024. These are United States market figures and not a forecast for British Columbia."
@@ -343,10 +347,10 @@ export const electricity: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        The only restoration time BC Hydro has published for this region is
-        several weeks, for downtown customers, with years before the system as a
-        whole is restored. <Cite id="BCH-WESTEND-25" /> Nothing has been
-        published for anywhere else. Weeks is the interval to prepare against,
+        The only restoration time BC Hydro has published anywhere in this
+        region is several weeks, for downtown customers, with years before the
+        downtown system is completely restored. <Cite id="BCH-WESTEND-25" />{" "}
+        Nothing has been published for anywhere else. Weeks is the interval to prepare against,
         because it is the one the utility has put in writing.
       </>
     ),

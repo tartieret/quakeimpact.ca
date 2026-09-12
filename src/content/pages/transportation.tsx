@@ -29,7 +29,7 @@ export const transportation: PageModule = {
     nav: "Transportation",
     kicker: "Life afterwards",
     standfirst:
-      "British Columbia designates routes that must stay open for emergency vehicles after a major earthquake. In the same document, the Ministry states that it is not retrofitting the bridges on those routes to remain in service.",
+      "British Columbia designates bridges on the routes that must stay open for emergency vehicles after a major earthquake as its first retrofit priority. In the same document, the Ministry states that it is not retrofitting the bridges on those routes to remain in service.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -64,8 +64,8 @@ export const transportation: PageModule = {
       body: (
         <Prose>
           <p>
-            From §2.1.2 of the BC Ministry of Transportation’s seismic retrofit
-            design criteria: “In the Lower Mainland and on Vancouver Island a
+            From §2.1.2 of the BC Ministry of Transportation’s 2005 seismic
+            retrofit design criteria: “In the Lower Mainland and on Vancouver Island a
             system of routes have been designated as Disaster Response Routes
             (DRRs). Disaster Response Routes are corridors that must be kept
             open for emergency vehicle response following a major earthquake.
@@ -121,7 +121,7 @@ export const transportation: PageModule = {
           </p>
           <p>
             Restoration is gated on inspection before it is gated on repair.
-            What the province and the City plan for people while that inspection
+            What the province plans for people while that inspection
             happens is set out in{" "}
             <Link
               href="/getting-around/"
@@ -174,7 +174,7 @@ export const transportation: PageModule = {
             <ApproachAgainstSpan />
           </Figure>
           <p>
-            Three Lower Mainland crossings have published figures at their
+            Three Metro Vancouver crossings have published figures at their
             approaches. Each figure belongs to one size of earthquake, one place
             on one bridge, and one state of the ground beneath it.
           </p>
@@ -385,7 +385,8 @@ export const transportation: PageModule = {
               [
                 "Pattullo replacement",
                 <>
-                  Open; seismic description is qualitative only{" "}
+                  The replacement bridge is open; its seismic description is
+                  qualitative only{" "}
                   <Cite id="BCGOV-2026-PATT" />
                 </>,
               ],
@@ -412,11 +413,11 @@ export const transportation: PageModule = {
     },
 
     {
-      title: "The province expects weeks to months of reduced capacity",
+      title: "The province’s crustal scenario expects weeks to months of reduced capacity",
       body: (
         <Prose>
           <p>
-            From the province’s crustal magnitude 7.0 planning scenario:
+            From the province’s magnitude 7.0 planning scenario:
           </p>
           <ul>
             <li>
@@ -467,8 +468,8 @@ export const transportation: PageModule = {
             <Cite id="CBC-2015" />
           </p>
           <p>
-            No damage was found: the alarms stopped the trains, not any
-            breakage. Eighty minutes is what a check of an undamaged system took
+            No damage was found: the alarms stopped the trains. Eighty
+            minutes is what a check of an undamaged system took
             after a small, deep earthquake, and it forecasts nothing about a
             large one.
           </p>

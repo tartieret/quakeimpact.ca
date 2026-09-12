@@ -3,15 +3,15 @@ route: /after/transportation/
 title: Transportation
 nav: Transportation
 hook: Not collapsing and still working are two different standards, and only the first has been bought.
-lede: British Columbia designates routes that must stay open for emergency vehicles after a major earthquake. In the same document, the Ministry states that it is not retrofitting the bridges on those routes to remain in service.
+lede: British Columbia designates bridges on the routes that must stay open for emergency vehicles after a major earthquake as its first retrofit priority. In the same document, the Ministry states that it is not retrofitting the bridges on those routes to remain in service.
 bands: { cascadia: high, crustal: high }
-mechanism: The province designates routes that must stay open after a major earthquake, and states that it is not retrofitting the bridges on them to stay open.
-status: draft
+mechanism: The province designates routes that must stay open for emergency vehicles after a major earthquake, and states in the same document that it is not retrofitting the bridges on those routes to stay in service.
+source: MOTI-SRDC-05
 ---
 
 ## The province's own criteria set two standards and buy one
 
-From §2.1.2 of the BC Ministry of Transportation's seismic retrofit design criteria:
+From §2.1.2 of the BC Ministry of Transportation's 2005 seismic retrofit design criteria:
 "In the Lower Mainland and on Vancouver Island a system of routes have been designated
 as Disaster Response Routes (DRRs). Disaster Response Routes are corridors that must be
 kept open for emergency vehicle response following a major earthquake. Lifeline bridges
@@ -45,8 +45,7 @@ the earthquake. Public access is not expected until repairs are completed."
 **Superstructure**: "Access to traffic is not envisaged for a prolonged period."
 [MOTI-SRDC-05]
 
-Restoration is gated on inspection before it is gated on repair. What the province and
-the City plan for people while that inspection happens is set out in
+Restoration is gated on inspection before it is gated on repair. What the province plans for people while that inspection happens is set out in
 [getting around](/getting-around/).
 
 ## The approach fails before the span does
@@ -57,7 +56,7 @@ nobody, and a retrofit announcement rarely separates the two. The mechanism is
 liquefaction, which is saturated soil losing its strength and behaving like a liquid
 while the ground shakes.
 
-Three Lower Mainland crossings have published figures at their approaches. Each figure
+Three Metro Vancouver crossings have published figures at their approaches. Each figure
 belongs to one size of earthquake, one place on one bridge, and one state of the ground
 beneath it.
 
@@ -150,7 +149,7 @@ their own work.
 | Golden Ears | Objectives at 475, 1,000 and 2,475 years; in the 2,475-year event, about 0.5 m of ground movement at the river bank and about 0.3 m at the main piers after densification [GEB-CGS-08] [NAB-ICCHGE-08] |
 | Alex Fraser | Founded on weak deltaic materials; an early example of liquefaction assessment in design. No return period published [AFB-CGS-17] |
 | Canada Line, North Arm Bridge | The project's own criteria, as reported by its designer in 2008: a 475-year event with repairable damage and a 100-year event with essentially no damage. Only those two events were considered. Partial liquefaction expected; the piles were designed to resist the ground moving rather than to stop it [NAB-ICCHGE-08] |
-| Pattullo replacement | Open; seismic description is qualitative only [BCGOV-2026-PATT] |
+| Pattullo replacement | The replacement bridge is open; its seismic description is qualitative only [BCGOV-2026-PATT] |
 | Port Mann | Nothing quantitative is public. Three papers on this bridge's seismic design have been published, and all three sit behind paywalls [PM-SEI-17] [PM-IABSE-17] |
 | SkyTrain guideways generally | Nothing published |
 
@@ -159,9 +158,9 @@ different sets of design events, and the engineers who set each of them publishe
 they were. How a crossing is specified is decided project by project, and there is no
 single figure that every bridge in the region was built to.
 
-## The province expects weeks to months of reduced capacity
+## The province's crustal scenario expects weeks to months of reduced capacity
 
-From the province's crustal magnitude 7.0 planning scenario:
+From the province's magnitude 7.0 planning scenario:
 
 - Transportation routes will be "damaged or only partially functional and operating at
   a much-reduced capacity for an extended period (weeks to months)". [PEIRS]
@@ -188,7 +187,7 @@ SkyTrain service was suspended and inspections of both lines were conducted." Se
 resumed by 1am, about eighty minutes later. The Canada Line kept running, which
 TransLink attributed to 70 per cent of its track being underground. [CBC-2015]
 
-No damage was found: the alarms stopped the trains, not any breakage. Eighty minutes
+No damage was found: the alarms stopped the trains. Eighty minutes
 is what a check of an undamaged system took after a small, deep earthquake, and it
 forecasts nothing about a large one.
 

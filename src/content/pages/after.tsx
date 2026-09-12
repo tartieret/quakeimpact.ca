@@ -35,7 +35,7 @@ export const after: PageModule = {
       "BCUC-C-6-25",
       "AIR-2013",
       "MV-DSP-2026",
-      "MV-CAPITAL-2027",
+      "MV-CAPEX-2026",
       "PREPAREDBC",
       "DCRRA-2025",
     ],
@@ -80,7 +80,7 @@ export const after: PageModule = {
             >
               dependency graph
             </Link>{" "}
-            counts 26 such connections. Six have a published document behind
+            counts 29 such connections. Six have a published document behind
             them, and the rest are links no assessment has established.
           </p>
         </Prose>
@@ -166,7 +166,7 @@ export const after: PageModule = {
               the law requires, neither review identified an unsafe condition,
               and neither published conclusion mentions earthquakes.{" "}
               <Cite id="MV-DSP-2026" /> The seismic upgrade work at Cleveland
-              has not started. <Cite id="MV-CAPITAL-2027" /> Port, airport and
+              has not started. <Cite id="MV-CAPEX-2026" /> Port, airport and
               ferry terminals carry a band for the megathrust and a hatch for
               the crustal earthquake, because the one study that exists modelled
               the megathrust and nothing else. <Cite id="AIR-2013" />

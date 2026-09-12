@@ -4,7 +4,6 @@ title: How the impact bands work
 nav: Method & bands
 hook: A band describes how long a system is out, how widely, and what it is waiting on.
 lede: Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. The band says how long the system is out, how widely, and what it is waiting on.
-status: draft
 ---
 
 ## A band answers three questions, not one
@@ -13,7 +12,7 @@ Impacts here are given as Low, Medium or High, not as a number of days. Most pub
 work assesses one design earthquake, so a figure in between would be modelling rather
 than reporting.
 
-A band is assigned on three things together.
+A band is set by how long the system is out, wherever a document states a duration.
 
 | Band | How long | How widely | What it is waiting on |
 | --- | --- | --- | --- |
@@ -21,8 +20,7 @@ A band is assigned on three things together.
 | **Medium** | Days to weeks | Patchy, worst on poor ground | Waiting on one other system |
 | **High** | Weeks to months, sometimes longer | Regional | Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast |
 
-The same three questions are asked of every system, so that High for sewer service and
-High for roads mean comparable things.
+The same three questions are asked of every system, so that High for sewer service and High for roads mean comparable things. Where a published duration exists, it sets the band. How widely and what a system is waiting on describe the band rather than choose it, so a system can be banded below something it depends on: electricity is High and communications is Medium, because a cell site comes back when a generator gets fuel and a distribution network comes back one pole at a time.
 
 A fourth state, **not yet assessed**, is drawn hatched rather than coloured. It is a
 real answer, not a blank waiting to be filled.
@@ -37,10 +35,9 @@ Three cells on the grid are hatched today, for two reasons.
 
 Dams and reservoirs are hatched in both scenarios. Cleveland and Seymour Falls dams
 were each reviewed by an engineer in 2024, as the law requires every seven years for
-dams in the top consequence class. Neither review identified an unsafe condition, and
-neither published conclusion mentions earthquakes. [MV-DSP-2026] Metro Vancouver is
+dams in the top consequence class. Neither review identified an unsafe or unacceptable condition, and neither published conclusion mentions earthquakes. [MV-DSP-2026] Metro Vancouver is
 still paying for seismic evaluations of both dams, and the upgrade work at Cleveland
-has not started. [MV-CAPITAL-2027] So the dams have been assessed, but not for this,
+has not started. [MV-CAPEX-2026] So the dams have been assessed, but not for this,
 which is a different thing from never having been looked at.
 
 Port, airport and ferry terminals carry a band in one scenario and a hatch in the
@@ -63,8 +60,7 @@ A colour on its own is an assertion. Each cell on the grid carries the band, one
 sentence saying how the system fails, and a link to the document the sentence comes
 from. A cell that cannot carry all three is not coloured.
 
-The same rule applies to the writing around the grid. A sentence with a number in it
-and nothing to click is a mistake, and worth telling us about.
+The same rule applies to the writing around the grid. A sentence with a number in it and nothing to click is a mistake.
 
 ## Two systems can share a band for different reasons
 
@@ -108,10 +104,7 @@ casualty figures are attributed to the federal scenario. [DCRRA-2025] Its crusta
 figures were developed by Natural Resources Canada. [PEIRS] The province asked for
 those scenarios in the first place. [GSC-OF-8853]
 
-The province is not independently confirming the federal figures. It is adopting them.
-So when a federal document and a provincial document give the same number, that is one
-model quoted twice, and not two studies agreeing. Two figures that look like a range
-are one figure seen twice. Where a genuinely independent estimate exists, it comes from
+The province adopts the federal figures rather than confirming them. So a federal document and a provincial document giving the same number are one model quoted twice. Where a genuinely independent estimate exists, it comes from
 the insurance industry, and it is named as such wherever it appears.
 
 Every one of those modelled figures covers "only damage to buildings, and their

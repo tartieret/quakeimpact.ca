@@ -44,7 +44,6 @@ export const groundConditions: PageModule = {
       "DCRRA-APPC",
       "MVSMMP",
       "MVSMMP-LIC",
-      "GSC-OF-6169",
       "RICH-EQ",
       "RICH-THURBER-16",
       "RICH-DMP3-19",
@@ -101,17 +100,18 @@ export const groundConditions: PageModule = {
               <>
                 The two conditions the study puts together: sand that can
                 liquefy, and water close enough to the surface to keep it wet.
-                Depths are to scale and widths mean nothing. The 11.8 m is an
-                average total through a site rather than one continuous layer,
-                and it is drawn under the water table because the sand has to be
-                wet for any of this to happen. <Cite id="JAVANBAKHT-24" />
+                Thicknesses are to scale and widths mean nothing; how deep the
+                bottom of the sand sits is not a published figure. The 11.8 m is
+                an average total through a site rather than one continuous
+                layer, and it is drawn under the water table because the sand
+                has to be wet for any of this to happen. <Cite id="JAVANBAKHT-24" />
               </>
             }
           >
             <GroundSoilColumn />
           </Figure>
           <Figure
-            alt="Under the downtown peninsula and the North Shore uplands the ground is bedrock, while the soft deposits under the Fraser delta run from less than 20 m to more than 200 m thick. Two addresses a few blocks apart can sit on either one."
+            alt="Under the downtown peninsula and the North Shore uplands the ground is bedrock, while the soft deposits under the Fraser delta run from less than 20 m to more than 200 m thick. The two columns are two places on one depth scale, not a slice through the ground between them."
             caption={
               <>
                 Two grounds on one depth scale, kept apart because they are two
@@ -131,14 +131,14 @@ export const groundConditions: PageModule = {
 
     {
       title:
-        "Delta soil is expected to reach that tipping point every 100 to 250 years",
+        "Delta soil is expected to start behaving like a liquid every 100 to 250 years",
       body: (
         <Prose>
           <p>
             Researchers worked the figure out from 787 soil tests, 616 of them
             in Richmond and Delta: “In Richmond and Delta regions, it is
             expected that soil liquefaction could occur every 100 to 250 years.”
-            Elsewhere in the area they studied the interval runs from 100 to
+            Across the whole area they studied the interval runs from 100 to
             more than 500 years. The reason for the short one is the three
             conditions above. <Cite id="JAVANBAKHT-24" />
           </p>
@@ -150,11 +150,11 @@ export const groundConditions: PageModule = {
             visible going wrong on top. <Cite id="JAVANBAKHT-24" />
           </p>
           <p>
-            An offshore earthquake above magnitude 8.9 carries a 31 to 57 per
-            cent chance of setting off liquefaction in the area studied.{" "}
+            A Cascadia earthquake above magnitude 8.9, one that ruptures the
+            offshore interface, carries a 31 to 57 per cent chance of setting
+            off liquefaction in the area studied.{" "}
             <Cite id="JAVANBAKHT-23" />
           </p>
-          <p>The last Cascadia earthquake was in 1700.</p>
         </Prose>
       ),
     },
@@ -219,10 +219,8 @@ export const groundConditions: PageModule = {
             for these effects.” <Cite id="DCRRA-APPC" />
           </p>
           <p>
-            That is a provincial government document saying the national hazard
-            model and the national building code leave out something it has just
-            measured at up to 2.63 under Metro Vancouver. It points at detailed
-            local mapping as the work that fills the gap.{" "}
+            The same assessment points at detailed local mapping as the work
+            that fills the gap.{" "}
             <Cite id="DCRRA-APPC" />
           </p>
         </Prose>
@@ -231,7 +229,7 @@ export const groundConditions: PageModule = {
 
     {
       title:
-        "The western half of the region is mapped street by street, and the maps are free",
+        "The western half of the region is mapped street by street, and anyone can look up their address",
       body: (
         <Prose>
           <p>
@@ -252,18 +250,12 @@ export const groundConditions: PageModule = {
           </p>
           <VerificationNote label="Map not drawn">
             Those layers belong to the Metro Vancouver Seismic Microzonation
-            Mapping Project, and they are not open data. They may be read, and
-            shared unaltered, but publishing or adapting them electronically
-            needs written permission from the Institute for Catastrophic Loss
+            Mapping Project, and they are not open data. They may be read and
+            shared unaltered, and the data layers may be adapted on the same
+            terms; publishing them commercially, including electronically, needs
+            written permission from the Institute for Catastrophic Loss
             Reduction. <Cite id="MVSMMP-LIC" /> They are linked below, not
             redrawn here.
-          </VerificationNote>
-          <VerificationNote label="Not yet published">
-            Nobody has mapped where an earthquake would set off landslides along
-            the Sea to Sky corridor or the Fraser Canyon. The landslide mapping
-            that does exist for Sea to Sky is built from terrain and rainfall,
-            with no earthquake in it at all. <Cite id="GSC-OF-6169" /> Those two
-            corridors are how help reaches the Lower Mainland by road.
           </VerificationNote>
         </Prose>
       ),
@@ -271,7 +263,7 @@ export const groundConditions: PageModule = {
 
     {
       title:
-        "Richmond tells residents its dikes will hold, and its own engineers are less sure",
+        "Richmond tells residents its dikes will hold, and the engineers it hired are less sure",
       body: (
         <Prose>
           <p>
@@ -286,7 +278,8 @@ export const groundConditions: PageModule = {
             move in a very rare earthquake, the size expected about once in
             2,475 years. It found the dike dropping 600 mm at No. 1 Road, 1,000
             mm at Bath Slough and 500 mm at No. 4 Road. The provincial limit is
-            500 mm, so two of the three sections tested go past it. Another 0.3
+            500 mm, so two of the three sections tested go past it. Sideways
+            movement stayed inside the limit at all three. Another 0.3
             m or so of settling, as liquefied soil packs back down, is not
             counted in those numbers. Where liquefaction is widespread and the
             riverbank steep, the same report says “large uncontrolled
@@ -298,20 +291,18 @@ export const groundConditions: PageModule = {
             caption={
               <>
                 These are three of the eleven sections analysed, and the report
-                says its results apply only where it tested. They belong to the
-                1-in-2,475-year earthquake, which does not compare to figures
-                quoted for dams or for buildings. The later phases’ finding that
-                a cross-section will not meet the requirements describes
-                proposed upgraded designs without ground improvement, and that
-                ground improvement is being designed and costed.{" "}
-                <Cite id="RICH-THURBER-16" />
+                says its results apply only where it tested.{" "}
+                <Cite id="RICH-THURBER-16" /> They belong to the
+                1-in-2,475-year earthquake, and a dam or a building figure at
+                that same return period measures something else.
               </>
             }
           >
             <GroundDikeSettlement />
           </Figure>
           <p>
-            Phases 3, 4 and 5 each conclude that proposed dike cross-sections
+            Phases 3, 4 and 5 of the master plan, published in 2019 and 2021,
+            each conclude that proposed dike cross-sections
             “will not meet the performance requirements” of the provincial
             guidelines “without ground improvement or alternative approaches”,
             and price that ground improvement at $9,000 to $18,000 per lineal
@@ -327,25 +318,13 @@ export const groundConditions: PageModule = {
             <Cite id="RICH-THURBER-16" />
           </p>
           <p>
-            Both documents are the City’s own, and both are dated: current
-            Richmond Fire-Rescue advice on one side, a 2016 analysis and master
-            plan phases from 2019 and 2021 on the other.
+            Richmond already requires a geotechnical study before anyone builds
+            on ground that can liquefy. <Cite id="RICHMOND-PL1" />
           </p>
         </Prose>
       ),
     },
 
-    {
-      title: "The rules already treat the delta as different ground",
-      body: (
-        <Prose>
-          <p>
-            Richmond requires a geotechnical study before anyone builds on
-            ground that can liquefy. <Cite id="RICHMOND-PL1" />
-          </p>
-        </Prose>
-      ),
-    },
   ],
 
   lever: {

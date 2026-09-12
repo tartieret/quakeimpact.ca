@@ -31,6 +31,12 @@ const electricityLink = (
   </Link>
 );
 
+const fuelLink = (
+  <Link href="/after/fuel/" className="text-accent underline underline-offset-2">
+    fuel
+  </Link>
+);
+
 export const communications: PageModule = {
   meta: {
     route: "/after/communications/",
@@ -106,7 +112,51 @@ export const communications: PageModule = {
     },
 
     {
-      title: "Nothing requires a cell site to hold any backup power at all",
+      title:
+        "The province expects days to weeks, with what survives going to emergency personnel first",
+      body: (
+        <Prose>
+          <p>
+            The province’s megathrust assessment states that “disruptions in
+            communications continue for days to weeks”, with access prioritised
+            for emergency personnel, “leading to a prolonged lack of access to
+            communications for the general population”.{" "}
+            <Cite id="DCRRA-2025" /> That statement carries no figures, and it
+            describes a magnitude 9.0 Cascadia earthquake.{" "}
+            <Cite id="DCRRA-2025" />
+          </p>
+          <p>
+            The response strategy does not separate copper from cellular:
+            “common communication service providers, including cellular and
+            landline telephone providers, may be impacted”. <Cite id="PEIRS" />{" "}
+            It names “satellite phones and amateur radio services” as the
+            backups people would fall back on. Radio fills up the way the
+            cellular network does: “Radio communication, if operable, may be
+            also congested and impact the ability of first responders if
+            saturated with non-sanctioned operators.” <Cite id="PEIRS" />
+          </p>
+          <p>
+            Non-sanctioned means outside the province’s own volunteer service.
+            Through the Provincial Emergency Radio Communications Service it has
+            installed amateur radio equipment at each of its regional emergency
+            operations centres, though “some regions have a limited number of
+            radio operators”. <Cite id="PEIRS" /> The distinction is whether an
+            operator joined an organised group before the earthquake.
+          </p>
+          <VerificationNote label="Not published">
+            Which regions are short of radio operators, and whether the Lower
+            Mainland is one of them, is not in the document. <Cite id="PEIRS" />{" "}
+            No carrier has published how many sites it runs here, how long they
+            hold without grid power, or how quickly it would bring them back,
+            and the province’s assessments give no site counts and no
+            restoration curve. <Cite id="PEIRS" /> <Cite id="DCRRA-2025" />
+          </VerificationNote>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "No rule says how long a cell site has to keep running without the grid",
       body: (
         <Prose>
           <p>
@@ -114,7 +164,8 @@ export const communications: PageModule = {
             rooftop or at the foot of a mast, and both run on grid power. When
             the power goes, the site runs on whatever battery or generator its
             owner chose to put there. How long the grid takes to come back is on{" "}
-            {electricityLink}.
+            {electricityLink}, and a generator runs as long as somebody keeps
+            delivering {fuelLink}.
           </p>
           <p>
             No Canadian rule sets how long that battery has to last. On 4
@@ -196,50 +247,6 @@ export const communications: PageModule = {
 
     {
       title:
-        "The province expects days to weeks, with what survives going to emergency personnel first",
-      body: (
-        <Prose>
-          <p>
-            The province’s megathrust assessment states that “disruptions in
-            communications continue for days to weeks”, with access prioritised
-            for emergency personnel, “leading to a prolonged lack of access to
-            communications for the general population”.{" "}
-            <Cite id="DCRRA-2025" /> That statement carries no figures, and it
-            describes a magnitude 9.0 Cascadia earthquake.{" "}
-            <Cite id="DCRRA-2025" />
-          </p>
-          <p>
-            The response strategy does not separate copper from cellular:
-            “common communication service providers, including cellular and
-            landline telephone providers, may be impacted”. <Cite id="PEIRS" />{" "}
-            It names “satellite phones and amateur radio services” as the
-            backups people would fall back on. Radio fills up the way the
-            cellular network does: “Radio communication, if operable, may be
-            also congested and impact the ability of first responders if
-            saturated with non-sanctioned operators.” <Cite id="PEIRS" />
-          </p>
-          <p>
-            Non-sanctioned means outside the province’s own volunteer service.
-            Through the Provincial Emergency Radio Communications Service it has
-            installed amateur radio equipment at each of its regional emergency
-            operations centres, though “some regions have a limited number of
-            radio operators”. <Cite id="PEIRS" /> The distinction is whether an
-            operator joined an organised group before the earthquake.
-          </p>
-          <VerificationNote label="Not published">
-            Which regions are short of radio operators, and whether the Lower
-            Mainland is one of them, is not in the document. <Cite id="PEIRS" />{" "}
-            No carrier has published how many sites it runs here, how long they
-            hold without grid power, or how quickly it would bring them back,
-            and the province’s assessments give no site counts and no
-            restoration curve. <Cite id="PEIRS" /> <Cite id="DCRRA-2025" />
-          </VerificationNote>
-        </Prose>
-      ),
-    },
-
-    {
-      title:
         "The alert that warns of the shaking travels over the network the shaking degrades",
       body: (
         <Prose>
@@ -251,9 +258,10 @@ export const communications: PageModule = {
           </p>
           <p>
             How much warning there is depends on how far away the earthquake
-            starts, and Natural Resources Canada, which runs the system,
-            publishes no general figure. <Cite id="NRCAN-EEW-FAQ" /> It models
-            named earthquakes instead, and Vancouver appears in three of them.
+            starts. Natural Resources Canada, which runs the system, publishes
+            only “seconds to tens-of-seconds” and says the number depends on
+            distance. <Cite id="NRCAN-EEW-FAQ" /> It models named earthquakes
+            instead, and Vancouver appears in three of them.
           </p>
           <DataTable
             caption="Each row is one modelled earthquake and the warning Vancouver would get from it."
@@ -274,7 +282,7 @@ export const communications: PageModule = {
                 </>,
               ],
               [
-                "2001 magnitude 6.8 Nisqually, 52 km deep",
+                "2001 magnitude 6.8 Nisqually, in Washington State, 52 km deep",
                 <>
                   30 seconds <Cite id="NRCAN-EEW-NISQ-26" />
                 </>,

@@ -4,7 +4,6 @@ title: Life afterwards
 nav: Life afterwards
 hook: Thirteen systems, and the order they come back in is set by what each one is waiting on.
 lede: How long each system is out after the shaking, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.
-status: draft
 ---
 
 ## No system fails by itself
@@ -27,7 +26,7 @@ modelled to cause 267 water main failures across Metro Vancouver's network, with
 about 60 of them at the 71 points where mains cross under rivers and inlets, the
 hardest places in the system to reach. [MV-WATER-22]
 
-The [dependency graph](/dependencies/) counts 26 such connections. Six have a
+The [dependency graph](/dependencies/) counts 29 such connections. Six have a
 published document behind them, and the rest are links no assessment has established.
 
 ## Some systems fail in the first hours, others over the following weeks
@@ -68,7 +67,7 @@ Dams and reservoirs are hatched in both scenarios: Cleveland and Seymour Falls d
 were each reviewed by an engineer in 2024, as the law requires, neither review
 identified an unsafe condition, and neither published conclusion mentions earthquakes.
 [MV-DSP-2026] The seismic upgrade work at Cleveland has not started.
-[MV-CAPITAL-2027] Port, airport and ferry terminals carry a band for the megathrust
+[MV-CAPEX-2026] Port, airport and ferry terminals carry a band for the megathrust
 and a hatch for the crustal earthquake, because the one study that exists modelled the
 megathrust and nothing else. [AIR-2013]
 
@@ -93,5 +92,5 @@ before you need to.
 ## Sources on this page
 
 [PEIRS] [MV-DEBRIS-17] [MV-WATER-22] [CRTC-2025-226] [DCRRA-APPC] [BCH-WESTEND-25]
-[MOTI-SRDC-05] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPITAL-2027] [PREPAREDBC]
+[MOTI-SRDC-05] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [PREPAREDBC]
 [DCRRA-2025]

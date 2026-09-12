@@ -2011,7 +2011,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2016,
     date: "3 Aug 2016",
     href: "https://cdhowe.org/wp-content/uploads/2024/12/Commentary20454_0.pdf",
-    note: "The ~$30B industry claims-capacity ceiling",
+    note: "The $30–35 billion industry claims-capacity band, and the earthquake insurance take-up figures for southwest British Columbia, Victoria and Vancouver",
     route: "direct",
   },
   "LIONSGATE": {
@@ -2609,7 +2609,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Natural Resources Canada",
     date: "current",
     href: "https://www.earthquakescanada.nrcan.gc.ca/eew-asp/system-en.php",
-    note: "System description and the \"late alert zone\"",
+    note: "System description, the \"late alert zone\", and the spring 2024 launch in British Columbia",
     route: "direct",
   },
   "NRCAN-EEW-1946-21": {
@@ -2763,7 +2763,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2025,
     date: "undated (v1, 2025)",
     href: "https://www.thenewstpauls.ca/sites/nsph/files/2025-05/Schedule-3-_-Design-and-Construction-Specifications-versions-v1.pdf",
-    note: "VBBL post-disaster; 72 h fuel; FEMA P-58 median repair time of 30 days or less at 2% in 50 years",
+    note: "VBBL post-disaster; 72 h self-sufficiency for fuel, water and sanitary holding, in the same terms as the new Surrey hospital; FEMA P-58 median repair time of 30 days or less at 2% in 50 years",
     route: "direct",
   },
   "NZ-RC-V4": {
@@ -3332,11 +3332,12 @@ export const REFERENCES: Record<string, Reference> = {
   "SCAWTHORN-2020": {
     id: "SCAWTHORN-2020",
     kind: "report",
-    title: "Scawthorn, C., Fire following earthquake in the Vancouver region, ICLR Research Paper Series 67, 74 pp.; ISBN 978-1-927929-29-2. The report gives the Cascadia fire loss as $162 million",
+    title: "Scawthorn, C., Fire following earthquake in the Vancouver region, ICLR Research Paper Series 67, 74 pp.; ISBN 978-1-927929-29-2",
     publisher: "Institute for Catastrophic Loss Reduction / SPA Risk LLC",
     year: 2020,
     date: "Nov 2020",
     href: "https://www.iclr.org/wp-content/uploads/2025/10/Vancouver-fire-following-earthquake-E.pdf",
+    note: "The five modelled scenarios with their ignition counts and fire losses, the Cascadia fire loss at $162 million, the buried-pipe repair estimate, the mutual-aid and 911 findings, and the high-rise secondary water supply gap",
     route: "direct",
     licence: "Permissive but non-standard, and not an open licence: \"This material may be copied for purposes related to the document as long as the authors and copyright holders are recognized.\"",
   },
@@ -3533,7 +3534,7 @@ export const REFERENCES: Record<string, Reference> = {
     year: 2026,
     date: "consolidated to 5 May 2026",
     href: "https://vancouver.ca/files/cov/vbbl-2025-volume-1-v4-00.pdf",
-    note: "Art. 4.1.8.18 non-structural seismic design, Sentences (14)–(15) glazing fallout, Part 11 falling hazards, App. C Table C-3",
+    note: "Art. 4.1.8.18 non-structural seismic design, Sentences (14)–(15) glazing fallout, Part 11 falling hazards, App. C Table C-3, and Articles 3.2.7.4, 3.2.7.6 and 3.2.7.9 on emergency power and the CSA Z32 routing for treatment occupancies. \"Secondary water supply\" occurs once, in the plumbing provisions for alternate water source systems: the by-law sets no seismic on-site firefighting water reserve",
     route: "direct",
   },
   "VCH-OPR": {
@@ -3639,7 +3640,7 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "Vancouver Airport Authority",
     date: "undated",
     href: "https://news.yvr.ca/sea-island-climate-resilience-project/",
-    note: "Confirms the 15 km dike and 4.7 m height only. Eight pump stations unconfirmed; the ~$25M conflicts with a ~$12M figure published elsewhere",
+    note: "Confirms the 15 km perimeter dike, the raise of about a metre to 4.7 m, and pump-station upgrades. The pump-station count of eight is unconfirmed, and the ~$25M conflicts with a ~$12M figure published elsewhere",
     route: "landing",
   },
   "ZAMA-12": {

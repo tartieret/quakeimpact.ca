@@ -3,8 +3,7 @@ route: /dependencies/
 title: Nothing fails alone
 nav: Dependency graph
 hook: The order the systems come back in is set by what each one is waiting on.
-lede: Every system waits on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.
-status: draft
+lede: Twelve of the thirteen systems wait on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.
 ---
 
 ## Everything else runs on fuel, and fuel moves by road
@@ -126,7 +125,7 @@ a finding.
 > Nothing published separates the part of that which is repairing equipment from the
 > part which is crews reaching the work.
 
-One of these is documented, and what is documented is an absence. Nothing in Canada
+A fourth link on the list is documented, and what is documented is an absence. Nothing in Canada
 currently requires a mobile phone site to hold any backup power at all, and the
 regulator opened a proceeding in September 2025 to decide what that requirement
 should be. [CRTC-2025-226] The link from electricity to phones is real. Nothing at

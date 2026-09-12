@@ -3,8 +3,7 @@ route: /shaking/casualties/
 title: Casualties
 nav: Casualties
 hook: How many people are expected to be hurt in each scenario, and why the published range is so wide.
-lede: Three bodies have published figures for how many people would be hurt or killed by an earthquake here. The figures are far apart, because they cover different places, different earthquakes and different times of day. All of them count one thing: buildings shaken, and the people inside them.
-status: draft
+lede: Two governments have published figures for how many people would be hurt or killed by an earthquake here. The figures are far apart, because they cover different places, different earthquakes and different times of day. All of them count one thing: buildings shaken, and the people inside them.
 ---
 
 ## Every published casualty figure counts buildings shaking, and nothing else
@@ -20,7 +19,7 @@ estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF
 So a casualty figure from that work is a floor. Fires, landslides and liquefaction hurt
 people too, and none of these models was asked to count them.
 
-## Three bodies have published casualty figures, and they do not cover the same ground
+## Two governments have published casualty figures, and they do not count the same area
 
 The City of Vancouver reports casualties as a single count, at two times of day. The
 province splits its figures four ways, into the dead, the critically injured, those
@@ -32,7 +31,7 @@ needing hospital care and those needing first aid.
 | City of Vancouver, magnitude 9.0 Cascadia        | Casualties in the City of Vancouver, daytime and at night | 400 day, 170 night                                                                          |
 | City of Vancouver, magnitude 7.0 deep earthquake | Casualties in the City of Vancouver, daytime and at night | 190 day, 70 night                                                                           |
 | Province of BC, magnitude 7.0 Georgia Strait     | Greater Vancouver, on a weekday between 9 am and 5 pm     | 2,000 dead, 1,000 critically injured, 6,500 needing hospital care, 21,000 needing first aid |
-| Province of BC, magnitude 9.0 Cascadia           | Injuries and deaths from mainshock shaking                | more than 10,000 injured, 3,400 dead                                                        |
+| Province of BC, magnitude 9.0 Cascadia           | Deaths and injuries across British Columbia from the main shaking                | more than 10,000 injured, 3,400 dead                                                        |
 
 The method behind the City's assessment has been published and peer reviewed.
 [HILT-2022]
@@ -73,8 +72,7 @@ under [buildings](/shaking/buildings/).
 
 ## In Christchurch, New Zealand, most of the people killed by falling walls were outside the buildings
 
-Apart from the two office buildings that collapsed, building failure in the 2011
-Canterbury earthquake killed 42 people. Of those, 35 died when unreinforced masonry
+In the 2011 earthquake in Christchurch, New Zealand, building failure killed 42 people apart from the two office buildings that collapsed. Of those, 35 died when unreinforced masonry
 façades or walls fell, and 26 of the 35 were struck in the street or in vehicles.
 [NZ-RC-V4]
 
@@ -92,8 +90,7 @@ words: "An assumption was made that this earthquake would result in approximatel
 deaths". The Board reasoned it up from the province's own planning figures, then reduced
 Canada's population by that number inside its economic model. [CBOC-2016]
 
-Nothing about the figure was measured. Wherever it is repeated, the word assumption
-belongs in the same sentence.
+Nothing about the figure was measured. It was chosen as an input, and the model was run with Canada's population reduced by it.
 
 ## The province says its own casualty figures may not match a real event
 
@@ -109,15 +106,13 @@ without account of secondary hazards like landslides, liquefaction, tsunami, fir
 more." [DCRRA-2025]
 
 > **Not yet published.** No published figure counts the people an earthquake here would
-> hurt once fire following, landslides and liquefaction are added in. That is why Natural
-> Resources Canada calls its own estimates a minimum. [GSC-OF-8853]
+> hurt once fire following, landslides and liquefaction are added in.
 
 ## What you can do
 
 **Drop, cover and hold on.** In the province's account of its magnitude 7.0 scenario, the
 shaking knocks people near the epicentre off their feet, "except for those who remember to
-'drop, cover, and hold on'". [PEIRS] It is the one action that changes the answer in the
-first ten seconds.
+'drop, cover, and hold on'". [PEIRS] It is the one action that changes the answer while the ground is still moving.
 
 **Do not run outside while the ground is moving.** The wall that falls lands on the
 footpath beside the building, which is where most of the people killed by falling walls in
@@ -137,8 +132,7 @@ high-rise residential at 37 per cent, and unreinforced masonry residential at 29
 [COV-RISK-2024]
 
 The hour of the day is the biggest single thing in these models, and it is the one nobody
-gets to pick. What is above the bed, and what you do in the first ten seconds, can be
-picked today.
+gets to pick. What is above the bed, and what you do while the ground is moving, can be picked today.
 
 ## Sources on this page
 

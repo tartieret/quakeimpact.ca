@@ -4,7 +4,6 @@ title: What a major earthquake does to the Lower Mainland, and for how long
 nav: Home
 hook: The shaking is the short part.
 lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] Most households in the region have not put together an emergency kit of any size. [RESEARCHCO-PREP-21] This site gathers what has already been published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each repair is waiting on.
-status: draft
 ---
 
 ## The shaking is the short part
@@ -20,16 +19,10 @@ words. See the module docblock in `src/content/pages/home.tsx`.*
 **Hours — it is over in a minute, and nothing works.**
 
 *Crustal M7:* In the province's own scenario the earthquake is heard before it is
-felt: a sound like a freight train, then 10 to 20 seconds of violent shaking that
-knocks people off their feet, "except for those who remember to drop, cover, and
-hold on". A small number of buildings collapse, many more shift and crack, and
-most of the people badly hurt are hurt by things falling, some of them while
-running outside. [More about the shaking](/shaking/).
+felt: a sound like a freight train, then seconds of violent shaking that knocks people off their feet, "except for those who remember to drop, cover, and
+hold on". A small number of buildings collapse, many more shift and crack, and many of the people who try to run outside are badly hurt by falling and flying objects. [More about the shaking](/shaking/).
 
-*Cascadia M9:* The province's megathrust assessment sets its earthquake at ten in
-the morning on an August day. The shaking is moderate rather than violent and
-lasts about three minutes, and it arrives along a thousand kilometres of coast at
-once rather than under one city. [More about the shaking](/shaking/).
+*Cascadia M9:* The province's megathrust assessment sets its earthquake on a summer morning. The shaking is moderate rather than violent, it goes on for minutes, and it arrives along the whole coast at once rather than under one city. [More about the shaking](/shaking/).
 
 The [power](/after/electricity/) is already off when the shaking stops: the
 lights, the lifts, the tills, the fuel pumps and the traffic signals at every
@@ -39,8 +32,7 @@ ones with power left in them.
 
 Over the next few hours the [water](/after/water/) pressure falls away as broken
 mains empty the system. Glass, brick and cladding lie across the pavements and
-[debris blocks streets](/after/transportation/) in every neighbourhood. Thousands
-of people are hurt, and the [hospitals](/after/health-care/) taking them stood
+[debris blocks streets](/after/transportation/) in every neighbourhood. People are trapped and injured across the region, and the [hospitals](/after/health-care/) taking them stood
 through the same earthquake.
 
 **Days — nobody is coming to your street yet.** The taps are dry. Bottled
@@ -52,16 +44,11 @@ power dispenses nothing. Cards do not work without power or a network.
 Crews clear the routes the response needs first, which is not your street, so
 what you can reach is what you can walk or cycle to. The
 [toilet](/after/sanitation/) stops being usable on the first day rather than the
-first week, because flushing takes water nobody has to spare. The province's own
-plan expects neighbours to organise themselves and work together without waiting
-to be told, so the people who reach you first are the people who already live on
-your street.
+first week, because flushing takes water nobody has to spare. In the [province's own plan](/prepare/), family and neighbours are likely to be the only available first responders, so the people who reach you first are the people who already live on your street.
 
 **Weeks — some things come back. The ones under the road do not.**
-[Power](/after/electricity/) returns in patches, the core before the edges,
-because putting poles and wires back up is thousands of small repairs rather than
-one big one. Your street comes back when its own poles do.
-[Water](/after/water/) follows behind it, and the worst ground is served last.
+[Power](/after/electricity/) comes back where the network can be repaired first, and putting poles and wires back up is many small repairs rather than one big one. BC Hydro has published an estimate for downtown Vancouver and for nowhere else in the region.
+[Water](/after/water/) comes back behind it, and no restoration estimate for the water network has been published at all.
 
 The [sewers](/after/sanitation/) are what nobody can give you a date for.
 Households manage waste in buckets and chemical toilets, and an apartment tower
@@ -76,8 +63,7 @@ behind a cordon. Most people who lose their home lose it that way rather than
 to collapse. Somewhere to move into is scarce, contractors and engineers are
 scarcer, and every household in the region is looking at the same time.
 
-Utilities run at reduced service long after they are back on, and the network as
-a whole is years from the state it was in the morning before. The province's plan
+Utilities run at reduced service long after they are back on, and the network as a whole is a long way from the state it was in the morning before. The province's plan
 through all of it is that people stay in the region rather than leave it. [What
 that means for getting around](/getting-around/).
 
@@ -98,7 +84,7 @@ which the systems can be brought back sets how long the region waits, so [life
 afterwards](/after/) takes them one at a time and [the dependency
 graph](/dependencies/) counts what each one is waiting on.
 
-## Each of these comes back on its own schedule
+## Every system comes back on its own schedule
 
 Water in the taps, power in the walls, a phone that connects, a toilet that
 flushes, roads that carry you, a home to go back to.

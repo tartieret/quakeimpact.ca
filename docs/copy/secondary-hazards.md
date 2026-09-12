@@ -3,8 +3,7 @@ route: /shaking/secondary-hazards/
 title: Secondary hazards
 nav: Secondary hazards
 hook: "Landslides, dikes and dams: the damage that arrives after the shaking has stopped."
-lede: Landslides, dikes and dams are the damage that arrives once the shaking stops. Most of it sits outside the official damage estimates, which count buildings and the people inside them and say so.
-status: draft
+lede: Landslides, dikes and dams are where the damage arrives once the shaking stops. Most of it sits outside the official damage estimates, which count buildings and the people inside them and say so.
 ---
 
 ## The official damage estimates count buildings and stop there
@@ -26,8 +25,7 @@ been looked at on its own.
 
 ## The province's own scenario has landslides cutting the roads
 
-The province's planning scenario for a magnitude 7.0 earthquake close to the
-city is set in January, days after an atmospheric river has soaked the ground.
+The province's planning scenario for a magnitude 7.0 earthquake close to the city is set on a January afternoon, immediately after an atmospheric river has soaked the ground.
 [PEIRS] Its account of the first minutes says: "Landslides and rock falls are
 generated in many areas, cutting off transportation routes. Flooding is
 increased by the recent wet weather event with some dikes failing." [PEIRS]
@@ -43,10 +41,11 @@ gathered outside the shaking and pushed in, and two of the roads it would come
 in on run through mountains: Highway 99 north through the Sea to Sky corridor,
 and Highway 1 east through the Fraser Canyon.
 
-> **Not published.** Nobody has published a map of where an earthquake would set off
-> landslides along the Sea to Sky corridor or the Fraser Canyon. Every seismic
-> landslide product that exists for this part of the province covers the western
-> municipalities of Metro Vancouver, which stops well short of either corridor.
+> **Not published.** No map of where an earthquake would set off landslides along the
+> Sea to Sky corridor or the Fraser Canyon has been found in the published literature.
+> Every seismic landslide product that has been found for this part of the province
+> covers the western municipalities of Metro Vancouver, which stops well short of
+> either corridor.
 > [MVSMMP]
 
 ## The landslide maps for those corridors were built for rain, not for earthquakes
@@ -266,8 +265,7 @@ or earthquake warning. [MV-CDSEP]
 ## What you can do
 
 **Ask your local government what it holds for the dam or the dike nearest you.**
-Municipalities downstream of a dam receive part of its emergency plan, including
-the evacuation area material. [BCDSP-DEP-24] A resident can ask for it, and can
+Municipalities downstream of a dam receive a defined part of its emergency plan. [BCDSP-DEP-24] A resident can ask for it, and can
 ask Metro Vancouver directly under freedom of information. Asking is the route
 that exists.
 

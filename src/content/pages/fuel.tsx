@@ -93,8 +93,9 @@ export const fuel: PageModule = {
             undamaged station the delivery truck cannot reach.
           </p>
           <p>
-            What decides whether there is fuel in the first week is not the
-            refinery. It is the local feeder and the road. What BC Hydro has
+            In the first week, fuel arrives or does not arrive on two things:
+            the power line that runs the station’s pumps, and the road the
+            tanker comes down. What BC Hydro has
             published about how long power takes to come back is on the{" "}
             <Link
               href="/after/electricity/"
@@ -116,10 +117,9 @@ export const fuel: PageModule = {
             from a single phone interview during a flood. On 21 November 2021,
             during the flood emergency in the province’s southwest, Global News
             quoted Dan McTeague, president of the advocacy organisation
-            Canadians for Affordable Energy, saying the region goes through
-            about 150,000 barrels of fuel a day and usually maintains a supply
-            to cover four to five days. <Cite id="FUEL-GN-21" /> That is one person’s remark
-            to a reporter, not a study, and it is five years old. The nearest
+            Canadians for Affordable Energy. <Cite id="FUEL-GN-21" /> That is
+            one person’s remark to a reporter rather than a study, and it
+            predates the 2024 Trans Mountain Expansion. The nearest
             academic work, a 2016 study of the coastal British Columbia fuel
             transportation system, gives its figure for Vancouver Island, not
             for here. <Cite id="UBC-FUEL" /> Nothing current has been published
@@ -131,7 +131,7 @@ export const fuel: PageModule = {
 
     {
       title:
-        "British Columbia has already restricted fuel purchases once this decade",
+        "British Columbia restricted fuel purchases by emergency order in 2021",
       body: (
         <Prose>
           <p>
@@ -177,10 +177,6 @@ export const fuel: PageModule = {
             standard, and it reaches no hospital already open. What Vancouver
             General, Surrey Memorial, Burnaby, Lions Gate, Richmond or St.
             Paul’s on Burrard hold in their tanks is not in the public record.
-          </p>
-          <p>
-            Seventy-two hours is the point at which the plan for a new hospital
-            expects a delivery to arrive.
           </p>
         </Prose>
       ),
@@ -234,7 +230,7 @@ export const fuel: PageModule = {
             unusable during the immediate response phase”. <Cite id="PEIRS" />{" "}
             Road and rail are the two ways fuel moves in quantity.
           </p>
-          <Callout label="Out of region">
+          <Callout label="Japan, 2011">
             <p>
               After the 2011 Great East Japan Earthquake, the Pacific-coast oil
               bases that supplied the Tōhoku region “stopped operating and were
@@ -258,8 +254,8 @@ export const fuel: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        Fuel is the one thing here a household cannot store its way out of. What
-        helps is decided before the earthquake.
+        A household cannot stock its way through a fuel shortage. What helps is
+        decided before the earthquake.
       </>
     ),
     items: [
@@ -285,8 +281,8 @@ export const fuel: PageModule = {
       </>,
       <>
         <strong>Do not store fuel at home.</strong> It is a fire risk, and a can
-        in the garage is no answer to a disruption the province measures in
-        weeks to months. <Cite id="PEIRS" />
+        in the garage is no answer to roads the province plans on running at
+        much-reduced capacity for weeks to months. <Cite id="PEIRS" />
       </>,
     ],
     closing: (

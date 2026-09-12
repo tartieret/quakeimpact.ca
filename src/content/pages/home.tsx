@@ -125,13 +125,12 @@ export const home: PageModule = {
                         <>
                           In the province’s own scenario the earthquake is
                           heard before it is felt: a sound like a freight train,
-                          then 10 to 20 seconds of violent shaking that knocks
+                          then seconds of violent shaking that knocks
                           people off their feet, “except for those who
                           remember to drop, cover, and hold on”. A small
                           number of buildings collapse, many more shift and
-                          crack, and most of the people badly hurt are hurt by
-                          things falling, some of them while running
-                          outside.{" "}
+                          crack, and many of the people who try to run outside
+                          are badly hurt by falling and flying objects.{" "}
                           <Link href="/shaking/" className={link}>
                             More about the shaking
                           </Link>
@@ -141,11 +140,10 @@ export const home: PageModule = {
                       cascadia={
                         <>
                           The province’s megathrust assessment sets its
-                          earthquake at ten in the morning on an August day. The
-                          shaking is moderate rather than violent and lasts
-                          about three minutes, and it arrives along a thousand
-                          kilometres of coast at once rather than under one
-                          city.{" "}
+                          earthquake on a summer morning. The shaking is
+                          moderate rather than violent, it goes on for minutes,
+                          and it arrives along the whole coast at once rather
+                          than under one city.{" "}
                           <Link href="/shaking/" className={link}>
                             More about the shaking
                           </Link>
@@ -178,8 +176,8 @@ export const home: PageModule = {
                       <Link href="/after/transportation/" className={link}>
                         debris blocks streets
                       </Link>{" "}
-                      in every neighbourhood. Thousands of people are hurt, and
-                      the{" "}
+                      in every neighbourhood. People are trapped and injured across the
+                      region, and the{" "}
                       <Link href="/after/health-care/" className={link}>
                         hospitals
                       </Link>{" "}
@@ -220,10 +218,13 @@ export const home: PageModule = {
                       </Link>{" "}
                       stops being usable on the first day rather than the first
                       week, because flushing takes water nobody has to spare.
-                      The province’s own plan expects neighbours to
-                      organise themselves and work together without waiting to
-                      be told, so the people who reach you first are the people
-                      who already live on your street.
+                      In the{" "}
+                      <Link href="/prepare/" className={link}>
+                        province’s own plan
+                      </Link>
+                      , family and neighbours are likely to be the only
+                      available first responders, so the people who reach you
+                      first are the people who already live on your street.
                     </p>
                   </>
                 ),
@@ -238,14 +239,16 @@ export const home: PageModule = {
                       <Link href="/after/electricity/" className={link}>
                         Power
                       </Link>{" "}
-                      returns in patches, the core before the edges, because
-                      putting poles and wires back up is thousands of small
-                      repairs rather than one big one. Your street comes back
-                      when its own poles do.{" "}
+                      comes back where the network can be repaired first, and
+                      putting poles and wires back up is many small repairs
+                      rather than one big one. BC Hydro has published an
+                      estimate for downtown Vancouver and for nowhere else in
+                      the region.{" "}
                       <Link href="/after/water/" className={link}>
                         Water
                       </Link>{" "}
-                      follows behind it, and the worst ground is served last.
+                      comes back behind it, and no restoration estimate for the
+                      water network has been published at all.
                     </p>
                     <p>
                       The{" "}
@@ -285,8 +288,8 @@ export const home: PageModule = {
                     </p>
                     <p>
                       Utilities run at reduced service long after they are back
-                      on, and the network as a whole is years from the state it
-                      was in the morning before. The province’s plan
+                      on, and the network as a whole is a long way from the state
+                      it was in the morning before. The province’s plan
                       through all of it is that people stay in the region rather
                       than leave it.{" "}
                       <Link href="/getting-around/" className={link}>
@@ -335,7 +338,7 @@ export const home: PageModule = {
     },
 
     {
-      title: "Each of these comes back on its own schedule",
+      title: "Every system comes back on its own schedule",
       lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to.",
       body: <SystemGrid />,
     },

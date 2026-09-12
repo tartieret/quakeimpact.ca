@@ -5,9 +5,10 @@ nav: Where help comes from
 hook: British Columbia's plan stages help with the agencies outside the impact area, and in a megathrust they are inside it.
 lede: British Columbia's earthquake plan does not wait to be asked. It stages resources with the agencies outside the damaged region and pushes them in. [PEIRS] Whether there is an outside to push from is the thing the two earthquakes answer differently. [PEIRS]
 bands: { cascadia: high, crustal: low }
-mechanism: BC's plan assumes agencies outside the impact area are unaffected and stages resources there; in a Cascadia event the province states the US will be unable to deliver mutual aid.
+mechanism-cascadia: The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states that the United States will be unable to deliver mutual aid.
+mechanism-crustal: The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and a local crustal earthquake is the case where that assumption holds.
+evidence-crustal: This is a planning assumption the province states, not a measured finding about how help would arrive.
 source: PEIRS
-status: draft
 ---
 
 ## Help arrives over the same roads and ports as everything else

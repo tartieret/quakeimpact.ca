@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
+import { ScenarioCards } from "@/components/scenario-cards";
+import { SystemMatrix } from "@/components/system-grid";
 import { Prose, Quote, DataTable, Figure } from "@/components/page-parts";
 import {
   CascadiaRecurrence,
@@ -57,6 +59,11 @@ export const scenarios: PageModule = {
   },
 
   sections: [
+    {
+      title: "The two earthquakes differ in almost every way that matters",
+      body: <ScenarioCards />,
+    },
+
     {
       title: "The nearer earthquake is the greater hazard to cities",
       body: (
@@ -173,8 +180,9 @@ export const scenarios: PageModule = {
             <Cite id="PEIRS" />
           </p>
           <p>
-            The modelled fault plane dips at 47 degrees to a bottom edge about
-            13 km down, and the earthquake starts 3 km down. Its footprint runs
+            The modelled fault plane dips at 47 degrees from the ground surface
+            to a bottom edge about 13 km down, and the earthquake starts 3 km
+            down. Its footprint runs
             from near Nanaimo to downtown Vancouver, which describes the fault
             rather than where the damage falls. <Cite id="OPENDRR-GSF-22" />{" "}
             Shaking across the Lower Mainland and Nanaimo is modelled at 10 to
@@ -183,26 +191,26 @@ export const scenarios: PageModule = {
             <Cite id="GSC-OF-8853" />
           </p>
           <Figure
-            alt="The modelled crustal fault dips at 47 degrees to a bottom edge about 13 km down, and the earthquake starts 3 km down, which is shallow. The source gives no top edge to the plane, so the drawing stops where the source stops."
+            alt="The modelled crustal fault is a plane dipping at 47 degrees from the ground surface down to a bottom edge about 13 km below it, and the earthquake starts 3 km down, which is shallow. The plane reaching the surface is the model’s geometry, not a forecast that the ground breaks open."
             caption={
               <>
-                A cross-section drawn from the three numbers the federal rupture
+                A cross-section drawn from the four numbers the federal rupture
                 file states, at the same scale across and down so the dip is
-                true. <Cite id="OPENDRR-GSF-22" /> Only the segment between the
-                two stated depths is drawn. The footprint from near Nanaimo to
-                downtown Vancouver runs across the region rather than through
-                this section, so it is not on it.
+                true. <Cite id="OPENDRR-GSF-22" /> The footprint from near
+                Nanaimo to downtown Vancouver runs across the region rather than
+                through this section, so it is not on it.
               </>
             }
           >
             <CrustalFaultSection />
           </Figure>
           <p>
-            The scenario is set on a January afternoon between 9am and 5pm,
-            immediately after an atmospheric river has dropped 180 to 300 mm of
-            rain over three days. The ground is already saturated when the
+            The scenario is set on a January afternoon, immediately after an
+            atmospheric river has dropped 180 to 300 mm of rain over three days. The ground is already saturated when the
             shaking starts, which is why the scenario’s landslides, liquefaction
-            and dike failures are as prominent as they are. <Cite id="PEIRS" />
+            and dike failures are as prominent as they are. Warmth, dry shelter
+            and unstable slopes are what people need attended to first in that
+            weather. <Cite id="PEIRS" />
           </p>
           <p>
             Its modelled impacts, counting only shaking damage to buildings and
@@ -230,7 +238,8 @@ export const scenarios: PageModule = {
             }
           />
           <p>
-            Every figure in that table belongs to a weekday afternoon, when most
+            Every figure in that table belongs to the daytime hours between 9am
+            and 5pm, when most
             people are at school or work. Natural Resources Canada says of its
             own numbers that because secondary hazards and damage to
             infrastructure are left out, “the estimates herein are likely to
@@ -305,8 +314,9 @@ export const scenarios: PageModule = {
             The province’s risk and resilience assessment models a magnitude 9.0
             rupture running about 1,000 km from mid Vancouver Island to northern
             California, with the mainshock at 10am on a day in August during a 30
-            to 40 °C heatwave with wildfire smoke. Shaking in that mainshock
-            lasts three minutes. <Cite id="DCRRA-2025" />
+            to 40 °C heatwave with wildfire smoke, which makes water, shade and
+            clean air the urgent needs. Shaking in that mainshock lasts three
+            minutes. <Cite id="DCRRA-2025" />
           </p>
           <p>
             Heaviest damage falls on Vancouver Island and in a band about 20 km
@@ -384,10 +394,10 @@ export const scenarios: PageModule = {
           <p>
             A study of the Golden Ears Bridge measured how the soil and the deep
             foundations under it act on each other as an earthquake runs longer.
-            At the larger of that bridge’s two design events, strong shaking
+            At the longest of that bridge’s design events, strong shaking
             lasted about 30 seconds and the forces from the moving ground and
             the forces from the swaying structure “occurred simultaneously”; at
-            the smaller design event for the same bridge, shaking lasted about
+            the shortest, shaking lasted about
             10 seconds and the two were “essentially uncoupled”. In the longer
             event the soil liquefied early, while the structure was still being
             shaken. <Cite id="NAB-ICCHGE-08" />
@@ -576,20 +586,9 @@ export const scenarios: PageModule = {
         </Prose>
       ),
     },
-
     {
-      title: "The weather in each scenario changes what people need first",
-      body: (
-        <Prose>
-          <p>
-            Neither official scenario is set on a mild day. The August heatwave
-            with wildfire smoke makes water, shade and clean air the urgent
-            problems, and puts people at risk indoors. <Cite id="DCRRA-2025" />{" "}
-            The January afternoon after an atmospheric river makes warmth, dry
-            shelter and unstable slopes the urgent problems. <Cite id="PEIRS" />
-          </p>
-        </Prose>
-      ),
+      title: "Every system carries a band for each of the two earthquakes",
+      body: <SystemMatrix />,
     },
   ],
 

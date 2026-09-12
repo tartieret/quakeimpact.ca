@@ -45,7 +45,7 @@ import {
  *
  * The test for entry is narrow on purpose: `/dependencies/` has to cite a
  * document for that specific pair. A link that is obvious, or that this site
- * asserts in its own voice, does not qualify. Six of the twenty six links pass,
+ * asserts in its own voice, does not qualify. Six of the twenty nine links pass,
  * and the figure's whole job is to show that the other twenty do not.
  */
 const DOCUMENTED = new Set<string>([
@@ -155,8 +155,9 @@ const plural = (n: number, one: string, many: string) =>
  * Where the coupling concentrates, and how little of it is established.
  *
  * Six systems have anything waiting on them at all, and three of those six
- * carry nineteen of the twenty six links. That is the shape of the argument the
- * copy makes in prose: fuel, then roads, then everything that waits on roads.
+ * carry twenty two of the twenty nine links. That is the shape of the argument
+ * the copy makes in prose: fuel, then roads, then everything that waits on
+ * roads.
  *
  * There is no axis. An axis is a domain a source gives, and nobody has
  * published this list; the marks are counted things, which is the one thing a
@@ -250,7 +251,7 @@ export function DependencyHubs() {
 
       <FigText y={FOOTER_A_Y}>One mark is one waiting system.</FigText>
       <FigText y={FOOTER_B_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        Nothing on the list waits on {OFF_CHART} other systems.
+        {OFF_CHART} systems have nothing on the list waiting on them.
       </FigText>
     </FigureCanvas>
   );

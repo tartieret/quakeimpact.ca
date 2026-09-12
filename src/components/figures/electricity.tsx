@@ -79,7 +79,7 @@ export function ElectricityTwoClocks() {
 
       {/* Panel B: the system whole again. No end, so no end is drawn. */}
       <FigHeading y={CLOCKS_PANEL_B + HEADING_Y}>
-        The system completely restored
+        The downtown system completely restored
       </FigHeading>
       <FigValue y={CLOCKS_PANEL_B + VALUE_Y}>Years</FigValue>
 
