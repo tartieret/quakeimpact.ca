@@ -25,7 +25,7 @@ export const casualties: PageModule = {
     nav: "Casualties",
     kicker: "The shaking",
     standfirst:
-      "Three bodies have published figures for how many people would be hurt or killed by an earthquake here. The figures are far apart, because they cover different places, different earthquakes and different times of day. All of them count one thing: buildings shaken, and the people inside them.",
+      "Two governments have published figures for how many people would be hurt or killed by an earthquake here. The figures are far apart, because they cover different places, different earthquakes and different times of day. All of them count one thing: buildings shaken, and the people inside them.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -74,7 +74,7 @@ export const casualties: PageModule = {
 
     {
       title:
-        "Three bodies have published casualty figures, and they do not cover the same ground",
+        "Two governments have published casualty figures, and they do not count the same area",
       body: (
         <Prose>
           <p>
@@ -84,7 +84,7 @@ export const casualties: PageModule = {
             needing first aid.
           </p>
           <DataTable
-            caption="The published casualty figures, with the body behind each one and the earthquake it models."
+            caption="Casualty figures published by the City of Vancouver and by the Province of BC, with the earthquake and the area each one counts."
             columns={[
               "Who published it, and which earthquake",
               "What it counts",
@@ -114,7 +114,7 @@ export const casualties: PageModule = {
               ],
               [
                 "Province of BC, magnitude 9.0 Cascadia",
-                "Injuries and deaths from mainshock shaking",
+                "Deaths and injuries across British Columbia from the main shaking",
                 "more than 10,000 injured, 3,400 dead",
               ],
             ]}
@@ -126,7 +126,9 @@ export const casualties: PageModule = {
                 <Cite id="GSC-OF-8853" />, and the province’s Cascadia row comes
                 from its own assessment of that scenario{" "}
                 <Cite id="DCRRA-2025" />. They are separate counts of different
-                areas and cannot be added together.
+                areas and cannot be added together. The province’s Cascadia row
+                counts the whole province, and the heaviest damage in that
+                scenario is on Vancouver Island rather than here.
               </>
             }
           />
@@ -211,8 +213,9 @@ export const casualties: PageModule = {
       body: (
         <Prose>
           <p>
-            Apart from the two office buildings that collapsed, building failure
-            in the 2011 Canterbury earthquake killed 42 people. Of those, 35
+            In the 2011 earthquake in Christchurch, New Zealand, building
+            failure killed 42 people apart from the two office buildings that
+            collapsed. Of those, 35
             died when unreinforced masonry façades or walls fell, and 26 of the
             35 were struck in the street or in vehicles. <Cite id="NZ-RC-V4" />
           </p>
@@ -244,8 +247,8 @@ export const casualties: PageModule = {
             that number inside its economic model. <Cite id="CBOC-2016" />
           </p>
           <p>
-            Nothing about the figure was measured. Wherever it is repeated, the
-            word assumption belongs in the same sentence.
+            Nothing about the figure was measured. It was chosen as an input,
+            and the model was run with Canada’s population reduced by it.
           </p>
         </Prose>
       ),
@@ -274,9 +277,7 @@ export const casualties: PageModule = {
           </p>
           <VerificationNote label="Not yet published">
             No published figure counts the people an earthquake here would hurt
-            once fire following, landslides and liquefaction are added in. That
-            is why Natural Resources Canada calls its own estimates a minimum.{" "}
-            <Cite id="GSC-OF-8853" />
+            once fire following, landslides and liquefaction are added in.
           </VerificationNote>
         </Prose>
       ),
@@ -290,7 +291,7 @@ export const casualties: PageModule = {
         its magnitude 7.0 scenario, the shaking knocks people near the epicentre
         off their feet, “except for those who remember to ‘drop, cover, and hold
         on’”. <Cite id="PEIRS" /> It is the one action that changes the answer
-        in the first ten seconds.
+        while the ground is still moving.
       </>,
       <>
         <strong>Do not run outside while the ground is moving.</strong> The wall
@@ -322,7 +323,7 @@ export const casualties: PageModule = {
       <>
         The hour of the day is the biggest single thing in these models, and it
         is the one nobody gets to pick. What is above the bed, and what you do
-        in the first ten seconds, can be picked today.
+        while the ground is moving, can be picked today.
       </>
     ),
   },

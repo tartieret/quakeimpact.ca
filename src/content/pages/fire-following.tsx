@@ -72,10 +72,11 @@ export const fireFollowing: PageModule = {
             home. In the modelling for the Lower Mainland, about half of the
             ignitions are electrical and about a quarter gas-related.{" "}
             <Cite id="SCAWTHORN-2020" /> About half begin in single-family
-            houses and another 26 per cent in apartments, so “about 70% of all
-            ignitions occur in residential occupancies”.{" "}
+            houses and another 26 per cent in apartments. The study’s own
+            summary is that “about 70% of all ignitions occur in residential
+            occupancies”.{" "}
             <Cite id="SCAWTHORN-2020" /> That split comes from what was counted
-            after the 1994 Northridge earthquake in California, applied here
+            after the 1994 Northridge earthquake in California, in the United States, applied here
             rather than measured here. <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
@@ -163,8 +164,7 @@ export const fireFollowing: PageModule = {
       body: (
         <Prose>
           <p>
-            The offshore earthquake everyone has heard of is the smallest fire
-            event of the set. The modelled fire loss for the magnitude 9.0
+            The modelled fire loss for the magnitude 9.0
             Cascadia earthquake is $162 million. For a magnitude 7.3 crustal
             earthquake in the Georgia Strait, close to downtown, it is $10.7
             billion, about 66 times as much. <Cite id="SCAWTHORN-2020" />
@@ -277,7 +277,7 @@ export const fireFollowing: PageModule = {
           </p>
           <MapPlaceholder
             title="The dedicated fire mains"
-            caption="The system’s mains run across the downtown peninsula, the West End and False Creek. Everywhere else in the city, the water for fighting a fire comes through the ordinary mains. The dataset is the network itself, so the drawing is the pipe and not a service area."
+            caption="The system’s mains run across the downtown peninsula and the West End, and across False Creek into Fairview Slopes and Kitsilano. Everywhere else in the city, the water for fighting a fire comes through the ordinary mains. The dataset is the network itself, so the drawing is the pipe and not a service area."
             dataset="City of Vancouver Open Data, Dedicated Fire Protection System water mains"
             licence={
               <>
@@ -307,7 +307,7 @@ export const fireFollowing: PageModule = {
             built to withstand the largest earthquake considered credible for
             the region, able to draw fresh or salt water, hardened mains,
             “hydrants (the big, blue ones)”, two high-capacity pump stations,
-            and built on the lesson of the San Francisco fire of 1906.{" "}
+            and built on the lesson of the 1906 fire in San Francisco, in the United States.{" "}
             <Cite id="COV-EXPLORER-25" /> It names no coverage area.
           </p>
           <p>

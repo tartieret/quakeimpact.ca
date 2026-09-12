@@ -32,7 +32,7 @@ export const secondaryHazards: PageModule = {
     nav: "Secondary hazards",
     kicker: "The shaking",
     standfirst:
-      "Landslides, dikes and dams are the damage that arrives once the shaking stops. Most of it sits outside the official damage estimates, which count buildings and the people inside them and say so.",
+      "Landslides, dikes and dams are where the damage arrives once the shaking stops. Most of it sits outside the official damage estimates, which count buildings and the people inside them and say so.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -49,22 +49,13 @@ export const secondaryHazards: PageModule = {
       "MOTI-SRDC-05",
       "CJES-2024",
       "YVR-SICRP",
-      "BCDSR-40-2016",
-      "BCDSP-DSR-INFO",
       "MV-DSP-2026",
       "BC-DAMS-REG",
-      "MV-CAPEX-2026",
-      "OAG-DAMS-FU-25",
-      "OAG-DAMS-21",
       "BCH-RRA-F2020",
       "BCH-RUSKIN-SEIAM-11",
       "BCH-RUSKIN-F2019",
       "BCH-COQUITLAM-RRA-06",
       "BCDSP-DEP-24",
-      "BCH-DAMFAQ",
-      "MV-CLEVELAND-UPDATES",
-      "MV-CDSEP",
-      "MV-DSP-2022",
     ],
   },
 
@@ -103,8 +94,8 @@ export const secondaryHazards: PageModule = {
         <Prose>
           <p>
             The province’s planning scenario for a magnitude 7.0 earthquake
-            close to the city is set in January, days after an atmospheric river
-            has soaked the ground. <Cite id="PEIRS" /> Its account of the first
+            close to the city is set on a January afternoon, immediately after an
+            atmospheric river has soaked the ground. <Cite id="PEIRS" /> Its account of the first
             minutes says: “Landslides and rock falls are generated in many
             areas, cutting off transportation routes. Flooding is increased by
             the recent wet weather event with some dikes failing.”{" "}
@@ -125,8 +116,9 @@ export const secondaryHazards: PageModule = {
             Highway 1 east through the Fraser Canyon.
           </p>
           <VerificationNote label="Not published">
-            Nobody has published a map of where an earthquake would set off
-            landslides along the Sea to Sky corridor or the Fraser Canyon. Every
+            No map of where an earthquake would set off landslides along the Sea
+            to Sky corridor or the Fraser Canyon has been found in the published
+            literature. Every
             seismic landslide product that exists for this part of the province
             covers the western municipalities of Metro Vancouver, which stops
             well short of either corridor. <Cite id="MVSMMP" />
@@ -234,156 +226,24 @@ export const secondaryHazards: PageModule = {
 
     {
       title:
-        "Both water-supply dams were reviewed in 2024, and neither published conclusion mentions an earthquake",
-      body: (
-        <Prose>
-          <p>
-            Metro Vancouver owns the dams that hold back the reservoirs the
-            region drinks from. Two of them, Cleveland Dam on the Capilano and
-            Seymour Falls Dam on the Seymour, are classified Extreme.
-          </p>
-          <p>
-            Extreme is the top of the province’s five-tier consequence scale,
-            and a consequence class describes what lies downstream of a dam. It
-            means that if the dam failed, more than 100 people could die, and
-            that people are “ordinarily or regularly located in the dam-breach
-            inundation zone, whether to live, work or recreate”.{" "}
-            <Cite id="BCDSR-40-2016" /> It is not a prediction that a dam will
-            fail, and it says nothing about how likely that is.
-          </p>
-          <p>
-            A dam in that class must be reviewed at least every seven years by
-            an engineer qualified in dam safety, “to determine if the dam is
-            safe”, with the report sent to a provincial dam safety officer.{" "}
-            <Cite id="BCDSR-40-2016" /> Not doing it is an offence carrying a
-            fine of up to $200,000 or six months in prison.{" "}
-            <Cite id="BCDSR-40-2016" /> The engineer signs a statement with one
-            of three answers on it: reasonably safe, reasonably safe but with
-            deficiencies, or not safe and needing urgent action.{" "}
-            <Cite id="BCDSP-DSR-INFO" /> Another engineer has to peer-review the
-            work. <Cite id="BCDSP-DSR-INFO" />
-          </p>
-          <p>
-            Both dams were reviewed, and both reviews were finished in 2024.{" "}
-            <Cite id="MV-DSP-2026" /> Metro Vancouver reports the conclusions to
-            its Water Committee every year. <Cite id="MV-DSP-2026" />
-          </p>
-          <DataTable
-            caption="Metro Vancouver’s two water-supply dams, the class the province puts them in, and the conclusion Metro Vancouver publishes from each dam’s most recent safety review."
-            columns={[
-              "Dam",
-              "Consequence class",
-              "Most recent review",
-              "What the published conclusion says",
-            ]}
-            rows={[
-              [
-                "Cleveland Dam",
-                "Extreme",
-                "Started 2023, completed 2024, report sent to the province in December 2024",
-                "“The review identified no unsafe or unacceptable conditions related to design, construction, or operation.”",
-              ],
-              [
-                "Seymour Falls Dam",
-                "Extreme",
-                "Started 2021, finalised 2024, report sent to the province in June 2024",
-                "“The review concluded that the dam is reasonably safe, operated safely, maintained in a safe condition, and that surveillance is adequate to detect any developing safety problems.”",
-              ],
-            ]}
-            note={
-              <>
-                Extreme is a consequence class. It describes what lies
-                downstream if a dam were to fail, and it is neither a prediction
-                that one will fail nor a measure of how likely that is.{" "}
-                <Cite id="BCDSR-40-2016" /> Both conclusions are Metro
-                Vancouver’s own summaries, reported to its Water Committee, of
-                reviews that have not been published. Neither mentions
-                earthquakes. <Cite id="MV-DSP-2026" />
-              </>
-            }
-            minWidth="46rem"
-          />
-          <p>
-            Neither conclusion mentions earthquakes, ground shaking or how
-            either dam would perform in one. <Cite id="MV-DSP-2026" />
-          </p>
-          <p>
-            Staff walk both dams at least weekly and inspect them formally twice
-            a year, and the instruments buried in them are read at intervals
-            from near-continuous to annual, with the readings checked by staff
-            every weekday. <Cite id="MV-DSP-2026" /> Every one of those
-            intervals is what the regulation asks of a dam in this class.{" "}
-            <Cite id="BCDSR-40-2016" /> In the provincial register both dams sit
-            at risk level 3, which the province labels stable.{" "}
-            <Cite id="BC-DAMS-REG" /> That is the best rating any Extreme dam in
-            British Columbia currently holds, and 20 of the province’s 56
-            Extreme dams are rated worse. <Cite id="BC-DAMS-REG" />
-          </p>
-          <p>
-            Metro Vancouver’s capital reporting, as at 31 May 2026, has a
-            Cleveland Dam Seismic Stability Evaluation in design from 2024 to
-            2027 at $1.2 million, a Seymour Falls Dam Seismic Stability
-            Assessment in design from 2025 to 2032 at $14.15 million, and
-            Cleveland Dam MCE Seismic Upgrades not started, scheduled from 2028
-            to 2034, at $25 million.{" "}
-            <Cite id="MV-CAPEX-2026" /> MCE stands for Maximum Credible
-            Earthquake, the largest earthquake engineers judge to be credible at
-            the site. The owner is still funding the evaluations and has not
-            started the upgrade. The 2024 reviews did not close the earthquake
-            question.
-          </p>
-          <VerificationNote label="Not published">
-            The review reports themselves are not public, and neither are the
-            names of the engineers who wrote them, any list of deficiencies, or
-            the assurance statement each one signed. What is published each year
-            is Metro Vancouver’s own summary of them, a paragraph per dam.{" "}
-            <Cite id="MV-DSP-2026" />
-          </VerificationNote>
-        </Prose>
-      ),
-    },
-
-    {
-      title:
-        "The program that audits the dams runs on less than half the staff it says it needs",
-      body: (
-        <Prose>
-          <p>
-            Reviews are the owner’s duty. Audits are the province’s, and they
-            run on roughly a five-year cycle for a dam in the Extreme class.{" "}
-            <Cite id="MV-DSP-2026" /> The last audits of Cleveland Dam and
-            Seymour Falls Dam were completed in 2020, and as of June 2026 the
-            follow-up audits were “being planned by the Dam Safety Officer for
-            2026”. <Cite id="MV-DSP-2026" />
-          </p>
-          <p>
-            The province’s dam safety program has 10 staff against an assessed
-            need of 25, staffing “deteriorated in 2024”, and “due to increasing
-            staff shortages, we are not meeting our program objectives under our
-            existing Dam Safety Audit policy (2013). Currently we are risk
-            managing which audits we can complete and are only able to target
-            the very highest risk dams.” <Cite id="OAG-DAMS-FU-25" />
-          </p>
-          <p>
-            That statement was written for the Auditor General of British
-            Columbia, who concluded in September 2021, after auditing the years
-            2019 and 2020, that “the ministry has not effectively overseen the
-            safety of dams in B.C. While it promoted dam owner compliance with
-            regulatory requirements, it did not adequately verify and enforce
-            compliance.” <Cite id="OAG-DAMS-21" /> Nine recommendations were
-            made and all nine were accepted. <Cite id="OAG-DAMS-21" /> As at 31
-            March 2025, two of the nine were complete.{" "}
-            <Cite id="OAG-DAMS-FU-25" />
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title:
         "BC Hydro names the parts of its own dams an earthquake is expected to break",
       body: (
         <Prose>
+          <p>
+            Metro Vancouver’s two water-supply dams, Cleveland on the Capilano
+            and Seymour Falls on the Seymour, were each reviewed by an engineer
+            in 2024, and neither published conclusion mentions an earthquake.{" "}
+            <Cite id="MV-DSP-2026" /> What those reviews say, what the capital
+            plan has funded and what has not been published about where the
+            water would go are on{" "}
+            <Link
+              href="/after/dams-and-reservoirs/"
+              className="text-accent underline underline-offset-2"
+            >
+              dams and reservoirs
+            </Link>
+            .
+          </p>
           <p>
             BC Hydro owns the power dams in and near the region. Coquitlam,
             Stave Falls, Alouette and Cheakamus are classified Extreme in the
@@ -460,55 +320,6 @@ export const secondaryHazards: PageModule = {
       ),
     },
 
-    {
-      title:
-        "The maps of what lies downstream of a dam exist, and the public does not see them",
-      body: (
-        <Prose>
-          <p>
-            Somebody has worked out what would be under water if either dam
-            failed. They had to: the consequence class depends on knowing who is
-            down there, and the owner of a dam this size must keep a dam
-            emergency plan with an evacuation area map in it.{" "}
-            <Cite id="BCDSR-40-2016" /> <Cite id="BCDSP-DEP-24" /> Both plans
-            were updated in March 2026. <Cite id="MV-DSP-2026" />
-          </p>
-          <p>
-            The dam owner, the emergency dam contact and the provincial dam
-            safety officer hold the whole plan. The local emergency contact
-            holds a defined part of it. <Cite id="BCDSP-DEP-24" /> Nothing in
-            the rules requires any of it to be published, and nothing in them
-            forbids it either.{" "}
-            <Cite id="BCDSR-40-2016" /> <Cite id="BCDSP-DEP-24" />
-          </p>
-          <p>
-            BC Hydro has published dam-failure evacuation brochures for Campbell
-            River and the Strathcona Regional District, both in 2014, both on
-            Vancouver Island. <Cite id="BCH-DAMFAQ" /> Nothing comparable has
-            been published for the communities below its Lower Mainland dams.{" "}
-            <Cite id="BCH-DAMFAQ" />
-          </p>
-          <p>
-            Neither of Metro Vancouver’s dams had a public-facing alarm system
-            in 2020, in the utility’s own words, and one is now being built on
-            the Capilano River with sirens, lights and river level gauges,
-            targeted for 2027. <Cite id="MV-CLEVELAND-UPDATES" />{" "}
-            <Cite id="MV-DSP-2026" /> Its alarms are for an unscheduled release
-            of water from the dam. They do not sound for heavy rain or spring
-            melt, and they are not a dam-breach or earthquake warning.{" "}
-            <Cite id="MV-CDSEP" />
-          </p>
-          <VerificationNote label="Not published">
-            Downstream inundation and evacuation mapping for either Metro
-            Vancouver dam has not been published, and nobody has refused to
-            publish it. Metro Vancouver listed a river users study, river
-            hydraulic modelling, downstream hazards studies and an updated
-            public safety risk assessment for the Capilano in its 2022-to-2024
-            program, and none of them has appeared. <Cite id="MV-DSP-2022" />
-          </VerificationNote>
-        </Prose>
-      ),
-    },
   ],
 
   lever: {
@@ -519,8 +330,8 @@ export const secondaryHazards: PageModule = {
           Ask your local government what it holds for the dam or the dike
           nearest you.
         </strong>{" "}
-        Municipalities downstream of a dam receive part of its emergency plan,
-        including the evacuation area material. <Cite id="BCDSP-DEP-24" /> A
+        Municipalities downstream of a dam receive a defined part of its
+        emergency plan. <Cite id="BCDSP-DEP-24" /> A
         resident can ask for it, and can ask Metro Vancouver directly under
         freedom of information. Asking is the route that exists.
       </>,

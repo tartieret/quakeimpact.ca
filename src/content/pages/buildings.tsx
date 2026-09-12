@@ -25,7 +25,7 @@ export const buildings: PageModule = {
     nav: "Buildings",
     kicker: "The shaking",
     standfirst:
-      "The City of Vancouver has run three earthquakes through a model of its own buildings, and the nearer, smaller one is the worse one. Most of the city went up before the rules that would have made it safer, and about a tenth of the buildings carry four fifths of the risk.",
+      "The City of Vancouver has run three earthquakes through a model of its own buildings, and the nearer, smaller one is the worse one. Most of the city went up before the rules that would have made it safer, and about a tenth of the buildings carry nearly four fifths of the risk.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -48,7 +48,6 @@ export const buildings: PageModule = {
       "IBC-2025",
       "CBOC-2016",
       "LEPAN-2016",
-      "PACICC-2026",
     ],
   },
 
@@ -227,8 +226,8 @@ export const buildings: PageModule = {
             that line is about houses. The engineering analysis behind the
             City’s 2026 action plan flags wood-frame apartment buildings
             separately, for walls that are neither stiff enough nor strong
-            enough, for being likely uninhabitable after a design-level
-            earthquake, and for the risk of the ground floor collapsing where it
+            enough, for being likely uninhabitable after an earthquake of the
+            size new buildings are designed for, and for the risk of the ground floor collapsing where it
             has been left open for tuck-under parking.{" "}
             <Cite id="COV-PLAN-2026" />
           </p>
@@ -238,8 +237,9 @@ export const buildings: PageModule = {
             more than 90 days. <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            Federal modelling of a different earthquake, a M7.0 under Vancouver,
-            gives complete damage to 26 per cent of wood buildings, 22 per cent
+            Federal modelling of the province’s own planning earthquake, a
+            magnitude 7.0 in the Strait of Georgia close to the city, gives
+            complete damage to 26 per cent of wood buildings, 22 per cent
             of concrete and 19 per cent of steel, and Natural Resources Canada
             puts its own caution in the same breath: “Wood is a predominant
             building material in this region, so despite having the highest
@@ -267,8 +267,8 @@ export const buildings: PageModule = {
             buildings in the Downtown Eastside. <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            A tenant cannot upgrade a building. The people most exposed to this
-            are the people with the least say over it.
+            A tenant cannot upgrade a building, and in those tracts most people
+            are tenants.
           </p>
         </Prose>
       ),
@@ -292,7 +292,8 @@ export const buildings: PageModule = {
             and the Downtown Eastside. <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            The reason is not usually the building. It is the queue. The City
+            Usually it is not the building that keeps people out. It is the
+            queue for someone qualified to come and look at it. The City
             tells residents, in the material written for them, to expect
             extended inaccessibility of large sections of neighbourhoods:
           </p>
@@ -360,15 +361,19 @@ export const buildings: PageModule = {
             comes down on the footpath.
           </p>
           <p>
-            Federal modelling of a M7.0 under Vancouver puts 13 million tonnes
-            of mixed debris on the ground, and says in the same passage that it
-            is “likely to litter the streets and obstruct response operations”.{" "}
-            <Cite id="GSC-OF-8853" />
+            Federal modelling of the province’s own planning earthquake, a
+            magnitude 7.0 in the Strait of Georgia close to the city, puts 13
+            million tonnes of mixed debris on the ground, and says in the same
+            passage that it is “likely to litter the streets and obstruct
+            response operations”. Those estimates count shaking damage to
+            buildings and the people in them, and leave out aftershocks,
+            tsunami, landslides, liquefaction and fire, so the agency calls them
+            a minimum. <Cite id="GSC-OF-8853" />
           </p>
           <p>
             In the 2011 earthquake in Christchurch, New Zealand, 35 of the 42
-            deaths from building failures other than the two tower collapses
-            came from unreinforced masonry façades or walls falling, 26 of them
+            deaths from building failures, leaving aside the two office
+            buildings that collapsed outright, came from unreinforced masonry façades or walls falling, 26 of them
             onto people on the street or in vehicles. <Cite id="NZ-RC-V4" />{" "}
             That is how people die under falling brick, and it sets no number
             for Vancouver.
@@ -499,9 +504,11 @@ export const buildings: PageModule = {
             of the $62.0 billion of direct damage: 32.9 per cent of the direct
             loss and 27.3 per cent of the total economic loss.{" "}
             <Cite id="AIR-2013" /> The gap between those two numbers is the part
-            somebody other than an insurer pays. In 2025 the Insurance Bureau of
-            Canada put a M9 at roughly $96 to $100 billion of total economic
-            loss and $26 billion insured. <Cite id="IBC-2025" />
+            somebody other than an insurer pays. In 2025 an Insurance Bureau of
+            Canada vice-president gave a magnitude 9 as roughly $96 to $100
+            billion of total economic loss and $26 billion insured. No study
+            behind those figures has been published, so whether they are new
+            work or the 2013 study restated is not known. <Cite id="IBC-2025" />
           </p>
           <p>
             A larger figure gets quoted often and is not a third estimate. The
@@ -513,21 +520,10 @@ export const buildings: PageModule = {
             Canada. <Cite id="CBOC-2016" />
           </p>
           <p>
-            Nicholas Le Pan, writing for the C.D. Howe Institute in 2016 on the
-            property and casualty industry’s own 2013 modelling, gives what
-            Canada’s insurers can pay as $30 billion to $35 billion in claims.{" "}
-            <Cite id="LEPAN-2016" /> That industry’s own later modelling moves
-            the tipping point to about $35 billion in its 2020 edition.{" "}
-            <Cite id="PACICC-2026" /> Both published insured-loss estimates, the
-            $20.4 billion of 2013 and the $26 billion of 2025, sit below that
-            band on either dating. <Cite id="AIR-2013" /> <Cite id="IBC-2025" />
-          </p>
-          <p>
             About 60 to 65 per cent of homeowners in southwest British Columbia
             carry earthquake coverage, about 70 per cent in Victoria and about
             55 per cent in Vancouver, and coverage among renters is much lower.{" "}
-            <Cite id="LEPAN-2016" /> Earthquake cover is generally sold as an
-            addition to a home or tenant policy rather than included in it.
+            <Cite id="LEPAN-2016" />
           </p>
         </Prose>
       ),
@@ -558,10 +554,10 @@ export const buildings: PageModule = {
         <strong>
           Find out whether your household has earthquake coverage.
         </strong>{" "}
-        About 55 per cent of Vancouver homeowners do, and among renters it is
-        much lower. <Cite id="LEPAN-2016" /> It is usually an addition to an
-        existing policy rather than part of it, so the only way to know is to
-        look at the policy or ask the insurer.
+        About 55 per cent of Vancouver homeowners do and far fewer renters,
+        so it is not something a policy can be assumed to include.{" "}
+        <Cite id="LEPAN-2016" /> The only way to know is to read the policy or
+        ask the insurer.
       </>,
       <>
         <strong>
