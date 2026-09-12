@@ -172,17 +172,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "communications",
     name: "Communications",
-    status: "draft",
     hook: "Nothing requires a cell tower to hold any backup power at all.",
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["electricity"],
-    lever: {
-      items: [
-        "Text rather than call. A short message gets through congestion that defeats a voice call, and it keeps trying in the background while you do something else.",
-        "Do not call 9-1-1 to ask what happened or whether it was an earthquake. A call that is not an emergency holds a line somebody else needs.",
-      ],
-    },
     impacts: bothScenarios(
       ["medium", "medium"],
       "The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel and a prolonged lack of access for everyone else; it names satellite phones and amateur radio as the backups people would fall back on.",
@@ -220,17 +213,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "sanitation",
     name: "Sanitation",
-    status: "draft",
     hook: "A toilet needs water to flush, and in an apartment tower there is nothing else to use.",
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "electricity"],
-    lever: {
-      items: [
-        "Settle now how the household would contain human waste with no water to flush, and keep what that takes beside the rest of your supplies. A pail with a tight lid, heavy bags, and something dry to cover each use is the whole of it.",
-        "Do not plan to flush with stored water. Water put by for drinking and washing does not stretch to the toilet as well, and a household that has not thought about this before the water stops has to think about it afterwards.",
-      ],
-    },
     impacts: bothScenarios(
       ["high", "high"],
       "The province expects disruption to water and wastewater systems for many months; Metro Vancouver has built individual treatment plants to a post-disaster standard, which is not the same as making the network that feeds them survive.",
@@ -243,17 +229,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "gas",
     name: "Natural gas",
-    status: "draft",
     hook: "Gas is the one utility that cannot be turned back on from a control room.",
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["transportation", "fuel"],
-    lever: {
-      items: [
-        "Leave the gas on unless fire or emergency officials tell you to turn it off. That is FortisBC's own instruction to its customers, and it runs against what most people assume.",
-        "Know what shutting it off costs before you do it. Once the gas is off at the meter, only a registered gas contractor may turn it back on, and that visit is the scarce thing.",
-      ],
-    },
     impacts: bothScenarios(
       ["high", "high"],
       "Gas cannot be restored in bulk: any air drawn into the pipes has to be purged first, and then service returns only as a technician enters each affected building and relights every appliance in it.",
@@ -278,17 +257,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "large-infrastructure",
     name: "Port, airport and ferry terminals",
-    status: "draft",
     hook: "The airport's weak point is not the runway. It is every bridge onto Sea Island.",
     bitesAt: "weeks",
     tier: 3,
     dependsOn: ["transportation", "electricity"],
-    lever: {
-      items: [
-        "Do not build a plan around flying out, sailing out, or someone arriving that way to help in the first days. Goods and people reach this region through a small number of very large places, and there is no local substitute for any of them.",
-        "Plan household supplies for a stretch when nothing is arriving, rather than for a stretch when the shops are busy.",
-      ],
-    },
     impacts: {
       cascadia: {
         band: "medium",
@@ -307,17 +279,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "fuel",
     name: "Fuel",
-    status: "draft",
     hook: "A service station with full tanks and no power dispenses nothing.",
     bitesAt: "days",
     tier: 2,
     dependsOn: ["transportation", "electricity", "large-infrastructure"],
-    lever: {
-      items: [
-        "Keep the tank above half. The fuel already in the car is the fuel you can count on, and the half tank costs nothing to carry.",
-        "Work out now which of the places you would need to reach are within walking or cycling distance, and keep a bicycle in working order if you have one. Do not store fuel at home: it is a fire risk, and this is one problem a household cannot stockpile its way out of.",
-      ],
-    },
     impacts: bothScenarios(
       ["high", "high"],
       "Fuel is the resource the repair of every other system runs on, and the province expects supply chains to be inoperable.",
@@ -328,17 +293,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "food",
     name: "Food",
-    status: "draft",
     hook: "The food that goes first is the food no pantry can hold: meat, produce, dairy and bread.",
     bitesAt: "days",
     tier: 2,
     dependsOn: ["transportation", "fuel", "large-infrastructure"],
-    lever: {
-      items: [
-        "Stock food that keeps without refrigeration and can be eaten without cooking. Fresh meat, produce, dairy and bread are the part of the shop no household can hold, so the pantry has to be built out of the part that can.",
-        "Store the things in a grocery shop that are not food: soap, cleaning products, toilet paper. They travel in the same trucks, they keep indefinitely, and almost nobody puts them by.",
-      ],
-    },
     impacts: bothScenarios(
       ["high", "high"],
       "The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them.",
@@ -351,17 +309,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "dams-and-reservoirs",
     name: "Dams and reservoirs",
-    status: "draft",
     hook: "Both dams were reviewed by an engineer in 2024, and neither published conclusion mentions earthquakes.",
     bitesAt: "hours",
     tier: 3,
     dependsOn: [],
-    lever: {
-      items: [
-        "Find out whether you live, work or send a child to school below one of these dams. The area a failure would flood has been mapped, because the dam's classification depends on it, and it sits in the dam emergency plan.",
-        "Ask for the map. It is not published, and municipalities hold part of the plan, so the way to see it is to ask your municipality or Metro Vancouver for it.",
-      ],
-    },
     impacts: bothScenarios(
       ["unknown", "unknown"],
       "Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes, and the seismic upgrade has not started.",
@@ -371,17 +322,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "housing",
     name: "Housing",
-    status: "draft",
     hook: "Most people who lose their home lose it to a cordon around a building that is still standing.",
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "sanitation", "electricity"],
-    lever: {
-      items: [
-        "Find out when your building was put up, what it is built of, and what ground it stands on. Your landlord, your strata or your municipality can tell you, and it is the part of your own risk you can still learn before anything happens.",
-        "Agree now with someone outside the region that you could stay with them for months, and agree it out loud rather than assuming it. An arrangement you have actually made is worth more than a shelter place nobody has promised you.",
-      ],
-    },
     impacts: bothScenarios(
       ["high", "high"],
       "The City of Vancouver states that areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.",
@@ -391,17 +335,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "health-care",
     name: "Health care",
-    status: "draft",
     hook: "Hospitals stand on the same ground as everything else, and most of the stock predates the current code.",
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["fuel", "electricity", "water"],
-    lever: {
-      items: [
-        "Agree now where the household meets and who everyone checks in with, and make the check-in person someone outside the region. A household that can find each other is a household that does not go to a hospital to look.",
-        "Sort out the medicines and equipment that cannot lapse. A pharmacist or clinician can tell you what a longer supply, or a plan for a device that runs on mains power, would look like for you.",
-      ],
-    },
     impacts: bothScenarios(
       ["medium", "medium"],
       "A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no published document sets the expected casualty load against the region's bed capacity.",
@@ -411,17 +348,10 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "outside-help",
     name: "Where help comes from",
-    status: "draft",
     hook: "British Columbia's plan stages help with the agencies outside the impact area, and in a megathrust they are inside it.",
     bitesAt: "days",
     tier: 3,
     dependsOn: ["transportation", "large-infrastructure"],
-    lever: {
-      items: [
-        "Find out now which people on your street would need help first: anyone who lives alone, anyone who could not get themselves out of a building, anyone whose medicine matters every day.",
-        "Agree with your neighbours, before anything happens, who would check on whom. The province's plan is that a community holds on until outside help reaches it, so who knocks on which door is worth settling in advance.",
-      ],
-    },
     impacts: {
       cascadia: {
         band: "high",

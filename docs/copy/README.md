@@ -33,9 +33,19 @@ label or an alt text.
 | [`fire-following.md`](fire-following.md) | `/shaking/fire-following/` | `../research/buildings.md` |
 | [`secondary-hazards.md`](secondary-hazards.md) | `/shaking/secondary-hazards/` | `../research/systems/dams-and-reservoirs.md` |
 | [`after.md`](after.md) | `/after/` | `../research/impact-bands.md` |
-| [`water.md`](water.md) | `/after/water/` | `../research/systems/water.md` |
+| [`communications.md`](communications.md) | `/after/communications/` | `../research/systems/communications.md` |
 | [`electricity.md`](electricity.md) | `/after/electricity/` | `../research/systems/electricity.md` |
+| [`water.md`](water.md) | `/after/water/` | `../research/systems/water.md` |
+| [`sanitation.md`](sanitation.md) | `/after/sanitation/` | `../research/systems/sanitation.md` |
+| [`gas.md`](gas.md) | `/after/gas/` | `../research/systems/gas.md` |
 | [`transportation.md`](transportation.md) | `/after/transportation/` | `../research/systems/transportation.md` |
+| [`large-infrastructure.md`](large-infrastructure.md) | `/after/large-infrastructure/` | `../research/systems/large-infrastructure.md` |
+| [`fuel.md`](fuel.md) | `/after/fuel/` | `../research/systems/food-and-fuel.md` |
+| [`food.md`](food.md) | `/after/food/` | `../research/systems/food-and-fuel.md` |
+| [`dams-and-reservoirs.md`](dams-and-reservoirs.md) | `/after/dams-and-reservoirs/` | `../research/systems/dams-and-reservoirs.md` |
+| [`housing.md`](housing.md) | `/after/housing/` | `../research/systems/housing.md` |
+| [`health-care.md`](health-care.md) | `/after/health-care/` | `../research/systems/health-care.md` |
+| [`outside-help.md`](outside-help.md) | `/after/outside-help/` | `../research/systems/outside-help.md` |
 | [`getting-around.md`](getting-around.md) | `/getting-around/` | `../research/mobility.md` |
 | [`prepare.md`](prepare.md) | `/prepare/` | `../research/preparedness.md` |
 
@@ -94,8 +104,9 @@ the page is about, but do not expect to find it rendered.
 `source` is the third of the three fields `Impact` in `src/content/types.ts`
 requires, alongside the band and the mechanism sentence. It is one key, the one the
 mechanism sentence rests on, and it is not the same list as **Sources on this page**.
-The three system files written so far carry `bands` and `mechanism` and do not yet
-carry `source`; the keys they need are in the assignment table in
+The ten system files written most recently carry it; `water.md`, `electricity.md`
+and `transportation.md` carry `bands` and `mechanism` and do not yet carry
+`source`, and the keys they need are in the assignment table in
 `../research/impact-bands.md`.
 
 The rest of a system's entry stays in `src/content/site.ts` and has no front-matter
@@ -124,15 +135,18 @@ key: the slug, the phase it bites at, what it depends on, and its build tier.
 
 ## What is not written yet
 
-Ten of the thirteen systems: sanitation, natural gas, fuel, food, port and
-airport and ferry terminals, dams and reservoirs, housing, health care,
-communications, and where help comes from.
-
-Each of those ten pages carries the standing text in `unwritten.md` until its own
-file exists. Part 1 is complete: all five pages under `/shaking/` are written.
-
 The dependency graph, and the about, sources and contribute pages.
 
-`../research/build-order.md` gives the order. Nothing is waiting on evidence
-except dams and the crustal column of port, airport and ferry terminals, which
-wait on the public record rather than on us.
+Every page in both parts is written: all five under `/shaking/`, and all
+thirteen systems under `/after/`. The system pages are ordered above as they are
+ordered in `SYSTEMS` in `../../src/content/site.ts`, which is the order a reader
+meets them in.
+
+[`unwritten.md`](unwritten.md) is therefore standing text no page currently
+shows. It stays, because a page can be returned to draft while its text is under
+revision.
+
+Dams carries no band in either column, and port, airport and ferry terminals
+carries none in the crustal column. Both pages are written and say so in the
+reader's terms, because what is missing there is the public record rather than
+the copy.

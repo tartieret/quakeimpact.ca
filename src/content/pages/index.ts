@@ -1,7 +1,17 @@
 import type { ReactNode } from "react";
 import type { LeverProps } from "@/components/page-parts";
 import type { PageMeta } from "@/content/types";
+import { communications } from "./communications";
+import { damsAndReservoirs } from "./dams-and-reservoirs";
 import { electricity } from "./electricity";
+import { food } from "./food";
+import { fuel } from "./fuel";
+import { gas } from "./gas";
+import { healthCare } from "./health-care";
+import { housing } from "./housing";
+import { largeInfrastructure } from "./large-infrastructure";
+import { outsideHelp } from "./outside-help";
+import { sanitation } from "./sanitation";
 import { transportation } from "./transportation";
 import { water } from "./water";
 
@@ -72,7 +82,25 @@ function register(modules: PageModule[]): Record<string, PageModule> {
   return Object.fromEntries(modules.map((m) => [m.meta.route, m]));
 }
 
-export const PAGES = register([electricity, transportation, water]);
+/**
+ * Order follows `SYSTEMS` in `src/content/site.ts`, so the register reads in the
+ * same order the reader meets the pages in.
+ */
+export const PAGES = register([
+  communications,
+  electricity,
+  water,
+  sanitation,
+  gas,
+  transportation,
+  largeInfrastructure,
+  fuel,
+  food,
+  damsAndReservoirs,
+  housing,
+  healthCare,
+  outsideHelp,
+]);
 
 /** The module for a route, or undefined where the page is not written yet. */
 export const pageFor = (route: string): PageModule | undefined => PAGES[route];
