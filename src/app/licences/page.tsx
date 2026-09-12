@@ -36,6 +36,13 @@ const LINK_ONLY = DATASETS.filter((entry) => LINK_ONLY_KEYS.includes(entry.id));
 const PLACED = PHOTOGRAPH_LIST.filter((photo) => photo.usedOn !== null);
 const NON_COMMERCIAL = nonCommercialPhotographs();
 
+/**
+ * Placed but not yet hosted. Read from the register rather than stated, so the
+ * sentence below cannot outlive the fact: the day a file lands in
+ * `public/media/`, this page stops saying the slot is empty.
+ */
+const UNHOSTED = PLACED.filter((photo) => photo.file === null);
+
 const LICENCES = [
   {
     name: "Open Government Licence – Canada",
@@ -235,7 +242,9 @@ export default function LicencesPage() {
         <Prose
           paragraphs={[
             "The rule for a photograph is the rule for everything else here: nothing is shown unless the terms have been read and recorded. There is one more limit on top of it. A photograph of somewhere else is an analogue, and an analogue on this site may not produce a number. What carries across from Christchurch to the Fraser delta is the mechanism — loose wet sand losing its strength while the ground shakes. How deep the silt was, how many streets it closed and how long it took to clear are facts about Christchurch, and they stay there.",
-            "The image files are not hosted yet. Until they are, the place each one will sit says so and names the photographer and the licence, rather than showing a gap and explaining nothing.",
+            UNHOSTED.length > 0
+              ? "Some of the image files are not hosted yet. Until they are, the place each one will sit says so and names the photographer and the licence, rather than showing a gap and explaining nothing."
+              : "Every file is copied to this site and served from it, rather than linked from the photographer's own host, so a credit here cannot be quietly broken by somebody else moving a file. Each is the photographer's frame, resized to fit a page and otherwise unchanged.",
           ]}
         />
         <div className="mt-6">

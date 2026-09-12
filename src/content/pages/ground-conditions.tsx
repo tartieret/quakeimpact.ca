@@ -118,13 +118,14 @@ export const groundConditions: PageModule = {
             id="avonside-road-damage"
             caption={
               <>
-                The same earthquake, a suburban street. A road that breaks like
-                this has not cracked from above: the ground beneath it lost its
-                strength and moved, taking the surface and everything buried in
-                it. That is why liquefaction reaches the pipes and the road and
-                not only the building standing on them. An analogue again — what
-                Christchurch lost, and how long it took to get back, says
-                nothing about what Richmond or Delta would.
+                The same earthquake, a suburban street. The cones in the
+                foreground are where the ground vented: sand and water came up
+                through the road and spread over it, so the material lying on
+                the surface was under it that morning. That is why liquefaction
+                reaches the pipes and the road and not only the building
+                standing on them. An analogue again — what Christchurch lost,
+                and how long it took to get back, says nothing about what
+                Richmond or Delta would.
               </>
             }
           />

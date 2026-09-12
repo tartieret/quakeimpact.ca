@@ -72,9 +72,10 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**No row is Verified today,** so nothing is hosted. The slots are on the page,
-with the photographer and the licence beside them, saying so. See *The
-verification queue* at the foot.
+**Two rows are Verified, checked at their sources on 12 September 2026, and
+both are hosted.** They are the two on `/shaking/ground/`. Everything else below
+is Stated or To verify and none of it is on the site. See *The verification
+queue* at the foot for what is left.
 
 ---
 
@@ -115,21 +116,32 @@ in the credit.
 
 #### `christchurch-cars-in-silt`
 
-- **Shows:** two parked cars partly buried in silt forced up through the ground,
-  on an ordinary commercial street in central Christchurch, 22 February 2011.
+- **Shows:** two parked cars standing in silt forced up through the ground, on
+  an ordinary residential street in central Christchurch, 22 February 2011. The
+  silt has spread over the road surface and the cars' wheels are sunk into it;
+  water stands in a pool alongside. A picket fence and a weatherboard house are
+  behind them, which is most of why the photograph works.
 - **Photographer:** Schwede66
 - **Licence:** CC BY-SA 3.0
-- **Source:** https://www.sciencelearn.org.nz/images/360-cars-in-silt-from-liquefaction
-- **Status:** Stated. The rights are stated on the Science Learning Hub page,
-  which is where they were read. **Before hosting, find the same file on
-  Wikimedia Commons and move the link there,** so a reader can check the licence
-  at the source rather than at a page describing it.
+- **Source:** https://commons.wikimedia.org/wiki/File:Liquefaction_in_Peterborough_St.JPG
+- **Status:** **Verified, 12 September 2026.** Photographer and licence read off
+  the Commons file page. The Science Learning Hub page that the row used to cite
+  serves the identical file — same filename stem, and the same 4 373 550 bytes,
+  confirmed by checksum — so the Commons file page is now the link, and the
+  licence can be checked at the source rather than at a page describing it. The
+  Commons description places it in Peterborough Street west of Madras Street.
 - **Credit:** `Photo by Schwede66, CC BY-SA 3.0.`
+- **Hosted:** `public/media/christchurch-cars-in-silt.jpg`. 4000 × 3000 original
+  resized to 1600 × 1200; ratio `4 / 3`. No other change.
 - **Used on:** `/shaking/ground/`, in the section on wet sand behaving like a
   liquid.
 - **Why this one:** the setting is a normal street rather than a disaster zone,
   and the subject is two cars that are obviously not going anywhere. One
   familiar object, immobilised, no technical knowledge needed to read it.
+- **Correction on hosting:** the row described "an ordinary commercial street"
+  until the file was opened. It is residential. The brief was never checked
+  against the image, which is the argument for opening a file before writing its
+  alt text and not after.
 
 #### `christchurch-pages-road`
 
@@ -180,21 +192,42 @@ in the credit.
 
 #### `avonside-road-damage`
 
-- **Shows:** sinkholes and liquefaction damage to a road surface in Avonside,
-  Christchurch, 22 February 2011.
+- **Shows:** a suburban street in Avonside under wet silt and standing water,
+  22 February 2011, with low circular cones in the foreground where the ground
+  vented. Commons files it under *Sand volcanoes*, which is what those are.
 - **Photographer:** Martin Luff
 - **Collection:** Flickr
 - **Licence:** CC BY-SA 2.0
 - **Source:** https://www.flickr.com/photos/martinluff/5471846307
-- **Status:** Stated, **for this photograph only.** The photostream is not
-  licensed uniformly, so a second image from it is a second check. The USGS has
-  reused this photographer's work, which is why the terms are well established.
+- **Status:** **Verified, 12 September 2026, for this photograph only.** The
+  licence was read off the photographer's own Flickr page, which states CC BY-SA
+  2.0. The photostream is not licensed uniformly, so a second image from it is a
+  second check. The USGS has reused this photographer's work, which is why the
+  terms are well established.
 - **Credit:** `Photo by Martin Luff, via Flickr, CC BY-SA 2.0.`
+- **Hosted:** `public/media/avonside-road-damage.jpg`. The file was fetched from
+  the Wikimedia Commons mirror, `File:Sink holes and liquefaction on roads -
+  Avonside in Christchurch.jpg`, which carries the full 3648 × 2736 camera frame
+  and a FlickreviewR pass recording CC BY-SA 2.0 against this same photo ID on
+  25 February 2011. Resized to 1600 × 1200; ratio `4 / 3`. The credit stays with
+  Flickr because that is where the photographer published it.
+- **A person is in frame.** Someone in a raincoat is walking along the far
+  footpath, small, incidental and plainly not in difficulty. The limit in this
+  file bars casualties and identifiable people in distress, and neither applies,
+  so the photograph stands. Recorded because it is the kind of thing that gets
+  noticed once and re-argued later.
 - **Used on:** `/shaking/ground/`, alongside the sentence about buried pipes and
   sagging roads.
 - **Why this one:** it is the material behind any argument about water mains,
   sewers and getting an emergency vehicle down a street. The same photostream
   covers North New Brighton and River Road.
+- **Correction on hosting:** the row and the page caption both described a road
+  broken open into holes and sunken troughs. The frame does not show that. It
+  shows a street buried under vented silt and water, with sand volcanoes in the
+  foreground — the same mechanism, reaching the road rather than the building,
+  which is what the caption was for. Alt text and caption were rewritten to the
+  photograph. The photographer's own Flickr title says "sink holes"; the title
+  is not the frame.
 
 #### `christchurch-june-2011`
 
@@ -252,43 +285,57 @@ own check.
 
 ## The verification queue
 
-Every row above is one of two jobs, and neither could be done in the session
-that wrote this file: **its network policy blocks `commons.wikimedia.org`,
-`upload.wikimedia.org`, `www.flickr.com`, `live.staticflickr.com`,
-`www.canterburystories.nz` and `www.sciencelearn.org.nz`, and returns 403 at the
-egress proxy for all of them.** So no file could be downloaded and no file page
-could be read. The register records what the brief of 12 September 2026 stated;
-it does not record a check made here.
+The session that first wrote this file had no network route to any of the hosts
+below — its egress policy answered 403 to `commons.wikimedia.org`,
+`upload.wikimedia.org`, `www.flickr.com`, `www.canterburystories.nz` and
+`www.sciencelearn.org.nz` alike — so it recorded what the brief of 12 September
+2026 stated and marked every row as somebody else's check. **A later session on
+12 September 2026 had the route, and did the two jobs for the two rows the site
+uses.** Both are Verified and both are hosted. What that took is written into
+the two rows above.
 
-Two jobs, in order:
+Three things came out of doing it, and all three are worth keeping:
 
-1. **Read four rows off their source pages and date them.** The two Stated rows
-   that the site uses — `christchurch-cars-in-silt` and `avonside-road-damage` —
-   turn Verified as soon as someone opens the link and confirms the photographer
-   and the licence. `christchurch-pages-road` goes with them. That is the whole
-   gate on the two slots currently on `/shaking/ground/`.
-2. **Host the files.** Download the largest available version, resize to no more
-   than 1600 px on the long edge, save as JPEG under `public/media/`, and set
-   `file` and `ratio` on the row in `src/content/media.ts`. The slot becomes the
-   photograph in that one edit; nothing else changes.
+**The Commons link for `christchurch-cars-in-silt` is settled.** It is
+`File:Liquefaction in Peterborough St.JPG`. The Science Learning Hub page serves
+that identical file — the same filename stem, and a byte-for-byte checksum match
+on 4 373 550 bytes — so the two were never different photographs, and the row now
+links the file page where the licence is stated by the photographer rather than
+the page that describes it.
 
-Two smaller items, recorded so they are not rediscovered:
+**Two rows were wrong about their own pictures,** and in both cases the error
+came from writing alt text off a brief instead of off a file. One said a
+commercial street and showed a residential one. The other described a road
+broken open into holes and troughs, and shows a street buried under vented silt
+with sand volcanoes in it. Neither error survived the file being opened, and
+neither would have been caught by any check short of looking. **Open the file
+before writing its alt text.** That is now the rule, and it is the one thing
+this round should change about how the next photograph is added.
 
-**The Commons link for `christchurch-cars-in-silt`.** The brief says the file is
-on Wikimedia Commons under the same photographer, and that the Science Learning
-Hub page is only where the rights happen to be stated. Finding the Commons file
-page and moving the link there is part of job 1.
+**`www.canterburystories.nz` still answers 403 to this environment,** so
+`christchurch-pages-road` remains Stated. It is held rather than used, so
+nothing on the site waits on it.
 
-**The Fraser delta susceptibility citation.** The brief asks that each
-photograph be paired with Natural Resources Canada or Geological Survey of
-Canada liquefaction susceptibility mapping for the Fraser delta, so that a New
-Zealand street is anchored to named local ground. **The source register holds no
-such mapping.** `/shaking/ground/` pairs the photographs with Richmond and Delta
-on the sources it already carries — the 787-borehole study for the soil profiles
-and the microzonation project for the street-by-street layers — which is the
-honest version of the same move. An NRCan or GSC susceptibility layer would be
-better, and finding one is a research item for `research/open-questions.md`
-rather than something to assert here.
+What is left, and none of it is blocking:
+
+1. **`christchurch-pages-road`** turns Verified when someone can open
+   canterburystories.nz and read the photographer, the title and the licence off
+   the item page. It is cleared and held, and there is still no page for it.
+2. **The To-verify rows** — `christchurch-car-in-mud`,
+   `christchurch-the-palms`, `christchurch-june-2011`, `sullivan-park-959` and
+   `sullivan-park-960` — are unread. `christchurch-car-in-mud` is worth doing
+   first: CC BY makes it the only one the site could draw on if a marked-up
+   version is ever wanted.
+3. **The Fraser delta susceptibility citation.** The brief asks that each
+   photograph be paired with Natural Resources Canada or Geological Survey of
+   Canada liquefaction susceptibility mapping for the Fraser delta, so that a New
+   Zealand street is anchored to named local ground. **The source register holds
+   no such mapping.** `/shaking/ground/` pairs the photographs with Richmond and
+   Delta on the sources it already carries — the 787-borehole study for the soil
+   profiles and the microzonation project for the street-by-street layers — which
+   is the honest version of the same move. An NRCan or GSC susceptibility layer
+   would be better, and finding one is question 26 in
+   `research/open-questions.md` rather than something to assert here.
 
 ---
 
@@ -308,3 +355,9 @@ rather than something to assert here.
   sunk to its door sills in grey silt forced up out of the road surface" does
   the work; "a car in mud" does not. Most readers have never seen this, so the
   alt text is carrying the explanation and not just labelling a picture.
+- **Open the file first, and write the alt text off the image.** Not off the
+  brief, not off the collection's caption, not off the file name — the first two
+  photographs the site hosted both reached this point with a description that
+  the picture turned out to contradict, and a photographer's own title said
+  "sink holes" about a frame that has none. A description nobody has checked
+  against the image is a claim, and the page's caption inherits it.
