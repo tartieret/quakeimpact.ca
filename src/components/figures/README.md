@@ -21,9 +21,10 @@ Read `water.tsx` next to this file alongside the rules.
    an SVG is text, and the finding must be available without the picture.
 
 **A photograph is not a figure and nothing here applies to it.** Since 12
-September 2026 the site carries two, on `/shaking/ground/`, under the narrow
-exception in `docs/style-guide.md` §8. They are not drawn, they say nothing the
-prose has not already said and sourced, and they may not produce a number.
+September 2026 the site carries two, on `/shaking/ground/`, under the test in
+`docs/style-guide.md` §8: a photograph shows a mechanism the page has described
+and a reader has never seen. They are not drawn, they say nothing the prose has
+not already said and sourced, and they may not produce a number.
 `Photograph` in `components/photograph.tsx` renders them from the register in
 `src/content/media.ts`; `docs/media.md` is the rule and the licence position. A
 photograph does not go through this file's kit, and rule 2 still holds for it in

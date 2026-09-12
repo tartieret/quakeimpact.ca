@@ -11,30 +11,47 @@ a photograph's check is recorded.
 
 ## What a photograph is for on this site
 
-The style guide ruled photography out entirely until 12 September 2026, and the
-reasons it gave were good ones: disaster imagery is emotionally cheap, it is
-almost always from somewhere else, and it puts the site in the register it is
-trying to avoid. §8 now admits a narrow exception, and the exception is narrow
-because the objections were right.
+Until 12 September 2026 the style guide banned photography outright. The ban was
+a position about tone presented as a position about rigour, and it cost the site
+the one thing a diagram cannot do: show a reader something that has already
+happened to a real street. §8 now says what a photograph is for instead of
+listing what it may not contain.
 
-A photograph earns its place when the page has already established a mechanism
-in words and a reader has never seen that mechanism. Liquefaction is the case
-the exception was written for. "The ground behaves like a thick liquid" is an
-accurate sentence and it is not a picture, and a reader who has only ever stood
-on ground that stays put has nothing to attach it to.
+**A photograph earns its place by showing a mechanism, not by being striking.**
+That is the whole test, and it is a test of what the image does rather than of
+how bad it looks. Liquefaction is the case that makes it obvious: "the ground
+behaves like a thick liquid" is accurate, it is not a picture, and a reader who
+has only ever stood on ground that stays put has nothing to attach it to. A
+schematic of a street is a drawing of the idea of a street. The same goes for
+ground failure, a buckled road, a building off its foundations, a bridge
+approach with a step in it — things the site describes in words and a reader has
+never seen. What fails the test is an image that adds nothing the prose has not
+already given. That is decoration, and decoration is what the old rule was right
+to keep out.
 
-Four conditions, all of them:
+**Showing what happened somewhere else is not fear-mongering.** It is evidence
+that the mechanism is a thing the world does. The site's position on fear is in
+§3 of the style guide and it has not moved: severity is allowed, dread is not,
+and every page carries its lever. A photograph does not change that balance.
+What would change it is an image that exists to make the reader feel something
+the page cannot then act on — and that image fails the mechanism test above
+anyway, because feeling is not a mechanism.
 
-1. **The page says it first.** The photograph follows a mechanism the prose has
-   already stated and sourced. It illustrates; it never introduces.
-2. **It shows ground behaviour, not a spectacle.** An ordinary street, an
-   ordinary parked car. No casualties, no rubble, no identifiable person in
-   distress, no aerial of a flattened district.
-3. **It is named and licensed.** A photographer, a collection, a licence and a
-   link, all four read off the source page and recorded in the register below.
-4. **It is framed as an analogue.** The caption names the Metro Vancouver ground
-   it stands for, and the ground under the camera. A Christchurch street files
-   itself mentally as somewhere else unless the caption does that work.
+Three limits, and they are about the reader rather than about the register:
+
+1. **No casualties, and no identifiable person in distress.** A matter of
+   dignity towards people who did not consent to illustrate our argument. It
+   does not soften because the photograph is free and well licensed.
+2. **No image standing in for a claim the site cannot make in words.** If the
+   argument is not in the prose, a picture does not get to make it.
+3. **Nothing uncleared.** A photographer, a collection, a licence and a link,
+   all four read off the source page and recorded in the register below. The
+   same discipline every dataset goes through in `licensing.md`.
+
+**Say where it is, and anchor it to here.** A photograph of a New Zealand street
+files itself mentally as somewhere else and stops working. The caption names the
+ground under the camera and the Metro Vancouver ground it stands for, so the
+reader finishes thinking about Richmond rather than about Christchurch.
 
 **A photograph may not generate a claim.** This is the site's standing rule
 about analogues — `style-guide.md` §10, question 8 — and it bites hardest here,

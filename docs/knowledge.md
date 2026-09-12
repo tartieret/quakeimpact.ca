@@ -11,47 +11,59 @@ it was confirmed.
 
 ---
 
-## Photography is admitted, on four conditions, and the first two photographs are not hosted
+## The ban on photography is gone, and the first two photographs are not hosted
 
-**12 September 2026.** The style guide ruled photography out entirely — "no
-rubble, no cracked highways, no stock imagery … maps, diagrams and data only" —
-and §8 now carries an exception. Recording it here because `docs/README.md` says
-a style-guide rule is a decision to record rather than an edit to make in
-passing, and because the reasons the old rule gave were good ones that the
-exception has to answer rather than ignore.
+**12 September 2026.** The style guide said "no disaster photography … maps,
+diagrams and data only". It no longer does. Recording it here because
+`docs/README.md` says a style-guide rule is a decision to record rather than an
+edit to make in passing, and because this one was reversed twice in a day: first
+narrowed to an exception for liquefaction, then dropped, on the project owner's
+call that the ban was bad positioning.
 
-**What forced it.** Liquefaction. "The ground behaves like a thick liquid" is an
-accurate sentence, it is not a picture, and a reader who has only ever stood on
-ground that stays put has nothing to attach it to. A diagram cannot carry it,
-because the thing that has to land is that this happens to ordinary streets and
-ordinary parked cars, and a schematic of a street is a drawing of the idea of a
-street. `/shaking/ground/` already says everything a diagram could.
+**Why the ban was wrong, in its own terms.** It gave three reasons. Disaster
+imagery is emotionally cheap; it is almost always from somewhere else; it puts
+the site in the register it is trying to avoid. The first is a claim about bad
+photographs, not about photographs. The second is true and is a captioning
+problem, not a prohibition. The third is the real one, and it was a position
+about tone stated as a position about rigour — which is exactly what §3 warns
+against in the other direction, since the site's fear discipline is about
+severity paired with efficacy and never about keeping the material at arm's
+length. The cost was concrete: the site could not show a reader something that
+had already happened to a real street.
 
-**The four conditions**, in §8 and in `docs/media.md`: the page states the
-mechanism in words first; the photograph shows ground behaviour rather than a
-spectacle; it is named and licensed, read off the source page; and the caption
-frames it as an analogue against named local ground. A fifth rule sits over
-them — **a photograph may not generate a claim**, which is the site's standing
-rule about analogues at its sharpest, because a photograph is the most
+**What replaced it.** A test of what an image does rather than a list of what it
+may not contain: **a photograph earns its place by showing a mechanism, not by
+being striking.** Liquefaction is the case that makes it obvious, and it is not
+the only one — a buckled road, a building off its foundations, a bridge approach
+with a step in it are all things the site describes in words and a reader has
+never seen. What the test excludes is decoration: an image adding nothing the
+prose has not already given.
+
+**Three limits survive, and they are not about tone.** No casualties and no
+identifiable person in distress, which is dignity towards people who did not
+consent to illustrate our argument and does not soften because the file is free.
+No image standing in for a claim the prose cannot make. And nothing uncleared.
+Over them sits the rule that **a photograph may not generate a claim**, which is
+§10's question 8 about analogues at its sharpest: a photograph is the most
 persuasive thing on a page and the least measurable.
 
-**The dramatic image is the one that is not available, and that is a coincidence
-worth not relying on.** The brief that brought these images in records "Car
-swallowed by liquefaction", Phillipstown, as all rights reserved. It is the most
-dramatic photograph in the set and it fails condition two anyway. The rule has
-to hold on its own when a spectacular image is free, which it will be
-eventually.
+**The dramatic image is the one that is not available, and that is a
+coincidence.** The brief that brought these images in records "Car swallowed by
+liquefaction", Phillipstown, as all rights reserved. Under the first, narrower
+rule it was excluded twice over — on rights and for being a spectacle. Only the
+rights exclusion survives, which is the honest position: the site does not
+refuse a photograph for being vivid.
 
-**Nothing is hosted, and the reason is environmental.** The session that did
-this work had no network route to `commons.wikimedia.org`,
-`upload.wikimedia.org`, `www.flickr.com`, `www.canterburystories.nz` or
-`www.sciencelearn.org.nz` — its egress policy answered 403 to all of them. So no
-file could be downloaded and no licence could be read off a source page. The
-register records what the brief stated and marks it `stated` rather than
-`verified`, and `verified` is the only status that may be hosted. The two slots
-on `/shaking/ground/` say so on the page, name the photographer and the licence,
-and become photographs when someone opens two links and drops two files in.
-`docs/media.md` §"The verification queue" is the list.
+**Nothing is hosted, and the reason is environmental.** The session that did this
+work had no network route to `commons.wikimedia.org`, `upload.wikimedia.org`,
+`www.flickr.com`, `www.canterburystories.nz` or `www.sciencelearn.org.nz` — its
+egress policy answered 403 to all of them. So no file could be downloaded and no
+licence could be read off a source page. The register records what the brief
+stated and marks it `stated` rather than `verified`, and `verified` is the only
+status that may be hosted. The two slots on `/shaking/ground/` say so on the
+page, name the photographer and the licence, and become photographs when someone
+opens two links and drops two files in. `docs/media.md` §"The verification
+queue" is the list.
 
 **Two things the register does that `references.ts` does not.** It flags
 non-commercial and no-derivatives as data rather than as a note, so "what comes

@@ -3,9 +3,10 @@
  *
  * The companion to `references.ts`, and deliberately not part of it. A
  * reference is a document a claim rests on; a photograph is not a claim and may
- * not become one. `docs/style-guide.md` §8 admits photography only where the
- * page has already stated the mechanism in words, and `docs/media.md` §"What a
- * photograph is for on this site" is the whole of the rule.
+ * not become one. `docs/style-guide.md` §8 sets the test a photograph has to
+ * pass — it shows a mechanism the page has described and a reader has never
+ * seen — and `docs/media.md` §"What a photograph is for on this site" carries
+ * the limits and the reasoning.
  *
  * This file is the one place a photographer, a licence and a source link are
  * written. The credit under the photograph and the list on `/licences/` are both

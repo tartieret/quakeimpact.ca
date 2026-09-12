@@ -11,19 +11,20 @@ import { Figure } from "./prose-blocks";
 /**
  * A photograph, its caption and the credit its licence asks for.
  *
- * Photography is the narrow exception in `docs/style-guide.md` §8, and the four
- * conditions on it are in `docs/media.md`. The one this component can enforce is
- * the credit: a photographer, a collection, a licence and two links, drawn from
+ * `docs/style-guide.md` §8 says what a photograph is for and `docs/media.md`
+ * carries the limits. The one this component can enforce is the credit: a
+ * photographer, a collection, a licence and two links, drawn from
  * `src/content/media.ts` rather than typed under the picture, so a corrected
  * licence reaches the page and `/licences/` in the same edit.
  *
- * The caption belongs to the page and is passed in. It carries the framing the
- * exception requires — the Metro Vancouver ground the photograph stands for —
- * and it carries its citations, like every other caption on the site.
+ * The caption belongs to the page and is passed in. It carries the framing §8
+ * asks for — the Metro Vancouver ground the photograph stands for — and its
+ * citations, like every other caption on the site.
  *
- * The other three conditions are editorial and a component cannot check them.
- * They are checked by the person writing the page, against the list in
- * `docs/media.md`.
+ * Whether an image earns its place at all is editorial and a component cannot
+ * check it. The test is in §8: a photograph shows a mechanism the page has
+ * described and a reader has never seen, and an image adding nothing the prose
+ * already gives is decoration.
  */
 export function Photograph({
   id,

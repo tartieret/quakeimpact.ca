@@ -30,14 +30,15 @@ import type { PageModule } from "./index";
  * facts, and a map of liquefaction susceptibility is what the site will not
  * make.
  *
- * The two photographs do not soften it either, and they are the only two on the
- * site. This is the page the exception in `docs/style-guide.md` §8 was written
- * for: "the ground behaves like a thick liquid" is accurate, it is not a
- * picture, and a reader who has only stood on ground that stays put has nothing
- * to attach it to. Both are Christchurch in 2011, both follow a mechanism the
- * prose has already stated and sourced, and both captions say what they are —
- * an analogue, carrying the mechanism and none of the numbers. The terms are in
- * `src/content/media.ts` and the reasoning in `docs/media.md`.
+ * The two photographs do not soften it either, and they are the first two on the
+ * site. This is the page that made the case for them, under the test in
+ * `docs/style-guide.md` §8: "the ground behaves like a thick liquid" is
+ * accurate, it is not a picture, and a reader who has only stood on ground that
+ * stays put has nothing to attach it to. Both are Christchurch in 2011, both
+ * follow a mechanism the prose has already stated and sourced, and both captions
+ * say what they are — an analogue, carrying the mechanism and none of the
+ * numbers. The terms are in `src/content/media.ts` and the reasoning in
+ * `docs/media.md`.
  */
 export const groundConditions: PageModule = {
   meta: {
