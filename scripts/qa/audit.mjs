@@ -237,7 +237,8 @@ export function summarise(report) {
   for (const r of report) {
     for (const f of r.figures.figures) {
       if (f.labelEmpty) figIssues.push(`${r.route} ${r.theme}/${r.viewport}: figure with empty aria-label (${f.desc})`);
-      if (!f.hasSvg) figIssues.push(`${r.route}: role=img with no svg (${f.desc})`);
+      if (!f.hasSvg && !f.hasImg)
+        figIssues.push(`${r.route}: role=img with no graphic (${f.desc})`);
       if (f.svgHidden === false) figIssues.push(`${r.route}: inner svg not aria-hidden (${f.label.slice(0, 40)})`);
       for (const c of f.clipped) {
         figIssues.push(`${r.route} ${r.theme}/${r.viewport}: text clipped "${c.text}" (L${c.overLeft} R${c.overRight} T${c.overTop} B${c.overBottom}) in "${f.label.slice(0, 40)}"`);
