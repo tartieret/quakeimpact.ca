@@ -212,7 +212,7 @@ export const casualties: PageModule = {
 
     {
       title:
-        "In Christchurch, most of the people killed by falling walls were outside the buildings",
+        "In Christchurch, New Zealand, most of the people killed by falling walls were outside the buildings",
       body: (
         <Prose>
           <p>

@@ -76,7 +76,7 @@ masonry is brick or concrete block built without steel reinforcing.
 What each building type does in the shaking, and how much of it Vancouver has, is set out
 under [buildings](/shaking/buildings/).
 
-## In Christchurch, most of the people killed by falling walls were outside the buildings
+## In Christchurch, New Zealand, most of the people killed by falling walls were outside the buildings
 
 New Zealand's royal commission counted the deaths caused by building failure in the 2011
 Canterbury earthquake, setting aside two office buildings that collapsed. Of the 42
