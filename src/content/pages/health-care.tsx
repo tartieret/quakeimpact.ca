@@ -28,10 +28,11 @@ export const healthCare: PageModule = {
     standfirst: (
       <>
         About 65 per cent of the 127 buildings owned by one health authority are
-        likely to be completely damaged at the ground motion the current
-        building code designs for.{" "}
-        <Cite id="DCRRA-APPC" /> No published document sets the casualties the
-        province forecasts against the number of beds the region has.
+        likely to be completely damaged at the 1-in-2,475-year earthquake, which
+        is the shaking the current building code designs against.{" "}
+        <Cite id="DCRRA-APPC" /> No government or health authority has set the
+        casualties the province forecasts against the number of beds the region
+        has. The comparison exists only in peer-reviewed engineering work.
       </>
     ),
     /**
@@ -61,8 +62,9 @@ export const healthCare: PageModule = {
       body: (
         <Prose>
           <p>
-            For a magnitude 7.0 earthquake under Greater Vancouver, the
-            province’s earthquake immediate response plan forecasts 1,000 people
+            For a magnitude 7.0 earthquake under Greater Vancouver on a weekday
+            afternoon, the province’s earthquake immediate response plan
+            forecasts 1,000 people
             critically injured, 6,500 needing hospital care that is not
             critical, and 21,000 needing paramedics or first aid, from damage to
             buildings alone. <Cite id="PEIRS" /> The province excludes injuries
@@ -176,7 +178,7 @@ export const healthCare: PageModule = {
             wastewater kept on site. <Cite id="NSH-SPEC" />{" "}
             <Cite id="NSP-SPEC" /> Neither hospital has opened.
           </p>
-          <VerificationNote label="Not published">
+          <VerificationNote label="Not published for existing hospitals">
             Nothing published for the hospitals open today says how long a
             generator can run, how much fuel is held on site, or how much water
             is stored.
@@ -223,7 +225,8 @@ export const healthCare: PageModule = {
     },
 
     {
-      title: "Nobody has set the expected casualties against the region’s beds",
+      title:
+        "No government or health authority has set the expected casualties against the region’s beds",
       body: (
         <Prose>
           <p>
@@ -250,7 +253,7 @@ export const healthCare: PageModule = {
             centres, which is not an inventory of the region.{" "}
             <Cite id="MITRA-2020" />
           </p>
-          <VerificationNote label="Not published">
+          <VerificationNote label="No official comparison">
             No government or health authority has put the expected casualty load
             beside the region’s care capacity, and no official inventory of
             intensive care or operating room beds is published for British
@@ -283,8 +286,7 @@ export const healthCare: PageModule = {
           <p>
             That describes the St. Paul’s on Burrard Street. Its replacement on
             Station Street is built to the Vancouver Building By-law’s
-            post-disaster requirement and is due to open around 2027.{" "}
-            <Cite id="NSP-SPEC" /> How many patients the other three could take
+            post-disaster requirement. <Cite id="NSP-SPEC" /> How many patients the other three could take
             is not in the plan.
           </p>
           <p>
@@ -346,7 +348,11 @@ export const healthCare: PageModule = {
       <>
         <strong>Make the check-in person someone outside the region.</strong>{" "}
         Where phone service is available at all, networks “may be congested or
-        overloaded”. <Cite id="PEIRS" />
+        overloaded”. <Cite id="PEIRS" /> What happens to the network is on{" "}
+        <Link href="/after/communications/" className={link}>
+          communications
+        </Link>
+        .
       </>,
       <>
         <strong>Sort out the medicines and equipment that cannot lapse.</strong>{" "}

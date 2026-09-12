@@ -89,6 +89,8 @@ export const sanitation: PageModule = {
             own plan, and wastewater is named in it.
           </p>
           <p>
+            The province wrote it for its shallow crustal M7 planning
+            scenario, and has published nothing equivalent for the megathrust.
             It covers the whole affected region, with no municipality broken
             out. Water and wastewater are merged into one sentence, so it does
             not say whether one returns before the other, and it does not
@@ -137,7 +139,7 @@ export const sanitation: PageModule = {
           </p>
           <p>
             Waste collection is the garbage as well as the sewage, and a garbage
-            truck needs roads and fuel like everything else on a road. Shelters
+            truck needs roads and fuel like every other repair in this section. Shelters
             are where the province names the risk, because that is where people
             are gathered together.
           </p>
@@ -175,7 +177,8 @@ export const sanitation: PageModule = {
             <Cite id="MV-LWMP-BIENNIAL-19" />
           </p>
           <p>
-            The work goes one plant and one pump station at a time. Sewage
+            The work goes one plant and one pump station at a time. A pump station
+            needs power to run, too. Sewage
             reaches those plants through pipes, and the sewers are the part
             whose assessed condition is not public.
           </p>
@@ -223,9 +226,9 @@ export const sanitation: PageModule = {
             headed Seismic Design Standards inside its sanitary sewer part, with
             a parallel one for storm drainage. <Cite id="COV-EDM-26" /> A
             designer choosing pipe material and replacement strategy has to work
-            from a risk assessment of the ground: how susceptible the soil is to
-            shaking, and its potential for permanent ground deformation, which
-            is ground that moves and does not move back.{" "}
+            from a risk assessment: how important the pipe is, how susceptible
+            the soil is to shaking, and its potential for permanent ground
+            deformation, which is ground that moves and does not move back.{" "}
             <Cite id="COV-EDM-26" /> The strategies are named too, among them
             routing mains outside liquefaction zones, where saturated soil loses
             its strength and behaves like a liquid while the ground shakes.{" "}
