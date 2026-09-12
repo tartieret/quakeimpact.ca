@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
+import { CITED_REFERENCES } from "@/content/cited";
 import { REFERENCES } from "@/content/references";
 import type { Reference, ReferenceRoute } from "@/content/types";
 
@@ -11,9 +12,17 @@ export const metadata: Metadata = { title: "Sources" };
  * The register renders itself from `src/content/references.ts`, which is
  * generated from `docs/research/sources.md`. A hand-typed list beside it would
  * be a second source of truth, and the two would drift.
+ *
+ * It renders the part of the register the site cites, which is not all of it.
+ * The register is a research file as well as the site's bibliography, and it
+ * holds documents behind findings whose page is not written yet. Printing
+ * those here put a document in front of a reader with no claim to check it
+ * against, under a standfirst promising every entry was behind a figure on the
+ * site. `@/content/cited` works out which those are; nothing is removed from
+ * the register, and a document arrives here the moment something cites it.
  */
 const DOCUMENTS: Reference[] = Object.values(REFERENCES).filter(
-  (entry) => entry.kind !== "page",
+  (entry) => entry.kind !== "page" && CITED_REFERENCES.has(entry.id),
 );
 
 const ANALOGUES = [...DOCUMENTS]

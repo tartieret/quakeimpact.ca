@@ -154,6 +154,8 @@ Decided per dataset, based on what is actually available. Embed official viewers
 
 **How sources appear on a page.** A register nobody reads is not sourcing. Every source has a key in the register; running text cites the key and renders a numbered marker that opens the entry in place — title, publisher, year, what it is being used for, and the link. The same entries are listed again at the foot of the page. A marker may also point at another page on this site, so a claim can defer to the page that carries the reasoning instead of repeating it. `/leaving/` is the worked example.
 
+**What `/sources/` lists.** The documents the site cites, not the register behind it. The register in `docs/research/sources.md` is a research file first and holds everything the project has read, including the documents behind findings whose page is not written yet. A reader with no claim to check a document against has not been sourced, so the page is derived from what the pages and the band grid actually cite.
+
 **Contributions.** `/contribute/` states what the project can use — a published document, a correction with a source behind it, a pointer to a report, a read from someone who does this work — and what it cannot: unsourced assertion, new modelling, analogues used to generate numbers. It is linked from the source register and from the reference navigation on every page.
 
 **Primary — reports.** NRCan seismic hazard model, Metro Vancouver and City of Vancouver seismic and infrastructure studies, published regional loss estimates, BC Hydro, Emergency Management BC / PreparedBC, seismic assessments of individual crossings.
