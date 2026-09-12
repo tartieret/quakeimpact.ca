@@ -1,6 +1,5 @@
 import { Suspense, useMemo, use, type ReactNode } from "react";
 import { createRoot } from "react-dom/client";
-import { ScenarioProvider } from "@/components/scenario-context";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { usePathname } from "next/navigation";
@@ -62,17 +61,15 @@ function Route() {
 
 function App() {
   return (
-    <ScenarioProvider>
-      <div className="flex min-h-screen flex-col">
-        <SiteHeader />
-        <main id="main" className="flex-1">
-          <Suspense fallback={<div className="p-16 text-ink-faint">Loading…</div>}>
-            <Route />
-          </Suspense>
-        </main>
-        <SiteFooter />
-      </div>
-    </ScenarioProvider>
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader />
+      <main id="main" className="flex-1">
+        <Suspense fallback={<div className="p-16 text-ink-faint">Loading…</div>}>
+          <Route />
+        </Suspense>
+      </main>
+      <SiteFooter />
+    </div>
   );
 }
 

@@ -1,53 +1,17 @@
-"use client";
-
 import type { ReactNode } from "react";
 import { SCENARIOS, SCENARIO_ORDER } from "@/content/site";
-import { useScenario } from "./scenario-context";
 
 /**
- * Scenario-conditional prose.
+ * A passage that differs between the two scenarios, shown as both at once,
+ * each under its own name.
  *
- * Route files are server components, so this is the client boundary a page
- * crosses to vary a sentence. Keep it around the sentence, not around the
- * section: both halves are passed in as props, already rendered on the server,
- * and only the choice between them happens on the client.
- */
-
-/** Inline text naming the scenario the reader has selected. */
-export function ScenarioName({ form = "name" }: { form?: "name" | "short" }) {
-  const { scenario } = useScenario();
-  return <>{form === "short" ? SCENARIOS[scenario].short : SCENARIOS[scenario].name}</>;
-}
-
-/**
- * A sentence that differs between the two scenarios. Inline by default, so it
- * sits inside a paragraph; pass `as="p"` where the whole paragraph varies.
- *
- * Only for places where the reader has chosen one scenario and wants an answer
- * for it. Where the contrast between the two is the point being taught — every
- * system page — use `ScenarioPair`, which shows both.
- */
-export function ScenarioText({
-  cascadia,
-  crustal,
-  as = "span",
-}: {
-  cascadia: ReactNode;
-  crustal: ReactNode;
-  as?: "span" | "p";
-}) {
-  const { scenario } = useScenario();
-  const content = scenario === "cascadia" ? cascadia : crustal;
-  return as === "p" ? <p>{content}</p> : <>{content}</>;
-}
-
-/**
- * Both scenarios at once, each under its own name.
- *
- * System pages show the two side by side whatever the toggle says, because the
- * contrast is the teaching point. This is the shape that cannot hide one of
- * them, and it is the default choice: reach for `ScenarioText` only where the
- * reader wants one answer rather than a comparison.
+ * There is no shape here that shows one and hides the other, and that is the
+ * whole design. The published work assesses a single design earthquake per
+ * system, so the two columns usually rest on one assessment and the difference
+ * between them is a difference in what has been studied rather than in what
+ * would happen. A control that picks one column would present that gap as an
+ * answer. Where the two genuinely diverge, the divergence is the teaching
+ * point and hiding half of it teaches nothing.
  */
 export function ScenarioPair({
   cascadia,

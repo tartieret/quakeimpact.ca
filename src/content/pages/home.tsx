@@ -4,7 +4,7 @@ import { Prose } from "@/components/page-parts";
 import { ScenarioCards } from "@/components/scenario-cards";
 import { SystemGrid } from "@/components/system-grid";
 import { PhaseNarrative } from "@/components/phase-narrative";
-import { ScenarioText } from "@/components/scenario-text";
+import { ScenarioPair } from "@/components/scenario-text";
 import type { PageModule } from "./index";
 
 /**
@@ -63,15 +63,6 @@ import type { PageModule } from "./index";
  * placeholder is gone rather than recaptioned.
  */
 
-/**
- * The hero's scenario control. The note says what the toggle is for, because a
- * reader four seconds into the site has no idea why they are being asked to
- * choose; the label names what it sets. Both are furniture, not claims.
- */
-export const HOME_CONTROL_NOTE =
-  "The region plans for two very different earthquakes, and they do not have the same impact. Pick one and every page on the site answers for it. If you do not know which, leave it where it is.";
-export const HOME_CONTROL_LABEL = "Showing impacts for";
-
 const link = "text-accent underline underline-offset-2";
 
 export const home: PageModule = {
@@ -119,8 +110,7 @@ export const home: PageModule = {
                 heading: "It is over in a minute, and nothing works",
                 body: (
                   <>
-                    <ScenarioText
-                      as="p"
+                    <ScenarioPair
                       crustal={
                         <>
                           In the province’s own scenario the earthquake is
