@@ -24,7 +24,7 @@ export const electricity: PageModule = {
     nav: "Electricity",
     kicker: "Life afterwards",
     standfirst:
-      "In November 2025 BC Hydro told its regulator that its main downtown substation would not be operable after an earthquake well below the level the building code requires it to withstand. It is the only measured statement of its kind published for this region, and it is about downtown Vancouver.",
+      "In November 2025 BC Hydro told its regulator that its main downtown substation would not be operable after an earthquake well below the level the building code requires it to withstand. No comparable statement has been published for anywhere else in this region.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -74,10 +74,9 @@ export const electricity: PageModule = {
             </p>
           </Quote>
           <p>
-            Two clocks, and they are the utility’s own. Several weeks before
-            customers have power. Years before the system is whole. BC Hydro
-            does not attach either to a particular earthquake: its wording is
-            “in a large seismic event” and “depending on the magnitude”.
+            BC Hydro attaches neither duration to a particular earthquake: its
+            wording is “in a large seismic event” and “depending on the
+            magnitude”.
           </p>
           <Figure
             alt="BC Hydro gives two durations for downtown Vancouver: several weeks before customers have power again, and years before the system is completely restored. Neither is drawn on a scale, because BC Hydro publishes no number for either, and the two are not two ends of one clock."
@@ -85,19 +84,18 @@ export const electricity: PageModule = {
               <>
                 Two clocks, and they do not join up. BC Hydro states both in
                 words and neither as a figure, so neither panel carries a scale
-                to read a date off. Both are its statement about downtown
-                customers. <Cite id="BCH-WESTEND-25" />
+                to read a date off. Both are about downtown customers.{" "}
+                <Cite id="BCH-WESTEND-25" />
               </>
             }
           >
             <ElectricityTwoClocks />
           </Figure>
           <p>
-            This was filed by BC Hydro in support of a project it wants
-            approved, so the seismic consequence is the case being made. It is
-            also regulatory evidence from the owner of the asset, citing a
-            specific seismic assessment of a specific substation, and it
-            concedes something against its own interest.
+            BC Hydro filed this in support of a project it wants approved, so
+            the seismic consequence is the case being made. It is also the owner
+            of the asset, in a regulatory filing, citing a seismic assessment of
+            its own substation and conceding something against its own interest.
           </p>
         </Prose>
       ),
@@ -105,7 +103,7 @@ export const electricity: PageModule = {
 
     {
       title:
-        "The substation falls short of the standard the building code sets for it",
+        "Murrin falls short of the standard the building code sets for it",
       body: (
         <Prose>
           <p>From a footnote in the same filing:</p>
@@ -151,7 +149,7 @@ export const electricity: PageModule = {
 
     {
       title:
-        "It cannot be fixed where it stands, and the replacement is not due until 2032",
+        "Murrin cannot be fixed where it stands, and the replacement is not due until 2032",
       body: (
         <Prose>
           <p>BC Hydro’s own assessment of the alternatives:</p>
@@ -170,17 +168,17 @@ export const electricity: PageModule = {
             </p>
           </Quote>
           <p>
-            The new West End substation has an in-service date of July 2032 at
-            the earliest, and the regulator has not yet ruled on it.{" "}
-            <Cite id="BCH-WESTEND-25" /> Between now and then the exposure BC
-            Hydro describes is the exposure that stands.
+            Until the new West End substation is in service, much of downtown
+            stays on Murrin. Its in-service date is July 2032 at the earliest,
+            and the regulator has not yet ruled on it.{" "}
+            <Cite id="BCH-WESTEND-25" />
           </p>
           <p>
-            The finding is not new. BC Hydro’s filing of February 2019, which
-            the regulator’s record files by its fiscal year as F2020, already
-            stated that Murrin sits on seismically unstable soil, that about half of the
-            switchyard supplying both substations is vulnerable to liquefaction
-            and settlement, and that load served from both “may experience a
+            BC Hydro’s filing of February 2019, which the regulator’s record
+            files by fiscal year as F2020, already stated that Murrin sits on
+            seismically unstable soil, that about half of the switchyard
+            supplying both substations is vulnerable to liquefaction and
+            settlement, and that load served from both “may experience a
             prolonged outage after a seismic event”.{" "}
             <Cite id="BCH-RRA-F2020" />
           </p>
@@ -188,24 +186,25 @@ export const electricity: PageModule = {
             That same filing also counts about 95,000 customers in the
             downtown study area. <Cite id="BCH-RRA-F2020" /> The customer count and the
             two thirds come from different filings six years apart, so
-            multiplying one by the other would produce a number of people that
-            nobody has published.
+            multiplying one by the other would produce a number of people nobody
+            has published.
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "The same pattern appears at a second named asset",
+      title:
+        "The Second Narrows crossing is at risk of collapse, and the work to fix it is not scheduled",
       body: (
         <Prose>
           <p>
-            BC Hydro’s 2021 revenue requirements filing describes the
-            transmission line crossing at Second Narrows: the crossing
-            structures “have been assessed as being critical, and at risk of
-            sustaining damage, including possible collapse, during an earthquake
-            of less than 1:475-year frequency”, and losing the crossing “would
-            result in load curtailment in the Metro Vancouver area”.{" "}
+            At Second Narrows, BC Hydro’s 2021 revenue requirements filing says
+            the transmission line crossing structures “have been assessed as
+            being critical, and at risk of sustaining damage, including possible
+            collapse, during an earthquake of less than 1:475-year frequency”,
+            and that losing the crossing “would result in load curtailment in
+            the Metro Vancouver area”.{" "}
             <Cite id="BCH-RRA-F2023" />
           </p>
           <p>
@@ -215,9 +214,9 @@ export const electricity: PageModule = {
             <Cite id="BCH-RRA-F2023" />
           </p>
           <p>
-            Two named assets, each with an owner-stated capacity below the level
-            the code sets, and one of them without a date. Two named assets are
-            not a statement about the rest of the network.
+            Two named assets, each assessed by its owner as below the level the
+            code sets, one of them with no date. Neither is a statement about
+            the rest of the network.
           </p>
         </Prose>
       ),
@@ -240,19 +239,18 @@ export const electricity: PageModule = {
             <Cite id="BCH-WESTEND-25" />
           </p>
           <p>
-            Both are BC Hydro. The 2011 sentence is a fifteen-year-old statement
-            of design intent for the system as a whole. The 2025 finding is an
-            engineering assessment of a specific, critical asset that does not
-            meet it.
+            Both are BC Hydro. The 2011 sentence is design intent for the system
+            as a whole, fifteen years old. The 2025 finding is an engineering
+            assessment of one critical asset that does not meet it.
           </p>
           <Figure
             alt="BC Hydro said in 2011 that the system was built to withstand a 1 in 2,475 year event, its 2019 filing already stated Murrin could see a prolonged outage, its 2025 assessment found the substation not operable at 1 in 1,000, and the replacement is not in service until July 2032 at the earliest. The gap between knowing and fixing is about one downtown substation, not the region."
             caption={
               <>
                 Four dates on the public record. The band runs from the filing
-                that already stated the problem to the earliest date the
-                replacement can be in service, and it is left open because July
-                2032 is the earliest date and the regulator has not yet ruled.{" "}
+                that already stated the problem to July 2032, the earliest the
+                replacement can be in service, and it is left open because the
+                regulator has not yet ruled.{" "}
                 <Cite id="BCH-SEIS-11" /> <Cite id="BCH-RRA-F2020" />{" "}
                 <Cite id="BCH-WESTEND-25" />
               </>
@@ -261,10 +259,10 @@ export const electricity: PageModule = {
             <ElectricityChronology />
           </Figure>
           <p>
-            Newer assets are built differently. The Mount Pleasant substation,
-            part of the Vancouver City Central Transmission project, is designed
-            to operate after a disaster, with ducts and cable vaults installed
-            below the zone where the ground would deform. <Cite id="BCH-VCCT" />
+            The Mount Pleasant substation, part of the Vancouver City Central
+            Transmission project, is designed to operate after a disaster, with
+            ducts and cable vaults installed below the zone where the ground
+            would deform. <Cite id="BCH-VCCT" />
           </p>
         </Prose>
       ),
@@ -276,27 +274,22 @@ export const electricity: PageModule = {
       body: (
         <Prose>
           <p>
-            “Years to completely restore the system” is an unusual thing for a
-            utility to say, and it points at a category of equipment rather than
-            at broken poles.
-          </p>
-          <p>
             BC Hydro holds{" "}
             <strong>10 spare power transformers against a fleet of 672</strong>{" "}
-            at 60 kV and above. The spares strategy is described in its filings
-            as existing “to minimize impacts in the event of a failure”, in the
+            at 60 kV and above. Its filings describe the spares strategy as
+            existing “to minimize impacts in the event of a failure”, in the
             singular. <Cite id="BCH-XFMR-21" /> <Cite id="BCH-RRA-F2020" />{" "}
-            Neither filing connects that strategy to an earthquake, to
-            simultaneous losses, or to replacing many units at once.
+            Neither filing connects it to an earthquake, to simultaneous losses,
+            or to replacing many units at once.
           </p>
           <Figure
             alt="BC Hydro holds 10 spare power transformers against a fleet of 672 at 60 kV and above. Its filings describe the spares as covering a single failure and do not connect them to an earthquake."
             caption={
               <>
                 One mark is one transformer in both panels, on the same
-                columns. The counts are kept apart rather than added: the
-                spares are not drawn as a share of the fleet, and the filings
-                connect them to one failure rather than to many.{" "}
+                columns. The spares are not drawn as a share of the fleet,
+                because the filings connect them to one failure rather than to
+                many.{" "}
                 <Cite id="BCH-XFMR-21" /> <Cite id="BCH-RRA-F2020" />
               </>
             }
@@ -305,27 +298,26 @@ export const electricity: PageModule = {
           </Figure>
           <p>
             No lead time for a replacement transformer is published anywhere in
-            BC Hydro’s regulatory record. What is published, in the United
-            States, gives the shape of the problem: average lead times for power
-            transformers there rose from around 50 weeks in 2021 to roughly 120
-            weeks, more than two years, by 2024, and about 80 per cent of
-            American large power transformers are imported.{" "}
+            BC Hydro’s regulatory record. In the United States, average lead
+            times for power transformers rose from around 50 weeks in 2021 to
+            roughly 120 weeks, more than two years, by 2024, and about 80 per
+            cent of American large power transformers are imported.{" "}
             <Cite id="NIAC-LPT-24" /> <Cite id="WOODMAC-25" />
           </p>
           <p>
             Those are US market figures and not a forecast for British Columbia.
-            They describe what “years” means in an electrical system: a
-            substation that loses its transformers is waiting on an order, not
-            on a repair crew.
+            They show what a utility waits on when it says years: a substation
+            that loses its transformers is waiting on an order, not on a repair
+            crew.
           </p>
           <Figure
             alt="Average power transformer lead times in the United States rose from around 50 weeks in 2021 to roughly 120 weeks in 2024. These are United States market figures and not a forecast for British Columbia."
             caption={
               <>
-                United States market figures, which is what the drawing is
-                headed. No lead time for a replacement transformer is published
-                anywhere in BC Hydro’s regulatory record, so nothing here is a
-                British Columbia number. <Cite id="NIAC-LPT-24" />{" "}
+                United States market figures, as the drawing is headed. No lead
+                time for a replacement transformer is published anywhere in BC
+                Hydro’s regulatory record, so nothing here is a British Columbia
+                number. <Cite id="NIAC-LPT-24" />{" "}
                 <Cite id="WOODMAC-25" />
               </>
             }
@@ -338,8 +330,8 @@ export const electricity: PageModule = {
             estimate has been published for the North Shore, Richmond, Delta,
             Surrey or the rest of the region, and no seismic assessment of the
             distribution network, the wires in the street, appears anywhere in
-            the regulatory record. BC Hydro describes its assessment of the
-            transmission and distribution system as still being completed.{" "}
+            the regulatory record. BC Hydro says its assessment of the
+            transmission and distribution system is still being completed.{" "}
             <Cite id="BCH-DAMFAQ" />
           </VerificationNote>
         </Prose>
@@ -365,7 +357,7 @@ export const electricity: PageModule = {
           look independent.
         </strong>{" "}
         A service station with full tanks and no power dispenses no fuel.
-        Payment terminals stop. A cordless phone handset stops.
+        Payment terminals and cordless phone handsets stop working.
       </>,
       <>
         <strong>Keep light that does not need the grid</strong>, and keep it
@@ -387,8 +379,8 @@ export const electricity: PageModule = {
         <strong>
           Find out whether your heating needs electricity to run.
         </strong>{" "}
-        A gas appliance that depends on an electric fan or control is a gas
-        appliance that stops with the power, so check yours rather than assume.
+        A gas appliance that depends on an electric fan or control stops with
+        the power.
       </>,
     ],
   },

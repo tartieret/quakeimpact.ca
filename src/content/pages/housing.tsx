@@ -26,9 +26,9 @@ export const housing: PageModule = {
       <>
         The province’s planning scenario puts 70,000 households out of their
         homes in Greater Vancouver after a magnitude 7.0 crustal earthquake.{" "}
-        <Cite id="PEIRS" /> Most of those homes are still standing. The City of
-        Vancouver states that areas with high concentrations of damage may be
-        closed off for weeks, months or even years. <Cite id="COV-RISK-2024" />
+        <Cite id="PEIRS" /> Most of those homes are still standing. In
+        Vancouver, areas with high concentrations of damage may be closed off
+        for weeks, months or even years. <Cite id="COV-RISK-2024" />
       </>
     ),
     /**
@@ -57,22 +57,21 @@ export const housing: PageModule = {
           <p>
             After the shaking, somebody has to walk up to each building, judge
             it, and leave a placard on the door. In Greater Vancouver, the
-            province’s magnitude 7.0 crustal scenario
-            counts 10,000 buildings red-tagged, which it defines as
-            uninhabitable, and 6,100 yellow-tagged, which it defines as
-            conditionally inhabitable. <Cite id="PEIRS" />
+            province’s magnitude 7.0 crustal scenario counts 10,000 buildings
+            red-tagged as uninhabitable and 6,100 yellow-tagged as conditionally
+            inhabitable. <Cite id="PEIRS" />
           </p>
           <p>
-            The yellow tag is the condition most people would actually be in:
-            the building stands and entry is restricted, and nobody has said for
-            how long.
+            The yellow tag is the condition most people would be in: the
+            building stands, entry is restricted, and nobody has said for how
+            long.
           </p>
           <p>
-            Behind every placard is a queue. The province’s Cascadia assessment
-            expects damage assessment teams to be overwhelmed, leaving, in its
-            words, “about two million people in need of alternate housing”.{" "}
-            <Cite id="DCRRA-2025" /> That figure is province-wide, and it comes
-            from the assessment’s written scenario rather than from a model run.{" "}
+            Behind every placard is a queue. In a Cascadia earthquake, damage
+            assessment teams are expected to be overwhelmed, leaving “about two
+            million people in need of alternate housing”.{" "}
+            <Cite id="DCRRA-2025" /> That count is province-wide, and it comes
+            from the province’s written scenario rather than from a model run.{" "}
             <Cite id="DCRRA-2025" />
           </p>
         </Prose>
@@ -85,21 +84,18 @@ export const housing: PageModule = {
       body: (
         <Prose>
           <p>
-            Vancouver’s 2024 seismic risk assessment states that areas with high
-            concentrations of damage may be closed off “for weeks, months, or
-            even years”, and names the West End and the Downtown Eastside as the
-            neighbourhoods most at risk of it. <Cite id="COV-RISK-2024" />
+            In Vancouver, areas with high concentrations of damage may be
+            closed off “for weeks, months, or even years”, and the West End and
+            the Downtown Eastside are the neighbourhoods most at risk of it.{" "}
+            <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            A cordon is not a judgement about one building. It is a decision
-            about an area, and the City ties it to concentrations of damage
-            rather than to any single address. <Cite id="COV-RISK-2024" /> This
-            is why displacement counts run so far above red-tag counts. A sound
-            building inside a closed area is a building nobody can live in.
-          </p>
-          <p>
-            The City says the same thing to its own residents, and names the
-            reason it lasts:
+            The City draws a cordon around an area and ties it to concentrations
+            of damage rather than to any single address.{" "}
+            <Cite id="COV-RISK-2024" /> That is why displacement counts run so
+            far above red-tag counts. A building that came through the shaking
+            can sit inside a closed block, and nobody lives in it while the
+            block is closed.
           </p>
           <Quote
             speaker="City of Vancouver"
@@ -119,8 +115,8 @@ export const housing: PageModule = {
           <p>
             The scarce resource is people. Every building needs somebody
             qualified to assess it and somebody qualified to repair it, one
-            building at a time, and the same material tells residents to expect
-            extended inaccessibility of large sections of neighbourhoods.{" "}
+            building at a time. Large sections of neighbourhoods would stay
+            inaccessible for an extended period.{" "}
             <Cite id="COV-EXPLORER-25" /> <Cite id="COV-FACTSHEET-24" />
           </p>
         </Prose>
@@ -138,12 +134,12 @@ export const housing: PageModule = {
             it covers a household whose building was never damaged at all.
           </p>
           <p>
-            Three of the systems a home runs on have their own pages here.{" "}
+            A home runs on{" "}
             <Link
               href="/after/water/"
               className="text-accent underline underline-offset-2"
             >
-              Water
+              water
             </Link>
             ,{" "}
             <Link
@@ -158,9 +154,9 @@ export const housing: PageModule = {
               className="text-accent underline underline-offset-2"
             >
               electricity
-            </Link>{" "}
-            each come back on their own schedule, and a household waits on the
-            slowest of the three. A lift needs power. Flushing needs water
+            </Link>
+            . Each comes back on its own schedule, and a household waits on the
+            slowest of the three. A lift needs power, and flushing needs water
             somebody has to spare. A building can pass its inspection and still
             have nothing coming out of the tap.
           </p>
@@ -221,19 +217,16 @@ export const housing: PageModule = {
             ]}
           />
           <p>
-            Three different units sit in that table, across three different
-            geographies. They are not competing estimates of one quantity and
-            they do not correct each other. The 70,000 counts households rather
-            than people, and Greater Vancouver rather than the province.{" "}
-            <Cite id="PEIRS" /> The two city rows count occupants, and they count
-            the City of Vancouver alone. <Cite id="COV-RISK-2024" />
+            The figures do not correct each other. The 70,000 counts households
+            in Greater Vancouver, not people and not the province.{" "}
+            <Cite id="PEIRS" /> The two city rows count occupants, inside the
+            City of Vancouver alone. <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            The city rows also invert the intuition. For Vancouver the rarer
-            magnitude 7.2 crustal earthquake is far worse than the magnitude 9.0
-            megathrust, about four times the buildings completely or extensively
-            damaged, and the City gives the reason: shaking at City Hall
-            comparable to the design forces used for new buildings.{" "}
+            For Vancouver the rarer magnitude 7.2 crustal earthquake is far
+            worse than the magnitude 9.0 megathrust: about four times the
+            buildings completely or extensively damaged. The reason is shaking
+            at City Hall comparable to the design forces used for new buildings.{" "}
             <Cite id="COV-RISK-2024" />
           </p>
         </Prose>
@@ -254,16 +247,15 @@ export const housing: PageModule = {
             <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            The largest single driver of residential displacement is not the
-            detached house. It is the wood-frame apartment building: 64 per cent of
-            their residents are modelled as displaced for more than 90 days in
-            the magnitude 7.2 scenario, which is 45 per cent of the city’s displacement
-            total. <Cite id="COV-RISK-2024" /> Wood-frame houses and wood-frame
-            apartments are different buildings, and the archetype analysis
-            behind the City’s 2026 action plan flags the apartments for lack of
-            wall stiffness and strength, and for soft-storey collapse risk where
-            the ground floor is left open for tuck-under parking.{" "}
-            <Cite id="COV-PLAN-2026" />
+            The wood-frame apartment building drives more residential
+            displacement than any other type, the detached house included:
+            64 per cent of its residents are modelled as displaced for more than
+            90 days in the magnitude 7.2 scenario, which is 45 per cent of the
+            city’s displacement total. <Cite id="COV-RISK-2024" /> Wood-frame
+            houses and wood-frame apartments are different buildings: the
+            apartments are flagged for lack of wall stiffness and strength, and
+            for soft-storey collapse risk where the ground floor is left open
+            for tuck-under parking. <Cite id="COV-PLAN-2026" />
           </p>
           <p>
             In unreinforced masonry residential buildings, brick walls with no
@@ -283,7 +275,7 @@ export const housing: PageModule = {
 
     {
       title:
-        "There are 70,000 displaced households on one side and 25 hubs of unstated capacity on the other",
+        "Vancouver publishes 25 disaster support hubs and no capacity figure for any of them",
       body: (
         <Prose>
           <p>
@@ -305,12 +297,11 @@ export const housing: PageModule = {
             </p>
           </Quote>
           <p>
-            That is the province describing its own plan. The same strategy
-            lists “Interim housing plans developed” as a condition for moving
-            into recovery, which is to say as work still to be done.{" "}
-            <Cite id="PEIRS" /> And it is written, in its own words, “based on
-            the assumption that First Nations and local authorities are unable
-            to stand up standard emergency response functions, such as emergency
+            The same strategy lists “Interim housing plans developed” as a
+            condition for moving into recovery, which is work still to be done.{" "}
+            <Cite id="PEIRS" /> And the province wrote it “based on the
+            assumption that First Nations and local authorities are unable to
+            stand up standard emergency response functions, such as emergency
             support services (ESS), search and rescue (SAR), damage assessment,
             and shelter for evacuees.” <Cite id="PEIRS" />
           </p>
@@ -356,10 +347,8 @@ export const housing: PageModule = {
           Agree now with someone outside the region that you could stay with
           them for months, and agree it out loud rather than assuming it.
         </strong>{" "}
-        The province says large numbers of people may need interim housing for
-        months to years, and that hotels may not be available.{" "}
-        <Cite id="PEIRS" /> An arrangement you have actually made is worth more
-        than a shelter place nobody has promised you.
+        Large numbers of people may need interim housing for months to years,
+        and hotels may not be available. <Cite id="PEIRS" />
       </>,
       // No citation, and none is missing: a cordon shutting people out of a
       // building is the cited fact, and what is behind the door when it does

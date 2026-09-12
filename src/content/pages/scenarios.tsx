@@ -36,7 +36,7 @@ export const scenarios: PageModule = {
     title: "Two earthquakes, not one",
     nav: "Two scenarios",
     standfirst:
-      "One is offshore, very large and very long. The other is close, smaller and violent. Most people have only heard of the first, and it is the second that the federal hazard agency calls the greater hazard to cities.",
+      "One is offshore, very large and very long. The other is close, smaller and violent. Most people have only heard of the first, and the federal hazard agency calls the second the greater hazard to cities.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -62,28 +62,27 @@ export const scenarios: PageModule = {
       body: (
         <Prose>
           <p>
-            Natural Resources Canada writes this about the offshore Cascadia
-            fault, on its own page about the last rupture: “because the fault is
-            offshore, it is not the greatest earthquake hazard faced by major
-            west coast cities.” The same page says of the shallower earthquakes
-            underneath the region, “Because these inland earthquakes can be much
-            closer to our urban areas and occur more frequently, they represent
-            the greatest earthquake hazard.” <Cite id="NRCAN-1700" />
+            Natural Resources Canada, on its own page about the last Cascadia
+            rupture: “because the fault is offshore, it is not the greatest
+            earthquake hazard faced by major west coast cities.” The same page
+            says of the shallower earthquakes underneath the region, “Because
+            these inland earthquakes can be much closer to our urban areas and
+            occur more frequently, they represent the greatest earthquake
+            hazard.” <Cite id="NRCAN-1700" />
           </p>
           <p>
-            British Columbia has made the same judgement operationally. The
-            province’s primary earthquake planning scenario is not the offshore
-            megathrust. It is a shallow magnitude 7.0 in the Strait of Georgia.{" "}
-            <Cite id="PEIRS" />
+            British Columbia plans around the nearer one. Its primary earthquake
+            planning scenario is a shallow magnitude 7.0 in the Strait of
+            Georgia. <Cite id="PEIRS" />
           </p>
           <p>
-            The two are different problems rather than a larger and a smaller
-            version of one problem. The nearer earthquake does more to Vancouver
-            itself, because it is closer to the city and happens more often.{" "}
+            They are two different problems, not a larger and a smaller version
+            of one. The nearer earthquake does more to Vancouver itself, because
+            it is closer to the city and happens more often.{" "}
             <Cite id="NRCAN-1700" /> The offshore one does more to Vancouver’s
-            chances of being helped, because it damages the whole coast at once,
-            and the province states that in a Cascadia event the United States
-            would be unable to deliver mutual aid. <Cite id="PEIRS" />
+            chances of being helped: it damages the whole coast at once, and in
+            a Cascadia event the United States would be unable to deliver mutual
+            aid. <Cite id="PEIRS" />
           </p>
         </Prose>
       ),
@@ -104,19 +103,18 @@ export const scenarios: PageModule = {
             magnitude 7.0. <Cite id="NRCAN-SCEN" />
           </p>
           <p>
-            Both runs use the same method, so the contrast between them is a
-            real comparison rather than two studies talking past each other. The
-            catalogue states its own resolution: results are given “at the
-            approximate scale of Census dissemination areas”, which is an area
-            the size of a few city blocks, not an address.{" "}
-            <Cite id="NRCAN-SCEN" />
+            Both runs use the same method, which is what makes the contrast
+            between them worth drawing. The catalogue states its own resolution:
+            results are given “at the approximate scale of Census dissemination
+            areas”, which is an area the size of a few city blocks, not an
+            address. <Cite id="NRCAN-SCEN" />
           </p>
           <p>
-            It also states what it leaves out. The modelling covers “only damage
-            to buildings, and their inhabitants, from earthquake shaking”.
-            Landslides, liquefaction, fire following and aftershocks are “not
-            currently included”. <Cite id="NRCAN-SCEN" /> That exclusion governs
-            almost every number below.
+            The modelling covers “only damage to buildings, and their
+            inhabitants, from earthquake shaking”. Landslides, liquefaction,
+            fire following and aftershocks are “not currently included”.{" "}
+            <Cite id="NRCAN-SCEN" /> That exclusion governs almost every number
+            below.
           </p>
           <Figure
             alt={`In the catalogue's own modelling, the nearer Georgia Strait magnitude 7.0 shakes the Lower Mainland far harder than the Cascadia magnitude 9.0 does: the strongest cell reaches about ${SHAKEMAP_FACTS.georgiaPeak} per cent of gravity against about ${SHAKEMAP_FACTS.cascadiaPeak}. Peak acceleration is not the whole of what either earthquake does, and this modelling covers shaking damage to buildings and the people in them and nothing else.`}
@@ -170,20 +168,19 @@ export const scenarios: PageModule = {
             The province’s Earthquake Immediate Response Strategy is built on a
             shallow magnitude 7.0 beneath the Georgia Basin, modelled on the
             1997 event. An earthquake of that size or larger happens in this
-            broad region roughly once every 1,500 years. Despite rupturing under
-            water, the province states that “a significant tsunami is not
-            expected”. <Cite id="PEIRS" />
+            broad region roughly once every 1,500 years. The rupture is under
+            water, and even so “a significant tsunami is not expected”.{" "}
+            <Cite id="PEIRS" />
           </p>
           <p>
-            The fault geometry comes from the federal rupture file rather than
-            from the province. The modelled plane dips at 47 degrees and reaches
-            a bottom edge about 13 km down, and its footprint runs from near
-            Nanaimo to downtown Vancouver, which describes the fault rather than
-            where the damage falls. The earthquake starts 3 km down.{" "}
-            <Cite id="OPENDRR-GSF-22" /> Shaking across the Lower Mainland and
-            Nanaimo is modelled at 10 to 60 per cent of gravity, strongest in
-            downtown Vancouver, West Vancouver, Nanaimo, Gibsons, and on
-            Gabriola and Bowen Islands. <Cite id="GSC-OF-8853" />
+            The modelled fault plane dips at 47 degrees to a bottom edge about
+            13 km down, and the earthquake starts 3 km down. Its footprint runs
+            from near Nanaimo to downtown Vancouver, which describes the fault
+            rather than where the damage falls. <Cite id="OPENDRR-GSF-22" />{" "}
+            Shaking across the Lower Mainland and Nanaimo is modelled at 10 to
+            60 per cent of gravity, strongest in downtown Vancouver, West
+            Vancouver, Nanaimo, Gibsons, and on Gabriola and Bowen Islands.{" "}
+            <Cite id="GSC-OF-8853" />
           </p>
           <Figure
             alt="The modelled crustal fault dips at 47 degrees to a bottom edge about 13 km down, and the earthquake starts 3 km down, which is shallow. The source gives no top edge to the plane, so the drawing stops where the source stops."
@@ -201,12 +198,11 @@ export const scenarios: PageModule = {
             <CrustalFaultSection />
           </Figure>
           <p>
-            It is not a bare magnitude. The scenario is set on a January
-            afternoon between 9am and 5pm, immediately after an atmospheric
-            river has dropped 180 to 300 mm of rain over three days. The ground
-            is already saturated when the shaking starts, which is why the
-            scenario’s landslides, liquefaction and dike failures are as
-            prominent as they are. <Cite id="PEIRS" />
+            The scenario is set on a January afternoon between 9am and 5pm,
+            immediately after an atmospheric river has dropped 180 to 300 mm of
+            rain over three days. The ground is already saturated when the
+            shaking starts, which is why the scenario’s landslides, liquefaction
+            and dike failures are as prominent as they are. <Cite id="PEIRS" />
           </p>
           <p>
             Its modelled impacts, counting only shaking damage to buildings and
@@ -234,12 +230,11 @@ export const scenarios: PageModule = {
             }
           />
           <p>
-            A second limit travels with every figure in that table: they belong
-            to a weekday afternoon, when most people are at school or work.
-            Natural Resources Canada says of its own numbers that because
-            secondary hazards and damage to infrastructure are left out, “the
-            estimates herein are likely to represent a minimum estimate on
-            impacts.” <Cite id="GSC-OF-8853" />
+            Every figure in that table belongs to a weekday afternoon, when most
+            people are at school or work. Natural Resources Canada says of its
+            own numbers that because secondary hazards and damage to
+            infrastructure are left out, “the estimates herein are likely to
+            represent a minimum estimate on impacts.” <Cite id="GSC-OF-8853" />
           </p>
         </Prose>
       ),
@@ -251,9 +246,9 @@ export const scenarios: PageModule = {
       body: (
         <Prose>
           <p>
-            This passage is the province’s own, written about its magnitude 7.0
-            Greater Vancouver scenario and no other, and about ground already
-            saturated by three days of rain. <Cite id="PEIRS" />
+            The passage below describes the magnitude 7.0 Greater Vancouver
+            scenario and no other, on ground already saturated by three days of
+            rain. <Cite id="PEIRS" />
           </p>
           <Quote
             speaker="The Province of British Columbia, on its magnitude 7.0 Greater Vancouver scenario"
@@ -294,8 +289,8 @@ export const scenarios: PageModule = {
             that passage.
           </p>
           <p>
-            The passage carries two instructions. Drop, cover and hold on. And
-            do not run outside.
+            The passage gives two instructions: drop, cover and hold on, and do
+            not run outside.
           </p>
         </Prose>
       ),
@@ -326,15 +321,14 @@ export const scenarios: PageModule = {
             Its headline figures, again counting mainshock shaking alone, are
             complete damage to about 18,000 buildings, more than 10,000 hospital
             injuries both critical and not, and 3,400 deaths. The assessment’s
-            own footnote is part of the finding: these “include only direct
-            mainshock damage without account of secondary hazards like
-            landslides, liquefaction, tsunami, fires and more.”{" "}
-            <Cite id="DCRRA-2025" />
+            own footnote: these “include only direct mainshock damage without
+            account of secondary hazards like landslides, liquefaction, tsunami,
+            fires and more.” <Cite id="DCRRA-2025" />
           </p>
           <p>
-            It also models what comes after. A magnitude 7.1 aftershock 60 km
-            beneath Sidney, about a month later, at 11pm, during an atmospheric
-            river, lasting 20 seconds. <Cite id="DCRRA-2025" />
+            It also models an aftershock: magnitude 7.1, 60 km beneath Sidney,
+            about a month later, at 11pm, during an atmospheric river, lasting
+            20 seconds. <Cite id="DCRRA-2025" />
           </p>
         </Prose>
       ),
@@ -344,7 +338,6 @@ export const scenarios: PageModule = {
       title: "The two earthquakes threaten different buildings",
       body: (
         <Prose>
-          <p>Both halves of this contrast come from BC government documents.</p>
           <p>
             Of the crustal earthquake, the province writes: “The near-surface
             earthquake results in high frequency shaking that is most hazardous
@@ -353,16 +346,15 @@ export const scenarios: PageModule = {
             collapse and inhabitability.” <Cite id="PEIRS" />
           </p>
           <p>
-            Of the megathrust, it writes the converse: “urban areas with tall
-            buildings on deep, soft sediments (for example, parts of Richmond)
-            that resonate with the long-period seismic waves generated by the
-            subduction interface earthquake also suffer significant damage.”{" "}
+            Of the megathrust, the converse: “urban areas with tall buildings on
+            deep, soft sediments (for example, parts of Richmond) that resonate
+            with the long-period seismic waves generated by the subduction
+            interface earthquake also suffer significant damage.”{" "}
             <Cite id="DCRRA-2025" />
           </p>
           <p>
             Fast, sharp shaking breaks short, stiff, older buildings. Slow, long
-            shaking moves tall buildings on soft ground. Neither earthquake is
-            the other’s smaller version.
+            shaking moves tall buildings on soft ground.
           </p>
           <Figure
             alt="Fast, sharp shaking is most hazardous to short, stiff, older buildings, while slow, long shaking moves tall buildings on soft ground. Neither earthquake is the other's smaller version, and the drawing shows how buildings respond rather than what happens to them."
@@ -386,30 +378,27 @@ export const scenarios: PageModule = {
     },
 
     {
-      title:
-        "How long the shaking lasts changes what fails, not only how much",
+      title: "How long the shaking lasts changes what fails",
       body: (
         <Prose>
           <p>
-            A published study of how soil and deep bridge foundations act on
-            each other measured what a longer earthquake does, using the Golden
-            Ears Bridge. At the larger of that bridge’s two design events,
-            strong shaking lasted about 30 seconds and the forces from the
-            moving ground and the forces from the swaying structure “occurred
-            simultaneously”; at the smaller design event for the same bridge,
-            shaking lasted about 10 seconds and the two were “essentially
-            uncoupled”. The reason is that in the longer event the soil
-            liquefied early, while the structure was still being shaken.{" "}
-            <Cite id="NAB-ICCHGE-08" />
+            A study of the Golden Ears Bridge measured how the soil and the deep
+            foundations under it act on each other as an earthquake runs longer.
+            At the larger of that bridge’s two design events, strong shaking
+            lasted about 30 seconds and the forces from the moving ground and
+            the forces from the swaying structure “occurred simultaneously”; at
+            the smaller design event for the same bridge, shaking lasted about
+            10 seconds and the two were “essentially uncoupled”. In the longer
+            event the soil liquefied early, while the structure was still being
+            shaken. <Cite id="NAB-ICCHGE-08" />
           </p>
           <p>
             Those are design events for one bridge, not properties of either
-            scenario. What they show is a mechanism. Past a certain length, the
-            ground fails while the shaking is still going on, and a structure
-            meets both loads at once instead of one after the other.
+            scenario. Past a certain length, the ground fails while the shaking
+            is still going on, and a structure meets both loads at once instead
+            of one after the other.
           </p>
           <p>
-            Durations themselves belong to their scenario and travel no further.
             In the province’s magnitude 7.0 Greater Vancouver planning scenario,
             violent shaking lasts 10 to 20 seconds. <Cite id="PEIRS" /> In the
             province’s magnitude 9.0 Cascadia scenario, the mainshock lasts
@@ -455,7 +444,7 @@ export const scenarios: PageModule = {
             place. <Cite id="GSC-OF-8853" />
           </p>
           <p>
-            So two levels of government publishing the same number is one model
+            Two levels of government publishing the same number is one model
             quoted twice, not two estimates agreeing. Canada has one public
             earthquake loss model, and both governments use it.
           </p>
@@ -505,8 +494,8 @@ export const scenarios: PageModule = {
           />
           <p>
             The federal agency gives a longer average than the province does.
-            Both are current, both are official, and the honest version is to
-            say so rather than to pick one. The last rupture was in 1700.
+            Both are current and both are official. The last rupture was in
+            1700.
           </p>
           <Figure
             alt="Four official sources give four different answers for how often Cascadia ruptures: averages between 400 and 630 years, inside stated ranges running from 100 years to 1,500. All four are drawn the same way, because all four are current and none is the right one. The scale is the interval between ruptures, not a date."
@@ -542,9 +531,8 @@ export const scenarios: PageModule = {
             12 per cent in 50 years. <Cite id="GOLDFINGER-12" />
           </p>
           <p>
-            The two Canadian numbers also differ from each other, and both are
-            published. The Geological Survey of Canada’s 2004 paper gives a
-            50-year probability with a median of about 5 per cent.{" "}
+            The Geological Survey of Canada’s 2004 paper gives a 50-year
+            probability with a median of about 5 per cent.{" "}
             <Cite id="MAZZOTTI-04" /> The province’s 2025 assessment puts the
             50-year probability in a 10 to 20 per cent band, with 3 per cent
             over 10 years and 9 per cent over 30. <Cite id="DCRRA-2025" /> They
@@ -582,25 +570,23 @@ export const scenarios: PageModule = {
             the accurate descriptions of the tsunami and the accurate time
             keeping by the Japanese that allows us to confidently know the size
             and exact time of this great earthquake.” <Cite id="NRCAN-1700" />{" "}
-            Two record-keeping traditions on opposite sides of an ocean describe
-            the same night.
+            The First Nations accounts and the Japanese records are of the same
+            night.
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "Weather is part of each scenario, and the two point opposite ways",
+      title: "The weather in each scenario changes what people need first",
       body: (
         <Prose>
           <p>
-            Neither official scenario is set on a mild day, and the difference
-            changes what people need first. The August heatwave with wildfire
-            smoke makes water, shade and clean air the urgent problems, and puts
-            people at risk indoors. <Cite id="DCRRA-2025" /> The January
-            afternoon after an atmospheric river makes warmth, dry shelter and
-            unstable slopes the urgent problems. <Cite id="PEIRS" /> The same
-            disaster, on the same day, is a different emergency in each.
+            Neither official scenario is set on a mild day. The August heatwave
+            with wildfire smoke makes water, shade and clean air the urgent
+            problems, and puts people at risk indoors. <Cite id="DCRRA-2025" />{" "}
+            The January afternoon after an atmospheric river makes warmth, dry
+            shelter and unstable slopes the urgent problems. <Cite id="PEIRS" />
           </p>
         </Prose>
       ),
@@ -622,8 +608,7 @@ export const scenarios: PageModule = {
       <>
         <strong>Learn what your building is.</strong> Its age, its height and
         what it is made of. A short, older unreinforced masonry building and a
-        tall building on soft ground are at risk from different earthquakes, and
-        the province says so in both directions.
+        tall building on soft ground are at risk from different earthquakes.
       </>,
       <>
         <strong>Learn what it stands on.</strong> What a building sits on
@@ -640,9 +625,8 @@ export const scenarios: PageModule = {
     ],
     closing: (
       <>
-        And in either earthquake, the province’s own passage above gives the two
-        actions that matter in the first seconds: drop, cover and hold on, and
-        do not run outside.
+        In either earthquake, the first seconds ask for the same two actions:
+        drop, cover and hold on, and do not run outside.
       </>
     ),
   },

@@ -28,7 +28,7 @@ export const contribute: PageModule = {
     nav: "Contribute",
     kicker: "Corrections, sources and local knowledge",
     standfirst:
-      "Anything is welcome, whether it is a correction, a document, a pointer to a report you know exists, or the read of somebody who does this work for a living. Something on this site that looks wrong to you is worth sending even when no document comes with it.",
+      "A correction, a document, a pointer to a report you know exists, the read of somebody who does this work for a living: all of them are welcome. Something on this site that looks wrong to you is worth sending even when no document comes with it.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: ["MV-WATER-22", "MV-DWMP-26", "AIR-2013", "BCH-WESTEND-25"],
   },
@@ -56,19 +56,18 @@ export const contribute: PageModule = {
             .
           </p>
           <p>
-            The readers most likely to catch what is wrong here are the ones
-            who work in the fields this site covers: seismology and geotechnical
-            engineering, water and sewer, power, gas, telecommunications,
-            transport, fuel and food supply, housing, health care and emergency
-            management.
+            The readers most likely to catch what is wrong here work in the
+            fields this site covers: seismology and geotechnical engineering,
+            water and sewer, power, gas, telecommunications, transport, fuel and
+            food supply, housing, health care and emergency management.
           </p>
           <p>
-            The fastest thing to act on is one line saying which claim on the
-            site is wrong, and a document with an author and a date behind it. A
-            pointer to a report you know exists but cannot place saves days on
-            its own. So does a read from the field with no document at all,
-            which is chased as a lead rather than published as a claim, because
-            what reaches a page has to be something a reader can check.
+            The fastest thing to act on is one line saying which claim is wrong,
+            and a document with an author and a date behind it. A pointer to a
+            report you know exists but cannot place saves days on its own. So
+            does a read from the field with no document at all. That gets chased
+            as a lead rather than published as a claim: what reaches a page has
+            to be something a reader can check.
           </p>
         </Prose>
       ),
@@ -79,7 +78,6 @@ export const contribute: PageModule = {
         "Three questions on this site are waiting on a document that may already exist",
       body: (
         <Prose>
-          <p>These are the gaps where a single file would change a page.</p>
           <p>
             <strong>How long the water would take to come back.</strong> Metro
             Vancouver’s assessment of its own water system was released with
@@ -108,7 +106,7 @@ export const contribute: PageModule = {
           </p>
           <p>
             If one of those has been answered somewhere and this site has missed
-            it, that is the most valuable thing anyone can send.
+            it, that is the document to send.
           </p>
         </Prose>
       ),

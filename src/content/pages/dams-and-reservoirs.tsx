@@ -124,7 +124,7 @@ export const damsAndReservoirs: PageModule = {
             to 2024, with the report submitted in June 2024:
           </p>
           <Quote
-            speaker="The Greater Vancouver Water District’s dam safety programme annual update, on Seymour Falls Dam"
+            speaker="The Greater Vancouver Water District’s dam safety program annual update, on Seymour Falls Dam"
             cite={<Cite id="MV-DSP-2026" />}
           >
             <p>
@@ -134,12 +134,12 @@ export const damsAndReservoirs: PageModule = {
             </p>
           </Quote>
           <p>
-            “Reasonably safe” is a formal finding rather than a hedge. A review
-            ends in one of three verdicts, signed by an engineer and
+            A review ends in one of three verdicts, signed by an engineer and
             peer-reviewed by a second: reasonably safe, reasonably safe with
             deficiencies, or not safe with deficiencies requiring urgent action.
-            The province treats the first as equivalent to the Regulation’s own
-            word, “safe”. <Cite id="BCDSP-DSR-INFO" />
+            “Reasonably safe” is the first of those, and the province treats it
+            as equivalent to the Regulation’s own word, “safe”.{" "}
+            <Cite id="BCDSP-DSR-INFO" />
           </p>
         </Prose>
       ),
@@ -159,11 +159,11 @@ export const damsAndReservoirs: PageModule = {
             them are not named. <Cite id="MV-DSP-2026" />
           </p>
           <p>
-            What is published is the capital programme, and it says the seismic
-            question is still open.
+            The capital program is published. It leaves the seismic question
+            open.
           </p>
           <DataTable
-            caption="The three seismic projects Metro Vancouver's capital reporting lists for the two dams, and how far each has got."
+            caption="The three seismic projects Metro Vancouver’s capital reporting lists for the two dams, and how far each has got."
             columns={["Project", "Stage at 31 May 2026", "Timeline", "Estimate"]}
             minWidth="38rem"
             note={<Cite id="MV-CAPEX-2026" />}
@@ -191,8 +191,8 @@ export const damsAndReservoirs: PageModule = {
           <p>
             MCE stands for Maximum Credible Earthquake, the criterion the
             province’s design guideline sets for a dam in this class.{" "}
-            <Cite id="BC-DDCG" /> The owner is still paying for the evaluations
-            and has not begun the upgrade.
+            <Cite id="BC-DDCG" /> Metro Vancouver is still paying for the
+            evaluations and has not begun the upgrade.
           </p>
           <VerificationNote label="Not yet published">
             Both reviews found no unsafe condition, and that is the whole of what
@@ -211,11 +211,11 @@ export const damsAndReservoirs: PageModule = {
       body: (
         <Prose>
           <p>
-            Between reviews the regime is inspection, and Metro Vancouver reports
-            carrying it out. Site surveillance is done at least weekly at both
-            dams and formal inspections twice a year, and geotechnical and lake
-            level instrumentation “is reviewed by staff daily (Monday – Friday)
-            through an automated data acquisition system”.{" "}
+            Between reviews, Metro Vancouver reports site surveillance at least
+            weekly at both dams and formal inspections twice a year, and
+            geotechnical and lake level instrumentation “is reviewed by staff
+            daily (Monday – Friday) through an automated data acquisition
+            system”.{" "}
             <Cite id="MV-DSP-2026" /> Each of those intervals is what the
             Regulation’s schedule requires of a dam in this class.{" "}
             <Cite id="BCDSR-40-2016" /> Cleveland’s two low-level outlet valves,
@@ -224,10 +224,10 @@ export const damsAndReservoirs: PageModule = {
             <Cite id="MV-ASSET-2021" />
           </p>
           <p>
-            The regulator’s side of the regime is thinner. A provincial dam
-            safety officer audits a dam in this class about every five years. The
-            last audits of Cleveland and Seymour Falls were completed in 2020,
-            and as of June 2026 follow-up audits “are being planned”.{" "}
+            A provincial dam safety officer audits a dam in this class about
+            every five years. The last audits of Cleveland and Seymour Falls were
+            completed in 2020, and as of June 2026 follow-up audits “are being
+            planned”.{" "}
             <Cite id="MV-DSP-2026" /> In September 2021, on an audit covering
             2019 and 2020, the Auditor General of British Columbia found that the
             ministry “has not effectively overseen the safety of dams in B.C.”{" "}
@@ -271,10 +271,10 @@ export const damsAndReservoirs: PageModule = {
           </p>
           <p>
             Earthquakes are in those plans even though they are absent from the
-            review summaries. The province’s template lists three of them among
-            the events that escalate a dam emergency: an earthquake felt or
-            reported within 50 kilometres of the dam, one causing visible damage
-            to the dam, and one causing an uncontrolled release of water.{" "}
+            review summaries. The template lists three of them among the events
+            that escalate a dam emergency: an earthquake felt or reported within
+            50 kilometres of the dam, one causing visible damage to the dam, and
+            one causing an uncontrolled release of water.{" "}
             <Cite id="BCDSP-DEP-24" />
           </p>
         </Prose>
@@ -286,8 +286,8 @@ export const damsAndReservoirs: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        The question this page cannot answer for you is whether you are below one
-        of these dams. That question has an answer, and somebody holds it.
+        Whether you are below one of these dams has an answer, and somebody holds
+        it.
       </>
     ),
     items: [
@@ -302,9 +302,9 @@ export const damsAndReservoirs: PageModule = {
       </>,
       <>
         <strong>Ask your municipality for the part of the plan it holds.</strong>{" "}
-        A downstream local emergency authority receives a defined part rather
-        than the whole, and nothing in the regime stops it from telling you what
-        is in it. <Cite id="BCDSP-DEP-24" />
+        A downstream local emergency authority receives a defined part of the
+        plan, and nothing in the regime stops it from telling you what is in it.{" "}
+        <Cite id="BCDSP-DEP-24" />
       </>,
       <>
         <strong>Ask Metro Vancouver for the rest.</strong> There is no duty to
@@ -326,9 +326,9 @@ export const damsAndReservoirs: PageModule = {
     closing: (
       <>
         Two engineers reviewed these dams in 2024 and neither found an unsafe
-        condition. What is missing is not a warning. It is the answer to one
-        question, and the part of that answer concerning your own address is a
-        thing you can go and ask for.
+        condition. What has not been published is where the water would go, and
+        the part of that concerning your own address is something you can ask
+        for.
       </>
     ),
   },

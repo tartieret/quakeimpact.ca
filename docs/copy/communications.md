@@ -2,18 +2,17 @@
 route: /after/communications/
 title: Communications
 nav: Communications
-hook: Nothing requires a cell tower to hold any backup power at all.
-lede: The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel. [DCRRA-2025] Behind that sits a plain fact about the rules: the regulator that would set a backup-power run time for a cell site has not set one, and is still asking what it should be. [CRTC-2025-226]
+hook: Nothing requires a cell site to hold any backup power at all.
+lede: The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel. [DCRRA-2025] No rule sets how long a cell site has to hold backup power, and the regulator that would set one is still asking what it should be. [CRTC-2025-226]
 bands: { cascadia: medium, crustal: medium }
 mechanism: The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel and a prolonged lack of access for everyone else; it names satellite phones and amateur radio as the backups people would fall back on.
 source: DCRRA-2025
 status: draft
 ---
 
-## The first failure is not a broken tower, it is a full network
+## The network fills up before anything is broken
 
-A cell site does not have to fall over to stop working. The province's earthquake
-response strategy says what happens first:
+A cell site does not have to fall over to stop working:
 
 > "If service is available, networks may be congested or overloaded, making
 > communication extremely challenging. Texts and low-bandwidth data-based services
@@ -44,13 +43,9 @@ type of network site?" [CRTC-2025-226] TSPs are the telephone and internet compa
 themselves. The guidance reproduced in the proceeding's appendix is written in
 "should" rather than "must". [CRTC-2025-226]
 
-The record closed in late August 2026 and no decision has issued. [CRTC-2025-226] A
-regulator asking what the run time ought to be is the plainest evidence available
-that no run time is set.
+The record closed in late August 2026 and no decision has issued. [CRTC-2025-226]
 
-## What the rules do require is that somebody is told
-
-Two Commission decisions from 2025 are in force, and neither is about power.
+## The rules in force cover reporting outages and routing 9-1-1 calls
 
 Telecom Decision CRTC 2025-225, in force since 4 November 2025, requires a provider
 to notify the Commission, Innovation, Science and Economic Development Canada and
@@ -60,12 +55,10 @@ no requirement to physically strengthen anything. [CRTC-2025-225] Telecom Decisi
 CRTC 2025-65, from February 2025, requires that 9-1-1 traffic be given priority on
 the network where that is technically feasible. [CRTC-2025-65]
 
-The one Canadian backup-power duration in this area belongs to buildings rather than
-towers. Guidance under an earlier Commission policy sets backup power of at least 24
-hours for central office 9-1-1 switches and 72 hours for tandem switches.
-[CRTC-2016-165] Those are the switching offices that route a 9-1-1 call, not the
-radio sites the call travels over, and the figures are guidance rather than a
-requirement. [CRTC-2016-165]
+Guidance under an earlier Commission policy sets backup power of at least 24 hours
+for central office 9-1-1 switches and 72 hours for tandem switches. [CRTC-2016-165]
+Those are the switching offices that route a 9-1-1 call, not the radio sites the call
+travels over. Both figures are guidance, and neither is binding. [CRTC-2016-165]
 
 ## British Columbia has asked the regulator for 72 hours
 
@@ -77,37 +70,35 @@ testing including a "Massive Traffic Surge" scenario. [BC-CRTC-SUB] It names "Se
 Events: High earthquake risk in southwestern BC" as one of four risk categories
 facing the province. [BC-CRTC-SUB]
 
-That is a request to a regulator, not a rule and not a description of what is in
+That is a request to a regulator. It is not a rule, and it does not say what is in
 place today.
 
-One building in this chain is built for the event: E-Comm's Lower Mainland centre is
-a 60,000 square foot reinforced concrete post-disaster building, "designed to resist
-an earthquake and to operate self-sufficiently for up to 72 hours". [ECOMM-FAC] That
-is where the call arrives, and it says nothing about the cabinets and towers between
-a caller and it.
+E-Comm's Lower Mainland centre is a 60,000 square foot reinforced concrete
+post-disaster building, "designed to resist an earthquake and to operate
+self-sufficiently for up to 72 hours". [ECOMM-FAC] That is the building the call
+arrives at, and it says nothing about the cabinets and towers between a caller and
+it.
 
 ## The province expects days to weeks, with what survives going to emergency personnel first
 
 The province's megathrust assessment states that "disruptions in communications
 continue for days to weeks", with access prioritised for emergency personnel,
 "leading to a prolonged lack of access to communications for the general population".
-[DCRRA-2025] That statement is qualitative and describes a magnitude 9.0 Cascadia
-earthquake. [DCRRA-2025]
+[DCRRA-2025] That statement carries no figures, and it describes a magnitude 9.0
+Cascadia earthquake. [DCRRA-2025]
 
 The response strategy does not separate copper from cellular: "common communication
 service providers, including cellular and landline telephone providers, may be
 impacted". [PEIRS] It names "satellite phones and amateur radio services" as the
-backups people would fall back on, and in the same passage says radio fills up the
-way the cellular network does: "Radio communication, if operable, may be also
-congested and impact the ability of first responders if saturated with non-sanctioned
-operators." [PEIRS]
+backups people would fall back on. Radio fills up the way the cellular network does:
+"Radio communication, if operable, may be also congested and impact the ability of
+first responders if saturated with non-sanctioned operators." [PEIRS]
 
 Non-sanctioned means outside the province's own volunteer service. Through the
 Provincial Emergency Radio Communications Service it has installed amateur radio
 equipment at each of its regional emergency operations centres, though "some regions
-have a limited number of radio operators". [PEIRS] The line it draws is between
-operators who joined an organised group before the earthquake and operators who did
-not.
+have a limited number of radio operators". [PEIRS] The distinction is whether an
+operator joined an organised group before the earthquake.
 
 > **Not published.** Which regions are short of radio operators, and whether the
 > Lower Mainland is one of them, is not in the document. [PEIRS] No carrier has

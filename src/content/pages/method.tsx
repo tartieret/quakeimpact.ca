@@ -67,7 +67,7 @@ export const method: PageModule = {
     title: "How the impact bands work",
     nav: "Method & bands",
     standfirst:
-      "Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. This page explains what the bands mean and where they come from.",
+      "Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. The band says how long the system is out, how widely, and what it is waiting on.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -96,10 +96,9 @@ export const method: PageModule = {
       body: (
         <Prose>
           <p>
-            Impacts here are given as Low, Medium or High rather than as a
-            number of days. Most published work assesses one design earthquake,
-            so inventing a figure in between would be modelling rather than
-            reporting.
+            Impacts here are given as Low, Medium or High, not as a number of
+            days. Most published work assesses one design earthquake, so a
+            figure in between would be modelling rather than reporting.
           </p>
           <p>A band is assigned on three things together.</p>
           <ul className="flex list-none flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule p-0">
@@ -144,10 +143,7 @@ export const method: PageModule = {
             has published an assessment of, and that says nothing at all about
             whether it would hold up.
           </p>
-          <p>
-            Three cells on the grid are hatched today, and they are hatched for
-            two different reasons.
-          </p>
+          <p>Three cells on the grid are hatched today, for two reasons.</p>
           <p>
             Dams and reservoirs are hatched in both scenarios. Cleveland and
             Seymour Falls dams were each reviewed by an engineer in 2024, as the
@@ -169,13 +165,12 @@ export const method: PageModule = {
             nearer earthquake. Nobody has looked.
           </p>
           <p>
-            That is worth separating from the other row on the grid that changes
-            between the two scenarios. Where help comes from is High for the
-            megathrust and Low for the crustal earthquake because the two
-            earthquakes genuinely differ: one shakes the whole coast at once,
-            and the other does not. Port, airport and ferry terminals differ
-            only in how much has been written down. One asymmetry is about the
-            earthquakes. The other is about which documents happen to exist.
+            One other row changes between the two scenarios, and it changes for
+            a different reason. Where help comes from is High for the megathrust
+            and Low for the crustal earthquake because the two earthquakes
+            genuinely differ: one shakes the whole coast at once, and the other
+            does not. Port, airport and ferry terminals differ only in how much
+            has been written down.
           </p>
           <Figure
             alt="Three cells on the grid are hatched. Dams and reservoirs are hatched in both scenarios, and port, airport and ferry terminals only in the crustal one, because of which documents happen to exist; where help comes from changes between High and Low because the two earthquakes genuinely differ. A hatch means nobody has published an assessment, never that the system would do badly."
@@ -224,9 +219,9 @@ export const method: PageModule = {
             comes in kinds.
           </p>
           <p>
-            Communications is Medium because the province’s megathrust
-            assessment says disruption continues for days to weeks, with what
-            capacity survives prioritised for emergency personnel.{" "}
+            Communications is Medium because disruption in the megathrust
+            scenario continues for days to weeks, with what capacity survives
+            prioritised for emergency personnel.{" "}
             <Cite id="DCRRA-2025" /> The uncertainty is about everything around
             that sentence: nothing requires a mobile phone site to hold any
             backup power at all, the regulator opened a proceeding to decide
@@ -243,8 +238,7 @@ export const method: PageModule = {
             The comparison is missing.
           </p>
           <p>
-            Both are Medium. They are not the same situation, and each system
-            page says which one it is in.
+            Each system page says which kind of uncertainty is behind its band.
           </p>
           <Figure
             alt="Communications and health care are both banded Medium for different reasons: communications because nothing requires a mobile phone site to hold backup power and the regulator has not decided, and health care because about 65 per cent of one health authority's buildings would likely be completely damaged at the shaking level the code designs for and nobody has compared expected casualties to the beds the region has. The shared band does not mean the two situations are the same."
@@ -284,10 +278,7 @@ export const method: PageModule = {
           <p>
             The row is banded High because the grid is regional and that is the
             only measured evidence available. The sentence beside it stays
-            narrow: downtown, and then the gap. A reader downtown learns
-            something true about where they live. A reader in Surrey learns that
-            nobody has published an answer, which is also true and also worth
-            knowing.
+            narrow: downtown, and then the gap.
           </p>
         </Prose>
       ),
@@ -317,9 +308,9 @@ export const method: PageModule = {
             is adopting them. So when a federal document and a provincial
             document give the same number, that is one model quoted twice, and
             not two studies agreeing. Two figures that look like a range are one
-            figure seen twice. Where a genuinely independent estimate exists at
-            all, it comes from the insurance industry, and it is named as such
-            wherever it appears.
+            figure seen twice. Where a genuinely independent estimate exists, it
+            comes from the insurance industry, and it is named as such wherever
+            it appears.
           </p>
           <Figure
             alt="Both scenarios come from one Geological Survey of Canada catalogue, which the province asked for and then adopted for its own Cascadia casualty figures and crustal figures, so a federal figure and a provincial figure that agree are one model quoted twice rather than two studies agreeing. The one genuinely independent estimate comes from the insurance industry and is drawn apart from the catalogue rather than inside it."
@@ -337,13 +328,13 @@ export const method: PageModule = {
             <MethodOneModel />
           </Figure>
           <p>
-            All of these modelled figures share one boundary, which the
-            catalogue states plainly. They cover “only damage to buildings, and
-            their inhabitants, from earthquake shaking”. Fire following,
-            landslides, liquefaction and aftershocks are “not currently
-            included”. <Cite id="NRCAN-SCEN" /> Natural Resources Canada draws
-            the conclusion itself: with those hazards left out, “the estimates
-            herein are likely to represent a minimum estimate on impacts.”{" "}
+            Every one of those modelled figures covers “only damage to
+            buildings, and their inhabitants, from earthquake shaking”. Fire
+            following, landslides, liquefaction and aftershocks are “not
+            currently included”. <Cite id="NRCAN-SCEN" /> Natural Resources
+            Canada draws the conclusion itself: with those hazards left out,
+            “the estimates herein are likely to represent a minimum estimate on
+            impacts.”{" "}
             <Cite id="GSC-OF-8853" />
           </p>
         </Prose>
@@ -352,17 +343,20 @@ export const method: PageModule = {
 
     {
       title:
-        "Christchurch and Kobe show how something fails, and never how long it takes here",
+        "A past earthquake elsewhere shows how something fails, and never how long it takes here",
       body: (
         <Prose>
           <p>
-            Past earthquakes elsewhere explain a mechanism, and nothing more. Christchurch shows what months without sewer service does
-            to a city. Kobe shows what happens to a port. Neither tells anyone
-            how long a pipe in Richmond would be broken.
+            Past earthquakes elsewhere explain a mechanism, and nothing more.
+            The 2011 earthquake in Christchurch, New Zealand, shows what months
+            without sewer service does to a city. The 1995 earthquake in Kobe,
+            Japan, shows what happens to a port. Neither tells anyone how long a
+            pipe in Richmond would be broken.
           </p>
           <p>
             No figure from another earthquake is used as a number for the Lower
-            Mainland anywhere here. Where an analogue appears, it is labelled with where and when it happened.
+            Mainland anywhere here. Where a past earthquake elsewhere is
+            mentioned, it is labelled with where and when it happened.
           </p>
         </Prose>
       ),
@@ -373,7 +367,6 @@ export const method: PageModule = {
         "Numbers that look comparable are often measuring different things",
       body: (
         <Prose>
-          <p>Three cases come up often enough to be worth naming.</p>
           <p>
             <strong>Return periods do not carry across subjects.</strong> A dam
             in the top consequence class is assessed against a 1-in-10,000-year

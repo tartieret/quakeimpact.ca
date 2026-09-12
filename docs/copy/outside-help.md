@@ -12,34 +12,31 @@ status: draft
 
 ## Help arrives over the same roads and ports as everything else
 
-The province's earthquake response strategy sets out what it expects in the first
-days. Road, rail, air and marine transport are disrupted and "existing supply chains
-will be inoperable". Areas are isolated, unreachable by road because of landslides,
-liquefaction and collapsed bridges, and cut off further by damage to airports and
-marine ports. Inside that area, local capacity to respond "will be limited and
-delayed". [PEIRS] What that does to the crossings and the terminals is on
+In the first days, road, rail, air and marine transport are disrupted and "existing
+supply chains will be inoperable". Areas are isolated, unreachable by road because of
+landslides, liquefaction and collapsed bridges, and cut off further by damage to
+airports and marine ports. Inside that area, local capacity to respond "will be
+limited and delayed". [PEIRS] What that does to the crossings and the terminals is on
 [transportation](/after/transportation/) and [large
 infrastructure](/after/large-infrastructure/).
 
-Leaving is not the plan. The province's 2025 risk assessment states that "damage to
-transportation routes and the prioritization of essential personnel and supplies make
-mass evacuation impossible, and the public is directed to shelter in place."
-[DCRRA-2025]
+Leaving is not the plan: "damage to transportation routes and the prioritization of
+essential personnel and supplies make mass evacuation impossible, and the public is
+directed to shelter in place." [DCRRA-2025]
 
-Some roads are set aside for the response. Disaster Response Routes are corridors kept
-open for emergency vehicles, and once they are activated the public is told to get off
-them as soon as possible. [DRR-GOVPAGE] They are roads to leave, not roads to leave
-on. [Getting around](/getting-around/) covers the signs.
+Disaster Response Routes are corridors kept open for emergency vehicles, and once they
+are activated the public is told to get off them as soon as possible. [DRR-GOVPAGE]
+They are roads to leave, not roads to leave on. [Getting around](/getting-around/)
+covers the signs.
 
 ## British Columbia's plan is to push resources in, which reverses what its own general plan says
 
 The province's general emergency plan, the All-Hazard Plan, works from the bottom up.
 The province's role under it is supplementary: it "will coordinate available resources
 to provide emergency response assistance that supplements but does not substitute for
-community resources", and the first move belongs to the local authority. [AHP-2012]
-
-It allows the order to be turned around, and treats that as the exception. A situation
-at the international or national level "may reverse or otherwise change the normal
+community resources", and the first move belongs to the local authority. The plan
+allows that order to be turned around and treats it as the exception: a situation at
+the international or national level "may reverse or otherwise change the normal
 'bottom-up' approach to response". [AHP-2012]
 
 The earthquake strategy makes the exception the rule. In a major earthquake the
@@ -47,16 +44,15 @@ province "will stand up response measures outlined within this strategy and
 proactively deploy resources into the impact area". [PEIRS] Nobody has to ask first.
 The general plan has not been amended since 2016. [AHP-2012]
 
-## Pushing resources in needs an outside to push them from, and that is where the two earthquakes differ
+## Pushing resources in needs an outside to push them from
 
-The push rests on a geographic assumption, and the province writes it down. Agencies
-inside the impact area are reduced or delayed, while "those outside the impact area
-will be largely unaffected and functional". The staging follows from it: "Provincial
-staging areas are located outside the impact area and will be used to organize,
-prioritize, and disseminate critical resources." [PEIRS]
+Agencies inside the impact area are reduced or delayed, while "those outside the
+impact area will be largely unaffected and functional". The staging follows:
+"Provincial staging areas are located outside the impact area and will be used to
+organize, prioritize, and disseminate critical resources." [PEIRS]
 
-That is a planning assumption, which is what a province decides to plan against,
-rather than a measured finding about how help would arrive.
+That is a planning assumption: what a province decides to plan against. It is not a
+measured finding about how help would arrive.
 
 ### In the shallow crustal magnitude 7.0, the outside is the rest of the province
 
@@ -65,7 +61,7 @@ Georgia, and its damage is concentrated and local. [PEIRS] The impact area is th
 Lower Mainland. The rest of British Columbia, Alberta and the American Pacific
 Northwest are outside it, which is the case the staging plan is built for. Help still
 has to travel over damaged roads, and the first response is still the local one.
-[AHP-2012] But there is an outside, and the agencies in it are unhurt.
+[AHP-2012]
 
 ### In the Cascadia magnitude 9.0, the province says the United States may be unable to help
 
@@ -77,30 +73,29 @@ the coast:
 > region, many remote communities might be cut off from aid, and the U.S. will be
 > unable to deliver mutual aid if they are also overwhelmed by impacts." [PEIRS]
 
-The coordinating centres are among the damaged assets. The province's regional and
-central coordination centres, the PREOC and the PECC, decide what provincial support
-goes where. [BCEMS-2016] In this scenario both are "compromised due to damage to
-facilities and impacts on staff" and have to work from alternate locations.
-[DCRRA-2025]
+The province's regional and central coordination centres, the PREOC and the PECC,
+decide what provincial support goes where. [BCEMS-2016] In this scenario both are
+"compromised due to damage to facilities and impacts on staff" and have to work from
+alternate locations. [DCRRA-2025]
 
 The word the province uses is delayed: "resources from other parts of B.C., other
 provinces and the U.S. are delayed due to widespread transportation and communication
-disruptions." [DCRRA-2025] Help is late here rather than absent, and the plan is that
-a community holds on until it arrives. [PEIRS] [The two scenarios](/scenarios/) sit
-side by side.
+disruptions." [DCRRA-2025] The plan is that a community holds on until help arrives.
+[PEIRS] [The two scenarios](/scenarios/) sit side by side.
 
 ## The agreements that would bring help are named, and the one scheduled test of them was not run
 
 In June 2016 the province ran Exercise Coastal Response, its first full-scale
 earthquake and tsunami exercise, with about 800 participants from 65 organisations.
 [ECR-2016] Two of its objectives were about help from outside British Columbia, and
-the report records both as not tested. Activating the Pacific Northwest Emergency
-Management Arrangement: "(Not tested due to concurrent Exercise Cascadia Rising)".
-Requesting activation of Alberta's earthquake plan for British Columbia: "(Not tested
-due to real-world constraints)". [ECR-2016]
+neither was tested. Activating the Pacific Northwest Emergency Management Arrangement:
+"(Not tested due to concurrent Exercise Cascadia Rising)". Requesting activation of
+Alberta's earthquake plan for British Columbia: "(Not tested due to real-world
+constraints)". [ECR-2016]
 
 British Columbia could not exercise its cross-border arrangement because its
-cross-border partners were exercising the same earthquake.
+cross-border partners were exercising the same earthquake. It publishes summaries of
+these exercises rather than full after-action reports. [EX-PROG]
 
 | Who would come | Under what |
 | --- | --- |
@@ -117,27 +112,25 @@ cross-border partners were exercising the same earthquake.
 > times, and an immediate-response checklist directs staff to contact the Alberta
 > Emergency Management Agency to confirm its activation. [PEIRS]
 
-British Columbia publishes summaries of these exercises rather than full after-action
-reports. [EX-PROG]
-
 ## The framework all of this runs on was made under a law that has since been repealed
 
 The All-Hazard Plan is dated 4 November 2012 and was last amended on 22 June 2016. It
 promises that it "will be reviewed and updated by EMBC every four years", naming an
 agency that is now the Ministry of Emergency Management and Climate Readiness, which
-publishes the earthquake response strategy. [AHP-2012] [PEIRS] The plan is made under
-the Emergency Program Act. [AHP-2012] The ministry's own legislation page states that
-the Emergency and Disaster Management Act "replaced the Emergency Program Act in
-2023", and announces no successor to the framework or to the 2016 guide that sets out
-how a response is organised. [EMCR-LEG] [BCEMS-2016] The All-Hazard Plan was still the
-province's published plan on 23 December 2025, the date the provincial emergency plans
-page was last updated. [CEMP-PAGE]
+publishes the earthquake response strategy. [AHP-2012] [PEIRS]
+
+The plan is made under the Emergency Program Act. [AHP-2012] The ministry's own
+legislation page states that the Emergency and Disaster Management Act "replaced the
+Emergency Program Act in 2023", and announces no successor to the framework or to the
+2016 guide that sets out how a response is organised. [EMCR-LEG] [BCEMS-2016] The
+All-Hazard Plan was still the province's published plan on 23 December 2025, the date
+the provincial emergency plans page was last updated. [CEMP-PAGE]
 
 ## What you can do
 
 The province's plan is that a community holds on until outside help reaches it, and it
 assumes communities work together before any provincial guidance arrives. [PEIRS] That
-makes the street the unit that matters first.
+makes your street the place to start.
 
 **Find out who on your street would need help first.** Anyone who lives alone, anyone
 who could not get themselves out of a building, anyone whose medicine matters every
@@ -156,5 +149,5 @@ happening while the response is on its way.
 
 ## Sources on this page
 
-[PEIRS] [DCRRA-2025] [DRR-GOVPAGE] [AHP-2012] [BCEMS-2016] [ECR-2016] [AB-ERPBC]
-[EX-PROG] [EMCR-LEG] [CEMP-PAGE]
+[PEIRS] [DCRRA-2025] [DRR-GOVPAGE] [AHP-2012] [BCEMS-2016] [ECR-2016] [EX-PROG]
+[AB-ERPBC] [EMCR-LEG] [CEMP-PAGE]

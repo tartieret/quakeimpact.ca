@@ -11,33 +11,29 @@ status: draft
 
 ## The province's own criteria set two standards and buy one
 
-Both of these sentences are in the BC Ministry of Transportation's seismic retrofit
-design criteria, two sections apart.
+From §2.1.2 of the BC Ministry of Transportation's seismic retrofit design criteria:
+"In the Lower Mainland and on Vancouver Island a system of routes have been designated
+as Disaster Response Routes (DRRs). Disaster Response Routes are corridors that must be
+kept open for emergency vehicle response following a major earthquake. Lifeline bridges
+and bridges on Disaster Response Routes are being retrofitted as the highest priority
+in the first phase of the retrofit program." [MOTI-SRDC-05]
 
-From §2.1.2: "In the Lower Mainland and on Vancouver Island a system of routes have
-been designated as Disaster Response Routes (DRRs). Disaster Response Routes are
-corridors that must be kept open for emergency vehicle response following a major
-earthquake. Lifeline bridges and bridges on Disaster Response Routes are being
-retrofitted as the highest priority in the first phase of the retrofit program."
-[MOTI-SRDC-05]
-
-From §2.2: "Functional retrofitting requires that important (Lifeline and DRR)
-bridges remain in service after the design earthquake. … The Ministry is not
-anticipating functional retrofitting in the current stage of retrofitting; it may be
-considered in a future stage." [MOTI-SRDC-05]
+From §2.2 of the same document, two sections later: "Functional retrofitting requires
+that important (Lifeline and DRR) bridges remain in service after the design
+earthquake. … The Ministry is not anticipating functional retrofitting in the current
+stage of retrofitting; it may be considered in a future stage." [MOTI-SRDC-05]
 
 The position has not changed in twenty years. The Ministry's February 2025 seismic
 design supplement says the objective of the retrofit program remains "to continue to
 reduce the risk of bridge collapse", with performance matching a new bridge as an
 "ultimate objective" approached in stages. [MOTI-S6-SEC4]
 
-Two further figures set the scale. Retrofits are carried out against a 475-year
-earthquake. New lifeline crossings are designed against a 2,475-year earthquake.
-[MOTI-SRDC-05] [MOTI-S6-SEC4]
+Retrofits are carried out against a 475-year earthquake. New lifeline crossings are
+designed against a 2,475-year earthquake. [MOTI-SRDC-05] [MOTI-S6-SEC4]
 
 ## A bridge that survives is not a bridge you can drive over the next morning
 
-The Ministry defines its retrofit service levels in plain words.
+The Ministry's three retrofit service levels, in its own words:
 
 **Safety 2**: "Limited access (e.g. reduced or designated lanes, emergency traffic).
 It is recognized that approximately 24 hours may be needed to complete a
@@ -84,16 +80,15 @@ structural collapse of any part of the bridge under a 475 year return period
 earthquake". The south approach sits on liquefiable soil, and the maximum differential
 pier settlement there was evaluated at 100 mm for that 475-year earthquake, a figure
 that assumes a densification of the ground which the same paper records as not built
-at the time. The fix chosen instead was to wrap the girders in glass fibre so the
-bridge could bend, rather than to stop the ground moving, which saved over $1 million
-against improving the ground. [OAK-13WCEE] The bridge was reassessed in 2021 and 2022
-because "changes to codes and seismic hazard models since that time have resulted in
-substantially higher seismic loading requirements", and further retrofits were
-identified. Those figures are not public. [OAK-BASIS-22]
+at the time. The fix chosen was to wrap the girders in glass fibre so the bridge could
+bend, which saved over $1 million against improving the ground. [OAK-13WCEE] The bridge
+was reassessed in 2021 and 2022 because "changes to codes and seismic hazard models
+since that time have resulted in substantially higher seismic loading requirements",
+and further retrofits were identified. Those figures are not public. [OAK-BASIS-22]
 
-One crossing shows the whole chain from objective to built fix, and it is not in Metro
-Vancouver. The Mission Bridge connects the District of Mission to Abbotsford, about
-80 km east of Vancouver, on the provincial disaster recovery network. Its engineers
+The Mission Bridge is the one crossing where the whole chain from objective to built
+fix is public, and it is about 80 km east of Vancouver. It connects the District of
+Mission to Abbotsford, on the provincial disaster recovery network. Its engineers
 found that "liquefaction is the key issue affecting the seismic performance of the
 bridge", predicted settlements of up to 200 mm at the Mission south approach piers and
 a flow-slide failure at the Mission south abutment for that bridge's 475-year design
@@ -101,12 +96,12 @@ earthquake, designed compacted gravel toe berms and ground treatment against bot
 recorded that the work was built. [MISSION-CGS-18] None of those numbers describes a
 Richmond or Delta crossing.
 
-The province does publish what an approach is meant to achieve. In the zone where a
-bridge approach embankment meets the structure, a lifeline crossing must keep 100 per
-cent of its lanes after a 975-year earthquake and 50 per cent of its lanes after a
-2,475-year earthquake, with normal service restorable within one month. [MOTI-S6-SEC6]
+In the zone where a bridge approach embankment meets the structure, a lifeline crossing
+must keep 100 per cent of its lanes after a 975-year earthquake and 50 per cent of its
+lanes after a 2,475-year earthquake, with normal service restorable within one month.
+[MOTI-S6-SEC6]
 
-## The George Massey Tunnel has a published shortfall and a 2031 replacement
+## The second stage of the George Massey Tunnel's retrofit was cancelled, and its replacement opens in 2031
 
 The tunnel is 630 m of immersed tube built between 1957 and 1959, with 550 m and 335 m
 of approaches at the north and south ends. The approaches together are longer than the
@@ -127,10 +122,10 @@ result, the Tunnel does not have the level of safety intended in the original 20
 COWI study as the risk of tunnel floatation during the seismic event still exists."
 [GMC-TUNNEL-19]
 
-Three numbers carry the whole thing. The tunnel was designed against a 475-year
-earthquake. With the structural retrofit and no ground improvement it meets its
-performance criteria for an earthquake of "approximately 150 to 240 years". A new
-lifeline crossing is designed for 2,475. [GMC-TUNNEL-19]
+The tunnel was designed against a 475-year earthquake. With the structural retrofit and
+no ground improvement it meets its performance criteria for an earthquake of
+"approximately 150 to 240 years". A new lifeline crossing is designed for 2,475.
+[GMC-TUNNEL-19]
 
 An emergency road closure system installed in 2008 detects seismic motion and stops
 new traffic entering while letting vehicles already inside drive out. It is set to
@@ -159,11 +154,10 @@ their own work.
 | Port Mann | Nothing quantitative is public. Three papers on this bridge's seismic design have been published, and all three sit behind paywalls [PM-SEI-17] [PM-IABSE-17] |
 | SkyTrain guideways generally | Nothing published |
 
-Project criteria differ between owners and structures. Golden Ears and the North Arm
-Bridge were designed in the same decade against different sets of design events, and
-the engineers who set each of them published what they were. How a crossing is
-specified is a decision taken project by project, and there is no single figure that
-every bridge in the region was built to.
+Golden Ears and the North Arm Bridge were designed in the same decade against
+different sets of design events, and the engineers who set each of them published what
+they were. How a crossing is specified is decided project by project, and there is no
+single figure that every bridge in the region was built to.
 
 ## The province expects weeks to months of reduced capacity
 
@@ -179,10 +173,10 @@ From the province's crustal magnitude 7.0 planning scenario:
 
 The Ministry is responsible for over 400 km of provincial disaster response routes and
 maintains over 2,500 bridges in the highest seismic zones of the province. [BCSIMS-22]
-Fourteen bridges and one tunnel carry structural monitoring instruments. The province
-gives its reason plainly: "There will be many slight-to-moderately damaged bridges
-after an earthquake and the ability to quickly determine their safety will allow
-inspectors to focus on higher priority structures." [BCSIMS-22]
+Fourteen bridges and one tunnel carry structural monitoring instruments. Its reason:
+"There will be many slight-to-moderately damaged bridges after an earthquake and the
+ability to quickly determine their safety will allow inspectors to focus on higher
+priority structures." [BCSIMS-22]
 
 ## A magnitude 4.8 stopped two SkyTrain lines for about eighty minutes
 
@@ -194,7 +188,7 @@ SkyTrain service was suspended and inspections of both lines were conducted." Se
 resumed by 1am, about eighty minutes later. The Canada Line kept running, which
 TransLink attributed to 70 per cent of its track being underground. [CBC-2015]
 
-No damage was found. The stoppage came from alarms, not from breakage. Eighty minutes
+No damage was found: the alarms stopped the trains, not any breakage. Eighty minutes
 is what a check of an undamaged system took after a small, deep earthquake, and it
 forecasts nothing about a large one.
 
@@ -211,8 +205,8 @@ to be.
 what the province's own service levels describe: limited access, emergency traffic,
 and about a day to inspect a bridge before anyone is let over it. [MOTI-SRDC-05]
 
-**Know which side of the water you need to be on during a working day.** The useful
-question is not how to get home, it is where you would rather be stuck.
+**Know which side of the water you need to be on during a working day.** The side you
+are on when the shaking starts may be the side you stay on.
 
 **Prepare the side you would be stuck on**, at work as well as at home. What the
 province plans for people while the crossings are shut or being inspected is set out

@@ -70,12 +70,13 @@ export const fireFollowing: PageModule = {
             Fires after an earthquake do not start in one place. They start in
             many buildings at once, in the ordinary things that run through a
             home. In the modelling for the Lower Mainland, about half of the
-            ignitions are electrical and about a quarter are gas-related, and
-            about half begin in single-family houses with another 26 per cent in
-            apartments, so “about 70% of all ignitions occur in residential
-            occupancies”. <Cite id="SCAWTHORN-2020" /> That split comes from
-            what was counted after the 1994 Northridge earthquake in California,
-            applied here rather than measured here. <Cite id="SCAWTHORN-2020" />
+            ignitions are electrical and about a quarter gas-related.{" "}
+            <Cite id="SCAWTHORN-2020" /> About half begin in single-family
+            houses and another 26 per cent in apartments, so “about 70% of all
+            ignitions occur in residential occupancies”.{" "}
+            <Cite id="SCAWTHORN-2020" /> That split comes from what was counted
+            after the 1994 Northridge earthquake in California, applied here
+            rather than measured here. <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
             Almost half of the fires an earthquake would start anywhere in
@@ -107,11 +108,10 @@ export const fireFollowing: PageModule = {
             Across the study area the modelling runs to as many as 15,000
             repairs to buried pipe, “the precise number and location depending
             on the scenario”, and “the general rule is about 20% of repairs are
-            full breaks”. <Cite id="SCAWTHORN-2020" /> That is what decides the
-            outcome. In three of the modelled earthquakes the fire loss is
-            driven “primarily due to lack of water for firefighting”.{" "}
-            <Cite id="SCAWTHORN-2020" /> Why the mains break, and how long they
-            take to fix, is on the{" "}
+            full breaks”. <Cite id="SCAWTHORN-2020" /> In three of the modelled
+            earthquakes the fire loss is driven “primarily due to lack of water
+            for firefighting”. <Cite id="SCAWTHORN-2020" /> Why the mains break,
+            and how long they take to fix, is on the{" "}
             <Link
               href="/after/water/"
               className="text-accent underline underline-offset-2"
@@ -133,15 +133,14 @@ export const fireFollowing: PageModule = {
             There are 98 fire halls in the study area and roughly 200 fire
             engines available for immediate firefighting.{" "}
             <Cite id="SCAWTHORN-2020" /> When a city runs short, it calls its
-            neighbours. The study expects that to fail in the first hours, for
-            three reasons it states: every department will be holding on to its
-            own crews, help from further away in the Lower Mainland is several
-            hours of travel, and “The Fraser and other rivers are all barriers
-            if bridges are impassable, which they will be at least initially due
-            to the need to inspect for damage.” <Cite id="SCAWTHORN-2020" />
+            neighbours. That is expected to fail in the first hours. Every
+            department will be holding on to its own crews, help from further
+            away in the Lower Mainland is several hours of travel, and “The
+            Fraser and other rivers are all barriers if bridges are impassable,
+            which they will be at least initially due to the need to inspect for
+            damage.” <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
-            There is a smaller obstacle with a larger effect than it sounds.
             Most engines in the study area, Burnaby’s among them, carry 4 inch
             large-diameter hose rather than the 5 inch hose Vancouver Fire
             Rescue Services uses, “and lack adapters, which is an obstacle to
@@ -149,11 +148,11 @@ export const fireFollowing: PageModule = {
             can arrive at the same fire and be unable to join their hoses.
           </p>
           <p>
-            The calls themselves are slowed. Phone systems “will sustain some
-            damage but not enough to reduce functionality”, the study finds; the
-            problem is how many people call at once. “Saturation, especially of
-            the 911 system, will reduce functionality to a great degree, for
-            several hours or more.” <Cite id="SCAWTHORN-2020" />
+            Phone systems “will sustain some damage but not enough to reduce
+            functionality”. The problem is how many people call at once.
+            “Saturation, especially of the 911 system, will reduce functionality
+            to a great degree, for several hours or more.”{" "}
+            <Cite id="SCAWTHORN-2020" />
           </p>
         </Prose>
       ),
@@ -171,12 +170,11 @@ export const fireFollowing: PageModule = {
             billion, about 66 times as much. <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
-            The reason is distance, not size. The Cascadia rupture is far
-            offshore, so the ground motion it delivers in Metro Vancouver is
-            “relatively modest”, while the Georgia Strait earthquake has “an
-            epicentre very close to downtown Vancouver” and delivers “very
-            strong” motion, and the number of fires follows the shaking on the
-            spot rather than the magnitude in the headline.{" "}
+            The Cascadia rupture is far offshore, so the ground motion it
+            delivers in Metro Vancouver is “relatively modest”. The Georgia
+            Strait earthquake has “an epicentre very close to downtown
+            Vancouver” and delivers “very strong” motion. The number of fires
+            follows the shaking on the spot, not the magnitude in the headline.{" "}
             <Cite id="SCAWTHORN-2020" />
           </p>
           <Quote
@@ -193,9 +191,8 @@ export const fireFollowing: PageModule = {
           </Quote>
           <p>
             CSZ there is the Cascadia Subduction Zone, the offshore fault. The
-            federal work on building damage reaches the same ordering by a
-            completely different route, through ground motion rather than
-            ignitions. See{" "}
+            federal work on building damage reaches the same ordering through
+            ground motion rather than ignitions. See{" "}
             <Link
               href="/shaking/buildings/"
               className="text-accent underline underline-offset-2"
@@ -221,39 +218,40 @@ export const fireFollowing: PageModule = {
             }
           />
           <p>
-            Four things travel with those figures. They are median estimates,
-            and the study says so: “These are median estimates — there are
-            significant probabilities of greater or less damage.”{" "}
-            <Cite id="SCAWTHORN-2020" /> They count fire damage only, and the
-            federal scenario studies of building damage count everything except
-            fire, so the two sets of numbers are complements and adding them
-            would be wrong. <Cite id="SCAWTHORN-2020" /> The earthquakes are the
-            ones Natural Resources Canada selected, but “the NRCan estimates of
-            ground motion were not available for this study; therefore, this
-            study performed its own estimates of ground motion”, so this is work
-            aligned with the federal studies rather than part of them.{" "}
-            <Cite id="SCAWTHORN-2020" /> And it leaves out gas and fuel
-            transmission line breaks, the vulnerability of energy facilities,
-            and what a winter storm would do to the response.{" "}
+            Those figures are median estimates, and the study says so: “These
+            are median estimates — there are significant probabilities of
+            greater or less damage.” <Cite id="SCAWTHORN-2020" /> They count
+            fire damage only, and the federal scenario studies of building
+            damage count everything except fire, so the two sets of numbers are
+            complements and adding them would be wrong.{" "}
             <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
-            The author is plain about how far the method reaches. Fire following
-            an earthquake “is a highly non-linear process, modelling of which
-            does not have great precision and is such that in many cases the
-            only clear result is differentiation between situations of a few
-            small fires, versus major conflagration.”{" "}
+            The earthquakes are the ones Natural Resources Canada selected, but
+            “the NRCan estimates of ground motion were not available for this
+            study; therefore, this study performed its own estimates of ground
+            motion”, so this is work aligned with the federal studies rather
+            than part of them. <Cite id="SCAWTHORN-2020" /> It leaves out gas
+            and fuel transmission line breaks, the vulnerability of energy
+            facilities, and what a winter storm would do to the response.{" "}
             <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
-            Two government documents quote this work. The province’s planning
-            scenario says fires following an earthquake in Vancouver “could
-            cause an additional $10 billion in damage” <Cite id="PEIRS" /> and
-            the provincial risk assessment gives losses ranging “from upwards of
-            $150 million from an M9 Cascadia Subduction Zone earthquake to more
-            than $10 billion if an M7.3 shallow crustal earthquake happens in
-            the Georgia Strait”. <Cite id="DCRRA-2025" /> They are one study
-            quoted twice, not two findings that agree.
+            The study sets the limit of its own method. Fire following an
+            earthquake “is a highly non-linear process, modelling of which does
+            not have great precision and is such that in many cases the only
+            clear result is differentiation between situations of a few small
+            fires, versus major conflagration.” <Cite id="SCAWTHORN-2020" />
+          </p>
+          <p>
+            The province’s planning scenario says fires following an earthquake
+            in Vancouver “could cause an additional $10 billion in damage”{" "}
+            <Cite id="PEIRS" /> and the provincial risk assessment gives losses
+            ranging “from upwards of $150 million from an M9 Cascadia
+            Subduction Zone earthquake to more than $10 billion if an M7.3
+            shallow crustal earthquake happens in the Georgia Strait”.{" "}
+            <Cite id="DCRRA-2025" /> Both are quoting the same study. They are
+            one finding stated twice, not two that agree.
           </p>
         </Prose>
       ),
@@ -265,12 +263,12 @@ export const fireFollowing: PageModule = {
       body: (
         <Prose>
           <p>
-            Vancouver built one. The Dedicated Fire Protection System is a $52
-            million network of two saltwater pumping stations and its own
-            earthquake-resistant pipeline, serving the downtown peninsula, the
-            West End, Fairview Slopes and Kitsilano. <Cite id="COV-PREPARES" />{" "}
-            The first pump station opened at False Creek in September 1995, the
-            second at Coal Harbour in February 1997, and the pipeline was
+            The Dedicated Fire Protection System is a $52 million network of two
+            saltwater pumping stations and its own earthquake-resistant
+            pipeline, serving the downtown peninsula, the West End, Fairview
+            Slopes and Kitsilano. <Cite id="COV-PREPARES" /> The first pump
+            station opened at False Creek in September 1995, the second at Coal
+            Harbour in February 1997, and the pipeline was
             finished in 2003. <Cite id="COV-PREPARES" /> The Fairview Slopes
             extension was justified partly “to protect Vancouver Hospital, the
             primary emergency care facility for the province”.{" "}
@@ -288,9 +286,9 @@ export const fireFollowing: PageModule = {
             }
           />
           <p>
-            It has not grown since. The last hydrants went into Kitsilano in
-            2003, and the City describes 2003 as the end of the build.{" "}
-            <Cite id="COV-PREPARES" /> Everywhere else in Vancouver, and
+            The system has not grown since. The last hydrants went into
+            Kitsilano in 2003, and the City describes 2003 as the end of the
+            build. <Cite id="COV-PREPARES" /> Everywhere else in Vancouver, and
             everywhere in every other municipality, firefighting depends on the
             ordinary water mains. The pumps have never had to draw seawater for
             a fire. <Cite id="VIA-HYDRANTS" />
@@ -300,17 +298,17 @@ export const fireFollowing: PageModule = {
     },
 
     {
-      title: "The City describes that system without saying where it reaches",
+      title:
+        "The City’s page for residents never says where the dedicated fire system reaches",
       body: (
         <Prose>
           <p>
-            The City’s Hazard and Risk Explorer, the page written for residents,
-            describes the system at length: built to withstand the largest
-            earthquake considered credible for the region, able to draw fresh or
-            salt water, hardened mains, “hydrants (the big, blue ones)”, two
-            high-capacity pump stations, and built on the lesson of the San
-            Francisco fire of 1906. <Cite id="COV-EXPLORER-25" /> It names no
-            coverage area.
+            The City’s Hazard and Risk Explorer describes the system at length:
+            built to withstand the largest earthquake considered credible for
+            the region, able to draw fresh or salt water, hardened mains,
+            “hydrants (the big, blue ones)”, two high-capacity pump stations,
+            and built on the lesson of the San Francisco fire of 1906.{" "}
+            <Cite id="COV-EXPLORER-25" /> It names no coverage area.
           </p>
           <p>
             The coverage sentence exists, on a different page, filed under what
@@ -332,16 +330,13 @@ export const fireFollowing: PageModule = {
           <p>
             New construction in Vancouver has to be sprinklered. “However,
             sprinklers rely on underground water mains for supply, which are
-            likely to fail in a major earthquake.” <Cite id="SCAWTHORN-2020" />{" "}
-            The protection people in towers assume they have sits downstream of
-            the system that breaks.
+            likely to fail in a major earthquake.” <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
             California has required an answer to that for decades: in its
             high-earthquake zones, a high-rise has to hold its own secondary
-            water supply on site, typically about 60,000 litres. The finding on
-            this side of the border is one sentence long. “Vancouver and the
-            Provincial Building By-laws lack a similar provision.”{" "}
+            water supply on site, typically about 60,000 litres. “Vancouver and
+            the Provincial Building By-laws lack a similar provision.”{" "}
             <Cite id="SCAWTHORN-2020" /> The Vancouver Building By-law in force
             today still carries no such requirement. <Cite id="VBBL-2025" /> The
             study puts the cost at “significantly less than 1% of the value of
@@ -358,9 +353,8 @@ export const fireFollowing: PageModule = {
             Broadway raises “possibly the provision of secondary water supply
             (i.e. water tank)” <Cite id="COV-1489WB" />; and the drawings for
             600 Robson Street label a “SECONDARY WATER SUPPLY ROOM” on the
-            second parking level. <Cite id="COV-600ROBSON" /> The thing exists
-            in local practice. It has never been required, and it has never been
-            tied to an earthquake.
+            second parking level. <Cite id="COV-600ROBSON" /> None of it has
+            ever been required, and none of it has been tied to an earthquake.
           </p>
         </Prose>
       ),
@@ -372,22 +366,22 @@ export const fireFollowing: PageModule = {
       body: (
         <Prose>
           <p>
-            Water that survives is worth less if the halls do not. Vancouver has
-            19 fire halls and five specialty fire facilities, worth about $642
-            million to replace, about 58 per cent of them in good or fair
-            condition, and 30 years old on average. <Cite id="COV-CAP-2730" />{" "}
-            The City states the problem in its own capital plan: “There is also
-            a need to increase the resilience of these facilities to ensure that
-            most, if not all, will remain operational after a major event such
-            as an earthquake.” <Cite id="COV-CAP-2730" />
+            Vancouver has 19 fire halls and five specialty fire facilities,
+            worth about $642 million to replace, about 58 per cent of them in
+            good or fair condition, and 30 years old on average.{" "}
+            <Cite id="COV-CAP-2730" /> The City’s own capital plan states the
+            problem: “There is also a need to increase the resilience of these
+            facilities to ensure that most, if not all, will remain operational
+            after a major event such as an earthquake.”{" "}
+            <Cite id="COV-CAP-2730" />
           </p>
           <p>
-            The sharpest published line is older. Fire Hall #12 in Kitsilano was
-            chosen for seismic upgrade because it sits in “a relatively large
-            geographic area (west of Arbutus Street) where no fire hall meets
-            current seismic standards”, and the same document records that the
-            Metro Core “has five fire halls, all of which were built in the
-            1970s or earlier”. <Cite id="COV-CAP-1922" />
+            Fire Hall #12 in Kitsilano was chosen for seismic upgrade because it
+            sits in “a relatively large geographic area (west of Arbutus Street)
+            where no fire hall meets current seismic standards”, and the same
+            document records that the Metro Core “has five fire halls, all of
+            which were built in the 1970s or earlier”.{" "}
+            <Cite id="COV-CAP-1922" />
           </p>
           <p>
             Individual halls are moving. Hall #17 on Knight Street opened in

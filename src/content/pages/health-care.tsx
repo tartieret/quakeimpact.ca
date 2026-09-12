@@ -27,9 +27,9 @@ export const healthCare: PageModule = {
     kicker: "Life afterwards",
     standfirst: (
       <>
-        A case study for the province looked at all 127 buildings owned by one
-        health authority and found about 65 per cent likely to be completely
-        damaged at the ground motion the current building code designs for.{" "}
+        About 65 per cent of the 127 buildings owned by one health authority are
+        likely to be completely damaged at the ground motion the current
+        building code designs for.{" "}
         <Cite id="DCRRA-APPC" /> No published document sets the casualties the
         province forecasts against the number of beds the region has.
       </>
@@ -68,15 +68,13 @@ export const healthCare: PageModule = {
             buildings alone. <Cite id="PEIRS" /> The province excludes injuries
             from fires, landslides, vehicle collisions and falls, so those
             counts do not cover everything that would send a person to a
-            hospital. <Cite id="PEIRS" /> The plan then says, in the province’s
-            own words, that first responders and medical facilities would be
-            overwhelmed. <Cite id="PEIRS" />
+            hospital. <Cite id="PEIRS" /> The same plan says first responders
+            and medical facilities would be overwhelmed. <Cite id="PEIRS" />
           </p>
           <p>
-            The injured are not the only people who arrive. The province’s
-            Cascadia assessment describes hospitals further hindered by
-            “thousands of uninjured, distraught people … looking for loved ones
-            and seeking shelter”. <Cite id="DCRRA-2025" />
+            Hospitals are hindered as well by “thousands of uninjured,
+            distraught people … looking for loved ones and seeking shelter”.{" "}
+            <Cite id="DCRRA-2025" />
           </p>
         </Prose>
       ),
@@ -95,9 +93,9 @@ export const healthCare: PageModule = {
             damage, closes a department in a building that did not fall down.
           </p>
           <p>
-            A case study in the province’s Cascadia assessment sorted all 127
-            buildings owned by Vancouver Coastal Health by the era they were
-            built in. <Cite id="DCRRA-APPC" />
+            A case study for the province sorted all 127 buildings owned by
+            Vancouver Coastal Health by the era they were built in.{" "}
+            <Cite id="DCRRA-APPC" />
           </p>
           <DataTable
             caption="Vancouver Coastal Health’s 127 buildings, counted by the era they were built in."
@@ -127,14 +125,14 @@ export const healthCare: PageModule = {
             </p>
           </Quote>
           <p>
-            That 65 per cent covers one health authority, not the region. It is
-            a share of buildings expected to be completely
-            damaged at a single design ground motion, not a result for a
-            particular earthquake. It uses the year a building went up as a
-            stand-in for how it would perform, and its authors say reliable
-            results need a detailed engineering assessment of each building.{" "}
-            <Cite id="DCRRA-APPC" /> It describes a portfolio, and it does not
-            say that any named hospital would collapse.
+            That 65 per cent is one health authority’s buildings, not the
+            region’s. It counts buildings expected to be completely damaged at a
+            single design ground motion, which is a statement about a portfolio
+            and not a forecast for any particular earthquake. The method takes
+            the year a building went up as a stand-in for how it would perform,
+            and its authors say reliable results need a detailed engineering
+            assessment of each building. <Cite id="DCRRA-APPC" /> It says nothing
+            about whether any particular hospital would collapse.
           </p>
         </Prose>
       ),
@@ -166,19 +164,17 @@ export const healthCare: PageModule = {
             getting people out of a building safely: not less than two hours for
             elevators in tall buildings, for equipment supplying water to fight
             a fire and for smoke-control fans, and between thirty minutes and
-            two hours for lighting. <Cite id="VBBL-2025" /> Those hours are for
-            an evacuation, not for keeping a hospital running. For hospitals the
+            two hours for lighting. <Cite id="VBBL-2025" /> For hospitals the
             by-law points elsewhere, to CSA Z32, the standard for essential
             electrical systems in health care facilities, which CSA sells rather
             than publishes. <Cite id="VBBL-2025" />
           </p>
           <p>
-            Two hospitals have a number, and it is contractual. The project
-            agreements for the new Surrey hospital and the new St. Paul’s each
-            require 72 hours of self-sufficiency for fuel, water and sanitary
-            holding, which is wastewater kept on site, in identical terms.{" "}
-            <Cite id="NSH-SPEC" /> <Cite id="NSP-SPEC" /> Both are buildings
-            that are not yet in service.
+            The project agreements for the new Surrey hospital and the new St.
+            Paul’s each require, in identical terms, 72 hours of
+            self-sufficiency for fuel, water and sanitary holding, which is
+            wastewater kept on site. <Cite id="NSH-SPEC" />{" "}
+            <Cite id="NSP-SPEC" /> Neither hospital has opened.
           </p>
           <VerificationNote label="Not published">
             Nothing published for the hospitals open today says how long a
@@ -215,13 +211,12 @@ export const healthCare: PageModule = {
             .
           </p>
           <p>
-            The authors are the first to say what the model leaves out.
-            Excluding non-structural damage, utility failures and staff who
-            cannot get to work means it is “likely overestimating
-            post-earthquake hospital functionality and underestimating
-            accessibility loss”, in their own words. <Cite id="KAUR-2026" /> It
-            also assumes the major river crossings stay open and that everyone
-            drives on free-flowing roads. <Cite id="KAUR-2026" />
+            The model excludes non-structural damage, utility failures and staff
+            who cannot get to work, and its authors say this leaves it “likely
+            overestimating post-earthquake hospital functionality and
+            underestimating accessibility loss”. <Cite id="KAUR-2026" /> It also
+            assumes the major river crossings stay open and that everyone drives
+            on free-flowing roads. <Cite id="KAUR-2026" />
           </p>
         </Prose>
       ),
@@ -261,9 +256,8 @@ export const healthCare: PageModule = {
             intensive care or operating room beds is published for British
             Columbia. The official figures that exist are counts attached to
             individual building projects rather than a list of what the region
-            has. The comparison has been made in peer-reviewed engineering work{" "}
-            <Cite id="KAUR-2026" /> and in no published government or health
-            authority document.
+            has. Peer-reviewed engineering work has made the comparison.{" "}
+            <Cite id="KAUR-2026" />
           </VerificationNote>
         </Prose>
       ),
@@ -271,7 +265,7 @@ export const healthCare: PageModule = {
 
     {
       title:
-        "The new hospitals are built for this, and the ones open now are older",
+        "The new hospitals are built to keep working, and the ones open now are older",
       body: (
         <Prose>
           <Quote
@@ -290,8 +284,8 @@ export const healthCare: PageModule = {
             That describes the St. Paul’s on Burrard Street. Its replacement on
             Station Street is built to the Vancouver Building By-law’s
             post-disaster requirement and is due to open around 2027.{" "}
-            <Cite id="NSP-SPEC" /> The province is saying the other three
-            hospitals would get more patients, not how many they could take.
+            <Cite id="NSP-SPEC" /> How many patients the other three could take
+            is not in the plan.
           </p>
           <p>
             Three major projects are specified to post-disaster importance
@@ -302,9 +296,8 @@ export const healthCare: PageModule = {
             Hospital. <Cite id="RCH-SPEC" /> At Royal Columbian the acute care
             tower is post-disaster and the support building beside it is
             specified as normal importance category. <Cite id="RCH-SPEC" /> The
-            standard is applied where care is delivered rather than across a
-            whole site: a hospital is a group of buildings, and they are not all
-            rated the same.
+            standard is applied where care is delivered. A hospital is a group
+            of buildings, and they are not all rated the same.
           </p>
           <p>
             The new St. Paul’s also carries the only published number for how
@@ -315,10 +308,10 @@ export const healthCare: PageModule = {
             that has not opened.
           </p>
           <p>
-            Provincial announcements say that Richmond Hospital{" "}
-            <Cite id="BCGOV-RICH-2016" /> and Lions Gate Hospital{" "}
-            <Cite id="BCGOV-LGH-2018" /> predate current seismic standards.
-            Richmond’s redevelopment is funded and under way in phases.{" "}
+            Richmond Hospital <Cite id="BCGOV-RICH-2016" /> and Lions Gate
+            Hospital <Cite id="BCGOV-LGH-2018" /> predate current seismic
+            standards. Richmond’s redevelopment is funded and under way in
+            phases.{" "}
             <Cite id="BCGOV-RICH-2024" />
           </p>
           <p>
@@ -337,10 +330,9 @@ export const healthCare: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        The province’s Cascadia assessment says hospitals are hindered by
-        thousands of uninjured people arriving to look for family and to
-        shelter. <Cite id="DCRRA-2025" /> A household that has already settled
-        where it meets is not among them.
+        Hospitals are hindered by thousands of uninjured people arriving to look
+        for family and to shelter. <Cite id="DCRRA-2025" /> A household that has
+        already settled where it meets is not among them.
       </>
     ),
     items: [
@@ -348,13 +340,13 @@ export const healthCare: PageModule = {
       // the sentence above it cites, and claims nothing of its own.
       <>
         <strong>Agree a meeting place now, while nobody needs it.</strong> A
-        household that can find each other is a household that does not go to an
-        emergency department to look.
+        household that can find each other has no reason to check the emergency
+        departments.
       </>,
       <>
         <strong>Make the check-in person someone outside the region.</strong>{" "}
-        The province’s plan says that where phone service is available at all,
-        networks “may be congested or overloaded”. <Cite id="PEIRS" />
+        Where phone service is available at all, networks “may be congested or
+        overloaded”. <Cite id="PEIRS" />
       </>,
       <>
         <strong>Sort out the medicines and equipment that cannot lapse.</strong>{" "}

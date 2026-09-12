@@ -51,31 +51,29 @@ export const food: PageModule = {
       body: (
         <Prose>
           <p>
-            A grocery shop is a building full of machines. The tills and the
-            card readers need power and a network. The cold case, the walk-in
-            cooler and the freezer aisle need power to stay cold. None of that
-            is a claim about earthquakes; it is what the equipment is.
+            A grocery shop is a building full of machines. Tills and card
+            readers need power and a network. The cold case, the walk-in cooler
+            and the freezer aisle need power to stay cold.
           </p>
           <p>
-            So the first thing that happens to food happens indoors, before any
-            delivery is late. Chilled and frozen stock is on a clock from the
-            moment the power goes, and a shop that cannot take payment cannot
-            sell what is left. How long the power stays off is{" "}
+            Chilled and frozen stock is on a clock from the moment the power
+            goes, and a shop that cannot take payment cannot sell what is left.
+            All of that happens indoors, before any delivery is late. How long
+            the power stays off is{" "}
             <Link href="/after/electricity/" className={link}>
               electricity
             </Link>
             ’s question.
           </p>
           <p>
-            Then there is whether anything arrives to replace it. Food comes in
-            by truck, over the same roads as everything else, and a truck runs
-            on{" "}
+            Food comes in by truck, over the same roads as everything else, and
+            a truck runs on{" "}
             <Link href="/after/fuel/" className={link}>
               fuel
             </Link>
-            . The province’s planning assumptions answer that part directly:
-            “Road, rail, air, and marine transportation will be disrupted, and
-            existing supply chains will be inoperable.” <Cite id="PEIRS" />
+            . The province’s planning assumptions: “Road, rail, air, and marine
+            transportation will be disrupted, and existing supply chains will be
+            inoperable.” <Cite id="PEIRS" />
           </p>
         </Prose>
       ),
@@ -90,18 +88,17 @@ export const food: PageModule = {
             In its earthquake response strategy the province says the
             fast-moving consumer goods network “will be disrupted. It may take
             weeks or months to recover.” <Cite id="PEIRS" /> Fast-moving
-            consumer goods is trade language, and the province glosses it in the
-            same document: “products that are sold quickly and at relatively low
-            cost, such as meat, fruits and vegetables, dairy products, baked
-            goods, toiletries, and cleaning products”. <Cite id="PEIRS" />
+            consumer goods is trade language; the same document glosses it as
+            “products that are sold quickly and at relatively low cost, such as
+            meat, fruits and vegetables, dairy products, baked goods,
+            toiletries, and cleaning products”. <Cite id="PEIRS" />
           </p>
           <p>
-            That list is a grocery shop, and it is the reason the usual advice
-            does not cover this on its own. Four of the six things the province
+            That list is a grocery shop. Four of the six things the province
             names are perishable: meat, produce, dairy, bread.{" "}
             <Cite id="PEIRS" /> Those are exactly the items no household can put
-            by. A cupboard of tins is a real answer to a short gap, and it is
-            not an answer to the one the province is describing.
+            by. A cupboard of tins answers a short gap; it does not answer weeks
+            or months. <Cite id="PEIRS" />
           </p>
           <p>
             The other two the province names are toiletries and cleaning
@@ -109,10 +106,10 @@ export const food: PageModule = {
             keep indefinitely, and they are the two almost nobody stores.
           </p>
           <p>
-            This is not only about the offshore earthquake. The province’s own
-            primary planning scenario is a shallow crustal magnitude 7.0 near
-            Greater Vancouver, so these are statements about the nearer, smaller
-            earthquake as well. <Cite id="PEIRS" />
+            The province’s own primary planning scenario is a shallow crustal
+            magnitude 7.0 near Greater Vancouver, so the weeks or months is a
+            statement about the nearer, smaller earthquake as well as the
+            offshore one. <Cite id="PEIRS" />
           </p>
         </Prose>
       ),
@@ -123,32 +120,29 @@ export const food: PageModule = {
       body: (
         <Prose>
           <p>
-            The federal stockpile is real, and it is not a food stockpile. The
-            National Emergency Strategic Stockpile holds medical equipment such
-            as ventilators, cardiac monitors and personal protective equipment,
-            pharmaceuticals, social service supplies such as beds and blankets,
-            and mini-clinic triage units. Its own page mentions neither food nor
-            water. <Cite id="PHAC-NESS" />
+            The National Emergency Strategic Stockpile holds medical equipment
+            such as ventilators, cardiac monitors and personal protective
+            equipment, pharmaceuticals, social service supplies such as beds and
+            blankets, and mini-clinic triage units. Its own page mentions
+            neither food nor water. <Cite id="PHAC-NESS" />
           </p>
           <p>
-            The department that would be asked for food says much the same about
-            itself. A March 2018 case study by Agriculture and Agri-Food Canada,
-            obtained under freedom of information and reported by the Globe and
-            Mail in 2019, records that the department has no warehouses full of
-            supplies, no direct access to or ownership of food or water
-            supplies, limited water expertise, and would be challenged to lead a
-            federal response to a request for safe food and water.{" "}
-            <Cite id="GM-AAFC-19" />
+            Agriculture and Agri-Food Canada, the department that would be asked
+            for food, has no warehouses full of supplies, no direct access to or
+            ownership of food or water supplies, limited water expertise, and
+            would be challenged to lead a federal response to a request for safe
+            food and water. That is its own March 2018 case study, obtained
+            under freedom of information and reported by the Globe and Mail in
+            2019. <Cite id="GM-AAFC-19" />
           </p>
           <p>
-            The provincial arrangement is a way of buying rather than a reserve.
             Emergency Support Services meets a household’s needs by purchasing
             from, or referring people to, local retailers after the event.{" "}
-            <Cite id="GM-AAFC-19" /> That is a sound design for a house fire or
-            a flood in one valley. Here it runs through the same retailers and
-            the same roads the province expects to be disrupted,{" "}
-            <Cite id="PEIRS" /> so it is at its weakest in exactly the event it
-            is meant to cover.
+            <Cite id="GM-AAFC-19" /> There is no reserve behind it. That works
+            for a house fire or a flood in one valley. Here it runs through the
+            same retailers and the same roads the province expects to be
+            disrupted, <Cite id="PEIRS" /> so it is at its weakest in exactly
+            the event it is meant to cover.
           </p>
         </Prose>
       ),
@@ -164,26 +158,20 @@ export const food: PageModule = {
             The City’s own neighbourhood toolkit describes what is there: basic
             items such as pens, whiteboards, signage and a tent, and beyond that
             “the skills, knowledge and supplies that people bring”.{" "}
-            <Cite id="COV-RNTOOLKIT-19" /> A hub is a coordination point, and
-            it can be used to hand things out. There is no food in it waiting.
+            <Cite id="COV-RNTOOLKIT-19" /> A hub is a coordination point and can
+            be used to hand things out. There is no food in it waiting.
           </p>
           <p>
-            The voluntary sector’s capacity is real, and it is a different size
-            from the problem. The Salvation Army’s BC disaster services director
-            estimated it could produce up to 50,000 meals a day within two days
-            of a major earthquake, rising with airdrops within a week, with road
-            and bridge conditions dictating where those meals could go.{" "}
+            The Salvation Army’s BC disaster services director estimated it
+            could produce up to 50,000 meals a day within two days of a major
+            earthquake, rising with airdrops within a week, with road and bridge
+            conditions dictating where those meals could go.{" "}
             <Cite id="GM-AAFC-19" /> The 2021 census counted 2,642,825 people in
             the Vancouver census metropolitan area. <Cite id="STATCAN-2021" />{" "}
-            Neither source sets one figure against the other. That is a real
-            capability for people in shelters. It is not a food supply for a
-            region.
+            Neither source sets one figure against the other. A shelter kitchen
+            at that scale is not a regional food supply.
           </p>
-          <p>
-            Nothing is stored for the public here, and the plan is that
-            households stored it themselves. It is a reasonable thing not to
-            have known.
-          </p>
+          <p>The plan is that households stored the food themselves.</p>
         </Prose>
       ),
     },
@@ -210,18 +198,15 @@ export const food: PageModule = {
             emergency role, in its own words, to “the delivery of services
             including drinking water, wastewater treatment, solid waste
             management, housing, regional parks, and Electoral Area A”, plus
-            9-1-1 and public notification. <Cite id="MV-EM" /> The grocery
-            supply chain sits outside the remit of the body a reader might
-            reasonably assume owns it.
+            9-1-1 and public notification. <Cite id="MV-EM" /> Groceries are not
+            among them.
           </p>
           <VerificationNote label="Not yet measured">
             Nobody has published how much food the Lower Mainland’s shops and
             warehouses hold at any given moment, or how long grocery
             distribution would take to restart here. The province’s “weeks or
-            months” is a statement about the consumer goods network across
-            British Columbia rather than a study of this region’s warehousing.{" "}
-            <Cite id="PEIRS" /> So there is no published answer to how many days
-            of food the region holds.
+            months” covers the consumer goods network across British Columbia;
+            it is not a study of this region’s warehousing. <Cite id="PEIRS" />
           </VerificationNote>
         </Prose>
       ),
@@ -233,16 +218,15 @@ export const food: PageModule = {
     title: (
       <>
         The province tells households to aim to be self-sufficient for up to two
-        weeks, and says in the same document that Emergency Support Services is
-        designed to provide up to 72 hours of support and “is not designed for
-        the scope and scale of services required after a catastrophic
-        earthquake”. <Cite id="PEIRS" /> Two weeks is the interval to stock
-        against.
+        weeks. The same document says Emergency Support Services is designed to
+        provide up to 72 hours of support and “is not designed for the scope and
+        scale of services required after a catastrophic earthquake”.{" "}
+        <Cite id="PEIRS" /> Two weeks is the interval to stock against.
       </>
     ),
     items: [
       <>
-        <strong>Build the pantry out of the half that keeps.</strong> Four of
+        <strong>Build the pantry out of the part that keeps.</strong> Four of
         the six categories the province names are perishable, so the part of the
         shop a household can hold is the tinned, dried and bottled part.{" "}
         <Cite id="PEIRS" /> PreparedBC asks for non-perishable food for at least
@@ -252,9 +236,8 @@ export const food: PageModule = {
       // kind of consequence no document is paid to write down.
       <>
         <strong>Stock things that can be eaten without cooking.</strong> A
-        stove, a kettle and a microwave each depend on something else arriving
-        at the building, so a pantry that only becomes a meal with power or gas
-        is a pantry with a condition attached.
+        stove, a kettle and a microwave all need power or gas arriving at the
+        building.
       </>,
       <>
         <strong>Store the things in a grocery shop that are not food.</strong>{" "}
@@ -270,10 +253,9 @@ export const food: PageModule = {
     ],
     closing: (
       <>
-        The province’s own reason for asking is not fear. Prepared households,
-        it says, “reduce pressure on overwhelmed government agencies and allow
-        available resources to go where they are most needed”.{" "}
-        <Cite id="PEIRS" />
+        The province’s own reason for asking: prepared households “reduce
+        pressure on overwhelmed government agencies and allow available
+        resources to go where they are most needed”. <Cite id="PEIRS" />
       </>
     ),
   },

@@ -49,8 +49,8 @@ export const outsideHelp: PageModule = {
       "AHP-2012",
       "BCEMS-2016",
       "ECR-2016",
-      "AB-ERPBC",
       "EX-PROG",
+      "AB-ERPBC",
       "EMCR-LEG",
       "CEMP-PAGE",
     ],
@@ -62,8 +62,7 @@ export const outsideHelp: PageModule = {
       body: (
         <Prose>
           <p>
-            The province’s earthquake response strategy sets out what it expects
-            in the first days. Road, rail, air and marine transport are
+            In the first days, road, rail, air and marine transport are
             disrupted and “existing supply chains will be inoperable”. Areas are
             isolated, unreachable by road because of landslides, liquefaction
             and collapsed bridges, and cut off further by damage to airports and
@@ -86,18 +85,16 @@ export const outsideHelp: PageModule = {
             .
           </p>
           <p>
-            Leaving is not the plan. The province’s 2025 risk assessment states
-            that “damage to transportation routes and the prioritization of
-            essential personnel and supplies make mass evacuation impossible,
-            and the public is directed to shelter in place.”{" "}
-            <Cite id="DCRRA-2025" />
+            Leaving is not the plan: “damage to transportation routes and the
+            prioritization of essential personnel and supplies make mass
+            evacuation impossible, and the public is directed to shelter in
+            place.” <Cite id="DCRRA-2025" />
           </p>
           <p>
-            Some roads are set aside for the response. Disaster Response Routes
-            are corridors kept open for emergency vehicles, and once they are
-            activated the public is told to get off them as soon as possible.{" "}
-            <Cite id="DRR-GOVPAGE" /> They are roads to leave, not roads to
-            leave on.{" "}
+            Disaster Response Routes are corridors kept open for emergency
+            vehicles, and once they are activated the public is told to get off
+            them as soon as possible. <Cite id="DRR-GOVPAGE" /> They are roads
+            to leave, not roads to leave on.{" "}
             <Link
               href="/getting-around/"
               className="text-accent underline underline-offset-2"
@@ -121,13 +118,10 @@ export const outsideHelp: PageModule = {
             it “will coordinate available resources to provide emergency
             response assistance that supplements but does not substitute for
             community resources”, and the first move belongs to the local
-            authority. <Cite id="AHP-2012" />
-          </p>
-          <p>
-            It allows the order to be turned around, and treats that as the
-            exception. A situation at the international or national level “may
-            reverse or otherwise change the normal ‘bottom-up’ approach to
-            response”. <Cite id="AHP-2012" />
+            authority. The plan allows that order to be turned around and treats
+            it as the exception: a situation at the international or national
+            level “may reverse or otherwise change the normal ‘bottom-up’
+            approach to response”. <Cite id="AHP-2012" />
           </p>
           <p>
             The earthquake strategy makes the exception the rule. In a major
@@ -141,22 +135,19 @@ export const outsideHelp: PageModule = {
     },
 
     {
-      title:
-        "Pushing resources in needs an outside to push them from, and that is where the two earthquakes differ",
+      title: "Pushing resources in needs an outside to push them from",
       body: (
         <Prose>
           <p>
-            The push rests on a geographic assumption, and the province writes
-            it down. Agencies inside the impact area are reduced or delayed,
-            while “those outside the impact area will be largely unaffected and
-            functional”. The staging follows from it: “Provincial staging areas
-            are located outside the impact area and will be used to organize,
-            prioritize, and disseminate critical resources.” <Cite id="PEIRS" />
+            Agencies inside the impact area are reduced or delayed, while “those
+            outside the impact area will be largely unaffected and functional”.
+            The staging follows: “Provincial staging areas are located outside
+            the impact area and will be used to organize, prioritize, and
+            disseminate critical resources.” <Cite id="PEIRS" />
           </p>
           <p>
-            That is a planning assumption, which is what a province decides to
-            plan against, rather than a measured finding about how help would
-            arrive.
+            That is a planning assumption: what a province decides to plan
+            against. It is not a measured finding about how help would arrive.
           </p>
           <Subhead>
             In the shallow crustal magnitude 7.0, the outside is the rest of the
@@ -169,8 +160,7 @@ export const outsideHelp: PageModule = {
             of British Columbia, Alberta and the American Pacific Northwest are
             outside it, which is the case the staging plan is built for. Help
             still has to travel over damaged roads, and the first response is
-            still the local one. <Cite id="AHP-2012" /> But there is an outside,
-            and the agencies in it are unhurt.
+            still the local one. <Cite id="AHP-2012" />
           </p>
           <Subhead>
             In the Cascadia magnitude 9.0, the province says the United States
@@ -194,9 +184,8 @@ export const outsideHelp: PageModule = {
             </p>
           </Quote>
           <p>
-            The coordinating centres are among the damaged assets. The
-            province’s regional and central coordination centres, the PREOC and
-            the PECC, decide what provincial support goes where.{" "}
+            The province’s regional and central coordination centres, the PREOC
+            and the PECC, decide what provincial support goes where.{" "}
             <Cite id="BCEMS-2016" /> In this scenario both are “compromised due
             to damage to facilities and impacts on staff” and have to work from
             alternate locations. <Cite id="DCRRA-2025" />
@@ -205,9 +194,8 @@ export const outsideHelp: PageModule = {
             The word the province uses is delayed: “resources from other parts
             of B.C., other provinces and the U.S. are delayed due to widespread
             transportation and communication disruptions.”{" "}
-            <Cite id="DCRRA-2025" /> Help is late here rather than absent, and
-            the plan is that a community holds on until it arrives.{" "}
-            <Cite id="PEIRS" />{" "}
+            <Cite id="DCRRA-2025" /> The plan is that a community holds on until
+            help arrives. <Cite id="PEIRS" />{" "}
             <Link
               href="/scenarios/"
               className="text-accent underline underline-offset-2"
@@ -230,16 +218,17 @@ export const outsideHelp: PageModule = {
             full-scale earthquake and tsunami exercise, with about 800
             participants from 65 organisations. <Cite id="ECR-2016" /> Two of
             its objectives were about help from outside British Columbia, and
-            the report records both as not tested. Activating the Pacific
-            Northwest Emergency Management Arrangement: “(Not tested due to
-            concurrent Exercise Cascadia Rising)”. Requesting activation of
-            Alberta’s earthquake plan for British Columbia: “(Not tested due to
-            real-world constraints)”. <Cite id="ECR-2016" />
+            neither was tested. Activating the Pacific Northwest Emergency
+            Management Arrangement: “(Not tested due to concurrent Exercise
+            Cascadia Rising)”. Requesting activation of Alberta’s earthquake
+            plan for British Columbia: “(Not tested due to real-world
+            constraints)”. <Cite id="ECR-2016" />
           </p>
           <p>
             British Columbia could not exercise its cross-border arrangement
             because its cross-border partners were exercising the same
-            earthquake.
+            earthquake. It publishes summaries of these exercises rather than
+            full after-action reports. <Cite id="EX-PROG" />
           </p>
           <DataTable
             caption="The agreements under which help from outside British Columbia would arrive."
@@ -289,10 +278,6 @@ export const outsideHelp: PageModule = {
             checklist directs staff to contact the Alberta Emergency Management
             Agency to confirm its activation. <Cite id="PEIRS" />
           </VerificationNote>
-          <p>
-            British Columbia publishes summaries of these exercises rather than
-            full after-action reports. <Cite id="EX-PROG" />
-          </p>
         </Prose>
       ),
     },
@@ -308,9 +293,12 @@ export const outsideHelp: PageModule = {
             EMBC every four years”, naming an agency that is now the Ministry of
             Emergency Management and Climate Readiness, which publishes the
             earthquake response strategy. <Cite id="AHP-2012" />{" "}
-            <Cite id="PEIRS" /> The plan is made under the Emergency Program
-            Act. <Cite id="AHP-2012" /> The ministry’s own legislation page
-            states that the Emergency and Disaster Management Act “replaced the
+            <Cite id="PEIRS" />
+          </p>
+          <p>
+            The plan is made under the Emergency Program Act.{" "}
+            <Cite id="AHP-2012" /> The ministry’s own legislation page states
+            that the Emergency and Disaster Management Act “replaced the
             Emergency Program Act in 2023”, and announces no successor to the
             framework or to the 2016 guide that sets out how a response is
             organised. <Cite id="EMCR-LEG" /> <Cite id="BCEMS-2016" /> The
@@ -329,8 +317,8 @@ export const outsideHelp: PageModule = {
       <>
         The province’s plan is that a community holds on until outside help
         reaches it, and it assumes communities work together before any
-        provincial guidance arrives. <Cite id="PEIRS" /> That makes the street
-        the unit that matters first.
+        provincial guidance arrives. <Cite id="PEIRS" /> That makes your street
+        the place to start.
       </>
     ),
     items: [

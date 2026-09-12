@@ -41,10 +41,9 @@ export const communications: PageModule = {
       <>
         The province expects disruption to communications to continue for days
         to weeks, with what capacity survives prioritised for emergency
-        personnel. <Cite id="DCRRA-2025" /> Behind that sits a plain fact about
-        the rules: the regulator that would set a backup-power run time for a
-        cell site has not set one, and is still asking what it should be.{" "}
-        <Cite id="CRTC-2025-226" />
+        personnel. <Cite id="DCRRA-2025" /> No rule sets how long a cell site
+        has to hold backup power, and the regulator that would set one is still
+        asking what it should be. <Cite id="CRTC-2025-226" />
       </>
     ),
     /**
@@ -74,13 +73,10 @@ export const communications: PageModule = {
 
   sections: [
     {
-      title: "The first failure is not a broken tower, it is a full network",
+      title: "The network fills up before anything is broken",
       body: (
         <Prose>
-          <p>
-            A cell site does not have to fall over to stop working. The
-            province’s earthquake response strategy says what happens first:
-          </p>
+          <p>A cell site does not have to fall over to stop working:</p>
           <Quote
             speaker="Province of British Columbia"
             source="Provincial Earthquake Immediate Response Strategy"
@@ -133,22 +129,16 @@ export const communications: PageModule = {
           </p>
           <p>
             The record closed in late August 2026 and no decision has issued.{" "}
-            <Cite id="CRTC-2025-226" /> A regulator asking what the run time
-            ought to be is the plainest evidence available that no run time is
-            set.
+            <Cite id="CRTC-2025-226" />
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "What the rules do require is that somebody is told",
+      title: "The rules in force cover reporting outages and routing 9-1-1 calls",
       body: (
         <Prose>
-          <p>
-            Two Commission decisions from 2025 are in force, and neither is
-            about power.
-          </p>
           <p>
             Telecom Decision CRTC 2025-225, in force since 4 November 2025,
             requires a provider to notify the Commission, Innovation, Science
@@ -162,13 +152,11 @@ export const communications: PageModule = {
             <Cite id="CRTC-2025-65" />
           </p>
           <p>
-            The one Canadian backup-power duration in this area belongs to
-            buildings rather than towers. Guidance under an earlier Commission
-            policy sets backup power of at least 24 hours for central office
-            9-1-1 switches and 72 hours for tandem switches.{" "}
-            <Cite id="CRTC-2016-165" /> Those are the switching offices that
-            route a 9-1-1 call, not the radio sites the call travels over, and
-            the figures are guidance rather than a requirement.{" "}
+            Guidance under an earlier Commission policy sets backup power of at
+            least 24 hours for central office 9-1-1 switches and 72 hours for
+            tandem switches. <Cite id="CRTC-2016-165" /> Those are the switching
+            offices that route a 9-1-1 call, not the radio sites the call
+            travels over. Both figures are guidance, and neither is binding.{" "}
             <Cite id="CRTC-2016-165" />
           </p>
         </Prose>
@@ -191,16 +179,16 @@ export const communications: PageModule = {
             province. <Cite id="BC-CRTC-SUB" />
           </p>
           <p>
-            That is a request to a regulator, not a rule and not a description
-            of what is in place today.
+            That is a request to a regulator. It is not a rule, and it does not
+            say what is in place today.
           </p>
           <p>
-            One building in this chain is built for the event: E-Comm’s Lower
-            Mainland centre is a 60,000 square foot reinforced concrete
-            post-disaster building, “designed to resist an earthquake and to
-            operate self-sufficiently for up to 72 hours”.{" "}
-            <Cite id="ECOMM-FAC" /> That is where the call arrives, and it says
-            nothing about the cabinets and towers between a caller and it.
+            E-Comm’s Lower Mainland centre is a 60,000 square foot reinforced
+            concrete post-disaster building, “designed to resist an earthquake
+            and to operate self-sufficiently for up to 72 hours”.{" "}
+            <Cite id="ECOMM-FAC" /> That is the building the call arrives at,
+            and it says nothing about the cabinets and towers between a caller
+            and it.
           </p>
         </Prose>
       ),
@@ -216,28 +204,27 @@ export const communications: PageModule = {
             communications continue for days to weeks”, with access prioritised
             for emergency personnel, “leading to a prolonged lack of access to
             communications for the general population”.{" "}
-            <Cite id="DCRRA-2025" /> That statement is qualitative and describes
-            a magnitude 9.0 Cascadia earthquake. <Cite id="DCRRA-2025" />
+            <Cite id="DCRRA-2025" /> That statement carries no figures, and it
+            describes a magnitude 9.0 Cascadia earthquake.{" "}
+            <Cite id="DCRRA-2025" />
           </p>
           <p>
             The response strategy does not separate copper from cellular:
             “common communication service providers, including cellular and
             landline telephone providers, may be impacted”. <Cite id="PEIRS" />{" "}
             It names “satellite phones and amateur radio services” as the
-            backups people would fall back on, and in the same passage says
-            radio fills up the way the cellular network does: “Radio
-            communication, if operable, may be also congested and impact the
-            ability of first responders if saturated with non-sanctioned
-            operators.” <Cite id="PEIRS" />
+            backups people would fall back on. Radio fills up the way the
+            cellular network does: “Radio communication, if operable, may be
+            also congested and impact the ability of first responders if
+            saturated with non-sanctioned operators.” <Cite id="PEIRS" />
           </p>
           <p>
             Non-sanctioned means outside the province’s own volunteer service.
             Through the Provincial Emergency Radio Communications Service it has
             installed amateur radio equipment at each of its regional emergency
             operations centres, though “some regions have a limited number of
-            radio operators”. <Cite id="PEIRS" /> The line it draws is between
-            operators who joined an organised group before the earthquake and
-            operators who did not.
+            radio operators”. <Cite id="PEIRS" /> The distinction is whether an
+            operator joined an organised group before the earthquake.
           </p>
           <VerificationNote label="Not published">
             Which regions are short of radio operators, and whether the Lower
@@ -269,7 +256,7 @@ export const communications: PageModule = {
             named earthquakes instead, and Vancouver appears in three of them.
           </p>
           <DataTable
-            caption="Natural Resources Canada models warning time one earthquake at a time. Each row is a different modelled earthquake, and the warning Vancouver would get from it."
+            caption="Each row is one modelled earthquake and the warning Vancouver would get from it."
             columns={["Modelled earthquake", "Warning for Vancouver"]}
             minWidth="32rem"
             rows={[

@@ -3,14 +3,14 @@ route: /
 title: What a major earthquake does to the Lower Mainland, and for how long
 nav: Home
 hook: The shaking is the short part.
-lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] Most households in the region have not put together an emergency kit of any size. [RESEARCHCO-PREP-21] So this site gathers what is already published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each thing is waiting on. Two weeks becomes a length of time you can picture rather than a slogan.
+lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] Most households in the region have not put together an emergency kit of any size. [RESEARCHCO-PREP-21] This site gathers what has already been published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each repair is waiting on.
 status: draft
 ---
 
 ## The shaking is the short part
 
 Most people picture an earthquake as a violent event with a clear end,
-followed by help arriving from outside. Consider this timeline instead.
+followed by help arriving from outside.
 
 *The timeline carries no citation markers. Each panel is a consequence the
 system pages state and source, and the noun it hangs on links to that page; no
@@ -85,28 +85,27 @@ No two earthquakes do the same thing, and none of this is a forecast of the
 actual event. It follows the two events the province and its agencies plan
 around, which are the ones households are asked to be ready for.
 
-How hard each of those stretches is also depends on the weather it happens in.
-Running out of water in an August heat dome is not the same as running out of it
-in January after days of rain, and the two scenarios are set in exactly those two
+The weather it happens in changes how hard each of those stretches is. Running
+out of water in an August heat dome is not the same as running out of it in
+January after days of rain, and the two scenarios are set in those two
 conditions: a 30 to 40 degree heatwave with wildfire smoke for the megathrust,
 [DCRRA-2025] a January afternoon after an atmospheric river for the crustal
 earthquake. [PEIRS]
 
 None of those failures happens on its own, either. Water needs power for pumps
-and roads for crews. Roads need debris cleared, which needs fuel. How long the
-region waits depends less on any one system than on the order in which they can
-be brought back, which is why [life afterwards](/after/) is told system by system
-and [the dependency graph](/dependencies/) counts what each system is waiting on.
+and roads for crews. Roads need debris cleared, which needs fuel. The order in
+which the systems can be brought back sets how long the region waits, so [life
+afterwards](/after/) takes them one at a time and [the dependency
+graph](/dependencies/) counts what each one is waiting on.
 
-## Go deeper on any part of it
+## Each of these comes back on its own schedule
 
 Water in the taps, power in the walls, a phone that connects, a toilet that
-flushes, roads that carry you, a home to go back to. Open any of them to go
-further.
+flushes, roads that carry you, a home to go back to.
 
 *Every system, drawn from the content model rather than written here.*
 
-## Two scenarios, and they are very different earthquakes
+## The region plans for two earthquakes, and they are not the same event
 
 The offshore Cascadia megathrust is the one people have heard of. The shallower
 earthquake underneath the region is the one Natural Resources Canada calls "the
@@ -115,17 +114,17 @@ frequent. [NRCAN-1700] British Columbia's primary earthquake planning scenario i
 that nearer one. [PEIRS] Other magnitudes and other faults are possible; these two
 are what the planning is written around.
 
-They are dangerous to different buildings, and which of them is the one that
-matters to you depends on the building you are in and the ground it stands on.
+They are dangerous to different buildings. Which one matters to you depends on
+the building you are in and the ground under it.
 [Read about the two scenarios](/scenarios/), or start with [the
 shaking](/shaking/), which covers the ground under the region, the buildings on
 it, and the fires and landslides that arrive after the shaking stops.
 
-## Compiled from published work
+## Everything here comes from published documents
 
-Everything here comes from documents published by governments, utilities and
-engineers. Where nobody has published an answer, the page says so rather than
-guessing, and where two official documents contradict each other, both are here.
+Governments, utilities and the engineers they hire wrote them. Where nobody has
+published an answer, the page says so instead of guessing. Where two official
+documents contradict each other, both are here.
 
 How long something is out is written as one of three bands: Low, Medium or High,
 with a fourth for not yet assessed. [How the bands work](/method/). [The
@@ -134,14 +133,14 @@ sources](/sources/) lists every document, and if you find something wrong,
 
 ## Start here
 
+If you have two minutes, store water. Distributing bulk drinking water across
+the region stays difficult for the first four to five days. [DCRRA-2025]
+PreparedBC asks for four litres per person per day, for at least two weeks.
+[PREPAREDBC] Water in the cupboard covers the days when getting it to you is
+hardest.
+
 If you have ten minutes, read [the two scenarios](/scenarios/) and then
 [preparing](/prepare/).
-
-If you have two minutes, store water. The province's own assessment says that
-distributing bulk drinking water across the region stays difficult for the first
-four to five days. [DCRRA-2025] PreparedBC asks for four litres per person per
-day, for at least two weeks. [PREPAREDBC] Water in the cupboard covers the days
-when getting it to you is hardest.
 
 ## Sources on this page
 

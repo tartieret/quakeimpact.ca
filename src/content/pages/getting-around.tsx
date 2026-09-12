@@ -49,7 +49,7 @@ export const gettingAround: PageModule = {
     nav: "Getting around",
     kicker: "Part 2b",
     standfirst:
-      "The province’s emergency plans do not assume people will drive out of the region after a major earthquake. They assume the opposite, in writing, in two separate documents.",
+      "Two provincial emergency plans assume people will not drive out of the region after a major earthquake. Both direct the public to shelter where they are.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -113,12 +113,10 @@ export const gettingAround: PageModule = {
           </Quote>
           <p>
             Two provincial documents, written for two different scenarios, give
-            the same instruction. The useful question is therefore not whether a
-            person could drive out. It is that the plan assumes they will not,
+            the same instruction. The plan assumes people will not drive out,
             and that the roads will be doing other work.
           </p>
           <p>
-            Two further assumptions from the same strategy sit underneath it.
             Large parts of the area “will be inaccessible by road due to
             earthquake-induced landslides, liquefaction, and other secondary
             impacts such as bridge collapses”. And “Road, rail, air, and marine
@@ -135,13 +133,10 @@ export const gettingAround: PageModule = {
       title: "The land connections are fewer than the map suggests",
       body: (
         <Prose>
-          <p>
-            First, where the water is. These are map facts, set apart below
-            because they carry no source key and make no claim about
-            earthquakes.
-          </p>
-          {/* Uncited on purpose. The sentence above says why: these three
-              claim nothing about earthquakes and rest on no document. */}
+          {/* Uncited on purpose: these three are map facts. They claim nothing
+              about earthquakes and rest on no document. The sentence that used
+              to say so to the reader explained the site's own source keys, which
+              is the one thing a page here may not do. */}
           <Callout label="Where the water is">
             <Prose>
               <p>
@@ -171,9 +166,7 @@ export const gettingAround: PageModule = {
               <>
                 A diagram of connections rather than a map. It draws which ways
                 out of Vancouver exist and what each one crosses, and nothing
-                about distance, shape or position. Like the three facts above it
-                carries no source key, because it claims nothing about
-                earthquakes.
+                about distance, shape or position.
               </>
             }
           >
@@ -194,17 +187,14 @@ export const gettingAround: PageModule = {
       body: (
         <Prose>
           <p>
-            The signs stand on roads across the region, and the behaviour they
-            ask for is the opposite of the instinctive one.
-          </p>
-          <p>
-            A network of provincial and municipal roads was designated in 1995
-            across Metro Vancouver and Greater Victoria to move emergency
-            responders and supplies. <Cite id="PITTMDW-DRR" /> The routes are
-            open to everyone until a state of emergency is declared, and then
-            they are activated and controlled. Users must carry both
-            government-issued photo identification and employment
-            identification. <Cite id="DRR-GOVPAGE" />
+            The signs stand on roads across the region. A network of provincial
+            and municipal roads was designated in 1995 across Metro Vancouver
+            and Greater Victoria to move emergency responders and supplies.{" "}
+            <Cite id="PITTMDW-DRR" /> The routes are open to everyone until a
+            state of emergency is declared, and then they are activated and
+            controlled. Users must carry both government-issued photo
+            identification and employment identification.{" "}
+            <Cite id="DRR-GOVPAGE" />
           </p>
           <p>
             <strong>
@@ -214,28 +204,26 @@ export const gettingAround: PageModule = {
             , to make way for emergency responders. <Cite id="DRR-GOVPAGE" />
           </p>
           <p>
-            The province does not oversell them either: “Like any
-            infrastructure, these routes are susceptible to hazards and could
-            potentially be negatively impacted by the emergency event.”{" "}
+            The province does not oversell them: “Like any infrastructure, these
+            routes are susceptible to hazards and could potentially be
+            negatively impacted by the emergency event.”{" "}
             <Cite id="PITTMDW-DRR" />
           </p>
           <p>
-            The doctrine changed in June 2018. Response routes are now chosen at
-            the time of the event rather than fixed in advance: “DRRs are not
-            designated pre-event. DRRs are determined at the time of the event
-            based on the needs of response and recovery and available options.”
-            What is designated in advance is now called a critical route.{" "}
+            The doctrine changed in June 2018: “DRRs are not designated
+            pre-event. DRRs are determined at the time of the event based on the
+            needs of response and recovery and available options.” What is
+            designated in advance is now called a critical route.{" "}
             <Cite id="DRT-PRIMER-18" /> The advice to the public is unchanged.
           </p>
           <p>
-            One line in the province’s route planning guidance describes this
-            region without needing any commentary. Among the considerations for
-            choosing roads for response routes: “Consider avoiding steep grades,
-            circuitous routing, bridges, tunnels, overpasses and underpasses.”{" "}
-            <Cite id="DRT-PLANNING-18" /> Seismic retrofit status appears in the
-            same guide as one of the vulnerability criteria for choosing a
-            route, alongside soil stability and how close the road runs to gas
-            and water lines. <Cite id="DRT-PLANNING-18" />
+            Among the published considerations for choosing roads for response
+            routes: “Consider avoiding steep grades, circuitous routing,
+            bridges, tunnels, overpasses and underpasses.”{" "}
+            <Cite id="DRT-PLANNING-18" /> Seismic retrofit status is one of the
+            vulnerability criteria in the same guide, alongside soil stability
+            and how close the road runs to gas and water lines.{" "}
+            <Cite id="DRT-PLANNING-18" />
           </p>
         </Prose>
       ),
@@ -275,9 +263,9 @@ export const gettingAround: PageModule = {
             alt="The clearing order published by Metro Vancouver runs from lifelines and evacuation routes, through critical infrastructure, major freeways and arterials, goods and economic restoration, and minor arterials, to local routes last. It is an order of work rather than a timetable, and the plan publishes no durations."
             caption={
               <>
-                The order quoted above, drawn as a ladder so a reader can find
-                their own street on it. It is a sequence and not a schedule: the
-                plan gives no durations, so the figure carries no scale.{" "}
+                The order quoted above, drawn as a ladder from lifelines down to
+                local streets. It is a sequence and not a schedule: the plan
+                gives no durations, so the figure carries no scale.{" "}
                 <Cite id="MV-DEBRIS-17" />
               </>
             }
@@ -298,8 +286,7 @@ export const gettingAround: PageModule = {
             reopening them <Cite id="DRT-PRIMER-18" />{" "}
             <Cite id="MV-DEBRIS-17" />, and, separately, the lane and
             restoration targets a new structure is designed against, which are
-            set out in {transportationLink}. A framework is not a forecast, and
-            neither is a design target. Some regional emergency-management
+            set out in {transportationLink}. Some regional emergency-management
             material is withheld by choice: “Due to the sensitive nature of some
             of our work, some materials are only available upon request.”{" "}
             <Cite id="IPREM-RES" />
@@ -372,8 +359,8 @@ export const gettingAround: PageModule = {
             authors works for the road authority. <Cite id="SEPULVEDA-23" />
           </p>
           <p>
-            Those durations show the pace of this kind of work in this terrain,
-            with this road authority and these contractors.
+            Those are the durations this road authority and these contractors
+            achieved in this terrain.
           </p>
         </Prose>
       ),
@@ -384,14 +371,14 @@ export const gettingAround: PageModule = {
       body: (
         <Prose>
           <p>
-            Not every finding here runs one way. Federal mapping “concluded that
-            none of the landslides that entered Howe Sound were large enough to
-            produce a significant tsunami”, and a landslide into the sound large
-            enough to produce damaging waves on Bowen Island is assessed as
-            unlikely. <Cite id="BOWEN-TSU-19" /> An earlier North Shore
-            assessment agrees, putting the probability as “very low, although
-            not zero” and finding the North and West Vancouver waterfronts not
-            at risk from such a wave. <Cite id="NSEMO-TSU-05" />
+            Federal mapping “concluded that none of the landslides that entered
+            Howe Sound were large enough to produce a significant tsunami”, and
+            a landslide into the sound large enough to produce damaging waves on
+            Bowen Island is assessed as unlikely. <Cite id="BOWEN-TSU-19" /> An
+            earlier North Shore assessment agrees, putting the probability as
+            “very low, although not zero” and finding the North and West
+            Vancouver waterfronts not at risk from such a wave.{" "}
+            <Cite id="NSEMO-TSU-05" />
           </p>
         </Prose>
       ),
@@ -405,8 +392,7 @@ export const gettingAround: PageModule = {
             The route out of the region would be a damaged road, cleared in an
             order that puts local streets last. <Cite id="MV-DEBRIS-17" /> How
             much of the network the province expects to be working, and for how
-            long, belongs to the crossings themselves and is set out in{" "}
-            {transportationLink}.
+            long, is set out in {transportationLink}.
           </p>
           <VerificationNote label="Not yet established">
             How many people would leave the Lower Mainland after a major
@@ -422,14 +408,14 @@ export const gettingAround: PageModule = {
 
   lever: {
     heading: "What you can do",
-    title: <>The useful decision here is a location, not a route.</>,
+    title: <>The decision that matters is where you will be when it happens.</>,
     items: [
       <>
         <strong>Decide where you would rather be stuck, and be there.</strong>{" "}
         Know which side of the water you will be on during a working day, and
-        plan to stay on that side. That is what the province’s own assumption
-        implies: shelter within the region, where you already are.{" "}
-        <Cite id="PEIRS" /> <Cite id="DCRRA-2025" />
+        plan to stay on that side. The province’s plans assume exactly that:
+        shelter within the region, where you already are. <Cite id="PEIRS" />{" "}
+        <Cite id="DCRRA-2025" />
       </>,
       // No citation, and none is missing: the copy leaves this bullet uncited
       // because it rests on no document and claims nothing.
@@ -458,8 +444,7 @@ export const gettingAround: PageModule = {
           If you are on a Disaster Response Route when one is activated, get off
           it.
         </strong>{" "}
-        That is the province’s instruction, and it changes what a person does in
-        the first hour. <Cite id="DRR-GOVPAGE" />
+        That is the province’s instruction. <Cite id="DRR-GOVPAGE" />
       </>,
     ],
   },
