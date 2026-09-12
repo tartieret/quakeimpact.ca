@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, NextPrev } from "@/components/page-parts";
-import { Citations, ReferenceList } from "@/components/citation";
+import { Citations, SourcesSection } from "@/components/citation";
 import { contribute } from "@/content/pages/contribute";
 
 /**
@@ -41,12 +41,7 @@ export default function ContributePage() {
           </Section>
         ))}
 
-        <Section
-          title="Sources on this page"
-          lede="Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
-        >
-          <ReferenceList />
-        </Section>
+        <SourcesSection />
 
         <NextPrev
           prev={{ href: "/licences/", label: "Licences" }}

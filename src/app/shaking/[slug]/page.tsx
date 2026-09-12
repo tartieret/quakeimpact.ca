@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Lever, NextPrev } from "@/components/page-parts";
-import { Citations, ReferenceList } from "@/components/citation";
+import { Citations, SourcesSection } from "@/components/citation";
 import { SHAKING_PAGES } from "@/content/site";
 import type { PageModule } from "@/content/pages";
 import { buildings } from "@/content/pages/buildings";
@@ -114,16 +114,7 @@ export default async function ShakingDetailPage({
             that has text. A stub lists the documents gathered for its subject
             and says so in the standing block above. */}
         {references.length > 0 ? (
-          <Section
-            title="Sources on this page"
-            lede={
-              page
-                ? "Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
-                : undefined
-            }
-          >
-            <ReferenceList />
-          </Section>
+          <SourcesSection numbered={Boolean(page)} />
         ) : null}
 
         <NextPrev
