@@ -53,9 +53,9 @@ For the offshore earthquake in particular, one above magnitude 8.9 is put at a 3
 ## The whole region sits in a bowl that makes slow shaking stronger
 
 Under Metro Vancouver is the Georgia Sedimentary Basin, a deep bowl of soft sediment.
-Sediment like that does not pass the shaking through unchanged. The province's
-assessment says basins amplify shaking "particularly at long periods, impacting tall
-buildings and other long-period structures". [DCRRA-APPC]
+Sediment like that does not pass the shaking through unchanged. Basins amplify it
+"particularly at long periods, impacting tall buildings and other long-period
+structures". [DCRRA-APPC]
 
 Long period means slow. A tall building sways slowly, taking a couple of seconds to
 lean one way and back, and that is the speed of shaking it answers to. The province
@@ -153,10 +153,10 @@ street by street and are free to read at
 where you work. They may sit on completely different ground.
 
 **On the delta, plan for the services and not only for the building.** What
-liquefaction reaches beyond a foundation is the buried pipes and the roads. The
-province's scenario for the closer earthquake says "liquefaction of roadways in
-Richmond and Delta may make driving difficult", around the airport and the Tsawwassen
-ferry terminal in particular. [PEIRS] Being cut off from normal services is what to
+liquefaction reaches beyond a foundation is the buried pipes and the roads. In the
+scenario for the closer earthquake, "liquefaction of roadways in Richmond and Delta may
+make driving difficult", around the airport and the Tsawwassen ferry terminal in
+particular. [PEIRS] Being cut off from normal services is what to
 plan for there, not a damaged home alone.
 
 **If you live or work in a tall building on soft ground, the offshore earthquake is

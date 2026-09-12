@@ -173,9 +173,9 @@ export const groundConditions: PageModule = {
           <p>
             Under Metro Vancouver is the Georgia Sedimentary Basin, a deep bowl
             of soft sediment. Sediment like that does not pass the shaking
-            through unchanged. The province’s assessment says basins amplify
-            shaking “particularly at long periods, impacting tall buildings and
-            other long-period structures”. <Cite id="DCRRA-APPC" />
+            through unchanged. Basins amplify it “particularly at long periods,
+            impacting tall buildings and other long-period structures”.{" "}
+            <Cite id="DCRRA-APPC" />
           </p>
           <p>
             Long period means slow. A tall building sways slowly, taking a
@@ -382,11 +382,11 @@ export const groundConditions: PageModule = {
           On the delta, plan for the services and not only for the building.
         </strong>{" "}
         What liquefaction reaches beyond a foundation is the buried pipes and
-        the roads. The province’s scenario for the closer earthquake says
-        “liquefaction of roadways in Richmond and Delta may make driving
-        difficult”, around the airport and the Tsawwassen ferry terminal in
-        particular. <Cite id="PEIRS" /> Being cut off from normal services is
-        what to plan for there, not a damaged home alone.
+        the roads. In the scenario for the closer earthquake, “liquefaction of
+        roadways in Richmond and Delta may make driving difficult”, around the
+        airport and the Tsawwassen ferry terminal in particular.{" "}
+        <Cite id="PEIRS" /> Being cut off from normal services is what to plan
+        for there, not a damaged home alone.
       </>,
       <>
         <strong>

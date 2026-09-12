@@ -13,12 +13,11 @@ Most published damage figures for an earthquake here come from the Geological
 Survey of Canada's scenario work, and it is careful about its own limits. It
 counts "only damage to buildings, and their inhabitants, from earthquake
 shaking". Landslides, liquefaction, fire following and aftershocks are "not
-currently included". [NRCAN-SCEN] Natural Resources Canada spells out what that
-leaves out: with those hazards missing, "the estimates herein are likely to
-represent a minimum estimate on impacts." [GSC-OF-8853]
+currently included". [NRCAN-SCEN] With those hazards missing, "the estimates
+herein are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
 
-The province's own Cascadia assessment carries the same warning under its
-headline figures. They cover direct damage from the main shaking "without
+The Cascadia assessment carries the same warning under its headline figures,
+which cover direct damage from the main shaking "without
 account of secondary hazards like landslides, liquefaction, tsunami, fires and
 more." [DCRRA-2025]
 

@@ -79,16 +79,15 @@ export const secondaryHazards: PageModule = {
             its own limits. It counts “only damage to buildings, and their
             inhabitants, from earthquake shaking”. Landslides, liquefaction,
             fire following and aftershocks are “not currently included”.{" "}
-            <Cite id="NRCAN-SCEN" /> Natural Resources Canada spells out what
-            that leaves out: with those hazards missing, “the estimates herein
-            are likely to represent a minimum estimate on impacts.”{" "}
+            <Cite id="NRCAN-SCEN" /> With those hazards missing, “the estimates
+            herein are likely to represent a minimum estimate on impacts.”{" "}
             <Cite id="GSC-OF-8853" />
           </p>
           <p>
-            The province’s own Cascadia assessment carries the same warning
-            under its headline figures. They cover direct damage from the main
-            shaking “without account of secondary hazards like landslides,
-            liquefaction, tsunami, fires and more.” <Cite id="DCRRA-2025" />
+            The Cascadia assessment carries the same warning under its headline
+            figures, which cover direct damage from the main shaking “without
+            account of secondary hazards like landslides, liquefaction, tsunami,
+            fires and more.” <Cite id="DCRRA-2025" />
           </p>
           <p>
             Nobody has folded those hazards into a number for this region. That
