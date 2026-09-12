@@ -55,17 +55,19 @@ export const buildings: PageModule = {
   sections: [
     {
       title:
-        "The nearer earthquake damages Vancouver more than the bigger one does",
+        "In the City’s own modelling, the nearer earthquake does more damage than the bigger one",
       body: (
         <Prose>
           <p>
-            In November 2024 the City of Vancouver put its own building stock
-            through three different earthquakes and published what came out. The
-            three are alternatives, not stages: one of them happens, not all
-            three.
+            In November 2024 the City of Vancouver published a modelling
+            exercise: a computer model of the city’s buildings, shaken by three
+            different earthquakes, with the damage counted each time.{" "}
+            <Cite id="COV-RISK-2024" /> Only one of the three would ever happen,
+            so the rows below are three separate what-ifs rather than stages of
+            one event.
           </p>
           <DataTable
-            caption="Three earthquakes run against the City of Vancouver’s buildings: how many are badly damaged, how many people are out of their homes for more than 90 days, and the direct economic loss."
+            caption="Three earthquakes modelled separately against the City of Vancouver’s buildings: how many are badly damaged, how many people are out of their homes for more than 90 days, and the direct economic loss."
             columns={[
               "Earthquake",
               "Buildings completely or extensively damaged",
@@ -105,10 +107,10 @@ export const buildings: PageModule = {
           <p>
             The M7.2 in the Georgia Strait damages about four times as many
             buildings as the M9.0 offshore, and does about four and a half times
-            the direct economic damage. <Cite id="COV-RISK-2024" /> The City
-            gives the reason plainly: that nearer earthquake shakes the ground
-            at City Hall about as hard as the forces new buildings are designed
-            for. The method behind the modelling is published and peer-reviewed.{" "}
+            the direct economic damage. The reason is that the nearer earthquake
+            shakes the ground at City Hall about as hard as the forces new
+            buildings are designed for. <Cite id="COV-RISK-2024" /> The method
+            behind the model is published and peer-reviewed.{" "}
             <Cite id="HILT-2022" /> What decides this is distance, not the
             magnitude in the headline.
           </p>

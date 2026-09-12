@@ -7,11 +7,12 @@ lede: The City of Vancouver has run three earthquakes through a model of its own
 status: draft
 ---
 
-## The nearer earthquake damages Vancouver more than the bigger one does
+## In the City's own modelling, the nearer earthquake does more damage than the bigger one
 
-In November 2024 the City of Vancouver put its own building stock through three
-different earthquakes and published what came out. The three are alternatives, not
-stages: one of them happens, not all three.
+In November 2024 the City of Vancouver published a modelling exercise: a computer model
+of the city's buildings, shaken by three different earthquakes, with the damage counted
+each time. [COV-RISK-2024] Only one of the three would ever happen, so the rows below
+are three separate what-ifs rather than stages of one event.
 
 | Earthquake                                    | Buildings completely or extensively damaged | People out of their homes for more than 90 days, daytime / nighttime | Direct economic loss |
 | --------------------------------------------- | ------------------------------------------: | -------------------------------------------------------------------: | -------------------: |
@@ -25,10 +26,9 @@ events. [COV-RISK-2024]
 
 The M7.2 in the Georgia Strait damages about
 four times as many buildings as the M9.0 offshore, and does about four and a half times
-the direct economic damage. [COV-RISK-2024] The City gives the reason plainly: that
-nearer earthquake shakes the ground at City Hall about as hard as the forces new
-buildings are designed for. The method behind the modelling is published and
-peer-reviewed. [HILT-2022] What decides this is distance, not the magnitude in the
+the direct economic damage. The reason is that the nearer earthquake shakes the ground
+at City Hall about as hard as the forces new buildings are designed for. [COV-RISK-2024]
+The method behind the model is published and peer-reviewed. [HILT-2022] What decides this is distance, not the magnitude in the
 headline.
 
 ## Most of the city was built before the rules that would have made it safer
