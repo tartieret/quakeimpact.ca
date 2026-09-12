@@ -1,0 +1,149 @@
+---
+route: /after/fuel/
+title: Fuel
+nav: Fuel
+hook: A service station with full tanks and no power dispenses nothing.
+lede: The province's earthquake response plan gives fuel a category of its own, because the distribution of everything else runs on it. [PEIRS] The same plan assumes existing supply chains will be inoperable. [PEIRS]
+bands: { cascadia: high, crustal: high }
+mechanism: Fuel is the resource the repair of every other system runs on, and the province expects supply chains to be inoperable.
+source: PEIRS
+status: draft
+---
+
+## The province names fuel as the one resource everything else moves on
+
+The Provincial Earthquake Immediate Response Strategy is British Columbia's
+operational plan for the days after a major earthquake. Among the resources it
+calls critical, it sets one apart from the rest:
+
+> "Fuel also holds a unique position as a critical resource due to its requirement
+> in the distribution of all other supplies, first responder activities, and
+> enabling functionality of certain impacted facilities and infrastructure that rely
+> on generators." [PEIRS]
+
+Fuel moves every other supply, carries the people who respond, and runs the
+generators under the buildings that have lost their power.
+
+The same plan states the assumption it works from: "Road, rail, air, and marine
+transportation will be disrupted, and existing supply chains will be inoperable."
+[PEIRS] That is written against the province's own primary planning scenario, a
+shallow magnitude 7.0 earthquake near Greater Vancouver. [PEIRS]
+
+## A service station with full tanks and no power dispenses nothing
+
+A pump is an electric motor. The till beside it is a computer and the card reader
+needs a network. A station whose underground tanks are full hands out nothing
+while the power is off, and so does a station that is undamaged but that the
+delivery truck cannot reach.
+
+So the first thing that decides whether there is fuel in the first week is not
+the refinery. It is the local feeder and the road. What BC Hydro has published
+about how long power takes to come back is on the [electricity](/after/electricity/)
+page, and what the province expects of the roads is on the
+[transportation](/after/transportation/) page.
+
+> **No current figure for how much fuel the region holds.** The obvious next
+> question is how many days the Lower Mainland's supply lasts. The only figures
+> published for this region come from a single phone interview during a flood. On
+> 21 November 2021, during the flood emergency in the province's southwest,
+> Global News quoted Dan McTeague, president of the advocacy organisation
+> Canadians for Affordable Energy, saying the region goes through about 150,000
+> barrels of fuel a day and usually maintains a supply to cover four to five days.
+> [FUEL-GN-21] That is one person's remark to a reporter rather than a study, and
+> the remark is five years old. The nearest academic work, a 2016 study of the
+> coastal British Columbia fuel transportation system, gives its days-of-supply
+> finding for Vancouver Island rather than for here. [UBC-FUEL] Nothing current
+> has been published for the Lower Mainland.
+
+## British Columbia has already restricted fuel purchases once this decade
+
+In November 2021 the province issued an emergency order restricting fuel purchases
+across the southwest of British Columbia. [BC-EMERG-21]
+
+It was a flood rather than an earthquake, and the disruption was smaller than the
+one this site describes. It is still the documented precedent for what a fuel
+shortage looks like when it happens here: a provincial order setting a limit on
+what a person may buy.
+
+> **Nobody has published who gets fuel first.** The province names fuel as a
+> critical resource and does not say who allocates it after a major earthquake, in
+> what order, or under what authority. [PEIRS] No British Columbia agency has
+> published a fuel prioritisation plan for a seismic event. The 2021 orders show
+> that the province will act once a shortage arrives. They do not say what the
+> rules would be the next time.
+
+## A hospital generator is a fuel tank somebody has to keep refilling
+
+"Infrastructure that rely on generators" is the province's phrase, and a hospital
+is the clearest case of it. A generator holds hours or days of diesel, not weeks.
+When it runs low, somebody drives more of it there, over the same roads as
+everything else.
+
+Two hospitals now being built say in their contracts how long they have to last
+alone. The new Surrey hospital and the new St. Paul's each specify 72 hours of
+self-sufficiency for fuel, water and sanitary holding, in identical terms.
+[NSH-SPEC] [NSP-SPEC]
+
+That is a requirement written into two project agreements. It is not a code, not a
+standard, and not a figure that reaches any hospital already open. Nothing
+comparable has been published for Vancouver General, Surrey Memorial, Burnaby,
+Lions Gate, Richmond or St. Paul's on Burrard. What the buildings treating people
+today hold in their tanks is not in the public record.
+
+Seventy-two hours is the point at which the plan for a new hospital expects a
+delivery to arrive.
+
+## Every repair crew on every other system is queuing for the same fuel
+
+Fuel is not one system among the others on this site. It is the input to the
+repair of all of them.
+
+The crews restoring [electricity](/after/electricity/) drive to the poles. The
+trucks carrying [food](/after/food/) run the same roads as everything else. Bulk
+fuel arrives at terminals and wharves on the same shoreline and the same delta
+soils as the ports, which is [large infrastructure](/after/large-infrastructure/).
+Every one of those movements needs [the roads and bridges](/after/transportation/)
+to be passable.
+
+Electricity appears on that list twice. A service station needs the grid to run its
+pumps, and the grid needs fuel to run the generators and to move the crews who bring
+it back. Neither of them waits for the other.
+
+The province plans on the routes being "damaged or only partially functional and
+operating at a much-reduced capacity for an extended period (weeks to months)",
+and on the rail network being "largely unusable during the immediate response
+phase". [PEIRS] Those are the durations attached to the two ways fuel moves in
+quantity.
+
+> **Out of region.** A briefing by Japan's Agency for Natural Resources and Energy
+> to the Cabinet Office's disaster management council, on the 2011 Great East Japan
+> Earthquake, describes the same shape: the Pacific-coast oil bases that supplied
+> the Tōhoku region "stopped operating and were unable to ship existing inventory".
+> [METI-2011] The fuel was there; the terminals and the trucks to move it were not.
+> The briefing's own stated lesson is that there had been no system for finding out
+> which terminals were working, what stock they held and where the tanker trucks
+> were. [METI-2011] This is a Japanese government document about Japan. It shows
+> what the bottleneck looked like there and forecasts nothing here.
+
+## What you can do
+
+Fuel is the one thing on this page a household cannot store its way out of. The
+two things that help are decided before the earthquake rather than after it.
+
+**Keep the tank above half.** The fuel already in the car is the fuel you can
+count on when the pumps have no power, and half a tank costs nothing to carry.
+
+**Work out now what you could reach without a car.** Which of the places you would
+need to get to are within walking or cycling distance, and keep a bicycle in
+working order if you have one. What the province plans for people while the
+crossings are shut is set out in [getting around](/getting-around/).
+
+**Do not store fuel at home.** It is a fire risk, and a can in the garage is no
+answer to a disruption the province measures in weeks to months. [PEIRS]
+
+None of this makes the fuel come back sooner. It decides how much of your week
+depends on it.
+
+## Sources on this page
+
+[PEIRS] [FUEL-GN-21] [UBC-FUEL] [BC-EMERG-21] [NSH-SPEC] [NSP-SPEC] [METI-2011]
