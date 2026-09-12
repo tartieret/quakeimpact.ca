@@ -3,30 +3,27 @@ import {
   Figure,
   Prose,
   Quote,
-  DataTable,
+  Subhead,
   VerificationNote,
 } from "@/components/page-parts";
-import {
-  PrepareAskedAndProvided,
-  PrepareDaysByDocument,
-  PrepareSchoolUpgrading,
-  PrepareWaterArithmetic,
-} from "@/components/figures/prepare";
+import { PrepareWaterArithmetic } from "@/components/figures/prepare";
 import type { PageModule } from "./index";
 
 /**
  * Preparing. The body of `/prepare/`, ported from `docs/copy/prepare.md`.
  *
- * The words are the copy's, verbatim. The one reader-facing string the copy
- * does not write is the table caption below, which names the table for a
- * screen reader.
+ * The words are the copy's, verbatim. The page is guidance rather than a
+ * comparison of documents: where the published advice differs, the earthquake
+ * guide is the one followed, because it is the document written for this
+ * hazard, and the other figure is given once in its own wording rather than
+ * argued over.
  *
- * Two things in here are load-bearing and easy to flatten by accident. The six
- * published durations are a comparison rather than a number to resolve: the
- * same two weeks is a floor in one document and a ceiling in another, and each
- * wording stays attached to the body that published it. And the two household
- * water totals are arithmetic worked from two published rates, which the
- * sentence carrying them says in the same breath.
+ * Two things in here are load-bearing and easy to flatten by accident. The
+ * household water total is arithmetic worked from a published rate, which the
+ * sentence carrying it says in the same breath. And the gas advice is one rule
+ * in three parts, assembled from three bodies that agree on all three: know
+ * where the valves are, leave them alone unless an official says otherwise,
+ * and never restore the service yourself.
  */
 export const prepare: PageModule = {
   meta: {
@@ -35,38 +32,40 @@ export const prepare: PageModule = {
     nav: "Preparing",
     kicker: "Part 3",
     standfirst:
-      "The province’s earthquake response plan tells households to be self-sufficient for up to two weeks. The same plan says the support system behind them is designed for 72 hours and is not built for this event.",
+      "This is what British Columbia’s own earthquake guidance asks of a household, in the order it is worth doing. Some of it costs nothing: the plan for how you find each other, and the conversation with the neighbours, are free and they are the parts most households have not done.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
       "PEIRS",
-      "BCEMS-2016",
       "PREPAREDBC",
-      "PREPAREDBC-KIT",
-      "PREPAREDBC-EQ",
-      "AHP-2012",
       "COV-EXPLORER-25",
-      "CEMP-PAGE",
-      "WA-2WEEKS",
+      "PREPAREDBC-PLAN",
+      "PREPAREDBC-GUIDES",
+      "PREPAREDBC-NEIGHBOURHOOD",
+      "RESEARCHCO-PREP-21",
+      "DCRRA-2025",
+      "NRCAN-EEW",
+      "PREPAREDBC-KIT",
+      "FBC-EQ",
       "SURREY-PREP",
+      "PREPAREDBC-DISABILITY",
       "NSEM-KIT",
       "RICH-FR",
-      "COV-WORKSHEET-26",
-      "DCRRA-2025",
-      "FBC-EQ",
-      "COV-HHH-2011",
+      "COV-FIRESAFE-BO",
+      "ECOMM-EQ",
+      "COV-HUBS",
       "DRR-GOVPAGE",
       "PREPAREDBC-BUDGET",
-      "SMP-PROGRESS",
+      "COV-PREPMAIN",
     ],
   },
 
   sections: [
     {
       title:
-        "The province’s response plan says government resources will be overwhelmed",
+        "The province’s plan says family and neighbours are the first responders",
       body: (
         <Prose>
           <p>From the province’s Earthquake Immediate Response Strategy:</p>
@@ -91,280 +90,265 @@ export const prepare: PageModule = {
             the crew and the shelter place for the person who has no other
             option.
           </p>
+          <p>
+            Two weeks is also the figure in the document written for this
+            hazard. PreparedBC’s Earthquake and Tsunami Preparedness Guide asks
+            for food, water and supplies for each person and pet in the home
+            “for at least two weeks, or longer”. <Cite id="PREPAREDBC" /> The
+            support system behind that ask is smaller: the province’s Emergency
+            Support Services program, which houses and feeds people who have
+            lost their homes, “is designed to provide up to 72 hours of
+            support”, and the same page says it “is not designed for the scope
+            and scale of services required after a catastrophic earthquake”.{" "}
+            <Cite id="PEIRS" />
+          </p>
+          <p>
+            Some authorities ask for less. The City of Vancouver tells residents
+            to gather supplies for “a minimum of 3 days, although your target
+            should be a week to 2 weeks”. <Cite id="COV-EXPLORER-25" /> The rest
+            of this page follows the provincial earthquake guide, which is the
+            document written for this event, and none of what follows changes if
+            you are working towards three days rather than fourteen.
+          </p>
         </Prose>
       ),
     },
 
     {
-      title:
-        "Family and neighbours are the first responders, and the plan says so",
+      title: "Write the plan down, and agree where you would meet",
       body: (
         <Prose>
           <p>
-            The same strategy records that communities “informally self-activate”
-            and “will work together without receiving guidance from the
-            Province”. <Cite id="PEIRS" />
+            The guide’s own planning checklist is nine items, and only two of
+            them are shopping. <Cite id="PREPAREDBC" />
+          </p>
+          <ul>
+            <li>Identify the hazards in your region.</li>
+            <li>
+              Make an emergency phone list with at least one out-of-area
+              contact.
+            </li>
+            <li>Pick a meeting spot in case you are separated.</li>
+            <li>Learn how to turn off the utilities.</li>
+            <li>Secure your space.</li>
+            <li>
+              Identify which official sources you will get information from.
+            </li>
+            <li>
+              Identify any special needs, such as medications, and make sure a
+              proper supply is on hand.
+            </li>
+            <li>
+              Store enough food and water for everyone in your home for at least
+              two weeks.
+            </li>
+            <li>Create grab-and-go bags.</li>
+          </ul>
+          <p>
+            The province publishes a fill-in-the-blanks household plan to write
+            it on, in English, French, Simplified and Traditional Chinese and
+            Punjabi. <Cite id="PREPAREDBC-PLAN" /> <Cite id="PREPAREDBC-GUIDES" />
+          </p>
+
+          <Subhead>The out-of-area contact</Subhead>
+          <p>
+            One phone number, somewhere the earthquake is not. The province’s
+            advice is to “choose someone who lives outside of B.C. and wouldn’t
+            be affected by a major event, such as an earthquake”, and the reason
+            it gives is that local phone and mobile networks may be overwhelmed.{" "}
+            <Cite id="PREPAREDBC-PLAN" /> Everyone in the household calls or
+            texts that one person, and that person tells each of them where the
+            others are.
+          </p>
+
+          <Subhead>The meeting place</Subhead>
+          <p>
+            The province asks households to pick a meeting place, and a
+            secondary location such as a community centre in case you cannot get
+            back to the first. <Cite id="PREPAREDBC-PLAN" /> Its neighbourhood
+            guide is more concrete: one meeting place close by, “like a mailbox
+            on your street”, and another farther away, “like a nearby park”.{" "}
+            <Cite id="PREPAREDBC-NEIGHBOURHOOD" />
           </p>
           <p>
-            That makes the most valuable preparation a social one. Knowing which
-            neighbours live alone, who has medical needs, who has a wrench and
-            who has a first aid certificate is worth more in the first day than
-            anything in a cupboard.
+            This is the part that works when nothing else does, and it is the
+            part most households have skipped. In a 2021 poll of 800 British
+            Columbians, 28 per cent of respondents had a plan for how to contact
+            family or friends and 22 per cent had an agreed meeting place.{" "}
+            <Cite id="RESEARCHCO-PREP-21" />
+          </p>
+          <p>
+            Two published statements explain why an agreement made in advance is
+            worth more than a phone. The province’s plan says that if service is
+            available, networks “may be congested or overloaded, making
+            communication extremely challenging”, and that “texts and
+            low-bandwidth data-based services may be the most reliable method of
+            communication”. <Cite id="PEIRS" /> The province’s 2025 risk
+            assessment says disruptions in communications continue for days to
+            weeks, with access prioritised for emergency personnel.{" "}
+            <Cite id="DCRRA-2025" />
+          </p>
+          <p>
+            Plan how you would get home as well as who you would call. The City
+            of Vancouver’s own advice is to “plan alternate ways to get home
+            considering roads may be blocked and trains will not be running
+            until damage assessments are complete”.{" "}
+            <Cite id="COV-EXPLORER-25" />
           </p>
         </Prose>
       ),
     },
 
     {
-      title:
-        "Households are asked for two weeks, and the support system behind them is built for three days",
+      title: "Turn the alerts on, and know what to do in the seconds they buy",
       body: (
         <Prose>
           <p>
-            The province’s Emergency Support Services program is the system that
-            houses and feeds people who have lost their homes. From the same
-            page of the same document:
+            The Canadian Earthquake Early Warning system detects an earthquake
+            immediately after it starts and sends an alert through the National
+            Public Alerting System, so alerts arrive on television, on the radio
+            and on compatible mobile phones. <Cite id="PREPAREDBC" /> It
+            provides “seconds to tens-of-seconds of warning”, which is enough to
+            get down and under something, and the guide is explicit that early
+            warning systems cannot predict earthquakes. <Cite id="PREPAREDBC" />{" "}
+            Close to where the earthquake starts, the alert may arrive with the
+            shaking rather than before it. <Cite id="NRCAN-EEW" />
+          </p>
+          <p>
+            What the seconds are for is the same action the guide gives for
+            feeling the ground move:
           </p>
           <Quote
-            speaker="The Province of British Columbia"
-            source="Provincial Earthquake Immediate Response Strategy, page 42"
-            cite={<Cite id="PEIRS" />}
+            speaker="PreparedBC"
+            source="Earthquake and Tsunami Preparedness Guide"
+            cite={<Cite id="PREPAREDBC" />}
           >
             <p>
-              “ESS is delivered by local emergency programs and is designed to
-              provide up to 72 hours of support … the ESS program is not
-              designed for the scope and scale of services required after a
-              catastrophic earthquake.”
+              “If you feel the ground shake or receive an alert on your phone,
+              TV or radio from the Canadian Earthquake Early Warning system,
+              immediately Drop, Cover and Hold On. After the shaking stops count
+              to 60 before getting up.”
             </p>
           </Quote>
           <p>
-            This is not new, and it is not a single document’s opinion. The
-            province’s emergency management system said the same thing ten years
-            earlier: “In a catastrophic emergency such as an earthquake … ESS
-            service delivery may not be able to manage the scope and volume of
-            needs”. <Cite id="BCEMS-2016" />
-          </p>
-          <p>
-            Households are asked to cover two weeks. The support system behind
-            them is designed for three days. The province states both, and
-            states that the second is not sized for this event.
-          </p>
-          <Figure
-            alt="Households are asked to cover two weeks, while the Emergency Support Services program behind them is designed for 72 hours. The two panels measure different things and are drawn on separate scales, so their lengths are not a comparison."
-            caption={
-              <>
-                Two different measurements from the same page of the same
-                document, kept on separate scales. The upper panel is how long a
-                household covers itself. The lower is how long a program that
-                houses and feeds people who have lost their homes is designed to
-                run. <Cite id="PEIRS" />
-              </>
-            }
-          >
-            <PrepareAskedAndProvided />
-          </Figure>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "How long to prepare for depends on which document you open",
-      body: (
-        <Prose>
-          <p>
-            Six official answers are in print, five of them provincial and one
-            municipal. All six are published now.
-          </p>
-          <DataTable
-            caption="Six published answers to how many days of supplies a household should hold, each in the wording its own document uses."
-            columns={["Source", "What it says"]}
-            minWidth="34rem"
-            rows={[
-              [
-                <>
-                  PreparedBC <em>Earthquake and Tsunami Preparedness Guide</em>,
-                  March 2024 <Cite id="PREPAREDBC" />
-                </>,
-                <>“at least two weeks”, stated three times</>,
-              ],
-              [
-                <>
-                  PreparedBC general emergency kit page{" "}
-                  <Cite id="PREPAREDBC-KIT" />
-                </>,
-                <>“minimum three-day to one-week supply”</>,
-              ],
-              [
-                <>
-                  PreparedBC earthquake hazard page <Cite id="PREPAREDBC-EQ" />
-                </>,
-                <>
-                  “a minimum of 3 days”, adding that one to two weeks is a good
-                  idea
-                </>,
-              ],
-              [
-                <>
-                  The province’s All-Hazard Plan, dated 2012{" "}
-                  <Cite id="AHP-2012" />
-                </>,
-                <>
-                  “self-sufficient for a minimum of 72 hours”, with a caveat
-                  that recent events suggest a week or longer
-                </>,
-              ],
-              [
-                <>
-                  The province’s earthquake response strategy{" "}
-                  <Cite id="PEIRS" />
-                </>,
-                <>“self-sufficient for up to two weeks”</>,
-              ],
-              [
-                <>
-                  City of Vancouver <Cite id="COV-EXPLORER-25" />
-                </>,
-                <>
-                  “a minimum of 3 days, although your target should be a week to
-                  2 weeks”
-                </>,
-              ],
-            ]}
-          />
-          <p>
-            The oldest of the six is not a consumer web page. It is the
-            All-Hazard Plan, the primary component of the province’s
-            Comprehensive Emergency Management Plan, and it still carries the
-            72-hour figure. <Cite id="AHP-2012" /> <Cite id="CEMP-PAGE" />
-          </p>
-          <p>
-            Across the border, Washington State says two weeks everywhere, under
-            a single named campaign called Be 2 Weeks Ready.{" "}
-            <Cite id="WA-2WEEKS" />
-          </p>
-          <p>
-            So the gap is not between countries. It is inside British Columbia’s
-            own advice. The earthquake-specific guide, which is the document
-            written for this hazard, says at least two weeks.{" "}
+            Drop to your hands and knees. Cover your head and neck with your arm
+            and take shelter under a sturdy piece of furniture, or crawl to the
+            nearest interior corner or wall if there is none nearby. Hold on to
+            your shelter until the shaking stops, then count to 60, which is the
+            time the guide gives loose objects to settle.{" "}
+            <Cite id="PREPAREDBC" /> The guide publishes the same three steps
+            for someone using a wheelchair, a walker or a cane, with the wheels
+            locked in place of the drop. <Cite id="PREPAREDBC" /> Aftershocks
+            get the same response, and the guide says to expect them.{" "}
             <Cite id="PREPAREDBC" />
           </p>
-          <p>
-            The four Lower Mainland authorities differ from each other too.
-            Surrey asks residents to be prepared “for at least 72 hours”.{" "}
-            <Cite id="SURREY-PREP" /> North Shore Emergency Management asks them
-            to be “self-sustaining for up to two (2) weeks”.{" "}
-            <Cite id="NSEM-KIT" /> Richmond Fire-Rescue publishes no household
-            figure at all and points residents to the provincial guide.{" "}
-            <Cite id="RICH-FR" /> Vancouver, which would run the response,
-            prints the three-day arithmetic on its own worksheet.{" "}
-            <Cite id="COV-WORKSHEET-26" />
-          </p>
-          <p>
-            The two-week figure arrives in three different wordings. The
-            provincial earthquake guide says “at least two weeks”.{" "}
-            <Cite id="PREPAREDBC" /> The North Shore says “up to two (2)
-            weeks”. <Cite id="NSEM-KIT" /> The response plan says “up to two
-            weeks”. <Cite id="PEIRS" /> It is the same number pointing in
-            opposite directions: one is a floor, the others a ceiling.
-          </p>
-          <Figure
-            alt="Six current official documents answer with anything from three days to two weeks, and the same two weeks is a floor in the earthquake guide and a ceiling in the response plan. The figure sets the six side by side without resolving them to a recommended number."
-            caption={
-              <>
-                The six answers drawn side by side, and not averaged into a
-                seventh. A bar that ends in a point is open above its number; a
-                bar that ends against an upright is closed at it. Hatching is
-                the further span a document names rather than a figure it
-                states. <Cite id="PREPAREDBC" /> <Cite id="PREPAREDBC-KIT" />{" "}
-                <Cite id="PREPAREDBC-EQ" /> <Cite id="AHP-2012" />{" "}
-                <Cite id="PEIRS" /> <Cite id="COV-EXPLORER-25" />
-              </>
-            }
-          >
-            <PrepareDaysByDocument />
-          </Figure>
         </Prose>
       ),
     },
 
     {
-      title:
-        "Everyone agrees on the water rate and disagrees on the number of days",
+      title: "Water is the first thing to store",
       body: (
         <Prose>
           <p>
             Four litres per person per day, for drinking and sanitation
-            together, is PreparedBC’s figure. <Cite id="PREPAREDBC" /> The City
-            of Vancouver prints the same rate. <Cite id="COV-EXPLORER-25" />
-          </p>
-          <p>
-            What differs is the multiplier. The City’s worksheet multiplies the
-            rate by three days and prints the sum.{" "}
-            <Cite id="COV-WORKSHEET-26" /> The provincial earthquake guide says
-            at least two weeks. <Cite id="PREPAREDBC" /> For a household of
-            four, that is 48 litres against at least 224 litres. Those two
-            totals are arithmetic from the two published rates; neither the City
-            nor the province prints either one.
+            together, is the province’s rate. <Cite id="PREPAREDBC" /> The City
+            of Vancouver prints the same rate. <Cite id="COV-EXPLORER-25" /> For
+            a household of four holding two weeks, that is at least 224 litres.
+            That total is arithmetic from the published rate rather than a
+            figure either body prints.
           </p>
           <Figure
-            alt="At four litres per person per day, a household of four needs 48 litres to cover three days and at least 224 litres to cover two weeks. Both totals are arithmetic from the two published rates, and neither the City nor the province prints either one."
+            alt="At four litres per person per day, a household of four needs at least 224 litres to cover two weeks. The total is arithmetic from the published rate, and neither the province nor the City prints it."
             caption={
               <>
                 One mark is four litres, which is the published rate for one
                 person for one day. <Cite id="PREPAREDBC" />{" "}
-                <Cite id="COV-EXPLORER-25" /> The City’s worksheet multiplies
-                that rate by three days. <Cite id="COV-WORKSHEET-26" /> The
-                provincial earthquake guide says at least two weeks.{" "}
-                <Cite id="PREPAREDBC" /> The totals are worked from those rates
-                rather than printed in either document.
+                <Cite id="COV-EXPLORER-25" /> Fifty-six of them is a household
+                of four for two weeks, worked from that rate rather than printed
+                in either document.
               </>
             }
           >
             <PrepareWaterArithmetic />
           </Figure>
           <p>
-            Two weeks of water is bulky. It is also the single most useful thing
-            in a kit, because the province’s 2025 risk assessment says people
-            are thirsty within 24 hours, and that distributing bulk drinking
-            water across the affected region stays challenging for the first
-            four to five days. <Cite id="DCRRA-2025" /> Stored water covers
-            exactly that gap.
+            Pets are on the same list, at about 30 millilitres of water per
+            kilogram of body weight per day. <Cite id="PREPAREDBC-KIT" />
+          </p>
+          <p>
+            Water is bulky, and it is still the first thing to store, because
+            the province’s 2025 risk assessment says people are thirsty within
+            24 hours and that distributing bulk drinking water across the
+            affected region stays challenging for the first four to five days.{" "}
+            <Cite id="DCRRA-2025" /> Stored water covers exactly that gap.
+            Whatever you can hold is worth holding, refilled on a schedule you
+            will actually keep.
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "Two official sources give opposite advice about the gas meter",
+      title: "Food that needs no cooking, and a bag by the door",
       body: (
         <Prose>
           <p>
-            FortisBC tells customers not to shut off their gas. If a customer
-            shuts it off at the meter, they must not turn it back on: only a
-            registered gas contractor may restore service, and restoration runs
-            household by household, with a visit to each home to relight every
-            appliance. <Cite id="FBC-EQ" />
+            Non-perishable food for at least two weeks, with a manual can
+            opener. <Cite id="PREPAREDBC" /> Then the rest of the kit the guide
+            lists: a battery-powered or hand-crank radio, a flashlight and spare
+            batteries, a phone charger and a power bank, a first aid kit and
+            medications, a dust mask, garbage bags and moist towelettes,
+            seasonal clothing, sturdy footwear and an emergency blanket, a
+            whistle, and a copy of your plan with copies of important documents
+            such as insurance papers and identification, and cash in small
+            bills. <Cite id="PREPAREDBC" />
           </p>
           <p>
-            Surrey publishes the same advice with the consequence attached:
-            “Leave natural gas service on unless officials tell you to turn it
-            off. If you go turn off the gas, the gas company has to reconnect
-            it, which may take weeks after a major emergency.”{" "}
-            <Cite id="SURREY-PREP" />
+            Keep it all together somewhere you can reach.{" "}
+            <Cite id="PREPAREDBC" />
           </p>
           <p>
-            The City of Vancouver points the other way. Every City list of home
-            preparations ends with “Know where your gas, electric, and water
-            shut-offs are located and know how to turn them off.”{" "}
-            <Cite id="COV-EXPLORER-25" /> A 2011 City worksheet, still linked
-            from the City’s current guidance, goes further and says to keep a
-            wrench close to the gas meter. <Cite id="COV-HHH-2011" />
+            A grab-and-go bag is the smaller version of the same thing, one for
+            each person and pet, customised to personal or medical needs, in
+            case you have to leave quickly. The guide asks that the bags be
+            accessible and that everyone in the household knows where they are.{" "}
+            <Cite id="PREPAREDBC" /> The province’s kit list puts one more thing
+            in the bag: a local map with your household meeting places marked on
+            it. <Cite id="PREPAREDBC-KIT" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "Secure the heavy things in the rooms where people sleep",
+      body: (
+        <Prose>
+          <p>
+            In the province’s own narrative of the shaking, unsecured objects
+            “fall or fly through the air”, windows break and glass scatters.{" "}
+            <Cite id="PEIRS" /> Most of what the guidance asks for is about the
+            things in the room rather than the building around it.
           </p>
           <p>
-            No City document tells anyone to shut the gas off after an
-            earthquake. What it does is tell everyone to know how. FortisBC
-            tells customers not to, and says what it costs. Both are official,
-            both are current, and neither mentions the other.
+            What the provincial guide asks for: tall free-standing furniture
+            such as bookcases, cabinets and shelving fastened to wall studs with
+            brackets; framed pictures and mirrors moved away from beds, couches
+            and chairs; cabinet doors held shut with push or pull latches;
+            fridges, freezers, washers and dryers strapped; and the water heater
+            anchored snugly to the wall. <Cite id="PREPAREDBC" />
+          </p>
+          <p>
+            If you rent and cannot drill, the City of Vancouver publishes the
+            version that needs no fixings: heavy objects on lower shelves,
+            pictures and mirrors away from beds and seating, double-sided tape
+            or velcro under smaller appliances, the bed away from the window,
+            and sturdy shoes under the bed. <Cite id="COV-EXPLORER-25" />
+          </p>
+          <p>
+            Start with the rooms where people sleep, and with anything tall next
+            to a bed.
           </p>
         </Prose>
       ),
@@ -372,30 +356,165 @@ export const prepare: PageModule = {
 
     {
       title:
-        "The province’s scenario of the first minute is largely about objects that fall",
+        "Know where the shut-offs are, and leave the gas alone unless an official says otherwise",
       body: (
         <Prose>
           <p>
-            In the province’s own narrative of the shaking, unsecured objects
-            “fall or fly through the air”, windows break and glass scatters, and
-            a small number of buildings collapse. <Cite id="PEIRS" />
+            The provincial guide asks everyone to learn how to turn off their
+            home’s electrical panel, water and gas valves “in case you’re
+            instructed to do so by local officials”, and to hang a wrench close
+            to the gas valve. <Cite id="PREPAREDBC" /> It is equally clear about
+            the other half: “If your gas is shut off at the meter, DON’T try to
+            turn it back on. Only a licensed gas contractor can do that safely.”{" "}
+            <Cite id="PREPAREDBC" /> The City of Vancouver asks the same first
+            thing, which is to know where the shut-offs are and how to use them.{" "}
+            <Cite id="COV-EXPLORER-25" />
           </p>
           <p>
-            The provincial guide covers fastening furniture, water heaters and
-            heavy objects. <Cite id="PREPAREDBC" /> The City splits the same
-            material into what a tenant can do without drilling and what needs a
-            landlord or a contractor. <Cite id="COV-EXPLORER-25" />
+            FortisBC tells customers not to shut their gas off themselves. If it
+            is shut off at the meter, only a registered gas contractor may
+            restore service, and restoration runs household by household, with a
+            visit to each home to relight every appliance. <Cite id="FBC-EQ" />{" "}
+            Surrey publishes the same instruction with the consequence attached:
+            “Leave natural gas service on unless officials tell you to turn it
+            off. If you go turn off the gas, the gas company has to reconnect
+            it, which may take weeks after a major emergency.”{" "}
+            <Cite id="SURREY-PREP" />
           </p>
           <p>
-            Without drilling anything: heavy objects on lower shelves, framed
-            pictures and mirrors away from beds and seating, double-sided tape
-            or velcro under smaller appliances, the bed away from the window,
-            and sturdy shoes under the bed. <Cite id="COV-EXPLORER-25" />
+            So the practical rule has three parts. Know where the valves are.
+            Leave them where they are unless an official tells you otherwise.
+            Never turn the gas back on yourself.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "Plan around what the people in your home actually need",
+      body: (
+        <Prose>
+          <p>
+            The guide asks households to “consider the unique requirements of
+            everyone in your home, such as children, older adults, pets and
+            those with additional needs”, and to think about what each of them
+            needs to be safe and comfortable. <Cite id="PREPAREDBC" />{" "}
+            Medication is the item on the checklist most likely to be forgotten
+            and least possible to improvise: identify what is needed and make
+            sure a proper supply is on hand. <Cite id="PREPAREDBC" />
           </p>
           <p>
-            If you can fix things to the wall: tall furniture bracketed to
-            studs, appliances strapped, and the water heater tank secured to the
-            wall. <Cite id="COV-EXPLORER-25" />
+            The province’s guide for people with disabilities is the most
+            specific document in the set, and much of it is useful to anyone who
+            might need help. It asks for a trusted support network of at least
+            three people, and for a list of things settled with them before
+            anything happens: that they will check on you immediately, that they
+            hold keys and relevant medical information, that they know how to
+            operate specialised medical or mobility equipment such as lifts,
+            wheelchairs or scooters, and that they know where your supplies are.
+            It also says to agree and practise how you would contact each other,
+            and “do not count on telephones working”.{" "}
+            <Cite id="PREPAREDBC-DISABILITY" /> A list of your medications with
+            the details from your pharmacist, and extra medication or supplies
+            where that is possible, belong in the same plan.{" "}
+            <Cite id="PREPAREDBC-DISABILITY" />
+          </p>
+          {/* The copy's own bold lead is the label, so it is set once rather
+              than printed twice. */}
+          <VerificationNote label="Not published">
+            Vancouver publishes no earthquake preparedness guidance of its own
+            for people with disabilities or mobility limitations, as of
+            September 2026. The province publishes a guide{" "}
+            <Cite id="PREPAREDBC-DISABILITY" />, North Shore Emergency
+            Management publishes a page on help for people with additional needs{" "}
+            <Cite id="NSEM-KIT" />, and Richmond Fire-Rescue publishes one on
+            planning for unique needs <Cite id="RICH-FR" />. The nearest thing
+            the City publishes is fire evacuation guidance, addressed to
+            building owners and managers rather than to residents.{" "}
+            <Cite id="COV-FIRESAFE-BO" /> The City names people with
+            disabilities as a group its own material should reach.{" "}
+            <Cite id="COV-EXPLORER-25" />
+          </VerificationNote>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "Meet the neighbours, because they are the help that arrives first",
+      body: (
+        <Prose>
+          <p>
+            The province says it plainly: “the most immediate help will come
+            from those around you”, and that building those relationships now
+            means a better response and a faster recovery.{" "}
+            <Cite id="PREPAREDBC-PLAN" /> Its response plan says the same thing
+            operationally, recording that communities “informally self-activate”
+            and “will work together without receiving guidance from the
+            Province”. <Cite id="PEIRS" />
+          </p>
+          <p>
+            The province’s neighbourhood guide says where to start, and none of
+            it needs a budget. Begin with a group that already exists, such as a
+            Block Watch group, a residents’ association or a strata council.
+            Work out who might need extra help, including people with small
+            children or pets, older adults, people with disabilities and people
+            who speak English as a second language. Ask what everyone has and
+            can do: who has a barbecue, a generator or a chainsaw, who has first
+            aid training, and who could interpret for a neighbour who needs it.
+            Agree the two meeting places. Talk about a central storage space,
+            which is one published answer to the problem of a kit that will not
+            fit in a small apartment.{" "}
+            <Cite id="PREPAREDBC-NEIGHBOURHOOD" />
+          </p>
+          <p>
+            The same guide sets the limit on all of this: “neighbourhood
+            volunteers are not official first responders”, and instructions from
+            officials and first responders come first.{" "}
+            <Cite id="PREPAREDBC-NEIGHBOURHOOD" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "Stay where you are if the building is safe",
+      body: (
+        <Prose>
+          <p>The guidance is to stay put rather than to travel:</p>
+          <Quote
+            speaker="PreparedBC"
+            source="Earthquake and Tsunami Preparedness Guide"
+            cite={<Cite id="PREPAREDBC" />}
+          >
+            <p>
+              “If your home, apartment or condominium is structurally safe
+              following an earthquake, the best thing you can do is
+              shelter-in-place. In other words – stay where you are. This will
+              help first responders do their jobs and support those who need
+              them most.”
+            </p>
+          </Quote>
+          <p>
+            Move cautiously and look for hazards above and below. If the home
+            has considerable damage and poses a safety risk, or officials direct
+            an evacuation, leave immediately, take the grab-and-go bags, and
+            follow the instructions given. Reception centres may be opened for
+            food and lodging, and their locations are listed in the evacuation
+            order that sends you to them. <Cite id="PREPAREDBC" /> Only call
+            9-1-1 for life-threatening emergencies: after a magnitude 4.7
+            earthquake in 2015, E-Comm recorded a 1,500 per cent increase in
+            9-1-1 calls, and the province’s guide gives the same instruction.{" "}
+            <Cite id="ECOMM-EQ" /> <Cite id="PREPAREDBC" />
+          </p>
+          <p>
+            In Vancouver, 25 disaster support hubs are marked by yellow signs at
+            23 community centres, Oppenheimer Park and the Fraserview branch of
+            Vancouver Public Library. The City says services there may include
+            group lodging, distribution of food, water and supplies, recovery
+            information and help finding family. It publishes no capacity
+            figure, so the hub is a place to find information and other people
+            rather than a place with a bed reserved for you.{" "}
+            <Cite id="COV-HUBS" />
           </p>
         </Prose>
       ),
@@ -423,69 +542,34 @@ export const prepare: PageModule = {
     },
 
     {
-      title:
-        "The City names cost as a barrier, and the province is the one that answers it",
+      title: "Build it over time if money is tight",
       body: (
         <Prose>
           <p>
-            The City of Vancouver states the problem in its own voice: people
+            The City of Vancouver states the barrier in its own voice: people
             with limited resources “often lack the ability to control the
             structural readiness of their building and are less able to invest
-            in personal preparedness”, and it names who that falls on: “renters,
-            low-income residents, older adults, and people with disabilities”.{" "}
-            <Cite id="COV-EXPLORER-25" /> It publishes a resident saying it more
-            plainly: “If you barely have the resources to get by day-to-day, you
-            don’t have the money to prepare.” <Cite id="COV-EXPLORER-25" />
+            in personal preparedness”, and it names who that falls on:
+            “renters, low-income residents, older adults, and people with
+            disabilities”. <Cite id="COV-EXPLORER-25" /> It publishes a resident
+            saying it more plainly: “If you barely have the resources to get by
+            day-to-day, you don’t have the money to prepare.”{" "}
+            <Cite id="COV-EXPLORER-25" />
           </p>
           <p>
-            The City’s own advice does not answer that. The province’s does.
-            PreparedBC publishes advice on assembling a kit on a budget, built
-            around dollar stores, thrift stores and adding items over time as
-            money allows. <Cite id="PREPAREDBC-BUDGET" /> North Shore Emergency
-            Management links to it. <Cite id="NSEM-KIT" />
+            The province publishes the answer the City does not. PreparedBC’s
+            budget advice is built around dollar stores, thrift stores and
+            garage sales, starting with food and water and adding items as money
+            allows, a first aid kit assembled from what is already in the house,
+            and a thrift-store backpack for the grab-and-go bag.{" "}
+            <Cite id="PREPAREDBC-BUDGET" /> North Shore Emergency Management
+            links to it. <Cite id="NSEM-KIT" />
           </p>
-          {/* The copy's own bold lead is the label, so it is set once rather
-              than printed twice. */}
-          <VerificationNote label="Not published">
-            Nobody has published advice on the storage half of the problem:
-            where two weeks of water goes in an
-            apartment, what a tenant can ask a landlord for, or what happens to
-            a tenancy when a building is tagged. The provincial budget advice
-            assumes a bin and somewhere to put it.{" "}
-            <Cite id="PREPAREDBC-BUDGET" />
-          </VerificationNote>
-        </Prose>
-      ),
-    },
-
-    {
-      title:
-        "School seismic upgrading in Metro Vancouver is past halfway, and province-wide it is not",
-      body: (
-        <Prose>
           <p>
-            What is being asked of households sits alongside public building
-            work that is still under way. School seismic mitigation is the one
-            part of it whose progress is published. The May 2026 progress report
-            records 159 of 260 Metro Vancouver projects complete and 101
-            remaining. Province-wide, 233 of 498 are complete.{" "}
-            <Cite id="SMP-PROGRESS" />
+            A partial kit is worth far more than a planned one, and the City’s
+            own landing page says the useful thing: “Start with what you have
+            and add more as you can.” <Cite id="COV-PREPMAIN" />
           </p>
-          <Figure
-            alt="159 of 260 Metro Vancouver school seismic projects are complete, which is past halfway, while province-wide 233 of 498 are complete, which is short of halfway."
-            caption={
-              <>
-                Two proportions from the May 2026 progress report, each drawn
-                against its own programme total so that the share reads rather
-                than the count. The upright marks the halfway point. The report
-                gives the Metro Vancouver remainder as a count; the
-                province-wide remainder is the part of the track left empty.{" "}
-                <Cite id="SMP-PROGRESS" />
-              </>
-            }
-          >
-            <PrepareSchoolUpgrading />
-          </Figure>
         </Prose>
       ),
     },
@@ -493,7 +577,7 @@ export const prepare: PageModule = {
 
   lever: {
     heading: "What you can do",
-    title: <>In this order. The first one costs nothing.</>,
+    title: <>In this order. The first three cost nothing.</>,
     // The standing link goes to `/prepare/`, which is this page.
     href: null,
     items: [
@@ -503,9 +587,22 @@ export const prepare: PageModule = {
         province’s plan is built on. <Cite id="PEIRS" />
       </>,
       <>
+        <strong>Agree a meeting place and an out-of-area contact.</strong> One
+        place close to home, one farther away, and one phone number outside the
+        region. <Cite id="PREPAREDBC-PLAN" />{" "}
+        <Cite id="PREPAREDBC-NEIGHBOURHOOD" />
+      </>,
+      <>
+        <strong>
+          Turn on Earthquake Early Warning alerts, and practise Drop, Cover and
+          Hold On.
+        </strong>{" "}
+        <Cite id="PREPAREDBC" />
+      </>,
+      <>
         <strong>Store water first.</strong> Four litres per person per day,
         which is PreparedBC’s rate <Cite id="PREPAREDBC" />, for as many days as
-        you can hold, refilled on a schedule you will actually keep.
+        you can hold.
       </>,
       <>
         <strong>Then food that needs no cooking and no refrigeration</strong>,
@@ -513,28 +610,27 @@ export const prepare: PageModule = {
       </>,
       <>
         <strong>
-          Then a light, a power bank, warm layers and sturdy shoes
+          Then a light, a radio, a power bank, warm layers and sturdy shoes
         </strong>
         , kept where you will be rather than only at home.{" "}
-        <Cite id="PREPAREDBC-KIT" />
+        <Cite id="PREPAREDBC" />
       </>,
       <>
         <strong>Secure the heavy things in the rooms where people sleep.</strong>{" "}
         Start with anything tall next to a bed, and move heavy objects to lower
-        shelves. <Cite id="COV-EXPLORER-25" />
+        shelves. <Cite id="PREPAREDBC" /> <Cite id="COV-EXPLORER-25" />
       </>,
       <>
         <strong>
-          Leave the gas on unless an official tells you to turn it off.
-        </strong>{" "}
-        That is FortisBC’s instruction <Cite id="FBC-EQ" /> and Surrey’s{" "}
-        <Cite id="SURREY-PREP" />. Know where the shut-offs are, which is what
-        the City asks. <Cite id="COV-EXPLORER-25" />
+          Leave the gas on unless an official tells you to turn it off
+        </strong>
+        , and never turn it back on yourself. <Cite id="PREPAREDBC" />{" "}
+        <Cite id="FBC-EQ" /> <Cite id="SURREY-PREP" />
       </>,
       <>
-        <strong>Agree a meeting place and an out-of-region contact.</strong> The
-        province’s plan says that if service is available, networks “may be
-        congested or overloaded”. <Cite id="PEIRS" />
+        <strong>Write the plan on paper and put a copy in the bag.</strong> The
+        province publishes a fill-in-the-blanks one.{" "}
+        <Cite id="PREPAREDBC-PLAN" />
       </>,
       <>
         <strong>Build it over time if money is tight.</strong> The province
@@ -542,5 +638,12 @@ export const prepare: PageModule = {
         worth far more than a planned one. <Cite id="PREPAREDBC-BUDGET" />
       </>,
     ],
+    closing: (
+      <>
+        Every one of these frees capacity for somebody who has no other option,
+        which is the reason the province’s own plan gives for asking.{" "}
+        <Cite id="PEIRS" />
+      </>
+    ),
   },
 };

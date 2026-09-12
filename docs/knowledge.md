@@ -1342,3 +1342,35 @@ lock is short. And writing the file back with `json.dumps(lock, indent=2,
 ensure_ascii=False)` plus a trailing newline reproduces npm's own formatting exactly,
 so the diff is the entries added and nothing else. A 22-line diff is the evidence that
 no version was moved while fixing this.
+
+---
+
+## Two PreparedBC guides read, one that cannot be, and the reason is the font
+
+**11 September 2026.** The fetcher returns nothing usable from a PreparedBC guide PDF:
+it reports binary content and, for the earthquake guide, reads the designer's leftover
+document title, `extreme_heat_cover_v02`, which looks like the wrong file and is not.
+The guide itself is the right document. No `pdftotext`, `pdftk`, `pypdf` or PyMuPDF is
+installed here, and the project takes no new dependency for a one-off read.
+
+What worked is twenty lines of Python over the raw file: find each `stream … endstream`,
+`zlib.decompress` it, keep the ones containing `Tj` or `TJ`, and pull the parenthesised
+strings out. The text arrives one glyph at a time with kerning as single spaces and word
+breaks as runs of two or more, so the normalisation is to protect the runs, delete the
+single spaces, then restore the runs. That read the earthquake guide, the neighbourhood
+guide and the disabilities guide in full.
+
+It does not read the apartments and condominiums guide, and the difference is not the
+tooling. That file's strings decompress to glyph indices in an embedded subset font with
+no usable `ToUnicode` map, so there are no characters to recover without the font
+tables: the only text that comes back is the fill-in field labels, which are set in a
+different face. **A PDF that resists extraction is two different situations** — a stream
+nothing has inflated, which is a tooling problem, and text that is not characters, which
+is not. The second one needs a machine with a real PDF stack or the document in another
+format, and until then the honest record is that the guide exists and has not been read.
+`research/preparedness.md` carries it that way.
+
+**How confirmed:** the extracted earthquake-guide text carries "Last updated: Mar 2024"
+and the nine-item planning checklist quoted in `research/preparedness.md`; the
+apartments guide yields two fill-in labels and no prose.
+

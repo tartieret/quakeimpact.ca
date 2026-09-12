@@ -4,7 +4,7 @@
 
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
-> **Last research pass:** 10 September 2026.
+> **Last research pass:** 11 September 2026.
 
 **Status.** **BC's own guidance contradicts itself.** Six officially published positions
 — five provincial, one municipal — give six different answers to how long a household
@@ -82,6 +82,112 @@ published, saying six different things:
   is a separate historical claim needing its own source; at present it rests only on
   [CR16-ST] **[B]**, which is journalism about an unpublished draft and is not used
   elsewhere on the site. **Do not publish the shift as a fact.**
+
+### The earthquake guide is a planning document as much as a supply list
+
+Retrieved and text-extracted in full on 11 September 2026. **[A]** on every quotation
+below.
+
+- **The guide's own planning checklist is nine items, and two of them are supplies.**
+  "Download PreparedBC's fill-in-the-blanks home emergency plan from PreparedBC.ca and
+  complete the checklist below": "Identify the hazards in your region. Make an emergency
+  phone list with at least one out-of-area contact. Pick a meeting spot if you're
+  separated from loved ones. Learn how to turn off utilities. Secure your space. Identify
+  what official sources you'll get information from. Identify any special needs, such as
+  medications, and make sure a proper supply is on hand. Store enough food and water for
+  everyone in your home for at least two weeks. Create grab-and-go bags." [PREPAREDBC]
+  p. 11 **[A]**
+- **The planning premises the guide states**, p. 10: "Phone, gas, electric and water
+  services may not work after an earthquake. Roads could be blocked, stores closed and
+  gas stations out-of-service. You and the people you live with could be on your own for
+  several days. It may be weeks before infrastructure, utilities and essential services
+  are restored. Consider the unique requirements of everyone in your home, such as
+  children, older adults, pets and those with additional needs." [PREPAREDBC] **[A]**
+  - **Guard, and it is a seventh wording.** "Could be on your own for several days" is
+    the guide's planning premise, not its supply figure, which is "at least two weeks"
+    three times over. The site uses the supply figure and does not quote "several days"
+    as a duration: doing so would put a fourth provincial number into a comparison the
+    page no longer makes.
+- **Shelter-in-place is the instruction, in the province's own words.** "If your home,
+  apartment or condominium is structurally safe following an earthquake, the best thing
+  you can do is shelter-in-place. In other words – stay where you are. This will help
+  first responders do their jobs and support those who need them most." [PREPAREDBC]
+  p. 14 **[A]** This is the household-facing counterpart of the finding in
+  `mobility.md` that provincial planning assumes people stay.
+- **"Only call 911 for life-threatening emergencies."** [PREPAREDBC] p. 20 **[A]** The
+  provincial version of the E-Comm saturation finding in `systems/communications.md`,
+  and it lets the page give the instruction without resting it on a 2015 call-volume
+  figure alone.
+- **Early warning, with its own limits attached.** The Canadian Earthquake Early Warning
+  system "provides seconds to tens-of-seconds of warning by detecting an earthquake
+  immediately after it occurs, giving you enough warning to Drop, Cover and Hold On";
+  "Earthquake early warning systems cannot predict earthquakes"; alerts reach the public
+  through the National Public Alerting System and "will appear on TV, radio and
+  compatible mobile phones". [PREPAREDBC] pp. 12–13 **[A]** The late-alert zone near the
+  epicentre is NRCan's, not the guide's. [NRCAN-EEW] **[A]**
+- **Drop, Cover and Hold On, and the count to 60.** "After the shaking stops count to 60
+  before getting up … This gives loose objects time to settle." The guide publishes the
+  same three steps for a wheelchair, a walker and a cane, locking the wheels in place of
+  the drop, from an Earthquake Country Alliance graphic it credits. Aftershocks get the
+  same response. [PREPAREDBC] pp. 3, 18–19 **[A]**
+- **Grab-and-go bags.** One per person "including pets", "smaller versions of your
+  emergency kit but customized to meet unique personal or medical needs", accessible,
+  and everyone knows where they are. [PREPAREDBC] p. 14 **[A]** The kit page adds the
+  item that ties the bag to the plan: "Local map with family meeting place".
+  [PREPAREDBC-KIT] **[A]**
+- **Insurance is in the guide**, including additional living expenses while a home is
+  repaired, an annual policy review, and a pointer to the Insurance Bureau of Canada.
+  [PREPAREDBC] p. 17 **[A]** Not used on the preparedness page; it belongs with
+  `buildings.md`.
+
+### The province's household plan page, and the guides beside the earthquake one
+
+- **The out-of-area contact, with the province's reason attached.** Households are asked
+  for "at least one out-of-area contact in case local phone and mobile networks are
+  overwhelmed", and: "Ideally, choose someone who lives outside of B.C. and wouldn't be
+  affected by a major event, such as an earthquake." [PREPAREDBC-PLAN] **[A]**
+- **The meeting place.** "Pick a meeting place or a secondary location, such as a
+  community centre, in case you have to leave your current location due to an
+  emergency." [PREPAREDBC-PLAN] **[A]** The neighbourhood guide is the concrete version:
+  "Choose one meeting place close by, like a mailbox on your street. Choose another
+  meeting place farther away, like a nearby park." [PREPAREDBC-NEIGHBOURHOOD] **[A]**
+- **And the province's own sentence about neighbours**, which is the same finding PEIRS
+  states operationally: "When disaster strikes, the most immediate help will come from
+  those around you - your neighbours. Connecting and building relationships with them
+  today will mean a better response and faster recovery." [PREPAREDBC-PLAN] **[A]**
+- **The neighbourhood guide is the most actionable free document in the set.** Start from
+  a group that exists, "such as a Block Watch group, resident's association or strata
+  council"; include "anyone who might need extra assistance, such as people with small
+  children or pets, older adults, people with disabilities or people who speak English as
+  a second language"; ask what people have and can do, "who has a barbecue, generator or
+  chainsaw?", who has first aid skills, who "could interpret for other neighbours in
+  need"; agree two meeting places; "Talk to your neighbours about a central storage
+  space". And the limit: "neighbourhood volunteers are not official first responders.
+  Keep yourself safe and always follow instructions from local officials and first
+  responders." [PREPAREDBC-NEIGHBOURHOOD] **[A]**
+- **The disabilities guide carries the support-network material nothing municipal does.**
+  "Consider building a trusted support network of at least three people to assist you
+  during an emergency", with what to settle in advance: that they check on you
+  immediately after a disaster, that they hold keys and relevant medical information,
+  that they can operate "specialized medical or mobility equipment, such as lifts,
+  wheelchairs or scooters", that they know where supplies are kept, and "Decide on and
+  practice methods for contacting each other in an emergency — do not count on telephones
+  working." Also: "Have a list of your medications with details from your pharmacist" and
+  "Store extra medications and/or supplies". [PREPAREDBC-DISABILITY] **[A]**
+  - **Its supply figure is "at least a three-day supply" of non-perishable food**, which
+    is an eighth wording and is not used: the earthquake-specific guide governs.
+    [PREPAREDBC-DISABILITY] **[A]**
+- **What else the province publishes beside the earthquake guide**, from the guides
+  listing: a household plan template in English, French, Simplified and Traditional
+  Chinese and Punjabi; an apartments and condominiums guide; the disabilities guide; a
+  pet plan; the neighbourhood guide; and small business and tourism guides.
+  [PREPAREDBC-GUIDES] **[A]** on what is listed.
+  - **The apartments and condominiums guide has not been read.** Its text is set in an
+    embedded font whose glyphs do not map back to characters, so neither the fetcher nor
+    a stream extraction returns readable text; the pages that do extract are the
+    fill-in fields, which include "Our meeting place close to home is:" and "Our meeting
+    place away from home is:". **[?]** on its contents, and see "What is not established"
+    for what that costs.
 
 ### The City of Vancouver's guidance
 
@@ -255,8 +361,24 @@ non-obvious; the rest need no source.
     [COV-WORKSHEET-26] [COV-EVAC] [COV-HUBS] [COV-HAZARDS] **[A]** on the absence. The only
     official explanation remains the provincial page [DRR-GOVPAGE] **[A]**. Nobody local is
     delivering it.
-- **The gas advice — a documented conflict between two official sources in the same
-  city.** FortisBC tells customers **not** to shut off their own gas; FortisBC will shut
+- **The gas advice — one rule in three parts, and the conflict is narrower than this file
+  used to say.** The correction is dated 11 September 2026, on reading the provincial
+  guide in full: **the province gives the City's advice and FortisBC's in the same
+  passage**, so the City is not the outlier it looked like. "Learn how to turn off your
+  home's electrical panel, water and gas valves **in case you're instructed to do so by
+  local officials**. Hang a wrench close to your gas valve so it's close at hand when you
+  need it." And: "**IMPORTANT: If your gas is shut off at the meter, DON'T try to turn it
+  back on. Only a licensed gas contractor can do that safely.**" [PREPAREDBC] p. 17
+  **[A]**
+  - **So the three parts all four bodies support**: know where the valves are; leave them
+    alone unless an official instructs otherwise; never restore the service yourself.
+    That is publishable as guidance rather than as a disagreement, which is what the
+    preparedness page now does. What remains genuinely unreconciled is narrow: **FortisBC
+    tells customers not to shut it off and the City tells them to know how, and neither
+    document mentions the other.** The province's qualifier, "in case you're instructed to
+    do so by local officials", is the clause that makes the two compatible, and it appears
+    in neither of them.
+  - FortisBC tells customers **not** to shut off their own gas; FortisBC will shut
   off service if fire or emergency officials request it. If a customer does shut it off at
   the meter, they must not turn it back on — **only a registered gas contractor may
   restore it** — and restoration runs household by household, with a visit to each home to
@@ -285,8 +407,9 @@ non-obvious; the rest need no source.
     information". BC Hydro does not supply gas in Vancouver; FortisBC does. The same
     document's footer points to fortisbc.com for gas safety. [COV-HHH-2011] **[A]**
   - This remains real, actionable and counter-intuitive, and it is the best lever on the
-    site — now with the added finding that the resident is being told two different things
-    by two bodies with authority over the same meter.
+    site. **What changed is how it is written**: as the three-part rule the province
+    states, with FortisBC's restoration consequence as the reason for the third part,
+    rather than as a stand-off between two bodies with authority over the same meter.
 
 ### School seismic mitigation
 
@@ -349,14 +472,28 @@ non-obvious; the rest need no source.
   links to it. [NSEM-KIT] **[A]** So the pointer the City could make is one a neighbouring
   authority makes.
 
+  **Corrected 11 September 2026, and the correction is a retraction.** The storage half is
+  no longer publishable as "nobody has published advice". Two documents were found that
+  bear on it. The province's neighbourhood guide says "Talk to your neighbours about a
+  central storage space" [PREPAREDBC-NEIGHBOURHOOD] **[A]**, which is a published answer
+  to part of the problem, and it is the one the page now carries. And **PreparedBC
+  publishes an apartments and condominiums guide that this project has not read**, because
+  its text does not extract; the earthquake guide points multi-unit residents to it by
+  name. [PREPAREDBC] [PREPAREDBC-GUIDES] **[A]** on its existence, **[?]** on its
+  contents. **Until it is read, nothing on the site may say the storage question is
+  unanswered.** Retrieving it is the next task on this subject: the route is a machine
+  with a PDF text layer the extraction here could not reach, or a copy of the guide in
+  another format.
+
   **Two guards, and the second is the finding.** It is **provincial, not municipal** — no
   Lower Mainland local authority writes its own. And **it answers money and does not answer
   storage**: it assumes a bin or duffel and somewhere to put it, and the page it hangs off
   says to store supplies "in an area of your home that's easy to get to, such as a hall
   closet, spare room or garage" **[A]** — three things a bachelor suite or an SRO room does
-  not have. Nothing found addresses storing two weeks of water in an apartment, what a
-  tenant may ask a landlord for, or what happens to a tenancy when a building is tagged.
-  **[?]**, audited against the City's full-text index as well as its navigation.
+  not have. What a tenant may ask a landlord for, and what happens to a tenancy when a
+  building is tagged, are still unanswered in everything read so far. **[?]**, audited
+  against the City's full-text index as well as its navigation, and subject to the
+  unread apartments guide above.
 - **No City preparedness material for people with disabilities or mobility limitations.**
   Disability is named as an affected group and accommodated within kit lists and drop-cover-
   hold wording [COV-EXPLORER-25] [COV-FACTSHEET-24] **[A]**, and the City's 20-minute
@@ -444,6 +581,25 @@ non-obvious; the rest need no source.
 ---
 
 ## For the page
+
+**The page is guidance, not a comparison of documents. Decided 11 September 2026.** The
+divergence between the six published durations is a real finding and it stays in this
+file, but `/prepare/` is the one page on the site a reader arrives at wanting to be told
+what to do, and an audit of provincial and municipal wording is not that. So the page
+follows the earthquake-specific guide, which is the document written for this hazard,
+gives the City of Vancouver's lower figure once in the City's own words as a detail, and
+spends the rest of its length on the areas the guidance actually covers: the written
+plan, the meeting place and the out-of-area contact, the alerts and what to do in the
+seconds they buy, water, food and the bag, securing the room, the gas valves, the people
+in the household who need more help, the neighbours, staying put, the response routes,
+and building it on no money.
+
+**What came off the page in that rewrite**, and where it lives instead: the six-answer
+table and the three wordings of "two weeks" (this file, above); the four-municipality
+comparison (this file, above); Washington's campaign (this file, above); and the school
+seismic progress figures, which are public-building work rather than household guidance
+(`buildings.md` and this file's "School seismic mitigation"). None of it is retracted.
+The guards below still bind every one of those facts wherever it is used next.
 
 **Quote the province's paragraph directly, and lead the page with it.** Decided
 10 September 2026. It is four sentences, it is [A], it is the body that would run the
@@ -538,6 +694,19 @@ municipalities, one region, one hazard.
   has seen it on a government page recognises where it came from.
 - Disaster Response Routes are described as emergency-response routes the public must
   stay off, never as evacuation routes.
+- **The guide's own numbers travel with the guide.** "At least two weeks" is the supply
+  figure; "several days" is its planning premise and is not quoted as a duration; the
+  disabilities guide's "at least a three-day supply" is not used at all. One document, one
+  figure, and the page does not set them beside each other.
+- **The 224 L total is our arithmetic**, worked from the province's published four litres
+  per person per day, and the sentence that carries it says so. Neither the province nor
+  the City prints it.
+- **Early warning is described with its limits in the same breath**: seconds to tens of
+  seconds, no prediction, and the shaking can outrun the alert near the epicentre.
+  [NRCAN-EEW]
+- **The disaster support hubs are a place to find information and other people**, not a
+  bed: the City publishes no capacity figure, and the Resilient Neighbourhoods tabletop
+  objectives are never cited as one.
 
 **The refresh trigger is inverted, and useful.** Watch for the general kit page and the
 earthquake hazard page moving to two weeks. If they do, the finding resolves and the
