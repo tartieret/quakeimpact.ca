@@ -128,7 +128,7 @@ export const housing: PageModule = {
       body: (
         <Prose>
           <p>
-            A green placard is not the end of it. “Disruption to water and
+            A green placard, meaning the building may be occupied, is not the end of it. “Disruption to water and
             wastewater systems are expected for many months following the
             event.” <Cite id="PEIRS" /> That is the province’s own sentence, and
             it covers a household whose building was never damaged at all.
@@ -156,9 +156,8 @@ export const housing: PageModule = {
               electricity
             </Link>
             . Each comes back on its own schedule, and a household waits on the
-            slowest of the three. A lift needs power, and flushing needs water
-            somebody has to spare. A building can pass its inspection and still
-            have nothing coming out of the tap.
+            slowest of the three: a lift needs power, and flushing needs water
+            somebody has to spare.
           </p>
         </Prose>
       ),
@@ -166,7 +165,7 @@ export const housing: PageModule = {
 
     {
       title:
-        "Three bodies count the displaced, and they are counting three different things",
+        "Five published displacement figures, and no two of them count the same thing",
       body: (
         <Prose>
           <DataTable
@@ -306,7 +305,11 @@ export const housing: PageModule = {
             and shelter for evacuees.” <Cite id="PEIRS" />
           </p>
           <VerificationNote label="No published shelter capacity">
-            Provincial emergency support services describe reception centres and
+            The 70,000 is households: the province’s summary table and its
+            narrative both say so, while a logistics footnote later in the same
+            document says 70,000 displaced persons. <Cite id="PEIRS" /> The
+            discrepancy is the province’s own and is not resolved. Provincial
+            emergency support services describe reception centres and
             group lodging. Neither carries a published capacity, and no
             published document sets any capacity against the caseload a major
             earthquake would produce. Between the province’s Greater Vancouver
@@ -325,9 +328,9 @@ export const housing: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        A cordon and a yellow tag are both measured in weeks and months, and the
-        province says the plan for where people go next is still to be written.{" "}
-        <Cite id="PEIRS" />
+        In Vancouver a closed block can stay closed for weeks, months or even
+        years, <Cite id="COV-RISK-2024" /> and the province lists the plan for
+        where people go next as work still to be done. <Cite id="PEIRS" />
       </>
     ),
     items: [

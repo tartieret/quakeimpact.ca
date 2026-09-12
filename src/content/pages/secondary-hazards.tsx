@@ -118,10 +118,9 @@ export const secondaryHazards: PageModule = {
           <VerificationNote label="Not published">
             No map of where an earthquake would set off landslides along the Sea
             to Sky corridor or the Fraser Canyon has been found in the published
-            literature. Every
-            seismic landslide product that exists for this part of the province
-            covers the western municipalities of Metro Vancouver, which stops
-            well short of either corridor. <Cite id="MVSMMP" />
+            literature. Every seismic landslide product that has been found for
+            this part of the province covers the western municipalities of Metro
+            Vancouver, which stops well short of either corridor. <Cite id="MVSMMP" />
           </VerificationNote>
         </Prose>
       ),

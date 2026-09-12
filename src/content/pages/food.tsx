@@ -58,12 +58,12 @@ export const food: PageModule = {
           <p>
             Chilled and frozen stock is on a clock from the moment the power
             goes, and a shop that cannot take payment cannot sell what is left.
-            All of that happens indoors, before any delivery is late. How long
-            the power stays off is{" "}
+            All of that happens indoors, before any delivery is late. What BC
+            Hydro has published about how long the power stays off is on the{" "}
             <Link href="/after/electricity/" className={link}>
               electricity
-            </Link>
-            ’s question.
+            </Link>{" "}
+            page.
           </p>
           <p>
             Food comes in by truck, over the same roads as everything else, and
@@ -98,7 +98,7 @@ export const food: PageModule = {
             names are perishable: meat, produce, dairy, bread.{" "}
             <Cite id="PEIRS" /> Those are exactly the items no household can put
             by. A cupboard of tins answers a short gap; it does not answer weeks
-            or months. <Cite id="PEIRS" />
+            or months.
           </p>
           <p>
             The other two the province names are toiletries and cleaning
@@ -149,12 +149,13 @@ export const food: PageModule = {
     },
 
     {
-      title: "A disaster support hub is a meeting point, not a warehouse",
+      title: "There is no food waiting in a disaster support hub",
       body: (
         <Prose>
           <p>
-            Vancouver designates 25 disaster support hubs, the places residents
-            are told to gather after a major earthquake. <Cite id="COV-HUBS" />{" "}
+            Vancouver designates 25 disaster support hubs, outdoor gathering
+            places where group lodging and shelter may be provided depending on
+            impacts. <Cite id="COV-HUBS" />{" "}
             The City’s own neighbourhood toolkit describes what is there: basic
             items such as pens, whiteboards, signage and a tent, and beyond that
             “the skills, knowledge and supplies that people bring”.{" "}
@@ -221,7 +222,7 @@ export const food: PageModule = {
         weeks. The same document says Emergency Support Services is designed to
         provide up to 72 hours of support and “is not designed for the scope and
         scale of services required after a catastrophic earthquake”.{" "}
-        <Cite id="PEIRS" /> Two weeks is the interval to stock against.
+        <Cite id="PEIRS" />
       </>
     ),
     items: [

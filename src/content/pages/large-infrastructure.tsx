@@ -52,7 +52,7 @@ export const largeInfrastructure: PageModule = {
   sections: [
     {
       title:
-        "Road access to the airport is expected to be cut for the first few days, because every bridge onto Sea Island is damaged",
+        "Modelling of a megathrust expects road access to the airport cut for the first few days, because every bridge onto Sea Island is damaged",
       body: (
         <Prose>
           <p>
@@ -169,10 +169,6 @@ export const largeInfrastructure: PageModule = {
             <Cite id="RMS-KOBE" /> Kobe is an illustration, and it forecasts
             nothing here.
           </p>
-          <p>
-            Shipping lines route around a closed port, and some of them do not
-            come back.
-          </p>
         </Prose>
       ),
     },
@@ -218,7 +214,8 @@ export const largeInfrastructure: PageModule = {
         <Prose>
           <p>
             None of the figures above comes from anyone inspecting a wharf, a
-            crane or a runway. They are the output of a catastrophe model that
+            crane or a runway. They are the output of a catastrophe model, a computer simulation
+            insurers use to estimate what an event would cost, which
             AIR Worldwide ran in 2013 for the Insurance Bureau of Canada,
             against the infrastructure as it stood then. <Cite id="AIR-2013" />{" "}
             No operator, regulator or engineer has published an assessment of
@@ -239,8 +236,8 @@ export const largeInfrastructure: PageModule = {
           <p>
             A consulting engineer’s curriculum vitae, filed with that same
             panel, records seismic and liquefaction assessment work on the
-            Deltaport Berth 3 expansion. <Cite id="RBT2-CVS-19" /> The work was
-            done. The findings were not published.
+            Deltaport Berth 3 expansion. <Cite id="RBT2-CVS-19" /> The findings were
+            not published.
           </p>
           <VerificationNote label="Not an engineering assessment">
             Every duration on this page for the port and the airport comes from
@@ -261,8 +258,10 @@ export const largeInfrastructure: PageModule = {
             modelled the magnitude 9 megathrust and nothing else.{" "}
             <Cite id="AIR-2013" /> What the port, the airport and the ferry
             terminals would face in a shallow crustal earthquake close to the
-            city has not been published by anyone. The hatched column beside it
-            says that, and not that the nearer earthquake would be gentler.
+            city has not been published by anyone. So the crustal earthquake
+            carries no band on this page, because there is nothing to band, and
+            that is a statement about the public record rather than about the
+            nearer earthquake being gentler.
           </p>
           <p>
             The province’s crustal planning scenario does name two of them, as

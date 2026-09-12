@@ -483,7 +483,7 @@ export function LandConnections() {
 
       <LandNode y={SOUTH_BOX_Y} height={SOUTH_BOX_H}>
         <FigText x={BOX_TEXT_X} y={SOUTH_LABEL_Y} fill={FIG_COLOR.ink}>
-          Richmond and Delta
+          Richmond
         </FigText>
         <FigText
           x={BOX_TEXT_X}

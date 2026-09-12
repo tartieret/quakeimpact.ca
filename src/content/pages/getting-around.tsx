@@ -47,7 +47,7 @@ export const gettingAround: PageModule = {
     route: "/getting-around/",
     title: "Moving after the shaking",
     nav: "Getting around",
-    kicker: "Part 2b",
+    kicker: "After the shaking",
     standfirst:
       "Two provincial emergency plans assume people will not drive out of the region after a major earthquake. Both direct the public to shelter where they are.",
     /**
@@ -147,9 +147,10 @@ export const gettingAround: PageModule = {
               </p>
               <p>
                 <strong>
-                  Richmond and Delta are reached only by bridges and a tunnel.
+                  Richmond is reached only by bridges and a tunnel.
                 </strong>{" "}
-                There is no land route onto Lulu Island or Sea Island.
+                There is no land route onto Lulu Island or Sea Island. South of
+                the Fraser, Delta connects by land eastward to Surrey.
               </p>
               <p>
                 <strong>The North Shore has two vehicle crossings</strong>, with
@@ -161,7 +162,7 @@ export const gettingAround: PageModule = {
               those three facts and nothing else, so it rests on no document
               either. No licence slot, because no dataset is behind it. */}
           <Figure
-            alt="Leaving Vancouver by land means going east through Burnaby and New Westminster. The North Shore is reached by two vehicle crossings with mountains behind it, and Richmond and Delta only by bridges and a tunnel. This is a diagram of connections, not a map."
+            alt="Leaving Vancouver by land means going east through Burnaby and New Westminster. The North Shore is reached by two vehicle crossings with mountains behind it, and Richmond only by bridges and a tunnel, with Delta beyond it on the south bank. This is a diagram of connections, not a map."
             caption={
               <>
                 A diagram of connections rather than a map. It draws which ways
@@ -192,7 +193,7 @@ export const gettingAround: PageModule = {
             and Greater Victoria to move emergency responders and supplies.{" "}
             <Cite id="PITTMDW-DRR" /> The routes are open to everyone until a
             state of emergency is declared, and then they are activated and
-            controlled. Users must carry both government-issued photo
+            controlled. Authorised users must carry both government-issued photo
             identification and employment identification.{" "}
             <Cite id="DRR-GOVPAGE" />
           </p>
@@ -285,7 +286,8 @@ export const gettingAround: PageModule = {
             corridor would be closed. What is published is the framework for
             reopening them <Cite id="DRT-PRIMER-18" />{" "}
             <Cite id="MV-DEBRIS-17" />, and, separately, the lane and
-            restoration targets a new structure is designed against, which are
+            restoration targets a new lifeline crossing is designed against,
+            which are
             set out in {transportationLink}. Some regional emergency-management
             material is withheld by choice: “Due to the sensitive nature of some
             of our work, some materials are only available upon request.”{" "}
@@ -339,7 +341,8 @@ export const gettingAround: PageModule = {
             caption={
               <>
                 Reopening durations for the three highways cut by the
-                atmospheric river of November 2021. Days and months are drawn on
+                atmospheric river of November 2021, a long and heavy rainstorm.
+                Days and months are drawn on
                 separate scales because the sources give them that way. None of
                 this is earthquake damage and none of it forecasts one.{" "}
                 <Cite id="HWY5-RECOV" /> <Cite id="HWY1-RECOV" />{" "}
