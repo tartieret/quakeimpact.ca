@@ -882,6 +882,23 @@ directed at closing that gap is a rounding error against the capital plan it sit
 
 ## What is not established
 
+- **What the building code is actually trying to achieve, in a citable form.** The site wants to
+  tell a reader that seismic provisions are aimed at getting people out alive rather than at the
+  building staying usable, because that is the difference between "my building is code-compliant"
+  and "I can go home". It is standard engineering practice and **no source in the register states
+  it**, so it is not on the page. The likely routes are the National Building Code Division A
+  objective statements (OS1 and the commentary on post-earthquake function), an Engineers and
+  Geoscientists BC or SEABC practice statement, or the City's own action plan. `EGBC-PBSD` is not
+  it: that guideline is about bridges. Until one is found, the page carries the consequence
+  instead of the principle, through the City's own gap between damaged buildings and displaced
+  residents and through the assessment-capacity quotation. **[?]**
+- **Whether the 2024 assessment's archetypes carry a design-level or era dimension.** The
+  published outputs are broken down by building type and by neighbourhood, never by construction
+  year, and the exposure model's internal classes were not examined. So the site says the
+  breakdown is not published by age, which is checkable, rather than that the model ignores age,
+  which is not established either way. [COV-RISK-2024] [HILT-2022] **[?]** Resolving it would let
+  the page answer the question a reader in a newer building actually has.
+
 - **How many of Vancouver's 19 fire halls are rated post-disaster.** The City's own phrase is
   "the upgrade and replacement of several fire halls". Do not convert "several" into a number.
   **[?]**

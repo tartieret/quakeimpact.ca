@@ -162,7 +162,8 @@ export const buildings: PageModule = {
           <p>
             The City’s model separates its housing by type. These are its
             figures for the M7.2 Georgia Strait earthquake, and the displacement
-            is always for more than 90 days.
+            is always for more than 90 days. They are averages for a type rather
+            than a verdict on any one building.
           </p>
           <DataTable
             caption="Three kinds of home in the City of Vancouver’s M7.2 Georgia Strait run: how many people live in them, how many of the buildings are badly damaged, and what share of their residents are out for more than 90 days."
@@ -202,11 +203,23 @@ export const buildings: PageModule = {
                 City of Vancouver only, and all of it belongs to the M7.2
                 Georgia Strait scenario rather than to the other two. Badly
                 damaged means extensively or completely damaged, and the share
-                for wood-frame apartments is not published.{" "}
+                for wood-frame apartments is not published. The types are
+                counted by what a building is, not by the year it went up.{" "}
                 <Cite id="COV-RISK-2024" />
               </>
             }
           />
+          <p>
+            Age is missing from that table because the City has not published
+            it. Its figures divide the city by what a building is rather than by
+            when it was built, and the stock they average over is old: about 70
+            per cent of Vancouver’s buildings went up before 1990, when early
+            modern seismic standards arrived, and about half before 1973, when
+            there were none. <Cite id="COV-RISK-2024" /> So a percentage beside
+            a building type is an average over mostly older construction. Where
+            a newer building of the same type sits inside it is not something
+            the published work answers.
+          </p>
           <p>
             Wood-frame apartment buildings are the largest single cause of
             people being out of their homes. They account for 45 per cent of all
@@ -215,15 +228,15 @@ export const buildings: PageModule = {
             <Cite id="COV-RISK-2024" />
           </p>
           <p>
-            That is worth stopping on, because the usual line about wood is that
-            it does well in an earthquake. That line is about houses. The
-            engineering analysis behind the City’s 2026 action plan flags
-            wood-frame apartment buildings separately, for walls that are
-            neither stiff enough nor strong enough, for being likely
-            uninhabitable after a design-level earthquake, and for the risk of
-            the ground floor collapsing where it has been left open for
-            tuck-under parking. <Cite id="COV-PLAN-2026" /> A house and an
-            apartment block are not the same finding.
+            The usual line about wood is that it does well in an earthquake, and
+            that line is about houses. The engineering analysis behind the
+            City’s 2026 action plan flags wood-frame apartment buildings
+            separately, for walls that are neither stiff enough nor strong
+            enough, for being likely uninhabitable after a design-level
+            earthquake, and for the risk of the ground floor collapsing where it
+            has been left open for tuck-under parking.{" "}
+            <Cite id="COV-PLAN-2026" /> A house and an apartment block are not
+            the same finding.
           </p>
           <p>
             Offices are in the same picture. Of downtown office towers, 29 per
@@ -274,6 +287,15 @@ export const buildings: PageModule = {
         "A building can come through it and still be somewhere nobody can go back to",
       body: (
         <Prose>
+          <p>
+            Coming through the shaking is not the same as having somewhere to
+            live, and the City’s own figures show the gap. In the M7.2 run, 28
+            per cent of concrete mid-rise and high-rise buildings are badly
+            damaged, while 70 per cent of the people living in them are out of
+            their homes for more than 90 days. <Cite id="COV-RISK-2024" /> Far
+            more households are displaced than the damage count on its own would
+            suggest.
+          </p>
           <p>
             Where damage is concentrated, whole areas can be closed. The City’s
             assessment says such areas may be shut “for weeks, months, or even
