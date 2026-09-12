@@ -449,19 +449,14 @@ export const systemBySlug = (slug: string) =>
 /* ------------------------------------------------------------------ */
 
 /**
- * Part 1. `references` is the register key of every document gathered for a
- * subject whose page is not written, and the route lists them at the foot of
- * the page the way a system page lists the documents behind its band.
+ * Part 1. The five subjects of `/shaking/`, in reading order, each with the
+ * hook its card carries.
  *
- * A stub that showed nothing was the defect this field closes: the site told
- * readers each of these pages carried what had been gathered for it, and four
- * of them carried a single sentence. The keys below are the sources their
- * research files in `docs/research/` actually rest on, and several of them are
- * already cited on `/scenarios/` and `/shaking/ground/`, which is why the
- * casualty stub was the sharpest case: the table was published two clicks away
- * and the page that is about it pointed at nothing.
- *
- * `ground` carries none, because its page module declares its own.
+ * All five are written, so every entry's body, its documents and the order they
+ * are numbered in come from its page module. `status` and `references` stay on
+ * the type: a written page can be marked a draft again while its text is under
+ * revision, and a subject whose evidence is gathered before its text is written
+ * lists that evidence here in the meantime.
  */
 export const SHAKING_PAGES: {
   slug: string;
@@ -476,58 +471,25 @@ export const SHAKING_PAGES: {
     name: "Ground conditions",
     hook: "Two houses a few blocks apart can sit on completely different ground.",
   },
-  // The four below have no page text yet. Their hooks say what the subject is,
-  // and claim nothing, because a claim with no page behind it has nowhere to
-  // carry its source.
   {
     slug: "buildings",
     name: "Buildings",
-    status: "draft",
     hook: "Which buildings hold up, which do not, and why the glass and brickwork coming off them is dangerous.",
-    references: [
-      "COV-RISK-2024",
-      "GSC-OF-8853",
-      "DCRRA-2025",
-      "COV-URM-2000",
-      "VBBL-2025",
-    ],
   },
   {
     slug: "casualties",
     name: "Casualties",
-    status: "draft",
     hook: "How many people are expected to be hurt in each scenario, and why the published range is so wide.",
-    references: ["PEIRS", "GSC-OF-8853", "DCRRA-2025", "COV-RISK-2024"],
   },
   {
     slug: "fire-following",
     name: "Fire following",
-    status: "draft",
     hook: "The fires that start once the shaking stops, and the separate water system built to fight them.",
-    references: [
-      "SCAWTHORN-2020",
-      "COV-PREPARES",
-      "COV-DFPS-2001",
-      "COV-DFPS-DATA",
-    ],
   },
   {
     slug: "secondary-hazards",
     name: "Secondary hazards",
-    status: "draft",
     hook: "Landslides, dikes and dams: the damage that arrives after the shaking has stopped.",
-    references: [
-      "PEIRS",
-      "DCRRA-2025",
-      "CJES-2024",
-      "RICH-EQ",
-      "RICH-THURBER-16",
-      "RICH-DMP3-19",
-      "RICH-DMP4-21",
-      "RICH-DMP5-19",
-      "MV-DSP-2026",
-      "BOWEN-TSU-19",
-    ],
   },
 ];
 
