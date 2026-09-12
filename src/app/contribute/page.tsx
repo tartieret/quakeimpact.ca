@@ -9,7 +9,7 @@ import { contribute } from "@/content/pages/contribute";
  *
  * The template holds no words of its own. Everything a reader sees comes from
  * the page module in `@/content/pages/contribute`, which is where
- * `docs/copy/contribute.md` lands, including the two contact placeholders.
+ * `docs/copy/contribute.md` lands.
  *
  * The copy has no "What you can do", so there is no `Lever` here. The page
  * describes no consequence to the reader; what it asks for is the page.
