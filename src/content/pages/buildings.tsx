@@ -109,9 +109,9 @@ export const buildings: PageModule = {
             gives the reason plainly: that nearer earthquake shakes the ground
             at City Hall about as hard as the forces new buildings are designed
             for. The method behind the modelling is published and peer-reviewed.{" "}
-            <Cite id="HILT-2022" />
+            <Cite id="HILT-2022" /> What decides this is distance, not the
+            magnitude in the headline.
           </p>
-          <p>The size in the headline is not what decides this. Distance is.</p>
         </Prose>
       ),
     },

@@ -100,19 +100,14 @@ export const shaking: PageModule = {
           <p>
             The province does not end its Cascadia scenario when the shaking
             stops. About a month after the mainshock it models a second
-            earthquake: magnitude 7.1, 60 km beneath Sidney, at 11 at night,
-            during an atmospheric river, lasting 20 seconds.{" "}
-            <Cite id="DCRRA-2025" />
+            earthquake: magnitude 7.1, 60 km beneath Sidney, lasting 20 seconds,
+            at 11 at night during an atmospheric river, which is a long and
+            heavy rainstorm. <Cite id="DCRRA-2025" />
           </p>
           <p>
-            A month later is after the news has moved on. Eleven at night is
-            when people are at home and asleep. An atmospheric river is a long,
-            heavy rainstorm. And a magnitude 7.1 is not a tremor: it is larger
-            than the magnitude 7.0 the province uses for its other planning
-            scenario, the one close to the city. <Cite id="PEIRS" />
-          </p>
-          <p>
-            The buildings that meet that second earthquake have already been
+            That second earthquake is larger than the magnitude 7.0 the province
+            uses for its other planning scenario, the one close to the city,{" "}
+            <Cite id="PEIRS" /> and the buildings it reaches have already been
             through the first one. Whether a damaged building is safe to be in
             is a question somebody has to come and answer, and{" "}
             <Link

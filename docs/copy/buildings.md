@@ -28,9 +28,8 @@ four times as many buildings as the M9.0 offshore, and does about four and a hal
 the direct economic damage. [COV-RISK-2024] The City gives the reason plainly: that
 nearer earthquake shakes the ground at City Hall about as hard as the forces new
 buildings are designed for. The method behind the modelling is published and
-peer-reviewed. [HILT-2022]
-
-The size in the headline is not what decides this. Distance is.
+peer-reviewed. [HILT-2022] What decides this is distance, not the magnitude in the
+headline.
 
 ## Most of the city was built before the rules that would have made it safer
 
