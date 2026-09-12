@@ -3,58 +3,107 @@ route: /shaking/
 title: The shaking
 nav: The shaking
 hook: The short part, and the one that decides where the damage falls.
-lede: The earthquake itself: the ground under the region, the buildings on it, the injuries, and the fires and landslides that arrive once the shaking stops. What a building stands on matters more than which building it is.
+lede: The ground under the region, the buildings on it, the injuries, and the fires and landslides that come once the shaking stops. Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives.
 status: draft
 ---
 
-## The shaking is measured in seconds and what follows is measured in months
+## What it is like
 
-In the province's magnitude 7.0 planning scenario for Greater Vancouver, violent
-shaking lasts 10 to 20 seconds. [PEIRS] In the province's magnitude 9.0 Cascadia
-scenario, the mainshock lasts three minutes. [DCRRA-2025] Each of those durations
-belongs to its own scenario rather than to earthquakes in general.
+Hardly anyone here has felt one. The province wrote its own scenario from the inside,
+and it starts with sound: a low rumble like a freight train, heard before anything is
+felt. Then the shaking knocks the people closest to it off their feet, and unsecured
+objects fall or fly through the air. [PEIRS]
 
-The damage is done inside that window, or in the hours just after it. The province's
-own account of those first seconds is on [the two scenarios](/scenarios/). [PEIRS]
+Nobody rides this out standing up. Nobody crosses a room. The floor is moving, and so is
+everything on it that is not fastened down. [PEIRS]
 
-## What a building stands on matters more than which building it is
+The last Cascadia earthquake left its own description. Natural Resources Canada records
+the oral traditions of First Nations on Vancouver Island, from a night in January 1700:
+the shaking "was so violent that people could not stand and so prolonged that it made
+them sick." [NRCAN-1700]
 
-[Ground conditions](/shaking/ground/) is the variable that governs the rest. In
-Richmond and Delta the published return period for soil liquefaction, saturated sand
-losing its strength during shaking and behaving for a time like a liquid, is 100 to
-250 years, worked out from 787 cone penetration test profiles.
-[JAVANBAKHT-24] Under the whole region a deep basin of soft sediment makes slow
-shaking grow, by amounts the province has measured and the national building code
-does not yet account for. [DCRRA-APPC]
+There is one thing to do while it happens. Everyone closest is knocked down "except for
+those who remember to 'drop, cover, and hold on'". [PEIRS] Drop before the shaking drops
+you, cover, and hold on until it stops. Do not run outside: many of those who try suffer
+extreme injury or death from falling and flying objects. [PEIRS]
 
-Two addresses a few blocks apart can sit on different ground. That page covers what
-varies across the region, and how to find out what is under a given address.
+It is not long. In the magnitude 7.0 scenario, an earthquake close to the city, the
+violent shaking lasts 10 to 20 seconds. [PEIRS] In the magnitude 9.0 scenario,
+the offshore Cascadia earthquake, the main shaking lasts three minutes. [DCRRA-2025]
+Almost all of the damage is done in that window or in the hours just after, and
+everything else on this site is about the months that follow. The province's full
+account of those first seconds is on [the two scenarios](/scenarios/). [PEIRS]
 
-## The official modelling covers buildings and the people in them, and stops there
+## The mainshock is not the last earthquake
 
-The Geological Survey of Canada's scenario catalogue states its own boundary. The
-modelling covers "only damage to buildings, and their inhabitants, from earthquake
-shaking", and landslides, liquefaction, fire following and aftershocks are "not
-currently included". [NRCAN-SCEN] Natural Resources Canada draws the conclusion
-itself: with those left out, "the estimates herein are likely to represent a minimum
-estimate on impacts." [GSC-OF-8853]
+The province does not end its Cascadia scenario when the shaking stops. About a month
+after the mainshock it models a second earthquake: magnitude 7.1, 60 km beneath Sidney,
+lasting 20 seconds, at 11 at night during an atmospheric river, which is a long and
+heavy rainstorm. [DCRRA-2025]
 
-Fire following and the hazards that arrive after the shaking sit outside the numbers
-that most published accounts quote.
+That second earthquake is larger than the magnitude 7.0 the province uses for its other
+planning scenario, the one close to the city, [PEIRS] and the buildings it reaches have
+already been through the first one. Whether a damaged building is safe to be in is a
+question somebody has to come and answer, and [buildings](/shaking/buildings/) covers
+who does that and how long people wait.
 
-## The shaking moves the ground, damages buildings and hurts people, and fires and landslides come after
+None of it is in the published damage figures. The federal scenario catalogue leaves
+aftershocks out by name, [NRCAN-SCEN] and the province's own headline numbers count
+"only direct mainshock damage". [DCRRA-2025]
+
+## The ground and the building decide it together
+
+Two things decide what an earthquake does to a place: the ground underneath and the
+building on top. Neither settles it on its own, and the pairing that turns out to be
+dangerous changes with the earthquake.
+
+The ground varies over short distances. The downtown peninsula and the North Shore
+slopes sit on rock. Richmond and Delta sit on loose sand with water in the gaps between
+the grains, and shaking hard enough stops the sand carrying the weight above it, so the
+ground behaves for a while like a thick liquid. Engineers call that liquefaction, and it
+floats buried pipes up, makes roads sag and tilts foundations. The published estimate is
+that delta soil reaches that tipping point every 100 to 250 years. [JAVANBAKHT-24]
+Underneath all of it the region sits in a deep bowl of soft sediment, which makes the
+slow, rolling waves stronger rather than letting them fade. [DCRRA-APPC]
+
+Which buildings that hurts depends on which earthquake it is. The near one shakes fast,
+which is "most hazardous to short buildings", and unreinforced masonry and unreinforced
+concrete suffer the greatest damage. [PEIRS] The offshore one shakes slowly, and there
+the ground and the building come as a pair: "urban areas
+with tall buildings on deep, soft sediments (for example, parts of Richmond) that
+resonate with the long-period seismic waves generated by the subduction interface
+earthquake also suffer significant damage." [DCRRA-2025]
+
+[Ground conditions](/shaking/ground/) covers the ground half and how to look up an
+address. [Buildings](/shaking/buildings/) covers the other half.
+
+## The official damage numbers leave things out, and say so
+
+Most published figures for an earthquake here come from the Geological Survey of
+Canada's scenario catalogue, and it is careful about its own limits. It counts "only
+damage to buildings, and their inhabitants, from earthquake shaking". Landslides,
+liquefaction, fire following and aftershocks are "not currently included".
+[NRCAN-SCEN] With those left out, "the estimates herein are likely to represent a
+minimum estimate on impacts." [GSC-OF-8853]
+
+So a damage figure or a casualty figure from that work is a floor rather than a
+ceiling. The fires and the landslides sit outside it.
+
+## The ground moves, buildings break, people are hurt, and then the fires start
 
 ## What you can do
 
-**Look up the ground at the addresses you spend time at.** The regional microzonation
-maps cover the western municipalities at neighbourhood scale and are free to read.
-[MVSMMP] [Ground conditions](/shaking/ground/) says how to read them, and which
-municipalities they do not yet reach.
+**Look up the ground under the places you spend time.** The regional maps cover the
+western municipalities street by street and are free to read. [MVSMMP]
+[Ground conditions](/shaking/ground/) says how to read them, and which municipalities
+they do not reach yet.
 
-**Learn the two actions for the first seconds.** Drop, cover and hold on, and do not
-run outside. Both are in the province's own account of its planning scenario. [PEIRS]
+**Know the two things to do in the first seconds.** Drop, cover and hold on. Do not
+run outside. Both are in the province's own account of its planning scenario, [PEIRS]
+and its Cascadia scenario is a reminder that they are needed more than once.
+[DCRRA-2025]
 
 ## Sources on this page
 
-[PEIRS] [DCRRA-2025] [JAVANBAKHT-24] [DCRRA-APPC] [NRCAN-SCEN] [GSC-OF-8853]
-[MVSMMP]
+[PEIRS] [NRCAN-1700] [DCRRA-2025] [NRCAN-SCEN] [JAVANBAKHT-24] [DCRRA-APPC]
+[GSC-OF-8853] [MVSMMP]

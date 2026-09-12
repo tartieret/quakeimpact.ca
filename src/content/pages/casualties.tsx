@@ -1,0 +1,340 @@
+import Link from "next/link";
+import { Cite } from "@/components/citation";
+import { DataTable, Prose, VerificationNote } from "@/components/page-parts";
+import type { PageModule } from "./index";
+
+/**
+ * Casualties. The body of `/shaking/casualties/`, ported from
+ * `docs/copy/casualties.md`.
+ *
+ * The words are the copy's, verbatim. The one reader-facing string the copy
+ * does not write is the table's caption, which names the table for a screen
+ * reader; the guards that travel with the figures inside it are in the note
+ * under it, because the City's counts are the City of Vancouver alone and the
+ * province's are Greater Vancouver, and the two sets are not rows of one
+ * ledger.
+ *
+ * There is no figure on this page. A drawing of a casualty count would assert a
+ * precision none of these studies has, and the honest version of the comparison
+ * is the table.
+ */
+export const casualties: PageModule = {
+  meta: {
+    route: "/shaking/casualties/",
+    title: "Casualties",
+    nav: "Casualties",
+    kicker: "The shaking",
+    standfirst:
+      "Three bodies have published figures for how many people would be hurt or killed by an earthquake here. The figures are far apart, because they cover different places, different earthquakes and different times of day. All of them count one thing: buildings shaken, and the people inside them.",
+    /**
+     * First-cited order, which is the order the markers are numbered in. It is
+     * also the order of "Sources on this page" at the foot of the copy file.
+     */
+    references: [
+      "NRCAN-SCEN",
+      "GSC-OF-8853",
+      "COV-RISK-2024",
+      "PEIRS",
+      "DCRRA-2025",
+      "HILT-2022",
+      "NZ-RC-V4",
+      "CBOC-2016-PR",
+      "CBOC-2016",
+      "PREPAREDBC",
+      "COV-EXPLORER-25",
+    ],
+  },
+
+  sections: [
+    {
+      title:
+        "Every published casualty figure counts buildings shaking, and nothing else",
+      body: (
+        <Prose>
+          <p>
+            The published figures nearly all trace back to the Geological Survey
+            of Canada’s scenario catalogue, and the catalogue is careful about
+            its own limits. It counts “only damage to buildings, and their
+            inhabitants, from earthquake shaking”. <Cite id="NRCAN-SCEN" /> The
+            open file behind the province’s planning scenario lists what that
+            leaves out: aftershocks, tsunami, landslides, liquefaction “and fire
+            following are not considered”, and neither is damage to vehicles or
+            infrastructure. Natural Resources Canada then draws the conclusion
+            itself, about its own work: “therefore, the estimates herein are
+            likely to represent a minimum estimate on impacts.”{" "}
+            <Cite id="GSC-OF-8853" />
+          </p>
+          <p>
+            So a casualty figure from that work is a floor, not a ceiling.
+            Fires, landslides and liquefaction hurt people too. They are outside
+            what these models were asked to count. Every published figure sits
+            inside that boundary.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title:
+        "Three bodies have published casualty figures, and they do not cover the same ground",
+      body: (
+        <Prose>
+          <p>
+            The City of Vancouver reports casualties as a single count, at two
+            times of day. The province splits its figures four ways, into the
+            dead, the critically injured, those needing hospital care and those
+            needing first aid. Neither set covers the same map as the other.
+          </p>
+          <DataTable
+            caption="Published casualty figures, by the body that published them and the earthquake each one models."
+            columns={[
+              "Who published it, and which earthquake",
+              "What it counts",
+              "The figure",
+            ]}
+            minWidth="42rem"
+            rows={[
+              [
+                "City of Vancouver, magnitude 7.2 Georgia Strait",
+                "Casualties in the City of Vancouver, daytime and at night",
+                "1,370 day, 620 night",
+              ],
+              [
+                "City of Vancouver, magnitude 9.0 Cascadia",
+                "Casualties in the City of Vancouver, daytime and at night",
+                "400 day, 170 night",
+              ],
+              [
+                "City of Vancouver, magnitude 7.0 deep earthquake",
+                "Casualties in the City of Vancouver, daytime and at night",
+                "190 day, 70 night",
+              ],
+              [
+                "Province of BC, magnitude 7.0 Georgia Strait",
+                "Greater Vancouver, on a weekday between 9 am and 5 pm",
+                "2,000 dead, 1,000 critically injured, 6,500 needing hospital care, 21,000 needing first aid",
+              ],
+              [
+                "Province of BC, magnitude 9.0 Cascadia",
+                "Injuries and deaths from mainshock shaking",
+                "more than 10,000 injured, 3,400 dead",
+              ],
+            ]}
+            note={
+              <>
+                The City’s three rows count the City of Vancouver alone{" "}
+                <Cite id="COV-RISK-2024" />, the province’s magnitude 7.0 row
+                counts Greater Vancouver <Cite id="PEIRS" />{" "}
+                <Cite id="GSC-OF-8853" />, and the province’s Cascadia row is
+                from its own assessment of that scenario{" "}
+                <Cite id="DCRRA-2025" />, so the rows are separate counts of
+                different areas and cannot be added together.
+              </>
+            }
+          />
+          <p>
+            The method behind the City’s assessment has been published and peer
+            reviewed. <Cite id="HILT-2022" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title:
+        "The closer, smaller earthquake is the worse one for the City of Vancouver",
+      body: (
+        <Prose>
+          <p>
+            Intuition says the largest earthquake does the most harm. In the
+            City’s own modelling it does not. The magnitude 7.2 crustal
+            earthquake in the Strait of Georgia gives 1,370 daytime casualties
+            in the city, against 400 for the magnitude 9.0 Cascadia earthquake
+            offshore. <Cite id="COV-RISK-2024" /> The City states the reason:
+            the closer earthquake shakes City Hall about as hard as the design
+            forces new buildings are built to resist.{" "}
+            <Cite id="COV-RISK-2024" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "The time of day changes the count by more than half",
+      body: (
+        <Prose>
+          <p>
+            In all three of the City’s scenarios the night figure is under half
+            the daytime one: 1,370 against 620 for the magnitude 7.2, 400
+            against 170 for the magnitude 9.0, and 190 against 70 for the
+            magnitude 7.0 deep earthquake. <Cite id="COV-RISK-2024" /> What
+            moves is people. At night they are at home. In the working day they
+            are in offices, schools, shops and on the street.
+          </p>
+          <p>
+            Each published scenario picks one moment and stays with it. The
+            province’s magnitude 7.0 scenario is set on a weekday between 9 am
+            and 5 pm, “when most people are at school or work”, and every
+            casualty figure in it belongs to that hour of the day.{" "}
+            <Cite id="GSC-OF-8853" /> The province’s Cascadia scenario puts the
+            mainshock at 10 am on a day in August. <Cite id="DCRRA-2025" />{" "}
+            Neither is a claim about when an earthquake would happen. It is a
+            choice the modellers made so that the rest of the work could be
+            done.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "Which building someone is in does much of the rest",
+      body: (
+        <Prose>
+          <p>
+            The City’s modelling of the magnitude 7.2 earthquake attaches its
+            night-time casualties to building types. Concrete mid-rise and
+            high-rise residential buildings, concentrated in the West End and
+            Downtown, account for 37 per cent of them. Unreinforced masonry
+            residential buildings in Gastown, the Downtown Eastside and
+            Chinatown account for a further 29 per cent, from 581 buildings
+            holding about 24,700 residents. <Cite id="COV-RISK-2024" />{" "}
+            Unreinforced masonry is brick or concrete block built without steel
+            reinforcing.
+          </p>
+          <p>
+            What each building type does in the shaking, and how much of it
+            Vancouver has, is set out under{" "}
+            <Link href="/shaking/buildings/">buildings</Link>.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title:
+        "In Christchurch, New Zealand, most of the people killed by falling walls were outside the buildings",
+      body: (
+        <Prose>
+          <p>
+            New Zealand’s royal commission counted the deaths caused by building
+            failure in the 2011 Canterbury earthquake, setting aside two office
+            buildings that collapsed. Of the 42 remaining deaths, 35 came from
+            unreinforced masonry façades or walls falling, and 26 of those 35
+            fell onto people in the street or in vehicles.{" "}
+            <Cite id="NZ-RC-V4" />
+          </p>
+          <p>
+            That is Christchurch, and it sets no figure for anywhere here. What
+            it shows is where the danger sits during the shaking: at the edge of
+            the building, on the footpath, where the wall lands. The province
+            says the same thing about its own magnitude 7.0 scenario, in one
+            sentence: “Many of those who try to run outside suffer extreme
+            injury or death from falling and flying objects”.{" "}
+            <Cite id="PEIRS" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title:
+        "A widely repeated figure of 15,000 deaths was put into a model, not produced by one",
+      body: (
+        <Prose>
+          <p>
+            The Conference Board of Canada published a study in 2016 of what a
+            major earthquake would do to Canada’s economy, with funding from the
+            Insurance Bureau of Canada. A figure of approximately 15,000 deaths
+            is often quoted from it. <Cite id="CBOC-2016-PR" /> The report says
+            plainly where that came from: “An assumption was made that this
+            earthquake would result in approximately 15,000 deaths”. The Board
+            reasoned it up from the province’s own planning figures, then
+            reduced Canada’s population by that number inside its economic
+            model. <Cite id="CBOC-2016" />
+          </p>
+          <p>
+            It is an input, not a result, and nothing about it was measured.
+            Wherever it is used, the word assumption belongs in the same
+            sentence.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "The bodies that publish these figures call them planning tools",
+      body: (
+        <Prose>
+          <p>
+            The province attaches three cautions to its own casualty figures.
+            They rest on damage to buildings and “do not include casualties from
+            other secondary hazards or complicating factors”, a list running
+            through underlying medical conditions, vehicle accidents, falls,
+            explosions, fires, landslides, washouts and tsunamis. The strategy
+            “will not consider the effect of an earthquake early warning
+            system”. And the data is “for planning purposes only and may not
+            match the outcome of real events”. <Cite id="PEIRS" />
+          </p>
+          <p>
+            The province’s Cascadia figures carry the same limit in different
+            words. They “include only direct mainshock damage without account of
+            secondary hazards like landslides, liquefaction, tsunami, fires and
+            more.” <Cite id="DCRRA-2025" />
+          </p>
+          <VerificationNote label="Not yet published">
+            No published figure counts the people an earthquake here would hurt
+            once fire following, landslides and liquefaction are added in. Every
+            published figure counts shaking damage to buildings alone, which is
+            why Natural Resources Canada calls its own estimates a minimum.{" "}
+            <Cite id="GSC-OF-8853" />
+          </VerificationNote>
+        </Prose>
+      ),
+    },
+  ],
+
+  lever: {
+    items: [
+      <>
+        <strong>Drop, cover and hold on.</strong> In the province’s account of
+        its magnitude 7.0 scenario, the shaking knocks people near the epicentre
+        off their feet, “except for those who remember to ‘drop, cover, and hold
+        on’”. <Cite id="PEIRS" /> It is the one action that changes the answer
+        in the first ten seconds.
+      </>,
+      <>
+        <strong>Do not run outside while the ground is moving.</strong> The wall
+        that falls lands on the footpath beside the building, which is where
+        most of the people killed by falling walls in Christchurch were
+        standing. <Cite id="NZ-RC-V4" /> The province gives the same instruction
+        for its own scenario: those who try to run outside are among the badly
+        hurt. <Cite id="PEIRS" />
+      </>,
+      <>
+        <strong>
+          Secure the heavy things in the rooms where you sleep and sit.
+        </strong>{" "}
+        The province’s earthquake guide asks for furniture and heavy objects to
+        be secured. <Cite id="PREPAREDBC" /> The City publishes a version for
+        people who cannot drill into the walls: heavy objects on lower shelves,
+        framed pictures and mirrors away from beds and seating, small appliances
+        held down with double-sided tape or velcro, beds away from windows, and
+        sturdy shoes under the bed. <Cite id="COV-EXPLORER-25" />
+      </>,
+      <>
+        <strong>Know what the building you sleep in is made of.</strong> In the
+        City’s magnitude 7.2 scenario two building types carry most of the
+        night-time casualties: concrete mid-rise and high-rise residential at 37
+        per cent, and unreinforced masonry residential at 29 per cent.{" "}
+        <Cite id="COV-RISK-2024" />
+      </>,
+    ],
+    closing: (
+      <>
+        The hour of the day is the biggest single thing in these models, and it
+        is the one nobody gets to pick. What is above the bed, and what happens
+        in the first ten seconds, can be picked today.
+      </>
+    ),
+  },
+};

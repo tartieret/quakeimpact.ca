@@ -5,18 +5,22 @@ import { PageHeader, Section, Lever, NextPrev } from "@/components/page-parts";
 import { Citations, ReferenceList } from "@/components/citation";
 import { SHAKING_PAGES } from "@/content/site";
 import type { PageModule } from "@/content/pages";
+import { buildings } from "@/content/pages/buildings";
+import { casualties } from "@/content/pages/casualties";
+import { fireFollowing } from "@/content/pages/fire-following";
 import { groundConditions } from "@/content/pages/ground-conditions";
+import { secondaryHazards } from "@/content/pages/secondary-hazards";
 import { ShakingDraftNotice } from "@/components/status";
 
 /**
  * The five pages of Part 1.
  *
  * The template holds no words of its own beyond the labels on the furniture it
- * draws. A page's body comes from a page module where one exists. Where it does
- * not, the body is empty and the page says so in a marker beside the title and
- * two sentences above the document list, rather than in five paragraphs about
- * the site. The state is read from `SHAKING_PAGES`, not inferred from the
- * absence of a module.
+ * draws. A page's body comes from a page module, and all five now have one.
+ * Where a module is absent the body is empty and the page says so in a marker
+ * beside the title and two sentences above the document list, rather than in
+ * five paragraphs about the site. The state is read from `SHAKING_PAGES`, not
+ * inferred from the absence of a module.
  *
  * There is no map slot. The template used to promise a spatial view on every
  * one of these pages; the layers that would draw it are the Metro Vancouver
@@ -26,11 +30,18 @@ import { ShakingDraftNotice } from "@/components/status";
  */
 
 /**
- * Keyed on slug, the way `@/content/pages` keys on route. One entry, because
- * one of the five is written.
+ * Keyed on slug, the way `@/content/pages` keys on route. All five are written,
+ * so the draft notice and the document-list fallback below no longer fire for
+ * any of them. Both stay: a page whose text goes back under revision needs them
+ * again, and that state is read from `SHAKING_PAGES` rather than inferred from
+ * a missing entry here.
  */
 const MODULES: Record<string, PageModule> = {
   ground: groundConditions,
+  buildings,
+  casualties,
+  "fire-following": fireFollowing,
+  "secondary-hazards": secondaryHazards,
 };
 
 export function generateStaticParams() {

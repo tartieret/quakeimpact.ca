@@ -28,6 +28,10 @@ label or an alt text.
 | [`method.md`](method.md) | `/method/` | `../research/impact-bands.md` |
 | [`shaking.md`](shaking.md) | `/shaking/` | `../site-overview.md` §5, Part 1 |
 | [`ground-conditions.md`](ground-conditions.md) | `/shaking/ground/` | `../research/ground-conditions.md` |
+| [`buildings.md`](buildings.md) | `/shaking/buildings/` | `../research/buildings.md` |
+| [`casualties.md`](casualties.md) | `/shaking/casualties/` | `../research/buildings.md` |
+| [`fire-following.md`](fire-following.md) | `/shaking/fire-following/` | `../research/buildings.md` |
+| [`secondary-hazards.md`](secondary-hazards.md) | `/shaking/secondary-hazards/` | `../research/systems/dams-and-reservoirs.md` |
 | [`after.md`](after.md) | `/after/` | `../research/impact-bands.md` |
 | [`water.md`](water.md) | `/after/water/` | `../research/systems/water.md` |
 | [`electricity.md`](electricity.md) | `/after/electricity/` | `../research/systems/electricity.md` |
@@ -35,10 +39,10 @@ label or an alt text.
 | [`getting-around.md`](getting-around.md) | `/getting-around/` | `../research/mobility.md` |
 | [`prepare.md`](prepare.md) | `/prepare/` | `../research/preparedness.md` |
 
-Everything in that table except `shaking.md` and `after.md` is the MVP in
-`../site-overview.md` §8, in the order `../research/build-order.md` gives. Those two
-are the index pages for parts one and two, and each one is shorter than the pages it
-points at.
+`shaking.md` and `after.md` are the index pages for parts one and two, and each one
+is shorter than the pages it points at. The four pages under them that follow ground
+conditions came after the MVP. The rest of the table is the MVP in
+`../site-overview.md` §8, in the order `../research/build-order.md` gives.
 
 [`unwritten.md`](unwritten.md) is not a page and has no route. It holds the standing
 text a page shows when its evidence has been gathered and its body has not been
@@ -124,11 +128,8 @@ Ten of the thirteen systems: sanitation, natural gas, fuel, food, port and
 airport and ferry terminals, dams and reservoirs, housing, health care,
 communications, and where help comes from.
 
-Four of the five shaking pages: buildings, casualties, fire following and
-secondary hazards.
-
-Each of those fourteen pages carries the standing text in `unwritten.md` until its own
-file exists.
+Each of those ten pages carries the standing text in `unwritten.md` until its own
+file exists. Part 1 is complete: all five pages under `/shaking/` are written.
 
 The dependency graph, and the about, sources and contribute pages.
 
