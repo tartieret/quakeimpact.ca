@@ -17,6 +17,13 @@ citation popovers and to `/sources/` in one edit. The generator throws rather th
 guessing, so a row with the wrong number of columns, a duplicate key, an unknown route
 or an empty Source cell stops the build.
 
+**A row is not a page entry.** Every row generates a reference, and `/sources/` lists the
+ones the site cites: a document behind a finding whose page is not written yet, or a search
+that returned nothing, belongs here and does not belong in front of a reader who has no
+claim to check it against. `src/content/cited.ts` works that out from what the pages and
+the band grid actually cite, so a row arrives on `/sources/` in the same edit that first
+cites it and nothing has to be marked here.
+
 Two consequences for how a row is written. **Every cell is copy.** The Source cell's
 editorial note and the URL cell's prose are rendered to the reader, so they follow
 `../style-guide.md` and not research shorthand. And **the register's defects are the

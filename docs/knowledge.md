@@ -11,6 +11,54 @@ it was confirmed.
 
 ---
 
+## The research register is not the site's bibliography, and `/sources/` was printing it whole
+
+**11 September 2026.** `/sources/` rendered every row of `REFERENCES`, which is generated
+from `docs/research/sources.md`. That register is a research file before it is anything
+else: it holds every document the project has read, and by its own rule every key cited
+anywhere in `docs/research/` has a row. So 332 documents reached the reader, of which only
+209 are behind anything on the site. The other 123 back findings whose page is not written
+yet, or are negative results kept precisely because nothing came of them — a site search
+that returned nothing, a coroner's process page establishing that a report exists by
+statute and is not released, which is what makes *never published* the honest phrase rather
+than *not found*.
+
+A document a reader cannot check against a claim is not a source to them, and the page's
+own standfirst promised the opposite: "every figure on this site, and the document it came
+from". Two ways out, and only one of them is honest. Deleting the rows would have taken the
+evidence with them and broken the register's contract with the research files that cite it.
+So the register keeps all 332 and `/sources/` asks which of them the site cites.
+
+The set is derived in `src/content/cited.ts`, never listed, because a hand-kept allow-list
+drifts the first time a page cites something new. Four inputs, and the last two are the
+ones that are easy to miss:
+
+- `meta.references` on every page module. It is already each page's citation contract —
+  `Cite` numbers markers from it — so nothing has to parse prose.
+- `Impact.source` on every `SYSTEMS` entry. The band grid cites outside any page body, and
+  a system whose page is unwritten still shows its bands.
+- `SHAKING_PAGES[].references`, the same case for a shaking subject listing evidence ahead
+  of its text.
+- Every `kind: "dataset"` entry, because `/licences/` names all of them with the attribution
+  string the licence requires. A dataset reaches the reader there whether or not a sentence
+  cites it, and dropping it here would leave the two pages disagreeing about what the site
+  draws on.
+
+`PAGES` in `src/content/pages/index.ts` was the 13 system modules, so the 15 pages outside
+`/after/` had to be added; `ALL_PAGES` is now the whole set and `PAGES` is keyed from it,
+since `pageForSystem` is its only reader and asks for `/after/<slug>/`. A module missing
+from that list is a page whose documents silently vanish from `/sources/`, which is the one
+way this can go wrong.
+
+**Measured.** `out/sources/index.html` 980,452 → 643,806 bytes. The cost is one 12,974-byte
+client chunk that `/sources/` did not load before: importing the page modules puts their
+client components in its graph, the regression this file records under "A client component
+that imports the register ships all 325 entries". It is the chunk the thirteen system pages
+already share, so a reader arriving from one has it cached, and it buys 337 KB of HTML on
+the page itself. Worth knowing before importing page modules anywhere else.
+
+---
+
 ## A mark that crosses a bar has to be given a ground before it is drawn
 
 **11 September 2026.** The fix for the open end on `PrepareDaysByDocument`, and the

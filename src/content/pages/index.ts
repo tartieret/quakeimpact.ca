@@ -1,17 +1,32 @@
 import type { ReactNode } from "react";
 import type { LeverProps } from "@/components/page-parts";
 import type { PageMeta } from "@/content/types";
+import { about } from "./about";
+import { after } from "./after";
+import { buildings } from "./buildings";
+import { casualties } from "./casualties";
 import { communications } from "./communications";
+import { contribute } from "./contribute";
 import { damsAndReservoirs } from "./dams-and-reservoirs";
+import { dependencies } from "./dependencies";
 import { electricity } from "./electricity";
+import { fireFollowing } from "./fire-following";
 import { food } from "./food";
 import { fuel } from "./fuel";
 import { gas } from "./gas";
+import { gettingAround } from "./getting-around";
+import { groundConditions } from "./ground-conditions";
 import { healthCare } from "./health-care";
+import { home } from "./home";
 import { housing } from "./housing";
 import { largeInfrastructure } from "./large-infrastructure";
+import { method } from "./method";
 import { outsideHelp } from "./outside-help";
+import { prepare } from "./prepare";
 import { sanitation } from "./sanitation";
+import { scenarios } from "./scenarios";
+import { secondaryHazards } from "./secondary-hazards";
+import { shaking } from "./shaking";
 import { transportation } from "./transportation";
 import { water } from "./water";
 
@@ -83,10 +98,15 @@ function register(modules: PageModule[]): Record<string, PageModule> {
 }
 
 /**
- * Order follows `SYSTEMS` in `src/content/site.ts`, so the register reads in the
- * same order the reader meets the pages in.
+ * Every page module the site renders.
+ *
+ * The systems come first, in `SYSTEMS` order from `src/content/site.ts`, so
+ * the list reads in the order the reader meets the pages in; the rest follow
+ * in route order. A module missing from here is a page whose sources do not
+ * count as cited, so `/sources/` would drop the documents it rests on. That is
+ * the reason the list is whole rather than only the systems it began as.
  */
-export const PAGES = register([
+export const ALL_PAGES: PageModule[] = [
   communications,
   electricity,
   water,
@@ -100,7 +120,29 @@ export const PAGES = register([
   housing,
   healthCare,
   outsideHelp,
-]);
+  home,
+  about,
+  after,
+  buildings,
+  casualties,
+  contribute,
+  dependencies,
+  fireFollowing,
+  gettingAround,
+  groundConditions,
+  method,
+  prepare,
+  scenarios,
+  secondaryHazards,
+  shaking,
+];
+
+/**
+ * Keyed on route. `pageForSystem` is the only reader, and it asks for
+ * `/after/<slug>/`, so the pages outside `/after/` sit here harmlessly rather
+ * than in a second list that could disagree with the first.
+ */
+export const PAGES = register(ALL_PAGES);
 
 /** The module for a route, or undefined where the page is not written yet. */
 export const pageFor = (route: string): PageModule | undefined => PAGES[route];
