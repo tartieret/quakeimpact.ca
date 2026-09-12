@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 import { REFERENCES } from "@/content/references";
 import { CitationProvider, type CitationEntry } from "./citation-client";
+import { ReferenceList } from "./citation-client";
+import { Section } from "./page-parts";
 
 /**
  * Inline citations.
@@ -42,3 +44,32 @@ export function Citations({
 
 export { Cite, ReferenceList } from "./citation-client";
 export type { CitationEntry } from "./citation-client";
+
+/**
+ * The heading and the line under it that close every page carrying sources.
+ *
+ * They are strings rather than markup because the landing page lays its
+ * sections out full-bleed and cannot use `Section`. Every other route renders
+ * `SourcesSection` below and holds no copy of its own, which is what
+ * `CLAUDE.md` asks of a route template: the same two sentences were written
+ * out in twelve of them.
+ */
+export const SOURCES_TITLE = "Sources on this page";
+export const SOURCES_LEDE =
+  "Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used.";
+
+/**
+ * The sources section an article route closes on.
+ *
+ * `numbered` is false on a page whose body is not written: it still lists the
+ * documents gathered for its subject, but nothing above the list carries a
+ * marker, so the line that says the numbering follows the text would be
+ * describing prose that is not there.
+ */
+export function SourcesSection({ numbered = true }: { numbered?: boolean }) {
+  return (
+    <Section title={SOURCES_TITLE} lede={numbered ? SOURCES_LEDE : undefined}>
+      <ReferenceList />
+    </Section>
+  );
+}

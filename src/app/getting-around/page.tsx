@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Lever, NextPrev } from "@/components/page-parts";
-import { Citations, ReferenceList } from "@/components/citation";
+import { Citations, SourcesSection } from "@/components/citation";
 import { gettingAround } from "@/content/pages/getting-around";
 
 /**
@@ -45,12 +45,7 @@ export default function GettingAroundPage() {
 
         {lever ? <Lever {...lever} /> : null}
 
-        <Section
-          title="Sources on this page"
-          lede="Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
-        >
-          <ReferenceList />
-        </Section>
+        <SourcesSection />
 
         <NextPrev
           prev={{ href: "/after/", label: "Life afterwards" }}

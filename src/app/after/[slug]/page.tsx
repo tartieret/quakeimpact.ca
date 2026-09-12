@@ -8,7 +8,7 @@ import {
   Lever,
   NextPrev,
 } from "@/components/page-parts";
-import { Citations, ReferenceList } from "@/components/citation";
+import { Citations, SourcesSection } from "@/components/citation";
 import { TimelineStrip } from "@/components/timeline";
 import { ImpactCell } from "@/components/impact-cell";
 import { SYSTEMS, SCENARIOS, PHASES } from "@/content/site";
@@ -176,16 +176,7 @@ export default async function SystemPage({
           <Lever {...system.lever} />
         ) : null}
 
-        <Section
-          title="Sources on this page"
-          lede={
-            page
-              ? "Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used."
-              : undefined
-          }
-        >
-          <ReferenceList />
-        </Section>
+        <SourcesSection numbered={Boolean(page)} />
 
         <NextPrev
           prev={

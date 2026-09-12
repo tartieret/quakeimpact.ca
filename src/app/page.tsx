@@ -1,6 +1,11 @@
 import { ScenarioToggle } from "@/components/scenario-toggle";
 import { Lever, slugify } from "@/components/page-parts";
-import { Citations, ReferenceList } from "@/components/citation";
+import {
+  Citations,
+  ReferenceList,
+  SOURCES_LEDE,
+  SOURCES_TITLE,
+} from "@/components/citation";
 import {
   home,
   HOME_CONTROL_LABEL,
@@ -90,12 +95,10 @@ export default function HomePage() {
       >
         <div className="mx-auto max-w-6xl px-gutter py-16">
           <h2 className="font-display text-3xl tracking-tight">
-            Sources on this page
+            {SOURCES_TITLE}
           </h2>
           <p className="mt-3 max-w-2xl leading-relaxed text-ink-muted">
-            Numbered as cited above. Every marker in the text opens its entry in
-            place; these are the same entries, with a link back to where each
-            was used.
+            {SOURCES_LEDE}
           </p>
           <div className="mt-6 max-w-3xl">
             <ReferenceList />
