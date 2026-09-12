@@ -356,15 +356,15 @@ export const water: PageModule = {
       <>
         <strong>Store four litres per person per day.</strong> That is the
         province’s own figure, for drinking and basic sanitation together.{" "}
-        <Cite id="PREPAREDBC" /> How many days to multiply it by is a question
-        BC’s own guidance answers differently in different documents, and{" "}
+        <Cite id="PREPAREDBC" /> The provincial earthquake guide says to
+        multiply it by at least two weeks, and{" "}
         <Link
           href="/prepare/"
           className="text-accent underline underline-offset-2"
         >
           preparing
         </Link>{" "}
-        sets out what each of them says.
+        sets out how to hold that much and what else to have ready.
       </>,
       <>
         <strong>Count pets as well as people.</strong> The provincial guide

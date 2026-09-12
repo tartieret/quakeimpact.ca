@@ -3,7 +3,7 @@ route: /prepare/
 title: Preparing
 nav: Preparing
 hook: The province's own plan says family and neighbours are likely to be the only available first responders.
-lede: This is what British Columbia's own earthquake guidance asks of a household, in the order it is worth doing. Some of it costs nothing: the plan for how you find each other, and the conversation with the neighbours, are free and they are the parts most households have not done.
+lede: What British Columbia's earthquake guidance asks of a household, in the order worth doing it. The two things that cost nothing, a plan for finding each other and a conversation with the neighbours, are the two most households have skipped.
 status: draft
 ---
 
@@ -13,8 +13,8 @@ From the province's Earthquake Immediate Response Strategy:
 
 > "During a disaster, local and provincial government resources will be overwhelmed.
 > In such an event, one's family and neighbours are likely to be the only available
-> first responders. People living in an earthquake zone should aim to be
-> self-sufficient for up to two weeks. Prepared neighbourhoods, families, and
+> first responders. **People living in an earthquake zone should aim to be
+> self-sufficient for up to two weeks.** Prepared neighbourhoods, families, and
 > individuals will reduce pressure on overwhelmed government agencies and allow
 > available resources to go where they are most needed." [PEIRS]
 
@@ -22,19 +22,23 @@ The last sentence is the reason the province gives. Preparing is not only about 
 after yourself. It is what frees the ambulance, the crew and the shelter place for the
 person who has no other option.
 
-Two weeks is also the figure in the document written for this hazard. PreparedBC's
-Earthquake and Tsunami Preparedness Guide asks for food, water and supplies for each
-person and pet in the home "for at least two weeks, or longer". [PREPAREDBC] The
-support system behind that ask is smaller: the province's Emergency Support Services
-program, which houses and feeds people who have lost their homes, "is designed to
-provide up to 72 hours of support", and the same page says it "is not designed for the
-scope and scale of services required after a catastrophic earthquake". [PEIRS]
+PreparedBC's Earthquake and Tsunami Preparedness Guide asks for food, water and
+supplies for each person and pet in the home "for at least two weeks, or longer".
+[PREPAREDBC] The support system behind that ask is smaller. The province's Emergency
+Support Services program, which houses and feeds people who have lost their homes, "is
+designed to provide up to 72 hours of support", and the same page says it "is not
+designed for the scope and scale of services required after a catastrophic earthquake".
+[PEIRS]
 
-Some authorities ask for less. The City of Vancouver tells residents to gather supplies
-for "a minimum of 3 days, although your target should be a week to 2 weeks".
-[COV-EXPLORER-25] The rest of this page follows the provincial earthquake guide, which
-is the document written for this event, and none of what follows changes if you are
-working towards three days rather than fourteen.
+The City of Vancouver asks for less. It tells residents to gather supplies for "a
+minimum of 3 days, although your target should be a week to 2 weeks"
+[COV-EXPLORER-25], and the worksheet it hands them multiplies four litres by three days
+and stops there. [COV-WORKSHEET-26] Three days is a thin floor for the city that would
+be running the response. The provincial guide's own line is that "It may be weeks before
+infrastructure, utilities and essential services are restored" [PREPAREDBC], and the
+[system pages](/after/) here put several services in weeks to months. The rest of this
+page works to the two-week figure, and a reader who has been through those pages should
+be aiming past it rather than at three days.
 
 ## Write the plan down, and agree where you would meet
 
@@ -95,7 +99,8 @@ something, and the guide is explicit that early warning systems cannot predict
 earthquakes. [PREPAREDBC] Close to where the earthquake starts, the alert may arrive
 with the shaking rather than before it. [NRCAN-EEW]
 
-What the seconds are for is the same action the guide gives for feeling the ground move:
+The seconds buy one action, and it is the same one the guide gives for feeling the
+ground move:
 
 > "If you feel the ground shake or receive an alert on your phone, TV or radio from the
 > Canadian Earthquake Early Warning system, immediately Drop, Cover and Hold On. After
@@ -186,9 +191,9 @@ are unless an official tells you otherwise. Never turn the gas back on yourself.
 
 The guide asks households to "consider the unique requirements of everyone in your home,
 such as children, older adults, pets and those with additional needs", and to think about
-what each of them needs to be safe and comfortable. [PREPAREDBC] Medication is the item
-on the checklist most likely to be forgotten and least possible to improvise: identify
-what is needed and make sure a proper supply is on hand. [PREPAREDBC]
+what each of them needs to be safe and comfortable. [PREPAREDBC] Medication is the one
+item on the checklist nobody can improvise: identify what is needed and make sure a
+proper supply is on hand. [PREPAREDBC]
 
 The province's guide for people with disabilities is the most specific document in the
 set, and much of it is useful to anyone who might need help. It asks for a trusted
@@ -326,7 +331,7 @@ reason the province's own plan gives for asking. [PEIRS]
 
 ## Sources on this page
 
-[PEIRS] [PREPAREDBC] [COV-EXPLORER-25] [PREPAREDBC-PLAN] [PREPAREDBC-GUIDES]
+[PEIRS] [PREPAREDBC] [COV-EXPLORER-25] [COV-WORKSHEET-26] [PREPAREDBC-PLAN] [PREPAREDBC-GUIDES]
 [PREPAREDBC-NEIGHBOURHOOD] [RESEARCHCO-PREP-21] [DCRRA-2025] [NRCAN-EEW]
 [PREPAREDBC-KIT] [FBC-EQ] [SURREY-PREP] [PREPAREDBC-DISABILITY] [NSEM-KIT] [RICH-FR]
 [COV-FIRESAFE-BO] [ECOMM-EQ] [COV-HUBS] [DRR-GOVPAGE] [PREPAREDBC-BUDGET]

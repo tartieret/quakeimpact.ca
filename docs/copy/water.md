@@ -155,9 +155,9 @@ around the region is hard for the first four to five days. [DCRRA-2025] Stored w
 at home covers exactly that gap.
 
 **Store four litres per person per day.** That is the province's own figure, for
-drinking and basic sanitation together. [PREPAREDBC] How many days to multiply it by
-is a question BC's own guidance answers differently in different documents, and
-[preparing](/prepare/) sets out what each of them says.
+drinking and basic sanitation together. [PREPAREDBC] The provincial earthquake guide
+says to multiply it by at least two weeks, and [preparing](/prepare/) sets out how to
+hold that much and what else to have ready. [PREPAREDBC]
 
 **Count pets as well as people.** The provincial guide includes every pet in the
 household in the same calculation. [PREPAREDBC]

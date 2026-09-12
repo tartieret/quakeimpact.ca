@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
   Figure,
@@ -32,7 +33,7 @@ export const prepare: PageModule = {
     nav: "Preparing",
     kicker: "Part 3",
     standfirst:
-      "This is what British Columbia’s own earthquake guidance asks of a household, in the order it is worth doing. Some of it costs nothing: the plan for how you find each other, and the conversation with the neighbours, are free and they are the parts most households have not done.",
+      "What British Columbia’s earthquake guidance asks of a household, in the order worth doing it. The two things that cost nothing, a plan for finding each other and a conversation with the neighbours, are the two most households have skipped.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -41,6 +42,7 @@ export const prepare: PageModule = {
       "PEIRS",
       "PREPAREDBC",
       "COV-EXPLORER-25",
+      "COV-WORKSHEET-26",
       "PREPAREDBC-PLAN",
       "PREPAREDBC-GUIDES",
       "PREPAREDBC-NEIGHBOURHOOD",
@@ -71,15 +73,18 @@ export const prepare: PageModule = {
           <p>From the province’s Earthquake Immediate Response Strategy:</p>
           <Quote
             speaker="The Province of British Columbia"
-            source="Provincial Earthquake Immediate Response Strategy, page 42"
+            source="Provincial Earthquake Immediate Response Strategy, page 42, emphasis added"
             cite={<Cite id="PEIRS" />}
           >
             <p>
               “During a disaster, local and provincial government resources will
               be overwhelmed. In such an event, one’s family and neighbours are
-              likely to be the only available first responders. People living in
-              an earthquake zone should aim to be self-sufficient for up to two
-              weeks. Prepared neighbourhoods, families, and individuals will
+              likely to be the only available first responders.{" "}
+              <strong>
+                People living in an earthquake zone should aim to be
+                self-sufficient for up to two weeks.
+              </strong>{" "}
+              Prepared neighbourhoods, families, and individuals will
               reduce pressure on overwhelmed government agencies and allow
               available resources to go where they are most needed.”
             </p>
@@ -91,24 +96,34 @@ export const prepare: PageModule = {
             option.
           </p>
           <p>
-            Two weeks is also the figure in the document written for this
-            hazard. PreparedBC’s Earthquake and Tsunami Preparedness Guide asks
-            for food, water and supplies for each person and pet in the home
-            “for at least two weeks, or longer”. <Cite id="PREPAREDBC" /> The
-            support system behind that ask is smaller: the province’s Emergency
-            Support Services program, which houses and feeds people who have
-            lost their homes, “is designed to provide up to 72 hours of
-            support”, and the same page says it “is not designed for the scope
-            and scale of services required after a catastrophic earthquake”.{" "}
+            PreparedBC’s Earthquake and Tsunami Preparedness Guide asks for
+            food, water and supplies for each person and pet in the home “for
+            at least two weeks, or longer”. <Cite id="PREPAREDBC" /> The support
+            system behind that ask is smaller. The province’s Emergency Support
+            Services program, which houses and feeds people who have lost their
+            homes, “is designed to provide up to 72 hours of support”, and the
+            same page says it “is not designed for the scope and scale of
+            services required after a catastrophic earthquake”.{" "}
             <Cite id="PEIRS" />
           </p>
           <p>
-            Some authorities ask for less. The City of Vancouver tells residents
-            to gather supplies for “a minimum of 3 days, although your target
-            should be a week to 2 weeks”. <Cite id="COV-EXPLORER-25" /> The rest
-            of this page follows the provincial earthquake guide, which is the
-            document written for this event, and none of what follows changes if
-            you are working towards three days rather than fourteen.
+            The City of Vancouver asks for less. It tells residents to gather
+            supplies for “a minimum of 3 days, although your target should be a
+            week to 2 weeks” <Cite id="COV-EXPLORER-25" />, and the worksheet it
+            hands them multiplies four litres by three days and stops there.{" "}
+            <Cite id="COV-WORKSHEET-26" /> Three days is a thin floor for the
+            city that would be running the response. The provincial guide’s own
+            line is that “It may be weeks before infrastructure, utilities and
+            essential services are restored” <Cite id="PREPAREDBC" />, and the{" "}
+            <Link
+              href="/after/"
+              className="text-accent underline underline-offset-2"
+            >
+              system pages
+            </Link>{" "}
+            here put several services in weeks to months. The rest of this page
+            works to the two-week figure, and a reader who has been through
+            those pages should be aiming past it rather than at three days.
           </p>
         </Prose>
       ),
@@ -215,8 +230,8 @@ export const prepare: PageModule = {
             shaking rather than before it. <Cite id="NRCAN-EEW" />
           </p>
           <p>
-            What the seconds are for is the same action the guide gives for
-            feeling the ground move:
+            The seconds buy one action, and it is the same one the guide gives
+            for feeling the ground move:
           </p>
           <Quote
             speaker="PreparedBC"
@@ -399,9 +414,9 @@ export const prepare: PageModule = {
             everyone in your home, such as children, older adults, pets and
             those with additional needs”, and to think about what each of them
             needs to be safe and comfortable. <Cite id="PREPAREDBC" />{" "}
-            Medication is the item on the checklist most likely to be forgotten
-            and least possible to improvise: identify what is needed and make
-            sure a proper supply is on hand. <Cite id="PREPAREDBC" />
+            Medication is the one item on the checklist nobody can improvise:
+            identify what is needed and make sure a proper supply is on hand.{" "}
+            <Cite id="PREPAREDBC" />
           </p>
           <p>
             The province’s guide for people with disabilities is the most
