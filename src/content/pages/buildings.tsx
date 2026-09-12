@@ -361,9 +361,8 @@ export const buildings: PageModule = {
             mechanism kills. Of the 42 deaths there from building failures other
             than the two tower collapses, 35 came from unreinforced masonry
             façades or walls falling, 26 of them onto people on the street or in
-            vehicles. <Cite id="NZ-RC-V4" /> That is New Zealand, and it stays
-            New Zealand: it describes how people die under falling brick, and it
-            sets no number for Vancouver.
+            vehicles. <Cite id="NZ-RC-V4" /> It shows how people die under
+            falling brick, and it sets no number for Vancouver.
           </p>
         </Prose>
       ),
