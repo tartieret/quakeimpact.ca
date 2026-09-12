@@ -185,7 +185,60 @@ Not a compliance exercise — a public-information site that some readers cannot
 8. Has an analogue been allowed to generate a number?
 9. Would this read as alarmist if quoted in isolation, out of context, by someone hostile?
 
-Question 9 is the one that catches the most. Any sentence on this site may end up screenshotted on its own.
+Question 9 is the one that catches the most. Any sentence on this site may end up screenshotted on its own. Section 11 catches the rest: a page can pass all nine of these and still be unreadable in the particular way described there.
+
+---
+
+## 11. An anti-example
+
+Everything above says what to do. This says what the failure looks like, because it is the hardest one to catch: the prose is fluent, polite and confident, no sentence in it is false, and it says almost nothing. It is the house style of generated safety copy, and it is what this site's material turns into by default unless someone stops it.
+
+Read the specimen. Then check a draft against the numbered list, which is the part to use.
+
+### The specimen
+
+> ## Understanding Earthquake Risk in Vancouver
+>
+> Vancouver sits in one of the most seismically active regions in North America, and understanding this risk is essential for every resident. The question isn't whether a major earthquake will strike, but when.
+>
+> At its core, the region's vulnerability comes down to geology. The Cascadia subduction zone runs along the coast, where one tectonic plate slides beneath another. This isn't just a local concern; it's a hazard that spans the entire Pacific Northwest.
+>
+> Soil liquefaction presents a particularly significant challenge. When saturated soil is subjected to intense shaking, it can temporarily lose its strength and behave like a liquid, causing structures to settle or tilt. Areas built on river delta sediments — such as Richmond and parts of Delta — are especially susceptible to this phenomenon.
+>
+> That said, it's worth noting that building codes have evolved considerably. While older structures may be at risk, newer construction is designed with seismic resilience in mind. Preparedness, ultimately, remains the most powerful tool at our disposal.
+>
+> The key takeaway? Vancouver's earthquake risk is real, but it is manageable. By understanding the hazards, preparing thoughtfully, and staying informed, residents can navigate this uncertainty with confidence.
+
+### What is wrong with it
+
+1. **It opens with framing instead of subject.** "Understanding this risk is essential" tells the reader nothing they did not know when they clicked.
+2. **"The question isn't whether, but when."** Stock rhetorical inversion. It is also the countdown framing section 3 rules out.
+3. **"At its core."** Filler transition, and so are *ultimately*, *that said*, *in essence*, *it's important to note*.
+4. **The not-X-but-Y construction**, twice in four paragraphs. "This isn't just a local concern, it's…" is sentence 2 wearing a different hat.
+5. **"Presents a particularly significant challenge."** Abstract intensifiers standing in for a description. Significant how. Challenging to whom.
+6. **The em dash aside** around the place names. A colon or a comma does the same work without the affected pause, which is why section 5 bars the dash outright.
+7. **"That said, it's worth noting."** Two hedges stacked in one clause.
+8. **The reassurance sandwich.** Every hazard statement is neutralised by a comfort clause in the same breath, so the reader cannot tell how alarmed to be. This is the loudest tell in safety writing, and it is the opposite of what section 3 asks for: severity is stated plainly and the relief comes from the lever, not from a subordinate clause.
+9. **"Preparedness, ultimately, remains the most powerful tool at our disposal."** Aphorism. Says nothing and sounds like it said something.
+10. **"The key takeaway?"** A rhetorical question that answers itself.
+11. **The closing paragraph restates the other four and lands on uplift.** Delete it. The last real point is the ending.
+12. **"Navigate", "resilience", "thoughtfully", "with confidence".** Vocabulary from every corporate safety page ever written.
+13. **Every paragraph runs three to four lines.** Uniform rhythm means nothing is emphasised, because emphasis is a contrast effect.
+14. **Every sentence is a balanced subject-verb-object of the same length.** No short ones, no long ones.
+
+### The same passage, written the way this site writes
+
+> ## Liquefaction
+>
+> Richmond is built on river delta sediment, loose saturated sand and silt running over two hundred metres down in places before it reaches anything solid.
+>
+> Shake that for long enough and it stops behaving like ground. Buildings settle into it and tilt. Buried tanks and empty pipes float upward. Near the dikes and the river channels the whole surface slides sideways toward open water, carrying whatever is standing on it.
+>
+> Most of the housing stock went up before the code provisions that address any of this, and the water and sewer mains underneath it were never covered by the building code at all.
+
+Subject first, no preamble. No hedge pairs. No comfort clause bolted onto the hazard. No summary and no closing sentiment. The paragraphs are different lengths because the content is, not to produce a beat, and nothing in it is a fragment placed for cadence.
+
+On a real page the depth would carry its marker and the code claims would carry theirs. This section is about voice; section 6 still governs what may be said at all.
 
 ---
 
