@@ -15,8 +15,8 @@ import type { Phase } from "@/content/types";
  * Presentational, and it holds no words of its own: the headings and the
  * sentences come from the page module, already rendered on the server with
  * their citation markers in them. It reads nothing for itself and holds no
- * state, so it stays a server component; a sentence that varies by scenario
- * crosses the client boundary inside the item it belongs to.
+ * state. A passage that differs between the two scenarios arrives as a
+ * `ScenarioPair` inside the item it belongs to, showing both.
  *
  * The phase labels and windows come from `PHASES`, so the strip and this
  * cannot disagree about what "weeks" means.
@@ -24,8 +24,7 @@ import type { Phase } from "@/content/types";
  * There is no weather footer. Weather is not a fifth phase and it is not a
  * period of the aftermath: it is the condition every phase happens in, and it
  * belongs in the prose under the timeline, where the two scenarios' conditions
- * can be set against each other in one sentence rather than swapped silently
- * under a label.
+ * can be set against each other rather than read one at a time.
  */
 export function PhaseNarrative({
   items,

@@ -1,7 +1,4 @@
-"use client";
-
 import { SCENARIOS, SCENARIO_ORDER } from "@/content/site";
-import { useScenario } from "./scenario-context";
 
 const ROWS: { key: keyof (typeof SCENARIOS)["cascadia"]; label: string }[] = [
   { key: "source", label: "Source" },
@@ -13,26 +10,21 @@ const ROWS: { key: keyof (typeof SCENARIOS)["cascadia"]; label: string }[] = [
   { key: "recurrence", label: "Recurrence" },
 ];
 
-/** Side-by-side cards. The contrast between the two is itself the teaching point. */
+/**
+ * Side-by-side cards. The contrast between the two is itself the teaching
+ * point, so both are read together rather than chosen between: the rows line
+ * up so that source, shaking, extent and mutual aid can be read straight
+ * across.
+ */
 export function ScenarioCards() {
-  const { scenario, setScenario } = useScenario();
-
   return (
     <div className="grid gap-4 lg:grid-cols-2">
       {SCENARIO_ORDER.map((id) => {
         const s = SCENARIOS[id];
-        const active = scenario === id;
         return (
-          <button
+          <div
             key={id}
-            type="button"
-            onClick={() => setScenario(id)}
-            aria-pressed={active}
-            className={`flex flex-col gap-4 rounded-xl border p-6 text-left transition-colors ${
-              active
-                ? "border-accent bg-accent-soft"
-                : "border-rule bg-paper-raised hover:border-rule-strong"
-            }`}
+            className="flex flex-col gap-4 rounded-xl border border-rule bg-paper-raised p-6"
           >
             <div>
               <h3 className="font-display text-2xl tracking-tight">{s.name}</h3>
@@ -51,12 +43,7 @@ export function ScenarioCards() {
                 </div>
               ))}
             </dl>
-            <span className="text-xs font-medium text-accent">
-              {active
-                ? "Currently showing this scenario"
-                : "Show this scenario across the site"}
-            </span>
-          </button>
+          </div>
         );
       })}
     </div>

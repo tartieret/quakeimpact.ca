@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { NAV, SITE, UTILITY_NAV } from "@/content/site";
-import { ScenarioToggle } from "./scenario-toggle";
 import { SiteMark } from "./site-mark";
 
 export function SiteHeader() {
@@ -53,10 +52,6 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <div className="hidden sm:block">
-            <ScenarioToggle />
-          </div>
-
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -74,9 +69,6 @@ export function SiteHeader() {
           className="border-t border-rule bg-paper-raised lg:hidden"
         >
           <div className="mx-auto max-w-6xl px-gutter py-4">
-            <div className="mb-4 sm:hidden">
-              <ScenarioToggle size="lg" />
-            </div>
             <ul className="grid gap-1">
               {[...NAV, ...UTILITY_NAV].map((item) => (
                 <li key={item.href}>
