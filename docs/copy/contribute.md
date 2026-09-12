@@ -47,14 +47,6 @@ Richmond or the North Shore.
 If one of those has been answered somewhere and this site has missed it, that is the
 most valuable thing anyone can send.
 
-## What happens to what you send
-
-A document that checks out gets a key in the [source register](/sources/), and the
-claim it supports gets a marker pointing at it. A document that contradicts something
-already on the site is the better outcome of the two: the page changes, and what it
-used to say is not left standing anywhere. [How the bands work](/method/) sets out the
-rest of that discipline.
-
 ## Sources on this page
 
 [MV-WATER-22] [MV-DWMP-26] [AIR-2013] [BCH-WESTEND-25]

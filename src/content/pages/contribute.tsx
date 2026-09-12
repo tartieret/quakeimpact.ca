@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Cite } from "@/components/citation";
 import { Prose } from "@/components/page-parts";
 import type { PageModule } from "./index";
@@ -9,8 +8,8 @@ import type { PageModule } from "./index";
  * No `lever`: the page describes no consequence to the reader, so there is
  * nothing for it to tie an action to. What it asks for is the page.
  *
- * Three sections, because a page asking for help should be shorter than the
- * help it asks for. What is worth sending sits in the opening section as prose
+ * Two sections, because a page asking for help should be shorter than the help
+ * it asks for. What is worth sending sits in the opening section as prose
  * rather than a list; the three open questions stay at length, because they are
  * the specific ask and each one carries its source.
  *
@@ -58,10 +57,10 @@ export const contribute: PageModule = {
           </p>
           <p>
             The readers most likely to catch what is wrong here are the ones
-            who work in the fields this site covers:
-            seismology and geotechnical engineering, water and sewer, power, gas,
-            telecommunications, transport, fuel and food supply, housing, health
-            care and emergency management.
+            who work in the fields this site covers: seismology and geotechnical
+            engineering, water and sewer, power, gas, telecommunications,
+            transport, fuel and food supply, housing, health care and emergency
+            management.
           </p>
           <p>
             The fastest thing to act on is one line saying which claim on the
@@ -110,28 +109,6 @@ export const contribute: PageModule = {
           <p>
             If one of those has been answered somewhere and this site has missed
             it, that is the most valuable thing anyone can send.
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "What happens to what you send",
-      body: (
-        <Prose>
-          <p>
-            A document that checks out gets a key in the{" "}
-            <Link href="/sources/" className={link}>
-              source register
-            </Link>
-            , and the claim it supports gets a marker pointing at it. A document
-            that contradicts something already on the site is the better outcome
-            of the two: the page changes, and what it used to say is not left
-            standing anywhere.{" "}
-            <Link href="/method/" className={link}>
-              How the bands work
-            </Link>{" "}
-            sets out the rest of that discipline.
           </p>
         </Prose>
       ),
