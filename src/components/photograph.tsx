@@ -55,6 +55,16 @@ export function Photograph({
        * Hosted under `public/media/`, never hot-linked. The figures rule that
        * nothing is fetched at runtime holds for photographs too, and a link to
        * another host would break the credit the day that host moved the file.
+       *
+       * `object-contain` rather than `object-cover`, and the reason is the
+       * licence rather than the layout. The frame takes its shape from `ratio`
+       * in the register, which is a number a person typed. Both rows carried
+       * 3 / 2 for 4 / 3 files until someone opened them. Under `cover` a wrong
+       * ratio crops the photograph and says nothing, and a crop of a
+       * share-alike or no-derivatives image is an unannounced derivative. Under
+       * `contain` the same mistake letterboxes instead: identical rendering
+       * when the ratio is right, and a visible defect rather than a quiet
+       * licence breach when it is wrong.
        */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -63,7 +73,7 @@ export function Photograph({
         loading="lazy"
         decoding="async"
         style={photo.ratio ? { aspectRatio: photo.ratio } : undefined}
-        className="block w-full object-cover"
+        className="block w-full object-contain"
       />
     </Figure>
   );

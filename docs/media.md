@@ -108,6 +108,15 @@ it, no use inside a composite. Straight resizing is not a derivative. Publish at
 the file's own aspect ratio, as an inline figure, and record "No changes made."
 in the credit.
 
+**The crop nobody means to make.** `ratio` on a register row is a number a
+person typed, and the frame takes its shape from it. Both rows carried 3 / 2 for
+4 / 3 files until somebody opened them. So the component uses `object-contain`
+rather than `object-cover`: with the right ratio the two render identically, and
+with the wrong one `contain` letterboxes where `cover` would crop and say
+nothing. A crop is a derivative, and an unannounced derivative of a share-alike
+or no-derivatives photograph is a licence breach rather than a layout defect.
+The rule is to measure the file, but the failure mode should not be silent.
+
 ---
 
 ## Register
