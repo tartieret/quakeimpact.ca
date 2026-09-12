@@ -4,7 +4,7 @@
 
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
-> **Last copy pass:** 10 September 2026.
+> **Last copy pass:** 12 September 2026.
 
 The site's words. One file per page, named for its route.
 
@@ -48,6 +48,9 @@ label or an alt text.
 | [`outside-help.md`](outside-help.md) | `/after/outside-help/` | `../research/systems/outside-help.md` |
 | [`getting-around.md`](getting-around.md) | `/getting-around/` | `../research/mobility.md` |
 | [`prepare.md`](prepare.md) | `/prepare/` | `../research/preparedness.md` |
+| [`dependencies.md`](dependencies.md) | `/dependencies/` | `../site-overview.md` §5, "Centrepiece" |
+| [`contribute.md`](contribute.md) | `/contribute/` | `../site-overview.md` §7 |
+| [`about.md`](about.md) | `/about/` | `../site-overview.md` §1 and §2 |
 
 `shaking.md` and `after.md` are the index pages for parts one and two, and each one
 is shorter than the pages it points at. The four pages under them that follow ground
@@ -73,7 +76,6 @@ lede: <the standfirst, one or two sentences>
 bands: { cascadia: high, crustal: high }
 mechanism: <the one sentence that sits in the impact cell>
 source: MV-WATER-22
-status: draft
 ---
 
 ## A heading that reads as a sentence about the world
@@ -104,10 +106,17 @@ the page is about, but do not expect to find it rendered.
 `source` is the third of the three fields `Impact` in `src/content/types.ts`
 requires, alongside the band and the mechanism sentence. It is one key, the one the
 mechanism sentence rests on, and it is not the same list as **Sources on this page**.
-The ten system files written most recently carry it; `water.md`, `electricity.md`
-and `transportation.md` carry `bands` and `mechanism` and do not yet carry
-`source`, and the keys they need are in the assignment table in
-`../research/impact-bands.md`.
+All thirteen system files carry it.
+
+`outside-help.md` is the one file whose front matter does not fit that shape. Its
+two columns carry different mechanism sentences and its Low column carries an
+`Impact.evidence` guard, so it writes `mechanism-cascadia`, `mechanism-crustal` and
+`evidence-crustal` instead of one `mechanism`. `src/content/site.ts` is where those
+three strings live.
+
+There is no `status` key. It was on every file here, including the written ones,
+which meant it recorded nothing. An unwritten page declares itself in the content
+model, not in the copy: see **What is not written yet** below.
 
 The rest of a system's entry stays in `src/content/site.ts` and has no front-matter
 key: the slug, the phase it bites at, what it depends on, and its build tier.
@@ -135,16 +144,22 @@ key: the slug, the phase it bites at, what it depends on, and its build tier.
 
 ## What is not written yet
 
-The dependency graph, and the about, sources and contribute pages.
+Nothing. Every page is written: all five under `/shaking/`, all thirteen systems
+under `/after/`, and the reference pages. The system pages are ordered above as
+they are ordered in `SYSTEMS` in `../../src/content/site.ts`, which is the order a
+reader meets them in.
 
-Every page in both parts is written: all five under `/shaking/`, and all
-thirteen systems under `/after/`. The system pages are ordered above as they are
-ordered in `SYSTEMS` in `../../src/content/site.ts`, which is the order a reader
-meets them in.
+`/sources/` and `/licences/` are the two pages with no file here, and that is by
+design: both render from the generated register in
+`../../src/content/references.ts`, and a hand-typed list beside it would be a
+second source of truth. Their words live in their route templates,
+`../../src/app/sources/page.tsx` and `../../src/app/licences/page.tsx`, and the
+style guide governs them like any other page.
 
 [`unwritten.md`](unwritten.md) is therefore standing text no page currently
 shows. It stays, because a page can be returned to draft while its text is under
-revision.
+revision: `status: "draft"` goes on the system in `../../src/content/site.ts`, on
+the entry in `SHAKING_PAGES`, or on a page module's `meta`.
 
 Dams carries no band in either column, and port, airport and ferry terminals
 carries none in the crustal column. Both pages are written and say so in the

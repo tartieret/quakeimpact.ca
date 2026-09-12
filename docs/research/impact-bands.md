@@ -30,12 +30,12 @@ source that `ImpactCell` requires, and a reconciliation against what
 | Transportation | High | High | The province designates routes that must stay open after a major earthquake, and states that it is not retrofitting the bridges on them to stay open. | [MOTI-SRDC-05] **[A]** |
 | Large infrastructure | **Medium** | Not yet assessed | Modelling for an M9 puts one to two weeks of service disruption at some Vancouver-area ports, road access to the airport cut in the first critical days because every bridge to it is damaged, and moderate liquefaction damage at the delta terminals. | [AIR-2013] **[A]** |
 | Fuel | High | High | Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable. | [PEIRS] **[A]** |
-| Food | High | High | The province expects the fast-moving consumer goods network to take weeks or months to recover; the problem is logistics rather than stock. | [PEIRS] **[A]** |
+| Food | High | High | The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods, toiletries and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them. | [PEIRS] **[A]** |
 | Natural gas | High | High | Gas is the one utility that cannot be restored in bulk: service returns only when a technician has entered every affected building and relit every appliance. | [BCUC-C-6-25] **[B]** |
-| Dams and reservoirs | Not yet assessed | Not yet assessed | Both dams were reviewed by an engineer in 2024, as the law requires every seven years for the top consequence class, and neither review identified an unsafe or unacceptable condition, but neither published conclusion mentions earthquakes, and the seismic upgrade has not started. **Assessed, but not for this.** | [MV-DSP-2026] [MV-CAPITAL-2027] **[A]** |
+| Dams and reservoirs | Not yet assessed | Not yet assessed | Both dams were reviewed by an engineer in 2024, as the law requires every seven years for the top consequence class, and neither review identified an unsafe or unacceptable condition, but neither published conclusion mentions earthquakes. **Assessed, but not for this.** The capital status, Cleveland not started and scheduled 2028 to 2034, is a separate document and is not in the mechanism sentence. | [MV-DSP-2026], with [MV-CAPEX-2026] for the capital status **[A]** |
 | Housing | High | High | Displacement is counted in the tens of thousands of households, there is no published shelter capacity to receive them, and cordoning removes people from homes that survived. | [PEIRS] [COV-RISK-2024] **[A]** |
-| Health care | Medium | Medium | About 65% of one health authority's buildings would likely be completely damaged at the ground motion the current code designs for, and no published document compares the casualty load to regional bed capacity. | [DCRRA-APPC] **[A]** |
-| Where help comes from | High | Low | BC's plan assumes agencies outside the impact area are unaffected and stages resources there; in a Cascadia event the province states the US will be unable to deliver mutual aid. | [PEIRS] **[A]** |
+| Health care | Medium | Medium | About 65% of one health authority's buildings would likely be completely damaged at the ground motion the current code designs for, and no government or health authority has compared the casualty load to regional bed capacity. Peer-reviewed engineering work has. | [DCRRA-APPC] **[A]** |
+| Where help comes from | High | Low | Two mechanisms, one per column, plus a guard on the Low. The Cascadia cell: the province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states the United States will be unable to deliver mutual aid. The crustal cell: the same assumption, and a local crustal earthquake is the case where it holds, with `Impact.evidence` recording that this is a planning assumption the province states rather than a measured finding. See `src/content/site.ts` for both. | [PEIRS] **[A]** |
 
 **Weather is not in the table, and should not be.** It is a scenario condition, not
 a system. It is now carried on `Scenario.conditions` and rendered by `TimelineStrip`
@@ -48,7 +48,11 @@ the grid does and weather never failed at all.
 
 ## Reconciliation against `src/content/site.ts`
 
-**Closed 11 September 2026.** `SYSTEMS` now matches this file row for row. The
+**Closed 11 September 2026, with one exception noted below.** `SYSTEMS` matches this
+file row for row on bands and source keys. It does not match on shape: `Impact` carries
+one mechanism per column plus an optional `evidence` guard, and this table has a single
+mechanism column, so the asymmetric rows (where help comes from, port and airport) are
+summarised here and written out in the code. The
 table below is the state after the change, kept so the assignment can be checked
 against the code without reading both.
 
@@ -78,12 +82,6 @@ row resolves to two.
 The four rows that already agreed — electricity, water, sanitation, housing — were
 replaced along with the rest. A right answer arrived at by scaffolding is still a
 defect, because the next scaffolded value will not be lucky.
-
-**What did not move.** `Impact.mechanism` is still `loremLine()` and `Impact.source`
-is still `"TBD"` in every cell. The mechanism column above is the raw material for
-those fields, but it is research prose and does not ship as written — see
-`CONVENTIONS.md` and the copy pass. A band on the site today is a sourced judgement
-inside placeholder text, and the page must not be read as finished.
 
 **Build tiers moved with the bands.** Health care went from tier 3 to tier 2 and gas
 entered at tier 2, following the "Then" list in `build-order.md`. Where help comes

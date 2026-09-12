@@ -2,12 +2,11 @@
 route: /after/housing/
 title: Housing
 nav: Housing
-hook: Most people who lose their home lose it to a cordon around a building that is still standing.
+hook: Most people who cannot go home would have a home still standing.
 lede: The province's planning scenario puts 70,000 households out of their homes in Greater Vancouver after a magnitude 7.0 crustal earthquake. [PEIRS] Most of those homes are still standing. In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years. [COV-RISK-2024]
 bands: { cascadia: high, crustal: high }
 mechanism: In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.
 source: COV-RISK-2024
-status: draft
 ---
 
 ## The first thing that happens to a home is that somebody has to come and look at it
@@ -46,16 +45,14 @@ would stay inaccessible for an extended period. [COV-EXPLORER-25] [COV-FACTSHEET
 
 ## A home with no water and no sewer is a home nobody can live in
 
-A green placard is not the end of it. "Disruption to water and wastewater systems are expected
+A green placard, meaning the building may be occupied, is not the end of it. "Disruption to water and wastewater systems are expected
 for many months following the event." [PEIRS] That is the province's own sentence, and it
 covers a household whose building was never damaged at all.
 
 A home runs on [water](/after/water/), [sanitation](/after/sanitation/) and
-[electricity](/after/electricity/). Each comes back on its own schedule, and a household waits
-on the slowest of the three. A lift needs power, and flushing needs water somebody has to
-spare. A building can pass its inspection and still have nothing coming out of the tap.
+[electricity](/after/electricity/). Each comes back on its own schedule, and a household waits on the slowest of the three: a lift needs power, and flushing needs water somebody has to spare.
 
-## Three bodies count the displaced, and they are counting three different things
+## Five published displacement figures, and no two of them count the same thing
 
 | Where | Scenario | What is counted | Figure |
 | --- | --- | --- | ---: |
@@ -121,8 +118,7 @@ assessment, and shelter for evacuees." [PEIRS]
 
 ## What you can do
 
-A cordon and a yellow tag are both measured in weeks and months, and the province says the plan
-for where people go next is still to be written. [PEIRS]
+In Vancouver a closed block can stay closed for weeks, months or even years, [COV-RISK-2024] and the province lists the plan for where people go next as work still to be done. [PEIRS]
 
 **Find out when your building was put up, what it is built of, and what ground it stands on.**
 Your landlord, your strata or your municipality can tell you. Age and type are what the City's

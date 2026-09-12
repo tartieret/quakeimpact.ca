@@ -4,7 +4,6 @@ title: Fire following
 nav: Fire following
 hook: The fires that start once the shaking stops, and the separate water system built to fight them.
 lede: An earthquake starts fires in the same minutes that it breaks the pipes used to put them out. A study for the Institute for Catastrophic Loss Reduction modelled that for the Lower Mainland, and found the closer, smaller earthquake far worse than the offshore one.
-status: draft
 ---
 
 ## The shaking stops and the fires start
@@ -12,10 +11,8 @@ status: draft
 Fires after an earthquake do not start in one place. They start in many buildings at
 once, in the ordinary things that run through a home. In the modelling for the Lower
 Mainland, about half of the ignitions are electrical and about a quarter gas-related.
-[SCAWTHORN-2020] About half begin in single-family houses and another 26 per cent in
-apartments, so "about 70% of all ignitions occur in residential occupancies".
-[SCAWTHORN-2020] That split comes from what was counted after the 1994 Northridge
-earthquake in California, applied here rather than measured here. [SCAWTHORN-2020]
+[SCAWTHORN-2020] About half begin in single-family houses and another 26 per cent in apartments. The study's own summary is that "about 70% of all ignitions occur in residential occupancies".
+[SCAWTHORN-2020] That split comes from what was counted after the 1994 Northridge earthquake in California, in the United States, applied here rather than measured here. [SCAWTHORN-2020]
 
 Almost half of the fires an earthquake would start anywhere in British Columbia would
 start in Metro Vancouver, with the heaviest concentration in the central business
@@ -58,7 +55,6 @@ reduce functionality to a great degree, for several hours or more." [SCAWTHORN-2
 
 ## Fire loss follows how close the earthquake is, not how big it is
 
-The offshore earthquake everyone has heard of is the smallest fire event of the set.
 The modelled fire loss for the magnitude 9.0 Cascadia earthquake is $162 million. For a
 magnitude 7.3 crustal earthquake in the Georgia Strait, close to downtown, it is $10.7
 billion, about 66 times as much. [SCAWTHORN-2020]
@@ -129,7 +125,7 @@ ordinary water mains. The pumps have never had to draw seawater for a fire. [VIA
 The City's Hazard and Risk Explorer describes the system at length: built to withstand
 the largest earthquake considered credible for the region, able to draw fresh or salt
 water, hardened mains, "hydrants (the big, blue ones)", two high-capacity pump stations,
-and built on the lesson of the San Francisco fire of 1906. [COV-EXPLORER-25] It names no
+and built on the lesson of the 1906 fire in San Francisco, in the United States. [COV-EXPLORER-25] It names no
 coverage area.
 
 The coverage sentence exists, on a different page, filed under what the City has built

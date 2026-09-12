@@ -2,9 +2,9 @@
 route: /getting-around/
 title: Moving after the shaking
 nav: Getting around
+kicker: After the shaking
 hook: British Columbia's plan is that people stay where they are, and that the roads are used for something else.
 lede: Two provincial emergency plans assume people will not drive out of the region after a major earthquake. Both direct the public to shelter where they are.
-status: draft
 ---
 
 ## The province plans on people staying
@@ -39,8 +39,9 @@ strength and behaving like a liquid while the ground shakes.
 > North Arm of the Fraser to the south, and the land connection runs eastward through
 > Burnaby and New Westminster.
 >
-> **Richmond and Delta are reached only by bridges and a tunnel.** There is no land
-> route onto Lulu Island or Sea Island.
+> **Richmond is reached only by bridges and a tunnel.** There is no land route onto
+> Lulu Island or Sea Island. South of the Fraser, Delta connects by land eastward to
+> Surrey.
 >
 > **The North Shore has two vehicle crossings**, with mountains behind it.
 
@@ -53,8 +54,7 @@ approaches sit on, is the subject of
 The signs stand on roads across the region. A network of provincial and municipal
 roads was designated in 1995 across Metro Vancouver and Greater Victoria to move
 emergency responders and supplies. [PITTMDW-DRR] The routes are open to everyone until
-a state of emergency is declared, and then they are activated and controlled. Users
-must carry both government-issued photo identification and employment identification.
+a state of emergency is declared, and then they are activated and controlled. Authorised users must carry both government-issued photo identification and employment identification.
 [DRR-GOVPAGE]
 
 **The official instruction to the public is to get off the route as soon as
@@ -98,7 +98,7 @@ assessments have deemed the damaged routes safe for emergency use." [DRT-PRIMER-
 > **Not yet established.** There is no public forecast of how long any named Lower
 > Mainland corridor would be closed. What is published is the framework for reopening
 > them [DRT-PRIMER-18] [MV-DEBRIS-17], and, separately, the lane and restoration
-> targets a new structure is designed against, which are set out in
+> targets a new lifeline crossing is designed against, which are set out in
 > [transportation](/after/transportation/). Some regional emergency-management
 > material is withheld by choice: "Due to the sensitive nature of some of our work,
 > some materials are only available upon request." [IPREM-RES]
@@ -106,7 +106,7 @@ assessments have deemed the damaged routes safe for emergency use." [DRT-PRIMER-
 ## Rainfall severed three BC highways in 2021, and reopening them took months
 
 The only measured evidence of how long it takes to reopen a severed highway in this
-province comes from the atmospheric river of November 2021. Every figure below is
+province comes from the atmospheric river of November 2021, a long and heavy rainstorm. Every figure below is
 rainfall damage from that storm. None of it was caused by an earthquake.
 
 - **Highway 5, the Coquihalla.** Closed on 14 November 2021 by that rainfall, with

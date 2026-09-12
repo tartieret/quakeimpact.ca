@@ -4,7 +4,6 @@ title: Life afterwards
 nav: Life afterwards
 hook: Thirteen systems, and the order they come back in is set by what each one is waiting on.
 lede: How long each system is out after the shaking, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.
-status: draft
 ---
 
 ## No system fails by itself

@@ -2,9 +2,8 @@
 route: /shaking/buildings/
 title: Buildings
 nav: Buildings
-hook: Which buildings hold up, which do not, and why the glass and brickwork coming off them is dangerous.
-lede: The City of Vancouver has run three earthquakes through a model of its own buildings, and the nearer, smaller one is the worse one. Most of the city went up before the rules that would have made it safer, and about a tenth of the buildings carry four fifths of the risk.
-status: draft
+hook: Which buildings hold up, which do not, and why the brickwork coming off the older ones is the hazard the City has named.
+lede: The City of Vancouver has run three earthquakes through a model of its own buildings, and the nearer, smaller one is the worse one. Most of the city went up before the rules that would have made it safer, and about a tenth of the buildings carry nearly four fifths of the risk.
 ---
 
 ## In the City's own modelling, the nearer earthquake does more damage than the bigger one
@@ -79,15 +78,13 @@ homes. They account for 45 per cent of all residential displacement in that scen
 The usual line about wood is that it does well in an earthquake, and that line is about
 houses. The engineering analysis behind the City's 2026
 action plan flags wood-frame apartment buildings separately, for walls that are neither
-stiff enough nor strong enough, for being likely uninhabitable after a design-level
-earthquake, and for the risk of the ground floor collapsing where it has been left open
+stiff enough nor strong enough, for being likely uninhabitable after an earthquake of the size new buildings are designed for, and for the risk of the ground floor collapsing where it has been left open
 for tuck-under parking. [COV-PLAN-2026]
 
 Of downtown office towers, 29 per cent are extensively or completely damaged and nearly
 half of the people who use them are displaced for more than 90 days. [COV-RISK-2024]
 
-Federal modelling of a different earthquake, a M7.0 under Vancouver, gives complete
-damage to 26 per cent of wood buildings, 22 per cent of concrete and 19 per cent of
+Federal modelling of the province's own planning earthquake, a magnitude 7.0 in the Strait of Georgia close to the city, gives complete damage to 26 per cent of wood buildings, 22 per cent of concrete and 19 per cent of
 steel, and Natural Resources Canada puts its own caution in the same breath: "Wood is a
 predominant building material in this region, so despite having the highest proportion of
 completely damaged buildings, wood actually performs quite well seismically."
@@ -103,8 +100,7 @@ rather than own, and about 20 to 30 per cent of those renters are low income. Mo
 Indigenous. [COV-RISK-2024] Many single-room-occupancy units, the cheapest housing in the
 city, are in older brick buildings in the Downtown Eastside. [COV-RISK-2024]
 
-A tenant cannot upgrade a building. The people most exposed to this are the people with
-the least say over it.
+A tenant cannot upgrade a building, and in those tracts most people are tenants.
 
 ## A building can come through it and still be somewhere nobody can go back to
 
@@ -117,7 +113,7 @@ Where damage is concentrated, whole areas may be shut "for weeks, months, or eve
 years", and the City's assessment names the West End and the Downtown Eastside.
 [COV-RISK-2024]
 
-The reason is not usually the building. It is the queue. The City tells residents, in the
+Usually it is not the building that keeps people out. It is the queue for someone qualified to come and look at it. The City tells residents, in the
 material written for them, to expect extended inaccessibility of large sections of
 neighbourhoods:
 
@@ -152,12 +148,9 @@ every old commercial block on those streets was built. A parapet is the bit of w
 carries on above the roofline, the part that makes an old shopfront look taller than it is.
 It is held up by gravity and by mortar, and in an earthquake it comes down on the footpath.
 
-Federal modelling of a M7.0 under Vancouver puts 13 million tonnes of mixed debris on the
-ground, and says in the same passage that it is "likely to litter the streets and obstruct
-response operations". [GSC-OF-8853]
+Federal modelling of the province's own planning earthquake, a magnitude 7.0 in the Strait of Georgia close to the city, puts 13 million tonnes of mixed debris on the ground, and says in the same passage that it is "likely to litter the streets and obstruct response operations". Those estimates count shaking damage to buildings and the people in them, and leave out aftershocks, tsunami, landslides, liquefaction and fire, so the agency calls them a minimum. [GSC-OF-8853]
 
-In the 2011 earthquake in Christchurch, New Zealand, 35 of the 42 deaths from building
-failures other than the two tower collapses came from unreinforced masonry façades or
+In the 2011 earthquake in Christchurch, New Zealand, 35 of the 42 deaths from building failures, leaving aside the two office buildings that collapsed outright, came from unreinforced masonry façades or
 walls falling, 26 of them onto people on the street or in vehicles. [NZ-RC-V4] That is
 how people die under falling brick, and it sets no number for Vancouver.
 
@@ -237,9 +230,7 @@ $66 billion and $83 billion. [AIR-2013]
 The same study puts insured loss at $20.4 billion, the covered part of the $62.0 billion
 of direct damage: 32.9 per cent of the direct loss and 27.3 per cent of the total
 economic loss. [AIR-2013] The gap between those two numbers is the part somebody other
-than an insurer pays. In 2025
-the Insurance Bureau of Canada put a M9 at roughly $96 to $100 billion of total economic
-loss and $26 billion insured. [IBC-2025]
+than an insurer pays. In 2025 an Insurance Bureau of Canada vice-president gave a magnitude 9 as roughly $96 to $100 billion of total economic loss and $26 billion insured. No study behind those figures has been published, so whether they are new work or the 2013 study restated is not known. [IBC-2025]
 
 A larger figure gets quoted often and is not a third estimate. The Conference Board of
 Canada's $127.5 billion begins from the AIR study and scales it up: the Board chose an
@@ -247,17 +238,11 @@ insured-loss level of $42 billion in consultation with the Insurance Bureau of C
 assumed total economic losses would grow in line with insured ones, and the research itself
 was funded by the Insurance Bureau of Canada. [CBOC-2016]
 
-Nicholas Le Pan, writing for the C.D. Howe Institute in 2016 on the property and casualty
-industry's own 2013 modelling, gives what Canada's insurers can pay as $30 billion to $35
-billion in claims. [LEPAN-2016] That industry's own later modelling moves the tipping
-point to about $35 billion in its 2020 edition. [PACICC-2026] Both published
-insured-loss estimates, the $20.4 billion of 2013 and the $26 billion of 2025, sit below
-that band on either dating. [AIR-2013] [IBC-2025]
+
 
 About 60 to 65 per cent of homeowners in southwest British Columbia carry earthquake
 coverage, about 70 per cent in Victoria and about 55 per cent in Vancouver, and coverage
-among renters is much lower. [LEPAN-2016] Earthquake cover is generally sold as an
-addition to a home or tenant policy rather than included in it.
+among renters is much lower. [LEPAN-2016]
 
 ## What you can do
 
@@ -270,10 +255,7 @@ the thing to ask about.** The analysis behind the City's action plan names exact
 shape, a ground floor left open for tuck-under parking, as a collapse risk.
 [COV-PLAN-2026]
 
-**Find out whether your household has earthquake coverage.** About 55 per cent of Vancouver
-homeowners do, and among renters it is much lower. [LEPAN-2016] It is usually an addition to
-an existing policy rather than part of it, so the only way to know is to look at the policy
-or ask the insurer.
+**Find out whether your household has earthquake coverage.** About 55 per cent of Vancouver homeowners do and far fewer renters, so it is not something a policy can be assumed to include. [LEPAN-2016] The only way to know is to read the policy or ask the insurer.
 
 **Plan for being locked out of a home that is still standing.** The City tells residents to
 expect extended inaccessibility of large sections of neighbourhoods, and names the demand

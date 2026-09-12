@@ -7,7 +7,6 @@ lede: FortisBC's own planning puts its best rate of relighting gas appliances at
 bands: { cascadia: high, crustal: high }
 mechanism: Gas cannot be restored in bulk: any air drawn into the pipes has to be purged first, and then service returns only as a technician enters each affected building and relights every appliance in it.
 source: BCUC-C-6-25
-status: draft
 ---
 
 ## Gas is the one utility that cannot be turned back on from a control room
@@ -36,7 +35,7 @@ notice.
 
 ## FortisBC's best day is 8,716 relights, and that figure already counts on crews from elsewhere
 
-In March 2026 FortisBC served 583,370 residential gas accounts and 61,348 commercial
+FortisBC told its regulator in March 2026 that it serves 583,370 residential gas accounts and 61,348 commercial
 ones in its Lower Mainland service region. [FEI-LTGRP-26] An account is a meter: a house
 is usually one account, and an apartment building on a central gas boiler is one account
 serving everybody in it.
@@ -82,7 +81,7 @@ technician cannot safely enter and nobody else competing for the same contractor
 the relight rate underneath it is the 8,716 one. Every one of those conditions gets
 worse in an earthquake and none gets better, so those durations are a floor.
 
-Two intervenors told the commission FortisBC was being too cautious: one submitted
+Two of the outside parties in the proceeding told the commission FortisBC was being too cautious: one submitted
 "that FEI's restoration and relight plan is overly conservative", and another argued
 that relighting business and industrial customers earlier "could dramatically reduce
 the GDP losses incurred". The panel found FEI's assumptions "reasonable and
@@ -119,11 +118,13 @@ date for it.
 > would be off in the Lower Mainland after an earthquake, or how much of the region
 > would lose it. The 2024 plan assesses 58 vulnerabilities across FortisBC's system and
 > reports each one under a number rather than a name or a place, so none of its results
-> can be tied to a location. [FEI-RESILIENCY-24] The one it ranks second overall is
-> driven by earthquake lateral spreading, which is saturated ground losing its strength
-> and moving sideways, and it carries a mean total outage of 61 days. Which asset that
-> is, and where it stands, were filed to the commission in confidence and are not
-> public. [FEI-RESILIENCY-24] The plan's own Lower Mainland section describes the
+> can be tied to a location. [FEI-RESILIENCY-24] Its second-largest risk overall sits
+> at an asset FortisBC has not named and whose location it filed to the commission in
+> confidence, so nobody outside the regulator can say whether it serves this region.
+> What is public is the mechanism and the modelled duration: earthquake lateral
+> spreading, which is saturated ground losing its strength and moving sideways, drives
+> most of that risk, and the modelled mean total outage is 61 days.
+> [FEI-RESILIENCY-24] The plan's own Lower Mainland section describes the
 > problem in words and gives no figures.
 
 ## What you can do

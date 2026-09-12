@@ -4,7 +4,6 @@ title: Contribute
 nav: Contribute
 hook: A correction, a document, a pointer to a report that exists, or the read of somebody who does this work for a living.
 lede: A correction, a document, a pointer to a report you know exists, the read of somebody who does this work for a living: all of them are welcome. Something on this site that looks wrong to you is worth sending even when no document comes with it.
-status: draft
 ---
 
 ## Contributions are welcome, and most of all from people who work in these fields

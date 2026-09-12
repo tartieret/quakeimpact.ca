@@ -85,9 +85,10 @@ export interface PageModule {
   sections: PageSection[];
   /**
    * The lever. Every page that describes a consequence carries one: no doom
-   * without a lever. It is optional only because `/method/` describes no
-   * consequence. That page explains the rubric, and a lever written for it
-   * would be a lever written to satisfy a type.
+   * without a lever. It is optional because three pages describe none:
+   * `/method/` explains the rubric, and `/about/` and `/contribute/` describe
+   * how the site is made. A lever written for any of them would be a lever
+   * written to satisfy a type.
    */
   lever?: PageLever;
 }

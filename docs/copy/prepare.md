@@ -4,12 +4,11 @@ title: Preparing
 nav: Preparing
 hook: The province's own plan says family and neighbours are likely to be the only available first responders.
 lede: British Columbia's earthquake guidance asks a household for two weeks of water and food, a written plan, a meeting place and a phone number outside the region. The two things on that list that cost nothing are the two most households have skipped.
-status: draft
 ---
 
 ## The province's plan says family and neighbours are the first responders
 
-From the province's Earthquake Immediate Response Strategy:
+
 
 > "During a disaster, local and provincial government resources will be overwhelmed.
 > In such an event, one's family and neighbours are likely to be the only available
@@ -24,21 +23,14 @@ has no other option.
 
 PreparedBC's Earthquake and Tsunami Preparedness Guide asks for food, water and
 supplies for each person and pet in the home "for at least two weeks, or longer".
-[PREPAREDBC] The support system behind that ask is smaller. The province's Emergency
+[PREPAREDBC] The support system behind that is smaller. The province's Emergency
 Support Services program, which houses and feeds people who have lost their homes, "is
 designed to provide up to 72 hours of support", and the same page says it "is not
 designed for the scope and scale of services required after a catastrophic earthquake".
 [PEIRS]
 
 The City of Vancouver asks for less. It tells residents to gather supplies for "a
-minimum of 3 days, although your target should be a week to 2 weeks"
-[COV-EXPLORER-25], and the worksheet it hands them multiplies four litres by three days
-and stops there. [COV-WORKSHEET-26] Three days is a thin floor for the city that would
-be running the response. The provincial guide's own line is that "It may be weeks before
-infrastructure, utilities and essential services are restored" [PREPAREDBC], and the
-[system pages](/after/) here put several services in weeks to months. This page works to
-two weeks. A reader who has been through those pages should be aiming past it, not at
-three days.
+minimum of 3 days, although your target should be a week to 2 weeks". [COV-EXPLORER-25] The provincial guide written for this hazard asks for at least two weeks, and says in the same breath that "It may be weeks before infrastructure, utilities and essential services are restored". [PREPAREDBC]
 
 ## Write the plan down, and agree where you would meet
 
@@ -119,8 +111,7 @@ rate. [PREPAREDBC] The City of Vancouver prints the same rate. [COV-EXPLORER-25]
 household of four holding two weeks, that is at least 224 litres. That total is
 arithmetic from the published rate rather than a figure either body prints.
 
-Pets are on the same list, at about 30 millilitres of water per kilogram of body weight
-per day. [PREPAREDBC-KIT]
+Pets are on the same list, one grab-and-go bag each and supplies for the same two weeks. [PREPAREDBC-KIT]
 
 Water is bulky. Store it first anyway. The province's 2025 risk assessment says people
 are thirsty within 24 hours, and that distributing bulk drinking water across the
@@ -229,7 +220,7 @@ first responders", and instructions from officials and first responders come fir
 
 ## Stay where you are if the building is safe
 
-The province's instruction for a building that is still sound:
+For a building that is still sound:
 
 > "If your home, apartment or condominium is structurally safe following an earthquake,
 > the best thing you can do is shelter-in-place. In other words – stay where you are.

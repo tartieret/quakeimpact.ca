@@ -5,9 +5,8 @@ nav: Fuel
 hook: A service station with full tanks and no power dispenses nothing.
 lede: The province's earthquake response plan sets fuel apart from the other critical resources, because the distribution of everything else runs on it. [PEIRS] The same plan assumes existing supply chains will be inoperable. [PEIRS]
 bands: { cascadia: high, crustal: high }
-mechanism: Fuel is the resource the repair of every other system runs on, and the province expects supply chains to be inoperable.
+mechanism: Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable.
 source: PEIRS
-status: draft
 ---
 
 ## Fuel is the one resource everything else moves on
@@ -36,8 +35,7 @@ needs a network. A station with full underground tanks hands out nothing while
 the power is off, and neither does an undamaged station the delivery truck cannot
 reach.
 
-What decides whether there is fuel in the first week is not the refinery. It is
-the local feeder and the road. What BC Hydro has published about how long power
+In the first week, fuel arrives or does not arrive on two things: the power line that runs the station's pumps, and the road the tanker comes down. What BC Hydro has published about how long power
 takes to come back is on the [electricity](/after/electricity/) page, and what
 the province expects of the roads is on the
 [transportation](/after/transportation/) page.
@@ -46,15 +44,13 @@ the province expects of the roads is on the
 > published for this region's days of supply come from a single phone interview
 > during a flood. On 21 November 2021, during the flood emergency in the
 > province's southwest, Global News quoted Dan McTeague, president of the
-> advocacy organisation Canadians for Affordable Energy, saying the region goes
-> through about 150,000 barrels of fuel a day and usually maintains a supply to
-> cover four to five days.
-> [FUEL-GN-21] That is one person's remark to a reporter, not a study, and it is
-> five years old. The nearest academic work, a 2016 study of the coastal British
+> advocacy organisation Canadians for Affordable Energy.
+> [FUEL-GN-21] That is one person's remark to a reporter rather than a study, and
+> it predates the 2024 Trans Mountain Expansion. The nearest academic work, a 2016 study of the coastal British
 > Columbia fuel transportation system, gives its figure for Vancouver Island, not
 > for here. [UBC-FUEL] Nothing current has been published for the Lower Mainland.
 
-## British Columbia has already restricted fuel purchases once this decade
+## British Columbia restricted fuel purchases by emergency order in 2021
 
 In November 2021 the province issued an emergency order restricting fuel purchases
 across the southwest of British Columbia. [BC-EMERG-21]
@@ -85,8 +81,7 @@ and it reaches no hospital already open. What Vancouver General, Surrey Memorial
 Burnaby, Lions Gate, Richmond or St. Paul's on Burrard hold in their tanks is not
 in the public record.
 
-Seventy-two hours is the point at which the plan for a new hospital expects a
-delivery to arrive.
+
 
 ## Every crew repairing everything else is queuing for the same fuel
 
@@ -104,7 +99,7 @@ operating at a much-reduced capacity for an extended period (weeks to months)",
 and on the rail network being "largely unusable during the immediate response
 phase". [PEIRS] Road and rail are the two ways fuel moves in quantity.
 
-> **Out of region.** After the 2011 Great East Japan Earthquake, the Pacific-coast
+> **Japan, 2011.** After the 2011 Great East Japan Earthquake, the Pacific-coast
 > oil bases that supplied the Tōhoku region "stopped operating and were unable to
 > ship existing inventory", in the words of a briefing by Japan's Agency for
 > Natural Resources and Energy to the Cabinet Office's disaster management
@@ -116,8 +111,7 @@ phase". [PEIRS] Road and rail are the two ways fuel moves in quantity.
 
 ## What you can do
 
-Fuel is the one thing here a household cannot store its way out of. What helps is
-decided before the earthquake.
+A household cannot stock its way through a fuel shortage. What helps is decided before the earthquake.
 
 **Keep the tank above half.** The fuel already in the car is the fuel you can
 count on when the pumps have no power, and half a tank costs nothing to carry.
@@ -127,8 +121,7 @@ you would need to get to are within walking or cycling distance, and keep a
 bicycle in working order if you have one. What the province plans for people
 while the crossings are shut is in [getting around](/getting-around/).
 
-**Do not store fuel at home.** It is a fire risk, and a can in the garage is no
-answer to a disruption the province measures in weeks to months. [PEIRS]
+**Do not store fuel at home.** It is a fire risk, and a can in the garage is no answer to roads the province plans on running at much-reduced capacity for weeks to months. [PEIRS]
 
 None of this makes the fuel come back sooner. It decides how much of your week
 depends on it.

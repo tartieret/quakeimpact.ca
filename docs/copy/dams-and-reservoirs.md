@@ -5,9 +5,8 @@ nav: Dams and reservoirs
 hook: Both dams were reviewed by an engineer in 2024, and neither published conclusion mentions earthquakes.
 lede: Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition. [MV-DSP-2026] Neither published conclusion mentions earthquakes, and the seismic upgrade has not started. [MV-CAPEX-2026]
 bands: { cascadia: unknown, crustal: unknown }
-mechanism: Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes, and the seismic upgrade has not started.
+mechanism: Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes.
 source: MV-DSP-2026
-status: draft
 ---
 
 ## Two of the dams holding Metro Vancouver's drinking water are in the province's top consequence class

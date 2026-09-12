@@ -2,15 +2,14 @@
 route: /after/large-infrastructure/
 title: Port, airport and ferry terminals
 nav: Port, airport and ferries
-hook: The airport's weak point is not the runway. It is every bridge onto Sea Island.
+hook: Everything that drives to the airport crosses a bridge, and the model expects every one of them damaged.
 lede: Goods and people reach this region through a small number of very large places, and there is no local substitute for any of them. Modelling of a magnitude 9 megathrust expects road access to Vancouver International Airport to be cut for the first few critical days, because every bridge leading to it is damaged, and service at some Vancouver-area ports disrupted for one to two weeks. [AIR-2013]
 bands: { cascadia: medium, crustal: unknown }
 mechanism: Modelling of a magnitude 9 megathrust puts one to two weeks of disrupted service at some Vancouver-area ports, road access to the airport cut for the first few days because every bridge leading to it is damaged, and moderate liquefaction damage at the port areas on the delta.
 source: AIR-2013
-status: draft
 ---
 
-## Road access to the airport is expected to be cut for the first few days, because every bridge onto Sea Island is damaged
+## Modelling of a megathrust expects road access to the airport cut for the first few days, because every bridge onto Sea Island is damaged
 
 Vancouver International Airport sits on Sea Island, in the mouth of the Fraser.
 Everything that drives to it crosses a bridge.
@@ -76,7 +75,7 @@ complete". It also records that while the city's economy had largely recovered b
 business to other Asian ports". [RMS-KOBE] Kobe is an illustration, and it forecasts
 nothing here.
 
-Shipping lines route around a closed port, and some of them do not come back.
+
 
 ## The ferry terminal on the delta is the one with no published seismic assessment
 
@@ -100,8 +99,7 @@ where the vessels get fixed.
 
 ## Nobody has published an assessment of the terminals that are working today
 
-None of the figures above comes from anyone inspecting a wharf, a crane or a runway. They
-are the output of a catastrophe model that AIR Worldwide ran in 2013 for the Insurance
+None of the figures above comes from anyone inspecting a wharf, a crane or a runway. They are the output of a catastrophe model, a computer simulation insurers use to estimate what an event would cost, which AIR Worldwide ran in 2013 for the Insurance
 Bureau of Canada, against the infrastructure as it stood then. [AIR-2013] No operator,
 regulator or engineer has published an assessment of the terminals, container cranes,
 pile-supported wharves or runways that are in use.
@@ -115,8 +113,7 @@ access to the terminal due to failure of the existing causeway". [RBT2-PANEL-20]
 in is the weak point there too.
 
 A consulting engineer's curriculum vitae, filed with that same panel, records seismic and
-liquefaction assessment work on the Deltaport Berth 3 expansion. [RBT2-CVS-19] The work
-was done. The findings were not published.
+liquefaction assessment work on the Deltaport Berth 3 expansion. [RBT2-CVS-19] The findings were not published.
 
 > **Not an engineering assessment.** Every duration on this page for the port and the
 > airport comes from that one model run, against the infrastructure as it stood thirteen
@@ -126,9 +123,7 @@ was done. The findings were not published.
 
 The band for the megathrust rests on that one study, and the study modelled the magnitude
 9 megathrust and nothing else. [AIR-2013] What the port, the airport and the ferry
-terminals would face in a shallow crustal earthquake close to the city has not been
-published by anyone. The hatched column beside it says that, and not that the nearer
-earthquake would be gentler.
+terminals would face in a shallow crustal earthquake close to the city has not been published by anyone. So the crustal earthquake carries no band on this page, because there is nothing to band, and that is a statement about the public record rather than about the nearer earthquake being gentler.
 
 The province's crustal planning scenario does name two of them, as exposure and not as
 damage: "Liquefaction of roadways in Richmond and Delta may make driving difficult, which

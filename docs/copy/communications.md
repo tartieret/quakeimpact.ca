@@ -2,12 +2,11 @@
 route: /after/communications/
 title: Communications
 nav: Communications
-hook: Nothing requires a cell site to hold any backup power at all.
+hook: No rule says how long a cell site has to keep running without the grid.
 lede: The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel. [DCRRA-2025] No rule sets how long a cell site has to hold backup power, and the regulator that would set one is still asking what it should be. [CRTC-2025-226]
 bands: { cascadia: medium, crustal: medium }
 mechanism: The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel and a prolonged lack of access for everyone else; it names satellite phones and amateur radio as the backups people would fall back on.
 source: DCRRA-2025
-status: draft
 ---
 
 ## The network fills up before anything is broken
@@ -28,12 +27,11 @@ earthquake in 2015. The vast majority of those calls were not emergencies."
 [ECOMM-EQ] That is a count from one small earthquake, not a forecast for a large
 one. [ECOMM-EQ]
 
-## Nothing requires a cell site to hold any backup power at all
+## No rule says how long a cell site has to keep running without the grid
 
 A cell site is a radio and a computer in a cabinet, usually on a rooftop or at the
 foot of a mast, and both run on grid power. When the power goes, the site runs on
-whatever battery or generator its owner chose to put there. How long the grid takes
-to come back is on [electricity](/after/electricity/).
+whatever battery or generator its owner chose to put there. How long the grid takes to come back is on [electricity](/after/electricity/), and a generator runs as long as somebody keeps delivering [fuel](/after/fuel/).
 
 No Canadian rule sets how long that battery has to last. On 4 September 2025 the
 Canadian Radio-television and Telecommunications Commission, the federal telecom
@@ -112,16 +110,13 @@ Earthquake Early Warning has been live in British Columbia since spring 2024,
 delivered over the national public alerting system. [NRCAN-EEW] BC Emergency Alert
 reaches a phone only over a live LTE cellular network. [BC-ALERT-2026]
 
-How much warning there is depends on how far away the earthquake starts, and Natural
-Resources Canada, which runs the system, publishes no general figure.
-[NRCAN-EEW-FAQ] It models named earthquakes instead, and Vancouver appears in three
-of them.
+How much warning there is depends on how far away the earthquake starts. Natural Resources Canada, which runs the system, publishes only "seconds to tens-of-seconds" and says the number depends on distance. [NRCAN-EEW-FAQ] It models named earthquakes instead, and Vancouver appears in three of them.
 
 | Modelled earthquake | Warning for Vancouver |
 | --- | --- |
 | Magnitude 9 Cascadia megathrust | 21 to 239 seconds, "due to the variation in possible ruptures along the CSZ" [NRCAN-EEW-CSZ-23] |
 | 1946 magnitude 7.3 on central Vancouver Island | About 40 seconds [NRCAN-EEW-1946-21] |
-| 2001 magnitude 6.8 Nisqually, 52 km deep | 30 seconds [NRCAN-EEW-NISQ-26] |
+| 2001 magnitude 6.8 Nisqually, in Washington State, 52 km deep | 30 seconds [NRCAN-EEW-NISQ-26] |
 
 For a shallow earthquake directly under a city, the closest case it has modelled is
 Victoria, where near the epicentre "alerts would have very short warning times, or

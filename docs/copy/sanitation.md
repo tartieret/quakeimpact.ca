@@ -7,7 +7,6 @@ lede: A toilet needs water to flush. The province expects disruption to water an
 bands: { cascadia: high, crustal: high }
 mechanism: The province expects disruption to water and wastewater systems for many months; Metro Vancouver has built individual treatment plants to a post-disaster standard, which is not the same as making the network that feeds them survive.
 source: PEIRS
-status: draft
 ---
 
 ## A toilet needs water to flush, and in an apartment tower there is nothing else to use
@@ -32,7 +31,7 @@ Four litres covers drinking and washing. There is nothing in it for a toilet.
 event." [PEIRS] That is the Provincial Earthquake Immediate Response Strategy, the
 province's own plan, and wastewater is named in it.
 
-It covers the whole affected region, with no municipality broken out. Water and
+The province wrote it for its shallow crustal M7 planning scenario, and has published nothing equivalent for the megathrust. It covers the whole affected region, with no municipality broken out. Water and
 wastewater are merged into one sentence, so it does not say whether one returns before
 the other, and it does not separate the treatment plants from the pipes.
 
@@ -53,8 +52,7 @@ The Provincial Earthquake Immediate Response Strategy, on disrupted waste collec
 Inadequate disposal is the step between a collection service that has stopped and a risk
 to health, and it is the one link in the chain a household can act on.
 
-Waste collection is the garbage as well as the sewage, and a garbage truck needs roads
-and fuel like everything else on a road. Shelters are where the province names the risk,
+Waste collection is the garbage as well as the sewage, and a garbage truck needs roads and fuel like every other repair in this section. Shelters are where the province names the risk,
 because that is where people are gathered together.
 
 The 2011 earthquake in Christchurch, New Zealand, shows what a failed collection system
@@ -75,7 +73,7 @@ secondary treatment plant, the new Hollyburn pump station, and the Sperling and
 Sapperton pump stations, which were under construction with seismic upgrades.
 [MV-LWMP-BIENNIAL-19]
 
-The work goes one plant and one pump station at a time. Sewage reaches those plants
+The work goes one plant and one pump station at a time. A pump station needs power to run, too. Sewage reaches those plants
 through pipes, and the sewers are the part whose assessed condition is not public.
 
 Annacis Island serves about 1.25 million people across 14 municipalities, and its
@@ -103,9 +101,7 @@ Management*, on a study it commissioned of its own sewers:
 
 The City of Vancouver's Engineering Design Manual has a section headed Seismic Design
 Standards inside its sanitary sewer part, with a parallel one for storm drainage.
-[COV-EDM-26] A designer choosing pipe material and replacement strategy has to work from
-a risk assessment of the ground: how susceptible the soil is to shaking, and its potential
-for permanent ground deformation, which is ground that moves and does not move back.
+[COV-EDM-26] A designer choosing pipe material and replacement strategy has to work from a risk assessment: how important the pipe is, how susceptible the soil is to shaking, and its potential for permanent ground deformation, which is ground that moves and does not move back.
 [COV-EDM-26] The strategies are named too, among them routing mains outside liquefaction
 zones, where saturated soil loses its strength and behaves like a liquid while the ground
 shakes. [COV-EDM-26]

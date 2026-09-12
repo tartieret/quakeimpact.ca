@@ -4,7 +4,6 @@ title: About this site
 nav: About
 hook: Who compiles this, where the facts come from, and what it does not do.
 lede: This site is about the months after a major earthquake in the Lower Mainland rather than the minutes during it. Every claim on it comes from a document somebody else published, and every claim links to that document.
-status: draft
 ---
 
 ## I am a point of contact for my neighbourhood, which is how this started
@@ -31,16 +30,12 @@ any agency, and nothing on it is an official instruction.
 
 Every figure comes from published work: a regulator's filing, a provincial plan, an
 engineering assessment, a peer-reviewed paper. Each one carries a marker that opens
-that document's entry without leaving the page, and the [source register](/sources/)
+that document's entry without leaving the page, and the [sources page](/sources/)
 lists them all. Past earthquakes elsewhere appear too, to show how something fails and
 never to give a number for the Lower Mainland.
 
 The site is not complete, and it could not be. No assessment says precisely how a
-system behaves on the day. Where a figure is missing, the page says so: a system marked
-"Not yet assessed" means nobody has published an assessment, not that the
-infrastructure is fine. A page still marked draft carries its band, the sentence saying
-how the system fails and the document behind it. The text that works through them has
-not been written yet. [How the bands work](/method/) explains the rest.
+system behaves on the day. Where a figure is missing, the page says so: a system marked "Not yet assessed" means no assessment of it has been published, not that the infrastructure is fine. [How the bands work](/method/) explains the rest.
 
 ## Corrections are the most useful thing you can send
 

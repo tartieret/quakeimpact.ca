@@ -57,9 +57,9 @@ The rubric is published on its own page and linked from every impact cell. It is
 
 | Band | Duration | Extent | Dependency |
 |---|---|---|---|
-| **Low** | Hours to a few days | Localised | Restores on its own |
-| **Medium** | Days to weeks | Patchy; worst on poor ground | Waits on one other system |
-| **High** | Weeks to months, sometimes longer | Regional | Blocked by cascading failures and by competition for scarce crews, fuel and materials across the whole coast |
+| **Low** | Hours to a few days | Localised | Comes back on its own |
+| **Medium** | Days to weeks | Patchy, worst on poor ground | Waiting on one other system |
+| **High** | Weeks to months, sometimes longer | Regional | Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast |
 
 A fourth state, **not yet assessed**, is rendered hatched rather than coloured. It is a first-class band, not a gap to be hidden.
 
@@ -98,7 +98,7 @@ The core of the site. Organised as a timeline: hours → days → weeks → mont
 | Dams and reservoirs | Cleveland, Seymour Falls, Coquitlam. Dual-purpose content — they are the water supply and they are a downstream hazard. Metro Vancouver publishes dam safety material |
 | Housing | Tens of thousands displaced from standing but tagged buildings, into a region with no rental slack. Arguably the most underestimated consequence of all |
 | Health care | Surge demand against damaged facilities running on trucked diesel |
-| Where help comes from | Who arrives, from where, and when. Alberta maintains an Earthquake Response Plan for British Columbia; EMBC's own list of applicable agreements names no Alberta instrument. In the Cascadia case the province states the US will be unable to deliver mutual aid |
+| Where help comes from | Who arrives, from where, and when. Alberta maintains an Earthquake Response Plan for British Columbia and does not publish it; EMBC's own schedule of applicable agreements lists a 2007 BC-Alberta memorandum and no earthquake plan. In the Cascadia case the province states the US will be unable to deliver mutual aid |
 
 **Assumption discipline.** The temptation on port, airport and ferry terminals is to write "these would not survive." Do not. YVR has done substantial ground improvement on Sea Island and is better studied than intuition suggests; pile-supported wharves on treated ground do not behave the way a lay reader expects. Port cranes and wharves are a genuine Kobe-style vulnerability, but that has to come from an assessment, not from expectation. If the documents confirm the fear, the claim becomes powerful. If they do not, that is itself worth telling readers — and it protects the credibility of everything else on the site.
 
@@ -114,7 +114,7 @@ This is also the site's worked example of the citation convention — see sectio
 
 **Vancouver is a peninsula, not an island.** Bounded north by Burrard Inlet and south by the North Arm of the Fraser, but connected by land eastward through Burnaby and New Westminster. That land route is the city's real lifeline, and it is worth saying plainly because the intuition is wrong.
 
-**Richmond and Delta are the genuine islands.** Lulu Island and Sea Island hold on the order of a quarter-million people, sitting on the region's worst ground, reached only by bridges and a tunnel whose approaches cross the same liquefiable delta on both banks. Dike performance is a separate question on top.
+**Richmond is the genuine island.** Lulu Island and Sea Island hold on the order of a quarter-million people, sitting on the region's worst ground, reached only by bridges and a tunnel whose approaches cross the same liquefiable delta on both banks. Delta is on the same ground and shares the crossings, but it is not cut off by land: it runs east into Surrey. Dike performance is a separate question on top.
 
 **The North Shore is close behind.** Two vehicle crossings, a passenger ferry, mountains behind. Any narrative about North and West Vancouver being cut off should be checked against the actual seismic assessments of both crossings rather than assumed.
 

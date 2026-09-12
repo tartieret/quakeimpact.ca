@@ -4,7 +4,6 @@ title: The shaking
 nav: The shaking
 hook: The short part, and the one that decides where the damage falls.
 lede: Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives. The shaking is the short part: buildings break, people are hurt, and the fires and landslides come once it stops.
-status: draft
 ---
 
 ## Nobody rides it out standing up

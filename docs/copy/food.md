@@ -5,9 +5,8 @@ nav: Food
 hook: The food that goes first is the food no pantry can hold: meat, produce, dairy and bread.
 lede: The province plans on existing supply chains being inoperable, and on the network that brings meat, fruit and vegetables, dairy and baked goods taking weeks or months to recover. [PEIRS] Nothing is stored for the public to bridge that gap.
 bands: { cascadia: high, crustal: high }
-mechanism: The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them.
+mechanism: The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods, toiletries and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them.
 source: PEIRS
-status: draft
 ---
 
 ## The till, the cold case and the freezer aisle all stop on the same power
@@ -18,8 +17,7 @@ cold.
 
 Chilled and frozen stock is on a clock from the moment the power goes, and a shop that
 cannot take payment cannot sell what is left. All of that happens indoors, before any
-delivery is late. How long the power stays off is
-[electricity](/after/electricity/)'s question.
+delivery is late. What BC Hydro has published about how long the power stays off is on the [electricity](/after/electricity/) page.
 
 Food comes in by truck, over the same roads as everything else, and a truck runs on
 [fuel](/after/fuel/). The province's planning assumptions: "Road, rail, air, and marine
@@ -36,7 +34,7 @@ products, baked goods, toiletries, and cleaning products". [PEIRS]
 
 That list is a grocery shop. Four of the six things the province names are perishable:
 meat, produce, dairy, bread. [PEIRS] Those are exactly the items no household can put
-by. A cupboard of tins answers a short gap; it does not answer weeks or months. [PEIRS]
+by. A cupboard of tins answers a short gap; it does not answer weeks or months.
 
 The other two the province names are toiletries and cleaning products. [PEIRS] They
 travel in the same trucks, they keep indefinitely, and they are the two almost nobody
@@ -65,10 +63,9 @@ That works for a house fire or a flood in one valley. Here it runs through the s
 retailers and the same roads the province expects to be disrupted, [PEIRS] so it is at
 its weakest in exactly the event it is meant to cover.
 
-## A disaster support hub is a meeting point, not a warehouse
+## There is no food waiting in a disaster support hub
 
-Vancouver designates 25 disaster support hubs, the places residents are told to gather
-after a major earthquake. [COV-HUBS] The City's own neighbourhood toolkit describes what
+Vancouver designates 25 disaster support hubs, outdoor gathering places where group lodging and shelter may be provided depending on impacts. [COV-HUBS] The City's own neighbourhood toolkit describes what
 is there: basic items such as pens, whiteboards, signage and a tent, and beyond that
 "the skills, knowledge and supplies that people bring". [COV-RNTOOLKIT-19] A hub is a
 coordination point and can be used to hand things out. There is no food in it waiting.
@@ -107,7 +104,7 @@ treatment, solid waste management, housing, regional parks, and Electoral Area A
 The province tells households to aim to be self-sufficient for up to two weeks. The same
 document says Emergency Support Services is designed to provide up to 72 hours of
 support and "is not designed for the scope and scale of services required after a
-catastrophic earthquake". [PEIRS] Two weeks is the interval to stock against.
+catastrophic earthquake". [PEIRS]
 
 **Build the pantry out of the part that keeps.** Four of the six categories the province
 names are perishable, so the part of the shop a household can hold is the tinned, dried
