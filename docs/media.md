@@ -53,6 +53,15 @@ files itself mentally as somewhere else and stops working. The caption names the
 ground under the camera and the Metro Vancouver ground it stands for, so the
 reader finishes thinking about Richmond rather than about Christchurch.
 
+**The anchor belongs to the run, not to every caption in it.** Where photographs
+sit together, one carries the anchor and the rest join on. The worked example is
+the pair on `/shaking/ground/`: the first names Richmond and Delta, the second
+opens on "the same earthquake", and the two read as one unit. Repeating the
+anchor under each picture, or repeating the analogue rule under each picture,
+stops being discipline and becomes the tic `style-guide.md` §4 describes — which
+is why the analogue rule lives in this file and on `/licences/` rather than under
+every photograph.
+
 **A photograph may not generate a claim.** This is the site's standing rule
 about analogues — `style-guide.md` §10, question 8 — and it bites hardest here,
 because a photograph is the most persuasive thing on a page and the least
