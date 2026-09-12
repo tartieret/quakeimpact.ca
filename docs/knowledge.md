@@ -11,6 +11,51 @@ it was confirmed.
 
 ---
 
+## Three things the page review of 12 September could not settle
+
+**12 September 2026.** A page-by-page review against the style guide, the spec and
+the research files fixed what was fixable. Three items are recorded here instead,
+because each needs a decision rather than an edit.
+
+**The DCRRA licence note and the pages disagree.** `DCRRA-2025` carries
+`licence: "... the facts may be stated and linked to, and nothing may be
+reproduced."` Three sections of two pages reproduce short quotations from it:
+`/after/health-care/` a 57-word block quotation from `DCRRA-APPC` and the
+"thousands of uninjured, distraught people" phrase twice, and
+`/after/communications/` two phrases. The project already decided the same
+question the other way for PEIRS, whose research file says fair dealing covers
+quotation and instructs "Publish it, with attribution, a link and the page
+number." Either the DCRRA note is written too broadly and should say the same, or
+the quotations come off. It is a licensing judgement and the note and the pages
+should not be left contradicting each other.
+
+**`CBOC-2016` is recorded as unretrievable and as held.** `docs/research/sources.md`
+says "**The report itself is not retrievable**" and that every figure comes from
+the press release, `CBOC-2016-PR`. `docs/research/buildings.md` quotes the report
+directly at **[A]** and elsewhere says it "**is held**, but not from a live path",
+via a web archive copy. `/shaking/buildings/` cites `CBOC-2016` for the $127.5
+billion and for the scaling assumption. If the archive copy is held, the register
+note and href should say so, as `AIR-2013` already does. If it is not, the page's
+sentence has to move to `CBOC-2016-PR` or come off.
+
+**The days-of-supply figure: the spec and the research file gave opposite
+instructions.** `site-overview.md` §5 says the Lower Mainland days-of-supply
+figures "have been chased and do not hold up" and to lead with the mechanism
+instead. `research/systems/food-and-fuel.md` permits the figures under four
+guards, all of which `/after/fuel/` met. `CLAUDE.md` makes the overview the spec,
+so the numbers came off and the note keeps the finding, which is the absence. If
+the research file's position is the intended one, the overview is what needs
+amending, or this recurs at the next pass.
+
+**Also recorded, because `research/systems/housing.md` says it lives here and it
+did not.** PEIRS's summary table and its narrative both say 70,000 **households**
+displaced; a logistics footnote at p. 118 says 70,000 displaced **persons**. The
+table and the narrative agree with each other and are preferred. The discrepancy
+is the province's own, it is not resolved, and `/after/housing/` now states it in
+its own verification note rather than leaving it for a reader to find.
+
+---
+
 ## The research register is not the site's bibliography, and `/sources/` was printing it whole
 
 **11 September 2026.** `/sources/` rendered every row of `REFERENCES`, which is generated
