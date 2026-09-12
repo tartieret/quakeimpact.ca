@@ -64,8 +64,9 @@ export const groundConditions: PageModule = {
             Metro Vancouver is built on two very different things. The downtown
             peninsula and the North Shore slopes sit on rock. Richmond, Delta
             and the old filled-in edges of False Creek sit on soft ground the
-            Fraser River laid down. In an earthquake, that difference counts for
-            more than whether your neighbour’s house is newer than yours.
+            Fraser River laid down. Two addresses a few blocks apart can sit on
+            either one, and what the shaking does to a building depends on which
+            of them it is standing on.
           </p>
           <p>
             Two separate things are going on, and they land on different places.
@@ -114,7 +115,7 @@ export const groundConditions: PageModule = {
             <GroundSoilColumn />
           </Figure>
           <Figure
-            alt="Under the downtown peninsula and the North Shore uplands the ground is bedrock, while the soft deposits under the Fraser delta run from less than 20 m to more than 200 m thick. That difference is larger than the difference between one building and its neighbour."
+            alt="Under the downtown peninsula and the North Shore uplands the ground is bedrock, while the soft deposits under the Fraser delta run from less than 20 m to more than 200 m thick. Two addresses a few blocks apart can sit on either one."
             caption={
               <>
                 Two grounds on one depth scale, kept apart because they are two

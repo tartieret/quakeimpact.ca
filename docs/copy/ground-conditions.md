@@ -11,8 +11,9 @@ status: draft
 
 Metro Vancouver is built on two very different things. The downtown peninsula and the
 North Shore slopes sit on rock. Richmond, Delta and the old filled-in edges of False
-Creek sit on soft ground the Fraser River laid down. In an earthquake, that
-difference counts for more than whether your neighbour's house is newer than yours.
+Creek sit on soft ground the Fraser River laid down. Two addresses a few blocks apart
+can sit on either one, and what the shaking does to a building depends on which of them
+it is standing on.
 
 Two separate things are going on, and they land on different places. One belongs to
 the delta. The other is under everybody.
