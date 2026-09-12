@@ -206,15 +206,6 @@ supplies are. It also says to agree and practise how you would contact each othe
 with the details from your pharmacist, and extra medication or supplies where that is
 possible, belong in the same plan. [PREPAREDBC-DISABILITY]
 
-> **Not published.** Vancouver publishes no earthquake preparedness guidance of its own
-> for people with disabilities or mobility limitations, as of September 2026. The
-> province publishes a guide [PREPAREDBC-DISABILITY], North Shore Emergency Management
-> publishes a page on help for people with additional needs [NSEM-KIT], and Richmond
-> Fire-Rescue publishes one on planning for unique needs [RICH-FR]. The nearest thing
-> the City publishes is fire evacuation guidance, addressed to building owners and
-> managers rather than to residents. [COV-FIRESAFE-BO] The City names people with
-> disabilities as a group its own material should reach. [COV-EXPLORER-25]
-
 ## Meet the neighbours, because they are the help that arrives first
 
 The province says it plainly: "the most immediate help will come from those around you",
@@ -331,8 +322,7 @@ reason the province's own plan gives for asking. [PEIRS]
 
 ## Sources on this page
 
-[PEIRS] [PREPAREDBC] [COV-EXPLORER-25] [COV-WORKSHEET-26] [PREPAREDBC-PLAN] [PREPAREDBC-GUIDES]
-[PREPAREDBC-NEIGHBOURHOOD] [RESEARCHCO-PREP-21] [DCRRA-2025] [NRCAN-EEW]
-[PREPAREDBC-KIT] [FBC-EQ] [SURREY-PREP] [PREPAREDBC-DISABILITY] [NSEM-KIT] [RICH-FR]
-[COV-FIRESAFE-BO] [ECOMM-EQ] [COV-HUBS] [DRR-GOVPAGE] [PREPAREDBC-BUDGET]
-[COV-PREPMAIN]
+[PEIRS] [PREPAREDBC] [COV-EXPLORER-25] [COV-WORKSHEET-26] [PREPAREDBC-PLAN]
+[PREPAREDBC-GUIDES] [PREPAREDBC-NEIGHBOURHOOD] [RESEARCHCO-PREP-21] [DCRRA-2025]
+[NRCAN-EEW] [PREPAREDBC-KIT] [FBC-EQ] [SURREY-PREP] [PREPAREDBC-DISABILITY] [ECOMM-EQ]
+[COV-HUBS] [DRR-GOVPAGE] [PREPAREDBC-BUDGET] [NSEM-KIT] [COV-PREPMAIN]

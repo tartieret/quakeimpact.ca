@@ -1,12 +1,6 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import {
-  Figure,
-  Prose,
-  Quote,
-  Subhead,
-  VerificationNote,
-} from "@/components/page-parts";
+import { Figure, Prose, Quote, Subhead } from "@/components/page-parts";
 import { PrepareWaterArithmetic } from "@/components/figures/prepare";
 import type { PageModule } from "./index";
 
@@ -53,13 +47,11 @@ export const prepare: PageModule = {
       "FBC-EQ",
       "SURREY-PREP",
       "PREPAREDBC-DISABILITY",
-      "NSEM-KIT",
-      "RICH-FR",
-      "COV-FIRESAFE-BO",
       "ECOMM-EQ",
       "COV-HUBS",
       "DRR-GOVPAGE",
       "PREPAREDBC-BUDGET",
+      "NSEM-KIT",
       "COV-PREPMAIN",
     ],
   },
@@ -434,22 +426,6 @@ export const prepare: PageModule = {
             where that is possible, belong in the same plan.{" "}
             <Cite id="PREPAREDBC-DISABILITY" />
           </p>
-          {/* The copy's own bold lead is the label, so it is set once rather
-              than printed twice. */}
-          <VerificationNote label="Not published">
-            Vancouver publishes no earthquake preparedness guidance of its own
-            for people with disabilities or mobility limitations, as of
-            September 2026. The province publishes a guide{" "}
-            <Cite id="PREPAREDBC-DISABILITY" />, North Shore Emergency
-            Management publishes a page on help for people with additional needs{" "}
-            <Cite id="NSEM-KIT" />, and Richmond Fire-Rescue publishes one on
-            planning for unique needs <Cite id="RICH-FR" />. The nearest thing
-            the City publishes is fire evacuation guidance, addressed to
-            building owners and managers rather than to residents.{" "}
-            <Cite id="COV-FIRESAFE-BO" /> The City names people with
-            disabilities as a group its own material should reach.{" "}
-            <Cite id="COV-EXPLORER-25" />
-          </VerificationNote>
         </Prose>
       ),
     },

@@ -594,6 +594,14 @@ seconds they buy, water, food and the bag, securing the room, the gas valves, th
 in the household who need more help, the neighbours, staying put, the response routes,
 and building it on no money.
 
+**The disability gap is a finding and not a line on this page. Decided 11 September
+2026.** That Vancouver publishes no earthquake preparedness material for people with
+disabilities, while the province and two neighbouring authorities do, is recorded above
+and stands. It came off `/prepare/` because the section it sat in is the one telling a
+reader how to plan around what their household needs, and a note about which authority
+has failed to publish something is an audit finding in the middle of an instruction. The
+provincial guide the section does use is the one a reader in that position can act on.
+
 **What came off the page in that rewrite**, and where it lives instead: the six-answer
 table and the three wordings of "two weeks" (this file, above); the four-municipality
 comparison (this file, above); Washington's campaign (this file, above); and the school
