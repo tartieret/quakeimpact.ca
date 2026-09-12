@@ -133,12 +133,6 @@ export const contribute: PageModule = {
             </Link>{" "}
             sets out the rest of that discipline.
           </p>
-          <p>
-            Nothing here has been read by an emergency planner, a geotechnical
-            engineer or a utility in the region. Until it has, treat it as one
-            reader’s compilation of public documents: the documents are named,
-            and you can check any of them yourself.
-          </p>
         </Prose>
       ),
     },

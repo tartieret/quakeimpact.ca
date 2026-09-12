@@ -55,10 +55,6 @@ already on the site is the better outcome of the two: the page changes, and what
 used to say is not left standing anywhere. [How the bands work](/method/) sets out the
 rest of that discipline.
 
-Nothing here has been read by an emergency planner, a geotechnical engineer or a
-utility in the region. Until it has, treat it as one reader's compilation of public
-documents: the documents are named, and you can check any of them yourself.
-
 ## Sources on this page
 
 [MV-WATER-22] [MV-DWMP-26] [AIR-2013] [BCH-WESTEND-25]
