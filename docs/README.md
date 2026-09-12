@@ -9,6 +9,7 @@ in version control alongside the code that renders it.
 | `style-guide.md` | How the site sounds and looks: audience, tone, the evidence on fear appeals, sentence-level rules, word list, visual language, accessibility, pre-publication checklist. **Read before writing any page.** |
 | `research/` | The evidence base. One subject per file, with source keys, confidence markers and open questions. Owns **fact**. Start at `research/README.md`. |
 | `licensing.md` | Per-dataset licence status, the attribution strings the site must publish, and the rules for text and figures. **Nothing is reproduced or hosted unless it is cleared here.** |
+| `media.md` | Per-photograph licence status, what a photograph is admitted for, and the credit each one is owed. The same rule as `licensing.md`, applied to images. |
 | `stack-and-structure.md` | How the site is built: stack, routes, content model, and how the principles in the overview are enforced in code. |
 | `knowledge.md` | Working notes that outlive a change: sources, stack quirks, decisions and their reasons. |
 | `research-plan.md` | Where the research stands: what changed, what was corrected, what is decided, what has not been started. **Read this first when picking the project back up.** |
@@ -33,10 +34,11 @@ in version control alongside the code that renders it.
   the date. "Nobody has published this" is a stronger statement than "we did not
   find this" — but only the search earns it. Deliberate non-publication is a
   third thing again, and is worth saying out loud.
-- **Three registers, three homes.** `site-overview.md` §9 registers open
+- **Four registers, four homes.** `site-overview.md` §9 registers open
   *decisions*; `research/open-questions.md` registers open *research questions*;
-  `licensing.md` registers licence status per dataset. When one document closes
-  another's item, say so in both.
+  `licensing.md` registers licence status per dataset; `media.md` does the same
+  for photographs, which arrive on different terms from data and are checked one
+  file at a time. When one document closes another's item, say so in both.
 - **Every document carries a version and a date.** When one supersedes another,
   the superseding document names the file and section, and the superseded item is
   edited in place rather than left standing.

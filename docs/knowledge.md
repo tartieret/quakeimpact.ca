@@ -11,6 +11,58 @@ it was confirmed.
 
 ---
 
+## Photography is admitted, on four conditions, and the first two photographs are not hosted
+
+**12 September 2026.** The style guide ruled photography out entirely — "no
+rubble, no cracked highways, no stock imagery … maps, diagrams and data only" —
+and §8 now carries an exception. Recording it here because `docs/README.md` says
+a style-guide rule is a decision to record rather than an edit to make in
+passing, and because the reasons the old rule gave were good ones that the
+exception has to answer rather than ignore.
+
+**What forced it.** Liquefaction. "The ground behaves like a thick liquid" is an
+accurate sentence, it is not a picture, and a reader who has only ever stood on
+ground that stays put has nothing to attach it to. A diagram cannot carry it,
+because the thing that has to land is that this happens to ordinary streets and
+ordinary parked cars, and a schematic of a street is a drawing of the idea of a
+street. `/shaking/ground/` already says everything a diagram could.
+
+**The four conditions**, in §8 and in `docs/media.md`: the page states the
+mechanism in words first; the photograph shows ground behaviour rather than a
+spectacle; it is named and licensed, read off the source page; and the caption
+frames it as an analogue against named local ground. A fifth rule sits over
+them — **a photograph may not generate a claim**, which is the site's standing
+rule about analogues at its sharpest, because a photograph is the most
+persuasive thing on a page and the least measurable.
+
+**The dramatic image is the one that is not available, and that is a coincidence
+worth not relying on.** The brief that brought these images in records "Car
+swallowed by liquefaction", Phillipstown, as all rights reserved. It is the most
+dramatic photograph in the set and it fails condition two anyway. The rule has
+to hold on its own when a spectacular image is free, which it will be
+eventually.
+
+**Nothing is hosted, and the reason is environmental.** The session that did
+this work had no network route to `commons.wikimedia.org`,
+`upload.wikimedia.org`, `www.flickr.com`, `www.canterburystories.nz` or
+`www.sciencelearn.org.nz` — its egress policy answered 403 to all of them. So no
+file could be downloaded and no licence could be read off a source page. The
+register records what the brief stated and marks it `stated` rather than
+`verified`, and `verified` is the only status that may be hosted. The two slots
+on `/shaking/ground/` say so on the page, name the photographer and the licence,
+and become photographs when someone opens two links and drops two files in.
+`docs/media.md` §"The verification queue" is the list.
+
+**Two things the register does that `references.ts` does not.** It flags
+non-commercial and no-derivatives as data rather than as a note, so "what comes
+off the site if it ever earns money" is a question answered by reading the data
+on the day it is asked. And it is written by hand rather than generated from
+`docs/research/sources.md`, because a photograph is not a source: a reference is
+a document a claim rests on, and a photograph is the one thing on a page that
+must never become one.
+
+---
+
 ## Three things the page review of 12 September could not settle
 
 **12 September 2026.** A page-by-page review against the style guide, the spec and

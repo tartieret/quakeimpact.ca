@@ -142,7 +142,11 @@ The design carries the same argument as the words: serious, quiet, sourced.
 
 **Severity survives without colour.** Bands render as three segments filled 1/2/3 alongside the colour, so the ordinal reads in greyscale, in print, and for colour-blind readers. Never encode meaning in hue alone.
 
-**No disaster photography.** No rubble, no cracked highways, no stock imagery of collapsed buildings. It is emotionally cheap, it is almost always from somewhere else, and it puts us in the register we are trying to avoid. Maps, diagrams and data only.
+**No disaster photography.** No rubble, no collapsed buildings, no stock imagery, no aerial of a flattened district, no casualties, no identifiable person in distress. It is emotionally cheap, it is almost always from somewhere else, and it puts us in the register we are trying to avoid. Maps, diagrams and data, and one exception.
+
+**The exception is a mechanism a reader has never seen.** Amended 12 September 2026. Liquefaction is the case that forced it: "the ground behaves like a thick liquid" is an accurate sentence, it is not a picture, and a reader who has only ever stood on ground that stays put has nothing to attach it to. A diagram cannot do that work, because the thing that has to land is that this happens to ordinary streets and ordinary parked cars. So a photograph may appear on four conditions, all of them: **the page states the mechanism in words first**, and the photograph follows it rather than introducing it; **it shows ground behaviour rather than a spectacle**, which is what rules the dramatic image out even when it is free; **it is named and licensed**, with a photographer, a collection, a licence and a link, all four read off the source page and recorded in `media.md`; and **the caption frames it as an analogue**, naming the local ground it stands for. A photograph that needs none of those is not admitted for being interesting.
+
+**A photograph may not generate a claim.** Section 10's question 8 is about analogues and this is the sharpest case of it, because a photograph is the most persuasive thing on a page and the least measurable. The mechanism carries across; the depth, the number of streets and the time to clear do not, and the caption says so rather than leaving it to be assumed. Every number stays with the document that publishes it.
 
 **Maps show the ground, not the municipality.** A choropleth by city misleads. Municipal outlines are reference, laid over the real variable.
 

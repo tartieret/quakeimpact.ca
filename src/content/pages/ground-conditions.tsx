@@ -1,5 +1,10 @@
 import { Cite } from "@/components/citation";
-import { Figure, Prose, VerificationNote } from "@/components/page-parts";
+import {
+  Figure,
+  Photograph,
+  Prose,
+  VerificationNote,
+} from "@/components/page-parts";
 import {
   GroundBasinAmplification,
   GroundDikeSettlement,
@@ -24,6 +29,15 @@ import type { PageModule } from "./index";
  * them stands in for the map: a schematic of published figures is a drawing of
  * facts, and a map of liquefaction susceptibility is what the site will not
  * make.
+ *
+ * The two photographs do not soften it either, and they are the only two on the
+ * site. This is the page the exception in `docs/style-guide.md` §8 was written
+ * for: "the ground behaves like a thick liquid" is accurate, it is not a
+ * picture, and a reader who has only stood on ground that stays put has nothing
+ * to attach it to. Both are Christchurch in 2011, both follow a mechanism the
+ * prose has already stated and sourced, and both captions say what they are —
+ * an analogue, carrying the mechanism and none of the numbers. The terms are in
+ * `src/content/media.ts` and the reasoning in `docs/media.md`.
  */
 export const groundConditions: PageModule = {
   meta: {
@@ -83,6 +97,36 @@ export const groundConditions: PageModule = {
             like a thick liquid, and engineers call that liquefaction. Buried
             pipes float up, roads sag, foundations tilt.
           </p>
+          <Photograph
+            id="christchurch-cars-in-silt"
+            caption={
+              <>
+                Christchurch, New Zealand, on the day of the 2011 earthquake.
+                The silt came up through the road rather than along it, and the
+                cars are standing in ground that stopped carrying them.
+                Richmond and Delta hold the same two conditions — loose sand
+                that can liquefy, and water close enough to the surface to keep
+                it wet.{" "}
+                <Cite id="JAVANBAKHT-24" /> This is an analogue and not a
+                forecast. The mechanism carries across; no number does, and none
+                is taken from it.
+              </>
+            }
+          />
+          <Photograph
+            id="avonside-road-damage"
+            caption={
+              <>
+                The same earthquake, a suburban street. A road that breaks like
+                this has not cracked from above: the ground beneath it lost its
+                strength and moved, taking the surface and everything buried in
+                it. That is why liquefaction reaches the pipes and the road and
+                not only the building standing on them. An analogue again — what
+                Christchurch lost, and how long it took to get back, says
+                nothing about what Richmond or Delta would.
+              </>
+            }
+          />
           <p>
             Three things have to line up for it, and on the delta all three do:
             a thick layer of the right kind of sand, water close to the surface,
