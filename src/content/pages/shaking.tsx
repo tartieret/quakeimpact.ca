@@ -29,6 +29,7 @@ export const shaking: PageModule = {
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
+      "NRCAN-1700",
       "DCRRA-2025",
       "JAVANBAKHT-24",
       "DCRRA-APPC",
@@ -40,22 +41,50 @@ export const shaking: PageModule = {
 
   sections: [
     {
-      title: "The shaking is the short part",
+      title: "Violent shaking knocks people off their feet",
       body: (
         <Prose>
           <p>
-            In the province’s magnitude 7.0 scenario, an earthquake close to the
-            city, the violent shaking lasts 10 to 20 seconds.{" "}
-            <Cite id="PEIRS" /> In its magnitude 9.0 scenario, the offshore
-            Cascadia earthquake, the main shaking lasts three minutes.{" "}
-            <Cite id="DCRRA-2025" /> Each of those belongs to its own scenario,
-            not to earthquakes in general.
+            Hardly anyone here has felt one, so it is worth saying what it is.
+            The province wrote its own scenario from the inside. Many people
+            hear the earthquake before they feel it, a low rumble like a freight
+            train, and then the violent shaking arrives and knocks the people
+            closest to it off their feet. Unsecured objects fall or fly through
+            the air. <Cite id="PEIRS" />
           </p>
           <p>
-            That is the whole of it. Almost all of the damage is done inside
-            that window, or in the hours just after. Everything else on this
-            site is about the months that follow. What those first seconds look
-            like is on{" "}
+            That is the part to picture, because it is the part nobody has
+            practised. Nobody rides this out standing up, and nobody crosses a
+            room. The floor is moving, and so is everything on it that is not
+            fastened down. <Cite id="PEIRS" />
+          </p>
+          <p>
+            The last Cascadia earthquake left a description of its own. Natural
+            Resources Canada records the oral traditions of First Nations on
+            Vancouver Island, from the night in January 1700: the shaking “was
+            so violent that people could not stand and so prolonged that it made
+            them sick.” <Cite id="NRCAN-1700" />
+          </p>
+          <p>
+            There is one thing to do while it is happening, and the province
+            names it in the same breath as the people it expects to stay
+            upright. Everyone closest is knocked down “except for those who
+            remember to ‘drop, cover, and hold on’”. <Cite id="PEIRS" /> Drop
+            before the shaking drops you, cover, and hold on until it stops. Do
+            not run outside: the province says that many of those who try suffer
+            extreme injury or death from falling and flying objects.{" "}
+            <Cite id="PEIRS" /> That is the whole of the instruction, and it is
+            worth knowing before the day it is needed.
+          </p>
+          <p>
+            Then it is over. In the province’s magnitude 7.0 scenario, an
+            earthquake close to the city, the violent shaking lasts 10 to 20
+            seconds. <Cite id="PEIRS" /> In its magnitude 9.0 scenario, the
+            offshore Cascadia earthquake, the main shaking lasts three minutes.{" "}
+            <Cite id="DCRRA-2025" /> Almost all of the damage is done inside
+            that window, or in the hours just after, and everything else on this
+            site is about the months that follow. The province’s full account of
+            those first seconds is on{" "}
             <Link
               href="/scenarios/"
               className="text-accent underline underline-offset-2"
