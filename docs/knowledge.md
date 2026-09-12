@@ -11,6 +11,39 @@ it was confirmed.
 
 ---
 
+## A control that filters has to filter something the evidence resolves
+
+**12 September 2026.** The site carried one global control: a header-mounted toggle
+between the Cascadia M9 and the shallow crustal M7, persisted to `localStorage`, and
+described in the code as the thing every impact band reads from. Counted rather than
+assumed, four things read it. It swapped the band pill on two of the thirteen system
+cards, one paragraph on the home page, and one weather sentence on the timeline
+strip; the fourth was a second copy of the picker itself.
+
+The reason is in `types.ts` and was already written there: the published work assesses
+a single design earthquake per system, so eleven of the thirteen rows go through the
+`bothScenarios` helper with the same band and the same mechanism sentence in both
+columns. Only `large-infrastructure` and `outside-help` differ at all. The difference
+between the two columns is therefore usually a difference in what has been studied,
+not in what would happen, and a control that picks one column presents that gap to the
+reader as an answer.
+
+Everywhere the site treated the two scenarios seriously it was already ignoring the
+toggle and showing both: the system pages, `SystemMatrix` and the two ShakeMaps. The
+toggle was the outlier. Where the two genuinely diverge, hiding one of them removes
+the teaching point; where they do not, the control does nothing but imply that it
+does.
+
+Removing it took the last client-side global state with it, along with the accepted
+first-paint flash recorded below on 11 September: with nothing stored and nothing to
+re-apply after hydration, there is no unchosen scenario to flash. `TimelineStrip`,
+`SystemGrid` and `ScenarioCards` are server components again.
+
+The rule to carry forward: before building a control that filters, count the rows it
+would actually change. A filter over a dimension the sources do not resolve is not a
+neutral convenience — it manufactures a distinction the evidence will not support, and
+it costs the reader the comparison that was the real finding.
+
 ## Three things the page review of 12 September could not settle
 
 **12 September 2026.** A page-by-page review against the style guide, the spec and

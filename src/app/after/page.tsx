@@ -7,15 +7,11 @@ import {
   NextPrev,
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
-import { ScenarioToggle } from "@/components/scenario-toggle";
 import { after } from "@/content/pages/after";
 
 /**
- * Part 2. The template holds no words of its own beyond the label on the
- * scenario toggle: everything else comes from the page module, which is where
- * `docs/copy/after.md` landed. The toggle sits in the header because the
- * timeline strip, the band matrix and the system grids in the body all read
- * from it.
+ * Part 2. The template holds no words of its own: everything comes from the
+ * page module, which is where `docs/copy/after.md` landed.
  */
 export const metadata: Metadata = { title: after.meta.title };
 
@@ -28,12 +24,7 @@ export default function AfterIndexPage() {
             kicker={after.meta.kicker}
             title={after.meta.title}
             standfirst={after.meta.standfirst}
-          >
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="text-sm text-ink-muted">Bands shown for</span>
-              <ScenarioToggle size="lg" />
-            </div>
-          </PageHeader>
+          />
         }
       >
         {after.sections.map((section) => (

@@ -1,26 +1,23 @@
-"use client";
-
 import Link from "next/link";
 import { PHASES, SYSTEMS } from "@/content/site";
 import type { SystemEntry } from "@/content/types";
-import { useScenario } from "./scenario-context";
 import { BandPill } from "./band";
 import { DraftMark } from "./status";
 
 function SystemCard({ system }: { system: SystemEntry }) {
-  const { scenario } = useScenario();
-  const impact = system.impacts[scenario];
-
   return (
     <Link
       href={`/after/${system.slug}/`}
       className="group flex flex-col gap-3 bg-paper-raised p-5 transition-colors hover:bg-accent-soft focus-visible:-outline-offset-2"
     >
-      {/* The phase a system bites at is not on the card. It is one word, it
-          needs a sentence to mean anything, and a card that already carries a
-          band and a mechanism sentence cannot afford one. It stays on the
-          timeline strip, where the four phases are named together and a reader
-          can see what "weeks" is being measured against. */}
+      {/* Neither the band nor the phase a system bites at is on the card.
+          Both are one word that needs a sentence to mean anything, and a card
+          is the wrong place to put a reading a reader is meant to compare.
+          Bands live in `SystemMatrix`, where both scenarios stand in labelled
+          columns and the rows can be read against each other; the phase lives
+          on the timeline strip, where the four are named together and a reader
+          can see what "weeks" is being measured against. What the card carries
+          is the hook, which is the sentence that earns the click. */}
       <h3 className="font-display text-lg leading-snug tracking-tight group-hover:text-accent">
         {system.name}
         {/* On the card as well as on the page, so a reader knows before the
@@ -34,7 +31,6 @@ function SystemCard({ system }: { system: SystemEntry }) {
           </>
         ) : null}
       </h3>
-      <BandPill band={impact.band} />
       <p className="text-sm leading-relaxed text-ink-muted">{system.hook}</p>
     </Link>
   );

@@ -249,8 +249,21 @@ A thin complete grid is worth less than a few deep pages.
   the home page as the paragraph that says nothing fails on its own. The cards carry no
   phase label at all: one word needs a sentence to mean anything, and the four
   phases mean something together on the timeline strip and nothing alone in the
-  corner of a card. The scenario toggle also gained a sentence saying what it is for,
-  which it had never had.
+  corner of a card.
+
+- **There is no scenario toggle. Both scenarios are always shown.** Decided
+  12 September 2026. A header-mounted control let the reader pick one of the two
+  earthquakes, and every band was supposed to answer for it. It answered for very
+  little: eleven of the thirteen systems carry the same band and the same mechanism
+  sentence in both columns, because the published work assesses one design earthquake
+  per system, so switching it changed two band pills, one paragraph and one weather
+  line. The pages that treat the two scenarios seriously were already ignoring it —
+  system pages, the matrix and the ShakeMaps all show both, because the contrast is the
+  teaching point. So the control was asking a reader to choose between two columns of
+  the same evidence, and where the columns do differ it was hiding the difference that
+  is the whole point. The cards in the system grid lose their band with it: a band is a
+  reading meant to be compared, and it belongs in the matrix where both scenarios stand
+  in labelled columns, not alone in the corner of a card. See `knowledge.md`.
 
 - **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided
   11 September 2026. "Who can actually leave" and the nav label "Getting out" framed the
