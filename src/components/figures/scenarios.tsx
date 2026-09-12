@@ -569,18 +569,22 @@ const KM = 10;
 
 const FAULT_DIP_DEGREES = 47;
 const FAULT_BOTTOM_KM = 13;
-const FAULT_START_KM = 3;
+const FAULT_TOP_KM = 0;
+const FAULT_HYPO_KM = 3;
 
-/** Horizontal run between the two sourced depths, from the stated dip. */
-const FAULT_RUN =
-  ((FAULT_BOTTOM_KM - FAULT_START_KM) /
-    Math.tan((FAULT_DIP_DEGREES * Math.PI) / 180)) *
-  KM;
+/** Horizontal run per kilometre of depth, from the stated dip. */
+const FAULT_RUN_PER_KM = KM / Math.tan((FAULT_DIP_DEGREES * Math.PI) / 180);
 
 const FAULT_BOTTOM_X = -60;
-const FAULT_TOP_X = FAULT_BOTTOM_X + FAULT_RUN;
+/** Up-dip from the bottom edge: the shallower the point, the further along. */
+const faultX = (km: number) =>
+  FAULT_BOTTOM_X + (FAULT_BOTTOM_KM - km) * FAULT_RUN_PER_KM;
+
+const FAULT_TOP_X = faultX(FAULT_TOP_KM);
+const FAULT_HYPO_X = faultX(FAULT_HYPO_KM);
 const FAULT_BOTTOM_Y = FAULT_BOTTOM_KM * KM;
-const FAULT_TOP_Y = FAULT_START_KM * KM;
+const FAULT_TOP_Y = FAULT_TOP_KM * KM;
+const FAULT_HYPO_Y = FAULT_HYPO_KM * KM;
 
 const FAULT_HEADING_Y = 14;
 const FAULT_VALUE_Y = 41;
@@ -593,12 +597,16 @@ const FAULT_HEIGHT = FAULT_GUARD_Y + 12;
 /**
  * The fault plane the federal rupture file models, drawn from its own numbers.
  *
- * Three things are stated and three things are drawn: the plane dips at 47
- * degrees, its bottom edge is about 13 km down, and the earthquake starts 3 km
- * down. The segment between those two depths is the only part of the plane the
- * source pins, so it is the only part drawn. Nothing continues up towards the
- * surface, because the source gives no top edge and a line reaching daylight
- * would assert that the fault breaks the ground.
+ * Four things are stated and four things are drawn: the plane dips at 47
+ * degrees, its top edge is at the ground surface, its bottom edge is about
+ * 13 km down, and the earthquake starts 3 km down. The rupture file gives all
+ * four, so the whole plane is drawn rather than a segment of it.
+ *
+ * The top edge reaching the surface is the model's geometry and not a forecast
+ * that the ground breaks open, which is the misreading the guard line and the
+ * alt text both exist to stop. An earlier version of this drawing took the
+ * hypocentre for the top of the plane and told the reader no top edge was
+ * stated; `docs/research/scenarios.md` warns against exactly that conflation.
  *
  * The depth scale is a domain the source states. There is no horizontal scale,
  * because the file gives the footprint as a map rather than as a distance, and
@@ -621,7 +629,7 @@ export function CrustalFaultSection() {
         />
         {[
           { km: 0, label: "0" },
-          { km: FAULT_START_KM, label: "3 km" },
+          { km: FAULT_HYPO_KM, label: "3 km" },
           { km: FAULT_BOTTOM_KM, label: "13 km" },
         ].map((tick) => (
           <g key={tick.km}>
@@ -682,7 +690,7 @@ export function CrustalFaultSection() {
           47°
         </FigText>
 
-        {/* The sourced segment of the plane, and nothing above it. */}
+        {/* The whole plane the rupture file states, top edge to bottom edge. */}
         <line
           x1={FAULT_BOTTOM_X}
           y1={FAULT_BOTTOM_Y}
@@ -702,10 +710,10 @@ export function CrustalFaultSection() {
         </FigText>
 
         {/* Where the rupture begins. */}
-        <circle cx={FAULT_TOP_X} cy={FAULT_TOP_Y} r={4.5} fill={FIG_COLOR.ink} />
+        <circle cx={FAULT_HYPO_X} cy={FAULT_HYPO_Y} r={4.5} fill={FIG_COLOR.ink} />
         <FigText
-          x={FAULT_TOP_X + 9}
-          y={FAULT_TOP_Y + 4}
+          x={FAULT_HYPO_X + 9}
+          y={FAULT_HYPO_Y + 4}
           size={FIG_TYPE.tick}
           fill={FIG_COLOR.ink}
         >
@@ -715,7 +723,7 @@ export function CrustalFaultSection() {
 
       <FigText y={FAULT_UNIT_Y}>Depth below the ground surface</FigText>
       <FigText y={FAULT_GUARD_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        The top edge of the plane is not stated.
+        The plane is the model’s geometry, not a forecast of a crack at the surface.
       </FigText>
     </FigureCanvas>
   );

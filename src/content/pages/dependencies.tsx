@@ -11,7 +11,7 @@ import type { PageModule } from "./index";
  * generated from the `dependsOn` entries in `src/content/site.ts`. The drawing
  * joins no two systems with a line, because a line asserts a connection and
  * most of these connections are not established. It counts them instead, and
- * separates the six a document names from the twenty nobody has published.
+ * separates the six a document names from the twenty three nobody has published.
  *
  * The edges in that list are the content model's, not the evidence's. The copy
  * says so where the section sits, and the closing section names the edges no
@@ -26,7 +26,7 @@ export const dependencies: PageModule = {
     nav: "Dependency graph",
     kicker: "Why one failure becomes many",
     standfirst:
-      "Every system waits on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.",
+      "Twelve of the thirteen systems wait on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -253,7 +253,8 @@ export const dependencies: PageModule = {
             which is crews reaching the work.
           </VerificationNote>
           <p>
-            One of these is documented, and what is documented is an absence.
+            A fourth link on the list is documented, and what is documented is an
+            absence.
             Nothing in Canada currently requires a mobile phone site to hold any
             backup power at all, and the regulator opened a proceeding in
             September 2025 to decide what that requirement should be.{" "}

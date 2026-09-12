@@ -39,8 +39,9 @@ export function DependencyGraph() {
             One mark is one system waiting on another. A solid mark is a link a
             published document names. A hatched mark is a link a system’s own
             page states and no published assessment has established, which is
-            most of them. The list below is the same links written out, and it
-            comes from the content model rather than from evidence.
+            most of them. The list below is the same links written out. Each one
+            is what a system’s own page names as something it waits on, which is
+            not the same as a document establishing it.
           </>
         }
       >
