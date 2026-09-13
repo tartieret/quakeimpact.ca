@@ -71,6 +71,17 @@ The graphic to build is the network on the city outline, and the argument is
 carried by how little of the city it reaches — which is stronger as fact than as
 a line somebody drew.
 
+### The city boundary is a legal line, not a shoreline
+
+`city-boundary` is a jurisdictional limit. It runs straight out across Burrard
+Inlet and English Bay on lines the land does not follow, and it says nothing
+about where the land stops. Drawn on its own it gives a reader no peninsula and
+no False Creek, so any map on this window needs the Freshwater Atlas under it
+and the boundary drawn quiet and dashed over the top, where it cannot be
+mistaken for the coast it crosses. **A municipal outline is reference here and
+never more than that**, which is the base-layer rule at the top of this file
+arriving from the other direction.
+
 ### The fire hall layer carries no status, and the status classes are ours
 
 The `fire-halls` layer holds twenty points with a name, an address and a local

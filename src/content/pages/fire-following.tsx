@@ -122,6 +122,7 @@ export const fireFollowing: PageModule = {
       "COV-CAP-2730",
       "COV-CAP-1922",
       "COV-CAP-2326",
+      "COV-FIREHALLS-DATA",
       "BBY-FS8",
       "DNV-NORGATE",
       "RICH-CSC-2026-03",
@@ -501,7 +502,8 @@ export const fireFollowing: PageModule = {
                 documents, and the City publishes no rating of its own. A
                 twentieth hall in the University Endowment Lands serves the UEL
                 and the University of British Columbia, and is not one of the
-                City’s {HALL_FACTS.inCity}. {HALLS_ACCURACY}
+                City’s {HALL_FACTS.inCity}.{" "}
+                <Cite id="COV-FIREHALLS-DATA" /> {HALLS_ACCURACY}
               </>
             }
             licence={<FireMapLicence />}

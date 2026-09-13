@@ -939,6 +939,18 @@ export const REFERENCES: Record<string, Reference> = {
     note: "The three-day sentence in print, the cordoning passage, the renter list",
     route: "direct",
   },
+  "COV-FIREHALLS-DATA": {
+    id: "COV-FIREHALLS-DATA",
+    kind: "dataset",
+    title: "Fire halls, Open Data Portal",
+    publisher: "City of Vancouver",
+    year: 2026,
+    date: "dataset modified 23 May 2026",
+    href: "https://opendata.vancouver.ca/explore/dataset/fire-halls/",
+    note: "Name, address and point for twenty halls, nineteen of them the City's and one in the University Endowment Lands. Carries nothing about the condition or the seismic standard of any hall, and states that locations are approximate",
+    route: "direct",
+    licence: "OGL–Vancouver, stated on the record and returned by the catalogue API",
+  },
   "COV-FIRESAFE-BO": {
     id: "COV-FIRESAFE-BO",
     kind: "report",

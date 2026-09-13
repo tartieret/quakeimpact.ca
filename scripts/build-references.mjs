@@ -45,6 +45,7 @@ const KIND_OVERRIDES = {
   "BC-DAMS-REG": "dataset",
   "BCDC-TRANSMISSION": "dataset",
   "COV-DFPS-DATA": "dataset",
+  "COV-FIREHALLS-DATA": "dataset",
   MVSMMP: "dataset",
   "MVSMMP-LIC": "dataset",
   "NRCAN-SCEN": "dataset",
