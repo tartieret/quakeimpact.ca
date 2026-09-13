@@ -4,7 +4,7 @@
 
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
-> **Last research pass:** 10 September 2026.
+> **Last research pass:** 13 September 2026.
 
 ## Status
 
@@ -95,9 +95,12 @@ contradiction: "In spite of the above ground densification schemes, **some later
 movements (up to approximately 0.3 m) at the main bridge piers are still expected under
 the 2475 yr return period event** and have been incorporated into the main bridge
 foundation design." [NAB-ICCHGE-08] **[A]** Both figures are 2475-year. They differ in
-**location** and in **remediation state**: ~0.3 m at the main bridge piers, where
-vibro-flotation and vibro-replacement densification was carried out; ~0.5 m at the river
-bank. Written without those two qualifiers they will be read as disagreeing.
+**location** and in **analysis**: up to ~0.3 m at the main bridge piers, after
+vibro-flotation and vibro-replacement densification; ~0.5 m at the river edge, from a
+separate analysis in the other paper, which does not say whether it is before or after
+densification — and the riverbanks were densified too ("at the main river piers … and at
+two riverbanks", NAB-ICCHGE-08 p.9). **The gap is not a measure of what densification
+did.** Written without the location qualifiers they will be read as disagreeing.
 
 **Golden Ears design levels are 475 / 1000 / 2475.** [GEB-CGS-08] **[A]** Independently
 confirmed by a third source: "The project seismic design criteria and performance criteria
@@ -138,8 +141,10 @@ approach sits on liquefiable soils; "the maximum differential pier settlement af
 densification was evaluated as 100 mm". The chosen fix was to wrap the girders in glass
 fibre so the bridge could bend rather than to stop the ground moving — a saving of over
 $1 million against the ground-improvement alternative. [OAK-13WCEE] **[A]** Handle the
-100 mm with care: it is expressly *after densification*, and the paper records that the
-1994 ground-improvement design was not built at the time.
+100 mm with care: it is expressly *after densification* — a "mitigated ground
+densification scheme" from a study around 2000, not the 1994 design the paper records as
+not built at the time — and the paper neither says that scheme was built nor ties the
+figure to a return period, only to "design level earthquakes".
 
 **Oak Street was reassessed in 2021–22** because "changes to codes and seismic hazard
 models since that time have resulted in substantially higher seismic loading
@@ -262,6 +267,12 @@ on the north and south ends** — the approaches together are longer than the cr
 - An Emergency Road Closure System installed in 2008 detects seismic motion and closes
   the tunnel to new traffic while letting vehicles inside exit. It is "meant to limit the
   Tunnel use for seismic events greater than 275 year return period." [GMC-TUNNEL-19]
+  **The memo attributes the 275 to a 2016 ministry memo and disputes it on the same page:**
+  "It is not clear where reference [11] based its statement that the Tunnel could
+  withstand a 275 year return period earthquake as this is not consistent with analysis
+  by COWI." The 475 years is the **2001 retrofit's** objective ("to prevent the loss of
+  life and restrict damage to a repairable level"), not the 1950s design, which assumed
+  0.21 g and names no return period.
   **[A]**
 - Lateral spreading is described at the site directly: "During a seismic event when the
   soil liquefies and loses its shear strength, soil near the banks of the Fraser River
@@ -306,13 +317,15 @@ A government release is **[A] for its own existence and not for an engineering f
 own engineers contradict.** Prefer the COVI/Stantec memo. Do not use the tunnel item
 from either release. The rest of both lists is not disputed here.
 
-### Port Mann — publish no number
+### Port Mann: published demand, unconfirmed project classification
 
-**Publish no Port Mann-specific return period, ground motion level or performance
-level.** The absence has a shape: **three published documents on this bridge's seismic
-design specifically, none of them free.** They sit inside a larger project document set of
-at least eight papers, described under "What is not established" below; these three are the
-ones addressing seismic design.
+**Updated 13 September 2026.** The earlier instruction to publish no number is
+superseded. A designer's open PCI paper specifies four earthquake demand levels,
+the largest an ultimate event with a 1:2,500 return period. [PM-PCI-11] **[A]**
+The open project paper names 475-, 975- and 2,475-year levels and a Cascadia event,
+but its matrix does not identify which class the Port Mann Bridge received.
+[PMH1-CAEE-15] **[A]** Neither source establishes a bridge-specific promise of
+post-event service. The specialised papers below remain unread:
 
 - Goodyear, D. (2017), "Design Basis for the New Port Mann Bridge over the Fraser River",
   *Structural Engineering International* (IABSE) — by the designer, and titled *design
@@ -339,10 +352,9 @@ designed to 475 years; and it is a figure travelling through a secondary review.
 Separately, a "**975-year**" figure appearing
 in another UBC thesis in connection with Port Mann model updating is **a researcher's
 analysis spectrum, not a design criterion**, and is the same trap as the Golden Ears 975.
-Neither is usable. If a Port Mann number is ever published here, it comes from
-[PM-SEI-17], [PM-IABSE-17] or Leggett & Gérin, read in full.
+Neither is used. The map uses the designer’s own demand figure in [PM-PCI-11].
 
-What is sourced is qualitative:
+Additional qualitative sources:
 
 - The province "mandated an onerous, performance-based design approach for the seismic
   analyses of all bridges, **walls and embankments**", with models simulating four
@@ -393,7 +405,7 @@ Port Mann is also one of the instrumented structures. [BCSIMS-22] **[A]**
   return period is given. [AFB-CGS-17] **[A]**
 - **Pattullo replacement.** Fully open, with demolition of the 1937 bridge under way, per
   the province's own release of **21 February 2026**; named the stal̕əw̓asəm Bridge.
-  Seismic content is qualitative only — "modern seismic, structural and roadway-design
+  That release’s seismic content is qualitative only — "modern seismic, structural and roadway-design
   standards" — with no return-period criteria. [BCGOV-2026-PATT] **[A]** Use this, not
   Wikipedia. Engineering-literature detail on the south approach (lifeline
   classification, CSA S6-14, seismic isolation bearings, deep liquefiable soils) is
@@ -426,9 +438,7 @@ predates the opening and says only "scheduled for completion in 2009".
 **Its seismic design criteria are published.** Stated by the designer: "The project
 seismic design criteria state that seismic design will be based on the bridge structure
 resisting a **475 year return period event with repairable damage** and a **100 year
-return period event with no significant damage and essentially elastic performance.**" And
-on scope: "For the design of the Canada Line North Arm Bridge across the Fraser River,
-**only the 100 and 475 yr events were considered**".
+return period event with no significant damage and essentially elastic performance.**" The paper names no other design event.
 [NAB-ICCHGE-08] **[A]**
 
 *These are the project's own criteria as reported by the bridge's designer in 2008.* The
@@ -480,12 +490,12 @@ A blank row means searched and not found, not unexamined.
 | --- | --- | --- |
 | George Massey Tunnel | Yes, fully — retrofit half-completed, 150–240-year capacity, does not meet CSA S6-14 [GMC-TUNNEL-19] | **[A]** |
 | Oak Street | Yes — 475-year collapse-prevention objective, 100 mm approach settlement, GFRP wrap, re-studied 2021–22 [OAK-13WCEE] [OAK-BASIS-22] | **[A]** / [B] |
-| Knight Street | Yes — lifeline class, "need not be passable" after the 1000-year event, shear-key failure at all approach spans [KSB-2010] | **[A]** |
+| Knight Street | Yes — lifeline class; functional after the 475-year event, collapse prevention and "need not be passable" after the 1000-year event; shear-key failure at all approach spans before retrofit [KSB-2010] | **[A]** |
 | Queensborough | Yes — collapse prevention at 1/475 only, "may or may not be functional"; 150 mm approach displacement after remediation [QB-MOTH-95] | **[A]** |
 | Golden Ears | Yes — 475/1000/2475 objectives, ~0.5 m river-bank displacement at 2475, ~0.3 m at the main piers after densification [GEB-CGS-08] [NAB-ICCHGE-08] | **[A]** |
-| Alex Fraser | Partly — foundations on weak deltaic materials, early liquefaction practice; no return period [AFB-CGS-17] | **[A]** |
-| Pattullo replacement | Status yes, seismic qualitative only [BCGOV-2026-PATT] | **[A]** |
-| Port Mann | Qualitative only; three quantitative sources published, all paywalled and unread [PM-SEI-17] [PM-IABSE-17] | **[?]** |
+| Alex Fraser | Partly — foundations on weak deltaic materials, early liquefaction practice [AFB-CGS-17]; no return period found in sources read; the design paper [AFB-CJCE-85] remains paywalled and unread | **[A]** |
+| Pattullo replacement | Open [BCGOV-2026-PATT]; design events to 2% in 50 years, about 2,475 years; Lifeline class explicitly required [PATT-PA-S4-20]; CSA S6 performance criteria unread | **[A]** |
+| Port Mann | Four demand levels, largest 1:2,500 years [PM-PCI-11]; project performance matrix does not identify the bridge’s class [PMH1-CAEE-15] | **[A]** |
 | Canada Line — North Arm Bridge | Yes — 100/475-year project criteria, partial liquefaction expected, no ground densification used [NAB-ICCHGE-08] | **[A]** |
 | Mission (Fraser Valley, disaster recovery network — not Metro Vancouver) | Yes, fully — 475-year collapse prevention with function 'desirable but not required', approach settlements to 200 mm, south abutment FoS 0.70, toe berms built [MISSION-CGS-18] | **[A]** |
 | SkyTrain guideways generally | Nothing located | **[?]** |
@@ -578,8 +588,9 @@ said.
   and the paywalled landing page is live; [PM-IABSE-17] is sold at about €25, and its free
   publisher preview **was retrieved and is page 1 only** — title, affiliations, abstract,
   one figure caption, and **no return period, ground-motion level or performance level**.
-  A preview is not a read. **None has been read, so no Port Mann number is published
-  anywhere in this folder.** **[?]**
+  A preview is not a read. **These specialised papers remain unread.** The demand
+  figure now published comes from the open designer paper [PM-PCI-11], and the
+  project matrix from [PMH1-CAEE-15]. **[?]** for the unread papers.
 - **North Arm Bridge — the designer's second paper.** The seismic design criteria,
   dimensions, ground conditions, foundations and the no-densification decision are sourced
   to the bridge's designer [NAB-ICCHGE-08] **[A]**, and the opening date to the Office of
@@ -682,8 +693,8 @@ context is either alarming or reassuring and neither is accurate.
 
 - Every displacement figure carries its return period, its remediation state **and its
   location**. Queensborough's 150 mm is *after* remediation; without it, collapse. Oak
-  Street's 100 mm is *after densification*, and the paper records that that densification
-  was not built at the time. Golden Ears has two 2475-year figures — ~0.5 m at the river bank and
+  Street's 100 mm is *after* a later densification scheme the paper does not say was
+  built, and is tied to "design level earthquakes" rather than a return period. Golden Ears has two 2475-year figures — ~0.5 m at the river bank and
   ~0.3 m at the main piers after densification — which are not in conflict, but will read
   as conflicting if either qualifier is dropped.
 - Golden Ears is 475/1000/2475, now confirmed by three independent [A] sources. Never
@@ -738,3 +749,46 @@ and one tunnel with a published shortfall and a 2031 fix. [GMC-TUNNEL-19] [MOTI-
 **Link rot.** The two most valuable peer-reviewed sources here, [CAEE-10YR] and
 [KSB-2010], sit on a domain that is mid-rebuild and already 404s at directory level.
 Archive both before launch.
+
+
+## Remaining crossings validation, 13 September 2026
+
+All fifteen remaining crossing research agents had reported before the session
+handoff. Their source extracts were retained and checked; summaries alone were not
+used as quotation evidence. The published table now covers all nineteen map entries.
+
+- **Ironworkers Memorial:** the 1995 foundation design paper specifies collapse
+  prevention at 475 years. Vibro-compaction is proposed, not recorded as built.
+  [IRON-ICRAGEE-95] **[A]** Read from page images.
+- **Pattullo replacement:** Schedule 4 §§4.2(a), 4.3(a) explicitly require three
+  events, 10% / 5% / 2% in 50 years, and Lifeline bridge performance. The final
+  probability corresponds to about 2,475 years. The CSA S6 criteria remain
+  paywalled and unread; the TAC paper's emergency-traffic claim belongs to the
+  Royal Avenue underpass, not the new bridge. [PATT-PA-S4-20] **[A]**
+- **Pitt River:** the province explicitly names the bridge as lifeline and built
+  to accommodate a 1-in-2,475-year quake. It does not define post-event service.
+  [PITT-PREM-09] **[A]**
+- **Lions Gate:** retrofit completed in 2002 [LG-BC-16]; the suspended-span
+  designers considered a nearby moderate earthquake and distant subduction
+  event, but name no return period. [LG-TAC-09] **[A]**
+- **Arthur Laing:** Phase I complete by early 1996, Phase II planned for that
+  summer. No return period or evidence of Phase II completion in the report.
+  [YVR-COV-96] **[A]**
+- **Dinsmore:** the master plan proposes replacement or upgrade to seismic
+  standards without defining the level or recording construction. [YVR-MP-18] **[A]**
+- **Westham Island:** the map's Canoe Pass entry is the 1909 bridge connecting
+  Westham Island to Ladner, its only land connection. The display name is
+  corrected without changing the licensed geometry. [DELTA-WESTHAM-09]
+  Replacement planning is under way [TL-WESTHAM]; no return period found.
+- **No. 2 Road:** City of Richmond ownership and maintenance are recorded in
+  [YVR-MP-18]. No return period found. Richmond City Archives' Reference Files
+  catalogue lists the 1990 conceptual and 1991 bridge design reports; those
+  physical records remain a research lead, not evidence of a seismic level.
+- **Alex Fraser:** the 1985 design paper's abstract describes an earthquake risk
+  analysis. Its full text remains unread, so absence of a return period in the
+  sources read is not evidence that none was published. [AFB-CJCE-85]
+
+The Queensborough report now has a recoverable Wayback link in the register;
+the original Ministry contracting path returns 404. Map counts are derived from
+crossing data: ten published figures, nine without a figure found, four at 475
+and four in the 2,475 class. These counts do not rank post-earthquake usability.
