@@ -264,6 +264,24 @@ export const transportation: PageModule = {
             earthquake, with normal service restorable within one month.{" "}
             <Cite id="MOTI-S6-SEC6" />
           </p>
+          <Photograph
+            id="anchorage-mirror-lake-ramp"
+            caption={
+              <>
+                The Mirror Lake interchange on the Glenn Highway, Anchorage,
+                about three hours after the 2018 earthquake. The carriageway on
+                the left is unmarked; the off-ramp beside it has gone down the
+                slope. This is an off-ramp embankment and not a bridge approach,
+                and the movement is metres where this page counts millimetres —
+                but it is the same mechanism with nothing holding it: fill built
+                over soft ground, losing what was under it. The figures above are
+                what ground treatment is meant to hold that movement down to. At
+                Queensborough, the Ministry’s own report records that without
+                treating the soil the predicted displacements were “large enough
+                to cause a collapse of the structure”. <Cite id="QB-MOTH-95" />
+              </>
+            }
+          />
         </Prose>
       ),
     },

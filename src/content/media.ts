@@ -384,6 +384,38 @@ export const PHOTOGRAPHS = {
     usedOn: "/after/transportation/",
   },
 
+  /**
+   * The picture `/after/transportation/` was missing, and it took a second pass
+   * to find. The page's argument is that the structure is not what fails — the
+   * ground carrying the road up to it is — and the whole difficulty of showing
+   * that is that a photograph of a wrecked road usually has no intact road in
+   * it to compare against. This frame has both, a few metres apart: the
+   * carriageway on the left is unbroken with its lane markings on, and the
+   * off-ramp on the right has gone down the slope with its guardrail.
+   *
+   * **It is an off-ramp embankment, not a bridge approach, and the caption says
+   * so.** It is also metres where the page counts millimetres. Both are in the
+   * caption rather than left for a reader to assume, because this is the
+   * register's most persuasive image and therefore the one most likely to be
+   * read as a prediction. What it stands for is the mechanism at its unchecked
+   * end; what the page's numbers describe is that mechanism held down by ground
+   * treatment.
+   */
+  "anchorage-mirror-lake-ramp": {
+    id: "anchorage-mirror-lake-ramp",
+    file: "anchorage-mirror-lake-ramp.jpg",
+    ratio: "1800 / 667",
+    alt: "A highway off-ramp has dropped away entirely, its asphalt broken into tilted slabs and the embankment beneath it slid down the slope carrying the guardrail with it. The main carriageway a few metres to the left is unbroken, lane markings intact, snow on the verge. The road surface did not fail; the ground holding it up did.",
+    photographer: "Alaska DOT&PF",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Mirror_Lake_SB_OFF_Ramp_Before.jpg",
+    taken: "30 November 2018",
+    place: "Mirror Lake interchange, Glenn Highway, Chugiak, Alaska",
+    licence: "CC-BY-2.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
   "anchorage-glenn-highway-closed": {
     id: "anchorage-glenn-highway-closed",
     file: "anchorage-glenn-highway-closed.jpg",

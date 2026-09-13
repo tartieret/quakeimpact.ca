@@ -101,10 +101,10 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Eleven rows are Verified, checked at their sources on 12 September 2026, and
-ten are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
-one on `/shaking/fire-following/`, two on `/after/water/` and two on
-`/after/transportation/`. The eleventh,
+**Twelve rows are Verified, checked at their sources on 12 September 2026, and
+eleven are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
+one on `/shaking/fire-following/`, two on `/after/water/` and three on
+`/after/transportation/`. The twelfth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -493,12 +493,43 @@ the whole Alaska earthquake album is worth returning to for other pages.
   came through the shaking intact is still closed. The first photograph is the
   inspection. The second is the morning. Neither shows a collapse, which is the
   point — a collapsed bridge would argue the opposite of what the page says.
-- **The approach step could not be found.** What was wanted was a bridge
-  approach with a visible step in it, to stand beside the page's calculated
-  settlements of 100 mm at Oak Street, 150 mm at Queensborough and 200 mm at
-  Mission. Nothing in the openly licensed collections searched shows that
-  cleanly. These two make a different and honest point instead; the step remains
-  open, and is worth another look when a page needs it.
+- **The approach step could not be found, and something better was.** What was
+  wanted was a bridge approach with a visible step, to stand beside the page's
+  calculated settlements of 100 mm at Oak Street, 150 mm at Queensborough and
+  200 mm at Mission. No such frame turned up. A second pass through the same
+  Alaska album produced `anchorage-mirror-lake-ramp` below, which makes the
+  argument better than a step would have, because it carries the comparison
+  inside one frame.
+
+#### `anchorage-mirror-lake-ramp`
+
+- **Shows:** a highway off-ramp dropped away down a slope, asphalt broken into
+  tilted slabs, the guardrail gone with it — and the main carriageway a few
+  metres to the left unbroken, lane markings intact.
+- **Photographer:** Alaska DOT&PF
+- **Licence:** CC BY 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Mirror_Lake_SB_OFF_Ramp_Before.jpg
+- **Status:** **Verified, 12 September 2026.** Photographer, licence, place and
+  time read off the Commons file page, whose description names the interchange
+  and the event rather than leaving either to the filename.
+- **Hosted:** `public/media/anchorage-mirror-lake-ramp.jpg`. 4076 × 1510 original
+  resized to 1800 × 667; ratio `1800 / 667`, measured off the hosted file. A
+  panorama, and the second-widest image on the site after the Beckenham shops.
+- **Used on:** `/after/transportation/`, at the foot of "The approach fails
+  before the span does".
+- **Why this one:** the page's hardest claim to illustrate is that the structure
+  is not what fails. A photograph of a wrecked road normally has no intact road
+  in it to compare against, so it shows destruction rather than the argument.
+  This frame has both, metres apart. The contrast is the content.
+- **Two things the caption states rather than leaves to be assumed.** It is an
+  **off-ramp embankment, not a bridge approach**. And the movement is **metres
+  where the page counts millimetres**. This is the most persuasive image in the
+  register, which makes it the one most likely to be read as a prediction about
+  a Fraser crossing, and §"A photograph may not generate a claim" bites hardest
+  exactly here. What it stands for is the mechanism with nothing holding it.
+  What the page's numbers describe is the same mechanism held down by ground
+  treatment — which the page's own Queensborough source makes explicit, and the
+  caption quotes.
 - **Both files carry an EXIF rotation, and Commons reports the unrotated
   dimensions.** The file page for the first states 3024 × 4032, which is
   portrait. The frame is landscape. Copying that number into `ratio` would have
