@@ -22,6 +22,7 @@ export type MediaLicenceId =
   | "CC-BY-2.0"
   | "CC-BY-SA-2.0"
   | "CC-BY-SA-3.0"
+  | "CC-BY-NC-SA-2.0"
   | "CC-BY-NC-ND-4.0";
 
 export interface MediaLicence {
@@ -76,6 +77,15 @@ export const MEDIA_LICENCES: Record<MediaLicenceId, MediaLicence> = {
     href: "https://creativecommons.org/licenses/by-sa/3.0/",
     shareAlike: true,
     nonCommercial: false,
+    noDerivatives: false,
+  },
+  "CC-BY-NC-SA-2.0": {
+    id: "CC-BY-NC-SA-2.0",
+    name: "Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic",
+    short: "CC BY-NC-SA 2.0",
+    href: "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+    shareAlike: true,
+    nonCommercial: true,
     noDerivatives: false,
   },
   "CC-BY-NC-ND-4.0": {
@@ -149,10 +159,16 @@ export interface Photograph {
 }
 
 /**
- * Christchurch, 2011. Every photograph here is an analogue and none of them may
+ * Mostly Christchurch, in 2010 and 2011. Those are analogues, none of them may
  * generate a claim about Metro Vancouver — `docs/style-guide.md` §10, question
- * 8. The caption that carries one does the framing: the local ground the
+ * 8 — and the caption that carries one does the framing: the local ground the
  * photograph stands for, and the ground under the camera.
+ *
+ * `vancouver-dfps-hydrant` is the exception and the only one so far. It is a
+ * photograph of the thing itself, on the street the reader is being asked to
+ * look at, so the analogue rule has nothing to bite on: there is no transfer to
+ * limit. Its caption does the opposite job — not "this could happen here" but
+ * "this is the object, go and see whether it is on your corner".
  */
 export const PHOTOGRAPHS = {
   "christchurch-cars-in-silt": {
@@ -183,6 +199,85 @@ export const PHOTOGRAPHS = {
     licence: "CC-BY-SA-2.0",
     status: "verified",
     usedOn: "/shaking/ground/",
+  },
+
+  /**
+   * The three below are the September 2010 Darfield earthquake rather than
+   * February 2011, and that is deliberate. Same city, same building stock, same
+   * failure — and it killed nobody. The 2011 photographs of the same mechanism
+   * carry a death toll that `/shaking/buildings/` cites two paragraphs further
+   * down, and using them would have put the limit on casualty imagery under
+   * pressure for no gain. 2010 gets the mechanism with none of that.
+   */
+  "christchurch-beckenham-shops": {
+    id: "christchurch-beckenham-shops",
+    file: "christchurch-beckenham-shops.jpg",
+    ratio: "100 / 39",
+    alt: "A row of two-storey brick shops, each carrying a moulded parapet above its roofline. On one of them the parapet and the wall below it have gone, leaving bare brick and a dark cavity behind, and the verandah underneath is bent where the masonry landed on it. Tape and traffic cones close the footpath along the whole row, and the shopfront directly under the failure is boarded over with plywood.",
+    photographer: "Greg O’Beirne",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:ChristchurchEarthquake_Beckenham03_gobeirne.jpg",
+    taken: "4 September 2010",
+    place: "Beckenham, Christchurch, New Zealand",
+    licence: "CC-BY-SA-3.0",
+    status: "verified",
+    usedOn: "/shaking/buildings/",
+  },
+
+  "christchurch-dairy-gable-wall": {
+    id: "christchurch-dairy-gable-wall",
+    file: "christchurch-dairy-gable-wall.jpg",
+    ratio: "1600 / 1199",
+    alt: "The upper brick wall of a two-storey corner shop has come off the building, opening the room behind it to the street with its interior door and lining still standing. The brick that fell lies heaped on the footpath directly below, against a shopfront whose windows, awning and signs are undamaged.",
+    photographer: "Martin Luff",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Earthquake_damage_-_dairy.jpg",
+    taken: "6 September 2010",
+    place: "Dallington, Christchurch, New Zealand",
+    licence: "CC-BY-SA-2.0",
+    status: "verified",
+    usedOn: "/shaking/buildings/",
+  },
+
+  "christchurch-moorhouse-parapet": {
+    id: "christchurch-moorhouse-parapet",
+    file: "christchurch-moorhouse-parapet.jpg",
+    ratio: "4 / 3",
+    alt: "Brick from a collapsed parapet lies spread the length of a footpath and out across the parking lane of a wide road, fenced off with mesh panels and cones. The building it came off stands with its walls and windows intact, and traffic is running in the far lanes.",
+    photographer: "Nate Cull",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Office_Building_Moorhouse_Ave.jpg",
+    taken: "6 September 2010",
+    place: "Moorhouse Avenue, Christchurch, New Zealand",
+    licence: "CC-BY-SA-2.0",
+    status: "verified",
+    usedOn: "/shaking/buildings/",
+  },
+
+  /**
+   * The first photograph on the site that is not an analogue. `/shaking/fire-
+   * following/` tells a reader that the blue hydrants are the one part of the
+   * City's description of the dedicated fire system they can act on, and then
+   * does not show them one. This does.
+   *
+   * Non-commercial as well as share-alike, which makes two NC rows in the
+   * register rather than one. `nonCommercialPhotographs()` is what answers the
+   * question on the day it is asked.
+   */
+  "vancouver-dfps-hydrant": {
+    id: "vancouver-dfps-hydrant",
+    file: "vancouver-dfps-hydrant.jpg",
+    ratio: "1 / 1",
+    alt: "A fire hydrant with a bright blue body and a white bonnet stands at the kerb on a brick-paved footpath, the letters DFPS cast into the blue below one of its outlets. The colour is the marking: it says this hydrant is fed by the city's dedicated fire protection mains rather than by the drinking-water mains that supply the ordinary ones.",
+    photographer: "Tom Magliery",
+    title: "Hydrant",
+    collection: "Flickr",
+    href: "https://www.flickr.com/photos/mag3737/35236992430",
+    taken: "24 June 2017",
+    place: "Vancouver, British Columbia",
+    licence: "CC-BY-NC-SA-2.0",
+    status: "verified",
+    usedOn: "/shaking/fire-following/",
   },
 
   /**

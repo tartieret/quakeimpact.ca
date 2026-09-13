@@ -237,11 +237,12 @@ export default function LicencesPage() {
 
       <Section
         title="The photographs, and who took them"
-        lede="The ground conditions page carries photographs of a Christchurch street in 2011, because liquefaction is a thing a sentence cannot show. They are somebody's work, published under Creative Commons licences that ask for the photographer's name and a link to the terms."
+        lede="Three pages carry photographs: ground conditions, buildings and fire following. Most are Christchurch, New Zealand, in 2010 and 2011, because a sentence cannot show a street where the ground has turned to liquid or a wall has come off a shop. One is a Vancouver hydrant. They are somebody's work, published under Creative Commons licences that ask for the photographer's name and a link to the terms."
       >
         <Prose
           paragraphs={[
-            "The rule for a photograph is the rule for everything else here: nothing is shown unless the terms have been read and recorded. There is one more limit on top of it. A photograph of somewhere else is an analogue, and an analogue on this site may not produce a number. What carries across from Christchurch to the Fraser delta is the mechanism — loose wet sand losing its strength while the ground shakes. How deep the silt was, how many streets it closed and how long it took to clear are facts about Christchurch, and they stay there.",
+            "The rule for a photograph is the rule for everything else here: nothing is shown unless the terms have been read and recorded. There is one more limit on top of it. A photograph of somewhere else is an analogue, and an analogue on this site may not produce a number. What carries across from Christchurch to the Fraser delta is the mechanism — wet sand losing its strength, a parapet held up by gravity and mortar. How deep the silt was, how many streets it closed and how long it took to clear are facts about Christchurch, and they stay there.",
+            "The hydrant is the exception, and it is one because it is here. A photograph of a Vancouver street is not standing in for anything, so there is no transfer to limit: it shows an object a reader can go and check for on their own corner, which is the one thing the page it sits on was asking them to do.",
             UNHOSTED.length > 0
               ? "Some of the image files are not hosted yet. Until they are, the place each one will sit says so and names the photographer and the licence, rather than showing a gap and explaining nothing."
               : "Every file is copied to this site and served from it, rather than linked from the photographer's own host, so a credit here cannot be quietly broken by somebody else moving a file. Each is the photographer's frame, resized to fit a page and otherwise unchanged.",

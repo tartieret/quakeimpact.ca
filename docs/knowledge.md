@@ -150,6 +150,48 @@ must never become one.
 
 ---
 
+## Four more photographs, and two rules that came out of placing them
+
+**12 September 2026.** `/shaking/buildings/` took three and
+`/shaking/fire-following/` took one, which makes six on the site.
+
+**Prefer September 2010 to February 2011 wherever both show the mechanism.** The
+three on the buildings page are unreinforced masonry failures — a parapet down
+off a shop row, a gable end wall on a footpath, brick across a traffic lane — and
+all three are the Darfield earthquake of 4 September 2010 rather than the
+Christchurch earthquake of 22 February 2011. Same city, same building stock, same
+failure, and 2010 killed nobody. The page cites the 2011 death toll from URM
+façades two paragraphs below where the images sit, so a 2011 photograph of the
+same mechanism would have put the casualty limit under pressure to no purpose.
+This generalises: when two events produced the same mechanism, the one without
+the deaths is the one to photograph.
+
+**A photograph of here is not an analogue, and the rule changes shape.** The
+hydrant is the first image on the site that is not standing in for something.
+Every other one argues "this mechanism is real, and your ground is like that
+ground", and the analogue rule limits what may be carried across. The hydrant
+carries nothing across: it is the object itself, on a street the reader can walk
+to, and its caption is an instruction rather than a framing. `/shaking/fire-
+following/` had been telling readers that the blue hydrants are the only part of
+the City's description they can act on, and then not showing them one, which is
+the plainest §8 failure the site had left. The register and `/licences/` both say
+which kind an image is, because the two kinds are read differently.
+
+**The alt-text rule earned itself again.** Two of the three captions drafted
+before the files were opened carried a detail the frame did not support: a person
+"waiting for a bus" where there is no bus stop, and shops called undamaged that
+are boarded over with plywood. Both were plausible, both were invented, and
+neither would have survived anyone looking. Write the words off the image.
+
+**Vancouver's own imagery is scarce and badly licensed.** A search of openly
+licensed collections for a blue DFPS hydrant returns one usable file, at
+1024 × 1024, under CC BY-NC-SA 2.0 — and **nothing at all** under a licence
+allowing commercial use. That is worth knowing before planning any page around
+local photography: the Christchurch material is abundant and freely licensed, and
+the Vancouver material is neither.
+
+---
+
 ## Three things the page review of 12 September could not settle
 
 **12 September 2026.** A page-by-page review against the style guide, the spec and

@@ -81,9 +81,10 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Two rows are Verified, checked at their sources on 12 September 2026, and
-both are hosted.** They are the two on `/shaking/ground/`. Everything else below
-is Stated or To verify and none of it is on the site. See *The verification
+**Six rows are Verified, checked at their sources on 12 September 2026, and all
+six are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/` and
+one on `/shaking/fire-following/`. Everything else below is Stated or To verify
+and none of it is on the site. See *The verification
 queue* at the foot for what is left.
 
 ---
@@ -95,6 +96,7 @@ queue* at the foot for what is left.
 | CC BY 2.0 | Attribution 2.0 Generic | no | no | no |
 | CC BY-SA 2.0 | Attribution-ShareAlike 2.0 Generic | **yes** | no | no |
 | CC BY-SA 3.0 | Attribution-ShareAlike 3.0 Unported | **yes** | no | no |
+| CC BY-NC-SA 2.0 | Attribution-NonCommercial-ShareAlike 2.0 Generic | **yes** | **yes** | no |
 | CC BY-NC-ND 4.0 | Attribution-NonCommercial-NoDerivatives 4.0 International | no | **yes** | **yes** |
 
 What each constraint costs, in the site's terms:
@@ -109,7 +111,7 @@ be marked up, use CC BY material or draw it.
 **Non-commercial** is a tripwire rather than a constraint. The site is free,
 carries no advertising, no affiliate links and no paid offering, which reads as
 non-commercial in ordinary usage. If that ever changes, every NC row comes off
-the site in the same change. One row is NC today. It is flagged in the code as
+the site in the same change. Two rows are NC today. They are flagged in the code as
 well as here, so the question can be answered by grep and not by memory.
 
 **No derivatives** means no crop, no colour correction, no text or arrows over
@@ -206,6 +208,109 @@ The rule is to measure the file, but the failure mode should not be silent.
 - **Source:** https://commons.wikimedia.org/wiki/File:The_Palms_in_liquefaction.jpg
 - **Status:** To verify.
 
+### 1b. Unreinforced masonry, parapets and what lands on the footpath
+
+All three are the **September 2010 Darfield earthquake**, not February 2011, and
+that choice is the substance of this group rather than a detail of it. Same
+city, same building stock, same failure — and the 2010 earthquake killed nobody.
+The 2011 photographs of a URM façade down on a street carry a death toll that
+`/shaking/buildings/` cites two paragraphs below where the images sit, and using
+them would have leaned on the casualty limit for no gain. 2010 gets the
+mechanism with none of that attached.
+
+Together they answer three different sentences in the City's own quote, which is
+why there are three and not one: what a parapet is, what it does when it fails,
+and what the street looks like afterwards.
+
+#### `christchurch-beckenham-shops`
+
+- **Shows:** a row of two-storey brick shops in Beckenham, each with a moulded
+  parapet above its roofline, one of which has collapsed along with part of the
+  wall below it, bending the verandah it fell on. The shopfront underneath is
+  boarded over and the footpath is closed the length of the row.
+- **Photographer:** Greg O'Beirne
+- **Licence:** CC BY-SA 3.0
+- **Source:** https://commons.wikimedia.org/wiki/File:ChristchurchEarthquake_Beckenham03_gobeirne.jpg
+- **Status:** **Verified, 12 September 2026.**
+- **Used on:** `/shaking/buildings/`, under the paragraph defining a parapet.
+- **Why this one:** it is the only photograph in the set that teaches the word.
+  The neighbouring parapets are intact and ornate and the failed one is not, so a
+  reader learns what a parapet is by comparison inside a single frame, and the
+  row could be Commercial Drive or Main Street without changing a thing.
+- **Panoramic**, `100 / 39` hosted. It is the widest image on the site and the
+  frame is the reason it works; do not crop it to match anything else.
+
+#### `christchurch-dairy-gable-wall`
+
+- **Shows:** the upper brick wall of a corner shop in Dallington gone from the
+  building, the room behind it open to the street with its door and lining
+  standing, and the brick heaped on the footpath below a shopfront that is
+  undamaged.
+- **Photographer:** Martin Luff — the same photographer as `avonside-road-damage`,
+  though this one is on Commons rather than taken from his Flickr stream.
+- **Licence:** CC BY-SA 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Earthquake_damage_-_dairy.jpg
+- **Status:** **Verified, 12 September 2026.**
+- **Used on:** `/shaking/buildings/`, against the City's "collapse onto exterior
+  areas immediately adjacent to the building".
+- **Why this one:** it is the clearest statement in the set of the thing the
+  sentence describes, because the wall, the hole it left and the pile it made are
+  all in one frame, and the shop underneath is plainly still a shop.
+
+#### `christchurch-moorhouse-parapet`
+
+- **Shows:** brick off one parapet spread the length of a footpath and across a
+  parking lane on Moorhouse Avenue, fenced and coned, with the building intact
+  and traffic running in the far lanes.
+- **Photographer:** Nate Cull
+- **Licence:** CC BY-SA 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Office_Building_Moorhouse_Ave.jpg
+- **Status:** **Verified, 12 September 2026.**
+- **Used on:** `/shaking/buildings/`, after the 13-million-tonne federal debris
+  estimate.
+- **Why this one:** it answers a different claim from the other two. The City's
+  worry about arterials is emergency response and transport blockage rather than
+  injury, and this is that claim at the scale of one building. **The caption says
+  in as many words that the federal tonnage is not something the photograph can
+  be asked** — a number beside an image is exactly where the analogue rule slips.
+
+### 1c. Vancouver itself
+
+#### `vancouver-dfps-hydrant`
+
+**The first photograph on the site that is not an analogue,** and the rule it
+sits under is different because of it. Every other image here says "this
+mechanism is a thing the world does, and it could do it on ground like yours".
+This one says "this object is on a street near you, go and look". There is no
+transfer from somewhere else, so there is nothing for the analogue rule to
+limit, and the caption's job is the opposite of framing: it is an instruction.
+
+- **Shows:** a Vancouver hydrant with a blue body and a white bonnet, the letters
+  `DFPS` cast into the body below one outlet.
+- **Photographer:** Tom Magliery (`mag3737`)
+- **Title:** "Hydrant"
+- **Licence:** CC BY-NC-SA 2.0 — **non-commercial and share-alike**
+- **Source:** https://www.flickr.com/photos/mag3737/35236992430
+- **Status:** **Verified, 12 September 2026.** Licence read off the Flickr page,
+  which records licence id 1. The photographer's own description settles the
+  identification rather than leaving it to inference: "We attended a tour of
+  Vancouver's Dedicated Fire Protection System (DFPS) … One of the blue hydrants
+  that is part of the DFPS." The cast `DFPS` on the body is legible in the hosted
+  file and corroborates it independently.
+- **Used on:** `/shaking/fire-following/`, where the page says the blue hydrants
+  are the only part of the City's description a resident can act on.
+- **Why this one:** the page tells a reader to go and identify an object and then
+  does not show them the object. That is the plainest failure of §8's test that
+  the site had left, and it is the one case where a photograph is not evidence
+  but an instruction.
+- **Constraints:** NC makes this the second non-commercial row. Share-alike keeps
+  it out of the figure kit like the rest.
+- **Not the best available file, and there is no better.** 1024 × 1024 is the
+  largest size Flickr offers for it, and a search of openly licensed collections
+  for a Vancouver DFPS hydrant returns **nothing** under a licence permitting
+  commercial use. If the site ever needs to shed NC material, this one has no
+  replacement waiting and the slot goes back to being a sentence.
+
 ### 2. Road damage, sinkholes and lateral spreading
 
 #### `avonside-road-damage`
@@ -289,6 +394,13 @@ own check.
 
 ## Where to look for more
 
+- Wikimedia Commons, *Category:2010 Canterbury earthquake* and
+  *Category:2010 Canterbury earthquake damage*. The September 2010 event, which
+  caused no deaths. For any mechanism that both earthquakes produced, look here
+  first: the imagery is equivalent and it carries none of the casualty weight of
+  February 2011.
+- Wikimedia Commons, *Category:Buildings damaged by the 2011 Canterbury
+  earthquake*. Very large, organised by individual building.
 - Wikimedia Commons, *Category:Soil liquefaction in New Zealand*. Small, and
   entirely licensed material.
 - Wikimedia Commons, *Category:Roads damaged by the 2011 Canterbury earthquake*.
@@ -333,6 +445,15 @@ this round should change about how the next photograph is added.
 **`www.canterburystories.nz` still answers 403 to this environment,** so
 `christchurch-pages-road` remains Stated. It is held rather than used, so
 nothing on the site waits on it.
+
+Three more photographs were cleared and hosted on the same day, for
+`/shaking/buildings/` and `/shaking/fire-following/`. Their rows are above. Two
+things from that round are worth carrying forward: **prefer the September 2010
+earthquake to February 2011 wherever both show the mechanism**, because one of
+them killed nobody; and the alt-text rule below held again, since two of the
+three captions written before the files were opened contained a detail the frame
+did not support — a bus stop that is not there, and shops called undamaged that
+are boarded over.
 
 What is left, and none of it is blocking:
 
