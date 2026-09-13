@@ -1,5 +1,11 @@
 import { Cite } from "@/components/citation";
-import { Figure, Prose, Quote, VerificationNote } from "@/components/page-parts";
+import {
+  Figure,
+  Photograph,
+  Prose,
+  Quote,
+  VerificationNote,
+} from "@/components/page-parts";
 import {
   ElectricityChronology,
   ElectricityTwoClocks,
@@ -330,6 +336,27 @@ export const electricity: PageModule = {
           >
             <TransformerLeadTimes />
           </Figure>
+          <Photograph
+            id="uchtelfangen-transformer"
+            caption={
+              <>
+                Uchtelfangen, Germany, February 2019. A transformer weighing
+                just under 400 tonnes arrives at its substation on a closed road,
+                carried by road from the harbour at Dillingen.
+              </>
+            }
+          />
+          <Photograph
+            id="wajima-fallen-pole"
+            caption={
+              <>
+                Wajima, on the Noto Peninsula, seven weeks after the January
+                2024 earthquake. A concrete power pole lies across the road with
+                its cables still attached, beside a collapsed house. Overhead
+                wires still run between the poles that stayed up.
+              </>
+            }
+          />
           <VerificationNote label="Not yet published">
             BC Hydro’s statement covers downtown Vancouver, and the Second
             Narrows crossing is the only other named asset. No restoration

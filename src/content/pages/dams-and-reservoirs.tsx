@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
+  Photograph,
   Prose,
   Quote,
   DataTable,
@@ -196,6 +197,18 @@ export const damsAndReservoirs: PageModule = {
             <Cite id="BC-DDCG" /> Metro Vancouver is still paying for the
             evaluations and has not begun the upgrade.
           </p>
+          <Photograph
+            id="van-norman-dam-slide"
+            caption={
+              <>
+                Lower Van Norman Dam, Los Angeles, the day after the February
+                1971 San Fernando earthquake. On the reservoir side, the concrete
+                facing and part of the embankment have slid into the water, and
+                cracks run along the remaining slope. The dam held the
+                reservoir.
+              </>
+            }
+          />
           <VerificationNote label="Not yet published">
             Both reviews found no unsafe condition, and that is the whole of what
             has been made public about them. Whether either engineer examined

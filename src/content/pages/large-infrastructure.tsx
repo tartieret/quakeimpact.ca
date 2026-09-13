@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose, Quote, VerificationNote } from "@/components/page-parts";
+import {
+  Photograph,
+  Prose,
+  Quote,
+  VerificationNote,
+} from "@/components/page-parts";
 import type { PageModule } from "./index";
 
 const link = "text-accent underline underline-offset-2";
@@ -86,6 +91,16 @@ export const largeInfrastructure: PageModule = {
             and some sections of runway may be out of service for a few days.{" "}
             <Cite id="AIR-2013" />
           </p>
+          <Photograph
+            id="noto-airport-runway-repairs"
+            caption={
+              <>
+                Noto Airport, from the air, nearly four months after the 2024
+                Noto Peninsula earthquake. The three dark bands across the
+                runway are repaired sections.
+              </>
+            }
+          />
           <p>
             The buildings come third. Terminals, towers and hangars are expected
             to sustain “slight to moderate damage”, and some masonry structures
@@ -171,6 +186,28 @@ export const largeInfrastructure: PageModule = {
             <Cite id="RMS-KOBE" /> Kobe is an illustration, and it forecasts
             nothing here.
           </p>
+          <Photograph
+            id="kobe-rokko-island-quay"
+            caption={
+              <>
+                Rokko Island, Kobe, after the January 1995 earthquake. The quay
+                has split along its length: the strip of apron carrying the
+                crane rails has dropped away from the rest of the yard, and the
+                crane standing on it is out of line.
+              </>
+            }
+          />
+          <Photograph
+            id="kobe-port-island-crane"
+            caption={
+              <>
+                The same earthquake, a container terminal on Port Island. The
+                apron has torn open and a gantry crane has come down across the
+                quay. Repairs to the port took almost a year, and the traffic
+                did not come back with them. <Cite id="RMS-KOBE" />
+              </>
+            }
+          />
         </Prose>
       ),
     },

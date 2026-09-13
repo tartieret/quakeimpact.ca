@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose, VerificationNote } from "@/components/page-parts";
+import {
+  Photograph,
+  Prose,
+  VerificationNote,
+} from "@/components/page-parts";
 import type { PageModule } from "./index";
 
 const link = "text-accent underline underline-offset-2";
@@ -77,6 +81,16 @@ export const food: PageModule = {
             transportation will be disrupted, and existing supply chains will be
             inoperable.” <Cite id="PEIRS" />
           </p>
+          <Photograph
+            id="tokyo-milk-case-limit"
+            caption={
+              <>
+                A supermarket in Tokyo, a week after the March 2011 earthquake.
+                The milk case is nearly empty, with signs limiting milk to one
+                per customer.
+              </>
+            }
+          />
         </Prose>
       ),
     },

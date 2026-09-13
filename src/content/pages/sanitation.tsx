@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose, Quote, VerificationNote } from "@/components/page-parts";
+import {
+  Photograph,
+  Prose,
+  Quote,
+  VerificationNote,
+} from "@/components/page-parts";
 import type { PageModule } from "./index";
 
 /**
@@ -75,6 +80,16 @@ export const sanitation: PageModule = {
             Four litres covers drinking and washing. There is nothing in it for
             a toilet.
           </p>
+          <Photograph
+            id="christchurch-street-portaloo"
+            caption={
+              <>
+                A residential footpath in Christchurch, seven weeks after the
+                February 2011 earthquake. A portable toilet stands on the
+                footpath, with a second one further along.
+              </>
+            }
+          />
         </Prose>
       ),
     },
@@ -184,6 +199,17 @@ export const sanitation: PageModule = {
             reaches those plants through pipes, and the sewers are the part
             whose assessed condition is not public.
           </p>
+          <Photograph
+            id="suzu-uplifted-manhole"
+            caption={
+              <>
+                Horyumachi, Suzu, on the Noto Peninsula, nearly four months after
+                the January 2024 earthquake. A sewer manhole stands about a
+                metre above the road, pushed up through the asphalt when the
+                ground around it liquefied.
+              </>
+            }
+          />
           <p>
             Annacis Island serves about 1.25 million people across 14
             municipalities, and its remaining stage-gate approvals run from 2027

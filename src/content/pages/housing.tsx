@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
+  Photograph,
   Prose,
   Quote,
   DataTable,
@@ -68,6 +69,18 @@ export const housing: PageModule = {
             building stands, entry is restricted, and nobody has said for how
             long.
           </p>
+          <Photograph
+            id="sendai-limited-entry-placard"
+            caption={
+              <>
+                Miyagino-ku, Sendai, twelve days after the March 2011
+                earthquake. The notice reads LIMITED ENTRY. Handwritten on it
+                are the hazard, cracks and falling material on the outer wall,
+                and the time of the assessment, 11 a.m. on 20 March. A label
+                names the Miyagino ward disaster office that issued it.
+              </>
+            }
+          />
           <p>
             Behind every placard is a queue. In a Cascadia earthquake, damage
             assessment teams are expected to be overwhelmed, leaving “about two
@@ -99,6 +112,17 @@ export const housing: PageModule = {
             can sit inside a closed block, and nobody lives in it while the
             block is closed.
           </p>
+          <Photograph
+            id="christchurch-cordon-passes"
+            caption={
+              <>
+                Manchester Street, Christchurch, two days after the September
+                2010 earthquake. Inner-city residents wait for passes into the
+                cordon zone, one of them with a suitcase. The buildings behind
+                them are standing, with their windows unbroken.
+              </>
+            }
+          />
           <Quote
             speaker="City of Vancouver"
             source="Hazard and Risk Explorer, and the 2024 earthquake hazard fact sheet"

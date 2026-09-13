@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
   Figure,
+  Photograph,
   Prose,
   Quote,
   DataTable,
@@ -79,6 +80,17 @@ export const water: PageModule = {
           <p>
             Where the breaks fall matters more than how many of them there are.
           </p>
+          <Photograph
+            id="christchurch-parkview-valve"
+            caption={
+              <>
+                Parkview School, Christchurch, New Zealand, six days after the
+                February 2011 earthquake. A worker at the bottom of a concrete
+                shaft repairs earthquake damage to a valve on the school’s well,
+                while a second person holds the ladder from above.
+              </>
+            }
+          />
         </Prose>
       ),
     },
@@ -214,6 +226,16 @@ export const water: PageModule = {
             the affected region remains challenging for the first four to five
             days”. <Cite id="DCRRA-2025" />
           </p>
+          <Photograph
+            id="christchurch-water-tanker"
+            caption={
+              <>
+                Fisher Avenue, Beckenham, Christchurch, the day after the
+                February 2011 earthquake. Residents fill buckets and jugs from a
+                contractor’s water tanker parked at the kerb.
+              </>
+            }
+          />
           <p>
             The four to five days are about trucking water to people; the many
             months is about repairing the network. Merging them would suggest
@@ -233,6 +255,16 @@ export const water: PageModule = {
           >
             <WaterTwoClocks />
           </Figure>
+          <Photograph
+            id="kumamoto-temporary-pipe"
+            caption={
+              <>
+                Akamizu, Aso, Japan, three weeks after the April 2016 Kumamoto
+                earthquakes. A temporary pipe lies along the edge of the road,
+                held down with sandbags.
+              </>
+            }
+          />
         </Prose>
       ),
     },

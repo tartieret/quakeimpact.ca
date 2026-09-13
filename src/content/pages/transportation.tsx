@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Figure, Prose, DataTable, VerificationNote } from "@/components/page-parts";
+import {
+  Figure,
+  Photograph,
+  Prose,
+  DataTable,
+  VerificationNote,
+} from "@/components/page-parts";
 import {
   ApproachAgainstSpan,
   MasseyThreeNumbers,
@@ -121,6 +127,25 @@ export const transportation: PageModule = {
             <strong>Superstructure</strong>: “Access to traffic is not envisaged
             for a prolonged period.” <Cite id="MOTI-SRDC-05" />
           </p>
+          <Photograph
+            id="anchorage-bridge-inspection"
+            caption={
+              <>
+                The Glenn Highway bridge over Eagle River, Anchorage, about five
+                hours after the magnitude 7.0 earthquake of 30 November 2018. A
+                crack in the road surface is measured by hand with a tape.
+              </>
+            }
+          />
+          <Photograph
+            id="anchorage-glenn-highway-closed"
+            caption={
+              <>
+                The same bridge the next day. Crews and a truck are working on
+                the northbound carriageway, which carries no traffic.
+              </>
+            }
+          />
           <p>
             Restoration is gated on inspection before it is gated on repair.
             What the province plans for people while that inspection
@@ -236,6 +261,18 @@ export const transportation: PageModule = {
             earthquake, with normal service restorable within one month.{" "}
             <Cite id="MOTI-S6-SEC6" />
           </p>
+          <Photograph
+            id="anchorage-mirror-lake-ramp"
+            caption={
+              <>
+                The Mirror Lake interchange on the Glenn Highway, Anchorage,
+                about three hours after the 2018 earthquake. The embankment
+                under the southbound off-ramp has slid down the slope, taking
+                the asphalt and guardrail with it. The main carriageway beside
+                it is unbroken.
+              </>
+            }
+          />
         </Prose>
       ),
     },
@@ -251,6 +288,19 @@ export const transportation: PageModule = {
             approaches together are longer than the crossing.{" "}
             <Cite id="GMC-TUNNEL-19" />
           </p>
+          <Photograph
+            id="george-massey-tunnel-south-portal"
+            caption={
+              <>
+                The tunnel’s south portal in Delta, looking north, in 2021. It
+                carries Highway 99 under the Fraser River between Delta and
+                Richmond. The province calls it a critical transportation
+                corridor, and describes its replacement as strengthening
+                connections to the Port of Vancouver and the border
+                crossings. <Cite id="MOTI-MASSEY" />
+              </>
+            }
+          />
           <p>
             Its original design assumed peak shaking of 0.21 g, about a fifth of
             the force of gravity, and it “did not consider the effects of soil
@@ -475,6 +525,38 @@ export const transportation: PageModule = {
             after a small, deep earthquake, and it forecasts nothing about a
             large one.
           </p>
+          <Photograph
+            id="kaikoura-buckled-track"
+            caption={
+              <>
+                North of Kaikoura, New Zealand, three months after the magnitude
+                7.8 earthquake of November 2016. The track is bent into an S
+                where the ground moved under it, and the rails have rusted.
+              </>
+            }
+          />
+          <Photograph
+            id="kobe-port-liner-shored-guideway"
+            caption={
+              <>
+                Kobe, Japan, four days after the January 1995 earthquake. The
+                green girders carry the Port Liner, an automated transit line on
+                an elevated guideway. Scaffolding towers prop up the guideway,
+                and the street beneath it is closed.
+              </>
+            }
+          />
+          <Photograph
+            id="shiroishi-shinkansen-viaduct-repair"
+            caption={
+              <>
+                Shiroishi, Japan, thirteen days after the March 2022 earthquake
+                off Fukushima. Scaffolding surrounds the tie beams between the
+                columns of the Tohoku Shinkansen viaduct, which the photographer
+                records as damaged by the earthquake.
+              </>
+            }
+          />
           <VerificationNote label="Not yet established">
             TransLink has not published a seismic design standard for its
             guideways and stations, a system-wide seismic assessment, or any
