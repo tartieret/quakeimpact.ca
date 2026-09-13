@@ -374,18 +374,21 @@ export const transportation: PageModule = {
           </p>
           <Figure
             interactive
-            alt={`Nineteen crossings mapped. ${CROSSINGS_FACTS.quantitative} have a published figure for the earthquake they were designed or assessed against and ${CROSSINGS_FACTS.qualitative} are described in words only. The remaining ${CROSSINGS_FACTS.none} have nothing in the public record, and they are the crossings between Vancouver and everywhere else: the False Creek bridges, the Arthur Laing, Lions Gate and Ironworkers. A blank mark means nothing was found, not that a crossing is unassessed.`}
+            alt={`Nineteen crossings mapped and sized by the earthquake each has a published figure for. Only Golden Ears reaches the 2,475-year standard a new lifeline crossing is designed to. Knight Street is at 1,000 years, ${CROSSINGS_FACTS.at475} crossings are at the 475 years a provincial retrofit is carried out against, and the George Massey Tunnel now assesses at 150 to 240 years after the ground stage of its retrofit was cancelled. The remaining ${CROSSINGS_FACTS.unpublished} have no return period in the public record. These figures are what each structure was aimed at rather than a forecast: a retrofit is carried out to stop a bridge collapsing, not to keep it in service, so a crossing marked here can stand and still carry nobody.`}
             caption={
               <>
-                What is published about each crossing, in the place the crossing
-                is. The marks say what a reader can obtain, not how a structure
-                would perform: nobody publishes that per crossing, and the
-                figures that are public each belong to one earthquake at one
-                place on one bridge. A blank mark means nothing was found in the
-                public record. The table below gives what is published, crossing
-                by crossing. The Moray Channel Bridge is not drawn: no openly
-                licensed source holds it, and a hand-placed position would be
-                one this site invented.
+                The earthquake each crossing has a published figure for, in the
+                place the crossing is. A bigger mark is a bigger earthquake, and
+                the sizes are an order rather than a scale. The key under the
+                map says what each of those earthquakes bought, which is the
+                part the number alone reverses: these are design intents, the
+                retrofit objective is to stop a collapse rather than to keep a
+                crossing open, and a hollow mark means no return period was
+                found rather than that a crossing is unassessed. The table below
+                gives the full figure and its source, crossing by crossing. The
+                Moray Channel Bridge is not drawn: no openly licensed source
+                holds it, and a hand-placed position would be one this site
+                invented.
               </>
             }
             licence={<CrossingsLicence />}

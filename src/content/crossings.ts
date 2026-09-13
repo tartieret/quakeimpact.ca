@@ -11,24 +11,50 @@ import crossingsFile from "@/data/region-crossings.json";
  *
  * Geometry comes from `src/data/region-crossings.json`, which three cleared
  * sources produce; see `scripts/data/build-region-geography.mjs` for why it
- * takes three. What this module adds is the reading: which of the three states
- * below each crossing is in, and which have a dated replacement.
+ * takes three. What this module adds is the reading: the earthquake each
+ * crossing has a published figure for, whether that figure is an intent or an
+ * assessment, what it bought, and which crossings have a dated replacement.
  *
- * **Every state is a statement about the public record, not about a
- * structure.** `none` says nothing was found, never that nothing exists or that
- * a crossing is unassessed. The page's own finding is that these crossings have
- * mostly been assessed and that most assessments are not public, so a mark that
- * implied otherwise would contradict the sentence above the table it sits in.
+ * **A return period here is a design intent, not a prediction.** `/method/` says
+ * so in prose and `/after/transportation/` quotes the Ministry saying it is not
+ * retrofitting these bridges to remain in service, only to not collapse. Every
+ * event below therefore carries what it bought, and the figure prints that
+ * under its ramp rather than burying it in a caption.
+ *
+ * **A null event means no return period was found, never that nothing exists.**
+ * Most of these crossings have been assessed and most assessments are not
+ * public, so a mark implying otherwise would contradict the sentence above the
+ * table it sits in.
  */
 
-/** What a reader can actually obtain about the earthquake a crossing faces. */
-export type PublishedState =
-  /** A return period, a displacement or a capacity is published. */
-  | "quantitative"
-  /** Published, but in words only: no return period, no figure. */
-  | "qualitative"
-  /** Nothing found in the public record. Not a claim that nothing exists. */
-  | "none";
+/**
+ * The earthquake a crossing has a published figure for, as a class on the
+ * map's ramp. Four classes, because four is what the sources give.
+ */
+export type EventBand = "150-240" | "475" | "1000" | "2475";
+
+/**
+ * Whether a figure is what somebody aimed at or what somebody later measured.
+ * `/method/` draws this distinction explicitly: "a design intent is not a
+ * prediction". Only the George Massey Tunnel is an assessment, and it is the
+ * reason the distinction is carried at all - the tunnel now assesses below the
+ * earthquake it was designed for, so drawing it at its design intent would be
+ * drawing the wrong number.
+ */
+export type EventKind = "intent" | "assessed";
+
+export interface CrossingEvent {
+  band: EventBand;
+  /** The figure as the source states it. */
+  label: string;
+  kind: EventKind;
+  /**
+   * What that earthquake bought, in the source's own terms. Every one of these
+   * is collapse prevention rather than staying in service, which is the guard
+   * the map is built around rather than an incidental field.
+   */
+  bought: string;
+}
 
 export interface Crossing {
   id: string;
@@ -42,7 +68,8 @@ export interface Crossing {
    * states without a source: it claims nothing about earthquakes.
    */
   crosses: string;
-  state: PublishedState;
+  /** Null where no return period has been published. Thirteen of nineteen. */
+  event: CrossingEvent | null;
   /** A replacement that is open or funded and dated. Two crossings have one. */
   replacement?: string;
 }
@@ -50,60 +77,102 @@ export interface Crossing {
 /**
  * The reading, by crossing id.
  *
- * Every `quantitative` and `qualitative` entry here is a row of the table on
+ * Every entry with an event is a row of the table on
  * `/after/transportation/`, and the figure behind it is cited there. Nothing in
- * this file is a new claim: it is the table's own column, in a form a drawing
+ * this file is a new claim: it is the table's own numbers, in a form a drawing
  * can use.
+ *
+ * **A null event means no return period was found, never that a crossing is
+ * unassessed.** Most of these have been assessed and most assessments are not
+ * public. Alex Fraser and the Pattullo replacement are described in the
+ * sources without a return period, and the Port Mann's three papers are
+ * paywalled; the table says which is which, because a map cannot.
  */
 const READING: Record<
   string,
-  { crosses: string; state: PublishedState; replacement?: string }
+  { crosses: string; event?: CrossingEvent; replacement?: string }
 > = {
   // Burrard Inlet
-  "lions-gate": { crosses: "Burrard Inlet", state: "none" },
-  "ironworkers-memorial-second-narrows": {
-    crosses: "Burrard Inlet",
-    state: "none",
-  },
+  "lions-gate": { crosses: "Burrard Inlet" },
+  "ironworkers-memorial-second-narrows": { crosses: "Burrard Inlet" },
 
   // False Creek, all three City of Vancouver bridges
-  burrard: { crosses: "False Creek", state: "none" },
-  granville: { crosses: "False Creek", state: "none" },
-  cambie: { crosses: "False Creek", state: "none" },
+  burrard: { crosses: "False Creek" },
+  granville: { crosses: "False Creek" },
+  cambie: { crosses: "False Creek" },
 
   // North Arm of the Fraser
-  "arthur-laing": { crosses: "North Arm of the Fraser", state: "none" },
-  "oak-street": { crosses: "North Arm of the Fraser", state: "quantitative" },
-  "knight-street": { crosses: "North Arm of the Fraser", state: "quantitative" },
-  "north-arm": { crosses: "North Arm of the Fraser", state: "quantitative" },
+  "arthur-laing": { crosses: "North Arm of the Fraser" },
+  "oak-street": {
+    crosses: "North Arm of the Fraser",
+    event: {
+      band: "475",
+      label: "475 years",
+      kind: "intent",
+      bought: "Prevent structural collapse. Reassessed in 2021 and 2022 against higher loads; those figures are not public.",
+    },
+  },
+  "knight-street": {
+    crosses: "North Arm of the Fraser",
+    event: {
+      band: "1000",
+      label: "1,000 years",
+      kind: "intent",
+      bought: "Above this event the crossing need not be passable.",
+    },
+  },
+  "north-arm": {
+    crosses: "North Arm of the Fraser",
+    event: {
+      band: "475",
+      label: "475 years",
+      kind: "intent",
+      bought: "Repairable damage. Only this event and a 100-year one were considered.",
+    },
+  },
   queensborough: {
     crosses: "North Arm of the Fraser",
-    state: "quantitative",
+    event: {
+      band: "475",
+      label: "475 years",
+      kind: "intent",
+      bought: "Prevent collapse. May or may not be functional afterwards.",
+    },
   },
 
   // Middle Arm of the Fraser. The Moray Channel Bridge belongs here and is
   // absent from the data: no cleared source holds it.
-  dinsmore: { crosses: "Middle Arm of the Fraser", state: "none" },
-  "no-2-road": { crosses: "Middle Arm of the Fraser", state: "none" },
+  dinsmore: { crosses: "Middle Arm of the Fraser" },
+  "no-2-road": { crosses: "Middle Arm of the Fraser" },
 
   // The Fraser itself
-  "alex-fraser": { crosses: "Fraser River", state: "qualitative" },
+  "alex-fraser": { crosses: "Fraser River" },
   "george-massey-tunnel": {
     crosses: "Fraser River",
-    state: "quantitative",
+    event: {
+      band: "150-240",
+      label: "150 to 240 years",
+      kind: "assessed",
+      bought:
+        "Designed for 475 years. The ground-improvement stage of its retrofit was cancelled, and it now meets its criteria for this range instead.",
+    },
     replacement: "Replacement opens September 2031",
   },
-  pattullo: {
+  pattullo: { crosses: "Fraser River", replacement: "Replacement open" },
+  "port-mann": { crosses: "Fraser River" },
+  "golden-ears": {
     crosses: "Fraser River",
-    state: "qualitative",
-    replacement: "Replacement open",
+    event: {
+      band: "2475",
+      label: "2,475 years",
+      kind: "intent",
+      bought: "Objectives set at 475, 1,000 and 2,475 years.",
+    },
   },
-  "port-mann": { crosses: "Fraser River", state: "none" },
-  "golden-ears": { crosses: "Fraser River", state: "quantitative" },
-  "canoe-pass": { crosses: "Fraser River", state: "none" },
+  "canoe-pass": { crosses: "Fraser River" },
 
   // Pitt River
-  "pitt-river": { crosses: "Pitt River", state: "none" },
+  "pitt-river": { crosses: "Pitt River" },
 };
 
 interface CrossingRecord {
@@ -140,7 +209,9 @@ export const CROSSINGS: Crossing[] = FILE.crossings.map((record) => {
     name: record.name,
     kind: record.kind === "tunnel" ? "tunnel" : "bridge",
     at: [record.at[0], record.at[1]],
-    ...reading,
+    crosses: reading.crosses,
+    event: reading.event ?? null,
+    replacement: reading.replacement,
   };
 });
 
@@ -178,7 +249,8 @@ export const CROSSINGS_BY_WATER = WATER_ORDER.map((water) => ({
 /** Counted, never written down twice: the caption and the alt text state these. */
 export const CROSSINGS_FACTS = {
   total: CROSSINGS.length,
-  quantitative: CROSSINGS.filter((c) => c.state === "quantitative").length,
-  qualitative: CROSSINGS.filter((c) => c.state === "qualitative").length,
-  none: CROSSINGS.filter((c) => c.state === "none").length,
+  published: CROSSINGS.filter((c) => c.event).length,
+  unpublished: CROSSINGS.filter((c) => !c.event).length,
+  /** The three retrofitted to a 475-year event, which is the map's finding. */
+  at475: CROSSINGS.filter((c) => c.event?.band === "475").length,
 } as const;

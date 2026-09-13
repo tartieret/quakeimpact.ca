@@ -8,7 +8,8 @@ import {
   CROSSINGS_BY_WATER,
   crossing as crossingById,
   type Crossing,
-  type PublishedState,
+  type CrossingEvent,
+  type EventBand,
 } from "@/content/crossings";
 
 /**
@@ -19,20 +20,30 @@ import {
  * one figure with a `viewBox` and the one a reader can touch. The decisions
  * that belong to this drawing rather than to maps in general:
  *
- * - **It does not encode how well a crossing would do.** Nobody publishes that
- *   per crossing. `/after/transportation/` exists to say so: the figures that
- *   are public each belong to one earthquake at one place on one structure,
- *   and Queensborough's 150 mm and Golden Ears' 0.3 m are not points on a
- *   shared scale. Ramping them against each other would assert a comparability
- *   every source on that page denies. What is drawn instead is the state of the
- *   public record, which the sources do give.
- * - **The finding is where the empty marks fall, not how many there are.** They
- *   cluster on the crossings between Vancouver and everywhere else, which is a
- *   thing a table of the same nineteen rows cannot show. That is the whole
- *   reason this is a map.
- * - **An empty mark says nothing was found, never that nothing exists.** Most
- *   of these crossings have been assessed and most assessments are not public.
- *   The key says so in those words, and the alt text carries the guard too.
+ - **It draws the earthquake, and it has to say what the earthquake bought.**
+ *   The ramp is the return period each crossing has a published figure for.
+ *   Left at that it would teach the exact inversion `/method/` warns about: a
+ *   design intent is not a prediction, and the Ministry states plainly that it
+ *   is not retrofitting these bridges to remain in service, only to not
+ *   collapse. So the guard is not in the caption, where it could be skipped and
+ *   where it would not travel between the two pages that carry this figure. It
+ *   is in the key, directly under the ramp, and in the alt text.
+ * - **A bigger mark is a bigger earthquake, and the sizes are an order rather
+ *   than a scale.** Area carries the ordinal, which is the grammar the
+ *   ShakeMaps already use, so it survives in greyscale and needs no hue. It is
+ *   deliberately not proportional: 2,475 is five times 475 as a number and
+ *   nothing like five times as a mark, because none of these figures is a
+ *   measurement of strength that could be divided.
+ * - **A design intent and an assessed capacity are not drawn alike.** Only the
+ *   George Massey Tunnel is an assessment, and it is why the distinction
+ *   exists: the tunnel was designed for a 475-year earthquake and now meets its
+ *   criteria for 150 to 240 years, so drawing it at its design intent would put
+ *   the wrong number on the map. It is hatched, which is the site's existing
+ *   mark for a range rather than a figure.
+ * - **A hollow mark says no return period was found, never that a crossing is
+ *   unassessed.** Most of these have been assessed and most assessments are not
+ *   public. Hollow marks sit off the ramp at one size, so they cannot be read
+ *   as the weakest rung.
  * - **There are no response routes on it.** `docs/style-guide.md` §8 forbids
  *   drawing emergency-responder infrastructure as public infrastructure,
  *   `docs/licensing.md` makes the City's route map link-only, and since June
@@ -85,9 +96,6 @@ const KM_TALL = (NORTH - SOUTH) * KM_PER_DEGREE;
 const MAP_W = 1000;
 const MAP_H = Math.round((MAP_W * KM_TALL) / KM_WIDE);
 
-/** One map unit, in metres. Used to size a marker against real ground. */
-const METRES_PER_UNIT = (KM_WIDE * 1000) / MAP_W;
-
 function toMap(lon: number, lat: number): [number, number] {
   const x = ((lon - WEST) / (EAST - WEST)) * MAP_W;
   const y = ((NORTH - lat) / (NORTH - SOUTH)) * MAP_H;
@@ -115,54 +123,86 @@ const RIVER_PATH = linesToPath(WATER.river);
 /* ------------------------------------------------------------------ */
 
 /**
- * A marker is about 900 m of ground across, which is roughly the length of the
- * crossings it stands on. That is deliberate: the marks scale with the map, so
- * zooming in walks a mark down onto the structure it marks rather than leaving
- * a symbol floating over it. It is a locator and not a measure, though, and the
- * key says so: Canoe Pass is 154 m and the Massey tunnel 1,299 m, and both get
- * the same mark.
+ * The ramp, in map units of radius. The smallest published class is about the
+ * size a crossing actually is on this window; the rest step up from it.
+ *
+ * `none` is not the bottom of the ramp. It is drawn hollow at a size between
+ * the rungs, because a crossing with nothing published is not a crossing with a
+ * low number and must not be read as one.
  */
-const R = Math.round(450 / METRES_PER_UNIT);
-const SIDE = Math.round(R * 1.8);
+const RADIUS: Record<EventBand | "none", number> = {
+  "150-240": 7,
+  "475": 9.5,
+  "1000": 12,
+  "2475": 15,
+  none: 8,
+};
+
+/** A tunnel is a square of about the same visual weight as its circle. */
+const side = (r: number) => Math.round(r * 1.8);
+
+const HATCH_ID = "crossings-assessed";
 
 /**
- * Fill carries the state and shape carries the kind, so neither channel is
- * hue and both survive in greyscale. Full, half and empty is the same ordinal
- * the band meter uses, and it reads at the size a marker actually gets, which
- * a hatch at fifteen pixels does not.
+ * The hatch for an assessed range, filled with paper behind the lines so it
+ * reads against water as well as land, exactly as the figure kit's does.
+ *
+ * The period is deliberately fine. The one mark that carries it is a tunnel
+ * square about nine pixels across at full zoom-out, and a six-unit period put
+ * two stripes in it, which reads as a glyph rather than as a texture. At four
+ * it reads as "not solid" at the smallest size and resolves into the site's
+ * usual hatch as soon as a reader zooms, which is when the distinction between
+ * a range and a figure actually matters.
  */
+function HatchDef() {
+  return (
+    <defs>
+      <pattern
+        id={HATCH_ID}
+        width={4}
+        height={4}
+        patternUnits="userSpaceOnUse"
+        patternTransform="rotate(45)"
+      >
+        <rect width={4} height={4} fill={FIG_COLOR.paper} />
+        <rect width={1.8} height={4} fill={FIG_COLOR.ink} />
+      </pattern>
+    </defs>
+  );
+}
+
+/** The outline of one mark, at a radius, for either kind of crossing. */
+function shapeOf(kind: Crossing["kind"], r: number) {
+  if (kind === "tunnel") {
+    const a = side(r);
+    return <rect x={-a / 2} y={-a / 2} width={a} height={a} />;
+  }
+  return <circle r={r} />;
+}
+
+function fillOf(event: CrossingEvent | null): string {
+  if (!event) return FIG_COLOR.paper;
+  return event.kind === "assessed" ? `url(#${HATCH_ID})` : FIG_COLOR.ink;
+}
+
 function Mark({ crossing }: { crossing: Crossing }) {
   const [x, y] = toMap(crossing.at[0], crossing.at[1]);
-  const line = {
-    stroke: FIG_COLOR.ink,
-    strokeWidth: FIG_STROKE,
-    vectorEffect: "non-scaling-stroke" as const,
-  };
-  const outline = crossing.kind === "tunnel" ? (
-    <rect x={-SIDE / 2} y={-SIDE / 2} width={SIDE} height={SIDE} />
-  ) : (
-    <circle r={R} />
-  );
-  /** The filled half of a `qualitative` mark: the east half of either shape. */
-  const half = crossing.kind === "tunnel" ? (
-    <rect x={0} y={-SIDE / 2} width={SIDE / 2} height={SIDE} />
-  ) : (
-    <path d={`M0 ${-R}A${R} ${R} 0 0 1 0 ${R}Z`} />
-  );
+  const r = RADIUS[crossing.event?.band ?? "none"];
+  const shape = shapeOf(crossing.kind, r);
 
   return (
     <g transform={`translate(${x},${y})`}>
-      {/* Paper under every mark, so an empty one reads as empty rather than
+      {/* Paper under every mark, so a hollow one reads as hollow rather than
           letting the shoreline run through it. */}
-      <g fill={FIG_COLOR.paper}>{outline}</g>
-      {crossing.state === "quantitative" ? (
-        <g fill={FIG_COLOR.ink}>{outline}</g>
-      ) : null}
-      {crossing.state === "qualitative" ? (
-        <g fill={FIG_COLOR.ink}>{half}</g>
-      ) : null}
-      <g fill="none" {...line}>
-        {outline}
+      <g fill={FIG_COLOR.paper}>{shape}</g>
+      <g fill={fillOf(crossing.event)}>{shape}</g>
+      <g
+        fill="none"
+        stroke={FIG_COLOR.ink}
+        strokeWidth={FIG_STROKE}
+        vectorEffect="non-scaling-stroke"
+      >
+        {shape}
       </g>
     </g>
   );
@@ -176,6 +216,7 @@ function Mark({ crossing }: { crossing: Crossing }) {
 function Geometry() {
   return (
     <g fill="none">
+      <HatchDef />
       <path
         d={COAST_PATH}
         stroke={FIG_COLOR.mark}
@@ -201,62 +242,138 @@ function Geometry() {
 
 /**
  * A swatch at a fixed pixel size, in HTML rather than in the pane, so it stays
- * the same physical size at every width and every zoom.
+ * the same physical size at every width and every zoom. The swatch box is one
+ * size for every class and the mark inside it grows, which is what makes the
+ * ramp readable as a ramp in a list.
  */
-export function Swatch({ state }: { state: PublishedState }) {
+export function Swatch({
+  band,
+  kind = "bridge",
+  assessed = false,
+}: {
+  band: EventBand | "none";
+  kind?: Crossing["kind"];
+  assessed?: boolean;
+}) {
+  const r = RADIUS[band];
+  const shape = shapeOf(kind, r);
+  const fill =
+    band === "none"
+      ? FIG_COLOR.paper
+      : assessed
+        ? `url(#${HATCH_ID})`
+        : FIG_COLOR.ink;
   return (
     <svg
-      width={16}
-      height={16}
-      viewBox="-9 -9 18 18"
+      width={34}
+      height={34}
+      viewBox="-17 -17 34 34"
       aria-hidden="true"
       className="shrink-0"
     >
-      <circle r={8} fill={FIG_COLOR.paper} />
-      {state === "quantitative" ? <circle r={8} fill={FIG_COLOR.ink} /> : null}
-      {state === "qualitative" ? (
-        <path d="M0 -8A8 8 0 0 1 0 8Z" fill={FIG_COLOR.ink} />
-      ) : null}
-      <circle r={8} fill="none" stroke={FIG_COLOR.ink} strokeWidth={1.5} />
+      <HatchDef />
+      <g fill={FIG_COLOR.paper}>{shape}</g>
+      <g fill={fill}>{shape}</g>
+      <g fill="none" stroke={FIG_COLOR.ink} strokeWidth={1.4}>
+        {shape}
+      </g>
     </svg>
   );
 }
 
-const STATES: { state: PublishedState; label: string; gloss: string }[] = [
+/** The swatch a crossing gets, wherever one is shown beside its name. */
+function CrossingSwatch({ crossing }: { crossing: Crossing }) {
+  return (
+    <Swatch
+      band={crossing.event?.band ?? "none"}
+      kind={crossing.kind}
+      assessed={crossing.event?.kind === "assessed"}
+    />
+  );
+}
+
+/**
+ * The ramp, in the order the map draws it. Each rung says what that earthquake
+ * bought, because the number on its own says the opposite of what a reader
+ * will take from it.
+ */
+const RAMP: {
+  band: EventBand | "none";
+  label: string;
+  assessed?: boolean;
+  gloss: string;
+}[] = [
   {
-    state: "quantitative",
-    label: "A figure is published",
-    gloss: "A return period, a displacement or an assessed capacity.",
+    band: "2475",
+    label: "2,475 years",
+    gloss: "The standard a new lifeline crossing is designed to. One crossing here reaches it.",
   },
   {
-    state: "qualitative",
-    label: "Published in words only",
-    gloss: "Described, with no return period and no figure.",
+    band: "1000",
+    label: "1,000 years",
+    gloss: "Above this event, the one crossing marked at it need not be passable.",
   },
   {
-    state: "none",
-    label: "Nothing found",
+    band: "475",
+    label: "475 years",
+    gloss: "What a provincial retrofit is carried out against. Three crossings here.",
+  },
+  {
+    band: "150-240",
+    label: "150 to 240 years",
+    assessed: true,
     gloss:
-      "Nothing located in the public record. Most of these crossings have been assessed; most assessments are not published.",
+      "Hatched because it is an assessed range rather than a figure aimed at. The George Massey Tunnel, which was designed for 475 years and no longer meets it.",
+  },
+  {
+    band: "none",
+    label: "No return period published",
+    gloss:
+      "Nothing found in the public record. Most of these crossings have been assessed; most assessments are not published.",
   },
 ];
 
 function Key() {
   return (
     <div className="flex flex-col gap-5 text-sm">
+      <div>
+        <p className="font-semibold text-ink">
+          The earthquake each crossing has a published figure for
+        </p>
+        <p className="mt-1 text-ink-muted">
+          A bigger mark is a bigger earthquake. The sizes are an order, not a
+          scale.
+        </p>
+      </div>
+
       <ul className="flex flex-col gap-2">
-        {STATES.map(({ state, label, gloss }) => (
-          <li key={state} className="flex gap-3">
-            <span className="mt-0.5">
-              <Swatch state={state} />
-            </span>
+        {RAMP.map((rung) => (
+          <li key={rung.band} className="flex items-center gap-2">
+            <Swatch band={rung.band} assessed={rung.assessed} />
             <span>
-              <span className="font-semibold text-ink">{label}.</span>{" "}
-              <span className="text-ink-muted">{gloss}</span>
+              <span className="font-semibold text-ink">{rung.label}.</span>{" "}
+              <span className="text-ink-muted">{rung.gloss}</span>
             </span>
           </li>
         ))}
       </ul>
+
+      {/* The guard, under the ramp rather than in the caption: it has to travel
+          with the marks to both pages, and a reader who reads only the legend
+          must still get it. */}
+      <div className="border-l-2 border-accent pl-4">
+        <p className="font-semibold text-ink">
+          A return period is not a promise that the crossing still works.
+        </p>
+        <p className="mt-1 text-ink-muted">
+          These figures are what each structure was aimed at, not a forecast of
+          what it will do. A provincial retrofit is carried out to stop a bridge
+          collapsing, and the Ministry states that it is not retrofitting these
+          bridges to remain in service. A crossing marked here can stand up and
+          still carry nobody, and none of these numbers says how long an
+          inspection or a repair would take.
+        </p>
+      </div>
 
       <p className="text-ink-muted">
         A circle is a bridge and a square is a tunnel. The George Massey Tunnel
@@ -271,9 +388,14 @@ function Key() {
             </p>
             <ul className="mt-1 flex flex-wrap gap-x-4 gap-y-1">
               {crossings.map((crossing) => (
-                <li key={crossing.id} className="flex items-center gap-1.5">
-                  <Swatch state={crossing.state} />
+                <li key={crossing.id} className="flex items-center gap-1">
+                  <CrossingSwatch crossing={crossing} />
                   <span className="text-ink">{crossing.name}</span>
+                  {crossing.event ? (
+                    <span className="text-ink-faint">
+                      {crossing.event.label}
+                    </span>
+                  ) : null}
                   {crossing.replacement ? (
                     <span className="text-ink-faint">
                       ({crossing.replacement})
@@ -297,7 +419,7 @@ export function CrossingsMap() {
   return (
     <div className="flex flex-col gap-5">
       <MapViewer
-        label="Map of the region's nineteen road, rail and transit crossings, each marked with whether anything has been published about the earthquake it was designed or assessed against."
+        label="Map of the region's nineteen road, rail and transit crossings, each sized by the earthquake it has a published figure for."
         width={MAP_W}
         height={MAP_H}
         kmWide={KM_WIDE}
@@ -325,8 +447,8 @@ export function CrossingName({
 }) {
   const record = crossingById(id);
   return (
-    <span className="flex items-center gap-2">
-      <Swatch state={record.state} />
+    <span className="flex items-center gap-1">
+      <CrossingSwatch crossing={record} />
       <span>{children ?? record.name}</span>
     </span>
   );

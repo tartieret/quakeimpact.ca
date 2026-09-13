@@ -1,6 +1,10 @@
 # A map of the region's crossings, and what is published about each
 
 **Date:** 12 September 2026
+**Revised:** 12 September 2026, after review. The map ramps on the return period
+each crossing has a published figure for, rather than on whether a figure exists
+at all. The reasoning for the change is in "The ramp" below; everything about
+data, placement and what is not drawn is unchanged.
 **Branch:** `figures/bridge-map`
 **Replaces:** the `LandConnections` schematic on `/getting-around/`
 
@@ -10,8 +14,8 @@
 
 A map of the Lower Mainland's road, rail and transit crossings, drawn on the
 coastline and river geometry the site already vendors. Each crossing is marked
-with one of three states describing **what has been published about the
-earthquake it was designed or assessed against**, and nothing else.
+sized by **the earthquake it has a published figure for**, with the guard that
+such a figure buys against collapse and not against staying usable.
 
 It appears on two pages with two captions, and the same crossing list feeds the
 table `/after/transportation/` already carries.
@@ -30,7 +34,9 @@ one structure. Queensborough's 150 mm is a 475-year figure at two approach bents
 after soil treatment. Golden Ears' 0.3 m is a 2,475-year figure at the main
 piers after densification. Putting those on one ramp would assert a
 comparability every source on that page denies. So the map encodes what the
-sources actually give, which is whether a figure exists at all.
+sources actually give, which is the return period each crossing was designed or
+assessed against, drawn with the guard that such a figure is an objective of not
+collapsing rather than of staying open.
 
 That turns out to be the stronger graphic. A table of ten crossings reads as a
 documentation gap. A map shows the blank markers clustered on the city
@@ -94,33 +100,62 @@ invented, which `src/components/figures/README.md` rules out.
 window are mostly sign gantries, retaining walls and highway overpasses. The
 existing `AGGREGATE MAJOR BRIDGE` filter stays.
 
-## The three states
+## The ramp
 
-Each crossing carries one, and each is a statement about the public record, not
-about the structure.
+Each crossing is sized by the return period it has a published figure for.
+Bigger mark, bigger earthquake. The sizes are an order and not a scale: 2,475 is
+five times 475 as a number and nothing like five times as a mark, because none
+of these figures measures a strength that could be divided.
 
 | Mark | Meaning | Crossings |
 |---|---|---|
-| Solid | A quantitative figure is published | Massey Tunnel, Oak Street, Knight Street, Queensborough, Golden Ears, North Arm |
-| Hatched | Published, but qualitative only | Alex Fraser, Pattullo replacement |
-| Open outline | Nothing found in the public record | the remaining eleven |
+| Largest solid | 2,475 years, the standard a new lifeline crossing is designed to | Golden Ears |
+| Large solid | 1,000 years | Knight Street |
+| Medium solid | 475 years, what a provincial retrofit is carried out against | Oak Street, Queensborough, North Arm |
+| Small hatched | 150 to 240 years, an assessed range rather than a figure aimed at | George Massey Tunnel |
+| Hollow | No return period published | the remaining thirteen |
 
-The grammar is the site's existing one from `figures/README.md` — solid is a
-figure a source published, hatch is a range or an open end — so it reads in
-greyscale and needs no new token in `globals.css`. A tunnel takes its own shape,
-because the Massey is not a bridge.
+Area carries the ordinal, which is the grammar the ShakeMaps already use, so it
+survives in greyscale and needs no hue and no new token. Hollow marks sit off
+the ramp rather than at the bottom of it, because a crossing with nothing
+published is not a crossing with a low number.
 
-**Where the public record holds a paper nobody can read.** The Port Mann is the
-case: three papers on its seismic design exist and all three are paywalled. It
-takes the open outline, because the marks describe what a reader can actually
-obtain, and a figure behind a paywall is not published for this purpose. The
-table beside the map already draws the finer distinction in words, which is the
-right place for it; a fourth mark would split the legend to carry one crossing.
+**The George Massey Tunnel is hatched because it is the one assessment.** Every
+other figure is a design intent. The tunnel was designed for 475 years, the
+ground-improvement stage of its retrofit was cancelled, and it now meets its
+criteria for 150 to 240 years, so drawing it at its intent would put the wrong
+number on the map. Hatch is the site's existing mark for a range rather than a
+figure, and `/method/` already draws the intent-versus-prediction distinction in
+prose.
 
-**The third state's wording is load-bearing.** It says nothing has been found in
-the public record, never that nothing exists. The table's own preamble is that
-these crossings have mostly been assessed and the assessments are not public. A
-`VerificationNote` carries the distinction and the date the search was made.
+## Why this replaced encoding by what is published
+
+The first version of this map marked each crossing with whether a figure existed
+at all: published, described in words only, or nothing found. It was chosen to
+avoid asserting a comparability the sources deny. Review asked for the return
+period instead, on the grounds that a reader wants to know what is likely to
+hold, and that is the better question.
+
+**The number alone reverses its own meaning, so the number does not travel
+alone.** `/method/` states that a design intent is not a prediction.
+`/after/transportation/` quotes the Ministry: functional retrofitting would
+require important bridges to remain in service, and the Ministry is not doing
+it. A crossing marked 475 is one somebody aimed at not collapsing in a 475-year
+earthquake. It can stand up and carry nobody, and nothing in the figure says how
+long an inspection or a repair takes.
+
+**So the guard is in the key, directly under the ramp, and in the alt text.** Not
+in the caption. A caption is skipped; this figure appears on two pages with
+different surrounding prose; and a reader who reads only the legend still has to
+get it. That placement is the condition on which the return period can be drawn
+at all.
+
+**What the ramp shows that the old encoding did not.** Three of the four
+crossings with a design figure were retrofitted against 475 years. One crossing
+in the region reaches the 2,475-year lifeline standard, and it is the newest.
+The tunnel between Richmond and Delta now assesses below the earthquake it was
+built for. That is a legible statement about the region's crossings, and it is
+what was asked for.
 
 ## Placement
 

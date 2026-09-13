@@ -167,22 +167,27 @@ export const gettingAround: PageModule = {
             </Prose>
           </Callout>
           {/* The three facts above are drawn here as geography rather than
-              asserted. What the marks add on top of position is not a claim
-              about earthquakes either: it is whether anybody has published one.
-              The licence slot is filled because three datasets are behind it. */}
+              asserted. The marks add the earthquake each crossing has a
+              published figure for, which is a claim about earthquakes, so the
+              guard travels inside the figure: a return period is a design
+              intent aimed at not collapsing, not a forecast of a crossing a
+              reader could use. The licence slot is filled because three
+              datasets are behind it. */}
           <Figure
             interactive
-            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, mapped. Vancouver's land connection runs east; everything else is a bridge or a tunnel. ${CROSSINGS_FACTS.none} of the ${CROSSINGS_FACTS.total} crossings have nothing published about the earthquake they were designed or assessed against, and those include every False Creek bridge, the Arthur Laing, the Lions Gate and the Ironworkers. A blank mark means nothing was found, not that a crossing is unassessed.`}
+            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, mapped and sized by the earthquake each has a published figure for. Vancouver's land connection runs east; everything else is a bridge or a tunnel. ${CROSSINGS_FACTS.unpublished} of the ${CROSSINGS_FACTS.total} crossings have no return period in the public record, including every False Creek bridge, the Arthur Laing, the Lions Gate and the Ironworkers. Where a figure exists it is what the structure was aimed at rather than a forecast, and it is an objective of not collapsing rather than of staying open, so a crossing marked here can stand and still carry nobody.`}
             caption={
               <>
-                The crossings, where they are. Vancouver's land route runs east
-                through Burnaby and New Westminster; every other way off the
-                peninsula, and every way onto Richmond, is on this map. The
-                marks say what has been published about the earthquake each
-                crossing was designed or assessed against, which for most of
-                them is nothing that could be found. That is a gap in the public
-                record and not a verdict on a bridge. What the crossings were
-                built to withstand is in {transportationLink}.
+                The crossings, where they are, sized by the earthquake each has
+                a published figure for. Vancouver's land route runs east through
+                Burnaby and New Westminster; every other way off the peninsula,
+                and every way onto Richmond, is on this map. Read the key before
+                the marks: these figures are what each structure was aimed at,
+                the aim is to stop a collapse rather than to keep a crossing
+                open, and for most of them no figure could be found at all. What
+                the crossings were built to withstand, and what the province
+                says a surviving bridge is good for the next morning, is in{" "}
+                {transportationLink}.
               </>
             }
             licence={<CrossingsLicence />}

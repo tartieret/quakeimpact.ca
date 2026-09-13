@@ -45,12 +45,12 @@ import { geometryLines, maxDeviation, reduceLine } from "./lib/geo.mjs";
  * of deviation is under a pixel. Its east edge is at -122.60 rather than the
  * -122.70 it carried while this window fed nothing, because the Golden Ears
  * Bridge is at -122.666 and a crossings map that cropped a crossing out would
- * be making the same omission this script exists to stop. `scenario` is the whole ShakeMap
- * window at 160 km, drawn at about 620 px, where one pixel is 258 m of ground;
- * cutting that one at 60 m would ship four times the vertices to draw the same
- * line. `vancouver` is tighter again, 22 km across at about 700 px, or 31 m of
- * ground per pixel, so it is cut at 25 m. Each window states the tolerance its
- * own drawing can carry.
+ * be making the same omission this script exists to stop. `scenario` is the
+ * whole ShakeMap window at 160 km, drawn at about 620 px, where one pixel is
+ * 258 m of ground; cutting that one at 60 m would ship four times the vertices
+ * to draw the same line. `vancouver` is tighter again, 22 km across at about
+ * 700 px, or 31 m of ground per pixel, so it is cut at 25 m. Each window states
+ * the tolerance its own drawing can carry.
  *
  * The Vancouver window exists because the City boundary is a jurisdictional
  * line, not a shoreline: it runs straight out across Burrard Inlet and English
