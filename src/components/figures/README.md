@@ -4,7 +4,7 @@ How a graphic gets made on this site. Read `docs/style-guide.md` §8 and §9
 first: the visual rules are decisions, not preferences, and everything below is
 those rules made buildable.
 
-The worked examples are the two on `/after/water/`: read `water.tsx` next to this file alongside the rules. There are more elsewhere, on `/after/electricity/`, `/shaking/ground/`, `/scenarios/`, `/prepare/`, `/method/`, `/getting-around/` and `/dependencies/`.
+The worked examples are the two on `/after/water/`: read `water.tsx` next to this file alongside the rules. There are more elsewhere, on `/after/electricity/`, `/shaking/ground/`, `/scenarios/`, `/shaking/fire-following/`, `/prepare/`, `/method/`, `/getting-around/` and `/dependencies/`.
 Read `water.tsx` next to this file alongside the rules.
 
 ---
@@ -151,6 +151,25 @@ Two things to get right, both of which have already been got wrong here:
 the `role="img"` on the frame, which would otherwise make the graphic's own
 buttons presentational and unreachable, and puts the finding in a screen-reader
 paragraph instead.
+
+### A symbol map has two more problems, and `fire-following.tsx` is the worked one
+
+The ShakeMaps draw ground: a cell is a real area and magnifying it is the point.
+A map of points is different in two ways that bite.
+
+- **A symbol drawn in map units shrinks with the column.** A mark sized on a
+  laptop is a little over half that diameter on a 390 px phone. Size a symbol at
+  phone width and check it at the wider one, never the other way round, and
+  prefer a solid mark: a ring fine enough to look right wide disappears narrow.
+- **A symbol scales with the zoom, and there is nothing more to see once the
+  marks have separated.** `MapViewer` takes `maxZoom` for that, and the number
+  belongs to the map rather than to the pane, exactly as the default sixteen
+  belongs to the ShakeMap grid. The fire hall map asks for four.
+
+A third, which is not about maps at all: **paper on paper is a mark at 1:1
+against its own ground**, so a donut filled with paper or a disc given a paper
+halo both fail the QA pass's mark check, and both deserve to. Use `fill="none"`
+and let the marks stand apart on their own.
 
 ---
 

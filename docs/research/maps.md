@@ -43,9 +43,10 @@ Metro Vancouver claim — which is also the site's reason.
 | --- | --- | --- | --- |
 | Dedicated Fire Protection System mains | City of Vancouver Open Data | Open Government Licence – Vancouver **[A]** | The extent of the network, drawn rather than described. **Acquired 11 September 2026**, slug `dedicated-fire-protection-systems-dfps-water-mains`. |
 | Vancouver city boundary | City of Vancouver Open Data | Open Government Licence – Vancouver **[A]** | Reference outline, so "outside the system" has an edge to be outside of. **Acquired 11 September 2026.** |
+| Vancouver fire halls | City of Vancouver Open Data | Open Government Licence – Vancouver **[A]** | Where the halls are. Name, address and point, and nothing about condition or standard. **Acquired 12 September 2026**, slug `fire-halls`. |
 | Cascadia M9.0 ShakeMap | GSC scenario catalogue | Open Government Licence – Canada **[A]** | Scenario shaking, at dissemination-area resolution. **Acquired 11 September 2026** as `SIM9p0_CascadiaInterfaceBestFault`. |
 | Georgia Strait M7.0 ShakeMap | GSC scenario catalogue | Open Government Licence – Canada **[A]** | The same, for the crustal scenario. **Acquired 11 September 2026** as `ACM7p0_GeorgiaStraitFault`. |
-| Freshwater Atlas coastlines and rivers | GeoBC, BC Data Catalogue | Open Government Licence – BC **[A]** | Shoreline and river water for the getting-around map. **Acquired 11 September 2026**, licence confirmed on each record. |
+| Freshwater Atlas coastlines and rivers | GeoBC, BC Data Catalogue | Open Government Licence – BC **[A]** | Shoreline and river water, cut for three windows. **Acquired 11 September 2026**, licence confirmed on each record. |
 | MOT road structures | BC Data Catalogue | Open Government Licence – BC **[A]** | Major provincial crossings, with the caveats below. **Acquired 11 September 2026.** |
 | BC transmission lines | GeoBC, BC Data Catalogue | Open Government Licence – BC **[A]** | Corridor position only — **voltage attributes are withheld by agreement with BC Hydro**, so no map built from it may imply voltage or criticality. Not acquired. |
 
@@ -69,6 +70,34 @@ would be a hull or a buffer the project invented, presented in the City's name.
 The graphic to build is the network on the city outline, and the argument is
 carried by how little of the city it reaches — which is stronger as fact than as
 a line somebody drew.
+
+### The fire hall layer carries no status, and the status classes are ours
+
+The `fire-halls` layer holds twenty points with a name, an address and a local
+area. **It says nothing about the condition or the seismic standard of any
+hall**, and no City document classifies the nineteen. What exists is six halls
+named individually across two capital plans, recorded in `buildings.md`: #17
+finished to a post-disaster standard; #8 and #9 being rebuilt to it for 2029; #2
+being replaced and stated not to meet current seismic standards; #1 to be
+seismically upgraded; and #12 selected for seismic upgrade in the 2019 to 2022
+plan, with no completion published.
+
+So the map drawn from it has three classes, **built**, **named in a capital
+plan** and **nothing published**, and the third is thirteen of nineteen. The
+classes are the site's reading of those documents and the legend says so, which
+OGL–Vancouver requires anyway: the licence forbids any use suggesting official
+status. Do not let the third class drift into "not built to standard". It is the
+absence of a published answer and nothing more.
+
+**The layer holds twenty halls and the City counts nineteen.** The twentieth is
+in the University Endowment Lands and serves the UEL and UBC. The layer's own
+`geo_local_area` field is empty for it, because the UEL is not one of
+Vancouver's twenty-two local areas, so the split is the City's attribution
+rather than the project's guess. The figure computes both counts from the file.
+
+**The City's own accuracy caveat is "Locations are approximate."** It is carried
+out of the record into the vendored file and out of the file into the caption,
+so it cannot drift.
 
 ### The ShakeMaps are point clouds, not rasters
 
@@ -197,6 +226,8 @@ algorithm is thirty lines and the project takes no new dependencies.
 | --- | --- | --- | --- |
 | `fire-protection-mains.json` | 14.6 kB | 95.4 kB, 245 features, 932 vertices | Every attribute but diameter; 1 m tolerance; 5 decimal places, about 0.7 m. Four runs vanish: they are sub-metre stubs of 0.1 to 0.6 m that 5-decimal rounding collapses to a point. |
 | `vancouver-boundary.json` | 1.9 kB | 19.5 kB, 494 vertices | 25 m tolerance, 4 decimal places. Reference outline only. |
+| `fire-halls.json` | 1.9 kB | 4.3 kB, 20 points | Everything but the hall number, the address and the local area; 5 decimal places. |
+| `vancouver-water.json` | 27.6 kB | 198 kB + 355 kB, 17,647 vertices | 25 m tolerance, 4 decimal places; river polygons under 20 hectares. 1,402 vertices remain, worst deviation 30 m. The city window, cut for the two fire figures. |
 | `shakemap-cascadia-m9.json` | 55.7 kB | 14.0 MB, 110,436 sites | Everything outside the Lower Mainland window and every spectral acceleration period; 6,763 sites averaged into 3,910 cells. |
 | `shakemap-georgia-strait-m7.json` | 71.8 kB | 5.0 MB + 6.1 MB, 39,613 sites | The same, plus the catalogue's own MMI carried alongside PGA. |
 | `region-coast.json` | 73.7 kB | 1.6 MB + 4.6 MB, 147,276 vertices | 150 m tolerance, 4 decimal places; river polygons under 20 hectares. 3,727 vertices remain. The whole scenario window, cut for the ShakeMap figure. |
@@ -205,9 +236,12 @@ algorithm is thirty lines and the project takes no new dependencies.
 
 **What 60 m means at the size these are drawn.** A figure about 700 px wide
 across the 51 km getting-around window is roughly 73 m per pixel, so the worst
-shoreline deviation is under a pixel. The fire protection figure is far tighter
-— 4 km across the same 700 px, about 6 m per pixel — which is why the mains keep
-metre precision and the coastline they sit on does not claim to.
+shoreline deviation is under a pixel. The two fire figures are tighter: their
+window is 16.5 km across, about 24 m per pixel at the same width, which is what
+the 25 m cut is set by. Zoomed to the four times the hall map offers, or the
+sixteen the mains map offers, the coastline is coarser than the mains it sits
+under, which is the honest way round. The mains keep metre precision because
+the pipe is the subject; the coastline is the ground and does not claim to.
 
 The coastline is vendored as open lines rather than closed land polygons. The
 Freshwater Atlas layer is linear, and the mainland runs off every edge of the

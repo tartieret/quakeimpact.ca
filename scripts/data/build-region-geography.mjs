@@ -30,14 +30,21 @@ import { download, isMain, readJson, writeVendored } from "./lib/io.mjs";
 import { geometryLines, maxDeviation, reduceLine } from "./lib/geo.mjs";
 
 /**
- * Two windows, because two maps need this water at two scales and a reduction
- * is only honest at the size it was cut for.
+ * Three windows, because three maps need this water at three scales and a
+ * reduction is only honest at the size it was cut for.
  *
  * `getting-around` is the tight window: 51 km across, drawn at about 700 px,
  * so 60 m of deviation is under a pixel. `scenario` is the whole ShakeMap
  * window at 160 km, drawn at about 620 px, where one pixel is 258 m of ground;
  * cutting that one at 60 m would ship four times the vertices to draw the same
- * line. Each window states the tolerance its own drawing can carry.
+ * line. `vancouver` is tighter again, 22 km across at about 700 px, or 31 m of
+ * ground per pixel, so it is cut at 25 m. Each window states the tolerance its
+ * own drawing can carry.
+ *
+ * The Vancouver window exists because the City boundary is a jurisdictional
+ * line, not a shoreline: it runs straight out across Burrard Inlet and English
+ * Bay and says nothing about where the land stops. The two fire maps are read
+ * by finding False Creek and the peninsula, so they need the water drawn.
  *
  * The scenario window's south edge is the catalogue's, and the Freshwater
  * Atlas stops at the international boundary, so the shoreline below 49 degrees
@@ -51,6 +58,13 @@ const WINDOWS = [
     bbox: "-123.40,49.00,-122.70,49.40",
     refLat: 49.2,
     tolerance: 60,
+  },
+  {
+    file: "vancouver-water.json",
+    label: "Vancouver",
+    bbox: "-123.30,49.18,-123.00,49.34",
+    refLat: 49.26,
+    tolerance: 25,
   },
   {
     file: "region-coast.json",

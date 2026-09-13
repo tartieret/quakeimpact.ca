@@ -1,10 +1,11 @@
 /**
- * Dedicated Fire Protection System mains, and the City of Vancouver boundary
- * they sit inside.
+ * Dedicated Fire Protection System mains, the fire halls, and the City of
+ * Vancouver boundary all three sit inside.
  *
  * Source:  City of Vancouver Open Data Portal
  *          dedicated-fire-protection-systems-dfps-water-mains
  *          city-boundary
+ *          fire-halls
  * Licence: Open Government Licence - Vancouver, stated on each dataset record
  *          (`metas.default.license`), not inferred from the portal.
  *
@@ -30,6 +31,25 @@ const MAINS_URL =
 const BOUNDARY_URL =
   "https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/" +
   "city-boundary/exports/geojson";
+const HALLS_URL =
+  "https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/" +
+  "fire-halls/exports/geojson";
+
+/**
+ * The hall's number, out of the City's own name for it. The layer names every
+ * record "No 7", so the number is in the data rather than assigned here; a
+ * record that did not parse would be dropped silently, so it throws instead.
+ */
+function hallNumber(name) {
+  const match = /^No\s+(\d+)$/.exec(String(name).trim());
+  if (!match) throw new Error(`Unexpected fire hall name: ${JSON.stringify(name)}`);
+  return Number(match[1]);
+}
+
+function round(value, digits) {
+  const factor = 10 ** digits;
+  return Math.round(value * factor) / factor;
+}
 
 function boundsOf(lines) {
   let west = Infinity;
@@ -88,6 +108,20 @@ export async function buildFireProtection() {
     `  bound.  ${outline.length} lines, ${boundaryBefore} -> ${boundaryAfter} vertices\n`,
   );
 
+  const halls = readJson(await download(HALLS_URL, "cov-fire-halls.geojson"));
+  const points = halls.features
+    .map((feature) => {
+      const [lon, lat] = feature.geometry.coordinates;
+      return {
+        no: hallNumber(feature.properties.name),
+        address: feature.properties.address,
+        area: feature.properties.geo_local_area || null,
+        c: [round(lon, DIGITS), round(lat, DIGITS)],
+      };
+    })
+    .sort((a, b) => a.no - b.no);
+  process.stdout.write(`  halls   ${points.length} points\n`);
+
   writeVendored("fire-protection-mains.json", {
     source: "cov-dfps-mains",
     geometry: "lines",
@@ -103,6 +137,20 @@ export async function buildFireProtection() {
     precision: "4 decimal places (about 7 m of longitude at 49 degrees N)",
     bbox: boundsOf(outline),
     lines: outline,
+  });
+  writeVendored("fire-halls.json", {
+    source: "cov-fire-halls",
+    geometry: "points",
+    crs: "EPSG:4326",
+    precision: "5 decimal places (about 0.7 m of longitude at 49 degrees N)",
+    /**
+     * The City's own caveat, carried out of the record rather than retyped on
+     * the page: "Locations are approximate." The drawing is of where a hall is
+     * in the city, never of which side of a street corner it stands on.
+     */
+    accuracy: "Locations are approximate.",
+    bbox: boundsOf([points.map((p) => p.c)]),
+    halls: points,
   });
 }
 

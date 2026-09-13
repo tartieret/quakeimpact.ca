@@ -91,36 +91,43 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     committee minutes. CNV was searched across six channels on 10 September 2026 and
     says nothing; the channel not opened is its pre-2026 council minutes, which is
     where Richmond's statement turned out to live.
-19. **Cleveland Dam downstream hazard studies.** Named in Metro Vancouver's own
+19. **Whether Fire Hall #12's seismic upgrade was completed.** The 2019 to 2022
+    capital plan selected it and named the deficiency it was closing, that no
+    fire hall west of Arbutus Street met current seismic standards. No document
+    found says whether the work was done. The hall map on
+    `/shaking/fire-following/` therefore places #12 with the halls named in a
+    plan rather than with the one built to a standard, which is the class its
+    evidence supports. Later capital plans and City project pages are the route.
+20. **Cleveland Dam downstream hazard studies.** Named in Metro Vancouver's own
     reporting and unpublished. The most specific FOI target this project has
     produced.
-20. **The BC Coroners Service report** into the two deaths below Cleveland Dam in
+21. **The BC Coroners Service report** into the two deaths below Cleveland Dam in
     October 2020, and the underlying 2002 WorkSafeBC inspection report. Both
     unretrieved; the 2002 material reaches us only through media reporting of an
     FOI release.
-21. **City of Vancouver guidance for people without storage space or money for a
+22. **City of Vancouver guidance for people without storage space or money for a
     kit.** The City names both barriers in its own material and does not answer
     them. Searched 10 September 2026 across the Explorer, both 2024 fact sheets,
     the worksheet, the landing, education and hubs pages.
-22. **City of Vancouver material for people with disabilities or mobility
+23. **City of Vancouver material for people with disabilities or mobility
     limitations**, where North Shore Emergency Management and Richmond Fire-Rescue
     both publish one. The City's only material for people who cannot evacuate unaided
     is filed under fire safety for building owners and addressed to building managers.
-23. **PERCS coverage in the Lower Mainland.** PEIRS states that "some regions have a
+24. **PERCS coverage in the Lower Mainland.** PEIRS states that "some regions have a
     limited number of radio operators" and names none. Which regions, how many operators,
     and whether the Lower Mainland is among the thin ones are all unstated. Assume neither
     direction. Route: EMCR, or the published rosters of PERCS-affiliated clubs.
-24. **Household gas dependence in Vancouver.** The City's exercise toolkit carries
+25. **Household gas dependence in Vancouver.** The City's exercise toolkit carries
     "55% of homes are heated by natural gas" and similar figures as *scenario
     parameters*. They need an independent source — census dwelling heating, or a
     FortisBC filing — before any of them is usable.
-25. **What share of Lower Mainland households holds any given number of days of
+26. **What share of Lower Mainland households holds any given number of days of
     supply.** Six published studies measure kit ownership, plan completeness or
     self-assessed readiness, and none measures held supply in days or litres, so the
     site states kit ownership and stops. The answerable route is SEPR microdata through
     the Research Data Centre network, which carries variables beyond the published
     tables; it would still be 2014 data. See `household-preparedness.md`.
-26. **Federal liquefaction susceptibility mapping for the Fraser delta**, from Natural
+27. **Federal liquefaction susceptibility mapping for the Fraser delta**, from Natural
     Resources Canada or the Geological Survey of Canada. Not a gap in any claim the site
     makes — `/shaking/ground/` carries the delta on the 787-borehole study and the
     microzonation project, and both are stronger for the purpose. It is wanted for

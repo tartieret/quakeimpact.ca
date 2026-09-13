@@ -2,13 +2,55 @@ import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
   DataTable,
-  MapPlaceholder,
+  Figure,
   Photograph,
   Prose,
   Quote,
   VerificationNote,
 } from "@/components/page-parts";
+import {
+  DFPS_SOURCE,
+  DedicatedFireMains,
+  FIRE_BASE_SOURCE,
+  HALLS_ACCURACY,
+  HALL_FACTS,
+  MAINS_FACTS,
+  VancouverFireHalls,
+} from "@/components/figures/fire-following";
 import type { PageModule } from "./index";
+
+/**
+ * The licence line both maps carry.
+ *
+ * Three City layers go into them, the mains, the fire halls and the city
+ * boundary, and the Open Government Licence – Vancouver asks for one
+ * acknowledgement rather than one per layer, so the string is said once and
+ * taken from a record rather than retyped. The water under both maps is the
+ * province's and asks for its own. `licence` on `Figure` exists because an
+ * attribution has to travel with the graphic it produced rather than sit on a
+ * separate page.
+ */
+function FireMapLicence() {
+  return (
+    <>
+      {DFPS_SOURCE.attribution}{" "}
+      <a
+        href={DFPS_SOURCE.licenceUrl}
+        className="text-accent underline underline-offset-2"
+      >
+        Read the licence
+      </a>
+      . {FIRE_BASE_SOURCE.attribution}{" "}
+      <a
+        href={FIRE_BASE_SOURCE.licenceUrl}
+        className="text-accent underline underline-offset-2"
+      >
+        Read the licence
+      </a>
+      .
+    </>
+  );
+}
 
 /**
  * Fire following. The body of `/shaking/fire-following/`, ported from
@@ -20,12 +62,22 @@ import type { PageModule } from "./index";
  * Westminster scenario is absent: the report gives two different losses for it
  * and reconciles neither.
  *
- * The one graphic is the Dedicated Fire Protection System mains, which is the
- * one layer on this subject the site is licensed to draw (City of Vancouver
- * Open Data, Open Government Licence – Vancouver). The dataset is 245 line
- * segments of main and not a service area, so the slot promises the network
- * and not a coverage boundary: a boundary would be a hull the project invented
- * and presented in the City's name (`docs/research/maps.md`).
+ * Two maps, both City of Vancouver open data under the Open Government Licence
+ * – Vancouver, drawn on one window at one scale so a reader carries the shape
+ * of the city from the first to the second.
+ *
+ * The first is the Dedicated Fire Protection System mains. The dataset is runs
+ * of main and not a service area, so what is drawn is the network and not a
+ * coverage boundary: a boundary would be a hull the project invented and
+ * presented in the City's name (`docs/research/maps.md`).
+ *
+ * The second is the fire halls, marked by what the City has published about
+ * the standard each one is built to. Those classes are the site's reading of
+ * the capital plans cited in the section beside them, and the legend says so:
+ * the City publishes no such rating, and the licence forbids anything that
+ * would suggest it does. The class that carries the section is the absence.
+ * For thirteen of nineteen halls nothing has been published either way, which
+ * is the `VerificationNote` at the end of the section made countable.
  */
 export const fireFollowing: PageModule = {
   meta: {
@@ -276,16 +328,29 @@ export const fireFollowing: PageModule = {
             <Cite id="COV-DFPS-2001" /> The City publishes the mains themselves
             as an open data layer, street by street. <Cite id="COV-DFPS-DATA" />
           </p>
-          <MapPlaceholder
-            title="The dedicated fire mains"
-            caption="The system’s mains run across the downtown peninsula and the West End, and across False Creek into Fairview Slopes and Kitsilano. Everywhere else in the city, the water for fighting a fire comes through the ordinary mains. The dataset is the network itself, so the drawing is the pipe and not a service area."
-            dataset="City of Vancouver Open Data, Dedicated Fire Protection System water mains"
-            licence={
+          <Figure
+            interactive
+            alt={`The dedicated fire protection mains sit in a corner of the city about ${MAINS_FACTS.width} by ${MAINS_FACTS.depth}, in a city about ${MAINS_FACTS.cityWidth} across: the downtown peninsula, the West End, and a crossing of False Creek into Fairview Slopes and Kitsilano. What is drawn is the pipe and not a service area, and everywhere the pipe is not, a fire is fought with water from the ordinary mains.`}
+            caption={
               <>
-                Open Government Licence – Vancouver. <Cite id="COV-DFPS-DATA" />
+                Every run of dedicated fire main the City publishes, {MAINS_FACTS.runs} of
+                them, on the city they serve a corner of.{" "}
+                <Cite id="COV-DFPS-DATA" /> The system’s mains cross the
+                downtown peninsula and the West End, and cross False Creek into
+                Fairview Slopes and Kitsilano. Everywhere else, the water for
+                fighting a fire comes through the ordinary mains. The dataset is
+                the network itself, so what is drawn is the pipe: the City
+                publishes no service area, and a boundary drawn around the pipe
+                would be one we invented. Nothing here says how far from a main
+                a hydrant reaches. The city limits are reference only, and they
+                are a legal line rather than a shoreline, which is why the water
+                under them is drawn from the province’s Freshwater Atlas.
               </>
             }
-          />
+            licence={<FireMapLicence />}
+          >
+            <DedicatedFireMains />
+          </Figure>
           <p>
             The system has not grown since. The last hydrants went into
             Kitsilano in 2003, and the City describes 2003 as the end of the
@@ -411,6 +476,31 @@ export const fireFollowing: PageModule = {
             seismic part of it is $1 million for risk assessments on five City
             buildings. <Cite id="COV-CAP-2730" />
           </p>
+          <Figure
+            interactive
+            alt={`Vancouver’s ${HALL_FACTS.inCity} fire halls are spread across the whole city. One is finished to a post-disaster standard and ${HALL_FACTS.planned} more are named in a capital plan for replacement or seismic upgrade. For the other ${HALL_FACTS.unpublished} the City has published no seismic standard at all.`}
+            caption={
+              <>
+                Where the halls are, and what the City has said about each one.{" "}
+                <Cite id="COV-CAP-2730" /> <Cite id="COV-CAP-1922" />{" "}
+                <Cite id="COV-CAP-2326" /> Hall #17 on Knight Street is the one
+                the City describes as finished to a post-disaster standard.
+                Halls #8 and #9 are being rebuilt to that standard for 2029;
+                hall #2 on Main Street is being replaced; hall #1 is to be
+                seismically upgraded; hall #12 in Kitsilano was selected for
+                seismic upgrade in the 2019 to 2022 capital plan and no
+                completion has been published. Those six are the whole of what
+                is on the record. The three classes are ours, read off those
+                documents, and the City publishes no rating of its own. A
+                twentieth hall in the University Endowment Lands serves the UEL
+                and the University of British Columbia, and is not one of the
+                City’s {HALL_FACTS.inCity}. {HALLS_ACCURACY}
+              </>
+            }
+            licence={<FireMapLicence />}
+          >
+            <VancouverFireHalls />
+          </Figure>
           <p>
             Elsewhere the picture is thin and uneven. Burnaby builds new halls
             to post-disaster standard, and says so for Fire Station 8 on Burnaby
