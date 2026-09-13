@@ -190,21 +190,20 @@ governments use it.
 The federal agency gives a longer average than the province does. All four are current
 and all four are official. The last rupture was in 1700.
 
-## A widely quoted 37 per cent belongs to the southern end of the fault
+## Published estimates put the chance of a Cascadia rupture affecting British Columbia at 5 to 20 per cent in the next 50 years
 
-A figure of about 37 per cent in the next 50 years circulates widely, and it is not a
-figure for this part of the coast. It is what Goldfinger and colleagues calculate,
-counting the time elapsed since the last rupture, for the **southern** end of the
-Cascadia fault, off southern Oregon and northern California, where ruptures are roughly
-twice as frequent. The same study's figure for the northern end, and for a rupture of
-the whole fault, which is the part that matters to British Columbia, is 7 to 12 per cent
-in 50 years. [GOLDFINGER-12]
+The rupture that matters here is one of the northern end of the fault, or of the whole
+of it. Goldfinger and colleagues, counting the time elapsed since the last rupture, put
+that at 7 to 12 per cent in the next 50 years. [GOLDFINGER-12] The Geological Survey of
+Canada's 2004 paper gives a median of about 5 per cent over the same 50 years.
+[MAZZOTTI-04] The province's 2025 assessment puts it in a 10 to 20 per cent band, with 3
+per cent over 10 years and 9 per cent over 30. [DCRRA-2025] The last two are 21 years
+apart, and one is two to four times the other.
 
-The Geological Survey of Canada's 2004 paper gives a 50-year probability with a
-median of about 5 per cent. [MAZZOTTI-04] The province's 2025 assessment puts the
-50-year probability in a 10 to 20 per cent band, with 3 per cent over 10 years and 9
-per cent over 30. [DCRRA-2025] They are 21 years apart and they disagree by a factor
-of two to four.
+A higher figure, about 37 per cent in the next 50 years, circulates widely. It comes
+from the same Goldfinger study and belongs to the **southern** end of the Cascadia
+fault, off southern Oregon and northern California, where ruptures are roughly twice as
+frequent. It is not a figure for this coast. [GOLDFINGER-12]
 
 ## The last Cascadia earthquake is dated to the evening of 26 January 1700
 

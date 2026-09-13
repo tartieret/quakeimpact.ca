@@ -523,27 +523,29 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "A widely quoted 37 per cent belongs to the southern end of the fault",
+      title:
+        "Published estimates put the chance of a Cascadia rupture affecting British Columbia at 5 to 20 per cent in the next 50 years",
       body: (
         <Prose>
           <p>
-            A figure of about 37 per cent in the next 50 years circulates
-            widely, and it is not a figure for this part of the coast. It is
-            what Goldfinger and colleagues calculate, counting the time elapsed
-            since the last rupture, for the <strong>southern</strong> end of the
-            Cascadia fault, off southern Oregon and northern California, where
-            ruptures are roughly twice as frequent. The same study’s figure for
-            the northern end, and for a rupture of the whole fault, which is the
-            part that matters to British Columbia, is 7 to 12 per cent in 50
-            years. <Cite id="GOLDFINGER-12" />
+            The rupture that matters here is one of the northern end of the
+            fault, or of the whole of it. Goldfinger and colleagues, counting
+            the time elapsed since the last rupture, put that at 7 to 12 per
+            cent in the next 50 years. <Cite id="GOLDFINGER-12" /> The
+            Geological Survey of Canada’s 2004 paper gives a median of about 5
+            per cent over the same 50 years. <Cite id="MAZZOTTI-04" /> The
+            province’s 2025 assessment puts it in a 10 to 20 per cent band, with
+            3 per cent over 10 years and 9 per cent over 30.{" "}
+            <Cite id="DCRRA-2025" /> The last two are 21 years apart, and one is
+            two to four times the other.
           </p>
           <p>
-            The Geological Survey of Canada’s 2004 paper gives a 50-year
-            probability with a median of about 5 per cent.{" "}
-            <Cite id="MAZZOTTI-04" /> The province’s 2025 assessment puts the
-            50-year probability in a 10 to 20 per cent band, with 3 per cent
-            over 10 years and 9 per cent over 30. <Cite id="DCRRA-2025" /> They
-            are 21 years apart and they disagree by a factor of two to four.
+            A higher figure, about 37 per cent in the next 50 years, circulates
+            widely. It comes from the same Goldfinger study and belongs to the{" "}
+            <strong>southern</strong> end of the Cascadia fault, off southern
+            Oregon and northern California, where ruptures are roughly twice as
+            frequent. It is not a figure for this coast.{" "}
+            <Cite id="GOLDFINGER-12" />
           </p>
         </Prose>
       ),
