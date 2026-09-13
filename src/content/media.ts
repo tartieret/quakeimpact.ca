@@ -9,8 +9,8 @@
  * the limits and the reasoning.
  *
  * This file is the one place a photographer, a licence and a source link are
- * written. The credit under the photograph and the list on `/licences/` are both
- * read from here, so they cannot disagree.
+ * written. The credit under the photograph is read from here, so a corrected
+ * licence reaches the page in one edit.
  *
  * Unlike `references.ts` this file is written by hand: there are a handful of
  * entries, each is checked one at a time against its own source page, and the
@@ -27,7 +27,7 @@ export type MediaLicenceId =
 
 export interface MediaLicence {
   id: MediaLicenceId;
-  /** The licence's own name, for `/licences/`. */
+  /** The licence's own name, for a register entry or a note about terms. */
   name: string;
   /** How it is written in a credit line under a photograph. */
   short: string;
@@ -151,9 +151,14 @@ export interface Photograph {
    *
    * A held photograph is one whose terms are settled and which has nowhere it
    * belongs yet. It is kept rather than dropped, because clearing an image is
-   * the slow part and the page that wants it may be written later. `/licences/`
-   * reads this, so the credit page says which photographs a reader is actually
-   * shown without a second list to keep in step.
+   * the slow part and the page that wants it may be written later.
+   *
+   * A photograph is credited under itself, on the page it sits on, so this is
+   * not what puts a credit in front of a reader. It is what separates placed
+   * from held, which is the difference between a non-commercial licence the
+   * site is relying on today and one it is only holding: `/licences/` reads it
+   * for that sentence, and gets the answer from the register rather than from
+   * somebody's memory of which rows are on a page.
    */
   usedOn: string | null;
 }
@@ -262,7 +267,8 @@ export const PHOTOGRAPHS = {
    *
    * Non-commercial as well as share-alike, which makes two NC rows in the
    * register rather than one. `nonCommercialPhotographs()` is what answers the
-   * question on the day it is asked.
+   * question on the day it is asked, and what decides whether `/licences/`
+   * mentions the condition at all.
    */
   "vancouver-dfps-hydrant": {
     id: "vancouver-dfps-hydrant",
