@@ -423,6 +423,67 @@ export const PHOTOGRAPHS = {
     usedOn: "/after/electricity/",
   },
 
+  /**
+   * The photograph that was reported not to exist.
+   *
+   * A search of Commons for a Christchurch street with portable toilets on it
+   * came back as a firm negative: the categories were enumerated, and the
+   * conclusion was that the canonical image lives in New Zealand press and
+   * archive collections rather than here. This file was listed separately as a
+   * weak maybe, because its entire description is "February 2011 Christchurch
+   * earthquake" and the only evidence of a toilet was one editor's category.
+   *
+   * Opening it settled it. It is a portable toilet on a residential footpath,
+   * with a second one behind it along the same path. The category was right and
+   * the negative result was wrong, and nothing but looking could have told the
+   * difference. That is the third time in this register that a file's own
+   * description has been a worse guide than the image.
+   */
+  "christchurch-street-portaloo": {
+    id: "christchurch-street-portaloo",
+    file: "christchurch-street-portaloo.jpg",
+    ratio: "1600 / 1067",
+    alt: "A blue portable toilet stands on the footpath of a tree-lined residential street with a biohazard label on its door, and a second one is visible further along the same footpath. The houses it serves are behind their hedges out of frame. The toilets are on the public path because what runs under it has stopped working.",
+    photographer: "Andy Miah",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:February_2011_Christchurch_earthquake_21.jpg",
+    taken: "12 April 2011",
+    place: "Christchurch, New Zealand",
+    licence: "CC-BY-SA-2.0",
+    status: "verified",
+    usedOn: "/after/sanitation/",
+  },
+
+  /**
+   * `/after/housing/`, and the pair to `sendai-limited-entry-placard`. The
+   * placard is the judgement on one building. This is the other mechanism the
+   * page describes, which does not look at your building at all: a cordon is
+   * drawn around an area, and a sound building inside it is still a building
+   * nobody is living in.
+   *
+   * Nate Cull's second row, after `christchurch-moorhouse-parapet`, and the
+   * September 2010 Darfield earthquake again — which killed nobody.
+   *
+   * People are in frame and identifiable, and none of them is in distress:
+   * they are standing on a corner with their bags, waiting, talking to a
+   * soldier and a worker in a high-visibility vest. Recorded here rather than
+   * left to be noticed, the same as `christchurch-water-tanker`.
+   */
+  "christchurch-cordon-passes": {
+    id: "christchurch-cordon-passes",
+    file: "christchurch-cordon-passes.jpg",
+    ratio: "4 / 3",
+    alt: "People with bags and a suitcase stand on a street corner talking to a soldier and a worker in a high-visibility vest, yellow cordon tape strung across the road behind them and a police car beyond it. The buildings on the corner are intact, their windows unbroken and their signs still up. Nobody is being kept out of a ruin: they are waiting for permission to go home.",
+    photographer: "Nate Cull",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Manchester_Street_cordon.jpg",
+    taken: "6 September 2010",
+    place: "Manchester Street, Christchurch, New Zealand",
+    licence: "CC-BY-SA-2.0",
+    status: "verified",
+    usedOn: "/after/housing/",
+  },
+
   "suzu-uplifted-manhole": {
     id: "suzu-uplifted-manhole",
     file: "suzu-uplifted-manhole.jpg",

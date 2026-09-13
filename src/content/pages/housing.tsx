@@ -114,6 +114,19 @@ export const housing: PageModule = {
             can sit inside a closed block, and nobody lives in it while the
             block is closed.
           </p>
+          <Photograph
+            id="christchurch-cordon-passes"
+            caption={
+              <>
+                Manchester Street, Christchurch, two days after the September
+                2010 earthquake, which killed nobody. Inner-city residents are
+                waiting for passes into the cordon zone, one of them with a
+                suitcase. The buildings behind them are standing, windows
+                unbroken and signs still up. A cordon is drawn around an area
+                rather than around an address. <Cite id="COV-RISK-2024" />
+              </>
+            }
+          />
           <Quote
             speaker="City of Vancouver"
             source="Hazard and Risk Explorer, and the 2024 earthquake hazard fact sheet"

@@ -78,6 +78,18 @@ export const sanitation: PageModule = {
             Four litres covers drinking and washing. There is nothing in it for
             a toilet.
           </p>
+          <Photograph
+            id="christchurch-street-portaloo"
+            caption={
+              <>
+                A residential footpath in Christchurch, seven weeks after the
+                February 2011 earthquake. The blue cabinet is a portable toilet,
+                and there is another further along the same path. When the
+                sewers under a suburb stop working, this is where the toilet
+                goes.
+              </>
+            }
+          />
         </Prose>
       ),
     },

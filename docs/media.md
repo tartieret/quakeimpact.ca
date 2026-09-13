@@ -101,12 +101,12 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Eighteen rows are Verified, checked at their sources on 12 September 2026,
-and seventeen are hosted.** Two on `/shaking/ground/`, three on
+**Twenty rows are Verified, checked at their sources on 12 September 2026, and
+nineteen are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
 `/after/water/`, four on `/after/transportation/`, two on
-`/after/electricity/`, one on `/after/sanitation/` and one on `/after/housing/`.
-The eighteenth,
+`/after/electricity/`, two on `/after/sanitation/` and two on `/after/housing/`.
+The twentieth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -719,6 +719,47 @@ had the equipment at the top of a power system and nothing at the bottom of it.
   by a wave is a different mechanism from a pole brought down by shaking and
   ground movement, and this page is about the second.
 
+#### `christchurch-street-portaloo`
+
+**The photograph that was reported not to exist, and the strongest argument in
+this file for the rule about opening things.**
+
+A search for a Christchurch street with portable toilets on it returned a firm
+negative: the categories were enumerated properly — `Category:2011 Christchurch
+earthquake` and `Category:February 2011 Christchurch earthquake` are both empty,
+and the live one is `Category:2011 Canterbury earthquake` — and the conclusion
+was that the canonical image lives in New Zealand press and archive collections
+rather than on Commons. This file was listed separately as a weak maybe, to be
+opened first and dropped if it disappointed, because its entire description is
+"February 2011 Christchurch earthquake" and the only evidence of a toilet was a
+single editor's category.
+
+Opening it settled it. It is a portable toilet standing on a residential
+footpath, with a second one further along the same path. **The category was
+right and the negative result was wrong.** Nothing but looking could have told
+the difference.
+
+- **Photographer:** Andy Miah
+- **Licence:** CC BY-SA 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:February_2011_Christchurch_earthquake_21.jpg
+- **Status:** **Verified, 12 September 2026.**
+- **Hosted:** `public/media/christchurch-street-portaloo.jpg`. 1600 × 1067 at
+  native size, re-encoded only; ratio `1600 / 1067`.
+- **Used on:** `/after/sanitation/`, under "Four litres covers drinking and
+  washing. There is nothing in it for a toilet."
+- **Why this one:** the section ends by saying there is nothing in four litres a
+  day for a toilet, and then does not say what you use instead. This does. Seven
+  weeks after the earthquake, the answer is on the footpath.
+- **Two files were offered for this slot and rejected.** A homemade toilet
+  (CC BY-SA 2.0, "That's what you do when the sewer lines are broken") argues
+  that you can improvise, which is the opposite of the page's point about
+  apartment towers, and it risks turning somebody's domestic arrangement into an
+  object of ridicule. And the `CCC toilets` set looks like massed emergency
+  toilets in Christchurch, but the uploader's own description says they were
+  never used, chemical toilets were imported instead, and the photographs show
+  them being dismantled. Publishing those as evidence of the emergency would
+  have been false in exactly the way this register exists to prevent.
+
 #### `suzu-uplifted-manhole`
 
 - **Shows:** a concrete sewer manhole shaft standing about a metre proud of a
@@ -748,6 +789,37 @@ had the equipment at the top of a power system and nothing at the bottom of it.
   but the preference for low-casualty analogues is not, and that is a trade
   made deliberately: no equivalent image of this mechanism turned up from an
   event that killed nobody.
+
+#### `christchurch-cordon-passes`
+
+The pair to `sendai-limited-entry-placard`. The placard is a judgement on one
+building. This is the other mechanism the page describes, and it does not look
+at your building at all.
+
+- **Shows:** people with bags and a suitcase on a street corner, talking to a
+  soldier and a worker in a high-visibility vest, yellow cordon tape across the
+  road behind them and a police car beyond it. The buildings on the corner are
+  intact, windows unbroken, signs up.
+- **Photographer:** Nate Cull — his second row, after
+  `christchurch-moorhouse-parapet`.
+- **Licence:** CC BY-SA 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Manchester_Street_cordon.jpg
+- **Status:** **Verified, 12 September 2026.** The description is the
+  photographer's own and states what is happening: "Inner city residents wait
+  for passes into the cordon zone on Monday."
+- **Hosted:** `public/media/christchurch-cordon-passes.jpg`. 2048 × 1536 resized
+  to 1600 × 1200; ratio `4 / 3`.
+- **Used on:** `/after/housing/`, under the sentence about a building that came
+  through the shaking sitting inside a closed block.
+- **Why this one:** the page's point is that displacement counts run far above
+  red-tag counts because a cordon is tied to an area rather than to an address.
+  The evidence is in the frame and needs no caption to carry it: the buildings
+  these people cannot go back to are standing behind them with their windows
+  unbroken.
+- **September 2010 again, which killed nobody.**
+- **People are in frame and identifiable, and none of them is in distress.**
+  They are standing on a corner with their bags, waiting and talking. Recorded
+  rather than left to be noticed, the same as `christchurch-water-tanker`.
 
 #### `sendai-limited-entry-placard`
 
