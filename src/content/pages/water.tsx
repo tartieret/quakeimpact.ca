@@ -247,6 +247,20 @@ export const water: PageModule = {
           >
             <WaterTwoClocks />
           </Figure>
+          <Photograph
+            id="kumamoto-temporary-pipe"
+            caption={
+              <>
+                Aso, Japan, three weeks after the 2016 Kumamoto earthquakes. The
+                water is running again, and it is running along the top of the
+                road in a temporary pipe held down with sandbags, because what
+                is buried under it is not back. That is the gap between the two
+                clocks made physical: a tap that works is not a network that is
+                repaired, and the second job carries on long after the first one
+                looks finished.
+              </>
+            }
+          />
         </Prose>
       ),
     },

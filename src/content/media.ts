@@ -319,6 +319,36 @@ export const PHOTOGRAPHS = {
   },
 
   /**
+   * The second photograph on `/after/water/`, and the one that carries the
+   * duration rather than the repair. `christchurch-parkview-valve` is one
+   * crew at one fitting; this is three weeks later somewhere else, with the
+   * water running along the top of the road because what is under it is still
+   * broken.
+   *
+   * It is the clearest statement the register holds of the distinction the page
+   * draws between its two clocks: service restored is not network repaired, and
+   * a tap that works can be a hose on the surface.
+   *
+   * Not Christchurch. The 2016 Kumamoto earthquakes are a different event on
+   * different ground, and the photograph is here for the arrangement it shows
+   * rather than for any transfer from Kyushu to the Fraser delta.
+   */
+  "kumamoto-temporary-pipe": {
+    id: "kumamoto-temporary-pipe",
+    file: "kumamoto-temporary-pipe.jpg",
+    ratio: "4 / 3",
+    alt: "A grey pipe runs along the edge of a cracked rural road, weighted down at intervals by white sandbags, and carries on into the distance towards the mountains. There is no trench and no excavation: the water is being carried over the road surface because the network buried beneath it is not back.",
+    photographer: "hanonimas",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Temporary_pipe_after_the_2016_Kumamoto_earthquake.jpg",
+    taken: "7 May 2016",
+    place: "Akamizu, Aso, Kumamoto Prefecture, Japan",
+    licence: "CC-BY-SA-3.0",
+    status: "verified",
+    usedOn: "/after/water/",
+  },
+
+  /**
    * Cleared and held. Silt and standing water together is closer to the first
    * hours than silt alone, and `/shaking/ground/` has no section about the
    * first hours. A third photograph in the one section that does exist would be

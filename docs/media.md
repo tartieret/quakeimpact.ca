@@ -101,9 +101,9 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Eight rows are Verified, checked at their sources on 12 September 2026, and
-seven are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
-one on `/shaking/fire-following/` and one on `/after/water/`. The eighth,
+**Nine rows are Verified, checked at their sources on 12 September 2026, and
+eight are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
+one on `/shaking/fire-following/` and two on `/after/water/`. The ninth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -432,6 +432,37 @@ do not teach a mechanism. They answer a duration.
   non-seismic breaks, in Houston, Glasgow and Portland. Using one of those and
   letting the page imply an earthquake is precisely what this register exists to
   stop. The USGS photo library could not be checked: it answers 403 here.
+
+#### `kumamoto-temporary-pipe`
+
+- **Shows:** a grey pipe running along the edge of a cracked rural road,
+  weighted at intervals by white sandbags, carrying on into the distance toward
+  mountains. Rice paddy on one side. No trench, no excavation and nobody in
+  frame.
+- **Photographer:** hanonimas (own work)
+- **Licence:** CC BY-SA 3.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Temporary_pipe_after_the_2016_Kumamoto_earthquake.jpg
+- **Status:** **Verified, 12 September 2026.** Photographer and licence read off
+  the Commons file page.
+- **Hosted:** `public/media/kumamoto-temporary-pipe.jpg`. 4608 × 3456 original
+  resized to 1600 × 1200; ratio `4 / 3`. No other change.
+- **Used on:** `/after/water/`, under the two-clocks figure in the section on
+  the province's "many months".
+- **Why this one:** it is the only photograph found that argues a *duration*
+  rather than a repair. The earthquakes were 14 and 16 April 2016 and the
+  photograph is 7 May, so the water is running over the road roughly three weeks
+  on because the network under it is not back. That is the page's distinction
+  between its two clocks — service restored is not network repaired — standing
+  in a field where a reader can see it.
+- **The place comes from the file's category, not its description.** The
+  description is one line and names no location. `Category:Akamizu, Aso` is the
+  uploader's own categorisation and is where "Akamizu, Aso, Kumamoto Prefecture"
+  in the register comes from. Recorded because a place in a credit should say
+  where it was read.
+- **Not Christchurch, and not on the delta.** A different event on different
+  ground, carried for the arrangement it shows. Nothing about Kumamoto's
+  restoration timeline transfers to Metro Vancouver's and the caption asserts
+  none of it.
 
 #### `christchurch-army-water-repair`
 
