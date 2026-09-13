@@ -140,6 +140,8 @@ The design carries the same argument as the words: serious, quiet, sourced.
 
 **Colour is reserved for meaning.** The band ramp — sage, amber, brick — is the only place strong colour appears. The accent is deliberately not red, so that when red appears it means something. Nothing is coloured for emphasis alone.
 
+**Water on a map is the one exception, and it is an identity rather than a value.** Added 12 September 2026. Every other colour on this site scores something: a band ramp says how bad, an accent says this is a link. The sea says neither. Drawn in the same grey as an axis, a shoreline is a line with land on an unstated side of it, and a reader has been handed a puzzle instead of a map; drawn in `--color-water`, it is a coast. The rule that survives intact is the one underneath: nothing is coloured for emphasis, and taking the hue out must not remove a finding. Cover the blue on any map here and the drawing still says everything it said before, because the shoreline is still a line.
+
 **Severity survives without colour.** Bands render as three segments filled 1/2/3 alongside the colour, so the ordinal reads in greyscale, in print, and for colour-blind readers. Never encode meaning in hue alone.
 
 **Photographs of what actually happened.** Revised 12 September 2026, replacing a flat ban on photography. The ban was a position about tone dressed up as a position about rigour, and it cost the site the one thing a diagram cannot do: show a reader something that has already happened to a real street. A photograph of Christchurch in 2011 is not fear-mongering. It is evidence that the mechanism the page has just described is a thing the world does, to ordinary roads and ordinary parked cars, and most readers have never seen it.

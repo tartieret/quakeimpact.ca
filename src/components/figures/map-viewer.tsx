@@ -66,9 +66,16 @@ export interface MapView {
 export const WHOLE_MAP: MapView = { k: 1, x: 0, y: 0 };
 
 /**
- * The deepest zoom offered. At 16, the region's 160 km window is about 10 km
- * across, which puts a 730 m ShakeMap cell at roughly 50 px: past the point
- * where more magnification shows anything the model holds.
+ * The deepest zoom offered, unless a map asks for less. At 16, the region's
+ * 160 km window is about 10 km across, which puts a 730 m ShakeMap cell at
+ * roughly 50 px: past the point where more magnification shows anything the
+ * model holds.
+ *
+ * A map that draws point symbols rather than ground wants a lower ceiling,
+ * because its marks scale with the drawing and there is nothing more to
+ * separate once they have separated. `MapViewer` takes `maxZoom` for that, and
+ * the number belongs to the map rather than to the pane: it is a statement
+ * about what the data supports, which is the same test this default was set by.
  */
 const MAX_K = 16;
 
@@ -87,8 +94,8 @@ function clamp(value: number, low: number, high: number): number {
  * scrolled past an edge. Every change goes through here, so no gesture can
  * strand the reader looking at blank paper beside the map.
  */
-function clampView(view: MapView): MapView {
-  const k = clamp(view.k, 1, MAX_K);
+function clampView(view: MapView, maxK: number = MAX_K): MapView {
+  const k = clamp(view.k, 1, maxK);
   const span = 1 / k;
   return {
     k,
@@ -106,15 +113,19 @@ function zoomAbout(
   factor: number,
   fx: number,
   fy: number,
+  maxK: number = MAX_K,
 ): MapView {
-  const k = clamp(view.k * factor, 1, MAX_K);
+  const k = clamp(view.k * factor, 1, maxK);
   const span = 1 / view.k;
   const next = 1 / k;
-  return clampView({
-    k,
-    x: view.x + fx * span - fx * next,
-    y: view.y + fy * span - fy * next,
-  });
+  return clampView(
+    {
+      k,
+      x: view.x + fx * span - fx * next,
+      y: view.y + fy * span - fy * next,
+    },
+    maxK,
+  );
 }
 
 /**
@@ -129,14 +140,14 @@ export type SetMapView = (
   next: MapView | ((current: MapView) => MapView),
 ) => void;
 
-export function useMapView(): [MapView, SetMapView] {
+export function useMapView(maxZoom: number = MAX_K): [MapView, SetMapView] {
   const [view, setView] = useState<MapView>(WHOLE_MAP);
   const set = useCallback<SetMapView>(
     (next) =>
       setView((current) =>
-        clampView(typeof next === "function" ? next(current) : next),
+        clampView(typeof next === "function" ? next(current) : next, maxZoom),
       ),
-    [],
+    [maxZoom],
   );
   return [view, set];
 }
@@ -176,6 +187,11 @@ export interface MapViewerProps {
   height: number;
   /** How much ground the map's full width covers, for the scale bar. */
   kmWide: number;
+  /**
+   * The deepest magnification this map's data supports. Defaults to the
+   * pane's own ceiling; a symbol map should set it lower.
+   */
+  maxZoom?: number;
   /** The geometry, drawn on the server in that coordinate space. */
   children: ReactNode;
   /** Supply both to drive several panes from one view. */
@@ -188,11 +204,12 @@ export function MapViewer({
   width,
   height,
   kmWide,
+  maxZoom = MAX_K,
   children,
   view: controlled,
   onViewChange,
 }: MapViewerProps) {
-  const [own, setOwn] = useMapView();
+  const [own, setOwn] = useMapView(maxZoom);
   const view = controlled ?? own;
   const setView = onViewChange ?? setOwn;
 
@@ -232,8 +249,8 @@ export function MapViewer({
    */
   const zoom = useCallback(
     (factor: number, fx = 0.5, fy = 0.5) =>
-      setView((current) => zoomAbout(current, factor, fx, fy)),
-    [setView],
+      setView((current) => zoomAbout(current, factor, fx, fy, maxZoom)),
+    [setView, maxZoom],
   );
 
   /**
@@ -409,7 +426,7 @@ export function MapViewer({
         {ready ? (
           <ZoomButton
             onClick={() => zoom(ZOOM_STEP)}
-            disabled={view.k >= MAX_K}
+            disabled={view.k >= maxZoom}
             label={`Zoom in on ${label}`}
           >
             +

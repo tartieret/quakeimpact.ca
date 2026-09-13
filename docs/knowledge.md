@@ -51,6 +51,57 @@ usually the least useful.
 
 ---
 
+## A negative is only as wide as the search behind it
+
+**12 September 2026.** `/shaking/fire-following/` carries two maps now, the
+Dedicated Fire Protection System mains and Vancouver's nineteen fire halls. The
+halls had to be classified by the seismic standard each is built to, and no such
+classification is published: two capital plans name six halls and say nothing
+about the rest.
+
+The uncovered thirteen are a class, and the wording of that class is the entry.
+It first read "No seismic standard published", which is a claim over every page
+the City has ever put out. What was actually searched is two capital plans and
+the pages around them. It now reads "More information needed", which is the same
+fact stated from inside our own evidence. **Word an absence to the boundary of
+what you looked at, not to the boundary of the subject.** The narrow claim
+survives the one reader who knows of a document we did not find. The wide one
+would simply have been false.
+
+The rest of the classification followed from that. The finding line asserts only
+the halls we verified, the caption says outright that a hall in the third class
+may well be sound, and every count is computed from the vendored layer rather
+than typed, so the twentieth hall, in the University Endowment Lands and not one
+of the City's nineteen, gets named instead of quietly dropped.
+
+**On colour, the test is not whether it is allowed.** The three classes are
+sage, amber and the site's existing grey for a gap; the water on both maps is a
+new `--color-water`. Neither carries meaning on its own, which is the condition:
+cover every hue and the drawing says what it said before. What colour did force
+was a third *shape*. Two solid discs of different diameters were fine as ink and
+mid-grey and stopped being fine as sage and grey, because **sage and neutral
+grey have almost the same luminance**, 4.70 and 4.85 against white, which left
+size carrying the distinction alone. The third mark is a square. Shape survives
+greyscale, colour blindness and a phone better than size does.
+
+**And a correction to an earlier entry.** *A map without its geography*
+concluded that a duplicated base layer costs a full second copy. These two maps
+duplicate theirs on purpose: the copies sit a few kilobytes apart rather than
+85, which is inside gzip's window. The rule was always **measure the distance
+between the copies**, and here the distance said inline, which also avoids a
+hidden dependency between two figures in two different sections where moving one
+would silently empty the other.
+
+The drawing mechanics this produced live where they can be acted on rather than
+here: sizing a symbol at phone width, `maxZoom` on a symbol map and why paper on
+paper fails the mark check are in `src/components/figures/README.md`, and what
+the two City layers can and cannot support is in `research/maps.md`.
+
+**How confirmed:** read at 390 px and 900 px in both themes; `node
+scripts/qa/audit.mjs` clean on the route.
+
+---
+
 ## A control that filters has to filter something the evidence resolves
 
 **12 September 2026.** The site carried one global control: a header-mounted toggle

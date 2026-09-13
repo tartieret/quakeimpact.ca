@@ -30,6 +30,14 @@
      ground the site paints them on. Furniture stays on the rules above; the
      test is in docs/style-guide.md 8. */
   --color-mark: #868682;
+  /* Water on a map, and nowhere else. It is the one colour on this site that
+     is an identity rather than a value on a scale: the sea is not a quantity,
+     a severity or an emphasis, and a reader who has to work out which side of
+     a line the land is on has been given a puzzle instead of a map. Held to
+     the same 3:1 as --color-mark, because a shoreline is load-bearing, and
+     kept well below the accent so it reads as ground rather than as a link.
+     See docs/style-guide.md 8. */
+  --color-water: #4a7f9c;
 
   --color-accent: #1f4f63;
   --color-accent-soft: #e8eef2;
@@ -62,6 +70,7 @@
       --color-rule: #2a2e33;
       --color-rule-strong: #3c4147;
       --color-mark: #6e747b;
+      --color-water: #5b8aa1;
       --color-accent: #7fb4cc;
       --color-accent-soft: #182930;
       --color-band-low: #7aab72;

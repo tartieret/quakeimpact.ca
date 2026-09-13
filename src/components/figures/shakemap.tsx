@@ -283,9 +283,12 @@ function markInset(size: number): string {
  * pixel at the width these are drawn.
  *
  * It is load-bearing by the style guide's own test: cover it and the drawing
- * stops saying where anything is. So it is `mark`, not the furniture grey, and
- * the stroke is `non-scaling-stroke` so a coastline stays a hairline at
- * sixteen times rather than swelling into a band.
+ * stops saying where anything is. So it is `water`, which is held to the same
+ * 3:1 as `mark` and is the one colour on this site that names a thing rather
+ * than scoring it; the furniture grey would not do, and the mark grey left a
+ * reader working out which side of the line the land was on. The stroke is
+ * `non-scaling-stroke` so a coastline stays a hairline at sixteen times rather
+ * than swelling into a band.
  *
  * **The layer is British Columbia's, so it stops at the international
  * boundary.** Fifteen of 3,910 cells sit in the strip below it, and they are
@@ -364,7 +367,7 @@ function Geography() {
   return (
     <g
       fill="none"
-      stroke={FIG_COLOR.mark}
+      stroke={FIG_COLOR.water}
       strokeLinejoin="round"
       strokeLinecap="round"
     >

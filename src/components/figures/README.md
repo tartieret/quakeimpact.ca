@@ -4,7 +4,7 @@ How a graphic gets made on this site. Read `docs/style-guide.md` §8 and §9
 first: the visual rules are decisions, not preferences, and everything below is
 those rules made buildable.
 
-The worked examples are the two on `/after/water/`: read `water.tsx` next to this file alongside the rules. There are more elsewhere, on `/after/electricity/`, `/shaking/ground/`, `/scenarios/`, `/prepare/`, `/method/`, `/getting-around/` and `/dependencies/`.
+The worked examples are the two on `/after/water/`: read `water.tsx` next to this file alongside the rules. There are more elsewhere, on `/after/electricity/`, `/shaking/ground/`, `/scenarios/`, `/shaking/fire-following/`, `/prepare/`, `/method/`, `/getting-around/` and `/dependencies/`.
 Read `water.tsx` next to this file alongside the rules.
 
 ---
@@ -152,6 +152,25 @@ the `role="img"` on the frame, which would otherwise make the graphic's own
 buttons presentational and unreachable, and puts the finding in a screen-reader
 paragraph instead.
 
+### A symbol map has two more problems, and `fire-following.tsx` is the worked one
+
+The ShakeMaps draw ground: a cell is a real area and magnifying it is the point.
+A map of points is different in two ways that bite.
+
+- **A symbol drawn in map units shrinks with the column.** A mark sized on a
+  laptop is a little over half that diameter on a 390 px phone. Size a symbol at
+  phone width and check it at the wider one, never the other way round, and
+  prefer a solid mark: a ring fine enough to look right wide disappears narrow.
+- **A symbol scales with the zoom, and there is nothing more to see once the
+  marks have separated.** `MapViewer` takes `maxZoom` for that, and the number
+  belongs to the map rather than to the pane, exactly as the default sixteen
+  belongs to the ShakeMap grid. The fire hall map asks for four.
+
+A third, which is not about maps at all: **paper on paper is a mark at 1:1
+against its own ground**, so a donut filled with paper or a disc given a paper
+halo both fail the QA pass's mark check, and both deserve to. Use `fill="none"`
+and let the marks stand apart on their own.
+
 ---
 
 ## Legibility at phone width
@@ -205,6 +224,21 @@ from `FIG_COLOR` paired with the written label. Nothing is coloured to draw the
 eye. Both water figures use no colour at all, which is the expected default:
 they work identically in greyscale, and the only thing they lose in dark mode
 is the paper behind the hatch.
+
+**`FIG_COLOR.water` is the one colour that is not a value on a scale**, and it
+is for water on a map and nothing else. See `docs/style-guide.md` §8. It is
+held to the same 3:1 as `mark`, because a shoreline is load-bearing.
+
+**A classification may take the band ramp, and then the hue has to be
+redundant.** The fire hall map is the worked case: three classes, carried by
+three shapes, three sizes and three written labels with their counts, with the
+ramp laid on top. Take every hue out and the drawing says exactly what it said
+before, which is the test. Two discs of different diameters are not enough on
+their own, which is why the third mark is a square: shape survives greyscale, a
+colour-blind reader and a 390 px phone better than size does. And do not reach
+for a fourth palette. A site with one accent and one ramp starts looking like a
+dashboard the moment it acquires a second set of hues, and `bandUnknown` is
+already the site's colour for a gap.
 
 Every panel also writes its finding out in words, at `FigValue` size. A reader
 who cannot resolve the geometry still has the number.

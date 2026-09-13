@@ -53,6 +53,13 @@ export const FIG_COLOR = {
   mark: "var(--color-mark)",
   /** The quiet ground a mark is read over. Deliberately under 3:1. */
   track: "var(--color-rule-strong)",
+  /**
+   * Water on a map, and nowhere else on the site. It is an identity rather
+   * than a value: the sea is not a quantity, a severity or an emphasis, and a
+   * shoreline drawn in the same grey as an axis makes a reader work out which
+   * side of the line the land is on. Load-bearing, so it clears 3:1.
+   */
+  water: "var(--color-water)",
   paper: "var(--color-paper-raised)",
   bandLow: "var(--color-band-low)",
   bandMedium: "var(--color-band-medium)",

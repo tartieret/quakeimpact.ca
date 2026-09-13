@@ -91,6 +91,33 @@ export const dataSources: DatasetSource[] = [
     licenceNote: "Licence stated on the record, as for the mains layer.",
   },
   {
+    id: "cov-fire-halls",
+    title: "Fire halls",
+    publisher: "City of Vancouver",
+    licence: "Open Government Licence – Vancouver",
+    licenceUrl: "https://opendata.vancouver.ca/pages/licence/",
+    attribution: OGL_VANCOUVER_ATTRIBUTION,
+    sourceUrl: "https://opendata.vancouver.ca/explore/dataset/fire-halls/information/",
+    downloadUrl:
+      "https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/fire-halls/exports/geojson",
+    accessed: "2026-09-12",
+    script: "scripts/data/build-fire-protection.mjs",
+    files: ["fire-halls.json"],
+    disclaimers: [
+      "Locations are approximate.",
+      "The layer holds twenty halls, which is the City's nineteen plus one in the " +
+        "University Endowment Lands serving the UEL and the University of British " +
+        "Columbia. It says nothing about the condition or seismic standard of any " +
+        "of them: it carries a name, an address and a point.",
+    ],
+    licenceNote:
+      "Licence stated on the record, as for the mains layer, and returned by the " +
+      "catalogue API as a field of this dataset. The same prohibition applies: no " +
+      "use may suggest official status or City endorsement, which is why the page " +
+      "drawn from it says in the legend that the classes are the site's reading of " +
+      "City documents and not a City rating.",
+  },
+  {
     id: "gsc-earthquake-scenario-catalogue",
     title:
       "National Earthquake Scenario Catalogue: scenario ShakeMaps for " +
@@ -132,7 +159,7 @@ export const dataSources: DatasetSource[] = [
     downloadUrl: "https://openmaps.gov.bc.ca/geo/pub/WHSE_BASEMAPPING.FWA_COASTLINES_SP/ows",
     accessed: "2026-09-11",
     script: "scripts/data/build-region-geography.mjs",
-    files: ["region-water.json", "region-coast.json"],
+    files: ["region-water.json", "region-coast.json", "vancouver-water.json"],
     licenceNote:
       "Confirmed on the catalogue record itself, which is the test docs/licensing.md " +
       "sets: OGL–BC is not a blanket licence for gov.bc.ca and applies only where a " +
@@ -149,7 +176,7 @@ export const dataSources: DatasetSource[] = [
     downloadUrl: "https://openmaps.gov.bc.ca/geo/pub/WHSE_BASEMAPPING.FWA_RIVERS_POLY/ows",
     accessed: "2026-09-11",
     script: "scripts/data/build-region-geography.mjs",
-    files: ["region-water.json", "region-coast.json"],
+    files: ["region-water.json", "region-coast.json", "vancouver-water.json"],
     licenceNote: "Confirmed on the catalogue record itself.",
   },
   {
