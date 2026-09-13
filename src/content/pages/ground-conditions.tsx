@@ -38,9 +38,9 @@ import type { PageModule } from "./index";
  * follow a mechanism the prose has already stated and sourced. The first caption
  * anchors the pair to Richmond and Delta and the second opens on "the same
  * earthquake", so the two read as one unit; neither restates the analogue rule,
- * which is the site's standing position and belongs in `docs/media.md` and on
- * `/licences/` rather than under every photograph. The terms are in
- * `src/content/media.ts`.
+ * which is the site's standing position and belongs in `docs/media.md` rather
+ * than under every photograph. The terms are in `src/content/media.ts`, and the
+ * credit each one is owed is printed under it by `Photograph`.
  */
 export const groundConditions: PageModule = {
   meta: {

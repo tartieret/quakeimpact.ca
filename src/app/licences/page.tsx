@@ -2,66 +2,39 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
-import { REFERENCES } from "@/content/references";
-import {
-  MEDIA_LICENCES,
-  PHOTOGRAPH_LIST,
-  nonCommercialPhotographs,
-  type Photograph,
-} from "@/content/media";
-import type { Reference } from "@/content/types";
+import { nonCommercialPhotographs } from "@/content/media";
 
 export const metadata: Metadata = { title: "Licences" };
 
 /**
- * Required by `docs/licensing.md`: the attribution strings, a link to each
- * licence, every dataset with its source, licence and the date it was reached,
- * and the disclaimers the sources themselves impose.
+ * The credit the open licences require, and nothing else.
  *
- * The dataset list is read from the generated register rather than retyped, so
- * a corrected licence or date arrives here in the same edit.
+ * Three licences ask for a verbatim sentence and a link to their own text, and
+ * this page is where those sentences live. Everything that had grown around
+ * them was a second copy of something a reader meets somewhere better: every
+ * dataset is on `/sources/` with its licence, the catalogue's scope is on
+ * `/method/` and `/scenarios/` with its markers, and a photograph's credit is
+ * under the photograph. Why the site treats a document the way it does is our
+ * reasoning rather than the reader's business, and it stays in
+ * `docs/licensing.md`.
  */
-
-/** Published under terms that do not let this site draw from them. */
-const LINK_ONLY_KEYS = ["MVSMMP", "MVSMMP-LIC"];
-
-const DATASETS: Reference[] = Object.values(REFERENCES)
-  .filter((entry) => entry.kind === "dataset")
-  .sort((a, b) => a.id.localeCompare(b.id, "en"));
-
-const USED = DATASETS.filter((entry) => !LINK_ONLY_KEYS.includes(entry.id));
-const LINK_ONLY = DATASETS.filter((entry) => LINK_ONLY_KEYS.includes(entry.id));
-
-/** On a page, as against cleared and held. See `src/content/media.ts`. */
-const PLACED = PHOTOGRAPH_LIST.filter((photo) => photo.usedOn !== null);
-const NON_COMMERCIAL = nonCommercialPhotographs();
 
 /**
- * Non-commercial and on a page, as against non-commercial and held.
- *
- * The distinction the sentence below turns on, and it moved once already: the
- * only NC row used to be a held one, so the page could say the register "also
- * holds" such photographs. A reader is owed the stronger version the moment one
- * of them is something they are being shown.
+ * The non-commercial photographs a reader is actually shown, which is what the
+ * sentence below turns on. A cleared photograph with nowhere to sit yet puts no
+ * condition on anything, so it says nothing here. Derived, so the sentence
+ * moves on its own the next time a row changes, and goes when the last one does.
  */
-const NON_COMMERCIAL_SHOWN = NON_COMMERCIAL.filter(
+const NON_COMMERCIAL_SHOWN = nonCommercialPhotographs().filter(
   (photo) => photo.usedOn !== null,
 );
-const NON_COMMERCIAL_HELD = NON_COMMERCIAL.length - NON_COMMERCIAL_SHOWN.length;
-
-/**
- * Placed but not yet hosted. Read from the register rather than stated, so the
- * sentence below cannot outlive the fact: the day a file lands in
- * `public/media/`, this page stops saying the slot is empty.
- */
-const UNHOSTED = PLACED.filter((photo) => photo.file === null);
 
 const LICENCES = [
   {
     name: "Open Government Licence – Canada",
     href: "https://open.canada.ca/en/open-government-licence-canada",
     covers:
-      "The national earthquake scenario catalogue, including the two scenarios this site is built on, and the national seismic risk model behind them.",
+      "The national earthquake scenario catalogue, and the national seismic risk model behind it.",
     attribution: [
       "Contains information licensed under the Open Government Licence – Canada.",
       "Hobbs, T.E., Journeay, J.M., Rotheram, D., 2021. An Earthquake Scenario Catalogue for Canada: A Guide to Using Scenario Hazard and Risk Results; Geological Survey of Canada, Open File 8806, 22 p.",
@@ -71,7 +44,7 @@ const LICENCES = [
     name: "Open Government Licence – Vancouver",
     href: "https://opendata.vancouver.ca/pages/licence/",
     covers:
-      "City of Vancouver open data, including the dedicated fire protection water mains layer used on the fire following page.",
+      "City of Vancouver open data, including the dedicated fire protection water mains.",
     attribution: [
       "Contains information licensed under the Open Government Licence – Vancouver.",
     ],
@@ -80,7 +53,7 @@ const LICENCES = [
     name: "Open Government Licence – British Columbia",
     href: "https://www2.gov.bc.ca/gov/content/data/open-data/open-government-licence-bc",
     covers:
-      "Only those provincial records that state it on the record itself. A provincial web address confers no licence, so each record is checked one at a time.",
+      "Provincial records that state it on the record itself. A provincial web address confers no licence.",
     attribution: [
       "Contains information licensed under the Open Government Licence – British Columbia.",
     ],
@@ -102,112 +75,18 @@ function Attribution({ lines }: { lines: string[] }) {
   );
 }
 
-function DatasetList({ entries }: { entries: Reference[] }) {
-  return (
-    <ul className="flex flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule">
-      {entries.map((entry) => (
-        <li key={entry.id} className="bg-paper-raised px-5 py-4">
-          <p className="font-display text-base leading-snug text-pretty">
-            {entry.title}
-          </p>
-          <p className="mt-1 text-sm text-ink-muted">
-            {[entry.publisher, entry.date].filter(Boolean).join(" · ")}
-          </p>
-          <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-            <span className="font-semibold">Licence:</span>{" "}
-            {entry.licence ?? "None stated. Cited and linked, not copied."}
-          </p>
-          {entry.href ? (
-            <a
-              href={entry.href}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-2 inline-block text-sm font-medium text-accent underline underline-offset-4"
-            >
-              Open the dataset ↗
-            </a>
-          ) : null}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-/**
- * The credit each photographer is owed, in the same shape as the dataset list.
- * Every field is read from `src/content/media.ts`, so a corrected licence
- * reaches this page and the caption under the photograph in one edit.
- */
-function PhotographList({ entries }: { entries: Photograph[] }) {
-  return (
-    <ul className="flex flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule">
-      {entries.map((photo) => {
-        const licence = MEDIA_LICENCES[photo.licence];
-        return (
-          <li key={photo.id} className="bg-paper-raised px-5 py-4">
-            <p className="font-display text-base leading-snug text-pretty">
-              {photo.photographer}
-              {photo.title ? <>, “{photo.title}”</> : null}
-            </p>
-            <p className="mt-1 text-sm text-ink-muted">
-              {photo.place} · {photo.taken} · {photo.collection}
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-              <span className="font-semibold">Licence:</span> {licence.name}
-              {licence.noDerivatives ? ". No changes made." : "."}
-            </p>
-            {photo.usedOn ? (
-              <p className="mt-1 text-sm leading-relaxed text-ink-muted">
-                <span className="font-semibold">On:</span>{" "}
-                <Link
-                  href={photo.usedOn}
-                  className="text-accent underline underline-offset-2"
-                >
-                  {photo.usedOn}
-                </Link>
-                {photo.file === null ? ", where the file is not hosted yet" : ""}
-              </p>
-            ) : null}
-            <p className="mt-2 flex flex-wrap gap-x-5 gap-y-1">
-              <a
-                href={photo.href}
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm font-medium text-accent underline underline-offset-4"
-              >
-                Open the photograph ↗
-              </a>
-              <a
-                href={licence.href}
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm font-medium text-accent underline underline-offset-4"
-              >
-                Read the licence ↗
-              </a>
-            </p>
-          </li>
-        );
-      })}
-    </ul>
-  );
-}
-
 export default function LicencesPage() {
   return (
     <ArticleShell
       header={
         <PageHeader
-          kicker="Credit, permissions and the limits on what is shown"
+          kicker="Credit and permissions"
           title="Licences"
-          standfirst="Facts can be stated freely. Maps, tables and wording usually cannot. This page records who owns what on this site, the credit each owner asks for, and the material that is linked to rather than reproduced."
+          standfirst="Facts can be stated freely. Maps, tables and wording usually cannot."
         />
       }
     >
-      <Section
-        title="Credit, in the words each licence asks for"
-        lede="Three open licences cover most of the data used here. Each requires the sentence below, and a link to the licence text. One record further down carries no open licence at all, and is read and linked rather than copied."
-      >
+      <Section title="Credit, in the words each licence asks for">
         <div className="flex flex-col gap-8">
           {LICENCES.map((licence) => (
             <div key={licence.name}>
@@ -229,110 +108,48 @@ export default function LicencesPage() {
             </div>
           ))}
         </div>
-      </Section>
-
-      <Section
-        title="The datasets this site uses"
-        lede="Each one with the body that publishes it, the date on the record, and the licence stated on it."
-      >
-        <DatasetList entries={USED} />
-        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ink-muted">
-          Every other document behind a figure on this site is listed on the{" "}
+        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-ink-muted">
+          Every dataset and document behind a figure is listed on the{" "}
           <Link
             href="/sources/"
             className="text-accent underline underline-offset-2"
           >
             sources page
           </Link>
-          , with its own licence where one is stated.
+          , with the licence stated on it.
         </p>
       </Section>
 
-      <Section
-        title="The photographs, and who took them"
-        lede="Three pages carry photographs: ground conditions, buildings and fire following. Most are Christchurch, New Zealand, in 2010 and 2011, because a sentence cannot show a street where the ground has turned to liquid or a wall has come off a shop. One is a Vancouver hydrant. They are somebody's work, published under Creative Commons licences that ask for the photographer's name and a link to the terms."
-      >
+      <Section title="Photographs">
         <Prose
           paragraphs={[
-            "The rule for a photograph is the rule for everything else here: nothing is shown unless the terms have been read and recorded. There is one more limit on top of it. A photograph of somewhere else is an analogue, and an analogue on this site may not produce a number. What carries across from Christchurch to the Fraser delta is the mechanism — wet sand losing its strength, a parapet held up by gravity and mortar. How deep the silt was, how many streets it closed and how long it took to clear are facts about Christchurch, and they stay there.",
-            "The hydrant is the exception, and it is one because it is here. A photograph of a Vancouver street is not standing in for anything, so there is no transfer to limit: it shows an object a reader can go and check for on their own corner, which is the one thing the page it sits on was asking them to do.",
-            UNHOSTED.length > 0
-              ? "Some of the image files are not hosted yet. Until they are, the place each one will sit says so and names the photographer and the licence, rather than showing a gap and explaining nothing."
-              : "Every file is copied to this site and served from it, rather than linked from the photographer's own host, so a credit here cannot be quietly broken by somebody else moving a file. Each is the photographer's frame, resized to fit a page and otherwise unchanged.",
-          ]}
-        />
-        <div className="mt-6">
-          <PhotographList entries={PLACED} />
-        </div>
-        {NON_COMMERCIAL.length > 0 ? (
-          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ink-muted">
-            {NON_COMMERCIAL_SHOWN.length > 0
-              ? `${
-                  NON_COMMERCIAL_SHOWN.length === 1
-                    ? "One of the photographs above is"
-                    : `${NON_COMMERCIAL_SHOWN.length} of the photographs above are`
-                } licensed for non-commercial use only${
-                  NON_COMMERCIAL_HELD > 0
-                    ? ", and the register behind this list holds more"
-                    : ""
-                }.`
-              : "The register behind this list holds photographs licensed for non-commercial use only, none of them currently on a page."}{" "}
-            This site is free, carries no advertising, no affiliate links and
-            nothing for sale, so the condition is met. The day that stopped
-            being true, every one of them would have to come off.
-          </p>
-        ) : null}
-      </Section>
-
-      <Section
-        title="What the scenario modelling leaves out"
-        lede="The national scenario catalogue asks that its scope be stated wherever its output appears, and its scope is narrower than the subject of this site."
-      >
-        <Prose
-          paragraphs={[
-            "The catalogue models damage to buildings and to the people inside them, from shaking alone. It does not model roads, bridges, pipes, cables or vehicles. It does not include losses from aftershocks, from liquefaction, which is saturated ground losing its strength and behaving like a liquid while it shakes, from landslides, or from fire following the earthquake.",
-            "So the casualty and damage figures taken from it are a floor, not a total, and the systems pages on this site are built from other work. Saying so is a condition of using the catalogue honestly, as well as a condition of using it at all.",
+            "Each photograph is credited under itself, on the page it sits on: the photographer, where and when it was taken, the collection it is published in, and a link to the licence.",
+            ...(NON_COMMERCIAL_SHOWN.length > 0
+              ? [
+                  `${
+                    NON_COMMERCIAL_SHOWN.length === 1
+                      ? "One of them is"
+                      : `${NON_COMMERCIAL_SHOWN.length} of them are`
+                  } licensed for non-commercial use only. This site is free, carries no advertising, no affiliate links and nothing for sale, so the condition is met.`,
+                ]
+              : []),
           ]}
         />
       </Section>
 
-      <Section
-        title="Maps this site links to but does not draw"
-        lede="The detailed ground conditions mapping for Metro Vancouver is published under terms that reserve commercial publication, in print and in electronic media, to its owner, and the reservation reaches statements and conclusions about the maps as well as the maps themselves. This site links to it and describes what it found, in its own words."
-      >
+      <Section title="Linked, not reproduced">
         <Prose
           paragraphs={[
-            "The published map sheets may not be altered, and anything built from the underlying layers would have to be published under the same terms. Permission to do otherwise is held by the Institute for Catastrophic Loss Reduction. It has not been asked for and will not be: two of the limits would hold with permission anyway, because the published map sheets may not be altered and anything built from the underlying layers must carry the same terms. So the ground conditions page describes the mapping in words and links out to it, and the map this site draws instead is the dedicated fire protection mains, which are the pipes themselves and not a line around a service area.",
-            "The owners ask that one thing be said alongside any use of those maps, and it is worth saying anyway: they describe ground conditions across a region, and they cannot tell you about a single address. A map that shows your block as susceptible is not an assessment of your building. Only a site investigation is that.",
-          ]}
-        />
-        <div className="mt-6">
-          <DatasetList entries={LINK_ONLY} />
-        </div>
-        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ink-muted">
-          The provincial hazard tool and the regional Disaster Response Route
-          map are linked for the same reason: neither states a licence, so
-          neither is reproduced here. The response routes are for emergency
-          vehicles and are not evacuation routes for the public.
-        </p>
-      </Section>
-
-      <Section
-        title="Documents quoted, but not reproduced"
-        lede="Most of the reports behind this site carry no open licence at all. That is a narrower limit than it sounds."
-      >
-        <Prose
-          paragraphs={[
-            "A restoration time, a tonnage, a failure count and a date are facts. Facts cannot be owned, so this site states them and links to where they were published. The wording, the tables, the figures and the maps are a different matter, and none of those are copied, redrawn or adapted here.",
-            "The Province of British Columbia reserves all rights in its material by default, and the provincial disaster risk assessment says so on its own record: it may be read by anyone and reproduced by no one. Its own authors scope it to provincial and regional analysis rather than to decisions about a community or a property, and that is how it is used here. Short quotation with credit and a link is ordinary practice and is what this site does. Provincial legislation is the exception, published under the King's Printer licence and quotable at length.",
-            "One study, the 2013 insurance and economic cost assessment prepared for the Insurance Bureau of Canada, carries an explicit notice against reproduction in any form. Its findings are stated here as facts, with credit. None of its tables, figures or maps appear, and no copy of it is hosted.",
+            "The seismic microzonation mapping for Metro Vancouver may not be published commercially, in print or electronically, without written approval from the Institute for Catastrophic Loss Reduction, and the reservation reaches statements and conclusions about the maps as well as the maps themselves. The ground conditions page describes what they found and links to them.",
+            "Those maps describe ground conditions across a region. They cannot tell you about a single address, and a map that shows your block as susceptible is not an assessment of your building. Only a site investigation is that.",
+            "The provincial hazard tool, the regional Disaster Response Route map and most of the reports behind this site state no licence at all. A restoration time, a tonnage, a failure count and a date are facts, so they are stated here with credit and a link. The wording, the tables, the figures and the maps are not copied, redrawn or adapted.",
           ]}
         />
       </Section>
 
       <Section
         title="If something here is wrong"
-        lede="A licence read the wrong way is a mistake worth fixing quickly, and the people most likely to spot one are the people who published the document."
+        lede="The people most likely to spot a licence read the wrong way are the people who published the document."
       >
         <Link
           href="/contribute/"
