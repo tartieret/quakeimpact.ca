@@ -41,6 +41,8 @@ export const communications: PageModule = {
   meta: {
     route: "/after/communications/",
     title: "Communications",
+    description:
+      "The province expects disruption to communications to continue for days to weeks. No rule sets how long a cell site has to hold backup power.",
     nav: "Communications",
     kicker: "Life afterwards",
     standfirst: (

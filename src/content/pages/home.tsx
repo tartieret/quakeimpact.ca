@@ -69,6 +69,8 @@ export const home: PageModule = {
   meta: {
     route: "/",
     title: "What a major earthquake does to the Lower Mainland, and for how long",
+    description:
+      "What has already been published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each repair is waiting on.",
     nav: "Home",
     kicker: "Lower Mainland, British Columbia",
     standfirst: (

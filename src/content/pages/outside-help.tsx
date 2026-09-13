@@ -28,6 +28,8 @@ export const outsideHelp: PageModule = {
   meta: {
     route: "/after/outside-help/",
     title: "Where help comes from",
+    description:
+      "British Columbia’s plan stages help with the agencies outside the impact area, and in a megathrust they are inside it.",
     nav: "Where help comes from",
     kicker: "Life afterwards",
     standfirst: (

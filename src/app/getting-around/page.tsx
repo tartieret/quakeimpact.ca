@@ -3,6 +3,7 @@ import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Lever, NextPrev } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { gettingAround } from "@/content/pages/getting-around";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * Part 2b, moving after the shaking.
@@ -18,7 +19,7 @@ import { gettingAround } from "@/content/pages/getting-around";
  */
 const { meta, sections, lever } = gettingAround;
 
-export const metadata: Metadata = { title: meta.title };
+export const metadata: Metadata = metadataFor(meta);
 
 export default function GettingAroundPage() {
   return (

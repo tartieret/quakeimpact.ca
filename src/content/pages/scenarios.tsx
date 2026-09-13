@@ -36,6 +36,8 @@ export const scenarios: PageModule = {
   meta: {
     route: "/scenarios/",
     title: "Two earthquakes, not one",
+    description:
+      "One earthquake is offshore, very large and very long. The other is close, smaller and violent, and the federal hazard agency calls it the greater hazard to cities.",
     nav: "Two scenarios",
     standfirst:
       "One is offshore, very large and very long. The other is close, smaller and violent. Most people have only heard of the first, and the federal hazard agency calls the second the greater hazard to cities.",

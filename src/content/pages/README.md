@@ -53,11 +53,20 @@ a visible `[?]` instead of a number, and an id in the register that no longer
 exists renders the same way, so the contract enforces itself on the page rather
 than in a comment.
 
+**`meta.description` is what a search result and a link preview say.** One or
+two plain sentences, no markup, and no citation marker: it is printed by a
+machine somewhere else on the web, so it can carry no evidence of its own.
+Write it by compressing the page's own standfirst rather than by composing
+something new, and keep it near 160 characters, which is what a search engine
+shows. It is required, because a page without one falls back to the site's
+tagline and every result for the site then reads the same.
+
 ## Porting a copy file
 
 - `route`, `title`, `nav` and the front-matter `lede` (as `standfirst`) go into
-  `meta`. `bands`, `mechanism` and `source` do not: they live in `SYSTEMS` in
-  `src/content/site.ts` and the route renders them above the body.
+  `meta`, and `description` is written from that same lede. `bands`, `mechanism`
+  and `source` do not: they live in `SYSTEMS` in `src/content/site.ts` and the
+  route renders them above the body.
 - Each `##` becomes a `PageSection`. The heading text is verbatim.
 - Each `[KEY]` becomes `<Cite id="KEY" />`, with the key verbatim. Keys resolve
   in the generated `src/content/references.ts`.
@@ -96,6 +105,9 @@ export const example: PageModule = {
     route: "/after/example/",
     title: "Example",
     nav: "Example",
+    /** The standfirst compressed to one plain sentence, for a search result. */
+    description:
+      "What the page establishes, in the page's own words and with no marker.",
     /** The line above the title, where the page belongs to a part of the site. */
     kicker: "Life afterwards",
     standfirst: "The copy's lede, one or two sentences.",

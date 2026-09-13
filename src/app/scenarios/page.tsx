@@ -8,6 +8,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { scenarios } from "@/content/pages/scenarios";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * Two earthquakes, not one.
@@ -21,7 +22,7 @@ import { scenarios } from "@/content/pages/scenarios";
 
 const { meta, sections, lever } = scenarios;
 
-export const metadata: Metadata = { title: meta.title };
+export const metadata: Metadata = metadataFor(meta);
 
 export default function ScenariosPage() {
   return (

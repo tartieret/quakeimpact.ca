@@ -5,8 +5,14 @@ import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
 import { CITED_REFERENCES } from "@/content/cited";
 import { REFERENCES } from "@/content/references";
 import type { Reference, ReferenceRoute } from "@/content/types";
+import { pageMetadata } from "@/content/metadata";
 
-export const metadata: Metadata = { title: "Sources" };
+export const metadata: Metadata = pageMetadata({
+  route: "/sources/",
+  title: "Sources",
+  description:
+    "Every number on this site was published by somebody else first. This page lists those documents, with the date each one carries and a link wherever one survives.",
+});
 
 /**
  * The register renders itself from `src/content/references.ts`, which is

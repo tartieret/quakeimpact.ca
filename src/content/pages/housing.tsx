@@ -20,6 +20,8 @@ export const housing: PageModule = {
   meta: {
     route: "/after/housing/",
     title: "Housing",
+    description:
+      "The province’s planning scenario puts 70,000 households out of their homes in Greater Vancouver. Most of those homes are still standing.",
     nav: "Housing",
     kicker: "Life afterwards",
     standfirst: (

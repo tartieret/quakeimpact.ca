@@ -157,6 +157,19 @@ export interface PageMeta {
   route: string;
   title: string;
   /**
+   * The page in one or two plain sentences, for a search result and for the
+   * card a link to this page unfurls into on social media. Required, because a
+   * page without one falls back to the site's own tagline and every result for
+   * this site then says the same thing.
+   *
+   * A plain string rather than a node: it is read by a machine and printed
+   * without markup, so it can carry no citation marker. It says only what the
+   * page's own standfirst already says, which is copy that has been through
+   * `docs/style-guide.md`, and the page one click away carries the markers.
+   * Around 160 characters is what a search engine shows.
+   */
+  description: string;
+  /**
    * Normally absent: a module exists because the page is written. It is here so
    * that a written page can be marked a draft when its text is under revision,
    * without that fact having to be written into the prose.

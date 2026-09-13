@@ -26,6 +26,8 @@ export const transportation: PageModule = {
   meta: {
     route: "/after/transportation/",
     title: "Transportation",
+    description:
+      "British Columbia designates bridges on the routes that must stay open for emergency vehicles, and states that it is not retrofitting them to stay in service.",
     nav: "Transportation",
     kicker: "Life afterwards",
     standfirst:

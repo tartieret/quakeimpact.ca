@@ -3,6 +3,7 @@ import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, NextPrev } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { method } from "@/content/pages/method";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * Method and bands.
@@ -17,7 +18,7 @@ import { method } from "@/content/pages/method";
  * The copy has no "What you can do", so there is no `Lever` here. Every other
  * long page ends with one; this one ends with what the reader can send us.
  */
-export const metadata: Metadata = { title: method.meta.title };
+export const metadata: Metadata = metadataFor(method.meta);
 
 export default function MethodPage() {
   return (

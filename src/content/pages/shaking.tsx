@@ -28,6 +28,8 @@ export const shaking: PageModule = {
   meta: {
     route: "/shaking/",
     title: "The shaking",
+    description:
+      "Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives. The shaking is the short part.",
     nav: "The shaking",
     kicker: "Part 1",
     standfirst:

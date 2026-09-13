@@ -3,8 +3,14 @@ import Link from "next/link";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
 import { nonCommercialPhotographs } from "@/content/media";
+import { pageMetadata } from "@/content/metadata";
 
-export const metadata: Metadata = { title: "Licences" };
+export const metadata: Metadata = pageMetadata({
+  route: "/licences/",
+  title: "Licences",
+  description:
+    "Facts can be stated freely. Maps, tables and wording usually cannot. This page carries the credit each open licence behind the site asks for, in its own words.",
+});
 
 /**
  * The credit the open licences require, and nothing else.

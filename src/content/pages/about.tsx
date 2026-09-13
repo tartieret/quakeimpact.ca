@@ -28,6 +28,8 @@ export const about: PageModule = {
   meta: {
     route: "/about/",
     title: "About this site",
+    description:
+      "This site is about the months after a major earthquake in the Lower Mainland rather than the minutes during it. Every claim links to the document behind it.",
     nav: "About",
     standfirst:
       "This site is about the months after a major earthquake in the Lower Mainland rather than the minutes during it. Every claim on it comes from a document somebody else published, and every claim links to that document.",

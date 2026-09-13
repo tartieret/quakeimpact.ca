@@ -8,6 +8,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { shaking } from "@/content/pages/shaking";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * Part 1. The template holds no words of its own: everything a reader sees
@@ -17,7 +18,7 @@ import { shaking } from "@/content/pages/shaking";
  * promise rests on the Metro Vancouver microzonation layers, which are not
  * openly licensed and are linked rather than redrawn (`docs/licensing.md`).
  */
-export const metadata: Metadata = { title: shaking.meta.title };
+export const metadata: Metadata = metadataFor(shaking.meta);
 
 export default function ShakingIndexPage() {
   return (

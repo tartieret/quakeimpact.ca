@@ -65,6 +65,8 @@ export const method: PageModule = {
   meta: {
     route: "/method/",
     title: "How the impact bands work",
+    description:
+      "Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so.",
     nav: "Method & bands",
     standfirst:
       "Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. The band says how long the system is out, how widely, and what it is waiting on.",

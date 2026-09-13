@@ -20,6 +20,8 @@ export const largeInfrastructure: PageModule = {
   meta: {
     route: "/after/large-infrastructure/",
     title: "Port, airport and ferry terminals",
+    description:
+      "Goods and people reach this region through a small number of very large places, and there is no local substitute for any of them.",
     nav: "Port, airport and ferries",
     kicker: "Life afterwards",
     standfirst: (

@@ -15,6 +15,9 @@ import { SYSTEMS, SCENARIOS, PHASES, navSection } from "@/content/site";
 import { SectionNav } from "@/components/section-nav";
 import { pageForSystem } from "@/content/pages";
 import { SystemDraftNotice } from "@/components/status";
+import { BreadcrumbJsonLd } from "@/components/structured-data";
+import { pageMetadata } from "@/content/metadata";
+import { SITE } from "@/content/site";
 
 /**
  * The thirteen system pages.
@@ -44,7 +47,18 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const system = SYSTEMS.find((s) => s.slug === slug);
-  return { title: pageForSystem(slug)?.meta.title ?? system?.name ?? "Not found" };
+  if (!system) return { title: "Not found" };
+  const page = pageForSystem(slug);
+  /**
+   * A page whose body is not written still has to say something true in a
+   * search result, and the system's hook is that sentence: it is written to
+   * the same guide and it is what the page shows under its own title.
+   */
+  return pageMetadata({
+    route: `/after/${slug}/`,
+    title: page?.meta.title ?? system.name,
+    description: page?.meta.description ?? system.hook,
+  });
 }
 
 export default async function SystemPage({
@@ -84,6 +98,16 @@ export default async function SystemPage({
 
   return (
     <Citations ids={references}>
+      <BreadcrumbJsonLd
+        trail={[
+          { name: SITE.name, href: "/" },
+          { name: "Life afterwards", href: "/after/" },
+          {
+            name: page?.meta.title ?? system.name,
+            href: `/after/${slug}/`,
+          },
+        ]}
+      />
       <ArticleShell
         header={
           <PageHeader

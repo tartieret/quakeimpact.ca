@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Lever, slugify } from "@/components/page-parts";
 import {
   Citations,
@@ -6,6 +7,21 @@ import {
   SOURCES_TITLE,
 } from "@/components/citation";
 import { home } from "@/content/pages/home";
+import { pageMetadata } from "@/content/metadata";
+import { SITE } from "@/content/site";
+
+/**
+ * The one page whose title is not the heading on it. The `<h1>` is a sentence
+ * about the world and reads as one; a search result for the site itself has to
+ * open on the name somebody typed, so the title is the name and the tagline
+ * and takes no site suffix after it.
+ */
+export const metadata: Metadata = pageMetadata({
+  route: "/",
+  title: { absolute: `${SITE.name}: ${SITE.tagline}` },
+  description: home.meta.description,
+  type: "website",
+});
 
 /**
  * The landing page.

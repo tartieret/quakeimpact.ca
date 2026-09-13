@@ -3,6 +3,7 @@ import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, NextPrev } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { about } from "@/content/pages/about";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * About.
@@ -17,7 +18,7 @@ import { about } from "@/content/pages/about";
  */
 const { meta, sections } = about;
 
-export const metadata: Metadata = { title: meta.title };
+export const metadata: Metadata = metadataFor(meta);
 
 export default function AboutPage() {
   return (

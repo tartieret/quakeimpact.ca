@@ -46,6 +46,8 @@ export const groundConditions: PageModule = {
   meta: {
     route: "/shaking/ground/",
     title: "Ground conditions",
+    description:
+      "The ground under Metro Vancouver varies far more than the buildings on it do. On the Fraser delta, wet sand can lose its strength and behave like a liquid.",
     nav: "Ground conditions",
     kicker: "The shaking",
     standfirst:

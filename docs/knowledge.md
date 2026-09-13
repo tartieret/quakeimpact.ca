@@ -11,6 +11,53 @@ it was confirmed.
 
 ---
 
+## Opening the site to search engines is four files, and one of them is a page's own description
+
+**13 September 2026.** `robots: { index: false }` came off `layout.tsx`, and the rest of
+the work was everything that flag had been hiding.
+
+**A generated image inherits down the route tree; a declared `openGraph` replaces it.**
+`src/app/opengraph-image.tsx` sits at the root and Next attaches the card it draws to
+every page below. But metadata merges by top-level key, so a page that declares an
+`openGraph` of its own in order to carry its own title drops the whole inherited object,
+image included. Every page here declares one, so `CARD` in `src/content/metadata.ts`
+writes the image back into each of them. This is worth knowing because it fails
+silently and asymmetrically: the home page sits in the same segment as the file and
+keeps its card, so the one page anybody checks by hand is the one page that works.
+
+**A generated metadata image has no file extension.** Next writes it to
+`out/opengraph-image`, and Netlify infers a content type from the extension, so without
+a header it is served as a download and no platform draws a card. `netlify.toml` sets
+`Content-Type = "image/png"` on that one path. The alternative was committing a PNG,
+which goes stale the first time the tagline changes.
+
+**`next/og` needs no network.** `@vercel/og` ships its own font, so the card renders at
+build time in a build that is otherwise offline. It is not the site's typeface, and it
+is not worth a font file in the repo to make it one: the card is read at thumbnail size.
+
+**`export const dynamic = "force-static"` is required on both generated routes** under
+`output: "export"`. The build fails on `opengraph-image` without it and names the fix.
+
+**A page needs its own description or it has none.** The largest part of the change was
+adding `description` to `PageMeta` and filling it on all thirty modules, because a page
+that falls back to the site tagline gives every result for the site the same sentence.
+Each one is a compressed version of the page's own standfirst, so no new claim was
+written for a search result: the words have been through `style-guide.md` already, and
+the page one click away carries the markers the description cannot. `SystemEntry.hook`
+is the fallback for a page whose body is not written, for the same reason it is the
+fallback standfirst.
+
+**No `lastmod` in the sitemap.** A build date would mark all thirty-two URLs as changed
+whenever any one of them did, which is the signal a crawler learns to ignore. `priority`
+and `changefreq` are read by nobody. The list itself is derived from `NAV` and
+`UTILITY_NAV` as `ALL_ROUTES`, so a page the navigation knows about cannot be missing
+from it.
+
+**How confirmed:** `npm run build`; `out/sitemap.xml` holds thirty-two URLs and
+`out/robots.txt` points at it; `out/after/water/index.html` carries a canonical, a
+per-page description, `og:image` and a `BreadcrumbList`; `out/404.html` carries
+`noindex`; the exported card is a 1200x630 PNG.
+
 ## Direct access is a question of where the list goes, not of whether the top bar opens
 
 **13 September 2026.** The site has five parts across the top and two of them hold

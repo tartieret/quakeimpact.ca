@@ -21,6 +21,8 @@ export const fuel: PageModule = {
   meta: {
     route: "/after/fuel/",
     title: "Fuel",
+    description:
+      "The province’s earthquake response plan sets fuel apart from the other critical resources, because the distribution of everything else runs on it.",
     nav: "Fuel",
     kicker: "Life afterwards",
     standfirst: (

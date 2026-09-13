@@ -16,6 +16,8 @@ export const food: PageModule = {
   meta: {
     route: "/after/food/",
     title: "Food",
+    description:
+      "The province plans on existing supply chains being inoperable, and on the network that brings meat, dairy and produce taking weeks or months to recover.",
     nav: "Food",
     kicker: "Life afterwards",
     standfirst: (

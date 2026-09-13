@@ -22,6 +22,8 @@ export const buildings: PageModule = {
   meta: {
     route: "/shaking/buildings/",
     title: "Buildings",
+    description:
+      "The City of Vancouver has run three earthquakes through a model of its own buildings, and the nearer, smaller one is the worse one.",
     nav: "Buildings",
     kicker: "The shaking",
     standfirst:

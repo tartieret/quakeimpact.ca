@@ -8,6 +8,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { prepare } from "@/content/pages/prepare";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * Preparing.
@@ -18,7 +19,7 @@ import { prepare } from "@/content/pages/prepare";
  * section and the lever is gone: it was `/after/`'s grid a second time, and it
  * stood between the guidance and the block that makes the guidance usable.
  */
-export const metadata: Metadata = { title: prepare.meta.title };
+export const metadata: Metadata = metadataFor(prepare.meta);
 
 export default function PreparePage() {
   return (

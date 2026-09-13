@@ -46,6 +46,8 @@ export const gettingAround: PageModule = {
   meta: {
     route: "/getting-around/",
     title: "Moving after the shaking",
+    description:
+      "Two provincial emergency plans assume people will not drive out of the region after a major earthquake. Both direct the public to shelter where they are.",
     nav: "Getting around",
     kicker: "After the shaking",
     standfirst:
