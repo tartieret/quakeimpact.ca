@@ -418,9 +418,19 @@ export const SHAKING_PAGES: {
     hook: "The fires that start once the shaking stops, and the separate water system built to fight them.",
   },
   {
-    slug: "secondary-hazards",
-    name: "Secondary hazards",
-    hook: "Landslides, dikes and dams: the damage that arrives after the shaking has stopped.",
+    slug: "landslides",
+    name: "Landslides",
+    hook: "The province’s own scenario has rock and earth coming down across the roads help would arrive on.",
+  },
+  {
+    slug: "dikes",
+    name: "Dikes",
+    hook: "The embankments that keep the river and the sea off the delta are built on the ground most likely to move.",
+  },
+  {
+    slug: "dams",
+    name: "Dams",
+    hook: "BC Hydro names the part of each dam it expects an earthquake to break, and the shaking it expects to break it at.",
   },
 ];
 

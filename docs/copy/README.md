@@ -31,7 +31,9 @@ label or an alt text.
 | [`buildings.md`](buildings.md) | `/shaking/buildings/` | `../research/buildings.md` |
 | [`casualties.md`](casualties.md) | `/shaking/casualties/` | `../research/buildings.md` |
 | [`fire-following.md`](fire-following.md) | `/shaking/fire-following/` | `../research/buildings.md` |
-| [`secondary-hazards.md`](secondary-hazards.md) | `/shaking/secondary-hazards/` | `../research/systems/dams-and-reservoirs.md` |
+| [`landslides.md`](landslides.md) | `/shaking/landslides/` | `../site-overview.md` §5, Part 1 |
+| [`dikes.md`](dikes.md) | `/shaking/dikes/` | `../research/ground-conditions.md` |
+| [`dams.md`](dams.md) | `/shaking/dams/` | `../research/systems/dams-and-reservoirs.md` |
 | [`after.md`](after.md) | `/after/` | `../research/impact-bands.md` |
 | [`communications.md`](communications.md) | `/after/communications/` | `../research/systems/communications.md` |
 | [`electricity.md`](electricity.md) | `/after/electricity/` | `../research/systems/electricity.md` |

@@ -11,7 +11,7 @@ import type { PageModule } from "./index";
  *
  * An index page, and shorter than the pages it points at on purpose. The words
  * are the copy's. The card grid in the last section is not words: it is
- * `SHAKING_PAGES` drawn, so the five subjects stay reachable from here, each
+ * `SHAKING_PAGES` drawn, so the seven subjects stay reachable from here, each
  * card carrying the subject's own hook. Which of them are drafts is the
  * marker's job, not a sentence's.
  *
@@ -214,6 +214,12 @@ export const shaking: PageModule = {
             estimate on impacts.” <Cite id="GSC-OF-8853" />
           </p>
           <p>
+            The Cascadia assessment carries the same warning under its headline
+            figures, which cover direct damage from the main shaking “without
+            account of secondary hazards like landslides, liquefaction, tsunami,
+            fires and more.” <Cite id="DCRRA-2025" />
+          </p>
+          <p>
             So a damage figure or a casualty figure from that work is a floor
             rather than a ceiling. The fires and the landslides sit outside it.
           </p>
@@ -223,7 +229,7 @@ export const shaking: PageModule = {
 
     {
       title:
-        "The ground moves, buildings break, people are hurt, and then the fires start",
+        "The ground moves, buildings break, people are hurt, the fires start, and the slopes and the water come last",
       body: (
         <div className="flex flex-col gap-8">
           <ul className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2">

@@ -78,7 +78,11 @@ The event itself. Heavy on maps.
 - **Buildings.** Structural performance by era and type, and — more importantly for injuries — non-structural failure: glazing, cladding, parapets. Downtown Vancouver is a glass city. Unreinforced masonry in Gastown, Chinatown, Strathcona.
 - **Casualties.** Present the published range and the drivers of the range (time of day, scenario). A single headline number invites dismissal.
 - **Fire following.** The classic post-earthquake killer — 1906 San Francisco, Kobe 1995. Broken gas mains ignite, water mains break so there is no pressure, and debris blocks the streets the trucks need. Cover Vancouver's **Dedicated Fire Protection System**: independent high-pressure mains drawn from seawater, with portable pumping. Almost nobody knows it exists. Establish its current extent, and name the areas it does *not* cover. Fire hall seismic upgrades: check the capital plan, do not assume.
-- **Secondary hazards.** The earthquake stops; the geology does not. Landslides, dike performance, dam behaviour. Grouped here because they share a pattern — the damage arrives after the shaking, and it arrives where the ground was already marginal.
+- **Landslides.** The province’s own planning scenario has them cutting the transportation routes, and two of the roads help would arrive on run through mountains. The published landslide mapping for those corridors was built for rain, and says so.
+- **Dikes.** An earth embankment holding the river and the sea off land that lies lower, built on the delta sand that liquefies. The engineering published on named sections is Richmond’s, and it sits on ground conditions.
+- **Dams.** Two owners and two records that do not mix: Metro Vancouver publishes a yearly safety summary whose conclusions do not mention an earthquake, BC Hydro tells its regulator which part of each dam it expects one to break. The water-supply side of the same dams is Part 2.
+
+Those three were one page, *Secondary hazards*, on the argument that the damage arrives after the shaking and arrives where the ground was already marginal. That is true of all three and it is not enough to hold them together: a reader looking for the dike behind their house should not have to read about a power tunnel first, and each subject has more evidence behind it than a shared page has room for.
 
 ### Part 2 — Life afterwards
 

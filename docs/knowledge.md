@@ -1807,3 +1807,34 @@ format, and until then the honest record is that the guide exists and has not be
 and the nine-item planning checklist quoted in `research/preparedness.md`; the
 apartments guide yields two fill-in labels and no prose.
 
+
+## Splitting a Part 1 page costs one array, and the map question is per layer
+
+**12 September 2026.** `/shaking/secondary-hazards/` became `/shaking/landslides/`,
+`/shaking/dikes/` and `/shaking/dams/`. The structural cost is one edit: three entries
+in `SHAKING_PAGES` replace one, and the card grid on the index, the prev/next chain, the
+part's children in the header menu and the footer index, the static params and the
+sources index all follow from it. Nothing else in the site names those pages. The two
+edits that are not derived are the `MODULES` map in `src/app/shaking/[slug]/page.tsx`,
+which keys a slug to a page module, and `ALL_PAGES` in `src/content/pages/index.ts`,
+which is what makes a page's documents count as cited on `/sources/`.
+
+The reason the pages were split is that the grouping argument, that the damage arrives
+after the shaking and arrives where the ground was already marginal, is true of all
+three and does not give a reader looking for the dike behind their house a reason to
+read about a power tunnel first. `site-overview.md` §5 carries that.
+
+**The map position is now three questions rather than one, and they have different
+answers.** Dam-breach inundation for the region's dams is not routed to the public, and
+seismic landslide susceptibility for the Sea to Sky corridor and the Fraser Canyon has
+not been published at all: every seismic landslide product found for this province
+covers the western municipalities of Metro Vancouver. Both absences are stated in the
+copy rather than drawn as a placeholder. What is open is the provincial dam register
+[BC-DAMS-REG], OGL–BC, which carries each dam's location, owner, failure consequence
+class and risk level. That is a drawable layer and it is the one a dams map would start
+from. **Before drawing any of the three, establish the layer's licence, not the
+subject's interest.**
+
+**How confirmed:** `npm run build` exports seven `/shaking/` routes; the three new pages
+render their markers numbered 1..n with no `[?]`; the licence on `BC-DAMS-REG` is stated
+on the record in `src/content/references.ts`.

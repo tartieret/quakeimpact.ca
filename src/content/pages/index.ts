@@ -7,8 +7,10 @@ import { buildings } from "./buildings";
 import { casualties } from "./casualties";
 import { communications } from "./communications";
 import { contribute } from "./contribute";
+import { dams } from "./dams";
 import { damsAndReservoirs } from "./dams-and-reservoirs";
 import { dependencies } from "./dependencies";
+import { dikes } from "./dikes";
 import { electricity } from "./electricity";
 import { fireFollowing } from "./fire-following";
 import { food } from "./food";
@@ -19,13 +21,13 @@ import { groundConditions } from "./ground-conditions";
 import { healthCare } from "./health-care";
 import { home } from "./home";
 import { housing } from "./housing";
+import { landslides } from "./landslides";
 import { largeInfrastructure } from "./large-infrastructure";
 import { method } from "./method";
 import { outsideHelp } from "./outside-help";
 import { prepare } from "./prepare";
 import { sanitation } from "./sanitation";
 import { scenarios } from "./scenarios";
-import { secondaryHazards } from "./secondary-hazards";
 import { shaking } from "./shaking";
 import { transportation } from "./transportation";
 import { water } from "./water";
@@ -127,14 +129,16 @@ export const ALL_PAGES: PageModule[] = [
   buildings,
   casualties,
   contribute,
+  dams,
   dependencies,
+  dikes,
   fireFollowing,
   gettingAround,
   groundConditions,
+  landslides,
   method,
   prepare,
   scenarios,
-  secondaryHazards,
   shaking,
 ];
 
