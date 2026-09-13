@@ -37,6 +37,19 @@ const PLACED = PHOTOGRAPH_LIST.filter((photo) => photo.usedOn !== null);
 const NON_COMMERCIAL = nonCommercialPhotographs();
 
 /**
+ * Non-commercial and on a page, as against non-commercial and held.
+ *
+ * The distinction the sentence below turns on, and it moved once already: the
+ * only NC row used to be a held one, so the page could say the register "also
+ * holds" such photographs. A reader is owed the stronger version the moment one
+ * of them is something they are being shown.
+ */
+const NON_COMMERCIAL_SHOWN = NON_COMMERCIAL.filter(
+  (photo) => photo.usedOn !== null,
+);
+const NON_COMMERCIAL_HELD = NON_COMMERCIAL.length - NON_COMMERCIAL_SHOWN.length;
+
+/**
  * Placed but not yet hosted. Read from the register rather than stated, so the
  * sentence below cannot outlive the fact: the day a file lands in
  * `public/media/`, this page stops saying the slot is empty.
@@ -253,10 +266,20 @@ export default function LicencesPage() {
         </div>
         {NON_COMMERCIAL.length > 0 ? (
           <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ink-muted">
-            The register behind this list also holds photographs licensed for
-            non-commercial use only. This site is free, carries no advertising
-            and sells nothing, so the condition is met. If that ever stopped
-            being true, they would come off in the same change.
+            {NON_COMMERCIAL_SHOWN.length > 0
+              ? `${
+                  NON_COMMERCIAL_SHOWN.length === 1
+                    ? "One of the photographs above is"
+                    : `${NON_COMMERCIAL_SHOWN.length} of the photographs above are`
+                } licensed for non-commercial use only${
+                  NON_COMMERCIAL_HELD > 0
+                    ? ", and the register behind this list holds more"
+                    : ""
+                }.`
+              : "The register behind this list holds photographs licensed for non-commercial use only, none of them currently on a page."}{" "}
+            This site is free, carries no advertising, no affiliate links and
+            nothing for sale, so the condition is met. The day that stopped
+            being true, every one of them would have to come off.
           </p>
         ) : null}
       </Section>
