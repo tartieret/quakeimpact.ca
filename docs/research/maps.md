@@ -92,6 +92,31 @@ Deriving MMI for the other would mean applying a ground-motion-to-intensity
 equation ourselves — a research task with a citable answer, not a download.
 Recorded as a verification item, not done. [?]
 
+### The ShakeMaps are drawn on the Freshwater Atlas, and it stops at the border
+
+**12 September 2026.** The scenario ShakeMaps now carry shoreline and river
+water under the marks. Without it the cells float on paper and a reader has
+nothing to locate the dark patch against, which is the one thing a map is for.
+
+The water is the same two Freshwater Atlas layers as the getting-around map,
+cut for a different window and at a different tolerance. `region-water.json` is
+51 km across at 60 m; `region-coast.json` is the whole 160 km scenario window at
+150 m, which is still well under a pixel at the width the figure is drawn, and
+cutting it at 60 m would have shipped four times the vertices to draw the same
+line. A reduction is only honest at the size it was cut for, so the script now
+holds a window list rather than one bounding box.
+
+**The layer is British Columbia's and has no geometry south of the
+international boundary.** The catalogue's window reaches 48.956, so a strip
+about 5 km deep along the bottom of both maps has model cells and no shoreline.
+Fifteen of 3,910 cells sit in it. Nothing false is drawn — the coastline simply
+stops — and the caption says the layer is provincial. An openly licensed
+shoreline covering Point Roberts and Whatcom County was not looked for. [?]
+
+**What the base layer confirmed.** No cell in either file falls in the open
+Strait of Georgia, and with the shoreline drawn that is visible rather than
+asserted. The grid is registered where the catalogue says it is.
+
 ### The crossings layer is incomplete, and that matters
 
 `MOT_ROAD_STRUCTURE_SP` covers provincial highway structures. It yields nine
@@ -174,6 +199,7 @@ algorithm is thirty lines and the project takes no new dependencies.
 | `vancouver-boundary.json` | 1.9 kB | 19.5 kB, 494 vertices | 25 m tolerance, 4 decimal places. Reference outline only. |
 | `shakemap-cascadia-m9.json` | 55.7 kB | 14.0 MB, 110,436 sites | Everything outside the Lower Mainland window and every spectral acceleration period; 6,763 sites averaged into 3,910 cells. |
 | `shakemap-georgia-strait-m7.json` | 71.8 kB | 5.0 MB + 6.1 MB, 39,613 sites | The same, plus the catalogue's own MMI carried alongside PGA. |
+| `region-coast.json` | 73.7 kB | 1.6 MB + 4.6 MB, 147,276 vertices | 150 m tolerance, 4 decimal places; river polygons under 20 hectares. 3,727 vertices remain. The whole scenario window, cut for the ShakeMap figure. |
 | `region-water.json` | 42.0 kB | 612 kB + 958 kB, 44,904 vertices | 60 m tolerance, 4 decimal places; river polygons under 20 hectares. 2,132 vertices remain and the worst deviation from the survey geometry is 63 m. |
 | `region-crossings.json` | 1.6 kB | 1.4 MB, 1,747 structures | Everything but the province's own major-bridge roll-up, plus the Massey Tunnel. |
 

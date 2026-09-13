@@ -132,7 +132,7 @@ export const dataSources: DatasetSource[] = [
     downloadUrl: "https://openmaps.gov.bc.ca/geo/pub/WHSE_BASEMAPPING.FWA_COASTLINES_SP/ows",
     accessed: "2026-09-11",
     script: "scripts/data/build-region-geography.mjs",
-    files: ["region-water.json"],
+    files: ["region-water.json", "region-coast.json"],
     licenceNote:
       "Confirmed on the catalogue record itself, which is the test docs/licensing.md " +
       "sets: OGL–BC is not a blanket licence for gov.bc.ca and applies only where a " +
@@ -149,7 +149,7 @@ export const dataSources: DatasetSource[] = [
     downloadUrl: "https://openmaps.gov.bc.ca/geo/pub/WHSE_BASEMAPPING.FWA_RIVERS_POLY/ows",
     accessed: "2026-09-11",
     script: "scripts/data/build-region-geography.mjs",
-    files: ["region-water.json"],
+    files: ["region-water.json", "region-coast.json"],
     licenceNote: "Confirmed on the catalogue record itself.",
   },
   {

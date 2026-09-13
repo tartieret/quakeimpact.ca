@@ -29,17 +29,48 @@
 import { download, isMain, readJson, writeVendored } from "./lib/io.mjs";
 import { geometryLines, maxDeviation, reduceLine } from "./lib/geo.mjs";
 
-/** West Vancouver to Surrey, Boundary Bay to the North Shore mountains. */
-const BBOX = "-123.40,49.00,-122.70,49.40";
-const REF_LAT = 49.2;
-/** 60 m is under a pixel at the width this figure is drawn: about 700 px for 51 km. */
-const TOLERANCE_M = 60;
+/**
+ * Two windows, because two maps need this water at two scales and a reduction
+ * is only honest at the size it was cut for.
+ *
+ * `getting-around` is the tight window: 51 km across, drawn at about 700 px,
+ * so 60 m of deviation is under a pixel. `scenario` is the whole ShakeMap
+ * window at 160 km, drawn at about 620 px, where one pixel is 258 m of ground;
+ * cutting that one at 60 m would ship four times the vertices to draw the same
+ * line. Each window states the tolerance its own drawing can carry.
+ *
+ * The scenario window's south edge is the catalogue's, and the Freshwater
+ * Atlas stops at the international boundary, so the shoreline below 49 degrees
+ * is simply absent rather than wrong. Fifteen of 3,910 model cells sit in that
+ * strip. See docs/research/maps.md.
+ */
+const WINDOWS = [
+  {
+    file: "region-water.json",
+    label: "Getting around",
+    bbox: "-123.40,49.00,-122.70,49.40",
+    refLat: 49.2,
+    tolerance: 60,
+  },
+  {
+    file: "region-coast.json",
+    label: "Scenario window",
+    bbox: "-123.60,48.95,-121.39,49.66",
+    refLat: 49.3,
+    tolerance: 150,
+    extraNote:
+      "The Freshwater Atlas is a British Columbia layer, so there is no shoreline " +
+      "south of the international boundary. Fifteen of the window's 3,910 model " +
+      "cells sit in that strip.",
+  },
+];
+
 const DIGITS = 4;
 
-const WFS = (layer) =>
+const WFS = (layer, bbox) =>
   `https://openmaps.gov.bc.ca/geo/pub/${layer}/ows?service=WFS&version=2.0.0` +
   `&request=GetFeature&typeName=pub:${layer}&outputFormat=application/json` +
-  `&srsName=urn:ogc:def:crs:EPSG::4326&bbox=${encodeURIComponent(`${BBOX},EPSG:4326`)}`;
+  `&srsName=urn:ogc:def:crs:EPSG::4326&bbox=${encodeURIComponent(`${bbox},EPSG:4326`)}`;
 
 /**
  * River polygons worth drawing. The layer returns every slough and creek in the
@@ -104,7 +135,7 @@ const SHORT_NAMES = {
   "CANOE PASS": "Canoe Pass",
 };
 
-function reduceAll(features, { tolerance, keep }) {
+function reduceAll(features, { tolerance, refLat, keep }) {
   const out = [];
   let before = 0;
   let worst = 0;
@@ -112,9 +143,9 @@ function reduceAll(features, { tolerance, keep }) {
     if (keep && !keep(feature.properties)) continue;
     for (const line of geometryLines(feature.geometry)) {
       before += line.length;
-      const reduced = reduceLine(line, { tolerance, digits: DIGITS, refLat: REF_LAT });
+      const reduced = reduceLine(line, { tolerance, digits: DIGITS, refLat });
       if (!reduced) continue;
-      const deviation = maxDeviation(line, reduced, REF_LAT);
+      const deviation = maxDeviation(line, reduced, refLat);
       if (deviation > worst) worst = deviation;
       out.push(reduced);
     }
@@ -123,49 +154,65 @@ function reduceAll(features, { tolerance, keep }) {
   return { lines: out, before, after, worst };
 }
 
-export async function buildRegionGeography() {
-  process.stdout.write("Region coastline and water\n");
+/** Coastline and river water for one window, at the tolerance it can carry. */
+async function buildWater({ file, label, bbox, refLat, tolerance, extraNote }) {
+  process.stdout.write(`${label}: coastline and water
+`);
 
   const coast = readJson(
-    await download(WFS("WHSE_BASEMAPPING.FWA_COASTLINES_SP"), "bc-fwa-coastlines.geojson"),
+    await download(
+      WFS("WHSE_BASEMAPPING.FWA_COASTLINES_SP", bbox),
+      `bc-fwa-coastlines-${file}.geojson`,
+    ),
   );
-  const coastline = reduceAll(coast.features, { tolerance: TOLERANCE_M });
+  const coastline = reduceAll(coast.features, { tolerance, refLat });
   process.stdout.write(
     `  coast   ${coastline.lines.length} lines, ${coastline.before} -> ${coastline.after}` +
-      ` vertices, worst deviation ${coastline.worst.toFixed(0)} m\n`,
+      ` vertices, worst deviation ${coastline.worst.toFixed(0)} m
+`,
   );
 
   const rivers = readJson(
-    await download(WFS("WHSE_BASEMAPPING.FWA_RIVERS_POLY"), "bc-fwa-rivers.geojson"),
+    await download(
+      WFS("WHSE_BASEMAPPING.FWA_RIVERS_POLY", bbox),
+      `bc-fwa-rivers-${file}.geojson`,
+    ),
   );
   const water = reduceAll(rivers.features, {
-    tolerance: TOLERANCE_M,
+    tolerance,
+    refLat,
     keep: (p) => (p.AREA_HA ?? 0) >= MIN_RIVER_HA,
   });
   process.stdout.write(
     `  rivers  ${water.lines.length} rings, ${water.before} -> ${water.after}` +
-      ` vertices, worst deviation ${water.worst.toFixed(0)} m\n`,
+      ` vertices, worst deviation ${water.worst.toFixed(0)} m
+`,
   );
 
-  writeVendored("region-water.json", {
+  writeVendored(file, {
     source: ["bc-fwa-coastlines", "bc-fwa-rivers"],
     geometry: "lines",
     crs: "EPSG:4326",
     precision: "4 decimal places (about 7 m of longitude at 49 degrees N)",
-    simplified: `Douglas-Peucker, ${TOLERANCE_M} m tolerance`,
-    bbox: BBOX.split(",").map(Number),
+    simplified: `Douglas-Peucker, ${tolerance} m tolerance`,
+    bbox: bbox.split(",").map(Number),
     note:
       "coast is the shoreline as open lines, not closed land polygons: the layer " +
       "is linear and the mainland runs off every edge of the window. river is the " +
-      "outline of river polygons over 20 hectares, which closes.",
+      "outline of river polygons over 20 hectares, which closes." +
+      (extraNote ? ` ${extraNote}` : ""),
     coast: coastline.lines,
     river: water.lines,
   });
+}
+
+export async function buildRegionGeography() {
+  for (const window of WINDOWS) await buildWater(window);
 
   process.stdout.write("Highway crossings\n");
   const structures = readJson(
     await download(
-      WFS("WHSE_IMAGERY_AND_BASE_MAPS.MOT_ROAD_STRUCTURE_SP"),
+      WFS("WHSE_IMAGERY_AND_BASE_MAPS.MOT_ROAD_STRUCTURE_SP", WINDOWS[0].bbox),
       "bc-mot-road-structures.geojson",
     ),
   );

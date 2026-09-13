@@ -1,13 +1,12 @@
 import {
-  At,
   FIG_COLOR,
   FIG_TYPE,
   FigHeading,
-  FigRule,
   FigText,
-  FigValue,
   FigureCanvas,
 } from "./figure-kit";
+import { LinkedMapPanes } from "./map-viewer";
+import coastFile from "@/data/region-coast.json";
 import cascadiaFile from "@/data/shakemap-cascadia-m9.json";
 import georgiaFile from "@/data/shakemap-georgia-strait-m7.json";
 import { dataSource } from "@/data/sources";
@@ -16,21 +15,23 @@ import { dataSource } from "@/data/sources";
  * The site's first real map: the two Geological Survey of Canada scenario
  * ShakeMaps, drawn from the vendored files in `src/data`.
  *
- * Read `README.md` beside this file first. Everything here follows it, and the
- * two places it bends are both forced by the fact that this is a map:
+ * Read `README.md` beside this file first, and `map-viewer.tsx` next to it for
+ * why a map is the one figure with a `viewBox` and the one figure a reader can
+ * touch. The decisions that belong to this drawing rather than to maps in
+ * general:
  *
- * - **The drawing is in pixels, not percentages.** A map's proportions are a
- *   measurement. Stretching one horizontally into whatever column it is given
- *   would misstate distances, so the whole grid sits inside a single `At`
- *   anchored at the middle of the canvas, the same escape hatch the crustal
- *   fault cross-section uses for the same reason. The map is therefore the
- *   same physical size at 390 px and at 672 px, which is also what keeps it
- *   legible on a phone.
- * - **The two maps are stacked, not side by side.** The modelled window is
- *   about 160 km across and 70 km deep, so a pair set side by side would be
- *   half as wide each and unreadable on a phone. Stacked, both are full width,
- *   both are drawn to one scale, and a given position is the same position in
- *   both, which is the comparison the page is making.
+ * - **The geometry is in map units, and the words are in HTML.** The window is
+ *   about 160 km across and 78 km deep. Fitting that into a column and stopping
+ *   is what made the first version of this figure unreadable: 220 cells across
+ *   300 px put a cell at 1.4 px and a mark in the lowest class at half of one.
+ *   The pane now takes the column's full width and carries a zoom, so the cells
+ *   can be resolved; the headings and findings sit outside it as text, which is
+ *   what keeps the type the same physical size at every width.
+ * - **The two maps are stacked, and they move together.** Side by side they
+ *   would be half as wide each and unreadable on a phone. Stacked, both are
+ *   full width and both are drawn to one scale, and because the panes share a
+ *   view, a position in one is the same position in the other at every
+ *   magnification. That correspondence is the comparison the page is making.
  *
  * What the drawing is careful not to claim:
  *
@@ -38,7 +39,8 @@ import { dataSource } from "@/data/sources";
  *   model sites, and what is vendored is those sites averaged into cells of
  *   about 730 m by 665 m. Each cell is drawn as a discrete mark with space
  *   around it rather than as a tile in a continuous surface, because a smooth
- *   surface would assert detail the model does not have.
+ *   surface would assert detail the model does not have. Zooming in shows the
+ *   sampling more plainly, which is the honest direction for it to fail in.
  * - **It is not a severity judgement.** The marks carry no hue at all. The
  *   band ramp would have meant mapping the site's own low, medium and high
  *   onto a physical measure, and the catalogue publishes no such grouping.
@@ -65,7 +67,7 @@ interface ShakeMapFile {
   n: number[];
   /** The mean peak ground acceleration of those sites, in g. */
   pga: number[];
-  grid: { cellLon: number; cellLat: number };
+  grid: { west: number; south: number; cellLon: number; cellLat: number };
   caveats: { resolution: string; scope: string };
 }
 
@@ -74,6 +76,13 @@ const CASCADIA: ShakeMapFile = cascadiaFile;
 
 /** The catalogue's own record, so the attribution is never retyped. */
 export const SHAKEMAP_SOURCE = dataSource("gsc-earthquake-scenario-catalogue");
+
+/**
+ * The shoreline under the marks is a second dataset under a second licence, and
+ * an attribution has to travel with the graphic it produced. The page carries
+ * both.
+ */
+export const SHAKEMAP_BASE_SOURCE = dataSource("bc-fwa-coastlines");
 
 /**
  * The two caveats the catalogue embeds in every file, carried out of the data
@@ -130,33 +139,30 @@ const ROWS = GEORGIA.y.reduce((a, b) => (b > a ? b : a), 0) + 1;
 const KM_PER_DEGREE = 111.32;
 const WINDOW_LATITUDE = 49.3;
 const CELL_KM_X =
-  GEORGIA.grid.cellLon * KM_PER_DEGREE * Math.cos((WINDOW_LATITUDE * Math.PI) / 180);
+  GEORGIA.grid.cellLon *
+  KM_PER_DEGREE *
+  Math.cos((WINDOW_LATITUDE * Math.PI) / 180);
 const CELL_KM_Y = GEORGIA.grid.cellLat * KM_PER_DEGREE;
-
-/**
- * The map is 300 px wide at every viewport, and drawn from the left edge of the
- * canvas so that it lines up with the legend below it rather than floating in
- * the middle of a wide column.
- *
- * The width is fixed because a map's proportions are a measurement. The drawing
- * area on a 390 px phone is about 300 px, and a map that grew on a laptop would
- * either stretch, which is a lie about distance, or reflow its type, which the
- * figure convention exists to prevent.
- */
-const MAP_W = 300;
-const CELL_W = MAP_W / COLS;
-const CELL_H = CELL_W * (CELL_KM_Y / CELL_KM_X);
-const MAP_H = ROWS * CELL_H;
-const PX_PER_KM = CELL_W / CELL_KM_X;
 
 /**
  * Lattice units per cell. Every coordinate in the path data is an integer
  * number of these, which is what keeps two maps of 3,910 cells each down to a
- * size worth shipping; the fractional scale is applied once, on the group.
+ * size worth shipping; the one fractional scale is applied on the group.
  */
 const U = 12;
-const SX = round(CELL_W / U);
-const SY = round(CELL_H / U);
+
+/**
+ * The map's own coordinate space, which the pane's `viewBox` reads. It is in
+ * lattice units across and in lattice units corrected for ground aspect down,
+ * because a cell is 726 m wide and 668 m deep and drawing it square would make
+ * the region the wrong shape.
+ */
+const ASPECT_Y = round(CELL_KM_Y / CELL_KM_X);
+const MAP_W = COLS * U;
+const MAP_H = round(ROWS * U * ASPECT_Y);
+
+/** How much ground the map's full width covers. The pane's scale bar wants it. */
+const KM_WIDE = COLS * CELL_KM_X;
 
 function round(value: number): number {
   return Math.round(value * 100000) / 100000;
@@ -215,10 +221,15 @@ interface Layer {
 /**
  * One `<path>` per class and evidence level, ten in all for a map.
  *
- * Each cell is a subpath written relative to the last, and closed with `z`
- * rather than with a fourth explicit side, which is what makes 3,910 cells
- * about 40 kB of markup instead of three times that. `y` counts north from the
- * south-west corner of the window and SVG counts down, so it is flipped here.
+ * Each cell is a subpath written relative to the last, which is what keeps
+ * 3,910 cells to a size worth shipping: no absolute coordinate is ever
+ * written out. `y` counts north from the south-west corner of the window and
+ * SVG counts down, so it is flipped here.
+ *
+ * A mark is three sides and a `z`, not two. An earlier version wrote `h v z`,
+ * which closes a right triangle rather than a square, and at the 1.4 px cell
+ * that version drew at, nobody could see that half the area was missing. Area
+ * is this drawing's whole measure, so the fourth corner is not optional.
  */
 function layersOf(map: ShakeMapFile): Layer[] {
   const buckets = new Map<string, number[]>();
@@ -241,7 +252,7 @@ function layersOf(map: ShakeMapFile): Layer[] {
       const y = (ROWS - 1 - map.y[i]) * U;
       const dx = x - cursorX;
       const dy = y - cursorY;
-      d += `m${dx}${dy < 0 ? "" : " "}${dy}h${size}v${size}z`;
+      d += `m${dx}${dy < 0 ? "" : " "}${dy}h${size}v${size}h-${size}z`;
       cursorX = x;
       cursorY = y;
     }
@@ -254,26 +265,139 @@ const GEORGIA_LAYERS = layersOf(GEORGIA);
 const CASCADIA_LAYERS = layersOf(CASCADIA);
 
 /** Marks are centred in their cell, which the group carries so the path need not. */
-function markTransform(size: number): string {
+function markInset(size: number): string {
   const inset = (U - size) / 2;
-  return `scale(${SX},${SY}) translate(${inset},${inset})`;
+  return `translate(${inset},${inset})`;
 }
 
-/** The grid of one scenario, drawn in pixels from the top left of the window. */
+/* ------------------------------------------------------------------ */
+/* The ground the marks sit on                                         */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Shoreline and river water, under the cells.
+ *
+ * Without it the marks float in white paper and a reader has nothing to locate
+ * the dark patch against, which is the one thing a map is for. It is the
+ * Freshwater Atlas, vendored for this window at 150 m, which is well under a
+ * pixel at the width these are drawn.
+ *
+ * It is load-bearing by the style guide's own test: cover it and the drawing
+ * stops saying where anything is. So it is `mark`, not the furniture grey, and
+ * the stroke is `non-scaling-stroke` so a coastline stays a hairline at
+ * sixteen times rather than swelling into a band.
+ *
+ * **The layer is British Columbia's, so it stops at the international
+ * boundary.** Fifteen of 3,910 cells sit in the strip below it, and they are
+ * drawn without a shoreline rather than against a line the province's data
+ * does not have.
+ */
+interface CoastFile {
+  coast: number[][][];
+  river: number[][][];
+}
+
+const COAST: CoastFile = coastFile;
+
+/** Longitude and latitude into the grid's own lattice units. */
+function toLattice(lon: number, lat: number): [number, number] {
+  const x = ((lon - GEORGIA.grid.west) / GEORGIA.grid.cellLon) * U;
+  const y = (ROWS - (lat - GEORGIA.grid.south) / GEORGIA.grid.cellLat) * U;
+  return [Math.round(x * 10) / 10, Math.round(y * 10) / 10];
+}
+
+function linesToPath(lines: number[][][]): string {
+  let d = "";
+  for (const line of lines) {
+    let first = true;
+    for (const [lon, lat] of line) {
+      const [x, y] = toLattice(lon, lat);
+      d += `${first ? "M" : "L"}${x} ${y}`;
+      first = false;
+    }
+  }
+  return d;
+}
+
+const COAST_PATH = linesToPath(COAST.coast);
+const RIVER_PATH = linesToPath(COAST.river);
+
+const COAST_ID = `${ID}-coast`;
+const RIVER_ID = `${ID}-river`;
+
+/**
+ * The water, written into the page once.
+ *
+ * Both maps draw the same shoreline, and the two copies sit about 85 kB apart
+ * in the markup, which is well outside the 32 kB window a gzip stream looks
+ * back through. The duplicate therefore compressed to nothing like nothing: it
+ * cost 18 kB over the wire, or an eighth of the page. Defined once here and
+ * referenced twice, it costs one copy.
+ *
+ * This is the ordinary inline-sprite pattern — a hidden `svg` holding `defs`,
+ * referenced by `use` elsewhere in the same document — and stroke and colour
+ * are set at the `use`, not here, so each map still styles its own ground.
+ */
+function GeographyDefs() {
+  return (
+    <svg
+      width="0"
+      height="0"
+      aria-hidden="true"
+      focusable="false"
+      className="absolute overflow-hidden"
+    >
+      <defs>
+        <path id={COAST_ID} d={COAST_PATH} />
+        <path id={RIVER_ID} d={RIVER_PATH} />
+      </defs>
+    </svg>
+  );
+}
+
+/**
+ * The shoreline is drawn at 150 m, which is about a fifth of a cell. Cutting it
+ * finer would draw a coast more precise than the 730 m grid it sits under,
+ * which is false precision even at the deepest zoom.
+ */
+function Geography() {
+  return (
+    <g
+      fill="none"
+      stroke={FIG_COLOR.mark}
+      strokeLinejoin="round"
+      strokeLinecap="round"
+    >
+      {/* `vector-effect` does not inherit, so it goes on each reference. */}
+      <use
+        href={`#${COAST_ID}`}
+        strokeWidth="1"
+        vectorEffect="non-scaling-stroke"
+      />
+      <use
+        href={`#${RIVER_ID}`}
+        strokeWidth="0.75"
+        vectorEffect="non-scaling-stroke"
+      />
+    </g>
+  );
+}
+
+/**
+ * The grid of one scenario over the region's water, in the map's own
+ * coordinate space.
+ *
+ * The ground-aspect correction is applied once here, on the outer group, so
+ * every path underneath stays in lattice units. There is no frame: the pane
+ * draws its own border, and a frame inside the zoom would slide off the edge
+ * the moment a reader moved.
+ */
 function MapBody({ layers }: { layers: Layer[] }) {
   return (
-    <g>
-      <rect
-        x="0"
-        y="0"
-        width={MAP_W}
-        height={round(MAP_H)}
-        fill="none"
-        stroke={FIG_COLOR.track}
-        strokeWidth="1"
-      />
+    <g transform={`scale(1,${ASPECT_Y})`}>
+      <Geography />
       {layers.map((layer) => (
-        <g key={layer.key} transform={markTransform(layer.size)}>
+        <g key={layer.key} transform={markInset(layer.size)}>
           <path
             d={layer.d}
             fill={layer.thin ? FIG_COLOR.muted : FIG_COLOR.ink}
@@ -285,40 +409,23 @@ function MapBody({ layers }: { layers: Layer[] }) {
 }
 
 /* ------------------------------------------------------------------ */
-/* Layout                                                              */
+/* The legend                                                          */
 /* ------------------------------------------------------------------ */
 
-const PANEL_HEADING_Y = 14;
-const PANEL_VALUE_Y = 41;
-const PANEL_SUBNOTE_Y = 58;
-const PANEL_MAP_Y = 70;
-const PANEL_NOTE_Y = PANEL_MAP_Y + MAP_H + 18;
-const PANEL_H = PANEL_NOTE_Y + 10;
-
-const RULE_Y = PANEL_H + 12;
-const PANEL_B_Y = RULE_Y + 24;
-
-const LEGEND_Y = PANEL_B_Y + PANEL_H + 22;
-
-/** Legend rows, laid out from `LEGEND_Y`. */
-const LEG_HEADING_Y = 14;
-const LEG_SUB_Y = 31;
-const LEG_ROW_TOP = 40;
-const LEG_ROW_H = 17;
-const LEG_LABEL_X = 26;
-
-const LEG_EVIDENCE_Y = LEG_ROW_TOP + CLASSES.length * LEG_ROW_H + 20;
-const LEG_EVIDENCE_TOP = LEG_EVIDENCE_Y + 8;
-const LEG_SCALE_Y = LEG_EVIDENCE_TOP + 2 * LEG_ROW_H + 22;
-const LEG_SCALE_LABEL_Y = LEG_SCALE_Y + 16;
-const LEG_GUARD_Y = LEG_SCALE_LABEL_Y + 24;
-const LEG_GUARD_2_Y = LEG_GUARD_Y + 18;
-
-const HEIGHT = LEGEND_Y + LEG_GUARD_2_Y + 10;
-
-/** A patch of the real grid, at the real scale, so the legend is the map. */
-const SWATCH_COLS = 10;
-const SWATCH_ROWS = 7;
+/**
+ * A patch of the grid, drawn at a legible cell size rather than at the map's.
+ *
+ * The map's cell size is now whatever the reader has zoomed to, so a swatch
+ * cannot be "the map at its real scale" and stay true. What it can be, and is,
+ * is the *proportions* of the encoding: the five marks stand in the same ratio
+ * to their cell as they do in the drawing, which is the whole of what the area
+ * channel says. The absolute size is set for reading.
+ */
+const SWATCH_CELL = 8;
+const SWATCH_COLS = 5;
+const SWATCH_ROWS = 2;
+const SWATCH_W = SWATCH_COLS * SWATCH_CELL;
+const SWATCH_H = SWATCH_ROWS * SWATCH_CELL;
 
 function swatchPath(size: number): string {
   let d = "";
@@ -326,81 +433,109 @@ function swatchPath(size: number): string {
     for (let col = 0; col < SWATCH_COLS; col += 1) {
       const dx = col === 0 ? (row === 0 ? 0 : -(SWATCH_COLS - 1) * U) : U;
       const dy = col === 0 && row > 0 ? U : 0;
-      d += `m${dx}${dy < 0 ? "" : " "}${dy}h${size}v${size}z`;
+      d += `m${dx}${dy < 0 ? "" : " "}${dy}h${size}v${size}h-${size}z`;
     }
   }
   return d;
 }
 
 function Swatch({
-  x,
   y,
   size,
   thin = false,
 }: {
-  x: number;
   y: number;
   size: number;
   thin?: boolean;
 }) {
   return (
-    <g transform={`translate(${x},${y})`}>
-      <g transform={markTransform(size)}>
-        <path
-          d={swatchPath(size)}
-          fill={thin ? FIG_COLOR.muted : FIG_COLOR.ink}
-        />
-      </g>
+    <g
+      transform={`translate(0,${y}) scale(${round(SWATCH_CELL / U)}) ${markInset(size)}`}
+    >
+      <path
+        d={swatchPath(size)}
+        fill={thin ? FIG_COLOR.muted : FIG_COLOR.ink}
+      />
     </g>
   );
 }
 
-/** The scale bar's length, from the cell size the grid itself states. */
-const SCALE_KM = 50;
-const SCALE_PX = round(SCALE_KM * PX_PER_KM);
+const LEG_HEADING_Y = 14;
+const LEG_SUB_Y = 31;
+const LEG_ROW_TOP = 42;
+const LEG_ROW_H = SWATCH_H + 6;
+const LEG_LABEL_X = SWATCH_W + 12;
+const LEG_LABEL_BASELINE = SWATCH_H / 2 + 4;
+
+const LEG_EVIDENCE_Y = LEG_ROW_TOP + CLASSES.length * LEG_ROW_H + 20;
+const LEG_EVIDENCE_TOP = LEG_EVIDENCE_Y + 10;
+const LEG_GUARD_Y = LEG_EVIDENCE_TOP + 2 * LEG_ROW_H + 20;
+const LEG_GUARD_2_Y = LEG_GUARD_Y + 18;
+const LEGEND_H = LEG_GUARD_2_Y + 10;
+
+/** The key to both maps. One legend, because both are on one scale. */
+function Legend() {
+  return (
+    <FigureCanvas id={ID} height={LEGEND_H}>
+      <FigHeading y={LEG_HEADING_Y}>Peak ground acceleration</FigHeading>
+      <FigText y={LEG_SUB_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
+        Per cent of gravity. Both maps on one scale.
+      </FigText>
+
+      {CLASSES.map((band, i) => {
+        const top = LEG_ROW_TOP + i * LEG_ROW_H;
+        return (
+          <g key={band.label}>
+            <Swatch y={top} size={band.size} />
+            <FigText
+              x={LEG_LABEL_X}
+              y={top + LEG_LABEL_BASELINE}
+              size={FIG_TYPE.tick}
+              fill={FIG_COLOR.muted}
+            >
+              {band.label}
+            </FigText>
+          </g>
+        );
+      })}
+
+      <FigHeading y={LEG_EVIDENCE_Y}>What stands behind a cell</FigHeading>
+      <Swatch y={LEG_EVIDENCE_TOP} size={9} />
+      <FigText
+        x={LEG_LABEL_X}
+        y={LEG_EVIDENCE_TOP + LEG_LABEL_BASELINE}
+        size={FIG_TYPE.tick}
+        fill={FIG_COLOR.muted}
+      >
+        Two or more model sites
+      </FigText>
+      <Swatch y={LEG_EVIDENCE_TOP + LEG_ROW_H} size={9} thin />
+      <FigText
+        x={LEG_LABEL_X}
+        y={LEG_EVIDENCE_TOP + LEG_ROW_H + LEG_LABEL_BASELINE}
+        size={FIG_TYPE.tick}
+        fill={FIG_COLOR.muted}
+      >
+        One model site, in most cells
+      </FigText>
+
+      <FigText y={LEG_GUARD_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
+        One mark is a cell of about 730 m by 665 m.
+      </FigText>
+      <FigText y={LEG_GUARD_2_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
+        Shaking damage to buildings only.
+      </FigText>
+    </FigureCanvas>
+  );
+}
 
 /* ------------------------------------------------------------------ */
 /* The figure                                                          */
 /* ------------------------------------------------------------------ */
 
-function Panel({
-  top,
-  heading,
-  value,
-  subnote,
-  note,
-  layers,
-}: {
-  top: number;
-  heading: string;
-  value: string;
-  subnote: string;
-  note: string;
-  layers: Layer[];
-}) {
-  return (
-    <g>
-      <FigHeading y={top + PANEL_HEADING_Y}>{heading}</FigHeading>
-      <FigValue y={top + PANEL_VALUE_Y}>{value}</FigValue>
-      <FigText
-        y={top + PANEL_SUBNOTE_Y}
-        size={FIG_TYPE.tick}
-        fill={FIG_COLOR.faint}
-      >
-        {subnote}
-      </FigText>
-      <At x="0" y={top + PANEL_MAP_Y}>
-        <MapBody layers={layers} />
-      </At>
-      <FigText y={top + PANEL_NOTE_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        {note}
-      </FigText>
-    </g>
-  );
-}
-
 /**
- * The two scenario ShakeMaps, one above the other, on one scale.
+ * The two scenario ShakeMaps, one above the other, on one scale and on one
+ * view.
  *
  * The finding is the contrast, and it is written out as well as drawn: the
  * strongest cell in the crustal map is about four times the strongest cell in
@@ -411,96 +546,38 @@ function Panel({
  */
 export function ScenarioShakeMaps() {
   return (
-    <FigureCanvas id={ID} height={Math.round(HEIGHT)}>
-      <Panel
-        top={0}
-        heading="Georgia Strait magnitude 7.0"
-        value={`${SHAKEMAP_FACTS.georgiaPeak} per cent of gravity`}
-        subnote="The strongest cell in the map"
-        note="The catalogue also gives Mercalli intensity"
-        layers={GEORGIA_LAYERS}
-      />
-
-      <FigRule y={RULE_Y} />
-
-      <Panel
-        top={PANEL_B_Y}
-        heading="Cascadia magnitude 9.0"
-        value={`${SHAKEMAP_FACTS.cascadiaPeak} per cent of gravity`}
-        subnote="The strongest cell in the map"
-        note="No Mercalli intensity published for this one"
-        layers={CASCADIA_LAYERS}
-      />
-
-      <g transform={`translate(0,${LEGEND_Y})`}>
-        <FigHeading y={LEG_HEADING_Y}>Peak ground acceleration</FigHeading>
-        <FigText y={LEG_SUB_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-          Per cent of gravity. Both maps on one scale.
-        </FigText>
-
-        {CLASSES.map((band, i) => {
-          const top = LEG_ROW_TOP + i * LEG_ROW_H;
-          return (
-            <g key={band.label}>
-              <Swatch x={0} y={top} size={band.size} />
-              <FigText
-                x={LEG_LABEL_X}
-                y={top + 10}
-                size={FIG_TYPE.tick}
-                fill={FIG_COLOR.muted}
-              >
-                {band.label}
-              </FigText>
-            </g>
-          );
-        })}
-
-        <FigHeading y={LEG_EVIDENCE_Y}>What stands behind a cell</FigHeading>
-        <Swatch x={0} y={LEG_EVIDENCE_TOP} size={9} />
-        <FigText
-          x={LEG_LABEL_X}
-          y={LEG_EVIDENCE_TOP + 10}
-          size={FIG_TYPE.tick}
-          fill={FIG_COLOR.muted}
-        >
-          Two or more model sites
-        </FigText>
-        <Swatch x={0} y={LEG_EVIDENCE_TOP + LEG_ROW_H} size={9} thin />
-        <FigText
-          x={LEG_LABEL_X}
-          y={LEG_EVIDENCE_TOP + LEG_ROW_H + 10}
-          size={FIG_TYPE.tick}
-          fill={FIG_COLOR.muted}
-        >
-          One model site, in most cells
-        </FigText>
-
-        <rect
-          x="0"
-          y={LEG_SCALE_Y}
-          width={SCALE_PX}
-          height="1"
-          fill={FIG_COLOR.mark}
+    <div className="flex flex-col">
+      <GeographyDefs />
+      <div className="px-4 pt-5 sm:px-6">
+        <LinkedMapPanes
+          width={MAP_W}
+          height={MAP_H}
+          kmWide={KM_WIDE}
+          panes={[
+            {
+              key: "georgia",
+              label:
+                "Modelled peak ground acceleration across the Lower Mainland in the Georgia Strait magnitude 7.0 scenario",
+              heading: "Georgia Strait magnitude 7.0",
+              value: `${SHAKEMAP_FACTS.georgiaPeak} per cent of gravity`,
+              subnote: "The strongest cell in the map",
+              note: "The catalogue also gives Mercalli intensity",
+              geometry: <MapBody layers={GEORGIA_LAYERS} />,
+            },
+            {
+              key: "cascadia",
+              label:
+                "Modelled peak ground acceleration across the Lower Mainland in the Cascadia magnitude 9.0 scenario",
+              heading: "Cascadia magnitude 9.0",
+              value: `${SHAKEMAP_FACTS.cascadiaPeak} per cent of gravity`,
+              subnote: "The strongest cell in the map",
+              note: "No Mercalli intensity published for this one",
+              geometry: <MapBody layers={CASCADIA_LAYERS} />,
+            },
+          ]}
         />
-        <rect x="0" y={LEG_SCALE_Y - 3} width="1" height="7" fill={FIG_COLOR.mark} />
-        <rect
-          x={SCALE_PX - 1}
-          y={LEG_SCALE_Y - 3}
-          width="1"
-          height="7"
-          fill={FIG_COLOR.mark}
-        />
-        <FigText y={LEG_SCALE_LABEL_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-          {SCALE_KM} km. North is up.
-        </FigText>
-
-        <FigText y={LEG_GUARD_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-          One mark is a cell of about 730 m by 665 m.
-        </FigText>
-        <FigText y={LEG_GUARD_2_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-          Shaking damage to buildings only.
-        </FigText>
-      </g>
-    </FigureCanvas>
+      </div>
+      <Legend />
+    </div>
   );
 }
