@@ -343,6 +343,38 @@ export const PHOTOGRAPHS = {
    * different ground, and the photograph is here for the arrangement it shows
    * rather than for any transfer from Kyushu to the Fraser delta.
    */
+  /**
+   * The first clock on `/after/water/`, and `kumamoto-temporary-pipe` is the
+   * second. The section they sit in is about two durations that do not join up:
+   * four to five days of trucking bulk water to people, and many months of
+   * repairing the network. One photograph each, with the figure that draws the
+   * gap between them.
+   *
+   * Greg O'Beirne's second row in the register, after
+   * `christchurch-beckenham-shops`, and from the same suburb.
+   *
+   * People are in frame and none of them is in difficulty: neighbours filling
+   * buckets on a sunny street, including a child who is not the subject. The
+   * limit in `docs/media.md` bars casualties and identifiable people in
+   * distress, and an orderly queue for water is neither. Recorded because a
+   * photograph with a child in it should be a decision somebody made rather
+   * than one nobody noticed.
+   */
+  "christchurch-water-tanker": {
+    id: "christchurch-water-tanker",
+    file: "christchurch-water-tanker.jpg",
+    ratio: "765 / 1024",
+    alt: "A road tanker stands at the kerb of a tree-lined residential street while about a dozen people fill white buckets, plastic jugs and bottles from its outlet, more empty containers waiting on the grass verge beside them. One person crouches to hold a bucket under the tap. The water is arriving by road and leaving by the bucket, because none of it is coming out of the taps in the houses behind.",
+    photographer: "Greg O’Beirne",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Post-earthquake_water_distribution_in_Beckenham_-_Tanker.jpg",
+    taken: "23 February 2011",
+    place: "Fisher Avenue, Beckenham, Christchurch, New Zealand",
+    licence: "CC-BY-2.0",
+    status: "verified",
+    usedOn: "/after/water/",
+  },
+
   "kumamoto-temporary-pipe": {
     id: "kumamoto-temporary-pipe",
     file: "kumamoto-temporary-pipe.jpg",

@@ -101,10 +101,10 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Thirteen rows are Verified, checked at their sources on 12 September 2026, and
-twelve are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
-one on `/shaking/fire-following/`, two on `/after/water/`, three on
-`/after/transportation/` and one on `/after/electricity/`. The thirteenth,
+**Fourteen rows are Verified, checked at their sources on 12 September 2026, and
+thirteen are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
+one on `/shaking/fire-following/`, three on `/after/water/`, three on
+`/after/transportation/` and one on `/after/electricity/`. The fourteenth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -434,6 +434,51 @@ do not teach a mechanism. They answer a duration.
   non-seismic breaks, in Houston, Glasgow and Portland. Using one of those and
   letting the page imply an earthquake is precisely what this register exists to
   stop. The USGS photo library could not be checked: it answers 403 here.
+
+#### `christchurch-water-tanker`
+
+The first of the two clocks on `/after/water/`; `kumamoto-temporary-pipe` below
+is the second. **Suggested by the site's owner**, from a Guardian report on the
+2024 Noto earthquake showing people filling containers at a communal tank. That
+photograph is rights-reserved and could not be used; the subject was right, so
+the search was for the same subject under a licence the site can meet.
+
+- **Shows:** a road tanker at the kerb of a tree-lined residential street, about
+  a dozen people filling white buckets, jugs and bottles from its outlet, empty
+  containers waiting on the grass verge.
+- **Photographer:** Greg O'Beirne — his second row, after
+  `christchurch-beckenham-shops`, and from the same suburb.
+- **Licence:** CC BY 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Post-earthquake_water_distribution_in_Beckenham_-_Tanker.jpg
+- **Status:** **Verified, 12 September 2026.** Photographer and licence read off
+  the Commons file page, whose description is the photographer's own and names
+  the street and the contractor.
+- **Hosted:** `public/media/christchurch-water-tanker.jpg`. 765 × 1024, hosted at
+  native size and re-encoded only; ratio `765 / 1024`. It is the smallest file in
+  the register and there is no larger version — the same situation as
+  `vancouver-dfps-hydrant`. Portrait, so it suits a phone better than most of
+  the set.
+- **Used on:** `/after/water/`, in the section on the province's two durations,
+  above the two-clocks figure.
+- **Why this one:** the page states that "distributing bulk potable water across
+  the affected region remains challenging for the first four to five days".
+  That sentence is written from the region's point of view. This is the same
+  four to five days from the pavement: a queue on your own street, carrying
+  water home by hand.
+- **People are in frame, and none of them is in difficulty.** Neighbours filling
+  buckets on a sunny afternoon, including a child who is not the subject of the
+  photograph. The limit bars casualties and identifiable people in distress, and
+  an orderly queue for water is neither. Recorded because a photograph with a
+  child in it should be a decision somebody made rather than one nobody noticed.
+- **A sibling is cleared and not used.** *Post-earthquake water distribution in
+  Beckenham — Private well* (same photographer, same licence, same afternoon,
+  https://commons.wikimedia.org/wiki/File:Post-earthquake_water_distribution_in_Beckenham_-_Private_well.jpg)
+  is a hand-lettered sign reading WELL WATER / BOIL BEFORE DRINKING tied to a
+  fence post with a hose running to it. No people in it at all, and it is the
+  better photograph of the two on the site's own restrained terms. It is not
+  used because one photograph of where the water comes from is enough in that
+  section, and the tanker is the one that shows the queue. Worth remembering for
+  `/prepare/` or for a page about boil-water notices.
 
 #### `kumamoto-temporary-pipe`
 

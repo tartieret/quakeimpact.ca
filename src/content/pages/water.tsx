@@ -228,6 +228,19 @@ export const water: PageModule = {
             the affected region remains challenging for the first four to five
             days”. <Cite id="DCRRA-2025" />
           </p>
+          <Photograph
+            id="christchurch-water-tanker"
+            caption={
+              <>
+                Fisher Avenue, Beckenham, Christchurch, the day after the 2011
+                earthquake. A contractor’s tanker has stopped on a residential
+                street and the neighbours are filling buckets and jugs from it.
+                This is what distributing bulk potable water looks like from the
+                pavement: not a pipe, but a queue on your own street, carrying
+                water home by hand. <Cite id="DCRRA-2025" />
+              </>
+            }
+          />
           <p>
             The four to five days are about trucking water to people; the many
             months is about repairing the network. Merging them would suggest
