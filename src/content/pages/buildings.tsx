@@ -1,5 +1,5 @@
 import { Cite } from "@/components/citation";
-import { Prose, VerificationNote } from "@/components/page-parts";
+import { Photograph, Prose, VerificationNote } from "@/components/page-parts";
 import { DataTable, Quote } from "@/components/prose-blocks";
 import type { PageModule } from "./index";
 
@@ -360,6 +360,33 @@ export const buildings: PageModule = {
             is. It is held up by gravity and by mortar, and in an earthquake it
             comes down on the footpath.
           </p>
+          <Photograph
+            id="christchurch-beckenham-shops"
+            caption={
+              <>
+                Christchurch, New Zealand, on the day of the 2010 earthquake.
+                The moulded tops running along this row are parapets — the same
+                feature that makes a shopfront on Hastings Street or Kingsway
+                look taller than the building behind it. One of them has come
+                down, taking part of the wall with it and bending the verandah
+                it landed on. The shopfront underneath is boarded over and the
+                footpath is shut the length of the row.
+              </>
+            }
+          />
+          <Photograph
+            id="christchurch-dairy-gable-wall"
+            caption={
+              <>
+                The same earthquake, two days later. This is the collapse “onto
+                exterior areas immediately adjacent to the building” in the
+                City’s sentence above: the upper wall has left the building and
+                landed on the footpath, and the shop underneath it is untouched.
+                A corner shop of this kind is on most of the arterials the City
+                names.
+              </>
+            }
+          />
           <p>
             Federal modelling of the province’s own planning earthquake, a
             magnitude 7.0 in the Strait of Georgia close to the city, puts 13
@@ -370,6 +397,19 @@ export const buildings: PageModule = {
             tsunami, landslides, liquefaction and fire, so the agency calls them
             a minimum. <Cite id="GSC-OF-8853" />
           </p>
+          <Photograph
+            id="christchurch-moorhouse-parapet"
+            caption={
+              <>
+                One parapet, two days after the same earthquake. It closed a
+                footpath and a parking lane and needed fencing and cones, while
+                the road beside it went on carrying traffic. The blockage the
+                City describes is made of this, one building at a time; how much
+                of it there would be here is the federal estimate above and not
+                anything this photograph can be asked.
+              </>
+            }
+          />
           <p>
             In the 2011 earthquake in Christchurch, New Zealand, 35 of the 42
             deaths from building failures, leaving aside the two office

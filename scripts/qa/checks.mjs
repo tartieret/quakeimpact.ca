@@ -214,6 +214,10 @@ window.__qa = (() => {
       const figures = figs.map((f) => {
         const label = f.getAttribute("aria-label") || "";
         const svg = f.querySelector("svg");
+        /* A labelled frame holds a drawing or a photograph. Only the drawings
+           carry <text> to measure, so everything below stays keyed to the svg;
+           this is here so an empty frame is still told apart from a full one. */
+        const img = f.querySelector("img");
         const box = (svg || f).getBoundingClientRect();
         const boxes = (svg ? [...svg.querySelectorAll("text")] : [])
           .map((t) => ({
@@ -267,7 +271,8 @@ window.__qa = (() => {
           label, labelEmpty: !label.trim(),
           width: Math.round(box.width), height: Math.round(box.height),
           svgHidden: svg ? svg.getAttribute("aria-hidden") === "true" : null,
-          hasSvg: !!svg, textCount: boxes.length, clipped, overlaps, near, tiny,
+          hasSvg: !!svg, hasImg: !!img,
+          textCount: boxes.length, clipped, overlaps, near, tiny,
           desc: desc(f).slice(0, 90),
         };
       });

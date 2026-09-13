@@ -3,6 +3,7 @@ import { Cite } from "@/components/citation";
 import {
   DataTable,
   MapPlaceholder,
+  Photograph,
   Prose,
   Quote,
   VerificationNote,
@@ -319,6 +320,20 @@ export const fireFollowing: PageModule = {
             reader can act on, and they arrive without the geography beside
             them.
           </p>
+          <Photograph
+            id="vancouver-dfps-hydrant"
+            caption={
+              <>
+                One of them, in Vancouver. The colour is the whole identifier:
+                the City tells residents to look for “the big, blue ones”, and
+                this is what that means on a corner.{" "}
+                <Cite id="COV-EXPLORER-25" /> Where the blue hydrants stop, a
+                fire is fought with water from the ordinary mains — the ones the
+                same shaking breaks. Nothing on the street says where that line
+                falls.
+              </>
+            }
+          />
         </Prose>
       ),
     },

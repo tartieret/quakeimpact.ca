@@ -120,6 +120,15 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     site states kit ownership and stops. The answerable route is SEPR microdata through
     the Research Data Centre network, which carries variables beyond the published
     tables; it would still be 2014 data. See `household-preparedness.md`.
+26. **Federal liquefaction susceptibility mapping for the Fraser delta**, from Natural
+    Resources Canada or the Geological Survey of Canada. Not a gap in any claim the site
+    makes — `/shaking/ground/` carries the delta on the 787-borehole study and the
+    microzonation project, and both are stronger for the purpose. It is wanted for
+    **framing**: since 12 September 2026 that page carries two Christchurch photographs,
+    and an analogue from New Zealand anchors better to a federal susceptibility layer
+    for the ground a reader is standing on than to a study of boreholes. Untested rather
+    than searched: the session that raised it had no network route to a federal host.
+    See `../media.md` §"The verification queue".
 
 ---
 

@@ -44,6 +44,154 @@ would actually change. A filter over a dimension the sources do not resolve is n
 neutral convenience — it manufactures a distinction the evidence will not support, and
 it costs the reader the comparison that was the real finding.
 
+---
+
+## The ban on photography is gone, and the first two photographs are on the site
+
+**12 September 2026.** The style guide said "no disaster photography … maps,
+diagrams and data only". It no longer does. Recording it here because
+`docs/README.md` says a style-guide rule is a decision to record rather than an
+edit to make in passing, and because this one was reversed twice in a day: first
+narrowed to an exception for liquefaction, then dropped, on the project owner's
+call that the ban was bad positioning.
+
+**Why the ban was wrong, in its own terms.** It gave three reasons. Disaster
+imagery is emotionally cheap; it is almost always from somewhere else; it puts
+the site in the register it is trying to avoid. The first is a claim about bad
+photographs, not about photographs. The second is true and is a captioning
+problem, not a prohibition. The third is the real one, and it was a position
+about tone stated as a position about rigour — which is exactly what §3 warns
+against in the other direction, since the site's fear discipline is about
+severity paired with efficacy and never about keeping the material at arm's
+length. The cost was concrete: the site could not show a reader something that
+had already happened to a real street.
+
+**What replaced it.** A test of what an image does rather than a list of what it
+may not contain: **a photograph earns its place by showing a mechanism, not by
+being striking.** Liquefaction is the case that makes it obvious, and it is not
+the only one — a buckled road, a building off its foundations, a bridge approach
+with a step in it are all things the site describes in words and a reader has
+never seen. What the test excludes is decoration: an image adding nothing the
+prose has not already given.
+
+**Three limits survive, and they are not about tone.** No casualties and no
+identifiable person in distress, which is dignity towards people who did not
+consent to illustrate our argument and does not soften because the file is free.
+No image standing in for a claim the prose cannot make. And nothing uncleared.
+Over them sits the rule that **a photograph may not generate a claim**, which is
+§10's question 8 about analogues at its sharpest: a photograph is the most
+persuasive thing on a page and the least measurable.
+
+**The dramatic image is the one that is not available, and that is a
+coincidence.** The brief that brought these images in records "Car swallowed by
+liquefaction", Phillipstown, as all rights reserved. Under the first, narrower
+rule it was excluded twice over — on rights and for being a spectacle. Only the
+rights exclusion survives, which is the honest position: the site does not
+refuse a photograph for being vivid.
+
+**Hosting waited a session on network access, and the wait paid for itself.**
+The session that wrote the rule had no route to `commons.wikimedia.org`,
+`upload.wikimedia.org`, `www.flickr.com`, `www.canterburystories.nz` or
+`www.sciencelearn.org.nz` — 403 at the egress proxy for all of them — so no file
+could be downloaded and no licence read at its source. Every row went in as
+`stated`, and `verified` is the only status that may be hosted. The page carried
+labelled empty slots in the meantime, which is the part worth keeping: the two
+sentences saying "not hosted yet" were true for a day and cost nothing, and the
+alternative — a broken image, or quietly dropping the slot — would have been a
+lie in one direction or the other.
+
+**Opening the files corrected both of them, and that is the durable lesson.**
+The next session had the route. Both rows verified at their sources and both are
+hosted, and both turned out to be wrong about their own pictures, because the
+alt text had been written off the brief instead of off the file. One described
+"an ordinary commercial street" and shows a residential one. The other described
+a road broken open into holes and troughs, and shows a street buried under
+vented silt with sand volcanoes in the foreground — the photographer's own
+Flickr title says "sink holes" and the frame has none. The mechanism survived in
+both cases and the wording did not, so the alt text and one page caption were
+rewritten to the photographs. **Open the file before writing its alt text**, now
+a rule in `docs/media.md` §"When a photograph is hosted". No review short of
+looking at the image would have caught either error: every word was plausible,
+sourced to a brief, and wrong.
+
+**A collection page describing a file is not the file.** The row for
+`christchurch-cars-in-silt` cited the Science Learning Hub page that happens to
+state the rights, with a note to find the Commons original before hosting. It is
+`File:Liquefaction in Peterborough St.JPG`, and the two are the same bytes —
+identical checksum on 4 373 550 — so the link now goes to the file page where
+the photographer states the licence rather than to a page repeating it.
+
+**The first binary asset in the repo moved two pieces of tooling.** `public/`
+did not exist until these two files; the site had shipped one inline SVG icon and
+nothing else. Two things assumed that. `scripts/qa/serve.mjs` had no `.jpg` in
+its MIME table, so the QA server answered `application/octet-stream` and the
+audit was grading a page whose photographs only rendered because Chromium
+sniffs. And the figures check in `scripts/qa/checks.mjs` read a labelled
+`role="img"` frame as defective unless it contained an `<svg>`, which was true
+of every figure on the site until a photograph went in one. Both are fixed: the
+server knows the type, and the check asks for a graphic rather than for a
+drawing. Neither was a fault in the photographs, and both would have been read
+as one.
+
+**`ratio` on a register row is load-bearing, not decoration.** The frame sets
+`aspect-ratio` from it and the image is `object-cover`, so a row whose ratio
+disagrees with its file does not letterbox — it crops, silently, with no warning
+and nothing in the build to catch it. Both rows arrived saying `3 / 2` and both
+files are `4 / 3`. On a CC BY-SA photograph an uncorrected crop would also have
+been an unannounced derivative. Measure the file, do not assume the ratio.
+
+**Two things the register does that `references.ts` does not.** It flags
+non-commercial and no-derivatives as data rather than as a note, so "what comes
+off the site if it ever earns money" is a question answered by reading the data
+on the day it is asked. And it is written by hand rather than generated from
+`docs/research/sources.md`, because a photograph is not a source: a reference is
+a document a claim rests on, and a photograph is the one thing on a page that
+must never become one.
+
+---
+
+## Four more photographs, and two rules that came out of placing them
+
+**12 September 2026.** `/shaking/buildings/` took three and
+`/shaking/fire-following/` took one, which makes six on the site.
+
+**Prefer September 2010 to February 2011 wherever both show the mechanism.** The
+three on the buildings page are unreinforced masonry failures — a parapet down
+off a shop row, a gable end wall on a footpath, brick across a traffic lane — and
+all three are the Darfield earthquake of 4 September 2010 rather than the
+Christchurch earthquake of 22 February 2011. Same city, same building stock, same
+failure, and 2010 killed nobody. The page cites the 2011 death toll from URM
+façades two paragraphs below where the images sit, so a 2011 photograph of the
+same mechanism would have put the casualty limit under pressure to no purpose.
+This generalises: when two events produced the same mechanism, the one without
+the deaths is the one to photograph.
+
+**A photograph of here is not an analogue, and the rule changes shape.** The
+hydrant is the first image on the site that is not standing in for something.
+Every other one argues "this mechanism is real, and your ground is like that
+ground", and the analogue rule limits what may be carried across. The hydrant
+carries nothing across: it is the object itself, on a street the reader can walk
+to, and its caption is an instruction rather than a framing. `/shaking/fire-
+following/` had been telling readers that the blue hydrants are the only part of
+the City's description they can act on, and then not showing them one, which is
+the plainest §8 failure the site had left. The register and `/licences/` both say
+which kind an image is, because the two kinds are read differently.
+
+**The alt-text rule earned itself again.** Two of the three captions drafted
+before the files were opened carried a detail the frame did not support: a person
+"waiting for a bus" where there is no bus stop, and shops called undamaged that
+are boarded over with plywood. Both were plausible, both were invented, and
+neither would have survived anyone looking. Write the words off the image.
+
+**Vancouver's own imagery is scarce and badly licensed.** A search of openly
+licensed collections for a blue DFPS hydrant returns one usable file, at
+1024 × 1024, under CC BY-NC-SA 2.0 — and **nothing at all** under a licence
+allowing commercial use. That is worth knowing before planning any page around
+local photography: the Christchurch material is abundant and freely licensed, and
+the Vancouver material is neither.
+
+---
+
 ## Three things the page review of 12 September could not settle
 
 **12 September 2026.** A page-by-page review against the style guide, the spec and

@@ -20,6 +20,17 @@ Read `water.tsx` next to this file alongside the rules.
 4. **A figure is not exempt from WCAG AA** because it is a graphic. Text inside
    an SVG is text, and the finding must be available without the picture.
 
+**A photograph is not a figure and nothing here applies to it.** Since 12
+September 2026 the site carries two, on `/shaking/ground/`, under the test in
+`docs/style-guide.md` §8: a photograph shows a mechanism the page has described
+and a reader has never seen. They are not drawn, they say nothing the prose has
+not already said and sourced, and they may not produce a number.
+`Photograph` in `components/photograph.tsx` renders them from the register in
+`src/content/media.ts`; `docs/media.md` is the rule and the licence position. A
+photograph does not go through this file's kit, and rule 2 still holds for it in
+the only sense that matters: the file is hosted under `public/media/` and nothing
+is fetched from another host.
+
 ---
 
 ## How a figure is authored

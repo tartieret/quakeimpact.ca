@@ -370,3 +370,5 @@ export {
   Quote,
   Figure,
 } from "./prose-blocks";
+
+export { Photograph } from "./photograph";

@@ -3,6 +3,12 @@ import Link from "next/link";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
 import { REFERENCES } from "@/content/references";
+import {
+  MEDIA_LICENCES,
+  PHOTOGRAPH_LIST,
+  nonCommercialPhotographs,
+  type Photograph,
+} from "@/content/media";
 import type { Reference } from "@/content/types";
 
 export const metadata: Metadata = { title: "Licences" };
@@ -25,6 +31,30 @@ const DATASETS: Reference[] = Object.values(REFERENCES)
 
 const USED = DATASETS.filter((entry) => !LINK_ONLY_KEYS.includes(entry.id));
 const LINK_ONLY = DATASETS.filter((entry) => LINK_ONLY_KEYS.includes(entry.id));
+
+/** On a page, as against cleared and held. See `src/content/media.ts`. */
+const PLACED = PHOTOGRAPH_LIST.filter((photo) => photo.usedOn !== null);
+const NON_COMMERCIAL = nonCommercialPhotographs();
+
+/**
+ * Non-commercial and on a page, as against non-commercial and held.
+ *
+ * The distinction the sentence below turns on, and it moved once already: the
+ * only NC row used to be a held one, so the page could say the register "also
+ * holds" such photographs. A reader is owed the stronger version the moment one
+ * of them is something they are being shown.
+ */
+const NON_COMMERCIAL_SHOWN = NON_COMMERCIAL.filter(
+  (photo) => photo.usedOn !== null,
+);
+const NON_COMMERCIAL_HELD = NON_COMMERCIAL.length - NON_COMMERCIAL_SHOWN.length;
+
+/**
+ * Placed but not yet hosted. Read from the register rather than stated, so the
+ * sentence below cannot outlive the fact: the day a file lands in
+ * `public/media/`, this page stops saying the slot is empty.
+ */
+const UNHOSTED = PLACED.filter((photo) => photo.file === null);
 
 const LICENCES = [
   {
@@ -103,6 +133,66 @@ function DatasetList({ entries }: { entries: Reference[] }) {
   );
 }
 
+/**
+ * The credit each photographer is owed, in the same shape as the dataset list.
+ * Every field is read from `src/content/media.ts`, so a corrected licence
+ * reaches this page and the caption under the photograph in one edit.
+ */
+function PhotographList({ entries }: { entries: Photograph[] }) {
+  return (
+    <ul className="flex flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule">
+      {entries.map((photo) => {
+        const licence = MEDIA_LICENCES[photo.licence];
+        return (
+          <li key={photo.id} className="bg-paper-raised px-5 py-4">
+            <p className="font-display text-base leading-snug text-pretty">
+              {photo.photographer}
+              {photo.title ? <>, “{photo.title}”</> : null}
+            </p>
+            <p className="mt-1 text-sm text-ink-muted">
+              {photo.place} · {photo.taken} · {photo.collection}
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+              <span className="font-semibold">Licence:</span> {licence.name}
+              {licence.noDerivatives ? ". No changes made." : "."}
+            </p>
+            {photo.usedOn ? (
+              <p className="mt-1 text-sm leading-relaxed text-ink-muted">
+                <span className="font-semibold">On:</span>{" "}
+                <Link
+                  href={photo.usedOn}
+                  className="text-accent underline underline-offset-2"
+                >
+                  {photo.usedOn}
+                </Link>
+                {photo.file === null ? ", where the file is not hosted yet" : ""}
+              </p>
+            ) : null}
+            <p className="mt-2 flex flex-wrap gap-x-5 gap-y-1">
+              <a
+                href={photo.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-medium text-accent underline underline-offset-4"
+              >
+                Open the photograph ↗
+              </a>
+              <a
+                href={licence.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-medium text-accent underline underline-offset-4"
+              >
+                Read the licence ↗
+              </a>
+            </p>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 export default function LicencesPage() {
   return (
     <ArticleShell
@@ -156,6 +246,42 @@ export default function LicencesPage() {
           </Link>
           , with its own licence where one is stated.
         </p>
+      </Section>
+
+      <Section
+        title="The photographs, and who took them"
+        lede="Three pages carry photographs: ground conditions, buildings and fire following. Most are Christchurch, New Zealand, in 2010 and 2011, because a sentence cannot show a street where the ground has turned to liquid or a wall has come off a shop. One is a Vancouver hydrant. They are somebody's work, published under Creative Commons licences that ask for the photographer's name and a link to the terms."
+      >
+        <Prose
+          paragraphs={[
+            "The rule for a photograph is the rule for everything else here: nothing is shown unless the terms have been read and recorded. There is one more limit on top of it. A photograph of somewhere else is an analogue, and an analogue on this site may not produce a number. What carries across from Christchurch to the Fraser delta is the mechanism — wet sand losing its strength, a parapet held up by gravity and mortar. How deep the silt was, how many streets it closed and how long it took to clear are facts about Christchurch, and they stay there.",
+            "The hydrant is the exception, and it is one because it is here. A photograph of a Vancouver street is not standing in for anything, so there is no transfer to limit: it shows an object a reader can go and check for on their own corner, which is the one thing the page it sits on was asking them to do.",
+            UNHOSTED.length > 0
+              ? "Some of the image files are not hosted yet. Until they are, the place each one will sit says so and names the photographer and the licence, rather than showing a gap and explaining nothing."
+              : "Every file is copied to this site and served from it, rather than linked from the photographer's own host, so a credit here cannot be quietly broken by somebody else moving a file. Each is the photographer's frame, resized to fit a page and otherwise unchanged.",
+          ]}
+        />
+        <div className="mt-6">
+          <PhotographList entries={PLACED} />
+        </div>
+        {NON_COMMERCIAL.length > 0 ? (
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ink-muted">
+            {NON_COMMERCIAL_SHOWN.length > 0
+              ? `${
+                  NON_COMMERCIAL_SHOWN.length === 1
+                    ? "One of the photographs above is"
+                    : `${NON_COMMERCIAL_SHOWN.length} of the photographs above are`
+                } licensed for non-commercial use only${
+                  NON_COMMERCIAL_HELD > 0
+                    ? ", and the register behind this list holds more"
+                    : ""
+                }.`
+              : "The register behind this list holds photographs licensed for non-commercial use only, none of them currently on a page."}{" "}
+            This site is free, carries no advertising, no affiliate links and
+            nothing for sale, so the condition is met. The day that stopped
+            being true, every one of them would have to come off.
+          </p>
+        ) : null}
       </Section>
 
       <Section

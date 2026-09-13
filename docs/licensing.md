@@ -8,6 +8,8 @@ Checked 10 September 2026. Supersedes open question 1 and 2 in the research repo
 
 **Nothing goes on the site unless its licence has been checked and recorded in the register below.** Where a licence is unconfirmed, the default is to link out, not to reproduce or host.
 
+**Photographs are the same rule in a different register.** They arrive on Creative Commons terms rather than open government ones, they are checked one file at a time rather than one dataset at a time, and two of the constraints they carry — non-commercial and no-derivatives — have no equivalent anywhere in this file. So they live in `media.md`, which records the licence status of every photograph, the credit each one is owed, and the narrow grounds on which a photograph is admitted at all (`style-guide.md` §8). Nothing below is changed by it.
+
 This is not caution for its own sake. The site's whole proposition is that an emergency planner or engineer reading it finds nothing to object to. A licence breach is the one failure that would get it taken down rather than corrected.
 
 ---
