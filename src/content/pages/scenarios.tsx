@@ -524,7 +524,7 @@ export const scenarios: PageModule = {
 
     {
       title:
-        "Published estimates put the chance of a Cascadia rupture affecting British Columbia at 5 to 20 per cent in the next 50 years",
+        "A 5 to 20 per cent chance of a Cascadia rupture here in the next 50 years",
       body: (
         <Prose>
           <p>

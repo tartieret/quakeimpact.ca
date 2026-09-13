@@ -190,7 +190,7 @@ governments use it.
 The federal agency gives a longer average than the province does. All four are current
 and all four are official. The last rupture was in 1700.
 
-## Published estimates put the chance of a Cascadia rupture affecting British Columbia at 5 to 20 per cent in the next 50 years
+## A 5 to 20 per cent chance of a Cascadia rupture here in the next 50 years
 
 The rupture that matters here is one of the northern end of the fault, or of the whole
 of it. Goldfinger and colleagues, counting the time elapsed since the last rupture, put
