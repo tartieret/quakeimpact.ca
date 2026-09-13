@@ -521,6 +521,19 @@ export const transportation: PageModule = {
             after a small, deep earthquake, and it forecasts nothing about a
             large one.
           </p>
+          <Photograph
+            id="kaikoura-buckled-track"
+            caption={
+              <>
+                North of Kaikoura, New Zealand, three months after the magnitude
+                7.8 of November 2016. The track is bent into an S where the
+                ground moved under it, and the rail heads have rusted over
+                because nothing has run on them. The eighty minutes above was a
+                check of a system that turned out to be undamaged. This is the
+                other case.
+              </>
+            }
+          />
           <VerificationNote label="Not yet established">
             TransLink has not published a seismic design standard for its
             guideways and stations, a system-wide seismic assessment, or any

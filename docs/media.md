@@ -101,12 +101,12 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Seventeen rows are Verified, checked at their sources on 12 September 2026,
-and sixteen are hosted.** Two on `/shaking/ground/`, three on
+**Eighteen rows are Verified, checked at their sources on 12 September 2026,
+and seventeen are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
-`/after/water/`, three on `/after/transportation/`, two on
+`/after/water/`, four on `/after/transportation/`, two on
 `/after/electricity/`, one on `/after/sanitation/` and one on `/after/housing/`.
-The seventeenth,
+The eighteenth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -118,6 +118,7 @@ the site. See *The verification queue* at the foot for what is left.
 | Short | Full name | Share-alike | Non-commercial | No derivatives |
 | --- | --- | --- | --- | --- |
 | CC BY 2.0 | Attribution 2.0 Generic | no | no | no |
+| CC BY 3.0 | Attribution 3.0 Unported | no | no | no |
 | CC BY 4.0 | Attribution 4.0 International | no | no | no |
 | CC BY-SA 2.0 | Attribution-ShareAlike 2.0 Generic | **yes** | no | no |
 | CC BY-SA 3.0 | Attribution-ShareAlike 3.0 Unported | **yes** | no | no |
@@ -549,6 +550,45 @@ the whole Alaska earthquake album is worth returning to for other pages.
   Alaska album produced `anchorage-mirror-lake-ramp` below, which makes the
   argument better than a step would have, because it carries the comparison
   inside one frame.
+
+#### `kaikoura-buckled-track`
+
+**Suggested by the site's owner**, who asked for damaged rail. It is there for a
+contrast rather than a resemblance, which is unusual in this register.
+
+- **Shows:** a railway track seen from ground level, bent into a long S where
+  the ground moved sideways under it, sleepers and ballast following the
+  deviation, rail heads rusted rather than polished.
+- **Photographer:** Ulrich Lange
+- **Licence:** CC BY 3.0 — the first 3.0 attribution-only row, and the reason
+  that line was added to the table above.
+- **Source:** https://commons.wikimedia.org/wiki/File:Railway_Track,_Kaikoura_(after_earthquake).jpg
+- **Status:** **Verified, 12 September 2026.** The description names the
+  earthquake, the month and the place.
+- **Hosted:** `public/media/kaikoura-buckled-track.jpg`. 2048 × 1024 resized to
+  1800 × 900; ratio `1800 / 900`.
+- **Used on:** `/after/transportation/`, under the SkyTrain section and above
+  the note on what TransLink has not published.
+- **Why this one, and why a contrast.** A magnitude 4.8 in 2015 tripped guideway
+  intrusion alarms, both lines stopped, nothing was found, and service resumed
+  in about eighty minutes. That is the page's most quotable number and its most
+  misleading one: it is how long it takes to confirm a system is *undamaged*.
+  The photograph is the other case, and it sits between the eighty minutes and
+  the note saying TransLink has published no seismic assessment and no
+  restoration estimate.
+- **The closest thing the register has to a large earthquake with a low death
+  toll.** Kaikoura was magnitude 7.8 and killed two people. Every other frame of
+  damage at this scale here comes from an event that killed hundreds or
+  thousands.
+- **Three months after, and the rail is rusted.** 14 November 2016 to 24
+  February 2017. The rust is in the frame; how long the line stayed shut is not
+  something the photograph can be asked, and the caption does not ask it.
+- **A Noto alternative was rejected on size.** Japan's transport ministry
+  published a broken-rail photograph from Anamizu station under CC BY 4.0
+  (`File:Broken rail at Noto Railway Anamizu Station (2024 Noto Earthquake).jpg`)
+  and it is 542 × 417, too small to host. Worth knowing the ministry releases
+  under CC BY 4.0: `https://www.mlit.go.jp/` is a source this register has not
+  used and should look at again.
 
 #### `anchorage-mirror-lake-ramp`
 

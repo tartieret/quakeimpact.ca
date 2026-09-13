@@ -22,6 +22,7 @@ export type MediaLicenceId =
   | "CC-BY-2.0"
   | "CC-BY-4.0"
   | "CC-BY-SA-2.0"
+  | "CC-BY-3.0"
   | "CC-BY-SA-3.0"
   | "CC-BY-SA-4.0"
   | "CC-BY-NC-SA-2.0"
@@ -78,6 +79,15 @@ export const MEDIA_LICENCES: Record<MediaLicenceId, MediaLicence> = {
     short: "CC BY-SA 2.0",
     href: "https://creativecommons.org/licenses/by-sa/2.0/",
     shareAlike: true,
+    nonCommercial: false,
+    noDerivatives: false,
+  },
+  "CC-BY-3.0": {
+    id: "CC-BY-3.0",
+    name: "Creative Commons Attribution 3.0 Unported",
+    short: "CC BY 3.0",
+    href: "https://creativecommons.org/licenses/by/3.0/",
+    shareAlike: false,
     nonCommercial: false,
     noDerivatives: false,
   },
@@ -573,6 +583,34 @@ export const PHOTOGRAPHS = {
     licence: "CC-BY-SA-4.0",
     status: "verified",
     usedOn: "/after/electricity/",
+  },
+
+  /**
+   * `/after/transportation/`, under the SkyTrain section, and it is there for a
+   * contrast rather than for a resemblance.
+   *
+   * A magnitude 4.8 in 2015 tripped guideway intrusion alarms, both lines were
+   * stopped, nothing was found and service resumed in about eighty minutes.
+   * That number is the page's most quotable and its most misleading: it is how
+   * long it takes to confirm a system is undamaged. This is the other case.
+   *
+   * The 2016 Kaikoura earthquake was magnitude 7.8 and killed two people, which
+   * makes it the closest thing in the register to a large earthquake with a low
+   * death toll.
+   */
+  "kaikoura-buckled-track": {
+    id: "kaikoura-buckled-track",
+    file: "kaikoura-buckled-track.jpg",
+    ratio: "1800 / 900",
+    alt: "A railway track seen from ground level bends into a long S where the ground beneath it has moved sideways, sleepers and ballast following the deviation. The rail heads are covered in rust rather than polished by use.",
+    photographer: "Ulrich Lange",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Railway_Track,_Kaikoura_(after_earthquake).jpg",
+    taken: "24 February 2017",
+    place: "North of Kaikoura, Canterbury, New Zealand",
+    licence: "CC-BY-3.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
   },
 
   "anchorage-mirror-lake-ramp": {
