@@ -29,6 +29,16 @@ majors are excluded — those are migrations, not bumps.
 
 ## Documentation
 
+### Coding agents
+
+`AGENT_INSTRUCTIONS.md` is the canonical project guidance for Claude Code and
+Codex. `CLAUDE.md` and `AGENTS.md` direct each tool to read it; `AGENTS.md` also
+repeats a few critical rules. Edit shared rules in `AGENT_INSTRUCTIONS.md` and
+update any repeated rules in `AGENTS.md` in the same change. Both adapters retain
+the managed Next.js guidance.
+
+### Project documentation
+
 `docs/` is the project knowledge base and the source of truth for content:
 
 - `docs/site-overview.md` — purpose, principles, scenarios, band rubric, full
