@@ -20,9 +20,10 @@
 
 export type MediaLicenceId =
   | "CC-BY-2.0"
+  | "CC-BY-2.1-JP"
+  | "CC-BY-3.0"
   | "CC-BY-4.0"
   | "CC-BY-SA-2.0"
-  | "CC-BY-3.0"
   | "CC-BY-SA-3.0"
   | "CC-BY-SA-4.0"
   | "CC-BY-NC-SA-2.0"
@@ -64,6 +65,30 @@ export const MEDIA_LICENCES: Record<MediaLicenceId, MediaLicence> = {
     nonCommercial: false,
     noDerivatives: false,
   },
+  /**
+   * The Japan port of CC BY 2.1. The City of Kobe published its official
+   * earthquake archive under it, which is why the register carries a licence
+   * nothing else on the site uses. Attribution only: no share-alike, no
+   * non-commercial condition, no bar on derivatives.
+   */
+  "CC-BY-2.1-JP": {
+    id: "CC-BY-2.1-JP",
+    name: "Creative Commons Attribution 2.1 Japan",
+    short: "CC BY 2.1 JP",
+    href: "https://creativecommons.org/licenses/by/2.1/jp/",
+    shareAlike: false,
+    nonCommercial: false,
+    noDerivatives: false,
+  },
+  "CC-BY-3.0": {
+    id: "CC-BY-3.0",
+    name: "Creative Commons Attribution 3.0 Unported",
+    short: "CC BY 3.0",
+    href: "https://creativecommons.org/licenses/by/3.0/",
+    shareAlike: false,
+    nonCommercial: false,
+    noDerivatives: false,
+  },
   "CC-BY-4.0": {
     id: "CC-BY-4.0",
     name: "Creative Commons Attribution 4.0 International",
@@ -79,15 +104,6 @@ export const MEDIA_LICENCES: Record<MediaLicenceId, MediaLicence> = {
     short: "CC BY-SA 2.0",
     href: "https://creativecommons.org/licenses/by-sa/2.0/",
     shareAlike: true,
-    nonCommercial: false,
-    noDerivatives: false,
-  },
-  "CC-BY-3.0": {
-    id: "CC-BY-3.0",
-    name: "Creative Commons Attribution 3.0 Unported",
-    short: "CC BY 3.0",
-    href: "https://creativecommons.org/licenses/by/3.0/",
-    shareAlike: false,
     nonCommercial: false,
     noDerivatives: false,
   },
@@ -439,6 +455,49 @@ export const PHOTOGRAPHS = {
    * difference. That is the third time in this register that a file's own
    * description has been a worse guide than the image.
    */
+  /**
+   * The pair on `/after/large-infrastructure/`, and both come from the City of
+   * Kobe's own earthquake archive, 阪神・淡路大震災「1.17の記録」, which the
+   * city published under CC BY 2.1 Japan. A municipal government releasing its
+   * own disaster record under a commercial-use licence is the best source this
+   * register has found, and the archive is far larger than these two frames.
+   *
+   * The page's section is short: Kobe's port was Japan's leading container
+   * port, repairs took almost a year, and it permanently lost container
+   * business to other Asian ports. It says "Kobe is an illustration, and it
+   * forecasts nothing here", and the captions repeat that limit rather than
+   * relying on the sentence above them to carry it.
+   */
+  "kobe-rokko-island-quay": {
+    id: "kobe-rokko-island-quay",
+    file: "kobe-rokko-island-quay.jpg",
+    ratio: "1000 / 1500",
+    alt: "Seen from above, a container terminal quay has split along its whole length in a fissure running parallel to the water. The strip of apron carrying the crane rails has dropped away from the rest of the yard, and a gantry crane standing on it leans out of line. Stacked containers and a second crane sit on the intact ground behind.",
+    photographer: "City of Kobe",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Images_from_The_Great_Hanshin-Awaji_Earthquake%EF%BC%9Da056.jpg",
+    taken: "1995",
+    place: "Rokko Island, Higashinada, Kobe, Japan",
+    licence: "CC-BY-2.1-JP",
+    status: "verified",
+    usedOn: "/after/large-infrastructure/",
+  },
+
+  "kobe-port-island-crane": {
+    id: "kobe-port-island-crane",
+    file: "kobe-port-island-crane.jpg",
+    ratio: "1600 / 1141",
+    alt: "A container terminal apron has torn open in a wide fissure with water standing in it, and a red gantry crane has collapsed across the quay behind, its legs buckled and its boom folded onto the ground. Shipping containers lie toppled and stacked askew further along the wharf.",
+    photographer: "City of Kobe",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Images_from_The_Great_Hanshin-Awaji_Earthquake%EF%BC%9Dc111.jpg",
+    taken: "1995",
+    place: "Port Island container terminal, Kobe, Japan",
+    licence: "CC-BY-2.1-JP",
+    status: "verified",
+    usedOn: "/after/large-infrastructure/",
+  },
+
   "christchurch-street-portaloo": {
     id: "christchurch-street-portaloo",
     file: "christchurch-street-portaloo.jpg",

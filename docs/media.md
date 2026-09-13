@@ -101,12 +101,12 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Twenty rows are Verified, checked at their sources on 12 September 2026, and
-nineteen are hosted.** Two on `/shaking/ground/`, three on
+**Twenty-two rows are Verified, checked at their sources on 12 September 2026,
+and twenty-one are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
 `/after/water/`, four on `/after/transportation/`, two on
-`/after/electricity/`, two on `/after/sanitation/` and two on `/after/housing/`.
-The twentieth,
+`/after/electricity/`, two on `/after/sanitation/`, two on `/after/housing/` and
+two on `/after/large-infrastructure/`. The twenty-second,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -118,6 +118,7 @@ the site. See *The verification queue* at the foot for what is left.
 | Short | Full name | Share-alike | Non-commercial | No derivatives |
 | --- | --- | --- | --- | --- |
 | CC BY 2.0 | Attribution 2.0 Generic | no | no | no |
+| CC BY 2.1 JP | Attribution 2.1 Japan | no | no | no |
 | CC BY 3.0 | Attribution 3.0 Unported | no | no | no |
 | CC BY 4.0 | Attribution 4.0 International | no | no | no |
 | CC BY-SA 2.0 | Attribution-ShareAlike 2.0 Generic | **yes** | no | no |
@@ -718,6 +719,59 @@ had the equipment at the top of a power system and nothing at the bottom of it.
   tsunami destroyed, and one description says so outright. A pole knocked down
   by a wave is a different mechanism from a pole brought down by shaking and
   ground movement, and this page is about the second.
+
+### 3c. The port, from the city that lost one
+
+#### `kobe-rokko-island-quay`, `kobe-port-island-crane`
+
+**The best source this register has found, and it is a city government.** The
+City of Kobe publishes its own earthquake archive, 阪神・淡路大震災「1.17の記録」
+(*Record of 1.17*), under **CC BY 2.1 Japan** — attribution only, no
+share-alike, no non-commercial condition. A municipal authority releasing its
+own disaster record for commercial use is rarer than it should be, and the
+archive is far larger than the two frames taken from it. **Go back to it.** Many
+of its files reach Commons under names like `Minatojimanakamachi c184.jpg` that
+say nothing about their content, with the photo code from the archive in the
+filename.
+
+- **Photographer:** City of Kobe (神戸市), for both.
+- **Licence:** CC BY 2.1 JP, for both — the reason that line was added to the
+  table above, and the only non-Unported, non-International licence in the
+  register.
+- **Status:** **Verified, 12 September 2026,** both read off their Commons file
+  pages, whose descriptions are the archive's own and name the island, the
+  facility and the failure in each case.
+- **Used on:** `/after/large-infrastructure/`, as a run under the section on
+  Kobe losing its container traffic.
+
+`kobe-rokko-island-quay` — a container quay seen from above, split along its
+whole length in a fissure parallel to the water, the strip of apron carrying the
+crane rails dropped away from the rest of the yard and the crane on it out of
+line. 1000 × 1500 at native size; ratio `1000 / 1500`. It carries the anchor for
+the run.
+
+`kobe-port-island-crane` — the apron torn open in the foreground with water
+standing in it, and a gantry crane collapsed across the quay behind, legs
+buckled and boom folded down. 2278 × 1624 resized to 1600 × 1141. It opens on
+"the same earthquake", which is the join the style guide asks for.
+
+- **Why these two:** the page's section is four sentences — Kobe was Japan's
+  leading container port, repairs took almost a year, and it permanently lost
+  container business to other Asian ports — and it had nothing to look at. The
+  first photograph is why the repairs took a year. The second is what a working
+  terminal looks like when the ground under it stops being flat.
+- **The limit is repeated in the caption rather than borrowed from the prose.**
+  The section already says "Kobe is an illustration, and it forecasts nothing
+  here", and the first caption says again that nothing about how far any of it
+  moved or how long it took to put right transfers to a terminal on the Fraser
+  delta. A photograph is more persuasive than the sentence above it, so the
+  sentence above it is not left to do the work.
+- **One uncited fact in a caption.** "Rokko Island is an artificial island,
+  built out into the bay on fill" is stated without a source. It is the reason
+  the photograph is relevant rather than decorative, it is not a claim the page
+  rests on, and it is not a claim about Metro Vancouver. Recorded here so that
+  it is a decision rather than an oversight, and so anyone who wants it sourced
+  knows it is the sentence to source.
 
 #### `christchurch-street-portaloo`
 

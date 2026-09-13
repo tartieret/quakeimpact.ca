@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose, Quote, VerificationNote } from "@/components/page-parts";
+import {
+  Photograph,
+  Prose,
+  Quote,
+  VerificationNote,
+} from "@/components/page-parts";
 import type { PageModule } from "./index";
 
 const link = "text-accent underline underline-offset-2";
@@ -169,6 +174,31 @@ export const largeInfrastructure: PageModule = {
             <Cite id="RMS-KOBE" /> Kobe is an illustration, and it forecasts
             nothing here.
           </p>
+          <Photograph
+            id="kobe-rokko-island-quay"
+            caption={
+              <>
+                Rokko Island, Kobe, 1995. The quay has split along its whole
+                length: the strip of apron carrying the crane rails has dropped
+                away from the rest of the yard, and the crane standing on it is
+                out of line. Rokko Island is an artificial island, built out
+                into the bay on fill. Nothing about how far any of this moved,
+                or how long it took to put right, transfers to a terminal on the
+                Fraser delta.
+              </>
+            }
+          />
+          <Photograph
+            id="kobe-port-island-crane"
+            caption={
+              <>
+                The same earthquake, a container terminal on Port Island. The
+                apron has torn open and a gantry crane has come down across the
+                quay. Repairs to the port took almost a year, and the traffic
+                did not come back with them. <Cite id="RMS-KOBE" />
+              </>
+            }
+          />
         </Prose>
       ),
     },
