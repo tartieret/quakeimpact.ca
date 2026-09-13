@@ -15,7 +15,7 @@ import {
 } from "./figure-kit";
 
 /**
- * The four figures on `/scenarios/`.
+ * The three figures on `/scenarios/`.
  *
  * Every number drawn here is already in `docs/copy/scenarios.md`, and no
  * figure adds a claim the prose does not make. The captions, the findings in
@@ -24,15 +24,15 @@ import {
  * labels the geometry cannot do without. Those labels are copy too, and they
  * obey the style guide like any other words a reader sees.
  *
- * Three of the four exist to stop a misreading, and each is built so the
- * misreading is hard to make rather than merely warned against:
+ * Each exists to stop a misreading, and each is built so the misreading is hard
+ * to make rather than merely warned against:
  *
  * - the durations share one axis but are labelled by scenario, and a third
  *   scenario breaks the pattern that magnitude sets duration;
  * - the response schematic has no scale at all, because none is published,
  *   and it draws buildings responding rather than buildings damaged;
- * - the recurrence panel draws four sources identically, on an axis of years
- *   between ruptures, with nothing on it that could be read as a date.
+ * - the fault section is drawn at the same scale across and down, so the dip
+ *   it states is the dip a reader measures off it.
  */
 
 /* ------------------------------------------------------------------ */
@@ -406,145 +406,6 @@ export function ScenarioBuildingResponse() {
 
       <FigText y={RESP_GUARD_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
         Neither earthquake is the other’s smaller version.
-      </FigText>
-    </FigureCanvas>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/* Four published recurrence intervals                                 */
-/* ------------------------------------------------------------------ */
-
-const RECUR_ID = "cascadia-recurrence";
-
-/**
- * 1,500 years, which is the far end of the widest range any of the four
- * sources states. The domain is a published number rather than a round one,
- * so no part of the axis is the drawing's own invention.
- */
-const RECUR_DOMAIN = 1500;
-
-type RecurrenceRow = {
-  source: string;
-  /** The average interval, which every source gives as a range of its own. */
-  average: [number, number];
-  /** The range the same source states around that average. */
-  range: [number, number];
-};
-
-/**
- * The four rows of the table above the figure, in the table's order. They are
- * drawn identically because the finding is that they disagree and all four are
- * current: a drawing that singled one out would be answering a question the
- * sources have not answered.
- */
-const RECURRENCE: RecurrenceRow[] = [
-  { source: "Natural Resources Canada", average: [500, 600], range: [200, 800] },
-  {
-    source: "Geological Survey of Canada, 2004",
-    average: [570, 630],
-    range: [215, 1500],
-  },
-  {
-    source: "BC’s risk and resilience assessment, 2025",
-    average: [400, 500],
-    range: [200, 1000],
-  },
-  {
-    source: "BC’s earthquake response strategy",
-    average: [400, 500],
-    range: [100, 1100],
-  },
-];
-
-const RECUR_HEADING_Y = 14;
-const RECUR_VALUE_Y = 41;
-const RECUR_FIRST_ROW = 62;
-const RECUR_LABEL_Y = 13;
-const RECUR_TRACK_Y = 20;
-const RECUR_TRACK_H = 14;
-const RECUR_ROW = 44;
-
-const RECUR_AXIS_Y =
-  RECUR_FIRST_ROW +
-  (RECURRENCE.length - 1) * RECUR_ROW +
-  RECUR_TRACK_Y +
-  RECUR_TRACK_H;
-const RECUR_TICK_Y = RECUR_AXIS_Y + 18;
-const RECUR_UNIT_Y = RECUR_TICK_Y + 22;
-const RECUR_KEY_Y = RECUR_UNIT_Y + 20;
-const RECUR_GUARD_Y = RECUR_KEY_Y + 18;
-const RECUR_HEIGHT = RECUR_GUARD_Y + 12;
-
-/** Thousands separators, without asking the runtime what locale it is in. */
-function recurTick(value: number): string {
-  return value >= 1000
-    ? `${Math.floor(value / 1000)},${String(value % 1000).padStart(3, "0")}`
-    : String(value);
-}
-
-/**
- * Four sources on how often Cascadia ruptures, side by side.
- *
- * Two things the style guide forbids govern the drawing. It must not read as a
- * countdown or a due date, so the axis is years between ruptures rather than
- * years on a calendar, and nothing marks 1700 or today. And it must not
- * present one source as the right one, so all four rows are drawn with the
- * same marks at the same weight, in the order the table above gives them.
- *
- * Each source states an average and a wider range around it, and both are
- * drawn: the hatch is the stated range, the solid block inside it the average.
- * The average is itself a range in every one of the four, so it is drawn as
- * one and never as a point.
- */
-export function CascadiaRecurrence() {
-  const hatch = `url(#${hatchId(RECUR_ID)})`;
-
-  return (
-    <FigureCanvas id={RECUR_ID} height={RECUR_HEIGHT}>
-      <FigHeading y={RECUR_HEADING_Y}>How often Cascadia ruptures</FigHeading>
-      <FigValue y={RECUR_VALUE_Y}>Four sources, four answers</FigValue>
-
-      {RECURRENCE.map((row, i) => {
-        const top = RECUR_FIRST_ROW + i * RECUR_ROW;
-        return (
-          <g key={row.source}>
-            <FigText y={top + RECUR_LABEL_Y} size={FIG_TYPE.tick}>
-              {row.source}
-            </FigText>
-            <TrackBase y={top + RECUR_TRACK_Y} height={RECUR_TRACK_H} />
-            <Bar
-              from={row.range[0]}
-              to={row.range[1]}
-              domain={RECUR_DOMAIN}
-              y={top + RECUR_TRACK_Y}
-              height={RECUR_TRACK_H}
-              fill={hatch}
-            />
-            <Bar
-              from={row.average[0]}
-              to={row.average[1]}
-              domain={RECUR_DOMAIN}
-              y={top + RECUR_TRACK_Y}
-              height={RECUR_TRACK_H}
-            />
-          </g>
-        );
-      })}
-
-      <Axis
-        y={RECUR_AXIS_Y}
-        domain={RECUR_DOMAIN}
-        values={[0, 500, 1000, 1500]}
-        labelY={RECUR_TICK_Y}
-        format={recurTick}
-      />
-      <FigText y={RECUR_UNIT_Y}>Years between ruptures</FigText>
-      <FigText y={RECUR_KEY_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        Solid: the average. Hatch: the stated range.
-      </FigText>
-      <FigText y={RECUR_GUARD_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        All four are current and official.
       </FigText>
     </FigureCanvas>
   );

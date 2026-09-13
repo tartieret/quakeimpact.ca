@@ -178,7 +178,7 @@ Two levels of government publishing the same number is one model quoted twice, n
 two estimates agreeing. Canada has one public earthquake loss model, and both
 governments use it.
 
-## Published estimates of how often Cascadia ruptures do not agree
+## Different sources give different average intervals between Cascadia ruptures
 
 | Source | Average interval | Stated range |
 | --- | --- | --- |
@@ -187,16 +187,17 @@ governments use it.
 | BC's risk and resilience assessment, 2025 [DCRRA-2025] | 400 to 500 years | 200 to 1,000 years |
 | BC's earthquake response strategy [PEIRS] | 400 to 500 years | 100 to 1,100 years |
 
-The federal agency gives a longer average than the province does. Both are current
-and both are official. The last rupture was in 1700.
+The federal agency gives a longer average than the province does. All four are current
+and all four are official. The last rupture was in 1700.
 
-## The 37 per cent figure belongs to the southern end of the fault
+## A widely quoted 37 per cent belongs to the southern end of the fault
 
-A figure of about 37 per cent in the next 50 years circulates widely. It is
-Goldfinger and colleagues' time-dependent probability for a rupture of the
-**southern** Cascadia margin, off southern Oregon and northern California, where
-ruptures are roughly twice as frequent. The same study's figure for the northern or
-full margin, which is the part that matters to British Columbia, is 7 to 12 per cent
+A figure of about 37 per cent in the next 50 years circulates widely, and it is not a
+figure for this part of the coast. It is what Goldfinger and colleagues calculate,
+counting the time elapsed since the last rupture, for the **southern** end of the
+Cascadia fault, off southern Oregon and northern California, where ruptures are roughly
+twice as frequent. The same study's figure for the northern end, and for a rupture of
+the whole fault, which is the part that matters to British Columbia, is 7 to 12 per cent
 in 50 years. [GOLDFINGER-12]
 
 The Geological Survey of Canada's 2004 paper gives a 50-year probability with a
