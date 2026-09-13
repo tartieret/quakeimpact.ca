@@ -251,6 +251,25 @@ A thin complete grid is worth less than a few deep pages.
   phases mean something together on the timeline strip and nothing alone in the
   corner of a card.
 
+- **The parts open their contents at the foot of a page, in the footer and in the
+  menu on a phone, and not from the bar across the top.** Decided 13 September 2026.
+  Two of the five parts hold pages of their own: five subjects under "The shaking",
+  thirteen systems under "Life afterwards". A reader on a system page could step to
+  the system beside it or climb back to the index, and nothing else. Opening the
+  parts from the bar at the top was rejected on three counts. Three of the five parts
+  have nothing to open, and a bar that responds to two items in five teaches a reader
+  it is not worth trying. Thirteen entries is a directory rather than a menu, and a
+  panel that size in a sticky header brings hover intent, focus handling and a second
+  path for phones, all of which the site would have to build and keep correct. And
+  the site is read in order: a page assumes the bands and the two scenarios the part
+  before it set up, so a jump into the middle of a part lands a reader without them.
+  The access is given instead where a reader is already looking for it. Every page in
+  the part lists at the foot of any page inside it, with the one being read marked;
+  the footer carries the whole index rather than the five parts; and the menu on a
+  phone, which is a panel with room to nest rather than a hover target, opens the
+  part the reader is in. All three lists are built from `NAV`, which builds them from
+  `SHAKING_PAGES` and `SYSTEMS`, so adding a system stays one array entry.
+
 - **There is no scenario toggle. Both scenarios are always shown.** Decided
   12 September 2026. A header-mounted control let the reader pick one of the two
   earthquakes, and every band was supposed to answer for it. It answered for very
