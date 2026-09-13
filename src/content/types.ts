@@ -177,3 +177,22 @@ export interface PageMeta {
    */
   references: string[];
 }
+
+/**
+ * An entry in the site navigation.
+ *
+ * `children` is the pages inside a part, and it is derived rather than written:
+ * `NAV` builds it from `SHAKING_PAGES` and `SYSTEMS`, so adding a system stays
+ * one array entry and no list has to be kept in step with another.
+ *
+ * `childrenLabel` names what those pages are in the site's own words, because
+ * "the systems" and "the subjects" are not interchangeable and a generic label
+ * would tell a reader nothing. It carries no count: a counted label is a second
+ * fact to keep true, and it would go stale the first time the list grows.
+ */
+export interface NavItem {
+  href: string;
+  label: string;
+  children?: NavItem[];
+  childrenLabel?: string;
+}

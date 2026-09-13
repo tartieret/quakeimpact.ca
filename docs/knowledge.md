@@ -11,6 +11,46 @@ it was confirmed.
 
 ---
 
+## Direct access is a question of where the list goes, not of whether the top bar opens
+
+**13 September 2026.** The site has five parts across the top and two of them hold
+pages: five subjects under "The shaking", thirteen systems under "Life afterwards".
+A reader inside one of them had `NextPrev` and the way back up to the index, so
+reaching the system beside the next one meant two moves or a return to the grid. The
+first idea was to make the top bar expand.
+
+Counting the parts settled it. Three of the five have nothing to open. A menu that
+responds to two items in five is a menu a reader tries twice and stops trying, and
+the two that do open are not the same size: five is a menu, thirteen is a directory,
+and a directory in a sticky header is a hover target with focus handling and a
+separate path for phones, none of which this site has any client-side machinery for.
+Against that, the top bar was never where the need was. The need was lateral movement
+from inside a part, which is a different position in the page from the bar at the top.
+
+So the same lists went to three places that cost nothing. A `<nav>` at the foot of
+every page inside a part, listing the part and marking the page being read: static,
+no JavaScript, and it meets the reader where they finish. The footer, which was
+already the site's index and was only listing the five parts and the six reference
+pages. And the menu on a phone, which is already a disclosure panel, so nesting a
+`<details>` under the two parts that have children adds no interaction model that was
+not already there. The part the reader is in is open when the panel opens.
+
+Two things fell out of building it. `NAV` now derives its children from
+`SHAKING_PAGES` and `SYSTEMS` rather than repeating them, so the footer index, the
+phone menu and the foot-of-page list all grow when a system is added and none of them
+can drift. And the header had been marking a part as `aria-current="page"` whenever
+the reader was anywhere inside it, which was harmless while the parts were leaves and
+became a contradiction the moment the pages were listed under them: the part and the
+page both claiming to be the page. A part that merely contains the page is
+`aria-current={true}`; only the page is `"page"`.
+
+The rule to carry forward: when a reader cannot get somewhere, ask where they are
+standing when they want it, rather than reaching for the control that is furthest
+from them. The top bar is the most expensive place on the page to add a list and
+usually the least useful.
+
+---
+
 ## A control that filters has to filter something the evidence resolves
 
 **12 September 2026.** The site carried one global control: a header-mounted toggle

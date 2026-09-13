@@ -11,7 +11,8 @@ import {
 import { Citations, SourcesSection } from "@/components/citation";
 import { TimelineStrip } from "@/components/timeline";
 import { ImpactCell } from "@/components/impact-cell";
-import { SYSTEMS, SCENARIOS, PHASES } from "@/content/site";
+import { SYSTEMS, SCENARIOS, PHASES, navSection } from "@/content/site";
+import { SectionNav } from "@/components/section-nav";
 import { pageForSystem } from "@/content/pages";
 import { SystemDraftNotice } from "@/components/status";
 
@@ -177,6 +178,11 @@ export default async function SystemPage({
         ) : null}
 
         <SourcesSection numbered={Boolean(page)} />
+
+        <SectionNav
+          section={navSection("/after/")}
+          current={`/after/${slug}/`}
+        />
 
         <NextPrev
           prev={

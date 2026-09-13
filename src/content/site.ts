@@ -1,6 +1,7 @@
 import type {
   Band,
   Impact,
+  NavItem,
   PageStatus,
   Phase,
   Scenario,
@@ -427,15 +428,48 @@ export const SHAKING_PAGES: {
 /* Navigation                                                          */
 /* ------------------------------------------------------------------ */
 
-export const NAV = [
+/**
+ * The five parts, in reading order.
+ *
+ * Two of them hold pages of their own, and those lists are built here from
+ * `SHAKING_PAGES` and `SYSTEMS` rather than written out a second time. A system
+ * added to that array appears in the footer index and in the menu on a phone
+ * with no other change, the way it already appears in the grid and the matrix.
+ *
+ * The children are deliberately not opened from the bar across the top of the
+ * desktop page. Three of the five parts have none, so a menu that opens on two
+ * of the five teaches a reader it is not worth trying; thirteen systems is a
+ * directory rather than a menu; and the site is a sequence, where a page
+ * assumes the bands and the scenario toggle the part before it set up. The
+ * lists belong where a reader is already looking for one: at the foot of a
+ * page they have finished, in the footer index, and in the menu on a phone,
+ * which is a panel with room to nest rather than a hover target.
+ */
+export const NAV: NavItem[] = [
   { href: "/scenarios/", label: "Two scenarios" },
-  { href: "/shaking/", label: "The shaking" },
-  { href: "/after/", label: "Life afterwards" },
+  {
+    href: "/shaking/",
+    label: "The shaking",
+    childrenLabel: "The subjects",
+    children: SHAKING_PAGES.map((page) => ({
+      href: `/shaking/${page.slug}/`,
+      label: page.name,
+    })),
+  },
+  {
+    href: "/after/",
+    label: "Life afterwards",
+    childrenLabel: "The systems",
+    children: SYSTEMS.map((system) => ({
+      href: `/after/${system.slug}/`,
+      label: system.name,
+    })),
+  },
   { href: "/getting-around/", label: "Getting around" },
   { href: "/prepare/", label: "Preparing" },
 ];
 
-export const UTILITY_NAV = [
+export const UTILITY_NAV: NavItem[] = [
   { href: "/dependencies/", label: "Dependency graph" },
   { href: "/method/", label: "Method & bands" },
   { href: "/sources/", label: "Sources" },
@@ -443,3 +477,6 @@ export const UTILITY_NAV = [
   { href: "/contribute/", label: "Contribute" },
   { href: "/about/", label: "About" },
 ];
+
+/** The part at a given top-level href, for a page that sits inside it. */
+export const navSection = (href: string) => NAV.find((item) => item.href === href);

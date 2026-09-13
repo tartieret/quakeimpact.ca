@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Lever, NextPrev } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
-import { SHAKING_PAGES } from "@/content/site";
+import { SHAKING_PAGES, navSection } from "@/content/site";
+import { SectionNav } from "@/components/section-nav";
 import type { PageModule } from "@/content/pages";
 import { buildings } from "@/content/pages/buildings";
 import { casualties } from "@/content/pages/casualties";
@@ -116,6 +117,11 @@ export default async function ShakingDetailPage({
         {references.length > 0 ? (
           <SourcesSection numbered={Boolean(page)} />
         ) : null}
+
+        <SectionNav
+          section={navSection("/shaking/")}
+          current={`/shaking/${slug}/`}
+        />
 
         <NextPrev
           prev={
