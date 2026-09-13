@@ -232,6 +232,13 @@ export function Quote({
  * `<img alt="">` are both covered. `licence` travels with the graphic because
  * an Open Government Licence source has to be attributed beside the thing it
  * produced, not on a separate page.
+ *
+ * `interactive` is for a graphic a reader can operate, which today means a map
+ * with a zoom. `role="img"` makes everything inside it presentational, so a
+ * frame carrying that role would hide the graphic's own buttons from a screen
+ * reader entirely. An interactive figure therefore drops the role and puts the
+ * finding in a screen-reader paragraph instead: the sentence still arrives
+ * first, and the controls under it are reachable.
  */
 export function Figure({
   children,
@@ -239,6 +246,7 @@ export function Figure({
   caption,
   licence,
   id,
+  interactive = false,
 }: {
   /** The graphic. An `<img alt="">` or an inline `<svg aria-hidden>`. */
   children: ReactNode;
@@ -248,14 +256,17 @@ export function Figure({
   /** Attribution required by the source's licence. */
   licence?: ReactNode;
   id?: string;
+  /** The graphic has controls of its own. */
+  interactive?: boolean;
 }) {
   return (
     <figure id={id}>
       <div
-        role="img"
-        aria-label={alt}
+        role={interactive ? undefined : "img"}
+        aria-label={interactive ? undefined : alt}
         className="overflow-hidden rounded-lg border border-rule bg-paper-raised"
       >
+        {interactive ? <p className="sr-only">{alt}</p> : null}
         {children}
       </div>
       {caption || licence ? (

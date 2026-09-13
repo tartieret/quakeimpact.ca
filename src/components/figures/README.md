@@ -114,6 +114,46 @@ than point estimates.
 
 ---
 
+## Maps are the exception, and `map-viewer.tsx` is where the exception lives
+
+A map is a measurement of ground rather than a chart of a domain, and that one
+difference breaks two of the rules above. Both exceptions are contained in
+`MapViewer`; a map component itself is still a Server Component drawing inline
+SVG, and hands its geometry to the pane as children.
+
+- **A map pane has a `viewBox`.** The no-viewBox rule exists to stop a viewBox
+  scaling type. A map pane holds no type: the heading, the finding, the scale
+  bar and the legend all sit outside it in HTML. The rule's reason does not
+  reach inside the pane, and a viewBox is what makes a zoom possible.
+- **A map pane is a Client Component**, because panning and zooming is
+  interaction. The geometry is still built on the server and passed in as
+  `children`, so the vendored data and the path building never reach the
+  browser bundle.
+
+What a map component supplies: `width` and `height` in its own coordinate
+space, which set the pane's aspect ratio, and `kmWide`, the ground distance the
+full width covers, from which the pane derives its scale bar at every zoom.
+Correct the ground aspect once, on the outer group, and leave the path data in
+whatever integer lattice the drawing uses.
+
+Two things to get right, both of which have already been got wrong here:
+
+- **A mark is three sides and a `z`.** `h5v5z` closes a right triangle, not a
+  square. When the ShakeMap cells were 1.4 px nobody could see that half the
+  area was missing, and area was the drawing's whole measure.
+- **The scale bar's width is a percentage, never a pixel count**, so it is
+  recomputed from the zoom and needs nothing measured. A percentage resolves
+  against the nearest box that has a width of its own, so the bar's parent has
+  to be full width rather than shrink-to-fit, or the scale silently stops being
+  true.
+
+`Figure` takes `interactive` for a graphic with controls of its own. It drops
+the `role="img"` on the frame, which would otherwise make the graphic's own
+buttons presentational and unreachable, and puts the finding in a screen-reader
+paragraph instead.
+
+---
+
 ## Legibility at phone width
 
 The drawing area on a 390 px phone is roughly 318 px after the page gutter and

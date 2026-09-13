@@ -124,6 +124,7 @@ export const scenarios: PageModule = {
             below.
           </p>
           <Figure
+            interactive
             alt={`In the catalogue's own modelling, the nearer Georgia Strait magnitude 7.0 shakes the Lower Mainland far harder than the Cascadia magnitude 9.0 does: the strongest cell reaches about ${SHAKEMAP_FACTS.georgiaPeak} per cent of gravity against about ${SHAKEMAP_FACTS.cascadiaPeak}. Peak acceleration is not the whole of what either earthquake does, and this modelling covers shaking damage to buildings and the people in them and nothing else.`}
             caption={
               <>
