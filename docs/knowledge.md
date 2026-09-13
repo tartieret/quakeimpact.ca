@@ -192,6 +192,50 @@ the Vancouver material is neither.
 
 ---
 
+## A map without its geography is a scatter plot with a compass rose
+
+**12 September 2026.** Asked whether the scenario ShakeMaps were drawn the usual
+way, the honest answer was no — the convention for a ShakeMap is a sequential
+colour ramp, usually contoured, over a basemap — but that was the smaller half
+of the answer. **A conventional ShakeMap stripped of its coastline would have
+been just as unreadable.** The marks were floating on paper with nothing to
+locate them against. Fix the ground first; the encoding is a separate question
+and easier to judge once there is a shoreline to read it over.
+
+**The base layer was already in the repository and already licensed.** The
+Freshwater Atlas coastlines and rivers were acquired in September for the
+getting-around map, under OGL–BC confirmed on each record. What did not fit was
+the window: it had been cut 51 km across and the scenario window is 160 km.
+`scripts/data/build-region-geography.mjs` now holds a list of windows rather
+than one bounding box, because **a reduction is only honest at the size it was
+cut for** — the wide window is cut at 150 m, and cutting it at 60 m would have
+shipped four times the vertices to draw the same line at 258 m per pixel.
+
+**How coarse is honest, at a zoom.** 150 m is about a fifth of a 730 m model
+cell. Drawing a coastline finer than the grid it sits under is false precision
+however far a reader zooms in, which settles the tolerance question without
+reference to the zoom at all.
+
+**A duplicate outside gzip's window is not free.** Both maps draw the same
+shoreline, and the two copies sat about 85 kB apart in the markup — well
+outside the 32 kB back-reference window a gzip stream looks through. The
+duplicate cost **18 kB over the wire, an eighth of the page**, which is not
+what one expects of repeated text. The geometry is now written once into a
+hidden `defs` and referenced with `use`. **When the same large string appears
+twice in a page, check the distance between them before assuming compression
+handles it.**
+
+**What the base layer confirmed for free.** No cell in either scenario file
+falls in the open Strait of Georgia, which with the shoreline drawn is now
+visible rather than asserted. A base layer is a check on the registration of
+everything drawn over it, not only a convenience for the reader.
+
+**How confirmed:** rebuilt from the originals with `npm run data`; page weight
+measured gzipped before and after the deduplication; drawn and read at 390 px
+and 1280 px in both themes.
+
+---
+
 ## A figure that fits the column is not the same as a figure a reader can read
 
 **12 September 2026.** The two scenario ShakeMaps on `/scenarios/` shipped at a

@@ -10,6 +10,7 @@ import {
   ScenarioDurations,
 } from "@/components/figures/scenarios";
 import {
+  SHAKEMAP_BASE_SOURCE,
   SHAKEMAP_CAVEATS,
   SHAKEMAP_FACTS,
   SHAKEMAP_SOURCE,
@@ -145,8 +146,10 @@ export const scenarios: PageModule = {
                 would need a conversion equation, so neither map is drawn on
                 it. Two limits the catalogue states travel with every mark.{" "}
                 {SHAKEMAP_CAVEATS.resolution} {SHAKEMAP_CAVEATS.scope} The
-                modelling is the Geological Survey of Canada’s, and the drawing
-                is not.
+                shoreline and river water under the marks are the province’s
+                Freshwater Atlas, which is a British Columbia layer and stops at
+                the international boundary. The modelling is the Geological
+                Survey of Canada’s, and the drawing is not.
               </>
             }
             licence={
@@ -154,6 +157,13 @@ export const scenarios: PageModule = {
                 {SHAKEMAP_SOURCE.attribution}{" "}
                 <a
                   href={SHAKEMAP_SOURCE.licenceUrl}
+                  className="text-accent underline underline-offset-2"
+                >
+                  Read the licence
+                </a>
+                . {SHAKEMAP_BASE_SOURCE.attribution}{" "}
+                <a
+                  href={SHAKEMAP_BASE_SOURCE.licenceUrl}
                   className="text-accent underline underline-offset-2"
                 >
                   Read the licence

@@ -6,6 +6,7 @@ import {
   FigureCanvas,
 } from "./figure-kit";
 import { LinkedMapPanes } from "./map-viewer";
+import coastFile from "@/data/region-coast.json";
 import cascadiaFile from "@/data/shakemap-cascadia-m9.json";
 import georgiaFile from "@/data/shakemap-georgia-strait-m7.json";
 import { dataSource } from "@/data/sources";
@@ -66,7 +67,7 @@ interface ShakeMapFile {
   n: number[];
   /** The mean peak ground acceleration of those sites, in g. */
   pga: number[];
-  grid: { cellLon: number; cellLat: number };
+  grid: { west: number; south: number; cellLon: number; cellLat: number };
   caveats: { resolution: string; scope: string };
 }
 
@@ -75,6 +76,13 @@ const CASCADIA: ShakeMapFile = cascadiaFile;
 
 /** The catalogue's own record, so the attribution is never retyped. */
 export const SHAKEMAP_SOURCE = dataSource("gsc-earthquake-scenario-catalogue");
+
+/**
+ * The shoreline under the marks is a second dataset under a second licence, and
+ * an attribution has to travel with the graphic it produced. The page carries
+ * both.
+ */
+export const SHAKEMAP_BASE_SOURCE = dataSource("bc-fwa-coastlines");
 
 /**
  * The two caveats the catalogue embeds in every file, carried out of the data
@@ -262,17 +270,132 @@ function markInset(size: number): string {
   return `translate(${inset},${inset})`;
 }
 
+/* ------------------------------------------------------------------ */
+/* The ground the marks sit on                                         */
+/* ------------------------------------------------------------------ */
+
 /**
- * The grid of one scenario, in the map's own coordinate space.
+ * Shoreline and river water, under the cells.
+ *
+ * Without it the marks float in white paper and a reader has nothing to locate
+ * the dark patch against, which is the one thing a map is for. It is the
+ * Freshwater Atlas, vendored for this window at 150 m, which is well under a
+ * pixel at the width these are drawn.
+ *
+ * It is load-bearing by the style guide's own test: cover it and the drawing
+ * stops saying where anything is. So it is `mark`, not the furniture grey, and
+ * the stroke is `non-scaling-stroke` so a coastline stays a hairline at
+ * sixteen times rather than swelling into a band.
+ *
+ * **The layer is British Columbia's, so it stops at the international
+ * boundary.** Fifteen of 3,910 cells sit in the strip below it, and they are
+ * drawn without a shoreline rather than against a line the province's data
+ * does not have.
+ */
+interface CoastFile {
+  coast: number[][][];
+  river: number[][][];
+}
+
+const COAST: CoastFile = coastFile;
+
+/** Longitude and latitude into the grid's own lattice units. */
+function toLattice(lon: number, lat: number): [number, number] {
+  const x = ((lon - GEORGIA.grid.west) / GEORGIA.grid.cellLon) * U;
+  const y = (ROWS - (lat - GEORGIA.grid.south) / GEORGIA.grid.cellLat) * U;
+  return [Math.round(x * 10) / 10, Math.round(y * 10) / 10];
+}
+
+function linesToPath(lines: number[][][]): string {
+  let d = "";
+  for (const line of lines) {
+    let first = true;
+    for (const [lon, lat] of line) {
+      const [x, y] = toLattice(lon, lat);
+      d += `${first ? "M" : "L"}${x} ${y}`;
+      first = false;
+    }
+  }
+  return d;
+}
+
+const COAST_PATH = linesToPath(COAST.coast);
+const RIVER_PATH = linesToPath(COAST.river);
+
+const COAST_ID = `${ID}-coast`;
+const RIVER_ID = `${ID}-river`;
+
+/**
+ * The water, written into the page once.
+ *
+ * Both maps draw the same shoreline, and the two copies sit about 85 kB apart
+ * in the markup, which is well outside the 32 kB window a gzip stream looks
+ * back through. The duplicate therefore compressed to nothing like nothing: it
+ * cost 18 kB over the wire, or an eighth of the page. Defined once here and
+ * referenced twice, it costs one copy.
+ *
+ * This is the ordinary inline-sprite pattern — a hidden `svg` holding `defs`,
+ * referenced by `use` elsewhere in the same document — and stroke and colour
+ * are set at the `use`, not here, so each map still styles its own ground.
+ */
+function GeographyDefs() {
+  return (
+    <svg
+      width="0"
+      height="0"
+      aria-hidden="true"
+      focusable="false"
+      className="absolute overflow-hidden"
+    >
+      <defs>
+        <path id={COAST_ID} d={COAST_PATH} />
+        <path id={RIVER_ID} d={RIVER_PATH} />
+      </defs>
+    </svg>
+  );
+}
+
+/**
+ * The shoreline is drawn at 150 m, which is about a fifth of a cell. Cutting it
+ * finer would draw a coast more precise than the 730 m grid it sits under,
+ * which is false precision even at the deepest zoom.
+ */
+function Geography() {
+  return (
+    <g
+      fill="none"
+      stroke={FIG_COLOR.mark}
+      strokeLinejoin="round"
+      strokeLinecap="round"
+    >
+      {/* `vector-effect` does not inherit, so it goes on each reference. */}
+      <use
+        href={`#${COAST_ID}`}
+        strokeWidth="1"
+        vectorEffect="non-scaling-stroke"
+      />
+      <use
+        href={`#${RIVER_ID}`}
+        strokeWidth="0.75"
+        vectorEffect="non-scaling-stroke"
+      />
+    </g>
+  );
+}
+
+/**
+ * The grid of one scenario over the region's water, in the map's own
+ * coordinate space.
  *
  * The ground-aspect correction is applied once here, on the outer group, so
- * every path underneath stays integer lattice units. There is no frame: the
- * pane draws its own border, and a frame inside the zoom would slide off the
- * edge the moment a reader moved.
+ * every path underneath stays in lattice units. There is no frame: the pane
+ * draws its own border, and a frame inside the zoom would slide off the edge
+ * the moment a reader moved.
  */
 function MapBody({ layers }: { layers: Layer[] }) {
   return (
     <g transform={`scale(1,${ASPECT_Y})`}>
+      <Geography />
       {layers.map((layer) => (
         <g key={layer.key} transform={markInset(layer.size)}>
           <path
@@ -424,6 +547,7 @@ function Legend() {
 export function ScenarioShakeMaps() {
   return (
     <div className="flex flex-col">
+      <GeographyDefs />
       <div className="px-4 pt-5 sm:px-6">
         <LinkedMapPanes
           width={MAP_W}
