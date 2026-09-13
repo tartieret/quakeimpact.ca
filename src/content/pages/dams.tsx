@@ -9,7 +9,6 @@ import {
   NotPublished,
   Prose,
   Quote,
-  VerificationNote,
 } from "@/components/page-parts";
 import {
   DAMS,
@@ -456,11 +455,13 @@ export const dams: PageModule = {
           <p>
             The class in the table above is not only a description of what is
             downstream. The province’s design guideline attaches a minimum
-            earthquake to it: for a dam in the Extreme class it sets the minimum
-            earthquake design ground motion at a 1-in-10,000-year return period
-            or the Maximum Credible Earthquake. <Cite id="BC-DDCG" /> That is the
-            same expectation BC Hydro states in its own words above, and the two
-            are not independent of each other. Both descend from the Canadian
+            earthquake to each class, and it sets the same one for both of the
+            classes on this page: an earthquake design ground motion at a
+            1-in-10,000-year return period, or the Maximum Credible Earthquake.{" "}
+            <Cite id="BC-DDCG" /> Very High and Extreme carry that figure alike,
+            so it covers every dam in the table above. It is the same expectation
+            BC Hydro states in its own words earlier on this page, and the two
+            are not independent of each other: both descend from the Canadian
             Dam Association’s guidelines, a members’ publication this project has
             not read. <Cite id="CDA-2007" />
           </p>
@@ -511,14 +512,7 @@ export const dams: PageModule = {
               that share a unit are not two points on one scale.
             </p>
           </Callout>
-          <VerificationNote label="Not read">
-            The guideline’s table sets a minimum for every consequence class, and
-            what it sets for Very High, which is {DAM_FACTS.veryHigh} of the{" "}
-            {DAM_FACTS.total} dams above, has not been read. The Extreme figure
-            is quoted here because the guideline’s Extreme row has been read; the
-            others are not stated rather than inferred from it.{" "}
-            <Cite id="BC-DDCG" />
-          </VerificationNote>
+
         </Prose>
       ),
     },

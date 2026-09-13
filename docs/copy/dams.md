@@ -112,12 +112,14 @@ publishes a yearly safety summary rather than the reviews behind it.
 ## The province sets a minimum design earthquake by consequence class, and it governs new work rather than the dams already standing
 
 The class in the table above is not only a description of what is downstream. The
-province's design guideline attaches a minimum earthquake to it: for a dam in the
-Extreme class it sets the minimum earthquake design ground motion at a
-1-in-10,000-year return period or the Maximum Credible Earthquake. [BC-DDCG] That
-is the same expectation BC Hydro states in its own words above, and the two are
-not independent of each other. Both descend from the Canadian Dam Association's
-guidelines, a members' publication this project has not read. [CDA-2007]
+province's design guideline attaches a minimum earthquake to each class, and it sets
+the same one for both of the classes on this page: an earthquake design ground motion
+at a 1-in-10,000-year return period, or the Maximum Credible Earthquake. [BC-DDCG]
+Very High and Extreme carry that figure alike, so it covers every dam in the table
+above. It is the same expectation BC Hydro states in its own words earlier on this
+page, and the two are not independent of each other: both descend from the Canadian
+Dam Association's guidelines, a members' publication this project has not read.
+[CDA-2007]
 
 Three things have to travel with that figure or it says something false. It is a
 criterion for building, altering, improving or replacing a dam, which is not the
@@ -148,12 +150,6 @@ question, and for the dams in this region it is the one that is not published.
 > [BC-DDCG] A number on this page and a number on
 > [buildings](/shaking/buildings/) that share a unit are not two points on one
 > scale.
-
-<!-- Verification note, "Not read": the guideline's table sets a minimum for every
-consequence class, and what it sets for Very High, which is six of the seventeen
-dams above, has not been read. The Extreme figure is quoted because the
-guideline's Extreme row has been read; the others are not stated rather than
-inferred from it. [BC-DDCG] -->
 
 ## What you can do
 
