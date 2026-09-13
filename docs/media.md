@@ -741,6 +741,22 @@ filename.
 - **Status:** **Verified, 12 September 2026,** both read off their Commons file
   pages, whose descriptions are the archive's own and name the island, the
   facility and the failure in each case.
+- **The licence was read at Commons and not at the origin.** `kobe117shinsai.jp`
+  is now a JavaScript-only application and returns no readable text or terms to
+  a plain fetch, so the city's own statement of the licence could not be read
+  where the city makes it. The Commons file pages carry `{{Cc-by-2.1-jp|神戸市}}`
+  and that is what these rows rest on. It is the same standard every other row
+  here meets, and it is worth writing down that in this one case the origin was
+  tried and could not be read.
+- **A third frame is cleared and not used.** `File:Images from The Great
+  Hanshin-Awaji Earthquake＝c117.jpg`, same city, same licence, 1000 × 607,
+  described as "元々の高さである右側岸壁より激しく陥没した施設" — a facility
+  subsided severely against the quay wall on the right, which stands at its
+  original height. It is the clearest ground-failure frame of the three, because
+  the undamaged reference level is inside the picture, and it is held back only
+  because two photographs is already generous for a four-sentence section and
+  its resolution is the lowest of the set. Take it first if that section ever
+  grows, or if a page needs settlement measured against a surviving datum.
 - **Used on:** `/after/large-infrastructure/`, as a run under the section on
   Kobe losing its container traffic.
 
