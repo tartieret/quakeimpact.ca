@@ -3,7 +3,7 @@ route: /after/dams-and-reservoirs/
 title: Dams and reservoirs
 nav: Dams and reservoirs
 hook: Both dams were reviewed by an engineer in 2024, and neither published conclusion mentions earthquakes.
-lede: Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition. [MV-DSP-2026] Neither published conclusion mentions earthquakes, and the seismic upgrade has not started. [MV-CAPEX-2026]
+lede: Two of the reservoirs Metro Vancouver draws its drinking water from sit in mountain valleys on the North Shore, 5 km and 18 km north of Burrard Inlet, each held in by a dam the province puts in its top consequence class. [MV-CLEVELANDDAM-FS] [MV-SEYMOURDAM-FS] [BC-DAMS-REG] Both dams were reviewed by an engineer in 2024, and neither published conclusion mentions an earthquake. [MV-DSP-2026]
 bands: { cascadia: unknown, crustal: unknown }
 mechanism: Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes.
 source: MV-DSP-2026
@@ -21,6 +21,16 @@ assigned before anyone assesses how the dam itself would perform. The Regulation
 dams by potential loss of life, and Extreme is its top band, for "more than 100", where
 the population at risk is permanent: people "ordinarily or regularly located in the
 dam-breach inundation zone, whether to live, work or recreate". [BCDSR-40-2016]
+
+<!-- Photograph: cleveland-dam-spillway. Caption: Cleveland Dam discharging into
+the Capilano canyon. The dam is about 92 m high and stands roughly 5 km north of
+Burrard Inlet, in what Metro Vancouver calls a deep and narrow rock canyon,
+immediately upstream of the Capilano Salmon Hatchery and beside Capilano River
+Regional Park. [MV-CLEVELANDDAM-FS] The water it holds back is part of the
+region's drinking water supply, and the canyon at the top of this photograph,
+beyond the foot of the spillway, is what "below a dam" means for the
+classification above. This is the
+structure itself rather than an analogue somewhere else. -->
 
 What an earthquake is expected to do to the region's dams, and every dam the
 province classes Extreme or Very High failure consequence in the Lower Mainland,

@@ -113,17 +113,17 @@ on `/shaking/`.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Thirty rows are Verified, checked at their sources on 12 and 13 September
-2026, and all thirty are hosted.** Two on `/shaking/ground/`, three on
+**Thirty-one rows are Verified, checked at their sources on 12 and 13 September
+2026, and all thirty-one are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
 `/after/water/`, seven on `/after/transportation/`, two on
 `/after/electricity/`, two on `/after/sanitation/`, two on `/after/housing/`,
 three on `/after/large-infrastructure/`, one each on `/after/fuel/`,
-`/after/dams-and-reservoirs/`, `/after/food/`, `/after/health-care/` and
-`/after/outside-help/`. Everything else below is Stated or To verify and none of
-it is on the site. `/after/gas/` and `/after/communications/` have no photograph,
-and the entries under *3d* say why. See *The verification queue* at the foot for
-what is left.
+`/after/food/`, `/after/health-care/` and `/after/outside-help/`, and two on
+`/after/dams-and-reservoirs/`. Everything else below is Stated or To verify and
+none of it is on the site. `/after/gas/` and `/after/communications/` have no
+photograph, and the entries under *3d* say why. See *The verification queue* at
+the foot for what is left.
 
 ---
 
@@ -131,6 +131,7 @@ what is left.
 
 | Short | Full name | Share-alike | Non-commercial | No derivatives |
 | --- | --- | --- | --- | --- |
+| Public domain | Released into the public domain by the photographer | no | no | no |
 | CC BY 2.0 | Attribution 2.0 Generic | no | no | no |
 | CC BY 2.1 JP | Attribution 2.1 Japan | no | no | no |
 | CC BY 3.0 | Attribution 3.0 Unported | no | no | no |
@@ -353,6 +354,29 @@ limit, and the caption's job is the opposite of framing: it is an instruction.
   for a Vancouver DFPS hydrant returns **nothing** under a licence permitting
   commercial use. If the site ever needs to shed NC material, this one has no
   replacement waiting and the slot goes back to being a sentence.
+
+#### `cleveland-dam-spillway`
+
+**The second photograph that is not an analogue, and the first of the structure a
+page is about.** Like the hydrant there is no transfer from somewhere else to
+limit. It passes the mechanism test on geometry rather than on damage: the page
+says a dam's class is set by what is below it, and a reader who has only seen
+Capilano Lake from the viewpoint has never seen the drop or how narrow the ground
+at the bottom is. A photograph of the lake itself was considered and declined as
+decoration: calm water and mountains show nothing the prose has not given.
+
+- **Shows:** water running down Cleveland Dam's concrete spillway face into the
+  rock canyon immediately below it, with both canyon walls in frame.
+- **Photographer:** Psi4ce (English Wikipedia user), own work
+- **Title:** "Cleveland Dam Spillway"
+- **Taken:** 4 March 2006 (file EXIF and upload log agree)
+- **Licence:** Public domain — released by the author with `{{PD-user-en|Psi4ce}}`
+- **Source:** https://commons.wikimedia.org/wiki/File:Cleveland_Dam_Spillway.JPG
+- **Status:** **Verified, 12 September 2026.** Licence template read from the file
+  page's wikitext rather than from the summary field. The hosted file is the
+  original, 1024 × 768 and 509,619 bytes, matching the upload log.
+- **Used on:** `/after/dams-and-reservoirs/`, after the paragraph on what the
+  consequence classification measures.
 
 ### 2. Road damage, sinkholes and lateral spreading
 

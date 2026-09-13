@@ -36,12 +36,13 @@ export const damsAndReservoirs: PageModule = {
     kicker: "Life afterwards",
     standfirst: (
       <>
-        Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as
-        the law requires every seven years for dams in the top consequence class,
-        and neither review identified an unsafe or unacceptable condition.{" "}
-        <Cite id="MV-DSP-2026" /> Neither published conclusion mentions
-        earthquakes, and the seismic upgrade has not started.{" "}
-        <Cite id="MV-CAPEX-2026" />
+        Two of the reservoirs Metro Vancouver draws its drinking water from sit
+        in mountain valleys on the North Shore, 5 km and 18 km north of Burrard
+        Inlet, each held in by a dam the province puts in its top consequence
+        class. <Cite id="MV-CLEVELANDDAM-FS" /> <Cite id="MV-SEYMOURDAM-FS" />{" "}
+        <Cite id="BC-DAMS-REG" /> Both dams were reviewed by an engineer in
+        2024, and neither published conclusion mentions an earthquake.{" "}
+        <Cite id="MV-DSP-2026" />
       </>
     ),
     /**
@@ -49,6 +50,8 @@ export const damsAndReservoirs: PageModule = {
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
+      "MV-CLEVELANDDAM-FS",
+      "MV-SEYMOURDAM-FS",
       "MV-DSP-2026",
       "MV-CAPEX-2026",
       "BC-DAMS-REG",
@@ -94,6 +97,23 @@ export const damsAndReservoirs: PageModule = {
             located in the dam-breach inundation zone, whether to live, work or
             recreate”. <Cite id="BCDSR-40-2016" />
           </p>
+          <Photograph
+            id="cleveland-dam-spillway"
+            caption={
+              <>
+                Cleveland Dam discharging into the Capilano canyon. The dam is
+                about 92 m high and stands roughly 5 km north of Burrard Inlet,
+                in what Metro Vancouver calls a deep and narrow rock canyon,
+                immediately upstream of the Capilano Salmon Hatchery and beside
+                Capilano River Regional Park. <Cite id="MV-CLEVELANDDAM-FS" />{" "}
+                The water it holds back is part of the region’s drinking water
+                supply, and the canyon at the top of this photograph, beyond
+                the foot of the spillway, is what “below a dam” means for the
+                classification above. This is
+                the structure itself rather than an analogue somewhere else.
+              </>
+            }
+          />
           <p>
             What an earthquake is expected to do to the region’s dams, and
             every dam the province classes Extreme or Very High failure

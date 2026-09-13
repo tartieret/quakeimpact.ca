@@ -19,6 +19,7 @@
  */
 
 export type MediaLicenceId =
+  | "PD"
   | "CC-BY-2.0"
   | "CC-BY-2.1-JP"
   | "CC-BY-3.0"
@@ -57,6 +58,24 @@ export interface MediaLicence {
 }
 
 export const MEDIA_LICENCES: Record<MediaLicenceId, MediaLicence> = {
+  /**
+   * Not a licence but the absence of one: the photographer released the work
+   * into the public domain, so nothing is required and nothing is forbidden.
+   * It is in this table anyway, because the credit line is built from it and a
+   * reader is owed the photographer's name whether or not the law asks for it.
+   * The link goes to the dedication the source page carries rather than to a
+   * general explanation of the public domain, so the claim can be checked where
+   * it was made.
+   */
+  PD: {
+    id: "PD",
+    name: "Released into the public domain by the photographer",
+    short: "Public domain",
+    href: "https://commons.wikimedia.org/wiki/Template:PD-user-en",
+    shareAlike: false,
+    nonCommercial: false,
+    noDerivatives: false,
+  },
   "CC-BY-2.0": {
     id: "CC-BY-2.0",
     name: "Creative Commons Attribution 2.0 Generic",
@@ -985,6 +1004,37 @@ export const PHOTOGRAPHS = {
    * padding, so this waits for a page that needs it rather than going somewhere
    * it nearly fits.
    */
+  /**
+   * The one photograph of the structure this site is actually about, rather
+   * than of an analogue somewhere else. Cleveland Dam is the subject of
+   * `/after/dams-and-reservoirs/` and of the table on `/shaking/dams/`, and the
+   * mechanism both pages describe is geometric: a reservoir held above a
+   * canyon that people are in. The fact sheet's words for that canyon are "deep
+   * and narrow", which is accurate, is not a picture, and leaves a reader who
+   * has only seen the lake from the viewpoint with nothing to attach it to.
+   * What the photograph adds is the drop and the width of the ground at the
+   * bottom of it.
+   *
+   * The analogue rule in `docs/style-guide.md` §10 has nothing to bite on here,
+   * as with the hydrant: there is no transfer from somewhere else to limit,
+   * because this is the place itself.
+   */
+  "cleveland-dam-spillway": {
+    id: "cleveland-dam-spillway",
+    file: "cleveland-dam-spillway.jpg",
+    ratio: "4 / 3",
+    alt: "Water released at Cleveland Dam runs down the dam's concrete spillway face and falls into a rock canyon immediately below it. The canyon is narrow enough that its two walls are both in frame, and the reservoir the water came from is held above it.",
+    photographer: "Psi4ce",
+    title: "Cleveland Dam Spillway",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Cleveland_Dam_Spillway.JPG",
+    taken: "4 March 2006",
+    place: "Cleveland Dam, Capilano River, North Vancouver",
+    licence: "PD",
+    status: "verified",
+    usedOn: "/after/dams-and-reservoirs/",
+  },
+
   "christchurch-pages-road": {
     id: "christchurch-pages-road",
     file: null,

@@ -158,12 +158,27 @@ const SEISMIC: Record<
         earthquake. <Cite id="MV-DSP-2026" />
       </>
     ),
+    upgrade: (
+      <>
+        A $3 million seismic upgrade in 1992 and a $25 million East Abutment
+        upgrade in 2001 and 2002. Both are records of work done, not an
+        assessment of how the dam would perform now.{" "}
+        <Cite id="MV-CLEVELANDDAM-FS" />
+      </>
+    ),
   },
   "Seymour Falls": {
     reviewed: (
       <>
         Reviewed in 2024. The published conclusion does not mention an
         earthquake. <Cite id="MV-DSP-2026" />
+      </>
+    ),
+    upgrade: (
+      <>
+        A $44 million seismic upgrade between 2004 and 2007, which is a record
+        of work done, not an assessment of how the dam would perform now.{" "}
+        <Cite id="MV-SEYMOURDAM-FS" />
       </>
     ),
   },
@@ -228,6 +243,8 @@ export const dams: PageModule = {
       "BCH-RUSKIN-SEIAM-11",
       "BCH-RUSKIN-F2019",
       "BCH-COQUITLAM-RRA-06",
+      "MV-CLEVELANDDAM-FS",
+      "MV-SEYMOURDAM-FS",
       "BC-DDCG",
       "CDA-2007",
       "BCDSR-40-2016",
