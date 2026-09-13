@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose } from "@/components/page-parts";
+import { Figure, Prose } from "@/components/page-parts";
+import { DropCoverHoldOn } from "@/components/figures/shaking";
 import { DraftMark } from "@/components/status";
 import { SHAKING_PAGES } from "@/content/site";
 import type { PageModule } from "./index";
@@ -17,6 +18,11 @@ import type { PageModule } from "./index";
  * There is no map slot. The ground conditions overlay this page used to
  * promise rests on the Metro Vancouver microzonation layers, which are not
  * openly licensed and are linked rather than redrawn (`docs/licensing.md`).
+ *
+ * The one figure is the drop, cover and hold on schematic, and it sits in the
+ * first section because that is where the instruction is. It is drawn from the
+ * province's written steps rather than from the Earthquake Country Alliance
+ * graphic the province credits, which states no licence.
  */
 export const shaking: PageModule = {
   meta: {
@@ -30,6 +36,7 @@ export const shaking: PageModule = {
     references: [
       "PEIRS",
       "NRCAN-1700",
+      "PREPAREDBC",
       "DCRRA-2025",
       "NRCAN-SCEN",
       "JAVANBAKHT-24",
@@ -69,6 +76,20 @@ export const shaking: PageModule = {
             outside: many of those who try suffer extreme injury or death from
             falling and flying objects. <Cite id="PEIRS" />
           </p>
+          <Figure
+            alt="Drop to your hands and knees, cover your head and neck under a sturdy table, and hold on to it until the shaking stops, then count to 60 before getting up. The people badly hurt are the ones who try to run outside while the ground is still moving."
+            caption={
+              <>
+                Where there is no sturdy furniture nearby, crawl to the nearest
+                interior corner or wall. <Cite id="PREPAREDBC" /> The province
+                publishes the same three steps for someone using a wheelchair, a
+                walker or a cane, with the wheels locked in place of the drop.{" "}
+                <Cite id="PREPAREDBC" />
+              </>
+            }
+          >
+            <DropCoverHoldOn />
+          </Figure>
           <p>
             In the magnitude 7.0 scenario, an earthquake close to the city, the
             violent shaking lasts 10 to 20 seconds. <Cite id="PEIRS" /> In the

@@ -1015,6 +1015,37 @@ per `research/CONVENTIONS.md`.
 
 ---
 
+## The safety artwork everybody recognises is nobody's to reuse
+
+**12 September 2026.** The canonical Drop, Cover and Hold On illustrations come from the
+Earthquake Country Alliance and the Great ShakeOut, and PreparedBC credits an ECA graphic
+for the wheelchair, walker and cane panel in its own guide. Neither publisher licenses
+them. The ShakeOut graphics page carries a bare "© 2026 Statewide California Earthquake
+Center" and states no terms at all; the ECA page says the graphics are "available for use
+in campaigns and outreach of all kinds", which is an invitation and not a grant. Every
+other result is Getty, iStock or Dreamstime. So the register's rule applies, the same way
+it applied to MVSMMP: unconfirmed means do not reproduce.
+
+**The way through is the same one the `gov.bc.ca` entry already describes.** A body
+position stated in prose is a fact, and facts are not copyrightable; what is forbidden is
+reproducing somebody's layout, screenshotted, redrawn or "adapted from". `/shaking/` now
+carries the site's own three-panel schematic, drawn from the sentences in the PreparedBC
+guide rather than from anyone's artwork. That is the better outcome regardless of
+permission, because the ECA drawings are in exactly the campaign register section 8 of
+the style guide rules out.
+
+**It also produced the site's first pictogram**, and the mark grammar in
+`src/components/figures/README.md` does not reach one: solid fill, hatch, axis and tick
+all encode quantities, and a drawing of where to put your body has none. Recorded there
+rather than here, along with the two things a pictogram still owes — named limb weights,
+because `FIG_STROKE` is a hairline and a body is not, and the same thumb test for its
+greys.
+
+**How confirmed:** licence check against both publishers' own pages, recorded in
+`licensing.md`.
+
+---
+
 ## Map licensing is settled per dataset, and it cost the flagship graphic
 
 **10 September 2026.** The Metro Vancouver microzonation layers are not openly
