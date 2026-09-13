@@ -104,7 +104,7 @@ earthquake to more than $10 billion if an M7.3 shallow crustal earthquake happen
 Georgia Strait". [DCRRA-2025] Both are quoting the same study. They are one finding
 stated twice, not two that agree.
 
-## Downtown has a second water system for fire, and the rest of the city does not
+## Downtown has a second water system for fire, and nothing tells a resident where it ends
 
 The Dedicated Fire Protection System is a $52 million network of two saltwater pumping
 stations and its own earthquake-resistant pipeline, serving the downtown peninsula, the
@@ -119,8 +119,6 @@ The system has not grown since. The last hydrants went into Kitsilano in 2003, a
 City describes 2003 as the end of the build. [COV-PREPARES] Everywhere else in
 Vancouver, and everywhere in every other municipality, firefighting depends on the
 ordinary water mains. The pumps have never had to draw seawater for a fire. [VIA-HYDRANTS]
-
-## The City's page for residents never says where the dedicated fire system reaches
 
 The City's Hazard and Risk Explorer describes the system at length: built to withstand
 the largest earthquake considered credible for the region, able to draw fresh or salt

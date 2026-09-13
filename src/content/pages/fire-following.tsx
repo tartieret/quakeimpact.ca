@@ -71,6 +71,15 @@ function FireMapLicence() {
  * coverage boundary: a boundary would be a hull the project invented and
  * presented in the City's name (`docs/research/maps.md`).
  *
+ * **It shares a section with the hydrant photograph, and the two were separate
+ * until 12 September 2026.** The system and the City's silence about where it
+ * reaches were being made as two arguments, and they are one: the map is where
+ * the line falls and the photograph is the only sign of it a resident gets at
+ * the kerb. Merging them exposed what the split had hidden, which is that
+ * "everywhere else it is the ordinary mains" was being said three times in
+ * four hundred words. The map's caption now carries only what a caption can
+ * say, the guards, and leaves the geography to the paragraph above it.
+ *
  * The second is the fire halls, marked by what could be established about the
  * standard each one is built to. Those classes are the site's reading of the
  * capital plans cited in the section beside them, and the legend says so: the
@@ -318,7 +327,7 @@ export const fireFollowing: PageModule = {
 
     {
       title:
-        "Downtown has a second water system for fire, and the rest of the city does not",
+        "Downtown has a second water system for fire, and nothing tells a resident where it ends",
       body: (
         <Prose>
           <p>
@@ -339,18 +348,15 @@ export const fireFollowing: PageModule = {
             alt={`The dedicated fire protection mains sit in a corner of the city about ${MAINS_FACTS.width} by ${MAINS_FACTS.depth}, in a city about ${MAINS_FACTS.cityWidth} across: the downtown peninsula, the West End, and a crossing of False Creek into Fairview Slopes and Kitsilano. What is drawn is the pipe and not a service area, and everywhere the pipe is not, a fire is fought with water from the ordinary mains.`}
             caption={
               <>
-                Every run of dedicated fire main the City publishes, {MAINS_FACTS.runs} of
-                them, on the city they serve a corner of.{" "}
-                <Cite id="COV-DFPS-DATA" /> The system’s mains cross the
-                downtown peninsula and the West End, and cross False Creek into
-                Fairview Slopes and Kitsilano. Everywhere else, the water for
-                fighting a fire comes through the ordinary mains. The dataset is
-                the network itself, so what is drawn is the pipe: the City
-                publishes no service area, and a boundary drawn around the pipe
-                would be one we invented. Nothing here says how far from a main
-                a hydrant reaches. The city limits are reference only, and they
-                are a legal line rather than a shoreline, which is why the water
-                under them is drawn from the province’s Freshwater Atlas.
+                Every run of dedicated fire main the City publishes,{" "}
+                {MAINS_FACTS.runs} of them, on the city they serve a corner of.{" "}
+                <Cite id="COV-DFPS-DATA" /> The dataset is the network itself,
+                so what is drawn is the pipe: the City publishes no service
+                area, and a boundary drawn around the pipe would be one we
+                invented. Nothing here says how far from a main a hydrant
+                reaches. The city limits are reference only, and they are a
+                legal line rather than a shoreline, which is why the water under
+                them is drawn from the province’s Freshwater Atlas.
               </>
             }
             licence={<FireMapLicence />}
@@ -365,15 +371,6 @@ export const fireFollowing: PageModule = {
             ordinary water mains. The pumps have never had to draw seawater for
             a fire. <Cite id="VIA-HYDRANTS" />
           </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title:
-        "The City’s page for residents never says where the dedicated fire system reaches",
-      body: (
-        <Prose>
           <p>
             The City’s Hazard and Risk Explorer describes the system at length:
             built to withstand the largest earthquake considered credible for
@@ -399,7 +396,7 @@ export const fireFollowing: PageModule = {
                 the City tells residents to look for “the big, blue ones”, and
                 this is what that means on a corner.{" "}
                 <Cite id="COV-EXPLORER-25" /> Where the blue hydrants stop, a
-                fire is fought with water from the ordinary mains — the ones the
+                fire is fought with water from the ordinary mains, the ones the
                 same shaking breaks. Nothing on the street says where that line
                 falls.
               </>
