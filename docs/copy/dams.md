@@ -109,6 +109,52 @@ detail on some of its dams to its regulator and not others, and Metro Vancouver
 publishes a yearly safety summary rather than the reviews behind it.
 [BCH-RRA-F2020] [MV-DSP-2026]
 
+## The province sets a minimum design earthquake by consequence class, and it governs new work rather than the dams already standing
+
+The class in the table above is not only a description of what is downstream. The
+province's design guideline attaches a minimum earthquake to it: for a dam in the
+Extreme class it sets the minimum earthquake design ground motion at a
+1-in-10,000-year return period or the Maximum Credible Earthquake. [BC-DDCG] That
+is the same expectation BC Hydro states in its own words above, and the two are
+not independent of each other. Both descend from the Canadian Dam Association's
+guidelines, a members' publication this project has not read. [CDA-2007]
+
+Three things have to travel with that figure or it says something false. It is a
+criterion for building, altering, improving or replacing a dam, which is not the
+same as a standing obligation on a dam finished in 1954. [BC-DDCG] It is a
+guideline minimum rather than law, and deviations from it "may be considered but
+must be clearly stated and justified"; the Dam Safety Regulation itself contains
+no seismic number at all, and nowhere uses the word earthquake. [BC-DDCG]
+[BCDSR-40-2016] And the criterion is a return period *or* the Maximum Credible
+Earthquake, which is a deterministic ceiling rather than a probability. Dropping
+the second half of it promotes a guideline to a statute.
+
+What connects a criterion for new work to a dam built a century ago is the review
+itself. A dam in the top classes is reviewed every seven years by an engineer
+qualified in dam safety analysis, and the professional guideline for those reviews
+lists the Maximum Design Earthquake among the updates to the original design
+criteria a review produces, directing that potential liquefaction "should also be
+considered". [BCDSR-40-2016] [EGBC-DSR-GL] So an old dam is re-measured against a
+current design earthquake on a fixed cycle. What the answer was is a separate
+question, and for the dams in this region it is the one that is not published.
+
+> **Not the same scale.** A return period on this page is not a return period on
+> the buildings pages. Dams are assessed on mean, site-specific ground motion. The
+> National Building Code's figures are median values on a national grid, and the
+> professional guideline for dam safety reviews states that they "should not be
+> used for dam safety reviews". [EGBC-DSR-GL] The province reaches the same rule
+> by its own route, allowing the national model for the lower classes and
+> requiring a site-specific assessment for detailed design at the top two.
+> [BC-DDCG] A number on this page and a number on
+> [buildings](/shaking/buildings/) that share a unit are not two points on one
+> scale.
+
+<!-- Verification note, "Not read": the guideline's table sets a minimum for every
+consequence class, and what it sets for Very High, which is six of the seventeen
+dams above, has not been read. The Extreme figure is quoted because the
+guideline's Extreme row has been read; the others are not stated rather than
+inferred from it. [BC-DDCG] -->
+
 ## What you can do
 
 **Ask your local government what it holds for the dam nearest you.**
@@ -127,4 +173,5 @@ classification and stops there. [BC-DAMS-REG]
 ## Sources on this page
 
 [MV-DSP-2026] [BC-DAMS-REG] [BCH-RRA-F2020] [BCH-RUSKIN-SEIAM-11]
-[BCH-RUSKIN-F2019] [BCH-COQUITLAM-RRA-06] [BCDSP-DEP-24]
+[BCH-RUSKIN-F2019] [BCH-COQUITLAM-RRA-06] [BC-DDCG] [CDA-2007] [BCDSR-40-2016]
+[EGBC-DSR-GL] [BCDSP-DEP-24]

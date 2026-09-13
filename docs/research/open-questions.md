@@ -75,23 +75,33 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     province's own design guideline states the criterion directly, so the figure is
     publishable with its guards; what is unread is the ancestor, which is why the four
     documents carrying it are one lineage and not four confirmations.
-14. **CSA Z32**, the hospital-specific backup power requirement. Paywalled. The
+14. **Table 3 of the provincial dam design guideline, for classes other than
+    Extreme and High.** [BC-DDCG] Appendix A, §5, "Flood and Earthquake Minimum
+    Design Criteria" sets a minimum earthquake design ground motion for every
+    consequence class. Only two rows have been read: Extreme at "1/10,000 or
+    MCE" and High at 1-in-2,475. **Very High is unread and is six of the
+    seventeen dams mapped on `/shaking/dams/`**, so the site states the Extreme
+    figure and says of the rest that they are not read rather than inferring
+    them from the two it has. Unlike [CDA-2007] this is not paywalled: the PDF
+    is public at the address in `sources.md`, so this is a gap that closes by
+    reading it.
+15. **CSA Z32**, the hospital-specific backup power requirement. Paywalled. The
     general code minimum is now publishable; the hospital one is not.
-15. **CSA S832**, seismic risk reduction of operational and functional components,
+16. **CSA S832**, seismic risk reduction of operational and functional components,
     named in the by-law's own commentary. The Preface, Introduction and Clause 1 are
     published free by CSA and are in hand; clauses 5–9 and the annexes are paywalled.
-16. **EGBC's non-structural manual.** Credential-gated, with the credentials
+17. **EGBC's non-structural manual.** Credential-gated, with the credentials
     printed in a public EGBC memo. **Deliberately not used** — that is a decision
     for a person, not an agent. See `CONVENTIONS.md`.
-17. **The identity of what "30" denotes** in the insurer-failure study. The paper
+18. **The identity of what "30" denotes** in the insurer-failure study. The paper
     is identified and paywalled; PACICC has well over 100 members, so the figure
     cannot be an industry-wide count.
-18. **Fire hall seismic status for the City of North Vancouver.** Surrey and New
+19. **Fire hall seismic status for the City of North Vancouver.** Surrey and New
     Westminster are documented negatives and Richmond is answered by its fire chief in
     committee minutes. CNV was searched across six channels on 10 September 2026 and
     says nothing; the channel not opened is its pre-2026 council minutes, which is
     where Richmond's statement turned out to live.
-19. **Whether Fire Hall #12's seismic upgrade was completed.** The 2019 to 2022
+20. **Whether Fire Hall #12's seismic upgrade was completed.** The 2019 to 2022
     capital plan selected it and named the deficiency it was closing, that no
     fire hall west of Arbutus Street met current seismic standards. No document
     found says whether the work was done. The hall map on
@@ -100,36 +110,36 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     evidence supports. Later capital plans and City project pages are the route.
     The same map's third class, "more information needed", is item 18 and this
     item drawn: thirteen of nineteen halls, wherever the search has not reached.
-20. **Cleveland Dam downstream hazard studies.** Named in Metro Vancouver's own
+21. **Cleveland Dam downstream hazard studies.** Named in Metro Vancouver's own
     reporting and unpublished. The most specific FOI target this project has
     produced.
-21. **The BC Coroners Service report** into the two deaths below Cleveland Dam in
+22. **The BC Coroners Service report** into the two deaths below Cleveland Dam in
     October 2020, and the underlying 2002 WorkSafeBC inspection report. Both
     unretrieved; the 2002 material reaches us only through media reporting of an
     FOI release.
-22. **City of Vancouver guidance for people without storage space or money for a
+23. **City of Vancouver guidance for people without storage space or money for a
     kit.** The City names both barriers in its own material and does not answer
     them. Searched 10 September 2026 across the Explorer, both 2024 fact sheets,
     the worksheet, the landing, education and hubs pages.
-23. **City of Vancouver material for people with disabilities or mobility
+24. **City of Vancouver material for people with disabilities or mobility
     limitations**, where North Shore Emergency Management and Richmond Fire-Rescue
     both publish one. The City's only material for people who cannot evacuate unaided
     is filed under fire safety for building owners and addressed to building managers.
-24. **PERCS coverage in the Lower Mainland.** PEIRS states that "some regions have a
+25. **PERCS coverage in the Lower Mainland.** PEIRS states that "some regions have a
     limited number of radio operators" and names none. Which regions, how many operators,
     and whether the Lower Mainland is among the thin ones are all unstated. Assume neither
     direction. Route: EMCR, or the published rosters of PERCS-affiliated clubs.
-25. **Household gas dependence in Vancouver.** The City's exercise toolkit carries
+26. **Household gas dependence in Vancouver.** The City's exercise toolkit carries
     "55% of homes are heated by natural gas" and similar figures as *scenario
     parameters*. They need an independent source — census dwelling heating, or a
     FortisBC filing — before any of them is usable.
-26. **What share of Lower Mainland households holds any given number of days of
+27. **What share of Lower Mainland households holds any given number of days of
     supply.** Six published studies measure kit ownership, plan completeness or
     self-assessed readiness, and none measures held supply in days or litres, so the
     site states kit ownership and stops. The answerable route is SEPR microdata through
     the Research Data Centre network, which carries variables beyond the published
     tables; it would still be 2014 data. See `household-preparedness.md`.
-27. **Federal liquefaction susceptibility mapping for the Fraser delta**, from Natural
+28. **Federal liquefaction susceptibility mapping for the Fraser delta**, from Natural
     Resources Canada or the Geological Survey of Canada. Not a gap in any claim the site
     makes — `/shaking/ground/` carries the delta on the 787-borehole study and the
     microzonation project, and both are stronger for the purpose. It is wanted for

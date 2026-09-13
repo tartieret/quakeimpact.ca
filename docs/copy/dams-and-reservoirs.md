@@ -71,8 +71,9 @@ The capital program is published. It leaves the seismic question open.
 
 [MV-CAPEX-2026]
 
-MCE stands for Maximum Credible Earthquake, the criterion the province's design guideline
-sets for a dam in this class. [BC-DDCG] Metro Vancouver is still paying for the
+MCE stands for Maximum Credible Earthquake, one half of the criterion the province's
+design guideline sets for a dam in this class; what that criterion is, and the three
+things that have to travel with it, are on [dams](/shaking/dams/). [BC-DDCG] Metro Vancouver is still paying for the
 evaluations and has not begun the upgrade.
 
 > **Not yet published.** Both reviews found no unsafe condition, and that is the whole of

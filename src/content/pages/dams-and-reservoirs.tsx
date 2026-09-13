@@ -204,9 +204,17 @@ export const damsAndReservoirs: PageModule = {
             ]}
           />
           <p>
-            MCE stands for Maximum Credible Earthquake, the criterion the
-            province’s design guideline sets for a dam in this class.{" "}
-            <Cite id="BC-DDCG" /> Metro Vancouver is still paying for the
+            MCE stands for Maximum Credible Earthquake, one half of the
+            criterion the province’s design guideline sets for a dam in this
+            class; what that criterion is, and the three things that have to
+            travel with it, are on{" "}
+            <Link
+              href="/shaking/dams/"
+              className="text-accent underline underline-offset-2"
+            >
+              dams
+            </Link>
+            . <Cite id="BC-DDCG" /> Metro Vancouver is still paying for the
             evaluations and has not begun the upgrade.
           </p>
           <Photograph
