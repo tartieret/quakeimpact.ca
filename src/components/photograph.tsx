@@ -133,6 +133,12 @@ function UnhostedSlot({
  *
  * A no-derivatives licence adds the sentence it requires. Straight resizing is
  * not a derivative, so the sentence is true of what the site does with the file.
+ *
+ * Where the site has made a change — a crop — the register says so in
+ * `changes`, and the credit prints it. The 4.0 licences require changes to be
+ * indicated, and a crop the credit does not mention is the unannounced
+ * derivative `docs/media.md` warns about, made deliberately rather than by
+ * accident.
  */
 function Credit({
   photo,
@@ -163,7 +169,8 @@ function Credit({
       >
         {licence.short}
       </a>
-      .{licence.noDerivatives ? " No changes made." : ""}
+      .{photo.changes ? ` ${photo.changes}` : ""}
+      {licence.noDerivatives ? " No changes made." : ""}
     </>
   );
 }

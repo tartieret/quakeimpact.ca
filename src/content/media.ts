@@ -190,6 +190,14 @@ export interface Photograph {
   taken: string;
   /** Where, in the reader's terms. */
   place: string;
+  /**
+   * What the site has done to the file beyond resizing and re-encoding, in the
+   * words the credit prints — "Cropped to the runway." — or absent where
+   * nothing has been done. The 4.0 licences require a change to be indicated,
+   * and share-alike and no-derivatives licences mean a row carrying this field
+   * should not exist at all: check the licence before writing it.
+   */
+  changes?: string;
   licence: MediaLicenceId;
   status: MediaStatus;
   /**
@@ -365,21 +373,6 @@ export const PHOTOGRAPHS = {
   },
 
   /**
-   * The second photograph on `/after/water/`, and the one that carries the
-   * duration rather than the repair. `christchurch-parkview-valve` is one
-   * crew at one fitting; this is three weeks later somewhere else, with the
-   * water running along the top of the road because what is under it is still
-   * broken.
-   *
-   * It is the clearest statement the register holds of the distinction the page
-   * draws between its two clocks: service restored is not network repaired, and
-   * a tap that works can be a hose on the surface.
-   *
-   * Not Christchurch. The 2016 Kumamoto earthquakes are a different event on
-   * different ground, and the photograph is here for the arrangement it shows
-   * rather than for any transfer from Kyushu to the Fraser delta.
-   */
-  /**
    * The first clock on `/after/water/`, and `kumamoto-temporary-pipe` is the
    * second. The section they sit in is about two durations that do not join up:
    * four to five days of trucking bulk water to people, and many months of
@@ -396,199 +389,6 @@ export const PHOTOGRAPHS = {
    * photograph with a child in it should be a decision somebody made rather
    * than one nobody noticed.
    */
-  /**
-   * `/after/sanitation/`. The plainest photograph in the register of buried
-   * infrastructure moving, and it needs no caption to be understood: a concrete
-   * shaft standing a metre out of a road it used to sit under.
-   *
-   * It is a sewer access chamber and not a sewer pipe, which the caption says.
-   * The page's claim is that a treatment plant built to a post-disaster
-   * standard still has to be reached through a network nobody has published an
-   * assessment of, and this is that network with the ground taken out from
-   * under it.
-   *
-   * Taken nearly four months after the earthquake, which is the second thing it
-   * carries: the shaft is still standing in the road in late April.
-   */
-  /**
-   * The second photograph on `/after/electricity/`, and the one that is about
-   * the street rather than the substation.
-   *
-   * The page's closing note says BC Hydro's statement covers downtown
-   * Vancouver, that no restoration estimate is published for the rest of the
-   * region, and that no seismic assessment of the distribution network — the
-   * wires in the street — appears anywhere in the regulatory record. A
-   * transformer is the equipment at the top of that system. This is the bottom
-   * of it, lying in the road.
-   *
-   * Six weeks after the earthquake and the pole is still where it fell, which
-   * is the second thing the frame carries.
-   */
-  "wajima-fallen-pole": {
-    id: "wajima-fallen-pole",
-    file: "wajima-fallen-pole.jpg",
-    ratio: "1600 / 1067",
-    alt: "A concrete power pole lies snapped and fallen across a road, its cables still attached and trailing along the ground. Behind it an excavator stands in a heap of broken timber, houses are still standing on either side, and overhead wires run on above between the poles that did not come down.",
-    photographer: "Hurohukidaikon",
-    collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:R6_noto_earthquake_wajima_street_2024-02-17_7.jpg",
-    taken: "17 February 2024",
-    place: "Wajima, Ishikawa Prefecture, Japan",
-    licence: "CC-BY-4.0",
-    status: "verified",
-    usedOn: "/after/electricity/",
-  },
-
-  /**
-   * The photograph that was reported not to exist.
-   *
-   * A search of Commons for a Christchurch street with portable toilets on it
-   * came back as a firm negative: the categories were enumerated, and the
-   * conclusion was that the canonical image lives in New Zealand press and
-   * archive collections rather than here. This file was listed separately as a
-   * weak maybe, because its entire description is "February 2011 Christchurch
-   * earthquake" and the only evidence of a toilet was one editor's category.
-   *
-   * Opening it settled it. It is a portable toilet on a residential footpath,
-   * with a second one behind it along the same path. The category was right and
-   * the negative result was wrong, and nothing but looking could have told the
-   * difference. That is the third time in this register that a file's own
-   * description has been a worse guide than the image.
-   */
-  /**
-   * The pair on `/after/large-infrastructure/`, and both come from the City of
-   * Kobe's own earthquake archive, 阪神・淡路大震災「1.17の記録」, which the
-   * city published under CC BY 2.1 Japan. A municipal government releasing its
-   * own disaster record under a commercial-use licence is the best source this
-   * register has found, and the archive is far larger than these two frames.
-   *
-   * The page's section is short: Kobe's port was Japan's leading container
-   * port, repairs took almost a year, and it permanently lost container
-   * business to other Asian ports. It says "Kobe is an illustration, and it
-   * forecasts nothing here", and the captions repeat that limit rather than
-   * relying on the sentence above them to carry it.
-   */
-  "kobe-rokko-island-quay": {
-    id: "kobe-rokko-island-quay",
-    file: "kobe-rokko-island-quay.jpg",
-    ratio: "1000 / 1500",
-    alt: "Seen from above, a container terminal quay has split along its whole length in a fissure running parallel to the water. The strip of apron carrying the crane rails has dropped away from the rest of the yard, and a gantry crane standing on it leans out of line. Stacked containers and a second crane sit on the intact ground behind.",
-    photographer: "City of Kobe",
-    collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:Images_from_The_Great_Hanshin-Awaji_Earthquake%EF%BC%9Da056.jpg",
-    taken: "1995",
-    place: "Rokko Island, Higashinada, Kobe, Japan",
-    licence: "CC-BY-2.1-JP",
-    status: "verified",
-    usedOn: "/after/large-infrastructure/",
-  },
-
-  "kobe-port-island-crane": {
-    id: "kobe-port-island-crane",
-    file: "kobe-port-island-crane.jpg",
-    ratio: "1600 / 1141",
-    alt: "A container terminal apron has torn open in a wide fissure with water standing in it, and a red gantry crane has collapsed across the quay behind, its legs buckled and its boom folded onto the ground. Shipping containers lie toppled and stacked askew further along the wharf.",
-    photographer: "City of Kobe",
-    collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:Images_from_The_Great_Hanshin-Awaji_Earthquake%EF%BC%9Dc111.jpg",
-    taken: "1995",
-    place: "Port Island container terminal, Kobe, Japan",
-    licence: "CC-BY-2.1-JP",
-    status: "verified",
-    usedOn: "/after/large-infrastructure/",
-  },
-
-  "christchurch-street-portaloo": {
-    id: "christchurch-street-portaloo",
-    file: "christchurch-street-portaloo.jpg",
-    ratio: "1600 / 1067",
-    alt: "A blue portable toilet stands on the footpath of a tree-lined residential street with a biohazard label on its door, and a second one is visible further along the same footpath. The houses it serves are behind their hedges out of frame. The toilets are on the public path because what runs under it has stopped working.",
-    photographer: "Andy Miah",
-    collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:February_2011_Christchurch_earthquake_21.jpg",
-    taken: "12 April 2011",
-    place: "Christchurch, New Zealand",
-    licence: "CC-BY-SA-2.0",
-    status: "verified",
-    usedOn: "/after/sanitation/",
-  },
-
-  /**
-   * `/after/housing/`, and the pair to `sendai-limited-entry-placard`. The
-   * placard is the judgement on one building. This is the other mechanism the
-   * page describes, which does not look at your building at all: a cordon is
-   * drawn around an area, and a sound building inside it is still a building
-   * nobody is living in.
-   *
-   * Nate Cull's second row, after `christchurch-moorhouse-parapet`, and the
-   * September 2010 Darfield earthquake again — which killed nobody.
-   *
-   * People are in frame and identifiable, and none of them is in distress:
-   * they are standing on a corner with their bags, waiting, talking to a
-   * soldier and a worker in a high-visibility vest. Recorded here rather than
-   * left to be noticed, the same as `christchurch-water-tanker`.
-   */
-  "christchurch-cordon-passes": {
-    id: "christchurch-cordon-passes",
-    file: "christchurch-cordon-passes.jpg",
-    ratio: "4 / 3",
-    alt: "People with bags and a suitcase stand on a street corner talking to a soldier and a worker in a high-visibility vest, yellow cordon tape strung across the road behind them and a police car beyond it. The buildings on the corner are intact, their windows unbroken and their signs still up. Nobody is being kept out of a ruin: they are waiting for permission to go home.",
-    photographer: "Nate Cull",
-    collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:Manchester_Street_cordon.jpg",
-    taken: "6 September 2010",
-    place: "Manchester Street, Christchurch, New Zealand",
-    licence: "CC-BY-SA-2.0",
-    status: "verified",
-    usedOn: "/after/housing/",
-  },
-
-  "suzu-uplifted-manhole": {
-    id: "suzu-uplifted-manhole",
-    file: "suzu-uplifted-manhole.jpg",
-    ratio: "1050 / 1400",
-    alt: "A concrete sewer manhole shaft stands about a metre proud of a road surface with its cover still on top, the asphalt around its base broken into loose slabs. Damaged houses line the street behind it. The shaft did not rise out of the road by being pushed: the ground around it liquefied and the buried chamber came up through the surface it used to sit under.",
-    photographer: "Yasu",
-    collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:Uplifted_manhole_caused_by_the_2024_Noto_Peninsula_Earthquake_in_Suzu,_Ishikawa,_Japan.jpg",
-    taken: "27 April 2024",
-    place: "Horyumachi, Suzu, Ishikawa Prefecture, Japan",
-    licence: "CC-BY-SA-3.0",
-    status: "verified",
-    usedOn: "/after/sanitation/",
-  },
-
-  /**
-   * `/after/housing/`, and the only photograph on the site whose subject is a
-   * piece of paper.
-   *
-   * The page says somebody has to walk up to each building, judge it and leave
-   * a placard on the door, and that the yellow tag is the condition most people
-   * would be in: the building stands, entry is restricted, and nobody has said
-   * for how long. This is that placard. It carries the judgement, the hazard
-   * written on by hand, the hour it was made, and the office that made it — and
-   * no end date, which is the page's point standing in the frame.
-   *
-   * **It is a building, and the register does not claim it is a home.** The
-   * file page says "Emergency Risk Discrimination: LIMITED ENTRY" and nothing
-   * about what is behind the shutter. The assessment system covers dwellings
-   * and does not only cover them, so the caption stays with the notice.
-   */
-  "sendai-limited-entry-placard": {
-    id: "sendai-limited-entry-placard",
-    file: "sendai-limited-entry-placard.jpg",
-    ratio: "1050 / 1400",
-    alt: "A yellow assessment notice is taped to the corrugated metal shutter of a building. Under a Japanese heading it reads LIMITED ENTRY in English, and below that a hand has written the hazard found, the hour the judgement was made and the district office that made it. Every field on it records when the building was judged. None of them records when the restriction ends.",
-    photographer: "Walks",
-    collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:Building_inspected_after_earthquake,_yellow.jpg",
-    taken: "23 March 2011",
-    place: "Miyagino-ku, Sendai, Miyagi Prefecture, Japan",
-    licence: "CC-BY-4.0",
-    status: "verified",
-    usedOn: "/after/housing/",
-  },
-
   "christchurch-water-tanker": {
     id: "christchurch-water-tanker",
     file: "christchurch-water-tanker.jpg",
@@ -604,6 +404,21 @@ export const PHOTOGRAPHS = {
     usedOn: "/after/water/",
   },
 
+  /**
+   * The second photograph on `/after/water/`, and the one that carries the
+   * duration rather than the repair. `christchurch-parkview-valve` is one
+   * crew at one fitting; this is three weeks later somewhere else, with the
+   * water running along the top of the road because what is under it is still
+   * broken.
+   *
+   * It is the clearest statement the register holds of the distinction the page
+   * draws between its two clocks: service restored is not network repaired, and
+   * a tap that works can be a hose on the surface.
+   *
+   * Not Christchurch. The 2016 Kumamoto earthquakes are a different event on
+   * different ground, and the photograph is here for the arrangement it shows
+   * rather than for any transfer from Kyushu to the Fraser delta.
+   */
   "kumamoto-temporary-pipe": {
     id: "kumamoto-temporary-pipe",
     file: "kumamoto-temporary-pipe.jpg",
@@ -655,6 +470,21 @@ export const PHOTOGRAPHS = {
     usedOn: "/after/transportation/",
   },
 
+  "anchorage-glenn-highway-closed": {
+    id: "anchorage-glenn-highway-closed",
+    file: "anchorage-glenn-highway-closed.jpg",
+    ratio: "4 / 3",
+    alt: "A wide highway carriageway stands empty of traffic under a grey sky, with a pickup, plant and a crew in high-visibility clothing working at the far end and snow on the verges. Cracks run across the concrete in the foreground. Nothing has fallen down: the road is whole, and it is carrying nobody.",
+    photographer: "Alaska DOT&PF",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Earthquake,_NB_Glenn,_Eagle_River_Bridge_3_12.1.2018.jpg",
+    taken: "1 December 2018",
+    place: "Glenn Highway at the Eagle River bridge, Anchorage, Alaska",
+    licence: "CC-BY-2.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
   /**
    * The picture `/after/transportation/` was missing, and it took a second pass
    * to find. The page's argument is that the structure is not what fails — the
@@ -672,6 +502,49 @@ export const PHOTOGRAPHS = {
    * end; what the page's numbers describe is that mechanism held down by ground
    * treatment.
    */
+  "anchorage-mirror-lake-ramp": {
+    id: "anchorage-mirror-lake-ramp",
+    file: "anchorage-mirror-lake-ramp.jpg",
+    ratio: "1800 / 667",
+    alt: "A highway off-ramp has dropped away entirely, its asphalt broken into tilted slabs and the embankment beneath it slid down the slope carrying the guardrail with it. The main carriageway a few metres to the left is unbroken, lane markings intact, snow on the verge. The road surface did not fail; the ground holding it up did.",
+    photographer: "Alaska DOT&PF",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Mirror_Lake_SB_OFF_Ramp_Before.jpg",
+    taken: "30 November 2018",
+    place: "Mirror Lake interchange, Glenn Highway, Chugiak, Alaska",
+    licence: "CC-BY-2.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
+  /**
+   * `/after/transportation/`, under the SkyTrain section, and it is there for a
+   * contrast rather than for a resemblance.
+   *
+   * A magnitude 4.8 in 2015 tripped guideway intrusion alarms, both lines were
+   * stopped, nothing was found and service resumed in about eighty minutes.
+   * That number is the page's most quotable and its most misleading: it is how
+   * long it takes to confirm a system is undamaged. This is the other case.
+   *
+   * The 2016 Kaikoura earthquake was magnitude 7.8 and killed two people, which
+   * makes it the closest thing in the register to a large earthquake with a low
+   * death toll.
+   */
+  "kaikoura-buckled-track": {
+    id: "kaikoura-buckled-track",
+    file: "kaikoura-buckled-track.jpg",
+    ratio: "1800 / 900",
+    alt: "A railway track seen from ground level bends into a long S where the ground beneath it has moved sideways, sleepers and ballast following the deviation. The rail heads are covered in rust rather than polished by use.",
+    photographer: "Ulrich Lange",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Railway_Track,_Kaikoura_(after_earthquake).jpg",
+    taken: "24 February 2017",
+    place: "North of Kaikoura, Canterbury, New Zealand",
+    licence: "CC-BY-3.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
   /**
    * The only photograph on the site with no earthquake in it, and the caption
    * says so in its first clause.
@@ -706,61 +579,227 @@ export const PHOTOGRAPHS = {
   },
 
   /**
-   * `/after/transportation/`, under the SkyTrain section, and it is there for a
-   * contrast rather than for a resemblance.
+   * The second photograph on `/after/electricity/`, and the one that is about
+   * the street rather than the substation.
    *
-   * A magnitude 4.8 in 2015 tripped guideway intrusion alarms, both lines were
-   * stopped, nothing was found and service resumed in about eighty minutes.
-   * That number is the page's most quotable and its most misleading: it is how
-   * long it takes to confirm a system is undamaged. This is the other case.
+   * The page's closing note says BC Hydro's statement covers downtown
+   * Vancouver, that no restoration estimate is published for the rest of the
+   * region, and that no seismic assessment of the distribution network — the
+   * wires in the street — appears anywhere in the regulatory record. A
+   * transformer is the equipment at the top of that system. This is the bottom
+   * of it, lying in the road.
    *
-   * The 2016 Kaikoura earthquake was magnitude 7.8 and killed two people, which
-   * makes it the closest thing in the register to a large earthquake with a low
-   * death toll.
+   * Six weeks after the earthquake and the pole is still where it fell, which
+   * is the second thing the frame carries.
    */
-  "kaikoura-buckled-track": {
-    id: "kaikoura-buckled-track",
-    file: "kaikoura-buckled-track.jpg",
-    ratio: "1800 / 900",
-    alt: "A railway track seen from ground level bends into a long S where the ground beneath it has moved sideways, sleepers and ballast following the deviation. The rail heads are covered in rust rather than polished by use.",
-    photographer: "Ulrich Lange",
+  "wajima-fallen-pole": {
+    id: "wajima-fallen-pole",
+    file: "wajima-fallen-pole.jpg",
+    ratio: "1600 / 1067",
+    alt: "A concrete power pole lies snapped and fallen across a road, its cables still attached and trailing along the ground. Behind it an excavator stands in a heap of broken timber, houses are still standing on either side, and overhead wires run on above between the poles that did not come down.",
+    photographer: "Hurohukidaikon",
     collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:Railway_Track,_Kaikoura_(after_earthquake).jpg",
-    taken: "24 February 2017",
-    place: "North of Kaikoura, Canterbury, New Zealand",
-    licence: "CC-BY-3.0",
+    href: "https://commons.wikimedia.org/wiki/File:R6_noto_earthquake_wajima_street_2024-02-17_7.jpg",
+    taken: "17 February 2024",
+    place: "Wajima, Ishikawa Prefecture, Japan",
+    licence: "CC-BY-4.0",
     status: "verified",
-    usedOn: "/after/transportation/",
+    usedOn: "/after/electricity/",
   },
 
-  "anchorage-mirror-lake-ramp": {
-    id: "anchorage-mirror-lake-ramp",
-    file: "anchorage-mirror-lake-ramp.jpg",
-    ratio: "1800 / 667",
-    alt: "A highway off-ramp has dropped away entirely, its asphalt broken into tilted slabs and the embankment beneath it slid down the slope carrying the guardrail with it. The main carriageway a few metres to the left is unbroken, lane markings intact, snow on the verge. The road surface did not fail; the ground holding it up did.",
-    photographer: "Alaska DOT&PF",
+  /**
+   * The photograph that was reported not to exist.
+   *
+   * A search of Commons for a Christchurch street with portable toilets on it
+   * came back as a firm negative: the categories were enumerated, and the
+   * conclusion was that the canonical image lives in New Zealand press and
+   * archive collections rather than here. This file was listed separately as a
+   * weak maybe, because its entire description is "February 2011 Christchurch
+   * earthquake" and the only evidence of a toilet was one editor's category.
+   *
+   * Opening it settled it. It is a portable toilet on a residential footpath,
+   * with a second one behind it along the same path. The category was right and
+   * the negative result was wrong, and nothing but looking could have told the
+   * difference. That is the third time in this register that a file's own
+   * description has been a worse guide than the image.
+   */
+  "christchurch-street-portaloo": {
+    id: "christchurch-street-portaloo",
+    file: "christchurch-street-portaloo.jpg",
+    ratio: "1600 / 1067",
+    alt: "A blue portable toilet stands on the footpath of a tree-lined residential street with a biohazard label on its door, and a second one is visible further along the same footpath. The houses it serves are behind their hedges out of frame. The toilets are on the public path because what runs under it has stopped working.",
+    photographer: "Andy Miah",
     collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:Mirror_Lake_SB_OFF_Ramp_Before.jpg",
-    taken: "30 November 2018",
-    place: "Mirror Lake interchange, Glenn Highway, Chugiak, Alaska",
-    licence: "CC-BY-2.0",
+    href: "https://commons.wikimedia.org/wiki/File:February_2011_Christchurch_earthquake_21.jpg",
+    taken: "12 April 2011",
+    place: "Christchurch, New Zealand",
+    licence: "CC-BY-SA-2.0",
     status: "verified",
-    usedOn: "/after/transportation/",
+    usedOn: "/after/sanitation/",
   },
 
-  "anchorage-glenn-highway-closed": {
-    id: "anchorage-glenn-highway-closed",
-    file: "anchorage-glenn-highway-closed.jpg",
+  /**
+   * `/after/sanitation/`. The plainest photograph in the register of buried
+   * infrastructure moving, and it needs no caption to be understood: a concrete
+   * shaft standing a metre out of a road it used to sit under.
+   *
+   * It is a sewer access chamber and not a sewer pipe, which the caption says.
+   * The page's claim is that a treatment plant built to a post-disaster
+   * standard still has to be reached through a network nobody has published an
+   * assessment of, and this is that network with the ground taken out from
+   * under it.
+   *
+   * Taken nearly four months after the earthquake, which is the second thing it
+   * carries: the shaft is still standing in the road in late April.
+   */
+  "suzu-uplifted-manhole": {
+    id: "suzu-uplifted-manhole",
+    file: "suzu-uplifted-manhole.jpg",
+    ratio: "1050 / 1400",
+    alt: "A concrete sewer manhole shaft stands about a metre proud of a road surface with its cover still on top, the asphalt around its base broken into loose slabs. Damaged houses line the street behind it. The shaft did not rise out of the road by being pushed: the ground around it liquefied and the buried chamber came up through the surface it used to sit under.",
+    photographer: "Yasu",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Uplifted_manhole_caused_by_the_2024_Noto_Peninsula_Earthquake_in_Suzu,_Ishikawa,_Japan.jpg",
+    taken: "27 April 2024",
+    place: "Horyumachi, Suzu, Ishikawa Prefecture, Japan",
+    licence: "CC-BY-SA-3.0",
+    status: "verified",
+    usedOn: "/after/sanitation/",
+  },
+
+  /**
+   * `/after/housing/`, and the only photograph on the site whose subject is a
+   * piece of paper.
+   *
+   * The page says somebody has to walk up to each building, judge it and leave
+   * a placard on the door, and that the yellow tag is the condition most people
+   * would be in: the building stands, entry is restricted, and nobody has said
+   * for how long. This is that placard. It carries the judgement, the hazard
+   * written on by hand, the hour it was made, and the office that made it — and
+   * no end date, which is the page's point standing in the frame.
+   *
+   * **It is a building, and the register does not claim it is a home.** The
+   * file page says "Emergency Risk Discrimination: LIMITED ENTRY" and nothing
+   * about what is behind the shutter. The assessment system covers dwellings
+   * and does not only cover them, so the caption stays with the notice.
+   */
+  "sendai-limited-entry-placard": {
+    id: "sendai-limited-entry-placard",
+    file: "sendai-limited-entry-placard.jpg",
+    ratio: "1050 / 1400",
+    alt: "A yellow assessment notice is taped to the corrugated metal shutter of a building. Under a Japanese heading it reads LIMITED ENTRY in English, and below that a hand has written the hazard found, the hour the judgement was made and the district office that made it. Every field on it records when the building was judged. None of them records when the restriction ends.",
+    photographer: "Walks",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Building_inspected_after_earthquake,_yellow.jpg",
+    taken: "23 March 2011",
+    place: "Miyagino-ku, Sendai, Miyagi Prefecture, Japan",
+    licence: "CC-BY-4.0",
+    status: "verified",
+    usedOn: "/after/housing/",
+  },
+
+  /**
+   * `/after/housing/`, and the pair to `sendai-limited-entry-placard`. The
+   * placard is the judgement on one building. This is the other mechanism the
+   * page describes, which does not look at your building at all: a cordon is
+   * drawn around an area, and a sound building inside it is still a building
+   * nobody is living in.
+   *
+   * Nate Cull's second row, after `christchurch-moorhouse-parapet`, and the
+   * September 2010 Darfield earthquake again — which killed nobody.
+   *
+   * People are in frame and identifiable, and none of them is in distress:
+   * they are standing on a corner with their bags, waiting, talking to a
+   * soldier and a worker in a high-visibility vest. Recorded here rather than
+   * left to be noticed, the same as `christchurch-water-tanker`.
+   */
+  "christchurch-cordon-passes": {
+    id: "christchurch-cordon-passes",
+    file: "christchurch-cordon-passes.jpg",
     ratio: "4 / 3",
-    alt: "A wide highway carriageway stands empty of traffic under a grey sky, with a pickup, plant and a crew in high-visibility clothing working at the far end and snow on the verges. Cracks run across the concrete in the foreground. Nothing has fallen down: the road is whole, and it is carrying nobody.",
-    photographer: "Alaska DOT&PF",
+    alt: "People with bags and a suitcase stand on a street corner talking to a soldier and a worker in a high-visibility vest, yellow cordon tape strung across the road behind them and a police car beyond it. The buildings on the corner are intact, their windows unbroken and their signs still up. Nobody is being kept out of a ruin: they are waiting for permission to go home.",
+    photographer: "Nate Cull",
     collection: "Wikimedia Commons",
-    href: "https://commons.wikimedia.org/wiki/File:Earthquake,_NB_Glenn,_Eagle_River_Bridge_3_12.1.2018.jpg",
-    taken: "1 December 2018",
-    place: "Glenn Highway at the Eagle River bridge, Anchorage, Alaska",
-    licence: "CC-BY-2.0",
+    href: "https://commons.wikimedia.org/wiki/File:Manchester_Street_cordon.jpg",
+    taken: "6 September 2010",
+    place: "Manchester Street, Christchurch, New Zealand",
+    licence: "CC-BY-SA-2.0",
     status: "verified",
-    usedOn: "/after/transportation/",
+    usedOn: "/after/housing/",
+  },
+
+  /**
+   * The pair on `/after/large-infrastructure/`, and both come from the City of
+   * Kobe's own earthquake archive, 阪神・淡路大震災「1.17の記録」, which the
+   * city published under CC BY 2.1 Japan. A municipal government releasing its
+   * own disaster record under a commercial-use licence is the best source this
+   * register has found, and the archive is far larger than these two frames.
+   *
+   * The page's section is short: Kobe's port was Japan's leading container
+   * port, repairs took almost a year, and it permanently lost container
+   * business to other Asian ports. It says "Kobe is an illustration, and it
+   * forecasts nothing here", and the captions repeat that limit rather than
+   * relying on the sentence above them to carry it.
+   */
+  "kobe-rokko-island-quay": {
+    id: "kobe-rokko-island-quay",
+    file: "kobe-rokko-island-quay.jpg",
+    ratio: "1000 / 1500",
+    alt: "Seen from above, a container terminal quay has split along its whole length in a fissure running parallel to the water. The strip of apron carrying the crane rails has dropped away from the rest of the yard, and a gantry crane standing on it leans out of line. Stacked containers and a second crane sit on the intact ground behind.",
+    photographer: "City of Kobe",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Images_from_The_Great_Hanshin-Awaji_Earthquake%EF%BC%9Da056.jpg",
+    taken: "1995",
+    place: "Rokko Island, Higashinada, Kobe, Japan",
+    licence: "CC-BY-2.1-JP",
+    status: "verified",
+    usedOn: "/after/large-infrastructure/",
+  },
+
+  "kobe-port-island-crane": {
+    id: "kobe-port-island-crane",
+    file: "kobe-port-island-crane.jpg",
+    ratio: "1600 / 1141",
+    alt: "A container terminal apron has torn open in a wide fissure with water standing in it, and a red gantry crane has collapsed across the quay behind, its legs buckled and its boom folded onto the ground. Shipping containers lie toppled and stacked askew further along the wharf.",
+    photographer: "City of Kobe",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Images_from_The_Great_Hanshin-Awaji_Earthquake%EF%BC%9Dc111.jpg",
+    taken: "1995",
+    place: "Port Island container terminal, Kobe, Japan",
+    licence: "CC-BY-2.1-JP",
+    status: "verified",
+    usedOn: "/after/large-infrastructure/",
+  },
+
+  /**
+   * The airport half of `/after/large-infrastructure/`, and the first
+   * photograph on the site that the site has changed.
+   *
+   * An aerial by the Geospatial Information Authority of Japan, taken nearly
+   * four months after the 2024 Noto Peninsula earthquake. At full frame the
+   * runway is a thin grey line in a forest and the repairs are three specks, so
+   * it is cropped to the runway, where they read as three dark bands across its
+   * full width. CC BY 4.0 permits a crop and requires it to be indicated, which
+   * is what `changes` is for. The file on Commons is itself a crop of the
+   * authority's original frame, and says so.
+   *
+   * A hilltop airport, not one on a delta, and the caption says that nothing
+   * about how long it stayed closed transfers to Sea Island.
+   */
+  "noto-airport-runway-repairs": {
+    id: "noto-airport-runway-repairs",
+    file: "noto-airport-runway-repairs.jpg",
+    ratio: "20 / 9",
+    alt: "An aerial photograph of an airport runway laid across cleared hilltop ground, the word NOTO spelled out in white letters on the grass beside it. Three dark rectangles of newer surface cross the full width of the grey runway at intervals along its length: each is a section of runway that was repaired.",
+    photographer: "Geospatial Information Authority of Japan",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Noto_Airport_Aerial_photograph.2024.jpg",
+    taken: "26 April 2024",
+    place: "Noto Airport, Ishikawa Prefecture, Japan",
+    changes: "Cropped to the runway.",
+    licence: "CC-BY-4.0",
+    status: "verified",
+    usedOn: "/after/large-infrastructure/",
   },
 
   /**

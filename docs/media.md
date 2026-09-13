@@ -101,12 +101,12 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Twenty-two rows are Verified, checked at their sources on 12 September 2026,
-and twenty-one are hosted.** Two on `/shaking/ground/`, three on
+**Twenty-three rows are Verified, checked at their sources on 12 September 2026,
+and twenty-two are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
 `/after/water/`, four on `/after/transportation/`, two on
 `/after/electricity/`, two on `/after/sanitation/`, two on `/after/housing/` and
-two on `/after/large-infrastructure/`. The twenty-second,
+three on `/after/large-infrastructure/`. The twenty-third,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -788,6 +788,53 @@ buckled and boom folded down. 2278 × 1624 resized to 1600 × 1141. It opens on
   rests on, and it is not a claim about Metro Vancouver. Recorded here so that
   it is a decision rather than an oversight, and so anyone who wants it sourced
   knows it is the sentence to source.
+
+#### `noto-airport-runway-repairs`
+
+**The first photograph the site has changed,** and the row that settles how a
+change is declared.
+
+- **Shows:** an airport runway from the air on cleared hilltop ground, NOTO
+  spelled out in white on the grass beside it, and three dark rectangles of
+  newer surface crossing the runway's full width at intervals along its length.
+- **Photographer:** Geospatial Information Authority of Japan (国土地理院)
+- **Licence:** CC BY 4.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Noto_Airport_Aerial_photograph.2024.jpg
+- **Status:** **Verified, 12 September 2026.** Read off the Commons file page.
+  Its description says the aerial shows three large repaired places on the
+  runway three months after the earthquake, and that it is a trimmed copy of
+  the authority's frame CCB20241-C18-17.
+- **The date is from the description, not the metadata.** The file's
+  `DateTimeOriginal` reads 22 December 2024; its description gives the date of
+  photography as 26 April 2024 (撮影年月日 2024年4月26日). The register takes
+  the description, which is the authority's own field, and records the conflict
+  so nobody "corrects" it back.
+- **Hosted:** `public/media/noto-airport-runway-repairs.jpg`. A 2000 × 900 crop
+  of the 5685 × 3198 Commons file, taken at full resolution and not resized;
+  ratio `20 / 9`.
+- **Changed, and the credit says so.** At full frame the runway is a grey line
+  through forest and the repairs are three specks nobody would find without
+  being told. Cropped to the runway, they read. CC BY 4.0 permits the crop and
+  requires it to be indicated, so the register now has a `changes` field and
+  the credit prints it: "Cropped to the runway." This is the deliberate version
+  of the derivative *The crop nobody means to make* warns about, and it is only
+  available because the licence is attribution-only. **No share-alike or
+  no-derivatives row may carry `changes`.**
+- **Used on:** `/after/large-infrastructure/`, under the paragraph saying areas
+  of tarmac at YVR are expected to settle or heave and some sections of runway
+  may be out of service for a few days.
+- **Why this one:** the page describes runway damage in sections, and this is a
+  runway that came back in sections.
+- **A hilltop airport, not a delta,** and the caption says nothing about Noto's
+  closure transfers to Sea Island.
+- **What else was looked at for the airport, so nobody repeats it.** Japan's
+  transport ministry published close photographs of the same runway before and
+  after temporary repair, the first described as cracks with steps of more than
+  10 cm, both CC BY 4.0 — and both about 500 pixels wide, too small to host.
+  Commons' Sendai Airport photographs from 2011 are tsunami damage, which is the
+  wrong mechanism for a page about liquefaction on Sea Island. The files named
+  "Kumamoto Airport" from 2016 are the Kyushu Expressway near the airport, not
+  the airport.
 
 #### `christchurch-street-portaloo`
 

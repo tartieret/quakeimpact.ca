@@ -89,6 +89,19 @@ export const largeInfrastructure: PageModule = {
             and some sections of runway may be out of service for a few days.{" "}
             <Cite id="AIR-2013" />
           </p>
+          <Photograph
+            id="noto-airport-runway-repairs"
+            caption={
+              <>
+                Noto Airport, from the air, nearly four months after the 2024
+                Noto Peninsula earthquake. The three dark bands across the
+                runway are repaired sections. Noto is a hilltop airport rather
+                than one on a river delta, and nothing about how long it was
+                closed transfers to Sea Island. What carries across is the shape
+                of the repair: a runway comes back a section at a time.
+              </>
+            }
+          />
           <p>
             The buildings come third. Terminals, towers and hangars are expected
             to sustain “slight to moderate damage”, and some masonry structures
