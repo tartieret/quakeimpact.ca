@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { Fragment, type ReactNode } from "react";
 
 /**
  * Block primitives that appear inside the body of a section: subheads, data
@@ -79,6 +79,7 @@ export function DataTable({
   caption,
   columns,
   rows,
+  details,
   note,
   id,
   minWidth = "32rem",
@@ -89,6 +90,8 @@ export function DataTable({
   columns: ReactNode[];
   /** One array per row, in column order. The first entry becomes the row header. */
   rows: ReactNode[][];
+  /** Optional full-width detail cell beneath each corresponding row. */
+  details?: ReactNode[];
   /** Sits under the table. Citation markers for the table as a whole go here. */
   note?: ReactNode;
   id?: string;
@@ -134,26 +137,40 @@ export function DataTable({
           </thead>
           <tbody>
             {rows.map((row, r) => (
-              <tr key={r} className="border-b border-rule last:border-0">
-                {row.map((cell, c) =>
-                  c === 0 ? (
-                    <th
-                      key={c}
-                      scope="row"
-                      className="px-4 py-3 align-top text-sm leading-relaxed font-medium text-ink"
-                    >
-                      {cell}
-                    </th>
-                  ) : (
+              <Fragment key={r}>
+                <tr className={details?.[r] != null ? "" : "border-b border-rule last:border-0"}>
+                  {row.map((cell, c) =>
+                    c === 0 ? (
+                      <th
+                        key={c}
+                        id={details?.[r] != null ? `${captionId}-row-${r}` : undefined}
+                        scope="row"
+                        className="px-4 py-3 align-top text-sm leading-relaxed font-medium text-ink"
+                      >
+                        {cell}
+                      </th>
+                    ) : (
+                      <td
+                        key={c}
+                        className="px-4 py-3 align-top text-sm leading-relaxed text-ink-muted"
+                      >
+                        {cell}
+                      </td>
+                    ),
+                  )}
+                </tr>
+                {details?.[r] != null ? (
+                  <tr className="border-b border-rule last:border-0">
                     <td
-                      key={c}
-                      className="px-4 py-3 align-top text-sm leading-relaxed text-ink-muted"
+                      colSpan={columns.length}
+                      headers={`${captionId}-row-${r}`}
+                      className="px-4 pt-0 pb-4 text-sm leading-relaxed text-ink-muted"
                     >
-                      {cell}
+                      {details[r]}
                     </td>
-                  ),
-                )}
-              </tr>
+                  </tr>
+                ) : null}
+              </Fragment>
             ))}
           </tbody>
         </table>

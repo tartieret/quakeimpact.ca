@@ -86,15 +86,15 @@ hollow mark is one where nothing of the kind was found. Six of seventeen are sol
 every one of them is BC Hydro's. The pane carries no type: the table below
 names every dam. -->
 
-The table names each one. The first five columns are the register's own fields;
-the last is what the dam's owner has said elsewhere, and for most of these dams
+The table names each one. The five columns are the register's own fields;
+the row beneath each dam is what its owner has said elsewhere, and for most of these dams
 nothing was found. Risk level is the regulator's supervisory grading of its own
 file on a dam, which is not a measure of the dam and not a measure of an
 earthquake. [BC-DAMS-REG]
 
-<!-- Table: one row per dam, built from `src/data/region-dams.json`. Columns are
-dam, owner, structure, failure consequence, regulator's risk level, and what its
-owner has said an earthquake would do. The last column carries the sourced
+<!-- Table: a summary row and a full-width detail row per dam, built from `src/data/region-dams.json`. Columns are
+dam, owner, structure, failure consequence, regulator's risk level. The detail row says what its
+owner has said an earthquake would do. It carries the sourced
 statements for Alouette, Cheakamus, Coquitlam, Ruskin, Stave Falls and Wahleach
 [BCH-RRA-F2020] [BCH-COQUITLAM-RRA-06] [BCH-RUSKIN-SEIAM-11] [BCH-RUSKIN-F2019],
 the two 2024 Metro Vancouver reviews that do not mention an earthquake

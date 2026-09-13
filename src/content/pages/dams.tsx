@@ -208,7 +208,7 @@ const PUBLISHED = Object.entries(SEISMIC)
   .map(([name]) => name);
 
 /**
- * The last column. A dam with nothing published carries the hatched label
+ * The detail row. A dam with nothing published carries the hatched label
  * rather than an empty cell, which `prose-blocks.tsx` exists to make
  * impossible to read as an oversight.
  */
@@ -364,104 +364,107 @@ export const dams: PageModule = {
       title:
         "The register lists seventeen dams here whose failure would reach people, and records nothing about earthquakes at any of them",
       body: (
-        <Prose>
-          <p>
-            The province keeps a public register of every regulated dam, and it
-            classifies each one by what a failure would reach downstream.{" "}
-            <Cite id="BC-DAMS-REG" /> {DAM_FACTS.total} dams in this region
-            carry one of its two highest classes: {DAM_FACTS.extreme} Extreme
-            and {DAM_FACTS.veryHigh} Very High. That classification is about the
-            people and property below a dam, not about the structure and not
-            about shaking. The register holds no seismic rating, no assessment
-            date and no upgrade programme for any dam in it.{" "}
-            <Cite id="BC-DAMS-REG" />
-          </p>
-          <Figure
-            interactive
-            alt={`The ${DAM_FACTS.total} dams the province classes Extreme or Very High failure consequence in the Lower Mainland, spread from Wahleach at the east end of the Fraser Valley to Howe Sound in the west, and north to Whistler. Only ${PUBLISHED.length} of them, all owned by BC Hydro, are drawn solid: those are the only ones whose owner has published what an earthquake is expected to do.`}
-            caption={
-              <>
-                Every dam the provincial register classes Extreme or Very High
-                failure consequence inside this window.{" "}
-                <Cite id="BC-DAMS-REG" /> The size of a mark is that
-                classification, which measures what is downstream rather than
-                the dam or the shaking. A solid mark is a dam whose owner has
-                published what an earthquake is expected to do to it; a hollow
-                mark is one where nothing of the kind was found.{" "}
-                {PUBLISHED.length} of {DAM_FACTS.total} are solid, and every one
-                of them is BC Hydro’s. Four of the dams sit in two pairs a few
-                hundred metres apart and separate as the map is zoomed. The shoreline and river water
-                under the marks are the province’s Freshwater Atlas. The
-                register is the province’s, and the drawing is not.
-              </>
-            }
-            licence={DAMS_ATTRIBUTIONS.map((source, index) => (
-              <span key={source.id}>
-                {index > 0 ? " " : null}
-                {source.attribution}{" "}
-                <a
-                  href={source.licenceUrl}
-                  className="text-accent underline underline-offset-2"
-                >
-                  Read the licence
-                </a>
-                .
-              </span>
-            ))}
-          >
-            <DamsMap published={PUBLISHED} />
-          </Figure>
-          <p>
-            The table names each one. The first five columns are the register’s
-            own fields; the last is what the dam’s owner has said elsewhere, and
-            for most of these dams nothing was found. Risk level is the
-            regulator’s supervisory grading of its own file on a dam, which is
-            not a measure of the dam and not a measure of an earthquake.{" "}
-            <Cite id="BC-DAMS-REG" />
-          </p>
-          <DataTable
-            caption={`The ${DAM_FACTS.total} dams the provincial register classes Extreme or Very High failure consequence in the Lower Mainland, with what each owner has published about an earthquake. Failure consequence classifies what is downstream, not the likelihood of a failure.`}
-            minWidth="72rem"
-            columns={[
-              "Dam",
-              "Owner",
-              "Structure",
-              "Failure consequence",
-              "Regulator’s risk level",
-              "What its owner has said an earthquake would do",
-            ]}
-            rows={DAMS.map((dam) => [
-              dam.name,
-              dam.owner,
-              dam.height ? `${dam.type}, ${dam.height} m` : dam.type,
-              CONSEQUENCE_CONFLICT[dam.name] ? (
+        <div className="space-y-6">
+          <Prose>
+            <p>
+              The province keeps a public register of every regulated dam, and it
+              classifies each one by what a failure would reach downstream.{" "}
+              <Cite id="BC-DAMS-REG" /> {DAM_FACTS.total} dams in this region
+              carry one of its two highest classes: {DAM_FACTS.extreme} Extreme
+              and {DAM_FACTS.veryHigh} Very High. That classification is about the
+              people and property below a dam, not about the structure and not
+              about shaking. The register holds no seismic rating, no assessment
+              date and no upgrade programme for any dam in it.{" "}
+              <Cite id="BC-DAMS-REG" />
+            </p>
+            <Figure
+              interactive
+              alt={`The ${DAM_FACTS.total} dams the province classes Extreme or Very High failure consequence in the Lower Mainland, spread from Wahleach at the east end of the Fraser Valley to Howe Sound in the west, and north to Whistler. Only ${PUBLISHED.length} of them, all owned by BC Hydro, are drawn solid: those are the only ones whose owner has published what an earthquake is expected to do.`}
+              caption={
                 <>
-                  {dam.consequence}
-                  <span className="mt-1 block text-ink-faint">
-                    {CONSEQUENCE_CONFLICT[dam.name]}
-                  </span>
+                  Every dam the provincial register classes Extreme or Very High
+                  failure consequence inside this window.{" "}
+                  <Cite id="BC-DAMS-REG" /> The size of a mark is that
+                  classification, which measures what is downstream rather than
+                  the dam or the shaking. A solid mark is a dam whose owner has
+                  published what an earthquake is expected to do to it; a hollow
+                  mark is one where nothing of the kind was found.{" "}
+                  {PUBLISHED.length} of {DAM_FACTS.total} are solid, and every one
+                  of them is BC Hydro’s. Four of the dams sit in two pairs a few
+                  hundred metres apart and separate as the map is zoomed. The shoreline and river water
+                  under the marks are the province’s Freshwater Atlas. The
+                  register is the province’s, and the drawing is not.
                 </>
-              ) : (
-                dam.consequence
-              ),
-              dam.risk ?? <NotPublished label="None given" />,
-              whatIsSaid(dam.name),
-            ])}
-            note={
-              <>
-                Register fields as at {DAM_FACTS.accessed}.{" "}
-                <Cite id="BC-DAMS-REG" /> “Nothing found” means no document was
-                found in which the owner states what an earthquake is expected
-                to do to that dam. It is not a finding that the dam is safe, and
-                it is not a finding that nobody has looked: BC Hydro files
-                seismic detail on some of its dams to its regulator and not
-                others, and Metro Vancouver publishes a yearly safety summary
-                rather than the reviews behind it. <Cite id="BCH-RRA-F2020" />{" "}
-                <Cite id="MV-DSP-2026" />
-              </>
-            }
-          />
-        </Prose>
+              }
+              licence={DAMS_ATTRIBUTIONS.map((source, index) => (
+                <span key={source.id}>
+                  {index > 0 ? " " : null}
+                  {source.attribution}{" "}
+                  <a
+                    href={source.licenceUrl}
+                    className="text-accent underline underline-offset-2"
+                  >
+                    Read the licence
+                  </a>
+                  .
+                </span>
+              ))}
+            >
+              <DamsMap published={PUBLISHED} />
+            </Figure>
+            <p>
+              The table names each one. The five columns are the register’s
+              own fields; the row beneath each dam is what its owner has said elsewhere, and
+              for most of these dams nothing was found. Risk level is the
+              regulator’s supervisory grading of its own file on a dam, which is
+              not a measure of the dam and not a measure of an earthquake.{" "}
+              <Cite id="BC-DAMS-REG" />
+            </p>
+          </Prose>
+          <Prose wide>
+            <DataTable
+              caption={`The ${DAM_FACTS.total} dams the provincial register classes Extreme or Very High failure consequence in the Lower Mainland, with what each owner has published about an earthquake. Failure consequence classifies what is downstream, not the likelihood of a failure.`}
+              minWidth="40rem"
+              columns={[
+                "Dam",
+                "Owner",
+                "Structure",
+                "Failure consequence",
+                "Regulator’s risk level",
+              ]}
+              rows={DAMS.map((dam) => [
+                dam.name,
+                dam.owner,
+                dam.height ? `${dam.type}, ${dam.height} m` : dam.type,
+                CONSEQUENCE_CONFLICT[dam.name] ? (
+                  <>
+                    {dam.consequence}
+                    <span className="mt-1 block text-ink-faint">
+                      {CONSEQUENCE_CONFLICT[dam.name]}
+                    </span>
+                  </>
+                ) : (
+                  dam.consequence
+                ),
+                dam.risk ?? <NotPublished label="None given" />,
+              ])}
+              details={DAMS.map((dam) => whatIsSaid(dam.name))}
+              note={
+                <>
+                  Register fields as at {DAM_FACTS.accessed}.{" "}
+                  <Cite id="BC-DAMS-REG" /> “Nothing found” means no document was
+                  found in which the owner states what an earthquake is expected
+                  to do to that dam. It is not a finding that the dam is safe, and
+                  it is not a finding that nobody has looked: BC Hydro files
+                  seismic detail on some of its dams to its regulator and not
+                  others, and Metro Vancouver publishes a yearly safety summary
+                  rather than the reviews behind it. <Cite id="BCH-RRA-F2020" />{" "}
+                  <Cite id="MV-DSP-2026" />
+                </>
+              }
+            />
+          </Prose>
+        </div>
       ),
     },
     {
