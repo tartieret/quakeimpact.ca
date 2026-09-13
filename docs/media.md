@@ -558,9 +558,21 @@ says so in its first clause.
 - **Source:** https://commons.wikimedia.org/wiki/File:Trafo_(Umspannanlage_Uchtelfangen)_2019-02_(12).jpg
 - **Status:** **Verified, 12 September 2026.** Photographer, licence, date and
   circumstances read off the Commons file page, whose description states the
-  transport ran from Dillingen harbour to the Uchtelfangen substation, that the
-  transformer weighs just under 400 tonnes, and that the frame was taken at the
-  substation in front of the entrance.
+  road transport ran from Dillingen harbour to the Uchtelfangen substation, that
+  the transformer weighs just under 400 tonnes, and that the frame was taken at
+  the substation in front of the entrance.
+- **The placement was checked against the rest of the series, not assumed.** The
+  first two sentences of the description are identical across all fourteen
+  frames — the route and the weight — and only the closing sentence names where
+  each frame was taken: Heusweiler for 01, 05 and 08, the Uchtelfangen/Wiesbach
+  roundabout for 11, and the substation entrance for this one. A shared opening
+  and a varying close is exactly the shape that produced the false
+  "aerial surveillance" reading in `christchurch-army-water-repair`, so the
+  sentence carrying the claim was compared across the set before it was used.
+- **The caption says "by road from the harbour at Dillingen" and not "by river".**
+  The description states only that the road leg began at the harbour. A ship is
+  the obvious inference and it is still an inference, and the register does not
+  put inferences in credits.
 - **Hosted:** `public/media/uchtelfangen-transformer.jpg`. 7329 × 3850 original
   resized to 1800 × 946; ratio `1800 / 946`, measured off the hosted file.
 - **Used on:** `/after/electricity/`, after the transformer lead-time figure.

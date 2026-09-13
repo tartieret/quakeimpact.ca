@@ -340,8 +340,8 @@ export const electricity: PageModule = {
               <>
                 Uchtelfangen, Germany, 2019, and no earthquake anywhere in it.
                 One transformer, just under 400 tonnes, arriving at its
-                substation by river and then by road, with the road closed for
-                it. It is here because almost nobody has seen one, and the
+                substation by road from the harbour at Dillingen, with the road
+                closed for it. It is here because almost nobody has seen one, and the
                 numbers above describe an object rather than an idea: this is
                 what is at the end of a lead time, and what ten spares against a
                 fleet of 672 is counting. <Cite id="BCH-XFMR-21" />
