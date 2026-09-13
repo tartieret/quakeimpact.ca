@@ -63,6 +63,8 @@ export const transportation: PageModule = {
       "KSB-2010",
       "AFB-CGS-17",
       "BCGOV-2026-PATT",
+      "PM-PCI-11",
+      "PMH1-CAEE-15",
       "PM-SEI-17",
       "PM-IABSE-17",
       "PEIRS",
@@ -374,7 +376,7 @@ export const transportation: PageModule = {
           </p>
           <Figure
             interactive
-            alt={`Nineteen crossings mapped and sized by the earthquake each has a published figure for. Only Golden Ears reaches the 2,475-year standard a new lifeline crossing is designed to. Knight Street is at 1,000 years, ${CROSSINGS_FACTS.at475} crossings are at the 475 years a provincial retrofit is carried out against, and the George Massey Tunnel now assesses at 150 to 240 years after the ground stage of its retrofit was cancelled. The remaining ${CROSSINGS_FACTS.unpublished} have no return period in the public record. These figures are what each structure was aimed at rather than a forecast: a retrofit is carried out to stop a bridge collapsing, not to keep it in service, so a crossing marked here can stand and still carry nobody.`}
+            alt={`Nineteen crossings mapped and sized by the earthquake each has a published figure for. Golden Ears and the Port Mann, the two newest, are the only crossings at the 2,475-year level a new lifeline crossing is designed to. Knight Street is at 1,000 years, ${CROSSINGS_FACTS.at475} crossings are at the 475 years a provincial retrofit is carried out against, and the George Massey Tunnel now assesses at 150 to 240 years after the ground stage of its retrofit was cancelled. The remaining ${CROSSINGS_FACTS.unpublished} have no return period in the public record. These figures are what each structure was aimed at rather than a forecast: a retrofit is carried out to stop a bridge collapsing, not to keep it in service, so a crossing marked here can stand and still carry nobody.`}
             caption={
               <>
                 The earthquake each crossing has a published figure for, in the
@@ -474,9 +476,17 @@ export const transportation: PageModule = {
               [
                 <CrossingName id="port-mann" />,
                 <>
-                  Nothing quantitative is public. Three papers on this bridge’s
-                  seismic design have been published, and all three sit behind
-                  paywalls <Cite id="PM-SEI-17" /> <Cite id="PM-IABSE-17" />
+                  A four-level earthquake demand was specified, “with the lowest
+                  level a serviceability earthquake and the largest level an
+                  ultimate earthquake with a 1:2500 year return period”{" "}
+                  <Cite id="PM-PCI-11" /> The project it belongs to set
+                  objectives at 475, 975 and 2,475 years and a Cascadia
+                  subduction event, and published what a lifeline structure and
+                  an economic sustainability route each had to achieve without
+                  saying which of the two this bridge was{" "}
+                  <Cite id="PMH1-CAEE-15" /> Further papers on its seismic design
+                  sit behind paywalls <Cite id="PM-SEI-17" />{" "}
+                  <Cite id="PM-IABSE-17" />
                 </>,
               ],
               ["SkyTrain guideways generally", <>Nothing published</>],

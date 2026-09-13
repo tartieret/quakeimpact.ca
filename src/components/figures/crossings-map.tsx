@@ -305,8 +305,12 @@ const RAMP: {
 }[] = [
   {
     band: "2475",
-    label: "2,475 years",
-    gloss: "The standard a new lifeline crossing is designed to. One crossing here reaches it.",
+    // The Port Mann's own source says 1 in 2,500 rather than 2,475. They are
+    // the same design level and the rung names both, because quietly rounding
+    // one source's figure onto another's is how a number stops being checkable.
+    label: "2,475 years, or 1 in 2,500",
+    gloss:
+      "The level a new lifeline crossing is designed to. Two crossings reach it, and they are the two newest.",
   },
   {
     band: "1000",

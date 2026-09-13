@@ -159,7 +159,16 @@ const READING: Record<
     replacement: "Replacement opens September 2031",
   },
   pattullo: { crosses: "Fraser River", replacement: "Replacement open" },
-  "port-mann": { crosses: "Fraser River" },
+  "port-mann": {
+    crosses: "Fraser River",
+    event: {
+      band: "2475",
+      label: "1 in 2,500 years",
+      kind: "intent",
+      bought:
+        "The largest of four demand levels, described as an ultimate earthquake. Which performance the project required of this bridge, as against the other structures on it, is not published.",
+    },
+  },
   "golden-ears": {
     crosses: "Fraser River",
     event: {
