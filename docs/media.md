@@ -101,10 +101,10 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Twelve rows are Verified, checked at their sources on 12 September 2026, and
-eleven are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
-one on `/shaking/fire-following/`, two on `/after/water/` and three on
-`/after/transportation/`. The twelfth,
+**Thirteen rows are Verified, checked at their sources on 12 September 2026, and
+twelve are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
+one on `/shaking/fire-following/`, two on `/after/water/`, three on
+`/after/transportation/` and one on `/after/electricity/`. The thirteenth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -118,6 +118,7 @@ the site. See *The verification queue* at the foot for what is left.
 | CC BY 2.0 | Attribution 2.0 Generic | no | no | no |
 | CC BY-SA 2.0 | Attribution-ShareAlike 2.0 Generic | **yes** | no | no |
 | CC BY-SA 3.0 | Attribution-ShareAlike 3.0 Unported | **yes** | no | no |
+| CC BY-SA 4.0 | Attribution-ShareAlike 4.0 International | **yes** | no | no |
 | CC BY-NC-SA 2.0 | Attribution-NonCommercial-ShareAlike 2.0 Generic | **yes** | **yes** | no |
 | CC BY-NC-ND 4.0 | Attribution-NonCommercial-NoDerivatives 4.0 International | no | **yes** | **yes** |
 
@@ -539,6 +540,48 @@ the whole Alaska earthquake album is worth returning to for other pages.
   already records for its first two rows, arriving by a new route, and it is the
   second reason in this file to distrust a number that was not read off the
   thing being published.
+
+### 3b. The object at the end of a lead time
+
+#### `uchtelfangen-transformer`
+
+**The only photograph on the site with no earthquake in it,** and the caption
+says so in its first clause.
+
+- **Shows:** a grey power transformer the size of a small building, slung
+  between the red girder frames of a heavy-haulage transporter spanning a closed
+  road. People in high-visibility jackets at the far end, small against it.
+  Nothing in the frame is damaged.
+- **Photographer:** Simon Mannweiler
+- **Licence:** CC BY-SA 4.0 — the first 4.0 row, and the reason that line was
+  added to the table above.
+- **Source:** https://commons.wikimedia.org/wiki/File:Trafo_(Umspannanlage_Uchtelfangen)_2019-02_(12).jpg
+- **Status:** **Verified, 12 September 2026.** Photographer, licence, date and
+  circumstances read off the Commons file page, whose description states the
+  transport ran from Dillingen harbour to the Uchtelfangen substation, that the
+  transformer weighs just under 400 tonnes, and that the frame was taken at the
+  substation in front of the entrance.
+- **Hosted:** `public/media/uchtelfangen-transformer.jpg`. 7329 × 3850 original
+  resized to 1800 × 946; ratio `1800 / 946`, measured off the hosted file.
+- **Used on:** `/after/electricity/`, after the transformer lead-time figure.
+- **Why this one, and why a photograph with no earthquake in it.** The page
+  argues that restoring a power system can mean ordering equipment rather than
+  repairing it: ten spares against a fleet of 672, and US lead times that went
+  from about 50 weeks to about 120. Every one of those numbers describes an
+  object that almost no reader has ever seen, and a number about an unseen
+  object is the weakest thing a page can carry. This is the object.
+- **The precedent is `vancouver-dfps-hydrant`, not the Christchurch rows.** It
+  is a photograph of the thing itself rather than of an event, so the analogue
+  rule has nothing to bite on — there is no transfer from Saarland to British
+  Columbia being proposed, and none is available. The failure it has to avoid is
+  the opposite one: reading as damage. It does not, since nothing in the frame
+  is broken, and the caption opens by saying no earthquake is involved.
+- **Chosen from a series of fourteen, by opening them.** Frame 14 shows the
+  transformer as an unreadable grey box behind marshals; frame 8 is a close pass
+  with a crowd of identifiable onlookers including a child, which changes the
+  register from infrastructure to village spectacle. Frame 12 centres the object,
+  carries the scale, and keeps people incidental. Nothing but looking separates
+  the three.
 
 #### `christchurch-army-water-repair`
 

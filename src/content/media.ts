@@ -22,6 +22,7 @@ export type MediaLicenceId =
   | "CC-BY-2.0"
   | "CC-BY-SA-2.0"
   | "CC-BY-SA-3.0"
+  | "CC-BY-SA-4.0"
   | "CC-BY-NC-SA-2.0"
   | "CC-BY-NC-ND-4.0";
 
@@ -75,6 +76,15 @@ export const MEDIA_LICENCES: Record<MediaLicenceId, MediaLicence> = {
     name: "Creative Commons Attribution-ShareAlike 3.0 Unported",
     short: "CC BY-SA 3.0",
     href: "https://creativecommons.org/licenses/by-sa/3.0/",
+    shareAlike: true,
+    nonCommercial: false,
+    noDerivatives: false,
+  },
+  "CC-BY-SA-4.0": {
+    id: "CC-BY-SA-4.0",
+    name: "Creative Commons Attribution-ShareAlike 4.0 International",
+    short: "CC BY-SA 4.0",
+    href: "https://creativecommons.org/licenses/by-sa/4.0/",
     shareAlike: true,
     nonCommercial: false,
     noDerivatives: false,
@@ -401,6 +411,39 @@ export const PHOTOGRAPHS = {
    * end; what the page's numbers describe is that mechanism held down by ground
    * treatment.
    */
+  /**
+   * The only photograph on the site with no earthquake in it, and the caption
+   * says so in its first clause.
+   *
+   * `/after/electricity/` argues that restoring a power system can mean
+   * ordering equipment rather than repairing it: ten spares against a fleet of
+   * 672, and US lead times that went from about 50 weeks to about 120. Those
+   * are numbers about an object almost no reader has ever seen, and a number
+   * about an unseen object is the weakest thing a page can carry. This is the
+   * object.
+   *
+   * The precedent is `vancouver-dfps-hydrant` rather than the Christchurch
+   * rows: it is a photograph of the thing itself, not of an event, so there is
+   * no analogue to limit and nothing about an earthquake to imply. What it has
+   * to avoid instead is the opposite failure — looking like damage. It does
+   * not: nothing in the frame is broken, and the caption opens by saying no
+   * earthquake is involved.
+   */
+  "uchtelfangen-transformer": {
+    id: "uchtelfangen-transformer",
+    file: "uchtelfangen-transformer.jpg",
+    ratio: "1800 / 946",
+    alt: "A grey power transformer the size of a small building sits slung between the red girder frames of a heavy-haulage transporter, which spans the full width of a closed road. People in high-visibility jackets stand at the far end, small against it. Nothing in the frame is damaged: this is one replacement unit arriving at a substation under escort.",
+    photographer: "Simon Mannweiler",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Trafo_(Umspannanlage_Uchtelfangen)_2019-02_(12).jpg",
+    taken: "24 February 2019",
+    place: "Uchtelfangen, Illingen, Saarland, Germany",
+    licence: "CC-BY-SA-4.0",
+    status: "verified",
+    usedOn: "/after/electricity/",
+  },
+
   "anchorage-mirror-lake-ramp": {
     id: "anchorage-mirror-lake-ramp",
     file: "anchorage-mirror-lake-ramp.jpg",
