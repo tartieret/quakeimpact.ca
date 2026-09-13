@@ -27,7 +27,8 @@ export type MediaLicenceId =
   | "CC-BY-SA-3.0"
   | "CC-BY-SA-4.0"
   | "CC-BY-NC-SA-2.0"
-  | "CC-BY-NC-ND-4.0";
+  | "CC-BY-NC-ND-4.0"
+  | "PD-USGov-USGS";
 
 export interface MediaLicence {
   id: MediaLicenceId;
@@ -142,6 +143,22 @@ export const MEDIA_LICENCES: Record<MediaLicenceId, MediaLicence> = {
     shareAlike: false,
     nonCommercial: true,
     noDerivatives: true,
+  },
+  /**
+   * Not a licence: a work of the United States Geological Survey, which is a
+   * work of the US federal government and in the public domain. Attribution
+   * is not required by law, and the credit gives it anyway because it is what
+   * the rest of the register does and it tells a reader where to check. The
+   * link is the Commons template the file page carries, which states the basis.
+   */
+  "PD-USGov-USGS": {
+    id: "PD-USGov-USGS",
+    name: "Public domain: work of the U.S. Geological Survey",
+    short: "Public domain (USGS)",
+    href: "https://commons.wikimedia.org/wiki/Template:PD-USGov-USGS",
+    shareAlike: false,
+    nonCommercial: false,
+    noDerivatives: false,
   },
 };
 
@@ -800,6 +817,62 @@ export const PHOTOGRAPHS = {
     licence: "CC-BY-4.0",
     status: "verified",
     usedOn: "/after/large-infrastructure/",
+  },
+
+  /**
+   * `/after/fuel/`, in the section on a station with full tanks and no power.
+   * The page's point is that tanks full of fuel are not fuel being sold, and
+   * this is a station that stopped selling for a reason that is neither: the
+   * forecourt broke. The caption does not claim to know what was in its tanks.
+   *
+   * Martin Luff's fourth row, and the September 2010 earthquake, which killed
+   * nobody.
+   */
+  "christchurch-petrol-station-forecourt": {
+    id: "christchurch-petrol-station-forecourt",
+    file: "christchurch-petrol-station-forecourt.jpg",
+    ratio: "4 / 3",
+    alt: "A petrol station forecourt on a suburban corner has broken and heaved: a slab of concrete stands tilted up at a sharp edge with its underside exposed, and grey silt is spread across the ground in front of it. Cordon tape runs across the forecourt, a hand-lettered sign leans against the broken edge, and the shop and canopy behind are standing.",
+    photographer: "Martin Luff",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Damage_to_petrol_station_on_Pages_Road,_from_the_2010_Canterbury_earthquake.jpg",
+    taken: "September 2010",
+    place: "Pages Road, Bexley, Christchurch, New Zealand",
+    licence: "CC-BY-SA-2.0",
+    status: "verified",
+    usedOn: "/after/fuel/",
+  },
+
+  /**
+   * `/after/dams-and-reservoirs/`, and the page most at risk of dread, so the
+   * choice here was about which photograph not to use.
+   *
+   * The page says neither published review of Cleveland or Seymour Falls
+   * mentions earthquakes and the seismic upgrade has not started. It does not
+   * say either dam would fail. This is a dam an earthquake damaged that held the
+   * water: the facing and part of the embankment on the reservoir side slid in,
+   * the slope behind cracked, and the reservoir stayed where it was. That is the
+   * question a seismic stability evaluation exists to answer, shown rather than
+   * forecast.
+   *
+   * A second USGS aerial of the same dam is higher resolution and was set
+   * aside: it is framed to put the populated valley below the dam in view, and
+   * its own description is about the vulnerability of the city. That is the
+   * version of this photograph that reads as dread.
+   */
+  "van-norman-dam-slide": {
+    id: "van-norman-dam-slide",
+    file: "van-norman-dam-slide.jpg",
+    ratio: "1400 / 1391",
+    alt: "An aerial view of an earth dam beside its reservoir. On the water side the concrete lining has broken into slabs and slid down into the reservoir with part of the embankment, and cracks run along the slope behind the crest. The crest road still curves along the top and the water is still held behind it, with an intake tower standing out in the reservoir.",
+    photographer: "Robert E. Wallace, USGS",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Lower_Van_Norman_Dam_Damage_1971.jpg",
+    taken: "10 February 1971",
+    place: "Lower Van Norman Dam, San Fernando Valley, Los Angeles County, California",
+    licence: "PD-USGov-USGS",
+    status: "verified",
+    usedOn: "/after/dams-and-reservoirs/",
   },
 
   /**

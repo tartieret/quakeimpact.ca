@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
+  Photograph,
   Prose,
   Quote,
   DataTable,
@@ -194,6 +195,21 @@ export const damsAndReservoirs: PageModule = {
             <Cite id="BC-DDCG" /> Metro Vancouver is still paying for the
             evaluations and has not begun the upgrade.
           </p>
+          <Photograph
+            id="van-norman-dam-slide"
+            caption={
+              <>
+                Lower Van Norman Dam, Los Angeles, the day after the 1971 San
+                Fernando earthquake. On the reservoir side the concrete lining
+                and part of the embankment have slid into the water, and the
+                slope behind is cracked along its length. The dam held the
+                reservoir. It was an earth embankment built by a different method
+                from either dam here, and nothing about how it behaved describes
+                Cleveland or Seymour Falls. What it shows is the question a
+                seismic stability evaluation is there to answer.
+              </>
+            }
+          />
           <VerificationNote label="Not yet published">
             Both reviews found no unsafe condition, and that is the whole of what
             has been made public about them. Whether either engineer examined

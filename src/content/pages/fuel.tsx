@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
   Callout,
+  Photograph,
   Prose,
   Quote,
   VerificationNote,
@@ -92,6 +93,18 @@ export const fuel: PageModule = {
             tanks hands out nothing while the power is off, and neither does an
             undamaged station the delivery truck cannot reach.
           </p>
+          <Photograph
+            id="christchurch-petrol-station-forecourt"
+            caption={
+              <>
+                Pages Road, Bexley, Christchurch, after the September 2010
+                earthquake, which killed nobody. The forecourt has broken and
+                heaved, silt is spread across it, and the station is taped off.
+                Nothing in the frame says what was in its tanks. Whatever it was,
+                none of it was being sold.
+              </>
+            }
+          />
           <p>
             In the first week, fuel arrives or does not arrive on two things:
             the power line that runs the station’s pumps, and the road the

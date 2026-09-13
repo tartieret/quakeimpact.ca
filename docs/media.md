@@ -101,12 +101,13 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Twenty-three rows are Verified, checked at their sources on 12 September 2026,
-and twenty-two are hosted.** Two on `/shaking/ground/`, three on
+**Twenty-five rows are Verified, checked at their sources on 12 and 13 September
+2026, and twenty-four are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
 `/after/water/`, four on `/after/transportation/`, two on
-`/after/electricity/`, two on `/after/sanitation/`, two on `/after/housing/` and
-three on `/after/large-infrastructure/`. The twenty-third,
+`/after/electricity/`, two on `/after/sanitation/`, two on `/after/housing/`,
+three on `/after/large-infrastructure/`, one on `/after/fuel/` and one on
+`/after/dams-and-reservoirs/`. The twenty-fifth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -126,6 +127,7 @@ the site. See *The verification queue* at the foot for what is left.
 | CC BY-SA 4.0 | Attribution-ShareAlike 4.0 International | **yes** | no | no |
 | CC BY-NC-SA 2.0 | Attribution-NonCommercial-ShareAlike 2.0 Generic | **yes** | **yes** | no |
 | CC BY-NC-ND 4.0 | Attribution-NonCommercial-NoDerivatives 4.0 International | no | **yes** | **yes** |
+| Public domain (USGS) | Work of the U.S. Geological Survey, `{{PD-USGov-USGS}}` | no | no | no |
 
 What each constraint costs, in the site's terms:
 
@@ -968,6 +970,90 @@ at all.
   about what is behind the shutter. The assessment system covers dwellings and
   does not only cover them, so the caption stays with the notice and never calls
   it a house.
+
+### 3d. Fuel, dams, and a page with nothing
+
+#### `christchurch-petrol-station-forecourt`
+
+- **Shows:** a petrol station forecourt broken and heaved, a concrete slab tilted
+  up at a sharp edge with its underside exposed, grey silt spread across the
+  ground in front, cordon tape across the forecourt, a hand-lettered sign against
+  the broken edge, and the shop and canopy standing.
+- **Photographer:** Martin Luff — his fourth row.
+- **Licence:** CC BY-SA 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Damage_to_petrol_station_on_Pages_Road,_from_the_2010_Canterbury_earthquake.jpg
+- **Status:** **Verified, 13 September 2026.**
+- **Hosted:** `public/media/christchurch-petrol-station-forecourt.jpg`. 2592 ×
+  1944 resized to 1600 × 1200; ratio `4 / 3`.
+- **Used on:** `/after/fuel/`, under the paragraph saying a station with full
+  underground tanks hands out nothing while the power is off.
+- **Why this one:** the section's point is that fuel in a tank is not fuel being
+  sold. This station stopped selling for a reason that is neither power nor the
+  road: its forecourt broke. The caption does not claim to know what was in the
+  tanks, and says so.
+- **The date is "September 2010" and not a day.** The file's recorded time is
+  03:55 on 5 September, and the frame is in full daylight, so the camera clock is
+  not local time and the day cannot be read off it. The place is certain: the
+  description names Pages Road, a sibling file by the same photographer names
+  Bexley, and the Bexley Garage sign is in frame.
+- **A night frame of the same forecourt was set aside** (`File:Earthquake damage
+  - gas station.jpg`, same photographer and licence). The broken slab is the
+  same; lit by the shop window at night, it is much harder to read.
+
+#### `van-norman-dam-slide`
+
+**The page most at risk of dread, and the choice was about which photograph not
+to use.**
+
+- **Shows:** an earth dam from the air. On the reservoir side the concrete lining
+  has broken into slabs and slid into the water with part of the embankment,
+  cracks run along the slope behind the crest, and the reservoir is still held,
+  with an intake tower standing in it.
+- **Photographer:** Robert E. Wallace, USGS
+- **Licence:** public domain, `{{PD-USGov-USGS}}`, read off the file page's
+  wikitext rather than the summary field — the first public-domain row, and the
+  reason that line was added to the table above.
+- **Source:** https://commons.wikimedia.org/wiki/File:Lower_Van_Norman_Dam_Damage_1971.jpg
+- **Status:** **Verified, 13 September 2026.** The description is the USGS
+  library's and itemises what the frame shows: the facing and service road slid
+  with part of the dam into the reservoir, extensive fracturing on the remaining
+  face, the previous water level visible on the facing, and a second intake
+  toppled and submerged.
+- **Hosted:** `public/media/van-norman-dam-slide.jpg`. 1400 × 1391 at native size,
+  re-encoded only; ratio `1400 / 1391`.
+- **Used on:** `/after/dams-and-reservoirs/`, under the paragraph saying Metro
+  Vancouver is still paying for the seismic evaluations and has not begun the
+  upgrade.
+- **Why this one:** the page says neither published review mentions earthquakes.
+  It does not say either dam would fail, and a photograph of a breach would argue
+  that it does. This is a dam an earthquake damaged that held its reservoir, which
+  is the question a seismic stability evaluation exists to answer.
+- **Not Cleveland or Seymour Falls, and the caption says so.** Lower Van Norman
+  was an earth embankment; the caption says it was built by a different method
+  from either dam here and that nothing about how it behaved describes them.
+- **Three alternatives, all set aside on purpose.** A higher-resolution USGS
+  aerial of the same dam (`File:Earthquake Damaged Dam (22190042935).jpg`,
+  3904 × 2646, public domain) is framed to put the populated valley below the dam
+  in view, and its description is about the vulnerability of the city and the
+  80,000 people evacuated — the dread version of the same photograph. The
+  Shih-Kang Dam frames on Commons were taken in 2005, six years after the
+  Chi-Chi earthquake, and show a repaired, working spillway with no damage in
+  sight. Fujinuma Dam, which breached in 2011 and killed eight people, was not
+  pursued.
+
+#### Natural gas: searched, nothing found
+
+`/after/gas/` has no photograph, and this is why. The page's argument is that gas
+comes back one building at a time because somebody qualified has to be inside
+each one, so the photograph wanted was a technician restoring service at a home
+after an earthquake, or a meter torn off by shaking. Commons was searched on 13
+September 2026 for gas restoration, gas meters, gas mains and gas pipelines after
+earthquakes, for Northridge, Kumamoto and Christchurch by name, for the utility
+Saibu Gas, and in Japanese (ガス 復旧 地震, ガス 開栓, 都市ガス 地震). Every hit
+was a petrol station, a gas mask, a gasholder or a company logo. Fire from a
+broken gas main exists and is out of scope: it belongs to
+`/shaking/fire-following/`. Worth trying next: the City of Kobe's CC BY 2.1 JP
+archive, searched for ガス, and FEMA's Northridge set.
 
 #### `christchurch-army-water-repair`
 
