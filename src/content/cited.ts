@@ -49,11 +49,12 @@ for (const page of SHAKING_PAGES) {
 }
 
 /**
- * Datasets are cited by being licensed. `/licences/` names every one of them
- * with its attribution string in full, which is a condition of the licences
- * rather than a courtesy, so a dataset reaches the reader on that page even
- * where no sentence cites it — and dropping it from `/sources/` would leave
- * the two pages disagreeing about what the site draws on.
+ * Datasets are cited by being licensed. Attribution is a condition of the
+ * licences rather than a courtesy, and `/sources/` is where a dataset is named
+ * with the licence stated on it, so one reaches the reader even where no
+ * sentence cites it. `/licences/` carries the attribution strings themselves
+ * and lists nothing, which is why this loop is what puts the datasets in front
+ * of anybody.
  */
 for (const entry of Object.values(REFERENCES)) {
   if (entry.kind === "dataset") ids.add(entry.id);
