@@ -12,6 +12,12 @@ import {
   MasseyThreeNumbers,
   ServiceLevelLadder,
 } from "@/components/figures/transportation";
+import {
+  CrossingName,
+  CrossingsLicence,
+  CrossingsMap,
+} from "@/components/figures/crossings-map";
+import { CROSSINGS_FACTS } from "@/content/crossings";
 import type { PageModule } from "./index";
 
 /**
@@ -366,13 +372,33 @@ export const transportation: PageModule = {
             assessments are not public. Where a figure exists below, it is
             because an engineer published a paper about their own work.
           </p>
+          <Figure
+            interactive
+            alt={`Nineteen crossings mapped. ${CROSSINGS_FACTS.quantitative} have a published figure for the earthquake they were designed or assessed against and ${CROSSINGS_FACTS.qualitative} are described in words only. The remaining ${CROSSINGS_FACTS.none} have nothing in the public record, and they are the crossings between Vancouver and everywhere else: the False Creek bridges, the Arthur Laing, Lions Gate and Ironworkers. A blank mark means nothing was found, not that a crossing is unassessed.`}
+            caption={
+              <>
+                What is published about each crossing, in the place the crossing
+                is. The marks say what a reader can obtain, not how a structure
+                would perform: nobody publishes that per crossing, and the
+                figures that are public each belong to one earthquake at one
+                place on one bridge. A blank mark means nothing was found in the
+                public record. The table below gives what is published, crossing
+                by crossing. The Moray Channel Bridge is not drawn: no openly
+                licensed source holds it, and a hand-placed position would be
+                one this site invented.
+              </>
+            }
+            licence={<CrossingsLicence />}
+          >
+            <CrossingsMap />
+          </Figure>
           <DataTable
             caption="Crossings and guideways in the region, and what has been published about the earthquake each was designed or assessed against."
             columns={["Crossing", "What is published"]}
             minWidth="38rem"
             rows={[
               [
-                "George Massey Tunnel",
+                <CrossingName id="george-massey-tunnel" />,
                 <>
                   Retrofit half completed, 150 to 240 year capacity, does not
                   meet the seismic performance criteria in the 2014 bridge code{" "}
@@ -380,7 +406,7 @@ export const transportation: PageModule = {
                 </>,
               ],
               [
-                "Oak Street",
+                <CrossingName id="oak-street" />,
                 <>
                   475-year collapse-prevention objective; 100 mm differential
                   settlement at the south approach piers in that 475-year event,
@@ -390,7 +416,7 @@ export const transportation: PageModule = {
                 </>,
               ],
               [
-                "Knight Street",
+                <CrossingName id="knight-street" />,
                 <>
                   Treated as a lifeline bridge; after the 1,000-year event “the
                   crossing need not be passable”; shear key failures predicted
@@ -398,7 +424,7 @@ export const transportation: PageModule = {
                 </>,
               ],
               [
-                "Queensborough",
+                <CrossingName id="queensborough" />,
                 <>
                   Collapse prevention at the 475-year event only, “may or may
                   not be functional”; about 150 mm of differential movement at
@@ -407,7 +433,7 @@ export const transportation: PageModule = {
                 </>,
               ],
               [
-                "Golden Ears",
+                <CrossingName id="golden-ears" />,
                 <>
                   Objectives at 475, 1,000 and 2,475 years; in the 2,475-year
                   event, about 0.5 m of ground movement at the river bank and
@@ -416,7 +442,7 @@ export const transportation: PageModule = {
                 </>,
               ],
               [
-                "Alex Fraser",
+                <CrossingName id="alex-fraser" />,
                 <>
                   Founded on weak deltaic materials; an early example of
                   liquefaction assessment in design. No return period published{" "}
@@ -424,7 +450,7 @@ export const transportation: PageModule = {
                 </>,
               ],
               [
-                "Canada Line, North Arm Bridge",
+                <CrossingName id="north-arm">Canada Line, North Arm Bridge</CrossingName>,
                 <>
                   The project’s own criteria, as reported by its designer in
                   2008: a 475-year event with repairable damage and a 100-year
@@ -435,7 +461,7 @@ export const transportation: PageModule = {
                 </>,
               ],
               [
-                "Pattullo replacement",
+                <CrossingName id="pattullo">Pattullo replacement</CrossingName>,
                 <>
                   The replacement bridge is open; its seismic description is
                   qualitative only{" "}
@@ -443,7 +469,7 @@ export const transportation: PageModule = {
                 </>,
               ],
               [
-                "Port Mann",
+                <CrossingName id="port-mann" />,
                 <>
                   Nothing quantitative is public. Three papers on this bridge’s
                   seismic design have been published, and all three sit behind

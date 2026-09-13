@@ -78,11 +78,12 @@ structured data in the main namespace. CC0 carries no attribution obligation and
 no share-alike, so it adds nothing to `/licences/`. A new entry goes in
 `docs/licensing.md` under "Cleared for use now" recording the check and its date.
 
-**Corroboration.** Wikidata places the Pattullo at −122.895, 49.2076. The
-province's own correctly-positioned Pattullo records — the ones its layer flags
-"TO BE DELETED FROM BMIS" — sit at −122.8946, 49.2077. Independent agreement to
-about 40 m. Every Wikidata point is checked against the provincial layer where
-both hold a structure, and the check is recorded in `docs/research/maps.md`.
+**Corroboration.** The provincial layer holds two Pattullos: a live record 23 km
+away near the international boundary, and a correctly placed 837 m geometry
+filed under a name flagged "TO BE DELETED FROM BMIS". Wikidata's point falls on
+the second, 31 m from its nearest vertex. So the third source independently
+resolves which of the province's own two positions is the bridge, which is the
+check worth recording in `docs/research/maps.md`.
 
 **What is omitted, and said so.** The Moray Channel Bridge has no Wikidata item
 and appears in no cleared layer. It is left off and the caption says which

@@ -204,9 +204,10 @@ export const dataSources: DatasetSource[] = [
     script: "scripts/data/build-region-geography.mjs",
     files: ["region-crossings.json"],
     disclaimers: [
-      "Provincial highway structures only. City-owned and TransLink crossings are not in " +
-        "this layer, and the Pattullo Bridge record in it is misplaced. It is not a " +
-        "complete set of the region's crossings and must not be drawn as one.",
+      "Provincial highway structures only, and nine of the nineteen crossings drawn. " +
+        "The City of Vancouver's own bridges and the crossings nobody publishes an " +
+        "open layer for come from the two records below, and the Pattullo record in " +
+        "this layer is misplaced by about 23 km and is not used.",
     ],
     licenceNote: "Confirmed on the catalogue record itself.",
   },
@@ -242,6 +243,61 @@ export const dataSources: DatasetSource[] = [
       "the licence rests on. The layer also names the dam safety officer assigned to " +
       "each dam, and one owner string carries a named individual and their job " +
       "title. Neither is vendored.",
+  },
+  {
+    id: "cov-public-streets",
+    title: "Public streets",
+    publisher: "City of Vancouver",
+    licence: "Open Government Licence – Vancouver",
+    licenceUrl: "https://opendata.vancouver.ca/pages/licence/",
+    attribution: OGL_VANCOUVER_ATTRIBUTION,
+    sourceUrl:
+      "https://opendata.vancouver.ca/explore/dataset/public-streets/information/",
+    downloadUrl:
+      "https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/public-streets/exports/geojson",
+    accessed: "2026-09-12",
+    script: "scripts/data/build-region-geography.mjs",
+    files: ["region-crossings.json"],
+    disclaimers: [
+      "Street centrelines rather than a structures inventory. Only the three " +
+        "crossings the City names as bridges in its own block names are taken from " +
+        "it: the Burrard, Granville and Cambie.",
+    ],
+    licenceNote:
+      "The same portal and the same licence as the fire protection mains, stated on " +
+      "the dataset record itself rather than inferred from the portal.",
+  },
+  {
+    id: "wikidata",
+    title: "Coordinate location (P625) for seven crossings",
+    publisher: "Wikidata, Wikimedia Foundation",
+    licence: "Creative Commons CC0 1.0 Universal",
+    licenceUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
+    /**
+     * CC0 waives the attribution requirement, so nothing here is owed. It is
+     * recorded anyway, because a reader checking where a position came from is
+     * the reason this file exists, and a source that asks for nothing is still
+     * a source.
+     */
+    attribution: "Crossing positions from Wikidata, dedicated to the public domain under CC0 1.0.",
+    sourceUrl: "https://www.wikidata.org/wiki/Wikidata:Copyright",
+    downloadUrl: "https://www.wikidata.org/w/api.php?action=wbgetentities",
+    accessed: "2026-09-12",
+    script: "scripts/data/build-region-geography.mjs",
+    files: ["region-crossings.json"],
+    disclaimers: [
+      "Seven crossings neither government layer holds: the Knight Street, Arthur " +
+        "Laing, Pattullo, Golden Ears, Dinsmore, No. 2 Road and North Arm bridges. " +
+        "Wikidata gives a coordinate rather than a geometry, so these carry no span.",
+    ],
+    licenceNote:
+      "Stated by the API's own rightsinfo: all structured data in the main and " +
+      "property namespaces is CC0, and a coordinate claim is structured data in the " +
+      "main namespace. Checked 12 September 2026. It is an openly editable source, " +
+      "so each position was checked against the provincial layer: the Pattullo point " +
+      "falls 31 m from the province's own correctly placed Pattullo geometry, the " +
+      "record its layer has flagged for deletion, while the live provincial record " +
+      "sits 23 km away.",
   },
 ];
 

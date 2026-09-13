@@ -1,15 +1,8 @@
 /**
- * Coastline, river water and highway crossings for the getting-around map.
+ * Coastline, river water and the region's crossings, for the crossings map on
+ * `/after/transportation/` and `/getting-around/`.
  *
- * The three sentences this supports carry no source key because they claim
- * nothing about earthquakes: Vancouver is a peninsula with its land route
- * running east through Burnaby and New Westminster; Richmond and Delta are
- * reached only by bridges and a tunnel; the North Shore has two vehicle
- * crossings with mountains behind. What the map needs is water, land and
- * crossing points, and no hazard layer at all.
- *
- * Sources, each confirmed on its own BC Data Catalogue record rather than
- * inferred from the domain:
+ * Sources, each confirmed on its own record rather than inferred from a domain:
  *   Freshwater Atlas - Coastlines   WHSE_BASEMAPPING.FWA_COASTLINES_SP
  *     Open Government Licence - British Columbia
  *   Freshwater Atlas - Rivers       WHSE_BASEMAPPING.FWA_RIVERS_POLY
@@ -17,10 +10,25 @@
  *   Ministry of Transportation (MOT) Road Structures
  *     WHSE_IMAGERY_AND_BASE_MAPS.MOT_ROAD_STRUCTURE_SP
  *     Open Government Licence - British Columbia
+ *   City of Vancouver, Public streets   public-streets
+ *     Open Government Licence - Vancouver
+ *   Wikidata, coordinate location (P625)
+ *     CC0 1.0, stated by the API's own rightsinfo
  *
- * The crossings layer is provincial structures only. It does not contain the
- * City of Vancouver's own bridges, and a map that drew it as "the crossings"
- * would overstate how isolated Richmond and the peninsula are. See
+ * It takes three sources to draw this map once, and that is the finding rather
+ * than an inconvenience. The provincial layer is highway structures only: it
+ * has no Knight Street, Pattullo, Golden Ears or North Arm Bridge, and all four
+ * are crossings `/after/transportation/` discusses by name. A map drawn from it
+ * alone would contradict the table printed beside it and would overstate how
+ * isolated Richmond and the peninsula are, which is why this file used to say
+ * the layer must not be drawn as the crossings.
+ *
+ * The City layer supplies the three False Creek bridges it owns. Wikidata
+ * supplies the seven nobody publishes an open layer for, under CC0. The
+ * provincial layer holds two Pattullos, a live record 23 km away near the
+ * international boundary and a correctly placed 837 m geometry filed under a
+ * name flagged for deletion; the Wikidata point falls on the second, 31 m from
+ * its nearest vertex, which is what settles that it is the bridge. See
  * docs/research/maps.md.
  *
  * Run: node scripts/data/build-region-geography.mjs
@@ -33,8 +41,11 @@ import { geometryLines, maxDeviation, reduceLine } from "./lib/geo.mjs";
  * Four windows, because four maps need this water at four scales and a
  * reduction is only honest at the size it was cut for.
  *
- * `getting-around` is the tight window: 51 km across, drawn at about 700 px,
- * so 60 m of deviation is under a pixel. `scenario` is the whole ShakeMap
+ * `crossings` is the tight window: 58 km across, drawn at about 700 px, so 60 m
+ * of deviation is under a pixel. Its east edge is at -122.60 rather than the
+ * -122.70 it carried while this window fed nothing, because the Golden Ears
+ * Bridge is at -122.666 and a crossings map that cropped a crossing out would
+ * be making the same omission this script exists to stop. `scenario` is the whole ShakeMap
  * window at 160 km, drawn at about 620 px, where one pixel is 258 m of ground;
  * cutting that one at 60 m would ship four times the vertices to draw the same
  * line. `vancouver` is tighter again, 22 km across at about 700 px, or 31 m of
@@ -59,8 +70,8 @@ import { geometryLines, maxDeviation, reduceLine } from "./lib/geo.mjs";
 const WINDOWS = [
   {
     file: "region-water.json",
-    label: "Getting around",
-    bbox: "-123.40,49.00,-122.70,49.40",
+    label: "Crossings",
+    bbox: "-123.40,49.00,-122.60,49.40",
     refLat: 49.2,
     tolerance: 60,
   },
@@ -166,6 +177,79 @@ const SHORT_NAMES = {
   "CANOE PASS": "Canoe Pass",
 };
 
+/**
+ * The three crossings the City of Vancouver owns, named as its own street layer
+ * names them. That layer is street centrelines rather than a structures
+ * inventory, so a bridge is found by its block name; "800 OLD BRIDGE COURT" is
+ * a residential street that also matches "BRIDGE", and is why this is an
+ * allowlist rather than a pattern.
+ */
+const CITY_BRIDGES = {
+  "BURRARD BRIDGE": "Burrard",
+  "GRANVILLE BRIDGE": "Granville",
+  "CAMBIE BRIDGE": "Cambie",
+};
+
+const CITY_STREETS =
+  "https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/public-streets/exports/geojson?" +
+  new URLSearchParams({ where: 'hblock like "BRIDGE"', select: "hblock,geom" });
+
+/**
+ * The crossings no openly licensed layer holds, by Wikidata item. Four of the
+ * seven - Knight Street, Pattullo, Golden Ears and the North Arm Bridge - are
+ * crossings `/after/transportation/` discusses by name, so a map without them
+ * would contradict the table beside it. The other three complete Richmond's
+ * island crossings, which is the fact `/getting-around/` turns on.
+ *
+ * Wikidata's structured data is CC0 by the statement its own API returns from
+ * `action=query&meta=siteinfo&siprop=rightsinfo`, which is the record stating
+ * its own licence that docs/licensing.md asks for.
+ */
+const WIKIDATA_CROSSINGS = {
+  Q6422284: "Knight Street",
+  Q710283: "Arthur Laing",
+  Q7148677: "Pattullo",
+  Q1056455: "Golden Ears",
+  Q5278725: "Dinsmore",
+  Q14629008: "No. 2 Road",
+  Q7053967: "North Arm",
+};
+
+const WIKIDATA =
+  "https://www.wikidata.org/w/api.php?" +
+  new URLSearchParams({
+    action: "wbgetentities",
+    ids: Object.keys(WIKIDATA_CROSSINGS).join("|"),
+    props: "claims",
+    format: "json",
+  });
+
+/**
+ * Every crossing the map is supposed to carry. Checked after the three sources
+ * are merged, so a layer that changes shape fails the build rather than
+ * silently shipping a map with a crossing missing.
+ */
+const EXPECTED = [
+  "Alex Fraser", "Arthur Laing", "Burrard", "Cambie", "Canoe Pass", "Dinsmore",
+  "George Massey Tunnel", "Golden Ears", "Granville", "Ironworkers Memorial Second Narrows",
+  "Knight Street", "Lions Gate", "No. 2 Road", "North Arm", "Oak Street",
+  "Pattullo", "Pitt River", "Port Mann", "Queensborough",
+];
+
+/** A stable key the content layer joins its per-crossing notes to. */
+function slug(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+/** Every coordinate pair in a GeoJSON geometry, at any nesting depth. */
+function everyPoint(coordinates) {
+  if (typeof coordinates[0] === "number") return [coordinates];
+  return coordinates.flatMap(everyPoint);
+}
+
 function reduceAll(features, { tolerance, refLat, keep }) {
   const out = [];
   let before = 0;
@@ -240,19 +324,61 @@ async function buildWater({ file, label, bbox, refLat, tolerance, extraNote }) {
 export async function buildRegionGeography() {
   for (const window of WINDOWS) await buildWater(window);
 
-  process.stdout.write("Highway crossings\n");
+  process.stdout.write("Crossings\n");
+  const crossings = [
+    ...(await provincialCrossings()),
+    ...(await cityCrossings()),
+    ...(await wikidataCrossings()),
+  ];
+  crossings.sort((a, b) => a.name.localeCompare(b.name));
+
+  // Every source is checked for the full set it is supposed to supply. A layer
+  // that quietly changes shape would otherwise ship a shorter map, and a map is
+  // the one graphic whose omissions are invisible: a crossing that is not drawn
+  // does not leave a gap a reader can see.
+  const missing = EXPECTED.filter((name) => !crossings.some((c) => c.name === name));
+  if (missing.length) {
+    throw new Error(
+      `Crossings missing from the build: ${missing.join(", ")}. ` +
+        "A source has changed shape. Do not ship a short map; fix the source first.",
+    );
+  }
+
+  process.stdout.write(`  named   ${crossings.length} crossings from three sources\n`);
+
+  writeVendored("region-crossings.json", {
+    source: ["bc-mot-road-structures", "cov-public-streets", "wikidata"],
+    crs: "EPSG:4326",
+    scope:
+      "The region's road, rail and transit crossings of the Fraser River, its " +
+      "North and Middle Arms, False Creek and Burrard Inlet, drawn from three " +
+      "sources because no single openly licensed layer holds them. Provincial " +
+      "highway structures come from the Ministry layer, the three False Creek " +
+      "bridges from the City of Vancouver, and the seven neither publishes from " +
+      "Wikidata under CC0. The Moray Channel Bridge is absent: it has no " +
+      "Wikidata item and appears in no cleared layer, and a hand-placed " +
+      "coordinate would be a position this project invented.",
+    crossings,
+  });
+}
+
+/**
+ * The province's own roll-up record selects which names are major crossings;
+ * every bridge or tunnel record filed under one of those names then supplies
+ * the geometry, because a roll-up often covers only one portion of a multi-part
+ * structure and a marker placed from it alone lands off the end.
+ */
+async function provincialCrossings() {
   const structures = readJson(
     await download(
       WFS("WHSE_IMAGERY_AND_BASE_MAPS.MOT_ROAD_STRUCTURE_SP", WINDOWS[0].bbox),
       "bc-mot-road-structures.geojson",
     ),
   );
-  // The province's own roll-up record selects which names are major crossings;
-  // every bridge or tunnel record filed under one of those names then supplies
-  // the geometry, because a roll-up often covers only one portion of a
-  // multi-part structure and a marker placed from it alone lands off the end.
   const names = new Set(
-    structures.features.filter((f) => isCrossing(f.properties)).map((f) => f.properties.BMIS_STRUCTURE_NAME),
+    structures.features
+      .filter((f) => isCrossing(f.properties))
+      .map((f) => f.properties.BMIS_STRUCTURE_NAME),
   );
   const grouped = new Map();
   for (const feature of structures.features) {
@@ -268,40 +394,84 @@ export async function buildRegionGeography() {
   // One record is demonstrably wrong rather than merely coarse, and is dropped
   // by name rather than by a threshold that would also drop good ones. The
   // layer's PATTULLO record is a 100 m stub near the international boundary,
-  // about 20 km from the bridge; the only correctly placed Pattullo geometry in
-  // the layer is filed under a name flagged for deletion.
+  // about 20 km from the bridge, and the only correctly placed Pattullo
+  // geometry in the layer is filed under a name flagged for deletion. The
+  // Pattullo on this map comes from Wikidata instead, and those deleted records
+  // are what its position was checked against.
   const MISPLACED = new Set(["PATTULLO"]);
 
-  const crossings = [];
+  const out = [];
   for (const group of grouped.values()) {
     if (MISPLACED.has(group.key)) continue;
     const at = centre(group.points);
     const span = Math.round(Math.max(...group.points.map((p) => metres(p, at))) * 2);
-    crossings.push({
-      name: SHORT_NAMES[group.key] ?? group.key,
-      sourceName: group.key,
+    const name = SHORT_NAMES[group.key] ?? group.key;
+    out.push({
+      id: slug(name),
+      name,
       kind: group.kind === "TUNNEL" ? "tunnel" : "bridge",
       at: at.map((n) => Math.round(n * 1e4) / 1e4),
       spanMetres: span,
+      source: "bc-mot-road-structures",
+      sourceName: group.key,
     });
   }
-  crossings.sort((a, b) => a.name.localeCompare(b.name));
-  process.stdout.write(`  named   ${crossings.length} provincial crossings\n`);
+  process.stdout.write(`  province ${out.length} structures\n`);
+  return out;
+}
 
-  writeVendored("region-crossings.json", {
-    source: "bc-mot-road-structures",
-    crs: "EPSG:4326",
-    scope:
-      "Provincial highway structures only, and not a complete set of crossings. " +
-      "City-owned and TransLink crossings are absent, including the Burrard, " +
-      "Granville, Cambie, Arthur Laing, Knight Street, Moray, Dinsmore and " +
-      "No. 2 Road bridges; no openly licensed layer holding them has been found. " +
-      "The Pattullo is absent too: the province's own major-bridge record for it " +
-      "sits about 20 km away near the international boundary, and the only " +
-      "correctly placed Pattullo geometry in the layer is flagged for deletion. " +
-      "A map that presented this as the crossings would overstate isolation.",
-    crossings,
-  });
+/** The three False Creek bridges, from the City's own street centrelines. */
+async function cityCrossings() {
+  const streets = readJson(
+    await download(CITY_STREETS, "cov-public-streets-bridges.geojson"),
+  );
+  const grouped = new Map();
+  for (const feature of streets.features) {
+    const block = feature.properties.hblock;
+    if (!(block in CITY_BRIDGES)) continue;
+    const points = grouped.get(block) ?? [];
+    points.push(...everyPoint(feature.geometry.coordinates));
+    grouped.set(block, points);
+  }
+  const out = [];
+  for (const [block, points] of grouped) {
+    const at = centre(points);
+    out.push({
+      id: slug(CITY_BRIDGES[block]),
+      name: CITY_BRIDGES[block],
+      kind: "bridge",
+      at: at.map((n) => Math.round(n * 1e4) / 1e4),
+      spanMetres: Math.round(Math.max(...points.map((p) => metres(p, at))) * 2),
+      source: "cov-public-streets",
+      sourceName: block,
+    });
+  }
+  process.stdout.write(`  city     ${out.length} bridges\n`);
+  return out;
+}
+
+/**
+ * The seven neither government layer holds, as single points. Wikidata gives a
+ * coordinate rather than a geometry, so these carry no span: the file says what
+ * each source gave it and nothing more.
+ */
+async function wikidataCrossings() {
+  const { entities } = readJson(await download(WIKIDATA, "wikidata-crossings.json"));
+  const out = [];
+  for (const [qid, name] of Object.entries(WIKIDATA_CROSSINGS)) {
+    const claim = entities?.[qid]?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
+    if (!claim) throw new Error(`Wikidata ${qid} (${name}) has no P625 coordinate`);
+    out.push({
+      id: slug(name),
+      name,
+      kind: "bridge",
+      at: [claim.longitude, claim.latitude].map((n) => Math.round(n * 1e4) / 1e4),
+      source: "wikidata",
+      sourceName: qid,
+    });
+  }
+  process.stdout.write(`  wikidata ${out.length} crossings\n`);
+  return out;
 }
 
 if (isMain(import.meta.url)) {

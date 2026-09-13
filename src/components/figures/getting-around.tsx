@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import {
   At,
   Axis,
@@ -15,14 +14,22 @@ import {
 } from "./figure-kit";
 
 /**
- * The three figures on `/getting-around/`.
+ * The two figures on `/getting-around/`.
  *
  * Every word and every number here is already in `docs/copy/getting-around.md`,
- * and none of the three adds a claim the prose does not make. The captions, the
+ * and neither adds a claim the prose does not make. The captions, the
  * alt text and the citation markers live beside the prose in
  * `src/content/pages/getting-around.tsx`; what is here is the drawing and the
  * short labels the geometry cannot do without. Those labels are copy too, and
  * they obey the style guide like any other words a reader sees.
+ *
+ * A third figure stood here, `LandConnections`, a schematic of which ways out
+ * of Vancouver exist and what each one crosses. The crossings map now on the
+ * page is the same three facts drawn as real geography, and keeping a
+ * connections diagram one click from a map of the same crossings invited
+ * reading the diagram as geography, which is the misreading its own caption was
+ * written to prevent. The callout above it still states all three facts in
+ * words. See `crossings-map.tsx`.
  *
  * There is deliberately no Disaster Response Route network map. The public
  * instruction is to get off those routes rather than to follow them, drawing
@@ -310,192 +317,6 @@ export function Reopening2021() {
       <FigText y={REOPEN_GUARD_Y} weight={600} fill={FIG_COLOR.ink}>
         None of this was caused by an earthquake.
       </FigText>
-    </FigureCanvas>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/* The land connections                                                */
-/* ------------------------------------------------------------------ */
-
-const LAND_ID = "land-connections";
-
-const LAND_HEADING_Y = 14;
-const LAND_VALUE_Y = 41;
-const LAND_MOUNTAIN_Y = 62;
-
-const NORTH_BOX_Y = 70;
-const NORTH_BOX_H = 34;
-const NORTH_LABEL_Y = NORTH_BOX_Y + 22;
-const NORTH_LINK_LABEL_Y = 124;
-
-const VAN_BOX_Y = 142;
-const VAN_BOX_H = 48;
-const VAN_LABEL_Y = VAN_BOX_Y + 22;
-const VAN_NOTE_Y = VAN_BOX_Y + 40;
-
-const EAST_LABEL_Y = 214;
-const EAST_RULE_Y = 222;
-const EAST_NOTE_Y = 240;
-
-const SOUTH_LINK_LABEL_Y = 268;
-const SOUTH_BOX_Y = 286;
-const SOUTH_BOX_H = 48;
-const SOUTH_LABEL_Y = SOUTH_BOX_Y + 22;
-const SOUTH_NOTE_Y = SOUTH_BOX_Y + 40;
-
-const LAND_FOOT_Y = 358;
-const LAND_HEIGHT = 374;
-
-/** The spine sits left of every label, so the two never collide. */
-const SPINE_X = "8%";
-const SPINE_LABEL_X = "12%";
-const BOX_TEXT_X = 12;
-
-/**
- * A place. An outlined box and nothing else: no shape, no coastline, no area.
- *
- * The box is `fill="none"` rather than paper. Nothing passes under a node here,
- * so a paper rectangle would be paper drawn on paper: a mark measuring 1:1
- * against its own ground, which is the same defect as an arrowhead in the
- * colour of the bar it sits on. A knockout is only a knockout where there is
- * something under it to clear, and the outline is what the reader sees either
- * way.
- */
-function LandNode({
-  y,
-  height,
-  children,
-}: {
-  y: number;
-  height: number;
-  children: ReactNode;
-}) {
-  return (
-    <g>
-      <rect
-        x="0"
-        y={y}
-        width="100%"
-        height={height}
-        rx="2"
-        fill="none"
-        stroke={FIG_COLOR.mark}
-        strokeWidth="1"
-      />
-      {children}
-    </g>
-  );
-}
-
-/** The vertical run between two places. A connection, not a distance. */
-function Spine({ from, to }: { from: number; to: number }) {
-  return (
-    <rect
-      x={SPINE_X}
-      y={from}
-      width="1"
-      height={to - from}
-      fill={FIG_COLOR.mark}
-    />
-  );
-}
-
-/**
- * Which ways out of Vancouver exist, and what each of them crosses.
- *
- * This is a schematic and not a map, and the difference is the point. It draws
- * adjacency and compass direction, both of which the copy states in words, and
- * nothing else: no coastline, no scale, no shape, and no crossing counted that
- * the copy does not count. North is above and south below because the copy puts
- * Burrard Inlet to the north and the North Arm of the Fraser to the south; the
- * eastward branch is an arrow because east is a direction the copy gives and a
- * length is not.
- *
- * The three facts here claim nothing about earthquakes and rest on no document,
- * which is why the caption beside the figure carries no source key either. A
- * drawing that looked surveyed would be worse than no drawing, so the foot of
- * the figure says what it is, inside the figure, where it travels with it.
- */
-export function LandConnections() {
-  return (
-    <FigureCanvas id={LAND_ID} height={LAND_HEIGHT}>
-      <FigHeading y={LAND_HEADING_Y}>Leaving Vancouver by land</FigHeading>
-      <FigValue y={LAND_VALUE_Y}>One land route, eastward</FigValue>
-
-      <FigText y={LAND_MOUNTAIN_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        Mountains behind the North Shore
-      </FigText>
-
-      <LandNode y={NORTH_BOX_Y} height={NORTH_BOX_H}>
-        <FigText x={BOX_TEXT_X} y={NORTH_LABEL_Y} fill={FIG_COLOR.ink}>
-          North Shore
-        </FigText>
-      </LandNode>
-
-      <Spine from={NORTH_BOX_Y + NORTH_BOX_H} to={VAN_BOX_Y} />
-      <FigText x={SPINE_LABEL_X} y={NORTH_LINK_LABEL_Y}>
-        Two vehicle crossings
-      </FigText>
-
-      <LandNode y={VAN_BOX_Y} height={VAN_BOX_H}>
-        <FigText x={BOX_TEXT_X} y={VAN_LABEL_Y} fill={FIG_COLOR.ink}>
-          Vancouver
-        </FigText>
-        <FigText
-          x={BOX_TEXT_X}
-          y={VAN_NOTE_Y}
-          size={FIG_TYPE.tick}
-          fill={FIG_COLOR.faint}
-        >
-          A peninsula, not an island
-        </FigText>
-      </LandNode>
-
-      {/* The branch eastward, which is the only one that crosses no water. */}
-      <Spine from={VAN_BOX_Y + VAN_BOX_H} to={EAST_RULE_Y} />
-      <FigText x={SPINE_LABEL_X} y={EAST_LABEL_Y}>
-        The one land route, eastward
-      </FigText>
-      <rect
-        x={SPINE_X}
-        y={EAST_RULE_Y}
-        width="88%"
-        height="1"
-        fill={FIG_COLOR.mark}
-      />
-      <At x="96%" y={EAST_RULE_Y}>
-        <path d="M0 -5 L9 0.5 L0 6 Z" fill={FIG_COLOR.muted} />
-      </At>
-      <FigText
-        x={SPINE_LABEL_X}
-        y={EAST_NOTE_Y}
-        size={FIG_TYPE.tick}
-        fill={FIG_COLOR.faint}
-      >
-        Through Burnaby and New Westminster
-      </FigText>
-
-      <Spine from={EAST_RULE_Y} to={SOUTH_BOX_Y} />
-      <FigText x={SPINE_LABEL_X} y={SOUTH_LINK_LABEL_Y}>
-        Bridges and a tunnel
-      </FigText>
-
-      <LandNode y={SOUTH_BOX_Y} height={SOUTH_BOX_H}>
-        <FigText x={BOX_TEXT_X} y={SOUTH_LABEL_Y} fill={FIG_COLOR.ink}>
-          Richmond
-        </FigText>
-        <FigText
-          x={BOX_TEXT_X}
-          y={SOUTH_NOTE_Y}
-          size={FIG_TYPE.tick}
-          fill={FIG_COLOR.faint}
-        >
-          No land route onto Lulu Island or Sea Island
-        </FigText>
-      </LandNode>
-
-      <FigText y={LAND_FOOT_Y}>A diagram of connections, not a map.</FigText>
     </FigureCanvas>
   );
 }
