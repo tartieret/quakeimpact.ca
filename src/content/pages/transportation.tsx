@@ -129,12 +129,9 @@ export const transportation: PageModule = {
             id="anchorage-bridge-inspection"
             caption={
               <>
-                The Glenn Highway where it crosses Eagle River, Anchorage, about
-                five hours after the magnitude 7.0 of 30 November 2018. One
-                crack, one tape, one person on foot. The Ministry’s twenty-four
-                hours for a post-earthquake inspection is made of this, and it
-                is why a crossing that came through the shaking is still shut the
-                next morning. <Cite id="MOTI-SRDC-05" />
+                The Glenn Highway bridge over Eagle River, Anchorage, about five
+                hours after the magnitude 7.0 earthquake of 30 November 2018. A
+                crack in the road surface is measured by hand with a tape.
               </>
             }
           />
@@ -142,10 +139,8 @@ export const transportation: PageModule = {
             id="anchorage-glenn-highway-closed"
             caption={
               <>
-                The next day, the same crossing. Crews and plant are on the
-                carriageway and no traffic is. Nothing here fell down — the
-                bridge is standing and the road is sound enough to work on — and
-                it is still not open.
+                The same bridge the next day. Crews and a truck are working on
+                the northbound carriageway, which carries no traffic.
               </>
             }
           />
@@ -269,16 +264,10 @@ export const transportation: PageModule = {
             caption={
               <>
                 The Mirror Lake interchange on the Glenn Highway, Anchorage,
-                about three hours after the 2018 earthquake. The carriageway on
-                the left is unmarked; the off-ramp beside it has gone down the
-                slope. This is an off-ramp embankment and not a bridge approach,
-                and the movement is metres where this page counts millimetres —
-                but it is the same mechanism with nothing holding it: fill built
-                over soft ground, losing what was under it. The figures above are
-                what ground treatment is meant to hold that movement down to. At
-                Queensborough, the Ministry’s own report records that without
-                treating the soil the predicted displacements were “large enough
-                to cause a collapse of the structure”. <Cite id="QB-MOTH-95" />
+                about three hours after the 2018 earthquake. The embankment
+                under the southbound off-ramp has slid down the slope, taking
+                the asphalt and guardrail with it. The main carriageway beside
+                it is unbroken.
               </>
             }
           />
@@ -306,9 +295,7 @@ export const transportation: PageModule = {
                 Richmond. The province calls it a critical transportation
                 corridor, and describes its replacement as strengthening
                 connections to the Port of Vancouver and the border
-                crossings. <Cite id="MOTI-MASSEY" /> This is the tunnel itself
-                rather than a comparison: nothing in the frame is damaged, and
-                nothing in it shows how it would behave in an earthquake.
+                crossings. <Cite id="MOTI-MASSEY" />
               </>
             }
           />
@@ -541,11 +528,8 @@ export const transportation: PageModule = {
             caption={
               <>
                 North of Kaikoura, New Zealand, three months after the magnitude
-                7.8 of November 2016. The track is bent into an S where the
-                ground moved under it, and the rail heads have rusted over
-                because nothing has run on them. The eighty minutes above was a
-                check of a system that turned out to be undamaged. This is the
-                other case.
+                7.8 earthquake of November 2016. The track is bent into an S
+                where the ground moved under it, and the rails have rusted.
               </>
             }
           />
@@ -553,13 +537,10 @@ export const transportation: PageModule = {
             id="kobe-port-liner-shored-guideway"
             caption={
               <>
-                Kobe, Japan, four days after the 1995 earthquake. The green
-                girders carry the Port Liner, an automated train on an elevated
-                guideway, the same kind of system as SkyTrain. The guideway did
-                not come down. It is standing on scaffolding towers, and the
-                street under it is closed. It is a different design, from a
-                different decade, on different ground, and it says nothing
-                about how a SkyTrain guideway would perform.
+                Kobe, Japan, four days after the January 1995 earthquake. The
+                green girders carry the Port Liner, an automated transit line on
+                an elevated guideway. Scaffolding towers prop up the guideway,
+                and the street beneath it is closed.
               </>
             }
           />
@@ -568,10 +549,9 @@ export const transportation: PageModule = {
             caption={
               <>
                 Shiroishi, Japan, thirteen days after the March 2022 earthquake
-                off Fukushima. The same kind of work on a newer line: the
-                Tohoku Shinkansen viaduct is standing, and crews have
-                scaffolded the beams tying its columns together, which the
-                photographer records as damaged.
+                off Fukushima. Scaffolding surrounds the tie beams between the
+                columns of the Tohoku Shinkansen viaduct, which the photographer
+                records as damaged by the earthquake.
               </>
             }
           />

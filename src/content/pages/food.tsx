@@ -83,11 +83,9 @@ export const food: PageModule = {
             id="tokyo-milk-case-limit"
             caption={
               <>
-                A supermarket in Tokyo a week after the 2011 earthquake, a long
-                way from the damage. The cold case is lit and working, and it is
-                empty, with signs limiting milk to one per customer. Nothing here
-                says the power failed. The milk did not arrive, and the shelves
-                ran out ahead of it.
+                A supermarket in Tokyo, a week after the March 2011 earthquake.
+                The milk case is nearly empty, with signs limiting milk to one
+                per customer.
               </>
             }
           />

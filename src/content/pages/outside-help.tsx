@@ -151,10 +151,8 @@ export const outsideHelp: PageModule = {
             caption={
               <>
                 Burwood Hospital, Christchurch, four days after the February 2011
-                earthquake. The engineers repairing its water mains are from the
-                army base at Linton, at the other end of the country. That is the
-                arrangement the staging plan counts on: an outside that is still
-                working, sending people in.
+                earthquake. Army engineers from Linton, in the North Island,
+                repair the hospital’s water mains.
               </>
             }
           />

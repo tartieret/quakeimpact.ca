@@ -90,6 +90,18 @@ looks like. The depth of the silt, the number of streets, the time it took to
 clear: none of it transfers. The photograph carries the mechanism and the
 numbers stay with the documents that publish them.
 
+**On `/after/`, a caption states facts and nothing else.** Decided 13 September
+2026 by the site's owner, after captions on the system pages had each grown a
+closing sentence on what does not carry across to Metro Vancouver. The reader
+knows a photograph from Kobe is not a forecast for Richmond, and saying so under
+every picture was the tic `style-guide.md` §4 describes. A caption on `/after/`
+names the place and the date, says what is in the frame, and may carry a sourced
+fact about the thing photographed. It does not anchor to Metro Vancouver, say
+what does not transfer, or explain what the photograph is for. The rule that a
+photograph may not generate a claim still holds: it is kept by leaving claims
+out of the caption, not by disclaiming them. The anchor rule above still applies
+on `/shaking/`.
+
 ---
 
 ## Status, and what it takes to change it
@@ -430,7 +442,7 @@ do not teach a mechanism. They answer a duration.
   duration is the hardest thing on the site to make believable. This is one
   repair. A person at the bottom of a shaft with his hands on a single fitting
   is what the months are made of.
-- **It is a well valve, not a buried main, and the caption says so.** The frame
+- **It is a well valve, not a buried main, and the caption names the well.** The frame
   is a well head on a school ground, which is the easy end of the range rather
   than the hard one, and letting it stand for a transmission main under the
   Fraser would be the photograph generating a claim.
@@ -503,21 +515,17 @@ the search was for the same subject under a licence the site can meet.
   resized to 1600 × 1200; ratio `4 / 3`. No other change.
 - **Used on:** `/after/water/`, under the two-clocks figure in the section on
   the province's "many months".
-- **Why this one:** it is the only photograph found that argues a *duration*
-  rather than a repair. The earthquakes were 14 and 16 April 2016 and the
-  photograph is 7 May, so the water is running over the road roughly three weeks
-  on because the network under it is not back. That is the page's distinction
-  between its two clocks — service restored is not network repaired — standing
-  in a field where a reader can see it.
+- **Why this one:** it is a temporary arrangement still in place three weeks
+  on. The earthquakes were 14 and 16 April 2016 and the photograph is 7 May.
+- **The description does not say what the pipe carries.** It reads, in full,
+  "Temporary pipe after the 2016 Kumamoto earthquake." An earlier caption said
+  water was running through it. That was an inference from the page it sits on,
+  and it was removed on 13 September 2026.
 - **The place comes from the file's category, not its description.** The
   description is one line and names no location. `Category:Akamizu, Aso` is the
   uploader's own categorisation and is where "Akamizu, Aso, Kumamoto Prefecture"
   in the register comes from. Recorded because a place in a credit should say
   where it was read.
-- **Not Christchurch, and not on the delta.** A different event on different
-  ground, carried for the arrangement it shows. Nothing about Kumamoto's
-  restoration timeline transfers to Metro Vancouver's and the caption asserts
-  none of it.
 
 #### `anchorage-bridge-inspection`, `anchorage-glenn-highway-closed`
 
@@ -639,8 +647,7 @@ damaged in other earthquakes.
 - **Hosted:** `public/media/shiroishi-shinkansen-viaduct-repair.jpg`. 2992 ×
   2000 resized to 1800 × 1204; ratio `1800 / 1204`. No crop, although CC BY
   would allow one.
-- **Used on:** `/after/transportation/`, directly after the Port Liner, joining
-  its caption rather than repeating the anchor.
+- **Used on:** `/after/transportation/`, directly after the Port Liner.
 - **Why this one:** a recent event with a low death toll, and a standing elevated
   line under repair rather than a fallen one.
 - **The train in the frame is not described.** The same photographer's
@@ -714,15 +721,12 @@ where it is and why it matters. **Not an analogue**, the second after
   is not what fails. A photograph of a wrecked road normally has no intact road
   in it to compare against, so it shows destruction rather than the argument.
   This frame has both, metres apart. The contrast is the content.
-- **Two things the caption states rather than leaves to be assumed.** It is an
-  **off-ramp embankment, not a bridge approach**. And the movement is **metres
-  where the page counts millimetres**. This is the most persuasive image in the
-  register, which makes it the one most likely to be read as a prediction about
-  a Fraser crossing, and §"A photograph may not generate a claim" bites hardest
-  exactly here. What it stands for is the mechanism with nothing holding it.
-  What the page's numbers describe is the same mechanism held down by ground
-  treatment — which the page's own Queensborough source makes explicit, and the
-  caption quotes.
+- **It is an off-ramp embankment, not a bridge approach,** and the caption
+  calls it an off-ramp. "Southbound" and the interchange come from the Commons
+  description; "about three hours" is the file's recorded time, 11:34, against
+  the 08:29 earthquake.
+- **Caption corrected, 13 September 2026.** It had called the main carriageway
+  "unmarked". It has lane markings; the word meant was "unbroken".
 - **Both files carry an EXIF rotation, and Commons reports the unrotated
   dimensions.** The file page for the first states 3024 × 4032, which is
   portrait. The frame is landscape. Copying that number into `ratio` would have
@@ -737,8 +741,7 @@ where it is and why it matters. **Not an analogue**, the second after
 
 #### `uchtelfangen-transformer`
 
-**The only photograph on the site with no earthquake in it,** and the caption
-says so in its first clause.
+**The only photograph on the site with no earthquake in it.**
 
 - **Shows:** a grey power transformer the size of a small building, slung
   between the red girder frames of a heavy-haulage transporter spanning a closed
@@ -779,7 +782,7 @@ says so in its first clause.
   rule has nothing to bite on — there is no transfer from Saarland to British
   Columbia being proposed, and none is available. The failure it has to avoid is
   the opposite one: reading as damage. It does not, since nothing in the frame
-  is broken, and the caption opens by saying no earthquake is involved.
+  is broken and the caption describes a delivery.
 - **Chosen from a series of fourteen, by opening them.** Frame 14 shows the
   transformer as an unreadable grey box behind marshals; frame 8 is a close pass
   with a crowd of identifiable onlookers including a child, which changes the
@@ -792,7 +795,7 @@ says so in its first clause.
 **Suggested by the site's owner**, who asked for fallen electric poles. The page
 had the equipment at the top of a power system and nothing at the bottom of it.
 
-- **Shows:** a concrete distribution pole snapped and lying across a road with
+- **Shows:** a concrete power pole fallen across a road with
   its cables still attached, an excavator standing in a heap of broken timber
   behind, houses still up either side, and the overhead wires still running
   between the poles that did not come down.
@@ -810,8 +813,9 @@ had the equipment at the top of a power system and nothing at the bottom of it.
   in the street — appears anywhere in the regulatory record. The transformer
   further up the page is the top of a power system. This is the bottom of it,
   in the road.
-- **Six weeks after the earthquake, and the pole is still where it fell.** 1
-  January to 17 February. That is the second thing the frame carries.
+- **Seven weeks after the earthquake, and the pole is still where it fell.** 1
+  January to 17 February, 47 days. The caption said six weeks until it was
+  checked on 13 September 2026.
 - **The description names no pole.** It says only "a view of the urban area of
   Wajima City ... which was damaged by the 2024 Noto Peninsula Earthquake". The
   pole, the cables, the excavator and the standing houses were all read off the
@@ -879,18 +883,10 @@ buckled and boom folded down. 2278 × 1624 resized to 1600 × 1141. It opens on
   container business to other Asian ports — and it had nothing to look at. The
   first photograph is why the repairs took a year. The second is what a working
   terminal looks like when the ground under it stops being flat.
-- **The limit is repeated in the caption rather than borrowed from the prose.**
-  The section already says "Kobe is an illustration, and it forecasts nothing
-  here", and the first caption says again that nothing about how far any of it
-  moved or how long it took to put right transfers to a terminal on the Fraser
-  delta. A photograph is more persuasive than the sentence above it, so the
-  sentence above it is not left to do the work.
-- **One uncited fact in a caption.** "Rokko Island is an artificial island,
-  built out into the bay on fill" is stated without a source. It is the reason
-  the photograph is relevant rather than decorative, it is not a claim the page
-  rests on, and it is not a claim about Metro Vancouver. Recorded here so that
-  it is a decision rather than an oversight, and so anyone who wants it sourced
-  knows it is the sentence to source.
+- **The Rokko Island caption no longer says the island is built on fill.** It
+  did until 13 September 2026, without a source. The captions now describe the
+  frames, and the Port Island caption keeps the page's cited fact about the
+  port's recovery.
 
 #### `noto-airport-runway-repairs`
 
@@ -928,8 +924,6 @@ change is declared.
   may be out of service for a few days.
 - **Why this one:** the page describes runway damage in sections, and this is a
   runway that came back in sections.
-- **A hilltop airport, not a delta,** and the caption says nothing about Noto's
-  closure transfers to Sea Island.
 - **What else was looked at for the airport, so nobody repeats it.** Japan's
   transport ministry published close photographs of the same runway before and
   after temporary repair, the first described as cracks with steps of more than
@@ -1000,7 +994,9 @@ the difference.
   claim is that a treatment plant built to a post-disaster standard still has to
   be reached through a network nobody has published an assessment of. This is
   that network with the ground taken out from under it.
-- **An access shaft, not a sewer pipe,** and the caption says so.
+- **An access shaft, not a sewer pipe.** The caption's "liquefied" is the
+  photographer's own description, which attributes the uplift to soil
+  liquefaction.
 - **Taken nearly four months after the earthquake,** which is the second thing
   it carries: 1 January to 27 April, and the shaft is still standing in the
   road.
@@ -1048,9 +1044,10 @@ best argument yet that the widened test was worth adopting. It shows no damage
 at all.
 
 - **Shows:** a yellow assessment notice taped to a corrugated metal shutter,
-  reading LIMITED ENTRY in English under a Japanese heading, with the hazard
-  found, the hour of the judgement and the issuing ward office written on by
-  hand.
+  reading LIMITED ENTRY in English under a Japanese heading. The hazard found
+  (外壁に亀裂・落下あり, cracks and falling material on the outer wall) and the
+  time of the judgement (11 a.m., 20 March) are handwritten. A printed label
+  names the issuing office, the Miyagino ward disaster headquarters.
 - **Photographer:** Walks
 - **Licence:** CC BY 4.0 — the first 4.0 attribution-only row, and the reason
   that line was added to the table above.
@@ -1090,8 +1087,7 @@ at all.
   underground tanks hands out nothing while the power is off.
 - **Why this one:** the section's point is that fuel in a tank is not fuel being
   sold. This station stopped selling for a reason that is neither power nor the
-  road: its forecourt broke. The caption does not claim to know what was in the
-  tanks, and says so.
+  road: its forecourt broke.
 - **The date is "September 2010" and not a day.** The file's recorded time is
   03:55 on 5 September, and the frame is in full daylight, so the camera clock is
   not local time and the day cannot be read off it. The place is certain: the
@@ -1129,9 +1125,6 @@ to use.**
   It does not say either dam would fail, and a photograph of a breach would argue
   that it does. This is a dam an earthquake damaged that held its reservoir, which
   is the question a seismic stability evaluation exists to answer.
-- **Not Cleveland or Seymour Falls, and the caption says so.** Lower Van Norman
-  was an earth embankment; the caption says it was built by a different method
-  from either dam here and that nothing about how it behaved describes them.
 - **Three alternatives, all set aside on purpose.** A higher-resolution USGS
   aerial of the same dam (`File:Earthquake Damaged Dam (22190042935).jpg`,
   3904 × 2646, public domain) is framed to put the populated valley below the dam
@@ -1169,11 +1162,10 @@ archive, searched for ガス, and FEMA's Northridge set.
   1600 × 1200; ratio `4 / 3`.
 - **Used on:** `/after/food/`, at the foot of the section on the till, the cold
   case and the freezer aisle.
-- **What the caption refuses to say.** The section's heading is about power, and
+- **What the caption does not say.** The section's heading is about power, and
   nothing in the file says the power was off in that shop. The case in the
-  frame is lit. So the caption says the milk did not arrive, which is the
-  section's supply-chain paragraph and what the description — "a supermarket a
-  few days after the earthquake" — and the shop's own signs support.
+  frame is lit. The caption describes the empty case and the signs and does not
+  say why it is empty.
 - **"Tokyo" comes from categories.** The file's date field reads
   `location=Japan`, and "Tokyo, Japan" after the photographer's name is his
   Flickr home, not the shop. Two Commons categories, *Supermarkets in Tokyo* and

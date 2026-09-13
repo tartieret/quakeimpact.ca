@@ -71,15 +71,11 @@ export const housing: PageModule = {
             id="sendai-limited-entry-placard"
             caption={
               <>
-                Miyagino-ku, Sendai, twelve days after the 2011 earthquake. This
-                is the placard itself. It carries the judgement — LIMITED ENTRY
-                — the hazard a hand has written on it, cracks and falling
-                material on the outside wall, the hour it was assessed, and the
-                ward office that assessed it. The province’s crustal scenario
-                counts 6,100 buildings yellow-tagged across Greater Vancouver.{" "}
-                <Cite id="PEIRS" /> Every field on this notice records when the
-                building was judged. None of them records when the restriction
-                ends.
+                Miyagino-ku, Sendai, twelve days after the March 2011
+                earthquake. The notice reads LIMITED ENTRY. Handwritten on it
+                are the hazard, cracks and falling material on the outer wall,
+                and the time of the assessment, 11 a.m. on 20 March. A label
+                names the Miyagino ward disaster office that issued it.
               </>
             }
           />
@@ -119,11 +115,9 @@ export const housing: PageModule = {
             caption={
               <>
                 Manchester Street, Christchurch, two days after the September
-                2010 earthquake, which killed nobody. Inner-city residents are
-                waiting for passes into the cordon zone, one of them with a
-                suitcase. The buildings behind them are standing, windows
-                unbroken and signs still up. A cordon is drawn around an area
-                rather than around an address. <Cite id="COV-RISK-2024" />
+                2010 earthquake. Inner-city residents wait for passes into the
+                cordon zone, one of them with a suitcase. The buildings behind
+                them are standing, with their windows unbroken.
               </>
             }
           />

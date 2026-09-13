@@ -99,10 +99,9 @@ export const healthCare: PageModule = {
             id="kumamoto-city-hospital-tents"
             caption={
               <>
-                Kumamoto City Hospital, three days after the main shock of the
-                2016 Kumamoto earthquakes. The file records the hospital as
-                damaged by them. From the front it is standing and whole, and
-                there are tents with chairs under them by its entrance.
+                Kumamoto City Hospital, damaged in the April 2016 Kumamoto
+                earthquakes, three days after the main shock. Tents with chairs
+                have been set up by its entrance.
               </>
             }
           />

@@ -199,14 +199,11 @@ export const damsAndReservoirs: PageModule = {
             id="van-norman-dam-slide"
             caption={
               <>
-                Lower Van Norman Dam, Los Angeles, the day after the 1971 San
-                Fernando earthquake. On the reservoir side the concrete lining
-                and part of the embankment have slid into the water, and the
-                slope behind is cracked along its length. The dam held the
-                reservoir. It was an earth embankment built by a different method
-                from either dam here, and nothing about how it behaved describes
-                Cleveland or Seymour Falls. What it shows is the question a
-                seismic stability evaluation is there to answer.
+                Lower Van Norman Dam, Los Angeles, the day after the February
+                1971 San Fernando earthquake. On the reservoir side, the concrete
+                facing and part of the embankment have slid into the water, and
+                cracks run along the remaining slope. The dam held the
+                reservoir.
               </>
             }
           />

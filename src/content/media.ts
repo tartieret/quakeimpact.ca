@@ -377,7 +377,7 @@ export const PHOTOGRAPHS = {
     id: "christchurch-parkview-valve",
     file: "christchurch-parkview-valve.jpg",
     ratio: "4 / 3",
-    alt: "Seen from above, a worker crouches at the bottom of a deep concrete shaft in standing water, both hands on the joint where a blue gate valve meets a large flanged pipe. A ladder runs down the shaft wall and a second person steadies it from the rim. The fitting sits well below street level: reaching it at all meant opening the ground and climbing down.",
+    alt: "Seen from above, a worker crouches at the bottom of a deep concrete shaft in standing water, both hands on the joint where a blue gate valve meets a large flanged pipe. A ladder runs down the shaft wall and a second person steadies it from the rim.",
     photographer: "Martin Luff",
     title: "Trying to restore water to Christchurch",
     collection: "Wikimedia Commons",
@@ -410,7 +410,7 @@ export const PHOTOGRAPHS = {
     id: "christchurch-water-tanker",
     file: "christchurch-water-tanker.jpg",
     ratio: "765 / 1024",
-    alt: "A road tanker stands at the kerb of a tree-lined residential street while about a dozen people fill white buckets, plastic jugs and bottles from its outlet, more empty containers waiting on the grass verge beside them. One person crouches to hold a bucket under the tap. The water is arriving by road and leaving by the bucket, because none of it is coming out of the taps in the houses behind.",
+    alt: "A road tanker stands at the kerb of a tree-lined residential street while about a dozen people fill white buckets, plastic jugs and bottles from its outlet, more empty containers waiting on the grass verge beside them. One person crouches to hold a bucket under the tap.",
     photographer: "Greg O’Beirne",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Post-earthquake_water_distribution_in_Beckenham_-_Tanker.jpg",
@@ -422,25 +422,19 @@ export const PHOTOGRAPHS = {
   },
 
   /**
-   * The second photograph on `/after/water/`, and the one that carries the
-   * duration rather than the repair. `christchurch-parkview-valve` is one
-   * crew at one fitting; this is three weeks later somewhere else, with the
-   * water running along the top of the road because what is under it is still
-   * broken.
+   * The second photograph on `/after/water/`, placed under the two-clocks
+   * figure: a temporary pipe laid on the surface of a road three weeks after
+   * the earthquakes.
    *
-   * It is the clearest statement the register holds of the distinction the page
-   * draws between its two clocks: service restored is not network repaired, and
-   * a tap that works can be a hose on the surface.
-   *
-   * Not Christchurch. The 2016 Kumamoto earthquakes are a different event on
-   * different ground, and the photograph is here for the arrangement it shows
-   * rather than for any transfer from Kyushu to the Fraser delta.
+   * The file's description is one line, "Temporary pipe after the 2016
+   * Kumamoto earthquake", and does not say what the pipe carries. The caption
+   * and the alt text do not say either.
    */
   "kumamoto-temporary-pipe": {
     id: "kumamoto-temporary-pipe",
     file: "kumamoto-temporary-pipe.jpg",
     ratio: "4 / 3",
-    alt: "A grey pipe runs along the edge of a cracked rural road, weighted down at intervals by white sandbags, and carries on into the distance towards the mountains. There is no trench and no excavation: the water is being carried over the road surface because the network buried beneath it is not back.",
+    alt: "A grey pipe runs along the edge of a cracked rural road, weighted down at intervals by white sandbags, and carries on into the distance towards the mountains. There is no trench: the pipe lies on the road surface.",
     photographer: "hanonimas",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Temporary_pipe_after_the_2016_Kumamoto_earthquake.jpg",
@@ -476,7 +470,7 @@ export const PHOTOGRAPHS = {
     id: "anchorage-bridge-inspection",
     file: "anchorage-bridge-inspection.jpg",
     ratio: "4 / 3",
-    alt: "A gloved hand holds a tape measure flat across a crack that runs through asphalt, the crack open wide enough that a width can be read off the tape. The surface either side of it is sound. What is being recorded is the size of one opening, by hand, by somebody standing on the road.",
+    alt: "A gloved hand holds a tape measure flat across a crack that runs through asphalt, the crack open wide enough that a width can be read off the tape. The surface either side of it is sound.",
     photographer: "Alaska DOT&PF",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Earthquake,_NB_Glenn,_Eagle_River_Bridge_11.30.2018.jpg",
@@ -491,7 +485,7 @@ export const PHOTOGRAPHS = {
     id: "anchorage-glenn-highway-closed",
     file: "anchorage-glenn-highway-closed.jpg",
     ratio: "4 / 3",
-    alt: "A wide highway carriageway stands empty of traffic under a grey sky, with a pickup, plant and a crew in high-visibility clothing working at the far end and snow on the verges. Cracks run across the concrete in the foreground. Nothing has fallen down: the road is whole, and it is carrying nobody.",
+    alt: "A wide highway carriageway stands empty of traffic under a grey sky, with a pickup, plant and a crew in high-visibility clothing working at the far end and snow on the verges. Cracks run across the concrete in the foreground.",
     photographer: "Alaska DOT&PF",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Earthquake,_NB_Glenn,_Eagle_River_Bridge_3_12.1.2018.jpg",
@@ -511,19 +505,14 @@ export const PHOTOGRAPHS = {
    * carriageway on the left is unbroken with its lane markings on, and the
    * off-ramp on the right has gone down the slope with its guardrail.
    *
-   * **It is an off-ramp embankment, not a bridge approach, and the caption says
-   * so.** It is also metres where the page counts millimetres. Both are in the
-   * caption rather than left for a reader to assume, because this is the
-   * register's most persuasive image and therefore the one most likely to be
-   * read as a prediction. What it stands for is the mechanism at its unchecked
-   * end; what the page's numbers describe is that mechanism held down by ground
-   * treatment.
+   * It is an off-ramp embankment, not a bridge approach, and the caption calls
+   * it an off-ramp.
    */
   "anchorage-mirror-lake-ramp": {
     id: "anchorage-mirror-lake-ramp",
     file: "anchorage-mirror-lake-ramp.jpg",
     ratio: "1800 / 667",
-    alt: "A highway off-ramp has dropped away entirely, its asphalt broken into tilted slabs and the embankment beneath it slid down the slope carrying the guardrail with it. The main carriageway a few metres to the left is unbroken, lane markings intact, snow on the verge. The road surface did not fail; the ground holding it up did.",
+    alt: "A highway off-ramp has dropped away entirely, its asphalt broken into tilted slabs and the embankment beneath it slid down the slope carrying the guardrail with it. The main carriageway a few metres to the left is unbroken, lane markings intact, snow on the verge.",
     photographer: "Alaska DOT&PF",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Mirror_Lake_SB_OFF_Ramp_Before.jpg",
@@ -538,8 +527,8 @@ export const PHOTOGRAPHS = {
    * **Suggested by the site's owner.** The second photograph on the site that
    * is not an analogue, after the DFPS hydrant. The page spends a section on
    * the tunnel's capacity and never shows the reader which crossing it means.
-   * Nothing in the frame is damaged, and the caption says the frame cannot be
-   * asked how the tunnel would behave.
+   * The caption says where the tunnel is and quotes the province on why it
+   * matters.
    *
    * CC BY-SA 4.0: share-alike, so not cropped.
    */
@@ -612,9 +601,8 @@ export const PHOTOGRAPHS = {
   },
 
   /**
-   * Joins the Port Liner's caption rather than repeating its anchor. It shows a
-   * standing elevated line under repair, from a recent event with a low death
-   * toll. A train is in the frame and the caption does not describe it: it may
+   * Placed directly after the Port Liner. It shows a standing elevated line
+   * under repair, from a recent event with a low death toll. A train is in the frame and the caption does not describe it: it may
    * be the one the earthquake derailed, and nothing on the file page says so.
    */
   "shiroishi-shinkansen-viaduct-repair": {
@@ -633,8 +621,7 @@ export const PHOTOGRAPHS = {
   },
 
   /**
-   * The only photograph on the site with no earthquake in it, and the caption
-   * says so in its first clause.
+   * The only photograph on the site with no earthquake in it.
    *
    * `/after/electricity/` argues that restoring a power system can mean
    * ordering equipment rather than repairing it: ten spares against a fleet of
@@ -647,14 +634,13 @@ export const PHOTOGRAPHS = {
    * rows: it is a photograph of the thing itself, not of an event, so there is
    * no analogue to limit and nothing about an earthquake to imply. What it has
    * to avoid instead is the opposite failure — looking like damage. It does
-   * not: nothing in the frame is broken, and the caption opens by saying no
-   * earthquake is involved.
+   * not: nothing in the frame is broken, and the caption describes a delivery.
    */
   "uchtelfangen-transformer": {
     id: "uchtelfangen-transformer",
     file: "uchtelfangen-transformer.jpg",
     ratio: "1800 / 946",
-    alt: "A grey power transformer the size of a small building sits slung between the red girder frames of a heavy-haulage transporter, which spans the full width of a closed road. People in high-visibility jackets stand at the far end, small against it. Nothing in the frame is damaged: this is one replacement unit arriving at a substation under escort.",
+    alt: "A grey power transformer the size of a small building sits slung between the red girder frames of a heavy-haulage transporter, which spans the full width of a closed road. People in high-visibility jackets stand at the far end, small against it. Nothing in the frame is damaged: the transformer is arriving at a substation under escort.",
     photographer: "Simon Mannweiler",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Trafo_(Umspannanlage_Uchtelfangen)_2019-02_(12).jpg",
@@ -676,14 +662,14 @@ export const PHOTOGRAPHS = {
    * transformer is the equipment at the top of that system. This is the bottom
    * of it, lying in the road.
    *
-   * Six weeks after the earthquake and the pole is still where it fell, which
-   * is the second thing the frame carries.
+   * Seven weeks after the earthquake (1 January to 17 February) and the pole is
+   * still where it fell, which is the second thing the frame carries.
    */
   "wajima-fallen-pole": {
     id: "wajima-fallen-pole",
     file: "wajima-fallen-pole.jpg",
     ratio: "1600 / 1067",
-    alt: "A concrete power pole lies snapped and fallen across a road, its cables still attached and trailing along the ground. Behind it an excavator stands in a heap of broken timber, houses are still standing on either side, and overhead wires run on above between the poles that did not come down.",
+    alt: "A concrete power pole lies fallen across a road, its cables still attached and trailing along the ground. Behind it an excavator stands in a heap of broken timber, houses are still standing on either side, and overhead wires run on above between the poles that did not come down.",
     photographer: "Hurohukidaikon",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:R6_noto_earthquake_wajima_street_2024-02-17_7.jpg",
@@ -714,7 +700,7 @@ export const PHOTOGRAPHS = {
     id: "christchurch-street-portaloo",
     file: "christchurch-street-portaloo.jpg",
     ratio: "1600 / 1067",
-    alt: "A blue portable toilet stands on the footpath of a tree-lined residential street with a biohazard label on its door, and a second one is visible further along the same footpath. The houses it serves are behind their hedges out of frame. The toilets are on the public path because what runs under it has stopped working.",
+    alt: "A blue portable toilet stands on the footpath of a tree-lined residential street with a biohazard label on its door, and a second one is visible further along the same footpath.",
     photographer: "Andy Miah",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:February_2011_Christchurch_earthquake_21.jpg",
@@ -730,8 +716,8 @@ export const PHOTOGRAPHS = {
    * infrastructure moving, and it needs no caption to be understood: a concrete
    * shaft standing a metre out of a road it used to sit under.
    *
-   * It is a sewer access chamber and not a sewer pipe, which the caption says.
-   * The page's claim is that a treatment plant built to a post-disaster
+   * It is a sewer access chamber and not a sewer pipe. The photographer's
+   * description attributes the uplift to soil liquefaction. The page's claim is that a treatment plant built to a post-disaster
    * standard still has to be reached through a network nobody has published an
    * assessment of, and this is that network with the ground taken out from
    * under it.
@@ -743,7 +729,7 @@ export const PHOTOGRAPHS = {
     id: "suzu-uplifted-manhole",
     file: "suzu-uplifted-manhole.jpg",
     ratio: "1050 / 1400",
-    alt: "A concrete sewer manhole shaft stands about a metre proud of a road surface with its cover still on top, the asphalt around its base broken into loose slabs. Damaged houses line the street behind it. The shaft did not rise out of the road by being pushed: the ground around it liquefied and the buried chamber came up through the surface it used to sit under.",
+    alt: "A concrete sewer manhole shaft stands about a metre proud of a road surface with its cover still on top, the asphalt around its base broken into loose slabs. Damaged houses line the street behind it.",
     photographer: "Yasu",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Uplifted_manhole_caused_by_the_2024_Noto_Peninsula_Earthquake_in_Suzu,_Ishikawa,_Japan.jpg",
@@ -774,7 +760,7 @@ export const PHOTOGRAPHS = {
     id: "sendai-limited-entry-placard",
     file: "sendai-limited-entry-placard.jpg",
     ratio: "1050 / 1400",
-    alt: "A yellow assessment notice is taped to the corrugated metal shutter of a building. Under a Japanese heading it reads LIMITED ENTRY in English, and below that a hand has written the hazard found, the hour the judgement was made and the district office that made it. Every field on it records when the building was judged. None of them records when the restriction ends.",
+    alt: "A yellow assessment notice is taped to the corrugated metal shutter of a building. Under a Japanese heading it reads LIMITED ENTRY in English. Below that, a hand has written the hazard found and the date and hour of the assessment, and a printed label names the ward office that made it.",
     photographer: "Walks",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Building_inspected_after_earthquake,_yellow.jpg",
@@ -804,7 +790,7 @@ export const PHOTOGRAPHS = {
     id: "christchurch-cordon-passes",
     file: "christchurch-cordon-passes.jpg",
     ratio: "4 / 3",
-    alt: "People with bags and a suitcase stand on a street corner talking to a soldier and a worker in a high-visibility vest, yellow cordon tape strung across the road behind them and a police car beyond it. The buildings on the corner are intact, their windows unbroken and their signs still up. Nobody is being kept out of a ruin: they are waiting for permission to go home.",
+    alt: "People with bags and a suitcase stand on a street corner talking to a soldier and a worker in a high-visibility vest, yellow cordon tape strung across the road behind them and a police car beyond it. The buildings on the corner are intact, their windows unbroken and their signs still up.",
     photographer: "Nate Cull",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:Manchester_Street_cordon.jpg",
@@ -824,9 +810,8 @@ export const PHOTOGRAPHS = {
    *
    * The page's section is short: Kobe's port was Japan's leading container
    * port, repairs took almost a year, and it permanently lost container
-   * business to other Asian ports. It says "Kobe is an illustration, and it
-   * forecasts nothing here", and the captions repeat that limit rather than
-   * relying on the sentence above them to carry it.
+   * business to other Asian ports. The captions describe what is in each frame
+   * and carry the page's sourced fact about the port's recovery.
    */
   "kobe-rokko-island-quay": {
     id: "kobe-rokko-island-quay",
@@ -869,9 +854,6 @@ export const PHOTOGRAPHS = {
    * full width. CC BY 4.0 permits a crop and requires it to be indicated, which
    * is what `changes` is for. The file on Commons is itself a crop of the
    * authority's original frame, and says so.
-   *
-   * A hilltop airport, not one on a delta, and the caption says that nothing
-   * about how long it stayed closed transfers to Sea Island.
    */
   "noto-airport-runway-repairs": {
     id: "noto-airport-runway-repairs",
@@ -893,7 +875,7 @@ export const PHOTOGRAPHS = {
    * `/after/fuel/`, in the section on a station with full tanks and no power.
    * The page's point is that tanks full of fuel are not fuel being sold, and
    * this is a station that stopped selling for a reason that is neither: the
-   * forecourt broke. The caption does not claim to know what was in its tanks.
+   * forecourt broke.
    *
    * Martin Luff's fourth row, and the September 2010 earthquake, which killed
    * nobody.
@@ -950,18 +932,16 @@ export const PHOTOGRAPHS = {
    * freezer aisle all stop on the same power". It is a cold case, empty, a week
    * after the 2011 earthquake, with signs limiting milk to one per customer.
    *
-   * It is Tokyo, a long way from the damage, and nothing in the file says the
-   * power was off in that shop. So the caption does not say the cold stopped. It
-   * says the milk did not arrive, which is the section's last paragraph — supply
-   * chains — and which is what the file's own description and the shop's signs
-   * support. "Tokyo" comes from two Commons categories rather than the file's
-   * date field, which says only "Japan".
+   * Nothing in the file says the power was off in that shop, and the case is
+   * lit, so the caption describes the empty case and the signs and does not say
+   * why it is empty. "Tokyo" comes from two Commons categories rather than the
+   * file's date field, which says only "Japan".
    */
   "tokyo-milk-case-limit": {
     id: "tokyo-milk-case-limit",
     file: "tokyo-milk-case-limit.jpg",
     ratio: "4 / 3",
-    alt: "A supermarket's chilled milk case stands almost empty, its shelves bare wire and price labels with nothing above them, a few cartons left at one end of the top shelf. Yellow notices on the shelves and glass limit milk to one per customer. The case is lit and working; what is missing is the stock.",
+    alt: "A supermarket's chilled milk case stands almost empty, its shelves bare wire and price labels with nothing above them, a few cartons left at one end of the top shelf. Yellow notices on the shelves and glass limit milk to one per customer. The case is lit.",
     photographer: "Dick Thomas Johnson",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:%E3%81%8A%E5%AE%A2%E6%A7%98%E3%81%B8_%E7%89%9B%E4%B9%B3%E3%81%AF%E3%81%8A%E4%B8%80%E4%BA%BA%E6%A7%981%E7%82%B9%E9%99%90%E3%82%8A%E3%81%A8%E3%81%95%E3%81%9B%E3%81%A6%E9%A0%82%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82_(6010087039).jpg",
@@ -987,7 +967,7 @@ export const PHOTOGRAPHS = {
     id: "kumamoto-city-hospital-tents",
     file: "kumamoto-city-hospital-tents.jpg",
     ratio: "1050 / 1400",
-    alt: "A seven-storey hospital building stands upright under a blue sky, its facade and windows whole from the front, with its name on a tall sign by the drive. At its entrance, white event tents have been put up with chairs and tables under them and hand-written notices on boards. The building is standing and part of what it does has moved outside.",
+    alt: "A seven-storey hospital building stands upright under a blue sky, its facade and windows whole from the front, with its name on a tall sign by the drive. At its entrance, white event tents have been put up with chairs and tables under them and hand-written notices on boards.",
     photographer: "hyolee2",
     collection: "Wikimedia Commons",
     href: "https://commons.wikimedia.org/wiki/File:2016_Kumamoto_earthquake_Kumamoto_City_Hospital_2.JPG",

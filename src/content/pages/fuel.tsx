@@ -98,10 +98,8 @@ export const fuel: PageModule = {
             caption={
               <>
                 Pages Road, Bexley, Christchurch, after the September 2010
-                earthquake, which killed nobody. The forecourt has broken and
-                heaved, silt is spread across it, and the station is taped off.
-                Nothing in the frame says what was in its tanks. Whatever it was,
-                none of it was being sold.
+                earthquake. The petrol station’s forecourt has broken and heaved,
+                silt is spread across it, and it is taped off.
               </>
             }
           />

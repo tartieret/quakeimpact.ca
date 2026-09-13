@@ -83,10 +83,8 @@ export const sanitation: PageModule = {
             caption={
               <>
                 A residential footpath in Christchurch, seven weeks after the
-                February 2011 earthquake. The blue cabinet is a portable toilet,
-                and there is another further along the same path. When the
-                sewers under a suburb stop working, this is where the toilet
-                goes.
+                February 2011 earthquake. A portable toilet stands on the
+                footpath, with a second one further along.
               </>
             }
           />
@@ -203,14 +201,10 @@ export const sanitation: PageModule = {
             id="suzu-uplifted-manhole"
             caption={
               <>
-                Suzu, on the Noto Peninsula, nearly four months after the 2024
-                earthquake. The concrete cylinder standing a metre proud of the
-                road is a sewer manhole: the ground around it liquefied and the
-                buried chamber came up through the surface it used to sit under,
-                breaking the asphalt as it rose. It is an access shaft rather
-                than a sewer pipe. What it shows is that nothing holds the
-                network under a street in place, and a plant built to survive an
-                earthquake still has to be reached through that network.
+                Horyumachi, Suzu, on the Noto Peninsula, nearly four months after
+                the January 2024 earthquake. A sewer manhole stands about a
+                metre above the road, pushed up through the asphalt when the
+                ground around it liquefied.
               </>
             }
           />

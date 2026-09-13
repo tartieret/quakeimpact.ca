@@ -95,10 +95,7 @@ export const largeInfrastructure: PageModule = {
               <>
                 Noto Airport, from the air, nearly four months after the 2024
                 Noto Peninsula earthquake. The three dark bands across the
-                runway are repaired sections. Noto is a hilltop airport rather
-                than one on a river delta, and nothing about how long it was
-                closed transfers to Sea Island. What carries across is the shape
-                of the repair: a runway comes back a section at a time.
+                runway are repaired sections.
               </>
             }
           />
@@ -191,13 +188,10 @@ export const largeInfrastructure: PageModule = {
             id="kobe-rokko-island-quay"
             caption={
               <>
-                Rokko Island, Kobe, 1995. The quay has split along its whole
-                length: the strip of apron carrying the crane rails has dropped
-                away from the rest of the yard, and the crane standing on it is
-                out of line. Rokko Island is an artificial island, built out
-                into the bay on fill. Nothing about how far any of this moved,
-                or how long it took to put right, transfers to a terminal on the
-                Fraser delta.
+                Rokko Island, Kobe, after the January 1995 earthquake. The quay
+                has split along its length: the strip of apron carrying the
+                crane rails has dropped away from the rest of the yard, and the
+                crane standing on it is out of line.
               </>
             }
           />

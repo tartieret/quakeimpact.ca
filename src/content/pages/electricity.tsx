@@ -338,13 +338,9 @@ export const electricity: PageModule = {
             id="uchtelfangen-transformer"
             caption={
               <>
-                Uchtelfangen, Germany, 2019, and no earthquake anywhere in it.
-                One transformer, just under 400 tonnes, arriving at its
-                substation by road from the harbour at Dillingen, with the road
-                closed for it. It is here because almost nobody has seen one, and the
-                numbers above describe an object rather than an idea: this is
-                what is at the end of a lead time, and what ten spares against a
-                fleet of 672 is counting. <Cite id="BCH-XFMR-21" />
+                Uchtelfangen, Germany, February 2019. A transformer weighing
+                just under 400 tonnes arrives at its substation on a closed road,
+                carried by road from the harbour at Dillingen.
               </>
             }
           />
@@ -352,14 +348,10 @@ export const electricity: PageModule = {
             id="wajima-fallen-pole"
             caption={
               <>
-                Wajima, on the Noto Peninsula, six weeks after the 2024
-                earthquake. A concrete distribution pole lies across the road
-                with its cables still on it, and the wires overhead still run
-                between the poles that stayed up. The transformer above is the
-                top of a power system. This is the bottom of it, and it is the
-                part BC Hydro has published least about: its assessment of the
-                transmission and distribution system is still being completed.{" "}
-                <Cite id="BCH-DAMFAQ" />
+                Wajima, on the Noto Peninsula, seven weeks after the January
+                2024 earthquake. A concrete power pole lies across the road with
+                its cables still attached, beside a collapsed house. Overhead
+                wires still run between the poles that stayed up.
               </>
             }
           />

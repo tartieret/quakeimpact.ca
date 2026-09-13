@@ -152,6 +152,8 @@ The design carries the same argument as the words: serious, quiet, sourced.
 
 **A photograph may not generate a claim.** Section 10's question 8 is about analogues and this is the sharpest case of it, because a photograph is the most persuasive thing on a page and the least measurable. The mechanism carries across; the depth, the number of streets and the time to clear do not, and the caption says so rather than leaving it to be assumed. Every number stays with the document that publishes it.
 
+**On the system pages, a caption states facts and nothing else.** Revised 13 September 2026 by the site's owner, for `/after/` only. A caption there names the place and the date, says what is in the frame, and may carry a sourced fact about the thing photographed. It does not anchor to Metro Vancouver, say what does not carry across, or explain what the photograph is for: the reader knows a photograph from Kobe is not a forecast, and saying so under every picture is the tic §4 describes. The rule above that a photograph may not generate a claim still holds, and it is kept by leaving claims out of the caption rather than by disclaiming them. `media.md` records the decision.
+
 **Maps show the ground, not the municipality.** A choropleth by city misleads. Municipal outlines are reference, laid over the real variable.
 
 **Geometry may not assert a precision the source does not have.** Section 5's rule against point estimates applies to drawings, and more sharply, because a shape reads as a measurement. "Many months" drawn as a bar on a month axis is an invented number. Where a source gives a range, the drawing shows a range. Where a source gives no end, the drawing has no end. No axis without a domain a source states.
