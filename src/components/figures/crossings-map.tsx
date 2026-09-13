@@ -36,7 +36,7 @@ import {
  *   measurement of strength that could be divided.
  * - **A design intent and an assessed capacity are not drawn alike.** Only the
  *   George Massey Tunnel is an assessment, and it is why the distinction
- *   exists: the tunnel was designed for a 475-year earthquake and now meets its
+ *   exists: its retrofit was designed for a 475-year earthquake and it now meets its
  *   criteria for 150 to 240 years, so drawing it at its design intent would put
  *   the wrong number on the map. It is hatched, which is the site's existing
  *   mark for a range rather than a figure.
@@ -332,28 +332,29 @@ const RAMP: {
     // one source's figure onto another's is how a number stops being checkable.
     label: "2,475 years, or 1 in 2,500",
     gloss:
-      "The level a new lifeline crossing is designed to. Two crossings reach it, and they are the two newest.",
+      "The largest published design events here. Performance requirements differ by project.",
   },
   {
     band: "1000",
     label: "1,000 years",
-    gloss: "Above this event, the one crossing marked at it need not be passable.",
+    gloss:
+      "Aimed at not collapsing, not at staying open. The one crossing here need not be passable after this event.",
   },
   {
     band: "475",
     label: "475 years",
-    gloss: "What a provincial retrofit is carried out against. Three crossings here.",
+    gloss: "The provincial retrofit objective, also named in the North Arm Bridge’s own design criteria.",
   },
   {
     band: "150-240",
     label: "150 to 240 years",
     assessed: true,
     gloss:
-      "Hatched because it is an assessed range rather than a figure aimed at. The George Massey Tunnel, which was designed for 475 years and no longer meets it.",
+      "Hatched because it is an assessed range rather than a figure aimed at. The George Massey Tunnel, whose retrofit was designed for 475 years and never finished.",
   },
   {
     band: "none",
-    label: "No return period published",
+    label: "No return period found",
     gloss:
       "Nothing found in the public record. Most of these crossings have been assessed; most assessments are not published.",
   },
@@ -396,8 +397,9 @@ function Key() {
           A return period is not a promise that the crossing still works.
         </p>
         <p className="mt-1 text-ink-muted">
-          These figures are what each structure was aimed at, not a forecast of
-          what it will do. A provincial retrofit is carried out to stop a bridge
+          The solid marks show design objectives; the hatched tunnel is an
+          assessment. A design paper does not establish that every proposed
+          measure was built. These figures do not forecast what a crossing will do. A provincial retrofit is carried out to stop a bridge
           collapsing, and the Ministry states that it is not retrofitting these
           bridges to remain in service. A crossing marked here can stand up and
           still carry nobody, and none of these numbers says how long an

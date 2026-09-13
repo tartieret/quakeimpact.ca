@@ -175,16 +175,17 @@ export const gettingAround: PageModule = {
               datasets are behind it. */}
           <Figure
             interactive
-            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, mapped and sized by the earthquake each has a published figure for. Vancouver's land connection runs east; everything else is a bridge or a tunnel. ${CROSSINGS_FACTS.unpublished} of the ${CROSSINGS_FACTS.total} crossings have no published figure for what they now meet, including all three False Creek bridges, the Arthur Laing, the Lions Gate and the Ironworkers. The Cambie is being upgraded toward a 1 in 2,475 standard and that work is not finished; the City says the same level is not achievable for the Granville or the Burrard. Where a figure exists it is what the structure was aimed at rather than a forecast, and it is an objective of not collapsing rather than of staying open, so a crossing marked here can stand and still carry nobody.`}
+            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, mapped and sized by the earthquake each has a published figure for. Vancouver's land connection runs east; everything else is a bridge or a tunnel. ${CROSSINGS_FACTS.unpublished} of the ${CROSSINGS_FACTS.total} crossings have no return period in the sources read, including all three False Creek bridges, the Arthur Laing and the Lions Gate. The Cambie is being upgraded toward a 1 in 2,475 standard and that work is not finished; the City says the same level is not achievable for the Granville or the Burrard. Solid marks show design objectives and the hatched tunnel shows an assessment. Performance requirements differ, and a design paper does not establish that all proposed work was built. A marked crossing can stand and still carry nobody.`}
             caption={
               <>
                 The crossings, where they are, sized by the earthquake each has
                 a published figure for. Vancouver's land route runs east through
                 Burnaby and New Westminster; every other way off the peninsula,
                 and every way onto Richmond, is on this map. Read the key before
-                the marks: these figures are what each structure was aimed at,
-                the aim is to stop a collapse rather than to keep a crossing
-                open, and for most of them no figure could be found at all. What
+                the marks: the solid marks show design objectives,
+                the hatched tunnel shows an assessment, and a surviving
+                crossing may still be closed. Some crossings have no return
+                period in the sources read. What
                 the crossings were built to withstand, and what the province
                 says a surviving bridge is good for the next morning, is in{" "}
                 {transportationLink}.

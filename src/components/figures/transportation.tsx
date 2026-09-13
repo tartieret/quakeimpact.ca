@@ -285,7 +285,7 @@ export function MasseyThreeNumbers() {
       <FigHeading y={M_HEAD_Y}>Three numbers, three different kinds</FigHeading>
 
       {/* A design intent: a point on the scale. */}
-      <FigHeading y={M_ROW_A}>Designed against</FigHeading>
+      <FigHeading y={M_ROW_A}>Retrofit designed against</FigHeading>
       <FigText
         x="100%"
         y={M_ROW_A}

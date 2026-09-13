@@ -38,8 +38,8 @@ export type EventBand = "150-240" | "475" | "1000" | "2475";
  * `/method/` draws this distinction explicitly: "a design intent is not a
  * prediction". Only the George Massey Tunnel is an assessment, and it is the
  * reason the distinction is carried at all - the tunnel now assesses below the
- * earthquake it was designed for, so drawing it at its design intent would be
- * drawing the wrong number.
+ * earthquake its retrofit was designed for, so drawing it at that intent would
+ * be drawing the wrong number.
  */
 export type EventKind = "intent" | "assessed";
 
@@ -49,9 +49,8 @@ export interface CrossingEvent {
   label: string;
   kind: EventKind;
   /**
-   * What that earthquake bought, in the source's own terms. Every one of these
-   * is collapse prevention rather than staying in service, which is the guard
-   * the map is built around rather than an incidental field.
+   * What that earthquake bought, in the source's own terms, including where
+   * the source does not establish what service remains afterwards.
    */
   bought: string;
 }
@@ -68,7 +67,7 @@ export interface Crossing {
    * states without a source: it claims nothing about earthquakes.
    */
   crosses: string;
-  /** Null where no return period has been published. Twelve of nineteen. */
+  /** Null where no return period was found in the sources read. */
   event: CrossingEvent | null;
   /**
    * A replacement or an upgrade that is funded and under way, where one is
@@ -89,17 +88,26 @@ export interface Crossing {
  *
  * **A null event means no return period was found, never that a crossing is
  * unassessed.** Most of these have been assessed and most assessments are not
- * public. Alex Fraser and the Pattullo replacement are described in the
- * sources without a return period, and Granville's upgrade names an objective
+ * public. Alex Fraser's design paper remains unread behind a paywall,
+ * and Granville's upgrade names an objective
  * but no event; the table says which is which, because a map cannot.
  */
 const READING: Record<
   string,
-  { crosses: string; event?: CrossingEvent; works?: string }
+  { name?: string; crosses: string; event?: CrossingEvent; works?: string }
 > = {
   // Burrard Inlet
   "lions-gate": { crosses: "Burrard Inlet" },
-  "ironworkers-memorial-second-narrows": { crosses: "Burrard Inlet" },
+  "ironworkers-memorial-second-narrows": {
+    crosses: "Burrard Inlet",
+    event: {
+      band: "475",
+      label: "475 years",
+      kind: "intent",
+      bought:
+        "Collapse prevention. The 1995 foundation design paper proposes ground improvement; it does not record its construction.",
+    },
+  },
 
   // False Creek, all three City of Vancouver bridges
   burrard: { crosses: "False Creek" },
@@ -117,7 +125,8 @@ const READING: Record<
       band: "475",
       label: "475 years",
       kind: "intent",
-      bought: "Prevent structural collapse. Reassessed in 2021 and 2022 against higher loads; those figures are not public.",
+      bought:
+        "Prevent structural collapse. Reassessed in 2021 and 2022 against higher loads, and further retrofits identified; those figures are not public.",
     },
   },
   "knight-street": {
@@ -126,7 +135,8 @@ const READING: Record<
       band: "1000",
       label: "1,000 years",
       kind: "intent",
-      bought: "Above this event the crossing need not be passable.",
+      bought:
+        "Survive without collapse, but need not be passable afterwards. The bridge was to stay usable by some traffic only after a 475-year event.",
     },
   },
   "north-arm": {
@@ -135,7 +145,8 @@ const READING: Record<
       band: "475",
       label: "475 years",
       kind: "intent",
-      bought: "Repairable damage. Only this event and a 100-year one were considered.",
+      bought:
+        "Repairable damage. The designer's paper names no other design event than this and a 100-year one.",
     },
   },
   queensborough: {
@@ -162,11 +173,22 @@ const READING: Record<
       label: "150 to 240 years",
       kind: "assessed",
       bought:
-        "Designed for 475 years. The ground-improvement stage of its retrofit was cancelled, and it now meets its criteria for this range instead.",
+        "Its 2001 retrofit aimed at 475 years. The ground-improvement stage was cancelled, and it now meets its criteria for this range instead.",
     },
-    works: "Replacement opens September 2031",
+    works: "Replacement due for completion September 2031",
   },
-  pattullo: { crosses: "Fraser River", works: "Replacement open" },
+  pattullo: {
+    name: "Pattullo replacement",
+    crosses: "Fraser River",
+    event: {
+      band: "2475",
+      label: "2,475 years",
+      kind: "intent",
+      bought:
+        "Lifeline performance under CSA S6 and the BC Supplement. The agreement names the class; the code's performance criteria have not been read.",
+    },
+    works: "Replacement open",
+  },
   "port-mann": {
     crosses: "Fraser River",
     event: {
@@ -183,13 +205,23 @@ const READING: Record<
       band: "2475",
       label: "2,475 years",
       kind: "intent",
-      bought: "Objectives set at 475, 1,000 and 2,475 years.",
+      bought:
+        "Must not collapse. It was to be repairable after a 1,000-year event and fully functional after a 475-year one.",
     },
   },
-  "canoe-pass": { crosses: "Fraser River" },
+  "canoe-pass": { name: "Westham Island", crosses: "Fraser River" },
 
   // Pitt River
-  "pitt-river": { crosses: "Pitt River" },
+  "pitt-river": {
+    crosses: "Pitt River",
+    event: {
+      band: "2475",
+      label: "2,475 years",
+      kind: "intent",
+      bought:
+        "Named a lifeline structure, built to accommodate this event. The release does not state what service must remain afterwards.",
+    },
+  },
 };
 
 interface CrossingRecord {
@@ -223,7 +255,7 @@ export const CROSSINGS: Crossing[] = FILE.crossings.map((record) => {
   }
   return {
     id: record.id,
-    name: record.name,
+    name: reading.name ?? record.name,
     kind: record.kind === "tunnel" ? "tunnel" : "bridge",
     at: [record.at[0], record.at[1]],
     crosses: reading.crosses,
@@ -268,6 +300,6 @@ export const CROSSINGS_FACTS = {
   total: CROSSINGS.length,
   published: CROSSINGS.filter((c) => c.event).length,
   unpublished: CROSSINGS.filter((c) => !c.event).length,
-  /** The three retrofitted to a 475-year event, which is the map's finding. */
+  /** Crossings with a published figure in the 475-year class. */
   at475: CROSSINGS.filter((c) => c.event?.band === "475").length,
 } as const;
