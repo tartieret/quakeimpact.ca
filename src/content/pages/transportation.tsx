@@ -297,6 +297,21 @@ export const transportation: PageModule = {
             approaches together are longer than the crossing.{" "}
             <Cite id="GMC-TUNNEL-19" />
           </p>
+          <Photograph
+            id="george-massey-tunnel-south-portal"
+            caption={
+              <>
+                The tunnel’s south portal in Delta, looking north, in 2021. It
+                carries Highway 99 under the Fraser River between Delta and
+                Richmond. The province calls it a critical transportation
+                corridor, and describes its replacement as strengthening
+                connections to the Port of Vancouver and the border
+                crossings. <Cite id="MOTI-MASSEY" /> This is the tunnel itself
+                rather than a comparison: nothing in the frame is damaged, and
+                nothing in it shows how it would behave in an earthquake.
+              </>
+            }
+          />
           <p>
             Its original design assumed peak shaking of 0.21 g, about a fifth of
             the force of gravity, and it “did not consider the effects of soil
@@ -531,6 +546,32 @@ export const transportation: PageModule = {
                 because nothing has run on them. The eighty minutes above was a
                 check of a system that turned out to be undamaged. This is the
                 other case.
+              </>
+            }
+          />
+          <Photograph
+            id="kobe-port-liner-shored-guideway"
+            caption={
+              <>
+                Kobe, Japan, four days after the 1995 earthquake. The green
+                girders carry the Port Liner, an automated train on an elevated
+                guideway, the same kind of system as SkyTrain. The guideway did
+                not come down. It is standing on scaffolding towers, and the
+                street under it is closed. It is a different design, from a
+                different decade, on different ground, and it says nothing
+                about how a SkyTrain guideway would perform.
+              </>
+            }
+          />
+          <Photograph
+            id="shiroishi-shinkansen-viaduct-repair"
+            caption={
+              <>
+                Shiroishi, Japan, thirteen days after the March 2022 earthquake
+                off Fukushima. The same kind of work on a newer line: the
+                Tohoku Shinkansen viaduct is standing, and crews have
+                scaffolded the beams tying its columns together, which the
+                photographer records as damaged.
               </>
             }
           />

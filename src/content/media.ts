@@ -535,6 +535,30 @@ export const PHOTOGRAPHS = {
   },
 
   /**
+   * **Suggested by the site's owner.** The second photograph on the site that
+   * is not an analogue, after the DFPS hydrant. The page spends a section on
+   * the tunnel's capacity and never shows the reader which crossing it means.
+   * Nothing in the frame is damaged, and the caption says the frame cannot be
+   * asked how the tunnel would behave.
+   *
+   * CC BY-SA 4.0: share-alike, so not cropped.
+   */
+  "george-massey-tunnel-south-portal": {
+    id: "george-massey-tunnel-south-portal",
+    file: "george-massey-tunnel-south-portal.jpg",
+    ratio: "1800 / 1172",
+    alt: "Cars and a tanker truck on a four-lane highway head down between concrete retaining walls into the twin portals of the George Massey Tunnel. Lane-control signals above the entrance show red crosses over the lanes to the left and green arrows over the lanes to the right.",
+    photographer: "SounderBruce",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:George_Massey_Tunnel_south_portal.jpg",
+    taken: "16 September 2021",
+    place: "South portal, George Massey Tunnel, Delta, British Columbia",
+    licence: "CC-BY-SA-4.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
+  /**
    * `/after/transportation/`, under the SkyTrain section, and it is there for a
    * contrast rather than for a resemblance.
    *
@@ -558,6 +582,52 @@ export const PHOTOGRAPHS = {
     taken: "24 February 2017",
     place: "North of Kaikoura, Canterbury, New Zealand",
     licence: "CC-BY-3.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
+  /**
+   * **Suggested by the site's owner**, who asked for structures like SkyTrain
+   * damaged in other earthquakes. The Port Liner is an automated train on an
+   * elevated guideway, the nearest system to SkyTrain in the register. The
+   * guideway stayed up and stands on props. That is the case between the
+   * eighty-minute check and a collapse, and the page is silent about it.
+   *
+   * Collapsed Shinkansen spans from the same earthquake were rejected: the page
+   * makes no claim that SkyTrain would fall.
+   */
+  "kobe-port-liner-shored-guideway": {
+    id: "kobe-port-liner-shored-guideway",
+    file: "kobe-port-liner-shored-guideway.jpg",
+    ratio: "1800 / 1292",
+    alt: "An elevated guideway on green steel girders runs above a city street. Scaffolding towers and steel cross-beams prop up its deck between the concrete piers, and barriers and cones close the lanes beneath. The office building on the left has lost cladding onto the pavement.",
+    photographer: "City of Kobe",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Hachimandori_c056.jpg",
+    taken: "21 January 1995",
+    place: "Port Liner near Hachiman-dori, Chuo-ku, Kobe, Japan",
+    licence: "CC-BY-2.1-JP",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
+  /**
+   * Joins the Port Liner's caption rather than repeating its anchor. It shows a
+   * standing elevated line under repair, from a recent event with a low death
+   * toll. A train is in the frame and the caption does not describe it: it may
+   * be the one the earthquake derailed, and nothing on the file page says so.
+   */
+  "shiroishi-shinkansen-viaduct-repair": {
+    id: "shiroishi-shinkansen-viaduct-repair",
+    file: "shiroishi-shinkansen-viaduct-repair.jpg",
+    ratio: "1800 / 1204",
+    alt: "A long concrete railway viaduct on paired columns crosses farmland. Scaffolding has been built around the beams tying the columns together near the ground, and aerial work platforms and trucks are parked under the deck. A Shinkansen train stands on the viaduct at the far right.",
+    photographer: "Katorisi",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Connecting_beams_damaged_by_the_2022_earthquake,_Shiroishi_city,_Japan.jpg",
+    taken: "29 March 2022",
+    place: "Tohoku Shinkansen viaduct, Shiroishi, Miyagi, Japan",
+    licence: "CC-BY-4.0",
     status: "verified",
     usedOn: "/after/transportation/",
   },

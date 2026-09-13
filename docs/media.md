@@ -101,10 +101,10 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Twenty-seven rows are Verified, checked at their sources on 12 and 13 September
-2026, and all twenty-seven are hosted.** Two on `/shaking/ground/`, three on
+**Thirty rows are Verified, checked at their sources on 12 and 13 September
+2026, and all thirty are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
-`/after/water/`, four on `/after/transportation/`, two on
+`/after/water/`, seven on `/after/transportation/`, two on
 `/after/electricity/`, two on `/after/sanitation/`, two on `/after/housing/`,
 three on `/after/large-infrastructure/`, one each on `/after/fuel/`,
 `/after/dams-and-reservoirs/`, `/after/food/`, `/after/health-care/` and
@@ -593,6 +593,106 @@ contrast rather than a resemblance, which is unusual in this register.
   and it is 542 × 417, too small to host. Worth knowing the ministry releases
   under CC BY 4.0: `https://www.mlit.go.jp/` is a source this register has not
   used and should look at again.
+
+#### `kobe-port-liner-shored-guideway`
+
+**Suggested by the site's owner**, who asked for structures like SkyTrain
+damaged in other earthquakes.
+
+- **Shows:** an elevated guideway on green steel girders above a city street.
+  Scaffolding towers and steel cross-beams prop the deck between its concrete
+  piers. Barriers and cones close the lanes underneath. An office building on
+  the left has lost cladding onto the pavement.
+- **Photographer:** City of Kobe, *1.17 no kiroku* archive, photo code c056
+- **Licence:** CC BY 2.1 JP
+- **Source:** https://commons.wikimedia.org/wiki/File:Hachimandori_c056.jpg
+- **Status:** **Verified, 13 September 2026.** Licence, date (21 January 1995)
+  and author read off the Commons file page, the same route as the two Kobe port
+  rows. The description names the line: 八幡通付近新交通ポートライナー, "the Port
+  Liner new transit near Hachiman-dori". Commons also files it under *Category:Port
+  Liner*.
+- **Hosted:** `public/media/kobe-port-liner-shored-guideway.jpg`. 2747 × 1972
+  resized to 1800 × 1292; ratio `1800 / 1292`. No other change.
+- **Used on:** `/after/transportation/`, SkyTrain section, after Kaikoura.
+- **Why this one:** it is the closest system in the register to SkyTrain. The
+  Port Liner is an automated guideway transit line; that description was read
+  off its English Wikipedia summary, not off a site source, and the caption uses
+  it only to name what kind of line is in the frame. The guideway stayed up and
+  is on props. That is the case between "nothing found in eighty minutes" and a
+  collapse, which is the case the page is silent about.
+- **The caption does not say how long the line was shut.** Wikipedia gives a
+  date. The site has no source for it.
+
+#### `shiroishi-shinkansen-viaduct-repair`
+
+- **Shows:** a long concrete railway viaduct on paired columns across farmland.
+  Scaffolding surrounds the tie beams between the columns near ground level, with
+  aerial work platforms and trucks parked under the deck. A Shinkansen train
+  stands on the viaduct at the far right.
+- **Photographer:** Katorisi
+- **Licence:** CC BY 4.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Connecting_beams_damaged_by_the_2022_earthquake,_Shiroishi_city,_Japan.jpg
+- **Status:** **Verified, 13 September 2026.** Own work; licence, date (29 March
+  2022) and description read off the Commons file page:
+  2022年福島県沖地震により損傷を受けた、東北新幹線の高架橋のつなぎ梁, "tie beams of
+  the Tohoku Shinkansen viaduct damaged by the 2022 earthquake off Fukushima".
+- **Hosted:** `public/media/shiroishi-shinkansen-viaduct-repair.jpg`. 2992 ×
+  2000 resized to 1800 × 1204; ratio `1800 / 1204`. No crop, although CC BY
+  would allow one.
+- **Used on:** `/after/transportation/`, directly after the Port Liner, joining
+  its caption rather than repeating the anchor.
+- **Why this one:** a recent event with a low death toll, and a standing elevated
+  line under repair rather than a fallen one.
+- **The train in the frame is not described.** The same photographer's
+  same-day file shows the derailed train being lifted off this line, so the train
+  may be that one. The caption does not guess.
+
+**Rejected for the SkyTrain section, 13 September 2026:**
+
+- `19950117 img1611.jpg` and `19970117 img1622.jpg` (Kuwata masami, CC BY-SA
+  4.0): collapsed Sanyo Shinkansen spans in Nishinomiya, one lying across the
+  Hankyu Imazu line. The page makes no claim that SkyTrain would collapse, and
+  a collapse beside that section would make the claim for it.
+- `Rokkomichi Sta b043.jpg` (City of Kobe): the collapsed JR Rokkomichi station
+  front. The same objection, and it is a station building rather than a
+  guideway.
+- `200 K25 Toki 325 derailed 20041106.JPG` (CC BY-SA 3.0): a derailed train on a
+  viaduct in 2004. It is about trains leaving the track, which the page does not
+  discuss.
+- `Hankyu Kotono c057.jpg` (City of Kobe): trains running on an elevated line,
+  with no damage visible in the frame.
+- `Reinforcement work of Tohoku Shinkansen for earthquake damage.jpg` (CC BY-SA
+  4.0): an excavator at a pier base, seen from a passing train. Nothing in the
+  frame shows damage.
+
+#### `george-massey-tunnel-south-portal`
+
+**Suggested by the site's owner**, who asked for the tunnel with a line saying
+where it is and why it matters. **Not an analogue**, the second after
+`vancouver-dfps-hydrant`: it shows the crossing the page is about, undamaged.
+
+- **Shows:** cars and a tanker truck heading down between retaining walls into
+  the twin portals, lane-control signals above them.
+- **Photographer:** SounderBruce
+- **Licence:** CC BY-SA 4.0. Share-alike, so not cropped.
+- **Source:** https://commons.wikimedia.org/wiki/File:George_Massey_Tunnel_south_portal.jpg
+- **Status:** **Verified, 13 September 2026.** Own work; licence and date read
+  off the Commons file page.
+- **Hosted:** `public/media/george-massey-tunnel-south-portal.jpg`. 3396 × 2210
+  resized to 1800 × 1172; ratio `1800 / 1172`. EXIF orientation is normal.
+- **Used on:** `/after/transportation/`, after the tunnel's first paragraph.
+- **Where the caption's facts come from.** *Under the Fraser River* is in
+  `GMC-TUNNEL-19`. *Between Delta and Richmond* and *Highway 99* were read off
+  the Commons description, the same way place names on other rows were. *A
+  critical transportation corridor* and the connections to the Port of Vancouver
+  and the border crossings are the province's words in `MOTI-MASSEY`, which is
+  cited in the caption. That release is about the replacement, and the caption
+  attributes those words to the province rather than stating them as fact. **No
+  traffic count is given:** neither source publishes one.
+- **Alternatives not used:** the same photographer's southbound interior shot
+  (`George Massey Tunnel southbound.jpg`), which could be any tunnel; and
+  `Entering the deas island tunnel (6843771114).jpg` (CC BY 2.0), which is
+  1000 × 620 and too small to host.
 
 #### `anchorage-mirror-lake-ramp`
 
