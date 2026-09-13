@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Prose, Quote, VerificationNote } from "@/components/page-parts";
+import {
+  Photograph,
+  Prose,
+  Quote,
+  VerificationNote,
+} from "@/components/page-parts";
 import type { PageModule } from "./index";
 
 /**
@@ -182,6 +187,21 @@ export const sanitation: PageModule = {
             reaches those plants through pipes, and the sewers are the part
             whose assessed condition is not public.
           </p>
+          <Photograph
+            id="suzu-uplifted-manhole"
+            caption={
+              <>
+                Suzu, on the Noto Peninsula, nearly four months after the 2024
+                earthquake. The concrete cylinder standing a metre proud of the
+                road is a sewer manhole: the ground around it liquefied and the
+                buried chamber came up through the surface it used to sit under,
+                breaking the asphalt as it rose. It is an access shaft rather
+                than a sewer pipe. What it shows is that nothing holds the
+                network under a street in place, and a plant built to survive an
+                earthquake still has to be reached through that network.
+              </>
+            }
+          />
           <p>
             Annacis Island serves about 1.25 million people across 14
             municipalities, and its remaining stage-gate approvals run from 2027

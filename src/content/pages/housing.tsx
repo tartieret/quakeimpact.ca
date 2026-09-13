@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
+  Photograph,
   Prose,
   Quote,
   DataTable,
@@ -66,6 +67,22 @@ export const housing: PageModule = {
             building stands, entry is restricted, and nobody has said for how
             long.
           </p>
+          <Photograph
+            id="sendai-limited-entry-placard"
+            caption={
+              <>
+                Miyagino-ku, Sendai, twelve days after the 2011 earthquake. This
+                is the placard itself. It carries the judgement — LIMITED ENTRY
+                — the hazard a hand has written on it, cracks and falling
+                material on the outside wall, the hour it was assessed, and the
+                ward office that assessed it. The province’s crustal scenario
+                counts 6,100 buildings yellow-tagged across Greater Vancouver.{" "}
+                <Cite id="PEIRS" /> Every field on this notice records when the
+                building was judged. None of them records when the restriction
+                ends.
+              </>
+            }
+          />
           <p>
             Behind every placard is a queue. In a Cascadia earthquake, damage
             assessment teams are expected to be overwhelmed, leaving “about two

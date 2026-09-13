@@ -101,10 +101,11 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Fourteen rows are Verified, checked at their sources on 12 September 2026, and
-thirteen are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
+**Sixteen rows are Verified, checked at their sources on 12 September 2026, and
+fifteen are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
 one on `/shaking/fire-following/`, three on `/after/water/`, three on
-`/after/transportation/` and one on `/after/electricity/`. The fourteenth,
+`/after/transportation/`, one on `/after/electricity/`, one on
+`/after/sanitation/` and one on `/after/housing/`. The sixteenth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -116,6 +117,7 @@ the site. See *The verification queue* at the foot for what is left.
 | Short | Full name | Share-alike | Non-commercial | No derivatives |
 | --- | --- | --- | --- | --- |
 | CC BY 2.0 | Attribution 2.0 Generic | no | no | no |
+| CC BY 4.0 | Attribution 4.0 International | no | no | no |
 | CC BY-SA 2.0 | Attribution-ShareAlike 2.0 Generic | **yes** | no | no |
 | CC BY-SA 3.0 | Attribution-ShareAlike 3.0 Unported | **yes** | no | no |
 | CC BY-SA 4.0 | Attribution-ShareAlike 4.0 International | **yes** | no | no |
@@ -639,6 +641,67 @@ says so in its first clause.
   register from infrastructure to village spectacle. Frame 12 centres the object,
   carries the scale, and keeps people incidental. Nothing but looking separates
   the three.
+
+#### `suzu-uplifted-manhole`
+
+- **Shows:** a concrete sewer manhole shaft standing about a metre proud of a
+  road, cover still on, the asphalt around its base broken into loose slabs.
+  Damaged houses behind. Nobody in frame.
+- **Photographer:** Yasu
+- **Licence:** CC BY-SA 3.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Uplifted_manhole_caused_by_the_2024_Noto_Peninsula_Earthquake_in_Suzu,_Ishikawa,_Japan.jpg
+- **Status:** **Verified, 12 September 2026.** The description names the place,
+  the object and the mechanism — soil liquefaction — rather than leaving any of
+  the three to inference, which is rarer than it should be.
+- **Hosted:** `public/media/suzu-uplifted-manhole.jpg`. 3024 × 4032 resized to
+  1050 × 1400; ratio `1050 / 1400`, measured off the hosted file.
+- **Used on:** `/after/sanitation/`, under the sentence saying sewage reaches
+  the plants through pipes whose assessed condition is not public.
+- **Why this one:** it is the plainest image in the register of buried
+  infrastructure moving, and it needs no explanation to be read. The page's
+  claim is that a treatment plant built to a post-disaster standard still has to
+  be reached through a network nobody has published an assessment of. This is
+  that network with the ground taken out from under it.
+- **An access shaft, not a sewer pipe,** and the caption says so.
+- **Taken nearly four months after the earthquake,** which is the second thing
+  it carries: 1 January to 27 April, and the shaft is still standing in the
+  road.
+- **Not a low-casualty event.** The 2024 Noto earthquake killed several hundred
+  people. The frame is infrastructure with nobody in it, so the limit is met,
+  but the preference for low-casualty analogues is not, and that is a trade
+  made deliberately: no equivalent image of this mechanism turned up from an
+  event that killed nobody.
+
+#### `sendai-limited-entry-placard`
+
+**The only photograph on the site whose subject is a piece of paper,** and the
+best argument yet that the widened test was worth adopting. It shows no damage
+at all.
+
+- **Shows:** a yellow assessment notice taped to a corrugated metal shutter,
+  reading LIMITED ENTRY in English under a Japanese heading, with the hazard
+  found, the hour of the judgement and the issuing ward office written on by
+  hand.
+- **Photographer:** Walks
+- **Licence:** CC BY 4.0 — the first 4.0 attribution-only row, and the reason
+  that line was added to the table above.
+- **Source:** https://commons.wikimedia.org/wiki/File:Building_inspected_after_earthquake,_yellow.jpg
+- **Status:** **Verified, 12 September 2026.**
+- **Hosted:** `public/media/sendai-limited-entry-placard.jpg`. 2736 × 3648
+  resized to 1050 × 1400; ratio `1050 / 1400`.
+- **Used on:** `/after/housing/`, under the paragraph on yellow tags.
+- **Why this one:** the page says somebody has to walk up to each building,
+  judge it and leave a placard on the door, and that the yellow tag is the
+  condition most people would be in — the building stands, entry is restricted,
+  and nobody has said for how long. This *is* that placard, and the last clause
+  is visible in it: every field records when the judgement was made and none
+  records when it ends. A photograph of a wrecked house could not have made that
+  point. A photograph of the paperwork does.
+- **It is a building, and the register does not claim it is a home.** The file
+  page says only "Emergency Risk Discrimination: LIMITED ENTRY" and nothing
+  about what is behind the shutter. The assessment system covers dwellings and
+  does not only cover them, so the caption stays with the notice and never calls
+  it a house.
 
 #### `christchurch-army-water-repair`
 

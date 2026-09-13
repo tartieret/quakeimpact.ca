@@ -20,6 +20,7 @@
 
 export type MediaLicenceId =
   | "CC-BY-2.0"
+  | "CC-BY-4.0"
   | "CC-BY-SA-2.0"
   | "CC-BY-SA-3.0"
   | "CC-BY-SA-4.0"
@@ -58,6 +59,15 @@ export const MEDIA_LICENCES: Record<MediaLicenceId, MediaLicence> = {
     name: "Creative Commons Attribution 2.0 Generic",
     short: "CC BY 2.0",
     href: "https://creativecommons.org/licenses/by/2.0/",
+    shareAlike: false,
+    nonCommercial: false,
+    noDerivatives: false,
+  },
+  "CC-BY-4.0": {
+    id: "CC-BY-4.0",
+    name: "Creative Commons Attribution 4.0 International",
+    short: "CC BY 4.0",
+    href: "https://creativecommons.org/licenses/by/4.0/",
     shareAlike: false,
     nonCommercial: false,
     noDerivatives: false,
@@ -360,6 +370,66 @@ export const PHOTOGRAPHS = {
    * photograph with a child in it should be a decision somebody made rather
    * than one nobody noticed.
    */
+  /**
+   * `/after/sanitation/`. The plainest photograph in the register of buried
+   * infrastructure moving, and it needs no caption to be understood: a concrete
+   * shaft standing a metre out of a road it used to sit under.
+   *
+   * It is a sewer access chamber and not a sewer pipe, which the caption says.
+   * The page's claim is that a treatment plant built to a post-disaster
+   * standard still has to be reached through a network nobody has published an
+   * assessment of, and this is that network with the ground taken out from
+   * under it.
+   *
+   * Taken nearly four months after the earthquake, which is the second thing it
+   * carries: the shaft is still standing in the road in late April.
+   */
+  "suzu-uplifted-manhole": {
+    id: "suzu-uplifted-manhole",
+    file: "suzu-uplifted-manhole.jpg",
+    ratio: "1050 / 1400",
+    alt: "A concrete sewer manhole shaft stands about a metre proud of a road surface with its cover still on top, the asphalt around its base broken into loose slabs. Damaged houses line the street behind it. The shaft did not rise out of the road by being pushed: the ground around it liquefied and the buried chamber came up through the surface it used to sit under.",
+    photographer: "Yasu",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Uplifted_manhole_caused_by_the_2024_Noto_Peninsula_Earthquake_in_Suzu,_Ishikawa,_Japan.jpg",
+    taken: "27 April 2024",
+    place: "Horyumachi, Suzu, Ishikawa Prefecture, Japan",
+    licence: "CC-BY-SA-3.0",
+    status: "verified",
+    usedOn: "/after/sanitation/",
+  },
+
+  /**
+   * `/after/housing/`, and the only photograph on the site whose subject is a
+   * piece of paper.
+   *
+   * The page says somebody has to walk up to each building, judge it and leave
+   * a placard on the door, and that the yellow tag is the condition most people
+   * would be in: the building stands, entry is restricted, and nobody has said
+   * for how long. This is that placard. It carries the judgement, the hazard
+   * written on by hand, the hour it was made, and the office that made it — and
+   * no end date, which is the page's point standing in the frame.
+   *
+   * **It is a building, and the register does not claim it is a home.** The
+   * file page says "Emergency Risk Discrimination: LIMITED ENTRY" and nothing
+   * about what is behind the shutter. The assessment system covers dwellings
+   * and does not only cover them, so the caption stays with the notice.
+   */
+  "sendai-limited-entry-placard": {
+    id: "sendai-limited-entry-placard",
+    file: "sendai-limited-entry-placard.jpg",
+    ratio: "1050 / 1400",
+    alt: "A yellow assessment notice is taped to the corrugated metal shutter of a building. Under a Japanese heading it reads LIMITED ENTRY in English, and below that a hand has written the hazard found, the hour the judgement was made and the district office that made it. Every field on it records when the building was judged. None of them records when the restriction ends.",
+    photographer: "Walks",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Building_inspected_after_earthquake,_yellow.jpg",
+    taken: "23 March 2011",
+    place: "Miyagino-ku, Sendai, Miyagi Prefecture, Japan",
+    licence: "CC-BY-4.0",
+    status: "verified",
+    usedOn: "/after/housing/",
+  },
+
   "christchurch-water-tanker": {
     id: "christchurch-water-tanker",
     file: "christchurch-water-tanker.jpg",
