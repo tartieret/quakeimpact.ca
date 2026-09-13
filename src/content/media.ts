@@ -876,6 +876,59 @@ export const PHOTOGRAPHS = {
   },
 
   /**
+   * `/after/food/`, in the section headed "The till, the cold case and the
+   * freezer aisle all stop on the same power". It is a cold case, empty, a week
+   * after the 2011 earthquake, with signs limiting milk to one per customer.
+   *
+   * It is Tokyo, a long way from the damage, and nothing in the file says the
+   * power was off in that shop. So the caption does not say the cold stopped. It
+   * says the milk did not arrive, which is the section's last paragraph — supply
+   * chains — and which is what the file's own description and the shop's signs
+   * support. "Tokyo" comes from two Commons categories rather than the file's
+   * date field, which says only "Japan".
+   */
+  "tokyo-milk-case-limit": {
+    id: "tokyo-milk-case-limit",
+    file: "tokyo-milk-case-limit.jpg",
+    ratio: "4 / 3",
+    alt: "A supermarket's chilled milk case stands almost empty, its shelves bare wire and price labels with nothing above them, a few cartons left at one end of the top shelf. Yellow notices on the shelves and glass limit milk to one per customer. The case is lit and working; what is missing is the stock.",
+    photographer: "Dick Thomas Johnson",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:%E3%81%8A%E5%AE%A2%E6%A7%98%E3%81%B8_%E7%89%9B%E4%B9%B3%E3%81%AF%E3%81%8A%E4%B8%80%E4%BA%BA%E6%A7%981%E7%82%B9%E9%99%90%E3%82%8A%E3%81%A8%E3%81%95%E3%81%9B%E3%81%A6%E9%A0%82%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82_(6010087039).jpg",
+    taken: "18 March 2011",
+    place: "Tokyo, Japan",
+    licence: "CC-BY-2.0",
+    status: "verified",
+    usedOn: "/after/food/",
+  },
+
+  /**
+   * `/after/health-care/`, under "A hospital that stays standing is not the same
+   * as a hospital that stays working". The file's description says the hospital
+   * was damaged in the earthquake. The frame shows the building upright and
+   * whole from the front, and white tents with chairs set up by its entrance.
+   *
+   * What the tents were for is not in the file, and the caption does not guess:
+   * a standing hospital with part of its business moved onto the forecourt is
+   * the point, and it needs no more than is in the frame. Taken three days after
+   * the main shock of 16 April 2016.
+   */
+  "kumamoto-city-hospital-tents": {
+    id: "kumamoto-city-hospital-tents",
+    file: "kumamoto-city-hospital-tents.jpg",
+    ratio: "1050 / 1400",
+    alt: "A seven-storey hospital building stands upright under a blue sky, its facade and windows whole from the front, with its name on a tall sign by the drive. At its entrance, white event tents have been put up with chairs and tables under them and hand-written notices on boards. The building is standing and part of what it does has moved outside.",
+    photographer: "hyolee2",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:2016_Kumamoto_earthquake_Kumamoto_City_Hospital_2.JPG",
+    taken: "19 April 2016",
+    place: "Kumamoto City Hospital, Higashi-ku, Kumamoto, Japan",
+    licence: "CC-BY-SA-3.0",
+    status: "verified",
+    usedOn: "/after/health-care/",
+  },
+
+  /**
    * Cleared and held. Silt and standing water together is closer to the first
    * hours than silt alone, and `/shaking/ground/` has no section about the
    * first hours. A third photograph in the one section that does exist would be
@@ -899,24 +952,23 @@ export const PHOTOGRAPHS = {
   },
 
   /**
-   * Cleared and held for `/after/outside-help/`, and deliberately kept off
-   * `/after/water/` although it was found for it. Two soldiers in uniform under
-   * a water page invite an inference the water page does not make and cannot
-   * support: that the army restores the network. Where military assistance is
-   * the actual subject, the same photograph carries no such implication.
+   * `/after/outside-help/`, where it was held for from the start. It was found
+   * for `/after/water/` and kept off that page: two soldiers under a water page
+   * invite the inference that the army restores the network, which that page
+   * does not say. On the page about help arriving from outside the impact area,
+   * the same photograph says what the page says. The engineers are from Linton,
+   * at the other end of the country, which is the description's own detail.
    *
    * Its Commons description ends with a sentence about aerial surveillance from
    * a P-3K Orion. That is boilerplate pasted across the whole NZ Defence Force
    * upload batch and it is not this frame, which is at ground level a few feet
-   * from the two men. Recorded because the next person to read that description
-   * will wonder the same thing, and because it is one more case of a
-   * description contradicting its own picture.
+   * from the two men.
    */
   "christchurch-army-water-repair": {
     id: "christchurch-army-water-repair",
-    file: null,
+    file: "christchurch-army-water-repair.jpg",
     ratio: "3 / 2",
-    alt: "Two army engineers in camouflage dig by hand into broken, stony ground, a backhoe standing behind them with its bucket lowered. The machine opened the hole; the last of the distance down to what is buried is being closed with hand tools.",
+    alt: "Two soldiers in camouflage dig by hand into broken, stony ground, one bent over a shovel in the loose fill and the other working a long-handled tool beside him. A backhoe stands behind them with a third soldier in its cab and its bucket lowered to the hole.",
     photographer: "New Zealand Defence Force",
     title: "NZ Army Engineers repair water mains at Burwood Hospital after Christchurch Earthquake",
     collection: "Wikimedia Commons",
@@ -925,7 +977,7 @@ export const PHOTOGRAPHS = {
     place: "Burwood Hospital, Christchurch, New Zealand",
     licence: "CC-BY-2.0",
     status: "verified",
-    usedOn: null,
+    usedOn: "/after/outside-help/",
   },
 } as const satisfies Record<string, Photograph>;
 

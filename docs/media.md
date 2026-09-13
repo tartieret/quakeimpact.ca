@@ -101,16 +101,17 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Twenty-five rows are Verified, checked at their sources on 12 and 13 September
-2026, and twenty-four are hosted.** Two on `/shaking/ground/`, three on
+**Twenty-seven rows are Verified, checked at their sources on 12 and 13 September
+2026, and all twenty-seven are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
 `/after/water/`, four on `/after/transportation/`, two on
 `/after/electricity/`, two on `/after/sanitation/`, two on `/after/housing/`,
-three on `/after/large-infrastructure/`, one on `/after/fuel/` and one on
-`/after/dams-and-reservoirs/`. The twenty-fifth,
-`christchurch-army-water-repair`, is verified and held for a page that has not
-taken it yet. Everything else below is Stated or To verify and none of it is on
-the site. See *The verification queue* at the foot for what is left.
+three on `/after/large-infrastructure/`, one each on `/after/fuel/`,
+`/after/dams-and-reservoirs/`, `/after/food/`, `/after/health-care/` and
+`/after/outside-help/`. Everything else below is Stated or To verify and none of
+it is on the site. `/after/gas/` and `/after/communications/` have no photograph,
+and the entries under *3d* say why. See *The verification queue* at the foot for
+what is left.
 
 ---
 
@@ -1055,6 +1056,69 @@ broken gas main exists and is out of scope: it belongs to
 `/shaking/fire-following/`. Worth trying next: the City of Kobe's CC BY 2.1 JP
 archive, searched for ガス, and FEMA's Northridge set.
 
+#### `tokyo-milk-case-limit`
+
+- **Shows:** a supermarket's chilled milk case, lit and almost empty, bare wire
+  shelves under price labels, a few cartons at one end, and yellow notices
+  limiting milk to one per customer.
+- **Photographer:** Dick Thomas Johnson
+- **Licence:** CC BY 2.0, FlickreviewR pass on Commons.
+- **Source:** https://commons.wikimedia.org/wiki/File:お客様へ_牛乳はお一人様1点限りとさせて頂きます。_(6010087039).jpg
+- **Status:** **Verified, 13 September 2026.**
+- **Hosted:** `public/media/tokyo-milk-case-limit.jpg`. 4000 × 3000 resized to
+  1600 × 1200; ratio `4 / 3`.
+- **Used on:** `/after/food/`, at the foot of the section on the till, the cold
+  case and the freezer aisle.
+- **What the caption refuses to say.** The section's heading is about power, and
+  nothing in the file says the power was off in that shop. The case in the
+  frame is lit. So the caption says the milk did not arrive, which is the
+  section's supply-chain paragraph and what the description — "a supermarket a
+  few days after the earthquake" — and the shop's own signs support.
+- **"Tokyo" comes from categories.** The file's date field reads
+  `location=Japan`, and "Tokyo, Japan" after the photographer's name is his
+  Flickr home, not the shop. Two Commons categories, *Supermarkets in Tokyo* and
+  *2011 Tōhoku earthquake damage and effects in Tokyo*, place it. Recorded
+  because a place in a credit should say where it was read.
+- **Three other empty-shelf photographs were opened** — instant-noodle shelves in
+  two shops, one of them placed in Tokyo by its description, and a natto shelf
+  with an apology for the supply — and are all cleared under CC BY 2.0 or CC0. The milk case was chosen because the section names the
+  cold case.
+
+#### `kumamoto-city-hospital-tents`
+
+- **Shows:** a seven-storey hospital standing and whole from the front, its name
+  on a tall sign, and white tents with chairs, tables and hand-written notices
+  set up by its entrance.
+- **Photographer:** hyolee2
+- **Licence:** CC BY-SA 3.0 (dual-licensed with GFDL; the CC arm is used).
+- **Source:** https://commons.wikimedia.org/wiki/File:2016_Kumamoto_earthquake_Kumamoto_City_Hospital_2.JPG
+- **Status:** **Verified, 13 September 2026.** The description is one line,
+  熊本地震で被災した熊本市民病院 — Kumamoto City Hospital, damaged in the
+  Kumamoto earthquake — and the caption rests on exactly that. The ward is from
+  the category *Buildings in Higashi-ku, Kumamoto*.
+- **Hosted:** `public/media/kumamoto-city-hospital-tents.jpg`. 2448 × 3264
+  resized to 1050 × 1400; ratio `1050 / 1400`.
+- **Used on:** `/after/health-care/`, under the paragraph saying non-structural
+  damage closes a department in a building that did not fall down.
+- **What the tents were for is not recorded,** and the caption does not guess.
+  A hospital standing whole with part of its business moved onto the forecourt
+  is the point, and it needs nothing that is not in the frame.
+- **A sibling frame was set aside:** the same hospital from the side, the same
+  day, with a crack at the base of one wall and a worker on a rope on the
+  facade. It shows damage; the chosen frame shows the page's argument.
+- **Also rejected:** a Japan Ministry of Defence photograph of water delivered to
+  a hospital for dialysis, CC BY 4.0, 327 × 294 — too small to host.
+
+#### Communications: searched, nothing found
+
+`/after/communications/` has no photograph. The page is about networks filling
+before anything breaks, cell sites running out of battery without the grid, and
+the rules that do and do not require backup power. Searches on Commons on 13
+September 2026 for cell towers and mobile base stations damaged by earthquakes
+returned castle towers, antenna tests and aid deliveries. A congested network
+does not photograph, and a queue at a payphone or a charging point would be the
+honest image if one turns up.
+
 #### `christchurch-army-water-repair`
 
 - **Shows:** two army engineers digging by hand into broken, stony ground, a
@@ -1064,7 +1128,14 @@ archive, searched for ガス, and FEMA's Northridge set.
 - **Source:** https://commons.wikimedia.org/wiki/File:NZ_Army_Engineers_repair_water_mains_at_Burwood_Hospital_after_Christchurch_Earthquake_-_Flickr_-_NZ_Defence_Force.jpg
 - **Status:** **Verified, 12 September 2026.** Photographer and licence read off
   the Commons file page, which carries a FlickreviewR pass.
-- **Used on:** nowhere yet. Cleared and held for `/after/outside-help/`.
+- **Used on:** `/after/outside-help/`, under the province's statement that
+  staging areas outside the impact area will organise and send in critical
+  resources. Placed 13 September 2026 and hosted at native size, 1800 × 1200;
+  ratio `3 / 2`.
+- **The caption names Linton because the description does.** "2nd Field
+  Engineers from Linton" is the NZ Defence Force's own wording, and it is the
+  detail that makes the photograph belong on this page: the help came from
+  outside.
 - **Why it is held rather than used.** It was found for `/after/water/` and kept
   off it. Two soldiers in uniform under a water page invite an inference the
   page does not make and cannot support — that the army restores the network.

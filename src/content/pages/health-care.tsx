@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
+  Photograph,
   Prose,
   Quote,
   DataTable,
@@ -94,6 +95,17 @@ export const healthCare: PageModule = {
             place. Damage to any of those, which engineers call non-structural
             damage, closes a department in a building that did not fall down.
           </p>
+          <Photograph
+            id="kumamoto-city-hospital-tents"
+            caption={
+              <>
+                Kumamoto City Hospital, three days after the main shock of the
+                2016 Kumamoto earthquakes. The file records the hospital as
+                damaged by them. From the front it is standing and whole, and
+                there are tents with chairs under them by its entrance.
+              </>
+            }
+          />
           <p>
             A case study for the province sorted all 127 buildings owned by
             Vancouver Coastal Health by the era they were built in.{" "}

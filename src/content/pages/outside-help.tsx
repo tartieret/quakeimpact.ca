@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
+  Photograph,
   Prose,
   Quote,
   Subhead,
@@ -145,6 +146,18 @@ export const outsideHelp: PageModule = {
             the impact area and will be used to organize, prioritize, and
             disseminate critical resources.” <Cite id="PEIRS" />
           </p>
+          <Photograph
+            id="christchurch-army-water-repair"
+            caption={
+              <>
+                Burwood Hospital, Christchurch, four days after the February 2011
+                earthquake. The engineers repairing its water mains are from the
+                army base at Linton, at the other end of the country. That is the
+                arrangement the staging plan counts on: an outside that is still
+                working, sending people in.
+              </>
+            }
+          />
           <p>
             That is a planning assumption: what a province decides to plan
             against. It is not a measured finding about how help would arrive.
