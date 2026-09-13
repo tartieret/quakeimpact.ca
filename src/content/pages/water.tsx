@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Cite } from "@/components/citation";
 import {
   Figure,
+  Photograph,
   Prose,
   Quote,
   DataTable,
@@ -77,6 +78,21 @@ export const water: PageModule = {
           <p>
             Where the breaks fall matters more than how many of them there are.
           </p>
+          <Photograph
+            id="christchurch-parkview-valve"
+            caption={
+              <>
+                Christchurch, New Zealand, six days after the 2011 earthquake:
+                water being restored to one school, at one valve, at the bottom
+                of one shaft. This is the easy end of the range rather than the
+                hard one — a well head on a school ground, not a main under a
+                river. Metro Vancouver’s system crosses under rivers and inlets
+                at 71 points. <Cite id="MV-WATER-22" /> How long any of it takes
+                here is a question for the studies on this page, and not one the
+                photograph can be asked.
+              </>
+            }
+          />
         </Prose>
       ),
     },

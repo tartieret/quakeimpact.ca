@@ -287,6 +287,38 @@ export const PHOTOGRAPHS = {
   },
 
   /**
+   * The first photograph on an `/after/` page, and the first admitted under the
+   * widened test in `docs/media.md`: it teaches no mechanism a reader could not
+   * already picture, and it is there because `/after/water/` asks them to
+   * believe a duration. The page carries 267 modelled failures, about 60 of
+   * them at crossings, and New Westminster's "approximately 1-3 days per
+   * break". This is one repair, and what one of them costs is the whole
+   * argument for why the total takes months.
+   *
+   * It is a well valve rather than a buried transmission main, and the caption
+   * says so. There is no photograph of an earthquake-broken buried main in any
+   * openly licensed collection reachable from here — Commons has pipe-in-trench
+   * images only from ordinary, non-seismic breaks. Reaching for one of those
+   * and letting the page imply an earthquake would be the exact failure the
+   * register exists to prevent.
+   */
+  "christchurch-parkview-valve": {
+    id: "christchurch-parkview-valve",
+    file: "christchurch-parkview-valve.jpg",
+    ratio: "4 / 3",
+    alt: "Seen from above, a worker crouches at the bottom of a deep concrete shaft in standing water, both hands on the joint where a blue gate valve meets a large flanged pipe. A ladder runs down the shaft wall and a second person steadies it from the rim. The fitting sits well below street level: reaching it at all meant opening the ground and climbing down.",
+    photographer: "Martin Luff",
+    title: "Trying to restore water to Christchurch",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Repairing_earthquake_damage_to_valve,_Parkview_School_well,_Christchurch.jpg",
+    taken: "28 February 2011",
+    place: "Parkview School, Christchurch, New Zealand",
+    licence: "CC-BY-SA-2.0",
+    status: "verified",
+    usedOn: "/after/water/",
+  },
+
+  /**
    * Cleared and held. Silt and standing water together is closer to the first
    * hours than silt alone, and `/shaking/ground/` has no section about the
    * first hours. A third photograph in the one section that does exist would be
@@ -306,6 +338,36 @@ export const PHOTOGRAPHS = {
     place: "Pages Road near Onepu Street, Christchurch, New Zealand",
     licence: "CC-BY-NC-ND-4.0",
     status: "stated",
+    usedOn: null,
+  },
+
+  /**
+   * Cleared and held for `/after/outside-help/`, and deliberately kept off
+   * `/after/water/` although it was found for it. Two soldiers in uniform under
+   * a water page invite an inference the water page does not make and cannot
+   * support: that the army restores the network. Where military assistance is
+   * the actual subject, the same photograph carries no such implication.
+   *
+   * Its Commons description ends with a sentence about aerial surveillance from
+   * a P-3K Orion. That is boilerplate pasted across the whole NZ Defence Force
+   * upload batch and it is not this frame, which is at ground level a few feet
+   * from the two men. Recorded because the next person to read that description
+   * will wonder the same thing, and because it is one more case of a
+   * description contradicting its own picture.
+   */
+  "christchurch-army-water-repair": {
+    id: "christchurch-army-water-repair",
+    file: null,
+    ratio: "3 / 2",
+    alt: "Two army engineers in camouflage dig by hand into broken, stony ground, a backhoe standing behind them with its bucket lowered. The machine opened the hole; the last of the distance down to what is buried is being closed with hand tools.",
+    photographer: "New Zealand Defence Force",
+    title: "NZ Army Engineers repair water mains at Burwood Hospital after Christchurch Earthquake",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:NZ_Army_Engineers_repair_water_mains_at_Burwood_Hospital_after_Christchurch_Earthquake_-_Flickr_-_NZ_Defence_Force.jpg",
+    taken: "26 February 2011",
+    place: "Burwood Hospital, Christchurch, New Zealand",
+    licence: "CC-BY-2.0",
+    status: "verified",
     usedOn: null,
   },
 } as const satisfies Record<string, Photograph>;

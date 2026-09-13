@@ -29,6 +29,26 @@ never seen. What fails the test is an image that adds nothing the prose has not
 already given. That is decoration, and decoration is what the old rule was right
 to keep out.
 
+**On the system pages, the test is widened: evidence that it is not theory.**
+Decided 12 September 2026, for `/after/` only. The mechanism test above was
+written for `/shaking/`, where the subject is a physical process a reader has
+never seen and cannot picture — ground behaving like a liquid, a parapet leaving
+a wall. The system pages are a different problem. A reader can picture a broken
+pipe well enough; what they do not believe is that it happens at the scale and
+for the duration the page states. So on `/after/` a photograph also earns its
+place by showing that a described situation has already happened somewhere —
+that the page is reporting rather than speculating. A crew in a trench around a
+severed main is not teaching a mechanism. It is answering "months, really?" with
+a picture of the one repair that the months are made of.
+
+This widens what counts as earning a place. It does not touch the three limits
+below, it does not touch the anchor, and it does not touch the rule that a
+photograph may not generate a claim — those get stricter as the test loosens,
+not looser, because an image admitted as evidence of scale is exactly the image a
+reader will try to read a number off. Decoration is still out: an image that adds
+nothing the prose has already given fails the widened test the same way it failed
+the narrow one.
+
 **Showing what happened somewhere else is not fear-mongering.** It is evidence
 that the mechanism is a thing the world does. The site's position on fear is in
 §3 of the style guide and it has not moved: severity is allowed, dread is not,
@@ -81,11 +101,12 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Six rows are Verified, checked at their sources on 12 September 2026, and all
-six are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/` and
-one on `/shaking/fire-following/`. Everything else below is Stated or To verify
-and none of it is on the site. See *The verification
-queue* at the foot for what is left.
+**Eight rows are Verified, checked at their sources on 12 September 2026, and
+seven are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
+one on `/shaking/fire-following/` and one on `/after/water/`. The eighth,
+`christchurch-army-water-repair`, is verified and held for a page that has not
+taken it yet. Everything else below is Stated or To verify and none of it is on
+the site. See *The verification queue* at the foot for what is left.
 
 ---
 
@@ -370,6 +391,71 @@ limit, and the caption's job is the opposite of framing: it is an instruction.
 - **Source:** https://commons.wikimedia.org/wiki/File:Sullivan_Park_liquefaction_959.JPG
   and https://commons.wikimedia.org/wiki/File:Sullivan_Park_liquefaction_960.JPG
 - **Status:** To verify.
+
+### 3. The system pages: what one repair costs
+
+The first group admitted under the widened test at the head of this file. These
+do not teach a mechanism. They answer a duration.
+
+#### `christchurch-parkview-valve`
+
+- **Shows:** looking down into a deep concrete shaft. A worker crouches at the
+  bottom in standing water with both hands on the joint where a blue gate valve
+  meets a large flanged pipe. A ladder runs down the shaft wall and a second
+  person steadies it from the rim.
+- **Photographer:** Martin Luff — the third row from this photographer, after
+  `avonside-road-damage` and `christchurch-dairy-gable-wall`.
+- **Title:** "Trying to restore water to Christchurch"
+- **Licence:** CC BY-SA 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:Repairing_earthquake_damage_to_valve,_Parkview_School_well,_Christchurch.jpg
+- **Status:** **Verified, 12 September 2026.** Photographer and licence read off
+  the Commons file page, which records a Flickr upload-bot transfer confirmed
+  against the stated licence on 28 February 2011.
+- **Hosted:** `public/media/christchurch-parkview-valve.jpg`. 3648 × 2736
+  original resized to 1600 × 1200; ratio `4 / 3`. No other change.
+- **Used on:** `/after/water/`, at the foot of the section carrying the Pitts
+  quote about digging a pipe out.
+- **Why this one:** the page asks a reader to accept a duration — 267 modelled
+  failures, about 60 at crossings, "approximately 1-3 days per break" — and a
+  duration is the hardest thing on the site to make believable. This is one
+  repair. A person at the bottom of a shaft with his hands on a single fitting
+  is what the months are made of.
+- **It is a well valve, not a buried main, and the caption says so.** The frame
+  is a well head on a school ground, which is the easy end of the range rather
+  than the hard one, and letting it stand for a transmission main under the
+  Fraser would be the photograph generating a claim.
+- **The photograph that does not exist.** There is no image of an
+  earthquake-ruptured buried water main in an excavated street in any openly
+  licensed collection reachable from here. Commons was searched by full text and
+  by category across Canterbury 2010 and 2011, Northridge, Kobe, Tōhoku, Kumamoto
+  and Noto; the pipe-in-trench photographs it holds are all ordinary
+  non-seismic breaks, in Houston, Glasgow and Portland. Using one of those and
+  letting the page imply an earthquake is precisely what this register exists to
+  stop. The USGS photo library could not be checked: it answers 403 here.
+
+#### `christchurch-army-water-repair`
+
+- **Shows:** two army engineers digging by hand into broken, stony ground, a
+  backhoe standing behind them with its bucket lowered.
+- **Photographer:** New Zealand Defence Force
+- **Licence:** CC BY 2.0
+- **Source:** https://commons.wikimedia.org/wiki/File:NZ_Army_Engineers_repair_water_mains_at_Burwood_Hospital_after_Christchurch_Earthquake_-_Flickr_-_NZ_Defence_Force.jpg
+- **Status:** **Verified, 12 September 2026.** Photographer and licence read off
+  the Commons file page, which carries a FlickreviewR pass.
+- **Used on:** nowhere yet. Cleared and held for `/after/outside-help/`.
+- **Why it is held rather than used.** It was found for `/after/water/` and kept
+  off it. Two soldiers in uniform under a water page invite an inference the
+  page does not make and cannot support — that the army restores the network.
+  On the page where outside assistance is the actual subject, the same
+  photograph carries no such implication. A photograph that argues something the
+  prose does not is limit 2 in this file, and the fix is placement rather than
+  rejection.
+- **Its description contradicts its own frame.** The Commons description ends
+  with a sentence about aerial surveillance from a P-3K Orion. That is
+  boilerplate pasted across the whole NZ Defence Force upload batch. The frame is
+  at ground level a few feet from the two men, which is a third instance of the
+  rule at the foot of this file: **open the file before writing anything about
+  it.** The description was wrong, and only looking caught it.
 
 ---
 
