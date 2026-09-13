@@ -101,11 +101,12 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Sixteen rows are Verified, checked at their sources on 12 September 2026, and
-fifteen are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
-one on `/shaking/fire-following/`, three on `/after/water/`, three on
-`/after/transportation/`, one on `/after/electricity/`, one on
-`/after/sanitation/` and one on `/after/housing/`. The sixteenth,
+**Seventeen rows are Verified, checked at their sources on 12 September 2026,
+and sixteen are hosted.** Two on `/shaking/ground/`, three on
+`/shaking/buildings/`, one on `/shaking/fire-following/`, three on
+`/after/water/`, three on `/after/transportation/`, two on
+`/after/electricity/`, one on `/after/sanitation/` and one on `/after/housing/`.
+The seventeenth,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -641,6 +642,42 @@ says so in its first clause.
   register from infrastructure to village spectacle. Frame 12 centres the object,
   carries the scale, and keeps people incidental. Nothing but looking separates
   the three.
+
+#### `wajima-fallen-pole`
+
+**Suggested by the site's owner**, who asked for fallen electric poles. The page
+had the equipment at the top of a power system and nothing at the bottom of it.
+
+- **Shows:** a concrete distribution pole snapped and lying across a road with
+  its cables still attached, an excavator standing in a heap of broken timber
+  behind, houses still up either side, and the overhead wires still running
+  between the poles that did not come down.
+- **Photographer:** Hurohukidaikon
+- **Licence:** CC BY 4.0
+- **Source:** https://commons.wikimedia.org/wiki/File:R6_noto_earthquake_wajima_street_2024-02-17_7.jpg
+- **Status:** **Verified, 12 September 2026.**
+- **Hosted:** `public/media/wajima-fallen-pole.jpg`. 3648 × 2432 resized to
+  1600 × 1067; ratio `1600 / 1067`.
+- **Used on:** `/after/electricity/`, immediately above the note on what has not
+  been published.
+- **Why this one:** the page's closing note says BC Hydro's statement covers
+  downtown Vancouver, that no restoration estimate exists for the rest of the
+  region, and that no seismic assessment of the distribution network — the wires
+  in the street — appears anywhere in the regulatory record. The transformer
+  further up the page is the top of a power system. This is the bottom of it,
+  in the road.
+- **Six weeks after the earthquake, and the pole is still where it fell.** 1
+  January to 17 February. That is the second thing the frame carries.
+- **The description names no pole.** It says only "a view of the urban area of
+  Wajima City ... which was damaged by the 2024 Noto Peninsula Earthquake". The
+  pole, the cables, the excavator and the standing houses were all read off the
+  image. A generic description is not a wrong one, but it is not evidence
+  either, and the alt text here comes entirely from the file.
+- **Tōhoku was searched first and set aside.** The two fallen-pole photographs
+  Commons holds from 2011, at Ishinomaki and Onahama, are both from places the
+  tsunami destroyed, and one description says so outright. A pole knocked down
+  by a wave is a different mechanism from a pole brought down by shaking and
+  ground movement, and this page is about the second.
 
 #### `suzu-uplifted-manhole`
 

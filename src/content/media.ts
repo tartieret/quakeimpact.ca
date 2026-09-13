@@ -384,6 +384,35 @@ export const PHOTOGRAPHS = {
    * Taken nearly four months after the earthquake, which is the second thing it
    * carries: the shaft is still standing in the road in late April.
    */
+  /**
+   * The second photograph on `/after/electricity/`, and the one that is about
+   * the street rather than the substation.
+   *
+   * The page's closing note says BC Hydro's statement covers downtown
+   * Vancouver, that no restoration estimate is published for the rest of the
+   * region, and that no seismic assessment of the distribution network — the
+   * wires in the street — appears anywhere in the regulatory record. A
+   * transformer is the equipment at the top of that system. This is the bottom
+   * of it, lying in the road.
+   *
+   * Six weeks after the earthquake and the pole is still where it fell, which
+   * is the second thing the frame carries.
+   */
+  "wajima-fallen-pole": {
+    id: "wajima-fallen-pole",
+    file: "wajima-fallen-pole.jpg",
+    ratio: "1600 / 1067",
+    alt: "A concrete power pole lies snapped and fallen across a road, its cables still attached and trailing along the ground. Behind it an excavator stands in a heap of broken timber, houses are still standing on either side, and overhead wires run on above between the poles that did not come down.",
+    photographer: "Hurohukidaikon",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:R6_noto_earthquake_wajima_street_2024-02-17_7.jpg",
+    taken: "17 February 2024",
+    place: "Wajima, Ishikawa Prefecture, Japan",
+    licence: "CC-BY-4.0",
+    status: "verified",
+    usedOn: "/after/electricity/",
+  },
+
   "suzu-uplifted-manhole": {
     id: "suzu-uplifted-manhole",
     file: "suzu-uplifted-manhole.jpg",

@@ -348,6 +348,21 @@ export const electricity: PageModule = {
               </>
             }
           />
+          <Photograph
+            id="wajima-fallen-pole"
+            caption={
+              <>
+                Wajima, on the Noto Peninsula, six weeks after the 2024
+                earthquake. A concrete distribution pole lies across the road
+                with its cables still on it, and the wires overhead still run
+                between the poles that stayed up. The transformer above is the
+                top of a power system. This is the bottom of it, and it is the
+                part BC Hydro has published least about: its assessment of the
+                transmission and distribution system is still being completed.{" "}
+                <Cite id="BCH-DAMFAQ" />
+              </>
+            }
+          />
           <VerificationNote label="Not yet published">
             BC Hydro’s statement covers downtown Vancouver, and the Second
             Narrows crossing is the only other named asset. No restoration
