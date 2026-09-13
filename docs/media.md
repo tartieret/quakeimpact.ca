@@ -101,9 +101,10 @@ numbers stay with the documents that publish them.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Nine rows are Verified, checked at their sources on 12 September 2026, and
-eight are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
-one on `/shaking/fire-following/` and two on `/after/water/`. The ninth,
+**Eleven rows are Verified, checked at their sources on 12 September 2026, and
+ten are hosted.** Two on `/shaking/ground/`, three on `/shaking/buildings/`,
+one on `/shaking/fire-following/`, two on `/after/water/` and two on
+`/after/transportation/`. The eleventh,
 `christchurch-army-water-repair`, is verified and held for a page that has not
 taken it yet. Everything else below is Stated or To verify and none of it is on
 the site. See *The verification queue* at the foot for what is left.
@@ -463,6 +464,50 @@ do not teach a mechanism. They answer a duration.
   ground, carried for the arrangement it shows. Nothing about Kumamoto's
   restoration timeline transfers to Metro Vancouver's and the caption asserts
   none of it.
+
+#### `anchorage-bridge-inspection`, `anchorage-glenn-highway-closed`
+
+A pair, and the first photographs here from neither Christchurch nor Japan. The
+**2018 Anchorage magnitude 7.0 killed nobody**, and the Alaska Department of
+Transportation and Public Facilities photographed its own crossings and released
+the album under CC BY 2.0. A transport agency documenting its own damage under a
+commercial-use licence is a combination this register has not had before, and
+the whole Alaska earthquake album is worth returning to for other pages.
+
+- **Photographer:** Alaska DOT&PF, for both.
+- **Licence:** CC BY 2.0, for both. Flickr licence review passed on Commons.
+- **Sources:**
+  https://commons.wikimedia.org/wiki/File:Earthquake,_NB_Glenn,_Eagle_River_Bridge_11.30.2018.jpg
+  and
+  https://commons.wikimedia.org/wiki/File:Earthquake,_NB_Glenn,_Eagle_River_Bridge_3_12.1.2018.jpg
+- **Status:** **Verified, 12 September 2026,** both read off their Commons file
+  pages.
+- **Used on:** `/after/transportation/`, as a run in the section on why a bridge
+  that survives is not a bridge you can drive over the next morning.
+- **Shows:** the first is a gloved hand holding a tape measure across a crack in
+  the asphalt, five hours after the earthquake. The second is the same crossing
+  the following day: an empty carriageway, a crew and plant working at the far
+  end, nothing collapsed.
+- **Why these two:** the page's least intuitive claim is that restoration is
+  gated on inspection before it is gated on repair, and that a crossing which
+  came through the shaking intact is still closed. The first photograph is the
+  inspection. The second is the morning. Neither shows a collapse, which is the
+  point — a collapsed bridge would argue the opposite of what the page says.
+- **The approach step could not be found.** What was wanted was a bridge
+  approach with a visible step in it, to stand beside the page's calculated
+  settlements of 100 mm at Oak Street, 150 mm at Queensborough and 200 mm at
+  Mission. Nothing in the openly licensed collections searched shows that
+  cleanly. These two make a different and honest point instead; the step remains
+  open, and is worth another look when a page needs it.
+- **Both files carry an EXIF rotation, and Commons reports the unrotated
+  dimensions.** The file page for the first states 3024 × 4032, which is
+  portrait. The frame is landscape. Copying that number into `ratio` would have
+  drawn a portrait frame around a landscape picture and letterboxed it on every
+  screen. **Measure `ratio` off the hosted file after any rotation is applied,
+  not off the source file page.** This is the same class of error the register
+  already records for its first two rows, arriving by a new route, and it is the
+  second reason in this file to distrust a number that was not read off the
+  thing being published.
 
 #### `christchurch-army-water-repair`
 

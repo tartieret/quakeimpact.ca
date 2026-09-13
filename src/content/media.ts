@@ -349,6 +349,57 @@ export const PHOTOGRAPHS = {
   },
 
   /**
+   * The pair on `/after/transportation/`, and the first photographs on the site
+   * from an earthquake that is neither Christchurch nor Japan. The 2018
+   * Anchorage magnitude 7.0 killed nobody, and a state transport department
+   * photographed its own crossings and released the set under CC BY 2.0, which
+   * is a combination the register has not had before.
+   *
+   * They are there for the page's least intuitive claim: that restoration is
+   * gated on inspection before it is gated on repair, so a crossing that
+   * survived is still shut in the morning. The first is the inspection. The
+   * second is the morning.
+   *
+   * **Both files carry an EXIF rotation and Commons reports the unrotated
+   * dimensions.** The file page for the first says 3024 × 4032, which is
+   * portrait, and the frame is landscape. Taking that number would have set a
+   * `3 / 4` frame around a `4 / 3` picture and letterboxed it on every screen.
+   * The `ratio` on each row is measured off the hosted file after the rotation
+   * was applied, which is the only number that describes what a browser draws.
+   * This is the same failure `docs/media.md` records for the first two rows in
+   * the register, arriving by a different route.
+   */
+  "anchorage-bridge-inspection": {
+    id: "anchorage-bridge-inspection",
+    file: "anchorage-bridge-inspection.jpg",
+    ratio: "4 / 3",
+    alt: "A gloved hand holds a tape measure flat across a crack that runs through asphalt, the crack open wide enough that a width can be read off the tape. The surface either side of it is sound. What is being recorded is the size of one opening, by hand, by somebody standing on the road.",
+    photographer: "Alaska DOT&PF",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Earthquake,_NB_Glenn,_Eagle_River_Bridge_11.30.2018.jpg",
+    taken: "30 November 2018",
+    place: "Glenn Highway at the Eagle River bridge, Anchorage, Alaska",
+    licence: "CC-BY-2.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
+  "anchorage-glenn-highway-closed": {
+    id: "anchorage-glenn-highway-closed",
+    file: "anchorage-glenn-highway-closed.jpg",
+    ratio: "4 / 3",
+    alt: "A wide highway carriageway stands empty of traffic under a grey sky, with a pickup, plant and a crew in high-visibility clothing working at the far end and snow on the verges. Cracks run across the concrete in the foreground. Nothing has fallen down: the road is whole, and it is carrying nobody.",
+    photographer: "Alaska DOT&PF",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:Earthquake,_NB_Glenn,_Eagle_River_Bridge_3_12.1.2018.jpg",
+    taken: "1 December 2018",
+    place: "Glenn Highway at the Eagle River bridge, Anchorage, Alaska",
+    licence: "CC-BY-2.0",
+    status: "verified",
+    usedOn: "/after/transportation/",
+  },
+
+  /**
    * Cleared and held. Silt and standing water together is closer to the first
    * hours than silt alone, and `/shaking/ground/` has no section about the
    * first hours. A third photograph in the one section that does exist would be

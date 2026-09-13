@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Figure, Prose, DataTable, VerificationNote } from "@/components/page-parts";
+import {
+  Figure,
+  Photograph,
+  Prose,
+  DataTable,
+  VerificationNote,
+} from "@/components/page-parts";
 import {
   ApproachAgainstSpan,
   MasseyThreeNumbers,
@@ -119,6 +125,30 @@ export const transportation: PageModule = {
             <strong>Superstructure</strong>: “Access to traffic is not envisaged
             for a prolonged period.” <Cite id="MOTI-SRDC-05" />
           </p>
+          <Photograph
+            id="anchorage-bridge-inspection"
+            caption={
+              <>
+                The Glenn Highway where it crosses Eagle River, Anchorage, about
+                five hours after the magnitude 7.0 of 30 November 2018. One
+                crack, one tape, one person on foot. The Ministry’s twenty-four
+                hours for a post-earthquake inspection is made of this, and it
+                is why a crossing that came through the shaking is still shut the
+                next morning. <Cite id="MOTI-SRDC-05" />
+              </>
+            }
+          />
+          <Photograph
+            id="anchorage-glenn-highway-closed"
+            caption={
+              <>
+                The next day, the same crossing. Crews and plant are on the
+                carriageway and no traffic is. Nothing here fell down — the
+                bridge is standing and the road is sound enough to work on — and
+                it is still not open.
+              </>
+            }
+          />
           <p>
             Restoration is gated on inspection before it is gated on repair.
             What the province plans for people while that inspection
