@@ -102,7 +102,7 @@ page must be written belongs in "For the page".
   the belief it corrected — a reader picking the file up needs the evidence, not the
   project's autobiography. Corrections are made in place. The list of claims this
   project withdrew lives once, in `../research-plan.md`; the lessons those corrections
-  taught live in `../knowledge.md`. **A date belongs to a search, not to a change of
+  taught live in `../knowledge/research.md`. **A date belongs to a search, not to a change of
   mind**: "searched the City's full-text index on 10 September 2026, zero public pages"
   is evidence and stays; "strengthened 10 September 2026" is a diary entry and goes.
 - **Research voice stays in "For the page".** The site does not talk about
@@ -145,7 +145,7 @@ to anything that would require creating an account, accepting terms, or
 asserting an affiliation the project does not have.
 
 A "403" or a JavaScript shell means *not yet retrieved*, never *not
-available* — see `../knowledge.md`. Retest against a browser user-agent before
+available* — see `../knowledge/research.md`. Retest against a browser user-agent before
 recording an absence.
 
 ## Source keys

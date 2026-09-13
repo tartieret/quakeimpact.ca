@@ -616,7 +616,7 @@ said.
 - **Knight Street: the paywall is real, and the only routes left need a person.** Both
   papers are closed on every open-access channel tested 10 September 2026, and the ASCE
   landing pages return 200 to a browser user-agent, so this is a **real paywall, not the
-  403 pattern** in `../../knowledge.md`. Both authors are at Klohn Crippen Berger, which
+  403 pattern** in `../../knowledge/research.md`. Both authors are at Klohn Crippen Berger, which
   posts abstracts and never full-text PDFs, so the firm is not a route either. Routes
   left: ASCE pay-per-view, interlibrary loan, or a direct request to the authors. **[?]**
 - **The highest-priority unretrieved documents are [KSB-GROUT-17] and [SY-GEESD-18]**,
@@ -703,7 +703,7 @@ context is either alarming or reassuring and neither is accurate.
 - The 2023 North Shore review is about ship strikes, not earthquakes.
 
 **The Massey contradiction is the site's best worked example of its own evidence rules,
-and it belongs in `../../knowledge.md`, not on a page.** Two official government
+and the rule it teaches is in `../CONVENTIONS.md`, not on a page.** Two official government
 statements, 2011 and 2016, say the tunnel was seismically retrofitted. The province's own
 2019 engineering memo says the ground-improvement stage was cancelled and the intended
 level of safety was not achieved. The rule that resolves it — a press release is [A] for

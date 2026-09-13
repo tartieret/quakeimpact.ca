@@ -31,11 +31,11 @@ majors are excluded — those are migrations, not bumps.
 
 ### Coding agents
 
-`AGENT_INSTRUCTIONS.md` is the canonical project guidance for Claude Code and
-Codex. `CLAUDE.md` and `AGENTS.md` direct each tool to read it; `AGENTS.md` also
-repeats a few critical rules. Edit shared rules in `AGENT_INSTRUCTIONS.md` and
-update any repeated rules in `AGENTS.md` in the same change. Both adapters retain
-the managed Next.js guidance.
+`AGENTS.md` is the one set of project instructions for Claude Code and Codex.
+Codex reads it directly and `CLAUDE.md` imports it with `@AGENTS.md`, so both load
+the same text without a second copy. It is read in every conversation: keep it to
+rules that apply to every task and point at the document for anything narrower.
+`next dev` maintains the Next.js block at its foot.
 
 ### Project documentation
 

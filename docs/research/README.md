@@ -84,4 +84,4 @@ ever use it.
 - **A file states what is known, not how it came to be known.** When a figure is
   found to be wrong, the corrected figure and its source replace it here. The
   withdrawn claim goes to `../research-plan.md`, and any lesson that outlives the
-  change goes to `../knowledge.md`.
+  change goes to `../knowledge/`.

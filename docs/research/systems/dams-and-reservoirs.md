@@ -154,8 +154,7 @@ with correction factors and stated limitations. [EGBC-DSR-GL] **[A]**
 with a return period on the buildings pages.** Dams are assessed on mean, site-specific
 hazard; buildings on the NBCC's median grid. A reader who compares 1-in-2,475 on a
 buildings page against 1-in-10,000 here is comparing incompatible quantities, and no page
-may invite that comparison. This belongs in `../knowledge.md` as a site-wide rule, not only
-here.
+may invite that comparison. The site-wide rule is in `../CONVENTIONS.md`, under numbers that look comparable and are not.
 
 **The province says the same thing by a different route, so the guard now has two sources.**
 The BC dam design and construction guidelines state that NRCan's seismic hazard models "are
