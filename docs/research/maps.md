@@ -83,11 +83,19 @@ seismically upgraded; and #12 selected for seismic upgrade in the 2019 to 2022
 plan, with no completion published.
 
 So the map drawn from it has three classes, **built**, **named in a capital
-plan** and **nothing published**, and the third is thirteen of nineteen. The
-classes are the site's reading of those documents and the legend says so, which
-OGL–Vancouver requires anyway: the licence forbids any use suggesting official
-status. Do not let the third class drift into "not built to standard". It is the
-absence of a published answer and nothing more.
+plan** and **more information needed**, and the third is thirteen of nineteen.
+The classes are the site's reading of those documents and the legend says so,
+which OGL–Vancouver requires anyway: the licence forbids any use suggesting
+official status.
+
+**The third class is worded as a gap in our knowledge, not as a gap in the
+City's record, and that is deliberate.** "No seismic standard published" would
+be a claim over every page the City has ever put out; what was searched is the
+capital plans and the pages around them. `buildings.md` already files the
+question as **not established [?]**, and the map's wording now matches it. Two
+drifts to guard against, in both directions: the class is not "not built to
+standard", and it is not "the City has published nothing". It is that we have
+six answers and need more information about the rest.
 
 **The layer holds twenty halls and the City counts nineteen.** The twentieth is
 in the University Endowment Lands and serves the UEL and UBC. The layer's own

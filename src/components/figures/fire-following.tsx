@@ -183,16 +183,26 @@ export const MAINS_FACTS = {
 /* ------------------------------------------------------------------ */
 
 /**
- * What the City has published about each hall, and nothing more.
+ * What this project established about each hall, and nothing more.
  *
  * Every entry here is a hall a cited document names individually. `built` is
  * the one hall the City says is finished to a post-disaster standard;
  * `planned` is a hall named in a capital plan for replacement or seismic
  * upgrade, which is a commitment rather than a standard met. Every hall not
- * listed falls to `unpublished`, which is the absence and not a judgement: the
- * City's own phrase for what it is doing is "the upgrade and replacement of
- * several fire halls", and `docs/research/buildings.md` records the instruction
- * not to turn "several" into a number.
+ * listed falls to `unestablished`.
+ *
+ * **That third class is about this project's knowledge, not about the City's
+ * record, and the difference is the whole reason it is worded the way it is.**
+ * "Nothing has been published" would be a claim over the entire City
+ * publication record, and what was actually searched is two capital plans and
+ * the pages around them. So the class says more information is needed, which
+ * is what `docs/research/buildings.md` already records as a verification item:
+ * how many of the nineteen are rated post-disaster is **not established**, and
+ * the City's own phrase for what it is doing is "the upgrade and replacement
+ * of several fire halls", which the same file forbids turning into a number.
+ *
+ * It reads the same way round for a reader, and it is defensible against the
+ * one person who knows of a document we did not find.
  *
  * The keys are the City's own hall numbers, which is what the open data layer
  * names each record with, so the two cannot drift apart.
@@ -217,20 +227,28 @@ const NAMED: Record<number, "built" | "planned"> = {
   17: "built",
 };
 
-type StatusKey = "built" | "planned" | "unpublished";
+type StatusKey = "built" | "planned" | "unestablished";
 
 /**
- * The three marks, and why none of them is a severity band.
+ * The three marks, and the four channels that keep them apart.
  *
- * The site's band ramp means impact on a system, and a hall's construction
- * standard is not that, so the ramp is not borrowed for it. Three channels
- * move together instead, which is what keeps the classes apart in greyscale
- * and on a phone: **shape**, a disc against a ring; **ink**, full for a
- * standard the City states and muted for the gap; and **size**. A written
- * label and a count sit beside each one in the legend.
- *
- * The ring is the middle class because a commitment is a thing with an open
+ * **Shape** is the one that does the work: a disc, a ring, a square. Three
+ * different shapes rather than three sizes of dot, because the classes have to
+ * survive greyscale, a colour-blind reader and a 390 px phone, and two discs
+ * of different diameters survive none of those as well as a square does. The
+ * ring is the middle class because a commitment is a thing with an open
  * centre: the money is named and the standard is not yet met.
+ *
+ * **Colour** is the band ramp, and it is redundant on purpose. Take every hue
+ * out and the drawing says exactly what it said before, which is the site's
+ * rule: never meaning in colour alone. The ramp is used rather than a new
+ * palette because a fourth set of hues on a site with one accent and one ramp
+ * is how a reference work starts looking like a dashboard. `bandUnknown` is
+ * not borrowed at all: it is already the site's colour for a gap, and the gap
+ * is what the third class is.
+ *
+ * **Size** and **a written label with its count** are the other two, and the
+ * label is the one a screen reader gets.
  *
  * **Nothing here is a thin hairline.** The marks are drawn in map units, so
  * they shrink with the column, and a 390 px phone gives them a little over
@@ -247,15 +265,18 @@ type StatusKey = "built" | "planned" | "unpublished";
 const CLASSES: {
   key: StatusKey;
   label: string;
+  shape: "disc" | "ring" | "square";
   fill: string;
   stroke: string;
   strokeWidth: number;
+  /** Half the mark's width, so one number sizes a disc and a square alike. */
   r: number;
 }[] = [
   {
     key: "built",
     label: "Built to a post-disaster standard",
-    fill: FIG_COLOR.ink,
+    shape: "disc",
+    fill: FIG_COLOR.bandLow,
     stroke: "none",
     strokeWidth: 0,
     r: 17,
@@ -263,23 +284,54 @@ const CLASSES: {
   {
     key: "planned",
     label: "Replacement or upgrade in a capital plan",
+    shape: "ring",
     fill: "none",
-    stroke: FIG_COLOR.ink,
+    stroke: FIG_COLOR.bandMedium,
     strokeWidth: 7,
     r: 16,
   },
   {
-    key: "unpublished",
-    label: "No seismic standard published",
-    fill: FIG_COLOR.muted,
+    key: "unestablished",
+    label: "More information needed",
+    shape: "square",
+    fill: FIG_COLOR.bandUnknown,
     stroke: "none",
     strokeWidth: 0,
-    r: 12,
+    r: 11,
   },
 ];
 
+/**
+ * One mark, at a point. Drawn here rather than inline because the map and the
+ * legend have to draw the same three shapes, and two copies of a switch is how
+ * a legend ends up lying about the drawing beside it.
+ */
+function HallMark({
+  klass,
+  cx,
+  cy,
+  scale = 1,
+}: {
+  klass: (typeof CLASSES)[number];
+  cx: number;
+  cy: number;
+  /** The legend draws the marks in proportion but at a readable size. */
+  scale?: number;
+}) {
+  const r = klass.r * scale;
+  const common = {
+    fill: klass.fill,
+    stroke: klass.stroke,
+    strokeWidth: klass.strokeWidth * scale,
+  };
+  if (klass.shape === "square") {
+    return <rect x={cx - r} y={cy - r} width={r * 2} height={r * 2} {...common} />;
+  }
+  return <circle cx={cx} cy={cy} r={r} {...common} />;
+}
+
 function statusOf(no: number): StatusKey {
-  return NAMED[no] ?? "unpublished";
+  return NAMED[no] ?? "unestablished";
 }
 
 /**
@@ -299,7 +351,7 @@ export const HALL_FACTS = {
   outside: HALLS.halls.length - inCity.length,
   built: inCity.filter((hall) => statusOf(hall.no) === "built").length,
   planned: inCity.filter((hall) => statusOf(hall.no) === "planned").length,
-  unpublished: inCity.filter((hall) => statusOf(hall.no) === "unpublished")
+  unestablished: inCity.filter((hall) => statusOf(hall.no) === "unestablished")
     .length,
 } as const;
 
@@ -317,13 +369,22 @@ const BOUNDARY_PATH = linesToPath(BOUNDARY.lines);
  * Water, then the city limits over it.
  *
  * The shoreline is load-bearing by the style guide's own test: cover it and
- * neither map says where anything is. So it is `mark`. The city boundary is
+ * neither map says where anything is. So it is `water`, which is held to the
+ * same 3:1 as `mark` and is the site's one colour that names a thing rather
+ * than scoring it. Drawn grey it was a line with land on an unstated side of
+ * it; drawn blue it is a coast. The city boundary is
  * reference, which is all a municipal outline is ever allowed to be here, and
  * it is drawn quiet and dashed so it cannot be mistaken for a shoreline where
  * it strikes out across the water on a line the land does not follow.
  *
  * `non-scaling-stroke` keeps all three at a hairline through the zoom instead
  * of letting them swell into bands.
+ *
+ * **The sea is a stroke and not a fill**, because the vendored coastline is
+ * open lines rather than closed land polygons: the layer is linear and the
+ * mainland runs off every edge of the window, so there is no ring to fill
+ * without inventing one along the frame. `docs/research/maps.md` settled that,
+ * and a styling request does not reopen it.
  *
  * **The paths are written out in both maps rather than defined once and
  * referenced twice.** The ShakeMap figure does the opposite, and the reason it
@@ -340,14 +401,14 @@ function FireGeography() {
     <g fill="none" strokeLinejoin="round" strokeLinecap="round">
       <path
         d={COAST_PATH}
-        stroke={FIG_COLOR.mark}
-        strokeWidth="1"
+        stroke={FIG_COLOR.water}
+        strokeWidth="1.25"
         vectorEffect="non-scaling-stroke"
       />
       <path
         d={RIVER_PATH}
-        stroke={FIG_COLOR.mark}
-        strokeWidth="0.75"
+        stroke={FIG_COLOR.water}
+        strokeWidth="1"
         vectorEffect="non-scaling-stroke"
       />
       <path
@@ -411,7 +472,7 @@ function MapPanel({
 
 const MAINS_PATH = linesToPath(MAINS.runs.map((run) => run.c));
 
-const MAINS_LEGEND_H = 92;
+const MAINS_LEGEND_H = 112;
 
 /**
  * The mains are drawn heavier than the shoreline and in full ink, because they
@@ -446,12 +507,16 @@ function MainsLegend() {
         <FigText x={38} y={11} size={FIG_TYPE.tick} fill={FIG_COLOR.muted}>
           Dedicated fire protection main
         </FigText>
-        <rect x="0" y="24" width="26" height="1.5" fill={FIG_COLOR.track} />
+        <rect x="0" y="24.5" width="26" height="1.25" fill={FIG_COLOR.water} />
         <FigText x={38} y={31} size={FIG_TYPE.tick} fill={FIG_COLOR.muted}>
+          Shoreline and river water
+        </FigText>
+        <rect x="0" y="44" width="26" height="1.5" fill={FIG_COLOR.track} />
+        <FigText x={38} y={51} size={FIG_TYPE.tick} fill={FIG_COLOR.muted}>
           City limits, for reference only
         </FigText>
       </g>
-      <FigText y={84} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
+      <FigText y={104} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
         The pipe, not a service area. No boundary is published.
       </FigText>
     </FigureCanvas>
@@ -501,17 +566,12 @@ function HallsBody() {
     <g>
       <FireGeography />
       {CLASSES.map((klass) => (
-        <g
-          key={klass.key}
-          fill={klass.fill}
-          stroke={klass.stroke}
-          strokeWidth={klass.strokeWidth}
-        >
+        <g key={klass.key}>
           {HALLS.halls
             .filter((hall) => statusOf(hall.no) === klass.key)
             .map((hall) => {
               const [x, y] = project(hall.c[0], hall.c[1]);
-              return <circle key={hall.no} cx={x} cy={y} r={klass.r} />;
+              return <HallMark key={hall.no} klass={klass} cx={x} cy={y} />;
             })}
         </g>
       ))}
@@ -541,22 +601,20 @@ function HallsLegend() {
   const counts: Record<StatusKey, number> = {
     built: HALL_FACTS.built,
     planned: HALL_FACTS.planned,
-    unpublished: HALL_FACTS.unpublished,
+    unestablished: HALL_FACTS.unestablished,
   };
   return (
     <FigureCanvas id={`${ID}-halls-legend`} height={HALL_LEGEND_H}>
-      <FigHeading y={14}>What the City has published, hall by hall</FigHeading>
+      <FigHeading y={14}>What the capital plans say, hall by hall</FigHeading>
       {CLASSES.map((klass, i) => {
         const top = HALL_LEG_TOP + i * HALL_LEG_ROW_H;
         return (
           <g key={klass.key}>
-            <circle
+            <HallMark
+              klass={klass}
               cx={13}
               cy={top + 6}
-              r={klass.r * HALL_LEG_SCALE}
-              fill={klass.fill}
-              stroke={klass.stroke}
-              strokeWidth={klass.strokeWidth * HALL_LEG_SCALE}
+              scale={HALL_LEG_SCALE}
             />
             <FigText
               x={38}
@@ -584,21 +642,24 @@ function HallsLegend() {
 }
 
 /**
- * Where Vancouver's fire halls are, and what the City has said about each one.
+ * Where Vancouver's fire halls are, and what could be established about each.
  *
- * The finding is the third class, and the figure exists to make an absence
- * countable. A reader who takes away "most of the halls are old" has the
- * argument the page is not making; what the record supports is that for
- * thirteen of nineteen halls nobody outside the City knows, because nothing
- * has been published either way.
+ * The finding is the third class, and the figure exists to make a gap
+ * countable. Two readings it is drawn to prevent, in order of how easily a
+ * reader falls into them. "Most of the halls are old and will fail" is an
+ * argument the page is not making and no document supports. And "the City has
+ * published nothing about thirteen halls" is a claim about the whole public
+ * record, which this project did not search; what it searched is the capital
+ * plans, and what it found there is six halls named. The class is the
+ * difference between those two sets and says so.
  */
 export function VancouverFireHalls() {
   return (
     <div className="flex flex-col">
       <MapPanel
-        label="Vancouver's fire halls, marked by what the City has published about the seismic standard each one is built to"
+        label="Vancouver's fire halls, marked by what could be established about the seismic standard each one is built to"
         heading="Vancouver's fire halls"
-        value={`${HALL_FACTS.unpublished} of ${HALL_FACTS.inCity} have no published seismic standard`}
+        value={`${HALL_FACTS.unestablished} of ${HALL_FACTS.inCity} need more information`}
         subnote="One is finished to a post-disaster standard. Five more are named in a plan"
         maxZoom={HALL_MAX_ZOOM}
       >

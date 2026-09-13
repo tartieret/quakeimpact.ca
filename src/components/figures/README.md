@@ -225,6 +225,21 @@ eye. Both water figures use no colour at all, which is the expected default:
 they work identically in greyscale, and the only thing they lose in dark mode
 is the paper behind the hatch.
 
+**`FIG_COLOR.water` is the one colour that is not a value on a scale**, and it
+is for water on a map and nothing else. See `docs/style-guide.md` §8. It is
+held to the same 3:1 as `mark`, because a shoreline is load-bearing.
+
+**A classification may take the band ramp, and then the hue has to be
+redundant.** The fire hall map is the worked case: three classes, carried by
+three shapes, three sizes and three written labels with their counts, with the
+ramp laid on top. Take every hue out and the drawing says exactly what it said
+before, which is the test. Two discs of different diameters are not enough on
+their own, which is why the third mark is a square: shape survives greyscale, a
+colour-blind reader and a 390 px phone better than size does. And do not reach
+for a fourth palette. A site with one accent and one ramp starts looking like a
+dashboard the moment it acquires a second set of hues, and `bandUnknown` is
+already the site's colour for a gap.
+
 Every panel also writes its finding out in words, at `FigValue` size. A reader
 who cannot resolve the geometry still has the number.
 

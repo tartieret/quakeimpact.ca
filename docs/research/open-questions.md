@@ -98,6 +98,8 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     `/shaking/fire-following/` therefore places #12 with the halls named in a
     plan rather than with the one built to a standard, which is the class its
     evidence supports. Later capital plans and City project pages are the route.
+    The same map's third class, "more information needed", is item 18 and this
+    item drawn: thirteen of nineteen halls, wherever the search has not reached.
 20. **Cleveland Dam downstream hazard studies.** Named in Metro Vancouver's own
     reporting and unpublished. The most specific FOI target this project has
     produced.

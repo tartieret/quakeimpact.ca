@@ -51,7 +51,7 @@ usually the least useful.
 
 ---
 
-## The third class on a status map is the absence, and it is the finding
+## A gap in the record and a gap in what you searched are different classes
 
 **12 September 2026.** `/shaking/fire-following/` now carries two maps, the
 Dedicated Fire Protection System mains and Vancouver's fire halls. The mains
@@ -65,14 +65,30 @@ six halls named individually in two capital plans: one finished to a
 post-disaster standard, five named for replacement or upgrade. Colouring the
 other thirteen anything at all would have been a judgement nobody published.
 
-**So the third class is "no seismic standard published", and it is 13 of 19.**
-That is not a compromise with the brief, it is a better version of it: the
-figure makes an absence countable, and it is the same absence the section's
-`VerificationNote` states in words. **When a classification is asked for and the
-evidence covers only part of the set, the uncovered part is a class, named for
-what is missing rather than for what might be there.** The legend says the
-classes are ours and that the City publishes no such rating, which the
-OGL–Vancouver prohibition on implying official status requires anyway.
+**So the uncovered part becomes a class, and it is 13 of 19.** That is not a
+compromise with the brief, it is a better version of it: the figure makes a gap
+countable, and it is the same gap the section's `VerificationNote` states in
+words. **When a classification is asked for and the evidence covers only part of
+the set, the uncovered part is a class, named for what is missing rather than
+for what might be there.**
+
+**The first wording of that class was wrong, and the correction is the entry.**
+It read "No seismic standard published", which is a claim over the *whole City
+publication record* — every page, every report, every council minute. What this
+project actually searched is two capital plans and the pages around them. The
+class now reads **"More information needed"**, which is the same fact stated
+from inside our own evidence: a gap in what we have established, not a gap in
+what exists. **A negative is only as wide as the search behind it. Word an
+absence to the boundary of what you looked at, not to the boundary of the
+subject.** The narrower claim also survives the one reader who knows of a
+document we did not find, where the wider one would have been simply false.
+
+The figure's finding line moved the same way, from "13 of 19 have no published
+seismic standard" to "6 of 19 have an answer we could find", which asserts only
+the halls we verified. The caption says outright that a hall in the third class
+may well be sound. The legend still says the classes are ours and that the City
+publishes no such rating, which the OGL–Vancouver prohibition on implying
+official status requires anyway.
 
 **A hall layer confirmed a number the copy already carried.** The City's open
 `fire-halls` dataset holds twenty records, nineteen of them with a Vancouver
@@ -80,6 +96,29 @@ local area and one, in the University Endowment Lands, without. The copy's "19
 fire halls" comes from a capital plan; the layer's own attribution is what
 separates the twentieth, so the count in the figure is computed rather than
 typed, and the legend names the twentieth rather than quietly dropping it.
+
+**Colour arrived after the first pass, and the constraint it had to meet was
+that it change nothing.** The three hall classes are sage, amber and the site's
+existing grey for a gap, and the water on both maps is a new `--color-water`
+token. Neither is load-bearing: the classes are already three different shapes
+at three different sizes with three written labels and counts, so the hue sits
+on top of channels that already work in greyscale, and covering the blue leaves
+the shoreline a line. **That is the test to apply when someone asks for colour:
+not "is colour allowed" but "does the drawing lose anything when the colour goes
+away".** If it does, the colour is doing work that a shape or a label should be
+doing.
+
+The one thing colour did force was a third shape. Two solid discs of different
+diameters were fine while they were ink and mid-grey, and stopped being fine
+once they were sage and grey: **sage and neutral grey have almost the same
+luminance**, 4.70 and 4.85 against white, so in greyscale the size difference
+was suddenly carrying the distinction alone. The third mark is now a square.
+Shape survives greyscale, colour blindness and a phone better than size does.
+
+Water is the site's first colour that is an identity rather than a value, and
+`style-guide.md` §8 now says so. Every other colour here scores something. The
+sea does not, and a shoreline drawn in the same grey as an axis is a line with
+land on an unstated side of it.
 
 **Three drawing lessons from the same figure:**
 

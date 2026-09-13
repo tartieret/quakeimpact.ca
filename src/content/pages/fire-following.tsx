@@ -71,13 +71,19 @@ function FireMapLicence() {
  * coverage boundary: a boundary would be a hull the project invented and
  * presented in the City's name (`docs/research/maps.md`).
  *
- * The second is the fire halls, marked by what the City has published about
- * the standard each one is built to. Those classes are the site's reading of
- * the capital plans cited in the section beside them, and the legend says so:
- * the City publishes no such rating, and the licence forbids anything that
- * would suggest it does. The class that carries the section is the absence.
- * For thirteen of nineteen halls nothing has been published either way, which
- * is the `VerificationNote` at the end of the section made countable.
+ * The second is the fire halls, marked by what could be established about the
+ * standard each one is built to. Those classes are the site's reading of the
+ * capital plans cited in the section beside them, and the legend says so: the
+ * City publishes no such rating, and the licence forbids anything that would
+ * suggest it does.
+ *
+ * The class that carries the section is the third one, and it is worded as a
+ * gap in what we know rather than as a gap in the City's record. "Nothing has
+ * been published about these thirteen halls" would be a claim over the whole
+ * City publication record, and what was searched is two capital plans. "More
+ * information needed" is the same fact from inside our own evidence, it is the
+ * `VerificationNote` at the end of the section made countable, and it cannot
+ * be taken apart by one person who knows of a document we did not find.
  */
 export const fireFollowing: PageModule = {
   meta: {
@@ -478,19 +484,23 @@ export const fireFollowing: PageModule = {
           </p>
           <Figure
             interactive
-            alt={`Vancouver’s ${HALL_FACTS.inCity} fire halls are spread across the whole city. One is finished to a post-disaster standard and ${HALL_FACTS.planned} more are named in a capital plan for replacement or seismic upgrade. For the other ${HALL_FACTS.unpublished} the City has published no seismic standard at all.`}
+            alt={`Vancouver’s ${HALL_FACTS.inCity} fire halls are spread across the whole city. One is finished to a post-disaster standard and ${HALL_FACTS.planned} more are named in a capital plan for replacement or seismic upgrade. The other ${HALL_FACTS.unestablished} are marked as needing more information, because the documents this site has read say nothing either way about them. That is a gap in the evidence and not a finding about the buildings.`}
             caption={
               <>
-                Where the halls are, and what the City has said about each one.{" "}
-                <Cite id="COV-CAP-2730" /> <Cite id="COV-CAP-1922" />{" "}
+                Where the halls are, and what the capital plans say about each
+                one. <Cite id="COV-CAP-2730" /> <Cite id="COV-CAP-1922" />{" "}
                 <Cite id="COV-CAP-2326" /> Hall #17 on Knight Street is the one
                 the City describes as finished to a post-disaster standard.
                 Halls #8 and #9 are being rebuilt to that standard for 2029;
                 hall #2 on Main Street is being replaced; hall #1 is to be
                 seismically upgraded; hall #12 in Kitsilano was selected for
                 seismic upgrade in the 2019 to 2022 capital plan and no
-                completion has been published. Those six are the whole of what
-                is on the record. The three classes are ours, read off those
+                completion has been published. Those six are the halls those
+                documents name. The {HALL_FACTS.unestablished} marked as needing
+                more information are the ones they do not, which is a gap in
+                what we have been able to establish and not a finding about the
+                buildings: a hall in that class may well be sound, and nothing
+                here says otherwise. The three classes are ours, read off those
                 documents, and the City publishes no rating of its own. A
                 twentieth hall in the University Endowment Lands serves the UEL
                 and the University of British Columbia, and is not one of the
