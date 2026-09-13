@@ -95,6 +95,18 @@ export const damsAndReservoirs: PageModule = {
             recreate”. <Cite id="BCDSR-40-2016" />
           </p>
           <p>
+            What an earthquake is expected to do to the region’s dams, and
+            every dam the province classes Extreme or Very High failure
+            consequence in the Lower Mainland, are on{" "}
+            <Link
+              href="/shaking/dams/"
+              className="text-accent underline underline-offset-2"
+            >
+              dams
+            </Link>
+            . This page is the drinking water side of the same two structures.
+          </p>
+          <p>
             Both dams sit at risk level “3 – Stable” in the provincial register,
             which is how the regulator records that it has not flagged a
             deficiency at either one. That is also the ceiling: no Extreme dam in

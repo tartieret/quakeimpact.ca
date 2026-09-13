@@ -22,6 +22,11 @@ dams by potential loss of life, and Extreme is its top band, for "more than 100"
 the population at risk is permanent: people "ordinarily or regularly located in the
 dam-breach inundation zone, whether to live, work or recreate". [BCDSR-40-2016]
 
+What an earthquake is expected to do to the region's dams, and every dam the
+province classes Extreme or Very High failure consequence in the Lower Mainland,
+are on [dams](/shaking/dams/). This page is the drinking water side of the same
+two structures.
+
 Both dams sit at risk level "3 – Stable" in the provincial register, which is how the
 regulator records that it has not flagged a deficiency at either one. That is also the
 ceiling: no Extreme dam in British Columbia is rated better than 3, and 20 of the

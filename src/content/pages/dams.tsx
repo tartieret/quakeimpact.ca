@@ -38,8 +38,8 @@ import type { PageModule } from "./index";
  * The map and the table are one exhibit and neither is decoration. The register
  * picks the dams, which is how four dams the prose above never names are on the
  * page at all, and the table's last column is mostly `NotPublished`. That
- * emptiness is the finding: for thirteen of seventeen high-consequence dams in
- * this region, nothing was found in which the owner says what an earthquake
+ * emptiness is the finding: for eleven of the seventeen high-consequence dams
+ * in this region, nothing was found in which the owner says what an earthquake
  * would do. The sourced statements in `SEISMIC` below are the same sentences
  * the prose cites, kept beside the prose rather than in the figure, because
  * every one of them is a sourced claim.
@@ -88,6 +88,26 @@ const SEISMIC: Record<
       <>
         Not yet upgraded. The reservoir is operated to leave time for emergency
         response in the meantime. <Cite id="BCH-RRA-F2020" />
+      </>
+    ),
+  },
+  Cheakamus: {
+    statement: (
+      <>
+        “Insufficient resistance to seismic loads that may lead to failure of
+        the dam, spillway, spillway gates and/or penstock pedestals in a major
+        earthquake occurring, on average, about once every 1,000 years or
+        more.” <Cite id="BCH-RRA-F2020" />
+      </>
+    ),
+  },
+  Wahleach: {
+    statement: (
+      <>
+        The Jones Lake intake gates are expected to fail in shaking of the size
+        expected once every 4,800 years, which “would prevent the closure of
+        the water passage” and could flood adjacent utility and transportation
+        corridors. <Cite id="BCH-RRA-F2020" />
       </>
     ),
   },
@@ -146,6 +166,24 @@ const SEISMIC: Record<
       </>
     ),
   },
+};
+
+/**
+ * Where an owner files a dam in a different class than the register does.
+ *
+ * One case. BC Hydro's facility asset plan classifies Wahleach Very High; the
+ * provincial register classes it Extreme. The distinction is not cosmetic,
+ * because the design criteria the province sets differ by class, so neither
+ * number goes on the page without its source beside it. The column is the
+ * register's throughout and says so; this is the disagreement, not a
+ * correction of it.
+ */
+const CONSEQUENCE_CONFLICT: Record<string, ReactNode> = {
+  Wahleach: (
+    <>
+      BC Hydro files it Very High. <Cite id="BCH-RRA-F2020" />
+    </>
+  ),
 };
 
 /** The dams drawn solid: an owner has said what an earthquake would do. */
@@ -318,7 +356,7 @@ export const dams: PageModule = {
           </p>
           <Figure
             interactive
-            alt={`The ${DAM_FACTS.total} dams the province classes Extreme or Very High failure consequence in the Lower Mainland, spread from Wahleach at the east end of the Fraser Valley to Howe Sound in the west, and north to Whistler. Only four of them, all owned by BC Hydro, are drawn solid: those are the only ones whose owner has published what an earthquake is expected to do.`}
+            alt={`The ${DAM_FACTS.total} dams the province classes Extreme or Very High failure consequence in the Lower Mainland, spread from Wahleach at the east end of the Fraser Valley to Howe Sound in the west, and north to Whistler. Only ${PUBLISHED.length} of them, all owned by BC Hydro, are drawn solid: those are the only ones whose owner has published what an earthquake is expected to do.`}
             caption={
               <>
                 Every dam the provincial register classes Extreme or Very High
@@ -327,10 +365,10 @@ export const dams: PageModule = {
                 classification, which measures what is downstream rather than
                 the dam or the shaking. A solid mark is a dam whose owner has
                 published what an earthquake is expected to do to it; a hollow
-                mark is one where nothing of the kind was found. Four of{" "}
-                {DAM_FACTS.total} are solid, and all four are BC Hydro’s. Four
-                of the dams sit in two pairs a few hundred metres apart and
-                separate as the map is zoomed. The shoreline and river water
+                mark is one where nothing of the kind was found.{" "}
+                {PUBLISHED.length} of {DAM_FACTS.total} are solid, and every one
+                of them is BC Hydro’s. Four of the dams sit in two pairs a few
+                hundred metres apart and separate as the map is zoomed. The shoreline and river water
                 under the marks are the province’s Freshwater Atlas. The
                 register is the province’s, and the drawing is not.
               </>
@@ -374,7 +412,16 @@ export const dams: PageModule = {
               dam.name,
               dam.owner,
               dam.height ? `${dam.type}, ${dam.height} m` : dam.type,
-              dam.consequence,
+              CONSEQUENCE_CONFLICT[dam.name] ? (
+                <>
+                  {dam.consequence}
+                  <span className="mt-1 block text-ink-faint">
+                    {CONSEQUENCE_CONFLICT[dam.name]}
+                  </span>
+                </>
+              ) : (
+                dam.consequence
+              ),
               dam.risk ?? <NotPublished label="None given" />,
               whatIsSaid(dam.name),
             ])}

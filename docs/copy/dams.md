@@ -82,8 +82,8 @@ no assessment date and no upgrade programme for any dam in it. [BC-DAMS-REG]
 drawn from the register itself [BC-DAMS-REG] over the province's Freshwater
 Atlas shoreline. Mark size is the failure consequence class; a solid mark is a
 dam whose owner has published what an earthquake is expected to do to it, and a
-hollow mark is one where nothing of the kind was found. Four of seventeen are
-solid and all four are BC Hydro's. The pane carries no type: the table below
+hollow mark is one where nothing of the kind was found. Six of seventeen are solid and
+every one of them is BC Hydro's. The pane carries no type: the table below
 names every dam. -->
 
 The table names each one. The first five columns are the register's own fields;
@@ -95,10 +95,12 @@ earthquake. [BC-DAMS-REG]
 <!-- Table: one row per dam, built from `src/data/region-dams.json`. Columns are
 dam, owner, structure, failure consequence, regulator's risk level, and what its
 owner has said an earthquake would do. The last column carries the sourced
-statements for Alouette, Coquitlam, Ruskin and Stave Falls [BCH-RRA-F2020]
-[BCH-COQUITLAM-RRA-06] [BCH-RUSKIN-SEIAM-11] [BCH-RUSKIN-F2019], the two 2024
-Metro Vancouver reviews that do not mention an earthquake [MV-DSP-2026], and
-"Nothing found" for the remaining eleven. -->
+statements for Alouette, Cheakamus, Coquitlam, Ruskin, Stave Falls and Wahleach
+[BCH-RRA-F2020] [BCH-COQUITLAM-RRA-06] [BCH-RUSKIN-SEIAM-11] [BCH-RUSKIN-F2019],
+the two 2024 Metro Vancouver reviews that do not mention an earthquake
+[MV-DSP-2026], and "Nothing found" for the remaining nine. Wahleach's
+consequence cell also carries BC Hydro's own Very High classification against
+the register's Extreme. [BCH-RRA-F2020] -->
 
 "Nothing found" means no document was found in which the owner states what an
 earthquake is expected to do to that dam. It is not a finding that the dam is
