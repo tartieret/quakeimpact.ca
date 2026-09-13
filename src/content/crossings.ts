@@ -13,7 +13,7 @@ import crossingsFile from "@/data/region-crossings.json";
  * sources produce; see `scripts/data/build-region-geography.mjs` for why it
  * takes three. What this module adds is the reading: the earthquake each
  * crossing has a published figure for, whether that figure is an intent or an
- * assessment, what it bought, and which crossings have a dated replacement.
+ * assessment, what it bought, and which crossings have works under way.
  *
  * **A return period here is a design intent, not a prediction.** `/method/` says
  * so in prose and `/after/transportation/` quotes the Ministry saying it is not
@@ -68,7 +68,7 @@ export interface Crossing {
    * states without a source: it claims nothing about earthquakes.
    */
   crosses: string;
-  /** Null where no return period has been published. Thirteen of nineteen. */
+  /** Null where no return period has been published. Twelve of nineteen. */
   event: CrossingEvent | null;
   /**
    * A replacement or an upgrade that is funded and under way, where one is
@@ -90,8 +90,8 @@ export interface Crossing {
  * **A null event means no return period was found, never that a crossing is
  * unassessed.** Most of these have been assessed and most assessments are not
  * public. Alex Fraser and the Pattullo replacement are described in the
- * sources without a return period, and the Port Mann's three papers are
- * paywalled; the table says which is which, because a map cannot.
+ * sources without a return period, and Granville's upgrade names an objective
+ * but no event; the table says which is which, because a map cannot.
  */
 const READING: Record<
   string,
