@@ -4,7 +4,6 @@ import { ScenarioCards } from "@/components/scenario-cards";
 import { SystemMatrix } from "@/components/system-grid";
 import { Prose, Quote, DataTable, Figure } from "@/components/page-parts";
 import {
-  CascadiaRecurrence,
   CrustalFaultSection,
   ScenarioBuildingResponse,
   ScenarioDurations,
@@ -25,7 +24,7 @@ import type { PageModule } from "./index";
  * The words are the copy's, verbatim. The only reader-facing strings the copy
  * does not write are the two table captions, which name each table for a
  * screen reader and carry the guard that travels with the figures inside it,
- * and the alt text and captions of the four drawings, which are placed beside
+ * and the alt text and captions of the three drawings, which are placed beside
  * the prose they illustrate and replace none of it.
  *
  * The scenario cards and the system matrix are not here. They are built from
@@ -474,7 +473,8 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "Published estimates of how often Cascadia ruptures do not agree",
+      title:
+        "Different sources give different average intervals between Cascadia ruptures",
       body: (
         <Prose>
           <DataTable
@@ -515,49 +515,37 @@ export const scenarios: PageModule = {
           />
           <p>
             The federal agency gives a longer average than the province does.
-            Both are current and both are official. The last rupture was in
-            1700.
+            All four are current and all four are official. The last rupture was
+            in 1700.
           </p>
-          <Figure
-            alt="Four official sources give four different answers for how often Cascadia ruptures: averages between 400 and 630 years, inside stated ranges running from 100 years to 1,500. All four are drawn the same way, because all four are current and none is the right one. The scale is the interval between ruptures, not a date."
-            caption={
-              <>
-                The four rows of the table above, drawn against one another. The
-                solid block is the average each source gives, itself a range in
-                every case; the hatch is the wider range the same source states
-                around it. <Cite id="NRCAN-QA" /> <Cite id="MAZZOTTI-04" />{" "}
-                <Cite id="DCRRA-2025" /> <Cite id="PEIRS" /> The scale measures
-                the gap between one rupture and the next, so there is no point
-                on it that stands for a year.
-              </>
-            }
-          >
-            <CascadiaRecurrence />
-          </Figure>
         </Prose>
       ),
     },
 
     {
-      title: "The 37 per cent figure belongs to the southern end of the fault",
+      title:
+        "A 5 to 20 per cent chance of a Cascadia rupture here in the next 50 years",
       body: (
         <Prose>
           <p>
-            A figure of about 37 per cent in the next 50 years circulates
-            widely. It is Goldfinger and colleagues’ time-dependent probability
-            for a rupture of the <strong>southern</strong> Cascadia margin, off
-            southern Oregon and northern California, where ruptures are roughly
-            twice as frequent. The same study’s figure for the northern or full
-            margin, which is the part that matters to British Columbia, is 7 to
-            12 per cent in 50 years. <Cite id="GOLDFINGER-12" />
+            The rupture that matters here is one of the northern end of the
+            fault, or of the whole of it. Goldfinger and colleagues, counting
+            the time elapsed since the last rupture, put that at 7 to 12 per
+            cent in the next 50 years. <Cite id="GOLDFINGER-12" /> The
+            Geological Survey of Canada’s 2004 paper gives a median of about 5
+            per cent over the same 50 years. <Cite id="MAZZOTTI-04" /> The
+            province’s 2025 assessment puts it in a 10 to 20 per cent band, with
+            3 per cent over 10 years and 9 per cent over 30.{" "}
+            <Cite id="DCRRA-2025" /> The last two are 21 years apart, and one is
+            two to four times the other.
           </p>
           <p>
-            The Geological Survey of Canada’s 2004 paper gives a 50-year
-            probability with a median of about 5 per cent.{" "}
-            <Cite id="MAZZOTTI-04" /> The province’s 2025 assessment puts the
-            50-year probability in a 10 to 20 per cent band, with 3 per cent
-            over 10 years and 9 per cent over 30. <Cite id="DCRRA-2025" /> They
-            are 21 years apart and they disagree by a factor of two to four.
+            A higher figure, about 37 per cent in the next 50 years, circulates
+            widely. It comes from the same Goldfinger study and belongs to the{" "}
+            <strong>southern</strong> end of the Cascadia fault, off southern
+            Oregon and northern California, where ruptures are roughly twice as
+            frequent. It is not a figure for this coast.{" "}
+            <Cite id="GOLDFINGER-12" />
           </p>
         </Prose>
       ),

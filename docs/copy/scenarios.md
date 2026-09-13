@@ -178,7 +178,7 @@ Two levels of government publishing the same number is one model quoted twice, n
 two estimates agreeing. Canada has one public earthquake loss model, and both
 governments use it.
 
-## Published estimates of how often Cascadia ruptures do not agree
+## Different sources give different average intervals between Cascadia ruptures
 
 | Source | Average interval | Stated range |
 | --- | --- | --- |
@@ -187,23 +187,23 @@ governments use it.
 | BC's risk and resilience assessment, 2025 [DCRRA-2025] | 400 to 500 years | 200 to 1,000 years |
 | BC's earthquake response strategy [PEIRS] | 400 to 500 years | 100 to 1,100 years |
 
-The federal agency gives a longer average than the province does. Both are current
-and both are official. The last rupture was in 1700.
+The federal agency gives a longer average than the province does. All four are current
+and all four are official. The last rupture was in 1700.
 
-## The 37 per cent figure belongs to the southern end of the fault
+## A 5 to 20 per cent chance of a Cascadia rupture here in the next 50 years
 
-A figure of about 37 per cent in the next 50 years circulates widely. It is
-Goldfinger and colleagues' time-dependent probability for a rupture of the
-**southern** Cascadia margin, off southern Oregon and northern California, where
-ruptures are roughly twice as frequent. The same study's figure for the northern or
-full margin, which is the part that matters to British Columbia, is 7 to 12 per cent
-in 50 years. [GOLDFINGER-12]
+The rupture that matters here is one of the northern end of the fault, or of the whole
+of it. Goldfinger and colleagues, counting the time elapsed since the last rupture, put
+that at 7 to 12 per cent in the next 50 years. [GOLDFINGER-12] The Geological Survey of
+Canada's 2004 paper gives a median of about 5 per cent over the same 50 years.
+[MAZZOTTI-04] The province's 2025 assessment puts it in a 10 to 20 per cent band, with 3
+per cent over 10 years and 9 per cent over 30. [DCRRA-2025] The last two are 21 years
+apart, and one is two to four times the other.
 
-The Geological Survey of Canada's 2004 paper gives a 50-year probability with a
-median of about 5 per cent. [MAZZOTTI-04] The province's 2025 assessment puts the
-50-year probability in a 10 to 20 per cent band, with 3 per cent over 10 years and 9
-per cent over 30. [DCRRA-2025] They are 21 years apart and they disagree by a factor
-of two to four.
+A higher figure, about 37 per cent in the next 50 years, circulates widely. It comes
+from the same Goldfinger study and belongs to the **southern** end of the Cascadia
+fault, off southern Oregon and northern California, where ruptures are roughly twice as
+frequent. It is not a figure for this coast. [GOLDFINGER-12]
 
 ## The last Cascadia earthquake is dated to the evening of 26 January 1700
 
