@@ -11,7 +11,7 @@ in version control alongside the code that renders it.
 | `licensing.md` | Per-dataset licence status, the attribution strings the site must publish, and the rules for text and figures. **Nothing is reproduced or hosted unless it is cleared here.** |
 | `media.md` | Per-photograph licence status, what a photograph is admitted for, and the credit each one is owed. The same rule as `licensing.md`, applied to images. |
 | `stack-and-structure.md` | How the site is built: stack, routes, content model, and how the principles in the overview are enforced in code. |
-| `knowledge.md` | Working notes that outlive a change: sources, stack quirks, decisions and their reasons. |
+| `knowledge/` | Lessons that outlive a change, by topic: `research.md` (retrieval and false absences), `build.md` (stack, content pipeline, QA), `design.md` (colour, figures, maps, photographs). Rules, not stories; grep before debugging. |
 | `research-plan.md` | Where the research stands: what changed, what was corrected, what is decided, what has not been started. **Read this first when picking the project back up.** |
 
 ## Working rules

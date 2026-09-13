@@ -70,7 +70,7 @@ explanation.
 PEIRS's summary table and its narrative both say "70,000 **households**". A logistics footnote at
 p. 118 says "70,000 displaced **persons**". [PEIRS] **[A]** for both statements as statements.
 The table and the narrative agree with each other and are preferred. The discrepancy is recorded
-here and in `../../knowledge.md`; it is not resolved.
+here and in the verification note on `/after/housing/`; it is not resolved.
 
 ### Caution: GREGORIAN-2010 is not a regional number
 

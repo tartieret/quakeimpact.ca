@@ -286,7 +286,7 @@ A thin complete grid is worth less than a few deep pages.
   the same evidence, and where the columns do differ it was hiding the difference that
   is the whole point. The cards in the system grid lose their band with it: a band is a
   reading meant to be compared, and it belongs in the matrix where both scenarios stand
-  in labelled columns, not alone in the corner of a card. See `knowledge.md`.
+  in labelled columns, not alone in the corner of a card.
 
 - **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided
   11 September 2026. "Who can actually leave" and the nav label "Getting out" framed the
@@ -301,4 +301,15 @@ A thin complete grid is worth less than a few deep pages.
 ### Open
 
 - Whether to seek review from a local emergency-management or geotechnical contact before launch. Recommended: it converts the site from one person's compilation into something the field will link to.
+- **Whether the DCRRA's licence note or the quotations give way.** `DCRRA-2025` is
+  recorded as "nothing may be reproduced", while `/after/health-care/` carries a 57-word
+  block quotation from `DCRRA-APPC` and the "distraught people" phrase, and
+  `/after/communications/` two short phrases. PEIRS, on the same terms, was decided the
+  other way: fair dealing covers attributed quotation. A licensing judgement: either the
+  note is too broad and says what PEIRS's does, or the quotations come off.
+- **Whether `CBOC-2016` is held.** `research/sources.md` records the report as not
+  retrievable, with every figure from the press release `CBOC-2016-PR`, while
+  `research/buildings.md` quotes the report through a web archive copy and
+  `/shaking/buildings/` and `/after/casualties/` cite it. If the archive copy is held, the
+  register row says so, as `AIR-2013` does; if not, the citations move to `CBOC-2016-PR`.
 - **Whether the site archives its own sources.** Several citations already point at web archives because the publisher reorganised or the host died — the AIR study, the RMS Kobe retrospective. Two federal hosts went from resolving to NXDOMAIN during this project's lifetime. A site whose whole proposition is that its sources check out should not depend on other people's links holding. Recommended: capture every cited source at the version we read, and record the capture alongside the live URL.

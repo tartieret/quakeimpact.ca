@@ -359,7 +359,7 @@ as outside reviewer.
 > So **$42B is a chosen stress-test input, not a modelled output**, and **$127.5B is a
 > linear scaling of AIR's 2013 number**. The only genuinely independent pair is IBC/AIR 2013
 > and IBC 2025, and **the Conference Board and AIR must never be set beside each other as
-> two estimates.** They are one estimate and a multiplier. See `../knowledge.md` on Canada's
+> two estimates.** They are one estimate and a multiplier. See `../knowledge/research.md` on Canada's
 > single modelling lineage.
 
 > **The 15,000 deaths is an input assumption, not a finding.** "An assumption was made that

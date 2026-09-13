@@ -80,7 +80,7 @@ it corrected stayed live in another.**
 - `systems/health-care.md` said no ICU count is published anywhere, above a section
   giving per-hospital ICU counts for six hospitals.
 
-**The lesson is in `knowledge.md`.** A closed question belongs struck from the queue and
+**The lesson is in `knowledge/research.md`.** A closed question belongs struck from the queue and
 answered in the file that owns the subject, never logged beside the queue — a log next to
 a list is how the list goes stale without anyone noticing.
 
@@ -195,11 +195,11 @@ nobody had sent.
 | What band, and why? | `research/impact-bands.md` |
 | Where does a source key resolve? | `research/sources.md` |
 | What may we reproduce, and what may we quote? | `licensing.md` — the two are not the same question |
-| How do we work, and what have we learned the hard way? | `knowledge.md`, `research/CONVENTIONS.md` |
+| How do we work, and what have we learned the hard way? | `knowledge/research.md`, `research/CONVENTIONS.md` |
 
 ## One thing worth reading before doing more research
 
-`knowledge.md` has twenty entries and they converge on a single theme: **the ways a
+`knowledge/research.md` converges on a single theme: **the ways a
 research process manufactures a false absence or a false corroboration.** Broken
 searches, 403s recorded as unavailability, correct citations to documents that do not
 say the thing, one model quoted by three governments, two figures that look like a range
