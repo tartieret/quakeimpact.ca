@@ -148,7 +148,7 @@ export const gettingAround: PageModule = {
           <Callout label="Where the water is">
             <Prose>
               <p>
-                <strong>Vancouver is a peninsula, not an island.</strong>{" "}
+                <strong>Vancouver is a peninsula.</strong>{" "}
                 Burrard Inlet is to the north and the North Arm of the Fraser to
                 the south, and the land connection runs eastward through Burnaby
                 and New Westminster.
