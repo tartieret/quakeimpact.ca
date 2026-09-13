@@ -159,7 +159,12 @@ export const dataSources: DatasetSource[] = [
     downloadUrl: "https://openmaps.gov.bc.ca/geo/pub/WHSE_BASEMAPPING.FWA_COASTLINES_SP/ows",
     accessed: "2026-09-11",
     script: "scripts/data/build-region-geography.mjs",
-    files: ["region-water.json", "region-coast.json", "vancouver-water.json"],
+    files: [
+      "region-water.json",
+      "region-coast.json",
+      "vancouver-water.json",
+      "dams-coast.json",
+    ],
     licenceNote:
       "Confirmed on the catalogue record itself, which is the test docs/licensing.md " +
       "sets: OGL–BC is not a blanket licence for gov.bc.ca and applies only where a " +
@@ -176,7 +181,12 @@ export const dataSources: DatasetSource[] = [
     downloadUrl: "https://openmaps.gov.bc.ca/geo/pub/WHSE_BASEMAPPING.FWA_RIVERS_POLY/ows",
     accessed: "2026-09-11",
     script: "scripts/data/build-region-geography.mjs",
-    files: ["region-water.json", "region-coast.json", "vancouver-water.json"],
+    files: [
+      "region-water.json",
+      "region-coast.json",
+      "vancouver-water.json",
+      "dams-coast.json",
+    ],
     licenceNote: "Confirmed on the catalogue record itself.",
   },
   {
@@ -199,6 +209,39 @@ export const dataSources: DatasetSource[] = [
         "complete set of the region's crossings and must not be drawn as one.",
     ],
     licenceNote: "Confirmed on the catalogue record itself.",
+  },
+  {
+    id: "bc-dams-register",
+    title: "BC Dams",
+    publisher:
+      "Ministry of Water, Land and Resource Stewardship, Province of British Columbia",
+    licence: "Open Government Licence – British Columbia",
+    licenceUrl: "https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61",
+    attribution: OGL_BC_ATTRIBUTION,
+    sourceUrl: "https://catalogue.data.gov.bc.ca/dataset/bc-dams",
+    downloadUrl:
+      "https://openmaps.gov.bc.ca/geo/pub/WHSE_WATER_MANAGEMENT.WRIS_DAMS_PUBLIC_SVW/ows",
+    accessed: "2026-09-12",
+    script: "scripts/data/build-dams.mjs",
+    files: ["region-dams.json"],
+    disclaimers: [
+      "The register records what a dam is and what a failure would reach. It says " +
+        "nothing about earthquakes: it carries no seismic rating, no assessment date " +
+        "and no upgrade programme, and its risk level is the regulator's supervisory " +
+        "grading rather than a statement about shaking. Nothing drawn from it may be " +
+        "presented as a seismic finding.",
+      "Failure consequence is a classification of what is downstream, not a " +
+        "prediction that a dam will fail. Extreme is the class assigned where a " +
+        "failure would be expected to cause loss of life, and most of the region's " +
+        "large dams carry it.",
+    ],
+    licenceNote:
+      "Confirmed on the catalogue record itself. The catalogue page assembles itself " +
+      "in the browser and states the licence in the record rather than in the served " +
+      "data; the WFS endpoint carries no licence of its own, so the record is what " +
+      "the licence rests on. The layer also names the dam safety officer assigned to " +
+      "each dam, and one owner string carries a named individual and their job " +
+      "title. Neither is vendored.",
   },
 ];
 

@@ -69,6 +69,44 @@ expected to liquefy during a moderate to large earthquake".
 [BCH-COQUITLAM-RRA-06] That is the mechanism described on [ground
 conditions](/shaking/ground/), written by an owner about its own structure.
 
+## The register lists seventeen dams here whose failure would reach people, and records nothing about earthquakes at any of them
+
+The province keeps a public register of every regulated dam, and it classifies
+each one by what a failure would reach downstream. [BC-DAMS-REG] Seventeen dams
+in this region carry one of its two highest classes: eleven Extreme and six Very
+High. That classification is about the people and property below a dam, not
+about the structure and not about shaking. The register holds no seismic rating,
+no assessment date and no upgrade programme for any dam in it. [BC-DAMS-REG]
+
+<!-- Map: every dam the register classes Extreme or Very High inside the window,
+drawn from the register itself [BC-DAMS-REG] over the province's Freshwater
+Atlas shoreline. Mark size is the failure consequence class; a solid mark is a
+dam whose owner has published what an earthquake is expected to do to it, and a
+hollow mark is one where nothing of the kind was found. Four of seventeen are
+solid and all four are BC Hydro's. The pane carries no type: the table below
+names every dam. -->
+
+The table names each one. The first five columns are the register's own fields;
+the last is what the dam's owner has said elsewhere, and for most of these dams
+nothing was found. Risk level is the regulator's supervisory grading of its own
+file on a dam, which is not a measure of the dam and not a measure of an
+earthquake. [BC-DAMS-REG]
+
+<!-- Table: one row per dam, built from `src/data/region-dams.json`. Columns are
+dam, owner, structure, failure consequence, regulator's risk level, and what its
+owner has said an earthquake would do. The last column carries the sourced
+statements for Alouette, Coquitlam, Ruskin and Stave Falls [BCH-RRA-F2020]
+[BCH-COQUITLAM-RRA-06] [BCH-RUSKIN-SEIAM-11] [BCH-RUSKIN-F2019], the two 2024
+Metro Vancouver reviews that do not mention an earthquake [MV-DSP-2026], and
+"Nothing found" for the remaining eleven. -->
+
+"Nothing found" means no document was found in which the owner states what an
+earthquake is expected to do to that dam. It is not a finding that the dam is
+safe, and it is not a finding that nobody has looked: BC Hydro files seismic
+detail on some of its dams to its regulator and not others, and Metro Vancouver
+publishes a yearly safety summary rather than the reviews behind it.
+[BCH-RRA-F2020] [MV-DSP-2026]
+
 ## What you can do
 
 **Ask your local government what it holds for the dam nearest you.**
