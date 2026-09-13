@@ -67,6 +67,9 @@ export const transportation: PageModule = {
       "PMH1-CAEE-15",
       "PM-SEI-17",
       "PM-IABSE-17",
+      "COV-CAMBIE-25",
+      "COV-GRANVILLE-95",
+      "COV-BURRARD-00",
       "PEIRS",
       "BCSIMS-22",
       "USGS-2015EQ",
@@ -376,7 +379,7 @@ export const transportation: PageModule = {
           </p>
           <Figure
             interactive
-            alt={`Nineteen crossings mapped and sized by the earthquake each has a published figure for. Golden Ears and the Port Mann, the two newest, are the only crossings at the 2,475-year level a new lifeline crossing is designed to. Knight Street is at 1,000 years, ${CROSSINGS_FACTS.at475} crossings are at the 475 years a provincial retrofit is carried out against, and the George Massey Tunnel now assesses at 150 to 240 years after the ground stage of its retrofit was cancelled. The remaining ${CROSSINGS_FACTS.unpublished} have no return period in the public record. These figures are what each structure was aimed at rather than a forecast: a retrofit is carried out to stop a bridge collapsing, not to keep it in service, so a crossing marked here can stand and still carry nobody.`}
+            alt={`Nineteen crossings mapped and sized by the earthquake each has a published figure for. Golden Ears and the Port Mann, the two newest, are the only crossings at the 2,475-year level a new lifeline crossing is designed to. Knight Street is at 1,000 years, ${CROSSINGS_FACTS.at475} crossings are at the 475 years a provincial retrofit is carried out against, and the George Massey Tunnel now assesses at 150 to 240 years after the ground stage of its retrofit was cancelled. The remaining ${CROSSINGS_FACTS.unpublished} have no published figure for what they now meet, the Cambie among them, where an upgrade aimed at a 1 in 2,475 standard is under way but not finished. These figures are what each structure was aimed at rather than a forecast: a retrofit is carried out to stop a bridge collapsing, not to keep it in service, so a crossing marked here can stand and still carry nobody.`}
             caption={
               <>
                 The earthquake each crossing has a published figure for, in the
@@ -487,6 +490,46 @@ export const transportation: PageModule = {
                   <Cite id="PMH1-CAEE-15" /> Further papers on its seismic design
                   sit behind paywalls <Cite id="PM-SEI-17" />{" "}
                   <Cite id="PM-IABSE-17" />
+                </>,
+              ],
+              [
+                <CrossingName id="cambie" key="cambie" />,
+                <>
+                  The one False Creek bridge the City says can be brought up:
+                  “Among the three bridges over False Creek, Cambie Street
+                  Bridge can be seismically upgraded to levels that are not
+                  achievable with Granville and Burrard.” The work is not
+                  finished. Of the <em>proposed</em> work, “emergency vehicles
+                  will be able to use the bridge shortly after an earthquake”,
+                  at a “level of performance … nearly equivalent to today’s
+                  modern bridge code for a 1 in 2475-year seismic event”. Design
+                  began in 2019 and the first phase was complete in 2022{" "}
+                  <Cite id="COV-CAMBIE-25" />
+                </>,
+              ],
+              [
+                <CrossingName id="granville" key="granville" />,
+                <>
+                  “The previously completed Phase I and Phase II work on the
+                  Granville Bridge ensured that the structure would not collapse
+                  during the design seismic event. Phase III is intended to
+                  ensure that the bridge will be serviceable within a short time
+                  following an earthquake.” The design seismic event is not
+                  defined in the report and no return period is given. All
+                  phases were complete by 1996{" "}
+                  <Cite id="COV-GRANVILLE-95" /> <Cite id="COV-BURRARD-00" />
+                </>,
+              ],
+              [
+                <CrossingName id="burrard" key="burrard" />,
+                <>
+                  Strengthened during the 1990s: “the steel truss spans have
+                  been strengthened and new improved bearings have been
+                  installed”, leaving the concrete approach spans, whose seven
+                  expansion bents were still outstanding in 2000. No return
+                  period is stated <Cite id="COV-BURRARD-00" /> The City's 2025
+                  position is that Cambie's level is “not achievable with
+                  Granville and Burrard” <Cite id="COV-CAMBIE-25" />
                 </>,
               ],
               ["SkyTrain guideways generally", <>Nothing published</>],

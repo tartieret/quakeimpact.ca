@@ -141,11 +141,16 @@ const RADIUS: Record<EventBand | "none", number> = {
 /** A tunnel is a square of about the same visual weight as its circle. */
 const side = (r: number) => Math.round(r * 1.8);
 
-const HATCH_ID = "crossings-assessed";
-
 /**
  * The hatch for an assessed range, filled with paper behind the lines so it
  * reads against water as well as land, exactly as the figure kit's does.
+ *
+ * Each use defines its own pattern under its own id. An SVG id is scoped to the
+ * document rather than to the `<svg>` it sits in, so one shared id across the
+ * map, the ramp, the key and the table rows meant twenty-five definitions of
+ * the same pattern competing for six references, and every reference silently
+ * resolving to whichever happened to come first. That works until something
+ * reorders or hides the first one.
  *
  * The period is deliberately fine. The one mark that carries it is a tunnel
  * square about nine pixels across at full zoom-out, and a six-unit period put
@@ -154,11 +159,11 @@ const HATCH_ID = "crossings-assessed";
  * usual hatch as soon as a reader zooms, which is when the distinction between
  * a range and a figure actually matters.
  */
-function HatchDef() {
+function HatchDef({ id }: { id: string }) {
   return (
     <defs>
       <pattern
-        id={HATCH_ID}
+        id={id}
         width={4}
         height={4}
         patternUnits="userSpaceOnUse"
@@ -180,22 +185,25 @@ function shapeOf(kind: Crossing["kind"], r: number) {
   return <circle r={r} />;
 }
 
-function fillOf(event: CrossingEvent | null): string {
-  if (!event) return FIG_COLOR.paper;
-  return event.kind === "assessed" ? `url(#${HATCH_ID})` : FIG_COLOR.ink;
-}
-
 function Mark({ crossing }: { crossing: Crossing }) {
   const [x, y] = toMap(crossing.at[0], crossing.at[1]);
   const r = RADIUS[crossing.event?.band ?? "none"];
   const shape = shapeOf(crossing.kind, r);
+  const assessed = crossing.event?.kind === "assessed";
+  const hatch = `crossings-hatch-map-${crossing.id}`;
+  const fill = !crossing.event
+    ? FIG_COLOR.paper
+    : assessed
+      ? `url(#${hatch})`
+      : FIG_COLOR.ink;
 
   return (
     <g transform={`translate(${x},${y})`}>
+      {assessed ? <HatchDef id={hatch} /> : null}
       {/* Paper under every mark, so a hollow one reads as hollow rather than
           letting the shoreline run through it. */}
       <g fill={FIG_COLOR.paper}>{shape}</g>
-      <g fill={fillOf(crossing.event)}>{shape}</g>
+      <g fill={fill}>{shape}</g>
       <g
         fill="none"
         stroke={FIG_COLOR.ink}
@@ -216,7 +224,6 @@ function Mark({ crossing }: { crossing: Crossing }) {
 function Geometry() {
   return (
     <g fill="none">
-      <HatchDef />
       <path
         d={COAST_PATH}
         stroke={FIG_COLOR.mark}
@@ -250,18 +257,22 @@ export function Swatch({
   band,
   kind = "bridge",
   assessed = false,
+  uid,
 }: {
   band: EventBand | "none";
   kind?: Crossing["kind"];
   assessed?: boolean;
+  /** Unique within the page: a swatch that hatches defines its own pattern. */
+  uid: string;
 }) {
   const r = RADIUS[band];
   const shape = shapeOf(kind, r);
+  const hatch = `crossings-hatch-${uid}`;
   const fill =
     band === "none"
       ? FIG_COLOR.paper
       : assessed
-        ? `url(#${HATCH_ID})`
+        ? `url(#${hatch})`
         : FIG_COLOR.ink;
   return (
     <svg
@@ -271,7 +282,7 @@ export function Swatch({
       aria-hidden="true"
       className="shrink-0"
     >
-      <HatchDef />
+      {assessed ? <HatchDef id={hatch} /> : null}
       <g fill={FIG_COLOR.paper}>{shape}</g>
       <g fill={fill}>{shape}</g>
       <g fill="none" stroke={FIG_COLOR.ink} strokeWidth={1.4}>
@@ -281,13 +292,24 @@ export function Swatch({
   );
 }
 
-/** The swatch a crossing gets, wherever one is shown beside its name. */
-function CrossingSwatch({ crossing }: { crossing: Crossing }) {
+/**
+ * The swatch a crossing gets, wherever one is shown beside its name. `where`
+ * separates the key's copy of a crossing from the table's, because both appear
+ * on `/after/transportation/` and a hatched swatch defines a pattern id.
+ */
+function CrossingSwatch({
+  crossing,
+  where,
+}: {
+  crossing: Crossing;
+  where: string;
+}) {
   return (
     <Swatch
       band={crossing.event?.band ?? "none"}
       kind={crossing.kind}
       assessed={crossing.event?.kind === "assessed"}
+      uid={`${where}-${crossing.id}`}
     />
   );
 }
@@ -353,7 +375,11 @@ function Key() {
       <ul className="flex flex-col gap-2">
         {RAMP.map((rung) => (
           <li key={rung.band} className="flex items-center gap-2">
-            <Swatch band={rung.band} assessed={rung.assessed} />
+            <Swatch
+              band={rung.band}
+              assessed={rung.assessed}
+              uid={`ramp-${rung.band}`}
+            />
             <span>
               <span className="font-semibold text-ink">{rung.label}.</span>{" "}
               <span className="text-ink-muted">{rung.gloss}</span>
@@ -393,17 +419,15 @@ function Key() {
             <ul className="mt-1 flex flex-wrap gap-x-4 gap-y-1">
               {crossings.map((crossing) => (
                 <li key={crossing.id} className="flex items-center gap-1">
-                  <CrossingSwatch crossing={crossing} />
+                  <CrossingSwatch crossing={crossing} where="key" />
                   <span className="text-ink">{crossing.name}</span>
                   {crossing.event ? (
                     <span className="text-ink-faint">
                       {crossing.event.label}
                     </span>
                   ) : null}
-                  {crossing.replacement ? (
-                    <span className="text-ink-faint">
-                      ({crossing.replacement})
-                    </span>
+                  {crossing.works ? (
+                    <span className="text-ink-faint">({crossing.works})</span>
                   ) : null}
                 </li>
               ))}
@@ -452,7 +476,7 @@ export function CrossingName({
   const record = crossingById(id);
   return (
     <span className="flex items-center gap-1">
-      <CrossingSwatch crossing={record} />
+      <CrossingSwatch crossing={record} where="row" />
       <span>{children ?? record.name}</span>
     </span>
   );

@@ -70,8 +70,13 @@ export interface Crossing {
   crosses: string;
   /** Null where no return period has been published. Thirteen of nineteen. */
   event: CrossingEvent | null;
-  /** A replacement that is open or funded and dated. Two crossings have one. */
-  replacement?: string;
+  /**
+   * A replacement or an upgrade that is funded and under way, where one is
+   * published. It is deliberately not a mark on the ramp: work that is not
+   * finished has not changed what a crossing now meets, and the Cambie is the
+   * case that makes the distinction matter.
+   */
+  works?: string;
 }
 
 /**
@@ -90,7 +95,7 @@ export interface Crossing {
  */
 const READING: Record<
   string,
-  { crosses: string; event?: CrossingEvent; replacement?: string }
+  { crosses: string; event?: CrossingEvent; works?: string }
 > = {
   // Burrard Inlet
   "lions-gate": { crosses: "Burrard Inlet" },
@@ -99,7 +104,10 @@ const READING: Record<
   // False Creek, all three City of Vancouver bridges
   burrard: { crosses: "False Creek" },
   granville: { crosses: "False Creek" },
-  cambie: { crosses: "False Creek" },
+  cambie: {
+    crosses: "False Creek",
+    works: "Seismic upgrade under way, aimed at a 1 in 2,475 standard",
+  },
 
   // North Arm of the Fraser
   "arthur-laing": { crosses: "North Arm of the Fraser" },
@@ -156,9 +164,9 @@ const READING: Record<
       bought:
         "Designed for 475 years. The ground-improvement stage of its retrofit was cancelled, and it now meets its criteria for this range instead.",
     },
-    replacement: "Replacement opens September 2031",
+    works: "Replacement opens September 2031",
   },
-  pattullo: { crosses: "Fraser River", replacement: "Replacement open" },
+  pattullo: { crosses: "Fraser River", works: "Replacement open" },
   "port-mann": {
     crosses: "Fraser River",
     event: {
@@ -220,7 +228,7 @@ export const CROSSINGS: Crossing[] = FILE.crossings.map((record) => {
     at: [record.at[0], record.at[1]],
     crosses: reading.crosses,
     event: reading.event ?? null,
-    replacement: reading.replacement,
+    works: reading.works,
   };
 });
 
