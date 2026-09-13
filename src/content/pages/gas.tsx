@@ -13,6 +13,8 @@ export const gas: PageModule = {
   meta: {
     route: "/after/gas/",
     title: "Natural gas",
+    description:
+      "Gas comes back one building at a time, because somebody qualified has to be inside each one to relight every appliance in it.",
     nav: "Natural gas",
     kicker: "Life afterwards",
     standfirst: (

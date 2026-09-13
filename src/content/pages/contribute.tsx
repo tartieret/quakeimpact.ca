@@ -25,6 +25,8 @@ export const contribute: PageModule = {
   meta: {
     route: "/contribute/",
     title: "Contribute",
+    description:
+      "A correction, a document, a pointer to a report you know exists, the read of somebody who does this work for a living: all of them are welcome.",
     nav: "Contribute",
     kicker: "Corrections, sources and local knowledge",
     standfirst:

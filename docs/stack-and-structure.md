@@ -41,7 +41,7 @@ Static export was chosen over an SPA because the site is public-facing content p
 /licences/              attribution strings, per-dataset licence positions
 ```
 
-33 statically exported pages. Re-derive the count from `npm run build` rather than trusting this line.
+32 pages, plus `robots.txt`, `sitemap.xml`, the social card and a 404. Re-derive the count from `npm run build` rather than trusting this line.
 
 ---
 
@@ -99,11 +99,20 @@ Then concatenate `app.css` and `app.js` into a single HTML file around `<div id=
 
 ---
 
+## What a page tells a search engine
+
+`src/content/metadata.ts` builds every page's `Metadata`. A route passes its module's `meta` to `metadataFor` and gets a title, a description, a canonical URL and a social card back; the two pages with no module, `/sources/` and `/licences/`, pass the same three fields by hand. Nothing about the shape of a page's metadata is written twice.
+
+- **`PageMeta.description` is required.** One or two plain sentences, no markup and no citation marker, compressed from the page's own standfirst. A page without one falls back to the site tagline and every result for the site then reads the same, which is why the field is not optional. `SystemEntry.hook` stands in on a page whose body is not written, the way it already stands in as the standfirst.
+- **`/robots.txt` and `/sitemap.xml`** are `src/app/robots.ts` and `src/app/sitemap.ts`, written into the export at build. The sitemap enumerates `ALL_ROUTES`, derived from `NAV` and `UTILITY_NAV`, so a page the navigation knows about cannot be missing from it. Entries carry a URL and nothing else: see `knowledge.md`, 13 September 2026, on why there is no `lastmod`.
+- **The social card** is `src/app/opengraph-image.tsx`, drawn at build time and the same on every page, with each page's own title and description on top of it. Both generated routes need `export const dynamic = "force-static"` under `output: "export"`, and the card needs a `Content-Type` header in `netlify.toml` because a generated image is written without a file extension.
+- **Structured data** is two blocks in `src/components/structured-data.tsx`: the site says what it is once in the root layout, and a page inside a part says where it sits. Both restate what the page already shows.
+- **`/404` is the one page that asks not to be indexed.**
+
+---
+
 ## Before launch
 
-- `robots: { index: false }` in `src/app/layout.tsx` — flip it.
-- `X-Robots-Tag` in `netlify.toml` — remove it.
 - `SITE.status` draft banner in `site.ts` — remove it.
-- Fourteen pages carry evidence and no body text: ten systems and four of the five Part 1 pages. Each says so. They are the build backlog, not defects.
 - `npm run lint` runs `next lint`, which Next 16 removed. It needs replacing or dropping.
 - Typefaces are Libre Franklin and JetBrains Mono, loaded through `next/font/google` in `layout.tsx`, which downloads and self-hosts them at build time so the served site makes no third-party request. `layout.tsx` and `globals.css` are the only files that name a typeface, and this line previously said something else; check the code before trusting it.

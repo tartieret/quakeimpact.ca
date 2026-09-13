@@ -11,6 +11,8 @@ export const sanitation: PageModule = {
   meta: {
     route: "/after/sanitation/",
     title: "Sanitation",
+    description:
+      "A toilet needs water to flush. The province expects disruption to water and wastewater systems to last many months.",
     nav: "Sanitation",
     kicker: "Life afterwards",
     standfirst: (

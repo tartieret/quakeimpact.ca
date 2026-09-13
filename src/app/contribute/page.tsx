@@ -3,6 +3,7 @@ import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, NextPrev } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { contribute } from "@/content/pages/contribute";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * Contribute.
@@ -16,7 +17,7 @@ import { contribute } from "@/content/pages/contribute";
  */
 const { meta, sections } = contribute;
 
-export const metadata: Metadata = { title: meta.title };
+export const metadata: Metadata = metadataFor(meta);
 
 export default function ContributePage() {
   return (

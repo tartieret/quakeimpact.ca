@@ -490,3 +490,24 @@ export const UTILITY_NAV: NavItem[] = [
 
 /** The part at a given top-level href, for a page that sits inside it. */
 export const navSection = (href: string) => NAV.find((item) => item.href === href);
+
+/**
+ * Every page the site exports, in reading order, as the sitemap lists them.
+ *
+ * Derived rather than written, for the same reason `NAV` derives its children:
+ * a page the navigation knows about and the sitemap does not is a page nobody
+ * finds, and two hand-kept lists would eventually disagree about which pages
+ * exist. Adding a system stays one array entry, and the sitemap follows.
+ *
+ * The home page is not in `NAV` because the masthead is the link to it, so it
+ * is added here. The trailing slashes are the URLs the static export actually
+ * writes, and they are what the canonical link on each page says.
+ */
+export const ALL_ROUTES: string[] = [
+  "/",
+  ...NAV.flatMap((item) => [
+    item.href,
+    ...(item.children ?? []).map((child) => child.href),
+  ]),
+  ...UTILITY_NAV.map((item) => item.href),
+];

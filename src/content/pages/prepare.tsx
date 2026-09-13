@@ -24,6 +24,8 @@ export const prepare: PageModule = {
   meta: {
     route: "/prepare/",
     title: "Preparing",
+    description:
+      "British Columbia’s earthquake guidance asks a household for at least two weeks of water and food, a written plan, a meeting place and a number outside the region.",
     nav: "Preparing",
     kicker: "Part 3",
     standfirst:

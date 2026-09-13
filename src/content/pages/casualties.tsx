@@ -22,6 +22,8 @@ export const casualties: PageModule = {
   meta: {
     route: "/shaking/casualties/",
     title: "Casualties",
+    description:
+      "Two governments have published figures for how many people would be hurt or killed by an earthquake here, and the figures are far apart.",
     nav: "Casualties",
     kicker: "The shaking",
     standfirst:

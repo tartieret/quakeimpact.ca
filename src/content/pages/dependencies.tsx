@@ -23,6 +23,8 @@ export const dependencies: PageModule = {
   meta: {
     route: "/dependencies/",
     title: "Nothing fails alone",
+    description:
+      "Twelve of the thirteen systems wait on at least one other. Some of those connections have a document behind them, and some nobody has published.",
     nav: "Dependency graph",
     kicker: "Why one failure becomes many",
     standfirst:

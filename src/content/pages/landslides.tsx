@@ -19,6 +19,8 @@ export const landslides: PageModule = {
   meta: {
     route: "/shaking/landslides/",
     title: "Landslides",
+    description:
+      "The province’s own planning scenario has landslides cutting the transportation routes, and the maps for the two mountain corridors were built for rain.",
     nav: "Landslides",
     kicker: "The shaking",
     standfirst:

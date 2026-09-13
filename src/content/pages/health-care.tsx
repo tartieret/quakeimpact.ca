@@ -23,6 +23,8 @@ export const healthCare: PageModule = {
   meta: {
     route: "/after/health-care/",
     title: "Health care",
+    description:
+      "About 65 per cent of the 127 buildings owned by one health authority are likely to be completely damaged at the earthquake the building code designs against.",
     nav: "Health care",
     kicker: "Life afterwards",
     standfirst: (

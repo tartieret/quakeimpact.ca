@@ -29,6 +29,8 @@ export const damsAndReservoirs: PageModule = {
   meta: {
     route: "/after/dams-and-reservoirs/",
     title: "Dams and reservoirs",
+    description:
+      "Cleveland and Seymour Falls were each reviewed by an engineer in 2024, and neither published conclusion mentions earthquakes.",
     nav: "Dams and reservoirs",
     kicker: "Life afterwards",
     standfirst: (

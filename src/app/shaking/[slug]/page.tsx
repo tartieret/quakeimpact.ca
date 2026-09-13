@@ -14,6 +14,9 @@ import { fireFollowing } from "@/content/pages/fire-following";
 import { groundConditions } from "@/content/pages/ground-conditions";
 import { landslides } from "@/content/pages/landslides";
 import { ShakingDraftNotice } from "@/components/status";
+import { BreadcrumbJsonLd } from "@/components/structured-data";
+import { pageMetadata } from "@/content/metadata";
+import { SITE } from "@/content/site";
 
 /**
  * The seven pages of Part 1.
@@ -59,8 +62,15 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const page = SHAKING_PAGES.find((p) => p.slug === slug);
-  return { title: MODULES[slug]?.meta.title ?? page?.name ?? "Not found" };
+  const entry = SHAKING_PAGES.find((p) => p.slug === slug);
+  if (!entry) return { title: "Not found" };
+  const page = MODULES[slug];
+  /** As on a system page: the hook stands in where the body is not written. */
+  return pageMetadata({
+    route: `/shaking/${slug}/`,
+    title: page?.meta.title ?? entry.name,
+    description: page?.meta.description ?? entry.hook,
+  });
 }
 
 export default async function ShakingDetailPage({
@@ -87,6 +97,16 @@ export default async function ShakingDetailPage({
 
   return (
     <Citations ids={references}>
+      <BreadcrumbJsonLd
+        trail={[
+          { name: SITE.name, href: "/" },
+          { name: "The shaking", href: "/shaking/" },
+          {
+            name: page?.meta.title ?? entry.name,
+            href: `/shaking/${slug}/`,
+          },
+        ]}
+      />
       <ArticleShell
         header={
           <PageHeader

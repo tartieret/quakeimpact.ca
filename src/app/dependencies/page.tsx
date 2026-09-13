@@ -8,6 +8,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { dependencies } from "@/content/pages/dependencies";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * The dependency graph.
@@ -22,7 +23,7 @@ import { dependencies } from "@/content/pages/dependencies";
  */
 const { meta, sections, lever } = dependencies;
 
-export const metadata: Metadata = { title: meta.title };
+export const metadata: Metadata = metadataFor(meta);
 
 export default function DependenciesPage() {
   return (

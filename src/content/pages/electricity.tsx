@@ -21,6 +21,8 @@ export const electricity: PageModule = {
   meta: {
     route: "/after/electricity/",
     title: "Electricity",
+    description:
+      "BC Hydro has told its regulator that its main downtown substation would not be operable after an earthquake well below the level the building code requires.",
     nav: "Electricity",
     kicker: "Life afterwards",
     standfirst:

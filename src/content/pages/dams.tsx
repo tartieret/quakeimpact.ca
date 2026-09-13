@@ -26,6 +26,8 @@ export const dams: PageModule = {
   meta: {
     route: "/shaking/dams/",
     title: "Dams",
+    description:
+      "Metro Vancouver’s reviews of its water-supply dams do not mention an earthquake. BC Hydro names the part of each power dam it expects one to break.",
     nav: "Dams",
     kicker: "The shaking",
     standfirst:

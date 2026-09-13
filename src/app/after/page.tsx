@@ -8,12 +8,13 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { after } from "@/content/pages/after";
+import { metadataFor } from "@/content/metadata";
 
 /**
  * Part 2. The template holds no words of its own: everything comes from the
  * page module, which is where `docs/copy/after.md` landed.
  */
-export const metadata: Metadata = { title: after.meta.title };
+export const metadata: Metadata = metadataFor(after.meta);
 
 export default function AfterIndexPage() {
   return (

@@ -98,6 +98,8 @@ export const fireFollowing: PageModule = {
   meta: {
     route: "/shaking/fire-following/",
     title: "Fire following",
+    description:
+      "An earthquake starts fires in the same minutes that it breaks the pipes used to put them out. The closer, smaller earthquake is the worse of the two.",
     nav: "Fire following",
     kicker: "The shaking",
     standfirst:
