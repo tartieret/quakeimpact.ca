@@ -180,6 +180,20 @@ Link to `https://climatereadybc.gov.bc.ca/pages/dcrra`. When citing the DCRRA, n
 
 ---
 
+### Earthquake Country Alliance and Great ShakeOut graphics — including Drop, Cover and Hold On
+
+**Status: do not reproduce. Draw our own from the written instruction.** Checked 12 September 2026.
+
+These are the canonical Drop, Cover and Hold On illustrations, and PreparedBC credits an ECA graphic for the wheelchair, walker and cane panel in its own guide. The ShakeOut graphics page states no licence, no attribution terms and no permission to modify or re-host: it carries a bare "© 2026 Statewide California Earthquake Center (SCEC)". The ECA graphics page says only that the graphics are "available for use in campaigns and outreach of all kinds", which is an invitation rather than a grant, and offers design help as the next step. "ShakeOut" is additionally a registered mark.
+
+An invitation is not a licence, so the register's rule applies: unconfirmed means do not reproduce.
+
+**What the site does instead.** `src/components/figures/shaking.tsx` draws the three steps from the written instruction in the PreparedBC guide — hands and knees, head and neck under sturdy furniture, hold on until the shaking stops, then count to 60. Facts are not copyrightable and a body position stated in prose is a fact; what is forbidden is reproducing somebody's layout, screenshotted, redrawn or "adapted from". The drawing was made from the sentences, not from the artwork, and it is in the site's own visual language, which is the same distinction the `gov.bc.ca` entry above draws.
+
+**If a licensed graphic is ever wanted**, ECA's graphics page invites contact and the likely answer is yes. Recorded so the work is not redone, not as a pending action: the site's own drawing is the better outcome regardless, because the ECA artwork is in a campaign register the style guide rules out.
+
+---
+
 ### Disaster Response Routes map
 
 **Status: link only.** The City of Vancouver regional PDF carries no stated licence. Link it; do not embed or reproduce it.

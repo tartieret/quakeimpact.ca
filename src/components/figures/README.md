@@ -209,6 +209,30 @@ is the paper behind the hatch.
 Every panel also writes its finding out in words, at `FigValue` size. A reader
 who cannot resolve the geometry still has the number.
 
+### The grammar does not reach a pictogram
+
+Every mark in the table above encodes a quantity, so none of them applies to a
+drawing that has none. `shaking.tsx` is the case: three bodies showing where to
+put yours in the first seconds. It carries no axis, no fill grammar and no
+scale, because there is nothing in it to measure. If a pictogram ever seems to
+need an axis, it is the wrong drawing and the number belongs in a figure of its
+own.
+
+It also has no `FigHeading` and no `FigValue`. The rule that every panel writes
+its finding out in words exists so that a reader who cannot resolve the
+geometry still has the number. A pictogram has no number, and its finding is
+the two or three words already sitting under each panel, so a heading above the
+drawing only says them again. Where a pictogram's own labels are the finding,
+they are the whole of the words it owes.
+
+Two things it still owes. A pictogram is line work, and line work at the size a
+body gets is heavier than `FIG_STROKE`: the rule that figures look like one
+hand means the limb weights are named once at the top of the file and used
+everywhere, not that a body is drawn at the weight of a hairline. And the thumb
+test decides its greys like any other figure's. In `shaking.tsx` the person and
+the table are `mark`, because covering either leaves nothing; the floor is
+`track`, because the pose reads without it.
+
 ---
 
 ## Alt text
