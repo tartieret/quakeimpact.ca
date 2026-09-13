@@ -8,16 +8,18 @@ import { SectionNav } from "@/components/section-nav";
 import type { PageModule } from "@/content/pages";
 import { buildings } from "@/content/pages/buildings";
 import { casualties } from "@/content/pages/casualties";
+import { dams } from "@/content/pages/dams";
+import { dikes } from "@/content/pages/dikes";
 import { fireFollowing } from "@/content/pages/fire-following";
 import { groundConditions } from "@/content/pages/ground-conditions";
-import { secondaryHazards } from "@/content/pages/secondary-hazards";
+import { landslides } from "@/content/pages/landslides";
 import { ShakingDraftNotice } from "@/components/status";
 
 /**
- * The five pages of Part 1.
+ * The seven pages of Part 1.
  *
  * The template holds no words of its own beyond the labels on the furniture it
- * draws. A page's body comes from a page module, and all five now have one.
+ * draws. A page's body comes from a page module, and all seven now have one.
  * Where a module is absent the body is empty and the page says so in a marker
  * beside the title and two sentences above the document list, rather than in
  * five paragraphs about the site. The state is read from `SHAKING_PAGES`, not
@@ -31,7 +33,7 @@ import { ShakingDraftNotice } from "@/components/status";
  */
 
 /**
- * Keyed on slug, the way `@/content/pages` keys on route. All five are written,
+ * Keyed on slug, the way `@/content/pages` keys on route. All seven are written,
  * so the draft notice and the document-list fallback below no longer fire for
  * any of them. Both stay: a page whose text goes back under revision needs them
  * again, and that state is read from `SHAKING_PAGES` rather than inferred from
@@ -42,7 +44,9 @@ const MODULES: Record<string, PageModule> = {
   buildings,
   casualties,
   "fire-following": fireFollowing,
-  "secondary-hazards": secondaryHazards,
+  landslides,
+  dikes,
+  dams,
 };
 
 export function generateStaticParams() {

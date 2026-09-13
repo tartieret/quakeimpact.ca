@@ -28,7 +28,7 @@ Static export was chosen over an SPA because the site is public-facing content p
 /scenarios/             the two scenarios side by side + full system matrix
 /shaking/               Part 1 index
 /shaking/[slug]/        ground, buildings, casualties, fire-following,
-                        secondary-hazards
+                        landslides, dikes, dams
 /after/                 Part 2 index — timeline + system grid by build tier
 /after/[slug]/          13 system pages
 /getting-around/        Part 2b — moving after the shaking
