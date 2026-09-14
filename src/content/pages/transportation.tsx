@@ -402,22 +402,22 @@ export const transportation: PageModule = {
           </p>
           <Figure
             interactive
-            alt={`${CROSSINGS_FACTS.total} crossings mapped and sized by the earthquake each has a published figure for. Golden Ears, Port Mann, the Pattullo replacement and Pitt River are at the 2,475-year level, with different published performance requirements. Knight Street is at 1,000 years and ${CROSSINGS_FACTS.at475} crossings are at 475 years. The George Massey Tunnel assesses at 150 to 240 years after the ground stage of its retrofit was cancelled. No return period was found for the remaining ${CROSSINGS_FACTS.unpublished}, including Cambie, where an upgrade aimed at a 1 in 2,475 standard is unfinished. A design objective does not establish that all proposed work was built or forecast whether a crossing stays open; the table states each source's limits.`}
+            alt={`${CROSSINGS_FACTS.total} crossings mapped with equal-size markers whose inner fill increases with the published earthquake level. Golden Ears, Port Mann, the Pattullo replacement and Pitt River are at the 2,475-year level, with different published performance requirements. Knight Street is at 1,000 years and ${CROSSINGS_FACTS.at475} crossings are at 475 years. The George Massey Tunnel assesses at 150 to 240 years after the ground stage of its retrofit was cancelled. Question marks identify the remaining ${CROSSINGS_FACTS.unpublished}, including Cambie, for which no return period was found; Cambie's upgrade toward a 1 in 2,475 standard is unfinished. A design objective does not establish that all proposed work was built or forecast whether a crossing stays open; the table states each source's limits.`}
             caption={
               <>
                 The earthquake each crossing has a published figure for, in the
-                place the crossing is. A bigger mark is a bigger earthquake, and
-                the sizes are an order rather than a scale. The key under the
-                map says what each of those earthquakes bought, which is the
-                part the number alone leaves out: solid marks are design intents,
-                the hatched tunnel is an assessment, and the
-                retrofit objective is to stop a collapse rather than to keep a
-                crossing open, and a hollow mark means no return period was
-                found rather than that a crossing is unassessed. The table below
-                gives the full figure and its source, crossing by crossing. The
-                Moray Channel Bridge is not drawn: no openly licensed source
-                holds it, and a hand-placed position would be one this site
-                invented.
+                place the crossing is. Every marker has the same outer size;
+                more fill means a larger published earthquake, in an order
+                rather than a scale. A question mark means no return period was
+                found. The key under the map says what each of those earthquakes
+                bought, which is the part the number alone leaves out: solid
+                cores are design intents, the hatched tunnel is an assessment,
+                and the retrofit objective is to stop a collapse rather than to
+                keep a crossing open. The question mark does not mean a crossing
+                is unassessed. The table below gives the full figure and its
+                source, crossing by crossing. The Moray Channel Bridge is not
+                drawn: no openly licensed source holds it, and a hand-placed
+                position would be one this site invented.
               </>
             }
             licence={<CrossingsLicence />}

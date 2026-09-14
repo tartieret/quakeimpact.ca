@@ -1,10 +1,10 @@
 # A map of the region's crossings, and what is published about each
 
 **Date:** 12 September 2026
-**Revised:** 12 September 2026, after review. The map ramps on the return period
-each crossing has a published figure for, rather than on whether a figure exists
-at all. The reasoning for the change is in "The ramp" below; everything about
-data, placement and what is not drawn is unchanged.
+**Revised:** 14 September 2026. The map keeps the return-period hierarchy in the
+fill inside equal-size markers, and uses a question mark where no period was
+found. The reasoning is in "The ramp" below; everything about data, placement
+and what is not drawn is unchanged.
 **Branch:** `figures/bridge-map`
 **Replaces:** the `LandConnections` schematic on `/getting-around/`
 
@@ -13,9 +13,10 @@ data, placement and what is not drawn is unchanged.
 ## What this is
 
 A map of the Lower Mainland's road, rail and transit crossings, drawn on the
-coastline and river geometry the site already vendors. Each crossing is marked
-sized by **the earthquake it has a published figure for**, with the guard that
-such a figure buys against collapse and not against staying usable.
+coastline and river geometry the site already vendors. Each crossing has an
+equal-size outer marker, with the inner core sized by **the earthquake it has a
+published figure for**, and the guard that such a figure buys against collapse
+and not against staying usable.
 
 It appears on two pages with two captions, and the same crossing list feeds the
 table `/after/transportation/` already carries.
@@ -102,23 +103,26 @@ existing `AGGREGATE MAJOR BRIDGE` filter stays.
 
 ## The ramp
 
-Each crossing is sized by the return period it has a published figure for.
-Bigger mark, bigger earthquake. The sizes are an order and not a scale: 2,475 is
-five times 475 as a number and nothing like five times as a mark, because none
-of these figures measures a strength that could be divided.
+Each crossing has the same outer footprint. The core inside grows with the
+return period it has a published figure for. More fill means a larger published
+earthquake. The core sizes are an order and not a scale: 2,475 is five times 475
+as a number and nothing like five times the fill, because none of these figures
+measures a strength that could be divided.
 
 | Mark | Meaning | Crossings |
 |---|---|---|
-| Largest solid | 2,475 years, the standard a new lifeline crossing is designed to | Golden Ears |
-| Large solid | 1,000 years | Knight Street |
-| Medium solid | 475 years, what a provincial retrofit is carried out against | Oak Street, Queensborough, North Arm |
-| Small hatched | 150 to 240 years, an assessed range rather than a figure aimed at | George Massey Tunnel |
-| Hollow | No return period published | the remaining thirteen |
+| Nearly full solid core | 2,475 years, or 1 in 2,500 | Golden Ears, Port Mann, Pattullo replacement, Pitt River |
+| Large solid core | 1,000 years | Knight Street |
+| Medium solid core | 475 years, the provincial retrofit objective | Oak Street, Queensborough, North Arm, Ironworkers Memorial |
+| Small hatched core | 150 to 240 years, an assessed range rather than a figure aimed at | George Massey Tunnel |
+| Question mark | No return period found in the sources read | the remaining nine |
 
-Area carries the ordinal, which is the grammar the ShakeMaps already use, so it
-survives in greyscale and needs no hue and no new token. Hollow marks sit off
-the ramp rather than at the bottom of it, because a crossing with nothing
-published is not a crossing with a low number.
+The inner area carries the ordinal, which is the grammar the ShakeMaps already
+use, so it survives in greyscale and needs no hue or new token. The common outer
+ring gives every crossing the same footprint. A question mark puts a crossing
+with no published figure outside the ramp instead of making an empty core look
+like the lowest value. It means no return period was found, not that the bridge
+is unassessed or weak.
 
 **The George Massey Tunnel is hatched because it is the one assessment.** Every
 other figure is a design intent. The tunnel was designed for 475 years, the

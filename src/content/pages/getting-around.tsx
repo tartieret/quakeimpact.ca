@@ -175,17 +175,17 @@ export const gettingAround: PageModule = {
               datasets are behind it. */}
           <Figure
             interactive
-            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, mapped and sized by the earthquake each has a published figure for. Vancouver's land connection runs east; everything else is a bridge or a tunnel. ${CROSSINGS_FACTS.unpublished} of the ${CROSSINGS_FACTS.total} crossings have no return period in the sources read, including all three False Creek bridges, the Arthur Laing and the Lions Gate. The Cambie is being upgraded toward a 1 in 2,475 standard and that work is not finished; the City says the same level is not achievable for the Granville or the Burrard. Solid marks show design objectives and the hatched tunnel shows an assessment. Performance requirements differ, and a design paper does not establish that all proposed work was built. A marked crossing can stand and still carry nobody.`}
+            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, mapped with equal-size markers whose inner fill increases with the published earthquake level. Vancouver's land connection runs east; everything else is a bridge or a tunnel. Question marks identify the ${CROSSINGS_FACTS.unpublished} of ${CROSSINGS_FACTS.total} crossings with no return period in the sources read, including all three False Creek bridges, the Arthur Laing and the Lions Gate. The Cambie is being upgraded toward a 1 in 2,475 standard and that work is not finished; the City says the same level is not achievable for the Granville or the Burrard. Solid cores show design objectives and the hatched tunnel shows an assessment. Performance requirements differ, and a design paper does not establish that all proposed work was built. A marked crossing can stand and still carry nobody.`}
             caption={
               <>
-                The crossings, where they are, sized by the earthquake each has
-                a published figure for. Vancouver's land route runs east through
-                Burnaby and New Westminster; every other way off the peninsula,
-                and every way onto Richmond, is on this map. Read the key before
-                the marks: the solid marks show design objectives,
+                The crossings, where they are. Every marker has the same outer
+                size; more fill means a larger published earthquake. Vancouver's
+                land route runs east through Burnaby and New Westminster; every
+                other way off the peninsula, and every way onto Richmond, is on
+                this map. The solid cores show design objectives,
                 the hatched tunnel shows an assessment, and a surviving
-                crossing may still be closed. Some crossings have no return
-                period in the sources read. What
+                crossing may still be closed. A question mark identifies a
+                crossing with no return period in the sources read. What
                 the crossings were built to withstand, and what the province
                 says a surviving bridge is good for the next morning, is in{" "}
                 {transportationLink}.

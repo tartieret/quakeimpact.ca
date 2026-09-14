@@ -28,22 +28,21 @@ import {
  *   collapse. So the guard is not in the caption, where it could be skipped and
  *   where it would not travel between the two pages that carry this figure. It
  *   is in the key, directly under the ramp, and in the alt text.
- * - **A bigger mark is a bigger earthquake, and the sizes are an order rather
- *   than a scale.** Area carries the ordinal, which is the grammar the
- *   ShakeMaps already use, so it survives in greyscale and needs no hue. It is
- *   deliberately not proportional: 2,475 is five times 475 as a number and
- *   nothing like five times as a mark, because none of these figures is a
- *   measurement of strength that could be divided.
+ * - **Every mark has the same footprint; the inner core carries the order.**
+ *   More fill means a larger published earthquake. This keeps the hierarchy
+ *   without making the crossings with the largest figures dominate the map.
+ *   The core sizes are deliberately not proportional: none of these figures is
+ *   a measurement of strength that could be divided.
  * - **A design intent and an assessed capacity are not drawn alike.** Only the
  *   George Massey Tunnel is an assessment, and it is why the distinction
  *   exists: its retrofit was designed for a 475-year earthquake and it now meets its
  *   criteria for 150 to 240 years, so drawing it at its design intent would put
  *   the wrong number on the map. It is hatched, which is the site's existing
  *   mark for a range rather than a figure.
- * - **A hollow mark says no return period was found, never that a crossing is
- *   unassessed.** Most of these have been assessed and most assessments are not
- *   public. Hollow marks sit off the ramp at one size, so they cannot be read
- *   as the weakest rung.
+ * - **A question mark says no return period was found, never that a crossing is
+ *   unassessed or weak.** Most have been assessed and most assessments are not
+ *   public. The question mark puts them outside the ramp rather than making an
+ *   empty core look like its weakest rung.
  * - **There are no response routes on it.** `docs/style-guide.md` §8 forbids
  *   drawing emergency-responder infrastructure as public infrastructure,
  *   `docs/licensing.md` makes the City's route map link-only, and since June
@@ -123,19 +122,18 @@ const RIVER_PATH = linesToPath(WATER.river);
 /* ------------------------------------------------------------------ */
 
 /**
- * The ramp, in map units of radius. The smallest published class is about the
- * size a crossing actually is on this window; the rest step up from it.
- *
- * `none` is not the bottom of the ramp. It is drawn hollow at a size between
- * the rungs, because a crossing with nothing published is not a crossing with a
- * low number and must not be read as one.
+ * Every crossing has this outer radius. The equal footprint makes every point
+ * equally important as geography; the core inside carries the return-period
+ * order.
  */
-const RADIUS: Record<EventBand | "none", number> = {
-  "150-240": 7,
-  "475": 9.5,
-  "1000": 12,
-  "2475": 15,
-  none: 8,
+const OUTER_RADIUS = 12;
+
+/** The ordinal core sizes, in map units rather than proportional values. */
+const CORE_RADIUS: Record<EventBand, number> = {
+  "150-240": 5.5,
+  "475": 7.2,
+  "1000": 8.9,
+  "2475": 10.7,
 };
 
 /** A tunnel is a square of about the same visual weight as its circle. */
@@ -185,32 +183,52 @@ function shapeOf(kind: Crossing["kind"], r: number) {
   return <circle r={r} />;
 }
 
+/**
+ * A drawn glyph rather than SVG text, so it remains a symbol when the map
+ * scales. Its meaning is stated in the HTML key and never left to the glyph.
+ */
+function QuestionMark({ nonScaling = false }: { nonScaling?: boolean }) {
+  const vectorEffect = nonScaling ? "non-scaling-stroke" : undefined;
+  return (
+    <g
+      fill="none"
+      stroke={FIG_COLOR.ink}
+      strokeWidth={nonScaling ? FIG_STROKE : 1.8}
+      strokeLinecap="round"
+    >
+      <path
+        d="M-4.5-5.5c0-3.5 2-5.5 4.8-5.5 3 0 4.9 1.9 4.9 4.6 0 3.1-1.7 4.3-3.5 5.6C.8.7 0 1.5 0 4"
+        vectorEffect={vectorEffect}
+      />
+      <path d="M0 8.5h.01" vectorEffect={vectorEffect} />
+    </g>
+  );
+}
+
 function Mark({ crossing }: { crossing: Crossing }) {
   const [x, y] = toMap(crossing.at[0], crossing.at[1]);
-  const r = RADIUS[crossing.event?.band ?? "none"];
-  const shape = shapeOf(crossing.kind, r);
+  const outer = shapeOf(crossing.kind, OUTER_RADIUS);
+  const core = crossing.event
+    ? shapeOf(crossing.kind, CORE_RADIUS[crossing.event.band])
+    : null;
   const assessed = crossing.event?.kind === "assessed";
   const hatch = `crossings-hatch-map-${crossing.id}`;
-  const fill = !crossing.event
-    ? FIG_COLOR.paper
-    : assessed
-      ? `url(#${hatch})`
-      : FIG_COLOR.ink;
+  const fill = assessed ? `url(#${hatch})` : FIG_COLOR.ink;
 
   return (
     <g transform={`translate(${x},${y})`}>
       {assessed ? <HatchDef id={hatch} /> : null}
-      {/* Paper under every mark, so a hollow one reads as hollow rather than
-          letting the shoreline run through it. */}
-      <g fill={FIG_COLOR.paper}>{shape}</g>
-      <g fill={fill}>{shape}</g>
+      {/* Paper under every mark keeps the shoreline out of the core and glyph. */}
+      <g fill={FIG_COLOR.paper}>{outer}</g>
+      {core ? <g fill={fill}>{core}</g> : <QuestionMark nonScaling />}
       <g
         fill="none"
         stroke={FIG_COLOR.ink}
         strokeWidth={FIG_STROKE}
         vectorEffect="non-scaling-stroke"
       >
-        {shape}
+        {outer}
+        {assessed ? core : null}
       </g>
     </g>
   );
@@ -249,9 +267,9 @@ function Geometry() {
 
 /**
  * A swatch at a fixed pixel size, in HTML rather than in the pane, so it stays
- * the same physical size at every width and every zoom. The swatch box is one
- * size for every class and the mark inside it grows, which is what makes the
- * ramp readable as a ramp in a list.
+ * the same physical size at every width and every zoom. Every mark has the same
+ * outline and its core grows, matching the map without giving one rung a larger
+ * footprint.
  */
 export function Swatch({
   band,
@@ -265,15 +283,10 @@ export function Swatch({
   /** Unique within the page: a swatch that hatches defines its own pattern. */
   uid: string;
 }) {
-  const r = RADIUS[band];
-  const shape = shapeOf(kind, r);
+  const outer = shapeOf(kind, OUTER_RADIUS);
+  const core = band === "none" ? null : shapeOf(kind, CORE_RADIUS[band]);
   const hatch = `crossings-hatch-${uid}`;
-  const fill =
-    band === "none"
-      ? FIG_COLOR.paper
-      : assessed
-        ? `url(#${hatch})`
-        : FIG_COLOR.ink;
+  const fill = assessed ? `url(#${hatch})` : FIG_COLOR.ink;
   return (
     <svg
       width={34}
@@ -283,10 +296,11 @@ export function Swatch({
       className="shrink-0"
     >
       {assessed ? <HatchDef id={hatch} /> : null}
-      <g fill={FIG_COLOR.paper}>{shape}</g>
-      <g fill={fill}>{shape}</g>
+      <g fill={FIG_COLOR.paper}>{outer}</g>
+      {core ? <g fill={fill}>{core}</g> : <QuestionMark />}
       <g fill="none" stroke={FIG_COLOR.ink} strokeWidth={1.4}>
-        {shape}
+        {outer}
+        {assessed ? core : null}
       </g>
     </svg>
   );
@@ -368,8 +382,8 @@ function Key() {
           The earthquake each crossing has a published figure for
         </p>
         <p className="mt-1 text-ink-muted">
-          A bigger mark is a bigger earthquake. The sizes are an order, not a
-          scale.
+          More fill means a larger published earthquake. The four levels are an
+          order, not a scale. A question mark means no return period was found.
         </p>
       </div>
 
@@ -397,13 +411,14 @@ function Key() {
           A return period is not a promise that the crossing still works.
         </p>
         <p className="mt-1 text-ink-muted">
-          The solid marks show design objectives; the hatched tunnel is an
+          The solid cores show design objectives; the hatched tunnel is an
           assessment. A design paper does not establish that every proposed
-          measure was built. These figures do not forecast what a crossing will do. A provincial retrofit is carried out to stop a bridge
-          collapsing, and the Ministry states that it is not retrofitting these
-          bridges to remain in service. A crossing marked here can stand up and
-          still carry nobody, and none of these numbers says how long an
-          inspection or a repair would take.
+          measure was built. These figures do not forecast what a crossing will
+          do. A provincial retrofit is carried out to stop a bridge collapsing,
+          and the Ministry states that it is not retrofitting these bridges to
+          remain in service. A crossing marked here can stand up and still carry
+          nobody, and none of these numbers says how long an inspection or a
+          repair would take.
         </p>
       </div>
 
@@ -449,7 +464,7 @@ export function CrossingsMap() {
   return (
     <div className="flex flex-col gap-5">
       <MapViewer
-        label="Map of the region's nineteen road, rail and transit crossings, each sized by the earthquake it has a published figure for."
+        label="Map of the region's nineteen road, rail and transit crossings. More fill inside an equal-size marker means a larger published earthquake; a question mark means no return period was found."
         width={MAP_W}
         height={MAP_H}
         kmWide={KM_WIDE}
