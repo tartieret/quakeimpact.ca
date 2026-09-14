@@ -23,21 +23,22 @@ import type { PageModule } from "./index";
  * a reader who has not yet been told why this matters has no reason to work
  * through the difference between a megathrust and a crustal earthquake.
  *
- * The timeline sources itself through its links rather than through a marker on
- * every sentence, and that is the one place this page departs from the site's
- * habit. Its panels make no claim of their own: every sentence in them is a
- * consequence a system page states and sources, and the noun it hangs on is a
- * link to that page. Markers on prose written this way would number the same
- * handful of documents nine times over and make a narrative read like a filing.
- * Two rules keep it honest. **A duration or a figure carries its marker
- * anyway**, which is why the two sentences that give one — BC Hydro on
- * downtown power, the province on the sewers — are the only marked sentences in
- * the four panels. And the quoted passage keeps its attribution in words,
- * because a quotation without a speaker is worse than a claim without a
- * marker. The paragraph under the timeline says what the reader is looking at
- * and where the evidence is.
+ * The timeline carries no citation markers, and that is the one place this page
+ * departs from the site's habit. Its panels make no claim of their own: every
+ * sentence in them is a consequence a system page states and sources, and the
+ * noun it hangs on is a link to that page, which is where the document and all
+ * its qualifications are. Markers on prose written this way would number the
+ * same handful of documents nine times over and make a narrative read like a
+ * filing. Three rules keep it honest, and they are in §4 of the style guide.
+ * **A duration may ride on its link and a count may not** — several weeks, many
+ * months and the rest are the story, while 267 mains and two thirds of downtown
+ * customers stay on the pages that can guard them. The quoted passage keeps its
+ * attribution in words, because a quotation without a speaker is worse than a
+ * claim without a marker. And a duration is written in the source's own words
+ * and no tighter, with the body named where the naming is the point, as it is
+ * for BC Hydro on downtown power.
  *
- * The panels say what the months are like, not what has and has not been
+ * The panels say what the stretch is like, not what has and has not been
  * published. A sentence about the state of the record — BC Hydro has published
  * an estimate for downtown and for nowhere else, no restoration estimate for
  * the water network exists at all — tells a reader about this site's evidence
@@ -104,9 +105,8 @@ export const home: PageModule = {
     references: [
       "PREPAREDBC",
       "RESEARCHCO-PREP-21",
-      "BCH-WESTEND-25",
-      "PEIRS",
       "DCRRA-2025",
+      "PEIRS",
       "NRCAN-1700",
     ],
   },
@@ -143,8 +143,8 @@ export const home: PageModule = {
                       }
                       cascadia={
                         <>
-                          In the province’s megathrust scenario the
-                          earthquake comes on a summer morning. The shaking is
+                          The megathrust comes on a summer morning. The
+                          shaking is
                           moderate rather than violent, it goes on for minutes,
                           and it arrives along the whole coast at once rather
                           than under one city.{" "}
@@ -248,22 +248,20 @@ export const home: PageModule = {
                       rather than one big one. In downtown Vancouver, BC Hydro
                       says it could take several weeks to restore power to
                       customers and years to completely restore the system.{" "}
-                      <Cite id="BCH-WESTEND-25" />{" "}
                       <Link href="/after/water/" className={link}>
                         Water
                       </Link>{" "}
                       comes back behind it, and the mains that cross under the
-                      rivers and inlets are the slowest repairs in the system.
+                      rivers and inlets are the slowest of those repairs.
                     </p>
                     <p>
                       The{" "}
                       <Link href="/after/sanitation/" className={link}>
                         sewers
                       </Link>{" "}
-                      stay broken for months rather than weeks.{" "}
-                      <Cite id="PEIRS" /> Households manage waste in buckets and
-                      chemical toilets, and an apartment tower has nowhere else
-                      to put it.{" "}
+                      stay broken for months rather than weeks. Households
+                      manage waste in buckets and chemical toilets, and an
+                      apartment tower has nowhere else to put it.{" "}
                       <Link href="/after/gas/" className={link}>
                         Gas
                       </Link>{" "}
@@ -336,6 +334,14 @@ export const home: PageModule = {
                 the dependency graph
               </Link>{" "}
               counts what each one is waiting on.
+            </p>
+            <p>
+              None of those repairs is a household’s to make, which is why
+              what matters on the day is what you already have.{" "}
+              <Link href="/prepare/" className={link}>
+                Preparing
+              </Link>{" "}
+              sets out what to keep and how much.
             </p>
           </Prose>
         </div>
