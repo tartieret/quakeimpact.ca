@@ -33,17 +33,16 @@ export const SCENARIOS: Record<ScenarioId, Scenario> = {
     id: "cascadia",
     short: "Cascadia M9",
     name: "Cascadia M9 megathrust",
-    strapline: "Worse for Vancouver's ability to be helped",
+    strapline: "A coast-wide disaster, with outside help delayed",
     simulation:
       "M9.0 Cascadia Full Rupture, Geological Survey of Canada scenario catalogue",
     source: "Offshore subduction interface",
     shaking:
       "Moderate intensity, long duration. Three minutes in the province's scenario",
-    extent:
-      "Northern California to British Columbia, damaging the whole coast at once",
+    extent: "Northern California to British Columbia",
     tsunami: "Outer coast; limited effect inside Burrard Inlet",
     mutualAid:
-      "Late rather than absent. The province states the US will be unable to help if it is also overwhelmed",
+      "The province states that an overwhelmed United States will be unable to help",
     recurrence:
       "Sources disagree: 500–600 years on average per NRCan, 400–500 in BC's own documents. Last event 1700",
     conditions:
@@ -53,7 +52,7 @@ export const SCENARIOS: Record<ScenarioId, Scenario> = {
     id: "crustal",
     short: "Crustal M7",
     name: "Shallow crustal M7",
-    strapline: "Worse for Vancouver itself",
+    strapline: "More violent shaking in Metro Vancouver",
     simulation:
       "M7.0 Georgia Strait, same catalogue, and the province's own primary planning scenario",
     source: "Strait of Georgia shallow crust, 3–4 km deep",
@@ -62,9 +61,9 @@ export const SCENARIOS: Record<ScenarioId, Scenario> = {
     extent: "Concentrated and local",
     tsunami: "Not the primary concern",
     mutualAid:
-      "Available. BC's plan assumes agencies outside the impact area are unaffected, which is a planning assumption, and this is the case where it holds",
+      "BC's plan assumes agencies outside the local impact area remain available",
     recurrence:
-      "Roughly once every 1,500 years in the region, per the province's scenario. Rarer near the city, more destructive to it",
+      "Roughly once every 1,500 years in the region, according to the province's scenario",
     conditions:
       "The province sets this one on a January afternoon after an atmospheric river, which makes heat, dry shelter and slope stability the urgent needs",
   },
@@ -104,7 +103,7 @@ export const BANDS: Record<
     duration: "Not published",
     extent: "Not published",
     dependency:
-      "No assessment of this has been published. That is a statement about the public record, not about the infrastructure",
+      "No published assessment. This does not mean the infrastructure is safe",
   },
 };
 
@@ -173,13 +172,13 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "communications",
     name: "Communications",
-    hook: "No rule says how long a cell site has to keep running without the grid.",
+    hook: "Cell sites have no required minimum backup-power time.",
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["electricity", "fuel"],
     impacts: bothScenarios(
       ["medium", "medium"],
-      "The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel and a prolonged lack of access for everyone else; it names satellite phones and amateur radio as the backups people would fall back on.",
+      "The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel, with satellite phones and amateur radio used as backups.",
       "DCRRA-2025",
       { crustal: MEGATHRUST_ONLY },
     ),
@@ -187,26 +186,26 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "electricity",
     name: "Electricity",
-    hook: "BC Hydro's own filing puts up to two thirds of downtown customers out for several weeks.",
+    hook: "Up to two thirds of downtown customers could lose power for several weeks.",
     bitesAt: "days",
     tier: 1,
     dependsOn: ["transportation", "fuel"],
     impacts: bothScenarios(
       ["high", "high"],
-      "BC Hydro's filing to its regulator states that a large seismic event could leave up to two thirds of downtown Vancouver's customers without power for several weeks, and the system years from complete restoration.",
+      "BC Hydro states that a large earthquake could leave up to two thirds of its downtown Vancouver customers without power for several weeks. Full restoration could take years.",
       "BCH-WESTEND-25",
     ),
   },
   {
     slug: "water",
     name: "Water",
-    hook: "The worst breaks are the ones under rivers, and those are the repairs that take longest.",
+    hook: "Breaks under rivers and inlets take the longest to repair.",
     bitesAt: "days",
     tier: 1,
     dependsOn: ["electricity", "transportation"],
     impacts: bothScenarios(
       ["high", "high"],
-      "A magnitude 9 megathrust is modelled to cause 267 water main failures across Metro Vancouver, about 60 of them at the 71 points where mains cross under rivers and inlets, which are the repairs that take longest.",
+      "A magnitude 9 megathrust is modelled to cause 267 water main failures across Metro Vancouver. About 60 occur where mains cross under rivers and inlets, the hardest locations to repair.",
       "MV-WATER-22",
       { crustal: MEGATHRUST_ONLY },
     ),
@@ -214,13 +213,13 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "sanitation",
     name: "Sanitation",
-    hook: "A toilet needs water to flush, and in an apartment tower there is nothing else to use.",
+    hook: "Without running water, toilets in apartment towers stop working.",
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "electricity"],
     impacts: bothScenarios(
       ["high", "high"],
-      "The province expects disruption to water and wastewater systems for many months; Metro Vancouver has built individual treatment plants to a post-disaster standard, which is not the same as making the network that feeds them survive.",
+      "The province expects water and wastewater disruption for many months. Some treatment plants meet a post-disaster standard, but this says nothing about the sewer network feeding them.",
       "PEIRS",
       { cascadia: CRUSTAL_ONLY },
     ),
@@ -230,7 +229,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "gas",
     name: "Natural gas",
-    hook: "Gas is the one utility that cannot be turned back on from a control room.",
+    hook: "Restoring gas requires a visit to every affected building.",
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["transportation", "fuel"],
@@ -243,13 +242,13 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "transportation",
     name: "Transportation",
-    hook: "Not collapsing and still working are two different standards, and only the first has been bought.",
+    hook: "A bridge may survive an earthquake without being usable afterwards.",
     bitesAt: "days",
     tier: 1,
     dependsOn: ["fuel"],
     impacts: bothScenarios(
       ["high", "high"],
-      "The province designates routes that must stay open for emergency vehicles after a major earthquake, and states in the same document that it is not retrofitting the bridges on those routes to stay in service.",
+      "The province designates routes for emergency vehicles after a major earthquake. It also states that the bridges on those routes are not being retrofitted to remain in service.",
       "MOTI-SRDC-05",
     ),
   },
@@ -258,7 +257,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "large-infrastructure",
     name: "Port, airport and ferry terminals",
-    hook: "Everything that drives to the airport crosses a bridge, and the model expects every one of them damaged.",
+    hook: "The airport model expects damage to every bridge onto Sea Island.",
     bitesAt: "weeks",
     tier: 3,
     dependsOn: ["transportation", "electricity"],
@@ -294,13 +293,13 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "food",
     name: "Food",
-    hook: "The food that goes first is the food no pantry can hold: meat, produce, dairy and bread.",
+    hook: "Fresh food depends on regular deliveries.",
     bitesAt: "days",
     tier: 2,
     dependsOn: ["transportation", "fuel", "electricity", "large-infrastructure"],
     impacts: bothScenarios(
       ["high", "high"],
-      "The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods, toiletries and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them.",
+      "The province expects delivery networks for food and household supplies to take weeks or months to recover.",
       "PEIRS",
       { cascadia: CRUSTAL_ONLY },
     ),
@@ -310,20 +309,20 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "dams-and-reservoirs",
     name: "Dams and reservoirs",
-    hook: "Both dams were reviewed by an engineer in 2024, and neither published conclusion mentions earthquakes.",
+    hook: "The 2024 engineering reviews do not publish an earthquake finding.",
     bitesAt: "hours",
     tier: 3,
     dependsOn: [],
     impacts: bothScenarios(
       ["unknown", "unknown"],
-      "Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes.",
+      "Engineers reviewed Cleveland and Seymour Falls dams in 2024, as required every seven years for dams in the top consequence class. Neither review identified an unsafe condition, and neither published conclusion mentions earthquakes.",
       "MV-DSP-2026",
     ),
   },
   {
     slug: "housing",
     name: "Housing",
-    hook: "Most people who cannot go home would have a home still standing.",
+    hook: "Cordons and failed utilities can keep people out of standing homes.",
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "sanitation", "electricity"],
@@ -336,7 +335,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "health-care",
     name: "Health care",
-    hook: "Hospitals stand on the same ground as everything else, and most of the stock predates the current code.",
+    hook: "Most hospital buildings in the region predate the current seismic code.",
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["fuel", "electricity", "water", "transportation"],
@@ -368,7 +367,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "outside-help",
     name: "Where help comes from",
-    hook: "British Columbia's plan stages help with the agencies outside the impact area, and in a megathrust they are inside it.",
+    hook: "A coast-wide earthquake leaves fewer outside agencies able to help.",
     bitesAt: "days",
     tier: 3,
     dependsOn: ["transportation", "large-infrastructure"],
@@ -419,37 +418,37 @@ export const SHAKING_PAGES: {
   {
     slug: "ground",
     name: "Ground conditions",
-    hook: "Two houses a few blocks apart can sit on completely different ground.",
+    hook: "Shaking changes sharply between bedrock, soft sediment and river delta soil.",
   },
   {
     slug: "buildings",
     name: "Buildings",
-    hook: "Which buildings hold up, which do not, and why the brickwork coming off the older ones is the hazard the City has named.",
+    hook: "Age, height and construction type shape how a building responds.",
   },
   {
     slug: "casualties",
     name: "Casualties",
-    hook: "How many people are expected to be hurt in each scenario, and why the published range is so wide.",
+    hook: "Published casualty estimates change with the earthquake and time of day.",
   },
   {
     slug: "fire-following",
     name: "Fire following",
-    hook: "The fires that start once the shaking stops, and the separate water system built to fight them.",
+    hook: "Broken gas lines can start fires while damaged water mains leave hydrants dry.",
   },
   {
     slug: "landslides",
     name: "Landslides",
-    hook: "The province’s own scenario has rock and earth coming down across the roads help would arrive on.",
+    hook: "The province expects landslides to cut transportation routes.",
   },
   {
     slug: "dikes",
     name: "Dikes",
-    hook: "The embankments that keep the river and the sea off the delta are built on the ground most likely to move.",
+    hook: "Delta dikes stand on soil that can settle and spread sideways.",
   },
   {
     slug: "dams",
     name: "Dams",
-    hook: "BC Hydro names the part of each dam it expects an earthquake to break, and the shaking it expects to break it at.",
+    hook: "BC Hydro publishes the expected earthquake damage at each of its dams.",
   },
 ];
 

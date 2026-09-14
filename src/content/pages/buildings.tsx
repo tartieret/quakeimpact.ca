@@ -23,11 +23,11 @@ export const buildings: PageModule = {
     route: "/shaking/buildings/",
     title: "Buildings",
     description:
-      "The City of Vancouver has run three earthquakes through a model of its own buildings, and the nearer, smaller one is the worse one.",
+      "Vancouver’s building model finds more damage from a nearby crustal earthquake than from a larger offshore megathrust.",
     nav: "Buildings",
     kicker: "The shaking",
     standfirst:
-      "The City of Vancouver has run three earthquakes through a model of its own buildings, and the nearer, smaller one is the worse one. Most of the city went up before the rules that would have made it safer, and about a tenth of the buildings carry nearly four fifths of the risk.",
+      "Vancouver’s building model finds more damage from a nearby crustal earthquake than from a larger offshore megathrust. Most of the city predates modern seismic rules. About a tenth of its buildings carry nearly four fifths of the risk.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -55,8 +55,7 @@ export const buildings: PageModule = {
 
   sections: [
     {
-      title:
-        "In the City’s own modelling, the nearer earthquake does more damage than the bigger one",
+      title: "The nearer earthquake causes more damage in Vancouver",
       body: (
         <Prose>
           <p>
@@ -118,8 +117,7 @@ export const buildings: PageModule = {
     },
 
     {
-      title:
-        "Most of the city was built before the rules that would have made it safer",
+      title: "Most buildings predate modern seismic rules",
       body: (
         <Prose>
           <p>
@@ -154,7 +152,7 @@ export const buildings: PageModule = {
     },
 
     {
-      title: "The building you are in matters more than the magnitude",
+      title: "Building type matters more than magnitude",
       body: (
         <Prose>
           <p>
@@ -256,7 +254,7 @@ export const buildings: PageModule = {
     },
 
     {
-      title: "Most of the people in the highest-risk buildings rent them",
+      title: "Most residents of the highest-risk buildings are renters",
       body: (
         <Prose>
           <p>
@@ -277,8 +275,7 @@ export const buildings: PageModule = {
     },
 
     {
-      title:
-        "A building can come through it and still be somewhere nobody can go back to",
+      title: "Cordons can keep people out of standing buildings",
       body: (
         <Prose>
           <p>
@@ -325,8 +322,7 @@ export const buildings: PageModule = {
     },
 
     {
-      title:
-        "The falling hazard Vancouver has named is brick, on its own high streets",
+      title: "Brick walls threaten Vancouver’s older high streets",
       body: (
         <Prose>
           <p>
@@ -367,8 +363,8 @@ export const buildings: PageModule = {
             caption={
               <>
                 Christchurch, New Zealand, on the day of the 2010 earthquake.
-                The moulded tops running along this row are parapets — the same
-                feature that makes a shopfront on Hastings Street or Kingsway
+                The moulded tops running along this row are parapets. The same
+                feature makes a shopfront on Hastings Street or Kingsway
                 look taller than the building behind it. One of them has come
                 down, taking part of the wall with it and bending the verandah
                 it landed on. The shopfront underneath is boarded over and the
@@ -425,8 +421,7 @@ export const buildings: PageModule = {
     },
 
     {
-      title:
-        "Nobody has measured what the glass would do, and the City has said so in writing",
+      title: "Vancouver has not modelled falling glass",
       body: (
         <Prose>
           <p>
@@ -479,8 +474,7 @@ export const buildings: PageModule = {
     },
 
     {
-      title:
-        "Vancouver’s falling-hazard rule only bites when somebody renovates",
+      title: "Falling-hazard rules apply only during renovations",
       body: (
         <Prose>
           <p>
@@ -526,7 +520,7 @@ export const buildings: PageModule = {
     },
 
     {
-      title: "Most of what the damage would cost is not insured",
+      title: "Most modelled losses are uninsured",
       body: (
         <Prose>
           <p>

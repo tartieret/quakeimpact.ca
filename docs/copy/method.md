@@ -2,11 +2,11 @@
 route: /method/
 title: How the impact bands work
 nav: Method & bands
-hook: A band describes how long a system is out, how widely, and what it is waiting on.
-lede: Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. The band says how long the system is out, how widely, and what it is waiting on.
+hook: A band summarizes restoration time, geographic extent and dependencies.
+lede: Each impact band summarizes restoration time, geographic extent and dependencies. The accompanying note and source explain the evidence behind it.
 ---
 
-## A band answers three questions, not one
+## What a band measures
 
 Impacts here are given as Low, Medium or High, not as a number of days. Most published
 work assesses one design earthquake, so a figure in between would be modelling rather
@@ -25,7 +25,7 @@ The same three questions are asked of every system, so that High for sewer servi
 A fourth state, **not yet assessed**, is drawn hatched rather than coloured. It is a
 real answer, not a blank waiting to be filled.
 
-## A band is a reading of the public record, not a verdict on the equipment
+## A band reflects published evidence
 
 A system banded High is a system somebody has assessed and found slow to restore. A
 system marked not yet assessed is a system nobody has published an assessment of, and
@@ -59,7 +59,7 @@ written down.
 
 Bands move when a document appears, in either direction.
 
-## Every coloured cell comes with a sentence and a source
+## Every band includes its basis and source
 
 A colour on its own is an assertion. Each cell on the grid carries the band, one
 sentence saying how the system fails, and a link to the document the sentence comes
@@ -67,7 +67,7 @@ from. A cell that cannot carry all three is not coloured.
 
 The same rule applies to the writing around the grid. A sentence with a number in it and nothing to click is a mistake.
 
-## Two systems can share a band for different reasons
+## The same band can have different causes
 
 Medium is the label most likely to mislead, because uncertainty comes in kinds.
 
@@ -85,7 +85,7 @@ of beds the region has. [DCRRA-APPC] The damage is known. The comparison is miss
 
 Each system page says which kind of uncertainty is behind its band.
 
-## Some bands are wider than the evidence behind them
+## Some evidence covers only part of the region
 
 The grid covers the whole region. A lot of the evidence covers one neighbourhood.
 
@@ -98,7 +98,7 @@ Richmond or the North Shore.
 The row is banded High because the grid is regional and that is the only measured
 evidence available. The sentence beside it stays narrow: downtown, and then the gap.
 
-## Canada has one public earthquake loss model, and both governments use it
+## Governments use the same public loss model
 
 Both scenarios come from the Geological Survey of Canada's scenario
 catalogue: a magnitude 9.0 full rupture of the Cascadia fault, and a magnitude 7.0 in
@@ -118,7 +118,7 @@ aftershocks are "not currently included". [NRCAN-SCEN] Natural Resources Canada 
 the conclusion itself: with those hazards left out, "the estimates herein are likely to
 represent a minimum estimate on impacts." [GSC-OF-8853]
 
-## A past earthquake elsewhere shows how something fails, and never how long it takes here
+## What past earthquakes can show us
 
 Past earthquakes elsewhere explain a mechanism, and nothing more. The 2011
 earthquake in Christchurch, New Zealand, shows what months without sewer service
@@ -129,7 +129,7 @@ No figure from another earthquake is used as a number for the Lower Mainland
 anywhere here. Where a past earthquake elsewhere is mentioned, it is labelled
 with where and when it happened.
 
-## Numbers that look comparable are often measuring different things
+## Similar figures may measure different things
 
 **Return periods do not carry across subjects.** A dam in the top consequence class is
 assessed against a 1-in-10,000-year earthquake, and a building against a 1-in-2,475-year
@@ -146,7 +146,7 @@ a statement about what a structure was aimed at, not a forecast of what it will 
 A figure given here for a bridge or a tunnel says which of the two it
 is.
 
-## Several of these bands are expected to change
+## The bands will change as evidence improves
 
 The documents the bands read are still being written. Four pieces of work are
 outstanding, and each of them could move a band.

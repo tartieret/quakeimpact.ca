@@ -2,14 +2,14 @@
 route: /after/sanitation/
 title: Sanitation
 nav: Sanitation
-hook: A toilet needs water to flush, and in an apartment tower there is nothing else to use.
+hook: Without running water, toilets in apartment towers stop working.
 lede: A toilet needs water to flush. The province expects disruption to water and wastewater systems to last many months. [PEIRS]
 bands: { cascadia: high, crustal: high }
-mechanism: The province expects disruption to water and wastewater systems for many months; Metro Vancouver has built individual treatment plants to a post-disaster standard, which is not the same as making the network that feeds them survive.
+mechanism: The province expects water and wastewater disruption for many months. Some treatment plants meet a post-disaster standard, but this says nothing about the sewer network feeding them.
 source: PEIRS
 ---
 
-## A toilet needs water to flush, and in an apartment tower there is nothing else to use
+## Apartment toilets stop when the water does
 
 The water goes first. Flushing takes water somebody has to spare, and after a major
 earthquake nobody has water to spare. Why the [water](/after/water/) stops, and for how
@@ -25,7 +25,7 @@ bare minimum for drinking and hygiene". [COV-RAINCITY-19]
 
 Four litres covers drinking and washing. There is nothing in it for a toilet.
 
-## The only duration anyone has published for wastewater is many months
+## Wastewater disruption could last many months
 
 "Disruption to water and wastewater systems are expected for many months following the
 event." [PEIRS] That is the Provincial Earthquake Immediate Response Strategy, the
@@ -39,7 +39,7 @@ The province publishes shorter intervals for drinking water. They measure how lo
 takes to truck bulk water to people, which is a different question from when a sewer
 works again, and they are set out with [water](/after/water/).
 
-## Waste with nowhere to go is a health problem
+## Stored waste creates a health risk
 
 The Provincial Earthquake Immediate Response Strategy, on disrupted waste collection:
 
@@ -64,11 +64,11 @@ years. [CHCH-RNZ] The last two figures are about rebuilding a network, not about
 anyone used a portaloo. All of them describe Christchurch, and none of them says anything
 about how long Richmond's or Delta's sewers would be out.
 
-## A treatment plant built to survive an earthquake still needs the sewers that reach it
+## Treatment plants still depend on damaged sewers
 
 Metro Vancouver lists what it has built or designed to a post-disaster standard, which
-means a structure the building code expects to keep working after the earthquake, not
-just to stay standing: the Annacis Island plant's Stage 5 expansion, the North Shore
+means a structure the building code expects to keep working after the earthquake. The
+list includes the Annacis Island plant's Stage 5 expansion, the North Shore
 secondary treatment plant, the new Hollyburn pump station, and the Sperling and
 Sapperton pump stations, which were under construction with seismic upgrades.
 [MV-LWMP-BIENNIAL-19]
@@ -97,7 +97,7 @@ Management*, on a study it commissioned of its own sewers:
 > of how long the collection system would take to come back. [MV-CH2M-18] The sewers
 > were in scope.
 
-## Vancouver has a seismic standard for new sewer pipe and no assessment of the old
+## Older sewer pipes have not been assessed
 
 The City of Vancouver's Engineering Design Manual has a section headed Seismic Design
 Standards inside its sanitary sewer part, with a parallel one for storm drainage.

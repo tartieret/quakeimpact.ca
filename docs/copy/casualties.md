@@ -2,11 +2,11 @@
 route: /shaking/casualties/
 title: Casualties
 nav: Casualties
-hook: How many people are expected to be hurt in each scenario, and why the published range is so wide.
-lede: Two governments have published figures for how many people would be hurt or killed by an earthquake here. The figures are far apart, because they cover different places, different earthquakes and different times of day. All of them count one thing: buildings shaken, and the people inside them.
+hook: Published casualty estimates change with the earthquake and time of day.
+lede: Published casualty estimates differ because they cover different earthquakes, areas and times of day. They count only shaking damage to buildings and the people inside them.
 ---
 
-## Every published casualty figure counts buildings shaking, and nothing else
+## Published figures cover mainshock building damage only
 
 The published figures nearly all trace back to the Geological Survey of Canada's
 scenario catalogue, which counts "only damage to buildings, and their inhabitants, from
@@ -19,7 +19,7 @@ estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF
 So a casualty figure from that work is a floor. Fires, landslides and liquefaction hurt
 people too, and none of these models was asked to count them.
 
-## Two governments have published casualty figures, and they do not count the same area
+## Government estimates cover different areas
 
 The City of Vancouver reports casualties as a single count, at two times of day. The
 province splits its figures four ways, into the dead, the critically injured, those
@@ -36,7 +36,7 @@ needing hospital care and those needing first aid.
 The method behind the City's assessment has been published and peer reviewed.
 [HILT-2022]
 
-## The closer, smaller earthquake is the worse one for the City of Vancouver
+## The closer earthquake causes more casualties in Vancouver
 
 Intuition says the largest earthquake does the most harm. In the City's own modelling it
 does not. The magnitude 7.2 crustal earthquake in the Strait of Georgia gives 1,370
@@ -44,7 +44,7 @@ daytime casualties in the city, against 400 for the magnitude 9.0 Cascadia earth
 offshore. [COV-RISK-2024] The closer earthquake shakes City Hall about as hard as the
 design forces new buildings are built to resist. [COV-RISK-2024]
 
-## The time of day changes the count by more than half
+## Time of day changes the count
 
 In all three of the City's scenarios the night figure is under half the daytime one:
 1,370 against 620 for the magnitude 7.2, 400 against 170 for the magnitude 9.0, and 190
@@ -58,7 +58,7 @@ of the day. [GSC-OF-8853] Its Cascadia scenario puts the mainshock at 10 am on a
 August. [DCRRA-2025] Neither time is a prediction. The modellers had to fix one to do the
 rest of the work.
 
-## In the City's worst scenario, two building types carry most of the night-time casualties
+## Two building types dominate night-time casualties
 
 Concrete mid-rise and high-rise residential buildings, concentrated in the West End and
 Downtown, account for 37 per cent of the night-time casualties in the magnitude 7.2
@@ -70,7 +70,7 @@ steel reinforcing.
 What each building type does in the shaking, and how much of it Vancouver has, is set out
 under [buildings](/shaking/buildings/).
 
-## In Christchurch, New Zealand, most of the people killed by falling walls were outside the buildings
+## Falling walls killed people outside in Christchurch
 
 In the 2011 earthquake in Christchurch, New Zealand, building failure killed 42 people apart from the two office buildings that collapsed. Of those, 35 died when unreinforced masonry
 façades or walls fell, and 26 of the 35 were struck in the street or in vehicles.
@@ -81,7 +81,7 @@ danger sits during the shaking: at the edge of the building, on the footpath, wh
 wall lands. The province's magnitude 7.0 scenario says the same: "Many of those who try
 to run outside suffer extreme injury or death from falling and flying objects". [PEIRS]
 
-## A widely repeated figure of 15,000 deaths was put into a model, not produced by one
+## The 15,000-death figure is a model input
 
 The Conference Board of Canada published a study in 2016 of what a major earthquake would
 do to Canada's economy, with funding from the Insurance Bureau of Canada. A figure of
@@ -92,7 +92,7 @@ Canada's population by that number inside its economic model. [CBOC-2016]
 
 Nothing about the figure was measured. It was chosen as an input, and the model was run with Canada's population reduced by it.
 
-## The province says its own casualty figures may not match a real event
+## The province warns that actual casualties may differ
 
 The province's figures rest on damage to buildings and "do not include casualties from
 other secondary hazards or complicating factors", a list running through underlying
@@ -131,8 +131,8 @@ two building types carry most of the night-time casualties: concrete mid-rise an
 high-rise residential at 37 per cent, and unreinforced masonry residential at 29 per cent.
 [COV-RISK-2024]
 
-The hour of the day is the biggest single thing in these models, and it is the one nobody
-gets to pick. What is above the bed, and what you do while the ground is moving, can be picked today.
+Time of day drives the largest change in these models. What hangs above the bed and
+what you do while the ground moves are within your control.
 
 ## Sources on this page
 

@@ -2,14 +2,14 @@
 route: /after/housing/
 title: Housing
 nav: Housing
-hook: Most people who cannot go home would have a home still standing.
+hook: Cordons and failed utilities can keep people out of standing homes.
 lede: The province's planning scenario puts 70,000 households out of their homes in Greater Vancouver after a magnitude 7.0 crustal earthquake. [PEIRS] Most of those homes are still standing. In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years. [COV-RISK-2024]
 bands: { cascadia: high, crustal: high }
 mechanism: In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.
 source: COV-RISK-2024
 ---
 
-## The first thing that happens to a home is that somebody has to come and look at it
+## Buildings must be inspected before people return
 
 After the shaking, somebody has to walk up to each building, judge it, and leave a placard on
 the door. In Greater Vancouver, the province's magnitude 7.0 crustal scenario counts 10,000
@@ -24,7 +24,7 @@ expected to be overwhelmed, leaving "about two million people in need of alterna
 [DCRRA-2025] That count is province-wide, and it comes from the province's written scenario
 rather than from a model run. [DCRRA-2025]
 
-## A cordon closes a block, and a building that came through the shaking can be inside it
+## Cordons can close undamaged buildings
 
 In Vancouver, areas with high concentrations of damage may be closed off "for weeks, months,
 or even years", and the West End and the Downtown Eastside are the neighbourhoods most at risk
@@ -43,7 +43,7 @@ The scarce resource is people. Every building needs somebody qualified to assess
 somebody qualified to repair it, one building at a time. Large sections of neighbourhoods
 would stay inaccessible for an extended period. [COV-EXPLORER-25] [COV-FACTSHEET-24]
 
-## A home with no water and no sewer is a home nobody can live in
+## Failed utilities make homes uninhabitable
 
 A green placard, meaning the building may be occupied, is not the end of it. "Disruption to water and wastewater systems are expected
 for many months following the event." [PEIRS] That is the province's own sentence, and it
@@ -52,7 +52,7 @@ covers a household whose building was never damaged at all.
 A home runs on [water](/after/water/), [sanitation](/after/sanitation/) and
 [electricity](/after/electricity/). Each comes back on its own schedule, and a household waits on the slowest of the three: a lift needs power, and flushing needs water somebody has to spare.
 
-## Five published displacement figures, and no two of them count the same thing
+## Published displacement figures measure different things
 
 | Where | Scenario | What is counted | Figure |
 | --- | --- | --- | ---: |
@@ -70,7 +70,7 @@ For Vancouver the rarer magnitude 7.2 crustal earthquake is far worse than the m
 megathrust: about four times the buildings completely or extensively damaged. The reason is
 shaking at City Hall comparable to the design forces used for new buildings. [COV-RISK-2024]
 
-## Nearly seven in ten of Vancouver's buildings went up before modern seismic standards
+## Most Vancouver buildings predate modern seismic standards
 
 Vancouver has about 90,000 buildings. Nearly 70 per cent were built before 1990, when early modern
 seismic standards arrived, and about half before 1973, before there were any. [COV-RISK-2024]
@@ -92,7 +92,7 @@ including Chinatown and Strathcona, Downtown, Kitsilano, Fairview and Mount Plea
 [COV-RISK-2024] The census tracts with the highest risk average roughly 70 to 75 per cent renters.
 [COV-RISK-2024]
 
-## Vancouver publishes 25 disaster support hubs and no capacity figure for any of them
+## Disaster support hub capacity is not published
 
 Vancouver publishes 25 disaster support hubs, gathering places that can work outdoors and where
 group lodging and shelter may be provided depending on impacts. No capacity figure is published

@@ -2,14 +2,14 @@
 route: /after/water/
 title: Water
 nav: Water
-hook: The worst breaks are the ones under rivers, and those are the repairs that take longest.
-lede: Metro Vancouver's own seismic assessment models 267 water main failures across the region in a magnitude 9.0 earthquake. [MV-WATER-22] About 60 of them fall at the 71 points where mains cross under rivers and inlets, which are the hardest places in the system to reach. [MV-WATER-22]
+hook: Breaks under rivers and inlets take the longest to repair.
+lede: Metro Vancouver's own seismic assessment models 267 water main failures across the region in a magnitude 9.0 earthquake. [MV-WATER-22] About 60 of them fall at the 71 points where mains cross under rivers and inlets. Those are the hardest places in the system to reach. [MV-WATER-22]
 bands: { cascadia: high, crustal: high }
-mechanism: A magnitude 9 megathrust is modelled to cause 267 water main failures across Metro Vancouver, about 60 of them at the 71 points where mains cross under rivers and inlets, which are the repairs that take longest.
+mechanism: A magnitude 9 megathrust is modelled to cause 267 water main failures across Metro Vancouver. About 60 occur where mains cross under rivers and inlets, the hardest locations to repair.
 source: MV-WATER-22
 ---
 
-## A pipe under a road and a pipe under a river are different repairs
+## River crossings are the hardest repairs
 
 Lucas Pitts, director of policy, planning and analysis at the Greater Vancouver Water
 District, describing his own system:
@@ -21,7 +21,7 @@ District, describing his own system:
 
 Where the breaks fall matters more than how many of them there are.
 
-## 267 main failures are modelled region-wide, and about 60 of them at river and inlet crossings
+## The model finds 267 main failures
 
 Metro Vancouver commissioned the engineering firm WSP Canada to assess the seismic
 vulnerability of the regional water supply system. [MV-MGR-2021] The study was
@@ -51,7 +51,7 @@ and pipelines rather than from a single model run. [MV-WATER-22] They are more t
 eight and a half times the failures projected by the region's previous study in 1993.
 [MV-WATER-22] The study is four years old.
 
-## Nobody has published how long the water would take to come back
+## Water restoration time has not been published
 
 About two thirds of the roughly 300-page report is blacked out in the public version.
 Two of the withheld pieces are what a restoration estimate would be built from: the
@@ -82,7 +82,7 @@ words that the joined-up picture across that seam has not been assembled yet.
 > province had put its plans for supplying potable water on hold pending an update
 > from Metro Vancouver. [GM-AAFC-19]
 
-## The province expects water and sewer disruption to last many months
+## The province expects disruption for many months
 
 "Disruption to water and wastewater systems are expected for many months following
 the event." [PEIRS] The sentence is qualitative, it covers sewers in the same breath as water, and it is region-wide rather than specific to any pipe. The province wrote it for its shallow crustal M7 planning scenario.
@@ -94,7 +94,7 @@ challenging for the first four to five days". [DCRRA-2025]
 The four to five days are about trucking water to people; the many months is about
 repairing the network. Merging them would suggest water comes back in a week.
 
-## One municipality publishes numbers, and they do not carry across the region
+## Richmond's figures do not apply across the region
 
 New Westminster's potable water emergency response plan carries a damage and duration
 table in its earthquake annex: 200 to 300 breaks in a 475-year event, at
@@ -111,7 +111,7 @@ breaks. And the table is a response plan's planning assumption. No study produce
 
 Metro Vancouver has published nothing comparable.
 
-## Five deep tunnels are planned, and none of the three under way is finished
+## Three new water tunnels are still under construction
 
 Metro Vancouver is replacing its river and inlet crossings with deep bored tunnels
 "designed to ensure delivery of drinking water in the event of a major earthquake". It

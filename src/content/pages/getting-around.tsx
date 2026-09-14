@@ -53,11 +53,11 @@ export const gettingAround: PageModule = {
     route: "/getting-around/",
     title: "Moving after the shaking",
     description:
-      "Two provincial emergency plans assume people will not drive out of the region after a major earthquake. Both direct the public to shelter where they are.",
+      "Provincial plans direct people to shelter where they are after a major earthquake, leaving damaged routes for emergency traffic and supplies.",
     nav: "Getting around",
     kicker: "After the shaking",
     standfirst:
-      "Two provincial emergency plans assume people will not drive out of the region after a major earthquake. Both direct the public to shelter where they are.",
+      "Provincial plans direct people to shelter where they are after a major earthquake. Damaged routes are needed for emergency traffic and supplies.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -84,7 +84,7 @@ export const gettingAround: PageModule = {
 
   sections: [
     {
-      title: "The province plans on people staying",
+      title: "Provincial plans tell people to stay where they are",
       body: (
         <Prose>
           <p>
@@ -138,7 +138,7 @@ export const gettingAround: PageModule = {
     },
 
     {
-      title: "The land connections are fewer than the map suggests",
+      title: "Water and mountains limit the routes out",
       body: (
         <Prose>
           {/* Uncited on purpose: these three are map facts. They claim nothing
@@ -205,8 +205,7 @@ export const gettingAround: PageModule = {
     },
 
     {
-      title:
-        "Disaster Response Route signs mean stay off, not evacuate this way",
+      title: "Disaster Response Routes are for emergency traffic",
       body: (
         <Prose>
           <p>
@@ -253,8 +252,7 @@ export const gettingAround: PageModule = {
     },
 
     {
-      title:
-        "Roads are cleared in a published order, and getting people home is not near the top",
+      title: "Local roads are cleared last",
       body: (
         <Prose>
           <p>
@@ -320,8 +318,7 @@ export const gettingAround: PageModule = {
     },
 
     {
-      title:
-        "Rainfall severed three BC highways in 2021, and reopening them took months",
+      title: "Three BC highways took months to reopen after the 2021 floods",
       body: (
         <Prose>
           <p>
@@ -392,7 +389,7 @@ export const gettingAround: PageModule = {
     },
 
     {
-      title: "A landslide wave in Howe Sound is assessed as unlikely",
+      title: "A damaging landslide wave in Howe Sound is unlikely",
       body: (
         <Prose>
           <p>
@@ -410,7 +407,7 @@ export const gettingAround: PageModule = {
     },
 
     {
-      title: "Nobody has published how many people would leave, or when",
+      title: "No estimate exists for how many people would leave",
       body: (
         <Prose>
           <p>

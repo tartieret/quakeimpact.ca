@@ -26,19 +26,18 @@ export const contribute: PageModule = {
     route: "/contribute/",
     title: "Contribute",
     description:
-      "A correction, a document, a pointer to a report you know exists, the read of somebody who does this work for a living: all of them are welcome.",
+      "Send a correction, a relevant document or an expert review of the site’s earthquake information.",
     nav: "Contribute",
     kicker: "Corrections, sources and local knowledge",
     standfirst:
-      "A correction, a document, a pointer to a report you know exists, the read of somebody who does this work for a living: all of them are welcome. Something on this site that looks wrong to you is worth sending even when no document comes with it.",
+      "Send a correction, a relevant document or a review from your field. If something looks wrong, it is worth reporting even if you do not have a source at hand.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: ["MV-WATER-22", "MV-DWMP-26", "AIR-2013", "BCH-WESTEND-25"],
   },
 
   sections: [
     {
-      title:
-        "Contributions are welcome, and most of all from people who work in these fields",
+      title: "How to contribute",
       body: (
         <Prose>
           <p>
@@ -72,21 +71,19 @@ export const contribute: PageModule = {
             to be something a reader can check.
           </p>
           <p>
-            Three things cannot reach a page here. A claim with no document
-            behind it, however likely it is. A calculation made here rather than
-            published somewhere first: this site compiles, it does not model.
-            And a figure carried across from an earthquake somewhere else,
-            because the 2011 earthquake in Christchurch, New Zealand, and the
-            1995 earthquake in Kobe, Japan, show how a system fails and say
-            nothing about how long anything in the Lower Mainland would be out.
+            Claims need published evidence before they reach the site. This
+            project does not produce new calculations, and figures from past
+            earthquakes elsewhere are not applied to the Lower Mainland. The
+            2011 earthquake in Christchurch, New Zealand, and the 1995
+            earthquake in Kobe, Japan, can show how a system fails, but not how
+            long a local outage would last.
           </p>
         </Prose>
       ),
     },
 
     {
-      title:
-        "Three questions on this site are waiting on a document that may already exist",
+      title: "Three documents we are looking for",
       body: (
         <Prose>
           <p>

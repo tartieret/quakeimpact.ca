@@ -3,13 +3,13 @@ route: /after/fuel/
 title: Fuel
 nav: Fuel
 hook: A service station with full tanks and no power dispenses nothing.
-lede: The province's earthquake response plan sets fuel apart from the other critical resources, because the distribution of everything else runs on it. [PEIRS] The same plan assumes existing supply chains will be inoperable. [PEIRS]
+lede: Fuel powers generators, repair crews and the distribution of other critical supplies. [PEIRS] The province assumes existing supply chains will be inoperable after the earthquake. [PEIRS]
 bands: { cascadia: high, crustal: high }
 mechanism: Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable.
 source: PEIRS
 ---
 
-## Fuel is the one resource everything else moves on
+## Fuel keeps every other supply moving
 
 The Provincial Earthquake Immediate Response Strategy is British Columbia's
 operational plan for the days after a major earthquake. Of the resources it
@@ -28,7 +28,7 @@ transportation will be disrupted, and existing supply chains will be inoperable.
 [PEIRS] That is written against the province's primary planning scenario, a
 shallow magnitude 7.0 earthquake near Greater Vancouver. [PEIRS]
 
-## A service station with full tanks and no power dispenses nothing
+## Fuel pumps need electricity
 
 A pump is an electric motor. The till beside it is a computer and the card reader
 needs a network. A station with full underground tanks hands out nothing while
@@ -66,7 +66,7 @@ a limit on what a person may buy.
 > that the province will act once a shortage arrives. They do not say what the
 > rules would be the next time.
 
-## A hospital generator is a fuel tank somebody has to keep refilling
+## Hospital generators need regular fuel deliveries
 
 A hospital is the clearest case of a building running on a generator. A generator
 holds hours or days of diesel, not weeks. When it runs low, somebody has to drive
@@ -83,7 +83,7 @@ in the public record.
 
 
 
-## Every crew repairing everything else is queuing for the same fuel
+## Repair crews compete for the same fuel
 
 The crews restoring [electricity](/after/electricity/) drive to the poles. The
 trucks carrying [food](/after/food/) run the same roads as everything else. Bulk

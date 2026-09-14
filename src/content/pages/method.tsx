@@ -66,10 +66,10 @@ export const method: PageModule = {
     route: "/method/",
     title: "How the impact bands work",
     description:
-      "Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so.",
+      "Impact bands summarize restoration time, geographic extent and dependencies for each system and earthquake scenario.",
     nav: "Method & bands",
     standfirst:
-      "Every system carries a band for each scenario, a sentence saying how it fails, and a link to the document that says so. The band says how long the system is out, how widely, and what it is waiting on.",
+      "Each impact band summarizes restoration time, geographic extent and dependencies. The accompanying note and source explain the evidence behind it.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -95,7 +95,7 @@ export const method: PageModule = {
 
   sections: [
     {
-      title: "A band answers three questions, not one",
+      title: "What a band measures",
       body: (
         <Prose>
           <p>
@@ -145,8 +145,7 @@ export const method: PageModule = {
     },
 
     {
-      title:
-        "A band is a reading of the public record, not a verdict on the equipment",
+      title: "A band reflects published evidence",
       body: (
         <Prose>
           <p>
@@ -211,7 +210,7 @@ export const method: PageModule = {
     },
 
     {
-      title: "Every coloured cell comes with a sentence and a source",
+      title: "Every band includes its basis and source",
       body: (
         <Prose>
           <p>
@@ -229,7 +228,7 @@ export const method: PageModule = {
     },
 
     {
-      title: "Two systems can share a band for different reasons",
+      title: "The same band can have different causes",
       body: (
         <Prose>
           <p>
@@ -277,7 +276,7 @@ export const method: PageModule = {
     },
 
     {
-      title: "Some bands are wider than the evidence behind them",
+      title: "Some evidence covers only part of the region",
       body: (
         <Prose>
           <p>
@@ -303,8 +302,7 @@ export const method: PageModule = {
     },
 
     {
-      title:
-        "Canada has one public earthquake loss model, and both governments use it",
+      title: "Governments use the same public loss model",
       body: (
         <Prose>
           <p>
@@ -359,8 +357,7 @@ export const method: PageModule = {
     },
 
     {
-      title:
-        "A past earthquake elsewhere shows how something fails, and never how long it takes here",
+      title: "What past earthquakes can show us",
       body: (
         <Prose>
           <p>
@@ -380,8 +377,7 @@ export const method: PageModule = {
     },
 
     {
-      title:
-        "Numbers that look comparable are often measuring different things",
+      title: "Similar figures may measure different things",
       body: (
         <Prose>
           <p>
@@ -408,7 +404,7 @@ export const method: PageModule = {
     },
 
     {
-      title: "Several of these bands are expected to change",
+      title: "The bands will change as evidence improves",
       body: (
         <Prose>
           <p>

@@ -21,15 +21,15 @@ export const food: PageModule = {
     route: "/after/food/",
     title: "Food",
     description:
-      "The province plans on existing supply chains being inoperable, and on the network that brings meat, dairy and produce taking weeks or months to recover.",
+      "The province expects food supply chains to stop working, with fresh-food deliveries taking weeks or months to recover.",
     nav: "Food",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        The province plans on existing supply chains being inoperable, and on
-        the network that brings meat, fruit and vegetables, dairy and baked
-        goods taking weeks or months to recover. <Cite id="PEIRS" /> Nothing is
-        stored for the public to bridge that gap.
+        The province expects existing supply chains to stop working. Deliveries
+        of fresh food could take weeks or months to recover.{" "}
+        <Cite id="PEIRS" /> No level of government stores food for the public
+        during that gap.
       </>
     ),
     /**
@@ -52,8 +52,7 @@ export const food: PageModule = {
 
   sections: [
     {
-      title:
-        "The till, the cold case and the freezer aisle all stop on the same power",
+      title: "Food shops depend on electricity",
       body: (
         <Prose>
           <p>
@@ -96,8 +95,7 @@ export const food: PageModule = {
     },
 
     {
-      title:
-        "The province’s own list of what stops moving reads like a grocery shop",
+      title: "Fresh food deliveries could take months to recover",
       body: (
         <Prose>
           <p>
@@ -132,7 +130,7 @@ export const food: PageModule = {
     },
 
     {
-      title: "No level of government is holding food for the public here",
+      title: "Governments do not stockpile food for the public",
       body: (
         <Prose>
           <p>
@@ -165,7 +163,7 @@ export const food: PageModule = {
     },
 
     {
-      title: "There is no food waiting in a disaster support hub",
+      title: "Disaster support hubs do not store food",
       body: (
         <Prose>
           <p>
@@ -194,8 +192,7 @@ export const food: PageModule = {
     },
 
     {
-      title:
-        "The province publishes an emergency plan for foreign animal disease and none for food",
+      title: "British Columbia has no public food emergency plan",
       body: (
         <Prose>
           <p>

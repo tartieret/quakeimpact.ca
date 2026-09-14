@@ -2,11 +2,11 @@
 route: /shaking/buildings/
 title: Buildings
 nav: Buildings
-hook: Which buildings hold up, which do not, and why the brickwork coming off the older ones is the hazard the City has named.
-lede: The City of Vancouver has run three earthquakes through a model of its own buildings, and the nearer, smaller one is the worse one. Most of the city went up before the rules that would have made it safer, and about a tenth of the buildings carry nearly four fifths of the risk.
+hook: Age, height and construction type shape how a building responds.
+lede: Vancouver's building model finds more damage from a nearby crustal earthquake than from a larger offshore megathrust. Most of the city predates modern seismic rules. About a tenth of its buildings carry nearly four fifths of the risk.
 ---
 
-## In the City's own modelling, the nearer earthquake does more damage than the bigger one
+## The nearer earthquake causes more damage in Vancouver
 
 In November 2024 the City of Vancouver shook a computer model of its own buildings with
 three different earthquakes and counted the damage each time. [COV-RISK-2024] Only one
@@ -30,7 +30,7 @@ the nearer earthquake shakes the ground at City Hall about as hard as the forces
 buildings are designed for. [COV-RISK-2024] The method behind the model is published and
 peer-reviewed. [HILT-2022]
 
-## Most of the city was built before the rules that would have made it safer
+## Most buildings predate modern seismic rules
 
 Vancouver has about 90,000 buildings. Nearly 70 per cent of them went up before 1990,
 when the first modern earthquake standards arrived, and about half before 1973, when
@@ -50,7 +50,7 @@ design buildings, the level expected about once in 2,475 years, passes the thres
 the province set. [DCRRA-EXP] That is a count of what is exposed, not a forecast of what
 any one earthquake does.
 
-## The building you are in matters more than the magnitude
+## Building type matters more than magnitude
 
 The City's model splits its housing by type. These are its M7.2 Georgia Strait figures,
 and they are averages for a type, not a verdict on any one building.
@@ -92,7 +92,7 @@ completely damaged buildings, wood actually performs quite well seismically."
 and they say nothing about the wood apartment buildings above: a separate finding from a
 separate study.
 
-## Most of the people in the highest-risk buildings rent them
+## Most residents of the highest-risk buildings are renters
 
 In the census tracts carrying the most risk, roughly 70 to 75 per cent of people rent
 rather than own, and about 20 to 30 per cent of those renters are low income. More than
@@ -102,7 +102,7 @@ city, are in older brick buildings in the Downtown Eastside. [COV-RISK-2024]
 
 A tenant cannot upgrade a building, and in those tracts most people are tenants.
 
-## A building can come through it and still be somewhere nobody can go back to
+## Cordons can keep people out of standing buildings
 
 In the M7.2 run, 28 per cent of concrete mid-rise and high-rise buildings are badly
 damaged, while 70 per cent of the people living in them are out of their homes for more
@@ -126,7 +126,7 @@ Someone qualified has to look at each building and say whether people can go bac
 is a fixed number of those people and a fixed number of trades to do the repairs, and they
 work through the city one building at a time. Minor damage still needs the visit.
 
-## The falling hazard Vancouver has named is brick, on its own high streets
+## Brick walls threaten Vancouver's older high streets
 
 Most people picture glass coming off a building in an earthquake. The City points at
 brick:
@@ -154,7 +154,7 @@ In the 2011 earthquake in Christchurch, New Zealand, 35 of the 42 deaths from bu
 walls falling, 26 of them onto people on the street or in vehicles. [NZ-RC-V4] That is
 how people die under falling brick, and it sets no number for Vancouver.
 
-## Nobody has measured what the glass would do, and the City has said so in writing
+## Vancouver has not modelled falling glass
 
 In 2021 someone asked the City of Vancouver, through a freedom of information request, for
 any report projecting damage or casualties from falling glass downtown in a large
@@ -189,7 +189,7 @@ Vancouver has not ignored what falls off a building, and it has not measured it 
 has regulated the hazard for decades in the buildings it has been able to regulate, which
 are the new ones.
 
-## Vancouver's falling-hazard rule only bites when somebody renovates
+## Falling-hazard rules apply only during renovations
 
 Part 11 of the Vancouver Building By-law has no equivalent in the provincial or national
 building codes. At upgrade level S3 it requires that "falling hazards that may impact
@@ -217,7 +217,7 @@ costed at $3,000 to $10,000 per building. [COV-PLAN-2026] [SEA-URM] It carries n
 publication date, and how the results would be published is explicitly unsettled: landlords
 and lenders objected to naming individual buildings. [COV-PLAN-2026]
 
-## Most of what the damage would cost is not insured
+## Most modelled losses are uninsured
 
 AIR Worldwide, modelling a M9.0 Cascadia earthquake about 300 km from Vancouver for the
 Insurance Bureau of Canada in 2013, put total economic loss at $74.7 billion: $62.0

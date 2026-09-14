@@ -20,11 +20,11 @@ export const landslides: PageModule = {
     route: "/shaking/landslides/",
     title: "Landslides",
     description:
-      "The province’s own planning scenario has landslides cutting the transportation routes, and the maps for the two mountain corridors were built for rain.",
+      "The province expects landslides to cut transportation routes. Existing maps of the mountain corridors assess rainfall, not earthquakes.",
     nav: "Landslides",
     kicker: "The shaking",
     standfirst:
-      "The province’s own planning scenario has landslides cutting the transportation routes. The landslide maps for the two mountain corridors help would arrive on were built for rain, not for earthquakes.",
+      "The province expects landslides to cut transportation routes after its crustal earthquake scenario. Existing maps of the mountain corridors assess rainfall, not earthquakes.",
     /**
      * First-cited order, which is the order the markers are numbered in.
      */
@@ -41,7 +41,7 @@ export const landslides: PageModule = {
 
   sections: [
     {
-      title: "The province’s own scenario has landslides cutting the roads",
+      title: "Landslides could cut transportation routes",
       body: (
         <Prose>
           <p>
@@ -88,8 +88,7 @@ export const landslides: PageModule = {
     },
 
     {
-      title:
-        "The landslide maps for those corridors were built for rain, not for earthquakes",
+      title: "Corridor maps cover rainfall, not earthquakes",
       body: (
         <Prose>
           <p>

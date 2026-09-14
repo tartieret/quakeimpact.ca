@@ -2,14 +2,14 @@
 route: /after/food/
 title: Food
 nav: Food
-hook: The food that goes first is the food no pantry can hold: meat, produce, dairy and bread.
-lede: The province plans on existing supply chains being inoperable, and on the network that brings meat, fruit and vegetables, dairy and baked goods taking weeks or months to recover. [PEIRS] Nothing is stored for the public to bridge that gap.
+hook: Fresh food depends on regular deliveries.
+lede: The province expects existing supply chains to stop working. Deliveries of fresh food could take weeks or months to recover. [PEIRS] No level of government stores food for the public during that gap.
 bands: { cascadia: high, crustal: high }
-mechanism: The province expects the network that delivers meat, fruit and vegetables, dairy, baked goods, toiletries and cleaning products to take weeks or months to recover; the problem is moving the goods rather than having them.
+mechanism: The province expects delivery networks for food and household supplies to take weeks or months to recover.
 source: PEIRS
 ---
 
-## The till, the cold case and the freezer aisle all stop on the same power
+## Food shops depend on electricity
 
 A grocery shop is a building full of machines. Tills and card readers need power and a
 network. The cold case, the walk-in cooler and the freezer aisle need power to stay
@@ -24,7 +24,7 @@ Food comes in by truck, over the same roads as everything else, and a truck runs
 transportation will be disrupted, and existing supply chains will be inoperable."
 [PEIRS]
 
-## The province's own list of what stops moving reads like a grocery shop
+## Fresh food deliveries could take months to recover
 
 In its earthquake response strategy the province says the fast-moving consumer goods
 network "will be disrupted. It may take weeks or months to recover." [PEIRS] Fast-moving
@@ -44,7 +44,7 @@ The province's own primary planning scenario is a shallow crustal magnitude 7.0 
 Greater Vancouver, so the weeks or months is a statement about the nearer, smaller
 earthquake as well as the offshore one. [PEIRS]
 
-## No level of government is holding food for the public here
+## Governments do not stockpile food for the public
 
 The National Emergency Strategic Stockpile holds medical equipment such as ventilators,
 cardiac monitors and personal protective equipment, pharmaceuticals, social service
@@ -63,7 +63,7 @@ That works for a house fire or a flood in one valley. Here it runs through the s
 retailers and the same roads the province expects to be disrupted, [PEIRS] so it is at
 its weakest in exactly the event it is meant to cover.
 
-## There is no food waiting in a disaster support hub
+## Disaster support hubs do not store food
 
 Vancouver designates 25 disaster support hubs, outdoor gathering places where group lodging and shelter may be provided depending on impacts. [COV-HUBS] The City's own neighbourhood toolkit describes what
 is there: basic items such as pens, whiteboards, signage and a tent, and beyond that
@@ -79,7 +79,7 @@ shelter kitchen at that scale is not a regional food supply.
 
 The plan is that households stored the food themselves.
 
-## The province publishes an emergency plan for foreign animal disease and none for food
+## British Columbia has no public food emergency plan
 
 The province's index of its own emergency plans lists the All Hazard Plan, the
 earthquake response strategy, flood, drought, nuclear, pandemic, wildland-urban

@@ -33,7 +33,7 @@ export const dikes: PageModule = {
 
   sections: [
     {
-      title: "The dikes sit on the ground most likely to move",
+      title: "Delta dikes stand on liquefiable soil",
       body: (
         <Prose>
           <p>
@@ -66,8 +66,7 @@ export const dikes: PageModule = {
     },
 
     {
-      title:
-        "Sea Island’s dike is being raised for the sea, not for an earthquake",
+      title: "Sea Island’s dike project addresses sea-level rise",
       body: (
         <Prose>
           <p>

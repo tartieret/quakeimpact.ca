@@ -9,7 +9,7 @@ export const metadata: Metadata = pageMetadata({
   route: "/licences/",
   title: "Licences",
   description:
-    "Facts can be stated freely. Maps, tables and wording usually cannot. This page carries the credit each open licence behind the site asks for, in its own words.",
+    "Licence terms and required credits for maps, datasets and photographs used by QuakeImpact.",
 });
 
 /**
@@ -88,11 +88,11 @@ export default function LicencesPage() {
         <PageHeader
           kicker="Credit and permissions"
           title="Licences"
-          standfirst="Facts can be stated freely. Maps, tables and wording usually cannot."
+          standfirst="Licence terms and required credits for maps, datasets and photographs used by QuakeImpact."
         />
       }
     >
-      <Section title="Credit, in the words each licence asks for">
+      <Section title="Required licence credits">
         <div className="flex flex-col gap-8">
           {LICENCES.map((licence) => (
             <div key={licence.name}>
@@ -129,7 +129,7 @@ export default function LicencesPage() {
       <Section title="Photographs">
         <Prose
           paragraphs={[
-            "Each photograph is credited under itself, on the page it sits on: the photographer, where and when it was taken, the collection it is published in, and a link to the licence.",
+            "Each photograph carries its credit on the page where it appears, including the photographer, date, location, collection and licence link.",
             ...(NON_COMMERCIAL_SHOWN.length > 0
               ? [
                   `${
@@ -143,19 +143,19 @@ export default function LicencesPage() {
         />
       </Section>
 
-      <Section title="Linked, not reproduced">
+      <Section title="Material linked but not reproduced">
         <Prose
           paragraphs={[
-            "The seismic microzonation mapping for Metro Vancouver may not be published commercially, in print or electronically, without written approval from the Institute for Catastrophic Loss Reduction, and the reservation reaches statements and conclusions about the maps as well as the maps themselves. The ground conditions page describes what they found and links to them.",
-            "Those maps describe ground conditions across a region. They cannot tell you about a single address, and a map that shows your block as susceptible is not an assessment of your building. Only a site investigation is that.",
-            "The provincial hazard tool, the regional Disaster Response Route map and most of the reports behind this site state no licence at all. A restoration time, a tonnage, a failure count and a date are facts, so they are stated here with credit and a link. The wording, the tables, the figures and the maps are not copied, redrawn or adapted.",
+            "Metro Vancouver’s seismic microzonation maps cannot be republished commercially without written approval from the Institute for Catastrophic Loss Reduction. The restriction also covers statements and conclusions drawn from the maps. The ground conditions page links to them.",
+            "The maps describe regional ground conditions, not individual properties. A site investigation is needed to assess a specific building.",
+            "The provincial hazard tool, the regional Disaster Response Route map and most cited reports state no licence. QuakeImpact reports facts from them with credit and a link, but does not copy or adapt their wording, tables, figures or maps.",
           ]}
         />
       </Section>
 
       <Section
-        title="If something here is wrong"
-        lede="The people most likely to spot a licence read the wrong way are the people who published the document."
+        title="Report a licence error"
+        lede="If a licence has been read incorrectly, please send a correction."
       >
         <Link
           href="/contribute/"

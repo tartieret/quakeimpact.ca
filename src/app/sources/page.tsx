@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   route: "/sources/",
   title: "Sources",
   description:
-    "Every number on this site was published by somebody else first. This page lists those documents, with the date each one carries and a link wherever one survives.",
+    "Documents and datasets cited by QuakeImpact, with publication dates and available links.",
 });
 
 /**
@@ -209,30 +209,28 @@ export default function SourcesPage() {
         <PageHeader
           kicker="Where the numbers on this site were published"
           title="Sources"
-          standfirst={`None of this is modelled here. Every number was published by somebody else first, and this page lists those documents together with the map and catalogue layers the site is licensed to draw from, ${DOCUMENTS.length} in all, with the date each one carries and a link wherever one survives.`}
+          standfirst={`This page lists the ${DOCUMENTS.length} documents and datasets cited by QuakeImpact. Each entry includes its date and an available link.`}
         />
       }
     >
-      <Section
-        title="An entry is the document, its date, and what it is used for"
-      >
+      <Section title="How to read an entry">
         <Prose
           paragraphs={[
-            "Under each one is a line saying how the document was reached. A figure read off the page of a report is stronger evidence than the same figure repeated in a news story, and the entry says which of the two it is. Where an organisation is describing its own work, that is stated too.",
-            `Some documents cannot be checked by following a link. ${NO_LINK} were never recovered at all, and others sit behind a paywall or are served only to a browser. That is a fact about the evidence, so the entry carries it rather than leaving a dead link to be discovered.`,
-            "Where a document sets conditions on reuse, the licence is quoted in the entry. Most carry none, which means the facts in them are free to state and their wording is not, so this site paraphrases and links.",
-            "Each entry ends with a short code in a typewriter face. That code is what the citation marker in the text points at, and it is the entry's permanent address on this page, so a link to one keeps working.",
+            "Each entry says whether the information came from the document itself, a news report, an archive or an organisation describing its own work.",
+            `${NO_LINK} cited documents could not be recovered. Others are behind a paywall or work only in a browser. Those limits are recorded in the entry.`,
+            "Reuse conditions appear wherever a document states them. The site paraphrases the source and links to it unless a short quotation is necessary.",
+            "The short code at the end matches the citation marker used elsewhere on the site. It also provides a permanent link to the entry.",
           ]}
         />
       </Section>
 
       <Section
-        title="Analogue events illustrate, they do not measure"
+        title="Past earthquakes used as examples"
         lede={`${ANALOGUES.length} entries describe earthquakes somewhere else: the 2011 earthquake in Christchurch, New Zealand, the 1995 earthquake in Kobe, Japan, and the 2011 earthquake off the Pacific coast of Tōhoku, Japan.`}
       >
         <Prose
           paragraphs={[
-            "They are here because they show what daily life was like when a sewer network was out for months, or when fuel existed but nothing could move it. They cannot tell you how long anything in the Lower Mainland would be out. No restoration time on this site is taken from one of them.",
+            "These events show how systems failed and what daily life was like afterwards. They do not set restoration times for the Lower Mainland.",
           ]}
         />
         <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm">
@@ -250,22 +248,22 @@ export default function SourcesPage() {
       </Section>
 
       <Section
-        title="Datasets, and what may be drawn from them"
-        lede={`${DATASETS.length} entries are map and catalogue layers rather than reports. These are the ones a map could be built from, so each carries its licence in full.`}
+        title="Datasets and map layers"
+        lede={`${DATASETS.length} entries are map or catalogue layers. Each includes its full licence.`}
       >
         <Prose
           paragraphs={[
             <>
-              Some of these may be used freely with credit. Others may be read
-              and linked to but not copied, restyled or built on. The{" "}
+              Some may be reused with credit. Others may only be read and
+              linked to. The{" "}
               <Link
                 href="/licences/"
                 className="text-accent underline underline-offset-2"
               >
                 licences page
               </Link>{" "}
-              sets out the credit each one requires, and names the layers this
-              site links to rather than draws.
+              lists the required credits and the layers QuakeImpact does not
+              reproduce.
             </>,
           ]}
         />
@@ -275,8 +273,8 @@ export default function SourcesPage() {
       </Section>
 
       <Section
-        title="The full list, by who published it"
-        lede={`All ${DOCUMENTS.length} documents, grouped under the organisation that published each one and then ordered by title. The organisations that published three or more are listed first, as a way in.`}
+        title="All sources by publisher"
+        lede={`All ${DOCUMENTS.length} entries are grouped by publisher and ordered by title. Publishers with three or more entries appear in the index below.`}
       >
         <nav aria-label="Jump to a publisher" className="mb-10">
           <ul className="flex flex-wrap gap-2">
@@ -316,8 +314,8 @@ export default function SourcesPage() {
       </Section>
 
       <Section
-        title="Missing a document"
-        lede="Some of what this site needs has never been published, and some of it was published and then taken down. If you know where a document lives, that is the most useful thing you can send."
+        title="Send a missing document"
+        lede="Some needed research has never been published; other documents have disappeared from the web. Please send a working copy or link if you have one."
       >
         <Link
           href="/contribute/"
