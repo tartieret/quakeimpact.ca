@@ -4,7 +4,6 @@ import { Prose } from "@/components/page-parts";
 import { ScenarioCards } from "@/components/scenario-cards";
 import { SystemGrid } from "@/components/system-grid";
 import { PhaseNarrative } from "@/components/phase-narrative";
-import { ScenarioPair } from "@/components/scenario-text";
 import type { PageModule } from "./index";
 
 /**
@@ -23,17 +22,54 @@ import type { PageModule } from "./index";
  * a reader who has not yet been told why this matters has no reason to work
  * through the difference between a megathrust and a crustal earthquake.
  *
- * The timeline carries no citation markers, and that is the one place this
- * page departs from the site's habit. Its four panels make no claim of their
- * own: every sentence in them is a consequence a system page states and
- * sources, and the noun it hangs on is a link to that page. Markers on prose
- * written this way would number the same handful of documents nine times over
- * and make a narrative read like a filing. Two rules keep it honest. **No
- * figure appears in an unmarked panel** — the numbers stay on the pages that
- * can guard them, which is also why the panels read better. And the quoted
- * passage keeps its attribution in words, because a quotation without a
- * speaker is worse than a claim without a marker. The paragraph under the
- * timeline says what the reader is looking at and where the evidence is.
+ * The timeline is a story and reads as one. It sources itself through its links
+ * rather than through a marker on every sentence, and that is the one place this
+ * page departs from the site's habit. Its panels make no claim of their own:
+ * every sentence in them is a consequence a system page states and sources, and
+ * the noun it hangs on is a link to that page, which is where the document and
+ * all its qualifications are. Markers on prose written this way would number the
+ * same handful of documents nine times over and make a narrative read like a
+ * filing. Three rules keep it honest, and they are in §4 of the style guide.
+ * **A duration may ride on its link and a count may not** — several weeks, many
+ * months and the rest are the story, while 267 mains and two thirds of downtown
+ * customers stay on the pages that can guard them. A duration is written in the
+ * source's own words and no tighter, with the body named only where the naming
+ * is the point, as it is for BC Hydro conceding several weeks downtown. And the
+ * quotation keeps its attribution, which here is the marker beside it rather
+ * than a speaker in words.
+ *
+ * What the panels do not do is name the document a fact came out of. "In the
+ * province's scenario the earthquake is heard before it is felt" tells a reader
+ * they are being read a planning document; the earthquake being heard before it
+ * is felt tells them what the first second is like, which is what they came for.
+ * The one exception left is the months panel, where the province's plan is the
+ * subject rather than the source: that people stay in the region is an
+ * assumption a plan makes, and stated as a bare fact it would be a claim about
+ * what people do, which nothing here establishes.
+ *
+ * The hours panel tells one story rather than standing the two scenarios in a
+ * pair of labelled columns. The pair is the right shape further down the site,
+ * where a reader has met both earthquakes and the columns answer "which of these
+ * is this finding about". At the top of the landing page nobody has met either,
+ * and two columns asked a reader to hold two unintroduced earthquakes apart
+ * before they had been told why it matters. What the panel keeps of the pair is
+ * the range, because the length of that first minute is the one thing a reader
+ * can picture before they know anything else: ten seconds and three minutes are
+ * the two scenarios' own durations rather than a smoothed average, so neither is
+ * hidden, and `/shaking/` is one link away with each attached to its earthquake.
+ * That link is load-bearing here, and `stack-and-structure.md` says why. The
+ * scene that follows is an earthquake close to the city, named as such, so the
+ * quotation and the collapses stay attached to the earthquake they were assessed
+ * on rather than reading as claims about the megathrust too.
+ *
+ * The panels say what the stretch is like, not what has and has not been
+ * published. A sentence about the state of the record — BC Hydro has published
+ * an estimate for downtown and for nowhere else, no restoration estimate for
+ * the water network exists at all — tells a reader about this site's evidence
+ * base rather than about their own street, and the gap it names is already
+ * stated in full on the system page the panel links to. Where a duration is
+ * published the panel gives the duration; where none is, it says what the
+ * mechanism does to an ordinary week instead.
  *
  * The standfirst opens on the gap the site exists to close: the province asks
  * for two weeks, and households are not carrying it. Both halves are cited, and
@@ -93,8 +129,8 @@ export const home: PageModule = {
     references: [
       "PREPAREDBC",
       "RESEARCHCO-PREP-21",
-      "DCRRA-2025",
       "PEIRS",
+      "DCRRA-2025",
       "NRCAN-1700",
     ],
   },
@@ -109,40 +145,27 @@ export const home: PageModule = {
             items={[
               {
                 phase: "hours",
-                heading: "It is over in a minute, and nothing works",
+                heading: "It is over in minutes, and nothing works",
                 body: (
                   <>
-                    <ScenarioPair
-                      crustal={
-                        <>
-                          In the province’s own scenario the earthquake is
-                          heard before it is felt: a sound like a freight train,
-                          then seconds of violent shaking that knocks
-                          people off their feet, “except for those who
-                          remember to drop, cover, and hold on”. A small
-                          number of buildings collapse, many more shift and
-                          crack, and many of the people who try to run outside
-                          are badly hurt by falling and flying objects.{" "}
-                          <Link href="/shaking/" className={link}>
-                            More about the shaking
-                          </Link>
-                          .
-                        </>
-                      }
-                      cascadia={
-                        <>
-                          The province’s megathrust assessment sets its
-                          earthquake on a summer morning. The shaking is
-                          moderate rather than violent, it goes on for minutes,
-                          and it arrives along the whole coast at once rather
-                          than under one city.{" "}
-                          <Link href="/shaking/" className={link}>
-                            More about the shaking
-                          </Link>
-                          .
-                        </>
-                      }
-                    />
+                    <p>
+                      The shaking lasts somewhere between ten seconds and three
+                      minutes, depending on how big the earthquake is and where
+                      it happens.
+                    </p>
+                    <p>
+                      An earthquake close to the city is heard before it is
+                      felt: a sound like a freight train, then seconds of violent
+                      shaking that knock people off their feet, “except for those
+                      who remember to drop, cover, and hold on”.{" "}
+                      <Cite id="PEIRS" /> A small number of buildings collapse, many more
+                      shift and crack, and many of the people who try to run
+                      outside are badly hurt by falling and flying objects.{" "}
+                      <Link href="/shaking/" className={link}>
+                        More about the shaking
+                      </Link>
+                      .
+                    </p>
                     <p>
                       The{" "}
                       <Link href="/after/electricity/" className={link}>
@@ -210,13 +233,13 @@ export const home: PageModule = {
                       </Link>{" "}
                       stops being usable on the first day rather than the first
                       week, because flushing takes water nobody has to spare.
-                      In the{" "}
+                      Family and neighbours are likely to be the only
+                      available{" "}
                       <Link href="/prepare/" className={link}>
-                        province’s own plan
+                        first responders
                       </Link>
-                      , family and neighbours are likely to be the only
-                      available first responders, so the people who reach you
-                      first are the people who already live on your street.
+                      , so the people who reach you first are the people who
+                      already live on your street.
                     </p>
                   </>
                 ),
@@ -233,23 +256,23 @@ export const home: PageModule = {
                       </Link>{" "}
                       comes back where the network can be repaired first, and
                       putting poles and wires back up is many small repairs
-                      rather than one big one. BC Hydro has published an
-                      estimate for downtown Vancouver and for nowhere else in
-                      the region.{" "}
+                      rather than one big one. In downtown Vancouver, BC Hydro
+                      says it could take several weeks to restore power to
+                      customers and years to completely restore the system.{" "}
                       <Link href="/after/water/" className={link}>
                         Water
                       </Link>{" "}
-                      comes back behind it, and no restoration estimate for the
-                      water network has been published at all.
+                      comes back behind it, and the mains that cross under the
+                      rivers and inlets are the slowest of those repairs.
                     </p>
                     <p>
                       The{" "}
                       <Link href="/after/sanitation/" className={link}>
                         sewers
                       </Link>{" "}
-                      are what nobody can give you a date for. Households manage
-                      waste in buckets and chemical toilets, and an apartment
-                      tower has nowhere else to put it.{" "}
+                      stay broken for months rather than weeks. Households
+                      manage waste in buckets and chemical toilets, and an
+                      apartment tower has nowhere else to put it.{" "}
                       <Link href="/after/gas/" className={link}>
                         Gas
                       </Link>{" "}
@@ -280,8 +303,7 @@ export const home: PageModule = {
                     </p>
                     <p>
                       Utilities run at reduced service long after they are back
-                      on, and the network as a whole is a long way from the state
-                      it was in the morning before. The province’s plan
+                      on. The province’s plan
                       through all of it is that people stay in the region rather
                       than leave it.{" "}
                       <Link href="/getting-around/" className={link}>
@@ -323,6 +345,14 @@ export const home: PageModule = {
                 the dependency graph
               </Link>{" "}
               counts what each one is waiting on.
+            </p>
+            <p>
+              None of those repairs is a household’s to make, which is why
+              what matters on the day is what you already have.{" "}
+              <Link href="/prepare/" className={link}>
+                Preparing
+              </Link>{" "}
+              sets out what to keep and how much.
             </p>
           </Prose>
         </div>
