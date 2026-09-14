@@ -1,6 +1,6 @@
 # QuakeImpact — Lower Mainland Earthquake Impact
 
-*Project overview. v0.3 — corrections from `research/` applied 10 September 2026.*
+*Project overview. v0.4, 14 September 2026.*
 
 ---
 
@@ -10,24 +10,20 @@ A public website that shows what a major earthquake actually does to the Lower M
 
 The misconception this exists to correct: people picture a violent event with a clear end, followed by a recovery that arrives from outside. The reality is a long degradation of every system they depend on, with no outside help for a significant period because the entire coast is calling for it at once.
 
-**Audience:** general public in the region, written so that an emergency planner or engineer reading it finds nothing to object to. That second constraint sets the standard for sourcing, not the tone.
+**Audience:** general public in the region, written so that an emergency planner or engineer reading it finds nothing to object to. That second constraint sets the standard for being right, not the tone and not the precision.
 
-**Not a modelling project.** Every claim is compiled from published work or documented analogue events. The contribution is synthesis, legibility and narrative — not new analysis.
+**General information, not a bibliography.** The site gives a representative picture of the consequences, compiled from published work and documented analogue events. The contribution is synthesis, legibility and narrative, not new analysis. How that shapes the writing is in `style-guide.md` §1, §5 and §6.
 
 ---
 
 ## 2. Principles
 
 1. **Restoration time is the spine.** "Bridges may be damaged" changes nobody's behaviour. "Sewer service: weeks to months, and here is why" does.
-2. **Every claim carries a source.** One wrong number and the emergency-management community writes off the whole site.
+2. **Every claim rests on a source.** One wrong number and the emergency-management community writes off the whole site. Right means the right order of magnitude, not every qualifier the source carries.
 3. **No doom without a lever.** Every section ends with an action the reader can take.
 4. **Coupling over inventory.** The failure of any one system is not the story. The story is that they depend on each other.
-5. **Analogues illustrate, they never generate numbers.** Christchurch tells us what life was like. It does not tell us Vancouver's restoration times.
-6. **Assumptions are research tasks, not content.** The exception is the obvious
-   consequence of a cited fact, which is writing rather than assuming: a lift needs
-   power, flushing needs water, a card reader needs a network. `style-guide.md` §6
-   draws that line and forbids inference from ever producing a quantity, a duration,
-   a band or a casualty figure. Anything held as "I believe X is the case" enters this document as a verification item and does not reach the site until a source confirms or contradicts it. A contradicted assumption is a good outcome — it is usually more interesting than the assumption was.
+5. **Analogues convey the lived experience.** Christchurch tells us what life was like; it does not tell us Vancouver's restoration times. There is no need to keep stressing the differences.
+6. **Assumptions are research tasks, not content.** An obvious consequence of a cited fact is writing, not assuming (`style-guide.md` §6). Anything held as "I believe X is the case" enters `research/open-questions.md` and does not reach the site until a source confirms or contradicts it. A contradicted assumption is a good outcome; it is usually more interesting than the assumption was.
 
 ---
 
@@ -36,7 +32,7 @@ The misconception this exists to correct: people picture a violent event with a 
 Two, held firmly. The contrast between them is itself a teaching point, because most people conflate them.
 
 | | **Cascadia M9 megathrust** | **Shallow crustal M7** |
-|---|---|---|
+| --- | --- | --- |
 | Source | Offshore subduction interface | Strait of Georgia shallow crust, 3–4 km deep |
 | Official simulation | M9.0 Cascadia Full Rupture, GSC scenario catalogue | M7.0 Georgia Strait, same catalogue — and the province's own primary planning scenario |
 | Shaking in Metro Vancouver | Moderate intensity, long duration — three minutes in the province's scenario; the deep Georgia Basin prolongs and amplifies | High intensity, short duration — 10–20 seconds of violent shaking in the province's scenario. Durations are scenario parameters, not general facts |
@@ -53,10 +49,10 @@ The single most important contrast: the crustal event is worse *for Vancouver*, 
 
 Impacts are expressed as **low / medium / high** per system per scenario, not as figures. This matches the sources — most published work assesses one design event, and inventing intermediate numbers would be modelling by another name.
 
-The rubric is published on its own page and linked from every impact cell. It is deliberately system-agnostic so that "high" for sanitation and "high" for transport mean comparable things.
+The rubric is published on `/method/` and linked from every impact cell. It is deliberately system-agnostic so that "high" for sanitation and "high" for transport mean comparable things.
 
 | Band | Duration | Extent | Dependency |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Low** | Hours to a few days | Localised | Comes back on its own |
 | **Medium** | Days to weeks | Patchy, worst on poor ground | Waiting on one other system |
 | **High** | Weeks to months, sometimes longer | Regional | Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast |
@@ -71,123 +67,108 @@ A fourth state, **not yet assessed**, is rendered hatched rather than coloured. 
 
 ### Part 1 — The shaking
 
-The event itself. Heavy on maps.
+The event itself.
 
-- **Ground conditions.** The variable that decides your outcome is what you are standing on. Bedrock on the downtown peninsula and North Shore behaves nothing like the Fraser delta, Richmond, Delta, or the False Creek and Grandview fill. Liquefaction susceptibility, soil classification, shaking amplification.
+- **Ground conditions.** The variable that decides your outcome is what you are standing on. Bedrock on the downtown peninsula and North Shore behaves nothing like the Fraser delta, Richmond, Delta, or the False Creek and Grandview fill. Liquefaction susceptibility, soil classification, shaking amplification. A text page with an outbound link to the microzonation maps (§9).
 - **What the two scenarios feel like.** Duration versus intensity, in plain language.
 - **Buildings.** Structural performance by era and type, and — more importantly for injuries — non-structural failure: glazing, cladding, parapets. Downtown Vancouver is a glass city. Unreinforced masonry in Gastown, Chinatown, Strathcona.
 - **Casualties.** Present the published range and the drivers of the range (time of day, scenario). A single headline number invites dismissal.
-- **Fire following.** The classic post-earthquake killer — 1906 San Francisco, Kobe 1995. Broken gas mains ignite, water mains break so there is no pressure, and debris blocks the streets the trucks need. Cover Vancouver's **Dedicated Fire Protection System**: independent high-pressure mains drawn from seawater, with portable pumping. Almost nobody knows it exists. Establish its current extent, and name the areas it does *not* cover. Fire hall seismic upgrades: check the capital plan, do not assume.
-- **Landslides.** The province’s own planning scenario has them cutting the transportation routes, and two of the roads help would arrive on run through mountains. The published landslide mapping for those corridors was built for rain, and says so.
-- **Dikes.** An earth embankment holding the river and the sea off land that lies lower, built on the delta sand that liquefies. The engineering published on named sections is Richmond’s, and it sits on ground conditions.
+- **Fire following.** The classic post-earthquake killer — 1906 San Francisco, Kobe 1995. Broken gas mains ignite, water mains break so there is no pressure, and debris blocks the streets the trucks need. Cover Vancouver's **Dedicated Fire Protection System**: independent high-pressure mains drawn from seawater, with portable pumping. Almost nobody knows it exists. Its map is the site's flagship graphic, and its point is how little of the city the mains reach.
+- **Landslides.** The province's own planning scenario has them cutting the transportation routes, and two of the roads help would arrive on run through mountains. The published landslide mapping for those corridors was built for rain, and says so.
+- **Dikes.** An earth embankment holding the river and the sea off land that lies lower, built on the delta sand that liquefies. The engineering published on named sections is Richmond's, and it sits on ground conditions.
 - **Dams.** Two owners and two records that do not mix: Metro Vancouver publishes a yearly safety summary whose conclusions do not mention an earthquake, BC Hydro tells its regulator which part of each dam it expects one to break. The water-supply side of the same dams is Part 2.
 
-Those three were one page, *Secondary hazards*, on the argument that the damage arrives after the shaking and arrives where the ground was already marginal. That is true of all three and it is not enough to hold them together: a reader looking for the dike behind their house should not have to read about a power tunnel first, and each subject has more evidence behind it than a shared page has room for.
+Landslides, dikes and dams have a page each rather than a shared *Secondary hazards* page: a reader looking for the dike behind their house should not have to read about a power tunnel first.
 
 ### Part 2 — Life afterwards
 
 The core of the site. Organised as a timeline: hours → days → weeks → months.
 
 | System | What people underestimate |
-|---|---|
+| --- | --- |
 | Communications | Networks saturate immediately, then fail as tower backup power runs out |
 | Electricity | Not one failure but ten thousand. Substations on delta soil are a handful of large repairs; distribution poles and lines are tens of thousands of small ones, each needing a crew, a truck, fuel and road access. That asymmetry is why the core returns in days and the periphery waits weeks. Beneath both sits a third category: large power transformers are custom-built with lead times in many months and are not stockpiled in quantity, so a substation that loses its transformer bank is not a repair but an order — and in the Cascadia case, an order placed alongside every other utility on the coast |
 | Water | Distribution mains on liquefiable ground; restoration measured in weeks to months in the worst areas |
 | Sanitation | The one nobody thinks about. Christchurch: thousands of homes on chemical toilets for months |
 | Transportation | Crossings, the port, YVR on Sea Island delta ground, the highway network |
-| Large infrastructure | Port terminals and cranes, YVR on Sea Island, the BC Ferries terminals at Tsawwassen and Horseshoe Bay. **Assessments required before writing anything.** Assume nothing here — see note below |
-| Fuel | The master dependency, and it is upstream of almost everything else on this list. Generators, repair crews, trucks, hospitals and pumps all run on diesel arriving by road from a small number of terminals, most on the Burrard Inlet shoreline or the delta. Two points to land: a service station with full tanks and no power dispenses nothing, and the region holds only a limited number of days of supply. **The days-of-supply figure has been chased and does not hold up** — the only Lower Mainland figures trace to one phone interview with an advocacy-group president during the 2021 flood. Lead with the province's own statement of the mechanism instead |
+| Large infrastructure | Port terminals and cranes, YVR on Sea Island, the BC Ferries terminals at Tsawwassen and Horseshoe Bay. Nothing here is written from expectation — see note below |
+| Fuel | The master dependency, upstream of almost everything else on this list. Generators, repair crews, trucks, hospitals and pumps all run on diesel arriving by road from a small number of terminals, most on the Burrard Inlet shoreline or the delta. A service station with full tanks and no power dispenses nothing. No Lower Mainland days-of-supply figure holds up — the only one traces to a single phone interview during the 2021 flood — so the page leads with the province's own statement of the mechanism |
 | Food | Feeding a metro region with the port down and crossings restricted. The problem is not stock, it is logistics: distribution centres, refrigeration, and a resupply cycle measured in days. Held separately from fuel because the failure is different — food is a demand the region cannot store its way out of, while fuel is the input every other system's repair depends on. Food waits on fuel; nothing waits on food except people |
-| Natural gas | The one utility that cannot be restored in bulk. Water and electricity come back when the network is repaired; gas comes back when a technician has entered every affected building and relit every appliance. That is a per-premises operation across hundreds of thousands of premises, and it is why a supply interruption with no earthquake damage at all is measured in weeks. Also carries a counter-intuitive safety message: FortisBC's advice is **not** to shut off your own gas |
-| Dams and reservoirs | Cleveland, Seymour Falls, Coquitlam. Dual-purpose content — they are the water supply and they are a downstream hazard. Metro Vancouver publishes dam safety material |
+| Natural gas | The one utility that cannot be restored in bulk. Gas comes back when a technician has entered every affected building and relit every appliance, a per-premises operation across hundreds of thousands of premises, which is why even an interruption with no earthquake damage is measured in weeks. Also carries a counter-intuitive safety message: FortisBC's advice is **not** to shut off your own gas |
+| Dams and reservoirs | Cleveland, Seymour Falls, Coquitlam. Dual-purpose content — they are the water supply and they are a downstream hazard |
 | Housing | Tens of thousands displaced from standing but tagged buildings, into a region with no rental slack. Arguably the most underestimated consequence of all |
 | Health care | Surge demand against damaged facilities running on trucked diesel |
 | Where help comes from | Who arrives, from where, and when. Alberta maintains an Earthquake Response Plan for British Columbia and does not publish it; EMBC's own schedule of applicable agreements lists a 2007 BC-Alberta memorandum and no earthquake plan. In the Cascadia case the province states the US will be unable to deliver mutual aid |
 
-**Assumption discipline.** The temptation on port, airport and ferry terminals is to write "these would not survive." Do not. YVR has done substantial ground improvement on Sea Island and is better studied than intuition suggests; pile-supported wharves on treated ground do not behave the way a lay reader expects. Port cranes and wharves are a genuine Kobe-style vulnerability, but that has to come from an assessment, not from expectation. If the documents confirm the fear, the claim becomes powerful. If they do not, that is itself worth telling readers — and it protects the credibility of everything else on the site.
+**Assumption discipline on port, airport and ferry terminals.** The temptation is to write "these would not survive." Do not. YVR has done substantial ground improvement on Sea Island and is better studied than intuition suggests; pile-supported wharves on treated ground do not behave the way a lay reader expects. Port cranes and wharves are a genuine Kobe-style vulnerability, but that has to come from an assessment. If the documents confirm the fear, the claim becomes powerful. If they do not, that is itself worth telling readers.
 
-**Centrepiece: the dependency graph.** Water restoration needs power for pumps and road access for crews. Roads need debris clearing, which needs fuel. Fuel terminals sit on liquefiable delta ground. Hospitals run on diesel that arrives by truck. Nobody has rendered this legibly for a general audience in this region. If the site has one original contribution, this is it.
+**Centrepiece: the dependency graph** (`/dependencies/`). Water restoration needs power for pumps and road access for crews. Roads need debris clearing, which needs fuel. Fuel terminals sit on liquefiable delta ground. Hospitals run on diesel that arrives by truck. Nobody has rendered this legibly for a general audience in this region.
 
 ### Part 2b — Moving after the shaking
 
-If the answer to a broken region is "people leave," this section asks by what route, and what the province is actually planning for. It pairs with the food-supply arithmetic and the housing page.
+Route `/getting-around/`. If the answer to a broken region is "people leave," this section asks by what route, and what the province is actually planning for. It pairs with the food and housing pages.
 
-**The province plans on people staying, and that is a sourced finding rather than our inference.** PEIRS states that spontaneous mass evacuation out of the impact area will not take place and that messaging will emphasise sheltering within the region; the DCRRA says the same for its Cascadia scenario. The page states what the plan assumes without asserting that nobody leaves — visitors, separated households and people whose home is on the other side of the water all have a reason to move, and departure over the following months is a documented pattern. Named **Moving after the shaking**, not "Getting out": a departure framing teaches the wrong behaviour and would put the site on the wrong side of the Disaster Response Route point below.
-
-This is also the site's worked example of the citation convention — see section 7.
+**The province plans on people staying, and that is a sourced finding rather than our inference.** PEIRS states that spontaneous mass evacuation out of the impact area will not take place and that messaging will emphasise sheltering within the region; the DCRRA says the same for its Cascadia scenario. The page states what the plan assumes without asserting that nobody leaves: visitors, separated households and people whose home is on the other side of the water all have a reason to move.
 
 **Vancouver is a peninsula.** It is bounded north by Burrard Inlet and south by the North Arm of the Fraser, with a land connection running eastward through Burnaby and New Westminster. That land route is the city's real lifeline.
 
 **Richmond is the genuine island.** Lulu Island and Sea Island hold on the order of a quarter-million people, sitting on the region's worst ground, reached only by bridges and a tunnel whose approaches cross the same liquefiable delta on both banks. Delta is on the same ground and shares the crossings, but it is not cut off by land: it runs east into Surrey. Dike performance is a separate question on top.
 
-**The North Shore is close behind.** Two vehicle crossings, a passenger ferry, mountains behind. Any narrative about North and West Vancouver being cut off should be checked against the actual seismic assessments of both crossings rather than assumed.
+**The North Shore is close behind.** Two vehicle crossings, a passenger ferry, mountains behind. Whether North and West Vancouver are cut off comes from the seismic assessments of both crossings, not from assumption.
 
 **Highway 1 through the Fraser Valley is the regional spine.** Its condition determines whether aid comes in and people go out. Route 99 south to the border requires crossing the Fraser regardless.
 
 **Approaches, not spans.** The most important and least understood point in this section. A seismically retrofitted bridge can survive intact while its approach embankment on soft fill settles or spreads laterally. A standing bridge with a step at the abutment carries nobody. Kobe and Christchurch both demonstrated this. Retrofit announcements almost never distinguish the two.
 
-**Departure is not day one.** Nobody drives out immediately — no fuel, blocked roads, everyone at once. People leave over weeks and months, ground out by cold, absent sewer, closed schools and no work. Christchurch lost population that way. This is the honest version and it is more unsettling than an image of gridlock.
+**Departure is not day one.** Nobody drives out immediately — no fuel, blocked roads, everyone at once. People leave over weeks and months, ground out by cold, absent sewer, closed schools and no work. Christchurch lost population that way. This is the honest version and it is more unsettling than an image of gridlock. The real levers are restoring surface corridors and reducing demand, which is why displacement belongs on the housing page too.
 
-**Disaster Response Routes — and the nuance that matters.** Metro Vancouver has a designated, signposted Disaster Response Route network, and some crossings on it have been prioritised for seismic upgrade. But these routes are for emergency responders, and the public is expected to stay off them. Presenting them as evacuation routes would teach exactly the wrong behaviour. Explaining what the signs actually mean is itself a good preparedness item.
+**Disaster Response Routes are for responders.** Metro Vancouver has a designated, signposted network, and some crossings on it have been prioritised for seismic upgrade. The public is expected to stay off them, so the site never presents them as evacuation routes (`style-guide.md` §6), and explaining what the signs mean is itself a preparedness item.
 
-**Landslides close the corridors that matter most.** Sea to Sky, and the Highway 1 approach through the canyon near Hope. These are not just exits — they are how aid arrives. Slope failure there decouples the region from the rest of the province independently of any bridge damage. Slides into steep-walled inlets can also generate local waves; check whether Howe Sound has published work on this.
-
-*To verify:* crossing-by-crossing seismic assessments, which crossings are on the Disaster Response Route network and which have been upgraded, Massey Tunnel status and replacement timeline, published route-recovery planning, provincial landslide susceptibility mapping for the two corridors.
+**Landslides close the corridors that matter most.** Sea to Sky, and the Highway 1 approach through the canyon near Hope. They are how aid arrives, and slope failure there decouples the region from the rest of the province independently of any bridge damage.
 
 ### Part 3 — Preparing
 
-Not siloed. Every system page in Part 2 ends with its own action; this section aggregates them into a coherent plan.
+Not siloed. Every system page in Part 2 ends with its own action; `/prepare/` aggregates them into a coherent plan.
 
-**This is the page a reader arrives at wanting to be told what to do, so it is guidance rather than an audit of the guidance.** It follows PreparedBC's Earthquake and Tsunami Preparedness Guide, which is the document written for this hazard and which says "at least two weeks", three times over, and it covers what that guide covers beyond supplies: the written plan, the meeting place and the out-of-area contact, the alerts and the seconds they buy, water, food and the grab-and-go bag, securing the room, the gas valves, the people in the household who need more help, the neighbours, staying put if the building is safe, the response routes nobody should drive on, and how to build a kit on no money.
+**This is the page a reader arrives at wanting to be told what to do, so it is guidance rather than an audit of the guidance.** It follows PreparedBC's Earthquake and Tsunami Preparedness Guide, which says "at least two weeks", and covers what that guide covers beyond supplies: the written plan, the meeting place and the out-of-area contact, the alerts and the seconds they buy, water, food and the grab-and-go bag, securing the room, the gas valves, the people in the household who need more help, the neighbours, staying put if the building is safe, the response routes nobody should drive on, and how to build a kit on no money.
 
-**The divergence between the published durations is a real finding, and it is not this page's subject.** Five provincial positions and one municipal one give six different answers, "72 hours" is what most people still remember, and the province's own emergency support services are built to provide it. Where the page meets that, it gives the City of Vancouver's lower figure once, in the City's own words, as a detail and not as an argument. The comparison itself, with its guards, is in `research/preparedness.md`, ready for whichever page wants it.
+**The divergence between published durations is not this page's subject.** Six official answers exist and "72 hours" is what most people remember. The page gives the City of Vancouver's lower figure once, in the City's own words, as a detail and not as an argument. The comparison is in `research/preparedness.md`.
 
 ---
 
 ## 6. Maps
 
-Decided per dataset, based on what is actually available. Embed official viewers where they exist and permit it; static images with captions where they do not.
+Decided per dataset, based on what is licensed (`licensing.md`). Embed official viewers where they exist and permit it; link out where they do not. The ground, not the municipality, is the base layer wherever the site draws one (`style-guide.md` §8).
 
-**Base layer is the ground, not the municipality.** A choropleth by city misleads — Richmond is uniformly poor ground, Vancouver is half bedrock and half fill. Municipal outlines sit on top as reference only.
-
-**The persuasive overlay:** fixed critical infrastructure — crossings, substations, transmission corridors, major water mains, Iona and Annacis treatment plants, fuel terminals — drawn on top of liquefaction susceptibility. The reader sees for themselves which assets sit on the worst ground. That overlay does more work than any paragraph.
+The critical-infrastructure-over-liquefaction overlay is not built: the liquefaction layer is link-only (§9). The flagship map is the Dedicated Fire Protection System mains, which are open data.
 
 ---
 
 ## 7. Sources
 
-**How sources appear on a page.** A register nobody reads is not sourcing. Every source has a key in the register; running text cites the key and renders a numbered marker that opens the entry in place — title, publisher, year, what it is being used for, and the link. The same entries are listed again at the foot of the page. A marker may also point at another page on this site, so a claim can defer to the page that carries the reasoning instead of repeating it. `/leaving/` is the worked example.
+**How sources appear on a page.** Every source has a key in the register; running text cites the key and renders a numbered marker that opens the entry in place: title, publisher, year, what it is used for, and the link. The same entries are listed again at the foot of the page. A marker may also point at another page on this site, so a claim can defer to the page that carries the reasoning. `/getting-around/` is the worked example.
 
-**What `/sources/` lists.** The documents the site cites, not the register behind it. The register in `docs/research/sources.md` is a research file first and holds everything the project has read, including the documents behind findings whose page is not written yet. A reader with no claim to check a document against has not been sourced, so the page is derived from what the pages and the band grid actually cite.
+**What `/sources/` lists.** The documents the site cites, not the register behind it. The register in `research/sources.md` holds everything the project has read, including documents behind findings whose page is not written yet; `/sources/` is derived from what the pages and the band grid actually cite.
 
-**Contributions.** `/contribute/` states what the project can use — a published document, a correction with a source behind it, a pointer to a report, a read from someone who does this work — and what it cannot: unsourced assertion, new modelling, analogues used to generate numbers. It is linked from the source register and from the reference navigation on every page.
+**Contributions.** `/contribute/` states what the project can use — a published document, a correction with a source behind it, a pointer to a report, a read from someone who does this work — and what it cannot: unsourced assertion, new modelling, analogues used to generate numbers.
 
 **Primary — reports.** NRCan seismic hazard model, Metro Vancouver and City of Vancouver seismic and infrastructure studies, published regional loss estimates, BC Hydro, Emergency Management BC / PreparedBC, seismic assessments of individual crossings.
 
-**Secondary — analogue events, for illustration only.**
+**Secondary — analogue events, for the lived experience.**
 
 - **Christchurch 2011** — the closest analogue for aftermath. Liquefaction on comparable ground, sewer out for months in the east, a Western city with functioning institutions, and it still took years.
 - **Kobe 1995** — a port city of similar scale losing its port.
-- **Tōhoku 2011** — fuel logistics. The mechanism is that the fuel existed and the terminals and trucks to move it did not, which is the shape of the Lower Mainland argument. Sourced from the Japanese government's own briefing; lead with BC's documents and use this only to show what it looked like.
+- **Tōhoku 2011** — fuel logistics: the fuel existed and the terminals and trucks to move it did not, which is the shape of the Lower Mainland argument. Lead with BC's documents and use this to show what it looked like.
 
-**Retired, 10 September 2026 — the West Berlin 1948–49 airlift comparison.** It was
-carried here as a ceiling on what rescue can be: airlift tonnage per capita set against
-the humanitarian water minimum. The arithmetic held up under verification and the
-comparison still does not earn its place. It needs three caveats before it can be stated
-honestly — that most airlift tonnage was coal, that Berlin's water was never cut, and that
-nobody plans to supply a metro region by air — and a comparison that takes three caveats
-to be fair is not teaching a reader anything they can use. Removed from the overview, from
-`research/analogues.md` and from the sources page.
-
-*State the counterpoint, or an expert will.* Nobody plans to supply a metro region by air. The actual levers are restoring surface corridors and reducing demand — which means people leave. That is its own hard truth, and it belongs on the housing and displacement page.
+**Not used: the West Berlin airlift.** Retired 10 September 2026. The arithmetic held, but the comparison needs three caveats to be fair (most tonnage was coal, Berlin's water was never cut, nobody plans to supply a metro region by air), and a comparison that needs three caveats teaches a reader nothing they can use.
 
 ---
 
 ## 8. Build order
 
-A thin complete grid is worth less than a few deep pages.
+A thin complete grid is worth less than a few deep pages. Every page in the MVP and after it is now written; `research/build-order.md` records the order and reasoning.
 
-**MVP:** the two scenarios first, built entirely on the openly licensed NRCan catalogue; the method page and band rubric; **water, transportation, who stays, ground conditions, power**; and the preparing page. Publish it. The ground-conditions map is held pending a licence reply, so ground conditions ships as text with an outbound link. See `research/build-order.md`.
+**MVP:** the two scenarios, built on the openly licensed NRCan catalogue; the method page and band rubric; water, transportation, getting around, ground conditions (as text), power; and the preparing page.
 
 **Then:** sanitation, fuel, food, communications, housing.
 
@@ -199,117 +180,23 @@ A thin complete grid is worth less than a few deep pages.
 
 ### Closed
 
-- **Language: English only.** Write in plain English that would translate cleanly, in case a municipality or agency ever asks for a French or Chinese version — but do not build for it now.
+- **Language: English only.** Plain English that would translate cleanly, but nothing built for translation now.
 - **Name and domain: QuakeImpact, quakeimpact.ca.**
 - **Stack and hosting: Next.js static export on Netlify.** See `stack-and-structure.md`.
-- **Electricity bands High, and the page does not generalise.** BC Hydro's own filing
-  says a large earthquake could leave up to two-thirds of downtown customers without
-  power, several weeks to restore service and years to restore the system. That is
-  downtown, and nothing equivalent is published for the rest of the region. The band is
-  High; the page leads with the specific downtown fact and states the limit. **A
-  specific sourced fact is worth more to a reader than a generalised band** — someone
-  who lives downtown now knows something actionable about where they live, which is
-  what the site is for.
-- **Weather is not a system. It is a scenario condition.** It does not fail; it makes
-  every other failure worse, and the province's own scenarios build it in that way — the
-  DCRRA sets its M9 in an August heatwave with wildfire smoke, PEIRS sets its M7 on a
-  January afternoon after an atmospheric river. Weather leaves `SYSTEMS` and is rendered
-  on the timeline. The grid loses a row it could not honestly fill.
-- **Natural gas becomes a system.** It was missing, and it carries a mechanism no other
-  system has: restoration is rate-limited by sending a person into every building. The
-  grid keeps thirteen systems, weather having left it and food and fuel now standing apart.
-- **The microzonation maps are link-only, and ICLR approval is not pursued.** Decided
-  10 September 2026. The MVSMMP layers carry custom ICLR terms whose commercial
-  reservation covers electronic media and extends to statements and conclusions about the
-  maps, so the judgement would not have been ours to make — and two constraints would have
-  survived approval anyway: map sheets are unalterable, and anything derived from the data
-  layers becomes share-alike. Rather than hold the map work open on an enquiry, the site
-  links to the maps, describes the findings in its own words, and ships **ground
-  conditions as a text page**. The flagship graphic becomes the **Dedicated Fire
-  Protection System mains**, which are OGL–Vancouver and fully usable. The cost
-  is the critical-infrastructure-over-liquefaction overlay, which was the best original
-  graphic the project had designed.
-- **The outside-help row is renamed "Where help comes from".** Decided 11 September 2026,
-  closing the question raised on 10 September. The row was the only one in `SYSTEMS` named
-  for a negative, and a row called "the absence of outside help" banded **Low** for the
-  crustal M7 contradicted itself in the grid before the reader opened anything.
-  `research/systems/outside-help.md` reaches the opposite framing in its own words — *"Help
-  is late, not absent"* — and the positive name carries more information, because what a
-  reader wants is who comes, from where and when. The Cascadia mechanism sentence carries
-  the weight the old title was carrying, and it is a stronger sentence than a title.
-- **The landing page leads with the four phases, not with the site's own structure.**
-  Decided 11 September 2026. The home page opened with the dependency figure and
-  closed the tour with the thirteen-system grid, which are both indexes of the site
-  rather than pictures of the aftermath — a reader met the filing system before they
-  met a single consequence. The order is now: what the first hours, days, weeks and
-  months are actually like, each phase carrying claims already sourced on the system
-  pages; then every system as a card, so a reader who has just been told what the
-  months are like can look up the part of life they depend on; then the two
-  scenarios, because somebody
-  who has not been told why this matters has no reason to work through the difference
-  between a megathrust and a crustal earthquake; then where the numbers come from,
-  with the band rubric folded into it as one sentence and a link. The dependency
-  figure keeps its page, `/dependencies/`, and the coupling it teaches survives on
-  the home page as the paragraph that says nothing fails on its own. The cards carry no
-  phase label at all: one word needs a sentence to mean anything, and the four
-  phases mean something together on the timeline strip and nothing alone in the
-  corner of a card.
-
-- **The parts open their contents at the foot of a page, in the footer and in the
-  menu on a phone, and not from the bar across the top.** Decided 13 September 2026.
-  Two of the five parts hold pages of their own: five subjects under "The shaking",
-  thirteen systems under "Life afterwards". A reader on a system page could step to
-  the system beside it or climb back to the index, and nothing else. Opening the
-  parts from the bar at the top was rejected on three counts. Three of the five parts
-  have nothing to open, and a bar that responds to two items in five teaches a reader
-  it is not worth trying. Thirteen entries is a directory rather than a menu, and a
-  panel that size in a sticky header brings hover intent, focus handling and a second
-  path for phones, all of which the site would have to build and keep correct. And
-  the site is read in order: a page assumes the bands and the two scenarios the part
-  before it set up, so a jump into the middle of a part lands a reader without them.
-  The access is given instead where a reader is already looking for it. Every page in
-  the part lists at the foot of any page inside it, with the one being read marked;
-  the footer carries the whole index rather than the five parts; and the menu on a
-  phone, which is a panel with room to nest rather than a hover target, opens the
-  part the reader is in. All three lists are built from `NAV`, which builds them from
-  `SHAKING_PAGES` and `SYSTEMS`, so adding a system stays one array entry.
-
-- **There is no scenario toggle. Both scenarios are always shown.** Decided
-  12 September 2026. A header-mounted control let the reader pick one of the two
-  earthquakes, and every band was supposed to answer for it. It answered for very
-  little: eleven of the thirteen systems carry the same band and the same mechanism
-  sentence in both columns, because the published work assesses one design earthquake
-  per system, so switching it changed two band pills, one paragraph and one weather
-  line. The pages that treat the two scenarios seriously were already ignoring it —
-  system pages, the matrix and the ShakeMaps all show both, because the contrast is the
-  teaching point. So the control was asking a reader to choose between two columns of
-  the same evidence, and where the columns do differ it was hiding the difference that
-  is the whole point. The cards in the system grid lose their band with it: a band is a
-  reading meant to be compared, and it belongs in the matrix where both scenarios stand
-  in labelled columns, not alone in the corner of a card.
-
-- **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided
-  11 September 2026. "Who can actually leave" and the nav label "Getting out" framed the
-  section as a departure question, which `research/mobility.md` says teaches the wrong
-  behaviour — the province plans on people sheltering within the region and reserves the
-  damaged routes for response. A neutral name was chosen over "Staying put" deliberately:
-  the province does not rule out later evacuation, and leaving is an individual decision
-  that visitors and separated households may reasonably make. The page states the plan
-  without asserting the behaviour.
-- **Map dataset licensing: settled per dataset.** See `licensing.md`. The NRCan catalogue and City of Vancouver open data are cleared with attribution; the Metro Vancouver microzonation layers are link-only pending written approval from ICLR.
+- **Map dataset licensing is settled per dataset** in `licensing.md`. The NRCan catalogue and City of Vancouver open data are cleared with attribution.
+- **The microzonation maps are link-only, and ICLR approval is not pursued.** Decided 10 September 2026. The MVSMMP layers carry ICLR terms whose commercial reservation covers electronic media and statements about the maps, so the judgement would not be ours to make, and approval would still leave the sheets unalterable and derived layers share-alike. The site links to the maps, describes the findings in its own words, and ships ground conditions as a text page. The cost is the infrastructure-over-liquefaction overlay.
+- **Electricity bands High, and the page does not stretch the finding.** BC Hydro's filing says up to two-thirds of downtown customers could lose power, with several weeks to restore service and years to restore the system. Nothing equivalent is published for the rest of the region. The band is High; the page leads with the downtown fact and states the limit (`style-guide.md` §6, "Generalise the magnitude, not the place").
+- **Weather is a scenario condition, not a system.** It does not fail; it makes every other failure worse, and the province's scenarios build it in that way: the DCRRA sets its M9 in an August heatwave with wildfire smoke, PEIRS sets its M7 on a January afternoon after an atmospheric river. It is rendered on the timeline, not in `SYSTEMS`.
+- **Natural gas is a system.** Restoration is rate-limited by sending a person into every building, a mechanism no other system has. With food and fuel standing apart, the grid has thirteen systems.
+- **The outside-help row is "Where help comes from".** Decided 11 September 2026. A row named for an absence and banded Low for the crustal M7 contradicted itself; the research frames help as late, not absent, and what a reader wants is who comes, from where and when.
+- **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided 11 September 2026. A departure framing ("Getting out", `/leaving/`) teaches the wrong behaviour when the province plans on sheltering in place and reserves damaged routes for response. "Staying put" was rejected too: the province does not rule out later evacuation, and leaving is an individual decision.
+- **The landing page leads with the four phases.** Decided 11 September 2026. The order is what the first hours, days, weeks and months are like, each phase carrying claims sourced on the system pages; then every system as a card; then the two scenarios; then where the numbers come from, with the band rubric as one sentence and a link. The dependency figure keeps `/dependencies/`, and the home page keeps its coupling as one paragraph. Cards carry no phase label, because one word needs a sentence to mean anything.
+- **There is no scenario toggle. Both scenarios are always shown.** Decided 12 September 2026. Eleven of thirteen systems carry the same band and mechanism in both columns, because published work assesses one design earthquake per system, so a toggle hid the difference where there was one and changed nothing where there was not. Cards in the system grid carry no band: a band is meant to be compared, in the matrix, with both scenarios in labelled columns.
+- **Part contents open at the foot of a page, in the footer and in the phone menu, not from the top bar.** Decided 13 September 2026. Three of the five parts have nothing to open, thirteen systems is a directory rather than a menu, and the site is read in order, so a jump into the middle of a part lands a reader without the bands and scenarios the part before set up. Every page lists its part's pages at its foot with the current one marked; the footer carries the whole index; the phone menu opens the reader's part. All three are built from `NAV`, so adding a system stays one array entry.
 
 ### Open
 
 - Whether to seek review from a local emergency-management or geotechnical contact before launch. Recommended: it converts the site from one person's compilation into something the field will link to.
-- **Whether the DCRRA's licence note or the quotations give way.** `DCRRA-2025` is
-  recorded as "nothing may be reproduced", while `/after/health-care/` carries a 57-word
-  block quotation from `DCRRA-APPC` and the "distraught people" phrase, and
-  `/after/communications/` two short phrases. PEIRS, on the same terms, was decided the
-  other way: fair dealing covers attributed quotation. A licensing judgement: either the
-  note is too broad and says what PEIRS's does, or the quotations come off.
-- **Whether `CBOC-2016` is held.** `research/sources.md` records the report as not
-  retrievable, with every figure from the press release `CBOC-2016-PR`, while
-  `research/buildings.md` quotes the report through a web archive copy and
-  `/shaking/buildings/` and `/after/casualties/` cite it. If the archive copy is held, the
-  register row says so, as `AIR-2013` does; if not, the citations move to `CBOC-2016-PR`.
-- **Whether the site archives its own sources.** Several citations already point at web archives because the publisher reorganised or the host died — the AIR study, the RMS Kobe retrospective. Two federal hosts went from resolving to NXDOMAIN during this project's lifetime. A site whose whole proposition is that its sources check out should not depend on other people's links holding. Recommended: capture every cited source at the version we read, and record the capture alongside the live URL.
+- **Whether the DCRRA's licence note or the quotations give way.** `DCRRA-2025` is recorded as "nothing may be reproduced", while `/after/health-care/` carries a 57-word block quotation from `DCRRA-APPC` and the "distraught people" phrase, and `/after/communications/` two short phrases. PEIRS, on the same terms, was decided the other way: fair dealing covers attributed quotation. Either the note is too broad and says what PEIRS's does, or the quotations come off, which the preference for paraphrase (`style-guide.md` §6) makes cheap.
+- **Whether `CBOC-2016` is held.** `research/sources.md` records the report as not retrievable, with every figure from the press release `CBOC-2016-PR`, while `research/buildings.md` quotes the report through a web archive copy and `/shaking/buildings/` and `/after/casualties/` cite it. If the archive copy is held, the register row says so, as `AIR-2013` does; if not, the citations move to `CBOC-2016-PR`.
+- **Whether the site archives its own sources.** Several citations already point at web archives because the publisher reorganised or the host died. Two federal hosts went from resolving to NXDOMAIN during this project's lifetime. Recommended: capture every cited source at the version we read, and record the capture alongside the live URL.
