@@ -35,7 +35,7 @@ strength and behaving like a liquid while the ground shakes.
 
 ## The land connections are fewer than the map suggests
 
-> **Vancouver is a peninsula, not an island.** Burrard Inlet is to the north and the
+> **Vancouver is a peninsula.** Burrard Inlet is to the north and the
 > North Arm of the Fraser to the south, and the land connection runs eastward through
 > Burnaby and New Westminster.
 >

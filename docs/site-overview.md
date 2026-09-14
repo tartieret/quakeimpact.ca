@@ -116,7 +116,7 @@ If the answer to a broken region is "people leave," this section asks by what ro
 
 This is also the site's worked example of the citation convention — see section 7.
 
-**Vancouver is a peninsula, not an island.** Bounded north by Burrard Inlet and south by the North Arm of the Fraser, but connected by land eastward through Burnaby and New Westminster. That land route is the city's real lifeline, and it is worth saying plainly because the intuition is wrong.
+**Vancouver is a peninsula.** It is bounded north by Burrard Inlet and south by the North Arm of the Fraser, with a land connection running eastward through Burnaby and New Westminster. That land route is the city's real lifeline.
 
 **Richmond is the genuine island.** Lulu Island and Sea Island hold on the order of a quarter-million people, sitting on the region's worst ground, reached only by bridges and a tunnel whose approaches cross the same liquefiable delta on both banks. Delta is on the same ground and shares the crossings, but it is not cut off by land: it runs east into Surrey. Dike performance is a separate question on top.
 

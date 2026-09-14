@@ -37,7 +37,7 @@ This is not caution for its own sake. The site's whole proposition is that an em
 
 ### Open Government Licence – Vancouver
 
-**Covers:** City of Vancouver Open Data Portal and VanMap datasets, including the Dedicated Fire Protection System water mains layer.
+**Covers:** City of Vancouver Open Data Portal and VanMap datasets, including the Dedicated Fire Protection System water mains layer and the `public-streets` centrelines, from which the Burrard, Granville and Cambie bridges are taken for the crossings map.
 
 Based on version 2.0 of the Open Government Licence – British Columbia, with references to the Province replaced by the City.
 
@@ -64,6 +64,24 @@ Same permissions and conditions as OGL–Vancouver.
 > Contains information licensed under the Open Government Licence – British Columbia.
 
 **Practical effect:** check each record individually. Do not assume a provincial ArcGIS Hub layer carries it.
+
+---
+
+### Creative Commons CC0 1.0 — Wikidata
+
+**Covers:** structured data in Wikidata's main and property namespaces. Used for the coordinate location (`P625`) of seven crossings no government layer holds: the Knight Street, Arthur Laing, Pattullo, Golden Ears, Dinsmore, No. 2 Road and North Arm bridges.
+
+**Checked 12 September 2026**, and stated by the record rather than inferred: the API's own `action=query&meta=siteinfo&siprop=rightsinfo` returns "All structured data from the main and property namespace is available under the Creative Commons CC0 License; text in the other namespaces is available under the Creative Commons Attribution-ShareAlike License". A coordinate claim is structured data in the main namespace. Article prose is CC BY-SA and is not used.
+
+**Permits:** everything. CC0 is a dedication to the public domain.
+
+**Requires:** nothing. No attribution, no share-alike, no notice.
+
+**Attribution string to use:** none is owed. `src/data/sources.ts` records the source anyway, because a reader checking where a position came from is what that file is for, and the credit travels with the figure like any other.
+
+**Why it is admitted at all**, given that anyone can edit it. Because the alternative was worse: without it the crossings map has no Knight Street, Pattullo, Golden Ears or North Arm Bridge, all four of which `/after/transportation/` discusses by name, and a map that contradicts the table beside it is a worse failure than a sourcing one. It is treated as evidence rather than authority: every position is checked against the provincial structures layer, and the check is recorded in `research/maps.md`. The Pattullo is the case that justifies the practice — the Wikidata point falls 31 m from the province's own correctly placed Pattullo geometry, the record its layer has flagged for deletion, while the province's live record for that bridge sits 23 km away.
+
+**Not a precedent for prose.** This clears coordinates, which are facts with one right answer that a second source can confirm. Nothing on this site should take a claim, a date or a number from Wikidata on the same reasoning.
 
 ---
 

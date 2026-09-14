@@ -9,9 +9,13 @@ import {
 } from "@/components/page-parts";
 import {
   ClearingOrder,
-  LandConnections,
   Reopening2021,
 } from "@/components/figures/getting-around";
+import {
+  CrossingsLicence,
+  CrossingsMap,
+} from "@/components/figures/crossings-map";
+import { CROSSINGS_FACTS } from "@/content/crossings";
 import type { PageModule } from "./index";
 
 /**
@@ -23,15 +27,17 @@ import type { PageModule } from "./index";
  * furniture: the speaker and document lines under each quotation, and the label
  * on the set-apart block of map facts.
  *
- * There is no map here. The slot this page used to carry promised crossings
- * drawn over liquefaction susceptibility, which rests on the Metro Vancouver
- * microzonation layers. Those are link-only and are not being redrawn, so the
- * slot is gone rather than recaptioned (`docs/licensing.md`).
+ * The crossings map here is not the slot this page used to carry. That one
+ * promised crossings drawn over liquefaction susceptibility, which rests on the
+ * Metro Vancouver microzonation layers; those are link-only and are still not
+ * being redrawn (`docs/licensing.md`). This map carries no hazard layer at all.
+ * It draws where the crossings are and what has been published about each, and
+ * it replaced a schematic of the same connections, which is described in
+ * `components/figures/crossings-map.tsx`.
  *
- * The land connections figure is not that slot reopened. It is a schematic of
- * adjacency and direction, built from the three map facts the copy already
- * states, with no geometry and no dataset behind it. It says so in the drawing
- * and again in the caption.
+ * The same map is on `/after/transportation/`, which owns the engineering, with
+ * a caption written for that page's argument. One component and one list of
+ * crossings serve both, so the two cannot drift apart.
  */
 const transportationLink = (
   <Link
@@ -142,7 +148,7 @@ export const gettingAround: PageModule = {
           <Callout label="Where the water is">
             <Prose>
               <p>
-                <strong>Vancouver is a peninsula, not an island.</strong>{" "}
+                <strong>Vancouver is a peninsula.</strong>{" "}
                 Burrard Inlet is to the north and the North Arm of the Fraser to
                 the south, and the land connection runs eastward through Burnaby
                 and New Westminster.
@@ -160,20 +166,34 @@ export const gettingAround: PageModule = {
               </p>
             </Prose>
           </Callout>
-          {/* Uncited for the same reason the block above is: the figure draws
-              those three facts and nothing else, so it rests on no document
-              either. No licence slot, because no dataset is behind it. */}
+          {/* The three facts above are drawn here as geography rather than
+              asserted. The marks add the earthquake each crossing has a
+              published figure for, which is a claim about earthquakes, so the
+              guard travels inside the figure: a return period is a design
+              intent aimed at not collapsing, not a forecast of a crossing a
+              reader could use. The licence slot is filled because three
+              datasets are behind it. */}
           <Figure
-            alt="Leaving Vancouver by land means going east through Burnaby and New Westminster. The North Shore is reached by two vehicle crossings with mountains behind it, and Richmond only by bridges and a tunnel, with Delta beyond it on the south bank. This is a diagram of connections, not a map."
+            interactive
+            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, mapped with equal-size markers whose inner fill increases with the published earthquake level. Vancouver's land connection runs east; everything else is a bridge or a tunnel. Question marks identify the ${CROSSINGS_FACTS.unpublished} of ${CROSSINGS_FACTS.total} crossings with no return period in the sources read, including all three False Creek bridges, the Arthur Laing and the Lions Gate. The Cambie is being upgraded toward a 1 in 2,475 standard and that work is not finished; the City says the same level is not achievable for the Granville or the Burrard. Solid cores show design objectives and the hatched tunnel shows an assessment. Performance requirements differ, and a design paper does not establish that all proposed work was built. A marked crossing can stand and still carry nobody.`}
             caption={
               <>
-                A diagram of connections rather than a map. It draws which ways
-                out of Vancouver exist and what each one crosses, and nothing
-                about distance, shape or position.
+                The crossings, where they are. Every marker has the same outer
+                size; more fill means a larger published earthquake. Vancouver's
+                land route runs east through Burnaby and New Westminster; every
+                other way off the peninsula, and every way onto Richmond, is on
+                this map. The solid cores show design objectives,
+                the hatched tunnel shows an assessment, and a surviving
+                crossing may still be closed. A question mark identifies a
+                crossing with no return period in the sources read. What
+                the crossings were built to withstand, and what the province
+                says a surviving bridge is good for the next morning, is in{" "}
+                {transportationLink}.
               </>
             }
+            licence={<CrossingsLicence />}
           >
-            <LandConnections />
+            <CrossingsMap />
           </Figure>
           <p>
             What those crossings were built to withstand, and what happens to

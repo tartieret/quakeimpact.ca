@@ -165,29 +165,63 @@ shoreline covering Point Roberts and Whatcom County was not looked for. [?]
 Strait of Georgia, and with the shoreline drawn that is visible rather than
 asserted. The grid is registered where the catalogue says it is.
 
-### The crossings layer is incomplete, and that matters
+### The crossings layer is incomplete, and three sources fix it
 
-`MOT_ROAD_STRUCTURE_SP` covers provincial highway structures. It yields nine
-correctly placed major crossings in the window: Lions Gate, Ironworkers Memorial
-Second Narrows, Oak Street, Queensborough, Alex Fraser, Port Mann, Pitt River,
-Canoe Pass, and the George Massey Tunnel.
+**Resolved 12 September 2026.** This section recorded a blocker for a year; what
+follows is both halves of it.
 
-It does **not** contain the City of Vancouver and TransLink crossings — Burrard,
-Granville, Cambie, Arthur Laing, Knight Street, Moray, Dinsmore, No. 2 Road. No
-openly licensed layer holding them was found; the City's own `public-streets`
-dataset has no structure attribute. [?] Searched: City of Vancouver Open Data
-(198 datasets, none for bridges), BC Data Catalogue.
+`MOT_ROAD_STRUCTURE_SP` covers provincial highway structures. Queried over the
+crossings window it returns 1,845 features, most of them sign gantries,
+retaining walls and highway overpasses. The province's own `AGGREGATE MAJOR
+BRIDGE` roll-up filters that down to nine correctly placed major crossings:
+Lions Gate, Ironworkers Memorial Second Narrows, Oak Street, Queensborough, Alex
+Fraser, Port Mann, Pitt River, Canoe Pass, and the George Massey Tunnel.
 
-It also gets the Pattullo wrong. The layer's `PATTULLO` major-bridge record is a
-100 m stub near the international boundary, about 20 km from the bridge; the
-only correctly placed Pattullo geometry in the layer is filed under a name
-flagged for deletion. It is excluded by name, and the exclusion is in the script
-with its reason.
+It does **not** contain the City of Vancouver, federal and TransLink crossings.
+Searching by name confirms the gap is real rather than a filter artefact: the
+layer's only "KNIGHT" records are overpasses and ramps on Highway 91A, its only
+"GOLDEN EARS" records are the Golden Ears Way overpasses on the Trans-Canada,
+and Arthur Laing, Moray, Dinsmore and No. 2 Road return nothing at all.
 
-**So the crossings must never be drawn as "the crossings".** A map showing only
-the provincial set would overstate how isolated Richmond and the peninsula are,
-which is the opposite of the error this site can afford. Either label them as
-what they are, or leave them off and let the water carry the argument.
+**Two further sources close it.**
+
+The City's own `public-streets` layer has no structure attribute, which is what
+stopped this before. It does name blocks, and three of the crossings are named
+as bridges in that field: `BURRARD BRIDGE`, `GRANVILLE BRIDGE` and `CAMBIE
+BRIDGE`. Matching on the name needs an allowlist rather than a pattern, because
+`800 OLD BRIDGE COURT` is a residential street that also matches. OGL–Vancouver,
+already cleared.
+
+Wikidata supplies the remaining seven — Knight Street, Arthur Laing, Pattullo,
+Golden Ears, Dinsmore, No. 2 Road and the Canada Line's North Arm Bridge — as
+`P625` coordinate claims. Its API states its own terms at
+`action=query&meta=siteinfo&siprop=rightsinfo`: all structured data in the main
+and property namespaces is CC0. A coordinate claim is structured data in the
+main namespace.
+
+**The Pattullo, and why the third source is checked rather than trusted.** The
+provincial layer gets this bridge wrong twice over. Its live `PATTULLO`
+major-bridge record is a stub 23 km away near the international boundary, and
+the only correctly placed Pattullo geometry in the layer — an 837 m line — is
+filed under a name flagged `TO BE DELETED FROM BMIS`. Both are excluded by name
+in the script, with the reason beside them.
+
+Wikidata is openly editable, so its positions are evidence rather than
+authority. The Pattullo point falls 31 m from the nearest vertex of that deleted
+provincial geometry, which independently settles which of the province's own two
+positions is the bridge. That is the check worth repeating on any position this
+source supplies.
+
+**What is still missing.** The Moray Channel Bridge. It has no Wikidata item and
+appears in no cleared layer, so it is not drawn, and the caption says which
+crossing is absent. A hand-placed coordinate would be a position this project
+invented, which the figures README rules out.
+
+**The old rule, and what replaced it.** This section used to end "the crossings
+must never be drawn as 'the crossings'", because a map of the provincial set
+alone would overstate how isolated Richmond and the peninsula are. That still
+holds for the provincial layer by itself. Nineteen crossings from three sources
+is a different object, and it is what `crossings-map.tsx` draws.
 
 ---
 
