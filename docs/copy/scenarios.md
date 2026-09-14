@@ -1,12 +1,12 @@
 ---
 route: /scenarios/
-title: Two earthquakes, not one
+title: Two earthquake scenarios
 nav: Two scenarios
-hook: Two different earthquakes are possible here, and they are dangerous to different buildings.
-lede: One is offshore, very large and very long. The other is close, smaller and violent. Most people have only heard of the first, and the federal hazard agency calls the second the greater hazard to cities.
+hook: The region plans for a long offshore earthquake and a shorter, more violent one nearby.
+lede: The Lower Mainland plans for two different earthquakes. An offshore megathrust shakes for much longer; a smaller crustal earthquake close to the city shakes more violently. The federal hazard agency calls the nearer event the greater threat to cities.
 ---
 
-## The nearer earthquake is the greater hazard to cities
+## The nearer earthquake hits cities harder
 
 Natural Resources Canada, on its own page about the last Cascadia rupture: "because
 the fault is offshore, it is not the greatest earthquake hazard faced by major west
@@ -23,7 +23,7 @@ happens more often. [NRCAN-1700] The offshore one does more to Vancouver's chanc
 being helped: it damages the whole coast at once, and in a Cascadia event the United
 States would be unable to deliver mutual aid. [PEIRS]
 
-## Both scenarios come from the same official catalogue
+## Where the scenarios come from
 
 The Geological Survey of Canada publishes a National Earthquake Scenario Catalogue
 with a modelled run for each. The Cascadia entry is the M9.0 Cascadia Full Rupture
@@ -42,7 +42,7 @@ earthquake shaking". Landslides, liquefaction, fire following and aftershocks ar
 "not currently included". [NRCAN-SCEN] That exclusion governs almost every number
 below.
 
-## The crustal magnitude 7.0 is the province's planning scenario
+## The province plans around a crustal magnitude 7.0
 
 The province's Earthquake Immediate Response Strategy is built on a shallow
 magnitude 7.0 beneath the Georgia Basin, modelled on the 1997 event. An earthquake
@@ -79,7 +79,7 @@ Every figure in that table belongs to the daytime hours between 9am and 5pm, whe
 secondary hazards and damage to infrastructure are left out, "the estimates herein
 are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
 
-## In the province's scenario, the earthquake is heard before it is felt
+## The crustal earthquake begins with violent shaking
 
 The passage below describes the magnitude 7.0 Greater Vancouver scenario and no
 other, on ground already saturated by three days of rain. [PEIRS]
@@ -110,7 +110,7 @@ it is the wall type that falls into the street in that passage.
 
 The passage gives two instructions: drop, cover and hold on, and do not run outside.
 
-## The province's Cascadia scenario shakes for three minutes along 1,000 km of fault
+## The Cascadia scenario shakes for three minutes
 
 The province's risk and resilience assessment models a magnitude 9.0 rupture running
 about 1,000 km from mid Vancouver Island to northern California, with the mainshock at 10am on a day in August during a 30 to 40 °C heatwave with wildfire smoke, which makes water, shade and clean air the urgent needs. Shaking in that mainshock lasts three minutes. [DCRRA-2025]
@@ -130,7 +130,7 @@ fires and more." [DCRRA-2025]
 It also models an aftershock: magnitude 7.1, 60 km beneath Sidney, about a month
 later, at 11pm, during an atmospheric river, lasting 20 seconds. [DCRRA-2025]
 
-## The two earthquakes threaten different buildings
+## Each earthquake is harder on different buildings
 
 Of the crustal earthquake, the province writes: "The near-surface earthquake results
 in high frequency shaking that is most hazardous to short buildings. Unreinforced
@@ -145,7 +145,7 @@ damage." [DCRRA-2025]
 Fast, sharp shaking breaks short, stiff, older buildings. Slow, long shaking moves
 tall buildings on soft ground.
 
-## How long the shaking lasts changes what fails
+## Longer shaking changes how structures fail
 
 A study of the Golden Ears Bridge measured how the soil and the deep foundations
 under it act on each other as an earthquake runs longer. At the longest of that bridge's design events, strong shaking lasted about 30 seconds and the forces
@@ -165,7 +165,7 @@ duration of the earthquake lasted over one minute", which is a smaller crustal
 earthquake with a longer stated duration. [ECR-2023] There is no general rule here,
 only named scenarios.
 
-## The province's figures and the federal figures come from one model
+## Provincial and federal figures share one model
 
 The provincial assessment attributes its Cascadia damage and casualty numbers to
 Natural Resources Canada's own scenario run. [DCRRA-2025] [NRCAN-SCEN] The provincial
@@ -178,7 +178,7 @@ Two levels of government publishing the same number is one model quoted twice, n
 two estimates agreeing. Canada has one public earthquake loss model, and both
 governments use it.
 
-## Different sources give different average intervals between Cascadia ruptures
+## Estimates of the Cascadia interval differ
 
 | Source | Average interval | Stated range |
 | --- | --- | --- |
@@ -190,7 +190,7 @@ governments use it.
 The federal agency gives a longer average than the province does. All four are current
 and all four are official. The last rupture was in 1700.
 
-## A 5 to 20 per cent chance of a Cascadia rupture here in the next 50 years
+## The 50-year chance of a Cascadia rupture
 
 The rupture that matters here is one of the northern end of the fault, or of the whole
 of it. Goldfinger and colleagues, counting the time elapsed since the last rupture, put
@@ -205,7 +205,7 @@ from the same Goldfinger study and belongs to the **southern** end of the Cascad
 fault, off southern Oregon and northern California, where ruptures are roughly twice as
 frequent. It is not a figure for this coast. [GOLDFINGER-12]
 
-## The last Cascadia earthquake is dated to the evening of 26 January 1700
+## The last Cascadia earthquake was on 26 January 1700
 
 Natural Resources Canada: "At 9PM on January 26, 1700 one of the world's largest
 earthquakes occurred along the west coast of North America. The undersea Cascadia
@@ -235,8 +235,7 @@ dry shelter and unstable slopes the urgent problems. [PEIRS]
 
 ## What you can do
 
-Two things decide most of what either earthquake means for a person, and both can be
-found out today.
+Start with the building and the ground beneath it.
 
 **Learn what your building is.** Its age, its height and what it is made of. A short,
 older unreinforced masonry building and a tall building on soft ground are at risk

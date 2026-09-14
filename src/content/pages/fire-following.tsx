@@ -99,11 +99,11 @@ export const fireFollowing: PageModule = {
     route: "/shaking/fire-following/",
     title: "Fire following",
     description:
-      "An earthquake starts fires in the same minutes that it breaks the pipes used to put them out. The closer, smaller earthquake is the worse of the two.",
+      "Earthquake fires can start as broken water mains leave hydrants dry. Modelling finds greater losses from the nearer crustal earthquake.",
     nav: "Fire following",
     kicker: "The shaking",
     standfirst:
-      "An earthquake starts fires in the same minutes that it breaks the pipes used to put them out. A study for the Institute for Catastrophic Loss Reduction modelled that for the Lower Mainland, and found the closer, smaller earthquake far worse than the offshore one.",
+      "Earthquake fires can start as broken water mains leave hydrants dry. A Lower Mainland study found far greater losses from the nearby crustal earthquake than from the offshore megathrust.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -134,7 +134,7 @@ export const fireFollowing: PageModule = {
 
   sections: [
     {
-      title: "The shaking stops and the fires start",
+      title: "Fires start as the shaking ends",
       body: (
         <Prose>
           <p>
@@ -166,8 +166,7 @@ export const fireFollowing: PageModule = {
     },
 
     {
-      title:
-        "The hydrants go dry because the same shaking breaks the water mains",
+      title: "Broken water mains leave hydrants dry",
       body: (
         <Prose>
           <p>
@@ -197,8 +196,7 @@ export const fireFollowing: PageModule = {
     },
 
     {
-      title:
-        "Help from the next town cannot cross a bridge nobody has inspected yet",
+      title: "Mutual aid waits on bridge inspections",
       body: (
         <Prose>
           <p>
@@ -231,7 +229,7 @@ export const fireFollowing: PageModule = {
     },
 
     {
-      title: "Fire loss follows how close the earthquake is, not how big it is",
+      title: "The nearer earthquake produces greater fire losses",
       body: (
         <Prose>
           <p>
@@ -329,8 +327,7 @@ export const fireFollowing: PageModule = {
     },
 
     {
-      title:
-        "Downtown has a second water system for fire, and nothing tells a resident where it ends",
+      title: "Downtown has a separate fire-fighting water system",
       body: (
         <Prose>
           <p>
@@ -410,7 +407,7 @@ export const fireFollowing: PageModule = {
     },
 
     {
-      title: "A tall building’s sprinklers draw on the mains that break",
+      title: "High-rise sprinklers still depend on water mains",
       body: (
         <Prose>
           <p>
@@ -447,8 +444,7 @@ export const fireFollowing: PageModule = {
     },
 
     {
-      title:
-        "Fire halls are being replaced one at a time, and most were built before the standard",
+      title: "Most fire halls predate the post-disaster standard",
       body: (
         <Prose>
           <p>

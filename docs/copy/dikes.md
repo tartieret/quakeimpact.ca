@@ -2,11 +2,11 @@
 route: /shaking/dikes/
 title: Dikes
 nav: Dikes
-hook: "The embankments that keep the river and the sea off the delta are built on the ground most likely to move."
+hook: "Delta dikes stand on soil that can settle and spread sideways."
 lede: A dike keeps the river and the sea out of land lying lower than they are. On the Fraser delta it is built on the same loose, wet sand that liquefies in an earthquake.
 ---
 
-## The dikes sit on the ground most likely to move
+## Delta dikes stand on liquefiable soil
 
 A dike is an earth embankment that keeps the river and the sea out of land lying
 lower than they are. On the Fraser delta, the ground a dike is built on is the
@@ -22,7 +22,7 @@ dikes without ground improvement first. [RICH-DMP3-19] The numbers, and the gap
 between them and what the City tells residents, are on [ground
 conditions](/shaking/ground/).
 
-## Sea Island's dike is being raised for the sea, not for an earthquake
+## Sea Island's dike project addresses sea-level rise
 
 Sea Island, where Vancouver International Airport sits, is ringed by a 15 km
 perimeter dike, which is being raised by about a metre to a total height of 4.7

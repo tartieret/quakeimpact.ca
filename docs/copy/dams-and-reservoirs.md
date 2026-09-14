@@ -2,14 +2,14 @@
 route: /after/dams-and-reservoirs/
 title: Dams and reservoirs
 nav: Dams and reservoirs
-hook: Both dams were reviewed by an engineer in 2024, and neither published conclusion mentions earthquakes.
-lede: Two of the reservoirs Metro Vancouver draws its drinking water from sit in mountain valleys on the North Shore, 5 km and 18 km north of Burrard Inlet, each held in by a dam the province puts in its top consequence class. [MV-CLEVELANDDAM-FS] [MV-SEYMOURDAM-FS] [BC-DAMS-REG] Both dams were reviewed by an engineer in 2024, and neither published conclusion mentions an earthquake. [MV-DSP-2026]
+hook: The 2024 engineering reviews do not publish an earthquake finding.
+lede: Cleveland and Seymour Falls dams hold two of Metro Vancouver's drinking water reservoirs in North Shore mountain valleys. Both carry the province's top consequence rating. [MV-CLEVELANDDAM-FS] [MV-SEYMOURDAM-FS] [BC-DAMS-REG] Engineers reviewed both dams in 2024. Neither published conclusion mentions an earthquake. [MV-DSP-2026]
 bands: { cascadia: unknown, crustal: unknown }
-mechanism: Cleveland and Seymour Falls were each reviewed by an engineer in 2024, as the law requires every seven years for dams in the top consequence class, and neither review identified an unsafe or unacceptable condition; neither published conclusion mentions earthquakes.
+mechanism: Engineers reviewed Cleveland and Seymour Falls dams in 2024, as required every seven years for dams in the top consequence class. Neither review identified an unsafe condition, and neither published conclusion mentions earthquakes.
 source: MV-DSP-2026
 ---
 
-## Two of the dams holding Metro Vancouver's drinking water are in the province's top consequence class
+## Two water-supply dams carry the top consequence rating
 
 Metro Vancouver has fourteen regulated dams. [BC-DAMS-REG] Two of them, Cleveland and
 Seymour Falls, hold back reservoirs in the region's [drinking water supply](/after/water/),
@@ -42,7 +42,7 @@ regulator records that it has not flagged a deficiency at either one. That is al
 ceiling: no Extreme dam in British Columbia is rated better than 3, and 20 of the
 province's 56 are rated worse. [BC-DAMS-REG]
 
-## Both dams were reviewed by an engineer in 2024, and neither review found an unsafe condition
+## The 2024 reviews found no unsafe condition
 
 A dam in that class must be reviewed every seven years by an engineering professional
 qualified in dam safety analysis, to determine whether it is safe, with the report
@@ -64,7 +64,7 @@ second: reasonably safe, reasonably safe with deficiencies, or not safe with def
 requiring urgent action. "Reasonably safe" is the first of those, and the province treats
 it as equivalent to the Regulation's own word, "safe". [BCDSP-DSR-INFO]
 
-## Neither published conclusion mentions earthquakes, and the seismic upgrade is not due to start until 2028
+## The published conclusions do not mention earthquakes
 
 Metro Vancouver has published one of these updates every year since 2021, each naming
 every dam and its review status. [MV-DSP-2021] [MV-DSP-2026] None of them says anything
@@ -91,7 +91,7 @@ evaluations and has not begun the upgrade.
 > performance, and what they concluded if they did, is not in the annual updates, and the
 > reports behind those updates are not released. [MV-DSP-2026]
 
-## Surveillance runs weekly, and the province's own audit of both dams is six years old
+## Both dams are inspected weekly
 
 Between reviews, Metro Vancouver reports site surveillance at least weekly at both dams
 and formal inspections twice a year, and geotechnical and lake level instrumentation "is
@@ -110,7 +110,7 @@ recommendations were accepted; two were complete as at 31 March 2025, when the p
 dam safety program reported 10 staff against an assessed need of 25 and said it was "only
 able to target the very highest risk dams". [OAG-DAMS-FU-25]
 
-## The area a failure would flood has been mapped, and the map is not published
+## Flood maps exist but are not public
 
 The owner of a dam in this class must prepare an emergency plan and submit it to the
 province for acceptance, and the province's template requires an evacuation area map to be
@@ -134,7 +134,7 @@ and one causing an uncontrolled release of water. [BCDSP-DEP-24]
 
 ## What you can do
 
-Whether you are below one of these dams has an answer, and somebody holds it.
+Flood maps show who lives below these dams, but the maps are not public.
 
 **Find out whether you live, work or send a child to school below one of them.** The area
 a failure would flood has been mapped, because the dam's classification is worked out from

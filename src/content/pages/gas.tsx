@@ -14,17 +14,16 @@ export const gas: PageModule = {
     route: "/after/gas/",
     title: "Natural gas",
     description:
-      "Gas comes back one building at a time, because somebody qualified has to be inside each one to relight every appliance in it.",
+      "Gas service returns only after a qualified worker enters each affected building and relights its appliances.",
     nav: "Natural gas",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        FortisBC’s own planning puts its best rate of relighting gas appliances
-        at 8,716 a day, and that figure already assumes its full workforce,
-        crews sent by other utilities, and every available private gas
-        contractor in the Lower Mainland. <Cite id="FEI-RESILIENCY-24" /> Gas
-        comes back one building at a time, because somebody qualified has to be
-        inside each one.
+        FortisBC’s fastest estimate is 8,716 appliance relights a day. It assumes
+        the utility’s full workforce, mutual aid and every available private gas
+        contractor in the Lower Mainland. <Cite id="FEI-RESILIENCY-24" /> A
+        qualified worker must enter each affected building before service can
+        return.
       </>
     ),
     /**
@@ -43,7 +42,7 @@ export const gas: PageModule = {
 
   sections: [
     {
-      title: "Gas is the one utility that cannot be turned back on from a control room",
+      title: "Gas returns one building at a time",
       body: (
         <Prose>
           <p>
@@ -88,8 +87,7 @@ export const gas: PageModule = {
     },
 
     {
-      title:
-        "FortisBC’s best day is 8,716 relights, and that figure already counts on crews from elsewhere",
+      title: "FortisBC’s fastest estimate assumes outside crews",
       body: (
         <Prose>
           <p>
@@ -156,8 +154,7 @@ export const gas: PageModule = {
     },
 
     {
-      title:
-        "A winter supply failure with no earthquake in it already runs to weeks",
+      title: "A winter supply failure could take weeks to restore",
       body: (
         <Prose>
           <p>
@@ -195,8 +192,7 @@ export const gas: PageModule = {
     },
 
     {
-      title:
-        "A 1969 tank in Delta runs at 58 per cent of its capacity because of standards written after it was built",
+      title: "A Delta storage tank operates below capacity",
       body: (
         <Prose>
           <p>
@@ -228,8 +224,7 @@ export const gas: PageModule = {
     },
 
     {
-      title:
-        "The valves that would shut the Lower Mainland system down by themselves are still being scoped",
+      title: "Automatic shut-off valves are still being studied",
       body: (
         <Prose>
           <p>

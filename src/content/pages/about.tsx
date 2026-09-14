@@ -29,18 +29,17 @@ export const about: PageModule = {
     route: "/about/",
     title: "About this site",
     description:
-      "This site is about the months after a major earthquake in the Lower Mainland rather than the minutes during it. Every claim links to the document behind it.",
+      "QuakeImpact explains the months after a major earthquake in the Lower Mainland. Every factual claim links to its published source.",
     nav: "About",
     standfirst:
-      "This site is about the months after a major earthquake in the Lower Mainland rather than the minutes during it. Every claim on it comes from a document somebody else published, and every claim links to that document.",
+      "QuakeImpact explains the months after a major earthquake in the Lower Mainland. Every factual claim comes from published work and links to its source.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: ["PEIRS"],
   },
 
   sections: [
     {
-      title:
-        "I am a point of contact for my neighbourhood, which is how this started",
+      title: "Why I built this site",
       body: (
         <Prose>
           <p>
@@ -80,7 +79,7 @@ export const about: PageModule = {
     },
 
     {
-      title: "No estimate on this site was produced here",
+      title: "Where the figures come from",
       body: (
         <Prose>
           <p>
@@ -110,7 +109,7 @@ export const about: PageModule = {
     },
 
     {
-      title: "Corrections are the most useful thing you can send",
+      title: "Corrections are welcome",
       body: (
         <Prose>
           <p>

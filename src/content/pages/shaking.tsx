@@ -29,11 +29,11 @@ export const shaking: PageModule = {
     route: "/shaking/",
     title: "The shaking",
     description:
-      "Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives. The shaking is the short part.",
+      "Damage depends on the earthquake, the ground and the building. Fires, landslides and other failures continue after the shaking stops.",
     nav: "The shaking",
     kicker: "Part 1",
     standfirst:
-      "Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives. The shaking is the short part: buildings break, people are hurt, and the fires and landslides come once it stops.",
+      "Damage depends on the earthquake, the ground and the building. The shaking is brief. Fires, landslides and other failures continue after it stops.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -50,7 +50,7 @@ export const shaking: PageModule = {
 
   sections: [
     {
-      title: "Nobody rides it out standing up",
+      title: "Violent shaking knocks people down",
       body: (
         <Prose>
           <p>
@@ -113,7 +113,7 @@ export const shaking: PageModule = {
     },
 
     {
-      title: "The mainshock is not the last earthquake",
+      title: "Aftershocks follow the mainshock",
       body: (
         <Prose>
           <p>
@@ -148,13 +148,12 @@ export const shaking: PageModule = {
     },
 
     {
-      title: "The ground and the building decide it together",
+      title: "Damage depends on the ground and the building",
       body: (
         <Prose>
           <p>
-            Two things decide what an earthquake does to a place: the ground
-            underneath and the building on top. Which pairing turns out to be
-            dangerous changes with the earthquake.
+            Damage depends on the ground underneath and the building above it.
+            The dangerous combinations change with the earthquake.
           </p>
           <p>
             The ground varies over short distances. The downtown peninsula and
@@ -203,7 +202,7 @@ export const shaking: PageModule = {
     },
 
     {
-      title: "The official damage numbers leave things out, and say so",
+      title: "What the official damage figures exclude",
       body: (
         <Prose>
           <p>
@@ -230,8 +229,7 @@ export const shaking: PageModule = {
     },
 
     {
-      title:
-        "The ground moves, buildings break, people are hurt, the fires start, and the slopes and the water come last",
+      title: "The main hazards from shaking",
       body: (
         <div className="flex flex-col gap-8">
           <ul className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2">

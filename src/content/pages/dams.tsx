@@ -232,7 +232,7 @@ export const dams: PageModule = {
     nav: "Dams",
     kicker: "The shaking",
     standfirst:
-      "The region’s dams have two owners. Metro Vancouver’s published reviews of its water-supply dams do not mention an earthquake; BC Hydro tells its own regulator which part of each power dam it expects one to break.",
+      "Metro Vancouver’s published reviews of its water-supply dams do not mention earthquakes. BC Hydro tells its regulator which parts of its power dams it expects an earthquake to damage.",
     /**
      * First-cited order, which is the order the markers are numbered in.
      */
@@ -255,8 +255,7 @@ export const dams: PageModule = {
 
   sections: [
     {
-      title:
-        "The two water-supply dams were reviewed in 2024, and neither published conclusion mentions an earthquake",
+      title: "Water-supply dam reviews omit an earthquake finding",
       body: (
         <Prose>
           <p>
@@ -280,8 +279,7 @@ export const dams: PageModule = {
     },
 
     {
-      title:
-        "BC Hydro names the parts of its own dams an earthquake is expected to break",
+      title: "BC Hydro identifies expected earthquake damage",
       body: (
         <Prose>
           <p>
@@ -361,8 +359,7 @@ export const dams: PageModule = {
     },
 
     {
-      title:
-        "The register lists seventeen dams here whose failure would reach people, and records nothing about earthquakes at any of them",
+      title: "Seventeen other dams have no public earthquake finding",
       body: (
         <div className="space-y-6">
           <Prose>
@@ -468,15 +465,13 @@ export const dams: PageModule = {
       ),
     },
     {
-      title:
-        "The province sets a minimum design earthquake by consequence class, and it governs new work rather than the dams already standing",
+      title: "Design rules apply to new dam work",
       body: (
         <Prose>
           <p>
-            The class in the table above is not only a description of what is
-            downstream. The province’s design guideline attaches a minimum
-            earthquake to each class, and it sets the same one for both of the
-            classes on this page: an earthquake design ground motion at a
+            The class in the table describes what is downstream. It also sets a
+            minimum design earthquake. Both classes on this page use an
+            earthquake design ground motion at a
             1-in-10,000-year return period, or the Maximum Credible Earthquake.{" "}
             <Cite id="BC-DDCG" /> Very High and Extreme carry that figure alike,
             so it covers every dam in the table above. It is the same expectation
@@ -486,18 +481,15 @@ export const dams: PageModule = {
             not read. <Cite id="CDA-2007" />
           </p>
           <p>
-            Three things have to travel with that figure or it says something
-            false. It is a criterion for building, altering, improving or
-            replacing a dam, which is not the same as a standing obligation on a
-            dam finished in 1954. <Cite id="BC-DDCG" /> It is a guideline
-            minimum rather than law, and deviations from it “may be considered
-            but must be clearly stated and justified”; the Dam Safety Regulation
-            itself contains no seismic number at all, and nowhere uses the word
-            earthquake. <Cite id="BC-DDCG" /> <Cite id="BCDSR-40-2016" /> And the
-            criterion is a return period <em>or</em> the Maximum Credible
-            Earthquake, which is a deterministic ceiling rather than a
-            probability. Dropping the second half of it promotes a guideline to a
-            statute.
+            The figure needs context. It applies when a dam is built, altered,
+            improved or replaced, rather than as a standing obligation on a dam
+            finished in 1954. <Cite id="BC-DDCG" /> It is a guideline minimum,
+            not law. Deviations “may be considered but must be clearly stated
+            and justified”. The Dam Safety Regulation gives no seismic number
+            and does not use the word earthquake. <Cite id="BC-DDCG" />{" "}
+            <Cite id="BCDSR-40-2016" /> The criterion is a return period{" "}
+            <em>or</em> the Maximum Credible Earthquake, a deterministic ceiling
+            rather than a probability.
           </p>
           <p>
             What connects a criterion for new work to a dam built a century ago

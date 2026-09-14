@@ -53,8 +53,7 @@ export const housing: PageModule = {
 
   sections: [
     {
-      title:
-        "The first thing that happens to a home is that somebody has to come and look at it",
+      title: "Buildings must be inspected before people return",
       body: (
         <Prose>
           <p>
@@ -94,8 +93,7 @@ export const housing: PageModule = {
     },
 
     {
-      title:
-        "A cordon closes a block, and a building that came through the shaking can be inside it",
+      title: "Cordons can close undamaged buildings",
       body: (
         <Prose>
           <p>
@@ -150,7 +148,7 @@ export const housing: PageModule = {
     },
 
     {
-      title: "A home with no water and no sewer is a home nobody can live in",
+      title: "Failed utilities make homes uninhabitable",
       body: (
         <Prose>
           <p>
@@ -190,8 +188,7 @@ export const housing: PageModule = {
     },
 
     {
-      title:
-        "Five published displacement figures, and no two of them count the same thing",
+      title: "Published displacement figures measure different things",
       body: (
         <Prose>
           <DataTable
@@ -259,8 +256,7 @@ export const housing: PageModule = {
     },
 
     {
-      title:
-        "Nearly seven in ten of Vancouver’s buildings went up before modern seismic standards",
+      title: "Most Vancouver buildings predate modern seismic standards",
       body: (
         <Prose>
           <p>
@@ -299,8 +295,7 @@ export const housing: PageModule = {
     },
 
     {
-      title:
-        "Vancouver publishes 25 disaster support hubs and no capacity figure for any of them",
+      title: "Disaster support hub capacity is not published",
       body: (
         <Prose>
           <p>
