@@ -139,11 +139,12 @@ export const home: PageModule = {
                   <>
                     <p>
                       The shaking lasts somewhere between ten seconds and three
-                      minutes, because the region plans for two earthquakes. The
-                      nearer one, underneath the region, is violent and over in
-                      ten to twenty seconds. The offshore one is moderate rather
-                      than violent, goes on for three minutes, and arrives along
-                      the whole coast at once rather than under one city.
+                      minutes, depending on how big the earthquake is and where
+                      it happens. The nearer of the two the region plans for is
+                      violent and over in ten to twenty seconds. The offshore one
+                      is moderate rather than violent, goes on for three minutes,
+                      and arrives along the whole coast at once rather than under
+                      one city.
                     </p>
                     <p>
                       In the province’s scenario for the nearer earthquake it is

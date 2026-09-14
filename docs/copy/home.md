@@ -20,11 +20,11 @@ not what has and has not been published. See §4 of the style guide and the
 module docblock in `src/content/pages/home.tsx`.*
 
 **Hours — it is over in minutes, and nothing works.** The shaking lasts
-somewhere between ten seconds and three minutes, because the region plans for two
-earthquakes. The nearer one, underneath the region, is violent and over in ten to
-twenty seconds. The offshore one is moderate rather than violent, goes on for
-three minutes, and arrives along the whole coast at once rather than under one
-city.
+somewhere between ten seconds and three minutes, depending on how big the
+earthquake is and where it happens. The nearer of the two the region plans for is
+violent and over in ten to twenty seconds. The offshore one is moderate rather
+than violent, goes on for three minutes, and arrives along the whole coast at
+once rather than under one city.
 
 In the province's scenario for the nearer earthquake it is heard before it is
 felt: a sound like a freight train, then seconds of violent shaking that knock
