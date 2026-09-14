@@ -191,6 +191,7 @@ function QuestionMark({ nonScaling = false }: { nonScaling?: boolean }) {
   const vectorEffect = nonScaling ? "non-scaling-stroke" : undefined;
   return (
     <g
+      transform="scale(0.82)"
       fill="none"
       stroke={FIG_COLOR.ink}
       strokeWidth={nonScaling ? FIG_STROKE : 1.8}
