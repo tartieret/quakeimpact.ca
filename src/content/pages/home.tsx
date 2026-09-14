@@ -22,34 +22,45 @@ import type { PageModule } from "./index";
  * a reader who has not yet been told why this matters has no reason to work
  * through the difference between a megathrust and a crustal earthquake.
  *
- * The timeline carries no citation markers, and that is the one place this page
- * departs from the site's habit. Its panels make no claim of their own: every
- * sentence in them is a consequence a system page states and sources, and the
- * noun it hangs on is a link to that page, which is where the document and all
- * its qualifications are. Markers on prose written this way would number the
+ * The timeline is a story and reads as one. It sources itself through its links
+ * rather than through a marker on every sentence, and that is the one place this
+ * page departs from the site's habit. Its panels make no claim of their own:
+ * every sentence in them is a consequence a system page states and sources, and
+ * the noun it hangs on is a link to that page, which is where the document and
+ * all its qualifications are. Markers on prose written this way would number the
  * same handful of documents nine times over and make a narrative read like a
  * filing. Three rules keep it honest, and they are in §4 of the style guide.
  * **A duration may ride on its link and a count may not** — several weeks, many
  * months and the rest are the story, while 267 mains and two thirds of downtown
- * customers stay on the pages that can guard them. The quoted passage keeps its
- * attribution in words, because a quotation without a speaker is worse than a
- * claim without a marker. And a duration is written in the source's own words
- * and no tighter, with the body named where the naming is the point, as it is
- * for BC Hydro on downtown power.
+ * customers stay on the pages that can guard them. A duration is written in the
+ * source's own words and no tighter, with the body named only where the naming
+ * is the point, as it is for BC Hydro conceding several weeks downtown. And the
+ * quotation keeps its attribution, which here is the marker beside it rather
+ * than a speaker in words.
+ *
+ * What the panels do not do is name the document a fact came out of. "In the
+ * province's scenario the earthquake is heard before it is felt" tells a reader
+ * they are being read a planning document; the earthquake being heard before it
+ * is felt tells them what the first second is like, which is what they came for.
+ * The one exception left is the months panel, where the province's plan is the
+ * subject rather than the source: that people stay in the region is an
+ * assumption a plan makes, and stated as a bare fact it would be a claim about
+ * what people do, which nothing here establishes.
  *
  * The hours panel tells one story rather than standing the two scenarios in a
  * pair of labelled columns. The pair is the right shape further down the site,
  * where a reader has met both earthquakes and the columns answer "which of these
  * is this finding about". At the top of the landing page nobody has met either,
  * and two columns asked a reader to hold two unintroduced earthquakes apart
- * before they had been told why it matters. Both are still named and neither is
- * smoothed away, which is what `stack-and-structure.md` asks: the near one is
- * violent and over in ten to twenty seconds, the offshore one is moderate and
- * runs for three minutes, and the range across the two opens the panel because
- * the length of that minute is the one thing a reader can picture before they
- * know anything else. The scene that follows is the province's crustal scenario
- * and says so, so the quotation and the collapses stay attached to the
- * earthquake they were assessed on.
+ * before they had been told why it matters. What the panel keeps of the pair is
+ * the range, because the length of that first minute is the one thing a reader
+ * can picture before they know anything else: ten seconds and three minutes are
+ * the two scenarios' own durations rather than a smoothed average, so neither is
+ * hidden, and `/shaking/` is one link away with each attached to its earthquake.
+ * That link is load-bearing here, and `stack-and-structure.md` says why. The
+ * scene that follows is an earthquake close to the city, named as such, so the
+ * quotation and the collapses stay attached to the earthquake they were assessed
+ * on rather than reading as claims about the megathrust too.
  *
  * The panels say what the stretch is like, not what has and has not been
  * published. A sentence about the state of the record — BC Hydro has published
@@ -118,8 +129,8 @@ export const home: PageModule = {
     references: [
       "PREPAREDBC",
       "RESEARCHCO-PREP-21",
-      "DCRRA-2025",
       "PEIRS",
+      "DCRRA-2025",
       "NRCAN-1700",
     ],
   },
@@ -140,18 +151,14 @@ export const home: PageModule = {
                     <p>
                       The shaking lasts somewhere between ten seconds and three
                       minutes, depending on how big the earthquake is and where
-                      it happens. The nearer of the two the region plans for is
-                      violent and over in ten to twenty seconds. The offshore one
-                      is moderate rather than violent, goes on for three minutes,
-                      and arrives along the whole coast at once rather than under
-                      one city.
+                      it happens.
                     </p>
                     <p>
-                      In the province’s scenario for the nearer earthquake it is
-                      heard before it is felt: a sound like a freight train, then
-                      seconds of violent shaking that knock people off their
-                      feet, “except for those who remember to drop, cover, and
-                      hold on”. A small number of buildings collapse, many more
+                      An earthquake close to the city is heard before it is
+                      felt: a sound like a freight train, then seconds of violent
+                      shaking that knock people off their feet, “except for those
+                      who remember to drop, cover, and hold on”.{" "}
+                      <Cite id="PEIRS" /> A small number of buildings collapse, many more
                       shift and crack, and many of the people who try to run
                       outside are badly hurt by falling and flying objects.{" "}
                       <Link href="/shaking/" className={link}>
@@ -226,13 +233,13 @@ export const home: PageModule = {
                       </Link>{" "}
                       stops being usable on the first day rather than the first
                       week, because flushing takes water nobody has to spare.
-                      In the{" "}
+                      Family and neighbours are likely to be the only
+                      available{" "}
                       <Link href="/prepare/" className={link}>
-                        province’s own plan
+                        first responders
                       </Link>
-                      , family and neighbours are likely to be the only
-                      available first responders, so the people who reach you
-                      first are the people who already live on your street.
+                      , so the people who reach you first are the people who
+                      already live on your street.
                     </p>
                   </>
                 ),
