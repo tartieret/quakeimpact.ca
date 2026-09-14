@@ -1,0 +1,10 @@
+{
+  "worktree": {
+    "autoDirectory": true,
+    "autoDirectoryPattern": ".worktrees/{branch}",
+    "copySessionData": true,
+    "sortByLastSession": false,
+    "autoUseDefaultBranch": false,
+    "includeRemoteBranches": false
+  }
+}
