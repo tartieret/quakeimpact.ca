@@ -35,12 +35,12 @@ import type { PageModule } from "./index";
 export const scenarios: PageModule = {
   meta: {
     route: "/scenarios/",
-    title: "Two earthquakes, not one",
+    title: "Two earthquake scenarios",
     description:
-      "One earthquake is offshore, very large and very long. The other is close, smaller and violent, and the federal hazard agency calls it the greater hazard to cities.",
+      "The Lower Mainland plans for a long offshore megathrust earthquake and a shorter, more violent crustal earthquake close to the city.",
     nav: "Two scenarios",
     standfirst:
-      "One is offshore, very large and very long. The other is close, smaller and violent. Most people have only heard of the first, and the federal hazard agency calls the second the greater hazard to cities.",
+      "The Lower Mainland plans for two different earthquakes. An offshore megathrust shakes for much longer; a smaller crustal earthquake close to the city shakes more violently. The federal hazard agency calls the nearer event the greater threat to cities.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -62,12 +62,12 @@ export const scenarios: PageModule = {
 
   sections: [
     {
-      title: "The two earthquakes differ in almost every way that matters",
+      title: "How the scenarios differ",
       body: <ScenarioCards />,
     },
 
     {
-      title: "The nearer earthquake is the greater hazard to cities",
+      title: "The nearer earthquake hits cities harder",
       body: (
         <Prose>
           <p>
@@ -98,7 +98,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "Both scenarios come from the same official catalogue",
+      title: "Where the scenarios come from",
       body: (
         <Prose>
           <p>
@@ -180,7 +180,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "The crustal magnitude 7.0 is the province’s planning scenario",
+      title: "The province plans around a crustal magnitude 7.0",
       body: (
         <Prose>
           <p>
@@ -262,8 +262,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title:
-        "In the province’s scenario, the earthquake is heard before it is felt",
+      title: "The crustal earthquake begins with violent shaking",
       body: (
         <Prose>
           <p>
@@ -318,8 +317,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title:
-        "The province’s Cascadia scenario shakes for three minutes along 1,000 km of fault",
+      title: "The Cascadia scenario shakes for three minutes",
       body: (
         <Prose>
           <p>
@@ -357,7 +355,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "The two earthquakes threaten different buildings",
+      title: "Each earthquake is harder on different buildings",
       body: (
         <Prose>
           <p>
@@ -400,7 +398,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "How long the shaking lasts changes what fails",
+      title: "Longer shaking changes how structures fail",
       body: (
         <Prose>
           <p>
@@ -452,7 +450,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "The province’s figures and the federal figures come from one model",
+      title: "Provincial and federal figures share one model",
       body: (
         <Prose>
           <p>
@@ -475,8 +473,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title:
-        "Different sources give different average intervals between Cascadia ruptures",
+      title: "Estimates of the Cascadia interval differ",
       body: (
         <Prose>
           <DataTable
@@ -525,8 +522,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title:
-        "A 5 to 20 per cent chance of a Cascadia rupture here in the next 50 years",
+      title: "The 50-year chance of a Cascadia rupture",
       body: (
         <Prose>
           <p>
@@ -554,8 +550,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title:
-        "The last Cascadia earthquake is dated to the evening of 26 January 1700",
+      title: "The last Cascadia earthquake was on 26 January 1700",
       body: (
         <Prose>
           <p>
@@ -588,7 +583,7 @@ export const scenarios: PageModule = {
       ),
     },
     {
-      title: "Every system carries a band for each of the two earthquakes",
+      title: "Impacts by scenario",
       body: <SystemMatrix />,
     },
   ],
@@ -597,8 +592,7 @@ export const scenarios: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        Two things decide most of what either earthquake means for a person, and
-        both can be found out today.
+        Start with the building and the ground beneath it.
       </>
     ),
     items: [

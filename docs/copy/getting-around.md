@@ -3,11 +3,11 @@ route: /getting-around/
 title: Moving after the shaking
 nav: Getting around
 kicker: After the shaking
-hook: British Columbia's plan is that people stay where they are, and that the roads are used for something else.
-lede: Two provincial emergency plans assume people will not drive out of the region after a major earthquake. Both direct the public to shelter where they are.
+hook: Provincial plans keep damaged roads clear for emergency traffic and supplies.
+lede: Provincial plans direct people to shelter where they are after a major earthquake. Damaged routes are needed for emergency traffic and supplies.
 ---
 
-## The province plans on people staying
+## Provincial plans tell people to stay where they are
 
 From the planning assumptions in the province's Earthquake Immediate Response
 Strategy:
@@ -33,7 +33,7 @@ landslides, liquefaction, and other secondary impacts such as bridge collapses".
 chains will be inoperable." [PEIRS] Liquefaction there means saturated soil losing its
 strength and behaving like a liquid while the ground shakes.
 
-## The land connections are fewer than the map suggests
+## Water and mountains limit the routes out
 
 > **Vancouver is a peninsula.** Burrard Inlet is to the north and the
 > North Arm of the Fraser to the south, and the land connection runs eastward through
@@ -49,7 +49,7 @@ What those crossings were built to withstand, and what happens to the ground the
 approaches sit on, is the subject of
 [transportation](/after/transportation/).
 
-## Disaster Response Route signs mean stay off, not evacuate this way
+## Disaster Response Routes are for emergency traffic
 
 The signs stand on roads across the region. A network of provincial and municipal
 roads was designated in 1995 across Metro Vancouver and Greater Victoria to move
@@ -75,7 +75,7 @@ underpasses." [DRT-PLANNING-18] Seismic retrofit status is one of the vulnerabil
 criteria in the same guide, alongside soil stability and how close the road runs to
 gas and water lines. [DRT-PLANNING-18]
 
-## Roads are cleared in a published order, and getting people home is not near the top
+## Local roads are cleared last
 
 Metro Vancouver's regional debris management plan sets the clearing priority:
 
@@ -103,7 +103,7 @@ assessments have deemed the damaged routes safe for emergency use." [DRT-PRIMER-
 > material is withheld by choice: "Due to the sensitive nature of some of our work,
 > some materials are only available upon request." [IPREM-RES]
 
-## Rainfall severed three BC highways in 2021, and reopening them took months
+## Three BC highways took months to reopen after the 2021 floods
 
 The only measured evidence of how long it takes to reopen a severed highway in this
 province comes from the atmospheric river of November 2021, a long and heavy rainstorm. Every figure below is
@@ -132,7 +132,7 @@ Canada", and one of its authors works for the road authority. [SEPULVEDA-23]
 Those are the durations this road authority and these contractors achieved in this
 terrain.
 
-## A landslide wave in Howe Sound is assessed as unlikely
+## A damaging landslide wave in Howe Sound is unlikely
 
 Federal mapping "concluded that none of the landslides that entered Howe Sound were
 large enough to produce a significant tsunami", and a landslide into the sound large
@@ -141,7 +141,7 @@ enough to produce damaging waves on Bowen Island is assessed as unlikely.
 "very low, although not zero" and finding the North and West Vancouver waterfronts not
 at risk from such a wave. [NSEMO-TSU-05]
 
-## Nobody has published how many people would leave, or when
+## No estimate exists for how many people would leave
 
 The route out of the region would be a damaged road, cleared in an order that puts
 local streets last. [MV-DEBRIS-17] How much of the network the province expects to be

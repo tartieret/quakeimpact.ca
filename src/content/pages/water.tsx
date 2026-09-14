@@ -34,7 +34,7 @@ export const water: PageModule = {
         Metro Vancouver’s own seismic assessment models 267 water main failures
         across the region in a magnitude 9.0 earthquake.{" "}
         <Cite id="MV-WATER-22" /> About 60 of them fall at the 71 points where
-        mains cross under rivers and inlets, which are the hardest places in the
+        mains cross under rivers and inlets. Those are the hardest places in the
         system to reach. <Cite id="MV-WATER-22" />
       </>
     ),
@@ -63,7 +63,7 @@ export const water: PageModule = {
 
   sections: [
     {
-      title: "A pipe under a road and a pipe under a river are different repairs",
+      title: "River crossings are the hardest repairs",
       body: (
         <Prose>
           <Quote
@@ -96,8 +96,7 @@ export const water: PageModule = {
     },
 
     {
-      title:
-        "267 main failures are modelled region-wide, and about 60 of them at river and inlet crossings",
+      title: "The model finds 267 main failures",
       body: (
         <Prose>
           <p>
@@ -162,7 +161,7 @@ export const water: PageModule = {
     },
 
     {
-      title: "Nobody has published how long the water would take to come back",
+      title: "Water restoration time has not been published",
       body: (
         <Prose>
           <p>
@@ -209,8 +208,7 @@ export const water: PageModule = {
     },
 
     {
-      title:
-        "The province expects water and sewer disruption to last many months",
+      title: "The province expects disruption for many months",
       body: (
         <Prose>
           <p>
@@ -270,8 +268,7 @@ export const water: PageModule = {
     },
 
     {
-      title:
-        "One municipality publishes numbers, and they do not carry across the region",
+      title: "Richmond’s figures do not apply across the region",
       body: (
         <Prose>
           <p>
@@ -298,8 +295,7 @@ export const water: PageModule = {
     },
 
     {
-      title:
-      "Five deep tunnels are planned, and none of the three under way is finished",
+      title: "Three new water tunnels are still under construction",
       body: (
         <Prose>
           <p>

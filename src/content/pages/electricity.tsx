@@ -28,11 +28,11 @@ export const electricity: PageModule = {
     route: "/after/electricity/",
     title: "Electricity",
     description:
-      "BC Hydro has told its regulator that its main downtown substation would not be operable after an earthquake well below the level the building code requires.",
+      "BC Hydro says its main downtown substation would fail in an earthquake well below the current building-code standard.",
     nav: "Electricity",
     kicker: "Life afterwards",
     standfirst:
-      "In November 2025 BC Hydro told its regulator that its main downtown substation would not be operable after an earthquake well below the level the building code requires it to withstand. No comparable statement has been published for anywhere else in this region.",
+      "In November 2025, BC Hydro said its main downtown substation would fail in an earthquake well below the current building-code standard. No comparable assessment is public for the rest of the region.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -52,8 +52,7 @@ export const electricity: PageModule = {
 
   sections: [
     {
-      title:
-        "BC Hydro says several weeks to restore power downtown, and years to restore the system",
+      title: "Downtown outages could last several weeks",
       body: (
         <Prose>
           <p>
@@ -110,8 +109,7 @@ export const electricity: PageModule = {
     },
 
     {
-      title:
-        "Murrin falls short of the standard the building code sets for it",
+      title: "Murrin substation falls short of the current seismic standard",
       body: (
         <Prose>
           <p>From a footnote in the same filing:</p>
@@ -159,8 +157,7 @@ export const electricity: PageModule = {
     },
 
     {
-      title:
-        "Murrin cannot be fixed where it stands, and the replacement is not due until 2032",
+      title: "Murrin cannot be upgraded at its current site",
       body: (
         <Prose>
           <p>BC Hydro’s own assessment of the alternatives:</p>
@@ -206,8 +203,7 @@ export const electricity: PageModule = {
     },
 
     {
-      title:
-        "The Second Narrows crossing could collapse below the level the code sets, and the work to fix it is not scheduled",
+      title: "The Second Narrows crossing remains below the current standard",
       body: (
         <Prose>
           <p>
@@ -235,8 +231,7 @@ export const electricity: PageModule = {
     },
 
     {
-      title:
-        "What BC Hydro said in 2011 and what it found in 2025 do not agree",
+      title: "BC Hydro’s newer assessment finds greater risk",
       body: (
         <Prose>
           <p>
@@ -281,8 +276,7 @@ export const electricity: PageModule = {
     },
 
     {
-      title:
-        "Restoring a power system can mean ordering equipment rather than repairing it",
+      title: "Large transformers take years to replace",
       body: (
         <Prose>
           <p>

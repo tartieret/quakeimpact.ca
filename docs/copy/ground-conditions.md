@@ -2,11 +2,11 @@
 route: /shaking/ground/
 title: Ground conditions
 nav: Ground conditions
-hook: Two houses a few blocks apart can sit on completely different ground.
-lede: The ground under Metro Vancouver varies far more than the buildings on it do. On the Fraser delta, wet sand can lose its strength and behave like a liquid while the shaking lasts. Under the whole region, a deep bowl of soft sediment makes the slow part of the shaking stronger.
+hook: Shaking changes sharply between bedrock, soft sediment and river delta soil.
+lede: Metro Vancouver spans bedrock, deep soft sediment and river delta soil. On the delta, wet sand can lose its strength during an earthquake. Beneath the region, the Georgia Basin amplifies slow shaking.
 ---
 
-## The same earthquake does different things on rock and on the delta
+## Ground conditions change the shaking
 
 Metro Vancouver is built on two very different things. The downtown peninsula and the
 North Shore slopes sit on rock. Richmond, Delta and the old filled-in edges of False
@@ -14,21 +14,21 @@ Creek sit on soft ground the Fraser River laid down. Two addresses a few blocks 
 can sit on either one, and what the shaking does to a building depends on which of them
 it is standing on.
 
-## On the delta, wet sand can behave like a liquid while it shakes
+## Delta soil can liquefy
 
 The soil there is loose sand with water sitting in the gaps between the grains. Shake
 it hard enough and the sand stops carrying the weight above it. For a while, the water
 does. The ground behaves like a thick liquid, and engineers call that liquefaction.
 Buried pipes float up, roads sag, foundations tilt.
 
-Three things have to line up for it, and on the delta all three do: a thick layer of
-the right kind of sand, water close to the surface, and strong shaking. In soil tests
+Liquefaction needs loose sand, shallow groundwater and strong shaking. The delta has
+all three. In soil tests
 across Richmond and Delta, three quarters of the sites held more than 9.6 m of sand
 that could liquefy, with 11.8 m the average total through a site. The water table sits
 under 3 m, and in places under 1 m. [JAVANBAKHT-24] Below all that, the soft delta
 deposits run from less than 20 m to more than 200 m thick. [CJES-2024]
 
-## Delta soil is expected to start behaving like a liquid every 100 to 250 years
+## Liquefaction is expected every 100 to 250 years on the delta
 
 Researchers worked the figure out from 787 soil tests, 616 of them in Richmond and
 Delta: "In Richmond and Delta regions, it is expected that soil liquefaction could
@@ -42,7 +42,7 @@ anything visible going wrong on top. [JAVANBAKHT-24]
 
 A Cascadia earthquake above magnitude 8.9, one that ruptures the offshore interface, carries a 31 to 57 per cent chance of setting off liquefaction in the area studied. [JAVANBAKHT-23]
 
-## The whole region sits in a bowl that makes slow shaking stronger
+## The Georgia Basin amplifies slow shaking
 
 Under Metro Vancouver is the Georgia Sedimentary Basin, a deep bowl of soft sediment.
 Basins amplify shaking "particularly at long periods, impacting tall buildings and
@@ -61,7 +61,7 @@ speed attached does not mean anything.
 The offshore earthquake is the one that produces the long, slow waves a deep bowl
 makes worse, so the two scenarios threaten different buildings.
 
-## Canada's building code does not yet count the bowl
+## The building code does not yet account for the basin
 
 The province says so in the same assessment. "The United States Geological Survey
 included basin effects in the 2018 version of the US National Seismic Hazard Model and,
@@ -73,7 +73,7 @@ Building Code of Canada (2020) do not explicitly account for these effects."
 The same assessment points at detailed local mapping as the work that fills the gap.
 [DCRRA-APPC]
 
-## The western half of the region is mapped street by street, and anyone can look up their address
+## Detailed ground maps cover the western region
 
 The Metro Vancouver Seismic Microzonation Mapping Project has published 29 maps of the
 western communities: how much the ground grows the shaking, how deep the bowl is, how
@@ -93,7 +93,7 @@ Meadows, Maple Ridge and Langley runs to late 2026. [MVSMMP]
 > Catastrophic Loss Reduction. [MVSMMP-LIC] They are linked below, not
 > redrawn here.
 
-## Richmond tells residents its dikes will hold, and the engineers it hired are less sure
+## Richmond's dike message conflicts with its engineering results
 
 Richmond Fire-Rescue tells residents: "Computer soil models predict that dikes will
 sustain some damage during an earthquake; however, the dikes will remain an intact
@@ -126,7 +126,7 @@ street by street and are free to read at
 [metrovanmicromap.ca](https://www.metrovanmicromap.ca/). Look up where you live and
 where you work. They may sit on completely different ground.
 
-**On the delta, plan for the services and not only for the building.** Liquefaction
+**On the delta, plan for the services as well as the building.** Liquefaction
 reaches past the foundation to the buried pipes and the roads. In the scenario for the
 closer earthquake, "liquefaction of roadways in Richmond and Delta may make driving
 difficult", around the airport and the Tsawwassen ferry terminal in particular. [PEIRS]

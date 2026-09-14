@@ -30,15 +30,15 @@ export const outsideHelp: PageModule = {
     route: "/after/outside-help/",
     title: "Where help comes from",
     description:
-      "British Columbia’s plan stages help with the agencies outside the impact area, and in a megathrust they are inside it.",
+      "British Columbia stages help outside the damaged region. A coast-wide megathrust leaves fewer agencies available to provide it.",
     nav: "Where help comes from",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        British Columbia’s earthquake plan does not wait to be asked. It stages
-        resources with the agencies outside the damaged region and pushes them
-        in. <Cite id="PEIRS" /> Whether there is an outside to push from is the
-        thing the two earthquakes answer differently. <Cite id="PEIRS" />
+        British Columbia’s earthquake plan stages resources with agencies
+        outside the damaged region, then sends them in. <Cite id="PEIRS" /> A
+        local crustal earthquake leaves those agencies available. A coast-wide
+        megathrust may not. <Cite id="PEIRS" />
       </>
     ),
     /**
@@ -61,7 +61,7 @@ export const outsideHelp: PageModule = {
 
   sections: [
     {
-      title: "Help arrives over the same roads and ports as everything else",
+      title: "Outside help depends on damaged transport links",
       body: (
         <Prose>
           <p>
@@ -111,8 +111,7 @@ export const outsideHelp: PageModule = {
     },
 
     {
-      title:
-        "British Columbia’s plan is to push resources in, which reverses what its own general plan says",
+      title: "The earthquake plan sends resources into the region",
       body: (
         <Prose>
           <p>
@@ -138,7 +137,7 @@ export const outsideHelp: PageModule = {
     },
 
     {
-      title: "Pushing resources in needs an outside to push them from",
+      title: "Cascadia reduces the help available outside",
       body: (
         <Prose>
           <p>
@@ -222,8 +221,7 @@ export const outsideHelp: PageModule = {
     },
 
     {
-      title:
-        "The agreements that would bring help are named, and the one scheduled test of them was not run",
+      title: "Mutual-aid agreements remain partly untested",
       body: (
         <Prose>
           <p>
@@ -296,8 +294,7 @@ export const outsideHelp: PageModule = {
     },
 
     {
-      title:
-        "The framework all of this runs on was made under a law that has since been repealed",
+      title: "The response framework predates the current law",
       body: (
         <Prose>
           <p>

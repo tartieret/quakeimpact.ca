@@ -2,11 +2,11 @@
 route: /shaking/landslides/
 title: Landslides
 nav: Landslides
-hook: "The province's own scenario has rock and earth coming down across the roads help would arrive on."
-lede: The province's own planning scenario has landslides cutting the transportation routes. The landslide maps for the two mountain corridors help would arrive on were built for rain, not for earthquakes.
+hook: "The province expects landslides to cut transportation routes."
+lede: The province expects landslides to cut transportation routes after its crustal earthquake scenario. Existing maps of the mountain corridors assess rainfall, not earthquakes.
 ---
 
-## The province's own scenario has landslides cutting the roads
+## Landslides could cut transportation routes
 
 Most published damage figures for an earthquake here come from the Geological
 Survey of Canada's scenario work, which counts "only damage to buildings, and
@@ -36,7 +36,7 @@ and Highway 1 east through the Fraser Canyon.
 > either corridor.
 > [MVSMMP]
 
-## The landslide maps for those corridors were built for rain, not for earthquakes
+## Corridor maps cover rainfall, not earthquakes
 
 There is landslide mapping for the Sea to Sky corridor. Two maps published by
 the Geological Survey of Canada in 2009 rate the corridor for rock falls and

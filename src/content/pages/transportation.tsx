@@ -39,11 +39,11 @@ export const transportation: PageModule = {
     route: "/after/transportation/",
     title: "Transportation",
     description:
-      "British Columbia designates bridges on the routes that must stay open for emergency vehicles, and states that it is not retrofitting them to stay in service.",
+      "British Columbia’s bridge retrofits protect life but do not guarantee that emergency routes remain usable after an earthquake.",
     nav: "Transportation",
     kicker: "Life afterwards",
     standfirst:
-      "British Columbia designates bridges on the routes that must stay open for emergency vehicles after a major earthquake as its first retrofit priority. In the same document, the Ministry states that it is not retrofitting the bridges on those routes to remain in service.",
+      "British Columbia gives first retrofit priority to bridges on emergency routes. The work protects life, but the Ministry says those bridges are not being upgraded to remain in service after a major earthquake.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -90,7 +90,7 @@ export const transportation: PageModule = {
 
   sections: [
     {
-      title: "The province’s own criteria set two standards and buy one",
+      title: "The province funds life safety, not immediate use",
       body: (
         <Prose>
           <p>
@@ -129,8 +129,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title:
-        "A bridge that survives is not a bridge you can drive over the next morning",
+      title: "A standing bridge may still be closed",
       body: (
         <Prose>
           <p>The Ministry’s three retrofit service levels, in its own words:</p>
@@ -198,7 +197,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title: "The approach fails before the span does",
+      title: "Bridge approaches often fail first",
       body: (
         <Prose>
           <p>
@@ -306,8 +305,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title:
-        "The second stage of the George Massey Tunnel’s retrofit was cancelled, and its replacement opens in 2031",
+      title: "The George Massey Tunnel awaits replacement",
       body: (
         <Prose>
           <p>
@@ -391,8 +389,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title:
-        "What has been assessed, and what has been published, are different lists",
+      title: "Assessments for named crossings remain incomplete",
       body: (
         <Prose>
           <p>
@@ -646,7 +643,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title: "The province’s crustal scenario expects weeks to months of reduced capacity",
+      title: "Road capacity could be reduced for weeks to months",
       body: (
         <Prose>
           <p>
@@ -684,8 +681,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title:
-        "A magnitude 4.8 stopped two SkyTrain lines for about eighty minutes",
+      title: "A magnitude 4.8 stopped two SkyTrain lines",
       body: (
         <Prose>
           <p>

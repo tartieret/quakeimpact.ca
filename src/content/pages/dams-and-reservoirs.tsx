@@ -31,17 +31,17 @@ export const damsAndReservoirs: PageModule = {
     route: "/after/dams-and-reservoirs/",
     title: "Dams and reservoirs",
     description:
-      "Cleveland and Seymour Falls were each reviewed by an engineer in 2024, and neither published conclusion mentions earthquakes.",
+      "The 2024 engineering reviews of Cleveland and Seymour Falls dams do not publish a finding about earthquakes.",
     nav: "Dams and reservoirs",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        Two of the reservoirs Metro Vancouver draws its drinking water from sit
-        in mountain valleys on the North Shore, 5 km and 18 km north of Burrard
-        Inlet, each held in by a dam the province puts in its top consequence
-        class. <Cite id="MV-CLEVELANDDAM-FS" /> <Cite id="MV-SEYMOURDAM-FS" />{" "}
-        <Cite id="BC-DAMS-REG" /> Both dams were reviewed by an engineer in
-        2024, and neither published conclusion mentions an earthquake.{" "}
+        Cleveland and Seymour Falls dams hold two of Metro Vancouver’s drinking
+        water reservoirs in North Shore mountain valleys. Both carry the
+        province’s top consequence rating.{" "}
+        <Cite id="MV-CLEVELANDDAM-FS" /> <Cite id="MV-SEYMOURDAM-FS" />{" "}
+        <Cite id="BC-DAMS-REG" /> Engineers reviewed both dams in 2024. Neither
+        published conclusion mentions an earthquake.{" "}
         <Cite id="MV-DSP-2026" />
       </>
     ),
@@ -71,8 +71,7 @@ export const damsAndReservoirs: PageModule = {
 
   sections: [
     {
-      title:
-        "Two of the dams holding Metro Vancouver’s drinking water are in the province’s top consequence class",
+      title: "Two water-supply dams carry the top consequence rating",
       body: (
         <Prose>
           <p>
@@ -138,8 +137,7 @@ export const damsAndReservoirs: PageModule = {
     },
 
     {
-      title:
-        "Both dams were reviewed by an engineer in 2024, and neither review found an unsafe condition",
+      title: "The 2024 reviews found no unsafe condition",
       body: (
         <Prose>
           <p>
@@ -181,8 +179,7 @@ export const damsAndReservoirs: PageModule = {
     },
 
     {
-      title:
-        "Neither published conclusion mentions earthquakes, and the seismic upgrade is not due to start until 2028",
+      title: "The published conclusions do not mention earthquakes",
       body: (
         <Prose>
           <p>
@@ -261,8 +258,7 @@ export const damsAndReservoirs: PageModule = {
     },
 
     {
-      title:
-        "Surveillance runs weekly, and the province’s own audit of both dams is six years old",
+      title: "Both dams are inspected weekly",
       body: (
         <Prose>
           <p>
@@ -297,8 +293,7 @@ export const damsAndReservoirs: PageModule = {
     },
 
     {
-      title:
-        "The area a failure would flood has been mapped, and the map is not published",
+      title: "Flood maps exist but are not public",
       body: (
         <Prose>
           <p>
@@ -341,8 +336,7 @@ export const damsAndReservoirs: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        Whether you are below one of these dams has an answer, and somebody holds
-        it.
+        Flood maps show who lives below these dams, but the maps are not public.
       </>
     ),
     items: [

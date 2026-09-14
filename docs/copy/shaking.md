@@ -2,11 +2,11 @@
 route: /shaking/
 title: The shaking
 nav: The shaking
-hook: The short part, and the one that decides where the damage falls.
-lede: Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives. The shaking is the short part: buildings break, people are hurt, and the fires and landslides come once it stops.
+hook: Damage depends on the earthquake, the ground and the building.
+lede: Damage depends on the earthquake, the ground and the building. The shaking is brief. Fires, landslides and other failures continue after it stops.
 ---
 
-## Nobody rides it out standing up
+## Violent shaking knocks people down
 
 Hardly anyone here has felt one. The province's planning scenario starts with sound: a
 low rumble like a freight train, heard before anything is felt. Then the shaking knocks
@@ -33,7 +33,7 @@ Almost all of the damage is done in that window or in the hours just after, and
 everything else on this site is about the months that follow. The province's full
 account of those first seconds is on [the two scenarios](/scenarios/). [PEIRS]
 
-## The mainshock is not the last earthquake
+## Aftershocks follow the mainshock
 
 The province's Cascadia scenario does not end when the shaking stops. About a month
 after the mainshock it models a second earthquake: magnitude 7.1, 60 km beneath Sidney,
@@ -50,10 +50,10 @@ None of it is in the published damage figures. The federal scenario catalogue le
 aftershocks out by name, [NRCAN-SCEN] and the province's own headline numbers count
 "only direct mainshock damage". [DCRRA-2025]
 
-## The ground and the building decide it together
+## Damage depends on the ground and the building
 
-Two things decide what an earthquake does to a place: the ground underneath and the
-building on top. Which pairing turns out to be dangerous changes with the earthquake.
+Damage depends on the ground underneath and the building above it. The dangerous
+combinations change with the earthquake.
 
 The ground varies over short distances. The downtown peninsula and the North Shore
 slopes sit on rock. Richmond and Delta sit on loose sand with water in the gaps between
@@ -76,7 +76,7 @@ earthquake also suffer significant damage." [DCRRA-2025]
 [Ground conditions](/shaking/ground/) covers the ground half and how to look up an
 address. [Buildings](/shaking/buildings/) covers the other half.
 
-## The official damage numbers leave things out, and say so
+## What the official damage figures exclude
 
 Most published figures for an earthquake here come from the Geological Survey of
 Canada's scenario catalogue. It counts "only damage to buildings, and their
@@ -87,7 +87,7 @@ estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF
 So a damage figure or a casualty figure from that work is a floor rather than a
 ceiling. The fires and the landslides sit outside it.
 
-## The ground moves, buildings break, people are hurt, and then the fires start
+## The main hazards from shaking
 
 ## What you can do
 

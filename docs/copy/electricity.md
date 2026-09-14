@@ -2,14 +2,14 @@
 route: /after/electricity/
 title: Electricity
 nav: Electricity
-hook: BC Hydro's own filing puts up to two thirds of downtown customers out for several weeks.
-lede: In November 2025 BC Hydro told its regulator that its main downtown substation would not be operable after an earthquake well below the level the building code requires it to withstand. No comparable statement has been published for anywhere else in this region.
+hook: Up to two thirds of downtown customers could lose power for several weeks.
+lede: In November 2025, BC Hydro said its main downtown substation would fail in an earthquake well below the current building-code standard. No comparable assessment is public for the rest of the region.
 bands: { cascadia: high, crustal: high }
-mechanism: BC Hydro's filing to its regulator states that a large seismic event could leave up to two thirds of downtown Vancouver's customers without power for several weeks, and the system years from complete restoration.
+mechanism: BC Hydro states that a large earthquake could leave up to two thirds of its downtown Vancouver customers without power for several weeks. Full restoration could take years.
 source: BCH-WESTEND-25
 ---
 
-## BC Hydro says several weeks to restore power downtown, and years to restore the system
+## Downtown outages could last several weeks
 
 On 10 November 2025 BC Hydro filed its initial application to the BC Utilities
 Commission for the West End Substation Project, which would replace the substation
@@ -34,7 +34,7 @@ consequence is the case being made. It is also the owner of the asset, in a regu
 filing, citing a seismic assessment of its own substation and conceding something
 against its own interest.
 
-## Murrin falls short of the standard the building code sets for it
+## Murrin substation falls short of the current seismic standard
 
 From a footnote in the same filing:
 
@@ -49,7 +49,7 @@ A post-disaster building is one the code expects to keep working after the earth
 1952. About 60 per cent of Murrin's assets and 78 per cent of Dal Grauer's are at or
 near the end of their working lives. [BCH-WESTEND-25]
 
-## Murrin cannot be fixed where it stands, and the replacement is not due until 2032
+## Murrin cannot be upgraded at its current site
 
 BC Hydro's own assessment of the alternatives:
 
@@ -72,7 +72,7 @@ That same filing also counts about 95,000 customers in the downtown study area.
 years apart, so multiplying one by the other would produce a number of people nobody
 has published.
 
-## The Second Narrows crossing could collapse below the level the code sets, and the work to fix it is not scheduled
+## The Second Narrows crossing remains below the current standard
 
 At Second Narrows, BC Hydro's 2021 revenue requirements filing says the transmission
 line crossing structures "have been assessed as being critical, and at risk of
@@ -85,7 +85,7 @@ the project sits in a category for future prioritization rather than committed w
 
 Murrin and the Second Narrows crossing are two named assets, and neither is a statement about the rest of the network.
 
-## What BC Hydro said in 2011 and what it found in 2025 do not agree
+## BC Hydro's newer assessment finds greater risk
 
 In January 2011 BC Hydro stated in a press release that "BC's electrical
 infrastructure has been built to withstand even a severe seismic event, such as a one
@@ -100,7 +100,7 @@ that does not meet it.
 What BC Hydro builds now is built to that standard. The Mount Pleasant substation, part of the Vancouver City Central Transmission project, is designed to operate after a disaster, with ducts and cable vaults
 installed below the zone where the ground would deform. [BCH-VCCT]
 
-## Restoring a power system can mean ordering equipment rather than repairing it
+## Large transformers take years to replace
 
 In its 2021 filing BC Hydro reported **10 spare power transformers against a fleet of 672** at 60 kV and above. [BCH-XFMR-21] The same section of its 2019 filing gave 572 and the same 10 spares. [BCH-RRA-F2020] Both describe the spares strategy as existing "to minimize impacts in the event of a failure", in the singular, and neither connects it to an earthquake, to simultaneous losses, or to replacing many units at once.
 

@@ -67,8 +67,7 @@ export const prepare: PageModule = {
 
   sections: [
     {
-      title:
-        "The province’s plan says family and neighbours are the first responders",
+      title: "Family and neighbours provide the first help",
       body: (
         <Prose>
           <Quote
@@ -118,7 +117,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title: "Write the plan down, and agree where you would meet",
+      title: "Write down how to reconnect",
       body: (
         <Prose>
           <p>
@@ -200,7 +199,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title: "Turn the alerts on, and know what to do in the seconds they buy",
+      title: "Turn on earthquake alerts",
       body: (
         <Prose>
           <p>
@@ -286,7 +285,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title: "Food that needs no cooking, and a bag by the door",
+      title: "Store food that needs no cooking",
       body: (
         <Prose>
           <p>
@@ -318,7 +317,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title: "Secure the heavy things in the rooms where people sleep",
+      title: "Secure heavy furniture near beds",
       body: (
         <Prose>
           <p>
@@ -351,8 +350,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title:
-        "Know where the shut-offs are, and leave the gas alone unless an official says otherwise",
+      title: "Know where the utility shut-offs are",
       body: (
         <Prose>
           <p>
@@ -386,7 +384,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title: "Plan around what the people in your home need",
+      title: "Account for individual needs",
       body: (
         <Prose>
           <p>
@@ -419,7 +417,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title: "Meet the neighbours, because they are the help that arrives first",
+      title: "Meet the neighbours who may be nearby",
       body: (
         <Prose>
           <p>
@@ -499,8 +497,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title:
-        "Disaster Response Route signs mark roads the public is asked to leave",
+      title: "Keep Disaster Response Routes clear",
       body: (
         <Prose>
           <p>
@@ -520,7 +517,7 @@ export const prepare: PageModule = {
     },
 
     {
-      title: "Build it over time if money is tight",
+      title: "Spread the cost over time",
       body: (
         <Prose>
           <p>

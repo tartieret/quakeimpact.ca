@@ -23,15 +23,15 @@ export const fuel: PageModule = {
     route: "/after/fuel/",
     title: "Fuel",
     description:
-      "The province’s earthquake response plan sets fuel apart from the other critical resources, because the distribution of everything else runs on it.",
+      "Fuel powers generators, repair crews and the distribution of other critical supplies.",
     nav: "Fuel",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        The province’s earthquake response plan sets fuel apart from the other
-        critical resources, because the distribution of everything else runs on
-        it. <Cite id="PEIRS" /> The same plan assumes existing supply chains will
-        be inoperable. <Cite id="PEIRS" />
+        Fuel powers generators, repair crews and the distribution of other
+        critical supplies. <Cite id="PEIRS" /> The province assumes existing
+        supply chains will be inoperable after the earthquake.{" "}
+        <Cite id="PEIRS" />
       </>
     ),
     /**
@@ -51,7 +51,7 @@ export const fuel: PageModule = {
 
   sections: [
     {
-      title: "Fuel is the one resource everything else moves on",
+      title: "Fuel keeps every other supply moving",
       body: (
         <Prose>
           <p>
@@ -86,7 +86,7 @@ export const fuel: PageModule = {
     },
 
     {
-      title: "A service station with full tanks and no power dispenses nothing",
+      title: "Fuel pumps need electricity",
       body: (
         <Prose>
           <p>
@@ -170,7 +170,7 @@ export const fuel: PageModule = {
     },
 
     {
-      title: "A hospital generator is a fuel tank somebody has to keep refilling",
+      title: "Hospital generators need regular fuel deliveries",
       body: (
         <Prose>
           <p>
@@ -196,7 +196,7 @@ export const fuel: PageModule = {
     },
 
     {
-      title: "Every crew repairing everything else is queuing for the same fuel",
+      title: "Repair crews compete for the same fuel",
       body: (
         <Prose>
           <p>

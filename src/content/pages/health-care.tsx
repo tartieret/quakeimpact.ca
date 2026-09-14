@@ -25,17 +25,16 @@ export const healthCare: PageModule = {
     route: "/after/health-care/",
     title: "Health care",
     description:
-      "About 65 per cent of the 127 buildings owned by one health authority are likely to be completely damaged at the earthquake the building code designs against.",
+      "A study of one health authority’s buildings finds about 65 per cent likely to be completely damaged at the earthquake level used by the current building code.",
     nav: "Health care",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        About 65 per cent of the 127 buildings owned by one health authority are
-        likely to be completely damaged at the 1-in-2,475-year earthquake, which
-        is the shaking the current building code designs against.{" "}
-        <Cite id="DCRRA-APPC" /> No government or health authority has set the
-        casualties the province forecasts against the number of beds the region
-        has. The comparison exists only in peer-reviewed engineering work.
+        A study of one health authority’s 127 buildings finds about 65 per cent
+        likely to be completely damaged at the earthquake level used by the current
+        building code. <Cite id="DCRRA-APPC" /> No government or health authority
+        has compared the province’s casualty estimates with the region’s
+        hospital capacity. Only peer-reviewed engineering work has done so.
       </>
     ),
     /**
@@ -61,7 +60,7 @@ export const healthCare: PageModule = {
 
   sections: [
     {
-      title: "The people who need care arrive in the first hours",
+      title: "Injured people arrive within hours",
       body: (
         <Prose>
           <p>
@@ -86,8 +85,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title:
-        "A hospital that stays standing is not the same as a hospital that stays working",
+      title: "A standing hospital may not be operational",
       body: (
         <Prose>
           <p>
@@ -154,8 +152,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title:
-        "A hospital on its generator is running on stored fuel and stored water",
+      title: "Backup systems depend on stored fuel and water",
       body: (
         <Prose>
           <p>
@@ -201,7 +198,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title: "Some people cannot reach a hospital at all",
+      title: "Road damage can cut off hospital access",
       body: (
         <Prose>
           <p>
@@ -238,8 +235,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title:
-        "No government or health authority has set the expected casualties against the region’s beds",
+      title: "Expected casualties have not been compared with bed capacity",
       body: (
         <Prose>
           <p>
@@ -280,8 +276,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title:
-        "The new hospitals are built to keep working, and the ones open now are older",
+      title: "New hospitals meet a higher seismic standard",
       body: (
         <Prose>
           <Quote
