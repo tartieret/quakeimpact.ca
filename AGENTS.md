@@ -15,7 +15,7 @@ Before starting, read the document for the kind of work, not all of them.
 | Task | Read first |
 |---|---|
 | Any copy, heading, label or alt text | `docs/style-guide.md`. Its tone, sentence rules and word list are decisions backed by risk-communication research. Do not soften, dramatise or "improve" them in passing. |
-| A claim, a band, or a page's structure | `docs/site-overview.md`, the spec. A claim that is not in it, or has no source in `docs/research/`, does not go on the site. |
+| A claim, a band, or a page's structure | `docs/site-overview.md`, the spec. A claim that has no source in `docs/research/` does not go on the site. |
 | Components, routes, the content model | `docs/stack-and-structure.md`, `src/content/pages/README.md` |
 | A figure or a map | `src/components/figures/README.md` |
 | Research files or the source register | `docs/research/CONVENTIONS.md`, the header of `docs/research/sources.md` |
@@ -38,6 +38,21 @@ its real band, mechanism and source in the meantime. Nothing should look more fi
 than it is, and a placeholder for a graphic the site will never be licensed to draw is
 worse than none. Assumptions are research tasks: they go in
 `docs/research/open-questions.md`, not on the site.
+
+## General information, not a bibliography
+
+The copy gives a reader a representative picture of what a major earthquake does,
+not a reproduction of its sources. Every claim still rests on a source, but:
+
+- Write at the order of magnitude the source supports. "Two to three weeks in some
+  scenarios" can be "several weeks". Don't change the order of magnitude, the
+  severity, or the kind of place a finding is about.
+- Cite with a bracketed marker, rendered as [1], and paraphrase. Quote only when the
+  source's own words carry the point.
+- Drop qualifiers that only say a figure is uncertain or comes from one scenario.
+  Keep the ones that change what a reader should take away.
+
+`docs/style-guide.md` §1, §5 and §6 have the detail.
 
 ## Accessibility is a requirement, not a pass at the end
 

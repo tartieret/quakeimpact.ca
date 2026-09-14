@@ -129,13 +129,15 @@ key: the slug, the phase it bites at, what it depends on, and its build tier.
   a numbered marker that opens the register entry in place, and the same entry is
   listed at the foot of the page. Every key resolves in
   `../research/sources.md`. A sentence with a number in it and no key is a defect.
-- **A guard travels with its number, in the same sentence.** Not in a footnote
-  and not two paragraphs down. If the guard makes the sentence unwieldy, the
-  sentence is carrying too many numbers.
-- **A quotation is used wherever it beats our own wording**, which is more often
-  than it sounds. An official describing their own system, or a province
-  describing its own plan, cannot be accused of spin. Name the speaker and the
-  document.
+- **A guard travels with its number where it changes the answer.** A guard
+  that only says the figure comes from one scenario, or that the future is
+  uncertain, can be dropped: this is general information, and the marker leads
+  to the detail. A number may be written at its order of magnitude ("several
+  weeks" for two to three weeks), per `../style-guide.md` §5.
+- **Paraphrase and cite by default; quote when the words earn it.** An official
+  conceding something about their own system, or a province stating its own
+  plan's assumption, is worth quoting, with the speaker and the document named.
+  Anything else reads better in our words with its `[KEY]`.
 - **An analogue never generates a number.** Christchurch and Kobe illustrate a
   mechanism and forecast nothing here.
 - **A gap ships visibly**, with what has and has not been published, and in the
