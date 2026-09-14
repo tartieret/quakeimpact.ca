@@ -14,10 +14,12 @@
 import { buildFireProtection } from "./build-fire-protection.mjs";
 import { buildShakemaps } from "./build-shakemaps.mjs";
 import { buildRegionGeography } from "./build-region-geography.mjs";
+import { buildDams } from "./build-dams.mjs";
 
 await buildFireProtection();
 await buildShakemaps();
 await buildRegionGeography();
+await buildDams();
 
 process.stdout.write(
   "\nProvenance, attribution and licence for each of these is in src/data/sources.ts.\n",

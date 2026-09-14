@@ -107,9 +107,38 @@ other.
 ### The 1-in-10,000-year standard, with four guards
 
 The province's *Guidelines for Dam Design and Construction*,
-Appendix A, Table 3, sets the minimum **Earthquake Design Ground Motion** for an
-Extreme-consequence dam at **"1/10,000 or MCE"**. [BC-DDCG] **[A]** That is enough to
-print it. It is not enough to call it corroborated, and four guards travel with it.
+Appendix A, under the named heading "Design criteria", p. 46, Table 3 "Flood and
+earthquake minimum design criteria", sets the minimum **Earthquake Design Ground Motion**
+by consequence class. **Read in full from the PDF on 12 September 2026**, EDGM column
+verbatim: [BC-DDCG] **[A]**
+
+| Dam Consequence Classification | EDGM Return Period (Years)* |
+|---|---|
+| Low | 1/100 |
+| Significant | \*\*1/200 to 1/1,000 |
+| High | 1/2,475 |
+| **Very High** | **1/10,000 or Maximum Credible Earthquake (MCE)** |
+| Extreme | 1/10,000 or MCE |
+
+The table's own notes, verbatim: *"\*Table is generally adapted from CDA Guidelines (CDA,
+2007, revised 2013), further context and guidance can be found in that document."* and
+*"\*\*For significant consequence dams, IDF AEP or EDGM return period of less than 1/1,000
+must be pre-approved in writing by the DSS."* [BC-DDCG] **[A]**
+
+**Very High and Extreme carry the same criterion.** That was an open question until the
+table was read, and it is the fact that lets `/shaking/dams/` state one figure covering
+all seventeen dams it maps rather than only the eleven Extreme ones. The Very High row
+spells "Maximum Credible Earthquake (MCE)" out in full where the Extreme row abbreviates
+it; the return period is identical.
+
+**Two corrections to this project's own record, both from reading it.** The document is
+**September 2026, Version 2.0**, stated on its cover page and repeated in the running
+header — it was recorded here as undated. And **there is no "§5" in Appendix A**: its
+headings are named, not numbered, and the section number an earlier version of
+`sources.md` carried was not from the document.
+
+That is enough to print the figure. It is not enough to call it corroborated, and four
+guards travel with it.
 
 - **(a) Lineage.** The guideline's own footnote says its table is *"generally adapted from
   CDA Guidelines (CDA, 2007, revised 2013)"*. [BC-DDCG] **[A]** The provincial design
@@ -120,12 +149,19 @@ print it. It is not enough to call it corroborated, and four guards travel with 
   What the multiplicity establishes is that 1/10,000 is the standard actually applied by
   the province and by BC Hydro; what it does not establish is independent confirmation of
   the number.
-- **(b) Scope.** The guideline's stated purpose is regulatory requirements "to construct,
-  alter, improve, or replace a dam". [BC-DDCG] **[A]** Table 3 is a design criterion for
+- **(b) Scope.** The guideline's stated purpose, verbatim from its cover page and again in
+  §1 Introduction: *"The purpose of this guideline is to provide information on the
+  regulatory requirements to construct, alter, improve, or replace a dam licensed under the
+  Water Sustainability Act (WSA)."* [BC-DDCG] **[A]** §1 also lists what is excluded:
+  hazardous-condition remediation, invasive investigations, decommissioning and routine
+  like-for-like maintenance. Table 3 is a design criterion for
   new work, alterations and replacements — **not a standing obligation on a 1954 dam.**
   Cleveland was commissioned in 1954 and Seymour Falls in 1961. [BC-DAMS-REG] **[A]**
-- **(c) It is a deviable guideline minimum, not law.** Deviations "may be considered but
-  must be clearly stated and justified". [BC-DDCG] **[A]** The correct verb is *should*,
+- **(c) It is a deviable guideline minimum, not law.** Immediately above Table 3:
+  *"Deviations from these design criteria may be considered but must be clearly stated and
+  justified."* [BC-DDCG] **[A]** Appendix A's own introduction says the same at more
+  length, adding that the design report "must clearly identify any deviation in design
+  criteria, the reason for it, and the risk". The correct verb is *should*,
   not *must*, and the correct noun is a ministry guideline minimum. The Regulation itself
   carries no seismic number.
 - **(d) The criterion reads "1/10,000 **or MCE**".** The Maximum Credible Earthquake is a

@@ -52,9 +52,19 @@ export function kb(bytes) {
   return `${(bytes / 1024).toFixed(1)} kB`;
 }
 
-/** Today, as the ISO date recorded against every dataset as "accessed". */
+/**
+ * Today, as the ISO date recorded against every dataset as "accessed".
+ *
+ * Local rather than UTC. The province's data is fetched from this side of the
+ * country, and `toISOString` would record tomorrow's date for anything pulled
+ * after late afternoon Pacific time. An access date that runs ahead of the
+ * access is a small thing to get wrong in a provenance record.
+ */
 export function today() {
-  return new Date().toISOString().slice(0, 10);
+  const now = new Date();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+  return `${now.getFullYear()}-${month}-${day}`;
 }
 
 /** True when this module is the file node was asked to run. */

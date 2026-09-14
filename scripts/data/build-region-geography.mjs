@@ -30,7 +30,7 @@ import { download, isMain, readJson, writeVendored } from "./lib/io.mjs";
 import { geometryLines, maxDeviation, reduceLine } from "./lib/geo.mjs";
 
 /**
- * Three windows, because three maps need this water at three scales and a
+ * Four windows, because four maps need this water at four scales and a
  * reduction is only honest at the size it was cut for.
  *
  * `getting-around` is the tight window: 51 km across, drawn at about 700 px,
@@ -45,6 +45,11 @@ import { geometryLines, maxDeviation, reduceLine } from "./lib/geo.mjs";
  * line, not a shoreline: it runs straight out across Burrard Inlet and English
  * Bay and says nothing about where the land stops. The two fire maps are read
  * by finding False Creek and the peninsula, so they need the water drawn.
+ *
+ * `dams` is the widest, running 46 km further north than the scenario window so
+ * that Cheakamus and the Whistler reservoir are inside it; it is drawn at about
+ * the same width, so a pixel is about the same 270 m of ground and it carries
+ * the same tolerance.
  *
  * The scenario window's south edge is the catalogue's, and the Freshwater
  * Atlas stops at the international boundary, so the shoreline below 49 degrees
@@ -76,6 +81,18 @@ const WINDOWS = [
       "The Freshwater Atlas is a British Columbia layer, so there is no shoreline " +
       "south of the international boundary. Fifteen of the window's 3,910 model " +
       "cells sit in that strip.",
+  },
+  {
+    file: "dams-coast.json",
+    label: "Dams window",
+    bbox: "-123.75,49.10,-121.45,50.12",
+    refLat: 49.6,
+    tolerance: 150,
+    extraNote:
+      "This window runs 46 km further north than the scenario window because " +
+      "Cheakamus and the Whistler reservoir are in the register's Lower " +
+      "Mainland. It is drawn at about the same width, so a pixel is about the " +
+      "same 270 m of ground and the same tolerance holds.",
   },
 ];
 
