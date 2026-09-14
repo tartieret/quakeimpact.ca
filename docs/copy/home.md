@@ -11,10 +11,12 @@ lede: British Columbia asks every household to keep [two weeks of water and food
 Most people picture an earthquake as a violent event with a clear end,
 followed by help arriving from outside.
 
-*The timeline carries no citation markers. Each panel is a consequence the
-system pages state and source, and the noun it hangs on links to that page; no
-figure appears in a panel, and the quoted passage keeps its attribution in
-words. See the module docblock in `src/content/pages/home.tsx`.*
+*The timeline sources itself through its links rather than through a marker on
+every sentence. Each panel is a consequence the system pages state and source,
+and the noun it hangs on links to that page; a sentence carrying a duration or a
+figure keeps its marker anyway, and the quoted passage keeps its attribution in
+words. The panels say what the stretch is like, not what has and has not been
+published. See the module docblock in `src/content/pages/home.tsx`.*
 
 **Hours — it is over in a minute, and nothing works.**
 
@@ -22,7 +24,7 @@ words. See the module docblock in `src/content/pages/home.tsx`.*
 felt: a sound like a freight train, then seconds of violent shaking that knocks people off their feet, "except for those who remember to drop, cover, and
 hold on". A small number of buildings collapse, many more shift and crack, and many of the people who try to run outside are badly hurt by falling and flying objects. [More about the shaking](/shaking/).
 
-*Cascadia M9:* The province's megathrust assessment sets its earthquake on a summer morning. The shaking is moderate rather than violent, it goes on for minutes, and it arrives along the whole coast at once rather than under one city. [More about the shaking](/shaking/).
+*Cascadia M9:* In the province's megathrust scenario the earthquake comes on a summer morning. The shaking is moderate rather than violent, it goes on for minutes, and it arrives along the whole coast at once rather than under one city. [More about the shaking](/shaking/).
 
 The [power](/after/electricity/) is already off when the shaking stops: the
 lights, the lifts, the tills, the fuel pumps and the traffic signals at every
@@ -47,11 +49,11 @@ what you can reach is what you can walk or cycle to. The
 first week, because flushing takes water nobody has to spare. In the [province's own plan](/prepare/), family and neighbours are likely to be the only available first responders, so the people who reach you first are the people who already live on your street.
 
 **Weeks — some things come back. The ones under the road do not.**
-[Power](/after/electricity/) comes back where the network can be repaired first, and putting poles and wires back up is many small repairs rather than one big one. BC Hydro has published an estimate for downtown Vancouver and for nowhere else in the region.
-[Water](/after/water/) comes back behind it, and no restoration estimate for the water network has been published at all.
+[Power](/after/electricity/) comes back where the network can be repaired first, and putting poles and wires back up is many small repairs rather than one big one. In downtown Vancouver, BC Hydro says it could take several weeks to restore power to customers and years to completely restore the system. [BCH-WESTEND-25]
+[Water](/after/water/) comes back behind it, and the mains that cross under the rivers and inlets are the slowest repairs in the system.
 
-The [sewers](/after/sanitation/) are what nobody can give you a date for.
-Households manage waste in buckets and chemical toilets, and an apartment tower
+The [sewers](/after/sanitation/) stay broken for months rather than weeks.
+[PEIRS] Households manage waste in buckets and chemical toilets, and an apartment tower
 has nowhere else to put it. [Gas](/after/gas/) returns building by building, as
 fast as technicians can enter each one and relight every appliance in it.
 Drinking water arrives on trucks, at points people queue at, and schools and
@@ -63,7 +65,7 @@ behind a cordon. Most people who lose their home lose it that way rather than
 to collapse. Somewhere to move into is scarce, contractors and engineers are
 scarcer, and every household in the region is looking at the same time.
 
-Utilities run at reduced service long after they are back on, and the network as a whole is a long way from the state it was in the morning before. The province's plan
+Utilities run at reduced service long after they are back on. The province's plan
 through all of it is that people stay in the region rather than leave it. [What
 that means for getting around](/getting-around/).
 
@@ -130,4 +132,4 @@ If you have ten minutes, read [the two scenarios](/scenarios/) and then
 
 ## Sources on this page
 
-[PREPAREDBC] [RESEARCHCO-PREP-21] [DCRRA-2025] [PEIRS] [NRCAN-1700]
+[PREPAREDBC] [RESEARCHCO-PREP-21] [BCH-WESTEND-25] [PEIRS] [DCRRA-2025] [NRCAN-1700]

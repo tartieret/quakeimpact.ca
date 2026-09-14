@@ -23,17 +23,28 @@ import type { PageModule } from "./index";
  * a reader who has not yet been told why this matters has no reason to work
  * through the difference between a megathrust and a crustal earthquake.
  *
- * The timeline carries no citation markers, and that is the one place this
- * page departs from the site's habit. Its four panels make no claim of their
- * own: every sentence in them is a consequence a system page states and
- * sources, and the noun it hangs on is a link to that page. Markers on prose
- * written this way would number the same handful of documents nine times over
- * and make a narrative read like a filing. Two rules keep it honest. **No
- * figure appears in an unmarked panel** — the numbers stay on the pages that
- * can guard them, which is also why the panels read better. And the quoted
- * passage keeps its attribution in words, because a quotation without a
- * speaker is worse than a claim without a marker. The paragraph under the
- * timeline says what the reader is looking at and where the evidence is.
+ * The timeline sources itself through its links rather than through a marker on
+ * every sentence, and that is the one place this page departs from the site's
+ * habit. Its panels make no claim of their own: every sentence in them is a
+ * consequence a system page states and sources, and the noun it hangs on is a
+ * link to that page. Markers on prose written this way would number the same
+ * handful of documents nine times over and make a narrative read like a filing.
+ * Two rules keep it honest. **A duration or a figure carries its marker
+ * anyway**, which is why the two sentences that give one — BC Hydro on
+ * downtown power, the province on the sewers — are the only marked sentences in
+ * the four panels. And the quoted passage keeps its attribution in words,
+ * because a quotation without a speaker is worse than a claim without a
+ * marker. The paragraph under the timeline says what the reader is looking at
+ * and where the evidence is.
+ *
+ * The panels say what the months are like, not what has and has not been
+ * published. A sentence about the state of the record — BC Hydro has published
+ * an estimate for downtown and for nowhere else, no restoration estimate for
+ * the water network exists at all — tells a reader about this site's evidence
+ * base rather than about their own street, and the gap it names is already
+ * stated in full on the system page the panel links to. Where a duration is
+ * published the panel gives the duration; where none is, it says what the
+ * mechanism does to an ordinary week instead.
  *
  * The standfirst opens on the gap the site exists to close: the province asks
  * for two weeks, and households are not carrying it. Both halves are cited, and
@@ -93,8 +104,9 @@ export const home: PageModule = {
     references: [
       "PREPAREDBC",
       "RESEARCHCO-PREP-21",
-      "DCRRA-2025",
+      "BCH-WESTEND-25",
       "PEIRS",
+      "DCRRA-2025",
       "NRCAN-1700",
     ],
   },
@@ -131,8 +143,8 @@ export const home: PageModule = {
                       }
                       cascadia={
                         <>
-                          The province’s megathrust assessment sets its
-                          earthquake on a summer morning. The shaking is
+                          In the province’s megathrust scenario the
+                          earthquake comes on a summer morning. The shaking is
                           moderate rather than violent, it goes on for minutes,
                           and it arrives along the whole coast at once rather
                           than under one city.{" "}
@@ -233,23 +245,25 @@ export const home: PageModule = {
                       </Link>{" "}
                       comes back where the network can be repaired first, and
                       putting poles and wires back up is many small repairs
-                      rather than one big one. BC Hydro has published an
-                      estimate for downtown Vancouver and for nowhere else in
-                      the region.{" "}
+                      rather than one big one. In downtown Vancouver, BC Hydro
+                      says it could take several weeks to restore power to
+                      customers and years to completely restore the system.{" "}
+                      <Cite id="BCH-WESTEND-25" />{" "}
                       <Link href="/after/water/" className={link}>
                         Water
                       </Link>{" "}
-                      comes back behind it, and no restoration estimate for the
-                      water network has been published at all.
+                      comes back behind it, and the mains that cross under the
+                      rivers and inlets are the slowest repairs in the system.
                     </p>
                     <p>
                       The{" "}
                       <Link href="/after/sanitation/" className={link}>
                         sewers
                       </Link>{" "}
-                      are what nobody can give you a date for. Households manage
-                      waste in buckets and chemical toilets, and an apartment
-                      tower has nowhere else to put it.{" "}
+                      stay broken for months rather than weeks.{" "}
+                      <Cite id="PEIRS" /> Households manage waste in buckets and
+                      chemical toilets, and an apartment tower has nowhere else
+                      to put it.{" "}
                       <Link href="/after/gas/" className={link}>
                         Gas
                       </Link>{" "}
@@ -280,8 +294,7 @@ export const home: PageModule = {
                     </p>
                     <p>
                       Utilities run at reduced service long after they are back
-                      on, and the network as a whole is a long way from the state
-                      it was in the morning before. The province’s plan
+                      on. The province’s plan
                       through all of it is that people stay in the region rather
                       than leave it.{" "}
                       <Link href="/getting-around/" className={link}>
