@@ -43,7 +43,7 @@ import {
  *   unassessed or weak.** Most have been assessed and most assessments are not
  *   public. The question mark puts them outside the ramp rather than making an
  *   empty core look like its weakest rung.
- * - **There are no response routes on it.** `docs/style-guide.md` §8 forbids
+ * - **There are no response routes on it.** `docs/style-guide.md` §6 forbids
  *   drawing emergency-responder infrastructure as public infrastructure,
  *   `docs/licensing.md` makes the City's route map link-only, and since June
  *   2018 the routes are not designated in advance at all. See the note in
