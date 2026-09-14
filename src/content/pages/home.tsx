@@ -4,7 +4,6 @@ import { Prose } from "@/components/page-parts";
 import { ScenarioCards } from "@/components/scenario-cards";
 import { SystemGrid } from "@/components/system-grid";
 import { PhaseNarrative } from "@/components/phase-narrative";
-import { ScenarioPair } from "@/components/scenario-text";
 import type { PageModule } from "./index";
 
 /**
@@ -37,6 +36,20 @@ import type { PageModule } from "./index";
  * claim without a marker. And a duration is written in the source's own words
  * and no tighter, with the body named where the naming is the point, as it is
  * for BC Hydro on downtown power.
+ *
+ * The hours panel tells one story rather than standing the two scenarios in a
+ * pair of labelled columns. The pair is the right shape further down the site,
+ * where a reader has met both earthquakes and the columns answer "which of these
+ * is this finding about". At the top of the landing page nobody has met either,
+ * and two columns asked a reader to hold two unintroduced earthquakes apart
+ * before they had been told why it matters. Both are still named and neither is
+ * smoothed away, which is what `stack-and-structure.md` asks: the near one is
+ * violent and over in ten to twenty seconds, the offshore one is moderate and
+ * runs for three minutes, and the range across the two opens the panel because
+ * the length of that minute is the one thing a reader can picture before they
+ * know anything else. The scene that follows is the province's crustal scenario
+ * and says so, so the quotation and the collapses stay attached to the
+ * earthquake they were assessed on.
  *
  * The panels say what the stretch is like, not what has and has not been
  * published. A sentence about the state of the record — BC Hydro has published
@@ -121,40 +134,30 @@ export const home: PageModule = {
             items={[
               {
                 phase: "hours",
-                heading: "It is over in a minute, and nothing works",
+                heading: "It is over in minutes, and nothing works",
                 body: (
                   <>
-                    <ScenarioPair
-                      crustal={
-                        <>
-                          In the province’s own scenario the earthquake is
-                          heard before it is felt: a sound like a freight train,
-                          then seconds of violent shaking that knocks
-                          people off their feet, “except for those who
-                          remember to drop, cover, and hold on”. A small
-                          number of buildings collapse, many more shift and
-                          crack, and many of the people who try to run outside
-                          are badly hurt by falling and flying objects.{" "}
-                          <Link href="/shaking/" className={link}>
-                            More about the shaking
-                          </Link>
-                          .
-                        </>
-                      }
-                      cascadia={
-                        <>
-                          The megathrust comes on a summer morning. The
-                          shaking is
-                          moderate rather than violent, it goes on for minutes,
-                          and it arrives along the whole coast at once rather
-                          than under one city.{" "}
-                          <Link href="/shaking/" className={link}>
-                            More about the shaking
-                          </Link>
-                          .
-                        </>
-                      }
-                    />
+                    <p>
+                      The shaking lasts somewhere between ten seconds and three
+                      minutes, because the region plans for two earthquakes. The
+                      nearer one, underneath the region, is violent and over in
+                      ten to twenty seconds. The offshore one is moderate rather
+                      than violent, goes on for three minutes, and arrives along
+                      the whole coast at once rather than under one city.
+                    </p>
+                    <p>
+                      In the province’s scenario for the nearer earthquake it is
+                      heard before it is felt: a sound like a freight train, then
+                      seconds of violent shaking that knock people off their
+                      feet, “except for those who remember to drop, cover, and
+                      hold on”. A small number of buildings collapse, many more
+                      shift and crack, and many of the people who try to run
+                      outside are badly hurt by falling and flying objects.{" "}
+                      <Link href="/shaking/" className={link}>
+                        More about the shaking
+                      </Link>
+                      .
+                    </p>
                     <p>
                       The{" "}
                       <Link href="/after/electricity/" className={link}>

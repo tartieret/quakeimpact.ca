@@ -19,13 +19,19 @@ passage keeps its attribution in words. The panels say what the stretch is like,
 not what has and has not been published. See §4 of the style guide and the
 module docblock in `src/content/pages/home.tsx`.*
 
-**Hours — it is over in a minute, and nothing works.**
+**Hours — it is over in minutes, and nothing works.** The shaking lasts
+somewhere between ten seconds and three minutes, because the region plans for two
+earthquakes. The nearer one, underneath the region, is violent and over in ten to
+twenty seconds. The offshore one is moderate rather than violent, goes on for
+three minutes, and arrives along the whole coast at once rather than under one
+city.
 
-*Crustal M7:* In the province's own scenario the earthquake is heard before it is
-felt: a sound like a freight train, then seconds of violent shaking that knocks people off their feet, "except for those who remember to drop, cover, and
-hold on". A small number of buildings collapse, many more shift and crack, and many of the people who try to run outside are badly hurt by falling and flying objects. [More about the shaking](/shaking/).
-
-*Cascadia M9:* The megathrust comes on a summer morning. The shaking is moderate rather than violent, it goes on for minutes, and it arrives along the whole coast at once rather than under one city. [More about the shaking](/shaking/).
+In the province's scenario for the nearer earthquake it is heard before it is
+felt: a sound like a freight train, then seconds of violent shaking that knock
+people off their feet, "except for those who remember to drop, cover, and hold
+on". A small number of buildings collapse, many more shift and crack, and many of
+the people who try to run outside are badly hurt by falling and flying objects.
+[More about the shaking](/shaking/).
 
 The [power](/after/electricity/) is already off when the shaking stops: the
 lights, the lifts, the tills, the fuel pumps and the traffic signals at every

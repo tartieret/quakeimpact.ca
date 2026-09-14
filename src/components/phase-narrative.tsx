@@ -15,8 +15,11 @@ import type { Phase } from "@/content/types";
  * Presentational, and it holds no words of its own: the headings and the
  * sentences come from the page module, already rendered on the server with
  * their citation markers in them. It reads nothing for itself and holds no
- * state. A passage that differs between the two scenarios arrives as a
- * `ScenarioPair` inside the item it belongs to, showing both.
+ * state. A passage that differs between the two scenarios may arrive as a
+ * `ScenarioPair` inside the item it belongs to, showing both, and may instead
+ * name both in one narrative: the landing page's first panel does that, because
+ * two labelled columns at the top of the page asked a reader to hold two
+ * earthquakes apart before either had been introduced.
  *
  * The phase labels and windows come from `PHASES`, so the strip and this
  * cannot disagree about what "weeks" means.
