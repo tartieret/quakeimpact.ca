@@ -3,33 +3,48 @@ route: /after/safety-and-conflict/
 title: Safety and conflict
 nav: Safety and conflict
 hook: After a disaster most people help the people around them, and theft and violence are the exception rather than the rule.
-lede: After a disaster, most people help the people around them. [KATRINA-MYTHS-08] Theft, fights over supplies and violence at home do happen, and some of the worst of it has come where power, water and communications were out for days. [CHILE-GUARDIAN-10]
+lede: After a disaster, most people help the people around them. [KATRINA-MYTHS-08] Theft and violence still happen, and what holds them down is mostly in place before the shaking: ties between neighbours, accurate information, and plans that account for it. [LOOTING-REVIEW-25]
 bands: { cascadia: unknown, crustal: unknown }
 mechanism: Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time.
 source: KATRINA-MYTHS-08
 ---
 
-## Most people help the people around them
+## Most people expect a disaster to bring out the worst in people
 
-Isolated cases of antisocial behaviour after a disaster tend to be what the news shows, while
-most people respond positively and generously. [KATRINA-MYTHS-08] Survivors who face the same
-danger start to act as a group: they support each other, coordinate what they do and expect
-help in return. [DRURY-18]
+The common picture of a disaster has looting and people turning on each other in it. Beliefs
+like these are held by the public and by the organisations that plan for and respond to
+disasters. [KATRINA-FRAMES-06] More than half a century of social science research has tested
+them, panic and looting among them, against what people actually do. [DISASTER-MYTHS-08]
 
-The Canterbury earthquakes of 2010 and 2011 in New Zealand showed which communities adapted
-most easily: the ones that already had community groups, tribal organisations and local
-leaders before the shaking. Hardship that was already there got worse. [CHCH-RESILIENCE-14]
+Stories spread further than the thing itself. After a 1952 tornado in Arkansas, in the United
+States, 58 per cent of people reported hearing stories of looting and 6 per cent thought they
+had been looted, and later studies found the same again and again. [LOOTING-DEBATE-07]
 
-In Chile, living through a big earthquake has been found to raise several measures of social
-cohesion, which then wear away slowly once conditions ease. [CHILE-COHESION-17]
+The fear is not only an outsider's. After the 2011 earthquake and tsunami in Japan, many
+evacuees in shelters feared being robbed there, or having their empty homes burgled.
+[JAPAN-SHELTERS-18]
 
-## Crime can fall overall while violence at home does not
+## In most disasters people help each other, and crime often falls
 
-In Christchurch, overall crime fell after the earthquakes, with domestic violence the notable
-exception. Crime still rose in most neighbourhoods, even though the total went down.
-[CHCH-CRIME-16]
+Studies of natural disasters since the 1950s found looting very rare. Where it happened it was
+covert and opportunistic, done by individuals or small groups, and condemned by the people
+around them. [LOOTING-DEBATE-07] Isolated cases of antisocial behaviour tend to be what the
+news shows, while most people respond positively and generously. [KATRINA-MYTHS-08] Survivors
+who face the same danger start to act as a group: they support each other, coordinate what
+they do and expect help in return. [DRURY-18]
 
-## Serious looting has happened in a stable country
+After the Canterbury earthquakes of 2010 and 2011 in New Zealand, overall crime in
+Christchurch fell, with domestic violence the notable exception, even though crime rose in
+most neighbourhoods. [CHCH-CRIME-16] The communities that adapted most easily were the ones
+that already had community groups, tribal organisations and local leaders before the shaking.
+[CHCH-RESILIENCE-14]
+
+After the 2011 earthquake in Japan, the number of reported crimes in the three affected
+prefectures fell sharply that year. That was not the same as no crime. Burglaries of empty
+homes and shops and theft of fuel from cars were common in the first month, and theft and
+domestic violence became common in shelters two to four months on. [JAPAN-SHELTERS-18]
+
+## Theft and violence do happen, and in Chile and New Orleans they were serious
 
 Looting is one word for several different acts: taking food, water or medicine when there is
 nowhere to buy them, taking goods from a damaged shop, and breaking into homes people have
@@ -47,33 +62,56 @@ distribute water after that. Next door in San Pedro de la Paz, looters stripped 
 medicine and supplies. In the same days, many people took their neighbours in, and volunteers
 brought tents and fresh water to families camped in the street. [CHILE-GUARDIAN-10]
 
-Property crime did not settle at a higher level. Household surveys show lasting falls in
-property crime in the municipalities the earthquake hit, consistent with stronger community
-life and neighbours organising to prevent crime themselves. [CHILE-CRIME-20]
+After Hurricane Katrina struck New Orleans in the United States in 2005, there were documented
+cases of hijacking, rioting and looting, and many more reports of people cooperating and
+helping each other. [KATRINA-MYTHS-08] Some of the violence came from a neighbourhood militia.
+In Algiers Point, a man was shot in the days after the storm; more than four years later a
+member of the militia was implicated, and the man who was shot says it was racially motivated.
+[KATRINA-ALGIERS-10]
 
-## Stories of violence can do harm of their own
+Violence at home follows a different pattern from theft. It was the exception to the fall in
+crime in Christchurch [CHCH-CRIME-16], and it became common in Japan's shelters months after the
+earthquake. [JAPAN-SHELTERS-18]
 
-After Hurricane Katrina struck New Orleans in the United States in 2005, news coverage cast
-survivors first as civil unrest and later as something close to urban warfare, greatly
-exaggerating how much looting and lawlessness there was. That framing reinforced calls for a
-bigger military role in disasters. [KATRINA-FRAMES-06]
+### News coverage makes disorder look more common than it is
 
-Some of the violence was real. There were documented cases of hijacking, rioting and looting
-in New Orleans, and many more reports of people cooperating and helping each other.
-[KATRINA-MYTHS-08] In the Algiers Point neighbourhood, a man was shot in the days after the
-storm. More than four years later a member of a neighbourhood militia was implicated, and the
-man who was shot says it was racially motivated. [KATRINA-ALGIERS-10]
+After Katrina, news coverage cast survivors first as civil unrest and later as something close
+to urban warfare, greatly exaggerating how much looting and lawlessness there was. That framing
+reinforced calls for a bigger military role in disasters. [KATRINA-FRAMES-06]
 
-## The shortages that came with Chile's worst days are ones an earthquake here is expected to bring
+In Japan, baseless rumours spread in the month after the 2011 earthquake, alongside the
+burglaries the prefectural police were reporting. [JAPAN-SHELTERS-18]
+
+## Ties between people, accurate information and plans that expect cooperation hold conflict down
 
 Research on looting after disasters keeps returning to four things: how well off people are,
-the ties between them, what the media report, and what is done to prevent it.
-[LOOTING-REVIEW-25]
+the ties between them, what the media report, and whether anyone planned for it. Its advice to
+governments is to put looting in their disaster plans, draw on community groups and
+non-governmental organisations, and build social ties over the long term. [LOOTING-REVIEW-25]
 
+Social ties and trust help explain why some neighbourhoods of Kobe, Japan, recovered after its
+1995 earthquake while others stagnated. [KOBE-SOCIAL-10] Communities also organise their own
+protection. After the 2010 earthquake in Chile, the municipalities it hit saw lasting falls in
+property crime, consistent with stronger community life and neighbours organising to prevent
+crime themselves. [CHILE-CRIME-20] Across Chile, living through a big earthquake raises measures
+of social cohesion, which then wear away slowly. [CHILE-COHESION-17] In Japan, volunteer crime
+prevention after the 2011 earthquake gave people a shared goal to work towards.
+[JAPAN-SHELTERS-18]
+
+Where rumours spread, accurate information from the media, the police and other officials is
+what reduces the fear. [JAPAN-SHELTERS-18] What authorities assume about how people behave in an
+emergency shapes their preparedness, response and recovery, and with it how much the public can
+do as the first people on the scene. [DRURY-19] The looting in Chile surprised officials, and the
+lesson drawn for California was to make security for damaged businesses a priority in planning.
+[CHILE-USGS-11]
+
+A major earthquake here would bring the kind of shortages Chile's worst-hit areas went through.
 [Communications](/after/communications/) are expected to be disrupted for days to weeks, with
 what capacity survives going to emergency personnel first. [DCRRA-2025] The network that
 delivers [food](/after/food/) is expected to take weeks or months to recover. [PEIRS] In a
 megathrust, the United States would be unable to send [help](/after/outside-help/). [PEIRS]
+What held conflict down elsewhere, neighbours who know each other, information people trust and
+plans built on cooperation, has to be in place before the shaking starts.
 
 ## What you can do
 
@@ -98,6 +136,7 @@ started in other disasters: in queues, around damaged shops, and inside a rumour
 
 ## Sources on this page
 
-KATRINA-MYTHS-08, CHILE-GUARDIAN-10, DRURY-18, CHCH-RESILIENCE-14, CHILE-COHESION-17,
-CHCH-CRIME-16, CHILE-USGS-11, CHILE-CRIME-20, KATRINA-FRAMES-06, KATRINA-ALGIERS-10,
-LOOTING-REVIEW-25, DCRRA-2025, PEIRS, PREPAREDBC, PREPAREDBC-PLAN, PREPAREDBC-NEIGHBOURHOOD
+KATRINA-MYTHS-08, LOOTING-REVIEW-25, KATRINA-FRAMES-06, DISASTER-MYTHS-08, LOOTING-DEBATE-07,
+JAPAN-SHELTERS-18, DRURY-18, CHCH-CRIME-16, CHCH-RESILIENCE-14, CHILE-GUARDIAN-10,
+CHILE-USGS-11, KATRINA-ALGIERS-10, KOBE-SOCIAL-10, CHILE-CRIME-20, CHILE-COHESION-17, DRURY-19,
+DCRRA-2025, PEIRS, PREPAREDBC, PREPAREDBC-PLAN, PREPAREDBC-NEIGHBOURHOOD

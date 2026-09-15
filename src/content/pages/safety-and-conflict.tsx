@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import { Prose } from "@/components/page-parts";
+import { Subhead } from "@/components/prose-blocks";
+import { Photograph } from "@/components/photograph";
 import type { PageModule } from "./index";
 
 /**
@@ -8,40 +10,47 @@ import type { PageModule } from "./index";
  * `docs/copy/safety-and-conflict.md`.
  *
  * The one system on the grid with no restoration time, which is why both of
- * its cells are hatched. Every event on the page happened somewhere else, so
- * each one illustrates what people did and none of them is a forecast for this
- * region. The evidence is `docs/research/social-disorder.md`.
+ * its cells are hatched. The page runs from what people expect, to what
+ * research and past disasters show, to where theft and violence have been
+ * serious, to what holds them down. Every event on it happened somewhere
+ * else, so each one illustrates and none is a forecast for this region. The
+ * evidence is `docs/research/social-disorder.md`.
  */
 export const safetyAndConflict: PageModule = {
   meta: {
     route: "/after/safety-and-conflict/",
     title: "Safety and conflict",
     description:
-      "After a disaster most people help the people around them. Theft, fights over supplies and violence at home still happen, and some of the worst has come where power, water and communications were out for days.",
+      "Most people help each other after a disaster. Theft and violence still happen, and what holds them down is in place beforehand: ties between neighbours, trusted information and plans.",
     nav: "Safety and conflict",
     kicker: "Life afterwards",
     standfirst: (
       <>
         After a disaster, most people help the people around them.{" "}
-        <Cite id="KATRINA-MYTHS-08" /> Theft, fights over supplies and violence
-        at home do happen, and some of the worst of it has come where power,
-        water and communications were out for days.{" "}
-        <Cite id="CHILE-GUARDIAN-10" />
+        <Cite id="KATRINA-MYTHS-08" /> Theft and violence still happen, and what
+        holds them down is mostly in place before the shaking: ties between
+        neighbours, accurate information, and plans that account for it.{" "}
+        <Cite id="LOOTING-REVIEW-25" />
       </>
     ),
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "KATRINA-MYTHS-08",
-      "CHILE-GUARDIAN-10",
-      "DRURY-18",
-      "CHCH-RESILIENCE-14",
-      "CHILE-COHESION-17",
-      "CHCH-CRIME-16",
-      "CHILE-USGS-11",
-      "CHILE-CRIME-20",
-      "KATRINA-FRAMES-06",
-      "KATRINA-ALGIERS-10",
       "LOOTING-REVIEW-25",
+      "KATRINA-FRAMES-06",
+      "DISASTER-MYTHS-08",
+      "LOOTING-DEBATE-07",
+      "JAPAN-SHELTERS-18",
+      "DRURY-18",
+      "CHCH-CRIME-16",
+      "CHCH-RESILIENCE-14",
+      "CHILE-GUARDIAN-10",
+      "CHILE-USGS-11",
+      "KATRINA-ALGIERS-10",
+      "KOBE-SOCIAL-10",
+      "CHILE-CRIME-20",
+      "CHILE-COHESION-17",
+      "DRURY-19",
       "DCRRA-2025",
       "PEIRS",
       "PREPAREDBC",
@@ -52,49 +61,83 @@ export const safetyAndConflict: PageModule = {
 
   sections: [
     {
-      title: "Most people help the people around them",
+      title: "Most people expect a disaster to bring out the worst in people",
       body: (
         <Prose>
           <p>
-            Isolated cases of antisocial behaviour after a disaster tend to be
-            what the news shows, while most people respond positively and
-            generously. <Cite id="KATRINA-MYTHS-08" /> Survivors who face the
-            same danger start to act as a group: they support each other,
-            coordinate what they do and expect help in return.{" "}
+            The common picture of a disaster has looting and people turning on
+            each other in it. Beliefs like these are held by the public and by
+            the organisations that plan for and respond to disasters.{" "}
+            <Cite id="KATRINA-FRAMES-06" /> More than half a century of social
+            science research has tested them, panic and looting among them,
+            against what people actually do. <Cite id="DISASTER-MYTHS-08" />
+          </p>
+          <p>
+            Stories spread further than the thing itself. After a 1952 tornado
+            in Arkansas, in the United States, 58 per cent of people reported
+            hearing stories of looting and 6 per cent thought they had been
+            looted, and later studies found the same again and again.{" "}
+            <Cite id="LOOTING-DEBATE-07" />
+          </p>
+          <p>
+            The fear is not only an outsider’s. After the 2011 earthquake and
+            tsunami in Japan, many evacuees in shelters feared being robbed
+            there, or having their empty homes burgled.{" "}
+            <Cite id="JAPAN-SHELTERS-18" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "In most disasters people help each other, and crime often falls",
+      body: (
+        <Prose>
+          <p>
+            Studies of natural disasters since the 1950s found looting very rare.
+            Where it happened it was covert and opportunistic, done by
+            individuals or small groups, and condemned by the people around
+            them. <Cite id="LOOTING-DEBATE-07" /> Isolated cases of antisocial
+            behaviour tend to be what the news shows, while most people respond
+            positively and generously. <Cite id="KATRINA-MYTHS-08" /> Survivors
+            who face the same danger start to act as a group: they support each
+            other, coordinate what they do and expect help in return.{" "}
             <Cite id="DRURY-18" />
           </p>
           <p>
-            The Canterbury earthquakes of 2010 and 2011 in New Zealand showed
-            which communities adapted most easily: the ones that already had
-            community groups, tribal organisations and local leaders before the
-            shaking. Hardship that was already there got worse.{" "}
+            After the Canterbury earthquakes of 2010 and 2011 in New Zealand,
+            overall crime in Christchurch fell, with domestic violence the
+            notable exception, even though crime rose in most neighbourhoods.{" "}
+            <Cite id="CHCH-CRIME-16" /> The communities that adapted most easily
+            were the ones that already had community groups, tribal
+            organisations and local leaders before the shaking.{" "}
             <Cite id="CHCH-RESILIENCE-14" />
           </p>
+          <Photograph
+            id="christchurch-student-volunteer-army"
+            caption={
+              <>
+                Christchurch, March 2011. The Student Volunteer Army, a student
+                movement started on Facebook after the earthquakes, gathers with
+                shovels before going out.
+              </>
+            }
+          />
           <p>
-            In Chile, living through a big earthquake has been found to raise
-            several measures of social cohesion, which then wear away slowly once
-            conditions ease. <Cite id="CHILE-COHESION-17" />
+            After the 2011 earthquake in Japan, the number of reported crimes in
+            the three affected prefectures fell sharply that year. That was not
+            the same as no crime. Burglaries of empty homes and shops and theft
+            of fuel from cars were common in the first month, and theft and
+            domestic violence became common in shelters two to four months on.{" "}
+            <Cite id="JAPAN-SHELTERS-18" />
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "Crime can fall overall while violence at home does not",
-      body: (
-        <Prose>
-          <p>
-            In Christchurch, overall crime fell after the earthquakes, with
-            domestic violence the notable exception. Crime still rose in most
-            neighbourhoods, even though the total went down.{" "}
-            <Cite id="CHCH-CRIME-16" />
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "Serious looting has happened in a stable country",
+      title:
+        "Theft and violence do happen, and in Chile and New Orleans they were serious",
       body: (
         <Prose>
           <p>
@@ -107,10 +150,10 @@ export const safetyAndConflict: PageModule = {
             into a third day without electricity, communications or fresh water.
             Looting spread across the south, and the president ordered 10,000
             soldiers to protect supermarkets, pharmacies, banks and department
-            stores. <Cite id="CHILE-GUARDIAN-10" /> In some places the
-            government did not know for several days what local governments
-            needed, and the looting surprised response officials and social
-            scientists alike. <Cite id="CHILE-USGS-11" />
+            stores. <Cite id="CHILE-GUARDIAN-10" /> In some places the government
+            did not know for several days what local governments needed, and the
+            looting surprised response officials and social scientists alike.{" "}
+            <Cite id="CHILE-USGS-11" />
           </p>
           <p>
             In Concepción, trucks distributing water were attacked, and the mayor
@@ -121,36 +164,34 @@ export const safetyAndConflict: PageModule = {
             street. <Cite id="CHILE-GUARDIAN-10" />
           </p>
           <p>
-            Property crime did not settle at a higher level. Household surveys
-            show lasting falls in property crime in the municipalities the
-            earthquake hit, consistent with stronger community life and
-            neighbours organising to prevent crime themselves.{" "}
-            <Cite id="CHILE-CRIME-20" />
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "Stories of violence can do harm of their own",
-      body: (
-        <Prose>
-          <p>
             After Hurricane Katrina struck New Orleans in the United States in
-            2005, news coverage cast survivors first as civil unrest and later as
-            something close to urban warfare, greatly exaggerating how much
-            looting and lawlessness there was. That framing reinforced calls for
-            a bigger military role in disasters. <Cite id="KATRINA-FRAMES-06" />
+            2005, there were documented cases of hijacking, rioting and looting,
+            and many more reports of people cooperating and helping each other.{" "}
+            <Cite id="KATRINA-MYTHS-08" /> Some of the violence came from a
+            neighbourhood militia. In Algiers Point, a man was shot in the days
+            after the storm; more than four years later a member of the militia
+            was implicated, and the man who was shot says it was racially
+            motivated. <Cite id="KATRINA-ALGIERS-10" />
           </p>
           <p>
-            Some of the violence was real. There were documented cases of
-            hijacking, rioting and looting in New Orleans, and many more reports
-            of people cooperating and helping each other.{" "}
-            <Cite id="KATRINA-MYTHS-08" /> In the Algiers Point neighbourhood, a
-            man was shot in the days after the storm. More than four years later
-            a member of a neighbourhood militia was implicated, and the man who
-            was shot says it was racially motivated.{" "}
-            <Cite id="KATRINA-ALGIERS-10" />
+            Violence at home follows a different pattern from theft. It was the
+            exception to the fall in crime in Christchurch{" "}
+            <Cite id="CHCH-CRIME-16" />, and it became common in Japan’s shelters
+            months after the earthquake. <Cite id="JAPAN-SHELTERS-18" />
+          </p>
+
+          <Subhead>News coverage makes disorder look more common than it is</Subhead>
+          <p>
+            After Katrina, news coverage cast survivors first as civil unrest and
+            later as something close to urban warfare, greatly exaggerating how
+            much looting and lawlessness there was. That framing reinforced calls
+            for a bigger military role in disasters.{" "}
+            <Cite id="KATRINA-FRAMES-06" />
+          </p>
+          <p>
+            In Japan, baseless rumours spread in the month after the 2011
+            earthquake, alongside the burglaries the prefectural police were
+            reporting. <Cite id="JAPAN-SHELTERS-18" />
           </p>
         </Prose>
       ),
@@ -158,16 +199,44 @@ export const safetyAndConflict: PageModule = {
 
     {
       title:
-        "The shortages that came with Chile’s worst days are ones an earthquake here is expected to bring",
+        "Ties between people, accurate information and plans that expect cooperation hold conflict down",
       body: (
         <Prose>
           <p>
             Research on looting after disasters keeps returning to four things:
             how well off people are, the ties between them, what the media
-            report, and what is done to prevent it.{" "}
-            <Cite id="LOOTING-REVIEW-25" />
+            report, and whether anyone planned for it. Its advice to governments
+            is to put looting in their disaster plans, draw on community groups
+            and non-governmental organisations, and build social ties over the
+            long term. <Cite id="LOOTING-REVIEW-25" />
           </p>
           <p>
+            Social ties and trust help explain why some neighbourhoods of Kobe,
+            Japan, recovered after its 1995 earthquake while others stagnated.{" "}
+            <Cite id="KOBE-SOCIAL-10" /> Communities also organise their own
+            protection. After the 2010 earthquake in Chile, the municipalities it
+            hit saw lasting falls in property crime, consistent with stronger
+            community life and neighbours organising to prevent crime
+            themselves. <Cite id="CHILE-CRIME-20" /> Across Chile, living through
+            a big earthquake raises measures of social cohesion, which then wear
+            away slowly. <Cite id="CHILE-COHESION-17" /> In Japan, volunteer crime
+            prevention after the 2011 earthquake gave people a shared goal to
+            work towards. <Cite id="JAPAN-SHELTERS-18" />
+          </p>
+          <p>
+            Where rumours spread, accurate information from the media, the
+            police and other officials is what reduces the fear.{" "}
+            <Cite id="JAPAN-SHELTERS-18" /> What authorities assume about how
+            people behave in an emergency shapes their preparedness, response
+            and recovery, and with it how much the public can do as the first
+            people on the scene. <Cite id="DRURY-19" /> The looting in Chile
+            surprised officials, and the lesson drawn for California was to make
+            security for damaged businesses a priority in planning.{" "}
+            <Cite id="CHILE-USGS-11" />
+          </p>
+          <p>
+            A major earthquake here would bring the kind of shortages Chile’s
+            worst-hit areas went through.{" "}
             <Link
               href="/after/communications/"
               className="text-accent underline underline-offset-2"
@@ -192,7 +261,9 @@ export const safetyAndConflict: PageModule = {
             >
               help
             </Link>
-            . <Cite id="PEIRS" />
+            . <Cite id="PEIRS" /> What held conflict down elsewhere, neighbours
+            who know each other, information people trust and plans built on
+            cooperation, has to be in place before the shaking starts.
           </p>
         </Prose>
       ),

@@ -172,6 +172,27 @@ Japan is best used to support two narrower points:
 - severe scarcity and destruction do not automatically cause violence;
 - preparedness, credible institutions, shared expectations, and social norms materially affect behaviour.
 
+### What was observed after Tōhoku, 2011
+
+Japan is not a case of no crime. Reported crime in the three affected prefectures fell
+markedly in 2011, but burglary of empty homes and shops and theft of fuel from cars were
+common in the first month, alongside baseless rumours, and disorder, domestic violence and
+theft of valuables became common in shelters two to four months after the earthquake.
+Evacuees feared crime in shelters and burglary of their homes. Volunteer crime prevention
+gave people a collective goal. [JAPAN-SHELTERS-18] The crime-pattern statements rest on
+Miyagi Prefectural Police leaflets and the 2012 White Paper on Police, cited by the paper
+and not read here.
+
+Social capital and trust help explain why some Kobe neighbourhoods recovered after 1995
+while others stagnated. [KOBE-SOCIAL-10]
+
+### Useful sources
+
+1. [JAPAN-SHELTERS-18] [Hino, Tanaka and Schneider, *Characteristics of fear of crime in evacuation shelters after the Great East Japan Earthquake*](https://doi.org/10.1080/17477891.2018.1461605)  
+   **Access:** open-access author manuscript in the University of Tokyo repository, read in full.
+2. [KOBE-SOCIAL-10] [Aldrich, *Fixing Recovery: Social Capital in Post-Crisis Resilience*](https://docs.lib.purdue.edu/pspubs/3/)  
+   **Access:** open repository record with PDF; abstract read.
+
 ## Comparative summary
 
 | Event | Institutional comparison to Vancouver | Documented disorder | Strong cooperative behaviour | Main lesson |
@@ -274,12 +295,16 @@ These are research-derived directions for the eventual page, not drafted site in
 
 1. [LOOTING-REVIEW-25] [Sheikhi, Javanbakhtian and Heidari, *Looting and antisocial behavior after disasters: a systematic review*](https://doi.org/10.1186/s12889-025-21285-7)  
    **Access:** full open-access HTML with downloadable PDF. This is the corrected DOI. The review screened 2,467 records but included only eight heterogeneous studies, so it is useful as an evidence map rather than a source for precise prevalence estimates.
-2. [Quarantelli and Frailing, *Looting After a Disaster: A Myth or Reality?*](https://hazards.colorado.edu/uploads/observer/2007/mar07/mar07.pdf)  
+2. [LOOTING-DEBATE-07] [Quarantelli and Frailing, *Looting After a Disaster: A Myth or Reality?*](https://hazards.colorado.edu/uploads/observer/2007/mar07/mar07.pdf)  
    **Access:** direct PDF, with the relevant point-counterpoint on pages 1–4. Helps avoid both denial and exaggeration by contrasting the traditional disaster-research position with Katrina evidence.
 3. [Quarantelli, *Looting and Antisocial Behavior in Disasters*](https://udspace.udel.edu/handle/19716/590)  
    **Access:** University of Delaware repository record. Foundational research report on the frequency, social pattern, and definition of disaster-related looting. This replaces an incorrect NCBI Bookshelf link that opened an unrelated chapter.
 4. [DRURY-18] [Drury, *The role of social identity processes in mass emergency behaviour: An integrative review*](https://doi.org/10.1080/10463283.2018.1471948)  
    **Access:** DOI and publisher landing page; full text may depend on access. This is the corrected 2018 DOI. Provides the theoretical and empirical basis for shared identity, solidarity, and collective resilience in emergencies.
+5. [DISASTER-MYTHS-08] [Quarantelli, *Conventional Beliefs and Counterintuitive Realities*, Social Research 75(3), 2008](https://doi.org/10.1353/sor.2008.0003)  
+   **Access:** abstract read. Six widely held beliefs about disaster behaviour, looting and panic among them, set against half a century of research.
+6. [DRURY-19] [Drury et al., *Facilitating Collective Psychosocial Resilience in the Public in Emergencies: Twelve Recommendations Based on the Social Identity Approach*](https://doi.org/10.3389/fpubh.2019.00141)  
+   **Access:** open access; abstract read. What authorities assume about public behaviour shapes preparedness and response.
 
 ## Primary preparedness source for British Columbia
 
@@ -332,13 +357,24 @@ are documented, but naming the systems this one waits on would be the graph asse
 edge nobody has published. `bitesAt` is `days`, which is when the Chilean looting and the
 Algiers Point shooting happened.
 
+**Structure.** Four sections, in the order the owner set on 15 September 2026: what people
+generally expect; what happens in most disasters, from the general research, Christchurch and
+Japan; where theft and violence were serious, from Chile and Katrina, with the role of news
+coverage as a subsection; and what holds conflict down, closing on preparation as a society
+before the household lever.
+
 **What the page rests on.** Only the claims whose abstract, record or article text was read
 on 15 September 2026: the Breetzke, Thornley, Calo-Blanco, García Hombrados, Tierney,
-Drury and Sheikhi abstracts; the USGS record's abstract; the Jacob article in full text; the
-Guardian article text; and the ProPublica article's own summary. Nothing on the page rests
-on the full text of a paywalled paper.
+Drury (2018 and 2019), Sheikhi, Quarantelli (2008) and Aldrich abstracts; the USGS record's
+abstract; the Jacob article, the Hino manuscript and Quarantelli's side of the Hazards
+Observer debate in full text; the Guardian article text; and the ProPublica article's own
+summary. Nothing on the page rests on the full text of a paywalled paper.
+
+**Japan is on the page with its complications.** Reported crime fell after Tōhoku, and
+burglary, fuel theft, rumours and shelter violence still happened. The page does not use
+Japan as proof of no crime or explain it by culture.
 
 **Kept off the page until verified**, per the research tasks above: the 22.2 per cent
 Canterbury crime figure, the 1,500 officers diverted in New Orleans, the Danziger Bridge
-case, Japan, and any day-count claim. The lever names no family violence service, because
+case, Kobe and Tōhoku looting levels, and any day-count claim. The lever names no family violence service, because
 none that works without phones has been identified yet (`open-questions.md`).
