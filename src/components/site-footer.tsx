@@ -4,7 +4,7 @@ import type { NavItem } from "@/content/types";
 import { SiteMark } from "./site-mark";
 
 /**
- * The point at which a column is long enough to be worth splitting. Thirteen
+ * The point at which a column is long enough to be worth splitting. Fourteen
  * systems in a single file leave the three columns beside it standing in front
  * of half a screen of nothing, which reads as a layout that has gone wrong
  * rather than as a long list.

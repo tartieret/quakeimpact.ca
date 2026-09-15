@@ -36,7 +36,7 @@ const ROUTES = ["direct", "media", "vendor", "landing", "archive"];
  *
  * Datasets: the mapping and catalogue layers — things the site could draw
  * from, which is why the licence column matters most on these rows.
- * Analogues: Christchurch, Kobe and Tohoku material. They illustrate what
+ * Analogues: Christchurch, Kobe, Tohoku, Chile 2010 and Katrina material. They illustrate what
  * life was like elsewhere and never supply a number for here, so the site
  * labels them differently wherever they appear.
  */
@@ -52,13 +52,22 @@ const KIND_OVERRIDES = {
   NRCED: "dataset",
   "OPENDRR-GSF-22": "dataset",
 
-  // Analogue events — Christchurch, Kobe, Tohoku.
+  // Analogue events — Christchurch, Kobe, Tohoku, Chile 2010, Katrina.
   "CHANG-2000": "analogue",
+  "CHCH-CRIME-16": "analogue",
   "CHCH-POP": "analogue",
+  "CHCH-RESILIENCE-14": "analogue",
   "CHCH-RNZ": "analogue",
   "CHCH-SEWER-NZH": "analogue",
   "CHCH-SEWER-STUFF": "analogue",
+  "CHILE-COHESION-17": "analogue",
+  "CHILE-CRIME-20": "analogue",
+  "CHILE-GUARDIAN-10": "analogue",
+  "CHILE-USGS-11": "analogue",
   "JP-WPDM-11": "analogue",
+  "KATRINA-ALGIERS-10": "analogue",
+  "KATRINA-FRAMES-06": "analogue",
+  "KATRINA-MYTHS-08": "analogue",
   "METI-2011": "analogue",
   "NZ-RC-V4": "analogue",
   "RMS-KOBE": "analogue",

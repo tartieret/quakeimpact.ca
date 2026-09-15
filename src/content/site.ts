@@ -153,8 +153,12 @@ const MEGATHRUST_ONLY =
 const CRUSTAL_ONLY =
   "The province wrote this for its shallow crustal M7 scenario; nothing published states it for the megathrust.";
 
+/** And for a row whose evidence is past disasters elsewhere rather than either earthquake. */
+const ANALOGUE_ONLY =
+  "This comes from disasters elsewhere, not from an assessment of either earthquake here.";
+
 /**
- * Thirteen systems. Bands, mechanism sentences and source keys all come from
+ * Fourteen systems. Bands, mechanism sentences and source keys all come from
  * `docs/research/impact-bands.md`, which is the authority for the assignment;
  * the per-system files under `docs/research/systems/` carry the working behind
  * each one. Weather is deliberately absent: it does not fail, so it cannot
@@ -346,6 +350,26 @@ export const SYSTEMS: SystemEntry[] = [
       "DCRRA-APPC",
     ),
   },
+  // Hatched in both columns because the subject has no restoration time: no
+  // document puts a duration on how people treat each other, and under the
+  // rubric a cell with no published duration is not yet assessed. No
+  // `dependsOn` either: the shortages that went with disorder elsewhere are
+  // documented, but which system it waits on here is the inference the graph
+  // refuses. See `docs/research/social-disorder.md`.
+  {
+    slug: "safety-and-conflict",
+    name: "Safety and conflict",
+    hook: "After a disaster most people help the people around them, and theft and violence are the exception rather than the rule.",
+    bitesAt: "days",
+    tier: 3,
+    dependsOn: [],
+    impacts: bothScenarios(
+      ["unknown", "unknown"],
+      "Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time.",
+      "KATRINA-MYTHS-08",
+      { cascadia: ANALOGUE_ONLY, crustal: ANALOGUE_ONLY },
+    ),
+  },
   {
     slug: "outside-help",
     name: "Where help comes from",
@@ -448,7 +472,7 @@ export const SHAKING_PAGES: {
  *
  * The children are deliberately not opened from the bar across the top of the
  * desktop page. Three of the five parts have none, so a menu that opens on two
- * of the five teaches a reader it is not worth trying; thirteen systems is a
+ * of the five teaches a reader it is not worth trying; fourteen systems is a
  * directory rather than a menu; and the site is a sequence, where a page
  * assumes the bands and the scenario toggle the part before it set up. The
  * lists belong where a reader is already looking for one: at the foot of a

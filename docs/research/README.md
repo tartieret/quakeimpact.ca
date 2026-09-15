@@ -64,6 +64,7 @@ ever use it.
 | [`preparedness.md`](preparedness.md) | Official advice, and the gap between jurisdictions. |
 | [`household-preparedness.md`](household-preparedness.md) | How prepared households actually are, and what the surveys do not measure. |
 | [`analogues.md`](analogues.md) | Christchurch, Kobe and Tōhoku, and the limits on using them. |
+| [`social-disorder.md`](social-disorder.md) | Looting, conflict and violence after disasters: Christchurch, Chile 2010 and Katrina. |
 | [`maps.md`](maps.md) | Available layers, what each supports, and what it does not. |
 | [`sources.md`](sources.md) | The source register. Becomes `SOURCES` in `site.ts`. |
 | [`open-questions.md`](open-questions.md) | The verification queue and the refresh triggers. |

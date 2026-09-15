@@ -78,6 +78,7 @@ export const method: PageModule = {
       "MV-DSP-2026",
       "MV-CAPEX-2026",
       "AIR-2013",
+      "KATRINA-MYTHS-08",
       "DCRRA-2025",
       "CRTC-2025-226",
       "DCRRA-APPC",
@@ -154,7 +155,7 @@ export const method: PageModule = {
             has published an assessment of, and that says nothing at all about
             whether it would hold up.
           </p>
-          <p>Three cells on the grid are hatched today, for two reasons.</p>
+          <p>Five cells on the grid are hatched today, for three reasons.</p>
           <p>
             Dams and reservoirs are hatched in both scenarios. Cleveland and
             Seymour Falls dams were each reviewed by an engineer in 2024, as the
@@ -176,6 +177,13 @@ export const method: PageModule = {
             nearer earthquake. Nobody has looked.
           </p>
           <p>
+            Safety and conflict is hatched in both scenarios for a third reason:
+            how people treat each other after a disaster does not come back on a
+            schedule, so there is no restoration time for a band to measure.
+            Most people help one another, and theft and violence are isolated
+            cases. <Cite id="KATRINA-MYTHS-08" />
+          </p>
+          <p>
             One other row changes between the two scenarios, and it changes for
             a different reason. Where help comes from is High for the megathrust
             and Low for the crustal earthquake because the two earthquakes
@@ -184,7 +192,7 @@ export const method: PageModule = {
             has been written down.
           </p>
           <Figure
-            alt="Three cells on the grid are hatched. Dams and reservoirs are hatched in both scenarios, and port, airport and ferry terminals only in the crustal one, because of which documents happen to exist; where help comes from changes between High and Low because the two earthquakes genuinely differ. A hatch means no assessment of that system in that earthquake has been published, never that the system would do badly."
+            alt="Dams and reservoirs are hatched in both scenarios, and port, airport and ferry terminals only in the crustal one, because of which documents happen to exist; where help comes from changes between High and Low because the two earthquakes genuinely differ. A hatch means no assessment of that system in that earthquake has been published, never that the system would do badly."
             caption={
               <>
                 The two rows above the rule differ because of which documents

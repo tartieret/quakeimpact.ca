@@ -138,6 +138,13 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     for the ground a reader is standing on than to a study of boreholes. Untested rather
     than searched: the session that raised it had no network route to a federal host.
     See `../media.md` §"The verification queue".
+28. **Public-order and mass-care planning assumptions for BC and Vancouver.** Untested.
+    Whether EMCR or the City of Vancouver publishes what it assumes about public order
+    after a major earthquake. `/after/safety-and-conflict/` states no absence, so nothing
+    on it waits on this; a published plan would belong on that page. Route: EMCR, the
+    City. The page's other unverified claims are listed in `social-disorder.md`.
+29. **A family violence support route that still works when phones do not.** Untested.
+    The lever on `/after/safety-and-conflict/` names no service until one is identified.
 
 ---
 

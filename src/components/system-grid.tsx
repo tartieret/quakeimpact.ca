@@ -45,8 +45,8 @@ export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
 
   /* The gap between cards is the container's own background showing through, so
      a row the cards do not fill ends as a block of rule colour that reads as a
-     card with nothing in it. Thirteen systems leave one such cell in two
-     columns and two in three, so the tail of the grid is padded to the row.
+     card with nothing in it. Fourteen systems fill two columns and leave one
+     such cell in three, so the tail of the grid is padded to the row.
      Full class strings, because Tailwind cannot see a built one. */
   const short = (columns: number) => (columns - (systems.length % columns)) % columns;
   const fillers = [...Array(Math.max(short(2), short(3)))].map((_, i) => {

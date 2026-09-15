@@ -2,7 +2,7 @@
 route: /after/
 title: Life afterwards
 nav: Life afterwards
-hook: Thirteen systems, and the order they come back in is set by what each one is waiting on.
+hook: Fourteen systems, and the order they come back in is set by what each one is waiting on.
 lede: How long each system is out after the shaking, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.
 ---
 
@@ -38,8 +38,8 @@ per cent of one health authority's buildings would likely be completely damaged 
 shaking level the current building code designs for, and no published document
 compares the expected casualties to the number of beds the region has. [DCRRA-APPC]
 
-**Within the first week**, electricity, water, transportation, fuel, food, and where
-help comes from. BC Hydro told its regulator in November 2025 that a large earthquake
+**Within the first week**, electricity, water, transportation, fuel, food, safety and
+conflict, and where help comes from. BC Hydro told its regulator in November 2025 that a large earthquake
 could leave up to two thirds of downtown customers without power for several weeks,
 and the system years from full restoration. [BCH-WESTEND-25] The province designates
 routes that must stay open for emergency vehicles after a major earthquake, and in the
@@ -69,7 +69,9 @@ identified an unsafe condition, and neither published conclusion mentions earthq
 [MV-DSP-2026] The seismic upgrade work at Cleveland has not started.
 [MV-CAPEX-2026] Port, airport and ferry terminals carry a band for the megathrust
 and a hatch for the crustal earthquake, because the one study that exists modelled the
-megathrust and nothing else. [AIR-2013]
+megathrust and nothing else. [AIR-2013] Safety and conflict is hatched in both, because
+how people treat each other has no restoration time: most people help one another after a
+disaster, and theft and violence are isolated cases. [KATRINA-MYTHS-08]
 
 ## Each system breaks in its own way, and each has its own page
 
@@ -92,5 +94,5 @@ before you need to.
 ## Sources on this page
 
 [PEIRS] [MV-DEBRIS-17] [MV-WATER-22] [CRTC-2025-226] [DCRRA-APPC] [BCH-WESTEND-25]
-[MOTI-SRDC-05] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [PREPAREDBC]
-[DCRRA-2025]
+[MOTI-SRDC-05] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [KATRINA-MYTHS-08]
+[PREPAREDBC] [DCRRA-2025]

@@ -20,7 +20,7 @@ import { pageMetadata } from "@/content/metadata";
 import { SITE } from "@/content/site";
 
 /**
- * The thirteen system pages.
+ * The system pages.
  *
  * The template holds no words of its own beyond the labels on the furniture it
  * draws. A system's evidence comes from `SYSTEMS` in `@/content/site`; its body

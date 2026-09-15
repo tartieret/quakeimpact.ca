@@ -8,7 +8,7 @@ import type { PageModule } from "./index";
 /**
  * Life afterwards. The body of `/after/`, ported from `docs/copy/after.md`.
  *
- * An index page, and shorter than the thirteen pages it points at on purpose.
+ * An index page, and shorter than the system pages it points at on purpose.
  * The words are the copy's. The timeline strip, the band matrix and the system
  * grid are not words: they are `SYSTEMS` and `PHASES` drawn, and they follow
  * the scenario toggle in the header. The grid carries every system in one
@@ -38,6 +38,7 @@ export const after: PageModule = {
       "AIR-2013",
       "MV-DSP-2026",
       "MV-CAPEX-2026",
+      "KATRINA-MYTHS-08",
       "PREPAREDBC",
       "DCRRA-2025",
     ],
@@ -109,7 +110,8 @@ export const after: PageModule = {
             </p>
             <p>
               <strong>Within the first week</strong>, electricity, water,
-              transportation, fuel, food, and where help comes from. BC Hydro
+              transportation, fuel, food, safety and conflict, and where help
+              comes from. BC Hydro
               told its regulator in November 2025 that a large earthquake could
               leave up to two thirds of downtown customers without power for
               several weeks, and the system years from full restoration.{" "}
@@ -171,7 +173,11 @@ export const after: PageModule = {
               has not started. <Cite id="MV-CAPEX-2026" /> Port, airport and
               ferry terminals carry a band for the megathrust and a hatch for
               the crustal earthquake, because the one study that exists modelled
-              the megathrust and nothing else. <Cite id="AIR-2013" />
+              the megathrust and nothing else. <Cite id="AIR-2013" /> Safety
+              and conflict is hatched in both, because how people treat each
+              other has no restoration time: most people help one another after
+              a disaster, and theft and violence are isolated cases.{" "}
+              <Cite id="KATRINA-MYTHS-08" />
             </p>
           </Prose>
           <SystemMatrix />
