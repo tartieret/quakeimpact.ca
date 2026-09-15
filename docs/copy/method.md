@@ -46,6 +46,11 @@ earthquake. [AIR-2013] The crustal column is hatched because the same study mode
 no crustal earthquake. Nobody is saying the terminals do better or worse in the nearer
 earthquake. Nobody has looked.
 
+Safety and conflict carries no band and no hatch. How people treat each other after a
+disaster does not come back on a schedule, so there is no restoration time for a band to
+measure, and nothing is missing from the record. Most people help one another, and theft
+and violence are isolated cases. [KATRINA-MYTHS-08]
+
 One other row changes between the two scenarios, and it changes for a different reason.
 Where help comes from is High for the megathrust and Low for the crustal earthquake
 because the two earthquakes genuinely differ: one shakes the whole coast at once, and
@@ -158,6 +163,6 @@ a published document, a correction with a source behind it, or a pointer to a re
 
 ## Sources on this page
 
-[MV-DSP-2026] [MV-CAPITAL-2027] [AIR-2013] [DCRRA-2025] [CRTC-2025-226]
+[MV-DSP-2026] [MV-CAPITAL-2027] [AIR-2013] [KATRINA-MYTHS-08] [DCRRA-2025] [CRTC-2025-226]
 [DCRRA-APPC] [BCH-WESTEND-25] [NRCAN-SCEN] [PEIRS] [GSC-OF-8853] [EGBC-DSR-GL]
 [MVSMMP] [MV-DWMP-26] [BCH-DAMFAQ]

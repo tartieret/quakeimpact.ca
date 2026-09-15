@@ -113,13 +113,14 @@ on `/shaking/`.
 | **To verify** | The file exists and is very likely usable. The terms have not been read at all. |
 | **Rejected** | The terms are known and the site cannot meet them. |
 
-**Thirty-one rows are Verified, checked at their sources on 12 and 13 September
-2026, and all thirty-one are hosted.** Two on `/shaking/ground/`, three on
+**Thirty-two rows are Verified, checked at their sources on 12, 13 and 15
+September 2026, and all thirty-two are hosted.** Two on `/shaking/ground/`, three on
 `/shaking/buildings/`, one on `/shaking/fire-following/`, three on
 `/after/water/`, seven on `/after/transportation/`, two on
 `/after/electricity/`, two on `/after/sanitation/`, two on `/after/housing/`,
 three on `/after/large-infrastructure/`, one each on `/after/fuel/`,
-`/after/food/`, `/after/health-care/` and `/after/outside-help/`, and two on
+`/after/food/`, `/after/health-care/`, `/after/outside-help/` and
+`/after/safety-and-conflict/`, and two on
 `/after/dams-and-reservoirs/`. Everything else below is Stated or To verify and
 none of it is on the site. `/after/gas/` and `/after/communications/` have no
 photograph, and the entries under *3d* say why. See *The verification queue* at
@@ -1265,6 +1266,42 @@ honest image if one turns up.
   at ground level a few feet from the two men, which is a third instance of the
   rule at the foot of this file: **open the file before writing anything about
   it.** The description was wrong, and only looking caught it.
+
+### 3e. How people respond
+
+#### `christchurch-student-volunteer-army`
+
+**Suggested by the site's owner**, as the example of the social response on
+`/after/safety-and-conflict/`.
+
+- **Shows:** several hundred young people packed onto a grass field, most facing
+  the camera and smiling, many holding shovels and spades above their heads, a
+  banner reading "Volunteer Army" behind them with two people in high-visibility
+  vests beside it, parked cars and trees at the back.
+- **Photographer:** Sam Johnson, own work
+- **Licence:** CC BY-SA 3.0, `{{self|cc-by-sa-3.0}}` read off the file page's
+  wikitext. Share-alike, so not cropped.
+- **Source:** https://commons.wikimedia.org/wiki/File:StudentArmy_IlamSchool.jpg
+- **Status:** **Verified, 15 September 2026.** The description reads, in full,
+  "Student Volunteer Army before deployment".
+- **Hosted:** `public/media/christchurch-student-volunteer-army.jpg`. 2592 × 1936
+  resized to 1600 × 1195; ratio `1600 / 1195`, measured off the hosted file. EXIF
+  orientation is normal.
+- **Used on:** `/after/safety-and-conflict/`, after the paragraph on which
+  Canterbury communities adapted most easily.
+- **The date is from the camera, not the description.** The description's date is
+  29 February 2011, which does not exist. The camera recorded 4 March 2011, and
+  the credit says March 2011.
+- **The place is from the category, not the description.** The description names
+  no place. `Category:Student Volunteer Army` describes a student movement born
+  from a Facebook page started after the Christchurch earthquakes, and the caption
+  uses that sentence. The filename says Ilam School; that is the uploader's
+  naming and is not used.
+- **People are in frame and identifiable, and none of them is in distress.** A
+  crowd of volunteers posing before going out. Recorded rather than left to be
+  noticed, the same as `christchurch-water-tanker`.
+- **Siblings not used:** the category holds four more SVA files, none opened. This
+  one was the owner's choice.
 
 ---
 

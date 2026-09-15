@@ -24,11 +24,11 @@ export const dependencies: PageModule = {
     route: "/dependencies/",
     title: "Nothing fails alone",
     description:
-      "Twelve of the thirteen systems wait on at least one other. Some of those connections have a document behind them, and some nobody has published.",
+      "Twelve of the fourteen systems wait on at least one other. Some of those connections have a document behind them, and some nobody has published.",
     nav: "Dependency graph",
     kicker: "Why one failure becomes many",
     standfirst:
-      "Twelve of the thirteen systems wait on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.",
+      "Twelve of the fourteen systems wait on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",

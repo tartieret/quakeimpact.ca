@@ -10,7 +10,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { TimelineStrip } from "@/components/timeline";
-import { ImpactCell } from "@/components/impact-cell";
+import { ImpactCell, SummaryCell } from "@/components/impact-cell";
 import { SYSTEMS, SCENARIOS, PHASES, navSection } from "@/content/site";
 import { SectionNav } from "@/components/section-nav";
 import { pageForSystem } from "@/content/pages";
@@ -20,7 +20,7 @@ import { pageMetadata } from "@/content/metadata";
 import { SITE } from "@/content/site";
 
 /**
- * The thirteen system pages.
+ * The system pages.
  *
  * The template holds no words of its own beyond the labels on the furniture it
  * draws. A system's evidence comes from `SYSTEMS` in `@/content/site`; its body
@@ -74,7 +74,9 @@ export default async function SystemPage({
   const page = pageForSystem(slug);
   const prev = SYSTEMS[index - 1];
   const next = SYSTEMS[index + 1];
-  const phase = PHASES.find((p) => p.id === system.bitesAt);
+  const phase = system.bitesAt
+    ? PHASES.find((p) => p.id === system.bitesAt)
+    : undefined;
 
   /**
    * The module's status wins where there is one, so a written page can be
@@ -89,12 +91,14 @@ export default async function SystemPage({
    */
   const references = page
     ? page.meta.references
-    : [
-        ...new Set([
-          system.impacts.cascadia.source,
-          system.impacts.crustal.source,
-        ]),
-      ];
+    : system.impacts
+      ? [
+          ...new Set([
+            system.impacts.cascadia.source,
+            system.impacts.crustal.source,
+          ]),
+        ]
+      : [system.summary.source];
 
   return (
     <Citations ids={references}>
@@ -125,34 +129,45 @@ export default async function SystemPage({
         {page ? null : <SystemDraftNotice />}
 
         {/* At a glance: both scenarios, never one alone. The toggle does not
-            hide either column, because the contrast is the teaching point. */}
-        <Section
-          title="At a glance"
-          lede={`Bands measure duration, extent and dependency rather than severity of damage. Felt worst: ${phase?.label.toLowerCase()} after the event.`}
-        >
-          <div className="grid gap-4 sm:grid-cols-2">
-            <ImpactCell
-              impact={system.impacts.cascadia}
-              label={SCENARIOS.cascadia.name}
-            />
-            <ImpactCell
-              impact={system.impacts.crustal}
-              label={SCENARIOS.crustal.name}
-            />
-          </div>
-          <p className="mt-4 text-sm text-ink-muted">
-            <Link
-              href="/method/"
-              className="text-accent underline underline-offset-2"
+            hide either column, because the contrast is the teaching point. A
+            system with no band shows its one sentence instead, with no
+            scenario labels and no timeline, because it has neither a band to
+            compare nor a phase on record. */}
+        {system.impacts ? (
+          <>
+            <Section
+              title="At a glance"
+              lede={`Bands measure duration, extent and dependency rather than severity of damage. Felt worst: ${phase?.label.toLowerCase()} after the event.`}
             >
-              How the bands are defined
-            </Link>
-          </p>
-        </Section>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <ImpactCell
+                  impact={system.impacts.cascadia}
+                  label={SCENARIOS.cascadia.name}
+                />
+                <ImpactCell
+                  impact={system.impacts.crustal}
+                  label={SCENARIOS.crustal.name}
+                />
+              </div>
+              <p className="mt-4 text-sm text-ink-muted">
+                <Link
+                  href="/method/"
+                  className="text-accent underline underline-offset-2"
+                >
+                  How the bands are defined
+                </Link>
+              </p>
+            </Section>
 
-        <Section title="When it bites">
-          <TimelineStrip active={system.bitesAt} compact />
-        </Section>
+            <Section title="When it bites">
+              <TimelineStrip active={system.bitesAt} compact />
+            </Section>
+          </>
+        ) : (
+          <Section title="At a glance">
+            <SummaryCell summary={system.summary} />
+          </Section>
+        )}
 
         {system.dependsOn.length > 0 ? (
           <Section title="What this waits on">

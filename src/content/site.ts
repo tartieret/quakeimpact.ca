@@ -154,7 +154,7 @@ const CRUSTAL_ONLY =
   "The province wrote this for its shallow crustal M7 scenario; nothing published states it for the megathrust.";
 
 /**
- * Thirteen systems. Bands, mechanism sentences and source keys all come from
+ * Fourteen systems. Bands, mechanism sentences and source keys all come from
  * `docs/research/impact-bands.md`, which is the authority for the assignment;
  * the per-system files under `docs/research/systems/` carry the working behind
  * each one. Weather is deliberately absent: it does not fail, so it cannot
@@ -346,6 +346,25 @@ export const SYSTEMS: SystemEntry[] = [
       "DCRRA-APPC",
     ),
   },
+  // Unbanded, and not hatched. A band measures restoration time, and how people
+  // treat each other has none, so there is nothing for "not yet assessed" to be
+  // waiting on; Low would be past disasters elsewhere setting a band, which the
+  // rubric does not allow. One sentence stands for both earthquakes because none
+  // of the evidence was measured on either. No phase, because the only timing
+  // on record is two events, and no `dependsOn`, because no document names an
+  // edge. See `docs/research/social-disorder.md`.
+  {
+    slug: "safety-and-conflict",
+    name: "Safety and conflict",
+    hook: "After a disaster most people help the people around them, and theft and violence are the exception rather than the rule.",
+    tier: 3,
+    dependsOn: [],
+    summary: {
+      mechanism:
+        "Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time for a band to measure.",
+      source: "KATRINA-MYTHS-08",
+    },
+  },
   {
     slug: "outside-help",
     name: "Where help comes from",
@@ -448,7 +467,7 @@ export const SHAKING_PAGES: {
  *
  * The children are deliberately not opened from the bar across the top of the
  * desktop page. Three of the five parts have none, so a menu that opens on two
- * of the five teaches a reader it is not worth trying; thirteen systems is a
+ * of the five teaches a reader it is not worth trying; fourteen systems is a
  * directory rather than a menu; and the site is a sequence, where a page
  * assumes the bands and the scenario toggle the part before it set up. The
  * lists belong where a reader is already looking for one: at the foot of a

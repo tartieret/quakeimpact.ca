@@ -45,8 +45,8 @@ export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
 
   /* The gap between cards is the container's own background showing through, so
      a row the cards do not fill ends as a block of rule colour that reads as a
-     card with nothing in it. Thirteen systems leave one such cell in two
-     columns and two in three, so the tail of the grid is padded to the row.
+     card with nothing in it. Fourteen systems fill two columns and leave one
+     such cell in three, so the tail of the grid is padded to the row.
      Full class strings, because Tailwind cannot see a built one. */
   const short = (columns: number) => (columns - (systems.length % columns)) % columns;
   const fillers = [...Array(Math.max(short(2), short(3)))].map((_, i) => {
@@ -134,15 +134,26 @@ export function SystemMatrix() {
                   {s.name}
                 </Link>
               </th>
-              <td className="px-4 py-3">
-                <BandPill band={s.impacts.cascadia.band} />
-              </td>
-              <td className="px-4 py-3">
-                <BandPill band={s.impacts.crustal.band} />
-              </td>
-              <td className="px-4 py-3 text-sm text-ink-muted">
-                {PHASES.find((p) => p.id === s.bitesAt)?.label}
-              </td>
+              {s.impacts ? (
+                <>
+                  <td className="px-4 py-3">
+                    <BandPill band={s.impacts.cascadia.band} />
+                  </td>
+                  <td className="px-4 py-3">
+                    <BandPill band={s.impacts.crustal.band} />
+                  </td>
+                  <td className="px-4 py-3 text-sm text-ink-muted">
+                    {PHASES.find((p) => p.id === s.bitesAt)?.label}
+                  </td>
+                </>
+              ) : (
+                /* An unbanded system is not a gap in either column, so it takes
+                   no hatch and no pill: a hatch here would say an assessment is
+                   missing, and none could exist. The words say what the row is. */
+                <td colSpan={3} className="px-4 py-3 text-sm text-ink-muted">
+                  No band: nothing here has a restoration time
+                </td>
+              )}
             </tr>
           ))}
         </tbody>

@@ -2,7 +2,7 @@
 route: /after/
 title: Life afterwards
 nav: Life afterwards
-hook: Thirteen systems, and the order they come back in is set by what each one is waiting on.
+hook: Fourteen systems, and the order they come back in is set by what each one is waiting on.
 lede: How long each system is out after the shaking, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.
 ---
 
@@ -69,7 +69,9 @@ identified an unsafe condition, and neither published conclusion mentions earthq
 [MV-DSP-2026] The seismic upgrade work at Cleveland has not started.
 [MV-CAPEX-2026] Port, airport and ferry terminals carry a band for the megathrust
 and a hatch for the crustal earthquake, because the one study that exists modelled the
-megathrust and nothing else. [AIR-2013]
+megathrust and nothing else. [AIR-2013] Safety and conflict carries no band at all, because
+how people treat each other has no restoration time: most people help one another after a
+disaster, and theft and violence are isolated cases. [KATRINA-MYTHS-08]
 
 ## Each system breaks in its own way, and each has its own page
 
@@ -92,5 +94,5 @@ before you need to.
 ## Sources on this page
 
 [PEIRS] [MV-DEBRIS-17] [MV-WATER-22] [CRTC-2025-226] [DCRRA-APPC] [BCH-WESTEND-25]
-[MOTI-SRDC-05] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [PREPAREDBC]
-[DCRRA-2025]
+[MOTI-SRDC-05] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [KATRINA-MYTHS-08]
+[PREPAREDBC] [DCRRA-2025]

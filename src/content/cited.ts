@@ -40,7 +40,11 @@ for (const page of ALL_PAGES) {
  * the site whether or not a page module mentions them.
  */
 for (const system of SYSTEMS) {
-  for (const impact of Object.values(system.impacts)) ids.add(impact.source);
+  if (system.impacts) {
+    for (const impact of Object.values(system.impacts)) ids.add(impact.source);
+  } else {
+    ids.add(system.summary.source);
+  }
 }
 
 /** The same, for a shaking subject listing its evidence ahead of its text. */
