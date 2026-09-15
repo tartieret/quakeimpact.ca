@@ -38,8 +38,8 @@ per cent of one health authority's buildings would likely be completely damaged 
 shaking level the current building code designs for, and no published document
 compares the expected casualties to the number of beds the region has. [DCRRA-APPC]
 
-**Within the first week**, electricity, water, transportation, fuel, food, safety and
-conflict, and where help comes from. BC Hydro told its regulator in November 2025 that a large earthquake
+**Within the first week**, electricity, water, transportation, fuel, food, and where
+help comes from. BC Hydro told its regulator in November 2025 that a large earthquake
 could leave up to two thirds of downtown customers without power for several weeks,
 and the system years from full restoration. [BCH-WESTEND-25] The province designates
 routes that must stay open for emergency vehicles after a major earthquake, and in the
@@ -69,7 +69,7 @@ identified an unsafe condition, and neither published conclusion mentions earthq
 [MV-DSP-2026] The seismic upgrade work at Cleveland has not started.
 [MV-CAPEX-2026] Port, airport and ferry terminals carry a band for the megathrust
 and a hatch for the crustal earthquake, because the one study that exists modelled the
-megathrust and nothing else. [AIR-2013] Safety and conflict is hatched in both, because
+megathrust and nothing else. [AIR-2013] Safety and conflict carries no band at all, because
 how people treat each other has no restoration time: most people help one another after a
 disaster, and theft and violence are isolated cases. [KATRINA-MYTHS-08]
 

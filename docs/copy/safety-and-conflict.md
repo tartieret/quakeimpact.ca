@@ -4,8 +4,8 @@ title: Safety and conflict
 nav: Safety and conflict
 hook: After a disaster most people help the people around them, and theft and violence are the exception rather than the rule.
 lede: After a disaster, most people help the people around them. [KATRINA-MYTHS-08] Theft and violence still happen, and what holds them down is mostly in place before the shaking: ties between neighbours, accurate information, and plans that account for it. [LOOTING-REVIEW-25]
-bands: { cascadia: unknown, crustal: unknown }
-mechanism: Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time.
+bands: none. No restoration time, so no band and no scenario split
+mechanism: Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time for a band to measure.
 source: KATRINA-MYTHS-08
 ---
 

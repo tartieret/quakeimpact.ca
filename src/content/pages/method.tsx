@@ -155,7 +155,7 @@ export const method: PageModule = {
             has published an assessment of, and that says nothing at all about
             whether it would hold up.
           </p>
-          <p>Five cells on the grid are hatched today, for three reasons.</p>
+          <p>Three cells on the grid are hatched today, for two reasons.</p>
           <p>
             Dams and reservoirs are hatched in both scenarios. Cleveland and
             Seymour Falls dams were each reviewed by an engineer in 2024, as the
@@ -177,11 +177,11 @@ export const method: PageModule = {
             nearer earthquake. Nobody has looked.
           </p>
           <p>
-            Safety and conflict is hatched in both scenarios for a third reason:
-            how people treat each other after a disaster does not come back on a
-            schedule, so there is no restoration time for a band to measure.
-            Most people help one another, and theft and violence are isolated
-            cases. <Cite id="KATRINA-MYTHS-08" />
+            Safety and conflict carries no band and no hatch. How people treat
+            each other after a disaster does not come back on a schedule, so
+            there is no restoration time for a band to measure, and nothing is
+            missing from the record. Most people help one another, and theft and
+            violence are isolated cases. <Cite id="KATRINA-MYTHS-08" />
           </p>
           <p>
             One other row changes between the two scenarios, and it changes for

@@ -6,8 +6,8 @@
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 15 September 2026.
 
-**Status.** Evidence behind `/after/safety-and-conflict/`. The band is not yet assessed in
-both scenarios, because nothing here has a restoration time. Every source is an analogue
+**Status.** Evidence behind `/after/safety-and-conflict/`. The system carries no band,
+because nothing here has a restoration time. Every source is an analogue
 or a synthesis; none assesses either earthquake in this region. Keys in square brackets
 resolve in `sources.md`; the page cites only those, and a source listed here without a key
 is not on the site.
@@ -349,13 +349,15 @@ It should also make a clear distinction between protecting people and defending 
 **Title: "Safety and conflict", route `/after/safety-and-conflict/`.** Chosen over "social
 disorder", which primes the fear the evidence does not support.
 
-**A system on the grid, hatched in both columns, with no `dependsOn`.** A band measures
-restoration time, and nothing here has one: no document puts a duration on disorder, and
-the record gives no day after which it starts. Under `impact-bands.md`, a cell with no
-published duration is not yet assessed. The shortages that went with Chile's worst days
-are documented, but naming the systems this one waits on would be the graph asserting an
-edge nobody has published. `bitesAt` is `days`, which is when the Chilean looting and the
-Algiers Point shooting happened.
+**A system with no band, no phase and no scenario split, and no `dependsOn`.** A band
+measures restoration time, and nothing here has one: no document puts a duration on
+disorder, and the record gives no day after which it starts. It was hatched as not yet
+assessed at first, which wrongly implied an assessment could exist; Low was rejected
+because analogues may not set a band. The reasoning is in `impact-bands.md`. One
+sentence and one source stand for both earthquakes, because none of the evidence was
+measured on either. The shortages that went with Chile's worst days are documented, but
+naming the systems this one waits on would be the graph asserting an edge nobody has
+published.
 
 **Structure.** Four sections, in the order the owner set on 15 September 2026: what people
 generally expect; what happens in most disasters, from the general research, Christchurch and

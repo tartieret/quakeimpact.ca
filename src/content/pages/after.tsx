@@ -110,8 +110,7 @@ export const after: PageModule = {
             </p>
             <p>
               <strong>Within the first week</strong>, electricity, water,
-              transportation, fuel, food, safety and conflict, and where help
-              comes from. BC Hydro
+              transportation, fuel, food, and where help comes from. BC Hydro
               told its regulator in November 2025 that a large earthquake could
               leave up to two thirds of downtown customers without power for
               several weeks, and the system years from full restoration.{" "}
@@ -174,7 +173,7 @@ export const after: PageModule = {
               ferry terminals carry a band for the megathrust and a hatch for
               the crustal earthquake, because the one study that exists modelled
               the megathrust and nothing else. <Cite id="AIR-2013" /> Safety
-              and conflict is hatched in both, because how people treat each
+              and conflict carries no band at all, because how people treat each
               other has no restoration time: most people help one another after
               a disaster, and theft and violence are isolated cases.{" "}
               <Cite id="KATRINA-MYTHS-08" />

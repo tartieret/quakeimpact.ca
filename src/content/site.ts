@@ -153,10 +153,6 @@ const MEGATHRUST_ONLY =
 const CRUSTAL_ONLY =
   "The province wrote this for its shallow crustal M7 scenario; nothing published states it for the megathrust.";
 
-/** And for a row whose evidence is past disasters elsewhere rather than either earthquake. */
-const ANALOGUE_ONLY =
-  "This comes from disasters elsewhere, not from an assessment of either earthquake here.";
-
 /**
  * Fourteen systems. Bands, mechanism sentences and source keys all come from
  * `docs/research/impact-bands.md`, which is the authority for the assignment;
@@ -350,25 +346,24 @@ export const SYSTEMS: SystemEntry[] = [
       "DCRRA-APPC",
     ),
   },
-  // Hatched in both columns because the subject has no restoration time: no
-  // document puts a duration on how people treat each other, and under the
-  // rubric a cell with no published duration is not yet assessed. No
-  // `dependsOn` either: the shortages that went with disorder elsewhere are
-  // documented, but which system it waits on here is the inference the graph
-  // refuses. See `docs/research/social-disorder.md`.
+  // Unbanded, and not hatched. A band measures restoration time, and how people
+  // treat each other has none, so there is nothing for "not yet assessed" to be
+  // waiting on; Low would be past disasters elsewhere setting a band, which the
+  // rubric does not allow. One sentence stands for both earthquakes because none
+  // of the evidence was measured on either. No phase, because the only timing
+  // on record is two events, and no `dependsOn`, because no document names an
+  // edge. See `docs/research/social-disorder.md`.
   {
     slug: "safety-and-conflict",
     name: "Safety and conflict",
     hook: "After a disaster most people help the people around them, and theft and violence are the exception rather than the rule.",
-    bitesAt: "days",
     tier: 3,
     dependsOn: [],
-    impacts: bothScenarios(
-      ["unknown", "unknown"],
-      "Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time.",
-      "KATRINA-MYTHS-08",
-      { cascadia: ANALOGUE_ONLY, crustal: ANALOGUE_ONLY },
-    ),
+    summary: {
+      mechanism:
+        "Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time for a band to measure.",
+      source: "KATRINA-MYTHS-08",
+    },
   },
   {
     slug: "outside-help",

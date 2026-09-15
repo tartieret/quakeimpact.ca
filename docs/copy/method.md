@@ -31,7 +31,7 @@ A system banded High is a system somebody has assessed and found slow to restore
 system marked not yet assessed is a system nobody has published an assessment of, and
 that says nothing at all about whether it would hold up.
 
-Five cells on the grid are hatched today, for three reasons.
+Three cells on the grid are hatched today, for two reasons.
 
 Dams and reservoirs are hatched in both scenarios. Cleveland and Seymour Falls dams
 were each reviewed by an engineer in 2024, as the law requires every seven years for
@@ -46,10 +46,10 @@ earthquake. [AIR-2013] The crustal column is hatched because the same study mode
 no crustal earthquake. Nobody is saying the terminals do better or worse in the nearer
 earthquake. Nobody has looked.
 
-Safety and conflict is hatched in both scenarios for a third reason: how people treat
-each other after a disaster does not come back on a schedule, so there is no restoration
-time for a band to measure. Most people help one another, and theft and violence are
-isolated cases. [KATRINA-MYTHS-08]
+Safety and conflict carries no band and no hatch. How people treat each other after a
+disaster does not come back on a schedule, so there is no restoration time for a band to
+measure, and nothing is missing from the record. Most people help one another, and theft
+and violence are isolated cases. [KATRINA-MYTHS-08]
 
 One other row changes between the two scenarios, and it changes for a different reason.
 Where help comes from is High for the megathrust and Low for the crustal earthquake

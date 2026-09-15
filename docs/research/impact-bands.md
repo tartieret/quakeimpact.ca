@@ -8,9 +8,10 @@
 
 **Status.** Fourteen systems assessed, and `src/content/site.ts` now carries the
 assignment. Natural gas, which the site did not carry, is in the grid; weather, which
-was never a system, is out of it and renders on the timeline instead. **Two and a half rows
-carry no published assessment**: dams in both scenarios, safety and conflict in both
-scenarios, and large infrastructure in the crustal column only.
+was never a system, is out of it and renders on the timeline instead. **One and a half rows
+carry no published assessment**: dams in both scenarios, and large infrastructure
+in the crustal column only. **One row carries no band at all**: safety and conflict,
+which has no restoration time to assess.
 
 The rubric itself stands as written in `../site-overview.md` §4. What follows is
 the band assignment per system per scenario, with the mechanism sentence and the
@@ -35,7 +36,7 @@ source that `ImpactCell` requires, and a reconciliation against what
 | Dams and reservoirs | Not yet assessed | Not yet assessed | Both dams were reviewed by an engineer in 2024, as the law requires every seven years for the top consequence class, and neither review identified an unsafe or unacceptable condition, but neither published conclusion mentions earthquakes. **Assessed, but not for this.** The capital status, Cleveland not started and scheduled 2028 to 2034, is a separate document and is not in the mechanism sentence. | [MV-DSP-2026], with [MV-CAPEX-2026] for the capital status **[A]** |
 | Housing | High | High | Displacement is counted in the tens of thousands of households, there is no published shelter capacity to receive them, and cordoning removes people from homes that survived. | [PEIRS] [COV-RISK-2024] **[A]** |
 | Health care | Medium | Medium | About 65% of one health authority's buildings would likely be completely damaged at the ground motion the current code designs for, and no government or health authority has compared the casualty load to regional bed capacity. Peer-reviewed engineering work has. | [DCRRA-APPC] **[A]** |
-| Safety and conflict | Not yet assessed | Not yet assessed | Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify. **Hatched because the subject has no restoration time**: no document puts a duration on disorder, and the historical record gives no day after which it starts (`social-disorder.md`). Every source is an analogue, so both cells carry `Impact.evidence` saying so. | [KATRINA-MYTHS-08] **[A]** |
+| Safety and conflict | No band | No band | Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify. **Unbanded, not hatched**: see the decision below. One sentence stands for both earthquakes in `SystemEntry.summary`. | [KATRINA-MYTHS-08] **[A]** |
 | Where help comes from | High | Low | Two mechanisms, one per column, plus a guard on the Low. The Cascadia cell: the province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states the United States will be unable to deliver mutual aid. The crustal cell: the same assumption, and a local crustal earthquake is the case where it holds, with `Impact.evidence` recording that this is a planning assumption the province states rather than a measured finding. See `src/content/site.ts` for both. | [PEIRS] **[A]** |
 
 **Weather is not in the table, and should not be.** It is a scenario condition, not
@@ -77,7 +78,7 @@ row resolves to two.
 | Dams and reservoirs | Not yet assessed | Not yet assessed | unknown / unknown |
 | Housing | High | High | high / high |
 | Health care | Medium | Medium | **high / high** |
-| Safety and conflict | Not yet assessed | Not yet assessed | *absent from the grid* |
+| Safety and conflict | No band | No band | *absent from the grid* |
 | Where help comes from | High | Low | high / low, under the name "The absence of outside help" |
 | Weather | *not a system* | | medium / medium — **removed from `SYSTEMS`** |
 
@@ -108,6 +109,19 @@ it would have added a state to the rubric to accommodate a single row that never
 belonged in the grid. Widening a classification to fit one exception is how a rubric
 stops meaning anything.
 
+**Safety and conflict is a system with no band — decided 15 September 2026.** A
+band measures how long a system takes to come back, and how people treat each other
+after a disaster has no restoration time. Three options were weighed. *Not yet
+assessed* says an assessment could be published and has not been; none could, so the
+hatch would put a gap in the record that is not there. *Low* would be past disasters
+elsewhere setting a band, which the rubric does not allow, and it would understate
+violence in Japan's shelters months on and domestic violence in Christchurch. So the
+row keeps its page, nav entry and card, and carries one sentence and a source for
+both earthquakes, with no band, no phase and no scenario split. This is not a fifth
+`Band` value, the option rejected for weather: the rubric is unchanged, and the row
+simply does not sit on it. *Where help comes from* stays banded, because the province's
+plan states a different assumption for each earthquake.
+
 **Natural gas becomes a system — decided.** It was absent, and its mechanism is unlike
 any other on the grid: restoration is rate-limited not by repair but by sending a
 qualified person into every affected building. The grid keeps thirteen systems —
@@ -135,8 +149,7 @@ average nobody measured.
   both were assessed in 2024 under legal compulsion, and the published conclusion
   is silent on earthquakes.
   **Assessed and not published, assessed for something else, and never assessed
-  are three different facts wearing one hatch.** Safety and conflict adds a
-  fourth: a subject with no restoration time for anyone to publish. A reader who sees the dams cell
+  are three different facts wearing one hatch.** A reader who sees the dams cell
   and concludes nobody has looked has been misled by the grid, not by the
   evidence. That is the strongest argument for splitting the fourth band, and it
   is a design question the method page cannot answer alone.
@@ -181,7 +194,7 @@ its restoration curve.
 The method page has to explain that a band tracks the evidence rather than the
 subject, and that a cell left hatched is a statement about the public record.
 
-State plainly that bands are assigned from published assessments, that three
-systems have none, and that a band can move when a document surfaces. A reader
+State plainly that bands are assigned from published assessments, that two
+systems have none, that one system has no restoration time and so no band, and that a band can move when a document surfaces. A reader
 who understands that the grid is a reading of the public record, rather than a
 verdict on the infrastructure, has understood the site.
