@@ -281,7 +281,7 @@ export const gettingAround: PageModule = {
             <Cite id="MV-DEBRIS-17" />
           </p>
           <Figure
-            alt="The clearing order published by Metro Vancouver runs from lifelines and evacuation routes, through critical infrastructure, major freeways and arterials, goods and economic restoration, and minor arterials, to local routes last. It is an order of work rather than a timetable, and the plan publishes no durations."
+            alt="The clearing order published by Metro Vancouver runs from lifelines and evacuation routes, through critical infrastructure, major freeways and arterials, goods and economic restoration, and minor arterials, to local routes last. It sets an order of work. The plan publishes no durations."
             caption={
               <>
                 The order quoted above, drawn as a ladder from lifelines down to
@@ -442,9 +442,8 @@ export const gettingAround: PageModule = {
       // No citation, and none is missing: the copy leaves this bullet uncited
       // because it rests on no document and claims nothing.
       <>
-        <strong>Prepare the place you will actually be</strong>, not the place
-        you would try to reach. A workplace where you might spend several days
-        is worth a small kit of its own.
+        <strong>Keep a small kit wherever you may have to stay.</strong> A
+        workplace where you might spend several days needs supplies of its own.
       </>,
       <>
         <strong>Plan a way home that does not need a vehicle or a train.</strong>{" "}

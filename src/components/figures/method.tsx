@@ -229,7 +229,7 @@ export function MethodOneModel() {
       </At>
 
       <FigText y={262}>The province asked for these scenarios.</FigText>
-      <FigText y={282}>Adopted rather than independently confirmed.</FigText>
+      <FigText y={282}>The province adopted the federal model.</FigText>
 
       <FigRule y={302} />
 

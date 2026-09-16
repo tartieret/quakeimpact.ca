@@ -217,7 +217,7 @@ forecasts nothing about a large one.
 Nobody outside the Ministry can retrofit a bridge. What is in reach is where you plan
 to be.
 
-**Plan on the crossing you use being closed or under inspection**, not open. That is
+**Plan for the crossing you use to be closed or under inspection.** That is
 what the province's own service levels describe: limited access, emergency traffic,
 and about a day to inspect a bridge before anyone is let over it. [MOTI-SRDC-05]
 
@@ -226,8 +226,8 @@ are on when the shaking starts may be the side you stay on.
 
 **Prepare the side you would be stuck on**, at work as well as at home. What the
 province plans for people while the crossings are shut or being inspected is set out
-in [getting around](/getting-around/), and what it asks for is a location rather than
-a route.
+in [getting around](/getting-around/). The question there is where you will be when the
+shaking starts.
 
 ## Sources on this page
 

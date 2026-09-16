@@ -108,8 +108,8 @@ export const damsAndReservoirs: PageModule = {
                 The water it holds back is part of the region’s drinking water
                 supply, and the canyon at the top of this photograph, beyond
                 the foot of the spillway, is what “below a dam” means for the
-                classification above. This is
-                the structure itself rather than an analogue somewhere else.
+                classification above. This photograph shows the structure
+                itself, with no analogue standing in for it.
               </>
             }
           />

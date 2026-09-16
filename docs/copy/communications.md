@@ -38,8 +38,8 @@ Canadian Radio-television and Telecommunications Commission, the federal telecom
 regulator, opened a proceeding on network resiliency and put this to the industry: "What
 parameters should TSPs use to determine an appropriate backup power run time for each
 type of network site?" [CRTC-2025-226] TSPs are the telephone and internet companies
-themselves. The guidance reproduced in the proceeding's appendix is written in
-"should" rather than "must". [CRTC-2025-226]
+themselves. The guidance reproduced in the proceeding's appendix uses "should", making
+it a recommendation. [CRTC-2025-226]
 
 The record closed in late August 2026. No decision has been issued. [CRTC-2025-226]
 
@@ -131,12 +131,12 @@ what it calls a late alert zone, where the alert arrives after the shaking start
 The network that survives the first hours is narrow, and what people send across it
 decides who else gets through.
 
-**Text rather than call.** The province names texts and low-bandwidth messages as the
+**Send a text message.** The province names texts and low-bandwidth messages as the
 most reliable method when other services are disrupted. [PEIRS] A short message keeps
 retrying in the background, while a voice call holds a channel open for its whole
 length.
 
-**Call 9-1-1 to report an emergency, and not to ask what happened.** After a
+**Use 9-1-1 only for emergencies.** After a
 magnitude 4.7 in 2015 E-Comm recorded a 1,500 per cent increase in 9-1-1 calls, and
 the vast majority of them were not emergencies. [ECOMM-EQ] Each of those calls held a
 line somebody else needed.
@@ -144,10 +144,10 @@ line somebody else needed.
 **Turn on emergency alerts, and expect the warning to be short.** Earthquake Early
 Warning has been live in British Columbia since spring 2024, [NRCAN-EEW] and BC
 Emergency Alert reaches a phone over the same cellular network the earthquake is
-degrading. [BC-ALERT-2026] Close to the epicentre the alert can arrive with the
-shaking rather than before it. [NRCAN-EEW]
+degrading. [BC-ALERT-2026] Close to the epicentre the alert may arrive as the shaking
+begins. [NRCAN-EEW]
 
-None of those three needs anything bought in advance.
+These steps do not require buying anything in advance.
 
 ## Sources on this page
 

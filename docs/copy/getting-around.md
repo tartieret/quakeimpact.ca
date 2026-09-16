@@ -161,8 +161,8 @@ you will be on during a working day, and plan to stay on that side. The province
 plans assume exactly that: shelter within the region, where you already are.
 [PEIRS] [DCRRA-2025]
 
-**Prepare the place you will actually be**, not the place you would try to reach. A
-workplace where you might spend several days is worth a small kit of its own.
+**Keep a small kit wherever you may have to stay.** A workplace where you might spend
+several days needs supplies of its own.
 
 **Plan a way home that does not need a vehicle or a train.** The City of Vancouver's
 own advice is to plan alternate ways home, because "roads may be blocked and trains

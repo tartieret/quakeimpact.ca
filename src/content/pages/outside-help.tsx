@@ -238,8 +238,8 @@ export const outsideHelp: PageModule = {
           <p>
             British Columbia could not exercise its cross-border arrangement
             because its cross-border partners were exercising the same
-            earthquake. It publishes summaries of these exercises rather than
-            full after-action reports. <Cite id="EX-PROG" />
+            earthquake. It publishes summaries of these exercises. Full
+            after-action reports are not published. <Cite id="EX-PROG" />
           </p>
           <DataTable
             caption="The agreements under which help from outside British Columbia would arrive."

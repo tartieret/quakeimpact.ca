@@ -66,9 +66,9 @@ export const contribute: PageModule = {
             The fastest thing to act on is one line saying which claim is wrong,
             and a document with an author and a date behind it. A pointer to a
             report you know exists but cannot place saves days on its own. So
-            does a read from the field with no document at all. That gets chased
-            as a lead rather than published as a claim: what reaches a page has
-            to be something a reader can check.
+            does a read from the field with no document at all. That becomes a
+            lead to follow. A claim reaches the site only when a reader can
+            check it.
           </p>
           <p>
             Claims need published evidence before they reach the site. This

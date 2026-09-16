@@ -84,8 +84,8 @@ inhabitants, from earthquake shaking". Landslides, liquefaction, fire following 
 aftershocks are "not currently included". [NRCAN-SCEN] With those left out, "the
 estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
 
-So a damage figure or a casualty figure from that work is a floor rather than a
-ceiling. The fires and the landslides sit outside it.
+The damage and casualty figures from that work are minimums. Fires and landslides
+sit outside them.
 
 ## The main hazards from shaking
 

@@ -210,8 +210,8 @@ export const prepare: PageModule = {
             provides “seconds to tens-of-seconds of warning”, which is enough to
             get down and under something, and the guide is explicit that early
             warning systems cannot predict earthquakes. <Cite id="PREPAREDBC" />{" "}
-            Close to where the earthquake starts, the alert may arrive with the
-            shaking rather than before it. <Cite id="NRCAN-EEW" />
+            Close to where the earthquake starts, the alert may arrive as the
+            shaking begins. <Cite id="NRCAN-EEW" />
           </p>
           <p>The seconds are for one action:</p>
           <Quote
@@ -251,8 +251,8 @@ export const prepare: PageModule = {
             together, is the province’s rate. <Cite id="PREPAREDBC" /> The City
             of Vancouver prints the same rate. <Cite id="COV-EXPLORER-25" /> For
             a household of four holding two weeks, that is at least 224 litres.
-            That total is arithmetic from the published rate rather than a
-            figure either body prints.
+            That total is calculated from the published rate; neither body
+            prints it.
           </p>
           <Figure
             alt="At four litres per person per day, a household of four needs at least 224 litres to cover two weeks. The total is arithmetic from the published rate, and neither the province nor the City prints it."
@@ -261,8 +261,8 @@ export const prepare: PageModule = {
                 One mark is four litres, which is the published rate for one
                 person for one day. <Cite id="PREPAREDBC" />{" "}
                 <Cite id="COV-EXPLORER-25" /> Fifty-six of them is a household
-                of four for two weeks, worked from that rate rather than printed
-                in either document.
+                of four for two weeks, calculated from that rate. Neither
+                document prints the total.
               </>
             }
           >
@@ -584,9 +584,9 @@ export const prepare: PageModule = {
       </>,
       <>
         <strong>
-          Then a light, a radio, a power bank, warm layers and sturdy shoes
-        </strong>
-        , kept where you will be rather than only at home.{" "}
+          Then keep a light, a radio, a power bank, warm layers and sturdy shoes
+          wherever you spend time.
+        </strong>{" "}
         <Cite id="PREPAREDBC" />
       </>,
       <>

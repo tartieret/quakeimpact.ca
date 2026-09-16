@@ -85,8 +85,8 @@ export const scenarios: PageModule = {
             Georgia. <Cite id="PEIRS" />
           </p>
           <p>
-            They are two different problems, not a larger and a smaller version
-            of one. The nearer earthquake does more to Vancouver itself, because
+            Each earthquake creates a different problem. The nearer earthquake
+            does more to Vancouver itself, because
             it is closer to the city and happens more often.{" "}
             <Cite id="NRCAN-1700" /> The offshore one does more to Vancouver’s
             chances of being helped: it damages the whole coast at once, and in
@@ -139,8 +139,8 @@ export const scenarios: PageModule = {
                 {SHAKEMAP_FACTS.sites} model sites stand behind{" "}
                 {SHAKEMAP_FACTS.cells} cells, and{" "}
                 {SHAKEMAP_FACTS.singleSiteCells} of those cells rest on a single
-                site. The marks are drawn apart rather than joined because the
-                catalogue models sites, not a surface. Peak ground acceleration
+                site. The marks are separate because the catalogue models sites,
+                not a surface. Peak ground acceleration
                 is the measure both runs publish. The catalogue converts it to
                 Modified Mercalli intensity for the Georgia Strait run and not
                 for Cascadia, and deriving the missing one
@@ -195,8 +195,8 @@ export const scenarios: PageModule = {
             The modelled fault plane dips at 47 degrees from the ground surface
             to a bottom edge about 13 km down, and the earthquake starts 3 km
             down. Its footprint runs
-            from near Nanaimo to downtown Vancouver, which describes the fault
-            rather than where the damage falls. <Cite id="OPENDRR-GSF-22" />{" "}
+            from near Nanaimo to downtown Vancouver. That describes the fault
+            itself, not where the damage falls. <Cite id="OPENDRR-GSF-22" />{" "}
             Shaking across the Lower Mainland and Nanaimo is modelled at 10 to
             60 per cent of gravity, strongest in downtown Vancouver, West
             Vancouver, Nanaimo, Gibsons, and on Gabriola and Bowen Islands.{" "}
@@ -209,8 +209,8 @@ export const scenarios: PageModule = {
                 A cross-section drawn from the four numbers the federal rupture
                 file states, at the same scale across and down so the dip is
                 true. <Cite id="OPENDRR-GSF-22" /> The footprint from near
-                Nanaimo to downtown Vancouver runs across the region rather than
-                through this section, so it is not on it.
+                Nanaimo to downtown Vancouver runs lengthwise across the region,
+                outside the plane of this section.
               </>
             }
           >
@@ -377,7 +377,7 @@ export const scenarios: PageModule = {
             shaking moves tall buildings on soft ground.
           </p>
           <Figure
-            alt="Fast, sharp shaking is most hazardous to short, stiff, older buildings, while slow, long shaking moves tall buildings on soft ground. Neither earthquake is the other's smaller version, and the drawing shows how buildings respond rather than what happens to them."
+            alt="Fast, sharp shaking is most hazardous to short, stiff, older buildings, while slow, long shaking moves tall buildings on soft ground. Each earthquake affects buildings differently. The drawing shows building response only, not damage."
             caption={
               <>
                 The same two buildings stand in both panels. What changes is how
@@ -415,8 +415,8 @@ export const scenarios: PageModule = {
           <p>
             Those are design events for one bridge, not properties of either
             scenario. Past a certain length, the ground fails while the shaking
-            is still going on, and a structure meets both loads at once instead
-            of one after the other.
+            is still going on. The structure then carries the shaking and the
+            moving ground at the same time.
           </p>
           <p>
             In the province’s magnitude 7.0 Greater Vancouver planning scenario,

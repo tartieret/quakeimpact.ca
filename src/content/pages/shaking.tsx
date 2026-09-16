@@ -221,8 +221,8 @@ export const shaking: PageModule = {
             fires and more.” <Cite id="DCRRA-2025" />
           </p>
           <p>
-            So a damage figure or a casualty figure from that work is a floor
-            rather than a ceiling. The fires and the landslides sit outside it.
+            The damage and casualty figures from that work are minimums. Fires
+            and landslides sit outside them.
           </p>
         </Prose>
       ),

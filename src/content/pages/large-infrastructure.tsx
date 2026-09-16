@@ -293,9 +293,8 @@ export const largeInfrastructure: PageModule = {
             <Cite id="AIR-2013" /> What the port, the airport and the ferry
             terminals would face in a shallow crustal earthquake close to the
             city has not been published by anyone. So the crustal earthquake
-            carries no band on this page, because there is nothing to band, and
-            that is a statement about the public record rather than about the
-            nearer earthquake being gentler.
+            carries no band on this page. That gap in the public record says
+            nothing about whether the nearer earthquake would be gentler.
           </p>
           <p>
             The province’s crustal planning scenario does name two of them, as
@@ -334,11 +333,9 @@ export const largeInfrastructure: PageModule = {
         places, and there is no local substitute for any of them.
       </>,
       <>
-        <strong>
-          Plan household supplies for a stretch when nothing is arriving
-        </strong>
-        , rather than for a stretch when the shops are busy. What reaches a shop
-        and what reaches a fuel pump both come through these places, and{" "}
+        <strong>Plan household supplies for a long break in deliveries.</strong>{" "}
+        What reaches a shop and what reaches a fuel pump both come through these
+        places, and{" "}
         <Link href="/after/food/" className={link}>
           food
         </Link>{" "}

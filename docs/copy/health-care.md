@@ -66,7 +66,7 @@ building safely: not less than two hours for elevators in tall buildings, for eq
 supplying water to fight a fire and for smoke-control fans, and between thirty minutes
 and two hours for lighting. [VBBL-2025] For hospitals the by-law points elsewhere, to CSA
 Z32, the standard for essential electrical systems in health care facilities, which CSA
-sells rather than publishes. [VBBL-2025]
+sells. It does not publish the full text online. [VBBL-2025]
 
 The project agreements for the new Surrey hospital and the new St. Paul's each require,
 in identical terms, 72 hours of self-sufficiency for fuel, water and sanitary holding,
@@ -84,7 +84,7 @@ to the roads together. [KAUR-2026]
 
 In the City of Vancouver the study's measure of how well people can reach emergency care
 falls from about 0.9 before the earthquake to about 0.3 after it, mostly because of
-damage to the hospitals rather than to the roads. [KAUR-2026] Across the region the model
+damage to the hospitals. Road damage sits outside it. [KAUR-2026] Across the region the model
 leaves 54,339 people unable to reach any hospital on the roads it considers, because the
 bridges they would cross are out, and retrofitting those bridges inside the model cuts
 that to under 27,000. [KAUR-2026] The bridges themselves are on
@@ -104,12 +104,12 @@ question and it does not answer it. [HEMBC-MCI] It standardises how hospitals re
 a mass casualty incident, and the words earthquake, seismic, Cascadia and post-disaster do
 not appear in it. Its one quantified surge figure, that 10 to 20 per cent of a hospital's
 beds could be freed up quickly by moving patients, is drawn from published literature
-rather than measured in British Columbia hospitals. [HEMBC-MCI]
+from published literature. It was not measured in British Columbia hospitals. [HEMBC-MCI]
 
 The capacity figures that are public are academic. The 2026 study carries a table of
 acute care beds for its 16 hospitals and labels them "Assumed": the authors compiled them
-from public health-authority pages, they count acute care beds rather than intensive care
-or emergency department beds, and the hospitals are anonymised by city. [KAUR-2026] The
+from public health-authority pages. They count acute care beds; intensive care and emergency
+department beds are not separated. The hospitals are anonymised by city. [KAUR-2026] The
 only per-hospital intensive care counts in public come from a 2020 medical journal case
 series covering the six hospitals designated as COVID-19 centres, which is not an
 inventory of the region. [MITRA-2020]
@@ -117,8 +117,8 @@ inventory of the region. [MITRA-2020]
 > **Not published.** No government or health authority has put the expected casualty load
 > beside the region's care capacity, and no official inventory of intensive care or
 > operating room beds is published for British Columbia. The official figures that exist
-> are counts attached to individual building projects rather than a list of what the
-> region has. Peer-reviewed engineering work has made the comparison. [KAUR-2026]
+> are counts attached to individual building projects. No regional inventory is public.
+> Peer-reviewed engineering work has made the comparison. [KAUR-2026]
 
 ## New hospitals meet a higher seismic standard
 
@@ -130,8 +130,8 @@ inventory of the region. [MITRA-2020]
 That describes the St. Paul's on Burrard Street. Its replacement on Station Street is built to the Vancouver Building By-law's post-disaster requirement. [NSP-SPEC] How many patients the other three could take is not in the plan.
 
 Three major projects are specified to post-disaster importance category, the code's term
-for a building expected to keep working after an earthquake rather than only to stay
-standing: the new Surrey hospital and BC Cancer Centre [NSH-SPEC], the new St. Paul's
+for a building expected to keep working after an earthquake: the new Surrey hospital and
+BC Cancer Centre [NSH-SPEC], the new St. Paul's
 [NSP-SPEC] and phase two of Royal Columbian Hospital. [RCH-SPEC] At Royal Columbian the
 acute care tower is post-disaster and the support building beside it is specified as
 normal importance category. [RCH-SPEC] The standard is applied where care is delivered. A

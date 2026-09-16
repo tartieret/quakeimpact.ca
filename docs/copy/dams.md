@@ -106,7 +106,7 @@ the register's Extreme. [BCH-RRA-F2020] -->
 earthquake is expected to do to that dam. It is not a finding that the dam is
 safe, and it is not a finding that nobody has looked: BC Hydro files seismic
 detail on some of its dams to its regulator and not others, and Metro Vancouver
-publishes a yearly safety summary rather than the reviews behind it.
+publishes a yearly safety summary. The reviews behind it are not public.
 [BCH-RRA-F2020] [MV-DSP-2026]
 
 ## Design rules apply to new dam work

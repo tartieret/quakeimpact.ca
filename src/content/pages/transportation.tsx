@@ -362,7 +362,7 @@ export const transportation: PageModule = {
               <>
                 Three numbers of three kinds, drawn three ways. A design intent
                 is a point somebody aimed at. The assessed capacity is hatched
-                because it is a range rather than a figure. The standard is the
+                because it is a range. The standard is the
                 line a new lifeline crossing has to reach.{" "}
                 <Cite id="GMC-TUNNEL-19" />
               </>
@@ -404,13 +404,13 @@ export const transportation: PageModule = {
               <>
                 The earthquake each crossing has a published figure for, in the
                 place the crossing is. Every marker has the same outer size;
-                more fill means a larger published earthquake, in an order
-                rather than a scale. A question mark means no return period was
+                more fill means a larger published earthquake. The marks show
+                order only and have no numeric scale. A question mark means no return period was
                 found. The key under the map says what each of those earthquakes
                 bought, which is the part the number alone leaves out: solid
                 cores are design intents, the hatched tunnel is an assessment,
-                and the retrofit objective is to stop a collapse rather than to
-                keep a crossing open. The question mark does not mean a crossing
+                and the retrofit objective is collapse prevention. It does not
+                promise an open crossing. The question mark does not mean a crossing
                 is unassessed. The table below gives the full figure and its
                 source, crossing by crossing. The Moray Channel Bridge is not
                 drawn: no openly licensed source holds it, and a hand-placed
@@ -756,9 +756,9 @@ export const transportation: PageModule = {
     items: [
       <>
         <strong>
-          Plan on the crossing you use being closed or under inspection
-        </strong>
-        , not open. That is what the province’s own service levels describe:
+          Plan for the crossing you use to be closed or under inspection.
+        </strong>{" "}
+        That is what the province’s own service levels describe:
         limited access, emergency traffic, and about a day to inspect a bridge
         before anyone is let over it. <Cite id="MOTI-SRDC-05" />
       </>,
@@ -780,7 +780,7 @@ export const transportation: PageModule = {
         >
           getting around
         </Link>
-        , and what it asks for is a location rather than a route.
+        . The question there is where you will be when the shaking starts.
       </>,
     ],
   },

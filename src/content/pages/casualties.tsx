@@ -128,7 +128,7 @@ export const casualties: PageModule = {
                 <Cite id="DCRRA-2025" />. They are separate counts of different
                 areas and cannot be added together. The province’s Cascadia row
                 counts the whole province, and the heaviest damage in that
-                scenario is on Vancouver Island rather than here.
+                scenario is on Vancouver Island, outside the Lower Mainland.
               </>
             }
           />

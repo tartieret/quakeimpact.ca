@@ -87,8 +87,8 @@ starts and sends an alert through the National Public Alerting System, so alerts
 on television, on the radio and on compatible mobile phones. [PREPAREDBC] It provides
 "seconds to tens-of-seconds of warning", which is enough to get down and under
 something, and the guide is explicit that early warning systems cannot predict
-earthquakes. [PREPAREDBC] Close to where the earthquake starts, the alert may arrive
-with the shaking rather than before it. [NRCAN-EEW]
+earthquakes. [PREPAREDBC] Close to where the earthquake starts, the alert may arrive as
+the shaking begins. [NRCAN-EEW]
 
 The seconds are for one action:
 
@@ -109,7 +109,7 @@ and the guide says to expect them. [PREPAREDBC]
 Four litres per person per day, for drinking and sanitation together, is the province's
 rate. [PREPAREDBC] The City of Vancouver prints the same rate. [COV-EXPLORER-25] For a
 household of four holding two weeks, that is at least 224 litres. That total is
-arithmetic from the published rate rather than a figure either body prints.
+calculated from the published rate; neither body prints it.
 
 Pets are on the same list, one grab-and-go bag each and supplies for the same two weeks. [PREPAREDBC-KIT]
 
@@ -289,8 +289,8 @@ farther away, and one phone number outside the region.
 **Then food that needs no cooking and no refrigeration**, and a manual can opener.
 [PREPAREDBC]
 
-**Then a light, a radio, a power bank, warm layers and sturdy shoes**, kept where you
-will be rather than only at home. [PREPAREDBC]
+**Then keep a light, a radio, a power bank, warm layers and sturdy shoes wherever you
+spend time.** [PREPAREDBC]
 
 **Secure the heavy things in the rooms where people sleep.** Start with anything tall
 next to a bed, and move heavy objects to lower shelves. [PREPAREDBC]

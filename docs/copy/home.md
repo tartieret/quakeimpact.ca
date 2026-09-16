@@ -47,45 +47,45 @@ not restock: [food](/after/food/) arrives by truck through the same broken roads
 as everything else, and a [service station](/after/fuel/) with full tanks and no
 power dispenses nothing. Cards do not work without power or a network.
 
-Crews clear the routes the response needs first, which is not your street, so
-what you can reach is what you can walk or cycle to. The
-[toilet](/after/sanitation/) stops being usable on the first day rather than the
-first week, because flushing takes water nobody has to spare. Family and neighbours are likely to be the only available [first responders](/prepare/), so the people who reach you first are the people who already live on your street.
+Crews clear emergency routes first. Local streets wait, so what you can reach
+may be limited to walking or cycling distance. The [toilet](/after/sanitation/)
+can stop being usable on the first day because flushing takes water nobody has
+to spare. Family and neighbours are likely to reach you before official help.
 
-**Weeks — some things come back. The ones under the road do not.**
-[Power](/after/electricity/) comes back where the network can be repaired first, and putting poles and wires back up is many small repairs rather than one big one. In downtown Vancouver, BC Hydro says it could take several weeks to restore power to customers and years to completely restore the system.
+**Weeks — repairs stretch across the region.** [Power](/after/electricity/) comes
+back where the network can be repaired first. Restoring poles and wires means
+making many small repairs across the region. In downtown Vancouver, BC Hydro
+says it could take several weeks to restore power to customers and years to
+completely restore the system.
 [Water](/after/water/) comes back behind it, and the mains that cross under the rivers and inlets are the slowest of those repairs.
 
-The [sewers](/after/sanitation/) stay broken for months rather than weeks.
-Households manage waste in buckets and chemical toilets, and an apartment tower
-has nowhere else to put it. [Gas](/after/gas/) returns building by building, as
+The [sewers](/after/sanitation/) stay broken for months. Households manage waste
+in buckets and chemical toilets, and an apartment tower has nowhere else to put
+it. [Gas](/after/gas/) returns building by building, as
 fast as technicians can enter each one and relight every appliance in it.
 Drinking water arrives on trucks, at points people queue at, and schools and
 workplaces are shut or somewhere else.
 
 **Months — repair becomes the ordinary state of things.** The [building you live
 in](/after/housing/) can be standing, sound to look at, and closed for months
-behind a cordon. Most people who lose their home lose it that way rather than
-to collapse. Somewhere to move into is scarce, contractors and engineers are
+behind a cordon. Cordons around standing buildings displace more people than
+collapses. Somewhere to move into is scarce, contractors and engineers are
 scarcer, and every household in the region is looking at the same time.
 
-Utilities run at reduced service long after they are back on. The province's plan
-through all of it is that people stay in the region rather than leave it. [What
-that means for getting around](/getting-around/).
+Utilities run at reduced service long after they are back on. The province's
+plan assumes people stay in the region. [What that means for getting
+around](/getting-around/).
 
-No two earthquakes do the same thing, and none of this is a forecast of the
-actual event. It follows the two events the province and its agencies plan
-around, which are the ones households are asked to be ready for.
+This timeline combines the two events the province and its agencies plan around.
+Actual conditions will differ, but these are the events households are asked to
+be ready for.
 
-The weather it happens in changes how hard each of those stretches is. Running
-out of water in an August heat dome is not the same as running out of it in
-January after days of rain, and the two scenarios are set in those two
-conditions: a 30 to 40 degree heatwave with wildfire smoke for the megathrust,
-[DCRRA-2025] a January afternoon after an atmospheric river for the crustal
-earthquake. [PEIRS]
+The weather changes how hard each stretch is. The megathrust scenario is set in
+a 30 to 40 degree heatwave with wildfire smoke. [DCRRA-2025] The crustal
+scenario is set on a January afternoon after an atmospheric river. [PEIRS]
 
-None of those failures happens on its own, either. Water needs power for pumps
-and roads for crews. Roads need debris cleared, which needs fuel. The order in
+These failures compound one another. Water needs power for pumps and roads for
+crews. Roads need debris cleared, which needs fuel. The order in
 which the systems can be brought back sets how long the region waits, so [life
 afterwards](/after/) takes them one at a time and [the dependency
 graph](/dependencies/) counts what each one is waiting on.
@@ -101,7 +101,7 @@ flushes, roads that carry you, a home to go back to.
 
 *Every system, drawn from the content model rather than written here.*
 
-## The region plans for two earthquakes, and they are not the same event
+## The region plans for two different earthquakes
 
 The offshore Cascadia megathrust is the one people have heard of. The shallower
 earthquake underneath the region is the one Natural Resources Canada calls "the
@@ -118,9 +118,9 @@ it, and the fires and landslides that arrive after the shaking stops.
 
 ## Everything here comes from published documents
 
-Governments, utilities and the engineers they hire wrote them. Where nobody has
-published an answer, the page says so instead of guessing. Where two official
-documents contradict each other, both are here.
+Governments, utilities and the engineers they hire wrote them. Pages mark gaps
+where nobody has published an answer. Where two official documents contradict
+each other, both are here.
 
 How long something is out is written as one of three bands: Low, Medium or High,
 with a fourth for not yet assessed. [How the bands work](/method/). [The

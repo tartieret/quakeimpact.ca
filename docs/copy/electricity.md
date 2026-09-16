@@ -45,7 +45,7 @@ From a footnote in the same filing:
 > be operable following 1/1000-year return period earthquake ground motions, far less
 > than the 1/2475-year return period earthquake ground motions." [BCH-WESTEND-25]
 
-A post-disaster building is one the code expects to keep working after the earthquake, rather than merely to stay standing. A one in 2,475 year ground motion is shaking severe enough that it happens on average once in 2,475 years, so the higher the number, the rarer and the harder the shaking. Murrin was commissioned in 1947 and Dal Grauer in
+A post-disaster building is one the code expects to keep working after the earthquake. A one in 2,475 year ground motion is shaking severe enough that it happens on average once in 2,475 years, so the higher the number, the rarer and the harder the shaking. Murrin was commissioned in 1947 and Dal Grauer in
 1952. About 60 per cent of Murrin's assets and 78 per cent of Dal Grauer's are at or
 near the end of their working lives. [BCH-WESTEND-25]
 
@@ -80,7 +80,7 @@ sustaining damage, including possible collapse, during an earthquake of less tha
 1:475-year frequency", and that losing the crossing "would result in load curtailment in the Metro Vancouver area", which means cutting power to customers on purpose to keep the rest of the network up. [BCH-RRA-F2023]
 
 Cost, in-service date and construction start were all listed as to be determined, and
-the project sits in a category for future prioritization rather than committed work.
+the project sits in a category for future prioritization, with no commitment to build.
 [BCH-RRA-F2023]
 
 Murrin and the Second Narrows crossing are two named assets, and neither is a statement about the rest of the network.
@@ -128,7 +128,7 @@ Payment terminals and cordless phone handsets stop working.
 **Keep light that does not need the grid**, and keep it where you can reach it in the
 dark. A headlamp for each person beats a single torch for the household.
 
-**Charge for days rather than hours.** A power bank large enough to refill a phone
+**Keep enough power for several days.** A power bank large enough to refill a phone
 several times is the difference between having a phone and having a brick.
 
 **Settle now what has to stay cold or stay powered.** Medication that needs

@@ -96,7 +96,7 @@ constraints)". [ECR-2016]
 
 British Columbia could not exercise its cross-border arrangement because its
 cross-border partners were exercising the same earthquake. It publishes summaries of
-these exercises rather than full after-action reports. [EX-PROG]
+these exercises. Full after-action reports are not published. [EX-PROG]
 
 | Who would come | Under what |
 | --- | --- |

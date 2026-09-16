@@ -282,8 +282,8 @@ export const safetyAndConflict: PageModule = {
           <p>
             Households control one part of this: their own supplies. The
             province recommends keeping two weeks of food and water for an
-            earthquake here. <Cite id="PREPAREDBC" /> That is time a household
-            can spend at home instead of waiting in a queue.
+            earthquake here. <Cite id="PREPAREDBC" /> Those supplies reduce the
+            time a household spends waiting in a queue.
           </p>
         </Prose>
       ),

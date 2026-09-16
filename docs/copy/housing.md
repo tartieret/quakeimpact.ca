@@ -22,7 +22,7 @@ restricted, and nobody has said for how long.
 Behind every placard is a queue. In a Cascadia earthquake, damage assessment teams are
 expected to be overwhelmed, leaving "about two million people in need of alternate housing".
 [DCRRA-2025] That count is province-wide, and it comes from the province's written scenario
-rather than from a model run. [DCRRA-2025]
+from the province's written scenario, not a model run. [DCRRA-2025]
 
 ## Cordons can close undamaged buildings
 
@@ -30,7 +30,7 @@ In Vancouver, areas with high concentrations of damage may be closed off "for we
 or even years", and the West End and the Downtown Eastside are the neighbourhoods most at risk
 of it. [COV-RISK-2024]
 
-The City draws a cordon around an area and ties it to concentrations of damage rather than to
+The City draws a cordon around an area and ties it to concentrations of damage, not to
 any single address. [COV-RISK-2024] That is why displacement counts run so far above red-tag
 counts. A building that came through the shaking can sit inside a closed block, and nobody
 lives in it while the block is closed.
@@ -125,13 +125,13 @@ Your landlord, your strata or your municipality can tell you. Age and type are w
 own model runs on: nearly 70 per cent of Vancouver's buildings predate 1990, and wood-frame apartments
 and unreinforced masonry carry the highest displacement rates in it. [COV-RISK-2024]
 
-**Agree now with someone outside the region that you could stay with them for months, and agree
-it out loud rather than assuming it.** Large numbers of people may need interim housing for
+**Ask someone outside the region if you could stay with them for months, and get a clear
+answer now.** Large numbers of people may need interim housing for
 months to years, and hotels may not be available. [PEIRS]
 
-**Keep what you would need out of the building rather than in it.** A cordon closes the door on
-whatever is behind it: identification, insurance papers, a prescription list, a spare set of
-keys. A copy held somewhere else, or by somebody else, is the one you can still get at.
+**Keep copies of essential documents somewhere else.** A cordon closes the door on whatever is
+behind it: identification, insurance papers, a prescription list, a spare set of keys. A copy
+held somewhere else, or by somebody else, is the one you can still get at.
 
 ## Sources on this page
 

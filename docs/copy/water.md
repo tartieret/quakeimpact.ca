@@ -47,7 +47,7 @@ breaks at the 71 river and inlet crossings alone, the part of that total falling
 assets hardest to reach.
 
 The figures come from a review of 123 existing reports on reservoirs, pump stations
-and pipelines rather than from a single model run. [MV-WATER-22] They are more than
+and pipelines. They do not come from a single model run. [MV-WATER-22] They are more than
 eight and a half times the failures projected by the region's previous study in 1993.
 [MV-WATER-22] The study is four years old.
 
@@ -75,9 +75,9 @@ words that the joined-up picture across that seam has not been assembled yet.
 > **Not a restoration estimate.** A March 2018 case study by Agriculture and
 > Agri-Food Canada found that drinking water disruption in the Vancouver area "could
 > last several months". It is a federal document written by an agriculture department
-> rather than by the water utility, never published, obtained under freedom of
+> by a federal agriculture department, not the water utility. It was never published, was obtained under freedom of
 > information and reported by the Globe and Mail in 2019. "Several months" is a range
-> word rather than a figure. The study is eight years old and predates the current
+> word, not a figure. The study is eight years old and predates the current
 > tunnel and reservoir program. The other half of it has aged better: at the time, the
 > province had put its plans for supplying potable water on hold pending an update
 > from Metro Vancouver. [GM-AAFC-19]
@@ -85,7 +85,7 @@ words that the joined-up picture across that seam has not been assembled yet.
 ## The province expects disruption for many months
 
 "Disruption to water and wastewater systems are expected for many months following
-the event." [PEIRS] The sentence is qualitative, it covers sewers in the same breath as water, and it is region-wide rather than specific to any pipe. The province wrote it for its shallow crustal M7 planning scenario.
+the event." [PEIRS] The sentence is qualitative, it covers sewers in the same breath as water, and it is region-wide. It makes no claim about a specific pipe. The province wrote it for its shallow crustal M7 planning scenario.
 
 The province's Cascadia assessment states that "people are thirsty within 24 hours",
 and that "distributing bulk potable water across the affected region remains

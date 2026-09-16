@@ -106,8 +106,8 @@ export const groundConditions: PageModule = {
             caption={
               <>
                 Christchurch, New Zealand, on the day of the 2011 earthquake.
-                The silt came up through the road rather than along it, and the
-                cars are standing in ground that stopped carrying them.
+                The silt rose through the road, and the cars are standing in
+                ground that stopped carrying them.
                 Richmond and Delta have both conditions: loose sand that can
                 liquefy and water close enough to the surface to keep
                 it wet.{" "}
@@ -145,8 +145,8 @@ export const groundConditions: PageModule = {
                 liquefy, and water close enough to the surface to keep it wet.
                 Thicknesses are to scale and widths mean nothing; how deep the
                 bottom of the sand sits is not a published figure. The 11.8 m is
-                an average total through a site rather than one continuous
-                layer, and it is drawn under the water table because the sand
+                an average total through a site. It is not one continuous layer,
+                and it is drawn under the water table because the sand
                 has to be wet for any of this to happen. <Cite id="JAVANBAKHT-24" />
               </>
             }

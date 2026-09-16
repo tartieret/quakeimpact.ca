@@ -9,8 +9,7 @@ lede: Each impact band summarizes restoration time, geographic extent and depend
 ## What a band measures
 
 Impacts here are given as Low, Medium or High, not as a number of days. Most published
-work assesses one design earthquake, so a figure in between would be modelling rather
-than reporting.
+work assesses one design earthquake, so any figure in between would require new modelling.
 
 A band is set by how long the system is out, wherever a document states a duration.
 
@@ -20,10 +19,10 @@ A band is set by how long the system is out, wherever a document states a durati
 | **Medium** | Days to weeks | Patchy, worst on poor ground | Waiting on one other system |
 | **High** | Weeks to months, sometimes longer | Regional | Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast |
 
-The same three questions are asked of every system, so that High for sewer service and High for roads mean comparable things. Where a published duration exists, it sets the band. How widely and what a system is waiting on describe the band rather than choose it, so a system can be banded below something it depends on: electricity is High and communications is Medium, because a cell site comes back when a generator gets fuel and a distribution network comes back one pole at a time.
+The same three questions are asked of every system, so that High for sewer service and High for roads mean comparable things. A published duration sets the band. How widely a failure spreads and what the system waits on provide context. They do not change the band, so a system can sit below something it depends on: electricity is High and communications is Medium, because a cell site comes back when a generator gets fuel and a distribution network comes back one pole at a time.
 
-A fourth state, **not yet assessed**, is drawn hatched rather than coloured. It is a
-real answer, not a blank waiting to be filled.
+A fourth state, **not yet assessed**, is drawn with hatching. It is a real answer, not
+a blank waiting to be filled.
 
 ## A band reflects published evidence
 
@@ -109,7 +108,7 @@ casualty figures are attributed to the federal scenario. [DCRRA-2025] Its crusta
 figures were developed by Natural Resources Canada. [PEIRS] The province asked for
 those scenarios in the first place. [GSC-OF-8853]
 
-The province adopts the federal figures rather than confirming them. So a federal document and a provincial document giving the same number are one model quoted twice. Where a genuinely independent estimate exists, it comes from
+The provincial figures come directly from the federal model. A federal document and a provincial document giving the same number are one model quoted twice. Where a genuinely independent estimate exists, it comes from
 the insurance industry, and it is named as such wherever it appears.
 
 Every one of those modelled figures covers "only damage to buildings, and their

@@ -131,7 +131,7 @@ export const electricity: PageModule = {
           </Quote>
           <p>
             A post-disaster building is one the code expects to keep working
-            after the earthquake, rather than merely to stay standing. A one in
+            after the earthquake. A one in
             2,475 year ground motion is shaking severe enough that it happens on
             average once in 2,475 years, so the higher the number, the rarer and
             the harder the shaking. Murrin
@@ -140,13 +140,14 @@ export const electricity: PageModule = {
             the end of their working lives. <Cite id="BCH-WESTEND-25" />
           </p>
           <Figure
-            alt="BC Hydro found Murrin Substation in downtown Vancouver not operable after a 1 in 1,000 year ground motion, while the building code requires a post-disaster building to be operable after a 1 in 2,475 year ground motion. The figure shows the gap between the two, and it is about one substation rather than the network."
+            alt="BC Hydro found Murrin Substation in downtown Vancouver not operable after a 1 in 1,000 year ground motion, while the building code requires a post-disaster building to be operable after a 1 in 2,475 year ground motion. The figure shows the gap for one substation. It does not describe the network."
             caption={
               <>
                 The axis carries only the two return periods the footnote
-                states. Nothing is filled in below 1 in 1,000, because the
-                assessment says what Murrin fails at rather than what it
-                withstands. <Cite id="BCH-WESTEND-25" />
+                states. Nothing is filled in below 1 in 1,000 because the
+                assessment publishes Murrin’s failure threshold. It does not
+                give a threshold the substation withstands.{" "}
+                <Cite id="BCH-WESTEND-25" />
               </>
             }
           >
@@ -219,7 +220,7 @@ export const electricity: PageModule = {
           <p>
             Cost, in-service date and construction start were all listed as to
             be determined, and the project sits in a category for future
-            prioritization rather than committed work.{" "}
+            prioritization, with no commitment to build.{" "}
             <Cite id="BCH-RRA-F2023" />
           </p>
           <p>
@@ -294,9 +295,9 @@ export const electricity: PageModule = {
             caption={
               <>
                 One mark is one transformer in both panels, on the same
-                columns. The spares are not drawn as a share of the fleet,
-                because the filings connect them to one failure rather than to
-                many.{" "}
+                columns. The spares are not drawn as a share of the fleet. The
+                filings connect them to one failure and provide no basis for a
+                larger comparison.{" "}
                 <Cite id="BCH-XFMR-21" /> <Cite id="BCH-RRA-F2020" />
               </>
             }
@@ -392,7 +393,7 @@ export const electricity: PageModule = {
         single torch for the household.
       </>,
       <>
-        <strong>Charge for days rather than hours.</strong> A power bank large
+        <strong>Keep enough power for several days.</strong> A power bank large
         enough to refill a phone several times is the difference between having
         a phone and having a brick.
       </>,

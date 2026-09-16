@@ -95,7 +95,7 @@ separate study.
 ## Most residents of the highest-risk buildings are renters
 
 In the census tracts carrying the most risk, roughly 70 to 75 per cent of people rent
-rather than own, and about 20 to 30 per cent of those renters are low income. More than
+rent their homes, and about 20 to 30 per cent of those renters are low income. More than
 10 per cent are seniors, 30 to 40 per cent are visible minorities and 4 to 10 per cent are
 Indigenous. [COV-RISK-2024] Many single-room-occupancy units, the cheapest housing in the
 city, are in older brick buildings in the Downtown Eastside. [COV-RISK-2024]
@@ -265,7 +265,7 @@ essentials are worth keeping somewhere you can pick up on the way out.
 
 **If you are renovating, that is when the falling-hazard rules arrive.** Part 11 of the
 by-law requires falling hazards over public ways to be dealt with, and it is triggered by
-renovation, addition, reconstruction or change of use rather than by the calendar.
+renovation, addition, reconstruction or change of use. Age alone does not trigger it.
 [VBBL-2025]
 
 None of these changes the building. They change how much you know about it in advance, and

@@ -62,8 +62,8 @@ export const buildings: PageModule = {
             In November 2024 the City of Vancouver shook a computer model of its
             own buildings with three different earthquakes and counted the
             damage each time. <Cite id="COV-RISK-2024" /> Only one of the three
-            would ever happen, so the rows below are three separate what-ifs
-            rather than stages of one event.
+            would ever happen. The rows below are three separate what-ifs, not
+            stages of one event.
           </p>
           <DataTable
             caption="Three earthquakes modelled separately against the City of Vancouver’s buildings: how many are badly damaged, how many people are out of their homes for more than 90 days, and the direct economic loss."
@@ -195,8 +195,8 @@ export const buildings: PageModule = {
             minWidth="44rem"
             note={
               <>
-                City of Vancouver only, and all of it belongs to the M7.2
-                Georgia Strait scenario rather than to the other two. Badly
+                City of Vancouver only. All of it belongs to the M7.2 Georgia
+                Strait scenario. Badly
                 damaged means extensively or completely damaged, and the share
                 for wood-frame apartments is not published. The types are
                 counted by what a building is, not by the year it went up.{" "}
@@ -259,7 +259,7 @@ export const buildings: PageModule = {
         <Prose>
           <p>
             In the census tracts carrying the most risk, roughly 70 to 75 per
-            cent of people rent rather than own, and about 20 to 30 per cent of
+            cent of people rent their homes, and about 20 to 30 per cent of
             those renters are low income. More than 10 per cent are seniors, 30
             to 40 per cent are visible minorities and 4 to 10 per cent are
             Indigenous. <Cite id="COV-RISK-2024" /> Many single-room-occupancy
@@ -612,7 +612,8 @@ export const buildings: PageModule = {
         </strong>{" "}
         Part 11 of the by-law requires falling hazards over public ways to be
         dealt with, and it is triggered by renovation, addition, reconstruction
-        or change of use rather than by the calendar. <Cite id="VBBL-2025" />
+        or change of use. Age alone does not trigger it.{" "}
+        <Cite id="VBBL-2025" />
       </>,
     ],
     closing: (

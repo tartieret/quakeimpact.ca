@@ -146,9 +146,9 @@ export const fireFollowing: PageModule = {
             houses and another 26 per cent in apartments. The study’s own
             summary is that “about 70% of all ignitions occur in residential
             occupancies”.{" "}
-            <Cite id="SCAWTHORN-2020" /> That split comes from what was counted
-            after the 1994 Northridge earthquake in California, in the United States, applied here
-            rather than measured here. <Cite id="SCAWTHORN-2020" />
+            <Cite id="SCAWTHORN-2020" /> That split applies counts from the 1994
+            Northridge earthquake in California, in the United States, to this
+            region. It was not measured here. <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
             Almost half of the fires an earthquake would start anywhere in
@@ -212,8 +212,8 @@ export const fireFollowing: PageModule = {
           </p>
           <p>
             Most engines in the study area, Burnaby’s among them, carry 4 inch
-            large-diameter hose rather than the 5 inch hose Vancouver Fire
-            Rescue Services uses, “and lack adapters, which is an obstacle to
+            large-diameter hose, while Vancouver Fire Rescue Services uses 5
+            inch hose, and they “lack adapters, which is an obstacle to
             effective mutual aid”. <Cite id="SCAWTHORN-2020" /> Two departments
             can arrive at the same fire and be unable to join their hoses.
           </p>
@@ -261,7 +261,7 @@ export const fireFollowing: PageModule = {
           <p>
             CSZ there is the Cascadia Subduction Zone, the offshore fault. The
             federal work on building damage reaches the same ordering through
-            ground motion rather than ignitions. See{" "}
+            its ground-motion model. See{" "}
             <Link
               href="/shaking/buildings/"
               className="text-accent underline underline-offset-2"
@@ -354,9 +354,9 @@ export const fireFollowing: PageModule = {
                 so what is drawn is the pipe: the City publishes no service
                 area, and a boundary drawn around the pipe would be one we
                 invented. Nothing here says how far from a main a hydrant
-                reaches. The city limits are reference only, and they are a
-                legal line rather than a shoreline, which is why the water under
-                them is drawn from the province’s Freshwater Atlas.
+                reaches. The city limits are a legal boundary, not a shoreline,
+                so the water under them comes from the province’s Freshwater
+                Atlas.
               </>
             }
             licence={<FireMapLicence />}
@@ -380,8 +380,8 @@ export const fireFollowing: PageModule = {
             <Cite id="COV-EXPLORER-25" /> It names no coverage area.
           </p>
           <p>
-            The coverage sentence exists, on a different page, filed under what
-            the City has built rather than under what a resident can do.{" "}
+            The coverage sentence exists on a different page, filed under
+            infrastructure.{" "}
             <Cite id="COV-PREPARES" /> No map, address lookup or neighbourhood
             check on vancouver.ca tells a resident which side of the line they
             are on. The blue hydrants are the only part of the description a
@@ -519,8 +519,8 @@ export const fireFollowing: PageModule = {
             withstand major disasters”, with the oldest under renovation and the
             second oldest brought up to standard some years earlier.{" "}
             <Cite id="RICH-CSC-2026-03" /> That is an officer’s answer recorded
-            in minutes rather than an engineering rating hall by hall, and the
-            phrase is not the one the building codes use.
+            in minutes. No hall-by-hall engineering rating was published, and
+            the phrase is not the one the building codes use.
           </p>
           <VerificationNote label="Not published">
             How many of Vancouver’s 19 fire halls meet a post-disaster standard

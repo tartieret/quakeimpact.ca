@@ -45,7 +45,7 @@ the province expects of the roads is on the
 > during a flood. On 21 November 2021, during the flood emergency in the
 > province's southwest, Global News quoted Dan McTeague, president of the
 > advocacy organisation Canadians for Affordable Energy.
-> [FUEL-GN-21] That is one person's remark to a reporter rather than a study, and
+> [FUEL-GN-21] The figure comes from one person's remark to a reporter. No study supports it, and
 > it predates the 2024 Trans Mountain Expansion. The nearest academic work, a 2016 study of the coastal British
 > Columbia fuel transportation system, gives its figure for Vancouver Island, not
 > for here. [UBC-FUEL] Nothing current has been published for the Lower Mainland.

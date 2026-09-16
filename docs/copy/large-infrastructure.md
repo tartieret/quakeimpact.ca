@@ -123,7 +123,7 @@ liquefaction assessment work on the Deltaport Berth 3 expansion. [RBT2-CVS-19] T
 
 The band for the megathrust rests on that one study, and the study modelled the magnitude
 9 megathrust and nothing else. [AIR-2013] What the port, the airport and the ferry
-terminals would face in a shallow crustal earthquake close to the city has not been published by anyone. So the crustal earthquake carries no band on this page, because there is nothing to band, and that is a statement about the public record rather than about the nearer earthquake being gentler.
+terminals would face in a shallow crustal earthquake close to the city has not been published by anyone. So the crustal earthquake carries no band on this page. That gap in the public record says nothing about whether the nearer earthquake would be gentler.
 
 The province's crustal planning scenario does name two of them, as exposure and not as
 damage: "Liquefaction of roadways in Richmond and Delta may make driving difficult, which
@@ -141,8 +141,7 @@ about that is decide in advance not to depend on either.
 help in the first days.** Goods and people reach this region through a small number of
 very large places, and there is no local substitute for any of them.
 
-**Plan household supplies for a stretch when nothing is arriving**, rather than for a
-stretch when the shops are busy. What reaches a shop and what reaches a fuel pump both
+**Plan household supplies for a long break in deliveries.** What reaches a shop and what reaches a fuel pump both
 come through these places, and [food](/after/food/) and [fuel](/after/fuel/) set out what
 the province expects of each.
 

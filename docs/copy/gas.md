@@ -91,7 +91,7 @@ appropriate". [BCUC-C-6-25]
 
 The LNG storage tank at the Tilbury base plant was installed in 1969. Seismic design
 requirements have tightened since, and to comply with them FortisBC runs the tank at 58
-per cent of its capacity, 0.35 billion cubic feet rather than 0.6. [BCUC-C-6-25]
+per cent of its capacity: 0.35 billion cubic feet, down from 0.6. [BCUC-C-6-25]
 
 Two engineering firms examined whether the tank could be refurbished to its full design
 capacity while meeting current minimum seismic requirements. Both recommended replacing
@@ -117,7 +117,7 @@ date for it.
 > **No published restoration time.** Nothing in the public record says how long the gas
 > would be off in the Lower Mainland after an earthquake, or how much of the region
 > would lose it. The 2024 plan assesses 58 vulnerabilities across FortisBC's system and
-> reports each one under a number rather than a name or a place, so none of its results
+> identifies each one only by number, with no name or location, so none of its results
 > can be tied to a location. [FEI-RESILIENCY-24] Its second-largest risk overall sits
 > at an asset FortisBC has not named and whose location it filed to the commission in
 > confidence, so nobody outside the regulator can say whether it serves this region.

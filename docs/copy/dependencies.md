@@ -20,10 +20,9 @@ Fuel itself moves by road.
 
 ## Most connections have not been studied
 
-A line drawn between two systems asserts a connection whether or not anyone has
-established one, so the picture below counts the connections instead of joining them up.
-Underneath it is the list it is built from: each system, and the systems its own page
-names as the ones it waits on.
+A line drawn between two systems would imply that someone had established the connection.
+The picture below therefore shows how many documented connections each system has. The list
+underneath names every system and the systems its own page says it waits on.
 
 The list is not evidence. Connections without a document remain visible so an
 unstudied link is not mistaken for one that has been ruled out.

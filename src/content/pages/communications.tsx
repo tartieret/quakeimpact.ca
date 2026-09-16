@@ -175,8 +175,8 @@ export const communications: PageModule = {
             should TSPs use to determine an appropriate backup power run time
             for each type of network site?” <Cite id="CRTC-2025-226" /> TSPs are
             the telephone and internet companies themselves. The guidance
-            reproduced in the proceeding’s appendix is written in “should”
-            rather than “must”. <Cite id="CRTC-2025-226" />
+            reproduced in the proceeding’s appendix uses “should”, making it a
+            recommendation. <Cite id="CRTC-2025-226" />
           </p>
           <p>
             The record closed in late August 2026. No decision has been issued.{" "}
@@ -316,15 +316,14 @@ export const communications: PageModule = {
     ),
     items: [
       <>
-        <strong>Text rather than call.</strong> The province names texts and
+        <strong>Send a text message.</strong> The province names texts and
         low-bandwidth messages as the most reliable method when other services
         are disrupted. <Cite id="PEIRS" /> A short message keeps retrying in the
         background, while a voice call holds a channel open for its whole
         length.
       </>,
       <>
-        <strong>Call 9-1-1 to report an emergency, and not to ask what
-        happened.</strong>{" "}
+        <strong>Use 9-1-1 only for emergencies.</strong>{" "}
         After a magnitude 4.7 in 2015 E-Comm recorded a 1,500 per cent increase
         in 9-1-1 calls, and the vast majority of them were not emergencies.{" "}
         <Cite id="ECOMM-EQ" /> Each of those calls held a line somebody else
@@ -336,10 +335,10 @@ export const communications: PageModule = {
         Earthquake Early Warning has been live in British Columbia since spring
         2024, <Cite id="NRCAN-EEW" /> and BC Emergency Alert reaches a phone
         over the same cellular network the earthquake is degrading.{" "}
-        <Cite id="BC-ALERT-2026" /> Close to the epicentre the alert can arrive
-        with the shaking rather than before it. <Cite id="NRCAN-EEW" />
+        <Cite id="BC-ALERT-2026" /> Close to the epicentre the alert may arrive
+        as the shaking begins. <Cite id="NRCAN-EEW" />
       </>,
     ],
-    closing: <>None of those three needs anything bought in advance.</>,
+    closing: <>These steps do not require buying anything in advance.</>,
   },
 };

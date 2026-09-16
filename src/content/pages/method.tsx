@@ -101,7 +101,7 @@ export const method: PageModule = {
           <p>
             Impacts here are given as Low, Medium or High, not as a number of
             days. Most published work assesses one design earthquake, so a
-            figure in between would be modelling rather than reporting.
+            any figure in between would require new modelling.
           </p>
           <p>
             A band is set by how long the system is out, wherever a document
@@ -125,19 +125,18 @@ export const method: PageModule = {
           <p>
             The same three questions are asked of every system, so that High for
             sewer service and High for roads mean comparable things. Where a
-            published duration exists, it sets the band. How widely and what a
-            system is waiting on describe the band rather than choose it, so a
-            system can be banded below something it depends on: electricity is
-            High and communications is Medium, because a cell site comes back
-            when a generator gets fuel and a distribution network comes back one
-            pole at a time.
+            published duration exists, it sets the band. How widely a failure
+            spreads and what the system waits on provide context. They do not
+            change the band, so a system can sit below something it depends on:
+            electricity is High and communications is Medium, because a cell
+            site comes back when a generator gets fuel and a distribution
+            network comes back one pole at a time.
           </p>
           <div className="rounded-xl border border-rule bg-paper-raised p-5">
             <BandName band="unknown" />
             <p className="mt-3 leading-relaxed">
-              A fourth state, <strong>not yet assessed</strong>, is drawn
-              hatched rather than coloured. It is a real answer, not a blank
-              waiting to be filled.
+              A fourth state, <strong>not yet assessed</strong>, is drawn with
+              hatching. It is a real answer, not a blank waiting to be filled.
             </p>
           </div>
         </Prose>
@@ -320,15 +319,15 @@ export const method: PageModule = {
             <Cite id="GSC-OF-8853" />
           </p>
           <p>
-            The province adopts the federal figures rather than confirming
-            them. So a federal document and a provincial document giving the
-            same number are one model quoted twice. Where a genuinely
-            independent estimate exists, it
+            The provincial figures come directly from the federal model. A
+            federal document and a provincial document giving the same number
+            are one model quoted twice. Where a genuinely independent estimate
+            exists, it
             comes from the insurance industry, and it is named as such wherever
             it appears.
           </p>
           <Figure
-            alt="Both scenarios come from one Geological Survey of Canada catalogue, which the province asked for and then adopted for its own Cascadia casualty figures and crustal figures, so a federal figure and a provincial figure that agree are one model quoted twice rather than two studies agreeing. The one genuinely independent estimate comes from the insurance industry and is drawn apart from the catalogue rather than inside it."
+            alt="Both scenarios come from one Geological Survey of Canada catalogue, which the province asked for and then adopted for its own Cascadia casualty figures and crustal figures. Matching federal and provincial figures are one model quoted twice. The insurance-industry estimate is independent and appears separately."
             caption={
               <>
                 One catalogue, and the provincial documents that draw on it.{" "}

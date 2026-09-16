@@ -17,7 +17,7 @@ more frequently, they represent the greatest earthquake hazard." [NRCAN-1700]
 British Columbia plans around the nearer one. Its primary earthquake planning
 scenario is a shallow magnitude 7.0 in the Strait of Georgia. [PEIRS]
 
-They are two different problems, not a larger and a smaller version of one. The
+Each earthquake creates a different problem. The
 nearer earthquake does more to Vancouver itself, because it is closer to the city and
 happens more often. [NRCAN-1700] The offshore one does more to Vancouver's chances of
 being helped: it damages the whole coast at once, and in a Cascadia event the United
@@ -51,7 +51,7 @@ The rupture is under water, and even so "a significant tsunami is not expected".
 [PEIRS]
 
 The modelled fault plane dips at 47 degrees from the ground surface to a bottom edge about 13 km down, and the earthquake starts 3 km down. Its footprint runs from near Nanaimo to downtown
-Vancouver, which describes the fault rather than where the damage falls.
+Vancouver. That describes the fault itself, not where the damage falls.
 [OPENDRR-GSF-22] Shaking across the Lower Mainland and Nanaimo is modelled at 10 to
 60 per cent of gravity, strongest in downtown Vancouver, West Vancouver, Nanaimo,
 Gibsons, and on Gabriola and Bowen Islands. [GSC-OF-8853]
@@ -154,8 +154,8 @@ simultaneously"; at the shortest, shaking lasted about 10 seconds and the two we
 soil liquefied early, while the structure was still being shaken. [NAB-ICCHGE-08]
 
 Those are design events for one bridge, not properties of either scenario. Past a
-certain length, the ground fails while the shaking is still going on, and a structure
-meets both loads at once instead of one after the other.
+certain length, the ground fails while the shaking is still going on. The structure
+then carries the shaking and the moving ground at the same time.
 
 In the province's magnitude 7.0 Greater Vancouver planning scenario, violent shaking
 lasts 10 to 20 seconds. [PEIRS] In the province's magnitude 9.0 Cascadia scenario,

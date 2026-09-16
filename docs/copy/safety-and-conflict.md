@@ -120,8 +120,8 @@ lesson drawn for California was to make security for damaged businesses a priori
 [CHILE-USGS-11]
 
 Households control one part of this: their own supplies. The province recommends keeping two
-weeks of food and water for an earthquake here. [PREPAREDBC] That is time a household can spend
-at home instead of waiting in a queue.
+weeks of food and water for an earthquake here. [PREPAREDBC] Those supplies reduce the time a
+household spends waiting in a queue.
 
 ## What you can do
 

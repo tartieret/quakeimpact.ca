@@ -12,7 +12,7 @@ Fires after an earthquake do not start in one place. They start in many building
 once, in the ordinary things that run through a home. In the modelling for the Lower
 Mainland, about half of the ignitions are electrical and about a quarter gas-related.
 [SCAWTHORN-2020] About half begin in single-family houses and another 26 per cent in apartments. The study's own summary is that "about 70% of all ignitions occur in residential occupancies".
-[SCAWTHORN-2020] That split comes from what was counted after the 1994 Northridge earthquake in California, in the United States, applied here rather than measured here. [SCAWTHORN-2020]
+[SCAWTHORN-2020] That split applies counts from the 1994 Northridge earthquake in California, in the United States, to this region. It was not measured here. [SCAWTHORN-2020]
 
 Almost half of the fires an earthquake would start anywhere in British Columbia would
 start in Metro Vancouver, with the heaviest concentration in the central business
@@ -45,7 +45,7 @@ impassable, which they will be at least initially due to the need to inspect for
 damage." [SCAWTHORN-2020]
 
 Most engines in the study area, Burnaby's among them, carry 4 inch large-diameter hose
-rather than the 5 inch hose Vancouver Fire Rescue Services uses, "and lack adapters,
+while Vancouver Fire Rescue Services uses 5 inch hose, and they "lack adapters,
 which is an obstacle to effective mutual aid". [SCAWTHORN-2020] Two departments can
 arrive at the same fire and be unable to join their hoses.
 
@@ -69,7 +69,7 @@ follows the shaking on the spot, not the magnitude in the headline. [SCAWTHORN-2
 > build-up of crustal stresses prior to the main subduction zone event."
 
 CSZ there is the Cascadia Subduction Zone, the offshore fault. The federal work on
-building damage reaches the same ordering through ground motion rather than ignitions.
+building damage reaches the same ordering through its ground-motion model.
 See [buildings](/shaking/buildings/).
 
 | Earthquake                        | Fires started | Modelled fire loss |
@@ -127,7 +127,7 @@ and built on the lesson of the 1906 fire in San Francisco, in the United States.
 coverage area.
 
 The coverage sentence exists, on a different page, filed under what the City has built
-rather than under what a resident can do. [COV-PREPARES] No map, address lookup or
+under infrastructure. [COV-PREPARES] No map, address lookup or
 neighbourhood check on vancouver.ca tells a resident which side of the line they are on.
 The blue hydrants are the only part of the description a reader can act on, and they
 arrive without the geography beside them.
@@ -186,7 +186,7 @@ Norgate hall replacement "will be built to post-disaster standards". [DNV-NORGAT
 Richmond, the fire chief told a council committee in March 2026 that "all Richmond
 firehalls are rated to withstand major disasters", with the oldest under renovation and
 the second oldest brought up to standard some years earlier. [RICH-CSC-2026-03] That is
-an officer's answer recorded in minutes rather than an engineering rating hall by hall,
+an officer's answer recorded in minutes. No hall-by-hall engineering rating was published,
 and the phrase is not the one the building codes use.
 
 > **Not published.** How many of Vancouver's 19 fire halls meet a post-disaster standard
