@@ -107,7 +107,18 @@ Then concatenate `app.css` and `app.js` into a single HTML file around `<div id=
 - **`/robots.txt` and `/sitemap.xml`** are `src/app/robots.ts` and `src/app/sitemap.ts`, written into the export at build. The sitemap enumerates `ALL_ROUTES`, derived from `NAV` and `UTILITY_NAV`, so a page the navigation knows about cannot be missing from it. Entries carry a URL and nothing else: see `knowledge/build.md` on why there is no `lastmod`.
 - **The social card** is `src/app/opengraph-image.tsx`, drawn at build time and the same on every page, with each page's own title and description on top of it. Both generated routes need `export const dynamic = "force-static"` under `output: "export"`, and the card needs a `Content-Type` header in `netlify.toml` because a generated image is written without a file extension.
 - **Structured data** is two blocks in `src/components/structured-data.tsx`: the site says what it is once in the root layout, and a page inside a part says where it sits. Both restate what the page already shows.
-- **`/404` is the one page that asks not to be indexed.**
+- **`/404` is the one page that asks not to be indexed.** Everything else carries `index, follow`, a canonical URL with its trailing slash, and a `googlebot` line lifting the default snippet and image-preview limits. Verify on the export rather than the source: `grep -o '<meta name="robots"[^>]*>' out/**/index.html`.
+
+---
+
+## Analytics
+
+`src/components/analytics.tsx`, rendered once in the root layout, loads GA4's `gtag.js` through `next/script` at `afterInteractive`.
+
+- **The property is build configuration, not content.** `NEXT_PUBLIC_GA_ID` is read at build time — a static export has no server to read it per request — so the ID is inlined into the HTML by the build that produced it. It belongs in Netlify's build environment; `.env.example` records the name. A build without it renders no script and makes no third-party request, which is what `next dev`, a QA pass over `out/` and a fork all want.
+- **The ID is validated against `G-…` before it is used.** It is written into an inline script, and a value pasted with its quotes would put broken JavaScript on every page, where the only symptom is that nothing is ever reported.
+- **No page view is sent for a client-side navigation.** gtag.js sends one on load and GA4's enhanced measurement counts the rest from History API events, which is what soft navigation between pages does. Sending our own as well would count those pages twice — so if page views look doubled, that setting is the first place to look.
+- **This is the site's one third-party request.** Everything else, typefaces included, is served from the site's own origin. A privacy note in the copy is an open question, not something the code decides.
 
 ---
 
@@ -115,4 +126,4 @@ Then concatenate `app.css` and `app.js` into a single HTML file around `<div id=
 
 - `SITE.status` draft banner in `site.ts` — remove it.
 - `npm run lint` runs `next lint`, which Next 16 removed. It needs replacing or dropping.
-- Typefaces are Libre Franklin and JetBrains Mono, loaded through `next/font/google` in `layout.tsx`, which downloads and self-hosts them at build time so the served site makes no third-party request. `layout.tsx` and `globals.css` are the only files that name a typeface, and this line previously said something else; check the code before trusting it.
+- Typefaces are Libre Franklin and JetBrains Mono, loaded through `next/font/google` in `layout.tsx`, which downloads and self-hosts them at build time so no reader's browser asks Google for a font. Analytics is the one third-party request the site makes; see above. `layout.tsx` and `globals.css` are the only files that name a typeface, and this line previously said something else; check the code before trusting it.

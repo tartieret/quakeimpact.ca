@@ -23,6 +23,10 @@ npm run build      # emits out/
 npm run typecheck
 ```
 
+Set `NEXT_PUBLIC_GA_ID` in the Netlify build environment to report to a GA4
+property; see `.env.example`. A build without it loads no analytics, which is
+what a local build and a fork should do.
+
 CI runs `npm run typecheck` on every pull request (`.github/workflows/ci.yml`).
 Dependabot opens grouped dependency PRs monthly; Next, React and TypeScript
 majors are excluded — those are migrations, not bumps.
@@ -118,7 +122,6 @@ built and name the dataset as TBD, so nothing reads as finished.
 ## Before launch
 
 - Replace `src/content/lorem.ts` usage everywhere.
-- `robots: { index: false }` in `src/app/layout.tsx` — flip it.
 - `SITE.status` draft banner in `site.ts` — remove it.
 - `SITE.name` is a working title.
 - Every entry in `src/content/references.ts` is a placeholder pointing at
