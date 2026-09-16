@@ -355,12 +355,12 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "safety-and-conflict",
     name: "Safety and conflict",
-    hook: "After a disaster most people help the people around them, and theft and violence are the exception rather than the rule.",
+    hook: "Most people help one another after a disaster. Theft and violence are the exception.",
     tier: 3,
     dependsOn: [],
     summary: {
       mechanism:
-        "Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify.",
+        "Most people help one another after a disaster. Theft and violence still occur, but usually as isolated cases that news coverage can make seem widespread.",
       source: "KATRINA-MYTHS-08",
     },
   },
