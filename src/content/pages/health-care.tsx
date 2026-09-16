@@ -25,17 +25,16 @@ export const healthCare: PageModule = {
     route: "/after/health-care/",
     title: "Health care",
     description:
-      "About 65 per cent of the 127 buildings owned by one health authority are likely to be completely damaged at the earthquake the building code designs against.",
+      "A study of one health authority’s buildings finds about 65 per cent likely to be completely damaged at the earthquake level used by the current building code.",
     nav: "Health care",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        About 65 per cent of the 127 buildings owned by one health authority are
-        likely to be completely damaged at the 1-in-2,475-year earthquake, which
-        is the shaking the current building code designs against.{" "}
-        <Cite id="DCRRA-APPC" /> No government or health authority has set the
-        casualties the province forecasts against the number of beds the region
-        has. The comparison exists only in peer-reviewed engineering work.
+        A study of one health authority’s 127 buildings finds about 65 per cent
+        likely to be completely damaged at the earthquake level used by the current
+        building code. <Cite id="DCRRA-APPC" /> No government or health authority
+        has compared the province’s casualty estimates with the region’s
+        hospital capacity. Only peer-reviewed engineering work has done so.
       </>
     ),
     /**
@@ -61,7 +60,7 @@ export const healthCare: PageModule = {
 
   sections: [
     {
-      title: "The people who need care arrive in the first hours",
+      title: "Injured people arrive within hours",
       body: (
         <Prose>
           <p>
@@ -86,8 +85,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title:
-        "A hospital that stays standing is not the same as a hospital that stays working",
+      title: "A standing hospital may not be operational",
       body: (
         <Prose>
           <p>
@@ -154,8 +152,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title:
-        "A hospital on its generator is running on stored fuel and stored water",
+      title: "Backup systems depend on stored fuel and water",
       body: (
         <Prose>
           <p>
@@ -181,8 +178,8 @@ export const healthCare: PageModule = {
             a fire and for smoke-control fans, and between thirty minutes and
             two hours for lighting. <Cite id="VBBL-2025" /> For hospitals the
             by-law points elsewhere, to CSA Z32, the standard for essential
-            electrical systems in health care facilities, which CSA sells rather
-            than publishes. <Cite id="VBBL-2025" />
+            electrical systems in health care facilities, which CSA sells. It
+            does not publish the full text online. <Cite id="VBBL-2025" />
           </p>
           <p>
             The project agreements for the new Surrey hospital and the new St.
@@ -201,7 +198,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title: "Some people cannot reach a hospital at all",
+      title: "Road damage can cut off hospital access",
       body: (
         <Prose>
           <p>
@@ -214,8 +211,8 @@ export const healthCare: PageModule = {
           <p>
             In the City of Vancouver the study’s measure of how well people can
             reach emergency care falls from about 0.9 before the earthquake to
-            about 0.3 after it, mostly because of damage to the hospitals rather
-            than to the roads. <Cite id="KAUR-2026" /> Across the region the
+            about 0.3 after it, mostly because of damage to the hospitals. Road
+            damage sits outside it. <Cite id="KAUR-2026" /> Across the region the
             model leaves 54,339 people unable to reach any hospital on the roads
             it considers, because the bridges they would cross are out, and
             retrofitting those bridges inside the model cuts that to under
@@ -238,8 +235,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title:
-        "No government or health authority has set the expected casualties against the region’s beds",
+      title: "Expected casualties have not been compared with bed capacity",
       body: (
         <Prose>
           <p>
@@ -251,15 +247,15 @@ export const healthCare: PageModule = {
             seismic, Cascadia and post-disaster do not appear in it. Its one
             quantified surge figure, that 10 to 20 per cent of a hospital’s beds
             could be freed up quickly by moving patients, is drawn from
-            published literature rather than measured in British Columbia
+            published literature. It was not measured in British Columbia
             hospitals. <Cite id="HEMBC-MCI" />
           </p>
           <p>
             The capacity figures that are public are academic. The 2026 study
             carries a table of acute care beds for its 16 hospitals and labels
             them “Assumed”: the authors compiled them from public
-            health-authority pages, they count acute care beds rather than
-            intensive care or emergency department beds, and the hospitals are
+            health-authority pages. They count acute care beds; intensive care
+            and emergency department beds are not separated. The hospitals are
             anonymised by city. <Cite id="KAUR-2026" /> The only per-hospital
             intensive care counts in public come from a 2020 medical journal
             case series covering the six hospitals designated as COVID-19
@@ -271,8 +267,8 @@ export const healthCare: PageModule = {
             beside the region’s care capacity, and no official inventory of
             intensive care or operating room beds is published for British
             Columbia. The official figures that exist are counts attached to
-            individual building projects rather than a list of what the region
-            has. Peer-reviewed engineering work has made the comparison.{" "}
+            individual building projects. No regional inventory is public.
+            Peer-reviewed engineering work has made the comparison.{" "}
             <Cite id="KAUR-2026" />
           </VerificationNote>
         </Prose>
@@ -280,8 +276,7 @@ export const healthCare: PageModule = {
     },
 
     {
-      title:
-        "The new hospitals are built to keep working, and the ones open now are older",
+      title: "New hospitals meet a higher seismic standard",
       body: (
         <Prose>
           <Quote
@@ -305,7 +300,7 @@ export const healthCare: PageModule = {
           <p>
             Three major projects are specified to post-disaster importance
             category, the code’s term for a building expected to keep working
-            after an earthquake rather than only to stay standing: the new
+            after an earthquake: the new
             Surrey hospital and BC Cancer Centre <Cite id="NSH-SPEC" />, the new
             St. Paul’s <Cite id="NSP-SPEC" /> and phase two of Royal Columbian
             Hospital. <Cite id="RCH-SPEC" /> At Royal Columbian the acute care

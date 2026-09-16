@@ -47,11 +47,11 @@ export const communications: PageModule = {
     kicker: "Life afterwards",
     standfirst: (
       <>
-        The province expects disruption to communications to continue for days
-        to weeks, with what capacity survives prioritised for emergency
-        personnel. <Cite id="DCRRA-2025" /> No rule sets how long a cell site
-        has to hold backup power, and the regulator that would set one is still
-        asking what it should be. <Cite id="CRTC-2025-226" />
+        The province expects communications to be disrupted for days to weeks.
+        Surviving capacity would go first to emergency personnel.{" "}
+        <Cite id="DCRRA-2025" /> Cell sites have no minimum backup-power
+        requirement. The regulator is still considering one.{" "}
+        <Cite id="CRTC-2025-226" />
       </>
     ),
     /**
@@ -81,7 +81,7 @@ export const communications: PageModule = {
 
   sections: [
     {
-      title: "The network fills up before anything is broken",
+      title: "Call volumes overload the network first",
       body: (
         <Prose>
           <p>A cell site does not have to fall over to stop working:</p>
@@ -106,16 +106,15 @@ export const communications: PageModule = {
             calls for the Lower Mainland, says: “We received a 1,500 per cent
             increase in 9-1-1 calls after a 4.7 earthquake in 2015. The vast
             majority of those calls were not emergencies.” <Cite id="ECOMM-EQ" />{" "}
-            That is a count from one small earthquake, not a forecast for a
-            large one. <Cite id="ECOMM-EQ" />
+            The count comes from one small earthquake and is not a forecast for
+            a large one.
           </p>
         </Prose>
       ),
     },
 
     {
-      title:
-        "The province expects days to weeks, with what survives going to emergency personnel first",
+      title: "Disruption could last days to weeks",
       body: (
         <Prose>
           <p>
@@ -123,9 +122,8 @@ export const communications: PageModule = {
             communications continue for days to weeks”, with access prioritised
             for emergency personnel, “leading to a prolonged lack of access to
             communications for the general population”.{" "}
-            <Cite id="DCRRA-2025" /> That statement carries no figures, and it
-            describes a magnitude 9.0 Cascadia earthquake.{" "}
-            <Cite id="DCRRA-2025" />
+            <Cite id="DCRRA-2025" /> The assessment gives no site counts or
+            outage curve and applies to a magnitude 9.0 Cascadia earthquake.
           </p>
           <p>
             The response strategy does not separate copper from cellular:
@@ -158,7 +156,7 @@ export const communications: PageModule = {
     },
 
     {
-      title: "No rule says how long a cell site has to keep running without the grid",
+      title: "Cell sites have no minimum backup-power requirement",
       body: (
         <Prose>
           <p>
@@ -177,11 +175,11 @@ export const communications: PageModule = {
             should TSPs use to determine an appropriate backup power run time
             for each type of network site?” <Cite id="CRTC-2025-226" /> TSPs are
             the telephone and internet companies themselves. The guidance
-            reproduced in the proceeding’s appendix is written in “should”
-            rather than “must”. <Cite id="CRTC-2025-226" />
+            reproduced in the proceeding’s appendix uses “should”, making it a
+            recommendation. <Cite id="CRTC-2025-226" />
           </p>
           <p>
-            The record closed in late August 2026 and no decision has issued.{" "}
+            The record closed in late August 2026. No decision has been issued.{" "}
             <Cite id="CRTC-2025-226" />
           </p>
         </Prose>
@@ -189,7 +187,7 @@ export const communications: PageModule = {
     },
 
     {
-      title: "The rules in force cover reporting outages and routing 9-1-1 calls",
+      title: "Current rules focus on reporting and 9-1-1 routing",
       body: (
         <Prose>
           <p>
@@ -217,7 +215,7 @@ export const communications: PageModule = {
     },
 
     {
-      title: "British Columbia has asked the regulator for 72 hours",
+      title: "British Columbia has requested 72 hours of backup power",
       body: (
         <Prose>
           <p>
@@ -232,24 +230,22 @@ export const communications: PageModule = {
             province. <Cite id="BC-CRTC-SUB" />
           </p>
           <p>
-            That is a request to a regulator. It is not a rule, and it does not
-            say what is in place today.
+            The submission is a request, not a rule. It does not describe what
+            is in place today.
           </p>
           <p>
             E-Comm’s Lower Mainland centre is a 60,000 square foot reinforced
             concrete post-disaster building, “designed to resist an earthquake
             and to operate self-sufficiently for up to 72 hours”.{" "}
-            <Cite id="ECOMM-FAC" /> That is the building the call arrives at,
-            and it says nothing about the cabinets and towers between a caller
-            and it.
+            <Cite id="ECOMM-FAC" /> This applies to the centre receiving the
+            call, not the cabinets and towers carrying it.
           </p>
         </Prose>
       ),
     },
 
     {
-      title:
-        "The alert that warns of the shaking travels over the network the shaking degrades",
+      title: "Earthquake alerts depend on the mobile network",
       body: (
         <Prose>
           <p>
@@ -320,15 +316,14 @@ export const communications: PageModule = {
     ),
     items: [
       <>
-        <strong>Text rather than call.</strong> The province names texts and
+        <strong>Send a text message.</strong> The province names texts and
         low-bandwidth messages as the most reliable method when other services
         are disrupted. <Cite id="PEIRS" /> A short message keeps retrying in the
         background, while a voice call holds a channel open for its whole
         length.
       </>,
       <>
-        <strong>Call 9-1-1 to report an emergency, and not to ask what
-        happened.</strong>{" "}
+        <strong>Use 9-1-1 only for emergencies.</strong>{" "}
         After a magnitude 4.7 in 2015 E-Comm recorded a 1,500 per cent increase
         in 9-1-1 calls, and the vast majority of them were not emergencies.{" "}
         <Cite id="ECOMM-EQ" /> Each of those calls held a line somebody else
@@ -340,10 +335,10 @@ export const communications: PageModule = {
         Earthquake Early Warning has been live in British Columbia since spring
         2024, <Cite id="NRCAN-EEW" /> and BC Emergency Alert reaches a phone
         over the same cellular network the earthquake is degrading.{" "}
-        <Cite id="BC-ALERT-2026" /> Close to the epicentre the alert can arrive
-        with the shaking rather than before it. <Cite id="NRCAN-EEW" />
+        <Cite id="BC-ALERT-2026" /> Close to the epicentre the alert may arrive
+        as the shaking begins. <Cite id="NRCAN-EEW" />
       </>,
     ],
-    closing: <>None of those three needs anything bought in advance.</>,
+    closing: <>These steps do not require buying anything in advance.</>,
   },
 };

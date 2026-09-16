@@ -34,7 +34,7 @@ export const water: PageModule = {
         Metro Vancouver’s own seismic assessment models 267 water main failures
         across the region in a magnitude 9.0 earthquake.{" "}
         <Cite id="MV-WATER-22" /> About 60 of them fall at the 71 points where
-        mains cross under rivers and inlets, which are the hardest places in the
+        mains cross under rivers and inlets. Those are the hardest places in the
         system to reach. <Cite id="MV-WATER-22" />
       </>
     ),
@@ -63,7 +63,7 @@ export const water: PageModule = {
 
   sections: [
     {
-      title: "A pipe under a road and a pipe under a river are different repairs",
+      title: "River crossings are the hardest repairs",
       body: (
         <Prose>
           <Quote
@@ -96,8 +96,7 @@ export const water: PageModule = {
     },
 
     {
-      title:
-        "267 main failures are modelled region-wide, and about 60 of them at river and inlet crossings",
+      title: "The model finds 267 main failures",
       body: (
         <Prose>
           <p>
@@ -138,7 +137,7 @@ export const water: PageModule = {
             reach.
           </p>
           <Figure
-            alt="Metro Vancouver models 267 water main failures across the region, and about 60 breaks at the 71 river and inlet crossings, which are counted separately rather than added together."
+            alt="Metro Vancouver models 267 water main failures across the region and about 60 breaks at the 71 river and inlet crossings. These are separate counts and cannot be added together."
             caption={
               <>
                 Two counts from the same study, kept apart. One mark is one
@@ -152,8 +151,8 @@ export const water: PageModule = {
           </Figure>
           <p>
             The figures come from a review of 123 existing reports on
-            reservoirs, pump stations and pipelines rather than from a single
-            model run. <Cite id="MV-WATER-22" /> They are more than eight and a
+            reservoirs, pump stations and pipelines. They do not come from a
+            single model run. <Cite id="MV-WATER-22" /> They are more than eight and a
             half times the failures projected by the region’s previous study in
             1993. <Cite id="MV-WATER-22" /> The study is four years old.
           </p>
@@ -162,7 +161,7 @@ export const water: PageModule = {
     },
 
     {
-      title: "Nobody has published how long the water would take to come back",
+      title: "Water restoration time has not been published",
       body: (
         <Prose>
           <p>
@@ -195,9 +194,9 @@ export const water: PageModule = {
             A March 2018 case study by Agriculture and Agri-Food Canada found
             that drinking water disruption in the Vancouver area “could last
             several months”. It is a federal document written by an agriculture
-            department rather than by the water utility, never published,
-            obtained under freedom of information and reported by the Globe and
-            Mail in 2019. “Several months” is a range word rather than a figure.
+            department, not the water utility. It was never published, was
+            obtained under freedom of information and was reported by the Globe
+            and Mail in 2019. “Several months” is a range word, not a figure.
             The study is eight years old and predates the current tunnel and
             reservoir program. The other half of it has aged better: at the
             time, the province had put its plans for supplying potable water on
@@ -209,15 +208,14 @@ export const water: PageModule = {
     },
 
     {
-      title:
-        "The province expects water and sewer disruption to last many months",
+      title: "The province expects disruption for many months",
       body: (
         <Prose>
           <p>
             “Disruption to water and wastewater systems are expected for many
             months following the event.” <Cite id="PEIRS" /> The sentence is
             qualitative, it covers sewers in the same breath as water, and it is
-            region-wide rather than specific to any pipe. The province wrote it
+            region-wide. It makes no claim about a specific pipe. The province wrote it
             for its shallow crustal M7 planning scenario.
           </p>
           <p>
@@ -247,8 +245,8 @@ export const water: PageModule = {
               <>
                 Two clocks, and they do not join up. The province gives the
                 first one a length. <Cite id="DCRRA-2025" /> The second is the
-                province’s “many months”, which is a range word rather than a
-                figure, so the panel carries no scale to read a date off.{" "}
+                province’s “many months”, a range with no numeric endpoint, so
+                the panel carries no scale to read a date off.{" "}
                 <Cite id="PEIRS" />
               </>
             }
@@ -270,8 +268,7 @@ export const water: PageModule = {
     },
 
     {
-      title:
-        "One municipality publishes numbers, and they do not carry across the region",
+      title: "Richmond’s figures do not apply across the region",
       body: (
         <Prose>
           <p>
@@ -298,8 +295,7 @@ export const water: PageModule = {
     },
 
     {
-      title:
-      "Five deep tunnels are planned, and none of the three under way is finished",
+      title: "Three new water tunnels are still under construction",
       body: (
         <Prose>
           <p>

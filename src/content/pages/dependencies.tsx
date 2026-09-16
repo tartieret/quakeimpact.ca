@@ -22,13 +22,13 @@ import type { PageModule } from "./index";
 export const dependencies: PageModule = {
   meta: {
     route: "/dependencies/",
-    title: "Nothing fails alone",
+    title: "How systems depend on each other",
     description:
-      "Twelve of the fourteen systems wait on at least one other. Some of those connections have a document behind them, and some nobody has published.",
+      "Twelve of the fourteen systems depend on at least one other. Published evidence covers only some of those connections.",
     nav: "Dependency graph",
     kicker: "Why one failure becomes many",
     standfirst:
-      "Twelve of the fourteen systems wait on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.",
+      "Twelve of the fourteen systems depend on at least one other. Published evidence covers only some of those connections.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -49,13 +49,12 @@ export const dependencies: PageModule = {
 
   sections: [
     {
-      title: "Everything else runs on fuel, and fuel moves by road",
+      title: "Fuel depends on roads",
       body: (
         <Prose>
           <p>
-            Every repair crew, every delivery and everything running on a
-            generator needs fuel. The province’s response strategy gives it a
-            position of its own:
+            Fuel runs generators and keeps repair crews and deliveries moving.
+            The province’s response strategy describes its role:
           </p>
           <Quote
             speaker="Province of British Columbia"
@@ -69,27 +68,26 @@ export const dependencies: PageModule = {
               impacted facilities and infrastructure that rely on generators.”
             </p>
           </Quote>
-          <p>Fuel moves by road, which puts roads underneath it in turn.</p>
+          <p>Fuel itself moves by road.</p>
         </Prose>
       ),
     },
 
     {
-      title: "Few of the connections on this list have a document behind them",
+      title: "Most connections have not been studied",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
             <p>
-              A line drawn between two systems asserts a connection whether or
-              not anyone has established one, so the picture below counts the
-              connections instead of joining them up. Underneath it is the list
-              it is built from: each system, and the systems its own page names
-              as the ones it waits on.
+              A line drawn between two systems would imply that someone had
+              established the connection. The picture below therefore shows how
+              many documented connections each system has. The list underneath
+              names every system and the systems its own page says it waits on.
             </p>
             <p>
-              The list is not evidence. Where there is no document, the
-              connection is still listed, because leaving it out would suggest it
-              had been ruled out rather than never written down.
+              The list is not evidence. Connections without a document remain
+              visible so an unstudied link is not mistaken for one that has been
+              ruled out.
             </p>
           </Prose>
           <DependencyGraph />
@@ -98,7 +96,7 @@ export const dependencies: PageModule = {
     },
 
     {
-      title: "Roads are the connection with the most documents behind them",
+      title: "Road access controls many repairs",
       body: (
         <Prose>
           <p>
@@ -124,10 +122,6 @@ export const dependencies: PageModule = {
             sites, water sanitation sites, power generation and transmission
             sites”, then major freeways and arterials, and “local routes” last.{" "}
             <Cite id="MV-DEBRIS-17" />
-          </p>
-          <p>
-            That order is the connection between roads and everything else on
-            the list.
           </p>
           <p>
             <strong>Water.</strong> A magnitude 9.0 megathrust is modelled to
@@ -167,7 +161,7 @@ export const dependencies: PageModule = {
     },
 
     {
-      title: "Help from outside arrives along the same damaged routes",
+      title: "Outside help needs the damaged routes too",
       body: (
         <Prose>
           <p>
@@ -190,22 +184,20 @@ export const dependencies: PageModule = {
             place.” <Cite id="DCRRA-2025" />
           </p>
           <p>
-            The road network sits under both directions of travel: what comes
-            in, and who could leave.
+            The same roads carry incoming aid and anyone trying to leave.
           </p>
         </Prose>
       ),
     },
 
     {
-      title:
-        "Gas comes back one building at a time, as fast as qualified people can be found",
+      title: "Gas restoration is limited by available workers",
       body: (
         <Prose>
           <p>
-            Gas is the one utility that cannot be restored in bulk: service
-            returns building by building, once a qualified person has been inside
-            and relit every appliance. The regulator’s decision on that system
+            Gas cannot be restored from a control room. Service returns building
+            by building, after a qualified person has relit every appliance. The
+            regulator’s decision on that system
             gives several weeks to restore service to hundreds of thousands of
             customers. <Cite id="BCUC-C-6-25" />
           </p>
@@ -218,15 +210,15 @@ export const dependencies: PageModule = {
             community-sized ones 723 per day. <Cite id="FEI-RESILIENCY-24" />
           </p>
           <p>
-            The constraint here is people, and how many of them can be got into
-            the region.
+            Restoration depends on how many qualified workers can reach the
+            region.
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "Several of the connections everyone assumes have never been published",
+      title: "Important gaps in the public record",
       body: (
         <Prose>
           <p>
@@ -255,13 +247,12 @@ export const dependencies: PageModule = {
             which is crews reaching the work.
           </VerificationNote>
           <p>
-            A fourth link on the list is documented, and what is documented is an
-            absence.
+            One documented link is the loss of mobile service when power fails.
             Nothing in Canada currently requires a mobile phone site to hold any
             backup power at all, and the regulator opened a proceeding in
             September 2025 to decide what that requirement should be.{" "}
             <Cite id="CRTC-2025-226" /> The link from electricity to phones is
-            real. Nothing at present sets how long it takes to bite.
+            real, but no rule sets how long a site must keep working.
           </p>
         </Prose>
       ),

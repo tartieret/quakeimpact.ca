@@ -20,11 +20,11 @@ export const after: PageModule = {
     route: "/after/",
     title: "Life afterwards",
     description:
-      "How long each system is out after the shaking, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.",
+      "Thirteen essential systems fail on different timelines after a major earthquake. Their recovery depends on one another.",
     nav: "Life afterwards",
     kicker: "Part 2",
     standfirst:
-      "How long each system is out after the shaking, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.",
+      "Thirteen essential systems fail on different timelines after a major earthquake. Their recovery depends on roads, fuel, power and one another.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
@@ -46,7 +46,7 @@ export const after: PageModule = {
 
   sections: [
     {
-      title: "No system fails by itself",
+      title: "Failures spread between systems",
       body: (
         <Prose>
           <p>
@@ -54,9 +54,8 @@ export const after: PageModule = {
             a critical resource due to its requirement in the distribution of
             all other supplies, first responder activities, and enabling
             functionality of certain impacted facilities and infrastructure that
-            rely on generators.” <Cite id="PEIRS" /> Everything that runs on a
-            generator, every repair crew and every delivery is downstream of
-            that one resource.
+            rely on generators.” <Cite id="PEIRS" /> Generators, repair crews
+            and deliveries all need fuel.
           </p>
           <p>
             Fuel moves by road, and in the same document the province expects
@@ -91,15 +90,15 @@ export const after: PageModule = {
     },
 
     {
-      title:
-        "Some systems fail in the first hours, others over the following weeks",
+      title: "What fails first",
       body: (
         <div className="flex flex-col gap-8">
           <TimelineStrip />
           <Prose>
             <p>
-              <strong>In the first hours</strong>, communications, health care
-              and the dams. Nothing requires a mobile phone site to hold any
+              <strong>In the first hours</strong>, communications and health
+              care are affected, and dams must be checked. Nothing requires a
+              mobile phone site to hold any
               backup power at all; the regulator opened a proceeding to decide
               what the requirement should be and has not decided.{" "}
               <Cite id="CRTC-2025-226" /> About 65 per cent of one health
@@ -109,8 +108,9 @@ export const after: PageModule = {
               of beds the region has. <Cite id="DCRRA-APPC" />
             </p>
             <p>
-              <strong>Within the first week</strong>, electricity, water,
-              transportation, fuel, food, and where help comes from. BC Hydro
+              <strong>Within the first week</strong>, failures spread through
+              electricity, water, transportation, fuel and food supply. Access
+              to outside help also becomes clear. BC Hydro
               told its regulator in November 2025 that a large earthquake could
               leave up to two thirds of downtown customers without power for
               several weeks, and the system years from full restoration.{" "}
@@ -123,7 +123,7 @@ export const after: PageModule = {
             </p>
             <p>
               <strong>Over the following weeks</strong>, sanitation, natural
-              gas, housing, and the port, airport and ferry terminals.
+              gas, housing and major terminals remain disrupted.
               Disruption to water and wastewater systems is expected to run for many
               months.{" "}
               <Cite id="PEIRS" /> Natural gas is the one utility that cannot be
@@ -136,8 +136,8 @@ export const after: PageModule = {
               <Cite id="AIR-2013" />
             </p>
             <p>
-              <strong>Months</strong> is how long several of those first systems
-              take to come back.
+              Several systems that fail in the first hours take months to
+              restore.
             </p>
           </Prose>
         </div>
@@ -145,8 +145,7 @@ export const after: PageModule = {
     },
 
     {
-      title:
-        "A band says how long, how widely, and what the system is waiting on",
+      title: "What the impact bands measure",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
@@ -185,7 +184,7 @@ export const after: PageModule = {
     },
 
     {
-      title: "Each system breaks in its own way, and each has its own page",
+      title: "The systems",
       body: <SystemGrid />,
     },
   ],
@@ -194,15 +193,14 @@ export const after: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        Because the systems fail together, a household that can manage for a
-        while without water, power and a working toilet is not waiting on any
-        one of them.
+        Prepare for water, power and sanitation to be unavailable at the same
+        time.
       </>
     ),
     items: [
       <>
         <strong>Store four litres per person per day, pets included.</strong>{" "}
-        That is the province’s own figure, for drinking and basic sanitation
+        The province sets that figure for drinking and basic sanitation
         together. <Cite id="PREPAREDBC" /> Distributing bulk drinking water
         across the region stays difficult for the first four to five days.{" "}
         <Cite id="DCRRA-2025" />

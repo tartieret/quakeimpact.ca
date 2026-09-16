@@ -2,14 +2,14 @@
 route: /after/gas/
 title: Natural gas
 nav: Natural gas
-hook: Gas is the one utility that cannot be turned back on from a control room.
-lede: FortisBC's own planning puts its best rate of relighting gas appliances at 8,716 a day, and that figure already assumes its full workforce, crews sent by other utilities, and every available private gas contractor in the Lower Mainland. [FEI-RESILIENCY-24] Gas comes back one building at a time, because somebody qualified has to be inside each one.
+hook: Restoring gas requires a visit to every affected building.
+lede: FortisBC's fastest estimate is 8,716 appliance relights a day. It assumes the utility's full workforce, mutual aid and every available private gas contractor in the Lower Mainland. [FEI-RESILIENCY-24] A qualified worker must enter each affected building before service can return.
 bands: { cascadia: high, crustal: high }
 mechanism: Gas cannot be restored in bulk: any air drawn into the pipes has to be purged first, and then service returns only as a technician enters each affected building and relights every appliance in it.
 source: BCUC-C-6-25
 ---
 
-## Gas is the one utility that cannot be turned back on from a control room
+## Gas returns one building at a time
 
 Restoring gas after an earthquake means assessing the system in the affected area,
 repairing the damage, reactivating the system, then visiting each home to relight all
@@ -33,7 +33,7 @@ of notice as enough time to carry one out, and records uncertainty about whether
 controlled shutdown is possible at all with less. [BCUC-C-6-25] An earthquake gives no
 notice.
 
-## FortisBC's best day is 8,716 relights, and that figure already counts on crews from elsewhere
+## FortisBC's fastest estimate assumes outside crews
 
 FortisBC told its regulator in March 2026 that it serves 583,370 residential gas accounts and 61,348 commercial
 ones in its Lower Mainland service region. [FEI-LTGRP-26] An account is a meter: a house
@@ -64,7 +64,7 @@ crews reach buildings the way everybody else does, over the same
 published no relight rate for a megathrust, and none can be worked out from these
 figures.
 
-## A winter supply failure with no earthquake in it already runs to weeks
+## A winter supply failure could take weeks to restore
 
 In October 2025 the BC Utilities Commission approved an LNG storage expansion at
 Tilbury in Delta, reasoning from a different hazard: a prolonged loss of supply on the
@@ -87,11 +87,11 @@ that relighting business and industrial customers earlier "could dramatically re
 the GDP losses incurred". The panel found FEI's assumptions "reasonable and
 appropriate". [BCUC-C-6-25]
 
-## A 1969 tank in Delta runs at 58 per cent of its capacity because of standards written after it was built
+## A Delta storage tank operates below capacity
 
 The LNG storage tank at the Tilbury base plant was installed in 1969. Seismic design
 requirements have tightened since, and to comply with them FortisBC runs the tank at 58
-per cent of its capacity, 0.35 billion cubic feet rather than 0.6. [BCUC-C-6-25]
+per cent of its capacity: 0.35 billion cubic feet, down from 0.6. [BCUC-C-6-25]
 
 Two engineering firms examined whether the tank could be refurbished to its full design
 capacity while meeting current minimum seismic requirements. Both recommended replacing
@@ -105,7 +105,7 @@ a cost-effective or viable option due to seismic issues and the age and conditio
 assets", and approved a replacement at about $1.14 billion in as-spent dollars over a
 seven-year construction period. [BCUC-C-6-25]
 
-## The valves that would shut the Lower Mainland system down by themselves are still being scoped
+## Automatic shut-off valves are still being studied
 
 The 2024 plan's Lower Mainland initiative is to isolate the region's distribution system
 after a seismic event that damages assets across it. The scope is additional valves and
@@ -117,7 +117,7 @@ date for it.
 > **No published restoration time.** Nothing in the public record says how long the gas
 > would be off in the Lower Mainland after an earthquake, or how much of the region
 > would lose it. The 2024 plan assesses 58 vulnerabilities across FortisBC's system and
-> reports each one under a number rather than a name or a place, so none of its results
+> identifies each one only by number, with no name or location, so none of its results
 > can be tied to a location. [FEI-RESILIENCY-24] Its second-largest risk overall sits
 > at an asset FortisBC has not named and whose location it filed to the commission in
 > confidence, so nobody outside the regulator can say whether it serves this region.

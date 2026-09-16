@@ -39,11 +39,11 @@ export const transportation: PageModule = {
     route: "/after/transportation/",
     title: "Transportation",
     description:
-      "British Columbia designates bridges on the routes that must stay open for emergency vehicles, and states that it is not retrofitting them to stay in service.",
+      "British Columbia’s bridge retrofits protect life but do not guarantee that emergency routes remain usable after an earthquake.",
     nav: "Transportation",
     kicker: "Life afterwards",
     standfirst:
-      "British Columbia designates bridges on the routes that must stay open for emergency vehicles after a major earthquake as its first retrofit priority. In the same document, the Ministry states that it is not retrofitting the bridges on those routes to remain in service.",
+      "British Columbia gives first retrofit priority to bridges on emergency routes. The work protects life, but the Ministry says those bridges are not being upgraded to remain in service after a major earthquake.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -90,7 +90,7 @@ export const transportation: PageModule = {
 
   sections: [
     {
-      title: "The province’s own criteria set two standards and buy one",
+      title: "The province funds life safety, not immediate use",
       body: (
         <Prose>
           <p>
@@ -129,8 +129,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title:
-        "A bridge that survives is not a bridge you can drive over the next morning",
+      title: "A standing bridge may still be closed",
       body: (
         <Prose>
           <p>The Ministry’s three retrofit service levels, in its own words:</p>
@@ -198,7 +197,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title: "The approach fails before the span does",
+      title: "Bridge approaches often fail first",
       body: (
         <Prose>
           <p>
@@ -306,8 +305,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title:
-        "The second stage of the George Massey Tunnel’s retrofit was cancelled, and its replacement opens in 2031",
+      title: "The George Massey Tunnel awaits replacement",
       body: (
         <Prose>
           <p>
@@ -364,7 +362,7 @@ export const transportation: PageModule = {
               <>
                 Three numbers of three kinds, drawn three ways. A design intent
                 is a point somebody aimed at. The assessed capacity is hatched
-                because it is a range rather than a figure. The standard is the
+                because it is a range. The standard is the
                 line a new lifeline crossing has to reach.{" "}
                 <Cite id="GMC-TUNNEL-19" />
               </>
@@ -391,8 +389,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title:
-        "What has been assessed, and what has been published, are different lists",
+      title: "Assessments for named crossings remain incomplete",
       body: (
         <Prose>
           <p>
@@ -407,13 +404,13 @@ export const transportation: PageModule = {
               <>
                 The earthquake each crossing has a published figure for, in the
                 place the crossing is. Every marker has the same outer size;
-                more fill means a larger published earthquake, in an order
-                rather than a scale. A question mark means no return period was
+                more fill means a larger published earthquake. The marks show
+                order only and have no numeric scale. A question mark means no return period was
                 found. The key under the map says what each of those earthquakes
                 bought, which is the part the number alone leaves out: solid
                 cores are design intents, the hatched tunnel is an assessment,
-                and the retrofit objective is to stop a collapse rather than to
-                keep a crossing open. The question mark does not mean a crossing
+                and the retrofit objective is collapse prevention. It does not
+                promise an open crossing. The question mark does not mean a crossing
                 is unassessed. The table below gives the full figure and its
                 source, crossing by crossing. The Moray Channel Bridge is not
                 drawn: no openly licensed source holds it, and a hand-placed
@@ -646,7 +643,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title: "The province’s crustal scenario expects weeks to months of reduced capacity",
+      title: "Road capacity could be reduced for weeks to months",
       body: (
         <Prose>
           <p>
@@ -684,8 +681,7 @@ export const transportation: PageModule = {
     },
 
     {
-      title:
-        "A magnitude 4.8 stopped two SkyTrain lines for about eighty minutes",
+      title: "A magnitude 4.8 stopped two SkyTrain lines",
       body: (
         <Prose>
           <p>
@@ -760,9 +756,9 @@ export const transportation: PageModule = {
     items: [
       <>
         <strong>
-          Plan on the crossing you use being closed or under inspection
-        </strong>
-        , not open. That is what the province’s own service levels describe:
+          Plan for the crossing you use to be closed or under inspection.
+        </strong>{" "}
+        That is what the province’s own service levels describe:
         limited access, emergency traffic, and about a day to inspect a bridge
         before anyone is let over it. <Cite id="MOTI-SRDC-05" />
       </>,
@@ -784,7 +780,7 @@ export const transportation: PageModule = {
         >
           getting around
         </Link>
-        , and what it asks for is a location rather than a route.
+        . The question there is where you will be when the shaking starts.
       </>,
     ],
   },

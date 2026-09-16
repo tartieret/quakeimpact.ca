@@ -2,14 +2,14 @@
 route: /after/transportation/
 title: Transportation
 nav: Transportation
-hook: Not collapsing and still working are two different standards, and only the first has been bought.
-lede: British Columbia designates bridges on the routes that must stay open for emergency vehicles after a major earthquake as its first retrofit priority. In the same document, the Ministry states that it is not retrofitting the bridges on those routes to remain in service.
+hook: A bridge may survive an earthquake without being usable afterwards.
+lede: British Columbia gives first retrofit priority to bridges on emergency routes. The work protects life, but the Ministry says those bridges are not being upgraded to remain in service after a major earthquake.
 bands: { cascadia: high, crustal: high }
-mechanism: The province designates routes that must stay open for emergency vehicles after a major earthquake, and states in the same document that it is not retrofitting the bridges on those routes to stay in service.
+mechanism: The province designates routes for emergency vehicles after a major earthquake. It also states that the bridges on those routes are not being retrofitted to remain in service.
 source: MOTI-SRDC-05
 ---
 
-## The province's own criteria set two standards and buy one
+## The province funds life safety, not immediate use
 
 From §2.1.2 of the BC Ministry of Transportation's 2005 seismic retrofit design criteria:
 "In the Lower Mainland and on Vancouver Island a system of routes have been designated
@@ -31,7 +31,7 @@ reduce the risk of bridge collapse", with performance matching a new bridge as a
 Retrofits are carried out against a 475-year earthquake. New lifeline crossings are
 designed against a 2,475-year earthquake. [MOTI-SRDC-05] [MOTI-S6-SEC4]
 
-## A bridge that survives is not a bridge you can drive over the next morning
+## A standing bridge may still be closed
 
 The Ministry's three retrofit service levels, in its own words:
 
@@ -48,7 +48,7 @@ the earthquake. Public access is not expected until repairs are completed."
 Restoration is gated on inspection before it is gated on repair. What the province plans for people while that inspection happens is set out in
 [getting around](/getting-around/).
 
-## The approach fails before the span does
+## Bridge approaches often fail first
 
 A retrofitted bridge can stand intact while the embankment carrying the road onto it
 settles or slides sideways. A standing bridge with a step at the end of it carries
@@ -105,7 +105,7 @@ must keep 100 per cent of its lanes after a 975-year earthquake and 50 per cent 
 lanes after a 2,475-year earthquake, with normal service restorable within one month.
 [MOTI-S6-SEC6]
 
-## The second stage of the George Massey Tunnel's retrofit was cancelled, and its replacement opens in 2031
+## The George Massey Tunnel awaits replacement
 
 The tunnel is 630 m of immersed tube built between 1957 and 1959, with 550 m and 335 m
 of approaches at the north and south ends. The approaches together are longer than the
@@ -141,7 +141,7 @@ The replacement is an eight-lane immersed tube. In July 2026 its budget was upda
 $8.5 billion, with major construction expected from 2027 and completion in September
 2031. [MOTI-MASSEY]
 
-## What has been assessed, and what has been published, are different lists
+## Assessments for named crossings remain incomplete
 
 Crossings in this region have mostly been assessed. Most of those assessments are not
 public. The figures below come from engineering papers, project requirements and
@@ -175,7 +175,7 @@ different sets of design events, and the engineers who set each of them publishe
 they were. How a crossing is specified is decided project by project, and there is no
 single figure that every bridge in the region was built to.
 
-## The province's crustal scenario expects weeks to months of reduced capacity
+## Road capacity could be reduced for weeks to months
 
 From the province's magnitude 7.0 planning scenario:
 
@@ -194,7 +194,7 @@ Fourteen bridges and one tunnel carry structural monitoring instruments. Its rea
 ability to quickly determine their safety will allow inspectors to focus on higher
 priority structures." [BCSIMS-22]
 
-## A magnitude 4.8 stopped two SkyTrain lines for about eighty minutes
+## A magnitude 4.8 stopped two SkyTrain lines
 
 On 29 December 2015 a magnitude 4.8 earthquake occurred 12 km southeast of North
 Saanich, 52 km down. [USGS-2015EQ] TransLink's own account: "Although SkyTrain has
@@ -217,7 +217,7 @@ forecasts nothing about a large one.
 Nobody outside the Ministry can retrofit a bridge. What is in reach is where you plan
 to be.
 
-**Plan on the crossing you use being closed or under inspection**, not open. That is
+**Plan for the crossing you use to be closed or under inspection.** That is
 what the province's own service levels describe: limited access, emergency traffic,
 and about a day to inspect a bridge before anyone is let over it. [MOTI-SRDC-05]
 
@@ -226,8 +226,8 @@ are on when the shaking starts may be the side you stay on.
 
 **Prepare the side you would be stuck on**, at work as well as at home. What the
 province plans for people while the crossings are shut or being inspected is set out
-in [getting around](/getting-around/), and what it asks for is a location rather than
-a route.
+in [getting around](/getting-around/). The question there is where you will be when the
+shaking starts.
 
 ## Sources on this page
 

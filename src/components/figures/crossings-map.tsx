@@ -365,7 +365,7 @@ const RAMP: {
     label: "150 to 240 years",
     assessed: true,
     gloss:
-      "Hatched because it is an assessed range rather than a figure aimed at. The George Massey Tunnel, whose retrofit was designed for 475 years and never finished.",
+      "Hatched because the assessment gives a range. The George Massey Tunnel retrofit was designed for 475 years and never finished.",
   },
   {
     band: "none",

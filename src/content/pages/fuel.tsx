@@ -23,15 +23,15 @@ export const fuel: PageModule = {
     route: "/after/fuel/",
     title: "Fuel",
     description:
-      "The province’s earthquake response plan sets fuel apart from the other critical resources, because the distribution of everything else runs on it.",
+      "Fuel powers generators, repair crews and the distribution of other critical supplies.",
     nav: "Fuel",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        The province’s earthquake response plan sets fuel apart from the other
-        critical resources, because the distribution of everything else runs on
-        it. <Cite id="PEIRS" /> The same plan assumes existing supply chains will
-        be inoperable. <Cite id="PEIRS" />
+        Fuel powers generators, repair crews and the distribution of other
+        critical supplies. <Cite id="PEIRS" /> The province assumes existing
+        supply chains will be inoperable after the earthquake.{" "}
+        <Cite id="PEIRS" />
       </>
     ),
     /**
@@ -51,7 +51,7 @@ export const fuel: PageModule = {
 
   sections: [
     {
-      title: "Fuel is the one resource everything else moves on",
+      title: "Fuel keeps every other supply moving",
       body: (
         <Prose>
           <p>
@@ -86,7 +86,7 @@ export const fuel: PageModule = {
     },
 
     {
-      title: "A service station with full tanks and no power dispenses nothing",
+      title: "Fuel pumps need electricity",
       body: (
         <Prose>
           <p>
@@ -130,9 +130,9 @@ export const fuel: PageModule = {
             from a single phone interview during a flood. On 21 November 2021,
             during the flood emergency in the province’s southwest, Global News
             quoted Dan McTeague, president of the advocacy organisation
-            Canadians for Affordable Energy. <Cite id="FUEL-GN-21" /> That is
-            one person’s remark to a reporter rather than a study, and it
-            predates the 2024 Trans Mountain Expansion. The nearest
+            Canadians for Affordable Energy. <Cite id="FUEL-GN-21" /> The figure
+            comes from one person’s remark to a reporter. No study supports it,
+            and it predates the 2024 Trans Mountain Expansion. The nearest
             academic work, a 2016 study of the coastal British Columbia fuel
             transportation system, gives its figure for Vancouver Island, not
             for here. <Cite id="UBC-FUEL" /> Nothing current has been published
@@ -170,7 +170,7 @@ export const fuel: PageModule = {
     },
 
     {
-      title: "A hospital generator is a fuel tank somebody has to keep refilling",
+      title: "Hospital generators need regular fuel deliveries",
       body: (
         <Prose>
           <p>
@@ -196,7 +196,7 @@ export const fuel: PageModule = {
     },
 
     {
-      title: "Every crew repairing everything else is queuing for the same fuel",
+      title: "Repair crews compete for the same fuel",
       body: (
         <Prose>
           <p>

@@ -225,40 +225,37 @@ export const home: PageModule = {
                       not work without power or a network.
                     </p>
                     <p>
-                      Crews clear the routes the response needs first, which is
-                      not your street, so what you can reach is what you can
-                      walk or cycle to. The{" "}
+                      Crews clear emergency routes first. Local streets wait,
+                      so what you can reach may be limited to walking or cycling
+                      distance. The{" "}
                       <Link href="/after/sanitation/" className={link}>
                         toilet
                       </Link>{" "}
-                      stops being usable on the first day rather than the first
-                      week, because flushing takes water nobody has to spare.
-                      Family and neighbours are likely to be the only
-                      available{" "}
+                      can stop being usable on the first day because flushing
+                      takes water nobody has to spare. Family and neighbours
+                      are likely to reach you before official help. See{" "}
                       <Link href="/prepare/" className={link}>
-                        first responders
+                        what to prepare
                       </Link>
-                      , so the people who reach you first are the people who
-                      already live on your street.
+                      .
                     </p>
                   </>
                 ),
               },
               {
                 phase: "weeks",
-                heading:
-                  "Some things come back. The ones under the road do not",
+                heading: "Repairs stretch across the region",
                 body: (
                   <>
                     <p>
                       <Link href="/after/electricity/" className={link}>
                         Power
                       </Link>{" "}
-                      comes back where the network can be repaired first, and
-                      putting poles and wires back up is many small repairs
-                      rather than one big one. In downtown Vancouver, BC Hydro
-                      says it could take several weeks to restore power to
-                      customers and years to completely restore the system.{" "}
+                      comes back where the network can be repaired first.
+                      Restoring poles and wires means making many small repairs
+                      across the region. In downtown Vancouver, BC Hydro says
+                      it could take several weeks to restore power to customers
+                      and years to completely restore the system.{" "}
                       <Link href="/after/water/" className={link}>
                         Water
                       </Link>{" "}
@@ -270,9 +267,9 @@ export const home: PageModule = {
                       <Link href="/after/sanitation/" className={link}>
                         sewers
                       </Link>{" "}
-                      stay broken for months rather than weeks. Households
-                      manage waste in buckets and chemical toilets, and an
-                      apartment tower has nowhere else to put it.{" "}
+                      stay broken for months. Households manage waste in buckets
+                      and chemical toilets, and an apartment tower has nowhere
+                      else to put it.{" "}
                       <Link href="/after/gas/" className={link}>
                         Gas
                       </Link>{" "}
@@ -295,17 +292,15 @@ export const home: PageModule = {
                         building you live in
                       </Link>{" "}
                       can be standing, sound to look at, and closed for months
-                      behind a cordon. Most people who lose their home lose
-                      it that way rather than to collapse. Somewhere to
-                      move into is scarce, contractors and engineers are
-                      scarcer, and every household in the region is looking at
-                      the same time.
+                      behind a cordon. Cordons around standing buildings
+                      displace more people than collapses. Somewhere to move
+                      into is scarce, contractors and engineers are scarcer,
+                      and every household in the region is looking at the same
+                      time.
                     </p>
                     <p>
                       Utilities run at reduced service long after they are back
-                      on. The province’s plan
-                      through all of it is that people stay in the region rather
-                      than leave it.{" "}
+                      on. The province’s plan assumes people stay in the region.{" "}
                       <Link href="/getting-around/" className={link}>
                         What that means for getting around
                       </Link>
@@ -318,24 +313,21 @@ export const home: PageModule = {
           />
           <Prose>
             <p>
-              No two earthquakes do the same thing, and none of this is a
-              forecast of the actual event. It follows the two events the
-              province and its agencies plan around, which are the ones
-              households are asked to be ready for.
+              This timeline combines the two events the province and its
+              agencies plan around. Actual conditions will differ, but these
+              are the events households are asked to be ready for.
             </p>
             <p>
-              The weather it happens in changes how hard each of those stretches
-              is. Running out of water in an August heat dome is not the same as
-              running out of it in January after days of rain, and the two
-              scenarios are set in those two conditions: a 30 to 40 degree
-              heatwave with wildfire smoke for the megathrust,{" "}
-              <Cite id="DCRRA-2025" /> a January afternoon after an atmospheric
-              river for the crustal earthquake. <Cite id="PEIRS" />
+              The weather changes how hard each stretch is. The megathrust
+              scenario is set in a 30 to 40 degree heatwave with wildfire
+              smoke. <Cite id="DCRRA-2025" /> The crustal scenario is set on a
+              January afternoon after an atmospheric river.{" "}
+              <Cite id="PEIRS" />
             </p>
             <p>
-              None of those failures happens on its own, either. Water needs
-              power for pumps and roads for crews. Roads need debris cleared,
-              which needs fuel. The order in which the systems can be brought
+              These failures compound one another. Water needs power for pumps
+              and roads for crews. Roads need debris cleared, which needs fuel.
+              The order in which the systems can be brought
               back sets how long the region waits, so{" "}
               <Link href="/after/" className={link}>
                 life afterwards
@@ -366,7 +358,7 @@ export const home: PageModule = {
     },
 
     {
-      title: "The region plans for two earthquakes, and they are not the same event",
+      title: "The region plans for two different earthquakes",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
@@ -405,9 +397,8 @@ export const home: PageModule = {
         <Prose>
           <p>
             Governments, utilities and the engineers they hire wrote them.
-            Where nobody has published an answer, the page says so instead of
-            guessing. Where two official documents contradict each other, both
-            are here.
+            Pages mark gaps where nobody has published an answer. Where two
+            official documents contradict each other, both are here.
           </p>
           <p>
             How long something is out is written as one of three bands: Low,

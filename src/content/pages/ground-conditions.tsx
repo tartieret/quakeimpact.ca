@@ -47,11 +47,11 @@ export const groundConditions: PageModule = {
     route: "/shaking/ground/",
     title: "Ground conditions",
     description:
-      "The ground under Metro Vancouver varies far more than the buildings on it do. On the Fraser delta, wet sand can lose its strength and behave like a liquid.",
+      "Metro Vancouver spans bedrock, deep soft sediment and river delta soil that can liquefy during an earthquake.",
     nav: "Ground conditions",
     kicker: "The shaking",
     standfirst:
-      "The ground under Metro Vancouver varies far more than the buildings on it do. On the Fraser delta, wet sand can lose its strength and behave like a liquid while the shaking lasts. Under the whole region, a deep bowl of soft sediment makes the slow part of the shaking stronger.",
+      "Metro Vancouver spans bedrock, deep soft sediment and river delta soil. On the delta, wet sand can lose its strength during an earthquake. Beneath the region, the Georgia Basin amplifies slow shaking.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -75,8 +75,7 @@ export const groundConditions: PageModule = {
 
   sections: [
     {
-      title:
-        "The same earthquake does different things on rock and on the delta",
+      title: "Ground conditions change the shaking",
       body: (
         <Prose>
           <p>
@@ -92,7 +91,7 @@ export const groundConditions: PageModule = {
     },
 
     {
-      title: "On the delta, wet sand can behave like a liquid while it shakes",
+      title: "Delta soil can liquefy",
       body: (
         <Prose>
           <p>
@@ -107,10 +106,10 @@ export const groundConditions: PageModule = {
             caption={
               <>
                 Christchurch, New Zealand, on the day of the 2011 earthquake.
-                The silt came up through the road rather than along it, and the
-                cars are standing in ground that stopped carrying them.
-                Richmond and Delta hold the same two conditions — loose sand
-                that can liquefy, and water close enough to the surface to keep
+                The silt rose through the road, and the cars are standing in
+                ground that stopped carrying them.
+                Richmond and Delta have both conditions: loose sand that can
+                liquefy and water close enough to the surface to keep
                 it wet.{" "}
                 <Cite id="JAVANBAKHT-24" />
               </>
@@ -124,15 +123,13 @@ export const groundConditions: PageModule = {
                 foreground are where the ground vented: sand and water came up
                 through the road and spread over it, so the material lying on
                 the surface was under it that morning. That is why liquefaction
-                reaches the pipes and the road and not only the building
-                standing on them.
+                reaches the building, the pipes and the road beneath it.
               </>
             }
           />
           <p>
-            Three things have to line up for it, and on the delta all three do:
-            a thick layer of the right kind of sand, water close to the surface,
-            and strong shaking. In soil tests across Richmond and Delta, three
+            Liquefaction needs loose sand, shallow groundwater and strong
+            shaking. The delta has all three. In soil tests across Richmond and Delta, three
             quarters of the sites held more than 9.6 m of sand that could
             liquefy, with 11.8 m the average total through a site. The water
             table sits under 3 m, and in places under 1 m.{" "}
@@ -148,8 +145,8 @@ export const groundConditions: PageModule = {
                 liquefy, and water close enough to the surface to keep it wet.
                 Thicknesses are to scale and widths mean nothing; how deep the
                 bottom of the sand sits is not a published figure. The 11.8 m is
-                an average total through a site rather than one continuous
-                layer, and it is drawn under the water table because the sand
+                an average total through a site. It is not one continuous layer,
+                and it is drawn under the water table because the sand
                 has to be wet for any of this to happen. <Cite id="JAVANBAKHT-24" />
               </>
             }
@@ -176,8 +173,7 @@ export const groundConditions: PageModule = {
     },
 
     {
-      title:
-        "Delta soil is expected to start behaving like a liquid every 100 to 250 years",
+      title: "Liquefaction is expected every 100 to 250 years on the delta",
       body: (
         <Prose>
           <p>
@@ -206,7 +202,7 @@ export const groundConditions: PageModule = {
     },
 
     {
-      title: "The whole region sits in a bowl that makes slow shaking stronger",
+      title: "The Georgia Basin amplifies slow shaking",
       body: (
         <Prose>
           <p>
@@ -252,7 +248,7 @@ export const groundConditions: PageModule = {
     },
 
     {
-      title: "Canada’s building code does not yet count the bowl",
+      title: "The building code does not yet account for the basin",
       body: (
         <Prose>
           <p>
@@ -274,8 +270,7 @@ export const groundConditions: PageModule = {
     },
 
     {
-      title:
-        "The western half of the region is mapped street by street, and anyone can look up their address",
+      title: "Detailed ground maps cover the western region",
       body: (
         <Prose>
           <p>
@@ -308,8 +303,7 @@ export const groundConditions: PageModule = {
     },
 
     {
-      title:
-        "Richmond tells residents its dikes will hold, and the engineers it hired are less sure",
+      title: "Richmond’s dike message conflicts with its engineering results",
       body: (
         <Prose>
           <p>
@@ -392,7 +386,7 @@ export const groundConditions: PageModule = {
       </>,
       <>
         <strong>
-          On the delta, plan for the services and not only for the building.
+          On the delta, plan for the services as well as the building.
         </strong>{" "}
         Liquefaction reaches past the foundation to the buried pipes and the
         roads. In the scenario for the closer earthquake, “liquefaction of

@@ -48,8 +48,7 @@ export const sanitation: PageModule = {
 
   sections: [
     {
-      title:
-        "A toilet needs water to flush, and in an apartment tower there is nothing else to use",
+      title: "Apartment toilets stop when the water does",
       body: (
         <Prose>
           <p>
@@ -95,8 +94,7 @@ export const sanitation: PageModule = {
     },
 
     {
-      title:
-        "The only duration anyone has published for wastewater is many months",
+      title: "Wastewater disruption could last many months",
       body: (
         <Prose>
           <p>
@@ -131,7 +129,7 @@ export const sanitation: PageModule = {
     },
 
     {
-      title: "Waste with nowhere to go is a health problem",
+      title: "Stored waste creates a health risk",
       body: (
         <Prose>
           <Quote
@@ -179,15 +177,14 @@ export const sanitation: PageModule = {
     },
 
     {
-      title:
-        "A treatment plant built to survive an earthquake still needs the sewers that reach it",
+      title: "Treatment plants still depend on damaged sewers",
       body: (
         <Prose>
           <p>
             Metro Vancouver lists what it has built or designed to a
             post-disaster standard, which means a structure the building code
-            expects to keep working after the earthquake, not just to stay
-            standing: the Annacis Island plant’s Stage 5 expansion, the North
+            expects to keep working after the earthquake. The list includes the
+            Annacis Island plant’s Stage 5 expansion, the North
             Shore secondary treatment plant, the new Hollyburn pump station, and
             the Sperling and Sapperton pump stations, which were under
             construction with seismic upgrades.{" "}
@@ -245,8 +242,7 @@ export const sanitation: PageModule = {
     },
 
     {
-      title:
-        "Vancouver has a seismic standard for new sewer pipe and no assessment of the old",
+      title: "Older sewer pipes have not been assessed",
       body: (
         <Prose>
           <p>

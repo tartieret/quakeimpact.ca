@@ -6,7 +6,7 @@ hook: The province's own plan says family and neighbours are likely to be the on
 lede: British Columbia's earthquake guidance asks a household for two weeks of water and food, a written plan, a meeting place and a phone number outside the region. The two things on that list that cost nothing are the two most households have skipped.
 ---
 
-## The province's plan says family and neighbours are the first responders
+## Family and neighbours provide the first help
 
 
 
@@ -32,7 +32,7 @@ designed for the scope and scale of services required after a catastrophic earth
 The City of Vancouver asks for less. It tells residents to gather supplies for "a
 minimum of 3 days, although your target should be a week to 2 weeks". [COV-EXPLORER-25] The provincial guide written for this hazard asks for at least two weeks, and says in the same breath that "It may be weeks before infrastructure, utilities and essential services are restored". [PREPAREDBC]
 
-## Write the plan down, and agree where you would meet
+## Write down how to reconnect
 
 The guide's own planning checklist is nine items, and only two of them are shopping.
 [PREPAREDBC]
@@ -80,15 +80,15 @@ Plan how you would get home as well as who you would call. The City of Vancouver
 advice is to "plan alternate ways to get home considering roads may be blocked and
 trains will not be running until damage assessments are complete". [COV-EXPLORER-25]
 
-## Turn the alerts on, and know what to do in the seconds they buy
+## Turn on earthquake alerts
 
 The Canadian Earthquake Early Warning system detects an earthquake immediately after it
 starts and sends an alert through the National Public Alerting System, so alerts arrive
 on television, on the radio and on compatible mobile phones. [PREPAREDBC] It provides
 "seconds to tens-of-seconds of warning", which is enough to get down and under
 something, and the guide is explicit that early warning systems cannot predict
-earthquakes. [PREPAREDBC] Close to where the earthquake starts, the alert may arrive
-with the shaking rather than before it. [NRCAN-EEW]
+earthquakes. [PREPAREDBC] Close to where the earthquake starts, the alert may arrive as
+the shaking begins. [NRCAN-EEW]
 
 The seconds are for one action:
 
@@ -109,7 +109,7 @@ and the guide says to expect them. [PREPAREDBC]
 Four litres per person per day, for drinking and sanitation together, is the province's
 rate. [PREPAREDBC] The City of Vancouver prints the same rate. [COV-EXPLORER-25] For a
 household of four holding two weeks, that is at least 224 litres. That total is
-arithmetic from the published rate rather than a figure either body prints.
+calculated from the published rate; neither body prints it.
 
 Pets are on the same list, one grab-and-go bag each and supplies for the same two weeks. [PREPAREDBC-KIT]
 
@@ -119,7 +119,7 @@ affected region stays challenging for the first four to five days. [DCRRA-2025] 
 water covers that gap. Whatever you can hold is worth holding, refilled on a schedule you
 will actually keep.
 
-## Food that needs no cooking, and a bag by the door
+## Store food that needs no cooking
 
 Non-perishable food for at least two weeks, with a manual can opener. [PREPAREDBC] Then
 the rest of the kit the guide lists: a battery-powered or hand-crank radio, a flashlight
@@ -136,7 +136,7 @@ asks that the bags be accessible and that everyone in the household knows where 
 are. [PREPAREDBC] The province's kit list puts one more thing in the bag: a local map
 with your household meeting places marked on it. [PREPAREDBC-KIT]
 
-## Secure the heavy things in the rooms where people sleep
+## Secure heavy furniture near beds
 
 In the province's own narrative of the shaking, unsecured objects "fall or fly through
 the air", windows break and glass scatters. [PEIRS] Nearly all of what the guidance
@@ -155,7 +155,7 @@ window, and sturdy shoes under the bed. [COV-EXPLORER-25]
 
 Start with the rooms where people sleep, and with anything tall next to a bed.
 
-## Know where the shut-offs are, and leave the gas alone unless an official says otherwise
+## Know where the utility shut-offs are
 
 The provincial guide asks everyone to learn how to turn off their home's electrical
 panel, water and gas valves "in case you're instructed to do so by local officials", and
@@ -176,7 +176,7 @@ company has to reconnect it, which may take weeks after a major emergency."
 Know where the valves are. Leave them where they are unless an official tells you
 otherwise. Never turn the gas back on yourself.
 
-## Plan around what the people in your home need
+## Account for individual needs
 
 The guide asks households to "consider the unique requirements of everyone in your home,
 such as children, older adults, pets and those with additional needs", and to think about
@@ -195,7 +195,7 @@ with the details from your pharmacist, and extra medication or supplies where th
 possible, belong in the same plan. [PREPAREDBC-DISABILITY] Most of that is worth doing
 for anyone in the household who would need help getting out or getting by.
 
-## Meet the neighbours, because they are the help that arrives first
+## Meet the neighbours who may be nearby
 
 The province's own sentence is that "the most immediate help will come from those around
 you", and that building those relationships now means a better response and a faster
@@ -241,7 +241,7 @@ City says services there may include group lodging, distribution of food, water 
 supplies, recovery information and help finding family. It publishes no capacity figure, so
 nobody should count on a bed being there. [COV-HUBS]
 
-## Disaster Response Route signs mark roads the public is asked to leave
+## Keep Disaster Response Routes clear
 
 Those routes stay open to everyone until a state of emergency is declared. After that
 they are activated and controlled for emergency responders, and the official instruction
@@ -251,7 +251,7 @@ evacuation routes, and using them as one would get in the way of the response.
 No City of Vancouver public page explains this. The provincial page is the only place it
 is set out. [DRR-GOVPAGE]
 
-## Build it over time if money is tight
+## Spread the cost over time
 
 The City of Vancouver states the barrier in its own voice: people with limited resources
 "often lack the ability to control the structural readiness of their building and are
@@ -289,8 +289,8 @@ farther away, and one phone number outside the region.
 **Then food that needs no cooking and no refrigeration**, and a manual can opener.
 [PREPAREDBC]
 
-**Then a light, a radio, a power bank, warm layers and sturdy shoes**, kept where you
-will be rather than only at home. [PREPAREDBC]
+**Then keep a light, a radio, a power bank, warm layers and sturdy shoes wherever you
+spend time.** [PREPAREDBC]
 
 **Secure the heavy things in the rooms where people sleep.** Start with anything tall
 next to a bed, and move heavy objects to lower shelves. [PREPAREDBC]

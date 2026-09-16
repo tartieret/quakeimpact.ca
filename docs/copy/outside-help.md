@@ -2,8 +2,8 @@
 route: /after/outside-help/
 title: Where help comes from
 nav: Where help comes from
-hook: British Columbia's plan stages help with the agencies outside the impact area, and in a megathrust they are inside it.
-lede: British Columbia's earthquake plan does not wait to be asked. It stages resources with the agencies outside the damaged region and pushes them in. [PEIRS] Whether there is an outside to push from is the thing the two earthquakes answer differently. [PEIRS]
+hook: A coast-wide earthquake leaves fewer outside agencies able to help.
+lede: British Columbia's earthquake plan stages resources with agencies outside the damaged region, then sends them in. [PEIRS] A local crustal earthquake leaves those agencies available. A coast-wide megathrust may not. [PEIRS]
 bands: { cascadia: high, crustal: low }
 mechanism-cascadia: The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states that the United States will be unable to deliver mutual aid.
 mechanism-crustal: The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and a local crustal earthquake is the case where that assumption holds.
@@ -11,7 +11,7 @@ evidence-crustal: This is a planning assumption the province states, not a measu
 source: PEIRS
 ---
 
-## Help arrives over the same roads and ports as everything else
+## Outside help depends on damaged transport links
 
 In the first days, road, rail, air and marine transport are disrupted and "existing
 supply chains will be inoperable". Areas are isolated, unreachable by road because of
@@ -30,7 +30,7 @@ are activated the public is told to get off them as soon as possible. [DRR-GOVPA
 They are roads to leave, not roads to leave on. [Getting around](/getting-around/)
 covers the signs.
 
-## British Columbia's plan is to push resources in, which reverses what its own general plan says
+## The earthquake plan sends resources into the region
 
 The province's general emergency plan, the All-Hazard Plan, works from the bottom up.
 The province's role under it is supplementary: it "will coordinate available resources
@@ -45,7 +45,7 @@ province "will stand up response measures outlined within this strategy and
 proactively deploy resources into the impact area". [PEIRS] Nobody has to ask first.
 The general plan has not been amended since 2016. [AHP-2012]
 
-## Pushing resources in needs an outside to push them from
+## Cascadia reduces the help available outside
 
 Agencies inside the impact area are reduced or delayed, while "those outside the
 impact area will be largely unaffected and functional". The staging follows:
@@ -84,7 +84,7 @@ provinces and the U.S. are delayed due to widespread transportation and communic
 disruptions." [DCRRA-2025] The plan is that a community holds on until help arrives.
 [PEIRS] [The two scenarios](/scenarios/) sit side by side.
 
-## The agreements that would bring help are named, and the one scheduled test of them was not run
+## Mutual-aid agreements remain partly untested
 
 In June 2016 the province ran Exercise Coastal Response, its first full-scale
 earthquake and tsunami exercise, with about 800 participants from 65 organisations.
@@ -96,7 +96,7 @@ constraints)". [ECR-2016]
 
 British Columbia could not exercise its cross-border arrangement because its
 cross-border partners were exercising the same earthquake. It publishes summaries of
-these exercises rather than full after-action reports. [EX-PROG]
+these exercises. Full after-action reports are not published. [EX-PROG]
 
 | Who would come | Under what |
 | --- | --- |
@@ -113,7 +113,7 @@ these exercises rather than full after-action reports. [EX-PROG]
 > times, and an immediate-response checklist directs staff to contact the Alberta
 > Emergency Management Agency to confirm its activation. [PEIRS]
 
-## The framework all of this runs on was made under a law that has since been repealed
+## The response framework predates the current law
 
 The All-Hazard Plan is dated 4 November 2012 and was last amended on 22 June 2016. It
 promises that it "will be reviewed and updated by EMBC every four years", naming an

@@ -2,14 +2,14 @@
 route: /after/large-infrastructure/
 title: Port, airport and ferry terminals
 nav: Port, airport and ferries
-hook: Everything that drives to the airport crosses a bridge, and the model expects every one of them damaged.
-lede: Goods and people reach this region through a small number of very large places, and there is no local substitute for any of them. Modelling of a magnitude 9 megathrust expects road access to Vancouver International Airport to be cut for the first few critical days, because every bridge leading to it is damaged, and service at some Vancouver-area ports disrupted for one to two weeks. [AIR-2013]
+hook: The airport model expects damage to every bridge onto Sea Island.
+lede: The region depends on a small number of port, airport and ferry terminals. A magnitude 9 megathrust model finds every bridge to Vancouver International Airport damaged, cutting road access for the first few days. The same model puts some Vancouver-area port service out for one to two weeks. [AIR-2013]
 bands: { cascadia: medium, crustal: unknown }
 mechanism: Modelling of a magnitude 9 megathrust puts one to two weeks of disrupted service at some Vancouver-area ports, road access to the airport cut for the first few days because every bridge leading to it is damaged, and moderate liquefaction damage at the port areas on the delta.
 source: AIR-2013
 ---
 
-## Modelling of a megathrust expects road access to the airport cut for the first few days, because every bridge onto Sea Island is damaged
+## Airport road access could be cut for days
 
 Vancouver International Airport sits on Sea Island, in the mouth of the Fraser.
 Everything that drives to it crosses a bridge.
@@ -23,18 +23,18 @@ and may take a few weeks to restore fully. The Canada Line rail service to the a
 likely to be disrupted as well. [AIR-2013] Those bridges are the same story as every
 other crossing in the region, which is [transportation](/after/transportation/).
 
-The runways are the second problem. Sea Island is at moderate risk of liquefaction,
+Runways may also be damaged. Sea Island is at moderate risk of liquefaction,
 saturated soil losing its strength and behaving like a liquid while the ground shakes,
 and that is the likely source of damage to the runways. Areas of tarmac are expected to
 be moderately damaged, with minor settlement or heaving of the surface, and some sections
 of runway may be out of service for a few days. [AIR-2013]
 
-The buildings come third. Terminals, towers and hangars are expected to sustain "slight
+Terminals, towers and hangars are expected to sustain "slight
 to moderate damage", and some masonry structures may take a few months to restore.
 Airport infrastructure loss across the region is put at more than $300 million.
 [AIR-2013]
 
-## The harbour ports come off a grade better than the ports on the delta
+## Harbour ports fare better than delta ports
 
 Vancouver Harbour comes out at slight damage: minor ground settlement, minor cracks in
 the piles, cracks on the wharf surface. Unanchored cranes may derail or go out of
@@ -66,7 +66,7 @@ what stands there now:
 That is an engineer reporting what the owner understands, not an inspection finding, and
 it covers one industrial boat basin, not the harbour.
 
-## A port can be repaired and still not get its traffic back
+## Port traffic also depends on demand
 
 A retrospective of the 1995 earthquake in Kobe, Japan, records that the port, "Japan's
 leading container shipping port, was heavily damaged and repairs took almost a year to
@@ -77,7 +77,7 @@ nothing here.
 
 
 
-## The ferry terminal on the delta is the one with no published seismic assessment
+## Tsawwassen terminal has no published seismic assessment
 
 BC Ferries' renewal program at Horseshoe Bay includes improving seismic safety across all
 three berths. [BCF-HSB] Horseshoe Bay sits on rock at the mouth of Howe Sound; Tsawwassen
@@ -97,7 +97,7 @@ does not meet current seismic codes and is susceptible to inundation during futu
 level rise". [BCF-FMU-23] That is a yard, not a berth. It is on the delta, and it is
 where the vessels get fixed.
 
-## Nobody has published an assessment of the terminals that are working today
+## Current ferry terminals have not been assessed publicly
 
 None of the figures above comes from anyone inspecting a wharf, a crane or a runway. They are the output of a catastrophe model, a computer simulation insurers use to estimate what an event would cost, which AIR Worldwide ran in 2013 for the Insurance
 Bureau of Canada, against the infrastructure as it stood then. [AIR-2013] No operator,
@@ -119,11 +119,11 @@ liquefaction assessment work on the Deltaport Berth 3 expansion. [RBT2-CVS-19] T
 > airport comes from that one model run, against the infrastructure as it stood thirteen
 > years ago. [AIR-2013] The band rests on it, and on nothing that inspected a wharf.
 
-## Nothing has been published about a shallow crustal earthquake here
+## The crustal earthquake remains unassessed
 
 The band for the megathrust rests on that one study, and the study modelled the magnitude
 9 megathrust and nothing else. [AIR-2013] What the port, the airport and the ferry
-terminals would face in a shallow crustal earthquake close to the city has not been published by anyone. So the crustal earthquake carries no band on this page, because there is nothing to band, and that is a statement about the public record rather than about the nearer earthquake being gentler.
+terminals would face in a shallow crustal earthquake close to the city has not been published by anyone. So the crustal earthquake carries no band on this page. That gap in the public record says nothing about whether the nearer earthquake would be gentler.
 
 The province's crustal planning scenario does name two of them, as exposure and not as
 damage: "Liquefaction of roadways in Richmond and Delta may make driving difficult, which
@@ -141,8 +141,7 @@ about that is decide in advance not to depend on either.
 help in the first days.** Goods and people reach this region through a small number of
 very large places, and there is no local substitute for any of them.
 
-**Plan household supplies for a stretch when nothing is arriving**, rather than for a
-stretch when the shops are busy. What reaches a shop and what reaches a fuel pump both
+**Plan household supplies for a long break in deliveries.** What reaches a shop and what reaches a fuel pump both
 come through these places, and [food](/after/food/) and [fuel](/after/fuel/) set out what
 the province expects of each.
 

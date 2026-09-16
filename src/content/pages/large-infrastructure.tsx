@@ -26,17 +26,16 @@ export const largeInfrastructure: PageModule = {
     route: "/after/large-infrastructure/",
     title: "Port, airport and ferry terminals",
     description:
-      "Goods and people reach this region through a small number of very large places, and there is no local substitute for any of them.",
+      "The region depends on a small number of port, airport and ferry terminals with no local substitutes.",
     nav: "Port, airport and ferries",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        Goods and people reach this region through a small number of very large
-        places, and there is no local substitute for any of them. Modelling of a
-        magnitude 9 megathrust expects road access to Vancouver International
-        Airport to be cut for the first few critical days, because every bridge
-        leading to it is damaged, and service at some Vancouver-area ports
-        disrupted for one to two weeks. <Cite id="AIR-2013" />
+        The region depends on a small number of port, airport and ferry terminals.
+        A magnitude 9 megathrust model finds every bridge to Vancouver
+        International Airport damaged, cutting road access for the first few
+        days. The same model puts some Vancouver-area port service out for one
+        to two weeks. <Cite id="AIR-2013" />
       </>
     ),
     /**
@@ -58,8 +57,7 @@ export const largeInfrastructure: PageModule = {
 
   sections: [
     {
-      title:
-        "Modelling of a megathrust expects road access to the airport cut for the first few days, because every bridge onto Sea Island is damaged",
+      title: "Airport road access could be cut for days",
       body: (
         <Prose>
           <p>
@@ -83,7 +81,7 @@ export const largeInfrastructure: PageModule = {
             .
           </p>
           <p>
-            The runways are the second problem. Sea Island is at moderate risk
+            Runways may also be damaged. Sea Island is at moderate risk
             of liquefaction, saturated soil losing its strength and behaving
             like a liquid while the ground shakes, and that is the likely source
             of damage to the runways. Areas of tarmac are expected to be
@@ -102,7 +100,7 @@ export const largeInfrastructure: PageModule = {
             }
           />
           <p>
-            The buildings come third. Terminals, towers and hangars are expected
+            Terminals, towers and hangars are expected
             to sustain “slight to moderate damage”, and some masonry structures
             may take a few months to restore. Airport infrastructure loss across
             the region is put at more than $300 million. <Cite id="AIR-2013" />
@@ -112,8 +110,7 @@ export const largeInfrastructure: PageModule = {
     },
 
     {
-      title:
-        "The harbour ports come off a grade better than the ports on the delta",
+      title: "Harbour ports fare better than delta ports",
       body: (
         <Prose>
           <p>
@@ -173,7 +170,7 @@ export const largeInfrastructure: PageModule = {
     },
 
     {
-      title: "A port can be repaired and still not get its traffic back",
+      title: "Port traffic also depends on demand",
       body: (
         <Prose>
           <p>
@@ -213,8 +210,7 @@ export const largeInfrastructure: PageModule = {
     },
 
     {
-      title:
-        "The ferry terminal on the delta is the one with no published seismic assessment",
+      title: "Tsawwassen terminal has no published seismic assessment",
       body: (
         <Prose>
           <p>
@@ -247,8 +243,7 @@ export const largeInfrastructure: PageModule = {
     },
 
     {
-      title:
-        "Nobody has published an assessment of the terminals that are working today",
+      title: "Current ferry terminals have not been assessed publicly",
       body: (
         <Prose>
           <p>
@@ -289,7 +284,7 @@ export const largeInfrastructure: PageModule = {
     },
 
     {
-      title: "Nothing has been published about a shallow crustal earthquake here",
+      title: "The crustal earthquake remains unassessed",
       body: (
         <Prose>
           <p>
@@ -298,9 +293,8 @@ export const largeInfrastructure: PageModule = {
             <Cite id="AIR-2013" /> What the port, the airport and the ferry
             terminals would face in a shallow crustal earthquake close to the
             city has not been published by anyone. So the crustal earthquake
-            carries no band on this page, because there is nothing to band, and
-            that is a statement about the public record rather than about the
-            nearer earthquake being gentler.
+            carries no band on this page. That gap in the public record says
+            nothing about whether the nearer earthquake would be gentler.
           </p>
           <p>
             The province’s crustal planning scenario does name two of them, as
@@ -339,11 +333,9 @@ export const largeInfrastructure: PageModule = {
         places, and there is no local substitute for any of them.
       </>,
       <>
-        <strong>
-          Plan household supplies for a stretch when nothing is arriving
-        </strong>
-        , rather than for a stretch when the shops are busy. What reaches a shop
-        and what reaches a fuel pump both come through these places, and{" "}
+        <strong>Plan household supplies for a long break in deliveries.</strong>{" "}
+        What reaches a shop and what reaches a fuel pump both come through these
+        places, and{" "}
         <Link href="/after/food/" className={link}>
           food
         </Link>{" "}

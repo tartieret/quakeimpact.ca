@@ -2,14 +2,14 @@
 route: /after/health-care/
 title: Health care
 nav: Health care
-hook: Hospitals stand on the same ground as everything else, and most of the stock predates the current code.
-lede: About 65 per cent of the 127 buildings owned by one health authority are likely to be completely damaged at the 1-in-2,475-year earthquake, which is the shaking the current building code designs against. [DCRRA-APPC] No government or health authority has set the casualties the province forecasts against the number of beds the region has. The comparison exists only in peer-reviewed engineering work.
+hook: Most hospital buildings in the region predate the current seismic code.
+lede: A study of one health authority's 127 buildings finds about 65 per cent likely to be completely damaged at the earthquake level used by the current building code. [DCRRA-APPC] No government or health authority has compared the province's casualty estimates with the region's hospital capacity. Only peer-reviewed engineering work has done so.
 bands: { cascadia: medium, crustal: medium }
 mechanism: A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no government or health authority has set the expected casualty load against the region's bed capacity.
 source: DCRRA-APPC
 ---
 
-## The people who need care arrive in the first hours
+## Injured people arrive within hours
 
 For a magnitude 7.0 earthquake under Greater Vancouver on a weekday afternoon, the province's earthquake immediate response plan forecasts 1,000 people critically injured, 6,500 needing hospital
 care that is not critical, and 21,000 needing paramedics or first aid, from damage to
@@ -21,7 +21,7 @@ overwhelmed. [PEIRS]
 Hospitals are hindered as well by "thousands of uninjured, distraught people … looking
 for loved ones and seeking shelter". [DCRRA-2025]
 
-## A hospital that stays standing is not the same as a hospital that stays working
+## A standing hospital may not be operational
 
 A building can come through the shaking and stop being a hospital. The frame holds and
 the things fixed to it do not: the ceilings, the ductwork, the pipes overhead, the
@@ -54,7 +54,7 @@ say reliable results need a detailed engineering assessment of each building.
 [DCRRA-APPC] It says nothing about whether any particular hospital would
 collapse.
 
-## A hospital on its generator is running on stored fuel and stored water
+## Backup systems depend on stored fuel and water
 
 When the [power](/after/electricity/) goes, the generator carries the building, and the
 generator burns [fuel](/after/fuel/) that arrives by truck. Once the
@@ -66,7 +66,7 @@ building safely: not less than two hours for elevators in tall buildings, for eq
 supplying water to fight a fire and for smoke-control fans, and between thirty minutes
 and two hours for lighting. [VBBL-2025] For hospitals the by-law points elsewhere, to CSA
 Z32, the standard for essential electrical systems in health care facilities, which CSA
-sells rather than publishes. [VBBL-2025]
+sells. It does not publish the full text online. [VBBL-2025]
 
 The project agreements for the new Surrey hospital and the new St. Paul's each require,
 in identical terms, 72 hours of self-sufficiency for fuel, water and sanitary holding,
@@ -75,7 +75,7 @@ which is wastewater kept on site. [NSH-SPEC] [NSP-SPEC] Neither hospital has ope
 > **Not published.** Nothing published for the hospitals open today says how long a
 > generator can run, how much fuel is held on site, or how much water is stored.
 
-## Some people cannot reach a hospital at all
+## Road damage can cut off hospital access
 
 Three engineers at UBC published a study in April 2026 modelling how a magnitude 9.0
 Cascadia earthquake would affect people's ability to reach the 16 Metro Vancouver
@@ -84,7 +84,7 @@ to the roads together. [KAUR-2026]
 
 In the City of Vancouver the study's measure of how well people can reach emergency care
 falls from about 0.9 before the earthquake to about 0.3 after it, mostly because of
-damage to the hospitals rather than to the roads. [KAUR-2026] Across the region the model
+damage to the hospitals. Road damage sits outside it. [KAUR-2026] Across the region the model
 leaves 54,339 people unable to reach any hospital on the roads it considers, because the
 bridges they would cross are out, and retrofitting those bridges inside the model cuts
 that to under 27,000. [KAUR-2026] The bridges themselves are on
@@ -96,7 +96,7 @@ functionality and underestimating accessibility loss". [KAUR-2026] It also assum
 major river crossings stay open and that everyone drives on free-flowing roads.
 [KAUR-2026]
 
-## No government or health authority has set the expected casualties against the region's beds
+## Expected casualties have not been compared with bed capacity
 
 The Mass Casualty Incident Framework for British Columbia Hospitals, published by the
 Provincial Health Services Authority in January 2026, is the official document for this
@@ -104,12 +104,12 @@ question and it does not answer it. [HEMBC-MCI] It standardises how hospitals re
 a mass casualty incident, and the words earthquake, seismic, Cascadia and post-disaster do
 not appear in it. Its one quantified surge figure, that 10 to 20 per cent of a hospital's
 beds could be freed up quickly by moving patients, is drawn from published literature
-rather than measured in British Columbia hospitals. [HEMBC-MCI]
+from published literature. It was not measured in British Columbia hospitals. [HEMBC-MCI]
 
 The capacity figures that are public are academic. The 2026 study carries a table of
 acute care beds for its 16 hospitals and labels them "Assumed": the authors compiled them
-from public health-authority pages, they count acute care beds rather than intensive care
-or emergency department beds, and the hospitals are anonymised by city. [KAUR-2026] The
+from public health-authority pages. They count acute care beds; intensive care and emergency
+department beds are not separated. The hospitals are anonymised by city. [KAUR-2026] The
 only per-hospital intensive care counts in public come from a 2020 medical journal case
 series covering the six hospitals designated as COVID-19 centres, which is not an
 inventory of the region. [MITRA-2020]
@@ -117,10 +117,10 @@ inventory of the region. [MITRA-2020]
 > **Not published.** No government or health authority has put the expected casualty load
 > beside the region's care capacity, and no official inventory of intensive care or
 > operating room beds is published for British Columbia. The official figures that exist
-> are counts attached to individual building projects rather than a list of what the
-> region has. Peer-reviewed engineering work has made the comparison. [KAUR-2026]
+> are counts attached to individual building projects. No regional inventory is public.
+> Peer-reviewed engineering work has made the comparison. [KAUR-2026]
 
-## The new hospitals are built to keep working, and the ones open now are older
+## New hospitals meet a higher seismic standard
 
 > "St. Paul's Hospital in downtown Vancouver is an older building with masonry elements
 > and may be significantly impacted by a large seismic event. Other hospitals in this
@@ -130,8 +130,8 @@ inventory of the region. [MITRA-2020]
 That describes the St. Paul's on Burrard Street. Its replacement on Station Street is built to the Vancouver Building By-law's post-disaster requirement. [NSP-SPEC] How many patients the other three could take is not in the plan.
 
 Three major projects are specified to post-disaster importance category, the code's term
-for a building expected to keep working after an earthquake rather than only to stay
-standing: the new Surrey hospital and BC Cancer Centre [NSH-SPEC], the new St. Paul's
+for a building expected to keep working after an earthquake: the new Surrey hospital and
+BC Cancer Centre [NSH-SPEC], the new St. Paul's
 [NSP-SPEC] and phase two of Royal Columbian Hospital. [RCH-SPEC] At Royal Columbian the
 acute care tower is post-disaster and the support building beside it is specified as
 normal importance category. [RCH-SPEC] The standard is applied where care is delivered. A

@@ -23,11 +23,11 @@ export const casualties: PageModule = {
     route: "/shaking/casualties/",
     title: "Casualties",
     description:
-      "Two governments have published figures for how many people would be hurt or killed by an earthquake here, and the figures are far apart.",
+      "Published casualty estimates differ because they cover different earthquakes, areas and times of day.",
     nav: "Casualties",
     kicker: "The shaking",
     standfirst:
-      "Two governments have published figures for how many people would be hurt or killed by an earthquake here. The figures are far apart, because they cover different places, different earthquakes and different times of day. All of them count one thing: buildings shaken, and the people inside them.",
+      "Published casualty estimates differ because they cover different earthquakes, areas and times of day. They count only shaking damage to buildings and the people inside them.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -49,8 +49,7 @@ export const casualties: PageModule = {
 
   sections: [
     {
-      title:
-        "Every published casualty figure counts buildings shaking, and nothing else",
+      title: "Published figures cover mainshock building damage only",
       body: (
         <Prose>
           <p>
@@ -75,8 +74,7 @@ export const casualties: PageModule = {
     },
 
     {
-      title:
-        "Two governments have published casualty figures, and they do not count the same area",
+      title: "Government estimates cover different areas",
       body: (
         <Prose>
           <p>
@@ -130,7 +128,7 @@ export const casualties: PageModule = {
                 <Cite id="DCRRA-2025" />. They are separate counts of different
                 areas and cannot be added together. The province’s Cascadia row
                 counts the whole province, and the heaviest damage in that
-                scenario is on Vancouver Island rather than here.
+                scenario is on Vancouver Island, outside the Lower Mainland.
               </>
             }
           />
@@ -143,8 +141,7 @@ export const casualties: PageModule = {
     },
 
     {
-      title:
-        "The closer, smaller earthquake is the worse one for the City of Vancouver",
+      title: "The closer earthquake causes more casualties in Vancouver",
       body: (
         <Prose>
           <p>
@@ -161,7 +158,7 @@ export const casualties: PageModule = {
     },
 
     {
-      title: "The time of day changes the count by more than half",
+      title: "Time of day changes the count",
       body: (
         <Prose>
           <p>
@@ -186,8 +183,7 @@ export const casualties: PageModule = {
     },
 
     {
-      title:
-        "In the City’s worst scenario, two building types carry most of the night-time casualties",
+      title: "Two building types dominate night-time casualties",
       body: (
         <Prose>
           <p>
@@ -210,8 +206,7 @@ export const casualties: PageModule = {
     },
 
     {
-      title:
-        "In Christchurch, New Zealand, most of the people killed by falling walls were outside the buildings",
+      title: "Falling walls killed people outside in Christchurch",
       body: (
         <Prose>
           <p>
@@ -234,8 +229,7 @@ export const casualties: PageModule = {
     },
 
     {
-      title:
-        "A widely repeated figure of 15,000 deaths was put into a model, not produced by one",
+      title: "The 15,000-death figure is a model input",
       body: (
         <Prose>
           <p>
@@ -257,8 +251,7 @@ export const casualties: PageModule = {
     },
 
     {
-      title:
-        "The province says its own casualty figures may not match a real event",
+      title: "The province warns that actual casualties may differ",
       body: (
         <Prose>
           <p>
@@ -323,9 +316,8 @@ export const casualties: PageModule = {
     ],
     closing: (
       <>
-        The hour of the day is the biggest single thing in these models, and it
-        is the one nobody gets to pick. What is above the bed, and what you do
-        while the ground is moving, can be picked today.
+        Time of day drives the largest change in these models. What hangs above
+        the bed and what you do while the ground moves are within your control.
       </>
     ),
   },

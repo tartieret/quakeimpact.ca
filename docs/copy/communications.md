@@ -2,14 +2,14 @@
 route: /after/communications/
 title: Communications
 nav: Communications
-hook: No rule says how long a cell site has to keep running without the grid.
-lede: The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel. [DCRRA-2025] No rule sets how long a cell site has to hold backup power, and the regulator that would set one is still asking what it should be. [CRTC-2025-226]
+hook: Cell sites have no required minimum backup-power time.
+lede: The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel. [DCRRA-2025] Cell sites have no minimum backup-power requirement. The regulator is still considering one. [CRTC-2025-226]
 bands: { cascadia: medium, crustal: medium }
-mechanism: The province expects disruption to communications to continue for days to weeks, with what capacity survives prioritised for emergency personnel and a prolonged lack of access for everyone else; it names satellite phones and amateur radio as the backups people would fall back on.
+mechanism: The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel, with satellite phones and amateur radio used as backups.
 source: DCRRA-2025
 ---
 
-## The network fills up before anything is broken
+## Call volumes overload the network first
 
 A cell site does not have to fall over to stop working:
 
@@ -24,10 +24,10 @@ that keeps retrying until it lands. [PEIRS]
 The same filling-up happens to 9-1-1. E-Comm, which answers 9-1-1 calls for the Lower
 Mainland, says: "We received a 1,500 per cent increase in 9-1-1 calls after a 4.7
 earthquake in 2015. The vast majority of those calls were not emergencies."
-[ECOMM-EQ] That is a count from one small earthquake, not a forecast for a large
-one. [ECOMM-EQ]
+[ECOMM-EQ] The count comes from one small earthquake and is not a forecast for a
+large one.
 
-## No rule says how long a cell site has to keep running without the grid
+## Cell sites have no minimum backup-power requirement
 
 A cell site is a radio and a computer in a cabinet, usually on a rooftop or at the
 foot of a mast, and both run on grid power. When the power goes, the site runs on
@@ -38,12 +38,12 @@ Canadian Radio-television and Telecommunications Commission, the federal telecom
 regulator, opened a proceeding on network resiliency and put this to the industry: "What
 parameters should TSPs use to determine an appropriate backup power run time for each
 type of network site?" [CRTC-2025-226] TSPs are the telephone and internet companies
-themselves. The guidance reproduced in the proceeding's appendix is written in
-"should" rather than "must". [CRTC-2025-226]
+themselves. The guidance reproduced in the proceeding's appendix uses "should", making
+it a recommendation. [CRTC-2025-226]
 
-The record closed in late August 2026 and no decision has issued. [CRTC-2025-226]
+The record closed in late August 2026. No decision has been issued. [CRTC-2025-226]
 
-## The rules in force cover reporting outages and routing 9-1-1 calls
+## Current rules focus on reporting and 9-1-1 routing
 
 Telecom Decision CRTC 2025-225, in force since 4 November 2025, requires a provider
 to notify the Commission, Innovation, Science and Economic Development Canada and
@@ -58,7 +58,7 @@ for central office 9-1-1 switches and 72 hours for tandem switches. [CRTC-2016-1
 Those are the switching offices that route a 9-1-1 call, not the radio sites the call
 travels over. Both figures are guidance, and neither is binding. [CRTC-2016-165]
 
-## British Columbia has asked the regulator for 72 hours
+## British Columbia has requested 72 hours of backup power
 
 On 28 November 2025 the Province of British Columbia filed its own submission in that
 proceeding. It asks the Commission to mandate a minimum of 72 hours of autonomous
@@ -68,22 +68,20 @@ testing including a "Massive Traffic Surge" scenario. [BC-CRTC-SUB] It names "Se
 Events: High earthquake risk in southwestern BC" as one of four risk categories
 facing the province. [BC-CRTC-SUB]
 
-That is a request to a regulator. It is not a rule, and it does not say what is in
-place today.
+The submission is a request, not a rule. It does not describe what is in place today.
 
 E-Comm's Lower Mainland centre is a 60,000 square foot reinforced concrete
 post-disaster building, "designed to resist an earthquake and to operate
-self-sufficiently for up to 72 hours". [ECOMM-FAC] That is the building the call
-arrives at, and it says nothing about the cabinets and towers between a caller and
-it.
+self-sufficiently for up to 72 hours". [ECOMM-FAC] This applies to the centre receiving
+the call, not the cabinets and towers carrying it.
 
-## The province expects days to weeks, with what survives going to emergency personnel first
+## Disruption could last days to weeks
 
 The province's megathrust assessment states that "disruptions in communications
 continue for days to weeks", with access prioritised for emergency personnel,
 "leading to a prolonged lack of access to communications for the general population".
-[DCRRA-2025] That statement carries no figures, and it describes a magnitude 9.0
-Cascadia earthquake. [DCRRA-2025]
+[DCRRA-2025] The assessment gives no site counts or outage curve and applies to a
+magnitude 9.0 Cascadia earthquake.
 
 The response strategy does not separate copper from cellular: "common communication
 service providers, including cellular and landline telephone providers, may be
@@ -104,7 +102,7 @@ operator joined an organised group before the earthquake.
 > how quickly it would bring them back, and the province's assessments give no site
 > counts and no restoration curve. [PEIRS] [DCRRA-2025]
 
-## The alert that warns of the shaking travels over the network the shaking degrades
+## Earthquake alerts depend on the mobile network
 
 Earthquake Early Warning has been live in British Columbia since spring 2024,
 delivered over the national public alerting system. [NRCAN-EEW] BC Emergency Alert
@@ -133,12 +131,12 @@ what it calls a late alert zone, where the alert arrives after the shaking start
 The network that survives the first hours is narrow, and what people send across it
 decides who else gets through.
 
-**Text rather than call.** The province names texts and low-bandwidth messages as the
+**Send a text message.** The province names texts and low-bandwidth messages as the
 most reliable method when other services are disrupted. [PEIRS] A short message keeps
 retrying in the background, while a voice call holds a channel open for its whole
 length.
 
-**Call 9-1-1 to report an emergency, and not to ask what happened.** After a
+**Use 9-1-1 only for emergencies.** After a
 magnitude 4.7 in 2015 E-Comm recorded a 1,500 per cent increase in 9-1-1 calls, and
 the vast majority of them were not emergencies. [ECOMM-EQ] Each of those calls held a
 line somebody else needed.
@@ -146,10 +144,10 @@ line somebody else needed.
 **Turn on emergency alerts, and expect the warning to be short.** Earthquake Early
 Warning has been live in British Columbia since spring 2024, [NRCAN-EEW] and BC
 Emergency Alert reaches a phone over the same cellular network the earthquake is
-degrading. [BC-ALERT-2026] Close to the epicentre the alert can arrive with the
-shaking rather than before it. [NRCAN-EEW]
+degrading. [BC-ALERT-2026] Close to the epicentre the alert may arrive as the shaking
+begins. [NRCAN-EEW]
 
-None of those three needs anything bought in advance.
+These steps do not require buying anything in advance.
 
 ## Sources on this page
 

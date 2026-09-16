@@ -2,8 +2,8 @@
 route: /shaking/dams/
 title: Dams
 nav: Dams
-hook: "BC Hydro names the part of each dam it expects an earthquake to break, and the shaking it expects to break it at."
-lede: The region's dams have two owners. Metro Vancouver's published reviews of its water-supply dams do not mention an earthquake; BC Hydro tells its own regulator which part of each power dam it expects one to break.
+hook: "BC Hydro publishes the expected earthquake damage at each of its dams."
+lede: Metro Vancouver's published reviews of its water-supply dams do not mention earthquakes. BC Hydro tells its regulator which parts of its power dams it expects an earthquake to damage.
 ---
 
 <!-- The Metro Vancouver side of this subject, the 2024 reviews, the capital
@@ -11,7 +11,7 @@ plan, the provincial audit program and the unpublished inundation mapping, is
 `dams-and-reservoirs.md` and ships on `/after/dams-and-reservoirs/`. This page
 holds the hazard side and links there rather than repeating it. -->
 
-## The two water-supply dams were reviewed in 2024, and neither published conclusion mentions an earthquake
+## Water-supply dam reviews omit an earthquake finding
 
 Metro Vancouver's two water-supply dams, Cleveland on the Capilano and Seymour
 Falls on the Seymour, were each reviewed by an engineer in 2024, and neither
@@ -21,7 +21,7 @@ where the water would go are on [dams and
 reservoirs](/after/dams-and-reservoirs/), where the same two dams are the
 region's drinking water as well as a structure above it.
 
-## BC Hydro names the parts of its own dams an earthquake is expected to break
+## BC Hydro identifies expected earthquake damage
 
 BC Hydro owns the power dams in and near the region. Coquitlam, Stave Falls,
 Alouette and Cheakamus are classified Extreme in the provincial register as it
@@ -69,7 +69,7 @@ expected to liquefy during a moderate to large earthquake".
 [BCH-COQUITLAM-RRA-06] That is the mechanism described on [ground
 conditions](/shaking/ground/), written by an owner about its own structure.
 
-## The register lists seventeen dams here whose failure would reach people, and records nothing about earthquakes at any of them
+## Seventeen other dams have no public earthquake finding
 
 The province keeps a public register of every regulated dam, and it classifies
 each one by what a failure would reach downstream. [BC-DAMS-REG] Seventeen dams
@@ -106,14 +106,13 @@ the register's Extreme. [BCH-RRA-F2020] -->
 earthquake is expected to do to that dam. It is not a finding that the dam is
 safe, and it is not a finding that nobody has looked: BC Hydro files seismic
 detail on some of its dams to its regulator and not others, and Metro Vancouver
-publishes a yearly safety summary rather than the reviews behind it.
+publishes a yearly safety summary. The reviews behind it are not public.
 [BCH-RRA-F2020] [MV-DSP-2026]
 
-## The province sets a minimum design earthquake by consequence class, and it governs new work rather than the dams already standing
+## Design rules apply to new dam work
 
-The class in the table above is not only a description of what is downstream. The
-province's design guideline attaches a minimum earthquake to each class, and it sets
-the same one for both of the classes on this page: an earthquake design ground motion
+The class in the table describes what is downstream. It also sets a minimum design
+earthquake. Both classes on this page use an earthquake design ground motion
 at a 1-in-10,000-year return period, or the Maximum Credible Earthquake. [BC-DDCG]
 Very High and Extreme carry that figure alike, so it covers every dam in the table
 above. It is the same expectation BC Hydro states in its own words earlier on this
@@ -121,15 +120,13 @@ page, and the two are not independent of each other: both descend from the Canad
 Dam Association's guidelines, a members' publication this project has not read.
 [CDA-2007]
 
-Three things have to travel with that figure or it says something false. It is a
-criterion for building, altering, improving or replacing a dam, which is not the
-same as a standing obligation on a dam finished in 1954. [BC-DDCG] It is a
-guideline minimum rather than law, and deviations from it "may be considered but
-must be clearly stated and justified"; the Dam Safety Regulation itself contains
-no seismic number at all, and nowhere uses the word earthquake. [BC-DDCG]
-[BCDSR-40-2016] And the criterion is a return period *or* the Maximum Credible
-Earthquake, which is a deterministic ceiling rather than a probability. Dropping
-the second half of it promotes a guideline to a statute.
+The figure needs context. It applies when a dam is built, altered, improved or
+replaced, rather than as a standing obligation on a dam finished in 1954. [BC-DDCG] It
+is a guideline minimum, not law. Deviations "may be considered but must be clearly
+stated and justified". The Dam Safety Regulation gives no seismic number and does not
+use the word earthquake. [BC-DDCG] [BCDSR-40-2016] The criterion is a return period
+*or* the Maximum Credible Earthquake, a deterministic ceiling rather than a
+probability.
 
 What connects a criterion for new work to a dam built a century ago is the review
 itself. A dam in the top classes is reviewed every seven years by an engineer

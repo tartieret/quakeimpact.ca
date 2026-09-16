@@ -1,35 +1,33 @@
 ---
 route: /dependencies/
-title: Nothing fails alone
+title: How systems depend on each other
 nav: Dependency graph
-hook: The order the systems come back in is set by what each one is waiting on.
-lede: Twelve of the fourteen systems wait on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.
+hook: One system cannot recover while the systems it relies on are still down.
+lede: Twelve of the fourteen systems depend on at least one other. Published evidence covers only some of those connections.
 ---
 
-## Everything else runs on fuel, and fuel moves by road
+## Fuel depends on roads
 
-Every repair crew, every delivery and everything running on a generator needs fuel. The
-province's response strategy gives it a position of its own:
+Fuel runs generators and keeps repair crews and deliveries moving. The province's
+response strategy describes its role:
 
 > "Fuel also holds a unique position as a critical resource due to its requirement in
 > the distribution of all other supplies, first responder activities, and enabling
 > functionality of certain impacted facilities and infrastructure that rely on
 > generators." [PEIRS]
 
-Fuel moves by road, which puts roads underneath it in turn.
+Fuel itself moves by road.
 
-## Few of the connections on this list have a document behind them
+## Most connections have not been studied
 
-A line drawn between two systems asserts a connection whether or not anyone has
-established one, so the picture below counts the connections instead of joining them up.
-Underneath it is the list it is built from: each system, and the systems its own page
-names as the ones it waits on.
+A line drawn between two systems would imply that someone had established the connection.
+The picture below therefore shows how many documented connections each system has. The list
+underneath names every system and the systems its own page says it waits on.
 
-The list is not evidence. Where there is no document, the connection is still listed,
-because leaving it out would suggest it had been ruled out rather than never written
-down.
+The list is not evidence. Connections without a document remain visible so an
+unstudied link is not mistaken for one that has been ruled out.
 
-## Roads are the connection with the most documents behind them
+## Road access controls many repairs
 
 The province's planning assumptions treat the road network as the thing that breaks
 everything else. "Road, rail, air, and marine transportation will be disrupted, and
@@ -45,8 +43,6 @@ Clearing them happens in a published order. Metro Vancouver's regional debris pl
 lifeline routes first, then critical infrastructure, naming "hospitals, ambulance halls, police stations, EOCs,
 telecommunication sites, water sanitation sites, power generation and transmission
 sites", then major freeways and arterials, and "local routes" last. [MV-DEBRIS-17]
-
-That order is the connection between roads and everything else on the list.
 
 **Water.** A magnitude 9.0 megathrust is modelled to cause 267 water main failures
 across Metro Vancouver's network, with about 60 of them at the 71 points where mains
@@ -71,7 +67,7 @@ earthquake damage during operations could go as far as "loss of main road access
 terminal due to failure of the existing causeway", while judging collapse of the
 terminal structures unlikely. [RBT2-PANEL-20]
 
-## Help from outside arrives along the same damaged routes
+## Outside help needs the damaged routes too
 
 The province's planning assumptions expect the region to be cut off by road, by air and
 by sea at once: "Large parts of the impacted and surrounding area will be inaccessible
@@ -85,13 +81,12 @@ the conclusion: "Damage to transportation routes and the prioritization of essen
 personnel and supplies make mass evacuation impossible, and the public is directed to
 shelter in place." [DCRRA-2025]
 
-The road network sits under both directions of travel: what comes in, and who could
-leave.
+The same roads carry incoming aid and anyone trying to leave.
 
-## Gas comes back one building at a time, as fast as qualified people can be found
+## Gas restoration is limited by available workers
 
-Gas is the one utility that cannot be restored in bulk: service returns building by
-building, once a qualified person has been inside and relit every appliance. The
+Gas cannot be restored from a control room. Service returns building by building,
+after a qualified person has relit every appliance. The
 regulator's decision on that system gives several weeks to restore service to hundreds
 of thousands of customers. [BCUC-C-6-25]
 
@@ -101,9 +96,9 @@ utilities and every available private contractor in the Lower Mainland. For outa
 localised to attract mutual aid, the same plan uses 2,025 per day, and for
 community-sized ones 723 per day. [FEI-RESILIENCY-24]
 
-The constraint here is people, and how many of them can be got into the region.
+Restoration depends on how many qualified workers can reach the region.
 
-## Several of the connections everyone assumes have never been published
+## Important gaps in the public record
 
 The edges below have no document behind them. Each one is plausible and none of them is
 a finding.
@@ -125,11 +120,11 @@ a finding.
 > Nothing published separates the part of that which is repairing equipment from the
 > part which is crews reaching the work.
 
-A fourth link on the list is documented, and what is documented is an absence. Nothing in Canada
+One documented link is the loss of mobile service when power fails. Nothing in Canada
 currently requires a mobile phone site to hold any backup power at all, and the
 regulator opened a proceeding in September 2025 to decide what that requirement
-should be. [CRTC-2025-226] The link from electricity to phones is real. Nothing at
-present sets how long it takes to bite.
+should be. [CRTC-2025-226] The link from electricity to phones is real, but no rule
+sets how long a site must keep working.
 
 ## What you can do
 

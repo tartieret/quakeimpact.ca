@@ -2,17 +2,17 @@
 route: /shaking/fire-following/
 title: Fire following
 nav: Fire following
-hook: The fires that start once the shaking stops, and the separate water system built to fight them.
-lede: An earthquake starts fires in the same minutes that it breaks the pipes used to put them out. A study for the Institute for Catastrophic Loss Reduction modelled that for the Lower Mainland, and found the closer, smaller earthquake far worse than the offshore one.
+hook: Broken gas lines can start fires while damaged water mains leave hydrants dry.
+lede: Earthquake fires can start as broken water mains leave hydrants dry. A Lower Mainland study found far greater losses from the nearby crustal earthquake than from the offshore megathrust.
 ---
 
-## The shaking stops and the fires start
+## Fires start as the shaking ends
 
 Fires after an earthquake do not start in one place. They start in many buildings at
 once, in the ordinary things that run through a home. In the modelling for the Lower
 Mainland, about half of the ignitions are electrical and about a quarter gas-related.
 [SCAWTHORN-2020] About half begin in single-family houses and another 26 per cent in apartments. The study's own summary is that "about 70% of all ignitions occur in residential occupancies".
-[SCAWTHORN-2020] That split comes from what was counted after the 1994 Northridge earthquake in California, in the United States, applied here rather than measured here. [SCAWTHORN-2020]
+[SCAWTHORN-2020] That split applies counts from the 1994 Northridge earthquake in California, in the United States, to this region. It was not measured here. [SCAWTHORN-2020]
 
 Almost half of the fires an earthquake would start anywhere in British Columbia would
 start in Metro Vancouver, with the heaviest concentration in the central business
@@ -21,7 +21,7 @@ district. [DCRRA-2025]
 The city has been here before, without an earthquake. The Great Vancouver Fire of 1886
 "killed 21 and destroyed 600~1,000 buildings". [SCAWTHORN-2020]
 
-## The hydrants go dry because the same shaking breaks the water mains
+## Broken water mains leave hydrants dry
 
 A fire engine does not carry much water. It carries enough to get started, and then it
 connects to a hydrant. The hydrant is the end of a buried pipe, and buried pipe is what
@@ -34,7 +34,7 @@ earthquakes the fire loss is driven "primarily due to lack of water for firefigh
 [SCAWTHORN-2020] Why the mains break, and how long they take to fix, is on the
 [water page](/after/water/).
 
-## Help from the next town cannot cross a bridge nobody has inspected yet
+## Mutual aid waits on bridge inspections
 
 There are 98 fire halls in the study area and roughly 200 fire engines available for
 immediate firefighting. [SCAWTHORN-2020] When a city runs short, it calls its
@@ -45,7 +45,7 @@ impassable, which they will be at least initially due to the need to inspect for
 damage." [SCAWTHORN-2020]
 
 Most engines in the study area, Burnaby's among them, carry 4 inch large-diameter hose
-rather than the 5 inch hose Vancouver Fire Rescue Services uses, "and lack adapters,
+while Vancouver Fire Rescue Services uses 5 inch hose, and they "lack adapters,
 which is an obstacle to effective mutual aid". [SCAWTHORN-2020] Two departments can
 arrive at the same fire and be unable to join their hoses.
 
@@ -53,7 +53,7 @@ Phone systems "will sustain some damage but not enough to reduce functionality".
 problem is how many people call at once. "Saturation, especially of the 911 system, will
 reduce functionality to a great degree, for several hours or more." [SCAWTHORN-2020]
 
-## Fire loss follows how close the earthquake is, not how big it is
+## The nearer earthquake produces greater fire losses
 
 The modelled fire loss for the magnitude 9.0 Cascadia earthquake is $162 million. For a
 magnitude 7.3 crustal earthquake in the Georgia Strait, close to downtown, it is $10.7
@@ -69,7 +69,7 @@ follows the shaking on the spot, not the magnitude in the headline. [SCAWTHORN-2
 > build-up of crustal stresses prior to the main subduction zone event."
 
 CSZ there is the Cascadia Subduction Zone, the offshore fault. The federal work on
-building damage reaches the same ordering through ground motion rather than ignitions.
+building damage reaches the same ordering through its ground-motion model.
 See [buildings](/shaking/buildings/).
 
 | Earthquake                        | Fires started | Modelled fire loss |
@@ -104,7 +104,7 @@ earthquake to more than $10 billion if an M7.3 shallow crustal earthquake happen
 Georgia Strait". [DCRRA-2025] Both are quoting the same study. They are one finding
 stated twice, not two that agree.
 
-## Downtown has a second water system for fire, and nothing tells a resident where it ends
+## Downtown has a separate fire-fighting water system
 
 The Dedicated Fire Protection System is a $52 million network of two saltwater pumping
 stations and its own earthquake-resistant pipeline, serving the downtown peninsula, the
@@ -127,12 +127,12 @@ and built on the lesson of the 1906 fire in San Francisco, in the United States.
 coverage area.
 
 The coverage sentence exists, on a different page, filed under what the City has built
-rather than under what a resident can do. [COV-PREPARES] No map, address lookup or
+under infrastructure. [COV-PREPARES] No map, address lookup or
 neighbourhood check on vancouver.ca tells a resident which side of the line they are on.
 The blue hydrants are the only part of the description a reader can act on, and they
 arrive without the geography beside them.
 
-## A tall building's sprinklers draw on the mains that break
+## High-rise sprinklers still depend on water mains
 
 New construction in Vancouver has to be sprinklered. "However, sprinklers rely on
 underground water mains for supply, which are likely to fail in a major earthquake."
@@ -156,7 +156,7 @@ for 600 Robson Street label a "SECONDARY WATER SUPPLY ROOM" on the second parkin
 [COV-600ROBSON] None of it has ever been required, and none of it has been tied to an
 earthquake.
 
-## Fire halls are being replaced one at a time, and most were built before the standard
+## Most fire halls predate the post-disaster standard
 
 Vancouver has 19 fire halls and five specialty fire facilities, worth about $642 million
 to replace, about 58 per cent of them in good or fair condition, and 30 years old on
@@ -186,7 +186,7 @@ Norgate hall replacement "will be built to post-disaster standards". [DNV-NORGAT
 Richmond, the fire chief told a council committee in March 2026 that "all Richmond
 firehalls are rated to withstand major disasters", with the oldest under renovation and
 the second oldest brought up to standard some years earlier. [RICH-CSC-2026-03] That is
-an officer's answer recorded in minutes rather than an engineering rating hall by hall,
+an officer's answer recorded in minutes. No hall-by-hall engineering rating was published,
 and the phrase is not the one the building codes use.
 
 > **Not published.** How many of Vancouver's 19 fire halls meet a post-disaster standard

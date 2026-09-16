@@ -53,8 +53,7 @@ export const housing: PageModule = {
 
   sections: [
     {
-      title:
-        "The first thing that happens to a home is that somebody has to come and look at it",
+      title: "Buildings must be inspected before people return",
       body: (
         <Prose>
           <p>
@@ -86,7 +85,7 @@ export const housing: PageModule = {
             assessment teams are expected to be overwhelmed, leaving “about two
             million people in need of alternate housing”.{" "}
             <Cite id="DCRRA-2025" /> That count is province-wide, and it comes
-            from the province’s written scenario rather than from a model run.{" "}
+            from the province’s written scenario, not a model run.{" "}
             <Cite id="DCRRA-2025" />
           </p>
         </Prose>
@@ -94,8 +93,7 @@ export const housing: PageModule = {
     },
 
     {
-      title:
-        "A cordon closes a block, and a building that came through the shaking can be inside it",
+      title: "Cordons can close undamaged buildings",
       body: (
         <Prose>
           <p>
@@ -106,7 +104,7 @@ export const housing: PageModule = {
           </p>
           <p>
             The City draws a cordon around an area and ties it to concentrations
-            of damage rather than to any single address.{" "}
+            of damage, not to any single address.{" "}
             <Cite id="COV-RISK-2024" /> That is why displacement counts run so
             far above red-tag counts. A building that came through the shaking
             can sit inside a closed block, and nobody lives in it while the
@@ -150,7 +148,7 @@ export const housing: PageModule = {
     },
 
     {
-      title: "A home with no water and no sewer is a home nobody can live in",
+      title: "Failed utilities make homes uninhabitable",
       body: (
         <Prose>
           <p>
@@ -190,8 +188,7 @@ export const housing: PageModule = {
     },
 
     {
-      title:
-        "Five published displacement figures, and no two of them count the same thing",
+      title: "Published displacement figures measure different things",
       body: (
         <Prose>
           <DataTable
@@ -259,8 +256,7 @@ export const housing: PageModule = {
     },
 
     {
-      title:
-        "Nearly seven in ten of Vancouver’s buildings went up before modern seismic standards",
+      title: "Most Vancouver buildings predate modern seismic standards",
       body: (
         <Prose>
           <p>
@@ -299,8 +295,7 @@ export const housing: PageModule = {
     },
 
     {
-      title:
-        "Vancouver publishes 25 disaster support hubs and no capacity figure for any of them",
+      title: "Disaster support hub capacity is not published",
       body: (
         <Prose>
           <p>
@@ -373,8 +368,8 @@ export const housing: PageModule = {
       </>,
       <>
         <strong>
-          Agree now with someone outside the region that you could stay with
-          them for months, and agree it out loud rather than assuming it.
+          Ask someone outside the region if you could stay with them for months,
+          and get a clear answer now.
         </strong>{" "}
         Large numbers of people may need interim housing for months to years,
         and hotels may not be available. <Cite id="PEIRS" />
@@ -383,7 +378,7 @@ export const housing: PageModule = {
       // building is the cited fact, and what is behind the door when it does
       // rests on no document.
       <>
-        <strong>Keep what you would need out of the building rather than in it.</strong>{" "}
+        <strong>Keep copies of essential documents somewhere else.</strong>{" "}
         A cordon closes the door on whatever is behind it: identification,
         insurance papers, a prescription list, a spare set of keys. A copy held
         somewhere else, or by somebody else, is the one you can still get at.

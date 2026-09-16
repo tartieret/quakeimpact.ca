@@ -2,11 +2,11 @@
 route: /contribute/
 title: Contribute
 nav: Contribute
-hook: A correction, a document, a pointer to a report that exists, or the read of somebody who does this work for a living.
-lede: A correction, a document, a pointer to a report you know exists, the read of somebody who does this work for a living: all of them are welcome. Something on this site that looks wrong to you is worth sending even when no document comes with it.
+hook: Send a correction, a relevant document or an expert review.
+lede: Send a correction, a relevant document or a review from your field. If something looks wrong, it is worth reporting even if you do not have a source at hand.
 ---
 
-## Contributions are welcome, and most of all from people who work in these fields
+## How to contribute
 
 Email [contact@quakeimpact.ca](mailto:contact@quakeimpact.ca), or open an issue on
 [the public repository](https://github.com/tartieret/quakeimpact.ca).
@@ -18,11 +18,16 @@ management.
 
 The fastest thing to act on is one line saying which claim is wrong, and a document with
 an author and a date behind it. A pointer to a report you know exists but cannot place
-saves days on its own. So does a read from the field with no document at all. That gets
-chased as a lead rather than published as a claim: what reaches a page has to be
-something a reader can check.
+saves days on its own. So does a read from the field with no document at all. That
+becomes a lead to follow. A claim reaches the site only when a reader can check it.
 
-## Three questions on this site are waiting on a document that may already exist
+Claims need published evidence before they reach the site. This project does not
+produce new calculations, and figures from past earthquakes elsewhere are not applied
+to the Lower Mainland. The 2011 earthquake in Christchurch, New Zealand, and the 1995
+earthquake in Kobe, Japan, can show how a system fails, but not how long a local outage
+would last.
+
+## Three documents we are looking for
 
 **How long the water would take to come back.** Metro Vancouver's assessment of its own
 water system was released with about two thirds of its roughly 300 pages blacked out,

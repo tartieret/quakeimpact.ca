@@ -24,24 +24,20 @@ export const safetyAndConflict: PageModule = {
     route: "/after/safety-and-conflict/",
     title: "Safety and conflict",
     description:
-      "A major earthquake stops the tap, the shop and the petrol station together. What past disasters show is that most people share and help, and where theft and conflict gather.",
+      "What happens when people run out of food and water after a major earthquake? Past disasters show that most people help one another.",
     nav: "Safety and conflict",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        A major earthquake stops the tap, the shop and the petrol station
-        together. <Cite id="PEIRS" /> What comparable disasters show is that
-        most people share what they have and help the people around them, and
-        that the trouble which does happen gathers in particular places.{" "}
-        <Cite id="KATRINA-MYTHS-08" />
+        What happens when people run out of food and water after a major
+        earthquake?
       </>
     ),
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PEIRS",
-      "KATRINA-MYTHS-08",
-      "MV-WATER-22",
       "DCRRA-2025",
+      "KATRINA-MYTHS-08",
       "KATRINA-FRAMES-06",
       "DISASTER-MYTHS-08",
       "LOOTING-DEBATE-07",
@@ -65,55 +61,49 @@ export const safetyAndConflict: PageModule = {
 
   sections: [
     {
-      title: "What happens when the food and the water run out?",
+      title: "Shortages put pressure on particular places",
       body: (
         <Prose>
           <p>
-            Start with the week itself. The{" "}
+            The{" "}
             <Link
               href="/after/water/"
               className="text-accent underline underline-offset-2"
             >
               tap
             </Link>{" "}
-            gives nothing, because a magnitude 9 megathrust is modelled to break
-            267 water mains across the region and about 60 of those breaks are
-            at the crossings that take longest to reach.{" "}
-            <Cite id="MV-WATER-22" /> Distributing bulk drinking water across
-            the region stays difficult for the first four to five days.{" "}
-            <Cite id="DCRRA-2025" />
-          </p>
-          <p>
-            The corner shop is shut, and the supermarket that opens is selling
-            what is already on its shelves: the province expects the network
-            that delivers meat, fruit and vegetables, dairy and baked goods to
-            take weeks or months to recover, and the{" "}
+            gives nothing. The corner shop is shut, and any supermarket that
+            opens can sell only what remains on its shelves. The province
+            expects the food distribution network to take weeks or months to
+            recover. The{" "}
             <Link
               href="/after/fuel/"
               className="text-accent underline underline-offset-2"
             >
               fuel
             </Link>{" "}
-            supply chains that move all of it to be inoperable.{" "}
-            <Cite id="PEIRS" /> The queue you join is for a water truck, and
-            what you know about where it is going came from a neighbour, because{" "}
+            supply chains that move food may be inoperable.{" "}
+            <Cite id="PEIRS" />
+          </p>
+          <p>
+            Getting bulk drinking water around the region remains difficult for
+            the first several days. <Cite id="DCRRA-2025" /> People gather at
+            water trucks, while disrupted{" "}
             <Link
               href="/after/communications/"
               className="text-accent underline underline-offset-2"
             >
               communications
             </Link>{" "}
-            are expected to be disrupted for days to weeks, with what capacity
-            survives going to emergency personnel first. <Cite id="DCRRA-2025" />
+            make it harder to know where supplies will arrive.{" "}
+            <Cite id="DCRRA-2025" />
           </p>
           <p>
-            That is the point at which people ask what their neighbours will do.
-            The answer from comparable disasters is that most of them will
-            respond positively and generously, and that the antisocial behaviour
-            which does occur is isolated rather than general.{" "}
-            <Cite id="KATRINA-MYTHS-08" /> The trouble that happens gathers in
-            particular places: at the queue, around a damaged shop, and inside a
-            rumour.
+            Past disasters give a consistent answer to what people do next. Most
+            help one another. Theft and violence occur, but not as a general
+            breakdown. <Cite id="KATRINA-MYTHS-08" /> When conflict does happen,
+            it tends to centre on scarce supplies, damaged shops or false
+            rumours.
           </p>
         </Prose>
       ),
@@ -124,24 +114,24 @@ export const safetyAndConflict: PageModule = {
       body: (
         <Prose>
           <p>
-            The common picture of a disaster has looting and people turning on
-            each other in it. Beliefs like these are held by the public and by
-            the organisations that plan for and respond to disasters.{" "}
+            The public often expects disasters to descend into looting and
+            violence. Some organisations that plan for and respond to disasters
+            share that expectation.{" "}
             <Cite id="KATRINA-FRAMES-06" /> More than half a century of social
-            science research has tested them, panic and looting among them,
-            against what people actually do. <Cite id="DISASTER-MYTHS-08" />
+            science research has compared those beliefs with what people
+            actually do. <Cite id="DISASTER-MYTHS-08" />
           </p>
           <p>
-            Stories spread further than the thing itself. After a 1952 tornado
-            in Arkansas, in the United States, 58 per cent of people reported
-            hearing stories of looting and 6 per cent thought they had been
-            looted, and later studies found the same again and again.{" "}
+            Reports of looting often outnumber documented cases. After a 1952
+            tornado in Arkansas, in the United States, 58 per cent of people had
+            heard stories of looting, but only 6 per cent thought they had been
+            looted. Later studies found the same pattern.{" "}
             <Cite id="LOOTING-DEBATE-07" />
           </p>
           <p>
-            The fear is not only an outsider’s. After the 2011 earthquake and
-            tsunami in Japan, many evacuees in shelters feared being robbed
-            there, or having their empty homes burgled.{" "}
+            People caught in a disaster can share that fear. After the 2011
+            earthquake and tsunami in Japan, many people in shelters feared
+            being robbed there or having their empty homes burgled.{" "}
             <Cite id="JAPAN-SHELTERS-18" />
           </p>
         </Prose>
@@ -149,16 +139,16 @@ export const safetyAndConflict: PageModule = {
     },
 
     {
-      title: "In most disasters people help each other, and crime often falls",
+      title: "People usually help one another, and crime often falls",
       body: (
         <Prose>
           <p>
-            Studies of natural disasters since the 1950s found looting very rare.
-            Where it happened it was covert and opportunistic, done by
-            individuals or small groups, and condemned by the people around
-            them. <Cite id="LOOTING-DEBATE-07" /> Survivors who face the same
-            danger start to act as a group: they support each other, coordinate
-            what they do and expect help in return. <Cite id="DRURY-18" />
+            Studies since the 1950s have found looting after natural disasters
+            to be rare. When it occurs, it is usually opportunistic, carried out
+            by individuals or small groups and condemned by the people around
+            them. <Cite id="LOOTING-DEBATE-07" /> Shared danger also changes how
+            survivors act. They support one another, coordinate their work and
+            expect help in return. <Cite id="DRURY-18" />
           </p>
           <p>
             After the Canterbury earthquakes of 2010 and 2011 in New Zealand,
@@ -180,11 +170,11 @@ export const safetyAndConflict: PageModule = {
             }
           />
           <p>
-            After the 2011 earthquake in Japan, the number of reported crimes in
-            the three affected prefectures fell sharply that year. That was not
-            the same as no crime. Burglaries of empty homes and shops and theft
-            of fuel from cars were common in the first month, and theft and
-            domestic violence became common in shelters two to four months on.{" "}
+            Reported crime in the three affected prefectures fell sharply after
+            the 2011 earthquake in Japan. Burglaries of empty homes and shops
+            and theft of fuel from cars were still common in the first month.
+            Two to four months later, theft and domestic violence became common
+            in shelters.{" "}
             <Cite id="JAPAN-SHELTERS-18" />
           </p>
         </Prose>
@@ -192,8 +182,7 @@ export const safetyAndConflict: PageModule = {
     },
 
     {
-      title:
-        "Theft and violence do happen, and in Chile and New Orleans they were serious",
+      title: "Serious disorder has happened",
       body: (
         <Prose>
           <p>
@@ -221,12 +210,12 @@ export const safetyAndConflict: PageModule = {
           </p>
           <p>
             After Hurricane Katrina struck New Orleans in the United States in
-            2005, there were documented cases of hijacking, rioting and looting,
-            and many more reports of people cooperating and helping each other.{" "}
-            <Cite id="KATRINA-MYTHS-08" /> Some of the violence came from a
+            2005, there were documented cases of hijacking, rioting and looting.
+            Reports of cooperation and mutual aid were much more common.{" "}
+            <Cite id="KATRINA-MYTHS-08" /> Some violence came from a
             neighbourhood militia. In Algiers Point, a man was shot in the days
-            after the storm; more than four years later a member of the militia
-            was implicated, and the man who was shot says it was racially
+            after the storm. More than four years later, a member of the militia
+            was implicated, and the man who was shot said it was racially
             motivated. <Cite id="KATRINA-ALGIERS-10" />
           </p>
           <p>
@@ -236,7 +225,7 @@ export const safetyAndConflict: PageModule = {
             months after the earthquake. <Cite id="JAPAN-SHELTERS-18" />
           </p>
 
-          <Subhead>News coverage makes disorder look more common than it is</Subhead>
+          <Subhead>News coverage can exaggerate disorder</Subhead>
           <p>
             After Katrina, news coverage cast survivors first as civil unrest and
             later as something close to urban warfare, greatly exaggerating how
@@ -254,30 +243,30 @@ export const safetyAndConflict: PageModule = {
     },
 
     {
-      title:
-        "Ties between people, accurate information and plans that expect cooperation hold conflict down",
+      title: "Trust and planning reduce conflict",
       body: (
         <Prose>
           <p>
-            Research on looting after disasters keeps returning to four things:
-            how well off people are, the ties between them, what the media
-            report, and whether anyone planned for it. Its advice to governments
-            is to put looting in their disaster plans, draw on community groups
-            and non-governmental organisations, and build social ties over the
-            long term. <Cite id="LOOTING-REVIEW-25" />
+            Studies link looting after disasters to poverty, weak social ties,
+            media coverage and a lack of planning. They recommend that
+            governments plan for looting, work with community groups and build
+            social ties over time. <Cite id="LOOTING-REVIEW-25" />
           </p>
           <p>
             Social ties and trust help explain why some neighbourhoods of Kobe,
             Japan, recovered after its 1995 earthquake while others stagnated.{" "}
             <Cite id="KOBE-SOCIAL-10" /> Communities also organise their own
-            protection. After the 2010 earthquake in Chile, the municipalities it
-            hit saw lasting falls in property crime, consistent with stronger
-            community life and neighbours organising to prevent crime
-            themselves. <Cite id="CHILE-CRIME-20" /> Across Chile, living through
-            a big earthquake raises measures of social cohesion, which then wear
-            away slowly. <Cite id="CHILE-COHESION-17" /> In Japan, volunteer crime
-            prevention after the 2011 earthquake gave people a shared goal to
-            work towards. <Cite id="JAPAN-SHELTERS-18" />
+            protection. Municipalities hit by the 2010 earthquake in Chile saw
+            lasting falls in property crime, consistent with stronger community
+            life and neighbours working to prevent crime.{" "}
+            <Cite id="CHILE-CRIME-20" />
+          </p>
+          <p>
+            Across Chile, living through a large earthquake raised measures of
+            social cohesion, although the effect faded over time.{" "}
+            <Cite id="CHILE-COHESION-17" /> In Japan, volunteer crime prevention
+            after the 2011 earthquake gave people a shared goal.{" "}
+            <Cite id="JAPAN-SHELTERS-18" />
           </p>
           <p>
             Where rumours spread, accurate information from the media, the
@@ -291,11 +280,10 @@ export const safetyAndConflict: PageModule = {
             <Cite id="CHILE-USGS-11" />
           </p>
           <p>
-            None of that is built in the week the water goes off. What a
-            household controls is the other half: two weeks of food and water is
-            the province’s own figure for an earthquake here,{" "}
-            <Cite id="PREPAREDBC" /> and it is the difference between waiting out
-            those first days at home and spending them in the queue.
+            Households control one part of this: their own supplies. The
+            province recommends keeping two weeks of food and water for an
+            earthquake here. <Cite id="PREPAREDBC" /> Those supplies reduce the
+            time a household spends waiting in a queue.
           </p>
         </Prose>
       ),
@@ -306,9 +294,8 @@ export const safetyAndConflict: PageModule = {
     heading: "What you can do",
     title: (
       <>
-        A household with its own supplies and people it knows nearby spends less
-        time where conflict started in other disasters: in queues, around
-        damaged shops, and inside a rumour.
+        Stored supplies reduce the time a household spends in queues or around
+        damaged shops.
       </>
     ),
     items: [
@@ -327,9 +314,9 @@ export const safetyAndConflict: PageModule = {
         <Cite id="PREPAREDBC-NEIGHBOURHOOD" />
       </>,
       <>
-        <strong>Check a dramatic story before you pass it on.</strong> After
-        Hurricane Katrina, exaggerated reports of looting and lawlessness fed
-        calls for a bigger military role in disasters.{" "}
+        <strong>Check the source of a dramatic story before you pass it on.</strong>{" "}
+        After Hurricane Katrina, exaggerated reports of looting and lawlessness
+        fed calls for a bigger military role in disasters.{" "}
         <Cite id="KATRINA-FRAMES-06" />
       </>,
       <>

@@ -2,105 +2,55 @@
 route: /shaking/
 title: The shaking
 nav: The shaking
-hook: The short part, and the one that decides where the damage falls.
-lede: Where the damage falls depends on the ground and the building together, and on which of the two earthquakes arrives. The shaking is the short part: buildings break, people are hurt, and the fires and landslides come once it stops.
+hook: Damage depends on the earthquake, the ground and the building.
+lede: Violent shaking can make it difficult to stand or cross a room. Falling objects are an immediate danger, and aftershocks can return after buildings are damaged.
 ---
 
-## Nobody rides it out standing up
+## Violent shaking makes it difficult to stand or move
 
-Hardly anyone here has felt one. The province's planning scenario starts with sound: a
-low rumble like a freight train, heard before anything is felt. Then the shaking knocks
-the people closest to it off their feet, and unsecured objects fall or fly through the
-air. [PEIRS]
+The province's planning scenario starts with sound: a low rumble like a freight train,
+heard before anything is felt. The shaking can knock people closest to it off their
+feet, while unsecured objects fall or fly through the air. Crossing a room may not be
+possible. [PEIRS]
 
-Nobody crosses a room. The floor is moving, and so is everything on it that is not
-fastened down. [PEIRS]
+Shaking may last seconds or minutes, depending on the earthquake. [PEIRS]
+[DCRRA-2025] [The two scenarios](/scenarios/) compares the duration and intensity of
+the earthquakes used for planning here.
 
-The last Cascadia earthquake was on a night in January 1700. Natural Resources Canada
-records the oral traditions of First Nations on Vancouver Island: the shaking "was so
-violent that people could not stand and so prolonged that it made them sick."
-[NRCAN-1700]
+Drop before the shaking drops you, cover your head and neck, and hold on until it
+stops. [PREPAREDBC] Do not run outside: falling and flying objects severely injure or
+kill many of the people who try. [PEIRS]
 
-Everyone closest is knocked down "except for those who remember to 'drop, cover, and
-hold on'". [PEIRS] Drop before the shaking drops you, cover, and hold on until it stops.
-Do not run outside: many of those who try suffer extreme injury or death from falling
-and flying objects. [PEIRS]
+## Aftershocks return to already damaged places
 
-In the magnitude 7.0 scenario, an earthquake close to the city, the violent shaking
-lasts 10 to 20 seconds. [PEIRS] In the magnitude 9.0 scenario, the offshore Cascadia
-earthquake, the main shaking lasts three minutes. [DCRRA-2025]
-Almost all of the damage is done in that window or in the hours just after, and
-everything else on this site is about the months that follow. The province's full
-account of those first seconds is on [the two scenarios](/scenarios/). [PEIRS]
+About a month after the mainshock, the province's Cascadia scenario models a second
+earthquake: magnitude 7.1, 60 km beneath Sidney, lasting 20 seconds at 11pm during an
+atmospheric river, a long period of heavy rain. [DCRRA-2025]
 
-## The mainshock is not the last earthquake
+The buildings it reaches have already been through the first earthquake. Whether a
+damaged building is safe to enter requires an inspection.
+[Buildings](/shaking/buildings/) covers who does that and how long people may wait.
 
-The province's Cascadia scenario does not end when the shaking stops. About a month
-after the mainshock it models a second earthquake: magnitude 7.1, 60 km beneath Sidney,
-lasting 20 seconds, at 11 at night during an atmospheric river, which is a long and
-heavy rainstorm. [DCRRA-2025]
+Published damage figures do not include this second earthquake. The federal scenario
+catalogue excludes aftershocks, and the province's headline figures count only direct
+damage from the mainshock. [NRCAN-SCEN] [DCRRA-2025]
 
-That second earthquake is larger than the magnitude 7.0 the province uses for its other
-planning scenario, the one close to the city, [PEIRS] and the buildings it reaches have
-already been through the first one. Whether a damaged building is safe to be in is a
-question somebody has to come and answer. [Buildings](/shaking/buildings/) covers who
-does that and how long people wait.
+## What shaking sets in motion
 
-None of it is in the published damage figures. The federal scenario catalogue leaves
-aftershocks out by name, [NRCAN-SCEN] and the province's own headline numbers count
-"only direct mainshock damage". [DCRRA-2025]
-
-## The ground and the building decide it together
-
-Two things decide what an earthquake does to a place: the ground underneath and the
-building on top. Which pairing turns out to be dangerous changes with the earthquake.
-
-The ground varies over short distances. The downtown peninsula and the North Shore
-slopes sit on rock. Richmond and Delta sit on loose sand with water in the gaps between
-the grains, and shaking hard enough stops the sand carrying the weight above it, so the
-ground behaves for a while like a thick liquid. Engineers call that liquefaction, and it
-floats buried pipes up, makes roads sag and tilts foundations. Delta soil is estimated
-to reach that tipping point every 100 to 250 years. [JAVANBAKHT-24]
-
-Underneath all of it the region sits in a deep bowl of soft sediment, which makes the
-slow, rolling waves stronger. [DCRRA-APPC]
-
-Which buildings that hurts depends on which earthquake it is. The near one shakes fast,
-which is "most hazardous to short buildings", and unreinforced masonry and unreinforced
-concrete suffer the greatest damage. [PEIRS] The offshore one shakes slowly, and there
-the ground and the building come as a pair: "urban areas
-with tall buildings on deep, soft sediments (for example, parts of Richmond) that
-resonate with the long-period seismic waves generated by the subduction interface
-earthquake also suffer significant damage." [DCRRA-2025]
-
-[Ground conditions](/shaking/ground/) covers the ground half and how to look up an
-address. [Buildings](/shaking/buildings/) covers the other half.
-
-## The official damage numbers leave things out, and say so
-
-Most published figures for an earthquake here come from the Geological Survey of
-Canada's scenario catalogue. It counts "only damage to buildings, and their
-inhabitants, from earthquake shaking". Landslides, liquefaction, fire following and
-aftershocks are "not currently included". [NRCAN-SCEN] With those left out, "the
-estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
-
-So a damage figure or a casualty figure from that work is a floor rather than a
-ceiling. The fires and the landslides sit outside it.
-
-## The ground moves, buildings break, people are hurt, and then the fires start
+Ground conditions and construction shape the immediate damage. Some of the most
+serious effects begin as the shaking ends.
 
 ## What you can do
+
+**Know the two things to do in the first seconds.** Drop, cover and hold on. Do not
+run outside. [PEIRS] The province's Cascadia scenario puts a second earthquake about a
+month after the first, so both are needed more than once. [DCRRA-2025]
 
 **Look up the ground under the places you spend time.** The regional maps cover the
 western municipalities street by street and are free to read. [MVSMMP]
 [Ground conditions](/shaking/ground/) says how to read them, and which municipalities
 they do not reach yet.
 
-**Know the two things to do in the first seconds.** Drop, cover and hold on. Do not
-run outside. [PEIRS] The province's Cascadia scenario puts a second earthquake about a
-month after the first, so both are needed more than once. [DCRRA-2025]
-
 ## Sources on this page
 
-[PEIRS] [NRCAN-1700] [DCRRA-2025] [NRCAN-SCEN] [JAVANBAKHT-24] [DCRRA-APPC]
-[GSC-OF-8853] [MVSMMP]
+[PEIRS] [DCRRA-2025] [PREPAREDBC] [NRCAN-SCEN] [MVSMMP]
