@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { REFERENCES } from "@/content/references";
-import type { Impact } from "@/content/types";
+import type { Impact, SystemSummary } from "@/content/types";
 import { BandPill } from "./band";
 
 /**
@@ -97,6 +97,23 @@ export function ImpactCell({
         </p>
       ) : null}
       <SourceLine id={impact.source} />
+    </div>
+  );
+}
+
+/**
+ * The same cell for a system with no band: mechanism and source, and nothing
+ * else. No pill, because there is no band to show, and no hatch, because a
+ * hatch says an assessment is missing. No scenario label, because the sentence
+ * stands for both earthquakes.
+ */
+export function SummaryCell({ summary }: { summary: SystemSummary }) {
+  return (
+    <div className="flex flex-col gap-2 rounded-lg border border-rule bg-paper-raised p-4">
+      <p className="text-sm leading-relaxed text-ink-muted">
+        {summary.mechanism}
+      </p>
+      <SourceLine id={summary.source} />
     </div>
   );
 }

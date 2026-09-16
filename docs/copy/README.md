@@ -47,6 +47,7 @@ label or an alt text.
 | [`dams-and-reservoirs.md`](dams-and-reservoirs.md) | `/after/dams-and-reservoirs/` | `../research/systems/dams-and-reservoirs.md` |
 | [`housing.md`](housing.md) | `/after/housing/` | `../research/systems/housing.md` |
 | [`health-care.md`](health-care.md) | `/after/health-care/` | `../research/systems/health-care.md` |
+| [`safety-and-conflict.md`](safety-and-conflict.md) | `/after/safety-and-conflict/` | `../research/social-disorder.md` |
 | [`outside-help.md`](outside-help.md) | `/after/outside-help/` | `../research/systems/outside-help.md` |
 | [`getting-around.md`](getting-around.md) | `/getting-around/` | `../research/mobility.md` |
 | [`prepare.md`](prepare.md) | `/prepare/` | `../research/preparedness.md` |
@@ -108,7 +109,7 @@ the page is about, but do not expect to find it rendered.
 `source` is the third of the three fields `Impact` in `src/content/types.ts`
 requires, alongside the band and the mechanism sentence. It is one key, the one the
 mechanism sentence rests on, and it is not the same list as **Sources on this page**.
-All thirteen system files carry it.
+All fourteen system files carry it.
 
 `outside-help.md` is the one file whose front matter does not fit that shape. Its
 two columns carry different mechanism sentences and its Low column carries an
@@ -148,7 +149,7 @@ key: the slug, the phase it bites at, what it depends on, and its build tier.
 
 ## What is not written yet
 
-Nothing. Every page is written: all five under `/shaking/`, all thirteen systems
+Nothing. Every page is written: all five under `/shaking/`, all fourteen systems
 under `/after/`, and the reference pages. The system pages are ordered above as
 they are ordered in `SYSTEMS` in `../../src/content/site.ts`, which is the order a
 reader meets them in.

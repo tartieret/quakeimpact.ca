@@ -26,6 +26,7 @@ import { largeInfrastructure } from "./large-infrastructure";
 import { method } from "./method";
 import { outsideHelp } from "./outside-help";
 import { prepare } from "./prepare";
+import { safetyAndConflict } from "./safety-and-conflict";
 import { sanitation } from "./sanitation";
 import { scenarios } from "./scenarios";
 import { shaking } from "./shaking";
@@ -122,6 +123,7 @@ export const ALL_PAGES: PageModule[] = [
   damsAndReservoirs,
   housing,
   healthCare,
+  safetyAndConflict,
   outsideHelp,
   home,
   about,

@@ -3,7 +3,7 @@ route: /dependencies/
 title: Nothing fails alone
 nav: Dependency graph
 hook: The order the systems come back in is set by what each one is waiting on.
-lede: Twelve of the thirteen systems wait on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.
+lede: Twelve of the fourteen systems wait on at least one other. Some of those connections have a document behind them, and some are connections nobody has published.
 ---
 
 ## Everything else runs on fuel, and fuel moves by road

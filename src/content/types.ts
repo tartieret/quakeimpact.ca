@@ -82,7 +82,18 @@ export interface StandingLever {
   items: string[];
 }
 
-export interface SystemEntry {
+/**
+ * What an unbanded system carries in place of its two impact cells: one
+ * sentence of mechanism and the source it rests on, standing for both
+ * earthquakes because nothing behind it was measured on either.
+ */
+export interface SystemSummary {
+  mechanism: string;
+  /** Source key from the source register. */
+  source: string;
+}
+
+interface SystemBase {
   slug: string;
   name: string;
   /**
@@ -100,14 +111,35 @@ export interface SystemEntry {
    * engine lands someone on. A written page overrides it with its own.
    */
   lever?: StandingLever;
-  /** Where in the timeline this system is felt worst. */
-  bitesAt: Phase;
-  impacts: Record<ScenarioId, Impact>;
   /** Slugs of systems this one waits on. Feeds the dependency graph. */
   dependsOn: string[];
   /** Build-order tier from the project plan. */
   tier: 1 | 2 | 3;
 }
+
+/** A system that fails and comes back, banded per scenario on the rubric. */
+export interface BandedSystem extends SystemBase {
+  /** Where in the timeline this system is felt worst. */
+  bitesAt: Phase;
+  impacts: Record<ScenarioId, Impact>;
+  summary?: never;
+}
+
+/**
+ * A system with no restoration time for a band to measure, so no band, no
+ * phase and no scenario columns: how people treat each other after a disaster
+ * is the case. It is not "not yet assessed", which says an assessment could be
+ * published and has not been. Here none could be, and saying otherwise would
+ * put a gap in the record that is not there. Widening `Band` to cover it was
+ * the option `docs/research/impact-bands.md` rejected for weather.
+ */
+export interface UnbandedSystem extends SystemBase {
+  bitesAt?: never;
+  impacts?: never;
+  summary: SystemSummary;
+}
+
+export type SystemEntry = BandedSystem | UnbandedSystem;
 
 /**
  * A citable document. Everything on the site that states a fact points at one

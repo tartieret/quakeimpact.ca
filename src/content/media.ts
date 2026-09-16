@@ -1079,6 +1079,31 @@ export const PHOTOGRAPHS = {
     status: "verified",
     usedOn: "/after/outside-help/",
   },
+  /**
+   * The social response, on the page that argues most people help. Suggested by
+   * the site's owner.
+   *
+   * The file description's date, 29 February 2011, does not exist, so `taken`
+   * comes from the camera's recorded time, 4 March 2011, and is written to the
+   * month. The description names no place: Christchurch comes from the Commons
+   * category, whose text says the movement started after the Christchurch
+   * earthquakes. The filename's "Ilam School" is the uploader's naming and is
+   * not used.
+   */
+  "christchurch-student-volunteer-army": {
+    id: "christchurch-student-volunteer-army",
+    file: "christchurch-student-volunteer-army.jpg",
+    ratio: "1600 / 1195",
+    alt: "Several hundred young volunteers pack a grass field, most smiling at the camera and many holding shovels and spades up above their heads, in front of a banner reading Volunteer Army with two organisers in high-visibility vests beside it.",
+    photographer: "Sam Johnson",
+    collection: "Wikimedia Commons",
+    href: "https://commons.wikimedia.org/wiki/File:StudentArmy_IlamSchool.jpg",
+    taken: "March 2011",
+    place: "Christchurch, New Zealand",
+    licence: "CC-BY-SA-3.0",
+    status: "verified",
+    usedOn: "/after/safety-and-conflict/",
+  },
 } as const satisfies Record<string, Photograph>;
 
 export type PhotographId = keyof typeof PHOTOGRAPHS;
