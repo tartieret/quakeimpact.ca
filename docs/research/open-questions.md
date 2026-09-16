@@ -184,3 +184,11 @@ federal hosts have gone from resolving to NXDOMAIN during this project's lifetim
 A site whose whole proposition is that its sources check out should decide whether
 it archives its own, rather than trusting that other people's links hold. That is
 an operations decision, not a research one.
+28. **Backup power at Lower Mainland cell sites.** Bell and TELUS have published national
+    design runtimes in the CRTC 2025-226 record, and Rogers has filed its own in confidence.
+    Not published: how many sites in the region have a permanent generator, how many are
+    battery-only rooftop sites, and which company builds and powers the shared Bell and TELUS
+    sites in British Columbia (trade press says TELUS; the regulator's decision establishes
+    only that the network is shared). Routes: a CRTC decision in 2025-226, if it requires
+    disclosure; the carriers' post-incident reports on the CRTC outage file. See
+    `systems/communications.md`.
