@@ -331,18 +331,13 @@ export const scenarios: PageModule = {
             <ScenarioBuildingResponse />
           </Figure>
           <p>
-            At the Golden Ears Bridge, the soil and deep foundations begin to
-            act on each other as shaking lasts longer. In a 30-second design
-            event, the moving ground and swaying structure load the bridge at
-            the same time. In a 10-second event, the two are largely uncoupled.
-            In the longer event, the soil liquefies while the structure is still
-            being shaken. <Cite id="NAB-ICCHGE-08" />
-          </p>
-          <p>
-            Those are design events for one bridge, not properties of either
-            scenario. Past a certain length, the ground fails while the shaking
-            is still going on. The structure then carries the shaking and the
-            moving ground at the same time.
+            A Lower Mainland study of deep bridge foundations shows why
+            duration matters. During a 30-second design event, the soil
+            liquefied while the structure was still shaking, so the moving
+            ground and swaying structure loaded the foundations at the same
+            time. During a 10-second event, those effects were largely separate.{" "}
+            <Cite id="NAB-ICCHGE-08" /> These are design events for one
+            structure, not descriptions of either scenario.
           </p>
           <p>
             The province’s magnitude 7.0 Greater Vancouver planning scenario
