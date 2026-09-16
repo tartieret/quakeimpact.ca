@@ -172,7 +172,7 @@ export const SYSTEMS: SystemEntry[] = [
   {
     slug: "communications",
     name: "Communications",
-    hook: "Cell sites have no required minimum backup-power time.",
+    hook: "Cell-site backup power lasts hours to days, and no rule sets a minimum.",
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["electricity", "fuel"],

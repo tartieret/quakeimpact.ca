@@ -72,10 +72,11 @@ Medium is the label most likely to mislead, because uncertainty comes in kinds.
 
 Communications is Medium because disruption in the megathrust scenario continues for
 days to weeks, with what capacity survives prioritised for emergency personnel.
-[DCRRA-2025] The uncertainty is about everything around that sentence: nothing requires
-a mobile phone site to hold any backup power at all, the regulator opened a proceeding
-to decide what the requirement should be and has not decided, [CRTC-2025-226] and no
-carrier has published what it holds or how long it would take.
+[DCRRA-2025] The uncertainty is about everything around that sentence: no rule sets
+how long a mobile phone site must keep running on backup power, the regulator opened
+a proceeding to decide what the requirement should be and has not decided,
+[CRTC-2025-226] and no carrier has published what its sites here hold or how long
+restoration would take.
 
 Health care is Medium because about 65 per cent of one health authority's buildings
 would likely be completely damaged at the shaking level the current building code

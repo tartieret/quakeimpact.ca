@@ -32,8 +32,9 @@ published document behind them, and the rest are links no assessment has establi
 ## What fails first
 
 **In the first hours**, communications and health care are affected, and dams must be
-checked. Nothing requires a mobile phone site to hold any backup power at all; the regulator opened a proceeding
-to decide what the requirement should be and has not decided. [CRTC-2025-226] About 65
+checked. No rule sets how long a mobile phone site must keep running on backup power;
+the regulator opened a proceeding to decide what the requirement should be and has not
+decided. [CRTC-2025-226] About 65
 per cent of one health authority's buildings would likely be completely damaged at the
 shaking level the current building code designs for, and no published document
 compares the expected casualties to the number of beds the region has. [DCRRA-APPC]
