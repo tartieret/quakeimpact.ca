@@ -361,7 +361,7 @@ export const SYSTEMS: SystemEntry[] = [
     dependsOn: [],
     summary: {
       mechanism:
-        "Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time for a band to measure.",
+        "Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify.",
       source: "KATRINA-MYTHS-08",
     },
   },

@@ -5,7 +5,7 @@ nav: Safety and conflict
 hook: After a disaster most people help the people around them, and theft and violence are the exception rather than the rule.
 lede: A major earthquake stops the tap, the shop and the petrol station together. [PEIRS] What comparable disasters show is that most people share what they have and help the people around them, and that the trouble which does happen gathers in particular places. [KATRINA-MYTHS-08]
 bands: none. No restoration time, so no band and no scenario split
-mechanism: Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time for a band to measure.
+mechanism: Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify.
 source: KATRINA-MYTHS-08
 ---
 
