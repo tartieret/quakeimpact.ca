@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { DataTable, Prose, VerificationNote } from "@/components/page-parts";
+import { DataTable, Prose } from "@/components/page-parts";
 import type { PageModule } from "./index";
 
 /**
@@ -10,6 +10,11 @@ import type { PageModule } from "./index";
  * The words are the copy's, verbatim. The one reader-facing string the copy
  * does not write is the table's caption, which names the table for a screen
  * reader.
+ *
+ * The page opens on the table rather than on the caveat. A reader who came for
+ * the count gets it first, and the section after it says what the count is made
+ * of; the caveat led once, and the page spent its opening arguing about its
+ * evidence before showing any.
  *
  * The table is a grid of the site's two scenarios against the two areas anybody
  * has published a count for, and the grid invites three comparisons the sources
@@ -34,18 +39,18 @@ export const casualties: PageModule = {
     nav: "Casualties",
     kicker: "The shaking",
     standfirst:
-      "Published casualty estimates differ because they cover different earthquakes, areas and times of day. They count only shaking damage to buildings and the people inside them.",
+      "Published casualty estimates differ because they cover different earthquakes, areas and times of day.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
-      "NRCAN-SCEN",
-      "GSC-OF-8853",
-      "PEIRS",
-      "DCRRA-2025",
       "COV-RISK-2024",
+      "PEIRS",
+      "GSC-OF-8853",
+      "DCRRA-2025",
       "HILT-2022",
+      "NRCAN-SCEN",
       "NZ-RC-V4",
       "CBOC-2016-PR",
       "CBOC-2016",
@@ -55,47 +60,6 @@ export const casualties: PageModule = {
   },
 
   sections: [
-    {
-      title: "Published figures cover mainshock building damage only",
-      body: (
-        <Prose>
-          <p>
-            The published figures nearly all trace back to the Geological Survey
-            of Canada’s scenario catalogue, which counts “only damage to
-            buildings, and their inhabitants, from earthquake shaking”.{" "}
-            <Cite id="NRCAN-SCEN" /> In the open file behind the province’s
-            planning scenario, aftershocks, tsunami, landslides, liquefaction
-            “and fire following are not considered”, and neither is damage to
-            vehicles or infrastructure. <Cite id="GSC-OF-8853" /> Natural
-            Resources Canada draws the conclusion itself, about its own work:
-            “therefore, the estimates herein are likely to represent a minimum
-            estimate on impacts.” <Cite id="GSC-OF-8853" />
-          </p>
-          <p>
-            The province says the same of its own numbers. They rest on damage
-            to buildings and “do not include casualties from other secondary
-            hazards or complicating factors”, a list running through underlying
-            medical conditions, vehicle accidents, falls, explosions, fires,
-            landslides, washouts and tsunamis. The strategy “will not consider
-            the effect of an earthquake early warning system”, and the data is
-            “for planning purposes only and may not match the outcome of real
-            events”. <Cite id="PEIRS" /> Its Cascadia figures carry the same
-            limit: they “include only direct mainshock damage without account of
-            secondary hazards like landslides, liquefaction, tsunami, fires and
-            more.” <Cite id="DCRRA-2025" />
-          </p>
-          <p>
-            So every figure below is a floor. Fires, landslides and liquefaction
-            hurt people too, and none of these models was asked to count them.
-          </p>
-          <VerificationNote label="Not yet published">
-            No published figure counts the people an earthquake here would hurt
-            once fire following, landslides and liquefaction are added in.
-          </VerificationNote>
-        </Prose>
-      ),
-    },
-
     {
       title: "Government estimates cover different areas",
       body: (
@@ -141,6 +105,44 @@ export const casualties: PageModule = {
           <p>
             The method behind the City’s assessment has been published and peer
             reviewed. <Cite id="HILT-2022" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "These figures cover mainshock building damage only",
+      body: (
+        <Prose>
+          <p>
+            They nearly all trace back to the Geological Survey of Canada’s
+            scenario catalogue, which counts “only damage to buildings, and
+            their inhabitants, from earthquake shaking”.{" "}
+            <Cite id="NRCAN-SCEN" /> In the open file behind the province’s
+            planning scenario, aftershocks, tsunami, landslides, liquefaction
+            “and fire following are not considered”, and neither is damage to
+            vehicles or infrastructure. <Cite id="GSC-OF-8853" /> Natural
+            Resources Canada draws the conclusion itself, about its own work:
+            “therefore, the estimates herein are likely to represent a minimum
+            estimate on impacts.” <Cite id="GSC-OF-8853" />
+          </p>
+          <p>
+            The province says the same of its own numbers. They rest on damage
+            to buildings and “do not include casualties from other secondary
+            hazards or complicating factors”, a list running through underlying
+            medical conditions, vehicle accidents, falls, explosions, fires,
+            landslides, washouts and tsunamis. The strategy “will not consider
+            the effect of an earthquake early warning system”, and the data is
+            “for planning purposes only and may not match the outcome of real
+            events”. <Cite id="PEIRS" /> Its Cascadia figures carry the same
+            limit: they “include only direct mainshock damage without account of
+            secondary hazards like landslides, liquefaction, tsunami, fires and
+            more.” <Cite id="DCRRA-2025" />
+          </p>
+          <p>
+            So every one of these counts is a floor. Fires, landslides and
+            liquefaction hurt people too, and none of these models was asked to
+            count them.
           </p>
         </Prose>
       ),

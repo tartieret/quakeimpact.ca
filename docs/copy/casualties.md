@@ -3,33 +3,8 @@ route: /shaking/casualties/
 title: Casualties
 nav: Casualties
 hook: Published casualty estimates change with the earthquake and time of day.
-lede: Published casualty estimates differ because they cover different earthquakes, areas and times of day. They count only shaking damage to buildings and the people inside them.
+lede: Published casualty estimates differ because they cover different earthquakes, areas and times of day.
 ---
-
-## Published figures cover mainshock building damage only
-
-The published figures nearly all trace back to the Geological Survey of Canada's
-scenario catalogue, which counts "only damage to buildings, and their inhabitants, from
-earthquake shaking". [NRCAN-SCEN] In the open file behind the province's planning
-scenario, aftershocks, tsunami, landslides, liquefaction "and fire following are not
-considered", and neither is damage to vehicles or infrastructure. [GSC-OF-8853] Natural
-Resources Canada draws the conclusion itself, about its own work: "therefore, the
-estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
-
-The province says the same of its own numbers. They rest on damage to buildings and "do
-not include casualties from other secondary hazards or complicating factors", a list
-running through underlying medical conditions, vehicle accidents, falls, explosions,
-fires, landslides, washouts and tsunamis. The strategy "will not consider the effect of an
-earthquake early warning system", and the data is "for planning purposes only and may not
-match the outcome of real events". [PEIRS] Its Cascadia figures carry the same limit: they
-"include only direct mainshock damage without account of secondary hazards like
-landslides, liquefaction, tsunami, fires and more." [DCRRA-2025]
-
-So every figure below is a floor. Fires, landslides and liquefaction hurt people too, and
-none of these models was asked to count them.
-
-> **Not yet published.** No published figure counts the people an earthquake here would
-> hurt once fire following, landslides and liquefaction are added in.
 
 ## Government estimates cover different areas
 
@@ -52,6 +27,27 @@ magnitudes, so the bottom row holds two scenarios rather than one counted twice.
 
 The method behind the City's assessment has been published and peer reviewed.
 [HILT-2022]
+
+## These figures cover mainshock building damage only
+
+They nearly all trace back to the Geological Survey of Canada's scenario catalogue, which counts "only damage to buildings, and their inhabitants, from
+earthquake shaking". [NRCAN-SCEN] In the open file behind the province's planning
+scenario, aftershocks, tsunami, landslides, liquefaction "and fire following are not
+considered", and neither is damage to vehicles or infrastructure. [GSC-OF-8853] Natural
+Resources Canada draws the conclusion itself, about its own work: "therefore, the
+estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
+
+The province says the same of its own numbers. They rest on damage to buildings and "do
+not include casualties from other secondary hazards or complicating factors", a list
+running through underlying medical conditions, vehicle accidents, falls, explosions,
+fires, landslides, washouts and tsunamis. The strategy "will not consider the effect of an
+earthquake early warning system", and the data is "for planning purposes only and may not
+match the outcome of real events". [PEIRS] Its Cascadia figures carry the same limit: they
+"include only direct mainshock damage without account of secondary hazards like
+landslides, liquefaction, tsunami, fires and more." [DCRRA-2025]
+
+So every one of these counts is a floor. Fires, landslides and liquefaction hurt people too, and
+none of these models was asked to count them.
 
 ## The closer earthquake causes more casualties in Vancouver
 
@@ -134,5 +130,5 @@ what you do while the ground moves are within your control.
 
 ## Sources on this page
 
-[NRCAN-SCEN] [GSC-OF-8853] [PEIRS] [DCRRA-2025] [COV-RISK-2024] [HILT-2022] [NZ-RC-V4]
+[COV-RISK-2024] [PEIRS] [GSC-OF-8853] [DCRRA-2025] [HILT-2022] [NRCAN-SCEN] [NZ-RC-V4]
 [CBOC-2016-PR] [CBOC-2016] [PREPAREDBC] [COV-EXPLORER-25]
