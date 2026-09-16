@@ -149,9 +149,11 @@ export function SystemMatrix() {
               ) : (
                 /* An unbanded system is not a gap in either column, so it takes
                    no hatch and no pill: a hatch here would say an assessment is
-                   missing, and none could exist. The words say what the row is. */
+                   missing, and none could exist. Two words, because the reason
+                   is in the paragraph above the table and a cell that argues
+                   its case reads as an apology in a table of plain readings. */
                 <td colSpan={3} className="px-4 py-3 text-sm text-ink-muted">
-                  No band: nothing here has a restoration time
+                  No band
                 </td>
               )}
             </tr>
