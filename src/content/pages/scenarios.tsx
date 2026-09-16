@@ -27,10 +27,9 @@ import type { PageModule } from "./index";
  * and the alt text and captions of the three drawings, which are placed beside
  * the prose they illustrate and replace none of it.
  *
- * The scenario cards and the system matrix are not here. They are built from
- * `SCENARIOS` and `SYSTEMS` in `@/content/site`, so the route draws them the
- * way the system template draws its bands: from the data, above and below the
- * words.
+ * The scenario cards and the system matrix draw their data from `SCENARIOS`
+ * and `SYSTEMS` in `@/content/site`; this module supplies their headings and
+ * surrounding copy.
  */
 export const scenarios: PageModule = {
   meta: {
@@ -49,9 +48,9 @@ export const scenarios: PageModule = {
       "NRCAN-1700",
       "PEIRS",
       "NRCAN-SCEN",
-      "OPENDRR-GSF-22",
-      "GSC-OF-8853",
       "DCRRA-2025",
+      "GSC-OF-8853",
+      "OPENDRR-GSF-22",
       "NAB-ICCHGE-08",
       "ECR-2023",
       "NRCAN-QA",
@@ -63,39 +62,22 @@ export const scenarios: PageModule = {
   sections: [
     {
       title: "How the scenarios differ",
-      body: <ScenarioCards />,
-    },
-
-    {
-      title: "The nearer earthquake hits cities harder",
       body: (
-        <Prose>
-          <p>
-            The offshore Cascadia fault is not the greatest earthquake hazard to
-            west coast cities. Shallower earthquakes beneath the region are
-            closer, happen more often and hit cities harder.{" "}
-            <Cite id="NRCAN-1700" />
-          </p>
-          <p>
-            British Columbia plans around the nearer one. Its primary earthquake
-            planning scenario is a shallow magnitude 7.0 in the Strait of
-            Georgia. <Cite id="PEIRS" />
-          </p>
-          <p>
-            Each earthquake creates a different problem. The nearer earthquake
-            does more to Vancouver itself, because
-            it is closer to the city and happens more often.{" "}
-            <Cite id="NRCAN-1700" /> The offshore one does more to Vancouver’s
-            chances of being helped: it damages the whole coast at once, and in
-            a Cascadia event the United States would be unable to deliver mutual
-            aid. <Cite id="PEIRS" />
-          </p>
-        </Prose>
+        <>
+          <Prose>
+            <p>
+              The nearer earthquake does more to Vancouver itself. Cascadia
+              affects the whole coast at once, which also delays outside help.{" "}
+              <Cite id="NRCAN-1700" /> <Cite id="PEIRS" />
+            </p>
+          </Prose>
+          <ScenarioCards />
+        </>
       ),
     },
 
     {
-      title: "Where the scenarios come from",
+      title: "What the models show",
       body: (
         <Prose>
           <p>
@@ -117,6 +99,15 @@ export const scenarios: PageModule = {
             and aftershocks. <Cite id="NRCAN-SCEN" /> That limit applies to
             almost every number below.
           </p>
+          <p>
+            British Columbia’s damage and casualty figures for both scenarios
+            use this federal modelling. <Cite id="DCRRA-2025" />{" "}
+            <Cite id="NRCAN-SCEN" /> <Cite id="PEIRS" /> Emergency Management
+            British Columbia and the Government Operations Centre in Ottawa
+            commissioned the scenarios. <Cite id="GSC-OF-8853" /> Two
+            governments publishing the same figures is not independent
+            agreement.
+          </p>
           <Figure
             interactive
             alt={`In federal modelling, the nearer Georgia Strait magnitude 7.0 shakes the Lower Mainland far harder than the Cascadia magnitude 9.0 does: the strongest cell reaches about ${SHAKEMAP_FACTS.georgiaPeak} per cent of gravity against about ${SHAKEMAP_FACTS.cascadiaPeak}. Peak acceleration is not the whole of what either earthquake does, and this modelling covers shaking damage to buildings and the people in them and nothing else.`}
@@ -135,13 +126,10 @@ export const scenarios: PageModule = {
                 a continuous surface. Both runs measure peak ground
                 acceleration. Only the Georgia Strait run includes Modified
                 Mercalli intensity; calculating it for Cascadia would require a
-                new conversion, so neither map uses it. Every mark carries the
-                same two limits.{" "}
-                {SHAKEMAP_CAVEATS.resolution} {SHAKEMAP_CAVEATS.scope} The
-                shoreline and river water under the marks are the province’s
-                Freshwater Atlas, which is a British Columbia layer and stops at
-                the international boundary. The modelling is the Geological
-                Survey of Canada’s, and the drawing is not.
+                new conversion, so neither map uses it.{" "}
+                {SHAKEMAP_CAVEATS.resolution} The shoreline and river water
+                under the marks are the province’s Freshwater Atlas, which
+                stops at the international boundary.
               </>
             }
             licence={
@@ -171,15 +159,15 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "The province plans around a crustal magnitude 7.0",
+      title: "The crustal scenario brings violent shaking close to the city",
       body: (
         <Prose>
           <p>
             The province’s primary planning scenario is a shallow magnitude 7.0
             beneath the Georgia Basin, modelled on the 1997 event. An earthquake
-            of that size or larger happens in this
-            broad region roughly once every 1,500 years. The rupture is under
-            water, and even so “a significant tsunami is not expected”.{" "}
+            of that size or larger happens in this broad region roughly once
+            every 1,500 years. The rupture is under water, but a significant
+            tsunami is not expected.{" "}
             <Cite id="PEIRS" />
           </p>
           <p>
@@ -209,11 +197,27 @@ export const scenarios: PageModule = {
           </Figure>
           <p>
             The scenario is set on a January afternoon, immediately after an
-            atmospheric river has dropped 180 to 300 mm of rain over three days. The ground is already saturated when the
-            shaking starts, which is why the scenario’s landslides, liquefaction
-            and dike failures are as prominent as they are. Warmth, dry shelter
-            and unstable slopes are what people need attended to first in that
-            weather. <Cite id="PEIRS" />
+            atmospheric river has dropped 180 to 300 mm of rain over three
+            days. The saturated ground makes landslides, liquefaction and dike
+            failures more prominent. Warmth, dry shelter and unstable slopes
+            are the immediate concerns. <Cite id="PEIRS" />
+          </p>
+          <p>
+            The earthquake may be heard before it is felt. A low rumble like a
+            freight train is followed by 10 to 20 seconds of violent shaking.
+            Near the epicentre, people can be knocked off their feet. Tall
+            buildings sway, unsecured objects fall and roads crack. On soft,
+            saturated soil, liquefaction removes support from buildings.{" "}
+            <Cite id="PEIRS" />
+          </p>
+          <p>
+            Rain-soaked slopes fail and block transportation routes. Flooding
+            worsens and some dikes fail. Damaged electrical equipment and broken
+            gas lines start fires. Some buildings collapse; others shift, crack
+            or burn. Glass and masonry fall into streets already blocked by
+            debris. Running outside exposes people to those falling objects.
+            Many who do are severely injured or killed, while thousands are
+            trapped or injured inside buildings. <Cite id="PEIRS" />
           </p>
           <p>
             Its modelled impacts, counting only shaking damage to buildings and
@@ -251,43 +255,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "The crustal earthquake begins with violent shaking",
-      body: (
-        <Prose>
-          <p>
-            The magnitude 7.0 earthquake may be heard before it is felt. A low
-            rumble like a freight train is followed by 10 to 20 seconds of
-            violent shaking. Near the epicentre, people can be knocked off their
-            feet. Tall buildings sway, unsecured objects fall and roads crack.
-            On soft, saturated soil, liquefaction removes support from
-            buildings. <Cite id="PEIRS" />
-          </p>
-          <p>
-            Rain-soaked slopes fail and block transportation routes. Flooding
-            worsens and some dikes fail. Damaged electrical equipment and broken
-            gas lines start fires. Some buildings collapse; others shift, crack
-            or burn. <Cite id="PEIRS" />
-          </p>
-          <p>
-            Glass and masonry fall into streets already blocked by debris.
-            Running outside exposes people to those falling objects. Many who do
-            are severely injured or killed, while thousands are trapped or
-            injured inside buildings. <Cite id="PEIRS" />
-          </p>
-          <p>
-            Unreinforced masonry is brick or concrete block built without steel
-            reinforcing. It is the wall type that falls into the street here.
-          </p>
-          <p>
-            The immediate instructions are to drop, cover and hold on, and to
-            stay inside until the shaking stops.
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "The Cascadia scenario shakes for three minutes",
+      title: "Cascadia affects the whole coast",
       body: (
         <Prose>
           <p>
@@ -317,53 +285,51 @@ export const scenarios: PageModule = {
             about a month later, at 11pm, during an atmospheric river, lasting
             20 seconds. <Cite id="DCRRA-2025" />
           </p>
+          <p>
+            The last Cascadia earthquake began at 9pm on 26 January 1700. The
+            fault ruptured for about 1,000 km and produced a tsunami that crossed
+            the Pacific. On Vancouver Island, shaking collapsed Cowichan houses
+            and triggered landslides. People could not stand and became sick
+            from the prolonged motion. The tsunami destroyed the Pachena Bay
+            winter village, leaving no survivors. First Nations oral traditions
+            record these events. <Cite id="NRCAN-1700" />
+          </p>
+          <p>
+            Japanese records of the arriving tsunami establish the date and
+            time. Those records and the First Nations accounts describe the same
+            night. <Cite id="NRCAN-1700" />
+          </p>
         </Prose>
       ),
     },
 
     {
-      title: "Each earthquake is harder on different buildings",
+      title: "Duration and building type change what fails",
       body: (
         <Prose>
           <p>
             The crustal earthquake produces high-frequency shaking that is
-            hardest on short buildings. Unreinforced masonry and unreinforced
-            concrete buildings may collapse or become uninhabitable.{" "}
-            <Cite id="PEIRS" />
+            hardest on short buildings. Unreinforced masonry, brick or concrete
+            block built without steel reinforcing, and unreinforced concrete
+            buildings may collapse or become uninhabitable. <Cite id="PEIRS" />
           </p>
           <p>
             The megathrust produces long-period waves that move tall buildings
             on deep, soft sediment, including parts of Richmond.{" "}
             <Cite id="DCRRA-2025" />
           </p>
-          <p>
-            Fast, sharp shaking breaks short, stiff, older buildings. Slow, long
-            shaking moves tall buildings on soft ground.
-          </p>
           <Figure
             alt="Fast, sharp shaking is most hazardous to short, stiff, older buildings, while slow, long shaking moves tall buildings on soft ground. Each earthquake affects buildings differently. The drawing shows building response only, not damage."
             caption={
               <>
-                The same two buildings stand in both panels. What changes is how
-                fast the ground moves and which building that motion finds. The
-                High-frequency shaking is hardest on short buildings{" "}
-                <Cite id="PEIRS" />, while the long-period waves of the
-                megathrust move tall buildings on deep, soft sediment.{" "}
-                <Cite id="DCRRA-2025" /> The waves are drawn at the same size and
-                carry no scale because no published scale exists.
+                The same two buildings appear in both panels. The waves are
+                drawn at the same size and carry no scale because no published
+                scale exists.
               </>
             }
           >
             <ScenarioBuildingResponse />
           </Figure>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "Longer shaking changes how structures fail",
-      body: (
-        <Prose>
           <p>
             At the Golden Ears Bridge, the soil and deep foundations begin to
             act on each other as shaking lasts longer. In a 30-second design
@@ -379,25 +345,23 @@ export const scenarios: PageModule = {
             moving ground at the same time.
           </p>
           <p>
-            In the province’s magnitude 7.0 Greater Vancouver planning scenario,
-            violent shaking lasts 10 to 20 seconds. <Cite id="PEIRS" /> In the
-            province’s magnitude 9.0 Cascadia scenario, the mainshock lasts
-            three minutes. <Cite id="DCRRA-2025" /> A federal exercise scenario
-            for a magnitude 6.8 near Tsawwassen lasts more than one minute, so a
-            smaller crustal earthquake can still shake longer than the Greater
-            Vancouver scenario. <Cite id="ECR-2023" /> Durations belong to named
-            scenarios, not to magnitude alone.
+            The province’s magnitude 7.0 Greater Vancouver planning scenario
+            gives 10 to 20 seconds of violent shaking, while its magnitude 9.0
+            Cascadia scenario gives three minutes. <Cite id="PEIRS" />{" "}
+            <Cite id="DCRRA-2025" /> A federal exercise scenario for a magnitude
+            6.8 near Tsawwassen lasts more than one minute.{" "}
+            <Cite id="ECR-2023" /> Duration belongs to a named scenario, not to
+            magnitude alone.
           </p>
           <Figure
             alt="The province's crustal magnitude 7.0 scenario gives 10 to 20 seconds of violent shaking, its Cascadia magnitude 9.0 scenario three minutes, and a federal magnitude 6.8 exercise scenario over one minute. Duration depends on the scenario, not magnitude alone."
             caption={
               <>
-                Three named scenarios on one scale. The third is the reason the
-                first two cannot be turned into a rule: it is the smallest
-                earthquake of the three and it shakes for longer than the
-                crustal scenario does. <Cite id="PEIRS" />{" "}
-                <Cite id="DCRRA-2025" /> <Cite id="ECR-2023" /> Its bar is solid
-                to one minute and hatched beyond it because no end is given.
+                The smallest of the three scenarios is not the shortest, so
+                duration cannot be inferred from magnitude.{" "}
+                <Cite id="PEIRS" /> <Cite id="DCRRA-2025" />{" "}
+                <Cite id="ECR-2023" /> Its bar is solid to one minute and
+                hatched beyond it because no end is given.
               </>
             }
           >
@@ -408,28 +372,7 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "Provincial and federal figures share one model",
-      body: (
-        <Prose>
-          <p>
-            The provincial Cascadia damage and casualty figures come from the
-            federal scenario run. <Cite id="DCRRA-2025" />{" "}
-            <Cite id="NRCAN-SCEN" /> The provincial crustal figures use the same
-            federal modelling. <Cite id="PEIRS" /> Emergency Management British
-            Columbia and the Government Operations Centre in Ottawa commissioned
-            both scenarios. <Cite id="GSC-OF-8853" />
-          </p>
-          <p>
-            Two levels of government publishing the same number is one model
-            quoted twice, not two estimates agreeing. Canada has one public
-            earthquake loss model, and both governments use it.
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "Estimates of the Cascadia interval differ",
+      title: "Estimates of how often Cascadia ruptures vary",
       body: (
         <Prose>
           <DataTable
@@ -470,17 +413,8 @@ export const scenarios: PageModule = {
           />
           <p>
             The federal agency gives a longer average than the province does.
-            All four are current and all four are official. The last rupture was
-            in 1700.
+            All four estimates are current and official.
           </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "The 50-year chance of a Cascadia rupture",
-      body: (
-        <Prose>
           <p>
             For the northern end of the fault, or a full rupture, one estimate
             puts the chance at 7 to 12 per cent in the next 50 years.{" "}
@@ -488,8 +422,9 @@ export const scenarios: PageModule = {
             median of about 5 per cent over the same period.{" "}
             <Cite id="MAZZOTTI-04" /> British Columbia’s 2025 assessment uses a
             10 to 20 per cent band, with 3 per cent over 10 years and 9 per cent
-            over 30. <Cite id="DCRRA-2025" /> The last two estimates were
-            published 21 years apart and differ by a factor of two to four.
+            over 30. <Cite id="DCRRA-2025" /> The federal and provincial
+            estimates were published 21 years apart and differ by a factor of
+            two to four.
           </p>
           <p>
             A higher figure, about 37 per cent in the next 50 years, circulates
@@ -498,32 +433,6 @@ export const scenarios: PageModule = {
             Oregon and northern California, where ruptures are roughly twice as
             frequent. It is not a figure for this coast.{" "}
             <Cite id="GOLDFINGER-12" />
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "The last Cascadia earthquake was on 26 January 1700",
-      body: (
-        <Prose>
-          <p>
-            At 9pm on 26 January 1700, the Cascadia fault ruptured for about
-            1,000 km from mid Vancouver Island to northern California. The
-            earthquake produced severe shaking and a tsunami that crossed the
-            Pacific. <Cite id="NRCAN-1700" />
-          </p>
-          <p>
-            On Vancouver Island, shaking collapsed Cowichan houses and triggered
-            landslides. People could not stand and became sick from the
-            prolonged motion. The tsunami destroyed the Pachena Bay winter
-            village, leaving no survivors. First Nations oral traditions record
-            these events. <Cite id="NRCAN-1700" />
-          </p>
-          <p>
-            Japanese records of the arriving tsunami establish the date and
-            time. Those records and the First Nations accounts describe the same
-            night. <Cite id="NRCAN-1700" />
           </p>
         </Prose>
       ),
