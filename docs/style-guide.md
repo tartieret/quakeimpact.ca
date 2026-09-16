@@ -51,7 +51,11 @@ We are in the business of making a slow, boring, structural problem legible enou
 
 **Write for a reader who is scanning.** Front-load the claim; put the mechanism after it. Every heading should read as a standalone sentence about the world.
 
-**No exclamation marks. No rhetorical questions. No invented scenes.** The line is not between narrative and description; it is between a consequence the record establishes and a scene we made up. The sound like a freight train, the glass across the pavement, the queue at the water truck, the technician who has to come inside to relight the gas: each is a mechanism something published establishes. A character, a moment, a thought, a line of dialogue or an image whose only source is imagination is not.
+**No exclamation marks. A scene is allowed, and it is built from what the page has already sourced.** Revised 16 September 2026 by the site's owner, replacing a ban on invented scenes. A page may put a reader in an ordinary moment and let them stand in it: the queue at the water truck, the till that will not take a card, the third morning of boiling water. Every element in that moment is a consequence something published establishes, and the page carries the source. The sound like a freight train, the glass across the pavement, the technician who has to come inside to relight the gas: each is a mechanism, and a scene is those mechanisms arranged into the order a reader would meet them in.
+
+**What a scene may never do is introduce a fact.** A quantity, a duration, a band, a geography or a casualty figure comes from a document, never from the scene around it (§6). Keep it short and keep it ordinary. The people in it stay unnamed and undescribed, with no thoughts and no dialogue put in their mouths, because an invented person is the point at which a reader stops being able to tell what the evidence says. Severity is allowed and dread is not (§3), and a scene written to make a reader feel something the evidence does not support fails that test rather than this one.
+
+**A question is allowed where the page answers it.** Revised 16 September 2026. "What happens when the food runs out?" is the question a reader arrives with, and naming it as a heading or an opening is not the closing flourish §11 describes, where a question stands in for a conclusion nobody reached.
 
 **No stacked parallel fragments.** A run of short sentences built to the same pattern, each unpacking one item from the sentence before, is rhythm standing in for argument. "A month later is after the news has moved on. Eleven at night is when people are at home and asleep. An atmospheric river is a long, heavy rainstorm." The closing turn that usually follows, "And X is not Y: it is Z", is the same move again. It is the most recognisable tell of machine-written prose and it survives every other check, because nothing in it is inaccurate. Keep the one thing the reader does not already know and join it to the sentence before.
 
@@ -196,7 +200,7 @@ The hardest failure to catch: the prose is fluent, polite and confident, no sent
 5. **The em dash aside** around the place names, which §5 bars.
 6. **The reassurance sandwich.** Every hazard is neutralised by a comfort clause in the same breath, so the reader cannot tell how alarmed to be. Severity is stated plainly and the relief comes from the lever, not from a subordinate clause.
 7. **Aphorism.** "Preparedness remains the most powerful tool at our disposal" sounds like it said something.
-8. **"The key takeaway?"** A rhetorical question that answers itself, opening a closing paragraph that restates the other four and lands on uplift. Delete it.
+8. **"The key takeaway?"** A question standing in for a conclusion, opening a closing paragraph that restates the other four and lands on uplift. Delete it. §4 allows a question a page then answers; this is not one, because nothing follows it that the reader did not already have.
 9. **"Navigate", "resilience", "thoughtfully", "with confidence".** Vocabulary from every corporate safety page ever written.
 10. **Uniform rhythm.** Every paragraph three to four lines, every sentence a balanced subject-verb-object of the same length, so nothing is emphasised.
 

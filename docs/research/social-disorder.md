@@ -359,11 +359,14 @@ measured on either. The shortages that went with Chile's worst days are document
 naming the systems this one waits on would be the graph asserting an edge nobody has
 published.
 
-**Structure.** Four sections, in the order the owner set on 15 September 2026: what people
-generally expect; what happens in most disasters, from the general research, Christchurch and
-Japan; where theft and violence were serious, from Chile and Katrina, with the role of news
-coverage as a subsection; and what holds conflict down, closing on preparation as a society
-before the household lever.
+**Structure.** Five sections, in the order the owner set on 15 and 16 September 2026. It opens
+on the question a reader arrives with, in the week the tap and the shops have stopped, and
+answers it: the scene is built only from consequences other pages here source, under
+`../style-guide.md` §4 as revised on 16 September 2026, and it introduces no fact of its own.
+Then what people generally expect; what happens in most disasters, from the general research,
+Christchurch and Japan; where theft and violence were serious, from Chile and Katrina, with the
+role of news coverage as a subsection; and what holds conflict down, closing on two weeks of
+supplies before the household lever.
 
 **What the page rests on.** Only the claims whose abstract, record or article text was read
 on 15 September 2026: the Breetzke, Thornley, Calo-Blanco, García Hombrados, Tierney,

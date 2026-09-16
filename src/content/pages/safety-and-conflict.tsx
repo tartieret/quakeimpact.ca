@@ -9,34 +9,39 @@ import type { PageModule } from "./index";
  * Safety and conflict. The body of `/after/safety-and-conflict/`, ported from
  * `docs/copy/safety-and-conflict.md`.
  *
- * The one system on the grid with no restoration time, which is why both of
- * its cells are hatched. The page runs from what people expect, to what
- * research and past disasters show, to where theft and violence have been
- * serious, to what holds them down. Every event on it happened somewhere
- * else, so each one illustrates and none is a forecast for this region. The
- * evidence is `docs/research/social-disorder.md`.
+ * The one system on the grid with no restoration time, which is why it carries
+ * no band. It opens on the question a reader arrives with, in the days when the
+ * tap and the shops have stopped, and answers it before working through what
+ * people expect, what the research and past disasters show, where theft and
+ * violence were serious, and what holds conflict down. The opening scene is
+ * built under `docs/style-guide.md` §4 as revised on 16 September 2026: every
+ * element in it is a consequence another page here states and sources, and it
+ * introduces no fact of its own. Every event on the page happened somewhere
+ * else. The evidence is `docs/research/social-disorder.md`.
  */
 export const safetyAndConflict: PageModule = {
   meta: {
     route: "/after/safety-and-conflict/",
     title: "Safety and conflict",
     description:
-      "Most people help each other after a disaster. Theft and violence still happen, and what holds them down is in place beforehand: ties between neighbours, trusted information and plans.",
+      "A major earthquake stops the tap, the shop and the petrol station together. What past disasters show is that most people share and help, and where theft and conflict gather.",
     nav: "Safety and conflict",
     kicker: "Life afterwards",
     standfirst: (
       <>
-        After a disaster, most people help the people around them.{" "}
-        <Cite id="KATRINA-MYTHS-08" /> Theft and violence still happen, and what
-        holds them down is mostly in place before the shaking: ties between
-        neighbours, accurate information, and plans that account for it.{" "}
-        <Cite id="LOOTING-REVIEW-25" />
+        A major earthquake stops the tap, the shop and the petrol station
+        together. <Cite id="PEIRS" /> What comparable disasters show is that
+        most people share what they have and help the people around them, and
+        that the trouble which does happen gathers in particular places.{" "}
+        <Cite id="KATRINA-MYTHS-08" />
       </>
     ),
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
+      "PEIRS",
       "KATRINA-MYTHS-08",
-      "LOOTING-REVIEW-25",
+      "MV-WATER-22",
+      "DCRRA-2025",
       "KATRINA-FRAMES-06",
       "DISASTER-MYTHS-08",
       "LOOTING-DEBATE-07",
@@ -47,12 +52,11 @@ export const safetyAndConflict: PageModule = {
       "CHILE-GUARDIAN-10",
       "CHILE-USGS-11",
       "KATRINA-ALGIERS-10",
+      "LOOTING-REVIEW-25",
       "KOBE-SOCIAL-10",
       "CHILE-CRIME-20",
       "CHILE-COHESION-17",
       "DRURY-19",
-      "DCRRA-2025",
-      "PEIRS",
       "PREPAREDBC",
       "PREPAREDBC-PLAN",
       "PREPAREDBC-NEIGHBOURHOOD",
@@ -60,6 +64,61 @@ export const safetyAndConflict: PageModule = {
   },
 
   sections: [
+    {
+      title: "What happens when the food and the water run out?",
+      body: (
+        <Prose>
+          <p>
+            Start with the week itself. The{" "}
+            <Link
+              href="/after/water/"
+              className="text-accent underline underline-offset-2"
+            >
+              tap
+            </Link>{" "}
+            gives nothing, because a magnitude 9 megathrust is modelled to break
+            267 water mains across the region and about 60 of those breaks are
+            at the crossings that take longest to reach.{" "}
+            <Cite id="MV-WATER-22" /> Distributing bulk drinking water across
+            the region stays difficult for the first four to five days.{" "}
+            <Cite id="DCRRA-2025" />
+          </p>
+          <p>
+            The corner shop is shut, and the supermarket that opens is selling
+            what is already on its shelves: the province expects the network
+            that delivers meat, fruit and vegetables, dairy and baked goods to
+            take weeks or months to recover, and the{" "}
+            <Link
+              href="/after/fuel/"
+              className="text-accent underline underline-offset-2"
+            >
+              fuel
+            </Link>{" "}
+            supply chains that move all of it to be inoperable.{" "}
+            <Cite id="PEIRS" /> The queue you join is for a water truck, and
+            what you know about where it is going came from a neighbour, because{" "}
+            <Link
+              href="/after/communications/"
+              className="text-accent underline underline-offset-2"
+            >
+              communications
+            </Link>{" "}
+            are expected to be disrupted for days to weeks, with what capacity
+            survives going to emergency personnel first. <Cite id="DCRRA-2025" />
+          </p>
+          <p>
+            That is the point at which people ask what their neighbours will do.
+            The answer from comparable disasters is that most of them will
+            respond positively and generously, and that the antisocial behaviour
+            which does occur is isolated rather than general.{" "}
+            <Cite id="KATRINA-MYTHS-08" /> The trouble that happens gathers in
+            particular places: at the queue, around a damaged shop, and inside a
+            rumour.
+          </p>
+        </Prose>
+      ),
+    },
+
     {
       title: "Most people expect a disaster to bring out the worst in people",
       body: (
@@ -97,12 +156,9 @@ export const safetyAndConflict: PageModule = {
             Studies of natural disasters since the 1950s found looting very rare.
             Where it happened it was covert and opportunistic, done by
             individuals or small groups, and condemned by the people around
-            them. <Cite id="LOOTING-DEBATE-07" /> Isolated cases of antisocial
-            behaviour tend to be what the news shows, while most people respond
-            positively and generously. <Cite id="KATRINA-MYTHS-08" /> Survivors
-            who face the same danger start to act as a group: they support each
-            other, coordinate what they do and expect help in return.{" "}
-            <Cite id="DRURY-18" />
+            them. <Cite id="LOOTING-DEBATE-07" /> Survivors who face the same
+            danger start to act as a group: they support each other, coordinate
+            what they do and expect help in return. <Cite id="DRURY-18" />
           </p>
           <p>
             After the Canterbury earthquakes of 2010 and 2011 in New Zealand,
@@ -235,35 +291,11 @@ export const safetyAndConflict: PageModule = {
             <Cite id="CHILE-USGS-11" />
           </p>
           <p>
-            A major earthquake here would bring the kind of shortages Chile’s
-            worst-hit areas went through.{" "}
-            <Link
-              href="/after/communications/"
-              className="text-accent underline underline-offset-2"
-            >
-              Communications
-            </Link>{" "}
-            are expected to be disrupted for days to weeks, with what capacity
-            survives going to emergency personnel first.{" "}
-            <Cite id="DCRRA-2025" /> The network that delivers{" "}
-            <Link
-              href="/after/food/"
-              className="text-accent underline underline-offset-2"
-            >
-              food
-            </Link>{" "}
-            is expected to take weeks or months to recover.{" "}
-            <Cite id="PEIRS" /> In a megathrust, the United States would be
-            unable to send{" "}
-            <Link
-              href="/after/outside-help/"
-              className="text-accent underline underline-offset-2"
-            >
-              help
-            </Link>
-            . <Cite id="PEIRS" /> What held conflict down elsewhere, neighbours
-            who know each other, information people trust and plans built on
-            cooperation, has to be in place before the shaking starts.
+            None of that is built in the week the water goes off. What a
+            household controls is the other half: two weeks of food and water is
+            the province’s own figure for an earthquake here,{" "}
+            <Cite id="PREPAREDBC" /> and it is the difference between waiting out
+            those first days at home and spending them in the queue.
           </p>
         </Prose>
       ),

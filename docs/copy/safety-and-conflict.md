@@ -3,11 +3,33 @@ route: /after/safety-and-conflict/
 title: Safety and conflict
 nav: Safety and conflict
 hook: After a disaster most people help the people around them, and theft and violence are the exception rather than the rule.
-lede: After a disaster, most people help the people around them. [KATRINA-MYTHS-08] Theft and violence still happen, and what holds them down is mostly in place before the shaking: ties between neighbours, accurate information, and plans that account for it. [LOOTING-REVIEW-25]
+lede: A major earthquake stops the tap, the shop and the petrol station together. [PEIRS] What comparable disasters show is that most people share what they have and help the people around them, and that the trouble which does happen gathers in particular places. [KATRINA-MYTHS-08]
 bands: none. No restoration time, so no band and no scenario split
 mechanism: Most people respond to a disaster by helping one another; theft and violence do happen, but as isolated cases the coverage tends to magnify, and nothing about them has a restoration time for a band to measure.
 source: KATRINA-MYTHS-08
 ---
+
+## What happens when the food and the water run out?
+
+Start with the week itself. The [tap](/after/water/) gives nothing, because a magnitude 9
+megathrust is modelled to break 267 water mains across the region and about 60 of those
+breaks are at the crossings that take longest to reach. [MV-WATER-22] Distributing bulk
+drinking water across the region stays difficult for the first four to five days.
+[DCRRA-2025]
+
+The corner shop is shut, and the supermarket that opens is selling what is already on its
+shelves: the province expects the network that delivers meat, fruit and vegetables, dairy
+and baked goods to take weeks or months to recover, and the [fuel](/after/fuel/) supply
+chains that move all of it to be inoperable. [PEIRS] The queue you join is for a water
+truck, and what you know about where it is going came from a neighbour, because
+[communications](/after/communications/) are expected to be disrupted for days to weeks,
+with what capacity survives going to emergency personnel first. [DCRRA-2025]
+
+That is the point at which people ask what their neighbours will do. The answer from
+comparable disasters is that most of them will respond positively and generously, and that
+the antisocial behaviour which does occur is isolated rather than general.
+[KATRINA-MYTHS-08] The trouble that happens gathers in particular places: at the queue,
+around a damaged shop, and inside a rumour.
 
 ## Most people expect a disaster to bring out the worst in people
 
@@ -28,10 +50,8 @@ evacuees in shelters feared being robbed there, or having their empty homes burg
 
 Studies of natural disasters since the 1950s found looting very rare. Where it happened it was
 covert and opportunistic, done by individuals or small groups, and condemned by the people
-around them. [LOOTING-DEBATE-07] Isolated cases of antisocial behaviour tend to be what the
-news shows, while most people respond positively and generously. [KATRINA-MYTHS-08] Survivors
-who face the same danger start to act as a group: they support each other, coordinate what
-they do and expect help in return. [DRURY-18]
+around them. [LOOTING-DEBATE-07] Survivors who face the same danger start to act as a group:
+they support each other, coordinate what they do and expect help in return. [DRURY-18]
 
 After the Canterbury earthquakes of 2010 and 2011 in New Zealand, overall crime in
 Christchurch fell, with domestic violence the notable exception, even though crime rose in
@@ -105,13 +125,10 @@ do as the first people on the scene. [DRURY-19] The looting in Chile surprised o
 lesson drawn for California was to make security for damaged businesses a priority in planning.
 [CHILE-USGS-11]
 
-A major earthquake here would bring the kind of shortages Chile's worst-hit areas went through.
-[Communications](/after/communications/) are expected to be disrupted for days to weeks, with
-what capacity survives going to emergency personnel first. [DCRRA-2025] The network that
-delivers [food](/after/food/) is expected to take weeks or months to recover. [PEIRS] In a
-megathrust, the United States would be unable to send [help](/after/outside-help/). [PEIRS]
-What held conflict down elsewhere, neighbours who know each other, information people trust and
-plans built on cooperation, has to be in place before the shaking starts.
+None of that is built in the week the water goes off. What a household controls is the other
+half: two weeks of food and water is the province's own figure for an earthquake here,
+[PREPAREDBC] and it is the difference between waiting out those first days at home and spending
+them in the queue.
 
 ## What you can do
 
@@ -136,7 +153,8 @@ started in other disasters: in queues, around damaged shops, and inside a rumour
 
 ## Sources on this page
 
-KATRINA-MYTHS-08, LOOTING-REVIEW-25, KATRINA-FRAMES-06, DISASTER-MYTHS-08, LOOTING-DEBATE-07,
-JAPAN-SHELTERS-18, DRURY-18, CHCH-CRIME-16, CHCH-RESILIENCE-14, CHILE-GUARDIAN-10,
-CHILE-USGS-11, KATRINA-ALGIERS-10, KOBE-SOCIAL-10, CHILE-CRIME-20, CHILE-COHESION-17, DRURY-19,
-DCRRA-2025, PEIRS, PREPAREDBC, PREPAREDBC-PLAN, PREPAREDBC-NEIGHBOURHOOD
+PEIRS, KATRINA-MYTHS-08, MV-WATER-22, DCRRA-2025, KATRINA-FRAMES-06, DISASTER-MYTHS-08,
+LOOTING-DEBATE-07, JAPAN-SHELTERS-18, DRURY-18, CHCH-CRIME-16, CHCH-RESILIENCE-14,
+CHILE-GUARDIAN-10, CHILE-USGS-11, KATRINA-ALGIERS-10, LOOTING-REVIEW-25, KOBE-SOCIAL-10,
+CHILE-CRIME-20, CHILE-COHESION-17, DRURY-19, PREPAREDBC, PREPAREDBC-PLAN,
+PREPAREDBC-NEIGHBOURHOOD
