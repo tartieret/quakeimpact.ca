@@ -3,6 +3,7 @@ import { Libre_Franklin, JetBrains_Mono } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteJsonLd } from "@/components/structured-data";
+import { Analytics } from "@/components/analytics";
 import { SITE } from "@/content/site";
 import "./globals.css";
 
@@ -84,6 +85,7 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <SiteJsonLd />
+        <Analytics />
       </body>
     </html>
   );
