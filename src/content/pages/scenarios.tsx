@@ -367,59 +367,21 @@ export const scenarios: PageModule = {
     },
 
     {
-      title: "Estimates of how often Cascadia ruptures vary",
+      title: "Cascadia ruptures centuries apart, but not on a schedule",
       body: (
         <Prose>
-          <DataTable
-            caption="Four current estimates of the average interval between Cascadia ruptures, with the range around each average."
-            columns={["Source", "Average interval", "Stated range"]}
-            minWidth="34rem"
-            rows={[
-              [
-                <>
-                  Natural Resources Canada <Cite id="NRCAN-QA" />
-                </>,
-                "500 to 600 years",
-                "200 to 800 years",
-              ],
-              [
-                <>
-                  Geological Survey of Canada, 2004 <Cite id="MAZZOTTI-04" />
-                </>,
-                "about 600 years, give or take 30",
-                "215 to 1,500 years",
-              ],
-              [
-                <>
-                  BC’s risk and resilience assessment, 2025{" "}
-                  <Cite id="DCRRA-2025" />
-                </>,
-                "400 to 500 years",
-                "200 to 1,000 years",
-              ],
-              [
-                <>
-                  BC’s earthquake response strategy <Cite id="PEIRS" />
-                </>,
-                "400 to 500 years",
-                "100 to 1,100 years",
-              ],
-            ]}
-          />
           <p>
-            The federal agency gives a longer average than the province does.
-            All four estimates are current and official.
+            Official estimates put the average interval between Cascadia
+            ruptures at roughly 400 to 600 years. The ranges around those
+            estimates are much wider, from about a century to more than 1,000
+            years. An average cannot tell us when the next rupture will happen.{" "}
+            <Cite id="NRCAN-QA" /> <Cite id="PEIRS" />
           </p>
           <p>
-            For the northern end of the fault, or a full rupture, one estimate
-            puts the chance at 7 to 12 per cent in the next 50 years.{" "}
-            <Cite id="GOLDFINGER-12" /> A separate federal estimate gives a
-            median of about 5 per cent over the same period.{" "}
-            <Cite id="MAZZOTTI-04" /> British Columbia’s 2025 assessment uses a
-            10 to 20 per cent band, with 3 per cent over 10 years and 9 per cent
-            over 30. <Cite id="DCRRA-2025" /> The federal and provincial
-            estimates were published 21 years apart and differ by a factor of
-            two to four.
+            Current estimates put the chance of a rupture at the northern end
+            of the fault, or a full-fault rupture, at roughly 5 to 20 per cent
+            over the next 50 years. <Cite id="MAZZOTTI-04" />{" "}
+            <Cite id="DCRRA-2025" />
           </p>
           <p>
             A higher figure, about 37 per cent in the next 50 years, circulates
