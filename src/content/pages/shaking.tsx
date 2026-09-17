@@ -109,8 +109,9 @@ export const shaking: PageModule = {
         <div className="flex flex-col gap-8">
           <Prose>
             <p>
-              Two recordings from inside buildings during large earthquakes.
-              They show how fast the shaking arrives and how long it lasts.
+              Most people in Metro Vancouver have never felt a major
+              earthquake. These two recordings show how fast the shaking
+              arrives and how long it lasts.
             </p>
           </Prose>
           <div className="grid gap-6 md:grid-cols-2">

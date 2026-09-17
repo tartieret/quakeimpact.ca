@@ -61,6 +61,10 @@ somebody acts on it. Every claim still rests on a source, but:
   the place and the year, then let it stand: no "this is not a forecast", no "but
   conditions here differ". The rule that stays is that an analogue may not produce a
   number.
+- The site has a position and may state it. The province's plans expect households to
+  look after themselves before help arrives, and most have not; saying that the region
+  is not ready, or that leaving dependents with nothing set aside is irresponsible, is
+  a conclusion the record supports. Aim it at the situation, not at the reader.
 
 `docs/style-guide.md` §1, §3, §5 and §6 have the detail.
 

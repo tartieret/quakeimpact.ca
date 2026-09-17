@@ -14,6 +14,8 @@ If a reader finishes a page frightened but with nothing to do, the page has fail
 
 **The point is that somebody prepares.** Added 17 September 2026 by the site's owner. Sourcing is how this site earns the right to be believed. It is not what the site is for. A reader who closes the page satisfied that the references were impeccable and does nothing is the failure case, the same as a reader who closes it frightened. Write for what it does to behaviour: what goes wrong, what that is like to live through, and what to do about it now. A page may say the water could be out for weeks and that a week without it in August is a serious problem, because that is the sentence that puts water in somebody's cupboard.
 
+**The site has a position and may state it.** Added 17 September 2026 by the site's owner. "Not alarm, not reassurance" is about the register, not a vow of neutrality. The province's own plans expect households to look after themselves for a period before help reaches them, and most households here have not done it. A site that reports both and declines to draw the conclusion is being coy with its reader. So the copy may say that the region is not ready, that public awareness is thinner than the plans assume, and that leaving the people who depend on you with nothing set aside is a choice rather than bad luck. A judgement rests on the record the same way a number does: it follows from what the documents say, it is written in the site's own voice, and it is never put in the mouth of a document that did not say it.
+
 **This is general information, not a bibliography.** Revised 14 September 2026 by the site's owner. A page gives a reader a representative picture of what a major earthquake does to the place they live: roughly how long, roughly how bad, and what depends on what. No scenario is the scenario, and no published estimate is a forecast for a given street, so a sentence that reproduces every qualifier in its source is not more true for the reader, only harder to read. Be accurate where accuracy changes what the reader understands or does. Where it does not, the general idea is enough, and the source is one marker away.
 
 ---
@@ -38,7 +40,7 @@ Fear appeals work only when paired with efficacy: a specific action the reader b
 - **Say the likely thing plainly.** Added 17 September 2026 by the site's owner. Much of this is not certain and will not become certain before the earthquake. Where preparing for something is the responsible response, say so, and do not follow it with a sentence explaining that the future is uncertain. The rules on uncertainty are about numbers, durations and places (§6). They are not a reason to write as though the site had no view on what people should get ready for.
 - **Every section carries its lever.** Every long page ends with a `Lever` block, enforced in code. It is what makes the rest of the page usable.
 - **Certainty about the hazard is persuasive; certainty about the outcome is not.** We can say the recurrence interval is known. We cannot say what will happen to your street.
-- **No countdowns and no urgency devices.** "Overdue", "the big one is coming", "when, not if", "act now", an email capture on a fear hook: these read as marketing. The dates and intervals speak for themselves, and nothing on this site should look like it is selling something.
+- **No countdowns and no urgency devices.** "Overdue", "the big one is coming", "when, not if", "act now", an email capture on a fear hook: these read as marketing. The dates and intervals speak for themselves, and nothing on this site should look like it is selling something. A judgement is not an urgency device. "The plans assume households can look after themselves for a while, and most cannot" is a statement about the world; "act now, before it is too late" is a technique.
 
 We are in the business of making a slow, boring, structural problem legible enough that people act on it.
 
@@ -49,6 +51,8 @@ We are in the business of making a slow, boring, structural problem legible enou
 **Plain, calm, specific.** The tone of a good engineer explaining something to a neighbour over a fence. Not a press release, a documentary voiceover or a public service announcement. Name the thing: the pipe, the substation, the bridge approach.
 
 **Short sentences carry hard facts.** When the content is heavy, the prose gets simpler, not more elaborate.
+
+**Aim a judgement at the situation rather than at the reader.** Added 17 September 2026. "Most households here have nothing set aside, and the plans assume otherwise" and "you are being naive" are the same judgement, and only one of them is still being read at the end of the sentence. This is craft rather than softening: §3's finding is that a reader who feels accused stops listening, and the judgement is worth more than the satisfaction of aiming it at somebody. Second person belongs on the action, where it always did: keep water for the people in your house.
 
 **No second-person catastrophising.** "You" is fine for actions ("keep two weeks of water") and wrong for outcomes ("your building will be tagged").
 
