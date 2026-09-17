@@ -68,19 +68,15 @@ Three limits, and they are about the reader rather than about the register:
    all four read off the source page and recorded in the register below. The
    same discipline every dataset goes through in `licensing.md`.
 
-**Say where it is, and anchor it to here.** A photograph of a New Zealand street
-files itself mentally as somewhere else and stops working. The caption names the
-ground under the camera and the Metro Vancouver ground it stands for, so the
-reader finishes thinking about Richmond rather than about Christchurch.
-
-**The anchor belongs to the run, not to every caption in it.** Where photographs
-sit together, one carries the anchor and the rest join on. The worked example is
-the pair on `/shaking/ground/`: the first names Richmond and Delta, the second
-opens on "the same earthquake", and the two read as one unit. Repeating the
-anchor under each picture, or repeating the analogue rule under each picture,
-stops being discipline and becomes the tic `style-guide.md` §4 describes — which
-is why the analogue rule lives in this file and on `/licences/` rather than under
-every photograph.
+**Say where it is and when, and stop there.** Extended site-wide on 17 September
+2026 by the site's owner, from the `/after/` decision of 13 September below. A
+caption names the place and the date, says what is in the frame, and may carry a
+sourced fact about the thing photographed. It does not anchor the picture to
+Metro Vancouver, say what does not carry across, or explain what the photograph
+is for. A reader looking at a Christchurch street can see it is not Richmond,
+and a picture is on the page because the mechanism in it is one that happens
+here. `style-guide.md` §4 has the rule in the site's voice: an example from
+somewhere else is evidence, not a liability.
 
 **A photograph may not generate a claim.** This is the site's standing rule
 about analogues — `style-guide.md` §10, question 8 — and it bites hardest here,
@@ -90,17 +86,14 @@ looks like. The depth of the silt, the number of streets, the time it took to
 clear: none of it transfers. The photograph carries the mechanism and the
 numbers stay with the documents that publish them.
 
-**On `/after/`, a caption states facts and nothing else.** Decided 13 September
-2026 by the site's owner, after captions on the system pages had each grown a
-closing sentence on what does not carry across to Metro Vancouver. The reader
-knows a photograph from Kobe is not a forecast for Richmond, and saying so under
-every picture was the tic `style-guide.md` §4 describes. A caption on `/after/`
-names the place and the date, says what is in the frame, and may carry a sourced
-fact about the thing photographed. It does not anchor to Metro Vancouver, say
-what does not transfer, or explain what the photograph is for. The rule that a
-photograph may not generate a claim still holds: it is kept by leaving claims
-out of the caption, not by disclaiming them. The anchor rule above still applies
-on `/shaking/`.
+**A caption states facts and nothing else.** Decided 13 September 2026 by the
+site's owner for `/after/`, after captions on the system pages had each grown a
+closing sentence on what does not carry across to Metro Vancouver, and extended
+to every page on 17 September. The reader knows a photograph from Kobe is not a
+forecast for Richmond, and saying so under every picture was the tic
+`style-guide.md` §4 describes. The rule that a photograph may not generate a
+claim still holds, and it is kept by leaving claims out of the caption rather
+than by disclaiming them.
 
 ---
 
@@ -125,13 +118,10 @@ A video that only shows what a photograph already shows is decoration.
 
 **The three limits hold. The disclaimer does not.** No casualties, no
 identifiable person in distress, nothing standing in for a claim the prose
-cannot make. A video may not generate a claim any more than a photograph may —
-but that rule is kept by leaving claims out of the text, not by writing under
-the videos that Anchorage is not Vancouver. Decided 17 September 2026 by the
-site's owner, extending the decision of 13 September about captions on
-`/after/`: the reader knows a recording from Sendai is an example. A video
-names its earthquake and its city and stops. The anchoring rule for
-photographs on `/shaking/` is unchanged; this covers video.
+cannot make. A video may not generate a claim any more than a photograph may,
+and that is kept by leaving claims out of the text rather than by writing under
+the videos that Anchorage is not Vancouver. A video names its earthquake and
+its city and stops, like every caption on the site since 17 September 2026.
 
 **What the component fixes** (`src/components/video.tsx`): the
 `youtube-nocookie.com` host, no autoplay parameter and no autoplay permission,

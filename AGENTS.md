@@ -41,8 +41,11 @@ worse than none. Assumptions are research tasks: they go in
 
 ## General information, not a bibliography
 
-The copy gives a reader a representative picture of what a major earthquake does,
-not a reproduction of its sources. Every claim still rests on a source, but:
+This is a public website whose job is to get people ready for an earthquake, and
+the references are what make it worth believing rather than what it is for. The
+copy gives a reader a representative picture of what a major earthquake does, in
+the order they would meet it, with enough of what it is like to live through that
+somebody acts on it. Every claim still rests on a source, but:
 
 - Write at the order of magnitude the source supports. "Two to three weeks in some
   scenarios" can be "several weeks". Don't change the order of magnitude, the
@@ -51,8 +54,15 @@ not a reproduction of its sources. Every claim still rests on a source, but:
   source's own words carry the point.
 - Drop qualifiers that only say a figure is uncertain or comes from one scenario.
   Keep the ones that change what a reader should take away.
+- A sentence carrying no number, duration or place is framing, not a claim, and
+  needs no marker. Say the likely thing plainly where preparing for it is the
+  responsible response.
+- An example from a past event elsewhere is evidence that this is not theory. Name
+  the place and the year, then let it stand: no "this is not a forecast", no "but
+  conditions here differ". The rule that stays is that an analogue may not produce a
+  number.
 
-`docs/style-guide.md` §1, §5 and §6 have the detail.
+`docs/style-guide.md` §1, §3, §5 and §6 have the detail.
 
 ## Accessibility is a requirement, not a pass at the end
 
