@@ -104,6 +104,52 @@ on `/shaking/`.
 
 ---
 
+## Video
+
+Added 17 September 2026. `/shaking/` carries two videos recorded inside
+buildings during large earthquakes, embedded from YouTube. They are the only
+thing on the site that loads from another host.
+
+**Why an embed rather than a file.** The rule in `licensing.md` is unchanged:
+where a licence is unconfirmed, link out rather than reproduce. Footage of a
+real earthquake is somebody's, the terms are not stated, and the site has no
+grounds to serve a copy. An embed is the link, playing in place; the file stays
+with its owner and each card links to the video's own page.
+
+**Why a video earns its place.** The same test as a photograph, widened by one
+thing only: a video carries a rate, and the rate is the point. How fast the
+shaking arrives decides whether "drop, cover and hold on" is advice or a
+reflex, and how long it goes on is the difference between a Georgia Strait
+earthquake and a Cascadia one. Neither is available in a still or a drawing.
+A video that only shows what a photograph already shows is decoration.
+
+**The three limits hold, and the anchor rule holds.** No casualties, no
+identifiable person in distress, nothing standing in for a claim the prose
+cannot make. A video may not generate a claim any more than a photograph may:
+it shows what shaking does to a room somewhere else, and nothing about a
+building here follows from it. The section's opening paragraph carries that,
+once, for both videos.
+
+**What the component fixes** (`src/components/video.tsx`): the
+`youtube-nocookie.com` host, no autoplay parameter and no autoplay permission,
+a `title` on the frame so it is not an unlabelled region, lazy loading, and a
+16:9 frame at every width. A reader should not pay for reading with a tracking
+cookie, and a page about an earthquake should not start shouting at someone who
+scrolls past it.
+
+| Video | Shows | Page |
+| --- | --- | --- |
+| `NJZqREPc9k0` — inside an Anchorage classroom | Fixed camera, magnitude 7.0 at Anchorage, 2018. Shaking reaches full strength in seconds. | `/shaking/` |
+| `heh5ITmYbRs` — inside the Sendai Mediatheque | Magnitude 9.1 off northeast Japan, 2011, in a modern building. Minutes of shaking, ceilings and suspended fixtures moving. | `/shaking/` |
+
+Both were supplied by the site's owner on 17 September 2026 and their content
+is described from that brief. Neither host page has been opened from the build
+environment, which reaches no external network, so the uploader and any stated
+terms are unrecorded. Recording them is a task in
+`research/open-questions.md`.
+
+---
+
 ## Status, and what it takes to change it
 
 | Status | Meaning |

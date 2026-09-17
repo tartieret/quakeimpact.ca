@@ -145,6 +145,13 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     City. The page's other unverified claims are listed in `social-disorder.md`.
 29. **A family violence support route that still works when phones do not.** Untested.
     The lever on `/after/safety-and-conflict/` names no service until one is identified.
+30. **The uploaders and stated terms of the two videos embedded on `/shaking/`.**
+    Untested: the session that added them had no network route to the host, so the
+    two host pages were never opened. They are embedded rather than reproduced, which
+    is what `../licensing.md` asks for where a licence is unconfirmed, so nothing on
+    the page waits on this. What is wanted is the row `../media.md` §"Video" leaves
+    empty: who uploaded each one, and whether either states terms of its own. Also
+    unchecked against the three limits by anyone who has watched them.
 
 ---
 

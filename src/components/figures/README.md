@@ -20,6 +20,15 @@ Read `water.tsx` next to this file alongside the rules.
 4. **A figure is not exempt from WCAG AA** because it is a graphic. Text inside
    an SVG is text, and the finding must be available without the picture.
 
+**A video is not a figure either, and it is the one place rule 2 gives way.**
+Since 17 September 2026 `/shaking/` carries two, embedded from YouTube by
+`components/video.tsx`. A photograph can be hosted; footage of a real earthquake
+cannot, because the site has no licence to serve a copy, and `docs/licensing.md`
+answers an unconfirmed licence by linking out. The embed is that link. What the
+component holds instead of rule 2 — the no-cookie host, no autoplay, a named
+frame — is in `docs/media.md` §"Video", and nothing in this file's kit is
+involved.
+
 **A photograph is not a figure and nothing here applies to it.** Since 12
 September 2026 the site carries two, on `/shaking/ground/`, under the test in
 `docs/style-guide.md` §8: a photograph shows a mechanism the page has described

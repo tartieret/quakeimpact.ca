@@ -149,6 +149,7 @@ export default function LicencesPage() {
             "Metro Vancouver’s seismic microzonation maps cannot be republished commercially without written approval from the Institute for Catastrophic Loss Reduction. The restriction also covers statements and conclusions drawn from the maps. The ground conditions page links to them.",
             "The maps describe regional ground conditions, not individual properties. A site investigation is needed to assess a specific building.",
             "The provincial hazard tool, the regional Disaster Response Route map and most cited reports state no licence. QuakeImpact reports facts from them with credit and a link, but does not copy or adapt their wording, tables, figures or maps.",
+            "The two earthquake videos on the shaking page are embedded from YouTube, not hosted or reproduced here. The rights stay with whoever uploaded them, each card links to the video’s own page, and the embeds use the privacy-enhanced host and do not play by themselves.",
           ]}
         />
       </Section>

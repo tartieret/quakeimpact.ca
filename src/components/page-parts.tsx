@@ -372,3 +372,5 @@ export {
 } from "./prose-blocks";
 
 export { Photograph } from "./photograph";
+
+export { VideoEmbed } from "./video";
