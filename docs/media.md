@@ -123,12 +123,15 @@ reflex, and how long it goes on is the difference between a Georgia Strait
 earthquake and a Cascadia one. Neither is available in a still or a drawing.
 A video that only shows what a photograph already shows is decoration.
 
-**The three limits hold, and the anchor rule holds.** No casualties, no
+**The three limits hold. The disclaimer does not.** No casualties, no
 identifiable person in distress, nothing standing in for a claim the prose
-cannot make. A video may not generate a claim any more than a photograph may:
-it shows what shaking does to a room somewhere else, and nothing about a
-building here follows from it. The section's opening paragraph carries that,
-once, for both videos.
+cannot make. A video may not generate a claim any more than a photograph may —
+but that rule is kept by leaving claims out of the text, not by writing under
+the videos that Anchorage is not Vancouver. Decided 17 September 2026 by the
+site's owner, extending the decision of 13 September about captions on
+`/after/`: the reader knows a recording from Sendai is an example. A video
+names its earthquake and its city and stops. The anchoring rule for
+photographs on `/shaking/` is unchanged; this covers video.
 
 **What the component fixes** (`src/components/video.tsx`): the
 `youtube-nocookie.com` host, no autoplay parameter and no autoplay permission,

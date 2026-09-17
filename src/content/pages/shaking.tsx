@@ -29,6 +29,11 @@ import type { PageModule } from "./index";
  * rather than lead it: a reader who has just been told to drop, cover and hold
  * on can see why there is no time to do anything else. `docs/media.md` has the
  * position and `components/video.tsx` the mechanics.
+ *
+ * The section says what the videos show and stops. Each card names the
+ * earthquake and the city, and a reader knows Anchorage is not Vancouver
+ * without being told; the owner's decision of 13 September 2026 about captions
+ * on `/after/` applies here too (`docs/media.md`).
  */
 export const shaking: PageModule = {
   meta: {
@@ -104,11 +109,8 @@ export const shaking: PageModule = {
         <div className="flex flex-col gap-8">
           <Prose>
             <p>
-              Two recordings from inside buildings during large earthquakes
-              elsewhere. They are here for the one thing a sentence cannot
-              give: how fast the shaking arrives, and how long it goes on.
-              What a particular building in Metro Vancouver would do is not in
-              them.
+              Two recordings from inside buildings during large earthquakes.
+              They show how fast the shaking arrives and how long it lasts.
             </p>
           </Prose>
           <div className="grid gap-6 md:grid-cols-2">
