@@ -153,11 +153,6 @@ export const fireFollowing: PageModule = {
             concentration in the central business district.{" "}
             <Cite id="DCRRA-2025" />
           </p>
-          <p>
-            The city has burned before, without any help from an earthquake. The
-            Great Vancouver Fire of 1886 killed 21 people and destroyed 600 to
-            1,000 buildings. <Cite id="SCAWTHORN-2020" />
-          </p>
         </Prose>
       ),
     },

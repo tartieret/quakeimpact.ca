@@ -19,9 +19,6 @@ Almost half of the fires an earthquake would start anywhere in British Columbia 
 start in Metro Vancouver, with the heaviest concentration in the central business
 district. [DCRRA-2025]
 
-The city has burned before, without any help from an earthquake. The Great Vancouver
-Fire of 1886 killed 21 people and destroyed 600 to 1,000 buildings. [SCAWTHORN-2020]
-
 ## A hydrant is the end of a buried pipe
 
 A fire engine does not carry much water. It carries enough to get started, and then it
