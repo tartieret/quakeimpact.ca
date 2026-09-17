@@ -11,11 +11,9 @@ lede: The shaking stops, and that is when the fires start. Many of them, in ordi
 They start in the wiring behind the walls and the gas lines behind the appliances.
 About half of the ignitions in the
 Lower Mainland modelling are electrical and about a quarter gas-related.
-[SCAWTHORN-2020] About half begin in single-family houses and another 26 per cent in
-apartments, and the study's own summary is that "about 70% of all ignitions occur in
-residential occupancies". [SCAWTHORN-2020] That split was not measured here: it applies
-counts from the 1994 Northridge earthquake in California, in the United States, to this
-region. [SCAWTHORN-2020]
+[SCAWTHORN-2020] About 70 per cent of them are in homes and apartments, a pattern the
+modelling takes from what was counted after the 1994 Northridge earthquake in
+California, in the United States. [SCAWTHORN-2020]
 
 Almost half of the fires an earthquake would start anywhere in British Columbia would
 start in Metro Vancouver, with the heaviest concentration in the central business
