@@ -15,10 +15,6 @@ Lower Mainland modelling are electrical and about a quarter gas-related.
 modelling takes from the 1994 Northridge earthquake in California, in the United States.
 [SCAWTHORN-2020]
 
-Almost half of the fires an earthquake would start anywhere in British Columbia would
-start in Metro Vancouver, with the heaviest concentration in the central business
-district. [DCRRA-2025]
-
 ## A hydrant is the end of a buried pipe
 
 A fire engine does not carry much water. It carries enough to get started, and then it
@@ -225,7 +221,7 @@ minutes is one nobody has to cross a broken city to reach.
 
 ## Sources on this page
 
-[SCAWTHORN-2020] [DCRRA-2025] [PEIRS] [COV-PREPARES] [COV-DFPS-2001] [COV-DFPS-DATA]
+[SCAWTHORN-2020] [PEIRS] [DCRRA-2025] [COV-PREPARES] [COV-DFPS-2001] [COV-DFPS-DATA]
 [VIA-HYDRANTS] [COV-EXPLORER-25] [VBBL-2025] [COV-OAKRIDGE-FE] [COV-1489WB]
 [COV-600ROBSON] [COV-CAP-2730] [COV-CAP-1922] [COV-CAP-2326] [BBY-FS8] [DNV-NORGATE]
 [RICH-CSC-2026-03] [CNV-CAPITAL-26]

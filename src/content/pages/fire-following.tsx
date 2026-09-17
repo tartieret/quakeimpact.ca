@@ -111,8 +111,8 @@ export const fireFollowing: PageModule = {
      */
     references: [
       "SCAWTHORN-2020",
-      "DCRRA-2025",
       "PEIRS",
+      "DCRRA-2025",
       "COV-PREPARES",
       "COV-DFPS-2001",
       "COV-DFPS-DATA",
@@ -146,12 +146,6 @@ export const fireFollowing: PageModule = {
             homes and apartments, a share the modelling takes from the 1994
             Northridge earthquake in California, in the United States.{" "}
             <Cite id="SCAWTHORN-2020" />
-          </p>
-          <p>
-            Almost half of the fires an earthquake would start anywhere in
-            British Columbia would start in Metro Vancouver, with the heaviest
-            concentration in the central business district.{" "}
-            <Cite id="DCRRA-2025" />
           </p>
         </Prose>
       ),
