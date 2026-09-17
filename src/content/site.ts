@@ -296,7 +296,12 @@ export const SYSTEMS: SystemEntry[] = [
     hook: "Fresh food depends on regular deliveries.",
     bitesAt: "days",
     tier: 2,
-    dependsOn: ["transportation", "fuel", "electricity", "large-infrastructure"],
+    dependsOn: [
+      "transportation",
+      "fuel",
+      "electricity",
+      "large-infrastructure",
+    ],
     impacts: bothScenarios(
       ["high", "high"],
       "The province expects delivery networks for food and household supplies to take weeks or months to recover.",
@@ -433,7 +438,7 @@ export const SHAKING_PAGES: {
   {
     slug: "fire-following",
     name: "Fire following",
-    hook: "Broken gas lines can start fires while damaged water mains leave hydrants dry.",
+    hook: "The shaking stops, and that is when the fires start. Many of them, in ordinary homes, in a city where the hydrants have just run dry.",
   },
   {
     slug: "landslides",
@@ -507,7 +512,8 @@ export const UTILITY_NAV: NavItem[] = [
 ];
 
 /** The part at a given top-level href, for a page that sits inside it. */
-export const navSection = (href: string) => NAV.find((item) => item.href === href);
+export const navSection = (href: string) =>
+  NAV.find((item) => item.href === href);
 
 /**
  * Every page the site exports, in reading order, as the sitemap lists them.

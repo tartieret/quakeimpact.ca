@@ -2,26 +2,29 @@
 route: /shaking/fire-following/
 title: Fire following
 nav: Fire following
-hook: Broken gas lines can start fires while damaged water mains leave hydrants dry.
-lede: Earthquake fires can start as broken water mains leave hydrants dry. A Lower Mainland study found far greater losses from the nearby crustal earthquake than from the offshore megathrust.
+hook: The shaking stops, and that is when the fires start. Many of them, in ordinary homes, in a city where the hydrants have just run dry.
+lede: The fires start in the wiring and the gas lines of ordinary homes, in many buildings at the same time. The engines that answer carry enough water to get started and then need a hydrant, on streets where the mains have broken, and every department is holding on to its own crews.
 ---
 
-## Fires start as the shaking ends
+## The fires start in ordinary homes
 
-Fires after an earthquake do not start in one place. They start in many buildings at
-once, in the ordinary things that run through a home. In the modelling for the Lower
-Mainland, about half of the ignitions are electrical and about a quarter gas-related.
-[SCAWTHORN-2020] About half begin in single-family houses and another 26 per cent in apartments. The study's own summary is that "about 70% of all ignitions occur in residential occupancies".
-[SCAWTHORN-2020] That split applies counts from the 1994 Northridge earthquake in California, in the United States, to this region. It was not measured here. [SCAWTHORN-2020]
+They start in the wiring behind the walls and the gas lines behind the appliances, and
+mostly where people live rather than where they work. About half of the ignitions in the
+Lower Mainland modelling are electrical and about a quarter gas-related.
+[SCAWTHORN-2020] About half begin in single-family houses and another 26 per cent in
+apartments, and the study's own summary is that "about 70% of all ignitions occur in
+residential occupancies". [SCAWTHORN-2020] That split was not measured here: it applies
+counts from the 1994 Northridge earthquake in California, in the United States, to this
+region. [SCAWTHORN-2020]
 
 Almost half of the fires an earthquake would start anywhere in British Columbia would
 start in Metro Vancouver, with the heaviest concentration in the central business
 district. [DCRRA-2025]
 
-The city has been here before, without an earthquake. The Great Vancouver Fire of 1886
-"killed 21 and destroyed 600~1,000 buildings". [SCAWTHORN-2020]
+The city has burned before, without any help from an earthquake. The Great Vancouver
+Fire of 1886 killed 21 people and destroyed 600 to 1,000 buildings. [SCAWTHORN-2020]
 
-## Broken water mains leave hydrants dry
+## A hydrant is the end of a buried pipe
 
 A fire engine does not carry much water. It carries enough to get started, and then it
 connects to a hydrant. The hydrant is the end of a buried pipe, and buried pipe is what
@@ -34,15 +37,16 @@ earthquakes the fire loss is driven "primarily due to lack of water for firefigh
 [SCAWTHORN-2020] Why the mains break, and how long they take to fix, is on the
 [water page](/after/water/).
 
-## Mutual aid waits on bridge inspections
+## When a city runs short, it calls its neighbours
+
+When a department runs out of engines it calls the next department along. In the first
+hours, that is expected to fail.
 
 There are 98 fire halls in the study area and roughly 200 fire engines available for
-immediate firefighting. [SCAWTHORN-2020] When a city runs short, it calls its
-neighbours. That is expected to fail in the first hours. Every department will be
-holding on to its own crews, help from further away in the Lower Mainland is several
-hours of travel, and "The Fraser and other rivers are all barriers if bridges are
-impassable, which they will be at least initially due to the need to inspect for
-damage." [SCAWTHORN-2020]
+immediate firefighting. [SCAWTHORN-2020] Every department will be holding on to its own
+crews, help from further away in the Lower Mainland is several hours of travel, and "The
+Fraser and other rivers are all barriers if bridges are impassable, which they will be at
+least initially due to the need to inspect for damage." [SCAWTHORN-2020]
 
 Most engines in the study area, Burnaby's among them, carry 4 inch large-diameter hose
 while Vancouver Fire Rescue Services uses 5 inch hose, and they "lack adapters,
@@ -53,8 +57,9 @@ Phone systems "will sustain some damage but not enough to reduce functionality".
 problem is how many people call at once. "Saturation, especially of the 911 system, will
 reduce functionality to a great degree, for several hours or more." [SCAWTHORN-2020]
 
-## The nearer earthquake produces greater fire losses
+## The bigger earthquake is not the worse fire
 
+A bigger earthquake does not mean a bigger fire.
 The modelled fire loss for the magnitude 9.0 Cascadia earthquake is $162 million. For a
 magnitude 7.3 crustal earthquake in the Georgia Strait, close to downtown, it is $10.7
 billion, about 66 times as much. [SCAWTHORN-2020]
@@ -79,23 +84,20 @@ See [buildings](/shaking/buildings/).
 | M7.3 Leech River–Devil's Mountain |             4 |      $0.01 billion |
 | M7.3 Georgia Strait crustal       |           216 |      $10.7 billion |
 
-Those figures are median estimates, and the study says so: "These are median estimates —
-there are significant probabilities of greater or less damage." [SCAWTHORN-2020] They
-count fire damage only, and the federal scenario studies of building damage count
-everything except fire, so the two sets of numbers are complements and adding them would
-be wrong. [SCAWTHORN-2020]
-
-The earthquakes are the ones Natural Resources Canada selected, but "the NRCan estimates
-of ground motion were not available for this study; therefore, this study performed its
-own estimates of ground motion", so this is work aligned with the federal studies rather
-than part of them. [SCAWTHORN-2020] It leaves out gas and fuel transmission line breaks,
-the vulnerability of energy facilities, and what a winter storm would do to the response.
-[SCAWTHORN-2020]
-
-The study sets the limit of its own method. Fire following an earthquake "is a highly
-non-linear process, modelling of which does not have great precision and is such that in
-many cases the only clear result is differentiation between situations of a few small
-fires, versus major conflagration." [SCAWTHORN-2020]
+> **What these numbers count.** They are medians: "These are median estimates — there
+> are significant probabilities of greater or less damage." [SCAWTHORN-2020] They count
+> fire damage only, and the federal scenario studies of building damage count everything
+> except fire, so the two sets of numbers are complements and adding them would be wrong.
+> [SCAWTHORN-2020] The earthquakes are the ones Natural Resources Canada selected, but
+> "the NRCan estimates of ground motion were not available for this study; therefore,
+> this study performed its own estimates of ground motion", so this is work aligned with
+> the federal studies rather than part of them. [SCAWTHORN-2020] It leaves out gas and
+> fuel transmission line breaks, the vulnerability of energy facilities, and what a
+> winter storm would do to the response, and it sets the limit of its own method: fire
+> following an earthquake "is a highly non-linear process, modelling of which does not
+> have great precision and is such that in many cases the only clear result is
+> differentiation between situations of a few small fires, versus major conflagration."
+> [SCAWTHORN-2020]
 
 The province's planning scenario says fires following an earthquake in Vancouver "could
 cause an additional $10 billion in damage" [PEIRS] and the provincial risk assessment
@@ -104,8 +106,10 @@ earthquake to more than $10 billion if an M7.3 shallow crustal earthquake happen
 Georgia Strait". [DCRRA-2025] Both are quoting the same study. They are one finding
 stated twice, not two that agree.
 
-## Downtown has a separate fire-fighting water system
+## Downtown has a second water system, and its hydrants are blue
 
+There is a second set of water pipes under part of Vancouver, built for nothing but
+fires, and it can draw straight out of the harbour.
 The Dedicated Fire Protection System is a $52 million network of two saltwater pumping
 stations and its own earthquake-resistant pipeline, serving the downtown peninsula, the
 West End, Fairview Slopes and Kitsilano. [COV-PREPARES] The first pump station opened at
@@ -132,9 +136,10 @@ neighbourhood check on vancouver.ca tells a resident which side of the line they
 The blue hydrants are the only part of the description a reader can act on, and they
 arrive without the geography beside them.
 
-## High-rise sprinklers still depend on water mains
+## A sprinkler head is fed from the street
 
-New construction in Vancouver has to be sprinklered. "However, sprinklers rely on
+New construction in Vancouver has to be sprinklered. A sprinkler is a pipe with water in
+it, and the water comes up from the main under the road. "However, sprinklers rely on
 underground water mains for supply, which are likely to fail in a major earthquake."
 [SCAWTHORN-2020]
 
@@ -156,9 +161,9 @@ for 600 Robson Street label a "SECONDARY WATER SUPPLY ROOM" on the second parkin
 [COV-600ROBSON] None of it has ever been required, and none of it has been tied to an
 earthquake.
 
-## Most fire halls predate the post-disaster standard
+## The engines have to get out of the hall first
 
-Vancouver has 19 fire halls and five specialty fire facilities, worth about $642 million
+The hall is a building too. Vancouver has 19 fire halls and five specialty fire facilities, worth about $642 million
 to replace, about 58 per cent of them in good or fair condition, and 30 years old on
 average. [COV-CAP-2730] The City's own capital plan states the problem: "There is also a
 need to increase the resilience of these facilities to ensure that most, if not all,
