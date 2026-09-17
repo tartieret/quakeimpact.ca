@@ -142,10 +142,10 @@ export const fireFollowing: PageModule = {
             They start in the wiring behind the walls and the gas lines behind
             the appliances. About half of the ignitions in the Lower Mainland
             modelling are electrical and about a quarter gas-related.{" "}
-            <Cite id="SCAWTHORN-2020" /> About 70 per cent of them are in homes
-            and apartments, a pattern the modelling takes from what was counted
-            after the 1994 Northridge earthquake in California, in the United
-            States. <Cite id="SCAWTHORN-2020" />
+            <Cite id="SCAWTHORN-2020" /> About 70 per cent of them may be in
+            homes and apartments, a share the modelling takes from the 1994
+            Northridge earthquake in California, in the United States.{" "}
+            <Cite id="SCAWTHORN-2020" />
           </p>
           <p>
             Almost half of the fires an earthquake would start anywhere in
@@ -223,6 +223,13 @@ export const fireFollowing: PageModule = {
             “Saturation, especially of the 911 system, will reduce functionality
             to a great degree, for several hours or more.”{" "}
             <Cite id="SCAWTHORN-2020" />
+          </p>
+          <p>
+            So a fire in the first hours is a local matter. The engine that
+            would come is at another fire, the department across the river is
+            waiting on a bridge inspection, and the number people call is
+            jammed. What happens to a small fire in that window depends on who
+            is standing next to it.
           </p>
         </Prose>
       ),
