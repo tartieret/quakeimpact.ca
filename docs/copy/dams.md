@@ -3,7 +3,7 @@ route: /shaking/dams/
 title: Dams
 nav: Dams
 hook: "BC Hydro publishes the expected earthquake damage at each of its dams."
-lede: Metro Vancouver's published reviews of its water-supply dams do not mention earthquakes. BC Hydro tells its regulator which parts of its power dams it expects an earthquake to damage.
+lede: There are dams up the valleys all around this region, from the east end of the Fraser Valley to Howe Sound and north to Whistler. Two of them hold Metro Vancouver's drinking water, and several more generate electricity.
 ---
 
 <!-- The Metro Vancouver side of this subject, the 2024 reviews, the capital

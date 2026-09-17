@@ -232,7 +232,7 @@ export const dams: PageModule = {
     nav: "Dams",
     kicker: "The shaking",
     standfirst:
-      "Metro Vancouver’s published reviews of its water-supply dams do not mention earthquakes. BC Hydro tells its regulator which parts of its power dams it expects an earthquake to damage.",
+      "There are dams up the valleys all around this region, from the east end of the Fraser Valley to Howe Sound and north to Whistler. Two of them hold Metro Vancouver’s drinking water, and several more generate electricity.",
     /**
      * First-cited order, which is the order the markers are numbered in.
      */
