@@ -179,9 +179,7 @@ export const casualties: PageModule = {
             am and 5 pm, “when most people are at school or work”, and every
             casualty figure in it belongs to that hour of the day.{" "}
             <Cite id="GSC-OF-8853" /> Its Cascadia scenario puts the mainshock
-            at 10 am on a day in August. <Cite id="DCRRA-2025" /> Neither time
-            is a prediction. The modellers had to fix one to do the rest of the
-            work.
+            at 10 am on a day in August. <Cite id="DCRRA-2025" />
           </p>
         </Prose>
       ),

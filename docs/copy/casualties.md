@@ -66,8 +66,7 @@ working day they are in offices, schools, shops and on the street.
 The province's magnitude 7.0 scenario is set on a weekday between 9 am and 5 pm, "when
 most people are at school or work", and every casualty figure in it belongs to that hour
 of the day. [GSC-OF-8853] Its Cascadia scenario puts the mainshock at 10 am on a day in
-August. [DCRRA-2025] Neither time is a prediction. The modellers had to fix one to do the
-rest of the work.
+August. [DCRRA-2025]
 
 ## Two building types dominate night-time casualties
 
