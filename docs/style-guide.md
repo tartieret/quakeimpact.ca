@@ -12,6 +12,10 @@ The reader arrives believing an earthquake is a violent event with a clear end, 
 
 If a reader finishes a page frightened but with nothing to do, the page has failed. If they finish it reassured that it will be fine, the page has also failed, and worse. And a page nobody finishes has failed at the start: nobody is obliged to read a public website, and it competes with everything else on a phone. Being good to read is half the job. The sourcing is what makes a page worth reading; the writing is what gets it read.
 
+**The point is that somebody prepares.** Added 17 September 2026 by the site's owner. Sourcing is how this site earns the right to be believed. It is not what the site is for. A reader who closes the page satisfied that the references were impeccable and does nothing is the failure case, the same as a reader who closes it frightened. Write for what it does to behaviour: what goes wrong, what that is like to live through, and what to do about it now. A page may say the water could be out for weeks and that a week without it in August is a serious problem, because that is the sentence that puts water in somebody's cupboard.
+
+**The site has a position and may state it.** Added 17 September 2026 by the site's owner. "Not alarm, not reassurance" is about the register, not a vow of neutrality. The province's own plans expect households to look after themselves for a period before help reaches them, and most households here have not done it. A site that reports both and declines to draw the conclusion is being coy with its reader. So the copy may say that the region is not ready, that public awareness is thinner than the plans assume, and that leaving the people who depend on you with nothing set aside is a choice rather than bad luck. A judgement rests on the record the same way a number does: it follows from what the documents say, it is written in the site's own voice, and it is never put in the mouth of a document that did not say it.
+
 **This is general information, not a bibliography.** Revised 14 September 2026 by the site's owner. A page gives a reader a representative picture of what a major earthquake does to the place they live: roughly how long, roughly how bad, and what depends on what. No scenario is the scenario, and no published estimate is a forecast for a given street, so a sentence that reproduces every qualifier in its source is not more true for the reader, only harder to read. Be accurate where accuracy changes what the reader understands or does. Where it does not, the general idea is enough, and the source is one marker away.
 
 ---
@@ -32,10 +36,11 @@ These constraints are compatible: both require knowing what you are claiming. Th
 
 Fear appeals work only when paired with efficacy: a specific action the reader believes they can take and believes will help. Without that pairing, fear reliably produces the opposite of preparedness, message avoidance and fatalism. This is the Extended Parallel Process Model, and it is the single most important finding for a site like this one.
 
-- **Severity is allowed. Dread is not.** "Sewer service in the worst-affected areas: weeks to months" is severe and factual. "Imagine your neighbourhood without toilets" is dread, and it costs us the reader.
+- **Severity is allowed, and so is what it is like. Dread is not.** Revised 17 September 2026 by the site's owner. "Sewer service in the worst-affected areas: weeks to months" is severe and factual, and the page may go on to say what a week of that is: the toilet that will not flush, the bucket, the four litres a day that has to cover drinking first. The test is the lever, not the temperature. Severity attached to something the reader can do is the whole method; severity with nothing after it is dread, and it costs us the reader.
+- **Say the likely thing plainly.** Added 17 September 2026 by the site's owner. Much of this is not certain and will not become certain before the earthquake. Where preparing for something is the responsible response, say so, and do not follow it with a sentence explaining that the future is uncertain. The rules on uncertainty are about numbers, durations and places (§6). They are not a reason to write as though the site had no view on what people should get ready for.
 - **Every section carries its lever.** Every long page ends with a `Lever` block, enforced in code. It is what makes the rest of the page usable.
 - **Certainty about the hazard is persuasive; certainty about the outcome is not.** We can say the recurrence interval is known. We cannot say what will happen to your street.
-- **No countdowns and no urgency devices.** "Overdue", "the big one is coming", "when, not if", "act now", an email capture on a fear hook: these read as marketing. The dates and intervals speak for themselves, and nothing on this site should look like it is selling something.
+- **No countdowns and no urgency devices.** "Overdue", "the big one is coming", "when, not if", "act now", an email capture on a fear hook: these read as marketing. The dates and intervals speak for themselves, and nothing on this site should look like it is selling something. A judgement is not an urgency device. "The plans assume households can look after themselves for a while, and most cannot" is a statement about the world; "act now, before it is too late" is a technique.
 
 We are in the business of making a slow, boring, structural problem legible enough that people act on it.
 
@@ -46,6 +51,8 @@ We are in the business of making a slow, boring, structural problem legible enou
 **Plain, calm, specific.** The tone of a good engineer explaining something to a neighbour over a fence. Not a press release, a documentary voiceover or a public service announcement. Name the thing: the pipe, the substation, the bridge approach.
 
 **Short sentences carry hard facts.** When the content is heavy, the prose gets simpler, not more elaborate.
+
+**Aim a judgement at the situation rather than at the reader.** Added 17 September 2026. "Most households here have nothing set aside, and the plans assume otherwise" and "you are being naive" are the same judgement, and only one of them is still being read at the end of the sentence. This is craft rather than softening: §3's finding is that a reader who feels accused stops listening, and the judgement is worth more than the satisfaction of aiming it at somebody. Second person belongs on the action, where it always did: keep water for the people in your house.
 
 **No second-person catastrophising.** "You" is fine for actions ("keep two weeks of water") and wrong for outcomes ("your building will be tagged").
 
@@ -58,6 +65,8 @@ We are in the business of making a slow, boring, structural problem legible enou
 **A question is allowed where the page answers it.** Revised 16 September 2026. "What happens when the food runs out?" is the question a reader arrives with, and naming it as a heading or an opening is not the closing flourish §11 describes, where a question stands in for a conclusion nobody reached.
 
 **No stacked parallel fragments.** A run of short sentences built to the same pattern, each unpacking one item from the sentence before, is rhythm standing in for argument. "A month later is after the news has moved on. Eleven at night is when people are at home and asleep. An atmospheric river is a long, heavy rainstorm." The closing turn that usually follows, "And X is not Y: it is Z", is the same move again. It is the most recognisable tell of machine-written prose and it survives every other check, because nothing in it is inaccurate. Keep the one thing the reader does not already know and join it to the sentence before.
+
+**An example from somewhere else is evidence, not a liability.** Added 17 September 2026 by the site's owner. Most readers do not know that Christchurch lost its sewers for months, that Kobe lost its port, or what a minute of shaking looks like from inside a building. Those events are the proof that none of this is theory, and that it has already happened to places like this one. Name the place and the year (§6) and let it stand. Do not add that it is not a forecast, that conditions differ, or that Metro Vancouver is not Japan: a reader who sees "Sendai, 2011" can see it is not here, and a caveat under every example reads as a site that does not believe its own page. What stays is §6's rule that an analogue may not produce a number.
 
 **No sentences that tell the reader how to read.** "Read that carefully", "Every part of that sentence was chosen", "Two things that number is not". Each announces a point instead of making it. Cut the gesture and the paragraph lands sooner.
 
@@ -86,6 +95,8 @@ We are in the business of making a slow, boring, structural problem legible enou
 ## 6. Trust: how we earn it and how we lose it
 
 **Every claim reaches its document.** Three forms, chosen for what reads well: a numbered marker in ordinary prose, a source line under a band, a link to the page holding the document in a narrative run (§4). A sentence with a number and no route to its source is a bug.
+
+**A sentence with no fact in it needs no marker.** Added 17 September 2026. "Most people here have never felt a major earthquake" carries no quantity, no duration and no place a source could contradict, and it is the reason the paragraph after it exists. Framing, a question the page answers, and a plain statement of what the reader is about to see are writing rather than claims. The bug is a number with no route to its document, not a sentence nobody competent would think to challenge.
 
 **The marker is the attribution. Do not say it twice.** "The province writes that", "the City states", "published assessments show" stack a second attribution on the marker and push the real subject to the back. Not "the province says many of those who try to run outside suffer extreme injury or death", but "many of those who try to run outside suffer extreme injury or death", with the marker attached.
 
@@ -166,10 +177,11 @@ A public-information site that some readers cannot use has failed at its only jo
 6. Is any image on the page from imagination rather than from a document?
 7. Are the gaps that matter visible, or have they been quietly skipped?
 8. Has an analogue been allowed to generate a number?
-9. Would this read as alarmist if quoted in isolation, out of context, by someone hostile?
+9. Is there a claim here that its source does not support?
 10. Is any sentence more precise, more qualified or more quoted than the reader needs?
+11. Would a reader be more likely to do something about it after reading this than before?
 
-Question 9 catches the most: any sentence may end up screenshotted on its own. Section 11 catches the rest.
+Question 11 is the one the site exists for; question 9 is about the claims, not about the tone. A page written so that nobody could ever object to a line of it is usually the page in section 11, which says nothing.
 
 ---
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
-import { Figure, Prose } from "@/components/page-parts";
+import { Figure, Prose, VideoEmbed } from "@/components/page-parts";
 import { DropCoverHoldOn } from "@/components/figures/shaking";
 import { DraftMark } from "@/components/status";
 import { SHAKING_PAGES } from "@/content/site";
@@ -23,6 +23,17 @@ import type { PageModule } from "./index";
  * first section because that is where the instruction is. It is drawn from the
  * province's written steps rather than from the Earthquake Country Alliance
  * graphic the province credits, which states no licence.
+ *
+ * The two videos are the only thing on the site loaded from another host, and
+ * the second section is the only place they appear. They follow the instruction
+ * rather than lead it: a reader who has just been told to drop, cover and hold
+ * on can see why there is no time to do anything else. `docs/media.md` has the
+ * position and `components/video.tsx` the mechanics.
+ *
+ * The section says what the videos show and stops. Each card names the
+ * earthquake and the city, and a reader knows Anchorage is not Vancouver
+ * without being told; the owner's decision of 13 September 2026 about captions
+ * on `/after/` applies here too (`docs/media.md`).
  */
 export const shaking: PageModule = {
   meta: {
@@ -89,6 +100,35 @@ export const shaking: PageModule = {
             <DropCoverHoldOn />
           </Figure>
         </Prose>
+      ),
+    },
+
+    {
+      title: "What strong earthquake shaking looks like",
+      body: (
+        <div className="flex flex-col gap-8">
+          <Prose>
+            <p>
+              Most people in Metro Vancouver have never felt a major
+              earthquake. These two recordings show how fast the shaking
+              arrives and how long it lasts.
+            </p>
+          </Prose>
+          <div className="grid gap-6 md:grid-cols-2">
+            <VideoEmbed
+              id="NJZqREPc9k0"
+              title="Inside an Anchorage classroom"
+              href="https://www.youtube.com/watch?v=NJZqREPc9k0"
+              description="A fixed classroom camera during the magnitude 7.0 earthquake at Anchorage, Alaska, in 2018. The shaking reaches full strength in seconds, which is the reason to take cover where you are rather than move."
+            />
+            <VideoEmbed
+              id="heh5ITmYbRs"
+              title="Inside the Sendai Mediatheque"
+              href="https://www.youtube.com/watch?v=heh5ITmYbRs"
+              description="The magnitude 9.1 earthquake off northeast Japan in 2011, recorded inside a modern building at Sendai. The shaking runs on for minutes, with ceilings and suspended fixtures moving overhead while people hold on under desks."
+            />
+          </div>
+        </div>
       ),
     },
 
