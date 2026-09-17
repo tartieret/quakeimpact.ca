@@ -2,22 +2,9 @@
 route: /shaking/casualties/
 title: Casualties
 nav: Casualties
-hook: Published casualty estimates change with the earthquake and time of day.
-lede: Published casualty estimates differ because they cover different earthquakes, areas and times of day. They count only shaking damage to buildings and the people inside them.
+hook: Thousands of people hurt or killed, and what each published count covers.
+lede: Thousands of people would be hurt or killed by a major earthquake here. Several studies have put a number on it, each for a different earthquake and a different area.
 ---
-
-## Published figures cover mainshock building damage only
-
-The published figures nearly all trace back to the Geological Survey of Canada's
-scenario catalogue, which counts "only damage to buildings, and their inhabitants, from
-earthquake shaking". [NRCAN-SCEN] In the open file behind the province's planning
-scenario, aftershocks, tsunami, landslides, liquefaction "and fire following are not
-considered", and neither is damage to vehicles or infrastructure. [GSC-OF-8853] Natural
-Resources Canada draws the conclusion itself, about its own work: "therefore, the
-estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
-
-So a casualty figure from that work is a floor. Fires, landslides and liquefaction hurt
-people too, and none of these models was asked to count them.
 
 ## Government estimates cover different areas
 
@@ -25,38 +12,61 @@ The City of Vancouver reports casualties as a single count, at two times of day.
 province splits its figures four ways, into the dead, the critically injured, those
 needing hospital care and those needing first aid.
 
-| Who published it, and which earthquake           | What it counts                                            | The figure                                                                                  |
-| ------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| City of Vancouver, magnitude 7.2 Georgia Strait  | Casualties in the City of Vancouver, daytime and at night | 1,370 day, 620 night                                                                        |
-| City of Vancouver, magnitude 9.0 Cascadia        | Casualties in the City of Vancouver, daytime and at night | 400 day, 170 night                                                                          |
-| City of Vancouver, magnitude 7.0 deep earthquake | Casualties in the City of Vancouver, daytime and at night | 190 day, 70 night                                                                           |
-| Province of BC, magnitude 7.0 Georgia Strait     | Greater Vancouver, on a weekday between 9 am and 5 pm     | 2,000 dead, 1,000 critically injured, 6,500 needing hospital care, 21,000 needing first aid |
-| Province of BC, magnitude 9.0 Cascadia           | Deaths and injuries across British Columbia from the main shaking                | more than 10,000 injured, 3,400 dead                                                        |
+|                               | In the City of Vancouver                                    | Over a wider area                                                                                                                                       |
+| ----------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cascadia megathrust           | Magnitude 9.0. 400 casualties in the daytime, 170 at night.  | Magnitude 9.0. Across British Columbia: 3,400 dead and more than 10,000 injured.                                                                          |
+| Strait of Georgia crustal     | Magnitude 7.2. 1,370 casualties in the daytime, 620 at night. | Magnitude 7.0. In Greater Vancouver, on a weekday between 9 am and 5 pm: 2,000 dead, 1,000 critically injured, 6,500 needing hospital care, 21,000 needing first aid. |
+
+The two columns count in different units. The City reports all casualties as one
+number [COV-RISK-2024], while the province separates the dead from the
+injured [PEIRS] [GSC-OF-8853] [DCRRA-2025]. The two wider-area figures count different
+areas, Greater Vancouver in one row and the whole province in the other, and cannot be
+added together. The heaviest damage in the Cascadia scenario is on Vancouver Island,
+outside the Lower Mainland. And the City and the province model the same fault zone at different
+magnitudes, so the bottom row holds two scenarios rather than one counted twice.
 
 The method behind the City's assessment has been published and peer reviewed.
 [HILT-2022]
 
+## These figures cover mainshock building damage only
+
+They nearly all trace back to the Geological Survey of Canada's scenario catalogue, which counts "only damage to buildings, and their inhabitants, from
+earthquake shaking". [NRCAN-SCEN] In the open file behind the province's planning
+scenario, aftershocks, tsunami, landslides, liquefaction "and fire following are not
+considered", and neither is damage to vehicles or infrastructure. [GSC-OF-8853] Natural
+Resources Canada draws the conclusion itself, about its own work: "therefore, the
+estimates herein are likely to represent a minimum estimate on impacts." [GSC-OF-8853]
+
+The province says the same of its own numbers. They rest on damage to buildings and "do
+not include casualties from other secondary hazards or complicating factors", a list
+running through underlying medical conditions, vehicle accidents, falls, explosions,
+fires, landslides, washouts and tsunamis. The strategy "will not consider the effect of an
+earthquake early warning system", and the data is "for planning purposes only and may not
+match the outcome of real events". [PEIRS] Its Cascadia figures carry the same limit: they
+"include only direct mainshock damage without account of secondary hazards like
+landslides, liquefaction, tsunami, fires and more." [DCRRA-2025]
+
+So every one of these counts is a floor. Fires, landslides and liquefaction hurt people too, and
+none of these models was asked to count them.
+
 ## The closer earthquake causes more casualties in Vancouver
 
 Intuition says the largest earthquake does the most harm. In the City's own modelling it
-does not. The magnitude 7.2 crustal earthquake in the Strait of Georgia gives 1,370
-daytime casualties in the city, against 400 for the magnitude 9.0 Cascadia earthquake
-offshore. [COV-RISK-2024] The closer earthquake shakes City Hall about as hard as the
-design forces new buildings are built to resist. [COV-RISK-2024]
+does not. The crustal earthquake in the Strait of Georgia gives more than three times the
+daytime casualties in the city that the Cascadia earthquake offshore does, and it shakes
+City Hall about as hard as the design forces new buildings are built to resist.
+[COV-RISK-2024]
 
 ## Time of day changes the count
 
-In all three of the City's scenarios the night figure is under half the daytime one:
-1,370 against 620 for the magnitude 7.2, 400 against 170 for the magnitude 9.0, and 190
-against 70 for the magnitude 7.0 deep earthquake. [COV-RISK-2024] What changes is where
-people are. At night they are at home; through the working day they are in offices,
-schools, shops and on the street.
+In both of the City's scenarios the night figure is under half the daytime one.
+[COV-RISK-2024] What changes is where people are. At night they are at home; through the
+working day they are in offices, schools, shops and on the street.
 
 The province's magnitude 7.0 scenario is set on a weekday between 9 am and 5 pm, "when
 most people are at school or work", and every casualty figure in it belongs to that hour
 of the day. [GSC-OF-8853] Its Cascadia scenario puts the mainshock at 10 am on a day in
-August. [DCRRA-2025] Neither time is a prediction. The modellers had to fix one to do the
-rest of the work.
+August. [DCRRA-2025]
 
 ## Two building types dominate night-time casualties
 
@@ -92,22 +102,6 @@ Canada's population by that number inside its economic model. [CBOC-2016]
 
 Nothing about the figure was measured. It was chosen as an input, and the model was run with Canada's population reduced by it.
 
-## The province warns that actual casualties may differ
-
-The province's figures rest on damage to buildings and "do not include casualties from
-other secondary hazards or complicating factors", a list running through underlying
-medical conditions, vehicle accidents, falls, explosions, fires, landslides, washouts and
-tsunamis. The strategy "will not consider the effect of an earthquake early warning
-system". And the data is "for planning purposes only and may not match the outcome of real
-events". [PEIRS]
-
-Its Cascadia figures carry the same limit: they "include only direct mainshock damage
-without account of secondary hazards like landslides, liquefaction, tsunami, fires and
-more." [DCRRA-2025]
-
-> **Not yet published.** No published figure counts the people an earthquake here would
-> hurt once fire following, landslides and liquefaction are added in.
-
 ## What you can do
 
 **Drop, cover and hold on.** In the province's account of its magnitude 7.0 scenario, the
@@ -126,15 +120,14 @@ shelves, framed pictures and mirrors away from beds and seating, small appliance
 down with double-sided tape or velcro, beds away from windows, and sturdy shoes under the
 bed. [COV-EXPLORER-25]
 
-**Know what the building you sleep in is made of.** In the City's magnitude 7.2 scenario
-two building types carry most of the night-time casualties: concrete mid-rise and
-high-rise residential at 37 per cent, and unreinforced masonry residential at 29 per cent.
-[COV-RISK-2024]
+**Know what the building you sleep in is made of.** Concrete mid-rise and high-rise
+residential buildings and unreinforced masonry residential buildings carry most of the
+night-time casualties in the City's crustal scenario. [COV-RISK-2024]
 
 Time of day drives the largest change in these models. What hangs above the bed and
 what you do while the ground moves are within your control.
 
 ## Sources on this page
 
-[NRCAN-SCEN] [GSC-OF-8853] [COV-RISK-2024] [PEIRS] [DCRRA-2025] [HILT-2022] [NZ-RC-V4]
+[COV-RISK-2024] [PEIRS] [GSC-OF-8853] [DCRRA-2025] [HILT-2022] [NRCAN-SCEN] [NZ-RC-V4]
 [CBOC-2016-PR] [CBOC-2016] [PREPAREDBC] [COV-EXPLORER-25]

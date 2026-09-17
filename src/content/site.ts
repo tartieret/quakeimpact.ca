@@ -428,7 +428,7 @@ export const SHAKING_PAGES: {
   {
     slug: "casualties",
     name: "Casualties",
-    hook: "Published casualty estimates change with the earthquake and time of day.",
+    hook: "Thousands of people hurt or killed, and what each published count covers.",
   },
   {
     slug: "fire-following",
