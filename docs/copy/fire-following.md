@@ -2,14 +2,14 @@
 route: /shaking/fire-following/
 title: Fire following
 nav: Fire following
-hook: The shaking stops, and that is when the fires start. Many of them, in ordinary homes, in a city where the hydrants have just run dry.
-lede: The fires start in the wiring and the gas lines of ordinary homes, in many buildings at the same time. The engines that answer carry enough water to get started and then need a hydrant, on streets where the mains have broken, and every department is holding on to its own crews.
+hook: Fire is one of the ordinary consequences of a large earthquake. It starts in many homes at once, and the water to fight it is in the mains the shaking has just broken.
+lede: The shaking stops, and that is when the fires start. Many of them, in ordinary homes, in a city where the hydrants have just run dry. Every department is holding on to its own crews, and 911 has saturated.
 ---
 
-## The fires start in ordinary homes
+## Most of the fires begin in houses and apartments
 
-They start in the wiring behind the walls and the gas lines behind the appliances, and
-mostly where people live rather than where they work. About half of the ignitions in the
+They start in the wiring behind the walls and the gas lines behind the appliances.
+About half of the ignitions in the
 Lower Mainland modelling are electrical and about a quarter gas-related.
 [SCAWTHORN-2020] About half begin in single-family houses and another 26 per cent in
 apartments, and the study's own summary is that "about 70% of all ignitions occur in

@@ -104,7 +104,7 @@ export const fireFollowing: PageModule = {
     nav: "Fire following",
     kicker: "The shaking",
     standfirst:
-      "The fires start in the wiring and the gas lines of ordinary homes, in many buildings at the same time. The engines that answer carry enough water to get started and then need a hydrant, on streets where the mains have broken, and every department is holding on to its own crews.",
+      "The shaking stops, and that is when the fires start. Many of them, in ordinary homes, in a city where the hydrants have just run dry. Every department is holding on to its own crews, and 911 has saturated.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -135,14 +135,13 @@ export const fireFollowing: PageModule = {
 
   sections: [
     {
-      title: "The fires start in ordinary homes",
+      title: "Most of the fires begin in houses and apartments",
       body: (
         <Prose>
           <p>
             They start in the wiring behind the walls and the gas lines behind
-            the appliances, and mostly where people live rather than where they
-            work. About half of the ignitions in the Lower Mainland modelling
-            are electrical and about a quarter gas-related.{" "}
+            the appliances. About half of the ignitions in the Lower Mainland
+            modelling are electrical and about a quarter gas-related.{" "}
             <Cite id="SCAWTHORN-2020" /> About half begin in single-family
             houses and another 26 per cent in apartments, and the study’s own
             summary is that “about 70% of all ignitions occur in residential

@@ -438,7 +438,7 @@ export const SHAKING_PAGES: {
   {
     slug: "fire-following",
     name: "Fire following",
-    hook: "The shaking stops, and that is when the fires start. Many of them, in ordinary homes, in a city where the hydrants have just run dry.",
+    hook: "Fire is one of the ordinary consequences of a large earthquake. It starts in many homes at once, and the water to fight it is in the mains the shaking has just broken.",
   },
   {
     slug: "landslides",
