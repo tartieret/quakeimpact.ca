@@ -2,8 +2,8 @@
 route: /shaking/casualties/
 title: Casualties
 nav: Casualties
-hook: Published casualty estimates change with the earthquake and time of day.
-lede: Published casualty estimates differ because they cover different earthquakes, areas and times of day.
+hook: Thousands of people hurt or killed, and what each published count covers.
+lede: Thousands of people would be hurt or killed by a major earthquake here. Several studies have put a number on it, each for a different earthquake and a different area.
 ---
 
 ## Government estimates cover different areas

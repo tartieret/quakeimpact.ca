@@ -35,11 +35,11 @@ export const casualties: PageModule = {
     route: "/shaking/casualties/",
     title: "Casualties",
     description:
-      "Published casualty estimates differ because they cover different earthquakes, areas and times of day.",
+      "Thousands of people would be hurt or killed by a major earthquake in the Lower Mainland, and several studies have estimated how many.",
     nav: "Casualties",
     kicker: "The shaking",
     standfirst:
-      "Published casualty estimates differ because they cover different earthquakes, areas and times of day.",
+      "Thousands of people would be hurt or killed by a major earthquake here. Several studies have put a number on it, each for a different earthquake and a different area.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
