@@ -111,8 +111,6 @@ export const fireFollowing: PageModule = {
      */
     references: [
       "SCAWTHORN-2020",
-      "PEIRS",
-      "DCRRA-2025",
       "COV-PREPARES",
       "COV-DFPS-2001",
       "COV-DFPS-DATA",
@@ -305,16 +303,6 @@ export const fireFollowing: PageModule = {
               versus major conflagration.” <Cite id="SCAWTHORN-2020" />
             </p>
           </Callout>
-          <p>
-            The province’s planning scenario says fires following an earthquake
-            in Vancouver “could cause an additional $10 billion in damage”{" "}
-            <Cite id="PEIRS" /> and the provincial risk assessment gives losses
-            ranging “from upwards of $150 million from an M9 Cascadia Subduction
-            Zone earthquake to more than $10 billion if an M7.3 shallow crustal
-            earthquake happens in the Georgia Strait”. <Cite id="DCRRA-2025" />{" "}
-            Both are quoting the same study. They are one finding stated twice,
-            not two that agree.
-          </p>
         </Prose>
       ),
     },

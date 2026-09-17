@@ -95,13 +95,6 @@ See [buildings](/shaking/buildings/).
 > differentiation between situations of a few small fires, versus major conflagration."
 > [SCAWTHORN-2020]
 
-The province's planning scenario says fires following an earthquake in Vancouver "could
-cause an additional $10 billion in damage" [PEIRS] and the provincial risk assessment
-gives losses ranging "from upwards of $150 million from an M9 Cascadia Subduction Zone
-earthquake to more than $10 billion if an M7.3 shallow crustal earthquake happens in the
-Georgia Strait". [DCRRA-2025] Both are quoting the same study. They are one finding
-stated twice, not two that agree.
-
 ## Downtown has a second water system, and its hydrants are blue
 
 There is a second set of water pipes under part of Vancouver, built for nothing but
@@ -221,7 +214,7 @@ minutes is one nobody has to cross a broken city to reach.
 
 ## Sources on this page
 
-[SCAWTHORN-2020] [PEIRS] [DCRRA-2025] [COV-PREPARES] [COV-DFPS-2001] [COV-DFPS-DATA]
+[SCAWTHORN-2020] [COV-PREPARES] [COV-DFPS-2001] [COV-DFPS-DATA]
 [VIA-HYDRANTS] [COV-EXPLORER-25] [VBBL-2025] [COV-OAKRIDGE-FE] [COV-1489WB]
 [COV-600ROBSON] [COV-CAP-2730] [COV-CAP-1922] [COV-CAP-2326] [BBY-FS8] [DNV-NORGATE]
 [RICH-CSC-2026-03] [CNV-CAPITAL-26]
