@@ -76,9 +76,10 @@ export const landslides: PageModule = {
       body: (
         <Prose>
           <p>
-            The Cascadia earthquake of January 1700 collapsed houses of the
-            Cowichan people on Vancouver Island and set off numerous landslides.{" "}
-            <Cite id="NRCAN-1700" />
+            The oral traditions of the First Nations people on Vancouver
+            Island carry what the Cascadia earthquake of January 1700 did there.
+            The shaking set off numerous landslides, and it collapsed the houses
+            of the Cowichan people. <Cite id="NRCAN-1700" />
           </p>
           <p>
             The province’s planning scenario for a magnitude 7.0 earthquake
