@@ -42,16 +42,17 @@ export const communications: PageModule = {
     route: "/after/communications/",
     title: "Communications",
     description:
-      "The province expects disruption to communications to continue for days to weeks. No rule sets how long a cell site has to hold backup power.",
+      "The province expects disruption to communications to continue for days to weeks. Cell sites carry backup power for hours to a few days, and no rule sets a minimum.",
     nav: "Communications",
     kicker: "Life afterwards",
     standfirst: (
       <>
         The province expects communications to be disrupted for days to weeks.
         Surviving capacity would go first to emergency personnel.{" "}
-        <Cite id="DCRRA-2025" /> Cell sites have no minimum backup-power
-        requirement. The regulator is still considering one.{" "}
-        <Cite id="CRTC-2025-226" />
+        <Cite id="DCRRA-2025" /> Cell sites carry backup power for hours to a
+        few days. <Cite id="BELL-CRTC-RFI-26" />{" "}
+        <Cite id="TELUS-CRTC-INT-25" /> No rule sets a minimum, and the
+        regulator is still considering one. <Cite id="CRTC-2025-226" />
       </>
     ),
     /**
@@ -60,14 +61,20 @@ export const communications: PageModule = {
      */
     references: [
       "DCRRA-2025",
+      "BELL-CRTC-RFI-26",
+      "TELUS-CRTC-INT-25",
       "CRTC-2025-226",
       "PEIRS",
       "ECOMM-EQ",
+      "TELUS-CRTC-RFI-26",
+      "ROGERS-CRTC-RFI-26",
+      "BELL-FIONA-22",
       "CRTC-2025-225",
       "CRTC-2025-65",
       "CRTC-2016-165",
       "BC-CRTC-SUB",
       "ECOMM-FAC",
+      "ECOMM-CRTC-25",
       "NRCAN-EEW",
       "BC-ALERT-2026",
       "NRCAN-EEW-FAQ",
@@ -146,41 +153,79 @@ export const communications: PageModule = {
           <VerificationNote label="Not published">
             Which regions are short of radio operators, and whether the Lower
             Mainland is one of them, is not in the document. <Cite id="PEIRS" />{" "}
-            No carrier has published how many sites it runs here, how long they
-            hold without grid power, or how quickly it would bring them back,
-            and the province’s assessments give no site counts and no
-            restoration curve. <Cite id="PEIRS" /> <Cite id="DCRRA-2025" />
+            The carriers’ backup-power figures cover the whole country. None has
+            published how many of its sites here have a generator, or how
+            quickly it would bring them back after an earthquake, and the
+            province’s assessments give no site counts and no restoration
+            curve. <Cite id="BELL-CRTC-RFI-26" /> <Cite id="PEIRS" />{" "}
+            <Cite id="DCRRA-2025" />
           </VerificationNote>
         </Prose>
       ),
     },
 
     {
-      title: "Cell sites have no minimum backup-power requirement",
+      title: "Cell sites run for hours to days on backup power",
       body: (
         <Prose>
           <p>
             A cell site is a radio and a computer in a cabinet, usually on a
             rooftop or at the foot of a mast, and both run on grid power. When
-            the power goes, the site runs on whatever battery or generator its
-            owner chose to put there. How long the grid takes to come back is on{" "}
+            the power goes, the site switches to its own batteries, and at some
+            sites to a generator. How long the grid takes to come back is on{" "}
             {electricityLink}, and a generator runs as long as somebody keeps
             delivering {fuelLink}.
           </p>
           <p>
-            No Canadian rule sets how long that battery has to last. On 4
-            September 2025 the Canadian Radio-television and Telecommunications
-            Commission, the federal telecom regulator, opened a proceeding on
-            network resiliency and put this to the industry: “What parameters
-            should TSPs use to determine an appropriate backup power run time
-            for each type of network site?” <Cite id="CRTC-2025-226" /> TSPs are
-            the telephone and internet companies themselves. The guidance
-            reproduced in the proceeding’s appendix uses “should”, making it a
-            recommendation. <Cite id="CRTC-2025-226" />
+            Bell says every one of its cell sites has a battery, a generator or
+            both. Its batteries are built to last between two and eight hours,
+            and its generators a day or two at the sites that have one. On a
+            rooftop, where a permanent generator often cannot go, it relies on a
+            larger battery and a generator brought in by truck.{" "}
+            <Cite id="BELL-CRTC-RFI-26" /> TELUS sorts its sites into three
+            tiers, with targets from a day at a standard site to a week or more
+            at the most critical. <Cite id="TELUS-CRTC-RFI-26" />{" "}
+            <Cite id="TELUS-CRTC-INT-25" /> Rogers has not made its figures
+            public. <Cite id="ROGERS-CRTC-RFI-26" /> All three were describing
+            their networks across Canada, in answers to the regulator.
           </p>
           <p>
-            The record closed in late August 2026. No decision has been issued.{" "}
+            Backup of this kind is built for an ordinary power cut. The industry
+            guidance in the regulator’s proceeding sizes a battery for a typical
+            outage, or for the time it takes a crew to arrive with a portable
+            generator. <Cite id="CRTC-2025-226" /> When Hurricane Fiona hit
+            Atlantic Canada in 2022, Bell’s sites ran on batteries and then on
+            generators, and refuelling became the problem: gas stations without
+            power could not pump fuel, and fallen trees and power lines kept
+            crews away from the sites. <Cite id="BELL-FIONA-22" /> After an
+            earthquake, the roads and the fuel supply are among the things that
+            break.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "No rule sets how long backup power must last",
+      body: (
+        <Prose>
+          <p>
+            No Canadian rule sets a minimum. On 4 September 2025 the Canadian
+            Radio-television and Telecommunications Commission, the federal
+            telecom regulator, opened a proceeding on network resiliency and put
+            this to the industry: “What parameters should TSPs use to determine
+            an appropriate backup power run time for each type of network
+            site?” <Cite id="CRTC-2025-226" /> TSPs are the telephone and
+            internet companies themselves. The guidance reproduced in the
+            proceeding’s appendix uses “should”, making it a recommendation.{" "}
             <Cite id="CRTC-2025-226" />
+          </p>
+          <p>
+            Bell, TELUS and Rogers each told the regulator that backup power
+            should stay a matter of good practice rather than a rule.{" "}
+            <Cite id="BELL-CRTC-RFI-26" /> <Cite id="TELUS-CRTC-RFI-26" />{" "}
+            <Cite id="ROGERS-CRTC-RFI-26" /> The record closed in late August
+            2026. No decision has been issued. <Cite id="CRTC-2025-226" />
           </p>
         </Prose>
       ),
@@ -238,7 +283,9 @@ export const communications: PageModule = {
             concrete post-disaster building, “designed to resist an earthquake
             and to operate self-sufficiently for up to 72 hours”.{" "}
             <Cite id="ECOMM-FAC" /> This applies to the centre receiving the
-            call, not the cabinets and towers carrying it.
+            call, not the cabinets and towers carrying it. E-Comm itself told
+            the regulator that there are no defined service levels for the
+            resiliency of 9-1-1 today. <Cite id="ECOMM-CRTC-25" />
           </p>
         </Prose>
       ),

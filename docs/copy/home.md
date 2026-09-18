@@ -33,8 +33,8 @@ the people who try to run outside are badly hurt by falling and flying objects.
 The [power](/after/electricity/) is already off when the shaking stops: the
 lights, the lifts, the tills, the fuel pumps and the traffic signals at every
 intersection, all at the same moment. Everyone reaches for a
-[phone](/after/communications/) at once, and the towers that keep working are the
-ones with power left in them.
+[phone](/after/communications/) at once. Cell sites switch to their batteries, but the
+network is jammed with calls.
 
 Over the next few hours the [water](/after/water/) pressure falls away as broken
 mains empty the system. Glass, brick and cladding lie across the pavements and
@@ -45,7 +45,10 @@ through the same earthquake.
 [water](/after/water/) is the first thing to go from the shops, and the shops do
 not restock: [food](/after/food/) arrives by truck through the same broken roads
 as everything else, and a [service station](/after/fuel/) with full tanks and no
-power dispenses nothing. Cards do not work without power or a network.
+power dispenses nothing. [Mobile service](/after/communications/) thins out as
+cell-site backup power, built to last hours to a few days, runs down, and a site with
+a generator keeps going only while fuel reaches it. Cards do not work without power or
+a network.
 
 Crews clear emergency routes first. Local streets wait, so what you can reach
 may be limited to walking or cycling distance. The [toilet](/after/sanitation/)

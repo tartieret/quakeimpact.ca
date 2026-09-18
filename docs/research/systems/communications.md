@@ -4,9 +4,9 @@
 
 > **Review status: unreviewed.** Not yet verified by the project owner. Change to
 > `validated` with a date once reviewed, in both the comment and this line.
-> **Last research pass:** 11 September 2026.
+> **Last research pass:** 16 September 2026.
 
-**Status.** Two findings, and they must not be confused with each other.
+**Status.** Three findings, and they must not be confused with each other.
 
 **The duration, which sets the band. Band: Medium**, on the province's own words: the megathrust
 assessment states that "disruptions in communications continue for days to weeks", with surviving
@@ -19,6 +19,17 @@ requirement sets a backup-power run time for cell sites, and none requires physi
 network infrastructure.** The cleanest evidence is that the regulator is still asking the question.
 **An absence of requirements is a finding, not a gap in our research**, and the page should say so
 in as many words.
+
+**What the carriers hold, which the rule's absence must not be read against.** An absent rule is
+not an absent battery. Bell, TELUS and Rogers answered the regulator's own question on backup power
+in July 2026. Bell says every one of its cell sites has a battery, a generator or both, with batteries
+designed for **2 to 8 hours** and generators for **24 to 48 hours** at the sites that have them.
+[BELL-CRTC-RFI-26] **[A]** for Bell's statement. TELUS describes three tiers of site with target
+runtimes from **24 hours to over 7 days**. [TELUS-CRTC-RFI-26] [TELUS-CRTC-INT-25] **[A]** for
+TELUS's statement. Rogers filed its figures in confidence. [ROGERS-CRTC-RFI-26] So backup power at a
+cell site is measured in **hours to a few days**, sized for ordinary outages, and what keeps a site up
+after that is fuel and road access. All three figures are national and self-reported; none is a
+Lower Mainland inventory.
 
 **Why the distinction is load-bearing.** The band used to rest on the regulatory absence, and that
 was not a reason: a missing rule says nothing about how long the network is down, so it cannot
@@ -48,6 +59,80 @@ searched absence as at that date.
 A regulator asking what the run time should be is the strongest available evidence that no run
 time is required. It is better than any statement we could make on our own, and it is a primary
 document.
+
+### What the carriers say their cell sites carry
+
+On 12 May 2026 CRTC staff asked each large provider to "describe your current strategy for backup
+power at network sites", including "the duration of power backup you design for each site or site
+category". The answers were filed on 9 July 2026. They are the only published description of
+cell-site backup power by the companies that run the sites.
+
+- **Bell.** For the wireless network, "all cell sites have backup power (battery and/or generator), with battery backup
+  designed for the 2-to-8-hour range (depending on site), and generator backup providing 24 to 48
+  hours of autonomy or longer with refueling as required for certain critical sites." Bell manages
+  "more than 2,500 generators, which permanently cover over 2,000 sites". Central offices carry 4 to
+  6 hours of batteries plus standby generators; core and large transport offices 24 to 72 hours of
+  on-site fuel. "On rooftop sites where a permanent generator is not feasible, Bell relies on
+  extended battery autonomy and rapid-deploy mobile generators." It names "refusal of municipal
+  permitting in dense urban environments and on rooftops" among the costs of a mandate.
+  [BELL-CRTC-RFI-26] **[A]** for Bell's statement.
+- **TELUS.** Sites are classified into Category 1 "Critical", 2 "Important" and 3 "Standard" "to
+  determine the duration of their power backup", with "tiered target runtimes (ranging from 24
+  hours to over 7 days)". [TELUS-CRTC-RFI-26] **[A]** The figures per category are in its December
+  2025 intervention, and **they are written as what providers should do**: at least 72 hours for
+  critical sites (core nodes, emergency services connectivity), 48 for important sites, 24 for
+  standard sites, which "typically serve as part of a redundant network architecture where
+  temporary outages are more tolerable". Batteries "are ideally suited for urban sites where space
+  is limited, outages are typically short in duration". [TELUS-CRTC-INT-25] **[A]** for the
+  recommendation. The cost table, and anything that would show how many sites sit in each tier,
+  is redacted.
+- **Rogers.** "Rogers does not have an average duration of power backup, as each site has unique
+  characteristics and requirements." The design durations and technologies are filed in confidence.
+  Its selection framework focuses on "sites exhibiting the lowest reserve times". [ROGERS-CRTC-RFI-26]
+  **[A]** **Withheld, not absent.**
+
+**Guards that travel with these figures.**
+
+- **National, not regional.** No carrier gives a Lower Mainland figure. Bell's figures describe
+  Bell's sites; Bell and TELUS share one radio access network, which the regulator treats as a
+  single national network [CRTC-2025-245] **[A]**, and which company builds and powers the shared
+  sites in British Columbia is not established from a primary document (trade press says TELUS).
+- **Design, not performance.** A design runtime is what a site is built for with a healthy battery
+  and an unbroken site. None of the filings says what share of sites meets its target, and
+  Rogers' selection framework exists because some sites have low reserve times.
+- **Advocacy context.** All three filings argue against any required run time. Bell: backup power
+  "should be addressed as a best practice rather than as a prescriptive rule". TELUS: "the
+  Commission should not mandate any network resiliency requirements, including backup power
+  requirements". Rogers: "This should be a best practice only." They are the carriers' own accounts,
+  filed to show a mandate is unnecessary.
+- **Do not reconcile TELUS's two dates by averaging.** In 2018 CBC News reported TELUS saying its generators and
+  backup batteries can last between four and 10 hours, and that its critical sites have fixed
+  generators. [CBC-CELLSITES-18] The 2025 and 2026 filings describe 24 hours or more as the target at
+  a standard site. Different years, and a target is not an inventory. Neither is wrong on its face,
+  and neither is a Lower Mainland figure.
+
+### What the backup is sized for, and what runs it down
+
+The CSTAC guidance reproduced in the proceeding says that where a generator is not practical,
+providers "should consider designing battery capacity to cover the typical likely interruption of
+the mains supply or the time to travel to site with portable generating equipment". [CRTC-2025-226]
+**[A]** Bell says run time is "driven by site role, the duration profile of the commercial-power
+events to which the site is exposed, accessibility for refuelling". [BELL-CRTC-RFI-26] **[A]**
+Both size backup for an ordinary outage and assume a crew and a truck can arrive.
+
+**Hurricane Fiona, Atlantic Canada, September 2022, is Bell's own account of what happens when they
+cannot.** Battery power "typically lasts for eight to ten hours", then generators, which "depend
+upon a ready supply of gasoline or diesel fuel ... fuel is only capable of being pumped where there
+is power at gas stations and fuel depots"; and "debris and downed power lines prevented our crews
+from safely navigating the streets to access network sites to replenish generator fuel". One
+wireless priority site went fully down "because its generator had exhausted its fuel supply".
+[BELL-FIONA-22] **[C]** as an analogue: it illustrates the mechanism, which is the one the
+electricity and fuel files describe for the Lower Mainland, and it generates no figure here.
+
+**A British Columbia example of the same failure at small scale.** On 29 May 2024 a power cut near
+Alexis Creek, a failed generator transfer switch and exhausted batteries cut wireless, landline and
+9-1-1 access in Bella Coola, Tatla Lake and Nimpo Lake for 2 hours 40 minutes.
+[TELUS-BELLACOOLA-24] **[A]** for the incident. Rural and not seismic; research context only.
 
 ### What is binding
 
@@ -214,7 +299,12 @@ following a disaster", with shatterproof glass and emergency food and water stor
 [ECOMM-FAC] **[A]**
 
 A page that only reports absences is not an honest page. This one is closed, it is favourable, and it
-sits directly beside the finding that nothing protects the radio sites the calls travel over.
+sits directly beside the finding that no rule sets how long the radio sites the calls travel over
+must keep running.
+
+E-Comm's own intervention in CRTC 2025-226 puts the gap in its words: "Today, there are no defined
+service levels for 911 and NG911 resiliency", and outages affecting emergency services are managed
+"under the same standards as those affecting commercial customers". [ECOMM-CRTC-25] **[A]**
 
 ### Earthquake early warning
 
@@ -273,12 +363,25 @@ do.
 
 ## What is not established
 
-**No BC-specific published telecom resilience assessment. [?]** Searched 10 September 2026: no
-TELUS, Rogers or BCE network-resilience disclosure specific to British Columbia; no ISED or Public
-Safety Canada BC-specific assessment.
+**No BC-specific published telecom resilience assessment. [?]** Searched 10 and 16 September 2026:
+no TELUS, Rogers or BCE network-resilience disclosure specific to British Columbia; no ISED or Public
+Safety Canada BC-specific assessment. The carriers' CRTC filings are national.
 
-**No carrier disclosure of site counts, backup-power holdings or restoration expectations for the
-Lower Mainland. [?]** None found through the channels above.
+**No carrier disclosure of site counts, generator coverage or restoration expectations for the
+Lower Mainland. [?]** Bell and TELUS publish national design runtimes (above); Rogers withholds its
+own. How many Lower Mainland sites have a generator, how many are battery-only rooftop sites, and
+how many sit in each TELUS tier is not published. Rogers' durations and TELUS's per-category costs
+are **withheld in confidence**, which is a different fact from their not existing.
+
+**Who builds and powers the shared Bell and TELUS radio sites in British Columbia. [?]** The shared
+network is established [CRTC-2025-245]; the regional split is trade press only. It decides whose
+design runtimes describe Vancouver. See `../open-questions.md`.
+
+**Seismic design of cell sites. [?]** No carrier publishes one. Rogers affirms that current standards
+protect against "wildfires, flooding, ice storms, or other extreme events" [ROGERS-CRTC-RFI-26];
+TELUS lists earthquakes among threats and audits its critical facilities for them, with the audit
+detail redacted [TELUS-CRTC-INT-25]. British Columbia's request for seismic-rated shelter
+foundations [BC-CRTC-SUB] is the only published statement on the point, and it is a request.
 
 **No peer-reviewed or grey-literature study modelling cellular network saturation or
 post-earthquake cellular performance in British Columbia or Metro Vancouver. [?]** PEIRS and the
@@ -295,16 +398,11 @@ it is about rather than leave the inference open.
 around 26 August 2026. **This is the page's live refresh trigger**: a decision would change the
 central finding, and the page must be re-run against it when one issues.
 
-**Method caveat.** Neither the session that produced this evidence nor the 10 September 2026
-follow-up had general web search. The original material was obtained by direct fetching of
-regulator, government and operator endpoints, sitemaps, site-native search APIs and the Crossref
-API. The follow-up added a **scripted browser** that defeats Cloudflare and JavaScript shells, and
-the **Crossref and OpenAlex bibliographic indexes**, which are true indexes rather than
-search-engine proxies. What still cannot be run is a keyword query of the form "does any
-document anywhere say X", so these negatives remain **"not found through these channels"**, not proofs of universal absence.
-The regulatory findings are the least affected, because they rest on primary CRTC documents read
-directly. **The three carrier and BC-specific negatives above rest on direct
-fetching of carrier and government endpoints rather than on any keyword index.**
+**Method caveat.** The carrier findings come from the CRTC's public record for 2025-226, read in full
+on 16 September 2026: the staff request for information, the abridged answers of Bell, TELUS and
+Rogers, and the interventions of TELUS, E-Comm and the Canadian Telecommunications Association.
+The negatives above are "not found through general web search and the regulator's record as at
+that date", not proofs of universal absence.
 
 ---
 
@@ -317,9 +415,14 @@ and amateur radio as the backups people would fall back on.* [DCRRA-2025] [PEIRS
 carries the standing note that the assessment behind it models the megathrust.
 
 **Opening sentence for the page.** A cell site is a radio and a computer in a cabinet, and both need
-power. In the Lower Mainland no rule says how long that power has to last after the grid goes down,
-because the regulator has not made one: it opened a proceeding in September 2025 and has not
-decided. [CRTC-2025-226]
+power. When the grid goes down it runs on its own backup, built to last hours to a few days
+[BELL-CRTC-RFI-26] [TELUS-CRTC-INT-25], and after that on whatever fuel reaches it. No rule says how
+long that backup has to last, because the regulator has not made one: it opened a proceeding in
+September 2025 and has not decided. [CRTC-2025-226]
+
+**Never let the regulatory absence read as "sites have no backup power".** They do, measured in
+hours to days. The finding is that nothing sets how long, and that what they carry is sized for an
+ordinary outage rather than for weeks without the grid, fuel deliveries or clear roads.
 
 **The satellite-and-radio sentence earns a place near the top.** The province naming satellite
 phones and amateur radio as the expected fallbacks is the plainest evidence on this page that the
@@ -328,7 +431,8 @@ than our reading of one. It travels with the congestion symmetry: every channel 
 way, by filling up rather than by breaking. [PEIRS]
 
 **Build it as a regulatory-gap page.** The structure writes itself, and it should be exactly this order:
-nothing requires backup power at cell sites → the regulator is still asking → what *is* binding is
+cell sites carry hours to days of backup, sized for ordinary outages, and then depend on fuel and
+access → nothing requires a minimum and the regulator is still asking → what *is* binding is
 notification and 9-1-1 prioritisation → British Columbia formally asked for 72 hours in November
 2025 → the 9-1-1 centre itself is post-disaster rated and has 72 hours → a M4.7 in 2015 produced a
 1,500% spike in 9-1-1 calls → the alerting system that warns you needs the network the
@@ -341,6 +445,11 @@ fact about the world.
 
 **Guards that must travel with the numbers.**
 
+- The carriers' runtimes are **national design targets from their own filings**, written while
+  arguing against a mandate. Give the order of magnitude (hours to a few days), not a single figure,
+  and never as a Lower Mainland inventory. TELUS's tiers are what it says providers should do.
+- Fiona is **Bell's account of an Atlantic storm**: it carries the mechanism (batteries, then
+  generators, then fuel and access), never a duration for the Lower Mainland.
 - The 24-hour and 72-hour figures under TRP 2016-165 [CRTC-2016-165] are about **9-1-1
   switches**, not radio sites.
   If there is any risk of that line being read as a tower figure, cut it.

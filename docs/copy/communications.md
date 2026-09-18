@@ -2,8 +2,8 @@
 route: /after/communications/
 title: Communications
 nav: Communications
-hook: Cell sites have no required minimum backup-power time.
-lede: The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel. [DCRRA-2025] Cell sites have no minimum backup-power requirement. The regulator is still considering one. [CRTC-2025-226]
+hook: Cell-site backup power lasts hours to days, and no rule sets a minimum.
+lede: The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel. [DCRRA-2025] Cell sites carry backup power for hours to a few days. [BELL-CRTC-RFI-26] [TELUS-CRTC-INT-25] No rule sets a minimum, and the regulator is still considering one. [CRTC-2025-226]
 bands: { cascadia: medium, crustal: medium }
 mechanism: The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel, with satellite phones and amateur radio used as backups.
 source: DCRRA-2025
@@ -27,21 +27,45 @@ earthquake in 2015. The vast majority of those calls were not emergencies."
 [ECOMM-EQ] The count comes from one small earthquake and is not a forecast for a
 large one.
 
-## Cell sites have no minimum backup-power requirement
+## Cell sites run for hours to days on backup power
 
 A cell site is a radio and a computer in a cabinet, usually on a rooftop or at the
-foot of a mast, and both run on grid power. When the power goes, the site runs on
-whatever battery or generator its owner chose to put there. How long the grid takes to come back is on [electricity](/after/electricity/), and a generator runs as long as somebody keeps delivering [fuel](/after/fuel/).
+foot of a mast, and both run on grid power. When the power goes, the site switches to
+its own batteries, and at some sites to a generator. How long the grid takes to come
+back is on [electricity](/after/electricity/), and a generator runs as long as somebody
+keeps delivering [fuel](/after/fuel/).
 
-No Canadian rule sets how long that battery has to last. On 4 September 2025 the
-Canadian Radio-television and Telecommunications Commission, the federal telecom
-regulator, opened a proceeding on network resiliency and put this to the industry: "What
-parameters should TSPs use to determine an appropriate backup power run time for each
-type of network site?" [CRTC-2025-226] TSPs are the telephone and internet companies
-themselves. The guidance reproduced in the proceeding's appendix uses "should", making
-it a recommendation. [CRTC-2025-226]
+Bell says every one of its cell sites has a battery, a generator or both. Its
+batteries are built to last between two and eight hours, and its generators a day or
+two at the sites that have one. On a rooftop, where a permanent generator often cannot
+go, it relies on a larger battery and a generator brought in by truck.
+[BELL-CRTC-RFI-26] TELUS sorts its sites into three tiers, with targets from a day at a
+standard site to a week or more at the most critical. [TELUS-CRTC-RFI-26]
+[TELUS-CRTC-INT-25] Rogers has not made its figures public. [ROGERS-CRTC-RFI-26] All
+three were describing their networks across Canada, in answers to the regulator.
 
-The record closed in late August 2026. No decision has been issued. [CRTC-2025-226]
+Backup of this kind is built for an ordinary power cut. The industry guidance in the
+regulator's proceeding sizes a battery for a typical outage, or for the time it takes a
+crew to arrive with a portable generator. [CRTC-2025-226] When Hurricane Fiona hit
+Atlantic Canada in 2022, Bell's sites ran on batteries and then on generators, and
+refuelling became the problem: gas stations without power could not pump fuel, and
+fallen trees and power lines kept crews away from the sites. [BELL-FIONA-22] After an
+earthquake, the roads and the fuel supply are among the things that break.
+
+## No rule sets how long backup power must last
+
+No Canadian rule sets a minimum. On 4 September 2025 the Canadian Radio-television and
+Telecommunications Commission, the federal telecom regulator, opened a proceeding on
+network resiliency and put this to the industry: "What parameters should TSPs use to
+determine an appropriate backup power run time for each type of network site?"
+[CRTC-2025-226] TSPs are the telephone and internet companies themselves. The guidance
+reproduced in the proceeding's appendix uses "should", making it a recommendation.
+[CRTC-2025-226]
+
+Bell, TELUS and Rogers each told the regulator that backup power should stay a matter
+of good practice rather than a rule. [BELL-CRTC-RFI-26] [TELUS-CRTC-RFI-26]
+[ROGERS-CRTC-RFI-26] The record closed in late August 2026. No decision has been
+issued. [CRTC-2025-226]
 
 ## Current rules focus on reporting and 9-1-1 routing
 
@@ -73,7 +97,8 @@ The submission is a request, not a rule. It does not describe what is in place t
 E-Comm's Lower Mainland centre is a 60,000 square foot reinforced concrete
 post-disaster building, "designed to resist an earthquake and to operate
 self-sufficiently for up to 72 hours". [ECOMM-FAC] This applies to the centre receiving
-the call, not the cabinets and towers carrying it.
+the call, not the cabinets and towers carrying it. E-Comm itself told the regulator that
+there are no defined service levels for the resiliency of 9-1-1 today. [ECOMM-CRTC-25]
 
 ## Disruption could last days to weeks
 
@@ -97,10 +122,11 @@ have a limited number of radio operators". [PEIRS] The distinction is whether an
 operator joined an organised group before the earthquake.
 
 > **Not published.** Which regions are short of radio operators, and whether the
-> Lower Mainland is one of them, is not in the document. [PEIRS] No carrier has
-> published how many sites it runs here, how long they hold without grid power, or
-> how quickly it would bring them back, and the province's assessments give no site
-> counts and no restoration curve. [PEIRS] [DCRRA-2025]
+> Lower Mainland is one of them, is not in the document. [PEIRS] The carriers'
+> backup-power figures cover the whole country. None has published how many of its
+> sites here have a generator, or how quickly it would bring them back after an
+> earthquake, and the province's assessments give no site counts and no restoration
+> curve. [BELL-CRTC-RFI-26] [PEIRS] [DCRRA-2025]
 
 ## Earthquake alerts depend on the mobile network
 
@@ -151,7 +177,8 @@ These steps do not require buying anything in advance.
 
 ## Sources on this page
 
-[DCRRA-2025] [CRTC-2025-226] [PEIRS] [ECOMM-EQ] [CRTC-2025-225] [CRTC-2025-65]
-[CRTC-2016-165] [BC-CRTC-SUB] [ECOMM-FAC] [NRCAN-EEW] [BC-ALERT-2026]
+[DCRRA-2025] [BELL-CRTC-RFI-26] [TELUS-CRTC-INT-25] [CRTC-2025-226] [PEIRS] [ECOMM-EQ]
+[TELUS-CRTC-RFI-26] [ROGERS-CRTC-RFI-26] [BELL-FIONA-22] [CRTC-2025-225] [CRTC-2025-65]
+[CRTC-2016-165] [BC-CRTC-SUB] [ECOMM-FAC] [ECOMM-CRTC-25] [NRCAN-EEW] [BC-ALERT-2026]
 [NRCAN-EEW-FAQ] [NRCAN-EEW-CSZ-23] [NRCAN-EEW-1946-21] [NRCAN-EEW-NISQ-26]
 [NRCAN-EEW-CHCH-23] [COV-EXPLORER-25]
