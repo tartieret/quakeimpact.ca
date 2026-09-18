@@ -97,8 +97,8 @@ const link = "text-accent underline underline-offset-2";
 
 export const homeHero = {
   titleLines: ["The shaking", "is the short part."],
-  primary: { label: "Start with food and water", href: "/prepare/" },
-  secondary: { label: "Explore the aftermath", href: "#what-happens-after-the-shaking" },
+  primary: { label: "See what happens next", href: "#what-happens-after-the-shaking" },
+  secondary: { label: "Start preparing", href: "/prepare/" },
 };
 
 export const home: PageModule = {
