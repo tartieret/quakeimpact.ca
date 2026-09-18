@@ -71,15 +71,10 @@ import type { PageModule } from "./index";
  * published the panel gives the duration; where none is, it says what the
  * mechanism does to an ordinary week instead.
  *
- * The standfirst opens on the gap the site exists to close: the province asks
- * for two weeks, and households are not carrying it. Both halves are cited, and
- * the second says kit ownership rather than days of supply because that is what
- * the record measures — no published study measures held supply anywhere in the
- * Lower Mainland, and `docs/research/household-preparedness.md` carries the six
- * studies, what each one counted, and the guard that none of them may be used
- * to say what share of households could last two weeks. The sentence quotes no
- * percentage: the figure is five years old, and one number invites a reader to
- * take a poll of 800 for a census.
+ * The standfirst opens with the difference between the event and its aftermath.
+ * It names the ordinary services a household loses before the timeline shows
+ * the sequence in full. The preparation gap moves to the closing lever, where
+ * it sits beside the action a reader can take.
  *
  * The first two sections open on a sentence the copy writes as their first
  * paragraph and this module passes as `lede`, which is the only difference
@@ -104,22 +99,19 @@ const link = "text-accent underline underline-offset-2";
 export const home: PageModule = {
   meta: {
     route: "/",
-    title: "What a major earthquake does to the Lower Mainland, and for how long",
+    title: "The shaking is the short part.",
     description:
       "What has already been published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each repair is waiting on.",
     nav: "Home",
     kicker: "Lower Mainland, British Columbia",
     standfirst: (
       <>
-        British Columbia asks every household to keep{" "}
-        <Link href="/prepare/" className={link}>
-          two weeks of water and food
-        </Link>
-        . <Cite id="PREPAREDBC" /> Most households in the region have not put
-        together an emergency kit of any size.{" "}
-        <Cite id="RESEARCHCO-PREP-21" /> This site gathers what has already been
-        published about a major earthquake in the Lower Mainland: what breaks,
-        how long it stays broken, and what each repair is waiting on.
+        A major earthquake in the Lower Mainland could last only a few minutes.
+        What follows could last much longer. Power and mobile networks may fail,
+        roads may close, water pressure may fall, and grocery stores may not
+        reopen or restock quickly. The food and water already in the house could
+        become what a household relies on. The earthquake is measured in
+        minutes. The disruption is measured in days, weeks and months.
       </>
     ),
     /**
@@ -137,8 +129,8 @@ export const home: PageModule = {
 
   sections: [
     {
-      title: "The shaking is the short part",
-      lede: "Most people picture an earthquake as a violent event with a clear end, followed by help arriving from outside.",
+      title: "What happens after the shaking?",
+      lede: "The ground stops moving, but the failures have only started. This is how the first hours become days, weeks and months.",
       body: (
         <div className="flex flex-col gap-8">
           <PhaseNarrative
@@ -422,25 +414,23 @@ export const home: PageModule = {
   ],
 
   lever: {
-    heading: "Start here",
+    heading: "You do not need to prepare for everything at once",
     items: [
       <>
-        If you have two minutes, store water. Distributing bulk drinking water
-        across the region stays difficult for the first four to five days.{" "}
-        <Cite id="DCRRA-2025" /> PreparedBC asks for four litres per person per
-        day, for at least two weeks. <Cite id="PREPAREDBC" /> Water in the
-        cupboard covers the days when getting it to you is hardest.
+        Food and water are among the first things a household will need to
+        provide for itself. British Columbia asks every household to keep at
+        least two weeks of both. <Cite id="PREPAREDBC" /> Most households in the
+        region have not put together an emergency kit of any size.{" "}
+        <Cite id="RESEARCHCO-PREP-21" />
       </>,
       <>
-        If you have ten minutes, read{" "}
-        <Link href="/scenarios/" className={link}>
-          the two scenarios
-        </Link>{" "}
-        and then{" "}
+        Start with food and water. Store what you can today, then add to it over
+        time. PreparedBC recommends four litres of water per person per day and
+        food that will not spoil. <Cite id="PREPAREDBC" /> The{" "}
         <Link href="/prepare/" className={link}>
-          preparing
+          preparation guide
         </Link>
-        .
+        {" "}turns that first step into a household plan.
       </>,
     ],
   },
