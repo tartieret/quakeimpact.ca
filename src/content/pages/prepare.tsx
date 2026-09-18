@@ -18,20 +18,20 @@ export const prepare: PageModule = {
     route: "/prepare/",
     title: "Preparing",
     description:
-      "British Columbia asks households to keep at least two weeks of supplies. Start with a plan, water and the people nearby.",
+      "British Columbia asks households to plan for two weeks without outside help. Preparing protects your household and preserves help for others.",
     nav: "Preparing",
     kicker: "Part 3",
     standfirst: (
       <>
-        British Columbia asks every household to keep at least two weeks of
-        water, food and essential supplies. <Cite id="PREPAREDBC" /> Start with
-        the parts that cost nothing: decide where to meet, who to contact
-        outside the region and who nearby may need help.
+        British Columbia asks every household to prepare for two weeks because
+        it expects public resources to be overwhelmed. <Cite id="PEIRS" />{" "}
+        Being ready protects the people in your home and leaves scarce help for
+        somebody who cannot manage alone.
       </>
     ),
     references: [
-      "PREPAREDBC",
       "PEIRS",
+      "PREPAREDBC",
       "PREPAREDBC-PLAN",
       "PREPAREDBC-NEIGHBOURHOOD",
       "PREPAREDBC-GUIDES",
@@ -52,14 +52,22 @@ export const prepare: PageModule = {
 
   sections: [
     {
-      title: "Prepare to look after your household for two weeks",
+      title: "Plan for two weeks",
       body: (
         <Prose>
           <p>
-            The province plans for family and neighbours to be the only help
-            available at first. It asks people in an earthquake zone to be
-            self-sufficient for up to two weeks so limited public resources can
-            reach those with no other option. <Cite id="PEIRS" />
+            Most people picture the end of the shaking followed by help
+            arriving from outside. The official plan starts from a harder
+            assumption. Local and provincial resources will be overwhelmed.
+            Family and neighbours are likely to be the only help available at
+            first, and households in an earthquake zone should aim to be
+            self-sufficient for up to two weeks. <Cite id="PEIRS" />
+          </p>
+          <p>
+            Preparedness is a civic duty. A household that can look after
+            itself leaves limited crews, shelter places and relief supplies for
+            somebody with no other option. That is how private preparation
+            builds regional resilience. <Cite id="PEIRS" />
           </p>
           <p>
             Keep enough water, food and essential supplies for every person and
@@ -70,8 +78,8 @@ export const prepare: PageModule = {
             the scale of a catastrophic earthquake. <Cite id="PEIRS" />
           </p>
           <p>
-            Two weeks is the target. Do not wait until you can buy everything
-            at once. A written plan, a meeting place and a conversation with a
+            Plan for two weeks. Do not wait until you can buy everything at
+            once. A written plan, a meeting place and a conversation with a
             neighbour are useful immediately and cost nothing.
           </p>
         </Prose>

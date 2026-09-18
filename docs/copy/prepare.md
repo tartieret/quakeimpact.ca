@@ -2,14 +2,20 @@
 route: /prepare/
 title: Preparing
 nav: Preparing
-lede: British Columbia asks every household to keep at least two weeks of water, food and essential supplies. Start with the parts that cost nothing: decide where to meet, who to contact outside the region and who nearby may need help.
+lede: British Columbia asks every household to prepare for two weeks because it expects public resources to be overwhelmed. Being ready protects the people in your home and leaves scarce help for somebody who cannot manage alone.
 ---
 
-## Prepare to look after your household for two weeks
+## Plan for two weeks
 
-The province plans for family and neighbours to be the only help available at
-first. It asks people in an earthquake zone to be self-sufficient for up to two
-weeks so limited public resources can reach those with no other option. [PEIRS]
+Most people picture the end of the shaking followed by help arriving from
+outside. The official plan starts from a harder assumption. Local and provincial
+resources will be overwhelmed. Family and neighbours are likely to be the only
+help available at first, and households in an earthquake zone should aim to be
+self-sufficient for up to two weeks. [PEIRS]
+
+Preparedness is a civic duty. A household that can look after itself leaves
+limited crews, shelter places and relief supplies for somebody with no other
+option. That is how private preparation builds regional resilience. [PEIRS]
 
 Keep enough water, food and essential supplies for every person and pet in the
 home for at least two weeks. Infrastructure and utilities may take weeks to
@@ -17,9 +23,9 @@ restore. [PREPAREDBC] Emergency Support Services can provide short-term food,
 lodging and other help, but the program is designed around the first 72 hours and
 not the scale of a catastrophic earthquake. [PEIRS]
 
-Two weeks is the target. Do not wait until you can buy everything at once. A
-written plan, a meeting place and a conversation with a neighbour are useful
-immediately and cost nothing.
+Plan for two weeks. Do not wait until you can buy everything at once. A written
+plan, a meeting place and a conversation with a neighbour are useful immediately
+and cost nothing.
 
 ## Make a plan that works without phone service
 
@@ -201,7 +207,7 @@ public resources for the people who have no other option. [PEIRS]
 
 ## Sources on this page
 
-[PREPAREDBC] [PEIRS] [PREPAREDBC-PLAN] [PREPAREDBC-NEIGHBOURHOOD]
+[PEIRS] [PREPAREDBC] [PREPAREDBC-PLAN] [PREPAREDBC-NEIGHBOURHOOD]
 [PREPAREDBC-GUIDES] [RESEARCHCO-PREP-21] [DCRRA-2025] [COV-EXPLORER-25]
 [NRCAN-EEW] [PREPAREDBC-KIT] [PREPAREDBC-DISABILITY] [FBC-EQ] [SURREY-PREP]
 [ECOMM-EQ] [COV-HUBS] [DRR-GOVPAGE] [PREPAREDBC-BUDGET]
