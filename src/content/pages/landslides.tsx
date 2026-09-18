@@ -13,12 +13,10 @@ import type { PageModule } from "./index";
  * mapped of it, that shaking brings the same slopes down, and how long a
  * severed road stays severed.
  *
- * There is no figure and no map slot, and that is deliberate. The two layers a
+ * There is no figure and no map slot, and that is deliberate. The layer a
  * reader would want cannot be drawn here: the microzonation slope instability
- * sheets are licensed link-only (see `docs/licensing.md`), and no corridor
- * product conditioned on shaking exists for Highway 99 or the Fraser Canyon.
- * A placeholder for a graphic that will never be drawn is a promise rather
- * than a label.
+ * sheets are licensed link-only, per `docs/licensing.md`. A placeholder for a
+ * graphic that will never be drawn is a promise rather than a label.
  */
 export const landslides: PageModule = {
   meta: {
@@ -90,11 +88,9 @@ export const landslides: PageModule = {
             areas, cutting off transportation routes.” <Cite id="PEIRS" />
           </p>
           <p>
-            The ratings on Highway 99 were built for the weather. The weight
-            they give to which way a slope faces is explained by where the rain
-            comes from, which is the west. <Cite id="GSC-OF-6169" /> They still
-            show where the loose rock and the debris channels are, and shaking
-            works on the same ground.
+            The same strategy plans on large parts of the impact area being
+            unreachable by road, from earthquake-triggered landslides,
+            liquefaction and bridge damage. <Cite id="PEIRS" />
           </p>
         </Prose>
       ),
@@ -118,10 +114,9 @@ export const landslides: PageModule = {
             through mountains.
           </p>
           <p>
-            The last time these roads were cut it was rain rather than shaking
-            that did it. A storm in November 2021 closed Highway 1 through the
-            Fraser Canyon at 18 sites between Hope and Spences Bridge, and it
-            reopened about two months later. <Cite id="HWY1-RECOV" /> Highway 8
+            In November 2021 a storm closed Highway 1 through the Fraser
+            Canyon at 18 sites between Hope and Spences Bridge, and it reopened
+            about two months later. <Cite id="HWY1-RECOV" /> Highway 8
             in the Nicola Valley took about a year. <Cite id="HWY8-RECOV" /> The
             same storm cut the main rail lines out of the province.{" "}
             <Cite id="BC-FLOOD-STRAT" />
@@ -167,8 +162,7 @@ export const landslides: PageModule = {
     closing: (
       <>
         A slope that comes down on Highway 99 lands on the road that help
-        arrives by. Whether it was rain or shaking that brought it down changes
-        very little about the weeks that follow.
+        arrives by, and clearing it is measured in weeks.
       </>
     ),
   },

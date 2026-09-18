@@ -11,9 +11,8 @@ mapped of it, that shaking brings the same slopes down, and how long a severed
 road stays severed.
 
 There is no figure and no map slot. The microzonation slope instability sheets
-are licensed link-only, and no corridor product conditioned on shaking exists
-for Highway 99 or the Fraser Canyon. The page says where the loose rock is in
-words instead. -->
+are licensed link-only, so the page says where the loose rock is in words
+instead. -->
 
 ## Loose rock sits above the roads into this region
 
@@ -42,10 +41,9 @@ city is set on a January afternoon, right after an atmospheric river has soaked
 the ground. Its account of the first minutes reads: "Landslides and rock falls
 are generated in many areas, cutting off transportation routes." [PEIRS]
 
-The ratings on Highway 99 were built for the weather. The weight they give to
-which way a slope faces is explained by where the rain comes from, which is the
-west. [GSC-OF-6169] They still show where the loose rock and the debris channels
-are, and shaking works on the same ground.
+The same strategy plans on large parts of the impact area being unreachable by
+road, from earthquake-triggered landslides, liquefaction and bridge damage.
+[PEIRS]
 
 ## A road cut here stays cut for weeks
 
@@ -58,8 +56,7 @@ Where the help is makes that worse. Provincial staging areas sit outside the
 impact area, and resources are gathered there and pushed in. [PEIRS] Two of the
 roads they would come in on run through mountains.
 
-The last time these roads were cut it was rain rather than shaking that did it.
-A storm in November 2021 closed Highway 1 through the Fraser Canyon at 18 sites
+In November 2021 a storm closed Highway 1 through the Fraser Canyon at 18 sites
 between Hope and Spences Bridge, and it reopened about two months later.
 [HWY1-RECOV] Highway 8 in the Nicola Valley took about a year. [HWY8-RECOV] The
 same storm cut the main rail lines out of the province. [BC-FLOOD-STRAT]
@@ -79,9 +76,8 @@ impact area and pushed in over roads that run through mountains. [PEIRS] At home
 that means enough water, food and medicine to last while the roads are being
 cleared.
 
-A slope that comes down on Highway 99 lands on the road that help arrives by.
-Whether it was rain or shaking that brought it down changes very little about
-the weeks that follow.
+A slope that comes down on Highway 99 lands on the road that help arrives by,
+and clearing it is measured in weeks.
 
 ## Sources on this page
 
