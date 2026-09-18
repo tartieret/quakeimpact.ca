@@ -79,10 +79,10 @@ export function PrepareWaterArithmetic() {
         One mark is four litres: one person for one day.
       </FigText>
       <FigText y={WATER_FLOOR_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        At least. The guide gives no upper figure.
+        For drinking and sanitation together.
       </FigText>
       <FigText y={WATER_GUARD_Y} size={FIG_TYPE.tick} fill={FIG_COLOR.faint}>
-        The total is arithmetic, not a printed figure.
+        Four people × fourteen days.
       </FigText>
     </FigureCanvas>
   );

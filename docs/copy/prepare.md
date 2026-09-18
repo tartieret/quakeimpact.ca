@@ -2,316 +2,206 @@
 route: /prepare/
 title: Preparing
 nav: Preparing
-hook: The province's own plan says family and neighbours are likely to be the only available first responders.
-lede: British Columbia's earthquake guidance asks a household for two weeks of water and food, a written plan, a meeting place and a phone number outside the region. The two things on that list that cost nothing are the two most households have skipped.
+lede: British Columbia asks every household to keep at least two weeks of water, food and essential supplies. Start with the parts that cost nothing: decide where to meet, who to contact outside the region and who nearby may need help.
 ---
 
-## Family and neighbours provide the first help
+## Prepare to look after your household for two weeks
 
+The province plans for family and neighbours to be the only help available at
+first. It asks people in an earthquake zone to be self-sufficient for up to two
+weeks so limited public resources can reach those with no other option. [PEIRS]
 
+Keep enough water, food and essential supplies for every person and pet in the
+home for at least two weeks. Infrastructure and utilities may take weeks to
+restore. [PREPAREDBC] Emergency Support Services can provide short-term food,
+lodging and other help, but the program is designed around the first 72 hours and
+not the scale of a catastrophic earthquake. [PEIRS]
 
-> "During a disaster, local and provincial government resources will be overwhelmed.
-> In such an event, one's family and neighbours are likely to be the only available
-> first responders. **People living in an earthquake zone should aim to be
-> self-sufficient for up to two weeks.** Prepared neighbourhoods, families, and
-> individuals will reduce pressure on overwhelmed government agencies and allow
-> available resources to go where they are most needed." [PEIRS]
+Two weeks is the target. Do not wait until you can buy everything at once. A
+written plan, a meeting place and a conversation with a neighbour are useful
+immediately and cost nothing.
 
-That last sentence is the reason the province gives for asking. A household that can
-look after itself frees the ambulance, the crew and the shelter place for the person who
-has no other option.
+## Make a plan that works without phone service
 
-PreparedBC's Earthquake and Tsunami Preparedness Guide asks for food, water and
-supplies for each person and pet in the home "for at least two weeks, or longer".
-[PREPAREDBC] The support system behind that is smaller. The province's Emergency
-Support Services program, which houses and feeds people who have lost their homes, "is
-designed to provide up to 72 hours of support", and the same page says it "is not
-designed for the scope and scale of services required after a catastrophic earthquake".
-[PEIRS]
+Choose one contact outside British Columbia. Everyone in the household should
+know the number and use that person to pass on where they are. Pick two meeting
+places as well: one close to home, such as a mailbox on the street, and one
+farther away, such as a nearby park or community centre. [PREPAREDBC-PLAN]
+[PREPAREDBC-NEIGHBOURHOOD]
 
-The City of Vancouver asks for less. It tells residents to gather supplies for "a
-minimum of 3 days, although your target should be a week to 2 weeks". [COV-EXPLORER-25] The provincial guide written for this hazard asks for at least two weeks, and says in the same breath that "It may be weeks before infrastructure, utilities and essential services are restored". [PREPAREDBC]
+Write the plan on paper and put a copy in every grab-and-go bag. The province
+provides a fill-in household plan in English, French, Simplified and Traditional
+Chinese and Punjabi. It takes less space than a phone and works when the battery
+and network do not. [PREPAREDBC-PLAN] [PREPAREDBC-GUIDES]
 
-## Write down how to reconnect
+Most households have not made these simple decisions. In a 2021 poll of 800
+British Columbians, 28 per cent had a plan for contacting family or friends and
+22 per cent had an agreed meeting place. [RESEARCHCO-PREP-21] Communications can
+be disrupted for days to weeks, and the service that remains may be reserved for
+emergency personnel. [DCRRA-2025] Send a text before trying a call, but do not
+make a working phone the plan. [PEIRS]
 
-The guide's own planning checklist is nine items, and only two of them are shopping.
+Work out how each person would get home if roads were blocked and trains had
+stopped for damage inspections. [COV-EXPLORER-25] Decide who will collect
+children, check on anyone who lives alone and look after pets if the household
+is separated.
+
+## Practise one response to shaking
+
+Earthquake Early Warning detects an earthquake after it starts and may provide
+seconds to tens of seconds of notice through compatible phones, television and
+radio. It does not predict earthquakes, and close to the source the alert may
+arrive as the shaking begins. [PREPAREDBC] [NRCAN-EEW]
+
+Whether the warning is the alert or the movement underfoot, do the same thing:
+Drop, Cover and Hold On. Get onto your hands and knees, cover your head and neck,
+and shelter under sturdy furniture. If none is close, crawl to an interior
+corner or wall. Hold on until the shaking stops, then count to 60 before getting
+up so loose objects have time to settle. [PREPAREDBC]
+
+If you use a wheelchair, walker or cane, lock the wheels instead of dropping,
+then cover your head and neck and hold on. Repeat the same response during
+aftershocks. [PREPAREDBC] Practise in the places where people sleep, work and
+spend time. In the moment, the useful response is the one the body already
+knows.
+
+## Store water before anything else
+
+Store four litres per person per day for drinking and sanitation. For four
+people over two weeks, that is at least 224 litres. The household total is
+arithmetic from the published daily rate. [PREPAREDBC] [COV-EXPLORER-25]
+
+Water is bulky. Store it first anyway, in more than one container if possible,
+and refresh it on a schedule you will keep. Regional distribution of bulk
+drinking water may remain difficult for the first four to five days.
+[DCRRA-2025] Whatever you can store closes part of that gap.
+
+Add water and supplies for each pet, along with a separate grab-and-go bag.
+[PREPAREDBC-KIT]
+
+## Build the kit around how people actually live
+
+Choose food that needs no refrigeration and little or no cooking. Keep a manual
+can opener with it. Add a battery-powered or hand-crank radio, a flashlight and
+spare batteries, a phone power bank, first aid supplies, medications, dust
+masks, garbage bags, moist towelettes, warm layers, sturdy footwear, an
+emergency blanket, a whistle, copies of identification and insurance papers,
+and cash in small bills. Keep the kit somewhere everyone can reach.
 [PREPAREDBC]
 
-- Identify the hazards in your region.
-- Make an emergency phone list with at least one out-of-area contact.
-- Pick a meeting spot in case you are separated.
-- Learn how to turn off the utilities.
-- Secure your space.
-- Identify which official sources you will get information from.
-- Identify any special needs, such as medications, and make sure a proper supply is on
-  hand.
-- Store enough food and water for everyone in your home for at least two weeks.
-- Create grab-and-go bags.
+Pack a smaller grab-and-go bag for each person and pet. Include a copy of the
+household plan and a local map with both meeting places marked. [PREPAREDBC]
+[PREPAREDBC-KIT]
 
-The province publishes a fill-in-the-blanks household plan to write it on, in English,
-French, Simplified and Traditional Chinese and Punjabi. [PREPAREDBC-PLAN]
-[PREPAREDBC-GUIDES]
+### Plan around the person who will need the most help
 
-**The out-of-area contact.** One phone number, somewhere the earthquake is not. The
-province's advice is to "choose someone who lives outside of B.C. and wouldn't be
-affected by a major event, such as an earthquake", and the reason it gives is that local
-phone and mobile networks may be overwhelmed. [PREPAREDBC-PLAN] Everyone in the
-household calls or texts that one person, and that person tells each of them where the
-others are.
+Medication, mobility equipment, infant supplies, food allergies and the needs
+of older adults cannot be added after the earthquake. Write down medication
+details, keep extra supplies where possible and make sure someone else knows how
+specialised equipment works. [PREPAREDBC-DISABILITY]
 
-**The meeting place.** The province asks households to pick a meeting place, and a
-secondary location such as a community centre in case you cannot get back to the first.
-[PREPAREDBC-PLAN] Its neighbourhood guide is more concrete: one meeting place close by,
-"like a mailbox on your street", and another farther away, "like a nearby park".
+Build a support network of at least three trusted people for anyone who may need
+help getting out or getting by. Give them the keys and medical information they
+need, show them where supplies are kept, and agree how they will check in without
+relying on a working phone. [PREPAREDBC-DISABILITY]
+
+## Make the rooms where people sleep safer
+
+Start beside the beds. Fasten tall bookcases, cabinets and shelving to wall
+studs. Move pictures and mirrors away from beds and seating, latch cabinet doors,
+strap large appliances and anchor the water heater. [PREPAREDBC]
+
+If you rent or cannot drill, move heavy objects to lower shelves, move the bed
+away from windows, use removable fasteners under small appliances and keep
+sturdy shoes under the bed. [COV-EXPLORER-25] One safer room is a useful start.
+
+## Learn the utility shut-offs, then leave them alone
+
+Find the electrical panel, water valve and gas valve before an emergency. Learn
+how each works and keep the right tool near the gas valve. [PREPAREDBC]
+
+Do not shut off the gas unless an official tells you to. Once gas is off at the
+meter, a registered gas contractor has to visit the home and relight every
+appliance before service can return. That household-by-household work may take
+weeks after a major emergency. [FBC-EQ] [SURREY-PREP] Never turn it back on
+yourself.
+
+## Prepare with the people who will be nearby
+
+Meet the neighbours before you need one another. Start with a group that already
+exists, such as a strata council, residents' association or Block Watch group.
+Work out who may need extra help, who knows first aid, who can interpret, and who
+has useful equipment such as a barbecue, generator or chainsaw. Agree where to
+meet and whether the building or block has room for shared supplies.
 [PREPAREDBC-NEIGHBOURHOOD]
 
-In a 2021 poll of 800 British Columbians, 28 per cent of respondents had a plan for how
-to contact family or friends and 22 per cent had an agreed meeting place.
-[RESEARCHCO-PREP-21]
+Neighbours are not official first responders, and directions from officials
+come first. They are still the people most likely to be close enough to help in
+the first hours. [PEIRS]
 
-The province's plan says that if service is available, networks "may be congested or
-overloaded, making communication extremely challenging", and that "texts and
-low-bandwidth data-based services may be the most reliable method of communication".
-[PEIRS] Its 2025 risk assessment says disruptions in communications continue for days to
-weeks, with access prioritised for emergency personnel. [DCRRA-2025] An agreement made
-now needs none of that to work.
+## After the shaking, stay put if home is safe
 
-Plan how you would get home as well as who you would call. The City of Vancouver's own
-advice is to "plan alternate ways to get home considering roads may be blocked and
-trains will not be running until damage assessments are complete". [COV-EXPLORER-25]
+Move carefully and look for hazards above and below. If the building is
+structurally safe, stay there. Leave if it is badly damaged, poses a safety risk
+or officials order an evacuation. Take the grab-and-go bags and follow the
+instructions provided. [PREPAREDBC]
 
-## Turn on earthquake alerts
+Call 9-1-1 only for a life-threatening emergency. After a magnitude 4.7
+earthquake in 2015, calls to E-Comm rose by 1,500 per cent. [ECOMM-EQ] Keep the
+network available for someone whose life depends on it.
 
-The Canadian Earthquake Early Warning system detects an earthquake immediately after it
-starts and sends an alert through the National Public Alerting System, so alerts arrive
-on television, on the radio and on compatible mobile phones. [PREPAREDBC] It provides
-"seconds to tens-of-seconds of warning", which is enough to get down and under
-something, and the guide is explicit that early warning systems cannot predict
-earthquakes. [PREPAREDBC] Close to where the earthquake starts, the alert may arrive as
-the shaking begins. [NRCAN-EEW]
+In Vancouver, yellow signs mark 25 disaster support hubs where services may
+include lodging, food, water, supplies, information and help reconnecting
+families. No public capacity figure is available, so do not make a hub bed part
+of the household plan. [COV-HUBS]
 
-The seconds are for one action:
+Disaster Response Routes are not evacuation routes. They remain open to everyone
+until a state of emergency is declared. Once activated, get off them and leave
+them clear for emergency traffic. [DRR-GOVPAGE]
 
-> "If you feel the ground shake or receive an alert on your phone, TV or radio from the
-> Canadian Earthquake Early Warning system, immediately Drop, Cover and Hold On. After
-> the shaking stops count to 60 before getting up." [PREPAREDBC]
+## Start with what you have and keep adding
 
-Drop to your hands and knees. Cover your head and neck with your arm and take shelter
-under a sturdy piece of furniture, or crawl to the nearest interior corner or wall if
-there is none nearby. Hold on to your shelter until the shaking stops, then count to 60,
-which is the time the guide gives loose objects to settle. [PREPAREDBC] The guide
-publishes the same three steps for someone using a wheelchair, a walker or a cane, with
-the wheels locked in place of the drop. [PREPAREDBC] Aftershocks get the same response,
-and the guide says to expect them. [PREPAREDBC]
+A complete two-week kit costs money and takes space. Start with the water and
+food already in the home, then add an item to the regular shopping when the
+budget allows. Dollar stores, thrift stores and garage sales can cover much of
+the equipment. A backpack can come from a thrift store, and first aid supplies
+can be gathered from what is already in the house. [PREPAREDBC-BUDGET]
 
-## Water is the first thing to store
-
-Four litres per person per day, for drinking and sanitation together, is the province's
-rate. [PREPAREDBC] The City of Vancouver prints the same rate. [COV-EXPLORER-25] For a
-household of four holding two weeks, that is at least 224 litres. That total is
-calculated from the published rate; neither body prints it.
-
-Pets are on the same list, one grab-and-go bag each and supplies for the same two weeks. [PREPAREDBC-KIT]
-
-Water is bulky. Store it first anyway. The province's 2025 risk assessment says people
-are thirsty within 24 hours, and that distributing bulk drinking water across the
-affected region stays challenging for the first four to five days. [DCRRA-2025] Stored
-water covers that gap. Whatever you can hold is worth holding, refilled on a schedule you
-will actually keep.
-
-## Store food that needs no cooking
-
-Non-perishable food for at least two weeks, with a manual can opener. [PREPAREDBC] Then
-the rest of the kit the guide lists: a battery-powered or hand-crank radio, a flashlight
-and spare batteries, a phone charger and a power bank, a first aid kit and medications, a
-dust mask, garbage bags and moist towelettes, seasonal clothing, sturdy footwear and an
-emergency blanket, a whistle, and a copy of your plan with copies of important documents
-such as insurance papers and identification, and cash in small bills. [PREPAREDBC]
-
-Keep it all together somewhere you can reach. [PREPAREDBC]
-
-A grab-and-go bag is the smaller version of the same thing, one for each person and pet,
-customised to personal or medical needs, in case you have to leave quickly. The guide
-asks that the bags be accessible and that everyone in the household knows where they
-are. [PREPAREDBC] The province's kit list puts one more thing in the bag: a local map
-with your household meeting places marked on it. [PREPAREDBC-KIT]
-
-## Secure heavy furniture near beds
-
-In the province's own narrative of the shaking, unsecured objects "fall or fly through
-the air", windows break and glass scatters. [PEIRS] Nearly all of what the guidance
-asks for here is furniture and fixings, not structure.
-
-What the provincial guide asks for: tall free-standing furniture such as bookcases,
-cabinets and shelving fastened to wall studs with brackets; framed pictures and mirrors
-moved away from beds, couches and chairs; cabinet doors held shut with push or pull
-latches; fridges, freezers, washers and dryers strapped; and the water heater anchored
-snugly to the wall. [PREPAREDBC]
-
-If you rent and cannot drill, the City of Vancouver publishes the version that needs no
-fixings: heavy objects on lower shelves, pictures and mirrors away from beds and
-seating, double-sided tape or velcro under smaller appliances, the bed away from the
-window, and sturdy shoes under the bed. [COV-EXPLORER-25]
-
-Start with the rooms where people sleep, and with anything tall next to a bed.
-
-## Know where the utility shut-offs are
-
-The provincial guide asks everyone to learn how to turn off their home's electrical
-panel, water and gas valves "in case you're instructed to do so by local officials", and
-to hang a wrench close to the gas valve. [PREPAREDBC] It is equally clear about the
-other half: "If your gas is shut off at the meter, DON'T try to turn it back on. Only a
-licensed gas contractor can do that safely." [PREPAREDBC] The City of Vancouver asks the
-same first thing, which is to know where the shut-offs are and how to use them.
-[COV-EXPLORER-25]
-
-FortisBC tells customers not to shut their gas off themselves. If it is shut off at the
-meter, only a registered gas contractor may restore service, and restoration runs
-household by household, with a visit to each home to relight every appliance. [FBC-EQ]
-Surrey publishes the same instruction with the consequence attached: "Leave natural gas
-service on unless officials tell you to turn it off. If you go turn off the gas, the gas
-company has to reconnect it, which may take weeks after a major emergency."
-[SURREY-PREP]
-
-Know where the valves are. Leave them where they are unless an official tells you
-otherwise. Never turn the gas back on yourself.
-
-## Account for individual needs
-
-The guide asks households to "consider the unique requirements of everyone in your home,
-such as children, older adults, pets and those with additional needs", and to think about
-what each of them needs to be safe and comfortable. [PREPAREDBC] Medication is the one
-item on the checklist nobody can improvise: identify what is needed and make sure a
-proper supply is on hand. [PREPAREDBC]
-
-The province's guide for people with disabilities asks for a trusted support network of
-at least three people, and for a list of things settled with them before anything
-happens: that they will check on you immediately, that they hold keys
-and relevant medical information, that they know how to operate specialised medical or
-mobility equipment such as lifts, wheelchairs or scooters, and that they know where your
-supplies are. It also says to agree and practise how you would contact each other, and
-"do not count on telephones working". [PREPAREDBC-DISABILITY] A list of your medications
-with the details from your pharmacist, and extra medication or supplies where that is
-possible, belong in the same plan. [PREPAREDBC-DISABILITY] Most of that is worth doing
-for anyone in the household who would need help getting out or getting by.
-
-## Meet the neighbours who may be nearby
-
-The province's own sentence is that "the most immediate help will come from those around
-you", and that building those relationships now means a better response and a faster
-recovery. [PREPAREDBC-PLAN] Its response plan says the same thing operationally,
-recording that
-communities "informally self-activate" and "will work together without receiving
-guidance from the Province". [PEIRS]
-
-The province's neighbourhood guide says where to start, and none of it needs a budget.
-Begin with a group that already exists, such as a Block Watch group, a residents'
-association or a strata council. Work out who might need extra help, including people
-with small children or pets, older adults, people with disabilities and people who speak
-English as a second language. Ask what everyone has and can do: who has a barbecue, a
-generator or a chainsaw, who has first aid training, and who could interpret for a
-neighbour who needs it. Agree the two meeting places. Talk about a central storage space,
-which is one published answer to the problem of a kit that will not fit in a small
-apartment. [PREPAREDBC-NEIGHBOURHOOD]
-
-The same guide sets the limit on all of this: "neighbourhood volunteers are not official
-first responders", and instructions from officials and first responders come first.
-[PREPAREDBC-NEIGHBOURHOOD]
-
-## Stay where you are if the building is safe
-
-For a building that is still sound:
-
-> "If your home, apartment or condominium is structurally safe following an earthquake,
-> the best thing you can do is shelter-in-place. In other words – stay where you are.
-> This will help first responders do their jobs and support those who need them most."
-> [PREPAREDBC]
-
-Move cautiously and look for hazards above and below. If the home has considerable
-damage and poses a safety risk, or officials direct an evacuation, leave immediately,
-take the grab-and-go bags, and follow the instructions given. Reception centres may be
-opened for food and lodging, and their locations are listed in the evacuation order that
-sends you to them. [PREPAREDBC] Only call 9-1-1 for life-threatening emergencies: after
-a magnitude 4.7 earthquake in 2015, E-Comm recorded a 1,500 per cent increase in 9-1-1
-calls, and the province's guide gives the same instruction. [ECOMM-EQ] [PREPAREDBC]
-
-In Vancouver, 25 disaster support hubs are marked by yellow signs at 23 community
-centres, Oppenheimer Park and the Fraserview branch of Vancouver Public Library. The
-City says services there may include group lodging, distribution of food, water and
-supplies, recovery information and help finding family. It publishes no capacity figure, so
-nobody should count on a bed being there. [COV-HUBS]
-
-## Keep Disaster Response Routes clear
-
-Those routes stay open to everyone until a state of emergency is declared. After that
-they are activated and controlled for emergency responders, and the official instruction
-to the public is to get off them as soon as possible. [DRR-GOVPAGE] They are not
-evacuation routes, and using them as one would get in the way of the response.
-
-No City of Vancouver public page explains this. The provincial page is the only place it
-is set out. [DRR-GOVPAGE]
-
-## Spread the cost over time
-
-The City of Vancouver states the barrier in its own voice: people with limited resources
-"often lack the ability to control the structural readiness of their building and are
-less able to invest in personal preparedness", and it names who that falls on: "renters,
-low-income residents, older adults, and people with disabilities". [COV-EXPLORER-25] It
-publishes a resident saying it more plainly: "If you barely have the resources to get by
-day-to-day, you don't have the money to prepare." [COV-EXPLORER-25]
-
-The province publishes the answer the City does not. PreparedBC's budget advice is built
-around dollar stores, thrift stores and garage sales, starting with food and water and
-adding items as money allows, a first aid kit assembled from what is already in the
-house, and a thrift-store backpack for the grab-and-go bag. [PREPAREDBC-BUDGET] North
-Shore Emergency Management links to it. [NSEM-KIT]
-
-The City's landing page puts it in one line: "Start with what you have and add more as
-you can." [COV-PREPMAIN]
+Keep the supplies together, use what is nearing its expiry date and replace it.
+A partial kit that exists is more useful than a perfect kit still waiting to be
+bought.
 
 ## What you can do
 
-In this order. The first three cost nothing.
+Start with three things that cost nothing.
 
-**Meet the neighbours.** Know who lives alone, who needs medication, who has mobility
-limits, and who has tools. It is what the province's plan is built on. [PEIRS]
+**Choose two meeting places and one contact outside B.C.** Write the places and
+number on paper. [PREPAREDBC-PLAN]
 
-**Agree a meeting place and an out-of-area contact.** One place close to home, one
-farther away, and one phone number outside the region.
-[PREPAREDBC-PLAN] [PREPAREDBC-NEIGHBOURHOOD]
+**Meet the neighbours.** Know who may need help, who has useful skills and who
+has equipment. [PREPAREDBC-NEIGHBOURHOOD]
 
-**Turn on Earthquake Early Warning alerts, and practise Drop, Cover and Hold On.**
-[PREPAREDBC]
+**Practise Drop, Cover and Hold On.** Do it wherever people sleep, work and spend
+time. [PREPAREDBC]
 
-**Store water first.** Four litres per person per day, which is PreparedBC's rate
-[PREPAREDBC], for as many days as you can hold.
+**Store water next.** Use four litres per person per day as the target and build
+toward two weeks. [PREPAREDBC]
 
-**Then food that needs no cooking and no refrigeration**, and a manual can opener.
-[PREPAREDBC]
+**Add food that needs no refrigeration or cooking.** Keep a manual can opener
+with it. [PREPAREDBC]
 
-**Then keep a light, a radio, a power bank, warm layers and sturdy shoes wherever you
-spend time.** [PREPAREDBC]
+**Make one sleeping area safer.** Move heavy objects down, move the bed away from
+glass and secure tall furniture. [PREPAREDBC] [COV-EXPLORER-25]
 
-**Secure the heavy things in the rooms where people sleep.** Start with anything tall
-next to a bed, and move heavy objects to lower shelves. [PREPAREDBC]
-[COV-EXPLORER-25]
+**Pack the first grab-and-go bag.** Include medication, warm layers, a light, a
+power bank, identification and the written plan. [PREPAREDBC]
 
-**Leave the gas on unless an official tells you to turn it off**, and never turn it back
-on yourself. [PREPAREDBC] [FBC-EQ] [SURREY-PREP]
-
-**Write the plan on paper and put a copy in the bag.** The province publishes a
-fill-in-the-blanks one. [PREPAREDBC-PLAN]
-
-**Build it over time if money is tight.** The province publishes advice on assembling a
-kit on a budget, and a partial kit is worth far more than a planned one.
-[PREPAREDBC-BUDGET]
-
-Each of these frees capacity for somebody with no other option. That is the province's
-own reason for asking. [PEIRS]
+Each step lets a household manage longer without outside help, leaving limited
+public resources for the people who have no other option. [PEIRS]
 
 ## Sources on this page
 
-[PEIRS] [PREPAREDBC] [COV-EXPLORER-25] [COV-WORKSHEET-26] [PREPAREDBC-PLAN]
-[PREPAREDBC-GUIDES] [PREPAREDBC-NEIGHBOURHOOD] [RESEARCHCO-PREP-21] [DCRRA-2025]
-[NRCAN-EEW] [PREPAREDBC-KIT] [FBC-EQ] [SURREY-PREP] [PREPAREDBC-DISABILITY] [ECOMM-EQ]
-[COV-HUBS] [DRR-GOVPAGE] [PREPAREDBC-BUDGET] [NSEM-KIT] [COV-PREPMAIN]
+[PREPAREDBC] [PEIRS] [PREPAREDBC-PLAN] [PREPAREDBC-NEIGHBOURHOOD]
+[PREPAREDBC-GUIDES] [RESEARCHCO-PREP-21] [DCRRA-2025] [COV-EXPLORER-25]
+[NRCAN-EEW] [PREPAREDBC-KIT] [PREPAREDBC-DISABILITY] [FBC-EQ] [SURREY-PREP]
+[ECOMM-EQ] [COV-HUBS] [DRR-GOVPAGE] [PREPAREDBC-BUDGET]
