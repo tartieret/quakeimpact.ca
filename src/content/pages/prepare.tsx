@@ -1,6 +1,5 @@
 import { Cite } from "@/components/citation";
-import { Figure, Prose, Subhead } from "@/components/page-parts";
-import { PrepareWaterArithmetic } from "@/components/figures/prepare";
+import { Prose, Subhead } from "@/components/page-parts";
 import type { PageModule } from "./index";
 
 /**
@@ -8,8 +7,7 @@ import type { PageModule } from "./index";
  *
  * This page gives instructions in the site's voice. Citations carry the
  * attribution quietly, except where the province's planning assumption is
- * itself the point. The household water total is arithmetic worked from the
- * published rate. The gas advice is one rule in three parts: know where the
+ * itself the point. The gas advice is one rule in three parts: know where the
  * valves are, leave them alone unless an official says otherwise, and never
  * restore the service yourself.
  */
@@ -64,10 +62,10 @@ export const prepare: PageModule = {
             self-sufficient for up to two weeks. <Cite id="PEIRS" />
           </p>
           <p>
-            Preparedness is a civic duty. A household that can look after
-            itself leaves limited crews, shelter places and relief supplies for
-            somebody with no other option. That is how private preparation
-            builds regional resilience. <Cite id="PEIRS" />
+            <strong>Preparedness is a civic duty.</strong> A household that can
+            look after itself leaves limited crews, shelter places and relief
+            supplies for somebody with no other option. That is how private
+            preparation builds regional resilience. <Cite id="PEIRS" />
           </p>
           <p>
             Keep enough water, food and essential supplies for every person and
@@ -112,7 +110,7 @@ export const prepare: PageModule = {
             <Cite id="RESEARCHCO-PREP-21" /> Communications can be disrupted
             for days to weeks, and the service that remains may be reserved for
             emergency personnel. <Cite id="DCRRA-2025" /> Send a text before
-            trying a call, but do not make a working phone the plan.{" "}
+            trying a call. <strong>Do not make a working phone the plan.</strong>{" "}
             <Cite id="PEIRS" />
           </p>
           <p>
@@ -139,11 +137,11 @@ export const prepare: PageModule = {
           </p>
           <p>
             Whether the warning is the alert or the movement underfoot, do the
-            same thing: Drop, Cover and Hold On. Get onto your hands and knees,
-            cover your head and neck, and shelter under sturdy furniture. If
-            none is close, crawl to an interior corner or wall. Hold on until
-            the shaking stops, then count to 60 before getting up so loose
-            objects have time to settle. <Cite id="PREPAREDBC" />
+            same thing: <strong>Drop, Cover and Hold On.</strong> Get onto your
+            hands and knees, cover your head and neck, and shelter under sturdy
+            furniture. If none is close, crawl to an interior corner or wall.
+            Hold on until the shaking stops, then count to 60 before getting up
+            so loose objects have time to settle. <Cite id="PREPAREDBC" />
           </p>
           <p>
             If you use a wheelchair, walker or cane, lock the wheels instead of
@@ -157,33 +155,29 @@ export const prepare: PageModule = {
     },
 
     {
-      title: "Store water before anything else",
+      title: "Store as much drinking water as space allows",
       body: (
         <Prose>
           <p>
-            Store four litres per person per day for drinking and sanitation.
-            For four people over two weeks, that is at least 224 litres. The
-            household total is arithmetic from the published daily rate.{" "}
-            <Cite id="PREPAREDBC" /> <Cite id="COV-EXPLORER-25" />
+            The official target is four litres per person per day for at least
+            two weeks. That allowance is not all drinking water. It also has to
+            cover basic sanitation. <Cite id="PREPAREDBC" />{" "}
+            <Cite id="COV-EXPLORER-25" />
           </p>
-          <Figure
-            alt="At four litres per person per day, a household of four needs at least 224 litres to cover two weeks."
-            caption={
-              <>
-                One mark is four litres, the published rate for one person for
-                one day. Fifty-six marks cover four people for two weeks. The
-                total is calculated from that rate. <Cite id="PREPAREDBC" />
-              </>
-            }
-          >
-            <PrepareWaterArithmetic />
-          </Figure>
           <p>
-            Water is bulky. Store it first anyway, in more than one container
-            if possible, and refresh it on a schedule you will keep. Regional
-            distribution of bulk drinking water may remain difficult for the
-            first four to five days. <Cite id="DCRRA-2025" /> Whatever you can
-            store closes part of that gap.
+            Two weeks of water takes a great deal of room. Do not let the full
+            target become a reason to store none. <strong>
+              Start with enough drinking water for as many days as your space
+              allows.
+            </strong>{" "}
+            Add to it when you can, keep it in more than one container if
+            possible, and refresh it on a schedule you will follow.
+          </p>
+          <p>
+            Stored drinking water covers the part of the first days that a
+            household cannot improvise. Distributing bulk drinking water across
+            the region may remain difficult for the first four to five days.{" "}
+            <Cite id="DCRRA-2025" /> Every container closes part of that gap.
           </p>
           <p>
             Add water and supplies for each pet, along with a separate
@@ -261,10 +255,13 @@ export const prepare: PageModule = {
             gas valve. <Cite id="PREPAREDBC" />
           </p>
           <p>
-            Do not shut off the gas unless an official tells you to. Once gas
-            is off at the meter, a registered gas contractor has to visit the
-            home and relight every appliance before service can return. That
-            household-by-household work may take weeks after a major emergency.{" "}
+            <strong>
+              Do not shut off the gas unless an official tells you to.
+            </strong>{" "}
+            Once gas is off at the meter, a registered gas contractor has to
+            visit the home and relight every appliance before service can
+            return. That household-by-household work may take weeks after a
+            major emergency.{" "}
             <Cite id="FBC-EQ" /> <Cite id="SURREY-PREP" /> Never turn it back
             on yourself.
           </p>
@@ -369,8 +366,9 @@ export const prepare: PageModule = {
         sleep, work and spend time. <Cite id="PREPAREDBC" />
       </>,
       <>
-        <strong>Store water next.</strong> Use four litres per person per day as
-        the target and build toward two weeks. <Cite id="PREPAREDBC" />
+        <strong>Store drinking water next.</strong> Keep as many days as space
+        allows, then add to it. The four-litre daily target also covers basic
+        sanitation. <Cite id="PREPAREDBC" />
       </>,
       <>
         <strong>Add food that needs no refrigeration or cooking.</strong> Keep a

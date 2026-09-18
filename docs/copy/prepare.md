@@ -13,7 +13,7 @@ resources will be overwhelmed. Family and neighbours are likely to be the only
 help available at first, and households in an earthquake zone should aim to be
 self-sufficient for up to two weeks. [PEIRS]
 
-Preparedness is a civic duty. A household that can look after itself leaves
+**Preparedness is a civic duty.** A household that can look after itself leaves
 limited crews, shelter places and relief supplies for somebody with no other
 option. That is how private preparation builds regional resilience. [PEIRS]
 
@@ -44,8 +44,8 @@ Most households have not made these simple decisions. In a 2021 poll of 800
 British Columbians, 28 per cent had a plan for contacting family or friends and
 22 per cent had an agreed meeting place. [RESEARCHCO-PREP-21] Communications can
 be disrupted for days to weeks, and the service that remains may be reserved for
-emergency personnel. [DCRRA-2025] Send a text before trying a call, but do not
-make a working phone the plan. [PEIRS]
+emergency personnel. [DCRRA-2025] Send a text before trying a call. **Do not make
+a working phone the plan.** [PEIRS]
 
 Work out how each person would get home if roads were blocked and trains had
 stopped for damage inspections. [COV-EXPLORER-25] Decide who will collect
@@ -60,8 +60,8 @@ radio. It does not predict earthquakes, and close to the source the alert may
 arrive as the shaking begins. [PREPAREDBC] [NRCAN-EEW]
 
 Whether the warning is the alert or the movement underfoot, do the same thing:
-Drop, Cover and Hold On. Get onto your hands and knees, cover your head and neck,
-and shelter under sturdy furniture. If none is close, crawl to an interior
+**Drop, Cover and Hold On.** Get onto your hands and knees, cover your head and
+neck, and shelter under sturdy furniture. If none is close, crawl to an interior
 corner or wall. Hold on until the shaking stops, then count to 60 before getting
 up so loose objects have time to settle. [PREPAREDBC]
 
@@ -71,16 +71,21 @@ aftershocks. [PREPAREDBC] Practise in the places where people sleep, work and
 spend time. In the moment, the useful response is the one the body already
 knows.
 
-## Store water before anything else
+## Store as much drinking water as space allows
 
-Store four litres per person per day for drinking and sanitation. For four
-people over two weeks, that is at least 224 litres. The household total is
-arithmetic from the published daily rate. [PREPAREDBC] [COV-EXPLORER-25]
+The official target is four litres per person per day for at least two weeks.
+That allowance is not all drinking water. It also has to cover basic sanitation.
+[PREPAREDBC] [COV-EXPLORER-25]
 
-Water is bulky. Store it first anyway, in more than one container if possible,
-and refresh it on a schedule you will keep. Regional distribution of bulk
-drinking water may remain difficult for the first four to five days.
-[DCRRA-2025] Whatever you can store closes part of that gap.
+Two weeks of water takes a great deal of room. Do not let the full target become
+a reason to store none. **Start with enough drinking water for as many days as
+your space allows.** Add to it when you can, keep it in more than one container
+if possible, and refresh it on a schedule you will follow.
+
+Stored drinking water covers the part of the first days that a household cannot
+improvise. Distributing bulk drinking water across the region may remain
+difficult for the first four to five days. [DCRRA-2025] Every container closes
+part of that gap.
 
 Add water and supplies for each pet, along with a separate grab-and-go bag.
 [PREPAREDBC-KIT]
@@ -126,8 +131,8 @@ sturdy shoes under the bed. [COV-EXPLORER-25] One safer room is a useful start.
 Find the electrical panel, water valve and gas valve before an emergency. Learn
 how each works and keep the right tool near the gas valve. [PREPAREDBC]
 
-Do not shut off the gas unless an official tells you to. Once gas is off at the
-meter, a registered gas contractor has to visit the home and relight every
+**Do not shut off the gas unless an official tells you to.** Once gas is off at
+the meter, a registered gas contractor has to visit the home and relight every
 appliance before service can return. That household-by-household work may take
 weeks after a major emergency. [FBC-EQ] [SURREY-PREP] Never turn it back on
 yourself.
@@ -190,8 +195,8 @@ has equipment. [PREPAREDBC-NEIGHBOURHOOD]
 **Practise Drop, Cover and Hold On.** Do it wherever people sleep, work and spend
 time. [PREPAREDBC]
 
-**Store water next.** Use four litres per person per day as the target and build
-toward two weeks. [PREPAREDBC]
+**Store drinking water next.** Keep as many days as space allows, then add to it.
+The four-litre daily target also covers basic sanitation. [PREPAREDBC]
 
 **Add food that needs no refrigeration or cooking.** Keep a manual can opener
 with it. [PREPAREDBC]
