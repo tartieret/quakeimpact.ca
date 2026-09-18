@@ -3,7 +3,7 @@ route: /
 title: The shaking is the short part.
 nav: Home
 hook: The shaking is the short part.
-lede: A major earthquake in the Lower Mainland could last only a few minutes. What follows could last much longer. Power and mobile networks may fail, roads may close, water pressure may fall, and grocery stores may not reopen or restock quickly. The food and water already in the house could become what a household relies on. The earthquake is measured in minutes. The disruption is measured in days, weeks and months.
+lede: A major earthquake may last only minutes. Disruption to water, food, power and transportation could last for weeks.
 ---
 
 ## What happens after the shaking?
@@ -127,17 +127,15 @@ with a fourth for not yet assessed. [How the bands work](/method/). [The
 sources](/sources/) lists every document, and if you find something wrong,
 [contribute](/contribute/) says what a correction needs.
 
-## You do not need to prepare for everything at once
+## Start with food and water
 
-Food and water are among the first things a household will need to provide for
-itself. British Columbia asks every household to keep at least two weeks of
-both. [PREPAREDBC] Most households in the region have not put together an
-emergency kit of any size. [RESEARCHCO-PREP-21]
+British Columbia asks every household to keep at least two weeks of emergency
+supplies. [PREPAREDBC] Most households in the region have not put together a kit
+of any size. [RESEARCHCO-PREP-21]
 
-Start with food and water. Store what you can today, then add to it over time.
-PreparedBC recommends four litres of water per person per day and food that will
-not spoil. [PREPAREDBC] The [preparation guide](/prepare/) turns that first step
-into a household plan.
+You do not need to assemble everything at once. Check what you already have,
+then add water and food that will not spoil over time. The [preparation
+guide](/prepare/) shows how much to keep and what to add next.
 
 ## Sources on this page
 
