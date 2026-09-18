@@ -76,9 +76,8 @@ import type { PageModule } from "./index";
  * the sequence in full. The preparation gap moves to the closing lever, where
  * it sits beside the action a reader can take.
  *
- * The first two sections open on a sentence the copy writes as their first
- * paragraph and this module passes as `lede`, which is the only difference
- * between the copy file and what the page renders.
+ * The system-grid introduction is passed as `lede`. The timeline needs no
+ * extra introduction after the hero; its heading leads straight into the story.
  *
  * What used to sit here and no longer does is the dependency figure, which is
  * an index of the site rather than a picture of the aftermath and which has its
@@ -96,10 +95,16 @@ import type { PageModule } from "./index";
 
 const link = "text-accent underline underline-offset-2";
 
+export const homeHero = {
+  titleLines: ["The shaking", "is the short part."],
+  primary: { label: "Start with food and water", href: "/prepare/" },
+  secondary: { label: "Explore the aftermath", href: "#what-happens-after-the-shaking" },
+};
+
 export const home: PageModule = {
   meta: {
     route: "/",
-    title: "The shaking is the short part.",
+    title: homeHero.titleLines.join(" "),
     description:
       "What has already been published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each repair is waiting on.",
     nav: "Home",
@@ -126,7 +131,6 @@ export const home: PageModule = {
   sections: [
     {
       title: "What happens after the shaking?",
-      lede: "The ground stops moving, but the failures have only started. This is how the first hours become days, weeks and months.",
       body: (
         <div className="flex flex-col gap-8">
           <PhaseNarrative
