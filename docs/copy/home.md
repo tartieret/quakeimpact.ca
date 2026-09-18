@@ -6,7 +6,7 @@ hook: The shaking is the short part.
 lede: A major earthquake may last only minutes. Disruption to water, food, power and transportation could last for weeks.
 ---
 
-[Start with food and water](/prepare/) · [Explore the aftermath ↓](#what-happens-after-the-shaking)
+[See what happens next ↓](#what-happens-after-the-shaking) · [Start preparing](/prepare/)
 
 ## What happens after the shaking?
 
