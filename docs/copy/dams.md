@@ -46,10 +46,6 @@ BC Hydro says the same of its own dams, in filings to the utilities commission.
 > should be able to withstand an earthquake of intensity expected to occur once every
 > 10,000 years." [BCH-RRA-F2020]
 
-The two figures are not independent of each other. Both descend from the
-Canadian Dam Association's guidelines, so a reader who meets the number twice
-has met one source restated. [BC-DDCG] [BCH-RRA-F2020]
-
 It binds new work. The criterion applies when a dam is built, altered, improved
 or replaced, and not to a dam that is simply standing there. [BC-DDCG] It is a
 guideline minimum rather than law, deviations "may be considered but must be

@@ -342,12 +342,6 @@ export const dams: PageModule = {
             </p>
           </Quote>
           <p>
-            The two figures are not independent of each other. Both descend from
-            the Canadian Dam Association’s guidelines, so a reader who meets the
-            number twice has met one source restated. <Cite id="BC-DDCG" />{" "}
-            <Cite id="BCH-RRA-F2020" />
-          </p>
-          <p>
             It binds new work. The criterion applies when a dam is built,
             altered, improved or replaced, and not to a dam that is simply
             standing there. <Cite id="BC-DDCG" /> It is a guideline minimum
