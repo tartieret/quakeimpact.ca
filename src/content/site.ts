@@ -453,7 +453,8 @@ export const SHAKING_PAGES: {
   {
     slug: "dams",
     name: "Dams",
-    hook: "BC Hydro publishes the expected earthquake damage at each of its dams.",
+    hook:
+      "The dams above this region were built to the earthquake expectation of their day, and today’s expectation applies when one is rebuilt, not while it stands.",
   },
 ];
 
