@@ -62,18 +62,18 @@ export default function HomePage() {
             {home.meta.standfirst}
           </p>
           <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-6">
-            <Link
-              href={homeHero.primary.href}
-              className="inline-flex min-h-12 items-center rounded-sm bg-accent px-5 py-3 text-sm font-semibold text-paper hover:underline underline-offset-4"
-            >
-              {homeHero.primary.label}
-            </Link>
             <a
+              href={homeHero.primary.href}
+              className="inline-flex min-h-12 items-center gap-2 rounded-sm bg-accent px-5 py-3 text-sm font-semibold text-paper hover:underline underline-offset-4"
+            >
+              {homeHero.primary.label}<span aria-hidden="true">↓</span>
+            </a>
+            <Link
               href={homeHero.secondary.href}
               className="inline-flex min-h-12 items-center gap-2 text-sm font-semibold text-accent underline underline-offset-4"
             >
-              {homeHero.secondary.label}<span aria-hidden="true">↓</span>
-            </a>
+              {homeHero.secondary.label}
+            </Link>
           </div>
         </div>
       </section>
