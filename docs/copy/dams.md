@@ -2,7 +2,7 @@
 route: /shaking/dams/
 title: Dams
 nav: Dams
-hook: "BC Hydro publishes the expected earthquake damage at each of its dams."
+hook: "The dams above this region were built to the earthquake expectation of their day, and today's expectation applies when one is rebuilt, not while it stands."
 lede: There are dams up the valleys all around this region, from the east end of the Fraser Valley to Howe Sound and north to Whistler. Two of them hold Metro Vancouver's drinking water, and several more generate electricity.
 ---
 
