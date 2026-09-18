@@ -135,6 +135,15 @@ the style guide's sentence rules over rendered text; `shoot.mjs` writes screensh
   under three headings, so the grid adds its column with
   `:has(>div>section:nth-of-type(3))`, which is settled before first paint. The gap is
   column-only (`lg:gap-x-16`), and the base state names no `grid-template-columns`.
+- **The mobile menu panel is positioned, not in flow.** The router leaves the scroll
+  position alone when the top of the new segment is already in the viewport
+  (`getScrollTargetState`, `next/dist/client/components/layout-router.js`), and it
+  measures during the commit, before the passive effect that closes the menu on a
+  pathname change. In flow the open panel ran to about 1,200 px, so reaching a lower
+  entry scrolled the document; the router then read a page that had not moved and left
+  it where it was, and closing the menu pulled the new page up under a scroll position
+  belonging to the menu, landing the reader 750 px down. `absolute top-full` with a
+  `max-h` and its own `overflow-y-auto` keeps the document still while the menu is open.
 - **A part that contains the current page is `aria-current={true}`**; only the page
   itself is `"page"`.
 - **Every `overflow-x-auto` needs a tab stop and a name**: `tabIndex={0}`,
