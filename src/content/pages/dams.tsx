@@ -23,10 +23,13 @@ import type { PageModule } from "./index";
  * which is the dam part of the copy that used to be one secondary hazards
  * page.
  *
- * The dams here have two owners and the evidence does not mix: Metro Vancouver
- * publishes a yearly safety summary and no review report, BC Hydro states named
- * seismic deficiencies to its own regulator. They have a section each, and
- * neither shares a sentence or a table column with the other.
+ * The page is ordered by what an earthquake is expected to do, not by who
+ * wrote it down. It opens on the named deficiencies at the dams where an owner
+ * has stated one, takes Ruskin as the case that was found short and rebuilt,
+ * and only then reaches the register, the map and the table. The two owners'
+ * evidence still does not mix in a sentence or a table column: Metro Vancouver
+ * publishes a yearly safety summary and no review report, BC Hydro states
+ * named seismic deficiencies to its own regulator.
  *
  * The map draws the layer that is open and not the one a reader wants. The
  * provincial register is OGL-BC and carries every dam's location, owner and
@@ -39,11 +42,12 @@ import type { PageModule } from "./index";
  * The map and the table are one exhibit and neither is decoration. The register
  * picks the dams, which is how four dams the prose above never names are on the
  * page at all, and the table's last column is mostly `NotPublished`. That
- * emptiness is the finding: for eleven of the seventeen high-consequence dams
- * in this region, nothing was found in which the owner says what an earthquake
- * would do. The sourced statements in `SEISMIC` below are the same sentences
- * the prose cites, kept beside the prose rather than in the figure, because
- * every one of them is a sourced claim.
+ * emptiness is a finding, and the table is where it is stated: the prose says
+ * it once and moves on, because a page that keeps announcing what nobody has
+ * written down is a bibliography rather than a description of the place. The
+ * sourced statements in `SEISMIC` below are the same sentences the prose
+ * cites, kept beside the prose rather than in the figure, because every one of
+ * them is a sourced claim.
  *
  * The water-supply side of Metro Vancouver's dams, what the capital plan has
  * funded and what a reservoir is for, is `/after/dams-and-reservoirs/`. This
@@ -228,7 +232,7 @@ export const dams: PageModule = {
     route: "/shaking/dams/",
     title: "Dams",
     description:
-      "Metro Vancouver’s reviews of its water-supply dams do not mention an earthquake. BC Hydro names the part of each power dam it expects one to break.",
+      "Coquitlam Dam is built partly of material a moderate earthquake is expected to liquefy. Cheakamus could lose the dam itself in shaking expected about once a millennium.",
     nav: "Dams",
     kicker: "The shaking",
     standfirst:
@@ -237,16 +241,15 @@ export const dams: PageModule = {
      * First-cited order, which is the order the markers are numbered in.
      */
     references: [
-      "MV-DSP-2026",
-      "BC-DAMS-REG",
+      "BCH-COQUITLAM-RRA-06",
+      "BC-DDCG",
       "BCH-RRA-F2020",
       "BCH-RUSKIN-SEIAM-11",
       "BCH-RUSKIN-F2019",
-      "BCH-COQUITLAM-RRA-06",
+      "BC-DAMS-REG",
+      "MV-DSP-2026",
       "MV-CLEVELANDDAM-FS",
       "MV-SEYMOURDAM-FS",
-      "BC-DDCG",
-      "CDA-2007",
       "BCDSR-40-2016",
       "EGBC-DSR-GL",
       "BCDSP-DEP-24",
@@ -255,40 +258,29 @@ export const dams: PageModule = {
 
   sections: [
     {
-      title: "Water-supply dam reviews omit an earthquake finding",
+      title: "Part of Coquitlam Dam is expected to liquefy",
       body: (
         <Prose>
           <p>
-            Metro Vancouver’s two water-supply dams, Cleveland on the Capilano
-            and Seymour Falls on the Seymour, were each reviewed by an engineer
-            in 2024, and neither published conclusion mentions an earthquake.{" "}
-            <Cite id="MV-DSP-2026" /> What those reviews say, what the capital
-            plan has funded and what has not been published about where the
-            water would go are on{" "}
+            Coquitlam Dam holds back Coquitlam Lake, and it is built partly of
+            loose material that is expected to liquefy in a moderate to large
+            earthquake, which is saturated soil losing its strength and
+            behaving like a liquid while the ground shakes. BC Hydro put that
+            to its regulator in 2006. <Cite id="BCH-COQUITLAM-RRA-06" /> The
+            same mechanism under roads and buildings is on{" "}
             <Link
-              href="/after/dams-and-reservoirs/"
+              href="/shaking/ground/"
               className="text-accent underline underline-offset-2"
             >
-              dams and reservoirs
+              ground conditions
             </Link>
-            , where the same two dams are the region’s drinking water as well as
-            a structure above it.
+            .
           </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "BC Hydro identifies expected earthquake damage",
-      body: (
-        <Prose>
           <p>
-            BC Hydro owns the power dams in and near the region. Coquitlam,
-            Stave Falls, Alouette and Cheakamus are classified Extreme in the
-            provincial register as it stands. <Cite id="BC-DAMS-REG" /> In
-            filings to its own regulator, BC Hydro names the part of each dam
-            that it expects an earthquake to damage, and the strength of shaking
-            at which it expects that to happen. <Cite id="BCH-RRA-F2020" />
+            A dam in the top two classes is meant to come through an earthquake
+            of the size that arrives about once in ten thousand years.{" "}
+            <Cite id="BC-DDCG" /> That is the yardstick, and BC Hydro measures
+            its own dams against it in filings to the utilities commission.
           </p>
           <Quote
             speaker="BC Hydro"
@@ -304,79 +296,81 @@ export const dams: PageModule = {
             </p>
           </Quote>
           <p>
-            Every figure BC Hydro gives names a part, not a dam. At Alouette, it
-            expects the power tunnel headworks and surge tower to fail in
-            shaking of the size expected on average once every 100 to 200 years,
-            which “could block the post-earthquake discharge of water from
-            Alouette Reservoir to Stave Lake Reservoir”.{" "}
-            <Cite id="BCH-RRA-F2020" /> That is the means of letting water out
-            of the reservoir, not the dam holding it in. Until the tunnel is
-            upgraded, BC Hydro says “Alouette Lake Reservoir will be operated in
-            a manner that provides sufficient time to provide emergency response
-            following a major earthquake.” <Cite id="BCH-RRA-F2020" />
+            At Alouette the figure is not ten thousand years. The power tunnel
+            headworks and the surge tower are expected to fail in shaking of
+            the size expected once every 100 to 200 years, which could block
+            the discharge from Alouette Reservoir into Stave Lake.{" "}
+            <Cite id="BCH-RRA-F2020" /> Those are the works that let water out
+            of the reservoir, not the embankment holding it in. Until the
+            tunnel is upgraded the reservoir is run so that there would be time
+            to respond after a major earthquake. <Cite id="BCH-RRA-F2020" />
           </p>
           <p>
-            BC Hydro prices each deficiency and states in writing which it is
-            fixing and which it is accepting: at Coquitlam the inlet portal
-            upgrade is in the plan while the outlet portal and the low level
-            outlet “are monitored and will be retained as the consequences are
-            expected to be low”. <Cite id="BCH-RRA-F2020" /> Stave Falls records
-            no seismic issue at all among the significant risks remaining at the
-            dam; its problems are turbine design and obsolete controls.{" "}
-            <Cite id="BCH-RRA-F2020" />
+            At Cheakamus, near Whistler, it is the dam. Its resistance to
+            seismic loads is insufficient, and an earthquake of the size
+            expected about once every thousand years or more could bring down
+            the dam, the spillway, the spillway gates or the penstock
+            pedestals. <Cite id="BCH-RRA-F2020" /> At Wahleach, at the east end
+            of the Fraser Valley, the intake gates at Jones Lake are expected
+            to fail at about once in 4,800 years, which would leave the water
+            passage open and could flood the utility and transport corridors
+            below. <Cite id="BCH-RRA-F2020" />
           </p>
           <p>
-            In 2011 a consultant reported to BC Hydro that key components of
-            Ruskin Dam and its powerhouse had seismic withstand levels
-            “significantly below” the earthquake the guidelines required them to
-            survive, with up to 300 people downstream of the dam in summer.{" "}
-            <Cite id="BCH-RUSKIN-SEIAM-11" /> The dam was rebuilt. BC Hydro’s
-            2019 reporting records that after a 20 year dam safety initiative
-            and 11 years of construction the upper part of the dam was finished,
-            and its advisory board concluded the project “has met the overall
-            project objectives of withstanding the Maximum Design Earthquake”.{" "}
-            <Cite id="BCH-RUSKIN-F2019" /> That is a statement about what the
-            work was designed to do, not a later verification that it does it.
-            Ruskin is in Mission, in the Fraser Valley Regional District,
-            outside Metro Vancouver. <Cite id="BC-DAMS-REG" />
-          </p>
-          <p>
-            Coquitlam Dam is where the material in the dam itself is the
-            problem. BC Hydro told the regulator in 2006 that “the dam contains
-            loose materials that are expected to liquefy during a moderate to
-            large earthquake”. <Cite id="BCH-COQUITLAM-RRA-06" /> That is the
-            mechanism described on{" "}
-            <Link
-              href="/shaking/ground/"
-              className="text-accent underline underline-offset-2"
-            >
-              ground conditions
-            </Link>
-            , written by an owner about its own structure.
+            Each deficiency is priced, and BC Hydro says which it is fixing and
+            which it is living with. At Coquitlam the inlet portal upgrade is
+            in the plan; the outlet portal and the low level outlet are
+            monitored and kept as they are, because what would follow is
+            expected to be minor. <Cite id="BCH-RRA-F2020" /> Stave Falls
+            carries no seismic problem at all among the significant risks
+            recorded at the dam. Its trouble is turbine design and obsolete
+            controls. <Cite id="BCH-RRA-F2020" />
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "Seventeen other dams have no public earthquake finding",
+      title: "Ruskin Dam was found short, and rebuilt",
+      body: (
+        <Prose>
+          <p>
+            In 2011 a consultant reported to BC Hydro that key parts of Ruskin
+            Dam and its powerhouse would withstand far less shaking than the
+            guidelines asked of them, with up to 300 people downstream in
+            summer. <Cite id="BCH-RUSKIN-SEIAM-11" /> The dam was rebuilt.
+            After a twenty year dam safety initiative and eleven years of
+            construction the upper part was finished, and the project’s
+            advisory board concluded it had met its objective of withstanding
+            the Maximum Design Earthquake. <Cite id="BCH-RUSKIN-F2019" />
+          </p>
+          <p>
+            Ruskin is in Mission, in the Fraser Valley Regional District,
+            outside Metro Vancouver. <Cite id="BC-DAMS-REG" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "The province classes each dam by what is below it",
       body: (
         <div className="space-y-6">
           <Prose>
             <p>
-              The province keeps a public register of every regulated dam, and it
-              classifies each one by what a failure would reach downstream.{" "}
+              The province keeps a public register of every regulated dam and
+              classes each one by what a failure would reach downstream.{" "}
               <Cite id="BC-DAMS-REG" /> {DAM_FACTS.total} dams in this region
-              carry one of its two highest classes: {DAM_FACTS.extreme} Extreme
-              and {DAM_FACTS.veryHigh} Very High. That classification is about the
-              people and property below a dam, not about the structure and not
-              about shaking. The register holds no seismic rating, no assessment
-              date and no upgrade programme for any dam in it.{" "}
+              are in the top two classes, {DAM_FACTS.extreme} Extreme and{" "}
+              {DAM_FACTS.veryHigh} Very High. The class counts the people and
+              property below a dam. It rates neither the structure nor the
+              shaking, and the register carries no seismic rating, no
+              assessment date and no upgrade programme.{" "}
               <Cite id="BC-DAMS-REG" />
             </p>
             <Figure
               interactive
-              alt={`The ${DAM_FACTS.total} dams the province classes Extreme or Very High failure consequence in the Lower Mainland, spread from Wahleach at the east end of the Fraser Valley to Howe Sound in the west, and north to Whistler. Only ${PUBLISHED.length} of them, all owned by BC Hydro, are drawn solid: those are the only ones whose owner has published what an earthquake is expected to do.`}
+              alt={`The ${DAM_FACTS.total} dams the province classes Extreme or Very High failure consequence in the Lower Mainland, spread from Wahleach at the east end of the Fraser Valley to Howe Sound in the west, and north to Whistler. Only ${PUBLISHED.length} of them, all owned by BC Hydro, are drawn solid: those are the only ones whose owner has said what an earthquake is expected to do.`}
               caption={
                 <>
                   Every dam the provincial register classes Extreme or Very High
@@ -384,14 +378,14 @@ export const dams: PageModule = {
                   <Cite id="BC-DAMS-REG" /> The size of a mark is that
                   classification, which measures the people and property
                   downstream. It does not rate the dam or the shaking. A solid
-                  mark is a dam whose owner has
-                  published what an earthquake is expected to do to it; a hollow
-                  mark is one where nothing of the kind was found.{" "}
-                  {PUBLISHED.length} of {DAM_FACTS.total} are solid, and every one
-                  of them is BC Hydro’s. Four of the dams sit in two pairs a few
-                  hundred metres apart and separate as the map is zoomed. The shoreline and river water
-                  under the marks are the province’s Freshwater Atlas. The
-                  register is the province’s, and the drawing is not.
+                  mark is a dam whose owner has said what an earthquake is
+                  expected to do to it; a hollow mark is one where nothing of
+                  the kind was found. {PUBLISHED.length} of {DAM_FACTS.total}{" "}
+                  are solid, and every one of them is BC Hydro’s. Four of the
+                  dams sit in two pairs a few hundred metres apart and separate
+                  as the map is zoomed. The shoreline and river water under the
+                  marks are the province’s Freshwater Atlas. The register is the
+                  province’s, and the drawing is not.
                 </>
               }
               licence={DAMS_ATTRIBUTIONS.map((source, index) => (
@@ -411,17 +405,30 @@ export const dams: PageModule = {
               <DamsMap published={PUBLISHED} />
             </Figure>
             <p>
-              The table names each one. The five columns are the register’s
-              own fields; the row beneath each dam is what its owner has said elsewhere, and
-              for most of these dams nothing was found. Risk level is the
-              regulator’s supervisory grading of its own file on a dam, which is
-              not a measure of the dam and not a measure of an earthquake.{" "}
-              <Cite id="BC-DAMS-REG" />
+              Two of them are not power dams. Cleveland on the Capilano
+              and Seymour Falls on the Seymour hold Metro Vancouver’s drinking
+              water, and each was reviewed by an engineer in 2024 whose
+              conclusion does not mention an earthquake.{" "}
+              <Cite id="MV-DSP-2026" /> What those reviews say, what the capital
+              plan has funded and where the water would go are on{" "}
+              <Link
+                href="/after/dams-and-reservoirs/"
+                className="text-accent underline underline-offset-2"
+              >
+                dams and reservoirs
+              </Link>
+              .
+            </p>
+            <p>
+              The table names all {DAM_FACTS.total}, with what each owner has
+              said an earthquake would do to its own dam. For most of them the
+              column is empty, which is not the same as a finding that the dam
+              is sound.
             </p>
           </Prose>
           <Prose wide>
             <DataTable
-              caption={`The ${DAM_FACTS.total} dams the provincial register classes Extreme or Very High failure consequence in the Lower Mainland, with what each owner has published about an earthquake. Failure consequence classifies what is downstream, not the likelihood of a failure.`}
+              caption={`The ${DAM_FACTS.total} dams the provincial register classes Extreme or Very High failure consequence in the Lower Mainland, with what each owner has said about an earthquake. Failure consequence classifies what is downstream, not the likelihood of a failure.`}
               minWidth="40rem"
               columns={[
                 "Dam",
@@ -450,15 +457,16 @@ export const dams: PageModule = {
               note={
                 <>
                   Register fields as at {DAM_FACTS.accessed}.{" "}
-                  <Cite id="BC-DAMS-REG" /> “Nothing found” means no document was
-                  found in which the owner states what an earthquake is expected
-                  to do to that dam. It is not a finding that the dam is safe, and
-                  it is not a finding that nobody has looked: BC Hydro files
-                  seismic detail on some of its dams to its regulator and not
-                  others. Metro Vancouver publishes a yearly safety summary,
-                  but the reviews behind it are not public.{" "}
-                  <Cite id="BCH-RRA-F2020" />{" "}
-                  <Cite id="MV-DSP-2026" />
+                  <Cite id="BC-DAMS-REG" /> Risk level is the regulator’s
+                  supervisory grading of its own file on a dam, which measures
+                  neither the dam nor the shaking. <Cite id="BC-DAMS-REG" />{" "}
+                  “Nothing found” means no document was found in which the owner
+                  states what an earthquake is expected to do to that dam. It is
+                  not a finding that the dam is safe, and it is not a finding
+                  that nobody has looked: BC Hydro files seismic detail on some
+                  of its dams to its regulator and not others, and the reviews
+                  behind Metro Vancouver’s yearly safety summary are not public.{" "}
+                  <Cite id="BCH-RRA-F2020" /> <Cite id="MV-DSP-2026" />
                 </>
               }
             />
@@ -467,70 +475,57 @@ export const dams: PageModule = {
       ),
     },
     {
-      title: "Design rules apply to new dam work",
+      title: "The standard applies when a dam is rebuilt",
       body: (
         <Prose>
           <p>
-            The class in the table describes what is downstream. It also sets a
-            minimum design earthquake. Both classes on this page use an
-            earthquake design ground motion at a
-            1-in-10,000-year return period, or the Maximum Credible Earthquake.{" "}
-            <Cite id="BC-DDCG" /> Very High and Extreme carry that figure alike,
-            so it covers every dam in the table above. It is the same expectation
-            BC Hydro states in its own words earlier on this page, and the two
-            are not independent of each other: both descend from the Canadian
-            Dam Association’s guidelines, a members’ publication this project has
-            not read. <Cite id="CDA-2007" />
+            Very High and Extreme carry the same design earthquake, so the
+            ten-thousand-year figure covers every dam in the table.{" "}
+            <Cite id="BC-DDCG" /> It is the same expectation BC Hydro states in
+            its own words above, and the two are not independent of each other:
+            both descend from the Canadian Dam Association’s guidelines.{" "}
+            <Cite id="BC-DDCG" /> <Cite id="BCH-RRA-F2020" />
           </p>
           <p>
-            The figure needs context. It applies when a dam is built, altered,
-            improved or replaced. It is not a standing obligation on a dam
-            finished in 1954. <Cite id="BC-DDCG" /> It is a guideline minimum,
-            not law. Deviations “may be considered but must be clearly stated
-            and justified”. The Dam Safety Regulation gives no seismic number
-            and does not use the word earthquake. <Cite id="BC-DDCG" />{" "}
-            <Cite id="BCDSR-40-2016" /> The criterion is a return period{" "}
-            <em>or</em> the Maximum Credible Earthquake, which is a deterministic
-            ceiling with no probability attached.
+            It binds new work. The criterion applies when a dam is built,
+            altered, improved or replaced, and not to a dam that is simply
+            standing there. <Cite id="BC-DDCG" /> It is a guideline minimum
+            rather than law, deviations “may be considered but must be clearly
+            stated and justified”, and the Dam Safety Regulation itself gives no
+            seismic number and never uses the word earthquake.{" "}
+            <Cite id="BC-DDCG" /> <Cite id="BCDSR-40-2016" />
           </p>
           <p>
-            What connects a criterion for new work to a dam built a century ago
-            is the review itself. A dam in the top classes is reviewed every
-            seven years by an engineer qualified in dam safety analysis, and the
-            professional guideline for those reviews lists the Maximum Design
-            Earthquake among the updates to the original design criteria a
-            review produces, directing that potential liquefaction “should also
-            be considered”. <Cite id="BCDSR-40-2016" /> <Cite id="EGBC-DSR-GL" />{" "}
-            So an old dam is re-measured against a current design earthquake on a
-            fixed cycle. What the answer was is a separate question, and for the
-            dams in this region it is the one that is not published.
+            An old dam is covered a different way. Every seven years an engineer
+            qualified in dam safety analysis goes over a dam in the top classes,
+            and the professional guideline for those reviews puts the Maximum
+            Design Earthquake among the design criteria a review updates,
+            directing that potential liquefaction “should also be considered”.{" "}
+            <Cite id="BCDSR-40-2016" /> <Cite id="EGBC-DSR-GL" /> So a dam
+            finished in 1954 is measured again, on a cycle, against a current
+            earthquake.
           </p>
           <Callout label="Not the same scale">
             <p>
-              A return period on this page is not a return period on the
-              buildings pages. Dams are assessed on mean, site-specific ground
-              motion. The
-              National Building Code’s figures are median values on a national
-              grid, and the professional guideline for dam safety reviews states
-              that they “should not be used for dam safety reviews”.{" "}
-              <Cite id="EGBC-DSR-GL" /> The province reaches the same rule by its
-              own route, allowing the national model for the lower classes and
-              requiring a site-specific assessment for detailed design at the top
-              two. <Cite id="BC-DDCG" /> A number on this page and a number on{" "}
+              A return period on this page is not a return period on{" "}
               <Link
                 href="/shaking/buildings/"
                 className="text-accent underline underline-offset-2"
               >
                 buildings
-              </Link>{" "}
-              that share a unit are not two points on one scale.
+              </Link>
+              . Dams are assessed on mean, site-specific ground motion, and the
+              professional guideline for dam safety reviews says the National
+              Building Code’s figures, which are median values on a national
+              grid, “should not be used for dam safety reviews”.{" "}
+              <Cite id="EGBC-DSR-GL" /> The province allows the national model
+              for the lower classes and requires a site-specific assessment for
+              detailed design at the top two. <Cite id="BC-DDCG" />
             </p>
           </Callout>
-
         </Prose>
       ),
     },
-
   ],
 
   lever: {
@@ -540,23 +535,22 @@ export const dams: PageModule = {
         <strong>
           Ask your local government what it holds for the dam nearest you.
         </strong>{" "}
-        Municipalities downstream of a dam receive a defined part of its
+        A municipality downstream of a dam receives a defined part of its
         emergency plan. <Cite id="BCDSP-DEP-24" /> A resident can ask for it,
         and can ask Metro Vancouver directly under freedom of information.
-        Asking is the route that exists.
       </>,
       <>
         <strong>Look up how the dam is classified.</strong> The provincial dam
         register is public and carries each dam’s owner and its failure
-        consequence classification, which is the measure the guidelines above
+        consequence classification, which is the measure the design guidelines
         are written against. <Cite id="BC-DAMS-REG" />
       </>,
     ],
     closing: (
       <>
-        Where the water would go if a dam did fail is not published for the dams
-        in this region. The provincial register names each dam’s failure
-        consequence classification and stops there. <Cite id="BC-DAMS-REG" />
+        Where the water would go if a dam failed is not something a resident can
+        look up. The register names the class and stops there.{" "}
+        <Cite id="BC-DAMS-REG" />
       </>
     ),
   },
