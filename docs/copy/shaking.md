@@ -23,17 +23,42 @@ kill many of the people who try. [PEIRS]
 
 ## Aftershocks return to already damaged places
 
-About a month after the mainshock, the province's Cascadia scenario models a second
-earthquake: magnitude 7.1, 60 km beneath Sidney, lasting 20 seconds at 11pm during an
-atmospheric river, a long period of heavy rain. [DCRRA-2025]
+An earthquake does not end when the shaking stops. The mainshock is followed by aftershocks,
+which can begin within minutes of it and carry on for months. [NZHIST-CHCH-11]
+[GNS-CES-STATS]
 
-The buildings it reaches have already been through the first earthquake. Whether a
-damaged building is safe to enter requires an inspection.
-[Buildings](/shaking/buildings/) covers who does that and how long people may wait.
+In September 2010 a major earthquake struck near Christchurch, a city on the east coast of
+New Zealand's South Island, and it killed nobody. [GEONET-DARFIELD-10] What followed was a
+long run of smaller earthquakes, thousands of them. [GNS-CES-STATS] One of those, arriving
+five and a half months after the first, killed 185 people. [NZHIST-CHCH-11]
 
-Published damage figures do not include this second earthquake. The federal scenario
-catalogue excludes aftershocks, and the province's headline figures count only direct
-damage from the mainshock. [NRCAN-SCEN] [DCRRA-2025]
+**4 September 2010, 4.35am.** Magnitude 7.1, west of the city, with most people at home.
+Roads split, chimneys came down, buildings were badly damaged. Nobody was killed.
+[GEONET-DARFIELD-10]
+
+**The next 171 days.** Canterbury did not stop shaking. More than 4,300 aftershocks were
+recorded before February. [GNS-CES-12] The sequence looked like it was fading.
+
+**22 February 2011, 12.51pm.** Magnitude 6.2, beneath the Port Hills a few kilometres from
+the centre and shallower than the first, at lunchtime on a working day. Buildings collapsed,
+cliffs gave way and liquefaction came up through the roads. It is classed as an aftershock
+of the September earthquake. [NZHIST-CHCH-11]
+
+**After that.** The next aftershock came within two minutes, a magnitude 5.8 after thirteen
+minutes, a magnitude 5.9 before two hours were up. [NZHIST-CHCH-11] More than 400 of about
+magnitude 3 or greater were recorded in the first day, and by August 2012 the sequence had
+produced more than 11,000 earthquakes of magnitude 2 or greater. [GNS-CES-STATS]
+
+Every one of those later earthquakes arrives at buildings that have already been through the
+first. Whether a damaged building is safe to go back into takes an engineer's inspection, and
+the City of Vancouver warns its own residents that repair will be prolonged, because the
+demand for building assessment and trade services will be heavy even for buildings with only
+minor damage. [COV-EXPLORER-25] [COV-FACTSHEET-24] [Buildings](/shaking/buildings/) covers
+who does that work and how long people may wait.
+
+Published estimates stop at the first earthquake. The federal scenario catalogue leaves
+aftershocks out of its damage and casualty figures, and the province's headline numbers count
+only direct damage from the mainshock. [NRCAN-SCEN] [DCRRA-2025]
 
 ## What shaking sets in motion
 
@@ -43,8 +68,8 @@ serious effects begin as the shaking ends.
 ## What you can do
 
 **Know the two things to do in the first seconds.** Drop, cover and hold on. Do not
-run outside. [PEIRS] The province's Cascadia scenario puts a second earthquake about a
-month after the first, so both are needed more than once. [DCRRA-2025]
+run outside. [PEIRS] Aftershocks get the same response, and there will be more than one.
+[PREPAREDBC]
 
 **Look up the ground under the places you spend time.** The regional maps cover the
 western municipalities street by street and are free to read. [MVSMMP]
@@ -53,4 +78,6 @@ they do not reach yet.
 
 ## Sources on this page
 
-[PEIRS] [DCRRA-2025] [PREPAREDBC] [NRCAN-SCEN] [MVSMMP]
+[PEIRS] [DCRRA-2025] [PREPAREDBC] [NZHIST-CHCH-11] [GNS-CES-STATS]
+[GEONET-DARFIELD-10] [GNS-CES-12] [COV-EXPLORER-25] [COV-FACTSHEET-24]
+[NRCAN-SCEN] [MVSMMP]

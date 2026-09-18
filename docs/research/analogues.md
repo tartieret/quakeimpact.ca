@@ -7,7 +7,8 @@
 > **Last research pass:** 10 September 2026.
 
 **Status.** Three analogues, none of which may set a Lower Mainland number. Christchurch
-supplies the sanitation and masonry-façade mechanisms; Kobe supplies permanent economic
+supplies the sanitation and masonry-façade mechanisms, and the shape of an aftershock
+sequence; Kobe supplies permanent economic
 displacement and is the strongest of the set; Tōhoku is sourced to a Japanese government
 briefing and sits as a sidebar, because BC's own planning documents state the
 fuel-dependency mechanism directly. Alongside them, the water-demand arithmetic against
@@ -28,6 +29,42 @@ the case for fuel, and it should become the case for everything else over time.
 Some of the sources behind these analogues are institutional websites or professional journals
 rather than government, utility or peer-reviewed publications, and are marked accordingly:
 news media carry the Christchurch ones.
+
+### The Canterbury sequence, 2010 to 2012 — the damaging earthquake was not the first one
+
+**The mechanism, and the reason this belongs on `/shaking/`.** An aftershock sequence is not
+a tail of diminishing events. Canterbury's largest earthquake killed nobody and its
+damaging one came five and a half months later, smaller, closer to the city and shallower.
+[GEONET-DARFIELD-10] [NZHIST-CHCH-11] **[C]** The province's Cascadia scenario models a
+second earthquake about a month after the mainshock, and the published damage figures
+exclude it, so the sequence is the part of the hazard a reader here is least equipped to
+picture. See `scenarios.md`.
+
+- **4 September 2010, 4.35am. Magnitude 7.1, west of Christchurch.** Roads split, chimneys
+  fell, buildings were badly damaged, and nobody was killed outright.
+  [GEONET-DARFIELD-10] **[C]**
+- **More than 4,300 aftershocks between the mainshock and February 2011.**
+  [GNS-CES-12] **[C]**
+- **22 February 2011, 12.51pm. Magnitude 6.2, beneath the Port Hills, a few kilometres from
+  the city centre and shallower than the mainshock. 185 people killed.** Formally an
+  aftershock of the September earthquake. [NZHIST-CHCH-11] **[C]**
+- **The sequence restarted immediately:** the next aftershock within two minutes, a
+  magnitude 5.8 after thirteen minutes, a magnitude 5.9 within two hours.
+  [NZHIST-CHCH-11] **[C]**
+- **More than 400 aftershocks of about magnitude 3 or greater in the first day**, and
+  **more than 11,000 earthquakes of magnitude 2 or greater in the sequence by August 2012.**
+  [GNS-CES-STATS] **[C]** The finalised-catalogue breakdown behind the first-day count, 56
+  in the magnitude 4 range and three at magnitude 5 or greater, is a level of detail no page
+  needs and is recorded here rather than published.
+
+**Magnitude 6.2 or 6.3.** GeoNet's moment magnitude for 22 February is 6.2 and several
+government pages carry 6.3. The site uses 6.2, because the comparison with the 7.1 is the
+whole point of the sequence and both figures come from the same register row. Resolve it in
+the confirming read.
+
+**What the sequence may not do here.** It illustrates how a sequence is shaped. It sets no
+Lower Mainland aftershock magnitude, no interval, and no count. The province's own modelled
+second earthquake is the only number the site publishes for that.
 
 ### Christchurch 2011 — sanitation, displacement, and masonry façades
 
@@ -169,7 +206,17 @@ are retired in `../sources.md`.
 
 ## What is not established
 
-- **Christchurch population loss.** No source at all. [CHCH-POP] **[?]**
+- **The four Canterbury sequence rows are unread.** `GEONET-DARFIELD-10`,
+  `GNS-CES-12`, `GNS-CES-STATS` and `NZHIST-CHCH-11` all reached the register from the
+  project owner on 18 September 2026, with the URLs, rather than from the documents.
+  geonet.org.nz, nzhistory.govt.nz, naturalhazards.govt.nz and tandfonline.com are all
+  refused by the research environment's egress proxy, so nothing in those four rows has
+  been read here. **[?]** on every figure in them until one pass reads all four. The
+  register rows say what each read has to settle.
+- **Christchurch population loss.** No source at all. [CHCH-POP] **[?]** A government
+  encyclopedia page on the February 2011 earthquake carries a figure of about 70,000 people
+  believed to have left the city in the weeks after, hedged in its own voice. It is a lead
+  for this gap and not an answer to it.
 - **The "40,000 chemical toilets" figure.** Not confirmed in the retrieved Stuff article, and
   incoherent against the 30,000-residents figure. **[?]**
 - **The Kobe port rankings.** Not verified inside the full text of [CHANG-2000] (paywalled), and
@@ -184,7 +231,8 @@ are retired in `../sources.md`.
 
 ## For the page
 
-**Mechanism sentences.** Christchurch: sanitation is the system that fails quietly and stays
+**Mechanism sentences.** Christchurch, the sequence: the earthquake that does the damage is
+not always the first one. Christchurch, sanitation: the system that fails quietly and stays
 failed, and the timescale for a network is not the timescale for a household. Kobe: a port that
 stops does not simply restart — customers move, and some do not come back. Tōhoku: the fuel
 existed; what failed was the terminals and the trucks that move it.
