@@ -36,15 +36,25 @@ import type { PageModule } from "./index";
  * without being told; the owner's decision of 13 September 2026 about captions
  * on `/after/` applies here too (`docs/media.md`).
  *
- * The aftershock section opens on Canterbury rather than on the province's
- * modelled second earthquake. A reader has no picture of an aftershock
- * sequence to hang that scenario on, and the 2010 to 2011 earthquakes at
- * Christchurch are the one sequence where the damaging event was not the
+ * The aftershock section runs general, then Canterbury, then here. A reader
+ * has no picture of an aftershock sequence, and the 2010 to 2011 earthquakes
+ * at Christchurch are the one sequence where the damaging event was not the
  * first: the run of dates does the work that a sentence about aftershocks
  * returning to damaged buildings cannot. It stays an analogue and sets no
- * number for here, which is why every figure in it is Canterbury's own and
- * the only aftershock the site quantifies for this region is the province's
+ * number for here, which is why every figure in it is Canterbury's own
  * (`docs/research/analogues.md`).
+ *
+ * The province's modelled second earthquake is not on this page. It is a
+ * detail of the scenario and `/scenarios/` carries it; here it competed with
+ * the sequence for the same job, and a reader met two aftershocks before
+ * either one meant anything.
+ *
+ * What the section does not say is that building codes are written around a
+ * single event rather than a sequence. That is the principle underneath the
+ * whole section and no source in the register states it, so the page carries
+ * the consequence instead, in the City's own words about assessment and trade
+ * capacity. `docs/research/buildings.md` holds the gap under "What is not
+ * established".
  */
 export const shaking: PageModule = {
   meta: {
@@ -61,10 +71,12 @@ export const shaking: PageModule = {
       "PEIRS",
       "DCRRA-2025",
       "PREPAREDBC",
-      "GEONET-DARFIELD-10",
-      "GNS-CES-STATS",
       "NZHIST-CHCH-11",
+      "GNS-CES-STATS",
+      "GEONET-DARFIELD-10",
       "GNS-CES-12",
+      "COV-EXPLORER-25",
+      "COV-FACTSHEET-24",
       "NRCAN-SCEN",
       "MVSMMP",
     ],
@@ -96,9 +108,9 @@ export const shaking: PageModule = {
           </p>
           <p>
             Drop before the shaking drops you, cover your head and neck, and
-            hold on until it stops. <Cite id="PREPAREDBC" /> Do not run
-            outside: falling and flying objects severely injure or kill many of
-            the people who try. <Cite id="PEIRS" />
+            hold on until it stops. <Cite id="PREPAREDBC" /> Do not run outside:
+            falling and flying objects severely injure or kill many of the
+            people who try. <Cite id="PEIRS" />
           </p>
           <Figure
             alt="Drop to your hands and knees, cover your head and neck under a sturdy table, and hold on to it until the shaking stops, then count to 60 before getting up. The people badly hurt are the ones who try to run outside while the ground is still moving."
@@ -124,9 +136,9 @@ export const shaking: PageModule = {
         <div className="flex flex-col gap-8">
           <Prose>
             <p>
-              Most people in Metro Vancouver have never felt a major
-              earthquake. These two recordings show how fast the shaking
-              arrives and how long it lasts.
+              Most people in Metro Vancouver have never felt a major earthquake.
+              These two recordings show how fast the shaking arrives and how
+              long it lasts.
             </p>
           </Prose>
           <div className="grid gap-6 md:grid-cols-2">
@@ -153,6 +165,12 @@ export const shaking: PageModule = {
         <div className="flex flex-col gap-8">
           <Prose>
             <p>
+              An earthquake does not end when the shaking stops. The mainshock
+              is followed by aftershocks, which can begin within minutes of it
+              and carry on for months. <Cite id="NZHIST-CHCH-11" />{" "}
+              <Cite id="GNS-CES-STATS" />
+            </p>
+            <p>
               In September 2010 a major earthquake struck near Christchurch, a
               city on the east coast of New Zealand’s South Island, and it
               killed nobody. <Cite id="GEONET-DARFIELD-10" /> What followed was
@@ -169,10 +187,9 @@ export const shaking: PageModule = {
                 detail: "4.35am",
                 body: (
                   <p>
-                    Magnitude 7.1, west of the city, with most people at
-                    home. Roads split, chimneys came down, buildings were badly
-                    damaged. Nobody was killed.{" "}
-                    <Cite id="GEONET-DARFIELD-10" />
+                    Magnitude 7.1, west of the city, with most people at home.
+                    Roads split, chimneys came down, buildings were badly
+                    damaged. Nobody was killed. <Cite id="GEONET-DARFIELD-10" />
                   </p>
                 ),
               },
@@ -180,10 +197,9 @@ export const shaking: PageModule = {
                 when: "The next 171 days",
                 body: (
                   <p>
-                    Canterbury did not stop shaking. More than 4,300
-                    aftershocks were recorded before February.{" "}
-                    <Cite id="GNS-CES-12" /> The sequence looked like it was
-                    fading.
+                    Canterbury did not stop shaking. More than 4,300 aftershocks
+                    were recorded before February. <Cite id="GNS-CES-12" /> The
+                    sequence looked like it was fading.
                   </p>
                 ),
               },
@@ -206,8 +222,8 @@ export const shaking: PageModule = {
                 body: (
                   <p>
                     The next aftershock came within two minutes, a magnitude 5.8
-                    after thirteen minutes, a magnitude 5.9 before two hours were
-                    up. <Cite id="NZHIST-CHCH-11" /> More than 400 of about
+                    after thirteen minutes, a magnitude 5.9 before two hours
+                    were up. <Cite id="NZHIST-CHCH-11" /> More than 400 of about
                     magnitude 3 or greater were recorded in the first day, and
                     by August 2012 the sequence had produced more than 11,000
                     earthquakes of magnitude 2 or greater.{" "}
@@ -219,28 +235,27 @@ export const shaking: PageModule = {
           />
           <Prose>
             <p>
-              About a month after the mainshock, the province’s Cascadia scenario
-            models a second earthquake: magnitude 7.1, 60 km beneath Sidney,
-            lasting 20 seconds at 11pm during an atmospheric river, a long
-            period of heavy rain. <Cite id="DCRRA-2025" />
-          </p>
-          <p>
-            The buildings it reaches have already been through the first
-            earthquake. Whether a damaged building is safe to enter requires an
-            inspection.{" "}
-            <Link
-              href="/shaking/buildings/"
-              className="text-accent underline underline-offset-2"
-            >
-              Buildings
-            </Link>{" "}
-            covers who does that and how long people may wait.
-          </p>
-          <p>
-            Published damage figures do not include this second earthquake. The
-            federal scenario catalogue excludes aftershocks, and the province’s
-            headline figures count only direct damage from the mainshock.{" "}
-              <Cite id="NRCAN-SCEN" /> <Cite id="DCRRA-2025" />
+              Every one of those later earthquakes arrives at buildings that
+              have already been through the first. Whether a damaged building is
+              safe to go back into takes an engineer’s inspection, and the City
+              of Vancouver warns its own residents that repair will be
+              prolonged, because the demand for building assessment and trade
+              services will be heavy even for buildings with only minor damage.{" "}
+              <Cite id="COV-EXPLORER-25" /> <Cite id="COV-FACTSHEET-24" />{" "}
+              <Link
+                href="/shaking/buildings/"
+                className="text-accent underline underline-offset-2"
+              >
+                Buildings
+              </Link>{" "}
+              covers who does that work and how long people may wait.
+            </p>
+            <p>
+              Published estimates stop at the first earthquake. The federal
+              scenario catalogue leaves aftershocks out of its damage and
+              casualty figures, and the province’s headline numbers count only
+              direct damage from the mainshock. <Cite id="NRCAN-SCEN" />{" "}
+              <Cite id="DCRRA-2025" />
             </p>
           </Prose>
         </div>
@@ -293,10 +308,9 @@ export const shaking: PageModule = {
     items: [
       <>
         <strong>Know the two things to do in the first seconds.</strong> Drop,
-        cover and hold on. Do not run outside. <Cite id="PEIRS" /> The
-        province’s Cascadia scenario puts a second earthquake about a month
-        after the first, so both are needed more than once.{" "}
-        <Cite id="DCRRA-2025" />
+        cover and hold on. Do not run outside. <Cite id="PEIRS" /> Aftershocks
+        get the same response, and there will be more than one.{" "}
+        <Cite id="PREPAREDBC" />
       </>,
       <>
         <strong>Look up the ground under the places you spend time.</strong> The
