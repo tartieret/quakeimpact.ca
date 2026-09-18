@@ -23,6 +23,28 @@ kill many of the people who try. [PEIRS]
 
 ## Aftershocks return to already damaged places
 
+In September 2010 a major earthquake struck near Christchurch, a city on the east coast of
+New Zealand's South Island, and it killed nobody. [GEONET-DARFIELD-10] What followed was a
+long run of smaller earthquakes, thousands of them. [GNS-CES-STATS] One of those, arriving
+five and a half months after the first, killed 185 people. [NZHIST-CHCH-11]
+
+**4 September 2010, 4.35am.** Magnitude 7.1, west of the city, with most people at home.
+Roads split, chimneys came down, buildings were badly damaged. Nobody was killed.
+[GEONET-DARFIELD-10]
+
+**The next 171 days.** Canterbury did not stop shaking. More than 4,300 aftershocks were
+recorded before February. [GNS-CES-12] The sequence looked like it was fading.
+
+**22 February 2011, 12.51pm.** Magnitude 6.2, beneath the Port Hills a few kilometres from
+the centre and shallower than the first, at lunchtime on a working day. Buildings collapsed,
+cliffs gave way and liquefaction came up through the roads. It is classed as an aftershock
+of the September earthquake. [NZHIST-CHCH-11]
+
+**After that.** The next aftershock came within two minutes, a magnitude 5.8 after thirteen
+minutes, a magnitude 5.9 before two hours were up. [NZHIST-CHCH-11] More than 400 of about
+magnitude 3 or greater were recorded in the first day, and by August 2012 the sequence had
+produced more than 11,000 earthquakes of magnitude 2 or greater. [GNS-CES-STATS]
+
 About a month after the mainshock, the province's Cascadia scenario models a second
 earthquake: magnitude 7.1, 60 km beneath Sidney, lasting 20 seconds at 11pm during an
 atmospheric river, a long period of heavy rain. [DCRRA-2025]
@@ -53,4 +75,5 @@ they do not reach yet.
 
 ## Sources on this page
 
-[PEIRS] [DCRRA-2025] [PREPAREDBC] [NRCAN-SCEN] [MVSMMP]
+[PEIRS] [DCRRA-2025] [PREPAREDBC] [GEONET-DARFIELD-10] [GNS-CES-STATS]
+[NZHIST-CHCH-11] [GNS-CES-12] [NRCAN-SCEN] [MVSMMP]

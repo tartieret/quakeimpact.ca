@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
+import { EventSequence } from "@/components/event-sequence";
 import { Figure, Prose, VideoEmbed } from "@/components/page-parts";
 import { DropCoverHoldOn } from "@/components/figures/shaking";
 import { DraftMark } from "@/components/status";
@@ -34,6 +35,16 @@ import type { PageModule } from "./index";
  * earthquake and the city, and a reader knows Anchorage is not Vancouver
  * without being told; the owner's decision of 13 September 2026 about captions
  * on `/after/` applies here too (`docs/media.md`).
+ *
+ * The aftershock section opens on Canterbury rather than on the province's
+ * modelled second earthquake. A reader has no picture of an aftershock
+ * sequence to hang that scenario on, and the 2010 to 2011 earthquakes at
+ * Christchurch are the one sequence where the damaging event was not the
+ * first: the run of dates does the work that a sentence about aftershocks
+ * returning to damaged buildings cannot. It stays an analogue and sets no
+ * number for here, which is why every figure in it is Canterbury's own and
+ * the only aftershock the site quantifies for this region is the province's
+ * (`docs/research/analogues.md`).
  */
 export const shaking: PageModule = {
   meta: {
@@ -50,6 +61,10 @@ export const shaking: PageModule = {
       "PEIRS",
       "DCRRA-2025",
       "PREPAREDBC",
+      "GEONET-DARFIELD-10",
+      "GNS-CES-STATS",
+      "NZHIST-CHCH-11",
+      "GNS-CES-12",
       "NRCAN-SCEN",
       "MVSMMP",
     ],
@@ -135,9 +150,76 @@ export const shaking: PageModule = {
     {
       title: "Aftershocks return to already damaged places",
       body: (
-        <Prose>
-          <p>
-            About a month after the mainshock, the province’s Cascadia scenario
+        <div className="flex flex-col gap-8">
+          <Prose>
+            <p>
+              In September 2010 a major earthquake struck near Christchurch, a
+              city on the east coast of New Zealand’s South Island, and it
+              killed nobody. <Cite id="GEONET-DARFIELD-10" /> What followed was
+              a long run of smaller earthquakes, thousands of them.{" "}
+              <Cite id="GNS-CES-STATS" /> One of those, arriving five and a half
+              months after the first, killed 185 people.{" "}
+              <Cite id="NZHIST-CHCH-11" />
+            </p>
+          </Prose>
+          <EventSequence
+            items={[
+              {
+                when: "4 September 2010",
+                detail: "4.35am",
+                body: (
+                  <p>
+                    Magnitude 7.1, west of the city, with most people at
+                    home. Roads split, chimneys came down, buildings were badly
+                    damaged. Nobody was killed.{" "}
+                    <Cite id="GEONET-DARFIELD-10" />
+                  </p>
+                ),
+              },
+              {
+                when: "The next 171 days",
+                body: (
+                  <p>
+                    Canterbury did not stop shaking. More than 4,300
+                    aftershocks were recorded before February.{" "}
+                    <Cite id="GNS-CES-12" /> The sequence looked like it was
+                    fading.
+                  </p>
+                ),
+              },
+              {
+                when: "22 February 2011",
+                detail: "12.51pm",
+                body: (
+                  <p>
+                    Magnitude 6.2, beneath the Port Hills a few kilometres from
+                    the centre and shallower than the first, at lunchtime on a
+                    working day. Buildings collapsed, cliffs gave way and
+                    liquefaction came up through the roads. It is classed as an
+                    aftershock of the September earthquake.{" "}
+                    <Cite id="NZHIST-CHCH-11" />
+                  </p>
+                ),
+              },
+              {
+                when: "After that",
+                body: (
+                  <p>
+                    The next aftershock came within two minutes, a magnitude 5.8
+                    after thirteen minutes, a magnitude 5.9 before two hours were
+                    up. <Cite id="NZHIST-CHCH-11" /> More than 400 of about
+                    magnitude 3 or greater were recorded in the first day, and
+                    by August 2012 the sequence had produced more than 11,000
+                    earthquakes of magnitude 2 or greater.{" "}
+                    <Cite id="GNS-CES-STATS" />
+                  </p>
+                ),
+              },
+            ]}
+          />
+          <Prose>
+            <p>
+              About a month after the mainshock, the province’s Cascadia scenario
             models a second earthquake: magnitude 7.1, 60 km beneath Sidney,
             lasting 20 seconds at 11pm during an atmospheric river, a long
             period of heavy rain. <Cite id="DCRRA-2025" />
@@ -158,9 +240,10 @@ export const shaking: PageModule = {
             Published damage figures do not include this second earthquake. The
             federal scenario catalogue excludes aftershocks, and the province’s
             headline figures count only direct damage from the mainshock.{" "}
-            <Cite id="NRCAN-SCEN" /> <Cite id="DCRRA-2025" />
-          </p>
-        </Prose>
+              <Cite id="NRCAN-SCEN" /> <Cite id="DCRRA-2025" />
+            </p>
+          </Prose>
+        </div>
       ),
     },
 

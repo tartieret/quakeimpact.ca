@@ -64,6 +64,9 @@ const KIND_OVERRIDES = {
   "CHILE-CRIME-20": "analogue",
   "CHILE-GUARDIAN-10": "analogue",
   "CHILE-USGS-11": "analogue",
+  "GEONET-DARFIELD-10": "analogue",
+  "GNS-CES-12": "analogue",
+  "GNS-CES-STATS": "analogue",
   "JAPAN-SHELTERS-18": "analogue",
   "JP-WPDM-11": "analogue",
   "KATRINA-ALGIERS-10": "analogue",
@@ -72,6 +75,7 @@ const KIND_OVERRIDES = {
   "KOBE-SOCIAL-10": "analogue",
   "METI-2011": "analogue",
   "NZ-RC-V4": "analogue",
+  "NZHIST-CHCH-11": "analogue",
   "RMS-KOBE": "analogue",
   "ZAMA-12": "analogue",
 };
