@@ -6,10 +6,9 @@ hook: The shaking is the short part.
 lede: A major earthquake may last only minutes. Disruption to water, food, power and transportation could last for weeks.
 ---
 
-## What happens after the shaking?
+[Start with food and water](/prepare/) · [Explore the aftermath ↓](#what-happens-after-the-shaking)
 
-The ground stops moving, but the failures have only started. This is how the
-first hours become days, weeks and months.
+## What happens after the shaking?
 
 *The timeline is a story and sources itself through its links. Each panel is a
 consequence the system pages state and source, and the noun it hangs on links to
