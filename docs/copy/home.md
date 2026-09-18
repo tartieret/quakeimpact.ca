@@ -1,15 +1,15 @@
 ---
 route: /
-title: What a major earthquake does to the Lower Mainland, and for how long
+title: The shaking is the short part.
 nav: Home
 hook: The shaking is the short part.
-lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] Most households in the region have not put together an emergency kit of any size. [RESEARCHCO-PREP-21] This site gathers what has already been published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each repair is waiting on.
+lede: A major earthquake in the Lower Mainland could last only a few minutes. What follows could last much longer. Power and mobile networks may fail, roads may close, water pressure may fall, and grocery stores may not reopen or restock quickly. The food and water already in the house could become what a household relies on. The earthquake is measured in minutes. The disruption is measured in days, weeks and months.
 ---
 
-## The shaking is the short part
+## What happens after the shaking?
 
-Most people picture an earthquake as a violent event with a clear end,
-followed by help arriving from outside.
+The ground stops moving, but the failures have only started. This is how the
+first hours become days, weeks and months.
 
 *The timeline is a story and sources itself through its links. Each panel is a
 consequence the system pages state and source, and the noun it hangs on links to
@@ -127,16 +127,17 @@ with a fourth for not yet assessed. [How the bands work](/method/). [The
 sources](/sources/) lists every document, and if you find something wrong,
 [contribute](/contribute/) says what a correction needs.
 
-## Start here
+## You do not need to prepare for everything at once
 
-If you have two minutes, store water. Distributing bulk drinking water across
-the region stays difficult for the first four to five days. [DCRRA-2025]
-PreparedBC asks for four litres per person per day, for at least two weeks.
-[PREPAREDBC] Water in the cupboard covers the days when getting it to you is
-hardest.
+Food and water are among the first things a household will need to provide for
+itself. British Columbia asks every household to keep at least two weeks of
+both. [PREPAREDBC] Most households in the region have not put together an
+emergency kit of any size. [RESEARCHCO-PREP-21]
 
-If you have ten minutes, read [the two scenarios](/scenarios/) and then
-[preparing](/prepare/).
+Start with food and water. Store what you can today, then add to it over time.
+PreparedBC recommends four litres of water per person per day and food that will
+not spoil. [PREPAREDBC] The [preparation guide](/prepare/) turns that first step
+into a household plan.
 
 ## Sources on this page
 
