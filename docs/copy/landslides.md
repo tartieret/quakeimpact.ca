@@ -17,8 +17,8 @@ instead. -->
 ## Loose rock sits above the roads into this region
 
 Highway 99 climbs from Horseshoe Bay to Whistler below slopes that have been
-rated for rock falls, rock slides and debris flows at a resolution of 25 m.
-[GSC-OF-6169] The rating is built from the rock type, how steep the slope is,
+rated for rock falls, rock slides and debris flows. [GSC-OF-6169] The rating is
+built from the rock type, how steep the slope is,
 which way it faces, what the surface is made of and how far it is from a
 stream. [GSC-OF-6169]
 
