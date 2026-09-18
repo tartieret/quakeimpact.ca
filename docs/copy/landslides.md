@@ -3,73 +3,69 @@ route: /shaking/landslides/
 title: Landslides
 nav: Landslides
 hook: "The province expects landslides to cut transportation routes."
-lede: The province expects landslides to cut transportation routes after its crustal earthquake scenario. Existing maps of the mountain corridors assess rainfall, not earthquakes.
+lede: Highway 99 runs north from Horseshoe Bay under cliffs and debris channels, and Highway 1 runs east into the Fraser Canyon. Both have been closed before by what came down on them, and both are how help reaches this region by land.
 ---
 
-## Landslides could cut transportation routes
+<!-- The page runs in three steps: where the loose ground is and what has been
+mapped of it, that shaking brings the same slopes down, and how long a severed
+road stays severed.
 
-Most published damage figures for an earthquake here come from the Geological
-Survey of Canada's scenario work, which counts "only damage to buildings, and
-their inhabitants, from earthquake shaking". Landslides are "not currently
-included". [NRCAN-SCEN] What has been written about them was written separately.
+There is no figure and no map slot. The microzonation slope instability sheets
+are licensed link-only, and no corridor product conditioned on shaking exists
+for Highway 99 or the Fraser Canyon. The page says where the loose rock is in
+words instead. -->
 
-The province's planning scenario for a magnitude 7.0 earthquake close to the city is set on a January afternoon, immediately after an atmospheric river has soaked the ground.
-[PEIRS] Its account of the first minutes says: "Landslides and rock falls are
-generated in many areas, cutting off transportation routes. Flooding is
-increased by the recent wet weather event with some dikes failing." [PEIRS]
+## Loose rock sits above the roads into this region
 
-That is one scenario in one wet January. The same strategy assumes that "areas
-will be isolated", with large parts of the impact area unreachable by road
-because of landslides, liquefaction and bridge damage, and it does not say which
-areas. [PEIRS]
+Highway 99 climbs from Horseshoe Bay to Whistler below slopes that have been
+rated for rock falls, rock slides and debris flows at a resolution of 25 m.
+[GSC-OF-6169] The rating is built from the rock type, how steep the slope is,
+which way it faces, what the surface is made of and how far it is from a
+stream. [GSC-OF-6169]
 
-Provincial staging areas "are located outside the impact area and will be used
-to organize, prioritize, and disseminate critical resources". [PEIRS] Help is
-gathered outside the shaking and pushed in, and two of the roads it would come
-in on run through mountains: Highway 99 north through the Sea to Sky corridor,
-and Highway 1 east through the Fraser Canyon.
+That corridor has a long record of things coming down on it. A review of 110 km
+of it counted 154 landslides between 1855 and 2007, on a stretch of road that
+accounts for "more than 18% of Canada's total landslide related deaths (>600)".
+[S2S-BLAIS-08]
 
-> **Not published.** No map of where an earthquake would set off landslides along the
-> Sea to Sky corridor or the Fraser Canyon has been found in the published literature.
-> Every seismic landslide product that has been found for this part of the province
-> covers the western municipalities of Metro Vancouver, which stops well short of
-> either corridor.
-> [MVSMMP]
+Closer in, the free neighbourhood maps for the western municipalities of Metro
+Vancouver carry a slope instability layer alongside liquefaction, drawn street
+by street. [MVSMMP]
 
-## Corridor maps cover rainfall, not earthquakes
+## Shaking sets off the same slopes that rain does
 
-There is landslide mapping for the Sea to Sky corridor. Two maps published by
-the Geological Survey of Canada in 2009 rate the corridor for rock falls and
-rock slides, and for debris flows, at a resolution of 25 m.
-[GSC-OF-6169] Each rating is a weighted sum of things about the slope: the rock
-type, how steep it is, which way it faces, what the surface is made of, how far
-it is from a stream. Not one of those ingredients is an earthquake, and the
-words "earthquake" and "seismic" appear nowhere in the maps. The weighting given
-to which way a slope faces is explained by the weather: rain comes from the
-west. [GSC-OF-6169]
+The Cascadia earthquake of January 1700 collapsed houses of the Cowichan people
+on Vancouver Island and set off numerous landslides. [NRCAN-1700]
 
-The record of what has actually come down on that corridor is built the same
-way. A review of 154 landslides on 110 km of the corridor between 1855 and 2007,
-a corridor that accounts for "more than 18% of Canada's total landslide related
-deaths (>600)", puts 54 per cent of them down to the climate and 6 per cent to
-construction, and mentions neither earthquakes nor seismic loading anywhere in
-its text. [S2S-BLAIS-08]
+The province's planning scenario for a magnitude 7.0 earthquake close to the
+city is set on a January afternoon, right after an atmospheric river has soaked
+the ground. Its account of the first minutes reads: "Landslides and rock falls
+are generated in many areas, cutting off transportation routes." [PEIRS]
 
-The environmental assessment for the highway's own upgrade splits the two
-hazards apart as well. Earthquakes appear there as a matter of designing new
-bridges and structures to stay usable afterwards. Rock fall appears separately,
-and the report puts it down to the original blasting of the cuts, the slow
-loosening of rock afterwards, and "ice and root action". [S2S-EA-GEO-03]
+The ratings on Highway 99 were built for the weather. The weight they give to
+which way a slope faces is explained by where the rain comes from, which is the
+west. [GSC-OF-6169] They still show where the loose rock and the debris channels
+are, and shaking works on the same ground.
 
-The province's own seismic design criteria for its bridges say: "This document
-does not address other potential risks, such as landslides or tsunamis."
-[MOTI-SRDC-05] Shaking and slopes are managed by different programs, and the
-corridors fall in the gap between them.
+## A road cut here stays cut for weeks
 
-A rock-fall map built for rain still shows where the loose rock is, and an
-earthquake is a different trigger on the same slopes. How long a severed
-mountain highway in this province has taken to reopen is on [getting
-around](/getting-around/), where every closure counted was caused by rain.
+After the crustal scenario the province expects the routes into the region to be
+damaged or only partly usable, at much reduced capacity, for weeks to months,
+and the rail network in the impact area to be largely unusable through the
+immediate response. [PEIRS]
+
+Where the help is makes that worse. Provincial staging areas sit outside the
+impact area, and resources are gathered there and pushed in. [PEIRS] Two of the
+roads they would come in on run through mountains.
+
+The last time these roads were cut it was rain rather than shaking that did it.
+A storm in November 2021 closed Highway 1 through the Fraser Canyon at 18 sites
+between Hope and Spences Bridge, and it reopened about two months later.
+[HWY1-RECOV] Highway 8 in the Nicola Valley took about a year. [HWY8-RECOV] The
+same storm cut the main rail lines out of the province. [BC-FLOOD-STRAT]
+
+What those closures did, and how the region moves while they last, is on
+[getting around](/getting-around/).
 
 ## What you can do
 
@@ -78,16 +74,16 @@ for the western municipalities cover slope instability as well as liquefaction.
 [MVSMMP] [Ground conditions](/shaking/ground/) says how to read them and which
 municipalities they do not reach yet.
 
-**Plan around the road in, not the road out.** The province gathers its help
-outside the impact area and pushes it in, and its own scenario has landslides
-cutting transportation routes. [PEIRS] At home that means enough water, food and
-medicine to last while the roads are being cleared.
+**Plan around the road in, not the road out.** Help is gathered outside the
+impact area and pushed in over roads that run through mountains. [PEIRS] At home
+that means enough water, food and medicine to last while the roads are being
+cleared.
 
-None of this has been modelled for the region as a whole. What has been measured
-was measured one slope and one corridor at a time, which is why the questions
-above are local ones.
+A slope that comes down on Highway 99 lands on the road that help arrives by.
+Whether it was rain or shaking that brought it down changes very little about
+the weeks that follow.
 
 ## Sources on this page
 
-[NRCAN-SCEN] [PEIRS] [MVSMMP] [GSC-OF-6169] [S2S-BLAIS-08] [S2S-EA-GEO-03]
-[MOTI-SRDC-05]
+[GSC-OF-6169] [S2S-BLAIS-08] [MVSMMP] [NRCAN-1700] [PEIRS] [HWY1-RECOV]
+[HWY8-RECOV] [BC-FLOOD-STRAT]
