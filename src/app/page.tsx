@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Lever, slugify } from "@/components/page-parts";
 import {
   Citations,
@@ -6,7 +7,7 @@ import {
   SOURCES_LEDE,
   SOURCES_TITLE,
 } from "@/components/citation";
-import { home } from "@/content/pages/home";
+import { home, homeHero } from "@/content/pages/home";
 import { pageMetadata } from "@/content/metadata";
 import { SITE } from "@/content/site";
 
@@ -44,18 +45,36 @@ export default function HomePage() {
     <Citations ids={home.meta.references}>
       {/* Hero ------------------------------------------------------- */}
       <section className="border-b border-rule">
-        <div className="mx-auto max-w-6xl px-gutter py-16 sm:py-24">
+        <div className="mx-auto max-w-6xl px-gutter py-10 sm:py-14">
           {home.meta.kicker ? (
             <p className="text-xs font-semibold tracking-[0.12em] text-accent uppercase">
               {home.meta.kicker}
             </p>
           ) : null}
-          <h1 className="mt-4 max-w-4xl font-display text-4xl leading-[1.04] tracking-tight text-balance sm:text-6xl">
-            {home.meta.title}
+          <h1 className="mt-5 max-w-4xl font-display text-5xl leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
+            {homeHero.titleLines.map((line, i) => (
+              <span key={line} className="sm:block">
+                {i > 0 ? " " : ""}{line}
+              </span>
+            ))}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-muted text-pretty">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted text-pretty sm:text-xl">
             {home.meta.standfirst}
           </p>
+          <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-6">
+            <Link
+              href={homeHero.primary.href}
+              className="inline-flex min-h-12 items-center rounded-sm bg-accent px-5 py-3 text-sm font-semibold text-paper hover:underline underline-offset-4"
+            >
+              {homeHero.primary.label}
+            </Link>
+            <a
+              href={homeHero.secondary.href}
+              className="inline-flex min-h-12 items-center gap-2 text-sm font-semibold text-accent underline underline-offset-4"
+            >
+              {homeHero.secondary.label}<span aria-hidden="true">↓</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -68,7 +87,7 @@ export default function HomePage() {
             i % 2 === 1 ? "bg-paper-raised" : ""
           }`}
         >
-          <div className="mx-auto max-w-6xl px-gutter py-16">
+          <div className={`mx-auto max-w-6xl px-gutter ${i === 0 ? "pt-8 pb-12 sm:pt-10 sm:pb-16" : "py-16"}`}>
             <h2 className="max-w-3xl font-display text-3xl tracking-tight text-balance">
               {section.title}
             </h2>
