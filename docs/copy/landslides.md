@@ -34,8 +34,7 @@ by street. [MVSMMP]
 ## Shaking sets off the same slopes that rain does
 
 The oral traditions of the First Nations people on Vancouver Island record
-numerous landslides in the Cascadia earthquake of January 1700, and the collapse
-of the Cowichan people's houses. [NRCAN-1700]
+numerous landslides in the Cascadia earthquake of January 1700. [NRCAN-1700]
 
 The province's planning scenario for a magnitude 7.0 earthquake close to the
 city is set on a January afternoon, right after an atmospheric river has soaked
