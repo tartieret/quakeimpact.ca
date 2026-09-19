@@ -1,15 +1,14 @@
 ---
 route: /
-title: What a major earthquake does to the Lower Mainland, and for how long
+title: The shaking is the short part.
 nav: Home
 hook: The shaking is the short part.
-lede: British Columbia asks every household to keep [two weeks of water and food](/prepare/). [PREPAREDBC] Most households in the region have not put together an emergency kit of any size. [RESEARCHCO-PREP-21] This site gathers what has already been published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each repair is waiting on.
+lede: A major earthquake may last only minutes. Disruption to water, food, power and transportation could last for weeks.
 ---
 
-## The shaking is the short part
+[See what happens next ↓](#what-happens-after-the-shaking) · [Start preparing](/prepare/)
 
-Most people picture an earthquake as a violent event with a clear end,
-followed by help arriving from outside.
+## What happens after the shaking?
 
 *The timeline is a story and sources itself through its links. Each panel is a
 consequence the system pages state and source, and the noun it hangs on links to
@@ -127,16 +126,15 @@ with a fourth for not yet assessed. [How the bands work](/method/). [The
 sources](/sources/) lists every document, and if you find something wrong,
 [contribute](/contribute/) says what a correction needs.
 
-## Start here
+## Start with food and water
 
-If you have two minutes, store water. Distributing bulk drinking water across
-the region stays difficult for the first four to five days. [DCRRA-2025]
-PreparedBC asks for four litres per person per day, for at least two weeks.
-[PREPAREDBC] Water in the cupboard covers the days when getting it to you is
-hardest.
+British Columbia asks every household to keep at least two weeks of emergency
+supplies. [PREPAREDBC] Most households in the region have not put together a kit
+of any size. [RESEARCHCO-PREP-21]
 
-If you have ten minutes, read [the two scenarios](/scenarios/) and then
-[preparing](/prepare/).
+You do not need to assemble everything at once. Check what you already have,
+then add water and food that will not spoil over time. The [preparation
+guide](/prepare/) shows how much to keep and what to add next.
 
 ## Sources on this page
 
