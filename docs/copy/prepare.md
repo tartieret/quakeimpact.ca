@@ -19,9 +19,11 @@ option. That is how private preparation builds regional resilience. [PEIRS]
 
 Keep enough water, food and essential supplies for every person and pet in the
 home for at least two weeks. Infrastructure and utilities may take weeks to
-restore. [PREPAREDBC] Emergency Support Services can provide short-term food,
-lodging and other help, but the program is designed around the first 72 hours and
-not the scale of a catastrophic earthquake. [PEIRS]
+restore. [PREPAREDBC] Emergency Support Services has limited capacity for
+short-term food, lodging and other help. The program is built around the first
+72 hours, not the scale of a catastrophic earthquake. Access is not assured,
+and what is available may be needed more urgently by people with no safe home or
+other option. [PEIRS]
 
 Plan for two weeks. Do not wait until you can buy everything at once. A written
 plan, a meeting place and a conversation with a neighbour are useful immediately

@@ -71,9 +71,11 @@ export const prepare: PageModule = {
             Keep enough water, food and essential supplies for every person and
             pet in the home for at least two weeks. Infrastructure and utilities
             may take weeks to restore. <Cite id="PREPAREDBC" /> Emergency
-            Support Services can provide short-term food, lodging and other
-            help, but the program is designed around the first 72 hours and not
-            the scale of a catastrophic earthquake. <Cite id="PEIRS" />
+            Support Services has limited capacity for short-term food, lodging
+            and other help. The program is built around the first 72 hours, not
+            the scale of a catastrophic earthquake. Access is not assured, and
+            what is available may be needed more urgently by people with no
+            safe home or other option. <Cite id="PEIRS" />
           </p>
           <p>
             Plan for two weeks. Do not wait until you can buy everything at
