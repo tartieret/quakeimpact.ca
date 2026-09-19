@@ -79,11 +79,21 @@ export function SiteHeader() {
             disclosure the browser already knows how to open from a keyboard;
             the part that is being read is open when the menu opens, because
             that is the list a reader in it is most likely to want. The part's
-            own page keeps its row above, so reaching it is still one tap. */}
+            own page keeps its row above, so reaching it is still one tap.
+
+            The panel overlays the page rather than pushing it down, and scrolls
+            inside its own box. In flow it was taller than a phone, so reaching a
+            lower entry meant scrolling the document, and the router then read a
+            page that had not moved: it leaves the scroll position alone when the
+            top of the new segment is already in the viewport, and with the menu
+            still open at that moment it always was. Closing the menu then pulled
+            the page up under a scroll position belonging to the menu, and the
+            new page opened part-way down. Out of flow, the document never moves
+            while the menu is open and the router reads a settled page. */}
         <div
           id="mobile-nav"
           hidden={!open}
-          className="border-t border-rule bg-paper-raised lg:hidden"
+          className="absolute inset-x-0 top-full max-h-[calc(100dvh-7rem)] overflow-y-auto overscroll-contain border-y border-rule bg-paper-raised shadow-lg lg:hidden"
         >
           <div className="mx-auto max-w-6xl px-gutter py-4">
             <ul className="grid gap-1">
