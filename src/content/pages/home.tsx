@@ -170,8 +170,8 @@ export const home: PageModule = {
                       <Link href="/after/communications/" className={link}>
                         phone
                       </Link>{" "}
-                      at once, and the towers that keep working are the ones
-                      with power left in them.
+                      at once. Cell sites switch to their batteries, but the
+                      network is jammed with calls.
                     </p>
                     <p>
                       Over the next few hours the{" "}
@@ -213,8 +213,14 @@ export const home: PageModule = {
                       <Link href="/after/fuel/" className={link}>
                         service station
                       </Link>{" "}
-                      with full tanks and no power dispenses nothing. Cards do
-                      not work without power or a network.
+                      with full tanks and no power dispenses nothing.{" "}
+                      <Link href="/after/communications/" className={link}>
+                        Mobile service
+                      </Link>{" "}
+                      thins out as cell-site backup power, built to last hours
+                      to a few days, runs down, and a site with a generator
+                      keeps going only while fuel reaches it. Cards do not work
+                      without power or a network.
                     </p>
                     <p>
                       Crews clear emergency routes first. Local streets wait,

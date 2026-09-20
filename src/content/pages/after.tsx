@@ -97,9 +97,9 @@ export const after: PageModule = {
           <Prose>
             <p>
               <strong>In the first hours</strong>, communications and health
-              care are affected, and dams must be checked. Nothing requires a
-              mobile phone site to hold any
-              backup power at all; the regulator opened a proceeding to decide
+              care are affected, and dams must be checked. No rule sets how long
+              a mobile phone site must keep running on backup power; the
+              regulator opened a proceeding to decide
               what the requirement should be and has not decided.{" "}
               <Cite id="CRTC-2025-226" /> About 65 per cent of one health
               authority’s buildings would likely be completely damaged at the

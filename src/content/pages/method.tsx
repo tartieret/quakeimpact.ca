@@ -239,11 +239,11 @@ export const method: PageModule = {
             scenario continues for days to weeks, with what capacity survives
             prioritised for emergency personnel.{" "}
             <Cite id="DCRRA-2025" /> The uncertainty is about everything around
-            that sentence: nothing requires a mobile phone site to hold any
-            backup power at all, the regulator opened a proceeding to decide
+            that sentence: no rule sets how long a mobile phone site must keep
+            running on backup power, the regulator opened a proceeding to decide
             what the requirement should be and has not decided,{" "}
-            <Cite id="CRTC-2025-226" /> and no carrier has published what it
-            holds or how long it would take.
+            <Cite id="CRTC-2025-226" /> and no carrier has published what its
+            sites here hold or how long restoration would take.
           </p>
           <p>
             Health care is Medium because about 65 per cent of one health
@@ -257,7 +257,7 @@ export const method: PageModule = {
             Each system page says which kind of uncertainty is behind its band.
           </p>
           <Figure
-            alt="Communications and health care are both banded Medium for different reasons: communications because nothing requires a mobile phone site to hold backup power and the regulator has not decided, and health care because about 65 per cent of one health authority's buildings would likely be completely damaged at the shaking level the code designs for and nobody has compared expected casualties to the beds the region has. The shared band does not mean the two situations are the same."
+            alt="Communications and health care are both banded Medium for different reasons: communications because no rule sets how long a mobile phone site must keep running on backup power and the regulator has not decided, and health care because about 65 per cent of one health authority's buildings would likely be completely damaged at the shaking level the code designs for and nobody has compared expected casualties to the beds the region has. The shared band does not mean the two situations are the same."
             caption={
               <>
                 The same band, and a different kind of thing missing behind it.

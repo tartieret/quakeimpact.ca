@@ -248,11 +248,11 @@ export const dependencies: PageModule = {
           </VerificationNote>
           <p>
             One documented link is the loss of mobile service when power fails.
-            Nothing in Canada currently requires a mobile phone site to hold any
-            backup power at all, and the regulator opened a proceeding in
-            September 2025 to decide what that requirement should be.{" "}
-            <Cite id="CRTC-2025-226" /> The link from electricity to phones is
-            real, but no rule sets how long a site must keep working.
+            No rule in Canada sets how long a mobile phone site must keep
+            running on backup power once the grid fails, and the regulator
+            opened a proceeding in September 2025 to decide what that
+            requirement should be.{" "}
+            <Cite id="CRTC-2025-226" />
           </p>
         </Prose>
       ),
@@ -283,10 +283,11 @@ export const dependencies: PageModule = {
         and hot water over that period.
       </>,
       <>
-        <strong>Do not build a plan that needs a phone call.</strong> Nothing in
-        Canada currently requires a mobile phone site to hold any backup power at
-        all, and the regulator opened a proceeding in September 2025 to decide
-        what that requirement should be. <Cite id="CRTC-2025-226" />
+        <strong>Do not build a plan that needs a phone call.</strong> No rule in
+        Canada sets how long a mobile phone site must keep running on backup
+        power once the grid fails, and the regulator opened a proceeding in
+        September 2025 to decide what that requirement should be.{" "}
+        <Cite id="CRTC-2025-226" />
       </>,
     ],
   },

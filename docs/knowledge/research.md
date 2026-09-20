@@ -86,6 +86,18 @@ design. The regulator's critique is stronger evidence than anything the proponen
   `egbc.ca` sits behind a Cloudflare challenge and `crtc.gc.ca` refuses both. BCUC's
   Azure WAF keys documents on an opaque `doc_NNNNN` id, cannot be probed without
   tripping, and its exhibit lists are the way back in.
+- **CRTC.** `crtc.gc.ca` pages open in a scripted browser once its challenge clears
+  (wait a few seconds after navigating). `applications.crtc.gc.ca` serves plain `curl`:
+  `DocWebBroker/OpenDocument.aspx?DMID=` for an intervention, and
+  `TransferToWeb/<year>/<notice>_<label>.zip` for a bundle such as a proceeding's
+  responses to requests for information. The proceedings list is JSON at
+  `portail-portal/eng/listes-lists/18/data`, and its `Doc` field links each notice's
+  intervention list and zips. Documents inside a zip do not resolve by their DM number,
+  so cite the zip and name the file. Outage filings live on the `otf` file
+  `c12-201909780`, one page per file number, and need the browser.
+- **PDF text without an extractor.** Inside a browser page, load pdf.js from cdnjs
+  and call `getTextContent()` per page. It reads files whose fonts defeat the stream
+  method below.
 - **ICLR.** `iclr.org/resource/...` URLs 404. `https://www.iclr.org/iclr-embed/?file=<base64
   of the numeric id>` returns a shell whose markup holds the real
   `wp-content/uploads/YYYY/MM/` address. Expect it to move again.
