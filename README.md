@@ -64,14 +64,14 @@ src/app/globals.css     ← design tokens (colour, type). Only file naming a typ
 ```
 
 Adding a system is one entry in `SYSTEMS` in `site.ts`. It appears in the
-grid, the matrix, the dependency list, the prepare page and gets its own
+grid, the matrix, the related-systems lists, the prepare page and gets its own
 statically-exported page at `/after/<slug>/` with no other change.
 
 ## Routes
 
 ```
 /                       hero, misconception, scenarios, ground, timeline,
-                        systems, dependency graph, prepare
+                        systems, prepare
 /scenarios/             the two scenarios side by side + full matrix
 /shaking/               Part 1 index
 /shaking/[slug]/        ground, buildings, casualties, fire-following,
@@ -79,7 +79,6 @@ statically-exported page at `/after/<slug>/` with no other change.
 /after/                 Part 2 index — timeline + system grid by build tier
 /after/[slug]/          13 system pages
 /getting-around/        Part 2b — moving after the shaking
-/dependencies/          the dependency graph
 /prepare/               Part 3
 /method/                band rubric, principles, assumption discipline
 /sources/               source register

@@ -37,7 +37,7 @@ choose between Medium and High. It also left the band open to the obvious object
 is banded High at several weeks downtown, communications depends on electricity and on fuel, so
 how is communications Medium? The answer is the province's own duration statement, and it is worth
 writing where a reader can see it. `../impact-bands.md` carries the general rule this case forced:
-the published duration sets a band, dependency describes it, and a system can be banded below
+the published duration sets a band, and a system can be banded below
 something it depends on, because a cell site comes back when fuel reaches it while a distribution
 network comes back one pole at a time.
 

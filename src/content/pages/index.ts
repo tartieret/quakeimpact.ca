@@ -9,7 +9,6 @@ import { communications } from "./communications";
 import { contribute } from "./contribute";
 import { dams } from "./dams";
 import { damsAndReservoirs } from "./dams-and-reservoirs";
-import { dependencies } from "./dependencies";
 import { dikes } from "./dikes";
 import { electricity } from "./electricity";
 import { fireFollowing } from "./fire-following";
@@ -132,7 +131,6 @@ export const ALL_PAGES: PageModule[] = [
   casualties,
   contribute,
   dams,
-  dependencies,
   dikes,
   fireFollowing,
   gettingAround,

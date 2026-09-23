@@ -89,8 +89,7 @@ scenario is set on a January afternoon after an atmospheric river. [PEIRS]
 These failures compound one another. Water needs power for pumps and roads for
 crews. Roads need debris cleared, which needs fuel. The order in
 which the systems can be brought back sets how long the region waits, so [life
-afterwards](/after/) takes them one at a time and [the dependency
-graph](/dependencies/) counts what each one is waiting on.
+afterwards](/after/) takes them one at a time.
 
 None of those repairs is a household's to make, which is why what matters on the
 day is what you already have. [Preparing](/prepare/) sets out what to keep and

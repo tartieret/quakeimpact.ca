@@ -26,9 +26,6 @@ modelled to cause 267 water main failures across Metro Vancouver's network, with
 about 60 of them at the 71 points where mains cross under rivers and inlets, the
 hardest places in the system to reach. [MV-WATER-22]
 
-The [dependency graph](/dependencies/) counts 29 such connections. Six have a
-published document behind them, and the rest are links no assessment has established.
-
 ## What fails first
 
 **In the first hours**, communications and health care are affected, and dams must be

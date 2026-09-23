@@ -4,7 +4,7 @@ How a graphic gets made on this site. Read `docs/style-guide.md` §8 and §9
 first: the visual rules are decisions, not preferences, and everything below is
 those rules made buildable.
 
-The worked examples are the two on `/after/water/`: read `water.tsx` next to this file alongside the rules. There are more elsewhere, on `/after/electricity/`, `/shaking/ground/`, `/scenarios/`, `/shaking/fire-following/`, `/method/`, `/getting-around/` and `/dependencies/`.
+The worked examples are the two on `/after/water/`: read `water.tsx` next to this file alongside the rules. There are more elsewhere, on `/after/electricity/`, `/shaking/ground/`, `/scenarios/`, `/shaking/fire-following/`, `/method/` and `/getting-around/`.
 Read `water.tsx` next to this file alongside the rules.
 
 ---

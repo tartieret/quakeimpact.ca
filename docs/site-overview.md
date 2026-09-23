@@ -51,11 +51,11 @@ Impacts are expressed as **low / medium / high** per system per scenario, not as
 
 The rubric is published on `/method/` and linked from every impact cell. It is deliberately system-agnostic so that "high" for sanitation and "high" for transport mean comparable things.
 
-| Band | Duration | Extent | Dependency |
-| --- | --- | --- | --- |
-| **Low** | Hours to a few days | Localised | Comes back on its own |
-| **Medium** | Days to weeks | Patchy, worst on poor ground | Waiting on one other system |
-| **High** | Weeks to months, sometimes longer | Regional | Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast |
+| Band | Duration | Extent |
+| --- | --- | --- |
+| **Low** | Hours to a few days | Localised |
+| **Medium** | Days to weeks | Patchy, worst on poor ground |
+| **High** | Weeks to months, sometimes longer | Regional |
 
 A fourth state, **not yet assessed**, is rendered hatched rather than coloured. It is a first-class band, not a gap to be hidden.
 
@@ -103,7 +103,7 @@ The core of the site. Organised as a timeline: hours → days → weeks → mont
 
 **Assumption discipline on port, airport and ferry terminals.** The temptation is to write "these would not survive." Do not. YVR has done substantial ground improvement on Sea Island and is better studied than intuition suggests; pile-supported wharves on treated ground do not behave the way a lay reader expects. Port cranes and wharves are a genuine Kobe-style vulnerability, but that has to come from an assessment. If the documents confirm the fear, the claim becomes powerful. If they do not, that is itself worth telling readers.
 
-**Centrepiece: the dependency graph** (`/dependencies/`). Water restoration needs power for pumps and road access for crews. Roads need debris clearing, which needs fuel. Fuel terminals sit on liquefiable delta ground. Hospitals run on diesel that arrives by truck. Nobody has rendered this legibly for a general audience in this region.
+**How systems affect each other is written, not drawn.** Water restoration needs power for pumps and road access for crews; roads need debris clearing, which needs fuel. A system page says what it waits on in its copy, where a source says so, and lists related systems as navigation; the home page carries the coupling as one paragraph. There is no dependency graph: most of its links were our own inference, and a diagram of obvious links reads as analysis the site did not do. See the decision below.
 
 ### Part 2b — Moving after the shaking
 
@@ -173,7 +173,7 @@ A thin complete grid is worth less than a few deep pages. Every page in the MVP 
 
 **Then:** sanitation, fuel, food, communications, housing.
 
-**Then:** dependency graph, casualties, the full prepare section.
+**Then:** casualties, the full prepare section.
 
 ---
 
@@ -189,12 +189,14 @@ A thin complete grid is worth less than a few deep pages. Every page in the MVP 
 - **Electricity bands High, and the page does not stretch the finding.** BC Hydro's filing says up to two-thirds of downtown customers could lose power, with several weeks to restore service and years to restore the system. Nothing equivalent is published for the rest of the region. The band is High; the page leads with the downtown fact and states the limit (`style-guide.md` §6, "Generalise the magnitude, not the place").
 - **Weather is a scenario condition, not a system.** It does not fail; it makes every other failure worse, and the province's scenarios build it in that way: the DCRRA sets its M9 in an August heatwave with wildfire smoke, PEIRS sets its M7 on a January afternoon after an atmospheric river. It is rendered on the timeline, not in `SYSTEMS`.
 - **Natural gas is a system.** Restoration is rate-limited by sending a person into every building, a mechanism no other system has. With food and fuel standing apart, and safety and conflict added, the grid has fourteen systems.
-- **Safety and conflict is a system with no band.** Decided 15 September 2026. It has no restoration time, so there is nothing for a band to measure: not yet assessed would imply a missing assessment, and Low would let analogues set a band. It shows one sentence and a source for both earthquakes, with no phase and no dependency edges, because none is published. See `research/impact-bands.md`. The title replaces "social disorder", which primes a fear the evidence does not support. See `research/social-disorder.md`.
+- **Safety and conflict is a system with no band.** Decided 15 September 2026. It has no restoration time, so there is nothing for a band to measure: not yet assessed would imply a missing assessment, and Low would let analogues set a band. It shows one sentence and a source for both earthquakes, with no phase and no related systems, because no document names any. See `research/impact-bands.md`. The title replaces "social disorder", which primes a fear the evidence does not support. See `research/social-disorder.md`.
 - **The outside-help row is "Where help comes from".** Decided 11 September 2026. A row named for an absence and banded Low for the crustal M7 contradicted itself; the research frames help as late, not absent, and what a reader wants is who comes, from where and when.
 - **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided 11 September 2026. A departure framing ("Getting out", `/leaving/`) teaches the wrong behaviour when the province plans on sheltering in place and reserves damaged routes for response. "Staying put" was rejected too: the province does not rule out later evacuation, and leaving is an individual decision.
-- **The landing page leads with the four phases.** Decided 11 September 2026. The order is what the first hours, days, weeks and months are like, each phase carrying claims sourced on the system pages; then every system as a card; then the two scenarios; then where the numbers come from, with the band rubric as one sentence and a link. The dependency figure keeps `/dependencies/`, and the home page keeps its coupling as one paragraph. Cards carry no phase label, because one word needs a sentence to mean anything.
+- **The landing page leads with the four phases.** Decided 11 September 2026. The order is what the first hours, days, weeks and months are like, each phase carrying claims sourced on the system pages; then every system as a card; then the two scenarios; then where the numbers come from, with the band rubric as one sentence and a link. The home page keeps the coupling between systems as one paragraph. Cards carry no phase label, because one word needs a sentence to mean anything.
 - **There is no scenario toggle. Both scenarios are always shown.** Decided 12 September 2026. Twelve of fourteen systems carry the same band and mechanism in both columns, because published work assesses one design earthquake per system, so a toggle hid the difference where there was one and changed nothing where there was not. Cards in the system grid carry no band: a band is meant to be compared, in the matrix, with both scenarios in labelled columns.
 - **Part contents open at the foot of a page, in the footer and in the phone menu, not from the top bar.** Decided 13 September 2026. Three of the five parts have nothing to open, fourteen systems is a directory rather than a menu, and the site is read in order, so a jump into the middle of a part lands a reader without the bands and scenarios the part before set up. Every page lists its part's pages at its foot with the current one marked; the footer carries the whole index; the phone menu opens the reader's part. All three are built from `NAV`, so adding a system stays one array entry.
+
+- **There is no dependency graph, and bands have no dependency column.** Decided 23 September 2026. `/dependencies/` counted links between systems and split them into the six a document names and the rest, which were our own inference. It measured the literature rather than the earthquake, told a reader nothing they could act on, and presented obvious connections as though the site had studied them. Every sourced finding on it was already on its system page. The rubric's dependency column went for the same reason, and because it contradicted the duration column whenever the two disagreed. A band is duration and extent; a system page lists related systems as navigation. Gaps the page named are in `research/open-questions.md`.
 
 ### Open
 

@@ -24,7 +24,7 @@ Static export was chosen over an SPA because the site is public-facing content p
 
 ```
 /                       hero, misconception, scenarios, ground, timeline,
-                        systems, dependency graph, prepare
+                        systems, prepare
 /scenarios/             the two scenarios side by side + full system matrix
 /shaking/               Part 1 index
 /shaking/[slug]/        ground, buildings, casualties, fire-following,
@@ -32,7 +32,6 @@ Static export was chosen over an SPA because the site is public-facing content p
 /after/                 Part 2 index — timeline + system grid by build tier
 /after/[slug]/          13 system pages
 /getting-around/        Part 2b — moving after the shaking
-/dependencies/          the dependency graph
 /prepare/               Part 3
 /method/                band rubric, principles, assumption discipline
 /sources/               the source register, rendered from REFERENCES
@@ -62,7 +61,7 @@ Structured content lives in `src/content/site.ts` and page prose in
 
 `src/content/pages/` holds one module per written page: `meta`, an array of sections and an optional lever. The array is what makes a wrong page hard to write — every `<h2>` comes from a section title, so a heading cannot miss the contents rail, and `meta.references` is the page's citation contract. See that folder's `README.md`.
 
-Adding a system is one array entry. It then appears in the grid, the matrix, the dependency list and the prepare page, and gets its own exported page, with no other change.
+Adding a system is one array entry. It then appears in the grid, the matrix, the related-systems lists and the prepare page, and gets its own exported page, with no other change.
 
 ---
 
@@ -82,7 +81,7 @@ Adding a system is one array entry. It then appears in the grid, the matrix, the
 
 **Every claim carries a source (principle 2).** `components/citation.tsx`. A page declares its references once, in citation order, and wraps its body in `<Citations ids={…}>`. Prose then cites by key, `<Cite id="MV-WATER-22" />`, and the marker's number comes from that declared order, so the numbering and the `<ReferenceList />` at the foot of the page cannot drift apart. The marker is a button, not a jump link: the reference opens in place, because sending a reader to the bottom of the page to check a claim means they don't. An unregistered key renders `[?]` rather than failing silently. `Citations` resolves the declared keys on the server and passes only those entries to the client, so a page ships the documents it cites rather than the whole 325-entry register.
 
-**Placeholders are labelled as placeholders, and only where one is honest.** The dependency graph slot says it is not drawn and shows its live edge list underneath. Every map slot promising liquefaction susceptibility has been removed rather than recaptioned: the layers carry terms the site will not meet, so that graphic is not coming, and a placeholder for it would be a promise rather than a label. See `licensing.md`.
+**Placeholders are labelled as placeholders, and only where one is honest.** Every map slot promising liquefaction susceptibility has been removed rather than recaptioned: the layers carry terms the site will not meet, so that graphic is not coming, and a placeholder for it would be a promise rather than a label. See `licensing.md`.
 
 ---
 

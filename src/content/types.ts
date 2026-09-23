@@ -111,7 +111,10 @@ interface SystemBase {
    * engine lands someone on. A written page overrides it with its own.
    */
   lever?: StandingLever;
-  /** Slugs of systems this one waits on. Feeds the dependency graph. */
+  /**
+   * Slugs of systems this one relies on, shown as "Related systems" on its page.
+   * Navigation, not evidence: nothing on the site draws or counts these links.
+   */
   dependsOn: string[];
   /** Build-order tier from the project plan. */
   tier: 1 | 2 | 3;
