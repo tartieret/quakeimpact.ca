@@ -66,8 +66,8 @@ reaches us through that reporting. [MV-WATER-22] **[B]**
   Westminster, the Tri-Cities, Maple Ridge, Richmond, Delta and Surrey**.
   [MV-WATER-22] **[B]**
 - **The consultant has a name: WSP Canada Inc.** Identified inside the redacted release
-  and independently corroborated against Metro Vancouver's own Manager's Report of
-  14 October 2021. [MV-WATER-22] [MV-MGR-2021] **[A]** for the identity.
+  and independently corroborated as WSP in Metro Vancouver's own Manager's Report of
+  21 October 2021. [MV-WATER-22] [MV-MGR-2021] **[A]** for the identity.
 - **Provenance caveat on the redacted release, and it must travel with every citation of
   it.** The 292-page redacted version was read in full, but it is hosted on a third-party
   document-sharing site as an upload, not by a publisher. Cite it as **the redacted FOI

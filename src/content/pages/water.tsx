@@ -102,12 +102,12 @@ export const water: PageModule = {
           <p>
             Metro Vancouver commissioned the engineering firm WSP Canada to
             assess the seismic vulnerability of the regional water supply
-            system. <Cite id="MV-MGR-2021" /> The study was published inside
-            Metro Vancouver in February 2022. It reached the public two months
-            later, when a heavily redacted copy released under
-            freedom-of-information law was obtained by Glacier Media, which
-            reported it in April 2022. Everything in this section comes through
-            that reporting. <Cite id="MV-WATER-22" />
+            system. <Cite id="MV-MGR-2021" /> <Cite id="MV-WATER-22" /> The
+            study was published inside Metro Vancouver in February 2022. It
+            reached the public two months later, when a heavily redacted copy
+            released under freedom-of-information law was obtained by Glacier
+            Media, which reported it in April 2022. Everything in this section
+            comes through that reporting. <Cite id="MV-WATER-22" />
           </p>
           <p>Under a magnitude 9.0 megathrust, the offshore earthquake where one tectonic plate slips under another along hundreds of kilometres at once, the study modelled:</p>
           <ul>

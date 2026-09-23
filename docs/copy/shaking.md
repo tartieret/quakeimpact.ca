@@ -28,13 +28,14 @@ which can begin within minutes of it and carry on for months. [NZHIST-CHCH-11]
 [GNS-CES-STATS]
 
 In September 2010 a major earthquake struck near Christchurch, a city on the east coast of
-New Zealand's South Island, and it killed nobody. [GEONET-DARFIELD-10] What followed was a
-long run of smaller earthquakes, thousands of them. [GNS-CES-STATS] One of those, arriving
-five and a half months after the first, killed 185 people. [NZHIST-CHCH-11]
+New Zealand's South Island. No one died directly. [GEONET-DARFIELD-10]
+[NZHIST-DARFIELD-10] What followed was a long run of smaller earthquakes, thousands of them.
+[GNS-CES-STATS] One of those, arriving five and a half months after the first, killed 185
+people. [NZHIST-CHCH-11]
 
 **4 September 2010, 4.35am.** Magnitude 7.1, west of the city, with most people at home.
-Roads split, chimneys came down, buildings were badly damaged. Nobody was killed.
-[GEONET-DARFIELD-10]
+Roads split, chimneys came down, buildings were badly damaged. No one died directly.
+[GEONET-DARFIELD-10] [NZHIST-DARFIELD-10]
 
 **The next 171 days.** Canterbury did not stop shaking. More than 4,300 aftershocks were
 recorded before February. [GNS-CES-12] The sequence looked like it was fading.
@@ -79,5 +80,6 @@ they do not reach yet.
 ## Sources on this page
 
 [PEIRS] [DCRRA-2025] [PREPAREDBC] [NZHIST-CHCH-11] [GNS-CES-STATS]
-[GEONET-DARFIELD-10] [GNS-CES-12] [COV-EXPLORER-25] [COV-FACTSHEET-24]
+[GEONET-DARFIELD-10] [NZHIST-DARFIELD-10] [GNS-CES-12] [COV-EXPLORER-25]
+[COV-FACTSHEET-24]
 [NRCAN-SCEN] [MVSMMP]

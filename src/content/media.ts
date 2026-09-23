@@ -299,7 +299,7 @@ export const PHOTOGRAPHS = {
   /**
    * The three below are the September 2010 Darfield earthquake rather than
    * February 2011, and that is deliberate. Same city, same building stock, same
-   * failure — and it killed nobody. The 2011 photographs of the same mechanism
+   * failure — and no one died directly. The 2011 photographs of the same mechanism
    * carry a death toll that `/shaking/buildings/` cites two paragraphs further
    * down, and using them would have put the limit on casualty imagery under
    * pressure for no gain. 2010 gets the mechanism with none of that.
@@ -798,7 +798,7 @@ export const PHOTOGRAPHS = {
    * nobody is living in.
    *
    * Nate Cull's second row, after `christchurch-moorhouse-parapet`, and the
-   * September 2010 Darfield earthquake again — which killed nobody.
+   * September 2010 Darfield earthquake again — when no one died directly.
    *
    * People are in frame and identifiable, and none of them is in distress:
    * they are standing on a corner with their bags, waiting, talking to a
