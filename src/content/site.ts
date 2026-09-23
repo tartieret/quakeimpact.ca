@@ -77,33 +77,27 @@ export const SCENARIO_ORDER: ScenarioId[] = ["cascadia", "crustal"];
 
 export const BANDS: Record<
   Band,
-  { label: string; duration: string; extent: string; dependency: string }
+  { label: string; duration: string; extent: string }
 > = {
   low: {
     label: "Low",
     duration: "Hours to a few days",
     extent: "Localised",
-    dependency: "Comes back on its own",
   },
   medium: {
     label: "Medium",
     duration: "Days to weeks",
     extent: "Patchy, worst on poor ground",
-    dependency: "Waiting on one other system",
   },
   high: {
     label: "High",
     duration: "Weeks to months, sometimes longer",
     extent: "Regional",
-    dependency:
-      "Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast",
   },
   unknown: {
     label: "Not yet assessed",
     duration: "Not published",
     extent: "Not published",
-    dependency:
-      "No published assessment. This does not mean the infrastructure is safe",
   },
 };
 
@@ -165,10 +159,8 @@ export const SYSTEMS: SystemEntry[] = [
   // The band used to rest on CRTC-2025-226, which establishes that no rule sets
   // a backup-power run time — a fact about the rules, not about how long the
   // network is down, and so not a fact that can choose between Medium and High.
-  // The rubric's own columns disagree here: the duration is Medium's, while a
-  // system waiting on two High systems reads High on the dependency column. The
-  // published duration governs, because the alternative is our inference
-  // overruling the province's assessment. See `docs/research/impact-bands.md`.
+  // It waits on electricity and fuel, both High, and still reads Medium: the
+  // published duration sets the band. See `docs/research/impact-bands.md`.
   {
     slug: "communications",
     name: "Communications",
@@ -504,7 +496,6 @@ export const NAV: NavItem[] = [
 ];
 
 export const UTILITY_NAV: NavItem[] = [
-  { href: "/dependencies/", label: "Dependency graph" },
   { href: "/method/", label: "Method & bands" },
   { href: "/sources/", label: "Sources" },
   { href: "/licences/", label: "Licences" },

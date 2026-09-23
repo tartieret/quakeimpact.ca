@@ -152,6 +152,18 @@ boundary. See `../licensing.md` and `../site-overview.md` §9.
     the page waits on this. What is wanted is the row `../media.md` §"Video" leaves
     empty: who uploaded each one, and whether either states terms of its own. Also
     unchecked against the three limits by anyone who has watched them.
+31. **How much water distribution depends on powered pumping.** Not published. No
+    assessment says what share of the region's distribution, or of supply to the upper
+    floors of tall buildings, needs grid power after an earthquake, or what losing it adds
+    to a restoration time. `MV-DWMP-26` carries no restoration estimate and lists the
+    seismic weak-point analysis as work still to do. Came off `/dependencies/` when that
+    page was removed. See `systems/water.md`.
+32. **Hospital generator run time and fuel resupply.** Not published. How long any
+    existing Lower Mainland hospital runs on its own generators, and how their fuel is
+    replaced while roads are being cleared. See `systems/health-care.md`.
+33. **How much road damage adds to power restoration.** Not published. `BCH-WESTEND-25`
+    gives what a large earthquake does to downtown supply; nothing separates repairing
+    equipment from crews reaching the work. See `systems/electricity.md`.
 
 ---
 

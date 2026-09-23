@@ -49,7 +49,7 @@ export default function PreparePage() {
         <SourcesSection />
 
         <NextPrev
-          prev={{ href: "/dependencies/", label: "Dependency graph" }}
+          prev={{ href: "/getting-around/", label: "Getting around" }}
           next={{ href: "/method/", label: "Method & bands" }}
         />
       </ArticleShell>

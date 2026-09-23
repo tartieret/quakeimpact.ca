@@ -50,7 +50,7 @@ export default function GettingAroundPage() {
 
         <NextPrev
           prev={{ href: "/after/", label: "Life afterwards" }}
-          next={{ href: "/dependencies/", label: "Dependency graph" }}
+          next={{ href: "/prepare/", label: "Preparing" }}
         />
       </ArticleShell>
     </Citations>

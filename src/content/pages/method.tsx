@@ -20,7 +20,7 @@ import type { PageModule } from "./index";
  * - The rubric under the first heading is drawn from `BANDS` in
  *   `@/content/site` rather than transcribed from the copy's table, so the
  *   definitions the reader is shown are the definitions the grid is banded
- *   against and the two cannot drift. The copy's table supplies the three
+ *   against and the two cannot drift. The copy's table supplies the two
  *   questions; each row supplies its own answers.
  * - The hatched sample beside the fourth-state sentence, so that "drawn
  *   hatched" is something the reader can see rather than take on trust.
@@ -66,10 +66,10 @@ export const method: PageModule = {
     route: "/method/",
     title: "How the impact bands work",
     description:
-      "Impact bands summarize restoration time, geographic extent and dependencies for each system and earthquake scenario.",
+      "Impact bands summarize restoration time and geographic extent for each system and earthquake scenario.",
     nav: "Method & bands",
     standfirst:
-      "Each impact band summarizes restoration time, geographic extent and dependencies. The accompanying note and source explain the evidence behind it.",
+      "Each impact band summarizes restoration time and geographic extent. The accompanying note and source explain the evidence behind it.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
@@ -116,18 +116,16 @@ export const method: PageModule = {
                   <dd>{BANDS[band].duration}</dd>
                   <dt className={TERM}>How widely</dt>
                   <dd>{BANDS[band].extent}</dd>
-                  <dt className={TERM}>What it is waiting on</dt>
-                  <dd>{BANDS[band].dependency}</dd>
                 </dl>
               </li>
             ))}
           </ul>
           <p>
-            The same three questions are asked of every system, so that High for
+            The same two questions are asked of every system, so that High for
             sewer service and High for roads mean comparable things. Where a
             published duration exists, it sets the band. How widely a failure
-            spreads and what the system waits on provide context. They do not
-            change the band, so a system can sit below something it depends on:
+            spreads is context and does not change the band. Neither does what
+            else a system needs, so a system can sit below something it relies on:
             electricity is High and communications is Medium, because a cell
             site comes back when a generator gets fuel and a distribution
             network comes back one pole at a time.

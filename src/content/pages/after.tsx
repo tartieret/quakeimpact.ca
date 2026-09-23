@@ -74,17 +74,6 @@ export const after: PageModule = {
             where mains cross under rivers and inlets, the hardest places in the
             system to reach. <Cite id="MV-WATER-22" />
           </p>
-          <p>
-            The{" "}
-            <Link
-              href="/dependencies/"
-              className="text-accent underline underline-offset-2"
-            >
-              dependency graph
-            </Link>{" "}
-            counts 29 such connections. Six have a published document behind
-            them, and the rest are links no assessment has established.
-          </p>
         </Prose>
       ),
     },

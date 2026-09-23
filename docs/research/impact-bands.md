@@ -168,17 +168,16 @@ average nobody measured.
   stands — Medium is carrying more than one kind of uncertainty — but it is no
   longer carrying a cell with no duration evidence behind it.
 
-**Which column sets a band when the three disagree.** The duration does, wherever
-a document states one; extent and dependency describe the band rather than
-choosing it. Communications is the case that forced the rule. The province's
-megathrust assessment puts communications disruption at days to weeks, which is
-Medium's duration row. [DCRRA-2025] **[A]** But communications waits on
-electricity and on fuel, both banded High, and the Medium row's dependency
-column reads "waits on one other system", which points at High. Reading the
-dependency column as the determinant would mean **our inference from a
-dependency overruling the province's own published duration**, and the rubric
-exists to stop exactly that. Where no duration is published, extent and
-dependency cannot supply one either: that cell is **not yet assessed**.
+**What sets a band.** The duration, wherever a document states one; extent
+describes the band rather than choosing it. Where no duration is published, extent
+cannot supply one: that cell is **not yet assessed**. The rubric used to carry a
+third column for dependency. Communications is the case that removed it: the
+province's megathrust assessment puts disruption at days to weeks, Medium's
+duration row [DCRRA-2025] **[A]**, while waiting on electricity and fuel, both High,
+pointed at High on the dependency column. Letting that column decide would have
+meant **our inference from a dependency overruling the province's own published
+duration**. It was dropped on 23 September 2026 with `/dependencies/`; see
+`../site-overview.md` §9.
 
 A consequence worth stating plainly, because it looks like an inconsistency and
 is not: **a system can be banded below something it depends on.** Electricity is

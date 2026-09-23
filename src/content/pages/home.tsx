@@ -79,11 +79,10 @@ import type { PageModule } from "./index";
  * The system-grid introduction is passed as `lede`. The timeline needs no
  * extra introduction after the hero; its heading leads straight into the story.
  *
- * What used to sit here and no longer does is the dependency figure, which is
- * an index of the site rather than a picture of the aftermath and which has its
- * own page at `/dependencies/`. The coupling it teaches survives here as the
- * paragraph that says nothing fails on its own. The system grid stayed, moved
- * below the timeline and given the whole set rather than three tier-1 cards:
+ * The coupling between systems is one paragraph of framing, the one that says
+ * nothing fails on its own. It is not drawn: a diagram of which system waits on
+ * which would assert links no assessment has established. The system grid sits
+ * below the timeline and carries the whole set rather than three tier-1 cards:
  * after four paragraphs about the months, a reader wants to look their own life
  * up, and a card they cannot find is a page they will not read.
  *
@@ -330,11 +329,7 @@ export const home: PageModule = {
               <Link href="/after/" className={link}>
                 life afterwards
               </Link>{" "}
-              takes them one at a time and{" "}
-              <Link href="/dependencies/" className={link}>
-                the dependency graph
-              </Link>{" "}
-              counts what each one is waiting on.
+              takes them one at a time.
             </p>
             <p>
               None of those repairs is a household’s to make, which is why

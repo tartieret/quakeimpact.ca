@@ -2,8 +2,8 @@
 route: /method/
 title: How the impact bands work
 nav: Method & bands
-hook: A band summarizes restoration time, geographic extent and dependencies.
-lede: Each impact band summarizes restoration time, geographic extent and dependencies. The accompanying note and source explain the evidence behind it.
+hook: A band summarizes restoration time and geographic extent.
+lede: Each impact band summarizes restoration time and geographic extent. The accompanying note and source explain the evidence behind it.
 ---
 
 ## What a band measures
@@ -13,13 +13,13 @@ work assesses one design earthquake, so any figure in between would require new 
 
 A band is set by how long the system is out, wherever a document states a duration.
 
-| Band | How long | How widely | What it is waiting on |
-| --- | --- | --- | --- |
-| **Low** | Hours to a few days | Localised | Comes back on its own |
-| **Medium** | Days to weeks | Patchy, worst on poor ground | Waiting on one other system |
-| **High** | Weeks to months, sometimes longer | Regional | Blocked by several failures at once, and by competition for the same crews, fuel and materials up and down the coast |
+| Band | How long | How widely |
+| --- | --- | --- |
+| **Low** | Hours to a few days | Localised |
+| **Medium** | Days to weeks | Patchy, worst on poor ground |
+| **High** | Weeks to months, sometimes longer | Regional |
 
-The same three questions are asked of every system, so that High for sewer service and High for roads mean comparable things. A published duration sets the band. How widely a failure spreads and what the system waits on provide context. They do not change the band, so a system can sit below something it depends on: electricity is High and communications is Medium, because a cell site comes back when a generator gets fuel and a distribution network comes back one pole at a time.
+The same two questions are asked of every system, so that High for sewer service and High for roads mean comparable things. A published duration sets the band. How widely a failure spreads is context and does not change the band. Neither does what else a system needs, so a system can sit below something it relies on: electricity is High and communications is Medium, because a cell site comes back when a generator gets fuel and a distribution network comes back one pole at a time.
 
 A fourth state, **not yet assessed**, is drawn with hatching. It is a real answer, not
 a blank waiting to be filled.

@@ -137,7 +137,7 @@ export default async function SystemPage({
           <>
             <Section
               title="At a glance"
-              lede={`Bands measure restoration time, extent and dependency. They do not measure damage severity. Felt worst: ${phase?.label.toLowerCase()} after the event.`}
+              lede={`Bands measure restoration time and extent. They do not measure damage severity. Felt worst: ${phase?.label.toLowerCase()} after the event.`}
             >
               <div className="grid gap-4 sm:grid-cols-2">
                 <ImpactCell
@@ -170,7 +170,7 @@ export default async function SystemPage({
         )}
 
         {system.dependsOn.length > 0 ? (
-          <Section title="What this waits on">
+          <Section title="Related systems">
             <ul className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2">
               {system.dependsOn.map((dep) => {
                 const target = SYSTEMS.find((s) => s.slug === dep);
