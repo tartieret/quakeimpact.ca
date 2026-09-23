@@ -91,9 +91,9 @@ export const gas: PageModule = {
       body: (
         <Prose>
           <p>
-            FortisBC told its regulator in March 2026 that it serves 583,370
-            residential gas accounts and
-            61,348 commercial ones in its Lower Mainland service region.{" "}
+            FortisBC’s 2024 forecast, filed with its regulator in March 2026,
+            counts 583,370 residential gas accounts and 61,348 commercial ones
+            in its Lower Mainland service region.{" "}
             <Cite id="FEI-LTGRP-26" /> An account is a meter: a house is
             usually one account, and an apartment building on a central gas
             boiler is one account serving everybody in it.

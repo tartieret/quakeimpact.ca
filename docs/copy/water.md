@@ -24,7 +24,7 @@ Where the breaks fall matters more than how many of them there are.
 ## The model finds 267 main failures
 
 Metro Vancouver commissioned the engineering firm WSP Canada to assess the seismic
-vulnerability of the regional water supply system. [MV-MGR-2021] The study was
+vulnerability of the regional water supply system. [MV-MGR-2021] [MV-WATER-22] The study was
 published inside Metro Vancouver in February 2022. It reached the public two months
 later, when a heavily redacted copy released under freedom-of-information law was
 obtained by Glacier Media, which reported it in April 2022. Everything in this section

@@ -76,6 +76,7 @@ const KIND_OVERRIDES = {
   "METI-2011": "analogue",
   "NZ-RC-V4": "analogue",
   "NZHIST-CHCH-11": "analogue",
+  "NZHIST-DARFIELD-10": "analogue",
   "RMS-KOBE": "analogue",
   "ZAMA-12": "analogue",
 };

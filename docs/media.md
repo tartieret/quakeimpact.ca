@@ -296,7 +296,7 @@ The rule is to measure the file, but the failure mode should not be silent.
 
 All three are the **September 2010 Darfield earthquake**, not February 2011, and
 that choice is the substance of this group rather than a detail of it. Same
-city, same building stock, same failure — and the 2010 earthquake killed nobody.
+city, same building stock, same failure — and no one died directly in the 2010 earthquake.
 The 2011 photographs of a URM façade down on a street carry a death toll that
 `/shaking/buildings/` cites two paragraphs below where the images sit, and using
 them would have leaned on the casualty limit for no gain. 2010 gets the
@@ -1096,7 +1096,7 @@ at your building at all.
   The evidence is in the frame and needs no caption to carry it: the buildings
   these people cannot go back to are standing behind them with their windows
   unbroken.
-- **September 2010 again, which killed nobody.**
+- **September 2010 again, when no one died directly.**
 - **People are in frame and identifiable, and none of them is in distress.**
   They are standing on a corner with their bags, waiting and talking. Recorded
   rather than left to be noticed, the same as `christchurch-water-tanker`.
@@ -1420,8 +1420,8 @@ nothing on the site waits on it.
 Three more photographs were cleared and hosted on the same day, for
 `/shaking/buildings/` and `/shaking/fire-following/`. Their rows are above. Two
 things from that round are worth carrying forward: **prefer the September 2010
-earthquake to February 2011 wherever both show the mechanism**, because one of
-them killed nobody; and the alt-text rule below held again, since two of the
+earthquake to February 2011 wherever both show the mechanism**, because no one
+died directly in the first; and the alt-text rule below held again, since two of the
 three captions written before the files were opened contained a detail the frame
 did not support — a bus stop that is not there, and shops called undamaged that
 are boarded over.

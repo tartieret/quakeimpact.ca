@@ -74,6 +74,7 @@ export const shaking: PageModule = {
       "NZHIST-CHCH-11",
       "GNS-CES-STATS",
       "GEONET-DARFIELD-10",
+      "NZHIST-DARFIELD-10",
       "GNS-CES-12",
       "COV-EXPLORER-25",
       "COV-FACTSHEET-24",
@@ -172,9 +173,10 @@ export const shaking: PageModule = {
             </p>
             <p>
               In September 2010 a major earthquake struck near Christchurch, a
-              city on the east coast of New Zealand’s South Island, and it
-              killed nobody. <Cite id="GEONET-DARFIELD-10" /> What followed was
-              a long run of smaller earthquakes, thousands of them.{" "}
+              city on the east coast of New Zealand’s South Island. No one died
+              directly. <Cite id="GEONET-DARFIELD-10" />{" "}
+              <Cite id="NZHIST-DARFIELD-10" /> What followed was a long run of
+              smaller earthquakes, thousands of them.{" "}
               <Cite id="GNS-CES-STATS" /> One of those, arriving five and a half
               months after the first, killed 185 people.{" "}
               <Cite id="NZHIST-CHCH-11" />
@@ -189,7 +191,9 @@ export const shaking: PageModule = {
                   <p>
                     Magnitude 7.1, west of the city, with most people at home.
                     Roads split, chimneys came down, buildings were badly
-                    damaged. Nobody was killed. <Cite id="GEONET-DARFIELD-10" />
+                    damaged. No one died directly.{" "}
+                    <Cite id="GEONET-DARFIELD-10" />{" "}
+                    <Cite id="NZHIST-DARFIELD-10" />
                   </p>
                 ),
               },

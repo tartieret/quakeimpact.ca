@@ -33,16 +33,16 @@ news media carry the Christchurch ones.
 ### The Canterbury sequence, 2010 to 2012 — the damaging earthquake was not the first one
 
 **The mechanism, and the reason this belongs on `/shaking/`.** An aftershock sequence is not
-a tail of diminishing events. Canterbury's largest earthquake killed nobody and its
+a tail of diminishing events. No one died directly in Canterbury's largest earthquake, and its
 damaging one came five and a half months later, smaller, closer to the city and shallower.
-[GEONET-DARFIELD-10] [NZHIST-CHCH-11] **[C]** The province's Cascadia scenario models a
+[GEONET-DARFIELD-10] [NZHIST-DARFIELD-10] [NZHIST-CHCH-11] **[C]** The province's Cascadia scenario models a
 second earthquake about a month after the mainshock, and the published damage figures
 exclude it, so the sequence is the part of the hazard a reader here is least equipped to
 picture. See `scenarios.md`.
 
 - **4 September 2010, 4.35am. Magnitude 7.1, west of Christchurch.** Roads split, chimneys
-  fell, buildings were badly damaged, and nobody was killed outright.
-  [GEONET-DARFIELD-10] **[C]**
+  fell, buildings were badly damaged, and no one died directly.
+  [GEONET-DARFIELD-10] [NZHIST-DARFIELD-10] **[C]**
 - **More than 4,300 aftershocks between the mainshock and February 2011.**
   [GNS-CES-12] **[C]**
 - **22 February 2011, 12.51pm. Magnitude 6.2, beneath the Port Hills, a few kilometres from
