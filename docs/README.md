@@ -5,7 +5,7 @@ in version control alongside the code that renders it.
 
 | File | What it holds |
 |---|---|
-| `site-overview.md` | The project document: purpose, principles, scenarios, band rubric, content structure, build order, open decisions. Owns **structure**. |
+| `site-overview.md` | The project document: purpose, principles, scenarios, how impacts are shown, content structure, build order, open decisions. Owns **structure**. |
 | `style-guide.md` | How the site sounds and looks: audience, tone, the evidence on fear appeals, sentence-level rules, word list, visual language, accessibility, pre-publication checklist. **Read before writing any page.** |
 | `research/` | The evidence base. One subject per file, with source keys, confidence markers and open questions. Owns **fact**. Start at `research/README.md`. |
 | `licensing.md` | Per-dataset licence status, the attribution strings the site must publish, and the rules for text and figures. **Nothing is reproduced or hosted unless it is cleared here.** |

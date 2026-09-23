@@ -4,8 +4,9 @@ title: Where help comes from
 nav: Where help comes from
 hook: A coast-wide earthquake leaves fewer outside agencies able to help.
 lede: British Columbia's earthquake plan stages resources with agencies outside the damaged region, then sends them in. [PEIRS] A local crustal earthquake leaves those agencies available. A coast-wide megathrust may not. [PEIRS]
-bands: { cascadia: high, crustal: low }
-mechanism-cascadia: The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states that the United States will be unable to deliver mutual aid.
+disruption-cascadia: Help arrives later, and US aid may not come [PEIRS]
+disruption-crustal: Outside agencies expected to be available [PEIRS]
+mechanism-cascadia: The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states that the United States will be unable to deliver mutual aid if it is also overwhelmed.
 mechanism-crustal: The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and a local crustal earthquake is the case where that assumption holds.
 evidence-crustal: This is a planning assumption the province states, not a measured finding about how help would arrive.
 source: PEIRS

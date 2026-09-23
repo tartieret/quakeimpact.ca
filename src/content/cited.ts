@@ -1,6 +1,6 @@
 import { ALL_PAGES } from "./pages";
 import { REFERENCES } from "./references";
-import { SHAKING_PAGES, SYSTEMS } from "./site";
+import { SHAKING_PAGES, SYSTEMS, impactsOf } from "./site";
 
 /**
  * Which documents the site actually stands on.
@@ -34,16 +34,15 @@ for (const page of ALL_PAGES) {
 }
 
 /**
- * The band grid cites outside any page body: `ImpactCell` resolves
- * `Impact.source` against the register and renders it under the cell. A system
- * whose page is unwritten still shows its bands, so these keys are cited on
+ * The impact cells cite outside any page body: `ImpactCell` resolves each
+ * source key against the register and renders it under the cell. A system
+ * whose page is unwritten still shows its impact, so these keys are cited on
  * the site whether or not a page module mentions them.
  */
 for (const system of SYSTEMS) {
-  if (system.impacts) {
-    for (const impact of Object.values(system.impacts)) ids.add(impact.source);
-  } else {
-    ids.add(system.summary.source);
+  for (const { impact } of impactsOf(system)) {
+    ids.add(impact.source);
+    if (impact.disruption) ids.add(impact.disruption.source);
   }
 }
 

@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { PHASES, SYSTEMS } from "@/content/site";
+import { PHASES, SCENARIOS, SYSTEMS, impactsOf } from "@/content/site";
 import type { SystemEntry } from "@/content/types";
-import { BandPill } from "./band";
+import { Cite } from "./citation";
+import { NotPublished } from "./prose-blocks";
 import { DraftMark } from "./status";
 
 function SystemCard({ system }: { system: SystemEntry }) {
@@ -10,14 +11,11 @@ function SystemCard({ system }: { system: SystemEntry }) {
       href={`/after/${system.slug}/`}
       className="group flex flex-col gap-3 bg-paper-raised p-5 transition-colors hover:bg-accent-soft focus-visible:-outline-offset-2"
     >
-      {/* Neither the band nor the phase a system bites at is on the card.
-          Both are one word that needs a sentence to mean anything, and a card
-          is the wrong place to put a reading a reader is meant to compare.
-          Bands live in `SystemMatrix`, where both scenarios stand in labelled
-          columns and the rows can be read against each other; the phase lives
-          on the timeline strip, where the four are named together and a reader
-          can see what "weeks" is being measured against. What the card carries
-          is the hook, which is the sentence that earns the click. */}
+      {/* Neither the duration nor the phase a system bites at is on the card.
+          Both are meant to be read against the other systems, which the table
+          does, and the phase lives on the timeline strip, where the four are
+          named together. What the card carries is the hook, which is the
+          sentence that earns the click. */}
       <h3 className="font-display text-lg leading-snug tracking-tight group-hover:text-accent">
         {system.name}
         {/* On the card as well as on the page, so a reader knows before the
@@ -70,94 +68,91 @@ export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
 }
 
 /**
- * The full grid as a table: every system against both scenarios at once.
- * This is the view an emergency planner will screenshot, so it has to hold up.
+ * Every system in one table: how long it is out, as a document states it, and
+ * when it is felt worst. This is the view an emergency planner will screenshot,
+ * so it has to hold up.
  *
- * It carries no draft marker, and that is deliberate. Every column here is
- * evidence, and a draft page carries its evidence in full: the two bands and
- * the phase in a row are the same whether the prose behind the name is written
- * or not, so a marker would qualify nothing the reader is looking at. It would
- * also sit one column away from the "Not yet assessed" band, and those are two
- * different absences. One says nobody has published an assessment; the other
- * says we have not written the page. Putting them side by side in the same
- * table invites a reader to take one for the other, which is the one misreading
- * this table cannot afford. The cards carry the marker, and so does the page.
+ * Each duration carries a marker, so the page rendering the table lists its
+ * sources in `meta.references`. A system with no published duration says so
+ * rather than leaving a blank that reads as an oversight. A system with no
+ * restoration time says that instead, unhatched, because the hatch means an
+ * estimate is missing and there none could exist. Where the two earthquakes
+ * read differently, the cell names each.
+ *
+ * It carries no draft marker: every column is evidence, and the evidence is
+ * the same whether the prose behind the name is written or not. The cards
+ * carry the marker, and so does the page.
  */
 export function SystemMatrix() {
+  const th = "px-4 py-3 text-xs tracking-[0.08em] text-ink-faint uppercase";
   return (
-    /* 34rem of table in a 348px box at phone width: without a tab stop and a
-       role, the last column is unreachable from a keyboard. `DataTable` in
-       prose-blocks.tsx already does this; the pattern is the same one. */
+    /* Wider than a phone: without a tab stop and a role, the last column is
+       unreachable from a keyboard. `DataTable` in prose-blocks.tsx does the
+       same. */
     <div
       role="region"
       aria-labelledby="system-matrix-caption"
       tabIndex={0}
       className="overflow-x-auto rounded-xl border border-rule"
     >
-      <table className="w-full min-w-[34rem] border-collapse text-left">
+      <table className="w-full min-w-[20rem] border-collapse text-left">
         <caption id="system-matrix-caption" className="sr-only">
-          Every system in both scenarios
+          How long each system is disrupted, and when it is felt worst
         </caption>
         <thead>
           <tr className="border-b border-rule bg-paper-raised">
-            <th
-              scope="col"
-              className="px-4 py-3 text-xs tracking-[0.08em] text-ink-faint uppercase"
-            >
+            <th scope="col" className={th}>
               System
             </th>
-            <th
-              scope="col"
-              className="px-4 py-3 text-xs tracking-[0.08em] text-ink-faint uppercase"
-            >
-              Cascadia M9
+            <th scope="col" className={th}>
+              Expected disruption
             </th>
-            <th
-              scope="col"
-              className="px-4 py-3 text-xs tracking-[0.08em] text-ink-faint uppercase"
-            >
-              Crustal M7
-            </th>
-            <th
-              scope="col"
-              className="px-4 py-3 text-xs tracking-[0.08em] text-ink-faint uppercase"
-            >
+            <th scope="col" className={th}>
               Felt worst
             </th>
           </tr>
         </thead>
         <tbody>
-          {SYSTEMS.map((s) => (
-            <tr key={s.slug} className="border-b border-rule last:border-0">
-              <th scope="row" className="px-4 py-3 font-normal">
-                <Link href={`/after/${s.slug}/`} className="hover:text-accent">
-                  {s.name}
-                </Link>
-              </th>
-              {s.impacts ? (
-                <>
-                  <td className="px-4 py-3">
-                    <BandPill band={s.impacts.cascadia.band} />
-                  </td>
-                  <td className="px-4 py-3">
-                    <BandPill band={s.impacts.crustal.band} />
-                  </td>
-                  <td className="px-4 py-3 text-sm text-ink-muted">
-                    {PHASES.find((p) => p.id === s.bitesAt)?.label}
-                  </td>
-                </>
-              ) : (
-                /* An unbanded system is not a gap in either column, so it takes
-                   no hatch and no pill: a hatch here would say an assessment is
-                   missing, and none could exist. Two words, because the reason
-                   is in the paragraph above the table and a cell that argues
-                   its case reads as an apology in a table of plain readings. */
-                <td colSpan={3} className="px-4 py-3 text-sm text-ink-muted">
-                  No band
+          {SYSTEMS.map((s) => {
+            const impacts = impactsOf(s);
+            return (
+              <tr key={s.slug} className="border-b border-rule align-top last:border-0">
+                <th scope="row" className="px-4 py-3 font-normal">
+                  <Link href={`/after/${s.slug}/`} className="hover:text-accent">
+                    {s.name}
+                  </Link>
+                </th>
+                <td className="px-4 py-3 text-sm">
+                  <ul className="flex flex-col gap-1">
+                    {impacts.map(({ scenario, impact }) => (
+                      <li key={scenario ?? "both"}>
+                        {scenario ? (
+                          <span className="text-ink-faint">
+                            {SCENARIOS[scenario].short}:{" "}
+                          </span>
+                        ) : null}
+                        {impact.disruption ? (
+                          <>
+                            {impact.disruption.text}{" "}
+                            <Cite id={impact.disruption.source} />
+                          </>
+                        ) : impact.noRestoration ? (
+                          <span className="text-ink-muted">
+                            No restoration time
+                          </span>
+                        ) : (
+                          <NotPublished label="No published estimate" />
+                        )}
+                      </li>
+                    ))}
+                  </ul>
                 </td>
-              )}
-            </tr>
-          ))}
+                <td className="px-4 py-3 text-sm text-ink-muted">
+                  {PHASES.find((p) => p.id === s.bitesAt)?.label ?? "Not timed"}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

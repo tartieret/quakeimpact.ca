@@ -50,8 +50,7 @@ export function Subhead({ children, id }: { children: string; id?: string }) {
 
 /**
  * A cell standing for a figure nobody has put in the public record. It is a
- * visible state rather than an empty cell, for the same reason the fourth band
- * is hatched rather than blank: a gap that is shown reads as honest, and a gap
+ * visible state rather than an empty cell: a gap that is shown reads as honest, and a gap
  * that is left blank reads as an oversight. Hatching and the words carry the
  * meaning together, so it survives in greyscale.
  */

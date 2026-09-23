@@ -152,7 +152,17 @@ to the **southern** end of the Cascadia fault, off southern Oregon and northern
 California, where ruptures are roughly twice as frequent. It is not a figure for this
 coast. [GOLDFINGER-12]
 
-## Impacts by scenario
+## Where the aftermath differs
+
+For most systems, the published work assesses one design earthquake, so what is known
+about the weeks afterwards is the same for both. One thing differs: where help comes
+from. For a megathrust, the province states that the United States will be unable to
+deliver mutual aid if it is also overwhelmed; for a local crustal earthquake, its plan
+assumes agencies outside the impact area are available. [PEIRS] And one thing is known
+for the megathrust alone: the one study of the port, airport and ferry terminals
+modelled it and nothing else. [AIR-2013]
+
+[Life afterwards](/after/) covers every system.
 
 ## What you can do
 
@@ -171,4 +181,4 @@ In either earthquake, drop, cover and hold on. Do not run outside.
 ## Sources on this page
 
 [NRCAN-1700] [PEIRS] [NRCAN-SCEN] [DCRRA-2025] [GSC-OF-8853] [OPENDRR-GSF-22]
-[NAB-ICCHGE-08] [ECR-2023] [NRCAN-QA] [MAZZOTTI-04] [GOLDFINGER-12]
+[NAB-ICCHGE-08] [ECR-2023] [NRCAN-QA] [MAZZOTTI-04] [GOLDFINGER-12] [AIR-2013]

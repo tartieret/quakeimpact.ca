@@ -19,11 +19,10 @@ import type { PageModule } from "./index";
  * screen reader, and the quotation's document title, which markdown has no
  * slot for and which the body's lead-in gives in the reader's words instead.
  *
- * This is the one system whose band differs between the two scenarios for a
- * reason about the world rather than a gap in the literature, so the third
- * section writes each column under its own subhead and names the scenario in
- * it. A sentence that carried one column's finding into the other would be a
- * real error on a page the reader reaches through a scenario toggle.
+ * This is the one system that differs between the two scenarios for a reason
+ * about the world rather than a gap in the literature, so the third section
+ * writes each scenario under its own subhead and names it. A sentence that
+ * carried one scenario's finding into the other would be a real error.
  */
 export const outsideHelp: PageModule = {
   meta: {

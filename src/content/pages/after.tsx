@@ -9,9 +9,8 @@ import type { PageModule } from "./index";
  * Life afterwards. The body of `/after/`, ported from `docs/copy/after.md`.
  *
  * An index page, and shorter than the system pages it points at on purpose.
- * The words are the copy's. The timeline strip, the band matrix and the system
- * grid are not words: they are `SYSTEMS` and `PHASES` drawn, and they follow
- * the scenario toggle in the header. The grid carries every system in one
+ * The words are the copy's. The timeline strip, the duration table and the
+ * system grid are not words: they are `SYSTEMS` and `PHASES` drawn. The grid carries every system in one
  * block rather than in three: the tiers are a build order, which is ours and
  * not the reader's, and which of the pages are drafts is the marker's job.
  */
@@ -39,8 +38,9 @@ export const after: PageModule = {
       "MV-DSP-2026",
       "MV-CAPEX-2026",
       "KATRINA-MYTHS-08",
-      "PREPAREDBC",
       "DCRRA-2025",
+      "COV-RISK-2024",
+      "PREPAREDBC",
     ],
   },
 
@@ -134,36 +134,35 @@ export const after: PageModule = {
     },
 
     {
-      title: "What the impact bands measure",
+      title: "How long each system is out",
       body: (
         <div className="flex flex-col gap-8">
           <Prose>
             <p>
-              Each system carries one of three bands for each earthquake, Low,
-              Medium or High, and a fourth state, not yet assessed, drawn
-              hatched. Every coloured cell comes with one sentence saying how
-              the system fails and a link to the document that says so.{" "}
+              Each system is listed with how long the disruption is expected to
+              last, in the words of the document that says so. Where no document
+              states it, the table says so. That is a gap in the public record,
+              not a finding that the system would hold up.{" "}
               <Link
                 href="/method/"
                 className="text-accent underline underline-offset-2"
               >
-                How the bands work
+                How this site works
               </Link>
               .
             </p>
             <p>
-              Dams and reservoirs are hatched in both scenarios: Cleveland and
+              Dams and reservoirs have no published estimate: Cleveland and
               Seymour Falls dams were each reviewed by an engineer in 2024, as
               the law requires, neither review identified an unsafe condition,
               and neither published conclusion mentions earthquakes.{" "}
               <Cite id="MV-DSP-2026" /> The seismic upgrade work at Cleveland
-              has not started. <Cite id="MV-CAPEX-2026" /> Port, airport and
-              ferry terminals carry a band for the megathrust and a hatch for
-              the crustal earthquake, because the one study that exists modelled
-              the megathrust and nothing else. <Cite id="AIR-2013" /> Safety
-              and conflict carries no band at all, because how people treat each
-              other has no restoration time: most people help one another after
-              a disaster, and theft and violence are isolated cases.{" "}
+              has not started. <Cite id="MV-CAPEX-2026" /> For port, airport and
+              ferry terminals, the one study that exists modelled the megathrust
+              and nothing else. <Cite id="AIR-2013" /> Safety and conflict is
+              not a gap: it has no restoration time at all, because most people
+              help one another after a disaster, and theft and violence are
+              isolated cases.{" "}
               <Cite id="KATRINA-MYTHS-08" />
             </p>
           </Prose>

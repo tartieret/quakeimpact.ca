@@ -4,7 +4,7 @@ title: Electricity
 nav: Electricity
 hook: Up to two thirds of downtown customers could lose power for several weeks.
 lede: In November 2025, BC Hydro said its main downtown substation would fail in an earthquake well below the current building-code standard. No comparable assessment is public for the rest of the region.
-bands: { cascadia: high, crustal: high }
+disruption: Several weeks downtown, years to restore fully [BCH-WESTEND-25]
 mechanism: BC Hydro states that a large earthquake could leave up to two thirds of its downtown Vancouver customers without power for several weeks. Full restoration could take years.
 source: BCH-WESTEND-25
 ---

@@ -214,9 +214,8 @@ than leaving it transparent, so it reads against a track in both themes.
 
 ## Encoding meaning without hue
 
-The site's severity encoding already works this way: `BandMeter` fills one,
-two or three segments alongside the colour, so the ordinal survives in
-greyscale. Figures extend the same habit.
+Meaning never rests on hue alone: shape, count, position and written labels
+carry it, so a figure survives greyscale.
 
 The grammar, used consistently so it is learnable:
 
@@ -228,8 +227,8 @@ The grammar, used consistently so it is learnable:
 | One tick in a `TickGrid` | One counted thing |
 | A rule between panels | Two things that must not be read as one |
 
-Colour is used only when a figure encodes a band, and then it is the band ramp
-from `FIG_COLOR` paired with the written label. Nothing is coloured to draw the
+Colour is used only when a figure encodes an ordinal classification, and then
+it is the ramp from `FIG_COLOR` paired with the written label. Nothing is coloured to draw the
 eye. Both water figures use no colour at all, which is the expected default:
 they work identically in greyscale, and the only thing they lose in dark mode
 is the paper behind the hatch.
@@ -238,7 +237,7 @@ is the paper behind the hatch.
 is for water on a map and nothing else. See `docs/style-guide.md` §8. It is
 held to the same 3:1 as `mark`, because a shoreline is load-bearing.
 
-**A classification may take the band ramp, and then the hue has to be
+**A classification may take the ramp, and then the hue has to be
 redundant.** The fire hall map is the worked case: three classes, carried by
 three shapes, three sizes and three written labels with their counts, with the
 ramp laid on top. Take every hue out and the drawing says exactly what it said

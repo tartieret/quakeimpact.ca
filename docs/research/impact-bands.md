@@ -6,6 +6,13 @@
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 10 September 2026.
 
+> **The bands are retired (23 September 2026).** The site no longer shows Low, Medium or
+> High. Each system carries its mechanism sentence, the duration a document states in
+> that document's words, and the sources, as set out in `../site-overview.md` §4. The
+> mechanism and source columns below still stand and `src/content/site.ts` still matches
+> them; the band columns are kept as the record of the earlier assignment and no longer
+> drive anything.
+
 **Status.** Fourteen systems assessed, and `src/content/site.ts` now carries the
 assignment. Natural gas, which the site did not carry, is in the grid; weather, which
 was never a system, is out of it and renders on the timeline instead. **One and a half rows

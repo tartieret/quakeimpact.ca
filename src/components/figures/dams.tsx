@@ -26,8 +26,8 @@ import { dataSource } from "@/data/sources";
  *   whose owner has published what an earthquake is expected to do to it. A
  *   hollow mark is a dam where nothing of the kind was found. Eleven of the
  *   seventeen are hollow, and that emptiness is the map's actual finding.
- * - **No hue at all.** Neither channel is a band on the site's own low, medium
- *   and high scale, and `README.md` reserves colour for that. Size and fill
+ * - **No hue at all.** Neither channel is an ordinal classification, and
+ *   `README.md` reserves colour for one. Size and fill
  *   both survive in greyscale.
  *
  * The map holds no type, which is the rule for a pane that zooms. Four of the

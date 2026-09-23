@@ -69,9 +69,9 @@ function Notice({ children }: { children: ReactNode }) {
 export function SystemDraftNotice() {
   return (
     <Notice>
-      This page is not written yet: the band, the sentence behind it, the
-      documents at the foot of the page and the action under them are real and
-      can be checked today. The other{" "}
+      This page is not written yet: the summary of what fails and for how
+      long, the documents at the foot of the page and the action under them
+      are real and can be checked today. The other{" "}
       <Link href="/after/" className={linkClass}>
         system pages
       </Link>{" "}
@@ -85,8 +85,8 @@ export function SystemDraftNotice() {
 }
 
 /**
- * The notice for a page under `/shaking/`. A Part 1 page carries no band, so
- * this variant names the summary line and the document list, which is what is
+ * The notice for a page under `/shaking/`. A Part 1 page carries no impact
+ * summary, so this variant names the summary line and the document list, which is what is
  * actually on the screen.
  */
 export function ShakingDraftNotice() {

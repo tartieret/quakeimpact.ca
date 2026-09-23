@@ -68,7 +68,7 @@ ever use it.
 | [`maps.md`](maps.md) | Available layers, what each supports, and what it does not. |
 | [`sources.md`](sources.md) | The source register. Becomes `SOURCES` in `site.ts`. |
 | [`open-questions.md`](open-questions.md) | The verification queue and the refresh triggers. |
-| [`impact-bands.md`](impact-bands.md) | Band assignment per system per scenario, with mechanism and source. |
+| [`impact-bands.md`](impact-bands.md) | Mechanism and source per system, and the retired band assignment. |
 | [`build-order.md`](build-order.md) | What to build first, and why the evidence says so. |
 
 ---

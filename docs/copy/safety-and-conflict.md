@@ -4,7 +4,7 @@ title: Safety and conflict
 nav: Safety and conflict
 hook: Most people help one another after a disaster. Theft and violence are the exception.
 lede: What happens when people run out of food and water after a major earthquake?
-bands: none. No restoration time, so no band and no scenario split
+disruption: none. No restoration time, shown as such in the table, unhatched, and no scenario split
 mechanism: Most people help one another after a disaster. Theft and violence still occur, but usually as isolated cases that news coverage can make seem widespread.
 source: KATRINA-MYTHS-08
 ---

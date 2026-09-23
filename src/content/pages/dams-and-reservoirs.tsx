@@ -13,7 +13,7 @@ import type { PageModule } from "./index";
  * Dams and reservoirs. The body of `/after/dams-and-reservoirs/`, ported from
  * `docs/copy/dams-and-reservoirs.md`.
  *
- * Both bands are "Not yet assessed", so the page describes the public record
+ * No published estimate covers either earthquake, so the page describes the public record
  * rather than a consequence: two dams reviewed in 2024 under legal compulsion,
  * neither review finding an unsafe condition, and neither published conclusion
  * saying anything about earthquakes. The reviews' finding goes first and in the

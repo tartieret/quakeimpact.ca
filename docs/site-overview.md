@@ -45,21 +45,15 @@ The single most important contrast: the crustal event is worse *for Vancouver*, 
 
 ---
 
-## 4. Impact bands
+## 4. How impacts are shown
 
-Impacts are expressed as **low / medium / high** per system per scenario, not as figures. This matches the sources — most published work assesses one design event, and inventing intermediate numbers would be modelling by another name.
+Each system carries one sentence of mechanism, how long the disruption is expected to last in the words of the document that states it, and a link to that document. Durations stay in the source's terms ("days to weeks", "many months") and are never turned into a number the source does not give. Where no document states one, the page says **no published estimate**, drawn hatched: a gap in the public record, not a finding that the system holds up. Safety and conflict is not a gap: it has no restoration time, and the table says so in plain words, unhatched.
 
-The rubric is published on `/method/` and linked from every impact cell. It is deliberately system-agnostic so that "high" for sanitation and "high" for transport mean comparable things.
+Most published work assesses one design earthquake, so one impact usually stands for both scenarios. A system shows one per scenario only where the two genuinely differ: where help comes from, and the terminals, whose one study models the megathrust alone.
 
-| Band | Duration | Extent |
-| --- | --- | --- |
-| **Low** | Hours to a few days | Localised |
-| **Medium** | Days to weeks | Patchy, worst on poor ground |
-| **High** | Weeks to months, sometimes longer | Regional |
+**Presentation rule:** every statement reaches its document. `/after/` lists every system with its duration and a marker; `/method/` explains how the evidence is read.
 
-A fourth state, **not yet assessed**, is rendered hatched rather than coloured. It is a first-class band, not a gap to be hidden.
-
-**Presentation rule:** a coloured cell alone reads as assertion. Every cell is band → one sentence of mechanism → source link.
+There is no rating scale. Low, medium and high bands were dropped on 23 September 2026: nine of thirteen rows read High in both scenarios, the scale separated the two earthquakes on one row, and most of `/method/` was spent explaining the scale's own exceptions. The duration the rubric was set from is shown directly instead.
 
 ---
 
@@ -98,7 +92,7 @@ The core of the site. Organised as a timeline: hours → days → weeks → mont
 | Dams and reservoirs | Cleveland, Seymour Falls, Coquitlam. Dual-purpose content — they are the water supply and they are a downstream hazard |
 | Housing | Tens of thousands displaced from standing but tagged buildings, into a region with no rental slack. Arguably the most underestimated consequence of all |
 | Health care | Surge demand against damaged facilities running on trucked diesel |
-| Safety and conflict | That neighbours are the threat. Most people help each other; theft, fights over supplies and violence at home still happen, and the worst documented case, Chile 2010, came with days without power, water and communications. No band and no scenario split, because nothing about it has a restoration time |
+| Safety and conflict | That neighbours are the threat. Most people help each other; theft, fights over supplies and violence at home still happen, and the worst documented case, Chile 2010, came with days without power, water and communications. No duration and no scenario split, because nothing about it has a restoration time |
 | Where help comes from | Who arrives, from where, and when. Alberta maintains an Earthquake Response Plan for British Columbia and does not publish it; EMBC's own schedule of applicable agreements lists a 2007 BC-Alberta memorandum and no earthquake plan. In the Cascadia case the province states the US will be unable to deliver mutual aid |
 
 **Assumption discipline on port, airport and ferry terminals.** The temptation is to write "these would not survive." Do not. YVR has done substantial ground improvement on Sea Island and is better studied than intuition suggests; pile-supported wharves on treated ground do not behave the way a lay reader expects. Port cranes and wharves are a genuine Kobe-style vulnerability, but that has to come from an assessment. If the documents confirm the fear, the claim becomes powerful. If they do not, that is itself worth telling readers.
@@ -149,7 +143,7 @@ The critical-infrastructure-over-liquefaction overlay is not built: the liquefac
 
 **How sources appear on a page.** Every source has a key in the register; running text cites the key and renders a numbered marker that opens the entry in place: title, publisher, year, what it is used for, and the link. The same entries are listed again at the foot of the page. A marker may also point at another page on this site, so a claim can defer to the page that carries the reasoning. `/getting-around/` is the worked example.
 
-**What `/sources/` lists.** The documents the site cites, not the register behind it. The register in `research/sources.md` holds everything the project has read, including documents behind findings whose page is not written yet; `/sources/` is derived from what the pages and the band grid actually cite.
+**What `/sources/` lists.** The documents the site cites, not the register behind it. The register in `research/sources.md` holds everything the project has read, including documents behind findings whose page is not written yet; `/sources/` is derived from what the pages and the impact cells actually cite.
 
 **Contributions.** `/contribute/` states what the project can use — a published document, a correction with a source behind it, a pointer to a report, a read from someone who does this work — and what it cannot: unsourced assertion, new modelling, analogues used to generate numbers.
 
@@ -169,7 +163,7 @@ The critical-infrastructure-over-liquefaction overlay is not built: the liquefac
 
 A thin complete grid is worth less than a few deep pages. Every page in the MVP and after it is now written; `research/build-order.md` records the order and reasoning.
 
-**MVP:** the two scenarios, built on the openly licensed NRCan catalogue; the method page and band rubric; water, transportation, getting around, ground conditions (as text), power; and the preparing page.
+**MVP:** the two scenarios, built on the openly licensed NRCan catalogue; the method page; water, transportation, getting around, ground conditions (as text), power; and the preparing page.
 
 **Then:** sanitation, fuel, food, communications, housing.
 
@@ -186,17 +180,17 @@ A thin complete grid is worth less than a few deep pages. Every page in the MVP 
 - **Stack and hosting: Next.js static export on Netlify.** See `stack-and-structure.md`.
 - **Map dataset licensing is settled per dataset** in `licensing.md`. The NRCan catalogue and City of Vancouver open data are cleared with attribution.
 - **The microzonation maps are link-only, and ICLR approval is not pursued.** Decided 10 September 2026. The MVSMMP layers carry ICLR terms whose commercial reservation covers electronic media and statements about the maps, so the judgement would not be ours to make, and approval would still leave the sheets unalterable and derived layers share-alike. The site links to the maps, describes the findings in its own words, and ships ground conditions as a text page. The cost is the infrastructure-over-liquefaction overlay.
-- **Electricity bands High, and the page does not stretch the finding.** BC Hydro's filing says up to two-thirds of downtown customers could lose power, with several weeks to restore service and years to restore the system. Nothing equivalent is published for the rest of the region. The band is High; the page leads with the downtown fact and states the limit (`style-guide.md` §6, "Generalise the magnitude, not the place").
+- **Electricity leads with the downtown finding and does not stretch it.** BC Hydro's filing says up to two-thirds of downtown customers could lose power, with several weeks to restore service and years to restore the system. Nothing equivalent is published for the rest of the region. The page leads with the downtown fact and states the limit (`style-guide.md` §6, "Generalise the magnitude, not the place").
 - **Weather is a scenario condition, not a system.** It does not fail; it makes every other failure worse, and the province's scenarios build it in that way: the DCRRA sets its M9 in an August heatwave with wildfire smoke, PEIRS sets its M7 on a January afternoon after an atmospheric river. It is rendered on the timeline, not in `SYSTEMS`.
 - **Natural gas is a system.** Restoration is rate-limited by sending a person into every building, a mechanism no other system has. With food and fuel standing apart, and safety and conflict added, the grid has fourteen systems.
-- **Safety and conflict is a system with no band.** Decided 15 September 2026. It has no restoration time, so there is nothing for a band to measure: not yet assessed would imply a missing assessment, and Low would let analogues set a band. It shows one sentence and a source for both earthquakes, with no phase and no related systems, because no document names any. See `research/impact-bands.md`. The title replaces "social disorder", which primes a fear the evidence does not support. See `research/social-disorder.md`.
-- **The outside-help row is "Where help comes from".** Decided 11 September 2026. A row named for an absence and banded Low for the crustal M7 contradicted itself; the research frames help as late, not absent, and what a reader wants is who comes, from where and when.
+- **Safety and conflict is a system with no restoration time.** Decided 15 September 2026. It shows one sentence and a source for both earthquakes, with no phase and no related systems, because no document names any. See `research/impact-bands.md`. The title replaces "social disorder", which primes a fear the evidence does not support. See `research/social-disorder.md`.
+- **The outside-help row is "Where help comes from".** Decided 11 September 2026. A row named for an absence contradicted the crustal M7, where outside help is expected; the research frames help as late, not absent, and what a reader wants is who comes, from where and when.
 - **Part 2b is "Moving after the shaking", navigated as "Getting around".** Decided 11 September 2026. A departure framing ("Getting out", `/leaving/`) teaches the wrong behaviour when the province plans on sheltering in place and reserves damaged routes for response. "Staying put" was rejected too: the province does not rule out later evacuation, and leaving is an individual decision.
-- **The landing page leads with the four phases.** Decided 11 September 2026. The order is what the first hours, days, weeks and months are like, each phase carrying claims sourced on the system pages; then every system as a card; then the two scenarios; then where the numbers come from, with the band rubric as one sentence and a link. The home page keeps the coupling between systems as one paragraph. Cards carry no phase label, because one word needs a sentence to mean anything.
-- **There is no scenario toggle. Both scenarios are always shown.** Decided 12 September 2026. Twelve of fourteen systems carry the same band and mechanism in both columns, because published work assesses one design earthquake per system, so a toggle hid the difference where there was one and changed nothing where there was not. Cards in the system grid carry no band: a band is meant to be compared, in the matrix, with both scenarios in labelled columns.
-- **Part contents open at the foot of a page, in the footer and in the phone menu, not from the top bar.** Decided 13 September 2026. Three of the five parts have nothing to open, fourteen systems is a directory rather than a menu, and the site is read in order, so a jump into the middle of a part lands a reader without the bands and scenarios the part before set up. Every page lists its part's pages at its foot with the current one marked; the footer carries the whole index; the phone menu opens the reader's part. All three are built from `NAV`, so adding a system stays one array entry.
+- **The landing page leads with the four phases.** Decided 11 September 2026. The order is what the first hours, days, weeks and months are like, each phase carrying claims sourced on the system pages; then every system as a card; then the two scenarios; then where the numbers come from, with one sentence and a link to `/method/`. The home page keeps the coupling between systems as one paragraph. Cards carry no phase label, because one word needs a sentence to mean anything.
+- **There is no scenario toggle. Both scenarios are always shown.** Decided 12 September 2026. Most systems carry the same evidence for both earthquakes, because published work assesses one design earthquake per system, so a toggle hid the difference where there was one and changed nothing where there was not. Cards in the system grid carry no duration: durations are compared in the table on `/after/`.
+- **Part contents open at the foot of a page, in the footer and in the phone menu, not from the top bar.** Decided 13 September 2026. Three of the five parts have nothing to open, fourteen systems is a directory rather than a menu, and the site is read in order, so a jump into the middle of a part lands a reader without the scenarios the part before set up. Every page lists its part's pages at its foot with the current one marked; the footer carries the whole index; the phone menu opens the reader's part. All three are built from `NAV`, so adding a system stays one array entry.
 
-- **There is no dependency graph, and bands have no dependency column.** Decided 23 September 2026. `/dependencies/` counted links between systems and split them into the six a document names and the rest, which were our own inference. It measured the literature rather than the earthquake, told a reader nothing they could act on, and presented obvious connections as though the site had studied them. Every sourced finding on it was already on its system page. The rubric's dependency column went for the same reason, and because it contradicted the duration column whenever the two disagreed. A band is duration and extent; a system page lists related systems as navigation. Gaps the page named are in `research/open-questions.md`.
+- **There is no dependency graph.** Decided 23 September 2026. `/dependencies/` counted links between systems and split them into the six a document names and the rest, which were our own inference. It measured the literature rather than the earthquake, told a reader nothing they could act on, and presented obvious connections as though the site had studied them. Every sourced finding on it was already on its system page. A system page lists related systems as navigation. Gaps the page named are in `research/open-questions.md`.
 
 ### Open
 

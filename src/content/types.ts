@@ -2,8 +2,6 @@ import type { ReactNode } from "react";
 
 export type ScenarioId = "cascadia" | "crustal";
 
-export type Band = "low" | "medium" | "high" | "unknown";
-
 export type Phase = "hours" | "days" | "weeks" | "months";
 
 /**
@@ -38,32 +36,52 @@ export interface Scenario {
   mutualAid: string;
   recurrence: string;
   /**
-   * Weather is a condition of the scenario, not a system that fails, so it has
-   * no band. Both official scenarios set one, and the two pull in opposite
-   * directions — see `docs/research/scenarios.md`.
+   * Weather is a condition of the scenario, not a system that fails. Both
+   * official scenarios set one, and the two pull in opposite directions — see
+   * `docs/research/scenarios.md`.
    */
   conditions: string;
 }
 
+/**
+ * What a document says about how long a system is out, or how help arrives.
+ * Short enough for a table cell, and in the source's own terms: "many months"
+ * stays a range word and is never turned into a number.
+ */
+export interface Disruption {
+  text: string;
+  /** Source key from the source register. The document stating it. */
+  source: string;
+}
+
 export interface Impact {
-  band: Band;
   /**
-   * One sentence of mechanism. A coloured cell on its own reads as assertion.
+   * One sentence of mechanism: how the system fails, in the source's terms.
    *
-   * The published work assesses one design earthquake per system, so the same
-   * sentence usually stands in both scenarios. Where it does, `evidence` says
-   * which earthquake it was measured on.
+   * The published work assesses one design earthquake per system, so one
+   * sentence usually stands for both scenarios, and it says nothing about which
+   * one it was measured on unless that changes what a reader takes away.
    */
   mechanism: string;
   /** Source key from the source register. The key the mechanism sentence rests on. */
   source: string;
   /**
-   * Which earthquake the evidence behind this cell actually models, in the
-   * reader's terms. Present wherever the mechanism sentence was measured on a
-   * different scenario from the column it sits in, so that a reader on the
-   * crustal toggle is not shown a megathrust figure without being told.
+   * A second sentence on what kind of evidence the mechanism is, where that
+   * changes the reading: a planning assumption stated as one, not a finding.
    */
   evidence?: string;
+  /**
+   * How long the system is out. Absent where no document states it, and then
+   * the table says that no estimate is published rather than filling the gap.
+   */
+  disruption?: Disruption;
+  /**
+   * Set where the system has no restoration time for any document to state:
+   * how people treat each other after a disaster is the case. The table then
+   * says so in plain words, with no hatch, because a hatch says an estimate
+   * could be published and has not been, and here none could be.
+   */
+  noRestoration?: true;
 }
 
 /**
@@ -80,17 +98,6 @@ export interface Impact {
 export interface StandingLever {
   /** One or two actions, each a plain sentence. */
   items: string[];
-}
-
-/**
- * What an unbanded system carries in place of its two impact cells: one
- * sentence of mechanism and the source it rests on, standing for both
- * earthquakes because nothing behind it was measured on either.
- */
-export interface SystemSummary {
-  mechanism: string;
-  /** Source key from the source register. */
-  source: string;
 }
 
 interface SystemBase {
@@ -118,31 +125,33 @@ interface SystemBase {
   dependsOn: string[];
   /** Build-order tier from the project plan. */
   tier: 1 | 2 | 3;
-}
-
-/** A system that fails and comes back, banded per scenario on the rubric. */
-export interface BandedSystem extends SystemBase {
-  /** Where in the timeline this system is felt worst. */
-  bitesAt: Phase;
-  impacts: Record<ScenarioId, Impact>;
-  summary?: never;
+  /**
+   * Where in the timeline this system is felt worst. Absent where nothing on
+   * record times it: how people treat each other after a disaster is the case.
+   */
+  bitesAt?: Phase;
 }
 
 /**
- * A system with no restoration time for a band to measure, so no band, no
- * phase and no scenario columns: how people treat each other after a disaster
- * is the case. It is not "not yet assessed", which says an assessment could be
- * published and has not been. Here none could be, and saying otherwise would
- * put a gap in the record that is not there. Widening `Band` to cover it was
- * the option `docs/research/impact-bands.md` rejected for weather.
+ * One impact standing for both earthquakes: the usual case, because the
+ * published work assesses one design earthquake per system.
  */
-export interface UnbandedSystem extends SystemBase {
-  bitesAt?: never;
-  impacts?: never;
-  summary: SystemSummary;
+interface SharedImpact {
+  impact: Impact;
+  byScenario?: never;
 }
 
-export type SystemEntry = BandedSystem | UnbandedSystem;
+/**
+ * One impact per earthquake, only where the two genuinely read differently:
+ * where help comes from, because the province states a different assumption for
+ * each, and the terminals, because the one study models the megathrust alone.
+ */
+interface SplitImpact {
+  impact?: never;
+  byScenario: Record<ScenarioId, Impact>;
+}
+
+export type SystemEntry = SystemBase & (SharedImpact | SplitImpact);
 
 /**
  * A citable document. Everything on the site that states a fact points at one

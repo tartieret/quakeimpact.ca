@@ -10,8 +10,14 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { TimelineStrip } from "@/components/timeline";
-import { ImpactCell, SummaryCell } from "@/components/impact-cell";
-import { SYSTEMS, SCENARIOS, PHASES, navSection } from "@/content/site";
+import { ImpactCell } from "@/components/impact-cell";
+import {
+  SYSTEMS,
+  SCENARIOS,
+  PHASES,
+  impactsOf,
+  navSection,
+} from "@/content/site";
 import { SectionNav } from "@/components/section-nav";
 import { pageForSystem } from "@/content/pages";
 import { SystemDraftNotice } from "@/components/status";
@@ -85,20 +91,23 @@ export default async function SystemPage({
    */
   const status = page?.meta.status ?? system.status;
 
+  const impacts = impactsOf(system);
+
   /**
-   * An unwritten page still carries sources: the documents its two impact
-   * cells rest on. They are the same register keys, so they list the same way.
+   * An unwritten page still carries sources: the documents its impact cells
+   * rest on. They are the same register keys, so they list the same way.
    */
   const references = page
     ? page.meta.references
-    : system.impacts
-      ? [
-          ...new Set([
-            system.impacts.cascadia.source,
-            system.impacts.crustal.source,
-          ]),
-        ]
-      : [system.summary.source];
+    : [
+        ...new Set(
+          impacts.flatMap(({ impact }) =>
+            [impact.source, impact.disruption?.source].filter(
+              (id): id is string => Boolean(id),
+            ),
+          ),
+        ),
+      ];
 
   return (
     <Citations ids={references}>
@@ -128,46 +137,37 @@ export default async function SystemPage({
             heading order, which is the point of making state structural. */}
         {page ? null : <SystemDraftNotice />}
 
-        {/* At a glance: both scenarios, never one alone. The toggle does not
-            hide either column, because the contrast is the teaching point. A
-            system with no band shows its one sentence instead, with no
-            scenario labels and no timeline, because it has neither a band to
-            compare nor a phase on record. */}
-        {system.impacts ? (
-          <>
-            <Section
-              title="At a glance"
-              lede={`Bands measure restoration time and extent. They do not measure damage severity. Felt worst: ${phase?.label.toLowerCase()} after the event.`}
-            >
-              <div className="grid gap-4 sm:grid-cols-2">
-                <ImpactCell
-                  impact={system.impacts.cascadia}
-                  label={SCENARIOS.cascadia.name}
-                />
-                <ImpactCell
-                  impact={system.impacts.crustal}
-                  label={SCENARIOS.crustal.name}
-                />
-              </div>
-              <p className="mt-4 text-sm text-ink-muted">
-                <Link
-                  href="/method/"
-                  className="text-accent underline underline-offset-2"
-                >
-                  How the bands are defined
-                </Link>
-              </p>
-            </Section>
+        {/* At a glance: one cell standing for both earthquakes, or one per
+            earthquake where the two genuinely differ. The timeline shows only
+            where a phase is on record. */}
+        <Section
+          title="At a glance"
+          lede={
+            phase
+              ? `Felt worst: ${phase.label.toLowerCase()} after the event.`
+              : undefined
+          }
+        >
+          <div
+            className={
+              impacts.length > 1 ? "grid gap-4 sm:grid-cols-2" : "grid gap-4"
+            }
+          >
+            {impacts.map(({ scenario, impact }) => (
+              <ImpactCell
+                key={scenario ?? "both"}
+                impact={impact}
+                label={scenario ? SCENARIOS[scenario].name : undefined}
+              />
+            ))}
+          </div>
+        </Section>
 
-            <Section title="When it bites">
-              <TimelineStrip active={system.bitesAt} compact />
-            </Section>
-          </>
-        ) : (
-          <Section title="At a glance">
-            <SummaryCell summary={system.summary} />
+        {system.bitesAt ? (
+          <Section title="When it bites">
+            <TimelineStrip active={system.bitesAt} compact />
           </Section>
-        )}
+        ) : null}
 
         {system.dependsOn.length > 0 ? (
           <Section title="Related systems">

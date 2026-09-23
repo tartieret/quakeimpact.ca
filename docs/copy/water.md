@@ -4,7 +4,7 @@ title: Water
 nav: Water
 hook: Breaks under rivers and inlets take the longest to repair.
 lede: Metro Vancouver's own seismic assessment models 267 water main failures across the region in a magnitude 9.0 earthquake. [MV-WATER-22] About 60 of them fall at the 71 points where mains cross under rivers and inlets. Those are the hardest places in the system to reach. [MV-WATER-22]
-bands: { cascadia: high, crustal: high }
+disruption: Many months [PEIRS]
 mechanism: A magnitude 9 megathrust is modelled to cause 267 water main failures across Metro Vancouver. About 60 occur where mains cross under rivers and inlets, the hardest locations to repair.
 source: MV-WATER-22
 ---

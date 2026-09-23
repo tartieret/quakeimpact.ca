@@ -394,10 +394,10 @@ export const home: PageModule = {
             official documents contradict each other, both are here.
           </p>
           <p>
-            How long something is out is written as one of three bands: Low,
-            Medium or High, with a fourth for not yet assessed.{" "}
+            How long something is out is given in the source’s own words, and
+            never sharpened into a number it does not give.{" "}
             <Link href="/method/" className={link}>
-              How the bands work
+              How this site works
             </Link>
             .{" "}
             <Link href="/sources/" className={link}>

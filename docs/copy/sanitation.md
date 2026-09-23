@@ -4,7 +4,7 @@ title: Sanitation
 nav: Sanitation
 hook: Without running water, toilets in apartment towers stop working.
 lede: A toilet needs water to flush. The province expects disruption to water and wastewater systems to last many months. [PEIRS]
-bands: { cascadia: high, crustal: high }
+disruption: Many months [PEIRS]
 mechanism: The province expects water and wastewater disruption for many months. Some treatment plants meet a post-disaster standard, but this says nothing about the sewer network feeding them.
 source: PEIRS
 ---

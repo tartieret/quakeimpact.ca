@@ -1,19 +1,17 @@
 import Link from "next/link";
 import { REFERENCES } from "@/content/references";
-import type { Impact, SystemSummary } from "@/content/types";
-import { BandPill } from "./band";
+import type { Impact } from "@/content/types";
 
 /**
  * The impact cell, and the source line under it.
  *
  * It reads the source register, so it is a Server Component and stays out of
- * the client graph: the register is 325 entries and a page needs the two its
- * cells name. `band.tsx` holds the drawing, which client components can import
- * without carrying any of this.
+ * the client graph: the register is 325 entries and a page needs the few its
+ * cells name.
  */
 
 /**
- * The source line under a band. `Impact.source` is a key into the register, so
+ * The source line under an impact. `Impact.source` is a key into the register, so
  * the cell names the document rather than pointing at the source list and
  * leaving the reader to find it. Presentation follows `citation.tsx`: title,
  * publisher, date, and a link that opens the document itself.
@@ -66,12 +64,12 @@ function SourceLine({ id }: { id: string }) {
 }
 
 /**
- * The presentation rule from the project brief: a coloured cell alone reads as
- * assertion. Every impact is band -> one sentence of mechanism -> source.
+ * One sentence of mechanism, the duration where a document states one, and
+ * the source under both. A duration from a different document than the
+ * mechanism gets its own source line, so each statement reaches its document.
  *
- * Where the assessment behind the mechanism models the other earthquake, the
- * cell says so in the reader's terms rather than letting a figure measured on
- * one scenario sit unlabelled under the other.
+ * `label` names the earthquake where a system reads differently in each; a
+ * shared impact stands for both and takes none.
  */
 export function ImpactCell({
   impact,
@@ -80,6 +78,10 @@ export function ImpactCell({
   impact: Impact;
   label?: string;
 }) {
+  const sources = [
+    ...new Set([impact.source, impact.disruption?.source].filter(Boolean)),
+  ] as string[];
+
   return (
     <div className="flex flex-col gap-2 rounded-lg border border-rule bg-paper-raised p-4">
       {label ? (
@@ -87,7 +89,6 @@ export function ImpactCell({
           {label}
         </span>
       ) : null}
-      <BandPill band={impact.band} />
       <p className="text-sm leading-relaxed text-ink-muted">
         {impact.mechanism}
       </p>
@@ -96,24 +97,15 @@ export function ImpactCell({
           {impact.evidence}
         </p>
       ) : null}
-      <SourceLine id={impact.source} />
-    </div>
-  );
-}
-
-/**
- * The same cell for a system with no band: mechanism and source, and nothing
- * else. No pill, because there is no band to show, and no hatch, because a
- * hatch says an assessment is missing. No scenario label, because the sentence
- * stands for both earthquakes.
- */
-export function SummaryCell({ summary }: { summary: SystemSummary }) {
-  return (
-    <div className="flex flex-col gap-2 rounded-lg border border-rule bg-paper-raised p-4">
-      <p className="text-sm leading-relaxed text-ink-muted">
-        {summary.mechanism}
-      </p>
-      <SourceLine id={summary.source} />
+      {impact.disruption ? (
+        <p className="text-sm leading-relaxed">
+          <span className="text-ink-faint">Expected disruption: </span>
+          {impact.disruption.text}
+        </p>
+      ) : null}
+      {sources.map((id) => (
+        <SourceLine key={id} id={id} />
+      ))}
     </div>
   );
 }
