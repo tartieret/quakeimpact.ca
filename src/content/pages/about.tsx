@@ -96,11 +96,11 @@ export const about: PageModule = {
           <p>
             The site is not complete, and it could not be. No assessment says
             precisely how a system behaves on the day. Where a figure is
-            missing, the page says so: a system marked “Not yet assessed” means
-            no assessment of it has been published, not that the infrastructure
-            is fine.{" "}
+            missing, the page says so: “No published estimate” means no
+            assessment of it has been published, not that the infrastructure is
+            fine.{" "}
             <Link href="/method/" className={link}>
-              How the bands work
+              How this site works
             </Link>{" "}
             explains the rest.
           </p>

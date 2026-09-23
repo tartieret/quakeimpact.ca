@@ -35,7 +35,7 @@ lists them all. Past earthquakes elsewhere appear too, to show how something fai
 never to give a number for the Lower Mainland.
 
 The site is not complete, and it could not be. No assessment says precisely how a
-system behaves on the day. Where a figure is missing, the page says so: a system marked "Not yet assessed" means no assessment of it has been published, not that the infrastructure is fine. [How the bands work](/method/) explains the rest.
+system behaves on the day. Where a figure is missing, the page says so: "No published estimate" means no assessment of it has been published, not that the infrastructure is fine. [How this site works](/method/) explains the rest.
 
 ## Corrections are welcome
 

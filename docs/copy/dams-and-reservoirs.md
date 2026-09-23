@@ -4,7 +4,7 @@ title: Dams and reservoirs
 nav: Dams and reservoirs
 hook: The 2024 engineering reviews do not publish an earthquake finding.
 lede: Cleveland and Seymour Falls dams hold two of Metro Vancouver's drinking water reservoirs in North Shore mountain valleys. Both carry the province's top consequence rating. [MV-CLEVELANDDAM-FS] [MV-SEYMOURDAM-FS] [BC-DAMS-REG] Engineers reviewed both dams in 2024. Neither published conclusion mentions an earthquake. [MV-DSP-2026]
-bands: { cascadia: unknown, crustal: unknown }
+disruption: none published
 mechanism: Engineers reviewed Cleveland and Seymour Falls dams in 2024, as required every seven years for dams in the top consequence class. Neither review identified an unsafe condition, and neither published conclusion mentions earthquakes.
 source: MV-DSP-2026
 ---

@@ -4,7 +4,7 @@ title: Housing
 nav: Housing
 hook: Cordons and failed utilities can keep people out of standing homes.
 lede: The province's planning scenario puts 70,000 households out of their homes in Greater Vancouver after a magnitude 7.0 crustal earthquake. [PEIRS] Most of those homes are still standing. In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years. [COV-RISK-2024]
-bands: { cascadia: high, crustal: high }
+disruption: Weeks to years where damage is heaviest [COV-RISK-2024]
 mechanism: In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.
 source: COV-RISK-2024
 ---

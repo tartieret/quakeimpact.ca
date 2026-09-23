@@ -33,7 +33,7 @@ Static export was chosen over an SPA because the site is public-facing content p
 /after/[slug]/          13 system pages
 /getting-around/        Part 2b — moving after the shaking
 /prepare/               Part 3
-/method/                band rubric, principles, assumption discipline
+/method/                how the evidence is read, principles, assumption discipline
 /sources/               the source register, rendered from REFERENCES
 /contribute/            what the project can use, and how to send it
 /about/
@@ -50,28 +50,25 @@ Structured content lives in `src/content/site.ts` and page prose in
 `src/content/pages/`. The route templates hold neither.
 
 - `SITE` — name, domain, tagline, draft status banner
-- `SCENARIOS` — the two scenarios and their comparison rows, including the named official simulation behind each and the `conditions` field. **Weather is a scenario condition, not a system**: it does not fail, so it cannot carry a band, and both official scenarios set one in opposite directions. `TimelineStrip` renders both conditions side by side, as `/scenarios/` does
-- `BANDS` — the rubric from overview section 4, including `unknown`
+- `SCENARIOS` — the two scenarios and their comparison rows, including the named official simulation behind each and the `conditions` field. **Weather is a scenario condition, not a system**: it does not fail, so it has no restoration time, and both official scenarios set one in opposite directions. `TimelineStrip` renders both conditions side by side, as `/scenarios/` does
 - `PHASES` — hours / days / weeks / months
-- `SYSTEMS` — the fourteen systems, each with hook, `bitesAt` phase, per-scenario impact, `dependsOn` edges, and build tier from overview section 8. Food and fuel are separate entries: fuel is an input every other system's repair competes for, food is a demand that cannot be stored, and merging them hides the edge between them. `weather` is not among them and `gas` is. `safety-and-conflict` is the one with no restoration time, an `UnbandedSystem` carrying a `summary` in place of bands, a phase and scenario columns, which makes fourteen
-- **The bands and the prose around them both come from the research.** `research/impact-bands.md` holds the assignment per system per scenario, and `SYSTEMS` matches it row for row. `SystemEntry.hook`, `Impact.mechanism` and `Impact.source` are real, and `ImpactCell` resolves the source key against `REFERENCES` and renders the document. `Impact.evidence` carries the per-scenario caveat where the mechanism sentence was measured on one earthquake and the column it sits in is the other, so a reader is not shown a megathrust figure standing in the crustal column with nothing saying so.
+- `SYSTEMS` — the fourteen systems, each with hook, `bitesAt` phase, one `impact` (or a `byScenario` pair where the two earthquakes differ), `dependsOn` edges, and build tier from overview section 8. Food and fuel are separate entries: fuel is an input every other system's repair competes for, food is a demand that cannot be stored, and merging them hides the edge between them. `weather` is not among them and `gas` is. `safety-and-conflict` is the one with no restoration time, so it has no `bitesAt` and no `disruption`, which makes fourteen. `impactsOf` resolves either shape into the list a page draws
+- **The impacts come from the research.** `research/impact-bands.md` holds the mechanism and source per system, and `SYSTEMS` matches it. `Impact.disruption` is how long the system is out in the words of the document that says so, with its own source key, because the duration often comes from a different document than the mechanism. `ImpactCell` resolves each key against `REFERENCES` and renders the document; `SystemMatrix` on `/after/` cites each duration with a marker. `Impact.evidence` carries a caveat that changes what a reader should take away, such as the crustal outside-help sentence being a planning assumption.
 - `SHAKING_PAGES`, `NAV`, `UTILITY_NAV`
 
 `src/content/references.ts` holds `REFERENCES`, the source register: one entry per document, keyed by citation key. Entries carry kind, title, publisher, date, href, route, licence and a one-line note. `kind: "page"` is an internal reference — a claim can point at the page that carries the reasoning. **The file is generated** from `research/sources.md` by `scripts/build-references.mjs`, wired as `npm run references`, so a corrected date or URL propagates in one edit. Do not edit it by hand.
 
 `src/content/pages/` holds one module per written page: `meta`, an array of sections and an optional lever. The array is what makes a wrong page hard to write — every `<h2>` comes from a section title, so a heading cannot miss the contents rail, and `meta.references` is the page's citation contract. See that folder's `README.md`.
 
-Adding a system is one array entry. It then appears in the grid, the matrix, the related-systems lists and the prepare page, and gets its own exported page, with no other change.
+Adding a system is one array entry. It then appears in the grid, the duration table, the related-systems lists and the prepare page, and gets its own exported page, with no other change.
 
 ---
 
 ## How the principles are enforced in code
 
-**Presentation rule (overview section 4).** `ImpactCell` cannot render a band without a mechanism sentence and a source link — the component's props require all three. There is no way to ship a bare coloured cell.
+**Presentation rule (overview section 4).** `Impact` requires a mechanism sentence and a source key, and `Disruption` requires its own source key, so there is no way to ship a duration without a document behind it.
 
-**Severity survives without colour.** `BandMeter` draws three segments filled 1/2/3. Works in greyscale, in print, and for colour-blind readers.
-
-**"Not yet assessed" is a fourth band.** Hatched, never coloured. Dams and reservoirs ship in that state deliberately, as does large infrastructure in the crustal column — the assumption discipline in overview section 5 becomes visible on the page instead of hidden in a backlog. `VerificationNote` does the same for open research questions.
+**A missing estimate is shown, not hidden.** `NotPublished` draws "No published estimate" hatched in the table. Dams and reservoirs and health care ship in that state, as does large infrastructure for the crustal earthquake — the assumption discipline in overview section 5 becomes visible on the page instead of hidden in a backlog. `VerificationNote` does the same for open research questions.
 
 **No doom without a lever (principle 3).** Every page describing a consequence ends with a `Lever` block. `lever` is optional on a page module only so that a page carrying no doom, such as `/method/`, is not made to manufacture an action.
 

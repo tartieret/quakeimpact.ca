@@ -7,7 +7,7 @@ import { ScenarioPair } from "./scenario-text";
  * strip on each system page showing when that system is felt worst.
  *
  * Weather rides here rather than in the impact grid. It does not fail, so it
- * cannot carry a band, but both official scenarios set a weather condition,
+ * has no restoration time, but both official scenarios set a weather condition,
  * and the two pull in opposite directions, so the same day of the same
  * disaster is a different emergency in each. See `docs/research/scenarios.md`.
  * Both are shown, because that opposition is the thing worth knowing and

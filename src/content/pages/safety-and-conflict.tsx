@@ -9,8 +9,8 @@ import type { PageModule } from "./index";
  * Safety and conflict. The body of `/after/safety-and-conflict/`, ported from
  * `docs/copy/safety-and-conflict.md`.
  *
- * The one system on the grid with no restoration time, which is why it carries
- * no band. It opens on the question a reader arrives with, in the days when the
+ * The one system with no restoration time, which is why it carries no duration
+ * and no phase. It opens on the question a reader arrives with, in the days when the
  * tap and the shops have stopped, and answers it before working through what
  * people expect, what the research and past disasters show, where theft and
  * violence were serious, and what holds conflict down. The opening scene is

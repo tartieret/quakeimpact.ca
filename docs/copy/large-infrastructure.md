@@ -4,7 +4,8 @@ title: Port, airport and ferry terminals
 nav: Port, airport and ferries
 hook: The airport model expects damage to every bridge onto Sea Island.
 lede: The region depends on a small number of port, airport and ferry terminals. A magnitude 9 megathrust model finds every bridge to Vancouver International Airport damaged, cutting road access for the first few days. The same model puts some Vancouver-area port service out for one to two weeks. [AIR-2013]
-bands: { cascadia: medium, crustal: unknown }
+disruption-cascadia: One to two weeks at some ports [AIR-2013]
+disruption-crustal: none published
 mechanism: Modelling of a magnitude 9 megathrust puts one to two weeks of disrupted service at some Vancouver-area ports, road access to the airport cut for the first few days because every bridge leading to it is damaged, and moderate liquefaction damage at the port areas on the delta.
 source: AIR-2013
 ---
@@ -117,13 +118,13 @@ liquefaction assessment work on the Deltaport Berth 3 expansion. [RBT2-CVS-19] T
 
 > **Not an engineering assessment.** Every duration on this page for the port and the
 > airport comes from that one model run, against the infrastructure as it stood thirteen
-> years ago. [AIR-2013] The band rests on it, and on nothing that inspected a wharf.
+> years ago. [AIR-2013] Nothing that inspected a wharf stands behind them.
 
 ## The crustal earthquake remains unassessed
 
-The band for the megathrust rests on that one study, and the study modelled the magnitude
+What this page says about the megathrust rests on that one study, and the study modelled the magnitude
 9 megathrust and nothing else. [AIR-2013] What the port, the airport and the ferry
-terminals would face in a shallow crustal earthquake close to the city has not been published by anyone. So the crustal earthquake carries no band on this page. That gap in the public record says nothing about whether the nearer earthquake would be gentler.
+terminals would face in a shallow crustal earthquake close to the city has not been published by anyone. That gap in the public record says nothing about whether the nearer earthquake would be gentler.
 
 The province's crustal planning scenario does name two of them, as exposure and not as
 damage: "Liquefaction of roadways in Richmond and Delta may make driving difficult, which

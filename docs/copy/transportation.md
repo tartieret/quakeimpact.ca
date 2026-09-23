@@ -4,7 +4,7 @@ title: Transportation
 nav: Transportation
 hook: A bridge may survive an earthquake without being usable afterwards.
 lede: British Columbia gives first retrofit priority to bridges on emergency routes. The work protects life, but the Ministry says those bridges are not being upgraded to remain in service after a major earthquake.
-bands: { cascadia: high, crustal: high }
+disruption: Weeks to months at much-reduced capacity [PEIRS]
 mechanism: The province designates routes for emergency vehicles after a major earthquake. It also states that the bridges on those routes are not being retrofitted to remain in service.
 source: MOTI-SRDC-05
 ---

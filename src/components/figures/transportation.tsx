@@ -370,8 +370,7 @@ const TEXT_X = SEG_COUNT * (SEG_W + SEG_GAP) + 8;
 const LADDER_HEIGHT = L_ROW_TOP + 2 * L_ROW_H + 42;
 
 /**
- * One rung. The meter fills the same way the band meter does everywhere else
- * on the site: more segments filled is worse, so the ordinal survives in
+ * One rung. More segments filled is worse, so the ordinal survives in
  * greyscale and does not rest on position alone.
  */
 function ServiceLevel({

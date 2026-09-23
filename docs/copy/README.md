@@ -61,8 +61,8 @@ conditions came after the MVP. The rest of the table is the MVP in
 
 [`unwritten.md`](unwritten.md) is not a page and has no route. It holds the standing
 text a page shows when its evidence has been gathered and its body has not been
-written, in two variants: one for a system page under `/after/`, which carries a band,
-and one for a shaking page under `/shaking/`, which does not.
+written, in two variants: one for a system page under `/after/`, which carries an
+impact summary, and one for a shaking page under `/shaking/`, which does not.
 
 ---
 
@@ -75,7 +75,7 @@ title: Water
 nav: Water
 hook: <the one line that appears on cards and in the grid>
 lede: <the standfirst, one or two sentences>
-bands: { cascadia: high, crustal: high }
+disruption: Many months [PEIRS]
 mechanism: <the one sentence that sits in the impact cell>
 source: MV-WATER-22
 ---
@@ -95,9 +95,11 @@ Body.
 <keys, resolving in ../research/sources.md>
 ```
 
-Front matter feeds `src/content/site.ts`. `bands`, `mechanism` and `source`
+Front matter feeds `src/content/site.ts`. `disruption`, `mechanism` and `source`
 appear on system pages only, and their values come from
-`../research/impact-bands.md` rather than from memory.
+`../research/impact-bands.md` rather than from memory. `disruption` is how long the
+system is out in the words of the document that says so, with that document's key;
+`none published` where no document states it.
 
 `hook` is the one line a card carries, so it only has somewhere to go on a page
 that appears on a card: a system page under `/after/` and a Part 1 page under
@@ -105,13 +107,13 @@ that appears on a card: a system page under `/after/` and a Part 1 page under
 `lede` is the first line a reader sees. Write one anyway if it helps settle what
 the page is about, but do not expect to find it rendered.
 
-`source` is the third of the three fields `Impact` in `src/content/types.ts`
-requires, alongside the band and the mechanism sentence. It is one key, the one the
+`source` is one of the two fields `Impact` in `src/content/types.ts` requires,
+alongside the mechanism sentence. It is one key, the one the
 mechanism sentence rests on, and it is not the same list as **Sources on this page**.
 All fourteen system files carry it.
 
 `outside-help.md` is the one file whose front matter does not fit that shape. Its
-two columns carry different mechanism sentences and its Low column carries an
+two scenarios carry different mechanism sentences and the crustal one carries an
 `Impact.evidence` guard, so it writes `mechanism-cascadia`, `mechanism-crustal` and
 `evidence-crustal` instead of one `mechanism`. `src/content/site.ts` is where those
 three strings live.
@@ -165,7 +167,7 @@ shows. It stays, because a page can be returned to draft while its text is under
 revision: `status: "draft"` goes on the system in `../../src/content/site.ts`, on
 the entry in `SHAKING_PAGES`, or on a page module's `meta`.
 
-Dams carries no band in either column, and port, airport and ferry terminals
-carries none in the crustal column. Both pages are written and say so in the
+Dams has no published estimate for either earthquake, and port, airport and ferry
+terminals has none for the crustal one. Both pages are written and say so in the
 reader's terms, because what is missing there is the public record rather than
 the copy.

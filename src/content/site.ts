@@ -1,5 +1,4 @@
 import type {
-  Band,
   Impact,
   NavItem,
   PageStatus,
@@ -71,36 +70,6 @@ export const SCENARIOS: Record<ScenarioId, Scenario> = {
 
 export const SCENARIO_ORDER: ScenarioId[] = ["cascadia", "crustal"];
 
-/* ------------------------------------------------------------------ */
-/* Impact bands                                                        */
-/* ------------------------------------------------------------------ */
-
-export const BANDS: Record<
-  Band,
-  { label: string; duration: string; extent: string }
-> = {
-  low: {
-    label: "Low",
-    duration: "Hours to a few days",
-    extent: "Localised",
-  },
-  medium: {
-    label: "Medium",
-    duration: "Days to weeks",
-    extent: "Patchy, worst on poor ground",
-  },
-  high: {
-    label: "High",
-    duration: "Weeks to months, sometimes longer",
-    extent: "Regional",
-  },
-  unknown: {
-    label: "Not yet assessed",
-    duration: "Not published",
-    extent: "Not published",
-  },
-};
-
 export const PHASES: { id: Phase; label: string; window: string }[] = [
   { id: "hours", label: "Hours", window: "0–24 h" },
   { id: "days", label: "Days", window: "1–7 days" },
@@ -113,54 +82,17 @@ export const PHASES: { id: Phase; label: string; window: string }[] = [
 /* ------------------------------------------------------------------ */
 
 /**
- * Both columns rest on one assessment, which is the usual case: the published
- * work assesses a single design earthquake per system. `evidence` is written
- * on the column that assessment does not model, so a reader on that toggle is
- * told which earthquake the sentence was measured on.
- */
-const bothScenarios = (
-  bands: [Band, Band],
-  mechanism: string,
-  source: string,
-  evidence: Partial<Record<ScenarioId, string>> = {},
-): Record<ScenarioId, Impact> => ({
-  cascadia: {
-    band: bands[0],
-    mechanism,
-    source,
-    ...(evidence.cascadia ? { evidence: evidence.cascadia } : {}),
-  },
-  crustal: {
-    band: bands[1],
-    mechanism,
-    source,
-    ...(evidence.crustal ? { evidence: evidence.crustal } : {}),
-  },
-});
-
-/** What the crustal column says wherever the assessment modelled the megathrust. */
-const MEGATHRUST_ONLY =
-  "The assessment behind this models the magnitude 9 megathrust; nothing published covers the shallow crustal earthquake.";
-
-/** And the reverse, for the province's plan, which is written on the crustal M7. */
-const CRUSTAL_ONLY =
-  "The province wrote this for its shallow crustal M7 scenario; nothing published states it for the megathrust.";
-
-/**
- * Fourteen systems. Bands, mechanism sentences and source keys all come from
- * `docs/research/impact-bands.md`, which is the authority for the assignment;
- * the per-system files under `docs/research/systems/` carry the working behind
- * each one. Weather is deliberately absent: it does not fail, so it cannot
- * carry a band. It is a condition of each scenario and renders on the timeline.
+ * Fourteen systems. Mechanism sentences, durations and source keys come from
+ * the research: `docs/research/impact-bands.md` holds the assignment and the
+ * per-system files under `docs/research/systems/` carry the working behind
+ * each one. Weather is deliberately absent: it does not fail. It is a condition
+ * of each scenario and renders on the timeline.
+ *
+ * A duration is written in the source's own terms and never sharpened into a
+ * number. Where no document states one, `disruption` is absent and the table
+ * says no estimate is published.
  */
 export const SYSTEMS: SystemEntry[] = [
-  // Medium because the province's own megathrust assessment states a duration,
-  // and it is days to weeks rather than the weeks to months electricity gets.
-  // The band used to rest on CRTC-2025-226, which establishes that no rule sets
-  // a backup-power run time — a fact about the rules, not about how long the
-  // network is down, and so not a fact that can choose between Medium and High.
-  // It waits on electricity and fuel, both High, and still reads Medium: the
-  // published duration sets the band. See `docs/research/impact-bands.md`.
   {
     slug: "communications",
     name: "Communications",
@@ -168,12 +100,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["electricity", "fuel"],
-    impacts: bothScenarios(
-      ["medium", "medium"],
-      "The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel, with satellite phones and amateur radio used as backups.",
-      "DCRRA-2025",
-      { crustal: MEGATHRUST_ONLY },
-    ),
+    impact: {
+      mechanism:
+        "The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel, with satellite phones and amateur radio used as backups.",
+      source: "DCRRA-2025",
+      disruption: { text: "Days to weeks", source: "DCRRA-2025" },
+    },
   },
   {
     slug: "electricity",
@@ -182,11 +114,15 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "days",
     tier: 1,
     dependsOn: ["transportation", "fuel"],
-    impacts: bothScenarios(
-      ["high", "high"],
-      "BC Hydro states that a large earthquake could leave up to two thirds of its downtown Vancouver customers without power for several weeks. Full restoration could take years.",
-      "BCH-WESTEND-25",
-    ),
+    impact: {
+      mechanism:
+        "BC Hydro states that a large earthquake could leave up to two thirds of its downtown Vancouver customers without power for several weeks. Full restoration could take years.",
+      source: "BCH-WESTEND-25",
+      disruption: {
+        text: "Several weeks downtown, years to restore fully",
+        source: "BCH-WESTEND-25",
+      },
+    },
   },
   {
     slug: "water",
@@ -195,12 +131,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "days",
     tier: 1,
     dependsOn: ["electricity", "transportation"],
-    impacts: bothScenarios(
-      ["high", "high"],
-      "A magnitude 9 megathrust is modelled to cause 267 water main failures across Metro Vancouver. About 60 occur where mains cross under rivers and inlets, the hardest locations to repair.",
-      "MV-WATER-22",
-      { crustal: MEGATHRUST_ONLY },
-    ),
+    impact: {
+      mechanism:
+        "A magnitude 9 megathrust is modelled to cause 267 water main failures across Metro Vancouver. About 60 occur where mains cross under rivers and inlets, the hardest locations to repair.",
+      source: "MV-WATER-22",
+      disruption: { text: "Many months", source: "PEIRS" },
+    },
   },
   {
     slug: "sanitation",
@@ -209,15 +145,15 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "electricity"],
-    impacts: bothScenarios(
-      ["high", "high"],
-      "The province expects water and wastewater disruption for many months. Some treatment plants meet a post-disaster standard, but this says nothing about the sewer network feeding them.",
-      "PEIRS",
-      { cascadia: CRUSTAL_ONLY },
-    ),
+    impact: {
+      mechanism:
+        "The province expects water and wastewater disruption for many months. Some treatment plants meet a post-disaster standard, but this says nothing about the sewer network feeding them.",
+      source: "PEIRS",
+      disruption: { text: "Many months", source: "PEIRS" },
+    },
   },
   // Restoration is rate-limited by sending a qualified person into every
-  // affected building, which no other system on the grid is.
+  // affected building, which no other system is.
   {
     slug: "gas",
     name: "Natural gas",
@@ -225,11 +161,12 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["transportation", "fuel"],
-    impacts: bothScenarios(
-      ["high", "high"],
-      "Gas cannot be restored in bulk: any air drawn into the pipes has to be purged first, and then service returns only as a technician enters each affected building and relights every appliance in it.",
-      "BCUC-C-6-25",
-    ),
+    impact: {
+      mechanism:
+        "Gas cannot be restored in bulk: any air drawn into the pipes has to be purged first, and then service returns only as a technician enters each affected building and relights every appliance in it.",
+      source: "BCUC-C-6-25",
+      disruption: { text: "Several weeks", source: "BCUC-C-6-25" },
+    },
   },
   {
     slug: "transportation",
@@ -238,14 +175,18 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "days",
     tier: 1,
     dependsOn: ["fuel"],
-    impacts: bothScenarios(
-      ["high", "high"],
-      "The province designates routes for emergency vehicles after a major earthquake. It also states that the bridges on those routes are not being retrofitted to remain in service.",
-      "MOTI-SRDC-05",
-    ),
+    impact: {
+      mechanism:
+        "The province designates routes for emergency vehicles after a major earthquake. It also states that the bridges on those routes are not being retrofitted to remain in service.",
+      source: "MOTI-SRDC-05",
+      disruption: {
+        text: "Weeks to months at much-reduced capacity",
+        source: "PEIRS",
+      },
+    },
   },
-  // Medium for Cascadia and unassessed for the crustal M7, not because the
-  // crustal event is milder but because the only study models Cascadia alone.
+  // Split, not because the crustal event is milder but because the only study
+  // models the megathrust alone.
   {
     slug: "large-infrastructure",
     name: "Port, airport and ferry terminals",
@@ -253,15 +194,17 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "weeks",
     tier: 3,
     dependsOn: ["transportation", "electricity"],
-    impacts: {
+    byScenario: {
       cascadia: {
-        band: "medium",
         mechanism:
           "Modelling of a magnitude 9 megathrust puts one to two weeks of disrupted service at some Vancouver-area ports, road access to the airport cut for the first few days because every bridge leading to it is damaged, and moderate liquefaction damage at the port areas on the delta.",
         source: "AIR-2013",
+        disruption: {
+          text: "One to two weeks at some ports",
+          source: "AIR-2013",
+        },
       },
       crustal: {
-        band: "unknown",
         mechanism:
           "No published work states what these facilities would face in a shallow crustal earthquake; the one study that assesses them models the megathrust and nothing else.",
         source: "AIR-2013",
@@ -275,12 +218,15 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "days",
     tier: 2,
     dependsOn: ["transportation", "electricity", "large-infrastructure"],
-    impacts: bothScenarios(
-      ["high", "high"],
-      "Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable.",
-      "PEIRS",
-      { cascadia: CRUSTAL_ONLY },
-    ),
+    impact: {
+      mechanism:
+        "Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable.",
+      source: "PEIRS",
+      disruption: {
+        text: "Weeks to months of reduced road capacity",
+        source: "PEIRS",
+      },
+    },
   },
   {
     slug: "food",
@@ -294,12 +240,12 @@ export const SYSTEMS: SystemEntry[] = [
       "electricity",
       "large-infrastructure",
     ],
-    impacts: bothScenarios(
-      ["high", "high"],
-      "The province expects delivery networks for food and household supplies to take weeks or months to recover.",
-      "PEIRS",
-      { cascadia: CRUSTAL_ONLY },
-    ),
+    impact: {
+      mechanism:
+        "The province expects delivery networks for food and household supplies to take weeks or months to recover.",
+      source: "PEIRS",
+      disruption: { text: "Weeks or months", source: "PEIRS" },
+    },
   },
   // Both dams were reviewed in 2024 under legal compulsion and neither
   // published conclusion mentions earthquakes. Assessed, but not for this.
@@ -310,11 +256,11 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "hours",
     tier: 3,
     dependsOn: [],
-    impacts: bothScenarios(
-      ["unknown", "unknown"],
-      "Engineers reviewed Cleveland and Seymour Falls dams in 2024, as required every seven years for dams in the top consequence class. Neither review identified an unsafe condition, and neither published conclusion mentions earthquakes.",
-      "MV-DSP-2026",
-    ),
+    impact: {
+      mechanism:
+        "Engineers reviewed Cleveland and Seymour Falls dams in 2024, as required every seven years for dams in the top consequence class. Neither review identified an unsafe condition, and neither published conclusion mentions earthquakes.",
+      source: "MV-DSP-2026",
+    },
   },
   {
     slug: "housing",
@@ -323,11 +269,15 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "weeks",
     tier: 2,
     dependsOn: ["water", "sanitation", "electricity"],
-    impacts: bothScenarios(
-      ["high", "high"],
-      "In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.",
-      "COV-RISK-2024",
-    ),
+    impact: {
+      mechanism:
+        "In Vancouver, areas with high concentrations of damage may be closed off for weeks, months or even years, which keeps people out of homes that came through the shaking.",
+      source: "COV-RISK-2024",
+      disruption: {
+        text: "Weeks to years where damage is heaviest",
+        source: "COV-RISK-2024",
+      },
+    },
   },
   {
     slug: "health-care",
@@ -336,31 +286,29 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "hours",
     tier: 2,
     dependsOn: ["fuel", "electricity", "water", "transportation"],
-    impacts: bothScenarios(
-      ["medium", "medium"],
-      "A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no government or health authority has set the expected casualty load against the region's bed capacity.",
-      "DCRRA-APPC",
-    ),
+    impact: {
+      mechanism:
+        "A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no government or health authority has set the expected casualty load against the region's bed capacity.",
+      source: "DCRRA-APPC",
+    },
   },
-  // Unbanded, and not hatched. A band measures restoration time, and how people
-  // treat each other has none, so there is nothing for "not yet assessed" to be
-  // waiting on; Low would be past disasters elsewhere setting a band, which the
-  // rubric does not allow. One sentence stands for both earthquakes because none
-  // of the evidence was measured on either. No phase, because the only timing
-  // on record is two events, and no `dependsOn`, because no document names an
-  // edge. See `docs/research/social-disorder.md`.
+  // No phase, because the only timing on record is two events, and no
+  // `dependsOn`, because no document names an edge. See
+  // `docs/research/social-disorder.md`.
   {
     slug: "safety-and-conflict",
     name: "Safety and conflict",
     hook: "Most people help one another after a disaster. Theft and violence are the exception.",
     tier: 3,
     dependsOn: [],
-    summary: {
+    impact: {
       mechanism:
         "Most people help one another after a disaster. Theft and violence still occur, but usually as isolated cases that news coverage can make seem widespread.",
       source: "KATRINA-MYTHS-08",
     },
   },
+  // Split because the province states a different assumption for each
+  // earthquake: this is the one row where the two genuinely differ.
   {
     slug: "outside-help",
     name: "Where help comes from",
@@ -368,24 +316,47 @@ export const SYSTEMS: SystemEntry[] = [
     bitesAt: "days",
     tier: 3,
     dependsOn: ["transportation", "large-infrastructure"],
-    impacts: {
+    byScenario: {
       cascadia: {
-        band: "high",
         mechanism:
           "The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states that the United States will be unable to deliver mutual aid.",
         source: "PEIRS",
+        disruption: {
+          text: "Help arrives later, with no US mutual aid",
+          source: "PEIRS",
+        },
       },
       crustal: {
-        band: "low",
         mechanism:
           "The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and a local crustal earthquake is the case where that assumption holds.",
         source: "PEIRS",
         evidence:
           "This is a planning assumption the province states, not a measured finding about how help would arrive.",
+        disruption: {
+          text: "Outside agencies expected to be available",
+          source: "PEIRS",
+        },
       },
     },
   },
 ];
+
+/**
+ * A system's impacts as the page draws them: one entry standing for both
+ * earthquakes, or one per earthquake where the two differ. `scenario` is null
+ * on the shared entry.
+ */
+export function impactsOf(
+  system: SystemEntry,
+): { scenario: ScenarioId | null; impact: Impact }[] {
+  if (system.byScenario) {
+    return SCENARIO_ORDER.map((scenario) => ({
+      scenario,
+      impact: system.byScenario[scenario],
+    }));
+  }
+  return [{ scenario: null, impact: system.impact }];
+}
 
 export const systemBySlug = (slug: string) =>
   SYSTEMS.find((s) => s.slug === slug);
@@ -466,7 +437,7 @@ export const SHAKING_PAGES: {
  * desktop page. Three of the five parts have none, so a menu that opens on two
  * of the five teaches a reader it is not worth trying; fourteen systems is a
  * directory rather than a menu; and the site is a sequence, where a page
- * assumes the bands and the scenario toggle the part before it set up. The
+ * assumes the scenarios the part before it set up. The
  * lists belong where a reader is already looking for one: at the foot of a
  * page they have finished, in the footer index, and in the menu on a phone,
  * which is a panel with room to nest rather than a hover target.
@@ -496,7 +467,7 @@ export const NAV: NavItem[] = [
 ];
 
 export const UTILITY_NAV: NavItem[] = [
-  { href: "/method/", label: "Method & bands" },
+  { href: "/method/", label: "Method" },
   { href: "/sources/", label: "Sources" },
   { href: "/licences/", label: "Licences" },
   { href: "/contribute/", label: "Contribute" },

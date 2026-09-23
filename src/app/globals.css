@@ -311,7 +311,7 @@
     color: var(--color-ink-muted);
   }
 
-  /* A hatched fill so "not yet assessed" never reads as a real band. */
+  /* A hatched fill so a gap in the record never reads as a finding. */
   .hatch {
     background-image: repeating-linear-gradient(
       45deg,

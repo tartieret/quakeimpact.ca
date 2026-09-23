@@ -54,22 +54,21 @@ in the first critical days, because every bridge leading to it is damaged. [AIR-
 
 Several systems that fail in the first hours take months to restore.
 
-## What the impact bands measure
+## How long each system is out
 
-Each system carries one of three bands for each earthquake, Low, Medium or High, and a
-fourth state, not yet assessed, drawn hatched. Every coloured cell comes with one
-sentence saying how the system fails and a link to the document that says so.
-[How the bands work](/method/).
+Each system is listed with how long the disruption is expected to last, in the words of
+the document that says so. Where no document states it, the table says so. That is a gap
+in the public record, not a finding that the system would hold up.
+[How this site works](/method/).
 
-Dams and reservoirs are hatched in both scenarios: Cleveland and Seymour Falls dams
-were each reviewed by an engineer in 2024, as the law requires, neither review
-identified an unsafe condition, and neither published conclusion mentions earthquakes.
-[MV-DSP-2026] The seismic upgrade work at Cleveland has not started.
-[MV-CAPEX-2026] Port, airport and ferry terminals carry a band for the megathrust
-and a hatch for the crustal earthquake, because the one study that exists modelled the
-megathrust and nothing else. [AIR-2013] Safety and conflict carries no band at all, because
-how people treat each other has no restoration time: most people help one another after a
-disaster, and theft and violence are isolated cases. [KATRINA-MYTHS-08]
+Dams and reservoirs have no published estimate: Cleveland and Seymour Falls dams were
+each reviewed by an engineer in 2024, as the law requires, neither review identified an
+unsafe condition, and neither published conclusion mentions earthquakes. [MV-DSP-2026]
+The seismic upgrade work at Cleveland has not started. [MV-CAPEX-2026] For port,
+airport and ferry terminals, the one study that exists modelled the megathrust and
+nothing else. [AIR-2013] Safety and conflict has no restoration time at all: most people
+help one another after a disaster, and theft and violence are isolated cases.
+[KATRINA-MYTHS-08]
 
 ## The systems
 
@@ -92,4 +91,4 @@ before you need to.
 
 [PEIRS] [MV-DEBRIS-17] [MV-WATER-22] [CRTC-2025-226] [DCRRA-APPC] [BCH-WESTEND-25]
 [MOTI-SRDC-05] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [KATRINA-MYTHS-08]
-[PREPAREDBC] [DCRRA-2025]
+[DCRRA-2025] [COV-RISK-2024] [PREPAREDBC]

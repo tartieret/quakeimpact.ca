@@ -4171,9 +4171,9 @@ export const REFERENCES: Record<string, Reference> = {
   "page-method": {
     id: "page-method",
     kind: "page",
-    title: "How the bands are defined",
+    title: "How this site works",
     href: "/method/",
-    note: "The rubric behind every low, medium and high on the site.",
+    note: "How the site reads its evidence, and where it stops.",
   },
   "page-fuel": {
     id: "page-fuel",

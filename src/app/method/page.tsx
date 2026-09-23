@@ -6,14 +6,15 @@ import { method } from "@/content/pages/method";
 import { metadataFor } from "@/content/metadata";
 
 /**
- * Method and bands.
+ * How this site works.
  *
  * The template holds no words of its own. The body comes from the page module
  * in `@/content/pages/method`, which is where `docs/copy/method.md` landed.
  *
  * The page ships with the rest of the site rather than after it. A reader who
- * meets a hatched cell without this page has no way to tell a gap in the
- * public record from a gap in the work, and reads the first as the second.
+ * meets "No published estimate" without this page has no way to tell a gap
+ * in the public record from a gap in the work, and reads the first as the
+ * second.
  *
  * The copy has no "What you can do", so there is no `Lever` here. Every other
  * long page ends with one; this one ends with what the reader can send us.

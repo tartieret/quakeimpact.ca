@@ -77,8 +77,7 @@ the style guide's sentence rules over rendered text; `shoot.mjs` writes screensh
 - **A `"use client"` file ships what it imports.** `citation.tsx` importing `REFERENCES`
   put the whole register (about 145 KB minified) on every page with a citation. The
   server `citation.tsx` now resolves the page's keys and hands only those entries to
-  `citation-client.tsx`; `impact-cell.tsx` is a Server Component and `band.tsx` only
-  draws. Importing page modules also pulls in their client components, which is why
+  `citation-client.tsx`; `impact-cell.tsx` is a Server Component. Importing page modules also pulls in their client components, which is why
   `/sources/` loads the 13 KB chunk the system pages share.
 - **`Impact.source` keys are citation keys**, resolved against `REFERENCES`; an unknown
   key fails visibly, as `[?]` does.

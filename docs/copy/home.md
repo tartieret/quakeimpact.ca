@@ -123,8 +123,8 @@ Governments, utilities and the engineers they hire wrote them. Pages mark gaps
 where nobody has published an answer. Where two official documents contradict
 each other, both are here.
 
-How long something is out is written as one of three bands: Low, Medium or High,
-with a fourth for not yet assessed. [How the bands work](/method/). [The
+How long something is out is given in the source's own words, and never sharpened into
+a number it does not give. [How this site works](/method/). [The
 sources](/sources/) lists every document, and if you find something wrong,
 [contribute](/contribute/) says what a correction needs.
 

@@ -4,7 +4,7 @@ title: Natural gas
 nav: Natural gas
 hook: Restoring gas requires a visit to every affected building.
 lede: FortisBC's fastest estimate is 8,716 appliance relights a day. It assumes the utility's full workforce, mutual aid and every available private gas contractor in the Lower Mainland. [FEI-RESILIENCY-24] A qualified worker must enter each affected building before service can return.
-bands: { cascadia: high, crustal: high }
+disruption: Several weeks [BCUC-C-6-25]
 mechanism: Gas cannot be restored in bulk: any air drawn into the pipes has to be purged first, and then service returns only as a technician enters each affected building and relights every appliance in it.
 source: BCUC-C-6-25
 ---

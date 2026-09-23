@@ -50,7 +50,7 @@ export default function PreparePage() {
 
         <NextPrev
           prev={{ href: "/getting-around/", label: "Getting around" }}
-          next={{ href: "/method/", label: "Method & bands" }}
+          next={{ href: "/method/", label: "Method" }}
         />
       </ArticleShell>
     </Citations>

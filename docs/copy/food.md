@@ -4,7 +4,7 @@ title: Food
 nav: Food
 hook: Fresh food depends on regular deliveries.
 lede: The province expects existing supply chains to stop working. Deliveries of fresh food could take weeks or months to recover. [PEIRS] No level of government stores food for the public during that gap.
-bands: { cascadia: high, crustal: high }
+disruption: Weeks or months [PEIRS]
 mechanism: The province expects delivery networks for food and household supplies to take weeks or months to recover.
 source: PEIRS
 ---

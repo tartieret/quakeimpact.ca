@@ -4,7 +4,7 @@ title: Communications
 nav: Communications
 hook: Cell-site backup power lasts hours to days, and no rule sets a minimum.
 lede: The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel. [DCRRA-2025] Cell sites carry backup power for hours to a few days. [BELL-CRTC-RFI-26] [TELUS-CRTC-INT-25] No rule sets a minimum, and the regulator is still considering one. [CRTC-2025-226]
-bands: { cascadia: medium, crustal: medium }
+disruption: Days to weeks [DCRRA-2025]
 mechanism: The province expects communications to be disrupted for days to weeks. Surviving capacity would go first to emergency personnel, with satellite phones and amateur radio used as backups.
 source: DCRRA-2025
 ---

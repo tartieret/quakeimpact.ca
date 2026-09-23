@@ -1,29 +1,12 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import { Figure, Prose } from "@/components/page-parts";
-import {
-  MethodHatchedReasons,
-  MethodOneModel,
-  MethodTwoMediums,
-} from "@/components/figures/method";
-import { BandMeter } from "@/components/band";
-import { BANDS } from "@/content/site";
-import type { Band } from "@/content/types";
+import { MethodOneModel } from "@/components/figures/method";
 import type { PageModule } from "./index";
 
 /**
- * Method and bands. The body of `/method/`, ported from `docs/copy/method.md`.
- *
- * The words are the copy's, verbatim. Two things a reader sees are not in the
- * copy file, and both are furniture rather than claims:
- *
- * - The rubric under the first heading is drawn from `BANDS` in
- *   `@/content/site` rather than transcribed from the copy's table, so the
- *   definitions the reader is shown are the definitions the grid is banded
- *   against and the two cannot drift. The copy's table supplies the two
- *   questions; each row supplies its own answers.
- * - The hatched sample beside the fourth-state sentence, so that "drawn
- *   hatched" is something the reader can see rather than take on trust.
+ * How the site reads its evidence. The body of `/method/`, ported from
+ * `docs/copy/method.md`. The words are the copy's, verbatim.
  *
  * There is no table of return periods, and no figure of them either. The
  * copy's point is that a dam's 1-in-10,000-year earthquake and a building's
@@ -34,56 +17,26 @@ import type { PageModule } from "./index";
  *
  * The copy has no `## What you can do`, so this module has no `lever`. The
  * field is optional for this page and this page alone: the principle is no doom
- * without a lever, and the rubric states no doom. Writing one here would be
+ * without a lever, and this page states no doom. Writing one here would be
  * writing copy.
  */
-
-/** The three coloured bands, in the order the copy's table gives them. */
-const COLOURED: Band[] = ["low", "medium", "high"];
-
-const TERM = "text-xs tracking-wide text-ink-faint uppercase";
-
-/**
- * A band's name, with its meter. The meter carries the ordinal as filled
- * segments and the label carries the word, so neither rests on hue. It is not
- * a heading: the rubric is a list of definitions inside a section, and a run
- * of `<h3>` reading "Low", "Medium", "High" would fill the contents rail with
- * words that say nothing about the world.
- */
-function BandName({ band }: { band: Band }) {
-  return (
-    <div className="flex items-center gap-3">
-      <BandMeter band={band} />
-      <span className="font-display text-xl tracking-tight">
-        {BANDS[band].label}
-      </span>
-    </div>
-  );
-}
-
 export const method: PageModule = {
   meta: {
     route: "/method/",
-    title: "How the impact bands work",
+    title: "How this site works",
     description:
-      "Impact bands summarize restoration time and geographic extent for each system and earthquake scenario.",
-    nav: "Method & bands",
+      "Every statement on this site comes from a published document. How the evidence is read, and where it stops.",
+    nav: "Method",
     standfirst:
-      "Each impact band summarizes restoration time and geographic extent. The accompanying note and source explain the evidence behind it.",
+      "Every statement on this site comes from a published document. This page explains how that evidence is read, and where it stops.",
     /**
      * First-cited order, which is the order the markers are numbered in. It is
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
-      "MV-DSP-2026",
-      "MV-CAPEX-2026",
-      "AIR-2013",
-      "KATRINA-MYTHS-08",
-      "DCRRA-2025",
-      "CRTC-2025-226",
-      "DCRRA-APPC",
       "BCH-WESTEND-25",
       "NRCAN-SCEN",
+      "DCRRA-2025",
       "PEIRS",
       "GSC-OF-8853",
       "EGBC-DSR-GL",
@@ -95,179 +48,31 @@ export const method: PageModule = {
 
   sections: [
     {
-      title: "What a band measures",
+      title: "Every statement reaches its document",
       body: (
         <Prose>
           <p>
-            Impacts here are given as Low, Medium or High, not as a number of
-            days. Most published work assesses one design earthquake, so a
-            any figure in between would require new modelling.
+            Each system page gives one sentence saying how the system fails,
+            how long the disruption is expected to last where a document
+            states it, and a link to that document. Durations stay in the
+            source’s own words, such as “days to weeks” or “many months”, and
+            are never sharpened into a number the source does not give.
           </p>
           <p>
-            A band is set by how long the system is out, wherever a document
-            states a duration.
-          </p>
-          <ul className="flex list-none flex-col gap-px overflow-hidden rounded-xl border border-rule bg-rule p-0">
-            {COLOURED.map((band) => (
-              <li key={band} className="mt-0 bg-paper-raised p-5">
-                <BandName band={band} />
-                <dl className="mt-4 grid gap-x-4 gap-y-2 text-sm sm:grid-cols-[9rem_1fr]">
-                  <dt className={TERM}>How long</dt>
-                  <dd>{BANDS[band].duration}</dd>
-                  <dt className={TERM}>How widely</dt>
-                  <dd>{BANDS[band].extent}</dd>
-                </dl>
-              </li>
-            ))}
-          </ul>
-          <p>
-            The same two questions are asked of every system, so that High for
-            sewer service and High for roads mean comparable things. Where a
-            published duration exists, it sets the band. How widely a failure
-            spreads is context and does not change the band. Neither does what
-            else a system needs, so a system can sit below something it relies on:
-            electricity is High and communications is Medium, because a cell
-            site comes back when a generator gets fuel and a distribution
-            network comes back one pole at a time.
-          </p>
-          <div className="rounded-xl border border-rule bg-paper-raised p-5">
-            <BandName band="unknown" />
-            <p className="mt-3 leading-relaxed">
-              A fourth state, <strong>not yet assessed</strong>, is drawn with
-              hatching. It is a real answer, not a blank waiting to be filled.
-            </p>
-          </div>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "A band reflects published evidence",
-      body: (
-        <Prose>
-          <p>
-            A system banded High is a system somebody has assessed and found
-            slow to restore. A system marked not yet assessed is a system nobody
-            has published an assessment of, and that says nothing at all about
-            whether it would hold up.
-          </p>
-          <p>Three cells on the grid are hatched today, for two reasons.</p>
-          <p>
-            Dams and reservoirs are hatched in both scenarios. Cleveland and
-            Seymour Falls dams were each reviewed by an engineer in 2024, as the
-            law requires every seven years for dams in the top consequence
-            class. Neither review identified an unsafe or unacceptable condition, and neither
-            published conclusion mentions earthquakes. <Cite id="MV-DSP-2026" />{" "}
-            Metro Vancouver is still paying for seismic evaluations of both
-            dams, and the upgrade work at Cleveland has not started.{" "}
-            <Cite id="MV-CAPEX-2026" /> So the dams have been assessed, but
-            not for this, which is a different thing from never having been
-            looked at.
+            Most published work assesses one design earthquake, so one sentence
+            usually stands for both scenarios. Where the two earthquakes
+            genuinely differ, as they do for where help comes from, the page
+            shows each.
           </p>
           <p>
-            Port, airport and ferry terminals carry a band in one scenario and a
-            hatch in the other. The megathrust column is banded Medium because a
-            study modelled that earthquake. <Cite id="AIR-2013" /> The crustal
-            column is hatched because the same study modelled no crustal
-            earthquake. Nobody is saying the terminals do better or worse in the
-            nearer earthquake. Nobody has looked.
+            Where no document states how long a system would be out, the page
+            says so. That is a statement about the public record, not about the
+            infrastructure: a missing estimate says nothing about whether a
+            system would hold up.
           </p>
           <p>
-            Safety and conflict carries no band and no hatch. How people treat
-            each other after a disaster does not come back on a schedule, so
-            there is no restoration time for a band to measure, and nothing is
-            missing from the record. Most people help one another, and theft and
-            violence are isolated cases. <Cite id="KATRINA-MYTHS-08" />
+            A sentence with a number in it and nothing to click is a mistake.
           </p>
-          <p>
-            One other row changes between the two scenarios, and it changes for
-            a different reason. Where help comes from is High for the megathrust
-            and Low for the crustal earthquake because the two earthquakes
-            genuinely differ: one shakes the whole coast at once, and the other
-            does not. Port, airport and ferry terminals differ only in how much
-            has been written down.
-          </p>
-          <Figure
-            alt="Dams and reservoirs are hatched in both scenarios, and port, airport and ferry terminals only in the crustal one, because of which documents happen to exist; where help comes from changes between High and Low because the two earthquakes genuinely differ. A hatch means no assessment of that system in that earthquake has been published, never that the system would do badly."
-            caption={
-              <>
-                The two rows above the rule differ because of which documents
-                exist. <Cite id="MV-DSP-2026" /> <Cite id="AIR-2013" /> The row
-                below it differs because the two earthquakes do. The meter
-                carries the band as filled segments, so the ordinal reads
-                without colour.
-              </>
-            }
-          >
-            <MethodHatchedReasons />
-          </Figure>
-          <p>Bands move when a document appears, in either direction.</p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "Every band includes its basis and source",
-      body: (
-        <Prose>
-          <p>
-            A colour on its own is an assertion. Each cell on the grid carries
-            the band, one sentence saying how the system fails, and a link to
-            the document the sentence comes from. A cell that cannot carry all
-            three is not coloured.
-          </p>
-          <p>
-            The same rule applies to the writing around the grid. A sentence
-            with a number in it and nothing to click is a mistake.
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "The same band can have different causes",
-      body: (
-        <Prose>
-          <p>
-            Medium is the label most likely to mislead, because uncertainty
-            comes in kinds.
-          </p>
-          <p>
-            Communications is Medium because disruption in the megathrust
-            scenario continues for days to weeks, with what capacity survives
-            prioritised for emergency personnel.{" "}
-            <Cite id="DCRRA-2025" /> The uncertainty is about everything around
-            that sentence: no rule sets how long a mobile phone site must keep
-            running on backup power, the regulator opened a proceeding to decide
-            what the requirement should be and has not decided,{" "}
-            <Cite id="CRTC-2025-226" /> and no carrier has published what its
-            sites here hold or how long restoration would take.
-          </p>
-          <p>
-            Health care is Medium because about 65 per cent of one health
-            authority’s buildings would likely be completely damaged at the
-            shaking level the current building code designs for, and no
-            published document compares the expected casualties to the number of
-            beds the region has. <Cite id="DCRRA-APPC" /> The damage is known.
-            The comparison is missing.
-          </p>
-          <p>
-            Each system page says which kind of uncertainty is behind its band.
-          </p>
-          <Figure
-            alt="Communications and health care are both banded Medium for different reasons: communications because no rule sets how long a mobile phone site must keep running on backup power and the regulator has not decided, and health care because about 65 per cent of one health authority's buildings would likely be completely damaged at the shaking level the code designs for and nobody has compared expected casualties to the beds the region has. The shared band does not mean the two situations are the same."
-            caption={
-              <>
-                The same band, and a different kind of thing missing behind it.
-                Communications is waiting on a rule the regulator has not
-                written. <Cite id="CRTC-2025-226" /> Health care has the damage
-                figure and not the comparison. <Cite id="DCRRA-APPC" /> A solid
-                swatch is what a document states, a hatched one is the gap.
-              </>
-            }
-          >
-            <MethodTwoMediums />
-          </Figure>
         </Prose>
       ),
     },
@@ -277,7 +82,7 @@ export const method: PageModule = {
       body: (
         <Prose>
           <p>
-            The grid covers the whole region. A lot of the evidence covers one
+            The site covers the whole region. A lot of the evidence covers one
             neighbourhood.
           </p>
           <p>
@@ -290,9 +95,8 @@ export const method: PageModule = {
             Shore.
           </p>
           <p>
-            The row is banded High because the grid is regional and that is the
-            only measured evidence available. The sentence beside it stays
-            narrow: downtown, and then the gap.
+            It is the only measured evidence available, so the site uses it,
+            and keeps the sentence narrow: downtown, and then the gap.
           </p>
         </Prose>
       ),
@@ -401,12 +205,13 @@ export const method: PageModule = {
     },
 
     {
-      title: "The bands will change as evidence improves",
+      title: "What is here will change as evidence improves",
       body: (
         <Prose>
           <p>
-            The documents the bands read are still being written. Four pieces of
-            work are outstanding, and each of them could move a band.
+            The documents this site reads are still being written. Four pieces
+            of work are outstanding, and each of them could change what a page
+            says.
           </p>
           <p>
             The second phase of the regional microzonation mapping, covering

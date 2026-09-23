@@ -1,93 +1,31 @@
 ---
 route: /method/
-title: How the impact bands work
-nav: Method & bands
-hook: A band summarizes restoration time and geographic extent.
-lede: Each impact band summarizes restoration time and geographic extent. The accompanying note and source explain the evidence behind it.
+title: How this site works
+nav: Method
+hook: Where the evidence comes from, and where it stops.
+lede: Every statement on this site comes from a published document. This page explains how that evidence is read, and where it stops.
 ---
 
-## What a band measures
+## Every statement reaches its document
 
-Impacts here are given as Low, Medium or High, not as a number of days. Most published
-work assesses one design earthquake, so any figure in between would require new modelling.
+Each system page gives one sentence saying how the system fails, how long the
+disruption is expected to last where a document states it, and a link to that
+document. Durations stay in the source's own words, such as "days to weeks" or "many
+months", and are never sharpened into a number the source does not give.
 
-A band is set by how long the system is out, wherever a document states a duration.
+Most published work assesses one design earthquake, so one sentence usually stands for
+both scenarios. Where the two earthquakes genuinely differ, as they do for where help
+comes from, the page shows each.
 
-| Band | How long | How widely |
-| --- | --- | --- |
-| **Low** | Hours to a few days | Localised |
-| **Medium** | Days to weeks | Patchy, worst on poor ground |
-| **High** | Weeks to months, sometimes longer | Regional |
+Where no document states how long a system would be out, the page says so. That is a
+statement about the public record, not about the infrastructure: a missing estimate
+says nothing about whether a system would hold up.
 
-The same two questions are asked of every system, so that High for sewer service and High for roads mean comparable things. A published duration sets the band. How widely a failure spreads is context and does not change the band. Neither does what else a system needs, so a system can sit below something it relies on: electricity is High and communications is Medium, because a cell site comes back when a generator gets fuel and a distribution network comes back one pole at a time.
-
-A fourth state, **not yet assessed**, is drawn with hatching. It is a real answer, not
-a blank waiting to be filled.
-
-## A band reflects published evidence
-
-A system banded High is a system somebody has assessed and found slow to restore. A
-system marked not yet assessed is a system nobody has published an assessment of, and
-that says nothing at all about whether it would hold up.
-
-Three cells on the grid are hatched today, for two reasons.
-
-Dams and reservoirs are hatched in both scenarios. Cleveland and Seymour Falls dams
-were each reviewed by an engineer in 2024, as the law requires every seven years for
-dams in the top consequence class. Neither review identified an unsafe or unacceptable condition, and neither published conclusion mentions earthquakes. [MV-DSP-2026] Metro Vancouver is
-still paying for seismic evaluations of both dams, and the upgrade work at Cleveland
-has not started. [MV-CAPEX-2026] So the dams have been assessed, but not for this,
-which is a different thing from never having been looked at.
-
-Port, airport and ferry terminals carry a band in one scenario and a hatch in the
-other. The megathrust column is banded Medium because a study modelled that
-earthquake. [AIR-2013] The crustal column is hatched because the same study modelled
-no crustal earthquake. Nobody is saying the terminals do better or worse in the nearer
-earthquake. Nobody has looked.
-
-Safety and conflict carries no band and no hatch. How people treat each other after a
-disaster does not come back on a schedule, so there is no restoration time for a band to
-measure, and nothing is missing from the record. Most people help one another, and theft
-and violence are isolated cases. [KATRINA-MYTHS-08]
-
-One other row changes between the two scenarios, and it changes for a different reason.
-Where help comes from is High for the megathrust and Low for the crustal earthquake
-because the two earthquakes genuinely differ: one shakes the whole coast at once, and
-the other does not. Port, airport and ferry terminals differ only in how much has been
-written down.
-
-Bands move when a document appears, in either direction.
-
-## Every band includes its basis and source
-
-A colour on its own is an assertion. Each cell on the grid carries the band, one
-sentence saying how the system fails, and a link to the document the sentence comes
-from. A cell that cannot carry all three is not coloured.
-
-The same rule applies to the writing around the grid. A sentence with a number in it and nothing to click is a mistake.
-
-## The same band can have different causes
-
-Medium is the label most likely to mislead, because uncertainty comes in kinds.
-
-Communications is Medium because disruption in the megathrust scenario continues for
-days to weeks, with what capacity survives prioritised for emergency personnel.
-[DCRRA-2025] The uncertainty is about everything around that sentence: no rule sets
-how long a mobile phone site must keep running on backup power, the regulator opened
-a proceeding to decide what the requirement should be and has not decided,
-[CRTC-2025-226] and no carrier has published what its sites here hold or how long
-restoration would take.
-
-Health care is Medium because about 65 per cent of one health authority's buildings
-would likely be completely damaged at the shaking level the current building code
-designs for, and no published document compares the expected casualties to the number
-of beds the region has. [DCRRA-APPC] The damage is known. The comparison is missing.
-
-Each system page says which kind of uncertainty is behind its band.
+A sentence with a number in it and nothing to click is a mistake.
 
 ## Some evidence covers only part of the region
 
-The grid covers the whole region. A lot of the evidence covers one neighbourhood.
+The site covers the whole region. A lot of the evidence covers one neighbourhood.
 
 Electricity is the clearest case. BC Hydro told its regulator in November 2025 that a
 large earthquake could leave up to two thirds of **downtown** customers without power,
@@ -95,8 +33,8 @@ that it "could take several weeks to restore power to customers", and years to f
 restore the system. [BCH-WESTEND-25] Nothing equivalent has been published for Surrey,
 Richmond or the North Shore.
 
-The row is banded High because the grid is regional and that is the only measured
-evidence available. The sentence beside it stays narrow: downtown, and then the gap.
+It is the only measured evidence available, so the site uses it, and keeps the
+sentence narrow: downtown, and then the gap.
 
 ## Governments use the same public loss model
 
@@ -146,10 +84,10 @@ a statement about what a structure was aimed at, not a forecast of what it will 
 A figure given here for a bridge or a tunnel says which of the two it
 is.
 
-## The bands will change as evidence improves
+## What is here will change as evidence improves
 
-The documents the bands read are still being written. Four pieces of work are
-outstanding, and each of them could move a band.
+The documents this site reads are still being written. Four pieces of work are
+outstanding, and each of them could change what a page says.
 
 The second phase of the regional microzonation mapping, covering Pitt Meadows, Maple
 Ridge and Langley, is due in late 2026. [MVSMMP] Metro Vancouver's governing drinking
@@ -163,6 +101,5 @@ a published document, a correction with a source behind it, or a pointer to a re
 
 ## Sources on this page
 
-[MV-DSP-2026] [MV-CAPITAL-2027] [AIR-2013] [KATRINA-MYTHS-08] [DCRRA-2025] [CRTC-2025-226]
-[DCRRA-APPC] [BCH-WESTEND-25] [NRCAN-SCEN] [PEIRS] [GSC-OF-8853] [EGBC-DSR-GL]
+[BCH-WESTEND-25] [NRCAN-SCEN] [DCRRA-2025] [PEIRS] [GSC-OF-8853] [EGBC-DSR-GL]
 [MVSMMP] [MV-DWMP-26] [BCH-DAMFAQ]

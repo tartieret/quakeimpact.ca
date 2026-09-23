@@ -64,7 +64,7 @@ tagline and every result for the site then reads the same.
 ## Porting a copy file
 
 - `route`, `title`, `nav` and the front-matter `lede` (as `standfirst`) go into
-  `meta`, and `description` is written from that same lede. `bands`, `mechanism`
+  `meta`, and `description` is written from that same lede. `mechanism`, `disruption`
   and `source` do not: they live in `SYSTEMS` in `src/content/site.ts` and the
   route renders them above the body.
 - Each `##` becomes a `PageSection`. The heading text is verbatim.

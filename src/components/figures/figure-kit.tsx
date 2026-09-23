@@ -27,8 +27,8 @@ import type { ReactNode } from "react";
  * redefines these under `prefers-color-scheme`, and a figure that referenced
  * `#14161a` would stay near-black on a near-black ground.
  *
- * The band ramp is here for a figure that encodes a band. Nothing else is
- * coloured: colour on this site carries meaning, and "this is the important
+ * The ramp (low, medium, high, unknown) is here for a figure that encodes an
+ * ordinal classification. Nothing else is coloured: colour on this site carries meaning, and "this is the important
  * bar" is not one of the meanings. A figure that needs to separate two things
  * separates them with a label, a position, a shape or a hatch.
  *
@@ -116,7 +116,7 @@ export function hatchId(id: string): string {
 
 /**
  * The hatch. It means the same thing everywhere on the site that it already
- * means in `.hatch` and in the fourth band: this is a range, or an open end,
+ * means in `.hatch` and in `NotPublished`: this is a range, or an open end,
  * rather than a figure somebody published. Never decoration.
  */
 function FigureDefs({ id }: { id: string }) {

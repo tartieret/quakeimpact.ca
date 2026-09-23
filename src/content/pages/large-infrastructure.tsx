@@ -276,8 +276,8 @@ export const largeInfrastructure: PageModule = {
           <VerificationNote label="Not an engineering assessment">
             Every duration on this page for the port and the airport comes from
             that one model run, against the infrastructure as it stood thirteen
-            years ago. <Cite id="AIR-2013" /> The band rests on it, and on
-            nothing that inspected a wharf.
+            years ago. <Cite id="AIR-2013" /> Nothing that inspected a wharf
+            stands behind them.
           </VerificationNote>
         </Prose>
       ),
@@ -288,12 +288,12 @@ export const largeInfrastructure: PageModule = {
       body: (
         <Prose>
           <p>
-            The band for the megathrust rests on that one study, and the study
-            modelled the magnitude 9 megathrust and nothing else.{" "}
+            What this page says about the megathrust rests on that one study,
+            and the study modelled the magnitude 9 megathrust and nothing
+            else.{" "}
             <Cite id="AIR-2013" /> What the port, the airport and the ferry
             terminals would face in a shallow crustal earthquake close to the
-            city has not been published by anyone. So the crustal earthquake
-            carries no band on this page. That gap in the public record says
+            city has not been published by anyone. That gap in the public record says
             nothing about whether the nearer earthquake would be gentler.
           </p>
           <p>

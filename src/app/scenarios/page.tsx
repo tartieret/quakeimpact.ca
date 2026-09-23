@@ -17,7 +17,7 @@ import { metadataFor } from "@/content/metadata";
  * draws. Every heading, including the two that open and close the page, comes
  * from the page module, and the blocks under them are built from `SCENARIOS`
  * and `SYSTEMS` in `@/content/site` the same way the system template draws its
- * bands from the data rather than from the copy.
+ * impacts from the data rather than from the copy.
  */
 
 const { meta, sections, lever } = scenarios;

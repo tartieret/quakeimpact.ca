@@ -4,7 +4,7 @@ title: Fuel
 nav: Fuel
 hook: A service station with full tanks and no power dispenses nothing.
 lede: Fuel powers generators, repair crews and the distribution of other critical supplies. [PEIRS] The province assumes existing supply chains will be inoperable after the earthquake. [PEIRS]
-bands: { cascadia: high, crustal: high }
+disruption: Weeks to months of reduced road capacity [PEIRS]
 mechanism: Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable.
 source: PEIRS
 ---

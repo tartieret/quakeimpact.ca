@@ -326,7 +326,7 @@ export default function SourcesPage() {
       </Section>
 
       <NextPrev
-        prev={{ href: "/method/", label: "Method & bands" }}
+        prev={{ href: "/method/", label: "Method" }}
         next={{ href: "/licences/", label: "Licences" }}
       />
     </ArticleShell>

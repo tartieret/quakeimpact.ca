@@ -9,15 +9,14 @@ The measurements and reasons behind the visual rules. The rules themselves are i
   `--color-accent-soft`, the tint under the impact cell and a hovered card, where they
   measure 4.66:1 and 4.62:1. Tuned on paper, the earlier values failed AA there. Anything
   quieter fails.
-- **Colour that is also text has to pass as text.** `BandPill` sets its label in ink and
-  leaves the hue to the meter; medium `#b57a14` measured 3.37:1 as type.
+- **Colour that is also text has to pass as text.** A ramp colour labels in ink and
+  keeps the hue for the fill; medium `#b57a14` measured 3.37:1 as type.
 - **`--color-mark`** (`#868682` light, `#6e747b` dark: 3.65:1 and 3.62:1 on raised
   paper, above 3.1:1 on the accent tint) is for any mark a reader needs, under WCAG
   1.4.11. The rule greys stay furniture: section dividers and card borders, about 1.3:1
   to 1.7:1, whose quiet is part of the site's register. The style guide's thumb test
   decides which a mark is. `FIG_COLOR` offers only `mark` and `track`, so a figure cannot
-  reach for a furniture grey, and `BandMeter`'s unfilled segments are `mark` because they
-  carry the denominator.
+  reach for a furniture grey.
 - **Sage and neutral grey have almost the same luminance** (4.70 and 4.85 against
   white), so two classes in those colours cannot be told apart by size alone. The fire
   hall map's third class is a square.
@@ -85,7 +84,7 @@ Behind them:
 
 ## Before building a filter, count the rows it changes
 
-The scenario toggle changed two of thirteen band pills, one paragraph and one weather
+The scenario toggle changed two of thirteen impact cells, one paragraph and one weather
 line, because most published work assesses one design earthquake per system. A filter
 over a dimension the evidence does not resolve manufactures a distinction and hides the
 comparison that was the finding. The decision is in `../site-overview.md` §9. Removing it

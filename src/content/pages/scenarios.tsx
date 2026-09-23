@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import { ScenarioCards } from "@/components/scenario-cards";
-import { SystemMatrix } from "@/components/system-grid";
 import { Prose, DataTable, Figure } from "@/components/page-parts";
 import {
   CrustalFaultSection,
@@ -56,6 +55,7 @@ export const scenarios: PageModule = {
       "NRCAN-QA",
       "MAZZOTTI-04",
       "GOLDFINGER-12",
+      "AIR-2013",
     ],
   },
 
@@ -395,8 +395,30 @@ export const scenarios: PageModule = {
       ),
     },
     {
-      title: "Impacts by scenario",
-      body: <SystemMatrix />,
+      title: "Where the aftermath differs",
+      body: (
+        <Prose>
+          <p>
+            For most systems, the published work assesses one design
+            earthquake, so what is known about the weeks afterwards is the same
+            for both. Two things differ. For a megathrust, the province states
+            that the United States will be unable to deliver mutual aid; for a
+            local crustal earthquake, its plan assumes agencies outside the
+            impact area are available. <Cite id="PEIRS" /> The one study of the
+            port, airport and ferry terminals modelled the megathrust and
+            nothing else. <Cite id="AIR-2013" />
+          </p>
+          <p>
+            <Link
+              href="/after/"
+              className="text-accent underline underline-offset-2"
+            >
+              Life afterwards
+            </Link>{" "}
+            covers every system.
+          </p>
+        </Prose>
+      ),
     },
   ],
 

@@ -4,7 +4,7 @@ title: Health care
 nav: Health care
 hook: Most hospital buildings in the region predate the current seismic code.
 lede: A study of one health authority's 127 buildings finds about 65 per cent likely to be completely damaged at the earthquake level used by the current building code. [DCRRA-APPC] No government or health authority has compared the province's casualty estimates with the region's hospital capacity. Only peer-reviewed engineering work has done so.
-bands: { cascadia: medium, crustal: medium }
+disruption: none published
 mechanism: A study of Vancouver Coastal Health's 127 buildings found about 65 per cent likely to be completely damaged at the ground motion the current building code designs for, and no government or health authority has set the expected casualty load against the region's bed capacity.
 source: DCRRA-APPC
 ---
