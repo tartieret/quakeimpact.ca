@@ -70,8 +70,8 @@ export function SystemDraftNotice() {
   return (
     <Notice>
       This page is not written yet: the summary of what fails and for how
-      long, the documents at the foot of the page and the action under them are real and
-      can be checked today. The other{" "}
+      long, the documents at the foot of the page and the action under them
+      are real and can be checked today. The other{" "}
       <Link href="/after/" className={linkClass}>
         system pages
       </Link>{" "}

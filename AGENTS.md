@@ -15,7 +15,7 @@ Before starting, read the document for the kind of work, not all of them.
 | Task | Read first |
 |---|---|
 | Any copy, heading, label or alt text | `docs/style-guide.md`. Its tone, sentence rules and word list are decisions backed by risk-communication research. Do not soften, dramatise or "improve" them in passing. |
-| A claim, a band, or a page's structure | `docs/site-overview.md`, the spec. A claim that has no source in `docs/research/` does not go on the site. |
+| A claim, a duration, or a page's structure | `docs/site-overview.md`, the spec. A claim that has no source in `docs/research/` does not go on the site. |
 | Components, routes, the content model | `docs/stack-and-structure.md`, `src/content/pages/README.md` |
 | A figure or a map | `src/components/figures/README.md` |
 | Research files or the source register | `docs/research/CONVENTIONS.md`, the header of `docs/research/sources.md` |
@@ -26,7 +26,7 @@ When something in the stack, the QA scripts or a source host behaves oddly, grep
 
 ## Content lives in one place
 
-`src/content/site.ts` holds scenarios, bands, systems, phases and navigation. Route
+`src/content/site.ts` holds scenarios, systems and their impacts, phases and navigation. Route
 templates hold no content. Adding a system is one array entry, and it then appears
 everywhere it should.
 
@@ -34,7 +34,7 @@ Body text lives in `src/content/pages/`, one typed module per page, ported from 
 reviewed copy in `docs/copy/`. There is no markdown pipeline and there will not be one.
 
 A page whose evidence is gathered and whose text is not written says so, and carries
-its real band, mechanism and source in the meantime. Nothing should look more finished
+its real mechanism, duration and source in the meantime. Nothing should look more finished
 than it is, and a placeholder for a graphic the site will never be licensed to draw is
 worse than none. Assumptions are research tasks: they go in
 `docs/research/open-questions.md`, not on the site.
@@ -71,7 +71,8 @@ somebody acts on it. Every claim still rests on a source, but:
 ## Accessibility is a requirement, not a pass at the end
 
 - WCAG AA contrast, including large display type, and 3:1 for any mark a reader needs.
-- Never meaning in colour alone: bands pair colour with the segment meter and a label.
+- Never meaning in colour alone: a figure's colour ramp pairs with a written label, and a
+  missing estimate is a hatch with words, not a tint.
 - Heading levels in order; the contents rail is built from real `<h2>` elements.
 - Every control keyboard-reachable with a visible focus state. A box with
   `overflow-x-auto` needs `tabIndex={0}`, `role="region"` and a name.

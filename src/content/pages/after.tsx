@@ -159,9 +159,10 @@ export const after: PageModule = {
               <Cite id="MV-DSP-2026" /> The seismic upgrade work at Cleveland
               has not started. <Cite id="MV-CAPEX-2026" /> For port, airport and
               ferry terminals, the one study that exists modelled the megathrust
-              and nothing else. <Cite id="AIR-2013" /> Safety and conflict has
-              no restoration time at all: most people help one another after a
-              disaster, and theft and violence are isolated cases.{" "}
+              and nothing else. <Cite id="AIR-2013" /> Safety and conflict is
+              not a gap: it has no restoration time at all, because most people
+              help one another after a disaster, and theft and violence are
+              isolated cases.{" "}
               <Cite id="KATRINA-MYTHS-08" />
             </p>
           </Prose>

@@ -74,8 +74,10 @@ export function SystemGrid({ tier }: { tier?: 1 | 2 | 3 }) {
  *
  * Each duration carries a marker, so the page rendering the table lists its
  * sources in `meta.references`. A system with no published duration says so
- * rather than leaving a blank that reads as an oversight. Where the two
- * earthquakes read differently, the cell names each.
+ * rather than leaving a blank that reads as an oversight. A system with no
+ * restoration time says that instead, unhatched, because the hatch means an
+ * estimate is missing and there none could exist. Where the two earthquakes
+ * read differently, the cell names each.
  *
  * It carries no draft marker: every column is evidence, and the evidence is
  * the same whether the prose behind the name is written or not. The cards
@@ -134,6 +136,10 @@ export function SystemMatrix() {
                             {impact.disruption.text}{" "}
                             <Cite id={impact.disruption.source} />
                           </>
+                        ) : impact.noRestoration ? (
+                          <span className="text-ink-muted">
+                            No restoration time
+                          </span>
                         ) : (
                           <NotPublished label="No published estimate" />
                         )}

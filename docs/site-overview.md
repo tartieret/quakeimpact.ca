@@ -47,7 +47,7 @@ The single most important contrast: the crustal event is worse *for Vancouver*, 
 
 ## 4. How impacts are shown
 
-Each system carries one sentence of mechanism, how long the disruption is expected to last in the words of the document that states it, and a link to that document. Durations stay in the source's terms ("days to weeks", "many months") and are never turned into a number the source does not give. Where no document states one, the page says **no published estimate**, drawn hatched: a gap in the public record, not a finding that the system holds up.
+Each system carries one sentence of mechanism, how long the disruption is expected to last in the words of the document that states it, and a link to that document. Durations stay in the source's terms ("days to weeks", "many months") and are never turned into a number the source does not give. Where no document states one, the page says **no published estimate**, drawn hatched: a gap in the public record, not a finding that the system holds up. Safety and conflict is not a gap: it has no restoration time, and the table says so in plain words, unhatched.
 
 Most published work assesses one design earthquake, so one impact usually stands for both scenarios. A system shows one per scenario only where the two genuinely differ: where help comes from, and the terminals, whose one study models the megathrust alone.
 

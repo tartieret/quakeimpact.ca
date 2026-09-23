@@ -59,16 +59,15 @@ export interface Impact {
    * One sentence of mechanism: how the system fails, in the source's terms.
    *
    * The published work assesses one design earthquake per system, so one
-   * sentence usually stands for both scenarios. Where it does, `evidence` says
-   * which earthquake it was measured on.
+   * sentence usually stands for both scenarios, and it says nothing about which
+   * one it was measured on unless that changes what a reader takes away.
    */
   mechanism: string;
   /** Source key from the source register. The key the mechanism sentence rests on. */
   source: string;
   /**
-   * Which earthquake the evidence behind this sentence actually models, in the
-   * reader's terms, so that a megathrust figure is never read as a finding
-   * about both earthquakes without being told.
+   * A second sentence on what kind of evidence the mechanism is, where that
+   * changes the reading: a planning assumption stated as one, not a finding.
    */
   evidence?: string;
   /**
@@ -76,6 +75,13 @@ export interface Impact {
    * the table says that no estimate is published rather than filling the gap.
    */
   disruption?: Disruption;
+  /**
+   * Set where the system has no restoration time for any document to state:
+   * how people treat each other after a disaster is the case. The table then
+   * says so in plain words, with no hatch, because a hatch says an estimate
+   * could be published and has not been, and here none could be.
+   */
+  noRestoration?: true;
 }
 
 /**

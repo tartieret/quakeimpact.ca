@@ -155,11 +155,12 @@ coast. [GOLDFINGER-12]
 ## Where the aftermath differs
 
 For most systems, the published work assesses one design earthquake, so what is known
-about the weeks afterwards is the same for both. Two things differ. For a megathrust,
-the province states that the United States will be unable to deliver mutual aid; for a
-local crustal earthquake, its plan assumes agencies outside the impact area are
-available. [PEIRS] The one study of the port, airport and ferry terminals modelled the
-megathrust and nothing else. [AIR-2013]
+about the weeks afterwards is the same for both. One thing differs: where help comes
+from. For a megathrust, the province states that the United States will be unable to
+deliver mutual aid if it is also overwhelmed; for a local crustal earthquake, its plan
+assumes agencies outside the impact area are available. [PEIRS] And one thing is known
+for the megathrust alone: the one study of the port, airport and ferry terminals
+modelled it and nothing else. [AIR-2013]
 
 [Life afterwards](/after/) covers every system.
 

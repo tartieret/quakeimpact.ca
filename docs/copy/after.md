@@ -66,8 +66,9 @@ each reviewed by an engineer in 2024, as the law requires, neither review identi
 unsafe condition, and neither published conclusion mentions earthquakes. [MV-DSP-2026]
 The seismic upgrade work at Cleveland has not started. [MV-CAPEX-2026] For port,
 airport and ferry terminals, the one study that exists modelled the megathrust and
-nothing else. [AIR-2013] Safety and conflict has no restoration time at all: most people
-help one another after a disaster, and theft and violence are isolated cases.
+nothing else. [AIR-2013] Safety and conflict is not a gap: it has no restoration time at
+all, because most people help one another after a disaster, and theft and violence are
+isolated cases.
 [KATRINA-MYTHS-08]
 
 ## The systems

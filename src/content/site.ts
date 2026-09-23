@@ -165,7 +165,13 @@ export const SYSTEMS: SystemEntry[] = [
       mechanism:
         "Gas cannot be restored in bulk: any air drawn into the pipes has to be purged first, and then service returns only as a technician enters each affected building and relights every appliance in it.",
       source: "BCUC-C-6-25",
-      disruption: { text: "Several weeks", source: "BCUC-C-6-25" },
+      // The regulator's "several weeks" is for a pipeline supply cut with
+      // no earthquake damage, so the cell says so in the same sentence: a
+      // floor, never an earthquake estimate. See `docs/research/systems/gas.md`.
+      disruption: {
+        text: "Several weeks even for a supply cut with no earthquake damage",
+        source: "BCUC-C-6-25",
+      },
     },
   },
   {
@@ -223,7 +229,7 @@ export const SYSTEMS: SystemEntry[] = [
         "Fuel is the resource every other distribution depends on, and the province expects supply chains to be inoperable.",
       source: "PEIRS",
       disruption: {
-        text: "Weeks to months of reduced road capacity",
+        text: "Weeks to months, while supply routes run at reduced capacity",
         source: "PEIRS",
       },
     },
@@ -305,6 +311,7 @@ export const SYSTEMS: SystemEntry[] = [
       mechanism:
         "Most people help one another after a disaster. Theft and violence still occur, but usually as isolated cases that news coverage can make seem widespread.",
       source: "KATRINA-MYTHS-08",
+      noRestoration: true,
     },
   },
   // Split because the province states a different assumption for each
@@ -319,10 +326,10 @@ export const SYSTEMS: SystemEntry[] = [
     byScenario: {
       cascadia: {
         mechanism:
-          "The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states that the United States will be unable to deliver mutual aid.",
+          "The province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states that the United States will be unable to deliver mutual aid if it is also overwhelmed.",
         source: "PEIRS",
         disruption: {
-          text: "Help arrives later, with no US mutual aid",
+          text: "Help arrives later, and US aid may not come",
           source: "PEIRS",
         },
       },
