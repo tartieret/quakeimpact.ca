@@ -26,3 +26,10 @@
   from = "/shaking/secondary-hazards/"
   to = "/shaking/landslides/"
   status = 301
+
+# The social card was /opengraph-image before it was /card.png. A link preview
+# already scraped keeps the old address and fetches it again.
+[[redirects]]
+  from = "/opengraph-image"
+  to = "/card.png"
+  status = 301

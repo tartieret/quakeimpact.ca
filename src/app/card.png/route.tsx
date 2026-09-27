@@ -11,10 +11,10 @@ import { CARD } from "@/content/metadata";
  *
  * It is a route handler named `card.png` rather than an `opengraph-image`
  * file, because Next writes a generated metadata image into a static export
- * with no extension, and a host then has nothing to infer `image/png` from.
- * WhatsApp builds its preview on the sender's phone and draws no image it
- * cannot identify. A `.png` address is served correctly by any host, with no
- * header to keep in step.
+ * with no extension, and the image is then typed only if a header rule in the
+ * host's config says so. A link preview draws no image it cannot identify,
+ * and WhatsApp builds its preview on the sender's phone, where nothing retries.
+ * A `.png` address is typed by any host, with no rule to keep in step.
  *
  * It is drawn at build time into the static export, so the deployed site
  * serves a real PNG and fetches nothing.

@@ -46,13 +46,10 @@ the style guide's sentence rules over rendered text; `shoot.mjs` writes screensh
 
 ## Metadata and search
 
-- **A page that declares its own `openGraph` replaces the root layout's whole**, image
-  included, because metadata merges by top-level key. `pageMetadata` writes `CARD_IMAGE`
-  into every page, so check a page other than the home page.
-- **The card is a `.png` route handler, not an `opengraph-image` file.** Next exports a
-  generated metadata image with no extension, so the host serves it untyped and WhatsApp,
-  which builds its preview on the sender's phone, draws no image. `next/og` ships its own
-  font and needs no network.
+- **A page that declares its own `openGraph` replaces the root layout's whole
+  `openGraph` object**, because metadata merges by top-level key. A field added to the
+  layout's reaches only the 404; `pageMetadata` has to write it for every other page.
+- `next/og` ships its own font, so drawing the card needs no network.
 - **Dates come from `meta.reviewed`, never from the build or git.** A build date marks
   every URL changed whenever one does, which crawlers learn to ignore and readers
   cannot tell from a real review; a git date moves on a typo fix. The page header,
