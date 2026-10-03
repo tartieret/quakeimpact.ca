@@ -6,6 +6,16 @@
 > `validated` with a date once reviewed, in both the comment and this line.
 > **Last research pass:** 13 September 2026.
 
+> **Site use, from 3 October 2026.** A bridge engineer (P.Eng.) reviewed the
+> transportation page in September 2026. The 2005 *Seismic Retrofit Design Criteria* is
+> superseded background; the February 2025 BC supplements cited below are to CSA S6:19,
+> whose seismic chapter S6:25 replaced, and the Ministry has not yet published a
+> supplement to S6:25. Per-crossing design events and approach displacements from
+> design papers say little about a structure as it stands without its current
+> assessment. The site therefore no longer cites `MOTI-SRDC-05`, `MOTI-S6-SEC4` or
+> `MOTI-S6-SEC6`, and no longer grades crossings by return period. The findings below
+> are kept as background; the rule is in `docs/knowledge/research.md`.
+
 ## Status
 
 **Band: High in both scenarios.** The evidence supports a stronger and more specific

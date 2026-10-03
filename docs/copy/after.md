@@ -39,10 +39,8 @@ compares the expected casualties to the number of beds the region has. [DCRRA-AP
 **Within the first week**, failures spread through electricity, water, transportation,
 fuel and food supply. Access to outside help also becomes clear. BC Hydro told its regulator in November 2025 that a large earthquake
 could leave up to two thirds of downtown customers without power for several weeks,
-and the system years from full restoration. [BCH-WESTEND-25] The province designates
-routes that must stay open for emergency vehicles after a major earthquake, and in the
-same document states that it is not retrofitting the bridges on them to remain in
-service. [MOTI-SRDC-05] In a Cascadia earthquake the United States would be unable to
+and the system years from full restoration. [BCH-WESTEND-25] Many bridges are expected to be damaged, and each is closed until it has been
+inspected. [BCSIMS-22] In a Cascadia earthquake the United States would be unable to
 deliver mutual aid. [PEIRS]
 
 **Over the following weeks**, sanitation, natural gas, housing and major terminals
@@ -91,5 +89,5 @@ before you need to.
 ## Sources on this page
 
 [PEIRS] [MV-DEBRIS-17] [MV-WATER-22] [CRTC-2025-226] [DCRRA-APPC] [BCH-WESTEND-25]
-[MOTI-SRDC-05] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [KATRINA-MYTHS-08]
+[BCSIMS-22] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [KATRINA-MYTHS-08]
 [DCRRA-2025] [COV-RISK-2024] [PREPAREDBC]

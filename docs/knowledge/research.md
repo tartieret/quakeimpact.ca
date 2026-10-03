@@ -67,6 +67,24 @@ The DCRRA's casualty and loss figures are NRCan RiskProfiler outputs for
 family restated, and PEIRS's figures were developed by NRCan too (p. 19). Where the site
 shows more than one number, it names who produced each, or it manufactures agreement.
 
+## Design criteria do not tell a reader how a structure will perform
+
+The site does not grade a bridge, tunnel or other engineered structure by the earthquake
+in its design paper, retrofit criteria or code supplement, and does not quote design
+displacements or service levels from them. Without the current assessment of the
+structure as it stands, which is rarely public, a design event says little about how it
+would perform, and the codes move faster than the site: CSA S6:25 replaced the seismic
+chapter that the Ministry's February 2025 supplements were written against. A bridge
+engineer (P.Eng.) reviewing `/after/transportation/` in September 2026 called the
+per-crossing material out of reach for a non-engineer and liable to read as
+sensational.
+
+What may go on the site: where the structures are; that seismic work has been done, by
+whom and when; the province's planning scenario for the network as a whole; and what an
+owner says in public about its own structure, quoted and attributed, such as the City of
+Vancouver on the Cambie Bridge or the province's own memo on the George Massey Tunnel.
+Enforced by `src/content/crossings.ts`, which carries no design earthquake.
+
 ## Look for the operational plan, and the assessment registry
 
 PEIRS (crustal M7) and the DCRRA (Cascadia) closed six open questions that

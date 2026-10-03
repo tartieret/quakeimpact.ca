@@ -183,8 +183,8 @@ export const SYSTEMS: SystemEntry[] = [
     dependsOn: ["fuel"],
     impact: {
       mechanism:
-        "The province designates routes for emergency vehicles after a major earthquake. It also states that the bridges on those routes are not being retrofitted to remain in service.",
-      source: "MOTI-SRDC-05",
+        "Many bridges are expected to be slightly or moderately damaged, and each has to be inspected before traffic is let back over it.",
+      source: "BCSIMS-22",
       disruption: {
         text: "Weeks to months at much-reduced capacity",
         source: "PEIRS",

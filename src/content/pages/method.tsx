@@ -198,7 +198,9 @@ export const method: PageModule = {
           <p>
             <strong>A design intent is not a prediction.</strong> “Built to
             withstand a 475-year earthquake” is a statement about what a
-            structure was aimed at, not a forecast of what it will do. A figure given here for a bridge or a tunnel says which of the two it is.
+            structure was aimed at, not a forecast of what it will do. That is
+            why this site does not rank bridges by the earthquake they were
+            designed for.
           </p>
         </Prose>
       ),

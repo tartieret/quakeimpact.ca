@@ -1,5 +1,9 @@
 # A map of the region's crossings, and what is published about each
 
+> **Superseded 3 October 2026.** The return-period ramp, the question marks and the
+> crossings table were removed after a bridge engineer's review; the map now draws
+> geography only. See `docs/knowledge/research.md`. Kept as a record of the earlier design.
+
 **Date:** 12 September 2026
 **Revised:** 14 September 2026. The map keeps the return-period hierarchy in the
 fill inside equal-size markers, and uses a question mark where no period was

@@ -109,7 +109,7 @@ Route `/getting-around/`. If the answer to a broken region is "people leave," th
 
 **Richmond is the genuine island.** Lulu Island and Sea Island hold on the order of a quarter-million people, sitting on the region's worst ground, reached only by bridges and a tunnel whose approaches cross the same liquefiable delta on both banks. Delta is on the same ground and shares the crossings, but it is not cut off by land: it runs east into Surrey. Dike performance is a separate question on top.
 
-**The North Shore is close behind.** Two vehicle crossings, a passenger ferry, mountains behind. Whether North and West Vancouver are cut off comes from the seismic assessments of both crossings, not from assumption.
+**The North Shore is close behind.** Two vehicle crossings, a passenger ferry, mountains behind. Whether North and West Vancouver are cut off is not something the site predicts crossing by crossing: most current assessments are not public, and a design paper is not one (`docs/knowledge/research.md`).
 
 **Highway 1 through the Fraser Valley is the regional spine.** Its condition determines whether aid comes in and people go out. Route 99 south to the border requires crossing the Fraser regardless.
 
@@ -147,7 +147,7 @@ The critical-infrastructure-over-liquefaction overlay is not built: the liquefac
 
 **Contributions.** `/contribute/` states what the project can use — a published document, a correction with a source behind it, a pointer to a report, a read from someone who does this work — and what it cannot: unsourced assertion, new modelling, analogues used to generate numbers.
 
-**Primary — reports.** NRCan seismic hazard model, Metro Vancouver and City of Vancouver seismic and infrastructure studies, published regional loss estimates, BC Hydro, Emergency Management BC / PreparedBC, seismic assessments of individual crossings.
+**Primary — reports.** NRCan seismic hazard model, Metro Vancouver and City of Vancouver seismic and infrastructure studies, published regional loss estimates, BC Hydro, Emergency Management BC / PreparedBC, and what owners publish about their own crossings.
 
 **Secondary — analogue events, for the lived experience.**
 
