@@ -229,9 +229,9 @@ export const transportation: PageModule = {
             }
           />
           <p>
-            Since 2008 a system at the tunnel has detected earthquake shaking,
-            stopped new traffic entering and let vehicles already inside drive
-            out. <Cite id="GMC-TUNNEL-19" />
+            A system installed in 2008 is designed to close the tunnel to new
+            traffic when it detects strong shaking, while letting vehicles
+            already inside drive out. <Cite id="GMC-TUNNEL-19" />
           </p>
           <p>
             The province is replacing it with an eight-lane tunnel. In July 2026

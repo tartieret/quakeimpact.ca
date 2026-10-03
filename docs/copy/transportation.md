@@ -67,8 +67,8 @@ in the late 1950s, before engineers understood how loose, wet ground behaves in 
 earthquake. A seismic upgrade of the structure was finished in 2006; a second stage, to
 improve the ground around it, was not carried out. [GMC-TUNNEL-19]
 
-Since 2008 a system at the tunnel has detected earthquake shaking, stopped new traffic
-entering and let vehicles already inside drive out. [GMC-TUNNEL-19]
+A system installed in 2008 is designed to close the tunnel to new traffic when it detects
+strong shaking, while letting vehicles already inside drive out. [GMC-TUNNEL-19]
 
 The province is replacing it with an eight-lane tunnel. In July 2026 the budget was
 updated to $8.5 billion, with major construction from 2027 and completion in September
