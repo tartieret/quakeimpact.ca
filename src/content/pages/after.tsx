@@ -32,7 +32,7 @@ export const after: PageModule = {
       "CRTC-2025-226",
       "DCRRA-APPC",
       "BCH-WESTEND-25",
-      "MOTI-SRDC-05",
+      "BCSIMS-22",
       "BCUC-C-6-25",
       "AIR-2013",
       "MV-DSP-2026",
@@ -103,10 +103,9 @@ export const after: PageModule = {
               told its regulator in November 2025 that a large earthquake could
               leave up to two thirds of downtown customers without power for
               several weeks, and the system years from full restoration.{" "}
-              <Cite id="BCH-WESTEND-25" /> The province designates routes that
-              must stay open for emergency vehicles after a major earthquake,
-              and in the same document states that it is not retrofitting the
-              bridges on them to remain in service. <Cite id="MOTI-SRDC-05" />{" "}
+              <Cite id="BCH-WESTEND-25" /> Many bridges are expected to be
+              damaged, and each is closed until it has been inspected.{" "}
+              <Cite id="BCSIMS-22" />{" "}
               In a Cascadia earthquake the United States would be unable to
               deliver mutual aid. <Cite id="PEIRS" />
             </p>

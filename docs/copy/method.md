@@ -81,8 +81,7 @@ the same reports. One is what insurers pay.
 
 **A design intent is not a prediction.** "Built to withstand a 475-year earthquake" is
 a statement about what a structure was aimed at, not a forecast of what it will do.
-A figure given here for a bridge or a tunnel says which of the two it
-is.
+That is why this site does not rank bridges by the earthquake they were designed for.
 
 ## What is here will change as evidence improves
 

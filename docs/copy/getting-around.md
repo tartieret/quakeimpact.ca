@@ -45,9 +45,8 @@ strength and behaving like a liquid while the ground shakes.
 >
 > **The North Shore has two vehicle crossings**, with mountains behind it.
 
-What those crossings were built to withstand, and what happens to the ground their
-approaches sit on, is the subject of
-[transportation](/after/transportation/).
+What happens to those crossings in a major earthquake, and to the ground their
+approaches sit on, is the subject of [transportation](/after/transportation/).
 
 ## Disaster Response Routes are for emergency traffic
 
@@ -97,9 +96,7 @@ assessments have deemed the damaged routes safe for emergency use." [DRT-PRIMER-
 
 > **Not yet established.** There is no public forecast of how long any named Lower
 > Mainland corridor would be closed. What is published is the framework for reopening
-> them [DRT-PRIMER-18] [MV-DEBRIS-17], and, separately, the lane and restoration
-> targets a new lifeline crossing is designed against, which are set out in
-> [transportation](/after/transportation/). Some regional emergency-management
+> them [DRT-PRIMER-18] [MV-DEBRIS-17]. Some regional emergency-management
 > material is withheld by choice: "Due to the sensitive nature of some of our work,
 > some materials are only available upon request." [IPREM-RES]
 
