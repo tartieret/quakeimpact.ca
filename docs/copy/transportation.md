@@ -60,24 +60,18 @@ maintains over 2,500 bridges in the highest seismic zones of the province, and h
 monitoring instruments on fourteen bridges and one tunnel so that inspectors can find out
 quickly which are safe and go to the most important first. [BCSIMS-22]
 
-## The George Massey Tunnel awaits replacement
+## The George Massey Tunnel is being replaced
 
 The tunnel carries Highway 99 under the Fraser between Richmond and Delta. It was built
-between 1957 and 1959, and its design "did not consider the effects of soil liquefaction …
-as these were not well understood at the time." [GMC-TUNNEL-19]
+in the late 1950s, before engineers understood how loose, wet ground behaves in an
+earthquake. A seismic upgrade of the structure was finished in 2006; a second stage, to
+improve the ground around it, was not carried out. [GMC-TUNNEL-19]
 
-A retrofit planned in 2001 had two stages. The structural stage was finished in 2006. The
-second, improving the ground along the tunnel and its approaches, was cancelled. A 2019
-engineering memo prepared for the province: "By 2006, the Stage 1 retrofit work was
-completed, while no ground improvement has been performed to date. As a result, the
-Tunnel does not have the level of safety intended in the original 2001 COWI study as the
-risk of tunnel floatation during the seismic event still exists." [GMC-TUNNEL-19]
+Since 2008 a system at the tunnel has detected earthquake shaking, stopped new traffic
+entering and let vehicles already inside drive out. [GMC-TUNNEL-19]
 
-Since 2008 a closure system has detected seismic motion, stopped new traffic entering and
-let vehicles already inside drive out. [GMC-TUNNEL-19]
-
-The replacement is an eight-lane immersed tube. In July 2026 its budget was updated to
-$8.5 billion, with major construction expected from 2027 and completion in September
+The province is replacing it with an eight-lane tunnel. In July 2026 the budget was
+updated to $8.5 billion, with major construction from 2027 and completion in September
 2031. [MOTI-MASSEY]
 
 ## Road capacity could be reduced for weeks to months

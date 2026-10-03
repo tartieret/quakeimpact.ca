@@ -82,7 +82,10 @@ sensational.
 What may go on the site: where the structures are; that seismic work has been done, by
 whom and when; the province's planning scenario for the network as a whole; and what an
 owner says in public about its own structure, quoted and attributed, such as the City of
-Vancouver on the Cambie Bridge or the province's own memo on the George Massey Tunnel.
+Vancouver on the Cambie Bridge. A consultant's engineering memo is an assessment, not an
+owner's statement, even when the owner publishes it: the 2019 George Massey Tunnel memo
+is cited only for the tunnel's history and its closure system, not for how it would
+perform.
 Enforced by `src/content/crossings.ts`, which carries no design earthquake.
 
 ## Look for the operational plan, and the assessment registry

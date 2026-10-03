@@ -13,7 +13,9 @@
 > supplement to S6:25. Per-crossing design events and approach displacements from
 > design papers say little about a structure as it stands without its current
 > assessment. The site therefore no longer cites `MOTI-SRDC-05`, `MOTI-S6-SEC4` or
-> `MOTI-S6-SEC6`, and no longer grades crossings by return period. The findings below
+> `MOTI-S6-SEC6`, and no longer grades crossings by return period. `GMC-TUNNEL-19` is
+> cited only for the tunnel's history and closure system; its capacity range and
+> flotation finding are no longer on the site. The findings below
 > are kept as background; the rule is in `docs/knowledge/research.md`.
 
 ## Status
