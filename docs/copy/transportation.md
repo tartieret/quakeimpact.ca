@@ -21,8 +21,8 @@ The North Shore has two vehicle crossings, with mountains behind it.
 Work, school, deliveries, fuel and food cross the water on the same handful of
 structures, and a trip across the region stops where one of them is closed.
 
-[Figure: the crossings map, geography only. Every crossing has the same mark; a circle
-is a bridge and a square is a tunnel.]
+[Figure: the crossings map. The Moray Channel Bridge, between Richmond and Sea Island,
+is not shown.]
 
 ## Many crossings have been upgraded, and how each would hold up is hard to predict
 
@@ -41,9 +41,8 @@ substantially higher seismic loading requirements". Further work was identified,
 results are not public. [OAK-BASIS-22] That is the usual case: most of these crossings
 have been assessed, and most of the assessments are not published.
 
-Where an owner has said something in public, it is worth knowing. The City of Vancouver
-says the Cambie Bridge "can be seismically upgraded to levels that are not achievable with
-Granville and Burrard", and that once the work is finished "emergency vehicles will be
+The City of Vancouver says the Cambie Bridge "can be seismically upgraded to levels that
+are not achievable with Granville and Burrard", and that once the work is finished "emergency vehicles will be
 able to use the bridge shortly after an earthquake". Design began in 2019, the first phase
 was finished in 2022, and the upgrade is not complete. [COV-CAMBIE-25]
 
@@ -60,9 +59,6 @@ each has to be checked before traffic is let back over it. The Ministry of Trans
 maintains over 2,500 bridges in the highest seismic zones of the province, and has put
 monitoring instruments on fourteen bridges and one tunnel so that inspectors can find out
 quickly which are safe and go to the most important first. [BCSIMS-22]
-
-What the province plans for people while the crossings are being checked is set out in
-[getting around](/getting-around/).
 
 ## The George Massey Tunnel awaits replacement
 
@@ -106,9 +102,7 @@ SkyTrain service was suspended and inspections of both lines were conducted." Se
 resumed by 1am, about eighty minutes later. The Canada Line kept running, which
 TransLink attributed to 70 per cent of its track being underground. [CBC-2015]
 
-No damage was found: the alarms stopped the trains. Eighty minutes
-is what a check of an undamaged system took after a small, deep earthquake, and it
-forecasts nothing about a large one.
+No damage was found: the alarms alone stopped the trains.
 
 > **Not yet established.** TransLink has not published a seismic design standard for
 > its guideways and stations, a system-wide seismic assessment, or any estimate of how
@@ -127,8 +121,7 @@ are on when the shaking starts may be the side you stay on.
 
 **Prepare the side you would be stuck on**, at work as well as at home. What the
 province plans for people while the crossings are shut or being inspected is set out
-in [getting around](/getting-around/). The question there is where you will be when the
-shaking starts.
+in [getting around](/getting-around/).
 
 ## Sources on this page
 

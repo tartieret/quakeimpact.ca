@@ -173,14 +173,12 @@ export const gettingAround: PageModule = {
               datasets are behind it. */}
           <Figure
             interactive
-            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, ${CROSSINGS_FACTS.total} in all. Vancouver's land connection runs east; everything else is a bridge or a tunnel. The marks show where the crossings are, not how any of them would perform in an earthquake.`}
+            alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, ${CROSSINGS_FACTS.total} in all. Vancouver's land connection runs east; everything else is a bridge or a tunnel.`}
             caption={
               <>
-                The crossings, where they are. Vancouver's land route runs east
-                through Burnaby and New Westminster; every other way off the
-                peninsula, and every way onto Richmond, is on this map. A
-                circle is a bridge and a square is a tunnel. What happens to
-                the crossings in a major earthquake is in {transportationLink}.
+                Vancouver's land route runs east through Burnaby and New
+                Westminster; every other way off the peninsula, and every way
+                onto Richmond, is on this map.
               </>
             }
             licence={<CrossingsLicence />}

@@ -223,7 +223,7 @@ export function CrossingsMap() {
   return (
     <div className="flex flex-col gap-5">
       <MapViewer
-        label={`Map of the region's ${CROSSINGS_FACTS.total} road, rail and transit crossings. A circle is a bridge and a square is a tunnel; every mark is the same size.`}
+        label={`Map of the region's ${CROSSINGS_FACTS.total} road, rail and transit crossings. A circle is a bridge and a square is a tunnel.`}
         width={MAP_W}
         height={MAP_H}
         kmWide={KM_WIDE}

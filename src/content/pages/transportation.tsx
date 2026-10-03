@@ -84,14 +84,11 @@ export const transportation: PageModule = {
           </p>
           <Figure
             interactive
-            alt={`The region's ${CROSSINGS_FACTS.total} road, rail and transit crossings, drawn at the water they cross: Burrard Inlet, False Creek, the North and Middle Arms of the Fraser, the Fraser itself and the Pitt River. Vancouver's land connection runs east; every way onto Richmond and Sea Island is a bridge or the George Massey Tunnel. The marks show where the crossings are and say nothing about how any of them would perform in an earthquake.`}
+            alt={`The region's ${CROSSINGS_FACTS.total} road, rail and transit crossings, over Burrard Inlet, False Creek, the North and Middle Arms of the Fraser, the Fraser itself and the Pitt River. Vancouver's land connection runs east; every way onto Richmond and Sea Island is a bridge or the George Massey Tunnel.`}
             caption={
               <>
-                The crossings, where they are. A circle is a bridge and a square
-                is a tunnel, and every mark is the same size: the map shows
-                geography, not how any crossing would hold up. The Moray Channel
-                Bridge is not drawn, because no openly licensed source holds it
-                and a hand-placed position would be one this site invented.
+                The region’s road, rail and transit crossings. The Moray
+                Channel Bridge, between Richmond and Sea Island, is not shown.
               </>
             }
             licence={<CrossingsLicence />}
@@ -130,7 +127,6 @@ export const transportation: PageModule = {
             of the assessments are not published.
           </p>
           <p>
-            Where an owner has said something in public, it is worth knowing.
             The City of Vancouver says the Cambie Bridge “can be seismically
             upgraded to levels that are not achievable with Granville and
             Burrard”, and that once the work is finished “emergency vehicles
@@ -147,12 +143,11 @@ export const transportation: PageModule = {
             with a step at the end of it carries nobody.
           </p>
           <Figure
-            alt="A span can stand at its full height while the approach embankment carrying the road onto it settles, leaving a step where the road meets the bridge. The drawing is a schematic of that mechanism, not a measurement and not any real crossing."
+            alt="A span can stand at its full height while the approach embankment carrying the road onto it settles, leaving a step where the road meets the bridge."
             caption={
               <>
-                A diagram of the mechanism, and not a drawing of any crossing.
-                The structure and the ground are drawn as two materials because
-                they fail separately. Nothing here is to scale.
+                The bridge holds its height; the ground under the road onto it
+                drops away.
               </>
             }
           >
@@ -206,17 +201,6 @@ export const transportation: PageModule = {
               </>
             }
           />
-          <p>
-            What the province plans for people while the crossings are being
-            checked is set out in{" "}
-            <Link
-              href="/getting-around/"
-              className="text-accent underline underline-offset-2"
-            >
-              getting around
-            </Link>
-            .
-          </p>
         </Prose>
       ),
     },
@@ -310,10 +294,7 @@ export const transportation: PageModule = {
             <Cite id="CBC-2015" />
           </p>
           <p>
-            No damage was found: the alarms stopped the trains. Eighty
-            minutes is what a check of an undamaged system took
-            after a small, deep earthquake, and it forecasts nothing about a
-            large one.
+            No damage was found: the alarms alone stopped the trains.
           </p>
           <Photograph
             id="kaikoura-buckled-track"
@@ -392,7 +373,7 @@ export const transportation: PageModule = {
         >
           getting around
         </Link>
-        . The question there is where you will be when the shaking starts.
+        .
       </>,
     ],
   },
