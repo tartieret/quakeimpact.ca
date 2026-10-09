@@ -57,18 +57,17 @@ them, and [How this site works](/method/) explains our method.
 
 ## How we used AI
 
-This site was developed with the assistance of generative AI, mainly Anthropic's Claude
-Opus 5.5 as of 2026. I decided what to cover, which sources to trust and what went on
-each page. Within that, the AI searched for and summarised published documents, wrote
-most of the site's code and drafted much of the text.
+This site was built with generative AI, mainly Anthropic's Claude (Opus 5.5), in 2026. I
+decided what to cover, which sources to trust and what went on each page. The AI
+searched for and summarised published documents, drafted most of the text and wrote
+most of the code.
 
-I reviewed everything before it was published. Figures and quotations were checked
-against the documents they cite, and each one links to its source so you can check it
-too. Some pages have also been reviewed by people who work in the fields they cover.
-The photographs are real, taken by the people credited under them. None of them was
-generated.
+Every figure and quotation was then checked against the document it cites, first by a
+separate AI review pass and then by me. The photographs are real, taken by the people
+credited under them. None was generated.
 
-AI makes mistakes, and so do I. If you find one, please tell us.
+AI makes mistakes, and so do I. Every figure links to its source so you can check it.
+If something looks wrong, please tell us.
 
 ## Contributions are welcome
 
