@@ -72,9 +72,9 @@ Utilities run at reduced service long after they are back on. The province's
 plan assumes people stay in the region while this goes on. [What that means for
 getting around](/getting-around/).
 
-Weather makes every stage harder. The province plans for two earthquakes: an
-offshore megathrust, set in a 30 to 40 degree heatwave with wildfire smoke,
-[DCRRA-2025] and a crustal earthquake close to the city, set on a January
+Weather makes every stage harder. The province plans for [two
+earthquakes](/scenarios/): an offshore megathrust, set in a 30 to 40 degree
+heatwave with wildfire smoke, [DCRRA-2025] and a crustal earthquake close to the city, set on a January
 afternoon after an atmospheric river. [PEIRS]
 
 Each failure slows the repair of the others. Water needs power for pumps and
@@ -88,19 +88,6 @@ A household gets through those weeks on what it already has at home.
 Start with the one you depend on most.
 
 *Every system, drawn from the content model rather than written here.*
-
-## The region plans for two different earthquakes
-
-The offshore Cascadia megathrust is the one people have heard of. The shallower
-earthquake underneath the region is the one Natural Resources Canada calls "the
-greatest earthquake hazard" to west coast cities, because it is closer and more
-frequent. [NRCAN-1700] British Columbia's primary earthquake planning scenario is
-that nearer one. [PEIRS]
-
-They are dangerous to different buildings. Which one matters to you depends on
-the building you are in and the ground under it.
-[Compare the two scenarios](/scenarios/), or read [what the shaking
-does](/shaking/) to the ground and the buildings on it.
 
 ## Why this site exists
 
@@ -133,4 +120,4 @@ much to keep and what to add next.
 
 ## Sources on this page
 
-[PEIRS] [DCRRA-2025] [NRCAN-1700] [TOTH-BCCI-15] [PREPAREDBC] [RESEARCHCO-PREP-21]
+[PEIRS] [DCRRA-2025] [TOTH-BCCI-15] [PREPAREDBC] [RESEARCHCO-PREP-21]

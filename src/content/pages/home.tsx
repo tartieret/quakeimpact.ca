@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import { Prose } from "@/components/page-parts";
-import { ScenarioCards } from "@/components/scenario-cards";
 import { SystemGrid } from "@/components/system-grid";
 import { PhaseNarrative } from "@/components/phase-narrative";
 import type { PageModule } from "./index";
@@ -18,9 +17,9 @@ import type { PageModule } from "./index";
  * the site's filing system. The four phases come first and carry the answer to
  * the question the site exists to answer; then every system as a card, so that
  * a reader who has just been told what the months are like can go straight to
- * the part of life they depend on; the two scenarios come after both, because
- * a reader who has not yet been told why this matters has no reason to work
- * through the difference between a megathrust and a crustal earthquake.
+ * the part of life they depend on. The two scenarios are not described here:
+ * the timeline names both in a sentence and links to `/scenarios/`, which
+ * compares them, and to `/shaking/`.
  *
  * The timeline is a story and reads as one. It sources itself through its links
  * rather than through a marker on every sentence, and that is the one place this
@@ -123,7 +122,6 @@ export const home: PageModule = {
     references: [
       "PEIRS",
       "DCRRA-2025",
-      "NRCAN-1700",
       "TOTH-BCCI-15",
       "PREPAREDBC",
       "RESEARCHCO-PREP-21",
@@ -298,8 +296,11 @@ export const home: PageModule = {
           />
           <Prose>
             <p>
-              Weather makes every stage harder. The province plans for two
-              earthquakes: an offshore megathrust, set in a 30 to 40 degree
+              Weather makes every stage harder. The province plans for{" "}
+              <Link href="/scenarios/" className={link}>
+                two earthquakes
+              </Link>
+              : an offshore megathrust, set in a 30 to 40 degree
               heatwave with wildfire smoke, <Cite id="DCRRA-2025" /> and a
               crustal earthquake close to the city, set on a January afternoon
               after an atmospheric river. <Cite id="PEIRS" />
@@ -326,37 +327,6 @@ export const home: PageModule = {
       title: "Every system comes back on its own schedule",
       lede: "Start with the one you depend on most.",
       body: <SystemGrid />,
-    },
-
-    {
-      title: "The region plans for two different earthquakes",
-      body: (
-        <div className="flex flex-col gap-8">
-          <Prose>
-            <p>
-              The offshore Cascadia megathrust is the one people have heard of.
-              The shallower earthquake underneath the region is the one Natural
-              Resources Canada calls “the greatest earthquake hazard” to west
-              coast cities, because it is closer and more frequent.{" "}
-              <Cite id="NRCAN-1700" /> British Columbia’s primary earthquake
-              planning scenario is that nearer one. <Cite id="PEIRS" />
-            </p>
-            <p>
-              They are dangerous to different buildings. Which one matters to
-              you depends on the building you are in and the ground under it.{" "}
-              <Link href="/scenarios/" className={link}>
-                Compare the two scenarios
-              </Link>
-              , or read{" "}
-              <Link href="/shaking/" className={link}>
-                what the shaking does
-              </Link>{" "}
-              to the ground and the buildings on it.
-            </p>
-          </Prose>
-          <ScenarioCards />
-        </div>
-      ),
     },
 
     {
