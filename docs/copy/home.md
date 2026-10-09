@@ -18,7 +18,7 @@ the one quotation carries a marker. The panels say what the stretch is like, not
 what has and has not been published and not which document it came out of. See §4
 of the style guide and the module docblock in `src/content/pages/home.tsx`.*
 
-**Hours — it is over in minutes, and nothing works.** The shaking lasts
+**Hours — power, phones and water fail in the first hours.** The shaking lasts
 somewhere between ten seconds and three minutes, depending on how big the
 earthquake is and where it happens.
 
@@ -72,23 +72,20 @@ Utilities run at reduced service long after they are back on. The province's
 plan assumes people stay in the region while this goes on. [What that means for
 getting around](/getting-around/).
 
-This timeline draws on the two earthquakes the province plans for. It is a
-scenario, not a forecast.
-
-The weather changes how hard each stretch is. The megathrust scenario is set in
-a 30 to 40 degree heatwave with wildfire smoke. [DCRRA-2025] The crustal
-scenario is set on a January afternoon after an atmospheric river. [PEIRS]
+Weather makes every stage harder. The province plans for two earthquakes: an
+offshore megathrust, set in a 30 to 40 degree heatwave with wildfire smoke,
+[DCRRA-2025] and a crustal earthquake close to the city, set on a January
+afternoon after an atmospheric river. [PEIRS]
 
 Each failure slows the repair of the others. Water needs power for pumps and
 open roads for crews, and clearing roads needs fuel. [Life afterwards](/after/)
 takes each system in turn.
 
-None of this is yours to fix. What counts is what you already have at home.
+A household gets through those weeks on what it already has at home.
 
 ## Every system comes back on its own schedule
 
-Start with the one you depend on most. Each card opens a page on what breaks
-and why.
+Start with the one you depend on most.
 
 *Every system, drawn from the content model rather than written here.*
 
@@ -105,13 +102,22 @@ the building you are in and the ground under it.
 [Compare the two scenarios](/scenarios/), or read [what the shaking
 does](/shaking/) to the ground and the buildings on it.
 
-## Everything here comes from published documents
+## Why this site exists
 
-Every fact here comes from a published document, most of them written by
-governments, utilities and the engineers they hire. Where nobody has published an
-answer, the page says so. Where two official documents disagree, you see both.
+My name is Thomas Tartière. I live in downtown Vancouver, and in the French
+consulate's emergency plan I am the volunteer contact for the French community in
+this part of the city. Preparing for that meant reading what has been published
+about a major earthquake here. Public guidance mostly covers the risk and what to
+do while the ground is shaking. What happens over the following weeks and months
+is in technical reports written for specialists.
 
-Durations are given as the source gives them, never more precise. [How this site
+In 2015 I heard Janos Toth go through the earthquake vulnerability of British
+Columbia's infrastructure one system at a time. [TOTH-BCCI-15] Years later, when
+my first child was born, that talk is what got me to put together an emergency
+kit. This site takes the same approach, using published documents, most of them
+written by governments, utilities and the engineers they hire.
+
+[About this site](/about/) has the rest of the story, [How this site
 works](/method/) explains the method, the [sources page](/sources/) lists every
 document, and [contribute](/contribute/) explains how to report an error.
 
@@ -127,4 +133,4 @@ much to keep and what to add next.
 
 ## Sources on this page
 
-[PEIRS] [DCRRA-2025] [NRCAN-1700] [PREPAREDBC] [RESEARCHCO-PREP-21]
+[PEIRS] [DCRRA-2025] [NRCAN-1700] [TOTH-BCCI-15] [PREPAREDBC] [RESEARCHCO-PREP-21]

@@ -124,6 +124,7 @@ export const home: PageModule = {
       "PEIRS",
       "DCRRA-2025",
       "NRCAN-1700",
+      "TOTH-BCCI-15",
       "PREPAREDBC",
       "RESEARCHCO-PREP-21",
     ],
@@ -138,7 +139,7 @@ export const home: PageModule = {
             items={[
               {
                 phase: "hours",
-                heading: "It is over in minutes, and nothing works",
+                heading: "Power, phones and water fail in the first hours",
                 body: (
                   <>
                     <p>
@@ -297,15 +298,11 @@ export const home: PageModule = {
           />
           <Prose>
             <p>
-              This timeline draws on the two earthquakes the province plans
-              for. It is a scenario, not a forecast.
-            </p>
-            <p>
-              The weather changes how hard each stretch is. The megathrust
-              scenario is set in a 30 to 40 degree heatwave with wildfire
-              smoke. <Cite id="DCRRA-2025" /> The crustal scenario is set on a
-              January afternoon after an atmospheric river.{" "}
-              <Cite id="PEIRS" />
+              Weather makes every stage harder. The province plans for two
+              earthquakes: an offshore megathrust, set in a 30 to 40 degree
+              heatwave with wildfire smoke, <Cite id="DCRRA-2025" /> and a
+              crustal earthquake close to the city, set on a January afternoon
+              after an atmospheric river. <Cite id="PEIRS" />
             </p>
             <p>
               Each failure slows the repair of the others. Water needs power
@@ -317,8 +314,8 @@ export const home: PageModule = {
               takes each system in turn.
             </p>
             <p>
-              None of this is yours to fix. What counts is what you already
-              have at home.
+              A household gets through those weeks on what it already has at
+              home.
             </p>
           </Prose>
         </div>
@@ -327,7 +324,7 @@ export const home: PageModule = {
 
     {
       title: "Every system comes back on its own schedule",
-      lede: "Start with the one you depend on most. Each card opens a page on what breaks and why.",
+      lede: "Start with the one you depend on most.",
       body: <SystemGrid />,
     },
 
@@ -363,17 +360,32 @@ export const home: PageModule = {
     },
 
     {
-      title: "Everything here comes from published documents",
+      title: "Why this site exists",
       body: (
         <Prose>
           <p>
-            Every fact here comes from a published document, most of them
-            written by governments, utilities and the engineers they hire.
-            Where nobody has published an answer, the page says so. Where two
-            official documents disagree, you see both.
+            My name is Thomas Tartière. I live in downtown Vancouver, and in
+            the French consulate’s emergency plan I am the volunteer contact
+            for the French community in this part of the city. Preparing for
+            that meant reading what has been published about a major
+            earthquake here. Public guidance mostly covers the risk and what to
+            do while the ground is shaking. What happens over the following weeks and months is in technical
+            reports written for specialists.
           </p>
           <p>
-            Durations are given as the source gives them, never more precise.{" "}
+            In 2015 I heard Janos Toth go through the earthquake vulnerability
+            of British Columbia’s infrastructure one system at a time.{" "}
+            <Cite id="TOTH-BCCI-15" /> Years later, when my first child was
+            born, that talk is what got me to put together an emergency kit.
+            This site takes the same approach, using published documents,
+            most of them written by governments, utilities and the engineers
+            they hire.
+          </p>
+          <p>
+            <Link href="/about/" className={link}>
+              About this site
+            </Link>{" "}
+            has the rest of the story,{" "}
             <Link href="/method/" className={link}>
               How this site works
             </Link>{" "}

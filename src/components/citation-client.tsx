@@ -106,11 +106,6 @@ function ReferenceBody({ reference }: { reference: Reference }) {
           {[reference.publisher, reference.year].filter(Boolean).join(" · ")}
         </span>
       ) : null}
-      {reference.note ? (
-        <span className="mt-2 block text-sm leading-relaxed text-ink-muted">
-          {reference.note}
-        </span>
-      ) : null}
       {internal ? (
         <Link
           href={reference.href}
@@ -128,8 +123,8 @@ function ReferenceBody({ reference }: { reference: Reference }) {
           Open the document ↗
         </a>
       ) : (
-        /* Nine register rows have no recoverable link. Offering one that goes
-           nowhere is worse than saying so: the row's own note explains why. */
+        /* A few register rows have no recoverable link. Offering one that goes
+           nowhere is worse than saying so. */
         <span className="mt-3 block text-sm text-ink-faint">
           No link to follow
         </span>

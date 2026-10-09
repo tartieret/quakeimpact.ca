@@ -34,10 +34,14 @@ export function Citations({
 }) {
   // A declared key the register does not hold keeps its place in the numbering
   // and renders as a visible `[?]`, rather than silently renumbering the page.
-  const entries: CitationEntry[] = ids.map((id) => ({
-    id,
-    reference: REFERENCES[id] ?? null,
-  }));
+  // The note is the research record and is never rendered, so it does not
+  // cross to the browser either, where it would still sit in the page source.
+  const entries: CitationEntry[] = ids.map((id) => {
+    const found = REFERENCES[id];
+    if (!found) return { id, reference: null };
+    const { note: _note, ...reference } = found;
+    return { id, reference };
+  });
 
   return <CitationProvider entries={entries}>{children}</CitationProvider>;
 }
