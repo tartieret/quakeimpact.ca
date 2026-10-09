@@ -1,9 +1,9 @@
 ---
 route: /
-title: Why your earthquake kit needs to last at least two weeks
+title: What a major earthquake does to the Lower Mainland
 nav: Home
-hook: Why your earthquake kit needs to last at least two weeks
-lede: What a major earthquake does to the Lower Mainland, and for how long. [PREPAREDBC]
+hook: What a major earthquake does to the Lower Mainland
+lede: The shaking lasts minutes. Here is what fails, and why the outages can last weeks or months.
 ---
 
 [See what happens next ↓](#what-happens-after-the-shaking) · [Start preparing](/prepare/)
@@ -117,12 +117,14 @@ document, and [contribute](/contribute/) explains how to report an error.
 
 ## Start with food and water
 
-Most households in the region have not put together a kit of any size.
-[RESEARCHCO-PREP-21] You do not need to assemble everything at once.
+British Columbia asks every household to keep at least two weeks of emergency
+supplies. [PREPAREDBC] Most households in the region have not put together a kit
+of any size. [RESEARCHCO-PREP-21]
 
-Check what you already have, then add water and food that keeps. The [preparation guide](/prepare/) shows how
+You do not need to assemble everything at once. Check what you already have,
+then add water and food that keeps. The [preparation guide](/prepare/) shows how
 much to keep and what to add next.
 
 ## Sources on this page
 
-[PREPAREDBC] [PEIRS] [DCRRA-2025] [NRCAN-1700] [RESEARCHCO-PREP-21]
+[PEIRS] [DCRRA-2025] [NRCAN-1700] [PREPAREDBC] [RESEARCHCO-PREP-21]

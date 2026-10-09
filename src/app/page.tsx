@@ -12,10 +12,10 @@ import { pageMetadata } from "@/content/metadata";
 import { SITE } from "@/content/site";
 
 /**
- * The one page whose title is not the heading on it. The `<h1>` asks why a kit
- * has to last two weeks, which is a hook rather than a name; a search result
- * for the site itself has to open on the name somebody typed, so the title is
- * the name and the tagline and takes no site suffix after it.
+ * The one page whose title is not the heading on it. The `<h1>` says what the
+ * page is about and nothing more; a search result for the site itself has to
+ * open on the name somebody typed, so the title is the name and the tagline
+ * and takes no site suffix after it.
  */
 export const metadata: Metadata = pageMetadata({
   route: "/",

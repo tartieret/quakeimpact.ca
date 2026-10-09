@@ -71,13 +71,11 @@ import type { PageModule } from "./index";
  * published the panel gives the duration; where none is, it says what the
  * mechanism does to an ordinary week instead.
  *
- * The hero leads with the action and the page is its answer: the heading asks
- * why a kit has to last at least two weeks, the standfirst says what the page
- * underneath is, and the timeline is the reason. The two weeks is the
- * province's minimum, so the marker for it sits at the end of the standfirst
- * rather than in display type, and the timeline is free to run on into months.
- * The closing lever does not repeat the ask; it opens on the gap, that most
- * households have no kit at all, and goes from there to what to add first.
+ * The heading says what the page is. The standfirst sets the length of the
+ * shaking against the length of the outages and promises the reason, which the
+ * timeline gives. It carries no figure, so it takes no marker; the province's
+ * two weeks and the preparation gap sit together in the closing lever, beside
+ * the action a reader can take.
  *
  * The system-grid introduction is passed as `lede`. The timeline needs no
  * extra introduction after the hero; its heading leads straight into the story.
@@ -98,7 +96,7 @@ import type { PageModule } from "./index";
 const link = "text-accent underline underline-offset-2";
 
 export const homeHero = {
-  titleLines: ["Why your earthquake kit", "needs to last at least two weeks"],
+  titleLines: ["What a major earthquake does", "to the Lower Mainland"],
   primary: { label: "See what happens next", href: "#what-happens-after-the-shaking" },
   secondary: { label: "Start preparing", href: "/prepare/" },
 };
@@ -113,8 +111,8 @@ export const home: PageModule = {
     kicker: "Lower Mainland, British Columbia",
     standfirst: (
       <>
-        What a major earthquake does to the Lower Mainland, and for how
-        long. <Cite id="PREPAREDBC" />
+        The shaking lasts minutes. Here is what fails, and why the outages
+        can last weeks or months.
       </>
     ),
     /**
@@ -122,10 +120,10 @@ export const home: PageModule = {
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
-      "PREPAREDBC",
       "PEIRS",
       "DCRRA-2025",
       "NRCAN-1700",
+      "PREPAREDBC",
       "RESEARCHCO-PREP-21",
     ],
   },
@@ -397,12 +395,14 @@ export const home: PageModule = {
     heading: "Start with food and water",
     items: [
       <>
-        Most households in the region have not put together a kit of any
-        size. <Cite id="RESEARCHCO-PREP-21" /> You do not need to assemble
-        everything at once.
+        British Columbia asks every household to keep at least two weeks of
+        emergency supplies. <Cite id="PREPAREDBC" /> Most households in the
+        region have not put together a kit of any size.{" "}
+        <Cite id="RESEARCHCO-PREP-21" />
       </>,
       <>
-        Check what you already have, then add water and food that keeps. The{" "}
+        You do not need to assemble everything at once. Check what you already
+        have, then add water and food that keeps. The{" "}
         <Link href="/prepare/" className={link}>
           preparation guide
         </Link>
