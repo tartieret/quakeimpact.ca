@@ -50,17 +50,18 @@ document that estimates it. Where no document gives an estimate, the table says 
 That means nobody has published one, not that the system would hold up.
 [How this site works](/method/).
 
-Dams and reservoirs have no published estimate. Engineers reviewed the Cleveland and
-Seymour Falls dams in 2024, as the law requires, and found no unsafe condition, but
-neither review's published conclusion mentions earthquakes. [MV-DSP-2026] Seismic
-upgrade work at Cleveland has not started. [MV-CAPEX-2026] For the port, airport and
-ferry terminals, the only study covers the Cascadia scenario and not the shallow
-crustal one. [AIR-2013] Safety and conflict has no restoration time at all, because
+For the port, airport and ferry terminals, the only study covers the Cascadia scenario
+and not the shallow crustal one. [AIR-2013] Safety and conflict has no restoration time at all, because
 after a disaster most people help one another, and theft and violence are isolated
 cases. [KATRINA-MYTHS-08]
 
 Table note: Durations in the words of the documents that state them. Not an
 engineering assessment.
+
+Table note: Dams and reservoirs: the 2024 safety reviews of Cleveland and Seymour Falls
+dams found no unsafe condition, but their published conclusions do not mention
+earthquakes. [MV-DSP-2026] Seismic upgrade work at Cleveland has not started.
+[MV-CAPEX-2026]
 
 ## The systems
 
@@ -82,5 +83,5 @@ each one.
 ## Sources on this page
 
 [PEIRS] [MV-DEBRIS-17] [MV-WATER-22] [CRTC-2025-226] [DCRRA-APPC] [BCH-WESTEND-25]
-[BCSIMS-22] [AIR-2013] [BCUC-C-6-25] [MV-DSP-2026] [MV-CAPEX-2026] [KATRINA-MYTHS-08]
-[DCRRA-2025] [COV-RISK-2024] [PREPAREDBC]
+[BCSIMS-22] [AIR-2013] [BCUC-C-6-25] [KATRINA-MYTHS-08] [DCRRA-2025] [COV-RISK-2024]
+[MV-DSP-2026] [MV-CAPEX-2026] [PREPAREDBC]

@@ -35,11 +35,11 @@ export const after: PageModule = {
       "BCSIMS-22",
       "AIR-2013",
       "BCUC-C-6-25",
-      "MV-DSP-2026",
-      "MV-CAPEX-2026",
       "KATRINA-MYTHS-08",
       "DCRRA-2025",
       "COV-RISK-2024",
+      "MV-DSP-2026",
+      "MV-CAPEX-2026",
       "PREPAREDBC",
     ],
   },
@@ -132,13 +132,7 @@ export const after: PageModule = {
               .
             </p>
             <p>
-              Dams and reservoirs have no published estimate. Engineers
-              reviewed the Cleveland and Seymour Falls dams in 2024, as the law
-              requires, and found no unsafe condition, but neither review’s
-              published conclusion mentions earthquakes.{" "}
-              <Cite id="MV-DSP-2026" /> Seismic upgrade work at Cleveland has
-              not started. <Cite id="MV-CAPEX-2026" /> For the port, airport
-              and ferry terminals, the only study covers the Cascadia scenario
+              For the port, airport and ferry terminals, the only study covers the Cascadia scenario
               and not the shallow crustal one. <Cite id="AIR-2013" /> Safety
               and conflict has no restoration time at all, because after a
               disaster most people help one another, and theft and violence are
@@ -150,6 +144,13 @@ export const after: PageModule = {
             <p className="text-sm leading-relaxed text-ink-muted">
               Durations in the words of the documents that state them. Not an
               engineering assessment.
+            </p>
+            <p className="text-sm leading-relaxed text-ink-muted">
+              Dams and reservoirs: the 2024 safety reviews of Cleveland and
+              Seymour Falls dams found no unsafe condition, but their published
+              conclusions do not mention earthquakes.{" "}
+              <Cite id="MV-DSP-2026" /> Seismic upgrade work at Cleveland has
+              not started. <Cite id="MV-CAPEX-2026" />
             </p>
           </div>
         </div>
