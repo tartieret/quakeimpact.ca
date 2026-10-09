@@ -45,13 +45,13 @@ would be with. What to do while the shaking lasts is on [Preparing](/prepare/).
 
 The series takes a megathrust earthquake off the coast and a shallow one beneath
 Vancouver, the same two kinds this site describes, and follows them through the first
-day, the first three days, the first week, and the month and the year after. The last
-episode hears from two people who lived through the earthquakes in Christchurch, New
-Zealand, in 2010 and 2011. [CBC-FAULTLINES-16]
+day, the first three days, the first week, and the month and the year after.
+[CBC-FAULTLINES-16]
 
-Where it and the province's current guide differ on what to keep at home, follow the
-guide. Earthquake early warning, which can give seconds of notice before strong shaking
-arrives, reached British Columbia in 2024, after the series was made. [NRCAN-EEW]
+It gives a good sense of how many things an earthquake disrupts at once, and of what
+life afterwards could look like. Much of it is told by the people who would deal with
+it: engineers, emergency managers and first responders, and two people who lived through
+the earthquakes in Christchurch, New Zealand, in 2010 and 2011. [CBC-FAULTLINES-16]
 
 [CBC Listen](https://www.cbc.ca/listen/cbc-podcasts/147-fault-lines) ·
 [Apple Podcasts](https://podcasts.apple.com/ca/podcast/fault-lines/id1162124786)
@@ -59,4 +59,4 @@ arrives, reached British Columbia in 2024, after the series was made. [NRCAN-EEW
 ## Sources on this page
 
 [PREPAREDBC] [PREPAREDBC-PLAN] [PREPAREDBC-GUIDES] [BCEA-SHAKEOUT-26]
-[CBC-FAULTLINES-16] [NRCAN-EEW]
+[CBC-FAULTLINES-16]

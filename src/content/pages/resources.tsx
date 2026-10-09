@@ -14,9 +14,9 @@ import type { PageModule } from "./index";
  * the links. The province's guide leads because it is the one a reader acts on.
  *
  * No `lever`: every section is already somewhere to go next. The podcast is
- * described from its own episode notes rather than from the audio, so the page
- * says what the series covers and when it was made, and leaves what it says to
- * the series.
+ * described from CBC's own pages and episode notes rather than from the audio,
+ * so the page says what the series covers and who is in it, and leaves what it
+ * says to the series.
  */
 const link = "text-accent underline underline-offset-2";
 
@@ -61,7 +61,6 @@ export const resources: PageModule = {
       "PREPAREDBC-GUIDES",
       "BCEA-SHAKEOUT-26",
       "CBC-FAULTLINES-16",
-      "NRCAN-EEW",
     ],
   },
 
@@ -151,16 +150,16 @@ export const resources: PageModule = {
             The series takes a megathrust earthquake off the coast and a shallow
             one beneath Vancouver, the same two kinds this site describes, and
             follows them through the first day, the first three days, the first
-            week, and the month and the year after. The last episode hears from
-            two people who lived through the earthquakes in Christchurch, New
-            Zealand, in 2010 and 2011. <Cite id="CBC-FAULTLINES-16" />
+            week, and the month and the year after.{" "}
+            <Cite id="CBC-FAULTLINES-16" />
           </p>
           <p>
-            Where it and the province’s current guide differ on what to keep at
-            home, follow the guide. Earthquake early warning, which can give
-            seconds of notice before strong shaking arrives, reached British
-            Columbia in 2024, after the series was made.{" "}
-            <Cite id="NRCAN-EEW" />
+            It gives a good sense of how many things an earthquake disrupts at
+            once, and of what life afterwards could look like. Much of it is
+            told by the people who would deal with it: engineers, emergency
+            managers and first responders, and two people who lived through the
+            earthquakes in Christchurch, New Zealand, in 2010 and 2011.{" "}
+            <Cite id="CBC-FAULTLINES-16" />
           </p>
           <Links
             items={[

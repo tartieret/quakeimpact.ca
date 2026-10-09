@@ -677,8 +677,8 @@ export const REFERENCES: Record<string, Reference> = {
     publisher: "CBC Vancouver",
     year: 2016,
     date: "Oct 2016",
-    href: "https://www.cbc.ca/listen/cbc-podcasts/147-fault-lines",
-    note: "A five-episode podcast from CBC Vancouver presented by Johanna Wagstaffe: two earthquake scenarios, a megathrust off the coast and a shallow crustal earthquake beneath Vancouver, followed through the first day, the first three days, the first week, and the month and the year after, with two survivors of the Christchurch earthquakes in the last episode. What the show's own description and episode notes say",
+    href: "https://www.cbc.ca/radio/fault-lines-1.3909167",
+    note: "A five-episode podcast from CBC Vancouver presented by Johanna Wagstaffe: two earthquake scenarios, a megathrust off the coast and a shallow crustal earthquake beneath Vancouver, followed through the first day, the first three days, the first week, and the month and the year after, told through conversations with engineers, emergency preparedness managers, first responders and survivors, two of them from the Christchurch earthquakes. What CBC's own pages and episode notes say",
     route: "landing",
   },
   "CBC-WSBC-2002": {
