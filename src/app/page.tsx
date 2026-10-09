@@ -12,10 +12,10 @@ import { pageMetadata } from "@/content/metadata";
 import { SITE } from "@/content/site";
 
 /**
- * The one page whose title is not the heading on it. The `<h1>` is a sentence
- * about the world and reads as one; a search result for the site itself has to
- * open on the name somebody typed, so the title is the name and the tagline
- * and takes no site suffix after it.
+ * The one page whose title is not the heading on it. The `<h1>` asks why a kit
+ * has to last two weeks, which is a hook rather than a name; a search result
+ * for the site itself has to open on the name somebody typed, so the title is
+ * the name and the tagline and takes no site suffix after it.
  */
 export const metadata: Metadata = pageMetadata({
   route: "/",
@@ -51,7 +51,7 @@ export default function HomePage() {
               {home.meta.kicker}
             </p>
           ) : null}
-          <h1 className="mt-5 max-w-4xl font-display text-5xl leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="mt-5 max-w-4xl font-display text-5xl leading-[1.04] tracking-tight text-balance sm:text-6xl">
             {homeHero.titleLines.map((line, i) => (
               <span key={line} className="sm:block">
                 {i > 0 ? " " : ""}{line}
