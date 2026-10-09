@@ -91,9 +91,9 @@ Same permissions and conditions as OGL–Vancouver.
 
 **Permission:** given by the author to the site's owner, recorded October 2026. He asked to be credited and to be listed with his current firm, Enginomix Consulting Inc. In 2015 he was Vice President of Engineering at Quanta Energized Services, as the title slide says.
 
-**Requires:** credit by name, and the presentation's date shown wherever it is linked, because parts of it, bridges and schools in particular, describe infrastructure as it stood in 2015.
+**Requires:** credit by name with his current firm, and a warning wherever it is cited that the slides have not been reviewed since November 2015. Parts of them, bridges and schools in particular, describe infrastructure as it stood then. Both are carried by its row in the source register, `TOTH-BCCI-15`.
 
-**Not a source.** The deck is on the site as the project's origin, not as evidence. Nothing in it is cited, and no figure on the site is taken from it.
+**Not evidence.** The deck is cited on `/about/` as the project's origin. No claim on the site rests on it, and no figure is taken from it.
 
 **Third-party images.** Several slides reproduce maps, photographs and graphics from news sites and other publishers. The author's permission covers his own work, not those images.
 

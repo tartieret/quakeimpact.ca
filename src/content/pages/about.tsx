@@ -24,8 +24,9 @@ import type { PageModule } from "./index";
  * it works.
  *
  * The 2015 slides are hosted with Janos Toth's permission, recorded in
- * `docs/licensing.md`. The copy gives their date and says they are out of date,
- * because the deck describes bridges and schools as they stood in 2015.
+ * `docs/licensing.md`, and cited as `TOTH-BCCI-15`. The register entry carries
+ * the warning that they have not been reviewed since 2015, so the copy does not
+ * repeat it. They are the project's origin, not evidence for any claim.
  */
 const link = "text-accent underline underline-offset-2";
 
@@ -39,7 +40,7 @@ export const about: PageModule = {
     standfirst:
       "QuakeImpact describes what a major earthquake would do to daily life in the Lower Mainland, in the order people would live through it. Its figures come from published work and link to their sources.",
     /** First-cited order, which is the order the markers are numbered in. */
-    references: ["PEIRS"],
+    references: ["PEIRS", "TOTH-BCCI-15"],
   },
 
   sections: [
@@ -94,11 +95,13 @@ export const about: PageModule = {
               className={link}
             >
               Janos Toth
-            </a>
-            , an engineer, on the earthquake vulnerability of British Columbia’s
-            critical infrastructure. He went through it one system at a time:
-            buildings, schools, hospitals, bridges, the water supply, the power
-            grid. It had a lasting effect on me.
+            </a>{" "}
+            (Enginomix Consulting Inc.) on the earthquake vulnerability of
+            British Columbia’s critical infrastructure.{" "}
+            <Cite id="TOTH-BCCI-15" /> He had brought together information from
+            many published sources to give an overall picture, and went through
+            it one system at a time: buildings, schools, hospitals, bridges, the
+            water supply, the power grid. It had a lasting effect on me.
           </p>
           <p>
             Years later, when my first child was born, that talk was still in
@@ -107,18 +110,6 @@ export const about: PageModule = {
             for other people, and to follow the same approach: start from
             published work, go through the systems people rely on, and show what
             losing them would mean.
-          </p>
-          <p>
-            Janos has kindly let us share his slides,{" "}
-            <a
-              href="/documents/toth-2015-earthquake-vulnerability-bc-critical-infrastructure.pdf"
-              className={link}
-            >
-              Earthquake Vulnerability of BC’s Critical Infrastructure
-            </a>{" "}
-            (November 2015, PDF). They are dated: a lot of seismic work has been
-            done since then, on bridges and schools in particular. Janos is now
-            with Enginomix Consulting Inc.
           </p>
         </Prose>
       ),

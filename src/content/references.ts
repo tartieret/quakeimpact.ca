@@ -3965,6 +3965,18 @@ export const REFERENCES: Record<string, Reference> = {
     note: "Planning and assessment of design options; the island’s only road connection",
     route: "direct",
   },
+  "TOTH-BCCI-15": {
+    id: "TOTH-BCCI-15",
+    kind: "report",
+    title: "Earthquake Vulnerability of BC's Critical Infrastructure",
+    publisher: "Janos Toth (Enginomix Consulting Inc.)",
+    year: 2015,
+    date: "5 Nov 2015",
+    href: "https://quakeimpact.ca/documents/toth-2015-earthquake-vulnerability-bc-critical-infrastructure.pdf",
+    note: "Slides from a talk given in Vancouver, bringing together published sources into an overall picture of how buildings, schools, hospitals, bridges, water and power would fare in a major earthquake. Not reviewed or updated since November 2015, so parts are out of date, bridges and schools in particular",
+    route: "direct",
+    licence: "Hosted with the author's permission",
+  },
   "UBC-FUEL": {
     id: "UBC-FUEL",
     kind: "report",

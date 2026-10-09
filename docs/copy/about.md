@@ -28,21 +28,17 @@ agency, and nothing on it is an official instruction.
 ## Where this started
 
 In November 2015 I went to a talk in Vancouver by
-[Janos Toth](https://www.linkedin.com/in/janos-toth-97b63a6/), an engineer, on the
-earthquake vulnerability of British Columbia's critical infrastructure. He went through
-it one system at a time: buildings, schools, hospitals, bridges, the water supply, the
-power grid. It had a lasting effect on me.
+[Janos Toth](https://www.linkedin.com/in/janos-toth-97b63a6/) (Enginomix Consulting
+Inc.) on the earthquake vulnerability of British Columbia's critical infrastructure.
+[TOTH-BCCI-15] He had brought together information from many published sources to give
+an overall picture, and went through it one system at a time: buildings, schools,
+hospitals, bridges, the water supply, the power grid. It had a lasting effect on me.
 
 Years later, when my first child was born, that talk was still in the back of my mind,
 and it is what got me to put together an emergency kit for our family. I would like
 this site to do the same for other people, and to follow the same approach: start from
 published work, go through the systems people rely on, and show what losing them would
 mean.
-
-Janos has kindly let us share his slides,
-[Earthquake Vulnerability of BC's Critical Infrastructure](/documents/toth-2015-earthquake-vulnerability-bc-critical-infrastructure.pdf)
-(November 2015, PDF). They are dated: a lot of seismic work has been done since then,
-on bridges and schools in particular. Janos is now with Enginomix Consulting Inc.
 
 ## Where the information comes from
 
@@ -85,3 +81,4 @@ review of a page all help keep the picture accurate. The site is open source, an
 ## Sources on this page
 
 [PEIRS]
+[TOTH-BCCI-15]
