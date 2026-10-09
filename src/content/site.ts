@@ -474,6 +474,7 @@ export const NAV: NavItem[] = [
 ];
 
 export const UTILITY_NAV: NavItem[] = [
+  { href: "/resources/", label: "Resources" },
   { href: "/method/", label: "Method" },
   { href: "/sources/", label: "Sources" },
   { href: "/licences/", label: "Licences" },

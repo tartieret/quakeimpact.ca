@@ -51,6 +51,7 @@ label or an alt text.
 | [`outside-help.md`](outside-help.md) | `/after/outside-help/` | `../research/systems/outside-help.md` |
 | [`getting-around.md`](getting-around.md) | `/getting-around/` | `../research/mobility.md` |
 | [`prepare.md`](prepare.md) | `/prepare/` | `../research/preparedness.md` |
+| [`resources.md`](resources.md) | `/resources/` | `../research/preparedness.md`, `../research/sources.md` |
 | [`contribute.md`](contribute.md) | `/contribute/` | `../site-overview.md` §7 |
 | [`about.md`](about.md) | `/about/` | `../site-overview.md` §1 and §2 |
 

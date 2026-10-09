@@ -661,6 +661,17 @@ export const REFERENCES: Record<string, Reference> = {
     href: "https://www.cbc.ca/news/politics/cellphones-emergencies-batteries-tornado-1.4844158",
     route: "media",
   },
+  "CBC-FAULTLINES-16": {
+    id: "CBC-FAULTLINES-16",
+    kind: "report",
+    title: "Fault Lines",
+    publisher: "CBC Vancouver",
+    year: 2016,
+    date: "Oct 2016",
+    href: "https://www.cbc.ca/listen/cbc-podcasts/147-fault-lines",
+    note: "A five-episode podcast from CBC Vancouver presented by Johanna Wagstaffe: two earthquake scenarios, a megathrust off the coast and a shallow crustal earthquake beneath Vancouver, followed through the first day, the first three days, the first week, and the month and the year after, with two survivors of the Christchurch earthquakes in the last episode. What the show's own description and episode notes say",
+    route: "landing",
+  },
   "CBC-WSBC-2002": {
     id: "CBC-WSBC-2002",
     kind: "report",
