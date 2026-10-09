@@ -85,6 +85,20 @@ Same permissions and conditions as OGL–Vancouver.
 
 ---
 
+### Author's permission: Janos Toth, 2015 presentation
+
+**Covers:** the slides of *Earthquake Vulnerability of BC's Critical Infrastructure*, a talk Janos Toth gave in Vancouver on 5 November 2015, hosted at `public/documents/toth-2015-earthquake-vulnerability-bc-critical-infrastructure.pdf` and linked from `/about/`.
+
+**Permission:** given by the author to the site's owner, recorded October 2026. He asked to be credited and to be listed with his current firm, Enginomix Consulting Inc. In 2015 he was Vice President of Engineering at Quanta Energized Services, as the title slide says.
+
+**Requires:** credit by name with his current firm, and a warning wherever it is cited that the slides have not been reviewed since November 2015. Parts of them, bridges and schools in particular, describe infrastructure as it stood then. Both are carried by its row in the source register, `TOTH-BCCI-15`.
+
+**Not evidence.** The deck is cited on `/about/` as the project's origin. No claim on the site rests on it, and no figure is taken from it.
+
+**Third-party images.** Several slides reproduce maps, photographs and graphics from news sites and other publishers. The author's permission covers his own work, not those images.
+
+---
+
 ## Not cleared — link only
 
 ### MVSMMP (Metro Vancouver Seismic Microzonation Mapping Project)
