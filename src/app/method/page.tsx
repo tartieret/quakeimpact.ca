@@ -30,6 +30,7 @@ export default function MethodPage() {
             kicker={method.meta.kicker}
             title={method.meta.title}
             standfirst={method.meta.standfirst}
+            reviewed={method.meta.reviewed}
           />
         }
       >

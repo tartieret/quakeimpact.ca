@@ -36,6 +36,7 @@ export const casualties: PageModule = {
     title: "Casualties",
     description:
       "Thousands of people would be hurt or killed by a major earthquake in the Lower Mainland, and several studies have estimated how many.",
+    reviewed: "2026-10-09",
     nav: "Casualties",
     kicker: "The shaking",
     standfirst:

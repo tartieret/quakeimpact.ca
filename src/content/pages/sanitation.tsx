@@ -18,6 +18,7 @@ export const sanitation: PageModule = {
     title: "Sanitation",
     description:
       "A toilet needs water to flush. The province expects disruption to water and wastewater systems to last many months.",
+    reviewed: "2026-10-09",
     nav: "Sanitation",
     kicker: "Life afterwards",
     standfirst: (

@@ -62,6 +62,7 @@ export const shaking: PageModule = {
     title: "The shaking",
     description:
       "Damage depends on the earthquake, the ground and the building. Fires, landslides and other failures continue after the shaking stops.",
+    reviewed: "2026-10-09",
     nav: "The shaking",
     kicker: "Part 1",
     standfirst:

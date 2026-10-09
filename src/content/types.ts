@@ -20,6 +20,9 @@ export type Phase = "hours" | "days" | "weeks" | "months";
  */
 export type PageStatus = "draft";
 
+/** A calendar date written `YYYY-MM-DD`. */
+export type IsoDate = `${number}-${number}-${number}`;
+
 export interface Scenario {
   id: ScenarioId;
   /** Short label for toggles and table headers. */
@@ -219,6 +222,17 @@ export interface PageMeta {
    * without that fact having to be written into the prose.
    */
   status?: PageStatus;
+  /**
+   * The day the page was last checked against its sources. It is set by hand
+   * and means exactly that: a copy edit leaves it alone, and a new or revised
+   * document behind the page moves it. A date taken from the build or from git
+   * would move on every typo fix and tell the reader nothing about the evidence.
+   *
+   * Required, because the page shows it under the standfirst and the footer
+   * and the sitemap read it, and a page without one would claim nothing about
+   * how current it is.
+   */
+  reviewed: IsoDate;
   /** Label in navigation and on cards. */
   nav: string;
   /** Kicker above the title, where the page belongs to a part of the site. */

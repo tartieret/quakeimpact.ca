@@ -26,6 +26,7 @@ export const groundConditions: PageModule = {
     title: "Ground conditions",
     description:
       "Metro Vancouver spans bedrock, deep soft sediment and river delta soil that can liquefy during an earthquake.",
+    reviewed: "2026-10-09",
     nav: "Ground conditions",
     kicker: "The shaking",
     standfirst:

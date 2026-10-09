@@ -30,6 +30,7 @@ export const outsideHelp: PageModule = {
     title: "Where help comes from",
     description:
       "British Columbia stages help outside the damaged region. A coast-wide megathrust leaves fewer agencies available to provide it.",
+    reviewed: "2026-10-09",
     nav: "Where help comes from",
     kicker: "Life afterwards",
     standfirst: (

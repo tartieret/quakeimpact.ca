@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { LAST_REVIEWED } from "@/content/pages";
 import { NAV, SITE, UTILITY_NAV } from "@/content/site";
 import type { NavItem } from "@/content/types";
+import { DateText } from "./page-parts";
 import { SiteMark } from "./site-mark";
 
 /**
@@ -92,11 +94,19 @@ export function SiteFooter() {
         </div>
       </div>
 
+      {/* The date is the latest of the pages' own review dates, so it says when
+          some page was last checked, not when the site was last built. Each
+          page carries its own date under its standfirst. */}
       <div className="border-t border-rule">
-        <p className="mx-auto max-w-6xl px-gutter py-5 text-xs text-ink-faint">
-          Not an official source. In an emergency follow the instructions of
-          local authorities.
-        </p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-gutter py-5 text-xs text-ink-faint sm:flex-row sm:justify-between sm:gap-6">
+          <p>
+            Not an official source. In an emergency follow the instructions of
+            local authorities.
+          </p>
+          <p>
+            Most recent page review <DateText date={LAST_REVIEWED} />
+          </p>
+        </div>
       </div>
     </footer>
   );

@@ -32,6 +32,7 @@ export const damsAndReservoirs: PageModule = {
     title: "Dams and reservoirs",
     description:
       "The 2024 engineering reviews of Cleveland and Seymour Falls dams do not publish a finding about earthquakes.",
+    reviewed: "2026-10-09",
     nav: "Dams and reservoirs",
     kicker: "Life afterwards",
     standfirst: (

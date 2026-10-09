@@ -52,8 +52,11 @@ the style guide's sentence rules over rendered text; `shoot.mjs` writes screensh
   hand is the one that works.
 - The generated card has no file extension, so `netlify.toml` gives it a `Content-Type`.
   `next/og` ships its own font and needs no network.
-- **No `lastmod` in the sitemap.** A build date marks every URL changed whenever one does,
-  which crawlers learn to ignore; `priority` and `changefreq` are read by nobody.
+- **Dates come from `meta.reviewed`, never from the build or git.** A build date marks
+  every URL changed whenever one does, which crawlers learn to ignore and readers
+  cannot tell from a real review; a git date moves on a typo fix. The page header,
+  the footer and the sitemap's `lastmod` all read the hand-set date. `priority` and
+  `changefreq` are read by nobody.
 - A page description is compressed from the page's own standfirst, so no new claim is
   written for a search result.
 

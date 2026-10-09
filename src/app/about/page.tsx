@@ -29,6 +29,7 @@ export default function AboutPage() {
             kicker={meta.kicker}
             title={meta.title}
             standfirst={meta.standfirst}
+            reviewed={meta.reviewed}
           />
         }
       >

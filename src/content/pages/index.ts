@@ -151,6 +151,15 @@ export const ALL_PAGES: PageModule[] = [
  */
 export const PAGES = register(ALL_PAGES);
 
+/**
+ * The most recent day any page was checked against its sources. The footer
+ * shows it, so the site's date is derived from the pages' own and cannot claim
+ * a review no page records. `YYYY-MM-DD` sorts as text.
+ */
+export const LAST_REVIEWED = ALL_PAGES.map((p) => p.meta.reviewed).reduce(
+  (latest, date) => (date > latest ? date : latest),
+);
+
 /** The module for a route, or undefined where the page is not written yet. */
 export const pageFor = (route: string): PageModule | undefined => PAGES[route];
 

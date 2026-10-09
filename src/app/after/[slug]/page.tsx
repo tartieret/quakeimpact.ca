@@ -128,6 +128,7 @@ export default async function SystemPage({
             title={page?.meta.title ?? system.name}
             status={status}
             standfirst={page?.meta.standfirst ?? system.hook}
+            reviewed={page?.meta.reviewed}
           />
         }
       >

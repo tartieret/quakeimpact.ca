@@ -27,6 +27,7 @@ export const water: PageModule = {
     title: "Water",
     description:
       "Metro Vancouver’s own seismic assessment models 267 water main failures across the region, about 60 of them where mains cross under rivers and inlets.",
+    reviewed: "2026-10-09",
     nav: "Water",
     kicker: "Life afterwards",
     standfirst: (

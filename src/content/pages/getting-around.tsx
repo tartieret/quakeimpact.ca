@@ -54,6 +54,7 @@ export const gettingAround: PageModule = {
     title: "Moving after the shaking",
     description:
       "Provincial plans direct people to shelter where they are after a major earthquake, leaving damaged routes for emergency traffic and supplies.",
+    reviewed: "2026-10-09",
     nav: "Getting around",
     kicker: "After the shaking",
     standfirst:

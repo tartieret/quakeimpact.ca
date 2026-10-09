@@ -114,6 +114,7 @@ export default async function ShakingDetailPage({
             title={page?.meta.title ?? entry.name}
             status={status}
             standfirst={page?.meta.standfirst ?? entry.hook}
+            reviewed={page?.meta.reviewed}
           />
         }
       >

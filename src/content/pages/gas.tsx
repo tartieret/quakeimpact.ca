@@ -15,6 +15,7 @@ export const gas: PageModule = {
     title: "Natural gas",
     description:
       "Gas service returns only after a qualified worker enters each affected building and relights its appliances.",
+    reviewed: "2026-10-09",
     nav: "Natural gas",
     kicker: "Life afterwards",
     standfirst: (

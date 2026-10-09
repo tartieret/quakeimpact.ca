@@ -24,6 +24,7 @@ export const fuel: PageModule = {
     title: "Fuel",
     description:
       "Fuel powers generators, repair crews and the distribution of other critical supplies.",
+    reviewed: "2026-10-09",
     nav: "Fuel",
     kicker: "Life afterwards",
     standfirst: (

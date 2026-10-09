@@ -101,6 +101,7 @@ export const fireFollowing: PageModule = {
     title: "Fire following",
     description:
       "Earthquake fires can start as broken water mains leave hydrants dry. Modelling finds greater losses from the nearer crustal earthquake.",
+    reviewed: "2026-10-09",
     nav: "Fire following",
     kicker: "The shaking",
     standfirst:

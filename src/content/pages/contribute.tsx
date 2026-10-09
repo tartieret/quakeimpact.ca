@@ -27,6 +27,7 @@ export const contribute: PageModule = {
     title: "Contribute",
     description:
       "Send a correction, a relevant document or an expert review of the site’s earthquake information.",
+    reviewed: "2026-10-09",
     nav: "Contribute",
     kicker: "Corrections, sources and local knowledge",
     standfirst:

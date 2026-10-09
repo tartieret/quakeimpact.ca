@@ -21,6 +21,7 @@ export const method: PageModule = {
     title: "How this site works",
     description:
       "Every figure on this site comes from a published document. How those documents are used, and what they leave out.",
+    reviewed: "2026-10-09",
     nav: "Method",
     standfirst:
       "Every figure on this site comes from a published document. This page explains how those documents are used, and what they leave out.",
@@ -137,8 +138,9 @@ export const method: PageModule = {
         <Prose>
           <p>
             Several of the reports this site relies on are still being written.
-            When one is published, the pages that depend on it are updated. If
-            you spot a mistake, or know of a document that fills a gap, the{" "}
+            When one is published, the pages that depend on it are updated.
+            Each page shows the date it was last checked against its sources.
+            If you spot a mistake, or know of a document that fills a gap, the{" "}
             <Link
               href="/contribute/"
               className="text-accent underline underline-offset-2"

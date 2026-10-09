@@ -50,6 +50,7 @@ export const resources: PageModule = {
     title: "Further resources",
     description:
       "Three places to go further: the province’s earthquake preparedness guide, the annual ShakeOut drill, and a CBC podcast that follows a major earthquake.",
+    reviewed: "2026-10-09",
     nav: "Resources",
     kicker: "Where to go next",
     standfirst:

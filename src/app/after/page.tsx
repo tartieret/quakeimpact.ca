@@ -25,6 +25,7 @@ export default function AfterIndexPage() {
             kicker={after.meta.kicker}
             title={after.meta.title}
             standfirst={after.meta.standfirst}
+            reviewed={after.meta.reviewed}
           />
         }
       >

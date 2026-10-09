@@ -37,6 +37,7 @@ export const transportation: PageModule = {
     title: "Transportation",
     description:
       "Much of Metro Vancouver is reached only by bridge or tunnel, and after a major earthquake the crossings close until they have been inspected.",
+    reviewed: "2026-10-09",
     nav: "Transportation",
     kicker: "Life afterwards",
     standfirst:

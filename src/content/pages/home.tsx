@@ -107,6 +107,7 @@ export const home: PageModule = {
     title: homeHero.titleLines.join(" "),
     description:
       "What a major earthquake does to water, power, food and transport in the Lower Mainland, how long each stays out, and how to prepare.",
+    reviewed: "2026-10-09",
     nav: "Home",
     kicker: "Lower Mainland, British Columbia",
     standfirst: (

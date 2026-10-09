@@ -17,6 +17,7 @@ export const prepare: PageModule = {
     title: "Preparing",
     description:
       "British Columbia asks households to plan for two weeks without outside help. Preparing protects your household and preserves help for others.",
+    reviewed: "2026-10-09",
     nav: "Preparing",
     kicker: "Part 3",
     standfirst: (

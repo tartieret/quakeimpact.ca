@@ -28,6 +28,7 @@ export default function ContributePage() {
             kicker={meta.kicker}
             title={meta.title}
             standfirst={meta.standfirst}
+            reviewed={meta.reviewed}
           />
         }
       >

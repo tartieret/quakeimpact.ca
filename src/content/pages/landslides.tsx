@@ -24,6 +24,7 @@ export const landslides: PageModule = {
     title: "Landslides",
     description:
       "The slopes above Highway 99 and Highway 1 are rated for rock fall and debris flows. Shaking is a trigger on the same ground, and the routes into the region could be cut for weeks.",
+    reviewed: "2026-10-09",
     nav: "Landslides",
     kicker: "The shaking",
     standfirst:

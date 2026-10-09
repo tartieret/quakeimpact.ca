@@ -30,6 +30,7 @@ export default function PreparePage() {
             kicker={prepare.meta.kicker}
             title={prepare.meta.title}
             standfirst={prepare.meta.standfirst}
+            reviewed={prepare.meta.reviewed}
           />
         }
       >

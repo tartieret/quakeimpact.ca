@@ -20,6 +20,7 @@ export const after: PageModule = {
     title: "Life afterwards",
     description:
       "Thirteen essential systems fail on different timelines after a major earthquake. Their recovery depends on one another.",
+    reviewed: "2026-10-09",
     nav: "Life afterwards",
     kicker: "Part 2",
     standfirst:
