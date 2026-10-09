@@ -19,9 +19,14 @@ import type { PageModule } from "./index";
  * nobody asked the reader to take.
  *
  * The site does not talk about itself to the reader anywhere else. This page is
- * the exception the reader came for: the author speaks in the first person
- * about who made the project and where it came from, and the project speaks as "we" about how
- * it works.
+ * the exception the reader came for, and the author speaks in the first person
+ * throughout. Only one person writes the site, so "we" would claim a team that
+ * does not exist; use it only if other people come to contribute.
+ *
+ * The paragraph on the author's training is there because a reader may take an
+ * engineer's site for engineering advice. It says what the background does not
+ * cover, and that nothing here is a professional opinion. Keep it, and do not
+ * add a professional designation anywhere on the site.
  *
  * The 2015 slides are hosted with Janos Toth's permission, recorded in
  * `docs/licensing.md`, and cited as `TOTH-BCCI-15`. The register entry carries
@@ -83,6 +88,13 @@ export const about: PageModule = {
             municipality or any agency, and nothing on it is an official
             instruction.
           </p>
+          <p>
+            I studied mechanical engineering and work in energy management.
+            Neither gives me expertise in seismic or geotechnical engineering.
+            This site is not engineering work, and nothing on it is a
+            professional opinion. It reports what others have published, and
+            where they disagree or say nothing, it says so.
+          </p>
         </Prose>
       ),
     },
@@ -123,8 +135,8 @@ export const about: PageModule = {
       body: (
         <Prose>
           <p>
-            Our goal is an honest picture of what a major earthquake would do to
-            life in the Lower Mainland. Wherever published work exists, we rely
+            My goal is an honest picture of what a major earthquake would do to
+            life in the Lower Mainland. Wherever published work exists, I rely
             on it, and each figure links to its source on the{" "}
             <Link href="/sources/" className={link}>
               sources page
@@ -134,26 +146,25 @@ export const about: PageModule = {
           <p>
             The published record has gaps. Some systems have never been assessed
             publicly, and some studies cover one neighbourhood but not the next.
-            Where that happens, we say so instead of filling the gap with a
+            Where that happens, I say so instead of filling the gap with a
             guess.
           </p>
           <p>
-            We keep the detail light on purpose. What changes how a household
+            I keep the detail light on purpose. What changes how a household
             prepares is knowing whether something lasts days, weeks or months,
-            and what that would be like to live through. So that is what we
-            focus on. The full documents are linked for anyone who wants them,
-            and{" "}
+            and what that would be like to live through. So that is what I focus
+            on. The full documents are linked for anyone who wants them, and{" "}
             <Link href="/method/" className={link}>
               How this site works
             </Link>{" "}
-            explains our method.
+            explains my method.
           </p>
         </Prose>
       ),
     },
 
     {
-      title: "How we used AI",
+      title: "How I used AI",
       body: (
         <Prose>
           <p>
@@ -171,7 +182,7 @@ export const about: PageModule = {
           </p>
           <p>
             AI makes mistakes, and so do I. Every figure links to its source so
-            you can check it. If something looks wrong, please tell us.
+            you can check it. If something looks wrong, please tell me.
           </p>
         </Prose>
       ),

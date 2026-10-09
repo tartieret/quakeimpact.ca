@@ -28,6 +28,11 @@ power, roads and food supply it relies on, and how long each takes to come back.
 This is a personal project, not a publication of the consulate, a municipality or any
 agency, and nothing on it is an official instruction.
 
+I studied mechanical engineering and work in energy management. Neither gives me
+expertise in seismic or geotechnical engineering. This site is not engineering work, and
+nothing on it is a professional opinion. It reports what others have published, and
+where they disagree or say nothing, it says so.
+
 ## Where this started
 
 In November 2015 I went to a talk in Vancouver by
@@ -45,20 +50,20 @@ mean.
 
 ## Where the information comes from
 
-Our goal is an honest picture of what a major earthquake would do to life in the Lower
-Mainland. Wherever published work exists, we rely on it, and each figure links to its
+My goal is an honest picture of what a major earthquake would do to life in the Lower
+Mainland. Wherever published work exists, I rely on it, and each figure links to its
 source on the [sources page](/sources/).
 
 The published record has gaps. Some systems have never been assessed publicly, and some
-studies cover one neighbourhood but not the next. Where that happens, we say so instead
+studies cover one neighbourhood but not the next. Where that happens, I say so instead
 of filling the gap with a guess.
 
-We keep the detail light on purpose. What changes how a household prepares is knowing
+I keep the detail light on purpose. What changes how a household prepares is knowing
 whether something lasts days, weeks or months, and what that would be like to live
-through. So that is what we focus on. The full documents are linked for anyone who wants
-them, and [How this site works](/method/) explains our method.
+through. So that is what I focus on. The full documents are linked for anyone who wants
+them, and [How this site works](/method/) explains my method.
 
-## How we used AI
+## How I used AI
 
 This site was built with generative AI, mainly Anthropic's Claude (Opus 5.5), in 2026. I
 decided what to cover, which sources to trust and what went on each page. The AI
@@ -70,7 +75,7 @@ separate AI review pass and then by me. The photographs are real, taken by the p
 credited under them. None was generated.
 
 AI makes mistakes, and so do I. Every figure links to its source so you can check it.
-If something looks wrong, please tell us.
+If something looks wrong, please tell me.
 
 ## Contributions are welcome
 

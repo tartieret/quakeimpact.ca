@@ -69,6 +69,9 @@ all, because most people help one another after a disaster, and theft and violen
 isolated cases.
 [KATRINA-MYTHS-08]
 
+Table note: Durations in the words of the documents that state them. Not an
+engineering assessment.
+
 ## The systems
 
 ## What you can do
