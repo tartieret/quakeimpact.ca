@@ -3,102 +3,65 @@ route: /method/
 title: How this site works
 nav: Method
 hook: Where the evidence comes from, and where it stops.
-lede: Every statement on this site comes from a published document. This page explains how that evidence is read, and where it stops.
+lede: Every figure on this site comes from a published document. This page explains how those documents are used, and what they leave out.
 ---
 
-## Every statement reaches its document
+## Every figure leads to its document
 
-Each system page gives one sentence saying how the system fails, how long the
-disruption is expected to last where a document states it, and a link to that
-document. Durations stay in the source's own words, such as "days to weeks" or "many
-months", and are never sharpened into a number the source does not give.
+Governments, utilities, regulators and their engineers wrote the documents behind
+this site. Each number, duration and place has a small numbered marker beside it.
+Tap or click it to see the document it came from.
 
-Most published work assesses one design earthquake, so one sentence usually stands for
-both scenarios. Where the two earthquakes genuinely differ, as they do for where help
-comes from, the page shows each.
+Numbers are rounded to what matters to a reader. If a report says repairs could take
+two to three weeks, the page may just say "several weeks". It will not turn weeks into
+days, or stretch a finding about one neighbourhood to cover the whole region. BC Hydro,
+for example, has told its regulator that a large earthquake could leave up to two
+thirds of downtown customers without power for several weeks. [BCH-WESTEND-25] So the
+electricity page talks about downtown, and says that nothing similar has been
+published for Richmond, Surrey or the North Shore.
 
-Where no document states how long a system would be out, the page says so. That is a
-statement about the public record, not about the infrastructure: a missing estimate
-says nothing about whether a system would hold up.
+When nobody has published an estimate of how long a system would be out, the page
+says so. That does not mean the system would be fine. It means nobody has put a
+number on it in public.
 
-A sentence with a number in it and nothing to click is a mistake.
+## The stories use the same evidence
 
-## Some evidence covers only part of the region
+Some parts of the site tell a story: the first hours after the shaking, then the days
+and weeks that follow. The power goes out, and with it the lights, the lifts and the
+tills. Water pressure drops as mains break, and debris blocks the streets. Each of those
+events comes from a page on this site that gives its sources, and the story links to
+it. The story shows what is likely to happen across the region. Nobody can say what
+will happen on a particular street.
 
-The site covers the whole region. A lot of the evidence covers one neighbourhood.
+Earthquakes in other places appear too. The 2011 earthquake in Christchurch, New
+Zealand, shows what months without sewers does to a city. The 1995 earthquake in
+Kobe, Japan, shows what happens to a port. They are here because they show that none
+of this is hypothetical, but their numbers are never used for the Lower Mainland.
 
-Electricity is the clearest case. BC Hydro told its regulator in November 2025 that a
-large earthquake could leave up to two thirds of **downtown** customers without power,
-that it "could take several weeks to restore power to customers", and years to fully
-restore the system. [BCH-WESTEND-25] Nothing equivalent has been published for Surrey,
-Richmond or the North Shore.
+The site also has a point of view. Where the evidence supports a conclusion, such as
+that the region is not ready, the page says it directly. Those conclusions are the
+site's own, and are never attributed to a document that did not reach them.
 
-It is the only measured evidence available, so the site uses it, and keeps the
-sentence narrow: downtown, and then the gap.
+## Both earthquakes come from one federal model
 
-## Governments use the same public loss model
+The two earthquakes on this site, a magnitude 9.0 on the Cascadia fault and a
+magnitude 7.0 in the Strait of Georgia, come from the Geological Survey of Canada.
+[NRCAN-SCEN] The province's planning figures come from the same model runs.
+[DCRRA-2025] [PEIRS] So when a federal report and a provincial report give the same
+number, it is one estimate quoted twice.
 
-Both scenarios come from the Geological Survey of Canada's scenario
-catalogue: a magnitude 9.0 full rupture of the Cascadia fault, and a magnitude 7.0 in
-the Strait of Georgia. [NRCAN-SCEN]
+Those runs only count damage to buildings, and to the people inside them, from the
+shaking itself. Fire, landslides, aftershocks and liquefaction, where wet ground turns
+soft during shaking, are left out. [NRCAN-SCEN] Natural Resources Canada's own report
+says the real impact is likely higher: its figures are "likely to represent a minimum
+estimate on impacts." [GSC-OF-8853]
 
-British Columbia's own planning documents use the same runs. The province's Cascadia
-casualty figures are attributed to the federal scenario. [DCRRA-2025] Its crustal
-figures were developed by Natural Resources Canada. [PEIRS] The province asked for
-those scenarios in the first place. [GSC-OF-8853]
+## Pages are updated when new work comes out
 
-The provincial figures come directly from the federal model. A federal document and a provincial document giving the same number are one model quoted twice. Where a genuinely independent estimate exists, it comes from
-the insurance industry, and it is named as such wherever it appears.
-
-Every one of those modelled figures covers "only damage to buildings, and their
-inhabitants, from earthquake shaking". Fire following, landslides, liquefaction and
-aftershocks are "not currently included". [NRCAN-SCEN] Natural Resources Canada draws
-the conclusion itself: with those hazards left out, "the estimates herein are likely to
-represent a minimum estimate on impacts." [GSC-OF-8853]
-
-## What past earthquakes can show us
-
-Past earthquakes elsewhere explain a mechanism, and nothing more. The 2011
-earthquake in Christchurch, New Zealand, shows what months without sewer service
-does to a city. The 1995 earthquake in Kobe, Japan, shows what happens to a port.
-Neither tells anyone how long a pipe in Richmond would be broken.
-
-No figure from another earthquake is used as a number for the Lower Mainland
-anywhere here. Where a past earthquake elsewhere is mentioned, it is labelled
-with where and when it happened.
-
-## Similar figures may measure different things
-
-**Return periods do not carry across subjects.** A dam in the top consequence class is
-assessed against a 1-in-10,000-year earthquake, and a building against a 1-in-2,475-year
-one. The professional
-guideline for dam safety reviews in British Columbia states that building-code ground
-motions should not be used for them, so the two figures are not points on one scale.
-[EGBC-DSR-GL]
-
-**Insured loss is not economic loss.** Both are given in billions and both appear in
-the same reports. One is what insurers pay.
-
-**A design intent is not a prediction.** "Built to withstand a 475-year earthquake" is
-a statement about what a structure was aimed at, not a forecast of what it will do.
-That is why this site does not rank bridges by the earthquake they were designed for.
-
-## What is here will change as evidence improves
-
-The documents this site reads are still being written. Four pieces of work are
-outstanding, and each of them could change what a page says.
-
-The second phase of the regional microzonation mapping, covering Pitt Meadows, Maple
-Ridge and Langley, is due in late 2026. [MVSMMP] Metro Vancouver's governing drinking
-water plan lists the analysis that would identify its seismic weak points as work
-still to do. [MV-DWMP-26] BC Hydro describes its assessment of the transmission and
-distribution network as still being completed. [BCH-DAMFAQ] The federal scenario
-catalogue says its excluded hazards are not *currently* included. [NRCAN-SCEN]
-
-Corrections are welcome and the [contribute](/contribute/) page says what is useful:
-a published document, a correction with a source behind it, or a pointer to a report.
+Several of the reports this site relies on are still being written. When one is
+published, the pages that depend on it are updated. If you spot a mistake, or know of
+a document that fills a gap, the [contribute](/contribute/) page explains what helps.
 
 ## Sources on this page
 
-[BCH-WESTEND-25] [NRCAN-SCEN] [DCRRA-2025] [PEIRS] [GSC-OF-8853] [EGBC-DSR-GL]
-[MVSMMP] [MV-DWMP-26] [BCH-DAMFAQ]
+[BCH-WESTEND-25] [NRCAN-SCEN] [DCRRA-2025] [PEIRS] [GSC-OF-8853]

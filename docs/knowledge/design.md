@@ -34,7 +34,7 @@ The `/prepare/` open-end arrowhead was muted on muted, 1:1.
 - **An overhang**: run the mark past the bar so the part that carries the reading is on
   paper (`DayStop`). No single grey clears 3:1 against ink and mid-grey at once.
 - **A knockout with nothing under it is a mark with no ground.** A paper fill on the
-  paper frame paints nothing (`LandNode`, the `/method/` boxes), and the honest form is
+  paper frame paints nothing (`LandNode`), and the honest form is
   `fill="none"`. Name what a fill covers before writing it.
 - A closed end is flush and stops against an upright; an open end is cut back and
   detaches across a gap of paper.
