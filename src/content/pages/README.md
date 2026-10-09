@@ -62,10 +62,19 @@ something new, and keep it near 160 characters, which is what a search engine
 shows. It is required, because a page without one falls back to the site's
 tagline and every result for the site then reads the same.
 
+**`meta.reviewed` is the day the page was last checked against its sources.**
+It is set by hand, as `YYYY-MM-DD`, and it means only that. A copy edit leaves
+it alone; reading the page against a new or revised document moves it, even if
+nothing on the page changes. The page shows it under the standfirst, the footer
+shows the latest of all of them, and the sitemap sends it as `lastmod`. A date
+from the build or from git would move on every typo fix and say nothing about
+the evidence.
+
 ## Porting a copy file
 
 - `route`, `title`, `nav` and the front-matter `lede` (as `standfirst`) go into
-  `meta`, and `description` is written from that same lede. `mechanism`, `disruption`
+  `meta`, `description` is written from that same lede, and `reviewed` is the
+  day the port was checked against the sources. `mechanism`, `disruption`
   and `source` do not: they live in `SYSTEMS` in `src/content/site.ts` and the
   route renders them above the body.
 - Each `##` becomes a `PageSection`. The heading text is verbatim.
@@ -109,6 +118,8 @@ export const example: PageModule = {
     /** The standfirst compressed to one plain sentence, for a search result. */
     description:
       "What the page establishes, in the page's own words and with no marker.",
+    /** The day the page was last checked against its sources. */
+    reviewed: "2026-10-09",
     /** The line above the title, where the page belongs to a part of the site. */
     kicker: "Life afterwards",
     standfirst: "The copy's lede, one or two sentences.",

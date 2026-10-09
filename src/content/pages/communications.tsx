@@ -43,6 +43,7 @@ export const communications: PageModule = {
     title: "Communications",
     description:
       "The province expects disruption to communications to continue for days to weeks. Cell sites carry backup power for hours to a few days, and no rule sets a minimum.",
+    reviewed: "2026-10-09",
     nav: "Communications",
     kicker: "Life afterwards",
     standfirst: (

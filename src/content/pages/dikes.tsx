@@ -17,6 +17,7 @@ export const dikes: PageModule = {
     title: "Dikes",
     description:
       "A dike keeps the river and the sea out of land lying lower than they are. On the Fraser delta it is built on the same loose, wet sand that liquefies.",
+    reviewed: "2026-10-09",
     nav: "Dikes",
     kicker: "The shaking",
     standfirst:

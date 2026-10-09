@@ -41,6 +41,7 @@ export const about: PageModule = {
     title: "About this site",
     description:
       "QuakeImpact describes what a major earthquake would do to daily life in the Lower Mainland. Its figures come from published work and link to their sources.",
+    reviewed: "2026-10-09",
     nav: "About",
     standfirst:
       "QuakeImpact describes what a major earthquake would do to daily life in the Lower Mainland, in the order people would live through it. Its figures come from published work and link to their sources.",

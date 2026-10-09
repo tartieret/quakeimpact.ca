@@ -29,6 +29,7 @@ export default function ShakingIndexPage() {
             kicker={shaking.meta.kicker}
             title={shaking.meta.title}
             standfirst={shaking.meta.standfirst}
+            reviewed={shaking.meta.reviewed}
           />
         }
       >

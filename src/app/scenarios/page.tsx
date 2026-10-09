@@ -29,7 +29,11 @@ export default function ScenariosPage() {
     <Citations ids={meta.references}>
       <ArticleShell
         header={
-          <PageHeader title={meta.title} standfirst={meta.standfirst} />
+          <PageHeader
+            title={meta.title}
+            standfirst={meta.standfirst}
+            reviewed={meta.reviewed}
+          />
         }
       >
         {sections.map((section) => (

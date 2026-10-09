@@ -236,6 +236,7 @@ export const dams: PageModule = {
     title: "Dams",
     description:
       "Dams in the top two classes are designed for a one-in-ten-thousand-year earthquake. Four in this region have parts expected to fail far below that.",
+    reviewed: "2026-10-09",
     nav: "Dams",
     kicker: "The shaking",
     standfirst:

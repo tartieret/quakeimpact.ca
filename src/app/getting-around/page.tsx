@@ -30,6 +30,7 @@ export default function GettingAroundPage() {
             kicker={meta.kicker}
             title={meta.title}
             standfirst={meta.standfirst}
+            reviewed={meta.reviewed}
           />
         }
       >

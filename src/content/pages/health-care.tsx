@@ -26,6 +26,7 @@ export const healthCare: PageModule = {
     title: "Health care",
     description:
       "A study of one health authority’s buildings finds about 65 per cent likely to be completely damaged at the earthquake level used by the current building code.",
+    reviewed: "2026-10-09",
     nav: "Health care",
     kicker: "Life afterwards",
     standfirst: (

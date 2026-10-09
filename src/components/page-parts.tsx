@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import type { PageStatus } from "@/content/types";
+import type { IsoDate, PageStatus } from "@/content/types";
 import { DraftMark } from "./status";
 import { slugify } from "./prose-blocks";
 
@@ -21,11 +21,28 @@ import { slugify } from "./prose-blocks";
 /* Page furniture                                                      */
 /* ------------------------------------------------------------------ */
 
+/**
+ * A date as the site writes one, "9 October 2026", inside a `<time>` that
+ * carries the machine-readable form. Formatted in UTC so the day cannot shift
+ * with the timezone of the machine running the build.
+ */
+const DATE_FORMAT = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
+export function DateText({ date }: { date: IsoDate }) {
+  return <time dateTime={date}>{DATE_FORMAT.format(new Date(date))}</time>;
+}
+
 export function PageHeader({
   kicker,
   title,
   status,
   standfirst,
+  reviewed,
   children,
 }: {
   kicker?: string;
@@ -38,6 +55,11 @@ export function PageHeader({
    */
   status?: PageStatus;
   standfirst?: ReactNode;
+  /**
+   * The day the page was last checked against its sources, from the page
+   * module. Absent on a page with no module, which has no review to date.
+   */
+  reviewed?: IsoDate;
   children?: ReactNode;
 }) {
   return (
@@ -56,6 +78,11 @@ export function PageHeader({
       {standfirst ? (
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted text-pretty">
           {standfirst}
+        </p>
+      ) : null}
+      {reviewed ? (
+        <p className="mt-4 text-sm text-ink-faint">
+          Last reviewed <DateText date={reviewed} />
         </p>
       ) : null}
       {children ? <div className="mt-6">{children}</div> : null}

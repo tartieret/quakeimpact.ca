@@ -27,6 +27,7 @@ export const largeInfrastructure: PageModule = {
     title: "Port, airport and ferry terminals",
     description:
       "The region depends on a small number of port, airport and ferry terminals with no local substitutes.",
+    reviewed: "2026-10-09",
     nav: "Port, airport and ferries",
     kicker: "Life afterwards",
     standfirst: (

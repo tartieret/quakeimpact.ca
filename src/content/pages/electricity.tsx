@@ -29,6 +29,7 @@ export const electricity: PageModule = {
     title: "Electricity",
     description:
       "BC Hydro says its main downtown substation would fail in an earthquake well below the current building-code standard.",
+    reviewed: "2026-10-09",
     nav: "Electricity",
     kicker: "Life afterwards",
     standfirst:

@@ -25,6 +25,7 @@ export const safetyAndConflict: PageModule = {
     title: "Safety and conflict",
     description:
       "What happens when people run out of food and water after a major earthquake? Past disasters show that most people help one another.",
+    reviewed: "2026-10-09",
     nav: "Safety and conflict",
     kicker: "Life afterwards",
     standfirst: (

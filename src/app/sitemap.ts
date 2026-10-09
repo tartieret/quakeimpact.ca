@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ALL_ROUTES } from "@/content/site";
 import { absoluteUrl } from "@/content/metadata";
+import { pageFor } from "@/content/pages";
 
 /**
  * `/sitemap.xml`, written at build time into the static export.
@@ -9,14 +10,20 @@ import { absoluteUrl } from "@/content/metadata";
  * a page that exists is a page the sitemap holds and there is no second list
  * to keep in step.
  *
- * Each entry is a URL and nothing else. `lastmod` is only worth sending if it
- * is accurate, and a build date is not: it would mark all 33 pages as changed
- * every time any one of them did, which is the signal a crawler learns to
- * ignore. `changefreq` and `priority` are read by nobody. A date will belong
- * here when it comes from the page's own history rather than from the clock.
+ * `lastmod` is the page module's `reviewed` date: the day the page was last
+ * checked against its sources, set by hand, so it moves when that page's
+ * evidence does and not when any other page changes. A build date would mark
+ * every URL changed whenever one was, which is the signal a crawler learns to
+ * ignore. A page with no module has no review to date and sends none.
+ * `changefreq` and `priority` are read by nobody.
  */
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ALL_ROUTES.map((route) => ({ url: absoluteUrl(route) }));
+  return ALL_ROUTES.map((route) => {
+    const reviewed = pageFor(route)?.meta.reviewed;
+    return reviewed
+      ? { url: absoluteUrl(route), lastModified: reviewed }
+      : { url: absoluteUrl(route) };
+  });
 }

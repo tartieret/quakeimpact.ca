@@ -36,6 +36,7 @@ export const scenarios: PageModule = {
     title: "Two earthquake scenarios",
     description:
       "The Lower Mainland plans for a long offshore megathrust earthquake and a shorter, more violent crustal earthquake close to the city.",
+    reviewed: "2026-10-09",
     nav: "Two scenarios",
     standfirst:
       "The Lower Mainland plans for two different earthquakes. An offshore megathrust shakes for much longer; a smaller crustal earthquake close to the city shakes more violently and hits cities harder.",

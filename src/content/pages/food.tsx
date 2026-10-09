@@ -22,6 +22,7 @@ export const food: PageModule = {
     title: "Food",
     description:
       "The province expects food supply chains to stop working, with fresh-food deliveries taking weeks or months to recover.",
+    reviewed: "2026-10-09",
     nav: "Food",
     kicker: "Life afterwards",
     standfirst: (

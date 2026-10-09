@@ -25,6 +25,7 @@ export const buildings: PageModule = {
     title: "Buildings",
     description:
       "Vancouver’s building model finds more damage from a nearby crustal earthquake than from a larger offshore megathrust.",
+    reviewed: "2026-10-09",
     nav: "Buildings",
     kicker: "The shaking",
     standfirst:

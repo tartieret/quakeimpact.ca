@@ -23,6 +23,7 @@ export const housing: PageModule = {
     title: "Housing",
     description:
       "The province’s planning scenario puts 70,000 households out of their homes in Greater Vancouver. Most of those homes are still standing.",
+    reviewed: "2026-10-09",
     nav: "Housing",
     kicker: "Life afterwards",
     standfirst: (

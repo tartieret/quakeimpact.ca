@@ -63,8 +63,9 @@ estimate on impacts." [GSC-OF-8853]
 ## Pages are updated when new work comes out
 
 Several of the reports this site relies on are still being written. When one is
-published, the pages that depend on it are updated. If you spot a mistake, or know of
-a document that fills a gap, the [contribute](/contribute/) page explains what helps.
+published, the pages that depend on it are updated. Each page shows the date it was
+last checked against its sources. If you spot a mistake, or know of a document that
+fills a gap, the [contribute](/contribute/) page explains what helps.
 
 ## Sources on this page
 
