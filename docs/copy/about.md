@@ -3,46 +3,69 @@ route: /about/
 title: About this site
 nav: About
 hook: Who built this site and where its facts come from.
-lede: QuakeImpact explains the months after a major earthquake in the Lower Mainland. Every factual claim comes from published work and links to its source.
+lede: QuakeImpact describes what a major earthquake would do to daily life in the Lower Mainland, in the order people would live through it. Its figures come from published work and link to their sources.
 ---
+
+## Where this started
+
+My name is [Thomas Tartière](https://www.linkedin.com/in/thomastartiere/). In November
+2015 I went to a talk in Vancouver by
+[Janos Toth](https://www.linkedin.com/in/janos-toth-97b63a6/), an engineer, on the earthquake
+vulnerability of British Columbia's critical infrastructure. He went through it one
+system at a time: buildings, schools, hospitals, bridges, the water supply, the power
+grid. It had a lasting effect on me.
+
+Years later, when my first child was born, that talk was still in the back of my mind,
+and it is what got me to put together an emergency kit for our family. I would like
+this site to do the same for other people, and to follow the same approach: start from
+published work, go through the systems people rely on, and show what losing them would
+mean.
+
+Janos has kindly let us share his slides,
+[Earthquake Vulnerability of BC's Critical Infrastructure](/documents/toth-2015-earthquake-vulnerability-bc-critical-infrastructure.pdf)
+(November 2015, PDF). They are dated: a lot of seismic work has been done since then,
+on bridges and schools in particular. Janos is now with Enginomix Consulting Inc.
 
 ## Why I built this site
 
-My name is [Thomas Tartière](https://www.linkedin.com/in/thomastartiere/). I live in
-downtown Vancouver, and I am the chef d'îlot for the French community here: the
-volunteer the French consulate's emergency plan names as the local point of contact if
-something serious happens in this part of the city.
+I live in downtown Vancouver and volunteer as the chef d'îlot for the French community.
+If something serious happens in this part of the city, the French consulate's emergency
+plan has me as the local point of contact.
 
-Preparing for that meant reading what the province, the region and the utilities have
-published about a major earthquake. What they describe is slower than what most of
-us picture. The
-province expects disruption to water and wastewater systems "for many months following
-the event". [PEIRS] Almost none of this is secret. It sits in filings, plans and
-assessments that nobody outside the field has a reason to open.
+Preparing for that role meant reading what the province, the region and the utilities
+have published about a major earthquake. Most of what they describe happens after the
+shaking stops. The province expects disruption to water and wastewater systems "for
+many months following the event". [PEIRS] That material is spread across regulatory
+filings, emergency plans and engineering reports written for specialists.
 
-So this site collects it in one place: what happens to the systems a household depends
-on, how long each one is out, how widely, and what it is waiting on.
+This site brings it together in plain language: what happens to the water, power, roads
+and food supply a household relies on, and how long each takes to come back.
 
-It is a personal project. It is not published by the consulate, by a municipality or by
-any agency, and nothing on it is an official instruction.
+This is a personal project, not a publication of the consulate, a municipality or any
+agency, and nothing on it is an official instruction.
 
-## Where the figures come from
+## Where the information comes from
 
-Every figure comes from published work: a regulator's filing, a provincial plan, an
-engineering assessment, a peer-reviewed paper. Each one carries a marker that opens
-that document's entry without leaving the page, and the [sources page](/sources/)
-lists them all. Past earthquakes elsewhere appear too, to show how something fails and
-never to give a number for the Lower Mainland.
+Our goal is an honest picture of what a major earthquake would do to life in the Lower
+Mainland. Wherever published work exists, we rely on it, and each figure links to its
+source on the [sources page](/sources/).
 
-The site is not complete, and it could not be. No assessment says precisely how a
-system behaves on the day. Where a figure is missing, the page says so: "No published estimate" means no assessment of it has been published, not that the infrastructure is fine. [How this site works](/method/) explains the rest.
+The published record has gaps. Some systems have never been assessed publicly, and some
+studies cover one neighbourhood but not the next. Where that happens, we say so instead
+of filling the gap with a guess.
 
-## Corrections are welcome
+We keep the detail light on purpose. What changes how a household prepares is knowing
+whether something lasts days, weeks or months, and what that would be like to live
+through. So that is what we focus on. The full documents are linked for anyone who wants
+them, and [How this site works](/method/) explains our method.
 
-The site is open source, for the same reason every claim carries its document: anyone
-should be able to check a sentence against its source. If you find an error, or a
-document that fills one of the gaps, [Contribute](/contribute/) says what can be used
-and what cannot.
+## Contributions are welcome
+
+One person working from public documents will miss things. If you work in one of the
+fields this site covers, or something on a page looks wrong to you, please get in touch,
+even without a source to hand. A correction, a report that fills one of the gaps or a
+review of a page all help keep the picture accurate. The site is open source, and
+[Contribute](/contribute/) explains how to send them.
 
 ## Sources on this page
 
