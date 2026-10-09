@@ -20,16 +20,17 @@ export const resources: PageModule = {
     route: "/resources/",
     title: "Further resources",
     description:
-      "The province’s earthquake preparedness guide, and a CBC podcast that follows a major earthquake from the first day to the first year.",
+      "The province’s earthquake preparedness guide, the annual ShakeOut drill, and a CBC podcast that follows a major earthquake from the first day to the first year.",
     nav: "Resources",
-    kicker: "Guides and a podcast",
+    kicker: "Guides, a drill and a podcast",
     standfirst:
-      "The province’s guide is the one to follow at home, and a CBC podcast tells the story of a major earthquake from the first day to the first year.",
+      "The province’s guide is the one to follow at home. The ShakeOut drill is the place to practise, and a CBC podcast tells the story of a major earthquake from the first day to the first year.",
     /** First-cited order, which is the order the markers are numbered in. */
     references: [
       "PREPAREDBC",
       "PREPAREDBC-PLAN",
       "PREPAREDBC-GUIDES",
+      "BCEA-SHAKEOUT-26",
       "CBC-FAULTLINES-16",
       "NRCAN-EEW",
     ],
@@ -75,6 +76,35 @@ export const resources: PageModule = {
               guides and resources
             </a>{" "}
             page. <Cite id="PREPAREDBC-GUIDES" />
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "Every October, hundreds of thousands of people practise the first minute",
+      body: (
+        <Prose>
+          <p>
+            The Great British Columbia ShakeOut is a drill held every October,
+            when individuals, families, schools and workplaces stop and practise
+            Drop, Cover and Hold On. About 868,000 people in the province took
+            part in 2025. <Cite id="BCEA-SHAKEOUT-26" /> It is run by the
+            British Columbia Earthquake Alliance, a not-for-profit society, and
+            anyone can sign up at{" "}
+            <a
+              href="https://www.shakeoutbc.ca/"
+              target="_blank"
+              rel="noreferrer"
+              className={link}
+            >
+              shakeoutbc.ca
+            </a>
+            . What to do while the shaking lasts is on{" "}
+            <Link href="/prepare/" className={link}>
+              Preparing
+            </Link>
+            .
           </p>
         </Prose>
       ),

@@ -299,6 +299,15 @@ export const REFERENCES: Record<string, Reference> = {
     route: "direct",
     licence: "King's Printer Licence – British Columbia: may be quoted at length with attribution",
   },
+  "BCEA-SHAKEOUT-26": {
+    id: "BCEA-SHAKEOUT-26",
+    kind: "report",
+    title: "The Great British Columbia ShakeOut: an annual earthquake drill run by the British Columbia Earthquake Alliance, a not-for-profit society, in which individuals, families, schools and organizations practise Drop, Cover and Hold On; about 868,000 participants in British Columbia the year before",
+    publisher: "British Columbia Earthquake Alliance",
+    date: "accessed 8 Oct 2026",
+    href: "https://www.shakeoutbc.ca/",
+    route: "landing",
+  },
   "BCEMS-2016": {
     id: "BCEMS-2016",
     kind: "report",

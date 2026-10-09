@@ -33,7 +33,7 @@ Static export was chosen over an SPA because the site is public-facing content p
 /after/[slug]/          13 system pages
 /getting-around/        Part 2b — moving after the shaking
 /prepare/               Part 3
-/resources/             the province's guide and a CBC podcast
+/resources/             the province's guide, ShakeOut BC, a CBC podcast
 /method/                how the evidence is read, principles, assumption discipline
 /sources/               the source register, rendered from REFERENCES
 /contribute/            what the project can use, and how to send it

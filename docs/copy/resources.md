@@ -2,8 +2,8 @@
 route: /resources/
 title: Further resources
 nav: Resources
-hook: The province's guide and a CBC podcast.
-lede: The province's guide is the one to follow at home, and a CBC podcast tells the story of a major earthquake from the first day to the first year.
+hook: The province's guide, the ShakeOut drill and a CBC podcast.
+lede: The province's guide is the one to follow at home. The ShakeOut drill is the place to practise, and a CBC podcast tells the story of a major earthquake from the first day to the first year.
 ---
 
 ## The province publishes the guide to follow
@@ -20,6 +20,15 @@ contact and the meeting place, in English, French, Chinese and Punjabi.
 people with disabilities, for pets and for neighbourhoods, all on its
 [guides and resources](https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/guides-and-resources)
 page. [PREPAREDBC-GUIDES]
+
+## Every October, hundreds of thousands of people practise the first minute
+
+The Great British Columbia ShakeOut is a drill held every October, when individuals,
+families, schools and workplaces stop and practise Drop, Cover and Hold On. About
+868,000 people in the province took part in 2025. [BCEA-SHAKEOUT-26] It is run by the
+British Columbia Earthquake Alliance, a not-for-profit society, and anyone can sign up
+at [shakeoutbc.ca](https://www.shakeoutbc.ca/). What to do while the shaking lasts is
+on [Preparing](/prepare/).
 
 ## A CBC podcast follows the same two kinds of earthquake
 
@@ -41,4 +50,5 @@ for *Fault Lines* from CBC in any podcast app.
 
 ## Sources on this page
 
-[PREPAREDBC] [PREPAREDBC-PLAN] [PREPAREDBC-GUIDES] [CBC-FAULTLINES-16] [NRCAN-EEW]
+[PREPAREDBC] [PREPAREDBC-PLAN] [PREPAREDBC-GUIDES] [BCEA-SHAKEOUT-26]
+[CBC-FAULTLINES-16] [NRCAN-EEW]
