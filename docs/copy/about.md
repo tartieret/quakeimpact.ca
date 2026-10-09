@@ -71,11 +71,10 @@ If something looks wrong, please tell us.
 
 ## Contributions are welcome
 
-One person working from public documents will miss things. If you work in one of the
-fields this site covers, or something on a page looks wrong to you, please get in touch,
-even without a source to hand. A correction, a report that fills one of the gaps or a
-review of a page all help keep the picture accurate. The site is open source, and
-[Contribute](/contribute/) explains how to send them.
+If you work in one of the fields this site covers, or something on a page looks wrong to
+you, please get in touch, even without a source to hand. A correction, a report that
+fills one of the gaps or a review of a page all help keep the picture accurate. The site
+is open source, and [Contribute](/contribute/) explains how to send them.
 
 ## Sources on this page
 
