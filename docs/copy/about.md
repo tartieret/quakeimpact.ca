@@ -59,6 +59,21 @@ whether something lasts days, weeks or months, and what that would be like to li
 through. So that is what we focus on. The full documents are linked for anyone who wants
 them, and [How this site works](/method/) explains our method.
 
+## How we used AI
+
+This site was made with the assistance of generative AI, mainly Anthropic's Claude
+Opus 5.5 as of 2026. I decided what to cover, which sources to trust and what went on
+each page. Within that, the AI searched for and summarised published documents, wrote
+most of the site's code and drafted much of the text.
+
+I reviewed everything before it was published. Figures and quotations were checked
+against the documents they cite, and each one links to its source so you can check it
+too. Some pages have also been reviewed by people who work in the fields they cover.
+The photographs are real, taken by the people credited under them. None of them was
+generated.
+
+AI makes mistakes, and so do I. If you find one, please tell us.
+
 ## Contributions are welcome
 
 One person working from public documents will miss things. If you work in one of the

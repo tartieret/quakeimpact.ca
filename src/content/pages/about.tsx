@@ -6,8 +6,10 @@ import type { PageModule } from "./index";
 /**
  * About. The body of `/about/`, ported from `docs/copy/about.md`.
  *
- * Four sections, in the order a stranger needs them: where the project came
- * from, why it exists, how its information is chosen, and how to improve it.
+ * Five sections, in the order a stranger needs them: where the project came
+ * from, why it exists, how its information is chosen, how AI was used to make
+ * it, and how to improve it. The AI section says what the review consisted of
+ * rather than only that there was one; keep it true if the process changes.
  * The page used to restate the shaking and mutual-aid findings that
  * `/scenarios/` and the home page already carry; an about page that argues the
  * case a second time is an about page nobody finishes.
@@ -151,6 +153,32 @@ export const about: PageModule = {
               How this site works
             </Link>{" "}
             explains our method.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "How we used AI",
+      body: (
+        <Prose>
+          <p>
+            This site was made with the assistance of generative AI, mainly
+            Anthropic’s Claude Opus 5.5 as of 2026. I decided what to cover,
+            which sources to trust and what went on each page. Within that, the
+            AI searched for and summarised published documents, wrote most of
+            the site’s code and drafted much of the text.
+          </p>
+          <p>
+            I reviewed everything before it was published. Figures and
+            quotations were checked against the documents they cite, and each
+            one links to its source so you can check it too. Some pages have
+            also been reviewed by people who work in the fields they cover. The
+            photographs are real, taken by the people credited under them. None
+            of them was generated.
+          </p>
+          <p>
+            AI makes mistakes, and so do I. If you find one, please tell us.
           </p>
         </Prose>
       ),
