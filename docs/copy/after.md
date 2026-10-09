@@ -6,91 +6,82 @@ hook: Fourteen systems, and the order they come back in is set by what each one 
 lede: How long each system is out after the shaking, how widely, and what it is waiting on. Each of them fails and returns in an order the others decide.
 ---
 
-## Failures spread between systems
+## Repairs wait on fuel and roads
 
-On fuel, the province writes: "Fuel also holds a unique position as a critical
-resource due to its requirement in the distribution of all other supplies, first
-responder activities, and enabling functionality of certain impacted facilities and
-infrastructure that rely on generators." [PEIRS] Generators, repair crews and
-deliveries all need fuel.
+Generators, emergency crews and every delivery of supplies run on fuel. [PEIRS] Fuel
+moves by road, and the roads are expected to be damaged or running at much reduced
+capacity for weeks to months. [PEIRS]
 
-Fuel moves by road, and in the same document the province expects transportation
-routes to be "damaged or only partially functional and operating at a much-reduced
-capacity for an extended period (weeks to months)". [PEIRS] Roads are cleared in a
-published order: Metro Vancouver's regional debris plan clears lifeline routes first,
-then critical infrastructure, then major freeways and arterials, and "local routes"
-last. [MV-DEBRIS-17]
+Crews clear debris in a set order: lifeline routes first, then critical
+infrastructure, then major freeways and arterials, and local streets last.
+[MV-DEBRIS-17] That order decides when a crew reaches a broken water main. Metro
+Vancouver's model of a magnitude 9.0 earthquake breaks its water mains in 267 places,
+about 60 of them where mains cross under rivers and inlets. There are 71 of those
+crossings, and they are the hardest places in the system to reach. [MV-WATER-22]
 
-That order decides when a crew reaches a broken pipe. A magnitude 9.0 earthquake is
-modelled to cause 267 water main failures across Metro Vancouver's network, with
-about 60 of them at the 71 points where mains cross under rivers and inlets, the
-hardest places in the system to reach. [MV-WATER-22]
+## What fails first, and what follows
 
-## What fails first
+**In the first hours**, phone networks and health care are hit, and dams have to be
+checked. Cell sites switch to backup power, and no rule says how long it has to last:
+the federal regulator opened a proceeding to set one and has not decided.
+[CRTC-2025-226] About 65 per cent of Vancouver Coastal Health's buildings are likely to
+be completely damaged by the shaking the current building code designs for.
+[DCRRA-APPC]
 
-**In the first hours**, communications and health care are affected, and dams must be
-checked. No rule sets how long a mobile phone site must keep running on backup power;
-the regulator opened a proceeding to decide what the requirement should be and has not
-decided. [CRTC-2025-226] About 65
-per cent of one health authority's buildings would likely be completely damaged at the
-shaking level the current building code designs for, and no published document
-compares the expected casualties to the number of beds the region has. [DCRRA-APPC]
+**Within the first week**, the damage spreads to electricity, water, roads, fuel and
+food. In downtown Vancouver, up to two thirds of BC Hydro's customers could be without
+power for several weeks, and the system could take years to fully restore.
+[BCH-WESTEND-25] Many bridges are expected to be damaged, and each stays closed until
+it has been inspected. [BCSIMS-22] Every bridge to the airport is among them, so road
+access to it is expected to be cut for the first few days. [AIR-2013] In a Cascadia
+earthquake the United States would be hit too, and unable to send mutual aid. [PEIRS]
 
-**Within the first week**, failures spread through electricity, water, transportation,
-fuel and food supply. Access to outside help also becomes clear. BC Hydro told its regulator in November 2025 that a large earthquake
-could leave up to two thirds of downtown customers without power for several weeks,
-and the system years from full restoration. [BCH-WESTEND-25] Many bridges are expected to be damaged, and each is closed until it has been
-inspected. [BCSIMS-22] In a Cascadia earthquake the United States would be unable to
-deliver mutual aid. [PEIRS]
-
-**Over the following weeks**, sanitation, natural gas, housing and major terminals
-remain disrupted. Disruption to water and wastewater systems is expected to run for many months.
-[PEIRS] Natural gas is the one utility that cannot be restored in bulk: service
-returns building by building, once a qualified person has been inside and relit every
-appliance. Restoring service to hundreds of thousands of customers would take several weeks. [BCUC-C-6-25] Modelling of a magnitude 9.0 puts road access to the airport cut
-in the first critical days, because every bridge leading to it is damaged. [AIR-2013]
-
-Several systems that fail in the first hours take months to restore.
+**Over the following weeks**, sanitation, natural gas, housing and the port, airport
+and ferry terminals stay disrupted. Water and sewer service are expected to be
+disrupted for many months. [PEIRS] Gas is the one utility that cannot be switched back
+on all at once: service returns building by building, once a qualified person has been
+inside and relit every appliance. Doing that for hundreds of thousands of customers
+would take several weeks. [BCUC-C-6-25]
 
 ## How long each system is out
 
-Each system is listed with how long the disruption is expected to last, in the words of
-the document that says so. Where no document states it, the table says so. That is a gap
-in the public record, not a finding that the system would hold up.
+The table shows how long each system is expected to be out, in the words of the
+document that estimates it. Where no document gives an estimate, the table says so.
+That means nobody has published one, not that the system would hold up.
 [How this site works](/method/).
 
-Dams and reservoirs have no published estimate: Cleveland and Seymour Falls dams were
-each reviewed by an engineer in 2024, as the law requires, neither review identified an
-unsafe condition, and neither published conclusion mentions earthquakes. [MV-DSP-2026]
-The seismic upgrade work at Cleveland has not started. [MV-CAPEX-2026] For port,
-airport and ferry terminals, the one study that exists modelled the megathrust and
-nothing else. [AIR-2013] Safety and conflict is not a gap: it has no restoration time at
-all, because most people help one another after a disaster, and theft and violence are
-isolated cases.
-[KATRINA-MYTHS-08]
+For the port, airport and ferry terminals, the only study covers the Cascadia scenario
+and not the shallow crustal one. [AIR-2013] Safety and conflict has no restoration time at all, because
+after a disaster most people help one another, and theft and violence are isolated
+cases. [KATRINA-MYTHS-08]
 
 Table note: Durations in the words of the documents that state them. Not an
 engineering assessment.
+
+Table note: Dams and reservoirs: the 2024 safety reviews of Cleveland and Seymour Falls
+dams found no unsafe condition, but their published conclusions do not mention
+earthquakes. [MV-DSP-2026] Seismic upgrade work at Cleveland has not started.
+[MV-CAPEX-2026]
 
 ## The systems
 
 ## What you can do
 
-Prepare for water, power and sanitation to be unavailable at the same time.
+Plan to be without water, power and a working toilet at the same time.
 
-**Store four litres per person per day, pets included.** The province sets that figure
-for drinking and basic sanitation together. [PREPAREDBC] Distributing bulk
-drinking water across the region stays difficult for the first four to five days.
-[DCRRA-2025]
+**Store four litres of water per person per day, pets included.** That is the
+province's figure, and it covers drinking and basic sanitation. [PREPAREDBC] Getting
+bulk drinking water out across the region is expected to be hard for the first four to
+five days. [DCRRA-2025]
 
-**Work out what in your home needs electricity to run**, including the heating and any
-gas appliance with an electric fan or control, and settle what to do about each one
-before you need to.
+**Find out what in your home needs electricity**, including the heating and any gas
+appliance with an electric fan or control, and decide now what you will do without
+each one.
 
-[Preparing](/prepare/) sets out the rest.
+[Preparing](/prepare/) covers the rest.
 
 ## Sources on this page
 
 [PEIRS] [MV-DEBRIS-17] [MV-WATER-22] [CRTC-2025-226] [DCRRA-APPC] [BCH-WESTEND-25]
-[BCSIMS-22] [BCUC-C-6-25] [AIR-2013] [MV-DSP-2026] [MV-CAPEX-2026] [KATRINA-MYTHS-08]
-[DCRRA-2025] [COV-RISK-2024] [PREPAREDBC]
+[BCSIMS-22] [AIR-2013] [BCUC-C-6-25] [KATRINA-MYTHS-08] [DCRRA-2025] [COV-RISK-2024]
+[MV-DSP-2026] [MV-CAPEX-2026] [PREPAREDBC]
