@@ -71,10 +71,11 @@ import type { PageModule } from "./index";
  * published the panel gives the duration; where none is, it says what the
  * mechanism does to an ordinary week instead.
  *
- * The standfirst opens with the difference between the event and its aftermath.
- * It names the ordinary services a household loses before the timeline shows
- * the sequence in full. The preparation gap moves to the closing lever, where
- * it sits beside the action a reader can take.
+ * The heading says what the page is. The standfirst sets the length of the
+ * shaking against the length of the outages and promises the reason, which the
+ * timeline gives. It carries no figure, so it takes no marker; the province's
+ * two weeks and the preparation gap sit together in the closing lever, beside
+ * the action a reader can take.
  *
  * The system-grid introduction is passed as `lede`. The timeline needs no
  * extra introduction after the hero; its heading leads straight into the story.
@@ -95,7 +96,7 @@ import type { PageModule } from "./index";
 const link = "text-accent underline underline-offset-2";
 
 export const homeHero = {
-  titleLines: ["The shaking", "is the short part."],
+  titleLines: ["What a major earthquake does", "to the Lower Mainland"],
   primary: { label: "See what happens next", href: "#what-happens-after-the-shaking" },
   secondary: { label: "Start preparing", href: "/prepare/" },
 };
@@ -105,13 +106,13 @@ export const home: PageModule = {
     route: "/",
     title: homeHero.titleLines.join(" "),
     description:
-      "What has already been published about a major earthquake in the Lower Mainland: what breaks, how long it stays broken, and what each repair is waiting on.",
+      "What a major earthquake does to water, power, food and transport in the Lower Mainland, how long each stays out, and how to prepare.",
     nav: "Home",
     kicker: "Lower Mainland, British Columbia",
     standfirst: (
       <>
-        A major earthquake may last only minutes. Disruption to water, food,
-        power and transportation could last for weeks.
+        The shaking lasts minutes. Here is what fails, and why the outages
+        can last weeks or months.
       </>
     ),
     /**
@@ -119,11 +120,11 @@ export const home: PageModule = {
      * also the order of "Sources on this page" at the foot of the copy file.
      */
     references: [
-      "PREPAREDBC",
-      "RESEARCHCO-PREP-21",
       "PEIRS",
       "DCRRA-2025",
       "NRCAN-1700",
+      "PREPAREDBC",
+      "RESEARCHCO-PREP-21",
     ],
   },
 
@@ -149,9 +150,9 @@ export const home: PageModule = {
                       felt: a sound like a freight train, then seconds of violent
                       shaking that knock people off their feet, “except for those
                       who remember to drop, cover, and hold on”.{" "}
-                      <Cite id="PEIRS" /> A small number of buildings collapse, many more
-                      shift and crack, and many of the people who try to run
-                      outside are badly hurt by falling and flying objects.{" "}
+                      <Cite id="PEIRS" /> A few buildings collapse and many more
+                      shift and crack. Many people who run outside are badly
+                      hurt by falling and flying objects.{" "}
                       <Link href="/shaking/" className={link}>
                         More about the shaking
                       </Link>
@@ -162,10 +163,9 @@ export const home: PageModule = {
                       <Link href="/after/electricity/" className={link}>
                         power
                       </Link>{" "}
-                      is already off when the shaking stops: the lights, the
-                      lifts, the tills, the fuel pumps and the traffic signals
-                      at every intersection, all at the same moment.
-                      Everyone reaches for a{" "}
+                      goes out during the shaking, and takes the lights, lifts,
+                      tills, fuel pumps and traffic signals with it. Everyone
+                      reaches for a{" "}
                       <Link href="/after/communications/" className={link}>
                         phone
                       </Link>{" "}
@@ -187,14 +187,14 @@ export const home: PageModule = {
                       <Link href="/after/health-care/" className={link}>
                         hospitals
                       </Link>{" "}
-                      taking them stood through the same earthquake.
+                      they are taken to went through the same shaking.
                     </p>
                   </>
                 ),
               },
               {
                 phase: "days",
-                heading: "Nobody is coming to your street yet",
+                heading: "Help reaches main routes before side streets",
                 body: (
                   <>
                     <p>
@@ -203,101 +203,87 @@ export const home: PageModule = {
                         water
                       </Link>{" "}
                       is the first thing to go from the shops, and the shops do
-                      not restock:{" "}
+                      not restock, because{" "}
                       <Link href="/after/food/" className={link}>
                         food
                       </Link>{" "}
-                      arrives by truck through the same broken roads as
-                      everything else, and a{" "}
-                      <Link href="/after/fuel/" className={link}>
-                        service station
-                      </Link>{" "}
-                      with full tanks and no power dispenses nothing.{" "}
+                      arrives by truck on the same broken roads.{" "}
                       <Link href="/after/communications/" className={link}>
-                        Mobile service
+                        Phone service
                       </Link>{" "}
-                      thins out as cell-site backup power, built to last hours
-                      to a few days, runs down, and a site with a generator
-                      keeps going only while fuel reaches it. Cards do not work
+                      fades as cell-site batteries run down. Sites with
+                      generators last as long as their fuel. Cards do not work
                       without power or a network.
                     </p>
                     <p>
                       Crews clear emergency routes first. Local streets wait,
-                      so what you can reach may be limited to walking or cycling
-                      distance. The{" "}
+                      so you may only get as far as you can walk or cycle. The{" "}
                       <Link href="/after/sanitation/" className={link}>
                         toilet
                       </Link>{" "}
-                      can stop being usable on the first day because flushing
-                      takes water nobody has to spare. Family and neighbours
-                      are likely to reach you before official help. See{" "}
-                      <Link href="/prepare/" className={link}>
-                        what to prepare
-                      </Link>
-                      .
+                      may stop flushing on the first day, because there is no
+                      water to spare for it. Family and neighbours are likely
+                      to reach you before official help.
                     </p>
                   </>
                 ),
               },
               {
                 phase: "weeks",
-                heading: "Repairs stretch across the region",
+                heading: "Power and water come back area by area",
                 body: (
                   <>
                     <p>
                       <Link href="/after/electricity/" className={link}>
                         Power
                       </Link>{" "}
-                      comes back where the network can be repaired first.
-                      Restoring poles and wires means making many small repairs
-                      across the region. In downtown Vancouver, BC Hydro says
-                      it could take several weeks to restore power to customers
-                      and years to completely restore the system.{" "}
+                      comes back area by area. In downtown Vancouver, BC Hydro
+                      says customers could be without power for several weeks,
+                      and the system could take years to fully repair.{" "}
                       <Link href="/after/water/" className={link}>
                         Water
                       </Link>{" "}
-                      comes back behind it, and the mains that cross under the
-                      rivers and inlets are the slowest of those repairs.
+                      follows power.
                     </p>
                     <p>
                       The{" "}
                       <Link href="/after/sanitation/" className={link}>
                         sewers
                       </Link>{" "}
-                      stay broken for months. Households manage waste in buckets
-                      and chemical toilets, and an apartment tower has nowhere
-                      else to put it.{" "}
+                      stay broken for months, and households use buckets and
+                      chemical toilets.{" "}
                       <Link href="/after/gas/" className={link}>
                         Gas
                       </Link>{" "}
                       returns building by building, as fast as technicians can
-                      enter each one and relight every appliance in it. Drinking
-                      water arrives on trucks, at points people queue at, and
-                      schools and workplaces are shut or somewhere else.
+                      enter each one and relight every appliance in it.
+                      Drinking water comes by truck to distribution points, and
+                      people queue for it. Schools and workplaces are closed or
+                      have moved.
                     </p>
                   </>
                 ),
               },
               {
                 phase: "months",
-                heading: "Repair becomes the ordinary state of things",
+                heading: "Standing homes can stay closed for months",
                 body: (
                   <>
                     <p>
-                      The{" "}
+                      A{" "}
                       <Link href="/after/housing/" className={link}>
-                        building you live in
+                        building
                       </Link>{" "}
-                      can be standing, sound to look at, and closed for months
-                      behind a cordon. Cordons around standing buildings
-                      displace more people than collapses. Somewhere to move
-                      into is scarce, contractors and engineers are scarcer,
-                      and every household in the region is looking at the same
-                      time.
+                      can be standing, look sound, and still be closed for
+                      months behind a cordon. Cordons around standing buildings
+                      displace more people than collapses. Places to live,
+                      contractors and engineers are all hard to find, because
+                      the whole region needs them at once.
                     </p>
                     <p>
                       Utilities run at reduced service long after they are back
-                      on. The province’s plan assumes people stay in the region.{" "}
+                      on. The province’s plan assumes people stay in the region
+                      while this goes on.{" "}
                       <Link href="/getting-around/" className={link}>
                         What that means for getting around
                       </Link>
@@ -310,9 +296,8 @@ export const home: PageModule = {
           />
           <Prose>
             <p>
-              This timeline combines the two events the province and its
-              agencies plan around. Actual conditions will differ, but these
-              are the events households are asked to be ready for.
+              This timeline draws on the two earthquakes the province plans
+              for. It is a scenario, not a forecast.
             </p>
             <p>
               The weather changes how hard each stretch is. The megathrust
@@ -322,22 +307,17 @@ export const home: PageModule = {
               <Cite id="PEIRS" />
             </p>
             <p>
-              These failures compound one another. Water needs power for pumps
-              and roads for crews. Roads need debris cleared, which needs fuel.
-              The order in which the systems can be brought
-              back sets how long the region waits, so{" "}
+              Each failure slows the repair of the others. Water needs power
+              for pumps and open roads for crews, and clearing roads needs
+              fuel.{" "}
               <Link href="/after/" className={link}>
-                life afterwards
+                Life afterwards
               </Link>{" "}
-              takes them one at a time.
+              takes each system in turn.
             </p>
             <p>
-              None of those repairs is a household’s to make, which is why
-              what matters on the day is what you already have.{" "}
-              <Link href="/prepare/" className={link}>
-                Preparing
-              </Link>{" "}
-              sets out what to keep and how much.
+              None of this is yours to fix. What counts is what you already
+              have at home.
             </p>
           </Prose>
         </div>
@@ -346,7 +326,7 @@ export const home: PageModule = {
 
     {
       title: "Every system comes back on its own schedule",
-      lede: "Water in the taps, power in the walls, a phone that connects, a toilet that flushes, roads that carry you, a home to go back to.",
+      lede: "Start with the one you depend on most. Each card opens a page on what breaks and why.",
       body: <SystemGrid />,
     },
 
@@ -361,22 +341,19 @@ export const home: PageModule = {
               Resources Canada calls “the greatest earthquake hazard” to west
               coast cities, because it is closer and more frequent.{" "}
               <Cite id="NRCAN-1700" /> British Columbia’s primary earthquake
-              planning scenario is that nearer one. <Cite id="PEIRS" /> Other
-              magnitudes and other faults are possible; these two are what the
-              planning is written around.
+              planning scenario is that nearer one. <Cite id="PEIRS" />
             </p>
             <p>
               They are dangerous to different buildings. Which one matters to
               you depends on the building you are in and the ground under it.{" "}
               <Link href="/scenarios/" className={link}>
-                Read about the two scenarios
+                Compare the two scenarios
               </Link>
-              , or start with{" "}
+              , or read{" "}
               <Link href="/shaking/" className={link}>
-                the shaking
-              </Link>
-              , which covers the ground under the region, the buildings on it,
-              and the fires and landslides that arrive after the shaking stops.
+                what the shaking does
+              </Link>{" "}
+              to the ground and the buildings on it.
             </p>
           </Prose>
           <ScenarioCards />
@@ -389,25 +366,25 @@ export const home: PageModule = {
       body: (
         <Prose>
           <p>
-            Governments, utilities and the engineers they hire wrote them.
-            Pages mark gaps where nobody has published an answer. Where two
-            official documents contradict each other, both are here.
+            Every fact here comes from a published document, most of them
+            written by governments, utilities and the engineers they hire.
+            Where nobody has published an answer, the page says so. Where two
+            official documents disagree, you see both.
           </p>
           <p>
-            How long something is out is given in the source’s own words, and
-            never sharpened into a number it does not give.{" "}
+            Durations are given as the source gives them, never more precise.{" "}
             <Link href="/method/" className={link}>
               How this site works
-            </Link>
-            .{" "}
-            <Link href="/sources/" className={link}>
-              The sources
             </Link>{" "}
-            lists every document, and if you find something wrong,{" "}
+            explains the method, the{" "}
+            <Link href="/sources/" className={link}>
+              sources page
+            </Link>{" "}
+            lists every document, and{" "}
             <Link href="/contribute/" className={link}>
               contribute
             </Link>{" "}
-            says what a correction needs.
+            explains how to report an error.
           </p>
         </Prose>
       ),
@@ -425,7 +402,7 @@ export const home: PageModule = {
       </>,
       <>
         You do not need to assemble everything at once. Check what you already
-        have, then add water and food that will not spoil over time. The{" "}
+        have, then add water and food that keeps. The{" "}
         <Link href="/prepare/" className={link}>
           preparation guide
         </Link>

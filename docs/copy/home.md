@@ -1,9 +1,9 @@
 ---
 route: /
-title: The shaking is the short part.
+title: What a major earthquake does to the Lower Mainland
 nav: Home
-hook: The shaking is the short part.
-lede: A major earthquake may last only minutes. Disruption to water, food, power and transportation could last for weeks.
+hook: What a major earthquake does to the Lower Mainland
+lede: The shaking lasts minutes. Here is what fails, and why the outages can last weeks or months.
 ---
 
 [See what happens next ↓](#what-happens-after-the-shaking) · [Start preparing](/prepare/)
@@ -24,81 +24,71 @@ earthquake is and where it happens.
 
 An earthquake close to the city is heard before it is felt: a sound like a freight
 train, then seconds of violent shaking that knock people off their feet, "except
-for those who remember to drop, cover, and hold on". [PEIRS] A small number of
-buildings collapse, many more shift and crack, and many of
-the people who try to run outside are badly hurt by falling and flying objects.
-[More about the shaking](/shaking/).
+for those who remember to drop, cover, and hold on". [PEIRS] A few buildings
+collapse and many more shift and crack. Many people who run outside are badly
+hurt by falling and flying objects. [More about the shaking](/shaking/).
 
-The [power](/after/electricity/) is already off when the shaking stops: the
-lights, the lifts, the tills, the fuel pumps and the traffic signals at every
-intersection, all at the same moment. Everyone reaches for a
-[phone](/after/communications/) at once. Cell sites switch to their batteries, but the
-network is jammed with calls.
+The [power](/after/electricity/) goes out during the shaking, and takes the
+lights, lifts, tills, fuel pumps and traffic signals with it. Everyone reaches
+for a [phone](/after/communications/) at once. Cell sites switch to their
+batteries, but the network is jammed with calls.
 
 Over the next few hours the [water](/after/water/) pressure falls away as broken
 mains empty the system. Glass, brick and cladding lie across the pavements and
-[debris blocks streets](/after/transportation/) in every neighbourhood. People are trapped and injured across the region, and the [hospitals](/after/health-care/) taking them stood
-through the same earthquake.
+[debris blocks streets](/after/transportation/) in every neighbourhood. People
+are trapped and injured across the region, and the
+[hospitals](/after/health-care/) they are taken to went through the same shaking.
 
-**Days — nobody is coming to your street yet.** The taps are dry. Bottled
-[water](/after/water/) is the first thing to go from the shops, and the shops do
-not restock: [food](/after/food/) arrives by truck through the same broken roads
-as everything else, and a [service station](/after/fuel/) with full tanks and no
-power dispenses nothing. [Mobile service](/after/communications/) thins out as
-cell-site backup power, built to last hours to a few days, runs down, and a site with
-a generator keeps going only while fuel reaches it. Cards do not work without power or
-a network.
+**Days — help reaches main routes before side streets.** The taps are dry.
+Bottled [water](/after/water/) is the first thing to go from the shops, and the
+shops do not restock, because [food](/after/food/) arrives by truck on the same
+broken roads. [Phone service](/after/communications/) fades as cell-site
+batteries run down. Sites with generators last as long as their fuel. Cards do
+not work without power or a network.
 
-Crews clear emergency routes first. Local streets wait, so what you can reach
-may be limited to walking or cycling distance. The [toilet](/after/sanitation/)
-can stop being usable on the first day because flushing takes water nobody has
-to spare. Family and neighbours are likely to reach you before official help.
+Crews clear emergency routes first. Local streets wait, so you may only get as
+far as you can walk or cycle. The [toilet](/after/sanitation/) may stop flushing
+on the first day, because there is no water to spare for it. Family and
+neighbours are likely to reach you before official help.
 
-**Weeks — repairs stretch across the region.** [Power](/after/electricity/) comes
-back where the network can be repaired first. Restoring poles and wires means
-making many small repairs across the region. In downtown Vancouver, BC Hydro
-says it could take several weeks to restore power to customers and years to
-completely restore the system.
-[Water](/after/water/) comes back behind it, and the mains that cross under the rivers and inlets are the slowest of those repairs.
+**Weeks — power and water come back area by area.** [Power](/after/electricity/)
+comes back area by area. In downtown Vancouver, BC Hydro says customers could be
+without power for several weeks, and the system could take years to fully
+repair. [Water](/after/water/) follows power.
 
-The [sewers](/after/sanitation/) stay broken for months. Households manage waste
-in buckets and chemical toilets, and an apartment tower has nowhere else to put
-it. [Gas](/after/gas/) returns building by building, as
+The [sewers](/after/sanitation/) stay broken for months, and households use
+buckets and chemical toilets. [Gas](/after/gas/) returns building by building, as
 fast as technicians can enter each one and relight every appliance in it.
-Drinking water arrives on trucks, at points people queue at, and schools and
-workplaces are shut or somewhere else.
+Drinking water comes by truck to distribution points, and people queue for it.
+Schools and workplaces are closed or have moved.
 
-**Months — repair becomes the ordinary state of things.** The [building you live
-in](/after/housing/) can be standing, sound to look at, and closed for months
-behind a cordon. Cordons around standing buildings displace more people than
-collapses. Somewhere to move into is scarce, contractors and engineers are
-scarcer, and every household in the region is looking at the same time.
+**Months — standing homes can stay closed for months.** A
+[building](/after/housing/) can be standing, look sound, and still be closed for
+months behind a cordon. Cordons around standing buildings displace more people
+than collapses. Places to live, contractors and engineers are all hard to find,
+because the whole region needs them at once.
 
 Utilities run at reduced service long after they are back on. The province's
-plan assumes people stay in the region. [What that means for getting
-around](/getting-around/).
+plan assumes people stay in the region while this goes on. [What that means for
+getting around](/getting-around/).
 
-This timeline combines the two events the province and its agencies plan around.
-Actual conditions will differ, but these are the events households are asked to
-be ready for.
+This timeline draws on the two earthquakes the province plans for. It is a
+scenario, not a forecast.
 
 The weather changes how hard each stretch is. The megathrust scenario is set in
 a 30 to 40 degree heatwave with wildfire smoke. [DCRRA-2025] The crustal
 scenario is set on a January afternoon after an atmospheric river. [PEIRS]
 
-These failures compound one another. Water needs power for pumps and roads for
-crews. Roads need debris cleared, which needs fuel. The order in
-which the systems can be brought back sets how long the region waits, so [life
-afterwards](/after/) takes them one at a time.
+Each failure slows the repair of the others. Water needs power for pumps and
+open roads for crews, and clearing roads needs fuel. [Life afterwards](/after/)
+takes each system in turn.
 
-None of those repairs is a household's to make, which is why what matters on the
-day is what you already have. [Preparing](/prepare/) sets out what to keep and
-how much.
+None of this is yours to fix. What counts is what you already have at home.
 
 ## Every system comes back on its own schedule
 
-Water in the taps, power in the walls, a phone that connects, a toilet that
-flushes, roads that carry you, a home to go back to.
+Start with the one you depend on most. Each card opens a page on what breaks
+and why.
 
 *Every system, drawn from the content model rather than written here.*
 
@@ -108,25 +98,22 @@ The offshore Cascadia megathrust is the one people have heard of. The shallower
 earthquake underneath the region is the one Natural Resources Canada calls "the
 greatest earthquake hazard" to west coast cities, because it is closer and more
 frequent. [NRCAN-1700] British Columbia's primary earthquake planning scenario is
-that nearer one. [PEIRS] Other magnitudes and other faults are possible; these two
-are what the planning is written around.
+that nearer one. [PEIRS]
 
 They are dangerous to different buildings. Which one matters to you depends on
 the building you are in and the ground under it.
-[Read about the two scenarios](/scenarios/), or start with [the
-shaking](/shaking/), which covers the ground under the region, the buildings on
-it, and the fires and landslides that arrive after the shaking stops.
+[Compare the two scenarios](/scenarios/), or read [what the shaking
+does](/shaking/) to the ground and the buildings on it.
 
 ## Everything here comes from published documents
 
-Governments, utilities and the engineers they hire wrote them. Pages mark gaps
-where nobody has published an answer. Where two official documents contradict
-each other, both are here.
+Every fact here comes from a published document, most of them written by
+governments, utilities and the engineers they hire. Where nobody has published an
+answer, the page says so. Where two official documents disagree, you see both.
 
-How long something is out is given in the source's own words, and never sharpened into
-a number it does not give. [How this site works](/method/). [The
-sources](/sources/) lists every document, and if you find something wrong,
-[contribute](/contribute/) says what a correction needs.
+Durations are given as the source gives them, never more precise. [How this site
+works](/method/) explains the method, the [sources page](/sources/) lists every
+document, and [contribute](/contribute/) explains how to report an error.
 
 ## Start with food and water
 
@@ -135,9 +122,9 @@ supplies. [PREPAREDBC] Most households in the region have not put together a kit
 of any size. [RESEARCHCO-PREP-21]
 
 You do not need to assemble everything at once. Check what you already have,
-then add water and food that will not spoil over time. The [preparation
-guide](/prepare/) shows how much to keep and what to add next.
+then add water and food that keeps. The [preparation guide](/prepare/) shows how
+much to keep and what to add next.
 
 ## Sources on this page
 
-[PREPAREDBC] [RESEARCHCO-PREP-21] [PEIRS] [DCRRA-2025] [NRCAN-1700]
+[PEIRS] [DCRRA-2025] [NRCAN-1700] [PREPAREDBC] [RESEARCHCO-PREP-21]

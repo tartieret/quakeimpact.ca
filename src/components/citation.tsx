@@ -56,7 +56,7 @@ export type { CitationEntry } from "./citation-client";
  */
 export const SOURCES_TITLE = "Sources on this page";
 export const SOURCES_LEDE =
-  "Numbered as cited above. Every marker in the text opens its entry in place; these are the same entries, with a link back to where each was used.";
+  "Numbered in the order they are cited. Each entry links back to where it is used.";
 
 /**
  * The sources section an article route closes on.
