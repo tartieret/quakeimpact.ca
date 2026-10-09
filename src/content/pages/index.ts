@@ -88,7 +88,7 @@ export interface PageModule {
   /**
    * The lever. Every page that describes a consequence carries one: no doom
    * without a lever. It is optional because three pages describe none:
-   * `/method/` explains the rubric, and `/about/` and `/contribute/` describe
+   * `/method/` explains how the evidence is read, and `/about/` and `/contribute/` describe
    * how the site is made. A lever written for any of them would be a lever
    * written to satisfy a type.
    */
