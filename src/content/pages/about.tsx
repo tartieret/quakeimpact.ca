@@ -6,8 +6,8 @@ import type { PageModule } from "./index";
 /**
  * About. The body of `/about/`, ported from `docs/copy/about.md`.
  *
- * Five sections, in the order a stranger needs them: where the project came
- * from, why it exists, how its information is chosen, how AI was used to make
+ * Five sections, in the order a stranger needs them: who made it and why, the
+ * talk it grew out of, how its information is chosen, how AI was used to make
  * it, and how to improve it. The AI section says what the review consisted of
  * rather than only that there was one; keep it true if the process changes.
  * The page used to restate the shaking and mutual-aid findings that
@@ -20,7 +20,7 @@ import type { PageModule } from "./index";
  *
  * The site does not talk about itself to the reader anywhere else. This page is
  * the exception the reader came for: the author speaks in the first person
- * about where the project came from, and the project speaks as "we" about how
+ * about who made the project and where it came from, and the project speaks as "we" about how
  * it works.
  *
  * The 2015 slides are hosted with Janos Toth's permission, recorded in
@@ -44,7 +44,7 @@ export const about: PageModule = {
 
   sections: [
     {
-      title: "Where this started",
+      title: "Why I built this site",
       body: (
         <Prose>
           <p>
@@ -55,7 +55,40 @@ export const about: PageModule = {
             >
               Thomas Tartière
             </a>
-            . In November 2015 I went to a talk in Vancouver by{" "}
+            . I live in downtown Vancouver and volunteer as the chef d’îlot for
+            the French community. If something serious happens in this part of
+            the city, the French consulate’s emergency plan has me as the local
+            point of contact.
+          </p>
+          <p>
+            Preparing for that role meant reading what the province, the region
+            and the utilities have published about a major earthquake. Most of
+            what they describe happens after the shaking stops. The province
+            expects disruption to water and wastewater systems “for many months
+            following the event”. <Cite id="PEIRS" /> That material is spread
+            across regulatory filings, emergency plans and engineering reports
+            written for specialists.
+          </p>
+          <p>
+            This site brings it together in plain language: what happens to the
+            water, power, roads and food supply a household relies on, and how
+            long each takes to come back.
+          </p>
+          <p>
+            This is a personal project, not a publication of the consulate, a
+            municipality or any agency, and nothing on it is an official
+            instruction.
+          </p>
+        </Prose>
+      ),
+    },
+
+    {
+      title: "Where this started",
+      body: (
+        <Prose>
+          <p>
+            In November 2015 I went to a talk in Vancouver by{" "}
             <a
               href="https://www.linkedin.com/in/janos-toth-97b63a6/"
               className={link}
@@ -86,39 +119,6 @@ export const about: PageModule = {
             (November 2015, PDF). They are dated: a lot of seismic work has been
             done since then, on bridges and schools in particular. Janos is now
             with Enginomix Consulting Inc.
-          </p>
-        </Prose>
-      ),
-    },
-
-    {
-      title: "Why I built this site",
-      body: (
-        <Prose>
-          <p>
-            I live in downtown Vancouver and volunteer as the chef d’îlot for
-            the French community. If something serious happens in this part of
-            the city, the French consulate’s emergency plan has me as the local
-            point of contact.
-          </p>
-          <p>
-            Preparing for that role meant reading what the province, the region
-            and the utilities have published about a major earthquake. Most of
-            what they describe happens after the shaking stops. The province
-            expects disruption to water and wastewater systems “for many months
-            following the event”. <Cite id="PEIRS" /> That material is spread
-            across regulatory filings, emergency plans and engineering reports
-            written for specialists.
-          </p>
-          <p>
-            This site brings it together in plain language: what happens to the
-            water, power, roads and food supply a household relies on, and how
-            long each takes to come back.
-          </p>
-          <p>
-            This is a personal project, not a publication of the consulate, a
-            municipality or any agency, and nothing on it is an official
-            instruction.
           </p>
         </Prose>
       ),
@@ -163,7 +163,7 @@ export const about: PageModule = {
       body: (
         <Prose>
           <p>
-            This site was made with the assistance of generative AI, mainly
+            This site was developed with the assistance of generative AI, mainly
             Anthropic’s Claude Opus 5.5 as of 2026. I decided what to cover,
             which sources to trust and what went on each page. Within that, the
             AI searched for and summarised published documents, wrote most of

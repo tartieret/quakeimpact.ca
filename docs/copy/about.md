@@ -6,30 +6,11 @@ hook: Who built this site and where its facts come from.
 lede: QuakeImpact describes what a major earthquake would do to daily life in the Lower Mainland, in the order people would live through it. Its figures come from published work and link to their sources.
 ---
 
-## Where this started
-
-My name is [Thomas Tartière](https://www.linkedin.com/in/thomastartiere/). In November
-2015 I went to a talk in Vancouver by
-[Janos Toth](https://www.linkedin.com/in/janos-toth-97b63a6/), an engineer, on the earthquake
-vulnerability of British Columbia's critical infrastructure. He went through it one
-system at a time: buildings, schools, hospitals, bridges, the water supply, the power
-grid. It had a lasting effect on me.
-
-Years later, when my first child was born, that talk was still in the back of my mind,
-and it is what got me to put together an emergency kit for our family. I would like
-this site to do the same for other people, and to follow the same approach: start from
-published work, go through the systems people rely on, and show what losing them would
-mean.
-
-Janos has kindly let us share his slides,
-[Earthquake Vulnerability of BC's Critical Infrastructure](/documents/toth-2015-earthquake-vulnerability-bc-critical-infrastructure.pdf)
-(November 2015, PDF). They are dated: a lot of seismic work has been done since then,
-on bridges and schools in particular. Janos is now with Enginomix Consulting Inc.
-
 ## Why I built this site
 
-I live in downtown Vancouver and volunteer as the chef d'îlot for the French community.
-If something serious happens in this part of the city, the French consulate's emergency
+My name is [Thomas Tartière](https://www.linkedin.com/in/thomastartiere/). I live in
+downtown Vancouver and volunteer as the chef d'îlot for the French community. If
+something serious happens in this part of the city, the French consulate's emergency
 plan has me as the local point of contact.
 
 Preparing for that role meant reading what the province, the region and the utilities
@@ -43,6 +24,25 @@ and food supply a household relies on, and how long each takes to come back.
 
 This is a personal project, not a publication of the consulate, a municipality or any
 agency, and nothing on it is an official instruction.
+
+## Where this started
+
+In November 2015 I went to a talk in Vancouver by
+[Janos Toth](https://www.linkedin.com/in/janos-toth-97b63a6/), an engineer, on the
+earthquake vulnerability of British Columbia's critical infrastructure. He went through
+it one system at a time: buildings, schools, hospitals, bridges, the water supply, the
+power grid. It had a lasting effect on me.
+
+Years later, when my first child was born, that talk was still in the back of my mind,
+and it is what got me to put together an emergency kit for our family. I would like
+this site to do the same for other people, and to follow the same approach: start from
+published work, go through the systems people rely on, and show what losing them would
+mean.
+
+Janos has kindly let us share his slides,
+[Earthquake Vulnerability of BC's Critical Infrastructure](/documents/toth-2015-earthquake-vulnerability-bc-critical-infrastructure.pdf)
+(November 2015, PDF). They are dated: a lot of seismic work has been done since then,
+on bridges and schools in particular. Janos is now with Enginomix Consulting Inc.
 
 ## Where the information comes from
 
@@ -61,7 +61,7 @@ them, and [How this site works](/method/) explains our method.
 
 ## How we used AI
 
-This site was made with the assistance of generative AI, mainly Anthropic's Claude
+This site was developed with the assistance of generative AI, mainly Anthropic's Claude
 Opus 5.5 as of 2026. I decided what to cover, which sources to trust and what went on
 each page. Within that, the AI searched for and summarised published documents, wrote
 most of the site's code and drafted much of the text.
