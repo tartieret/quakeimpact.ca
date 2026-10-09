@@ -47,7 +47,7 @@ export default function MethodPage() {
         <SourcesSection />
 
         <NextPrev
-          prev={{ href: "/prepare/", label: "Preparing" }}
+          prev={{ href: "/resources/", label: "Resources" }}
           next={{ href: "/sources/", label: "Sources" }}
         />
       </ArticleShell>

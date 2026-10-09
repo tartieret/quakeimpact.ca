@@ -299,6 +299,15 @@ export const REFERENCES: Record<string, Reference> = {
     route: "direct",
     licence: "King's Printer Licence – British Columbia: may be quoted at length with attribution",
   },
+  "BCEA-SHAKEOUT-26": {
+    id: "BCEA-SHAKEOUT-26",
+    kind: "report",
+    title: "The Great British Columbia ShakeOut: an annual earthquake drill run by the British Columbia Earthquake Alliance, a not-for-profit society, in which individuals, families, schools and organizations practise Drop, Cover and Hold On; about 868,000 participants in British Columbia the year before",
+    publisher: "British Columbia Earthquake Alliance",
+    date: "accessed 8 Oct 2026",
+    href: "https://www.shakeoutbc.ca/",
+    route: "landing",
+  },
   "BCEMS-2016": {
     id: "BCEMS-2016",
     kind: "report",
@@ -660,6 +669,17 @@ export const REFERENCES: Record<string, Reference> = {
     date: "30 Sep 2018",
     href: "https://www.cbc.ca/news/politics/cellphones-emergencies-batteries-tornado-1.4844158",
     route: "media",
+  },
+  "CBC-FAULTLINES-16": {
+    id: "CBC-FAULTLINES-16",
+    kind: "report",
+    title: "Fault Lines",
+    publisher: "CBC Vancouver",
+    year: 2016,
+    date: "Oct 2016",
+    href: "https://www.cbc.ca/radio/fault-lines-1.3909167",
+    note: "A five-episode podcast from CBC Vancouver presented by Johanna Wagstaffe: two earthquake scenarios, a megathrust off the coast and a shallow crustal earthquake beneath Vancouver, followed through the first day, the first three days, the first week, and the month and the year after, told through conversations with engineers, emergency preparedness managers, first responders and survivors, two of them from the Christchurch earthquakes. What CBC's own pages and episode notes say",
+    route: "landing",
   },
   "CBC-WSBC-2002": {
     id: "CBC-WSBC-2002",

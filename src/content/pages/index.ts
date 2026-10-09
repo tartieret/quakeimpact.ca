@@ -25,6 +25,7 @@ import { largeInfrastructure } from "./large-infrastructure";
 import { method } from "./method";
 import { outsideHelp } from "./outside-help";
 import { prepare } from "./prepare";
+import { resources } from "./resources";
 import { safetyAndConflict } from "./safety-and-conflict";
 import { sanitation } from "./sanitation";
 import { scenarios } from "./scenarios";
@@ -87,10 +88,10 @@ export interface PageModule {
   sections: PageSection[];
   /**
    * The lever. Every page that describes a consequence carries one: no doom
-   * without a lever. It is optional because three pages describe none:
-   * `/method/` explains how the evidence is read, and `/about/` and `/contribute/` describe
-   * how the site is made. A lever written for any of them would be a lever
-   * written to satisfy a type.
+   * without a lever. It is optional because four pages describe none:
+   * `/method/` explains how the evidence is read, `/about/` and `/contribute/`
+   * describe how the site is made, and `/resources/` points elsewhere. A lever
+   * written for any of them would be a lever written to satisfy a type.
    */
   lever?: PageLever;
 }
@@ -138,6 +139,7 @@ export const ALL_PAGES: PageModule[] = [
   landslides,
   method,
   prepare,
+  resources,
   scenarios,
   shaking,
 ];
