@@ -64,6 +64,11 @@ export const method: PageModule = {
             out, the page says so. That does not mean the system would be fine.
             It means nobody has put a number on it in public.
           </p>
+          <p>
+            None of this is an engineering assessment. The site reports what the
+            documents say, in their terms, and it does not replace the
+            assessment of the agency responsible for a system.
+          </p>
         </Prose>
       ),
     },

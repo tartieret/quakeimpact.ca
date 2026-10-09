@@ -74,6 +74,13 @@ export const about: PageModule = {
             municipality or by any agency, and nothing on it is an official
             instruction.
           </p>
+          <p>
+            I studied mechanical engineering and work in energy management.
+            Neither gives me expertise in seismic or geotechnical engineering.
+            This site is not engineering work, and nothing on it is a
+            professional opinion. It reports what others have published, and
+            where they disagree or say nothing, it says so.
+          </p>
         </Prose>
       ),
     },

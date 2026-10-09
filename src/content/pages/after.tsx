@@ -165,7 +165,13 @@ export const after: PageModule = {
               <Cite id="KATRINA-MYTHS-08" />
             </p>
           </Prose>
-          <SystemMatrix />
+          <div className="flex flex-col gap-3">
+            <SystemMatrix />
+            <p className="text-sm leading-relaxed text-ink-muted">
+              Durations in the words of the documents that state them. Not an
+              engineering assessment.
+            </p>
+          </div>
         </div>
       ),
     },

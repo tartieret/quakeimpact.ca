@@ -24,6 +24,10 @@ When nobody has published an estimate of how long a system would be out, the pag
 says so. That does not mean the system would be fine. It means nobody has put a
 number on it in public.
 
+None of this is an engineering assessment. The site reports what the documents say, in
+their terms, and it does not replace the assessment of the agency responsible for a
+system.
+
 ## The stories use the same evidence
 
 Some parts of the site tell a story: the first hours after the shaking, then the days

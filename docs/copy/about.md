@@ -26,6 +26,11 @@ on, how long each one is out, how widely, and what it is waiting on.
 It is a personal project. It is not published by the consulate, by a municipality or by
 any agency, and nothing on it is an official instruction.
 
+I studied mechanical engineering and work in energy management. Neither gives me
+expertise in seismic or geotechnical engineering. This site is not engineering work, and
+nothing on it is a professional opinion. It reports what others have published, and
+where they disagree or say nothing, it says so.
+
 ## Where the figures come from
 
 Every figure comes from published work: a regulator's filing, a provincial plan, an
