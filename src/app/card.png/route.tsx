@@ -5,10 +5,16 @@ import { CARD } from "@/content/metadata";
 /**
  * The card a link to this site unfurls into, on every route.
  *
- * It sits at the root of the route tree, so every page inherits it, while each
- * page's own title and description ride on top of it from `pageMetadata`. One
- * image and thirty-three descriptions is the right way round: the image says
- * whose site this is, and the words say which page.
+ * Every page points at it through `pageMetadata`, with its own title and
+ * description on top. One image and a description per page is the right way
+ * round: the image says whose site this is, and the words say which page.
+ *
+ * It is a route handler named `card.png` rather than an `opengraph-image`
+ * file, because Next writes a generated metadata image into a static export
+ * with no extension, and the image is then typed only if a header rule in the
+ * host's config says so. A link preview draws no image it cannot identify,
+ * and WhatsApp builds its preview on the sender's phone, where nothing retries.
+ * A `.png` address is typed by any host, with no rule to keep in step.
  *
  * It is drawn at build time into the static export, so the deployed site
  * serves a real PNG and fetches nothing.
@@ -21,10 +27,6 @@ import { CARD } from "@/content/metadata";
 
 /** Drawn once at build time, like every other file in the export. */
 export const dynamic = "force-static";
-
-export const size = { width: CARD.width, height: CARD.height };
-export const contentType = CARD.contentType;
-export const alt = CARD.alt;
 
 const PAPER = "#f6f6f4";
 const INK = "#14161a";
@@ -40,7 +42,7 @@ const MARK = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect 
 
 const MARK_SRC = `data:image/svg+xml;base64,${Buffer.from(MARK).toString("base64")}`;
 
-export default function OpengraphImage() {
+export function GET() {
   return new ImageResponse(
     (
       <div
@@ -83,6 +85,6 @@ export default function OpengraphImage() {
         </div>
       </div>
     ),
-    size,
+    { width: CARD.width, height: CARD.height },
   );
 }

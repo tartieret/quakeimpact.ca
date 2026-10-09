@@ -46,12 +46,10 @@ the style guide's sentence rules over rendered text; `shoot.mjs` writes screensh
 
 ## Metadata and search
 
-- **A page that declares its own `openGraph` loses the inherited `opengraph-image`**,
-  because metadata merges by top-level key. `CARD` in `src/content/metadata.ts` writes
-  the image back. The home page keeps its card regardless, so the one page checked by
-  hand is the one that works.
-- The generated card has no file extension, so `netlify.toml` gives it a `Content-Type`.
-  `next/og` ships its own font and needs no network.
+- **A page that declares its own `openGraph` replaces the root layout's whole
+  `openGraph` object**, because metadata merges by top-level key. A field added to the
+  layout's reaches only the 404; `pageMetadata` has to write it for every other page.
+- `next/og` ships its own font, so drawing the card needs no network.
 - **Dates come from `meta.reviewed`, never from the build or git.** A build date marks
   every URL changed whenever one does, which crawlers learn to ignore and readers
   cannot tell from a real review; a git date moves on a typo fix. The page header,

@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteJsonLd } from "@/components/structured-data";
 import { Analytics } from "@/components/analytics";
 import { SITE } from "@/content/site";
+import { CARD_IMAGE } from "@/content/metadata";
 import "./globals.css";
 
 const libreFranklin = Libre_Franklin({
@@ -25,12 +26,16 @@ const jetBrainsMono = JetBrains_Mono({
  * What every page inherits, and what a page overrides.
  *
  * `metadataBase` is what turns the site-relative canonical each page writes,
- * and the card image drawn by `opengraph-image.tsx`, into the absolute URLs a
+ * and the card image drawn by `card.png/route.tsx`, into the absolute URLs a
  * crawler and a link preview both require.
  *
  * A page supplies its own title, description, canonical and card through
  * `pageMetadata` in `@/content/metadata`. What is set here is what does not
  * vary: the title template, the crawl rules and the shape of the card.
+ *
+ * The `openGraph` here reaches only the routes that declare none, which are
+ * the 404 and not-found pages; every other page replaces it whole. Its image
+ * is what gives those two a card, so it is not a duplicate of `pageMetadata`.
  */
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -60,6 +65,7 @@ export const metadata: Metadata = {
     title: SITE.name,
     description: SITE.tagline,
     locale: "en_CA",
+    images: [CARD_IMAGE],
   },
   twitter: { card: "summary_large_image" },
 };

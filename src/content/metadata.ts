@@ -23,29 +23,26 @@ export const absoluteUrl = (path: string) => new URL(path, SITE.url).toString();
 /**
  * The card image, stated once.
  *
- * `src/app/opengraph-image.tsx` draws it and reads its dimensions from here, so
+ * `src/app/card.png/route.tsx` draws it and reads its dimensions from here, so
  * the picture and what every page says about the picture cannot disagree.
  *
- * It has to be written into each page's `openGraph` rather than left to be
- * inherited. Next attaches the image drawn at the root of the route tree to
- * every page below it, but a page that declares an `openGraph` of its own
- * replaces the inherited object whole, and every page here declares one in
- * order to carry its own title. Measured on the export: take this out and the
- * home page keeps its card and the other 31 pages lose theirs.
+ * It has to be written into each page's `openGraph` rather than inherited: a
+ * page that declares an `openGraph` of its own replaces the root layout's
+ * object whole, and every page here declares one in order to carry its own
+ * type and address.
  *
- * The route has no file extension, which is a fact about how Next writes a
- * generated image into a static export, and `netlify.toml` gives it the content
- * type a link preview checks for before it will draw anything.
+ * The path ends in `.png` so that the host serves it as an image without being
+ * told to; the route file says why that matters.
  */
 export const CARD = {
-  path: "/opengraph-image",
+  path: "/card.png",
   width: 1200,
   height: 630,
   contentType: "image/png",
   alt: `${SITE.name}: ${SITE.tagline}`,
 } as const;
 
-const CARD_IMAGE = {
+export const CARD_IMAGE = {
   url: CARD.path,
   width: CARD.width,
   height: CARD.height,
