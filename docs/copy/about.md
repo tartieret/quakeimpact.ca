@@ -13,14 +13,17 @@ downtown Vancouver and volunteer as the chef d'îlot for the French community. I
 something serious happens in this part of the city, the French consulate's emergency
 plan has me as the local point of contact.
 
-Preparing for that role meant reading what the province, the region and the utilities
-have published about a major earthquake. Most of what they describe happens after the
-shaking stops. The province expects disruption to water and wastewater systems "for
-many months following the event". [PEIRS] That material is spread across regulatory
-filings, emergency plans and engineering reports written for specialists.
+Preparing for that role meant reading what has been published about a major earthquake
+here, and there is a lot of it. The public guidance mostly covers the risk and what to
+do while the ground is shaking. What happens over the following days, weeks and months
+is in technical reports: the province, for example, expects disruption to water and
+wastewater systems "for many months following the event". [PEIRS] Those reports are
+rarely brought together, and most are written for specialists, not for the general
+public.
 
-This site brings it together in plain language: what happens to the water, power, roads
-and food supply a household relies on, and how long each takes to come back.
+This site tries to fill that gap. It describes, in plain language, what a household
+would live through in the short, medium and longer term: what happens to the water,
+power, roads and food supply it relies on, and how long each takes to come back.
 
 This is a personal project, not a publication of the consulate, a municipality or any
 agency, and nothing on it is an official instruction.
