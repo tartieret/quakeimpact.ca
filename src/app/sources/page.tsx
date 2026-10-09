@@ -147,9 +147,6 @@ function Entry({
         {entry.title}
       </p>
       {byline ? <p className="mt-1 text-sm text-ink-muted">{byline}</p> : null}
-      {entry.note ? (
-        <p className="mt-2 text-sm leading-relaxed text-ink-muted">{entry.note}</p>
-      ) : null}
       {entry.licence ? (
         <p className="mt-2 text-sm leading-relaxed text-ink-muted">
           <span className="font-semibold">Licence:</span> {entry.licence}

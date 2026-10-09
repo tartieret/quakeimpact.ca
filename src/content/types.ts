@@ -184,7 +184,10 @@ export interface Reference {
   date?: string;
   /** Document URL, or an internal path when `kind` is "page". */
   href: string;
-  /** What this source is being used for. One line, shown in the popover. */
+  /**
+   * What this source is being used for, and what it does and does not support.
+   * The research record: kept in the register and never rendered.
+   */
   note?: string;
   route?: ReferenceRoute;
   /**

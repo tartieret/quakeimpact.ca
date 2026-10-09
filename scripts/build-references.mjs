@@ -122,14 +122,9 @@ class RegisterError extends Error {
 /**
  * Split a markdown table row on unescaped pipes.
  *
- * An HTML comment inside a cell is research-only and never reaches the reader.
- * Every cell of the register is copy — the Source cell's note and the URL
- * cell's prose both render, in the citation popover and on `/sources/` — so a
- * record that matters to the next researcher and means nothing to a neighbour
- * (a superseded key, how a PDF was extracted, what to obtain next) goes in
- * `<!-- research: … -->` and is dropped here. It stays in the register, one
- * line from the row it belongs to, rather than being lost to keep the note
- * readable. A comment may not contain a pipe.
+ * An HTML comment inside a cell is research-only and dropped here. The note
+ * that survives is generated but not rendered: a reader sees the title, the
+ * publisher and the year. A comment may not contain a pipe.
  */
 function cells(row, line) {
   const trimmed = row.trim().replace(/^\|/, "").replace(/\|$/, "");
