@@ -6,7 +6,7 @@ import { CARD } from "@/content/metadata";
  * The card a link to this site unfurls into, on every route.
  *
  * Every page points at it through `pageMetadata`, with its own title and
- * description on top. One image and thirty-three descriptions is the right way
+ * description on top. One image and a description per page is the right way
  * round: the image says whose site this is, and the words say which page.
  *
  * It is a route handler named `card.png` rather than an `opengraph-image`
