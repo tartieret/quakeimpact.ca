@@ -13,8 +13,7 @@ function SystemCard({ system }: { system: SystemEntry }) {
     >
       {/* Neither the duration nor the phase a system bites at is on the card.
           Both are meant to be read against the other systems, which the table
-          does, and the phase lives on the timeline strip, where the four are
-          named together. What the card carries is the hook, which is the
+          does. What the card carries is the hook, which is the
           sentence that earns the click. */}
       <h3 className="font-display text-lg leading-snug tracking-tight group-hover:text-accent">
         {system.name}
