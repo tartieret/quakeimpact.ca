@@ -122,8 +122,9 @@ interface SystemBase {
    */
   lever?: StandingLever;
   /**
-   * Slugs of systems this one relies on, shown as "Related systems" on its page.
-   * Navigation, not evidence: nothing on the site draws or counts these links.
+   * Slugs of systems this one relies on. Not rendered: a system page says what
+   * it waits on in its copy, where a source says so, and the part contents at
+   * its foot link every system. Nothing on the site draws or counts these links.
    */
   dependsOn: string[];
   /** Build-order tier from the project plan. */
