@@ -8,7 +8,6 @@ import {
   NextPrev,
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
-import { TimelineStrip } from "@/components/timeline";
 import { ImpactCell } from "@/components/impact-cell";
 import { SYSTEMS, SCENARIOS, impactsOf, navSection } from "@/content/site";
 import { SectionNav } from "@/components/section-nav";
@@ -129,27 +128,20 @@ export default async function SystemPage({
         {page ? null : <SystemDraftNotice />}
 
         {/* At a glance: one cell standing for both earthquakes, or one per
-            earthquake where the two genuinely differ, then the phases with
-            the one this system is felt worst in marked and named. The strip
-            shows only where a phase is on record. */}
+            earthquake where the two genuinely differ. */}
         <Section title="At a glance">
-          <div className="flex flex-col gap-6">
-            <div
-              className={
-                impacts.length > 1 ? "grid gap-4 sm:grid-cols-2" : "grid gap-4"
-              }
-            >
-              {impacts.map(({ scenario, impact }) => (
-                <ImpactCell
-                  key={scenario ?? "both"}
-                  impact={impact}
-                  label={scenario ? SCENARIOS[scenario].name : undefined}
-                />
-              ))}
-            </div>
-            {system.bitesAt ? (
-              <TimelineStrip active={system.bitesAt} compact />
-            ) : null}
+          <div
+            className={
+              impacts.length > 1 ? "grid gap-4 sm:grid-cols-2" : "grid gap-4"
+            }
+          >
+            {impacts.map(({ scenario, impact }) => (
+              <ImpactCell
+                key={scenario ?? "both"}
+                impact={impact}
+                label={scenario ? SCENARIOS[scenario].name : undefined}
+              />
+            ))}
           </div>
         </Section>
 

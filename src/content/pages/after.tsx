@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Cite } from "@/components/citation";
 import { Prose } from "@/components/page-parts";
-import { TimelineStrip, TimelineWeather } from "@/components/timeline";
+import { TimelineStrip } from "@/components/timeline";
 import { SystemGrid, SystemMatrix } from "@/components/system-grid";
 import type { PageModule } from "./index";
 
@@ -74,9 +74,7 @@ export const after: PageModule = {
       title: "What fails first, and what follows",
       body: (
         <div className="flex flex-col gap-8">
-          <TimelineStrip>
-            <TimelineWeather />
-          </TimelineStrip>
+          <TimelineStrip />
           <Prose>
             <p>
               <strong>In the first hours</strong>, phone networks and health
