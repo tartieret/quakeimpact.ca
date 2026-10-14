@@ -41,7 +41,8 @@ export interface Scenario {
   /**
    * Weather is a condition of the scenario, not a system that fails. Both
    * official scenarios set one, and the two pull in opposite directions — see
-   * `docs/research/scenarios.md`.
+   * `docs/research/scenarios.md`. Not rendered: `/scenarios/` gives each
+   * scenario's weather in its own section.
    */
   conditions: string;
 }

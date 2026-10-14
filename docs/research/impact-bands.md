@@ -47,8 +47,8 @@ source that `ImpactCell` requires, and a reconciliation against what
 | Where help comes from | High | Low | Two mechanisms, one per column, plus a guard on the Low. The Cascadia cell: the province's plan assumes agencies outside the impact area are unaffected and stages resources with them, and for a megathrust the same plan states the United States will be unable to deliver mutual aid. The crustal cell: the same assumption, and a local crustal earthquake is the case where it holds, with `Impact.evidence` recording that this is a planning assumption the province states rather than a measured finding. See `src/content/site.ts` for both. | [PEIRS] **[A]** |
 
 **Weather is not in the table, and should not be.** It is a scenario condition, not
-a system. It is now carried on `Scenario.conditions`, with the two conditions shown side by
-side on `/scenarios/`. See `../site-overview.md` §9. Gas takes the row weather vacates,
+a system. It is now carried on `Scenario.conditions`, which nothing renders, and `/scenarios/`
+describes each scenario's weather in that scenario's own section. See `../site-overview.md` §9. Gas takes the row weather vacates,
 which is a better trade than it looks, because gas fails in a way nothing else on
 the grid does and weather never failed at all.
 
