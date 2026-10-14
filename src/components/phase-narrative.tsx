@@ -6,9 +6,7 @@ import type { Phase } from "@/content/types";
  * The aftermath told as four stretches of time rather than as a list of
  * systems.
  *
- * `TimelineStrip` is the same four phases used as an index: it names them and
- * moves the reader on. This is the other job — the one the landing page needs —
- * where each phase carries a sentence about what the region is living through
+ * Each phase carries a sentence about what the region is living through
  * then. A reader arriving cold meets a consequence before they meet the site's
  * filing system.
  *
@@ -21,8 +19,8 @@ import type { Phase } from "@/content/types";
  * two labelled columns at the top of the page asked a reader to hold two
  * earthquakes apart before either had been introduced.
  *
- * The phase labels and windows come from `PHASES`, so the strip and this
- * cannot disagree about what "weeks" means.
+ * The phase labels and windows come from `PHASES`, so this and the duration
+ * table cannot disagree about what "weeks" means.
  *
  * There is no weather footer. Weather is not a fifth phase and it is not a
  * period of the aftermath: it is the condition every phase happens in, and it

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleShell } from "@/components/shell";
 import {
@@ -9,15 +8,8 @@ import {
   NextPrev,
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
-import { TimelineStrip } from "@/components/timeline";
 import { ImpactCell } from "@/components/impact-cell";
-import {
-  SYSTEMS,
-  SCENARIOS,
-  PHASES,
-  impactsOf,
-  navSection,
-} from "@/content/site";
+import { SYSTEMS, SCENARIOS, impactsOf, navSection } from "@/content/site";
 import { SectionNav } from "@/components/section-nav";
 import { pageForSystem } from "@/content/pages";
 import { SystemDraftNotice } from "@/components/status";
@@ -80,9 +72,6 @@ export default async function SystemPage({
   const page = pageForSystem(slug);
   const prev = SYSTEMS[index - 1];
   const next = SYSTEMS[index + 1];
-  const phase = system.bitesAt
-    ? PHASES.find((p) => p.id === system.bitesAt)
-    : undefined;
 
   /**
    * The module's status wins where there is one, so a written page can be
@@ -139,16 +128,8 @@ export default async function SystemPage({
         {page ? null : <SystemDraftNotice />}
 
         {/* At a glance: one cell standing for both earthquakes, or one per
-            earthquake where the two genuinely differ. The timeline shows only
-            where a phase is on record. */}
-        <Section
-          title="At a glance"
-          lede={
-            phase
-              ? `Felt worst: ${phase.label.toLowerCase()} after the event.`
-              : undefined
-          }
-        >
+            earthquake where the two genuinely differ. */}
+        <Section title="At a glance">
           <div
             className={
               impacts.length > 1 ? "grid gap-4 sm:grid-cols-2" : "grid gap-4"
@@ -163,38 +144,6 @@ export default async function SystemPage({
             ))}
           </div>
         </Section>
-
-        {system.bitesAt ? (
-          <Section title="When it bites">
-            <TimelineStrip active={system.bitesAt} compact />
-          </Section>
-        ) : null}
-
-        {system.dependsOn.length > 0 ? (
-          <Section title="Related systems">
-            <ul className="grid gap-px overflow-hidden rounded-xl border border-rule bg-rule sm:grid-cols-2">
-              {system.dependsOn.map((dep) => {
-                const target = SYSTEMS.find((s) => s.slug === dep);
-                if (!target) return null;
-                return (
-                  <li key={dep}>
-                    <Link
-                      href={`/after/${dep}/`}
-                      className="block bg-paper-raised px-5 py-4 hover:bg-accent-soft"
-                    >
-                      <span className="font-display text-lg">
-                        {target.name}
-                      </span>
-                      <p className="mt-1 text-sm text-ink-muted">
-                        {target.hook}
-                      </p>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </Section>
-        ) : null}
 
         {(page?.sections ?? []).map((section) => (
           <Section

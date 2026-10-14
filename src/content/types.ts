@@ -41,7 +41,8 @@ export interface Scenario {
   /**
    * Weather is a condition of the scenario, not a system that fails. Both
    * official scenarios set one, and the two pull in opposite directions — see
-   * `docs/research/scenarios.md`.
+   * `docs/research/scenarios.md`. Not rendered: `/scenarios/` gives each
+   * scenario's weather in its own section.
    */
   conditions: string;
 }
@@ -122,8 +123,9 @@ interface SystemBase {
    */
   lever?: StandingLever;
   /**
-   * Slugs of systems this one relies on, shown as "Related systems" on its page.
-   * Navigation, not evidence: nothing on the site draws or counts these links.
+   * Slugs of systems this one relies on. Not rendered: a system page says what
+   * it waits on in its copy, where a source says so, and the part contents at
+   * its foot link every system. Nothing on the site draws or counts these links.
    */
   dependsOn: string[];
   /** Build-order tier from the project plan. */
