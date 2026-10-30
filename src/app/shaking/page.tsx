@@ -8,6 +8,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { shaking } from "@/content/pages/shaking";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { metadataFor } from "@/content/metadata";
 
 /**
@@ -23,6 +24,7 @@ export const metadata: Metadata = metadataFor(shaking.meta);
 export default function ShakingIndexPage() {
   return (
     <Citations ids={shaking.meta.references}>
+      <WebPageJsonLd {...shaking.meta} />
       <ArticleShell
         header={
           <PageHeader

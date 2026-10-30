@@ -8,6 +8,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { prepare } from "@/content/pages/prepare";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { metadataFor } from "@/content/metadata";
 
 /**
@@ -24,6 +25,7 @@ export const metadata: Metadata = metadataFor(prepare.meta);
 export default function PreparePage() {
   return (
     <Citations ids={prepare.meta.references}>
+      <WebPageJsonLd {...prepare.meta} />
       <ArticleShell
         header={
           <PageHeader

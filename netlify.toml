@@ -20,6 +20,16 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# The site's Netlify address serves the same files as quakeimpact.ca. Each page's
+# canonical link already names the real domain, but a redirect leaves a crawler
+# nothing to reconcile. Deploy previews have hosts of their own and are not
+# caught by this rule.
+[[redirects]]
+  from = "https://quakeimpact.netlify.app/*"
+  to = "https://quakeimpact.ca/:splat"
+  status = 301
+  force = true
+
 # /shaking/secondary-hazards/ was one page holding landslides, dikes and dams.
 # It is now three, and the old URL is live on the site and in search results.
 [[redirects]]

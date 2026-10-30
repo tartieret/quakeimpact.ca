@@ -8,6 +8,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { scenarios } from "@/content/pages/scenarios";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { metadataFor } from "@/content/metadata";
 
 /**
@@ -27,6 +28,7 @@ export const metadata: Metadata = metadataFor(meta);
 export default function ScenariosPage() {
   return (
     <Citations ids={meta.references}>
+      <WebPageJsonLd {...meta} />
       <ArticleShell
         header={
           <PageHeader

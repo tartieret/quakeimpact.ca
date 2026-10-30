@@ -173,7 +173,6 @@ export const gettingAround: PageModule = {
               page's subject. The licence slot is filled because three
               datasets are behind it. */}
           <Figure
-            interactive
             alt={`Every road, rail and transit crossing off the Vancouver peninsula and onto Richmond, ${CROSSINGS_FACTS.total} in all. Vancouver's land connection runs east; everything else is a bridge or a tunnel.`}
             caption={
               <>

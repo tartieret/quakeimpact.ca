@@ -48,7 +48,7 @@ export function Photograph({
       licence={<Credit photo={photo} licence={licence} />}
     >
       {/*
-       * The frame carries `role="img"` and the finding in `aria-label`, so the
+       * The frame carries the finding as a screen-reader paragraph, so the
        * image itself is `alt=""`: labelled twice, a screen reader reads the
        * finding and then reads it again.
        *

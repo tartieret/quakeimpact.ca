@@ -84,7 +84,6 @@ export const transportation: PageModule = {
             of them is closed.
           </p>
           <Figure
-            interactive
             alt={`The region's ${CROSSINGS_FACTS.total} road, rail and transit crossings, over Burrard Inlet, False Creek, the North and Middle Arms of the Fraser, the Fraser itself and the Pitt River. Vancouver's land connection runs east; every way onto Richmond and Sea Island is a bridge or the George Massey Tunnel.`}
             caption={
               <>

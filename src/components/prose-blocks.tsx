@@ -244,17 +244,18 @@ export function Quote({
  * A graphic with its caption, its finding and its licence.
  *
  * `alt` states what the reader would take away from looking at it, not what the
- * file is called, and it is applied to the frame so an inline `<svg>` and an
- * `<img alt="">` are both covered. `licence` travels with the graphic because
- * an Open Government Licence source has to be attributed beside the thing it
- * produced, not on a separate page.
+ * file is called. It is written into the page as a screen-reader paragraph ahead
+ * of the graphic, which is itself an `<svg aria-hidden>` or an `<img alt="">`,
+ * so the sentence is read once and first. `licence` travels with the graphic
+ * because an Open Government Licence source has to be attributed beside the
+ * thing it produced, not on a separate page.
  *
- * `interactive` is for a graphic a reader can operate, which today means a map
- * with a zoom. `role="img"` makes everything inside it presentational, so a
- * frame carrying that role would hide the graphic's own buttons from a screen
- * reader entirely. An interactive figure therefore drops the role and puts the
- * finding in a screen-reader paragraph instead: the sentence still arrives
- * first, and the controls under it are reachable.
+ * The finding is text in the document rather than an `aria-label` on a
+ * `role="img"` frame, for two reasons. A frame with that role makes everything
+ * inside it presentational, so a map's own zoom buttons would be hidden from a
+ * screen reader. And a crawler or an AI agent turning the page into text keeps
+ * a paragraph and drops an attribute on a `<div>`, so a figure labelled that way
+ * reaches them as nothing at all.
  */
 export function Figure({
   children,
@@ -262,7 +263,6 @@ export function Figure({
   caption,
   licence,
   id,
-  interactive = false,
 }: {
   /** The graphic. An `<img alt="">` or an inline `<svg aria-hidden>`. */
   children: ReactNode;
@@ -272,17 +272,11 @@ export function Figure({
   /** Attribution required by the source's licence. */
   licence?: ReactNode;
   id?: string;
-  /** The graphic has controls of its own. */
-  interactive?: boolean;
 }) {
   return (
     <figure id={id}>
-      <div
-        role={interactive ? undefined : "img"}
-        aria-label={interactive ? undefined : alt}
-        className="overflow-hidden rounded-lg border border-rule bg-paper-raised"
-      >
-        {interactive ? <p className="sr-only">{alt}</p> : null}
+      <div className="overflow-hidden rounded-lg border border-rule bg-paper-raised">
+        <p className="sr-only">{alt}</p>
         {children}
       </div>
       {caption || licence ? (

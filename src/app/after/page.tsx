@@ -8,6 +8,7 @@ import {
 } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { after } from "@/content/pages/after";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { metadataFor } from "@/content/metadata";
 
 /**
@@ -19,6 +20,7 @@ export const metadata: Metadata = metadataFor(after.meta);
 export default function AfterIndexPage() {
   return (
     <Citations ids={after.meta.references}>
+      <WebPageJsonLd {...after.meta} />
       <ArticleShell
         header={
           <PageHeader

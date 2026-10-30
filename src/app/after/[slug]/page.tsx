@@ -13,7 +13,7 @@ import { SYSTEMS, SCENARIOS, impactsOf, navSection } from "@/content/site";
 import { SectionNav } from "@/components/section-nav";
 import { pageForSystem } from "@/content/pages";
 import { SystemDraftNotice } from "@/components/status";
-import { BreadcrumbJsonLd } from "@/components/structured-data";
+import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/structured-data";
 import { pageMetadata } from "@/content/metadata";
 import { SITE } from "@/content/site";
 
@@ -100,6 +100,13 @@ export default async function SystemPage({
 
   return (
     <Citations ids={references}>
+      <WebPageJsonLd
+        route={`/after/${slug}/`}
+        title={page?.meta.title ?? system.name}
+        description={page?.meta.description ?? system.hook}
+        reviewed={page?.meta.reviewed}
+        references={references}
+      />
       <BreadcrumbJsonLd
         trail={[
           { name: SITE.name, href: "/" },

@@ -276,7 +276,6 @@ export const dams: PageModule = {
             date and no upgrade programme. <Cite id="BC-DAMS-REG" />
           </p>
           <Figure
-            interactive
             alt={`The ${DAM_FACTS.total} dams the province classes Extreme or Very High failure consequence in the Lower Mainland, spread from Wahleach at the east end of the Fraser Valley to Howe Sound in the west, and north to Whistler. Only ${PUBLISHED.length} of them, all owned by BC Hydro, are drawn solid: those are the only ones whose owner has said what an earthquake is expected to do.`}
             caption={
               <>

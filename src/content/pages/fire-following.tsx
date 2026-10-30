@@ -328,7 +328,6 @@ export const fireFollowing: PageModule = {
             as an open data layer, street by street. <Cite id="COV-DFPS-DATA" />
           </p>
           <Figure
-            interactive
             alt={`The dedicated fire protection mains sit in a corner of the city about ${MAINS_FACTS.width} by ${MAINS_FACTS.depth}, in a city about ${MAINS_FACTS.cityWidth} across: the downtown peninsula, the West End, and a crossing of False Creek into Fairview Slopes and Kitsilano. What is drawn is the pipe and not a service area, and everywhere the pipe is not, a fire is fought with water from the ordinary mains.`}
             caption={
               <>
@@ -465,7 +464,6 @@ export const fireFollowing: PageModule = {
             buildings. <Cite id="COV-CAP-2730" />
           </p>
           <Figure
-            interactive
             alt={`Vancouver’s ${HALL_FACTS.inCity} fire halls are spread across the whole city. One is finished to a post-disaster standard and ${HALL_FACTS.planned} more are named in a capital plan for replacement or seismic upgrade. The other ${HALL_FACTS.unestablished} are marked as needing more information, because the documents this site has read say nothing either way about them. That is a gap in the evidence and not a finding about the buildings.`}
             caption={
               <>
