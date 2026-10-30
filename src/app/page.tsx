@@ -8,6 +8,7 @@ import {
   SOURCES_TITLE,
 } from "@/components/citation";
 import { home, homeHero } from "@/content/pages/home";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { pageMetadata } from "@/content/metadata";
 import { SITE } from "@/content/site";
 
@@ -43,6 +44,7 @@ export const metadata: Metadata = pageMetadata({
 export default function HomePage() {
   return (
     <Citations ids={home.meta.references}>
+      <WebPageJsonLd {...home.meta} />
       {/* Hero ------------------------------------------------------- */}
       <section className="border-b border-rule">
         <div className="mx-auto max-w-6xl px-gutter py-10 sm:py-14">

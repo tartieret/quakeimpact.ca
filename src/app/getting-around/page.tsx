@@ -3,6 +3,7 @@ import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Lever, NextPrev } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { gettingAround } from "@/content/pages/getting-around";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { metadataFor } from "@/content/metadata";
 
 /**
@@ -24,6 +25,7 @@ export const metadata: Metadata = metadataFor(meta);
 export default function GettingAroundPage() {
   return (
     <Citations ids={meta.references}>
+      <WebPageJsonLd {...meta} />
       <ArticleShell
         header={
           <PageHeader

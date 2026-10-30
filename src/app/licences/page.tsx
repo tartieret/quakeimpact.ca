@@ -3,14 +3,17 @@ import Link from "next/link";
 import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
 import { nonCommercialPhotographs } from "@/content/media";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { pageMetadata } from "@/content/metadata";
 
-export const metadata: Metadata = pageMetadata({
+const PAGE = {
   route: "/licences/",
   title: "Licences",
   description:
     "Licence terms and required credits for maps, datasets and photographs used by QuakeImpact.",
-});
+};
+
+export const metadata: Metadata = pageMetadata(PAGE);
 
 /**
  * The credit the open licences require, and nothing else.
@@ -92,6 +95,7 @@ export default function LicencesPage() {
         />
       }
     >
+      <WebPageJsonLd {...PAGE} />
       <Section title="Required licence credits">
         <div className="flex flex-col gap-8">
           {LICENCES.map((licence) => (

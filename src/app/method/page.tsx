@@ -3,6 +3,7 @@ import { ArticleShell } from "@/components/shell";
 import { PageHeader, Section, NextPrev } from "@/components/page-parts";
 import { Citations, SourcesSection } from "@/components/citation";
 import { method } from "@/content/pages/method";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { metadataFor } from "@/content/metadata";
 
 /**
@@ -24,6 +25,7 @@ export const metadata: Metadata = metadataFor(method.meta);
 export default function MethodPage() {
   return (
     <Citations ids={method.meta.references}>
+      <WebPageJsonLd {...method.meta} />
       <ArticleShell
         header={
           <PageHeader

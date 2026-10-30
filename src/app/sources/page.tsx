@@ -5,14 +5,17 @@ import { PageHeader, Section, Prose, NextPrev } from "@/components/page-parts";
 import { CITED_REFERENCES } from "@/content/cited";
 import { REFERENCES } from "@/content/references";
 import type { Reference, ReferenceRoute } from "@/content/types";
+import { WebPageJsonLd } from "@/components/structured-data";
 import { pageMetadata } from "@/content/metadata";
 
-export const metadata: Metadata = pageMetadata({
+const PAGE = {
   route: "/sources/",
   title: "Sources",
   description:
     "Documents and datasets cited by QuakeImpact, with publication dates and available links.",
-});
+};
+
+export const metadata: Metadata = pageMetadata(PAGE);
 
 /**
  * The register renders itself from `src/content/references.ts`, which is
@@ -210,6 +213,7 @@ export default function SourcesPage() {
         />
       }
     >
+      <WebPageJsonLd {...PAGE} />
       <Section title="How to read an entry">
         <Prose
           paragraphs={[

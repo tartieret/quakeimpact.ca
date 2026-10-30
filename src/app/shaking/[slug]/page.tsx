@@ -14,7 +14,7 @@ import { fireFollowing } from "@/content/pages/fire-following";
 import { groundConditions } from "@/content/pages/ground-conditions";
 import { landslides } from "@/content/pages/landslides";
 import { ShakingDraftNotice } from "@/components/status";
-import { BreadcrumbJsonLd } from "@/components/structured-data";
+import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/structured-data";
 import { pageMetadata } from "@/content/metadata";
 import { SITE } from "@/content/site";
 
@@ -97,6 +97,13 @@ export default async function ShakingDetailPage({
 
   return (
     <Citations ids={references}>
+      <WebPageJsonLd
+        route={`/shaking/${slug}/`}
+        title={page?.meta.title ?? entry.name}
+        description={page?.meta.description ?? entry.hook}
+        reviewed={page?.meta.reviewed}
+        references={references}
+      />
       <BreadcrumbJsonLd
         trail={[
           { name: SITE.name, href: "/" },
