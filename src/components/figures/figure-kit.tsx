@@ -143,9 +143,9 @@ function FigureDefs({ id }: { id: string }) {
  * everywhere and nothing reflows. Width is whatever the column gives, and the
  * drawing stretches horizontally into it.
  *
- * The SVG is hidden from assistive technology on purpose. `Figure` puts
- * `role="img"` and the finding in `aria-label` on the frame around it, so a
- * screen reader reads one sentence rather than spelling out forty tick marks.
+ * The SVG is hidden from assistive technology on purpose. `Figure` writes the
+ * finding as a screen-reader paragraph ahead of it, so a screen reader reads
+ * one sentence rather than spelling out forty tick marks.
  */
 export function FigureCanvas({
   id,

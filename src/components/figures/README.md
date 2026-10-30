@@ -156,10 +156,9 @@ Two things to get right, both of which have already been got wrong here:
   to be full width rather than shrink-to-fit, or the scale silently stops being
   true.
 
-`Figure` takes `interactive` for a graphic with controls of its own. It drops
-the `role="img"` on the frame, which would otherwise make the graphic's own
-buttons presentational and unreachable, and puts the finding in a screen-reader
-paragraph instead.
+A map's controls need nothing from `Figure`. The frame carries no `role="img"`,
+which would make the graphic's own buttons presentational and unreachable; the
+finding is a screen-reader paragraph ahead of them, as on every figure.
 
 ### A symbol map has two more problems, and `fire-following.tsx` is the worked one
 
@@ -279,10 +278,13 @@ the table are `mark`, because covering either leaves nothing; the floor is
 
 ## Alt text
 
-`Figure` puts `role="img"` and `aria-label={alt}` on the frame, and the `<svg>`
-inside is `aria-hidden`, so a screen reader gets one sentence rather than forty
-tick marks. That sentence is the whole of what a non-sighted reader receives,
-so:
+`Figure` writes `alt` into the page as a screen-reader paragraph ahead of the
+graphic, and the `<svg>` inside is `aria-hidden`, so a screen reader gets one
+sentence rather than forty tick marks. It is a paragraph and not an
+`aria-label` on a `role="img"` frame because a crawler or an AI agent turning
+the page into text keeps a paragraph and drops the attribute. That sentence is
+the whole of what a non-sighted reader, and a machine reading the page,
+receives, so:
 
 - **State the finding, not the file.** "Bulk water distribution is hard for
   four to five days; the network takes months", never "diagram of water
